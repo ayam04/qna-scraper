@@ -1,6 +1,9 @@
+import os
 import json
 import tkinter as tk
 from tkinter import ttk
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors import LinkExtractor
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -34,6 +37,7 @@ def get_ib_roles():
     with open('roles.json', 'w', encoding="utf-8") as f:
         json.dump(roles, f, indent=4)
 
+
 def ask_role():
   with open("roles.json") as f:
     data = json.load(f)
@@ -57,7 +61,30 @@ def ask_role():
 
   window.mainloop()
 
-get_ib_roles()
-ask_role()
+# get_ib_roles()
+website = ask_role()
+
+
+class CrawlingSpider(CrawlSpider):
+    name = "mycrawler"
+    allowed_domains = ["interviewbit.com"]
+    start_urls = [website]
+
+    rules = {Rule(LinkExtractor(allow=website.replace("https://www.interviewbit.com/","")), callback="parse_ib")
+    }
+
+    def parse_ib(self, response):
+        sections = response.xpath("//section[@class='ibpage-article-header']")
+
+        for section in sections:
+            question = section.xpath(".//h3/text()").get().strip()
+            answer = section.xpath(".//article[@class='ibpage-article']/descendant-or-self::text()").getall()
+            answer = " ".join(answer).strip()
+
+            extracted_data = {
+                "question": question,
+                "answer": answer
+            }
+            yield extracted_data
 
 driver.quit()
