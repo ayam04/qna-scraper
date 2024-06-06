@@ -42,6 +42,7 @@ def ask_role():
         return None
 
     window = tk.Tk()
+    window.geometry("400x200")
     window.title("Select Interview Role")
     
     selected_url = tk.StringVar()
