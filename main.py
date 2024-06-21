@@ -4,16 +4,18 @@ import tkinter as tk
 from tkinter import ttk
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+driver_path = "C:/Users/ayamu/python programs/drivers/chromedriver-win64/chromedriver.exe" 
 ib_url = "https://www.interviewbit.com/technical-interview-questions/"
 
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("--diable-cookies")
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(service=Service(driver_path), options=options)
 
 roles = {}
 
@@ -83,8 +85,9 @@ def extract_ib_roles(website):
 
 
       extracted_data.append({
-        "question": question,
-        "answer": answer
+        "question": question.split(".")[-1],
+        "answer": answer,
+        "reference":"interviewbit"
       })
   try:
       with open(f"Outputs/{filename}.json","x", encoding="utf-8") as f:
