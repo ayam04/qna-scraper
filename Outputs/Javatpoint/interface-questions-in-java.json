@@ -1,0 +1,202 @@
+[
+    {
+        "question": "1) What is an interface in Java?",
+        "answer": "An interface is a reference type in Java that is similar to a class. It outlines a contract that classes must adhere to by defining a set of methods. Interfaces cannot be instantiated directly and are used for achieving multiple inheritance and code reusability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) How is an interface declared?",
+        "answer": "Interfaces are declared using the interface keyword.\nFor example:\ninterface MyInterface {  \n    void myMethod();  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) Can an interface have fields?",
+        "answer": "Interfaces can only have constant fields (static final variables), which must be initialized.\nFor example:\ninterface Constants {  \n    int VALUE = 10;  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) How can a class implement an interface?",
+        "answer": "To implement an interface, a class should use the implements keyword. For instance:\nclass MyClass implements MyInterface {  \n    public void myMethod() {  \n        // Implementation here  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Can a class implement multiple interfaces?",
+        "answer": "Yes, a class can implement multiple interfaces, enabling multiple inheritance of behaviors.\nFor example:\nclass MyClass implements Interface1, Interface2 {  \n    // Implement methods from both interfaces  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the significance of the default keyword in interface methods?",
+        "answer": "Java 8 introduced default methods, allowing interfaces to provide method implementations. Implementing classes are not required to override default methods.\nADVERTISEMENT\ninterface MyInterface {  \n    default void myDefaultMethod() {  \n        // Default implementation  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Can interface methods be private?",
+        "answer": "Java 9 introduced private methods in interfaces to help with code organization. These methods can only be used within the interface itself.\ninterface MyInterface {  \n    private void helperMethod() {  \n        // Private method implementation  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Marker interfaces are interfaces without any methods, like Serializable. They are used to indicate that a class possesses a certain capability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) How does Java achieve multiple inheritance using interfaces?",
+        "answer": "Java uses interfaces to achieve multiple inheritance, as a class can implement multiple interfaces. This allows a class to inherit behaviors from various sources.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Can an interface extend another interface?",
+        "answer": "Yes, an interface can extend another interface using the extends keyword. This facilitates creating more specialized interfaces.\ninterface SpecializedInterface extends MyInterface {  \n    // Additional methods  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the difference between abstract classes and interfaces?",
+        "answer": "Abstract classes can have fields, constructors, and non-abstract methods with implementations. Interfaces can only declare constants and methods without implementations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Can an interface extend an abstract class?",
+        "answer": "No, interfaces can only extend other interfaces. They cannot extend classes, whether abstract or concrete.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the purpose of the @FunctionalInterface annotation?",
+        "answer": "This annotation is used to indicate that an interface is intended to be a functional interface, meaning it has only one abstract method. It is used for lambda expressions and the functional programming paradigm.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Interface-based programming promotes designing code based on interfaces rather than specific implementations, leading to loose coupling and easier maintenance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) Can you provide an example of using interfaces in the Java Collections framework?",
+        "answer": "The List, Set, and Map interfaces in the Java Collections framework demonstrate how interfaces define a common contract for various implementations like ArrayList, HashSet, and HashMap.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is an example of using interfaces in GUI programming?",
+        "answer": "GUI libraries often define interfaces for event listeners, allowing classes to implement these interfaces to respond to user interactions effectively.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How can interfaces contribute to code maintainability?",
+        "answer": "Interfaces facilitate creating interchangeable components, enabling developers to swap implementations without affecting the rest of the codebase.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Abstraction refers to hiding implementation details while exposing a clear and consistent interface for interaction. Interfaces enforce this principle.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Can an interface have static methods?",
+        "answer": "Yes, Java 8 introduced static methods in interfaces, which are accessed using the interface name.\nFor example:\ninterface MyInterface {  \n    static void myStaticMethod() {  \n        // Static method implementation  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How does the concept of interface promote loose coupling?",
+        "answer": "Interfaces decouple classes from each other by providing a common contract that classes adhere to. This allows changes in one class to have minimal impact on other classes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the purpose of an interface over an abstract class?",
+        "answer": "Interfaces allow multiple inheritance and are used when a class needs to inherit behaviors from multiple sources, promoting better code organization and reusability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Can an interface extend multiple interfaces?",
+        "answer": "Yes, an interface can extend multiple interfaces using the extends keyword.\ninterface ExtendedInterface extends Interface1, Interface2 {  \n    // Additional methods  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How can you achieve runtime polymorphism using interfaces?",
+        "answer": "By creating reference variables of the interface type and assigning objects of implementing classes, you can achieve polymorphism.\nMyInterface obj = new MyClass();  \nobj.myMethod(); // Calls MyClass's implementation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What happens when a class implements multiple interfaces with the same method signature?",
+        "answer": "If a class implements multiple interfaces with the same method signature, it must provide a single implementation for that method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) Can an interface extend a class?",
+        "answer": "No, interfaces can only extend other interfaces, not classes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) How can you achieve constant values in Java using interfaces?",
+        "answer": "Interfaces can have constant values defined using static final variables.\ninterface Constants {  \n    int VALUE = 42;  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is the diamond problem in the context of multiple inheritance? How does Java solve it using interfaces?",
+        "answer": "The diamond problem arises when a class inherits from two classes that have a common superclass. Java solves this by allowing multiple inheritance through interfaces, where the ambiguity is resolved by the implementing class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Can an interface have a constructor?",
+        "answer": "No, interfaces cannot have constructors, as they cannot be instantiated directly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Comparable is used to define the natural ordering of objects, while Comparator is used to provide custom comparison logic for objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) Can you achieve multiple inheritance through classes in Java?",
+        "answer": "No, Java supports multiple inheritance only through interfaces due to the \"diamond problem.\"",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What are the advantages of using interfaces in unit testing?",
+        "answer": "Interfaces facilitate the creation of mock objects during testing, allowing isolation of components and easy substitution of dependencies.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) How can interfaces be used to implement the Strategy design pattern?",
+        "answer": "By defining an interface representing a strategy and creating multiple implementations, you can change behavior dynamically at runtime.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) How does Java 8's default method implementation in interfaces impact backward compatibility?",
+        "answer": "Existing classes implementing the interface need not implement the newly added default method, maintaining backward compatibility.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "\"",
+        "answer": "This principle suggests that interfaces should be segregated into smaller, more focused units, preventing implementing classes from being forced to provide unnecessary methods.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How do interfaces support loose coupling and high cohesion in software design?",
+        "answer": "Interfaces decouple classes from each other, promoting modularization and reducing dependencies between components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "SPI is a design pattern where an interface is provided by a framework, and different implementations can be plugged in using configuration files or other mechanisms.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) Can you provide an example of a real-world scenario where interfaces are used effectively?",
+        "answer": "Database connection management libraries use interfaces to define a common contract for different database implementations, promoting code portability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is the significance of interface-based design in large software projects?",
+        "answer": "Interface-based design encourages modularization, simplifies testing, and makes it easier to replace or extend components without affecting other parts of the system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Interfaces allow extending behavior without modifying existing code, supporting the open-closed principle by promoting code extension through new implementations rather than modification.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Default methods were introduced in Java 8 to allow the addition of new methods to interfaces without breaking compatibility with existing classes that implement those interfaces. Default methods provide default implementations that can be optionally overridden by implementing classes. This prevents the need for all implementing classes to immediately provide implementations for the new methods.\ninterface Shape {  \n    double calculateArea();  \n      default void printDescription() {  \n        System.out.println(\"This is a shape.\");  \n    }  \n}  \nclass Circle implements Shape {  \n    double radius;  \n      Circle(double radius) {  \n        this.radius = radius;  \n    }  \n    public double calculateArea() {  \n        return Math.PI * radius * radius;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    }
+]

@@ -1,0 +1,187 @@
+[
+    {
+        "question": "1) What is Adobe AEM? / What do you understand by AEM?",
+        "answer": "Adobe AEM, also known as AEM, stands for Adobe Experience Manager. It is a comprehensive content management solution used for building websites, mobile apps, and forms. It is used to make your marketing content and assets easily manageable. AEM is based on the concepts of Apache Sling, a Java application based on OSGi using the Apache Felix engine. It is also a part of the Adobe Marketing Cloud.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The architecture of AEM can be divided into the following stacks from the lowest to the highest level.\n\nJava Platform\nA Java Platform is necessary for AEM. AEM or Adobe Experience Manager is a Java web application requiring a server-side Java Runtime Environment (JRE). It requires at least JRE 1.6 version, though JRE 1.7 is recommended for the best result.\nGranite Platform\nGranite is an open web stack of Adobe. It is required to form the technical foundation on which AEM is built.\nOSGi Framework\nOSGi is a dynamic software component system for Java. In this system, an application is composed of an assemblage of components, called bundles in OSGi terminology, which can be dynamically installed, started, stopped and uninstalled at runtime, without shutting down and restarting the entire application. In a running AEM instance, bundle management is provided through the AEM Web Console at http://:/system/console/bundles.\nServlet Engine\nAt the time of quickstart installation, the built-in CQSE servlet engine runs as a bundle within the OSGi framework. In a war file installation servlet handling is delegated to a third-party application server. AEM includes a built-in servlet engine (CQSE) which runs as a bundle within the OSGi framework when AEM is deployed via the standalone quickstart jar file.\nJCR Content Repository\nJCR stands for Java Content Repository. All the data within AEM is stored in the built-in CRX content repository, which implements the Java Content Repository Specification. All data in AEM is stored in its built-in content repository.\nADVERTISEMENT\nThe repository built within the AEM is called CRX.\nCRX is Adobe's implementation of the Content Repository Specification for Java Technology 2.0.\nSling Content Delivery\nSling is a web application framework based on REST principles providing easy development of content-oriented applications. Sling uses a JCR repository, such as Apache Jackrabbit, or in the case of AEM, the CRX Content Repository, as its data store. AEM is built using Sling.\nAEM modules\nAEM runs within the OSGi framework on the Granite platform. Some individual AEM modules are WCM, DAM, Workflow, etc.\nCustomer Applications\nCustomer Applications run on AEM within the OSGi framework.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the main features of AEM?",
+        "answer": "Following is the list of main features of AEM:\nAEM provides an easy way to navigate through the different pages, assets, templates and elements in the web page.\nAEM new template editor consists of many features which allow the users to create and manage their personalized templates. You can easily drag and drop, make the forms with the help of HTML5 functionality. It makes the whole process easier.\nThe AEM latest features are associated with Livefyre and provide better content development and social media marketing.\nIn AEM, the multi-site manager provides a seamless launching of online campaigns for international brands. It can very easily target the local markets and customers.\nAEM provides a unified User Interface that allows better personalization for all.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is AEM testing? / What do you understand by AEM testing?",
+        "answer": "AEM provides a testing framework called Bobcat for automating testing for the User Interface. This is an open-source test automation framework used for the functional testing of web applications. It lets you write and run UI tests directly in a web browser by using this framework that provides a JavaScript API for creating tests. AEM testing also uses a testing library or framework called Hobbes.js written in JavaScript. The main motive behind developing the Hobbes.js framework was to test AEM as a part of the development process. It is now freely available for public use for testing the AEM applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the similarities and differences between AEM and Sitecore CMS?",
+        "answer": "Sitecore CMS is one of the leading enterprise-level content management systems built on ASP.NET. Both Sitecore CMS and AEM offer asset management and content management features, but AEM also provides workflow management functionality. We can compare the AEM and Sitecore CMS on the following criteria:\nComparison parameter AEM Sitecore CMS\nCost-Effective AEM is highly cost-effective. Sitecore CMS is also highly cost-effective.\nComplexity The complexity in AEM is high. The complexity in Sitecore CMS is also high.\nFeatures All the features of a good CMS are available in AEM. All the features of a good CMS are also available in Sitecore CMS.\nIntegration AEM is easy to access. Easy to access Sitecore CMS is easy to access.\nCMS Support AEM can support Multiple User Access Sitecore CMS also supports Multiple User Access\nSecurity Security is very high in AEM. Security is also very high in Sitecore CMS.\nCustomization AEM is customizable but moderately. Sitecore CMS is highly customizable.\nSingle platform support AEM supports a single platform. Sitecore CMS does not support a single platform.\nUser Experience AEM provides a good User Experience. Sitecore CMS also provides a good User Experience.\nBuilt-in AEM is based on the OSGi-based Apache Sling, a Java application that uses the Apache Felix engine. Sitecore CMS is based primarily on the .NET programming language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What do you understand by Sitecore CMS?",
+        "answer": "Sitecore CMS is one of the leading enterprise-level content management systems built on ASP.NET. It facilitates the web content editors and marketers to have full control over all aspects of their website, from social integration and blog posts to advanced personalization, eCommerce and more. Many organizations use this leading digital experience software globally to create seamless, personalized digital experiences. It is an integrated platform powered by .net CMS, commerce and digital marketing tools.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is Sightly in AEM?",
+        "answer": "Sightly is an HTML templating language that was introduced in AEM 6.0. It was mainly introduced to take the place of JSP files and as an approved templating system for HTML.\nSightly works as a new HTML templating engine and replaces the JSP and ESP as the predominant templating engine for AEM 6. Adobe has launched Sightly to produce more readable, maintainable, and secure code while distinctly separating the logic and markup.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are the advantages of AEM CMS CQ5 over another CMS?",
+        "answer": "Following is a list of some great advantages of AEM CMS CQ5 over another CMS:\nOne of the biggest advantages of AEM CQ5 over another CMS (Content Management System) is its integration with other products from Adobe and with the Adobe Marketing Cloud.\nAEM can create custom digital experiences personalized to the individual user.\nAEM provides best-in-class features such as content workflows, digital asset management, social and multi-channel collaboration, etc.\nAEM allows users to manage digital content easily and effectively.\nAEM is far beyond simple website management. It provides an impressive solution to managing mobile applications, mobile websites, eCommerce, and marketing campaign management.\nAEM is complemented with other Adobe Marketing Cloud solutions and provides a path forward for digital marketing.\nBy default, AEM comes with built-in features such as workflows to control content in the CMS, the use of search queries to find anything you are looking for, setting up social collaboration, tagging content, and a way to manage your digital content easily.\nAEM also provides a way to manage mobile applications, mobile websites, e-commerce, and marketing campaign management.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the technology stack behind the Adobe Experience Manager (AEM)?",
+        "answer": "The technologies stack behind the Adobe Experience Manager or AEM are listed below:\nApache Sling\nJCR\nOSGi (Apache Felix)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is the Adobe Marketing Cloud? / What is the Adobe Experience Cloud?",
+        "answer": "Adobe Marketing Cloud is now known as Adobe Experience Cloud. Formerly, it was known as Adobe Marketing Cloud. It is a collection of integrated online marketing and web analytics products introduced by Adobe Inc. to provide a one-stop solution for all customers. It is a set of analytics, social, advertising, media optimization, targeting, Web experience management and content management products tools aimed at the advertising industry and hosted on Amazon Web Services.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the difference between Design Dialog and Edit Dialog?",
+        "answer": "Both Design Dialog and Edit Dialog are used to define the UI interface and allow the user to configure the component. The main difference between them is that we can see or edit the Design Dialog of a component in the design mode of the page. The design dialog is at template level, so all the template pages will share the same design dialog and be stored under the/etc/designs folder.\nOn the other hand, the edit dialog of a component is at page level so that each component instance will have its own dialog and information entered in the dialog. It is stored under /content folder.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is a component? What do you understand by extending a component?",
+        "answer": "A component is a reusable module used to implement certain logic to render the website content. When you want to create a new component that will not override a base component but will have the same features as the original component to build upon that, then this process is called extending a component. To extend a component, you must set the \"sling: resourceSuperType\" of the component to the base component you would like to continue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What script should be included in the display sidekick?",
+        "answer": "The script that should be included in the display sidekick is: Init.jsp. It is included in the script file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How does a dispatcher perform load balancing activity in AEM?",
+        "answer": "In AEM, a dispatcher performs the load balancing activity by executing the following steps:\nPerformance Statics\nSticky Connections\nIncreased fail-safe coverage\nProcessing Power\nBy classifying the above parameters, the load balancers work efficiently.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What do you understand by replication agent in AEM?",
+        "answer": "In AEM, the replication agents are central and used to publish dynamic content from the author environment to the publish environment, flush content from the dispatcher cache, and return user input from the publish environment to the author environment.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the difference between package and bundle?",
+        "answer": "Package: A Package is a zip file that contains the content in the form of a file-system serialization (also called \"vault\" serialization). It displays the content from the repository and is an easy-to-use-and-edit representation of files and folders. A package generally contains content and project-related data.\nBundle: A bundle is a tightly coupled, dynamically loadable collection of classes, jars, and configuration files that explicitly declare their external dependencies if they have any.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What are the all available interfaces in Adobe Experience Manager (AEM)?",
+        "answer": "Following is the list of all available interfaces in Adobe Experience Manager (AER):\nCRX Delite\nSite Admin\nApache Felix\nEtc/Tool\nCRX Explorer",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is the requirement of a content management system in AEM or CQ?",
+        "answer": "A CMS or Content Management System is required in AEM or CQ because nowadays websites are very dynamic, and we have to update the content very frequently, So, it is easier to manage the content of such websites using a CMS.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the role of the AEM Dispatcher?",
+        "answer": "AEM Dispatcher is a caching and/or load balancing tool used to protect our AEM server from attack since it uses cached pages. The main goal of the dispatcher is to cache content as much as possible, so it does not need to access the layout engine. Load balancing is used to distribute the computational load of the website across several instances of AEM. The dispatcher acts as a load balancing tool to achieve increased processing power since the dispatcher shares document requests between several instances of AEM and has increased fail-safe coverage. If the dispatcher does not get responses from an instance, it will automatically relay the request to another instance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the difference between sightly and other templating systems?",
+        "answer": "Sightly is different from other templating systems in the following three ways:\nSightly is secure by default because it automatically filters and escapes all variables to the presentation layer to prevent cross-site-scripting vulnerabilities and offers separation of concerns.\nSightly offers separation of concern because it ensures that a real programming language is used to express the corresponding logic. This is achieved through the Use-API pattern.\nSightly is a valid HTML5 file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the difference between a live copy and a language copy?",
+        "answer": "Following are the differences between a live copy and a language copy:\nLive Copy: A live copy is created from an existing site or blueprint. We can configure the rollout configurations for this Live Copy from the tool's console.\nLanguage Copy: A language copy is a site created using a language tool. It is basically used to create a site for different languages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the role of Persistence Manager in AEM?",
+        "answer": "The role of Persistence Manager in AEM is to save the repository content to a permanent storage solution, such as the file system or a database. We can use any of the following DBs, i.e. DB2, Oracle, SQL Server, MySQL, to store content.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the use of the Edit Config node in creating a component?",
+        "answer": "The Edit Config node is used to define the behaviour of the component while creating a component.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What do you understand by DAM Renditions?",
+        "answer": "DAM lets users create renditions of an image, including different sizes and versions of the same asset. We can use these renditions in the content of our website, which is beneficial when we have to create thumbnails or smaller views of large, high-resolution images.\nThis feature becomes very important when we have to create multi-device websites where internet bandwidth is a varying concern. Here, we have to minimize the size of the files a site visitor has to download to make our site load faster. It also improves search engine optimization and the user experience.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) How can you load digital assets in a DAM?",
+        "answer": "There are two ways to add digital assets in a DAM:\nUsing the graphical user interface: To use the graphical user interface, you must first browse for the selected files you want to add. Then, CQ will automatically create the metadata for those assets in the DAM folder.\nThrough the WebDav access: The WebDav option is generally used when we want to upload many assets at once.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are xtypes, and why are they used in AEM?",
+        "answer": "The xtype is a symbolic name given to a class in the ExtJS language. AEM consists of several useful widgets. In AEM, xtypes are widgets that are used in the creation of components. We can create and define our xtype to use in AEM.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) How can you resolve a resource in AEM?",
+        "answer": "In AEM, we can resolve a resource using ResourceResolver, which we can get from the method getResourceResolver() and then use the resolve() method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What do you understand by Adaptive Form and Adaptive Documents?",
+        "answer": "Adaptive forms facilitate end-users to focus on filling out the form and break down a form into logical sections. Adaptive Forms are generally used when we require taking input from users.\nOn the other hand, Adaptive Documents are used to display output to the end-users. For example, a bank statement is an adaptive document as all its content remains the same and only name and amount change. In Adaptive Documents, placeholder text is used, which is filled dynamically at run time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3?",
+        "answer": "AEM 6.3 or Adobe Experience Manager 6.3 is the upgraded release to the Adobe Experience Manager 6.2 codebase. It has included some new and enhanced functionality, key customer fixes, high priority customer enhancements and general bug fixes oriented toward product stabilization. It has also included all Adobe Experience Manager 6.2 feature packs, hotfixes, and service pack releases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) Is it possible to use TestNG for automating the AEM UI test?",
+        "answer": "Yes. It is possible to use TestNG to automate the AEM UI test because TestNG supports automating AEM UI tests.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5?",
+        "answer": "AEM 6.5 is the latest release of Adobe Experience Manager. This new release has some great features included, such as it is more customer-focused. It enables developers, marketers and IT experts to work together on the quick conveyance of customized brand experience.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What do you understand by custom tag libraries in AEM?",
+        "answer": "The custom tag libraries are developed using AEM to call or invoke its actions from an AEM component. These actions can be invoked using XML code.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What is HTL in AEM, and why is it used?",
+        "answer": "HTL stands for HTML Template Language. It is associated with Adobe Experience Manager (AEM) and is the preferred and recommended server-side template system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is Sling TV?",
+        "answer": "Sling TV is an app-based service that facilitates users to watch live TV and programs that they can record on their DVR, such as cable TV. It also facilitates you to pick and choose which channels and features you want to see. It requires internet access and a compatible device, and you can watch TV.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How can you start AEM in debug mode?",
+        "answer": "You can start the AEM in debug mode by using the following code in the command line:\nnofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123''",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is an overlay in AEM?",
+        "answer": "In AEM, an overlay is a process of redefining the existing functionality and a way to customize it. We can make it a custom component by modifying the current foundation component according to requirements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is Adobe Marketing Cloud or AMC?",
+        "answer": "AMC stands for Adobe Marketing Cloud. It is a platform provided by Adobe and one of the leaders in the digital marketing world. Adobe Marketing Cloud provides a great creative capability with newly developed marketing functionalities and is a popular Adobe Web Analytic product. It is a fully integrated one-stop marketing suite to optimize and measure the campaigns and results of various scales' marketing performances and development of various scales and industries. It also helps you handle mobile, search, campaign, content, social, and email marketing. It was launched in 2012.",
+        "reference": "javatpoint.com"
+    }
+]

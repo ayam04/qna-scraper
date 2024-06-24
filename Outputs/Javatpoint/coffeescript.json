@@ -1,0 +1,157 @@
+[
+    {
+        "question": "",
+        "answer": "The CoffeeScript is a lightweight programing language that compiles into JavaScript. It is getting popular day by day because it provides better and more consistent syntax than JavaScript, still contains the flexibility and other advantages of JavaScript.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Who was the founder of CoffeeScript?",
+        "answer": "The CoffeeScript was designed and developed by Jeremy Ashkenas in December 2009.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What was the primary purpose behind the invention of CoffeeScript?",
+        "answer": "The primary purpose of CoffeeScript was to remove all the rough edges from JavaScript and provides a smooth way of programming in JavaScript. Using CoffeeScript, we can also create classes and inherit them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Which languages have the most impact on CoffeeScript?",
+        "answer": "Python, Ruby, and Haskell have inspired the CoffeeScript. It adopts syntax & coding styles from them, which makes it unique and useful.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the basic rules to remember for CoffeeScript?",
+        "answer": "You must remember these rules for CoffeeScript:\nADVERTISEMENT\nYou don't need to use curly braces in CoffeeScript.\nNo need of parenthesis for defining a function which has arguments.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is a list of advantages of CoffeeScript over JavaScript:\nLess coding: A CoffeeScript's program contains very less code than the same JavaScript?s program. It facilitates you to use less code for the same task.\nLight-weighted: CoffeeScript is light-weighted, small programming language. It contains very lightweight add-ons such as Ruby string Interpolation.\nReliable: The CoffeeScript is a programming language which is safe for writing dynamic programs.\nReadable and easy to maintain: CoffeeScript provide aliases for the operators which makes the code easy to understand and manage.\nInheritance: JavaScript does not support class-based inheritance whereas CoffeeScript offers class-based inheritance to the programmer to implement inheritance.\nNo var keyword: In javascript, we have to use the var keyword to create variables, whereas in CoffeeScript there is no need to use the var keyword to create variables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following are some disadvantages of using CoffeeScript over javascript:\nSensitive to whitespaces: CoffeeScript is very sensitive to whitespaces. Programming should be careful of using proper indentations. If the programmer could not maintain the appropriate indentation, then the entire code may go wrong.\nCompilation time required: CoffeeScript needs to be compiled first to the javascript which takes some time and efforts of the computer. Every time CoffeeScript is compiled in javascript code to execute its functionality in the browser.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the difference between variables in CoffeeScript and JavaScript?",
+        "answer": "In JavaScript, it is required to declare a variable using the var keyword and initialize it. However, in CoffeeScript, we can create a variable directly, by assigning the value to a literal such as: -\nname=variable value",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The syntax of CoffeeScript's function is more straightforward than JavaScript's function. In CoffeeScript, you have to define function expressions. The function keyword is not used in CoffeeScript. Instead of this, you have to use an arrow symbol (->).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Why is CoffeeScript getting popularity day by day?",
+        "answer": "The CoffeeScript is the 11th most popular language in Github. Its primary purpose is to produce efficient JavaScript without writing much code. It also focuses on highlighting all the functional aspects of JavaScript with a simple syntax.\nReasons behind the popularity of CoffeeScript:\nVery Little Coding is required when programming in CoffeeScript as compared to JavaScript.\nCoffeeScript includes all the useful features of JavaScript.\nYou can use any existing JavaScript library seamlessly with CoffeeScript.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the disadvantages of CoffeeScript?",
+        "answer": "CoffeeScript includes an additional compilation step during compilation.\nOnly a few resources are available for this language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are transpilers in CoffeeScript?",
+        "answer": "In CoffeeScript, a tool is required to translate/ convert CoffeeScript codes into JavaScript. This tool is known as transpilers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is splat in CoffeeScript?",
+        "answer": "Splat is the term used for (...) operator for var-argument. Splatted arguments can come either before, after or between standard arguments.\nFor example, (first, rest ....)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the use of clone-function in CoffeeScript?",
+        "answer": "In CoffeeScript, clone function is used to clone or duplicate an instance of an object. Create a clone() method which returns a new instance with copied values.\nFor example:\nclone = (obj) -> return obj if obj is null or typeof (obj) isnt \"object\" temp = new obj.constructor() for key of obj temp[key] = clone(obj[key]) temp",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) Explain class methods in CoffeeScript?",
+        "answer": "In CoffeeScript, class objects are stored in the object itself rather than on the object prototype. It saves memory and gives a central location to store class-level values.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) How can you replace a portion of strings with another value?",
+        "answer": "You can use Regular Expression to match and replace a portion of a string with another value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the difference between copying an object through assignment and clone-function?",
+        "answer": "The main difference between copying an object through assignment and clone-function is the way they handle references. The assignment only copies the reference of the object while clone-function creates an entirely new object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How CoffeeScript interpolates the strings?",
+        "answer": "The concept of Interpolation in CoffeeScript is same as Ruby. Most expressions of CoffeeScript are valid inside the #{...} interpolation syntax.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How do Boolean works with CoffeeScript?",
+        "answer": "In CoffeeScript, \"True\" is generally represented as \"On\" or \"Yes\" and \"False\" is represented as \"Off\" or \"No\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How can you create and delete a missing function in CoffeeScript?",
+        "answer": "You can use the existential assignment operator (?=) to create and delete the missing function in CoffeeScript.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) Is it possible to bind parameters to properties in CoffeeScript?",
+        "answer": "Yes, You can bind parameters to properties in CoffeeScript by using @ shorthand. It can also be used to define class functions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How can you map an array in CoffeeScript?",
+        "answer": "You can map an array in the object by using map() with an anonymous function in CoffeeScript. For\nsimple mapping, the list comprehension is more useful, because CoffeeScript directly support list comprehensions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How can you use arrays to swap variables?",
+        "answer": "You can use CoffeeScript's destructuring assignment syntax to swap variables using the array. It allows exchanging two values without the use of a temporary variable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) Why are Essential Operators are used in CoffeeScript?",
+        "answer": "Existential Operators are used in CoffeeScript for the following reasons:\nTo check the existence of a variable.\nFor conditional assignment.\nFor function chaining.\n25) What is String interpolation in CoffeeScript? Give an example.\nThe CoffeeScript provides a feature known as string interpolation used to include variables in the string. Ruby programming language inspires this feature.\nSyntax: String = \"This is a string #{variable_name}\"  \nString interpolation is done using the above syntax. Using double quotes \"\", Hashtag #, and a pair of curly braces {}.\nFor example:\nname = \"Raju\"  \nage = 26  \nmessage =\"Hello #{name} your age is #{age}\"  \nconsole.log message  \nOn compiling the above coffeeScript code compiler will generate the corresponding javascript:  \n// Generated by CoffeeScript 1.10.0  \n(function() {  \n  var age, message, name;  \n    name = \"Raju\";  \n    age = 26;  \n    message = \"Hello \" + name + \" your age is \" + age;  \n    console.log(message);  \n  }).call(this);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The CoffeeScript provides a feature known as string interpolation used to include variables in the string. Ruby programming language inspires this feature.\nSyntax: String = \"This is a string #{variable_name}\"  \nString interpolation is done using the above syntax. Using double quotes \"\", Hashtag #, and a pair of curly braces {}.\nFor example:\nname = \"Raju\"  \nage = 26  \nmessage =\"Hello #{name} your age is #{age}\"  \nconsole.log message  \nOn compiling the above coffeeScript code compiler will generate the corresponding javascript:  \n// Generated by CoffeeScript 1.10.0  \n(function() {  \n  var age, message, name;  \n    name = \"Raju\";  \n    age = 26;  \n    message = \"Hello \" + name + \" your age is \" + age;  \n    console.log(message);  \n  }).call(this);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is string concatenation in CoffeeScript? How is it done?",
+        "answer": "In CoffeeScript, we can easily concatenate two strings by using + operator between the two strings.\nFor example:\nnew_string = \"Hello how are you \"+\"Welcome to Javatpoint\".  \nconsole.log new_String  \nOn compiling the above CoffeeScript code compiler will generate corresponding javascript code as follows:  \n// Generated by CoffeeScript 1.10.0  \n(function() {  \n  var new_string;  \n    new_string = \"Hello how are you \" + \"Welcome to Tutorialspoint\";  \n    console.log(new_String);  \n  }).call(this);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The string object of javascript helps you work with the series of characters. String object provides various of methods to perform various operations in strings.\nWe can use the javascript library in CoffeeScript code. Hence we can use all the methods of string object in javascript.\nFollowing are some of the methods of string object:\ncharAt(): This method returns the character at the given index value of a string object.\ncharCodeAt(): This method returns the Unicode value of the character at the given index.\nconcat(): This method combines two substrings and returns a superstring.\nindexOf(): This method returns the index of calling string having the first occurrence of a specified value, It will return -1 if not found.\nlastIndexOf(): This method returns the index of calling string having the last occurrence of a specified value, It will return -1 if not found.\nlocaleCompare(): This method returns a number representing whether a reference string comes before or after or is the same as given string in sort order.\nmatch(): This method is used to match a regular expression against a string.\nsearch(): This method executes a search for a match between the regular expressions in a specified string.\nslice(): Extract the section of a string object and returns a new string object.\nsplit(): Splits a string object into the array of strings by separating the string into substrings.\nsubstr(): This method returns the calling string beginning at the specified location through the specified number of characters.\ntoLocaleLowerCase(): Converts the calling string into the lower case while respecting the current locale.\ntoLocaleUpperCase(): Converts calling string into the upper case while respecting the current locale.\ntoLowerCase(): Returns calling string in lower case.\nToUpperCase(): Returns calling string in upper case.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The CoffeeScript provides a feature known as splat which is used to pass multiple arguments to a function.\nWe can use splats in functions by placing three dots after the variable name.\nFor example:\nindian_team = (first, second, others...) ->  \n  Captain = first  \n  WiseCaptain = second  \n  team  = others  \n  console.log \"Captain: \" +Captain  \n  console.log \"Wise captain: \" +WiseCaptain  \n  console.log \"Other team members: \" +team  \n  #Passing 4 arguments  \nconsole.log \"############## Four Players ############\"  \nindian_team \"Mahendra Singh Dhoni\", \"Virat Kohli\", \"Shikhar Dhawan\", \"Rohit Sharma\"  \n  #Passing 6 arguments  \nconsole.log \"############## Six Players ############\"  \nindian_team \"Mahendra Singh Dhoni\", \"Virat Kohli\", \"Shikhar Dhawan\", \"Rohit Sharma\", \"Gurkeerat Singh Mann\", \"Rishi Dhawan\"  \n    #Passing full squad  \nconsole.log \"############## Full squad #############\"  \nindian_team \"Mahendra Singh Dhoni\", \"Virat Kohli\", \"Shikhar Dhawan\", \"Rohit Sharma\", \"Gurkeerat Singh Mann\", \"Rishi Dhawan\", \"Ravindra Jadeja\", \"Axar Patel\", \"Jasprit Bumrah\", \"Umesh Yadav\", \"Harbhajan Singh\", \"Ashish Nehra\", \"Hardik Pandya\", \"Suresh Raina\", \"Yuvraj Singh\", \"Ajinkya Rahane\"  \nExplanation of the above example:\nIn the above case of spats, multiple arguments were being passed to the function. By placing three dots after the argument list of the function indian_team. In the first pass we have passed four arguments to the function, in the second pass we have passed six arguments to the function, and in the last pass, we had passed the names of the full squad to the function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The splats with tailing argument refer to the argument placed after the splat argument.\nFor example:\nindian_team = (first, second, others...., last) ->  \n  Captain = first  \n  WiseCaptain = second  \n  team  = others  \n  Wicketkeeper =last  \n  console.log \"Captain: \" +Captain  \n  console.log \"Wise captain: \" +WiseCaptain  \n  console.log \"Wicket keeper is:\"+last  \n  console.log \"Other team members: \" +team    \n    squad = [  \n   \"Mahendra Singh Dhoni\"  \n   \"Virat Kohli\"  \n   \"Shikhar Dhawan\"  \n   \"Rohit Sharma\"     \n   \"Gurkeerat Singh Mann\"  \n   \"Rishi Dhawan\"  \n   \"R Ashwin\"  \n   \"Ravindra Jadeja\"  \n   \"Axar Patel\"  \n   \"Jasprit Bumrah\"  \n   \"Umesh Yadav\"  \n   \"Harbhajan Singh\"  \n   \"Ashish Nehra\"  \n   \"Hardik Pandya\"  \n   \"Suresh Raina\"  \n   \"Yuvraj Singh\"  \n   \"Ajinkya Rahane\"  \n ]  \nIn the above example of using tailing with splats, we have placed an additional argument to the argument list of the indian_team function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Within the function, we can also iterate the elements of a splat using comprehensions as shown in the following example. Save this code in a file with the name splats_comprehensions.coffee\nindian_team = (first, second, others...) ->  \n  Captain = first  \n  WiseCaptain = second  \n  team  = others  \n  console.log \"Captain: \" +Captain  \n  console.log \"Wise captain: \" +WiseCaptain  \n  console.log \"Other team members:: \"  \n  console.log member for member in others  \n  squad = [  \n   \"Mahendra Singh Dhoni\"  \n   \"Virat Kohli\"  \n   \"Shikhar Dhawan\"  \n   \"Rohit Sharma\"     \n   \"Gurkeerat Singh Mann\"  \n   \"Rishi Dhawan\"  \n   \"R Ashwin\"  \n   \"Ravindra Jadeja\"  \n   \"Axar Patel\"  \n   \"Jasprit Bumrah\"  \n   \"Umesh Yadav\"  \n   \"Harbhajan Singh\"  \n   \"Ashish Nehra\"  \n   \"Hardik Pandya\"  \n   \"Suresh Raina\"  \n   \"Yuvraj Singh\"  \n   \"Ajinkya Rahane\"  \n ]  \n  indian_team squad...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "We can use the javascript library in CoffeeScript code. Hence we can use all the methods of math object in javascript.\nFollowing are some math function present in the math object:\nabs(): This function returns the absolute value of a number.\nacos(): This function returns arccosine (in radians) of a number.\nasin(): This function returns arcsine (in radians) of a number.\natan(): This function returns arctangent (in radians) of a number.\natan2(): This function returns arctangent of the quotient of its arguments.\nceil(): This function returns the smallest integer greater than or equal to the given number.\ncos(): This function returns the cosin of the given number.\nexp(): This function returns EN, Where N is the argument, and E is the Euler's constant, the base of the natural logarithm.\nfloor(): This function returns the largest integer less than equal to the number.\nlog(): This function returns natural logarithm (base E) of a number.\nmax(): This function returns largest of zero or more numbers.\nmin(): This function returns the smallest of zero or more numbers.\npow(): This function returns the base exponent of the given number.\nrandom(): This function returns the pseudo-random number between 0 and 1.\nround(): This function returns the value of the number rounded to the nearest integer.\nsin(): This function returns the sine of the given number.\nsqrt(): This function returns the square root of the specified number.\ntan(): This function returns the tangent of the specified number.",
+        "reference": "javatpoint.com"
+    }
+]

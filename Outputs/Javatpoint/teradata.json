@@ -1,0 +1,152 @@
+[
+    {
+        "question": "1) What is Teradata? What are some primary characteristics of Teradata?",
+        "answer": "Teradata is an RDBMS (Relational database management system) which is perfect to use with large-scale data warehousing application. It works on the parallelism concept. It is an open system. It can run on Windows/ UNIX/ Linux server platform. Teradata provides support to multiple data warehouse operations at the same time to different clients.\nIt is developed by an American IT firm called Teradata corporation. It is a dealer of analytic data platforms, applications, and other related services.\nCharacteristics of Teradata\nADVERTISEMENT\nIt is compatible with the American National Standards Institute (ANSI).\nIt acts in a way as a server does.\nIt is an open system.\nIt is single.\nIt has multi-node running capabilities.\nIt is built on parallelism.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the different table types supported by Teradata?",
+        "answer": "There are four types of tables as per data storage in Teradata:\nPermanent table\nGlobal Temporary Table (GTT)\nVolatile table\nDerived table\nPermanent Table\nThese are the Default table types in Teradata. Some of its characteristics are as follows.\nAs its name suggests these tables remains in the system until it is dropped.\nData is stored in a stable space.\nThe permanent table definition is stored in the data dictionary.\nGlobal Temporary Tables\nGlobal Temporary tables are also another kind of permanent tables. These tables are used to store the globally used values throughout the application, and the lifetime is limited to the user session. Once the user session is over, the table will be dropped.\nThe global temporary table definition is stored in the data dictionary\nData is stored in temporary space\nCollect statistics supported.\nVolatile Tables\nVolatile tables are used to store the user session data only. At the end of a particular user session, the table will drop. Volatile tables are essential to store in-between data during data transmission or in complex calculations.\nDerived Tables\nDerived tables have the smallest lifetime among all the tables. These tables hold the intermediate results during the query execution. These tables are created, used and dropped within a query.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is the difference between Teradata and Oracle?",
+        "answer": "The Teradata and Oracle both are the Relational database management systems. However, Oracle supports an Object-Relational Database Management System (ORDBMS).\nLet's check out some differences between Teradata and Oracle based on the following parameters.\nArchitecture\nOracle is Shared Everything Architecture whereas Teradata is Shared Nothing (SN) Architecture.\nHere the term Shared architecture is referred to a multiprocessor database management system where memory and disk storage is shared between the processors.\nParallelism\nOracle has conditional parallelism whereas Teradata has unconditional parallelism. It gives Teradata advantage over OLAP, which results in the exceptional performance than a non-parallel system. Parallelism needs a multi-processor system.\nScalability\nScalability contains several aspects of an IT infrastructure such as data handling ( Increases in Data and transactional volume) as well as the increase in multidimensional data, number of users, query complexity, etc.\n\nTeradata is Linearly Scalable. Linearly scalable means the database capacity can be increased by adding more nodes to the infrastructure, and when the data volume increases, performance is not affected.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the Updated features of Teradata?",
+        "answer": "Some of its newly developed features are as follows.\nAutomated temporal analytics.\nJavaScript object Notation\nTeradata QueryGrid\nXML Data Type\nPerformance\nData Compression\nCustomer associated innovation like Teradata viewpoint.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the Multi-insert?",
+        "answer": "Inserting data records into the table using more than one insert statements are referred to as Multi-insert. We can achieve it by putting a semicolon in front of the keyword INSERT in the next statement rather than terminating the first statement with a semicolon.\nInsert into Cname \"select * from customer\";\nInsert into amount \"select * from customer\";",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is BTEQ utility in Teradata?",
+        "answer": "BTEQ utility is the most powerful utility in Teradata. It is useful for both batch and interactive mode. It can also be used to run any DDL statement, DML statement, Create macros, and stored procedures. One another important use of BTEQ Is to import data into Teradata tables from a flat-file. It is also useful for extracting data from tables into files or reports.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are some commonly used BTEQ scripts?",
+        "answer": "Some commonly used BTEQ scripts are as follows.\nLOGON: It is used to log into the Teradata system.\nACTIVITYCOUNT: It returns the number of rows affected by the most recently used query.\nERRORCODE: It returns the status code of the most recently used query.\nDATABASE: It sets the default database.\nLABEL: It assigns a label to a set of SQL commands.\nRUN FILE: It executes the query contained in a file.\nGOTO: It transfers control to a label.\nLOGOFF: It logs off from the database and terminates all sessions.\nIMPORT: it specifies the input file path.\nEXPORT: It specifies the output file path and initiates the export.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the difference between fastload and multiload? Which one is faster?",
+        "answer": "Fastload uses multiple sessions to rapidly load a large amount of data on an empty table, while Multiload is used for high-volume maintenance on tables and views. Multiload works with non-empty tables also. Multiload can use a maximum of five tables.\nIf we talk about the faster one, then Fastload is faster than multi-load.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the difference between Teradata and basic RDBMS?",
+        "answer": "Teradata Basic RDBMS\nIt has a large number of different destinations Basic RDBMS has a lack of various destinations.\nSource operation is allowed in Teradata. It is not necessary that source operation is always allowed in basic RDBMS.\nComponents can be reused for any number of times. Reusability of components is limited.\nDebugging is easy in Teradata. Debugging is complicated.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Explain AMP in Teradata?",
+        "answer": "AMP is an integral part of Teradata Architecture. The term AMP stands for Access module Processor. It stores the data on the disks. AMP is a part of the following activities.\nIt manages a portion of the database\nIt maintains a part of each table.\nIt accomplishes all the tasks associated with generating result set such as sort, join, and aggregation.\nIt performs space and lock management.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is SMP and MPP platforms?",
+        "answer": "SMP technology is related to hardware. The hardware that supports Teradata database software is based on SMP (Symmetric multiprocessing) technology. The hardware can be combined with a communications network that connects the SMP systems to form MSP (Massively Parallel Processing) systems.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Explain some differences between MPP and SMP?",
+        "answer": "MPP\nMPP (Massively Parallel Processing) is a Computer system which is attached to many independent arithmetic units or entire microprocessors that run in parallel.\nDatabases can be expanded by adding additional CPUs.\nAn MPP environment does not share resources among physical computers, so the performance in MPP environment is improved.\nPerformance of an MPP system is linear, so it increases in proportion to the number of nodes.\nSMP\nIn an SMP (Symmetric Multi-Processing) processing system, the CPU shares the same memory. So the result code running in one system may affect the memory used by another.\nSMP databases usually use one CPU to perform database searches.\nThe workload for a parallel task is allocated across the processors in the system.\nSMP databases can run on several servers. However, they will share another resource.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) Did You Write Stored Procedures In Teradata?",
+        "answer": "No, because the stored procedures become a particular AMP operation and no company will encourage that.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What Is the Use of having Index on Table?",
+        "answer": "Index table facilitates with the faster and efficient search of the record.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How to find duplicates in a Table?",
+        "answer": "To find the duplicates in a table, Group by those fields and select id, count(*) from table group by id having count (*) > 1.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) Why managing the data is important?",
+        "answer": "Data is the ultimate source of deriving useful information. With data, many important tasks such as business management, problem formulation, decision making, and many other valuable tasks can be accomplished easily. When the data is not managed, then there are substantial chances that the user will get the errors. A well-managed data always allows users to save time, and to analyze things easily. There are a lot of other reasons as well due to which data management is important.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What exactly do you know about Catching in Teradata?",
+        "answer": "It is an add-on feature in Teradata which let the users to share the cache easily with all the applications because it works closely with the source and even let the users mound the outcomes in the manner they are comfortable with. This approach saves time when the data is complex and contain so many errors associated with them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How you will check the version of Teradata?",
+        "answer": "It can be checked with the following command\n\".SHOW VERSION\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Explain the Parallel Data Extension in Teradata?",
+        "answer": "PDE is a software interface layer that lies between the Teradata Database and operating system. PDE supports the parallelism through system nodes. It contributes to Teradata Database speed and linear scalability. Many utilities like diagnostic and troubleshooting work at the PDE level.\nPDE tools are a collection of PDE utilities that come with Teradata Database. They are not listed in Utilities because PDE tools have online documentation accessible from a system console using the \"pdehelp\" and \"man\" commands.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the use of FALLBACK?",
+        "answer": "FALLBACK is a unique feature used by Teradata to handle AMP failures. It protects data in case of AMP vproc failure. Fallback is very useful for the application that requires high availability.\nFall back is automatic; it is enabled by default when you deploy a Teradata database. The fallback setting can't be overridden during or after table creation. Fallback is transparent; it protects data by storing a second copy of each row of a table on any other AMP in the same cluster. Fallback facilitates with AMP fault tolerance at the table level.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is Database exceptions in Teradata?",
+        "answer": "Teradata Database deals with the same features that come with an on-premises Teradata Database system with the following exceptions:\nTeradata database data block read-ahead count is only 15 data blocks.\nTeradata database has a default PERM DB size for permanent tables is 254 sectors.\nTeradata database has a default WORK DB size for temporary tables is 254 sectors, sometimes referred to as SPOOL DB size.\nIn Teradata, one single transaction can consume 100% of FSG cache.\nTeradata Database 16.10 does not support Multiple Hash Maps feature in the public cloud.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) List out Teradata data types?",
+        "answer": "The list of some basic datatypes in Teradata is as follows.\nData Types Length (Bytes) Range of values\nBYTEINT 1 -128 to +127\nSMALLINT 2 -32768 to +32767\nINTEGER 4 -2,147,483,648 to +2147,483,647\nBIGINT 8 -9,233,372,036,854,775,80 8 to +9,233,372,036,854,775,8 07\nDECIMAL 1-16\nNUMERIC 1-16\nFLOAT 8 IEEE format\nCHAR Fixed Format 1-64,000\nVARCHAR Variable 1-64,000\nDATE 4 YYYYYMMDD\nTIME 6 or 8 HHMMSS.nnnnnn+HHMM or HHMMSS.nnnnnn\nCHAR Fixed Format 1-64,000\nTIMESTAMP 10 or 12 YYMMDDHHMMSS.nnnnnn +HHMM or YYMMDDHHMMSS.nnnnnn",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "And what are the available primary index types?",
+        "answer": "The technique to specify where the data exist in the Teradata is called primary index. Each table should contain a primary index specified, if not, Teradata will assign a primary index for the table. The main index provides faster data access and search.\nThere are two types of primary indexes in Teradata:\nUnique Primary Index(UPI)\nNon-Unique Primary Index(NUPI)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) Why is the CASE Expression used in Teradata?",
+        "answer": "CASE Expression is used to evaluate each case against a specific condition and returns the result based on the first match. When there is no case that will match condition, then else part will return.\nThe basic syntax of a CASE expression is as follows:\nCASE <expression>  \nWHEN <expression> THEN result-1   \nWHEN <expression> THEN result-2  \nELSE   \nResult-n   \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are the Joins in Teradata and How many types of Joins are there in Teradata?",
+        "answer": "Joins combine the record from more than one table using common columns or value.\nThere are seven types of joins associated with Teradata.\nInner Join\nInner joins combine the records from multiple tables and returns the value set that is common in both tables.\nLeft Outer Join\nLeft outer join returns all the records in the left table and only common records from the right table.\nRight Outer Join\nRight outer join returns all the records in the right table and only common records from the left table.\nFull Outer Join\nIt is a combination of Left Outer Join and Right Outer Join. It returns both common and distinct records from both the tables.\nSelf-Join\nSelf-join compares the value in a column with the other values in the same column of the table.\nCross Join\nCross join joins every row from the left table to every row in the right table.\nCartesian Production Join\nIt works the same as cross join.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is called Partitioned Primary Index (PPI) and discuss the advantages of using it in a query?",
+        "answer": "Partitioned Primary Index (PPI) is an indexing technique that allows for improving the performance of specific queries. Partitioned Primary Index (PPI) is defined within a table, and rows are sorted according to their partition number. Their row hash arranges records.\nAdvantages of Partitioned Primary Index (PPI):\nPPI helps to avoid a full table scan and only required partitions are accessed.\nPPI avoids using the secondary index, and it helps to prevent additional I/O maintenance.\nPPI allows Quick access to the subset of a large table.\nPPI facilitates with easy to drop old data and add new data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Database objects that are built using queries on tables are termed as views. The definition of view is stored permanently in the data definition. Data for the view is a dynamic process at the execution time.\n\nSyntax\nCREATE/REPLACE VIEW <viewname>  \nAS   \n<select query>;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Set operators are used to batch the result from multiple SELECT statements. Set operator is different from joins because joins batch the columns in multiple tables, but set operators batch multiple rows.\nGiven below are the four Set operators in Teradata:\nUNION\nUNION ALL\nINTERSECT\nMINUS/EXCEPT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is Upsert statement in Teradata?",
+        "answer": "In Teradata, we can combine the update and insert statement into a single statement. It is called an Upsert statement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What are the String Manipulation operators and functions associated with Teradata?",
+        "answer": "Teradata String functions are used for string manipulation. It concatenates strings and creates a single string. It also supports some standard string functions along with the Teradata extension to those functions.\nSUBSTR: It is used to extract only a portion of the long string depends on Teradata extension.\nSUBSTRING: It is used to extract only a portion of the long string depends on the ANSI extension.\nINDEX: It is used to locate a specific position of a character string depends on the Teradata extension.\nPOSITION: It is used to locate a specific position of a character string depends on the ANSI extension.\nTRIM: It trims blank from the specified string.\nUPPER: It converts the string to uppercase.\nLOWER: It converts the string to lowercase.",
+        "reference": "javatpoint.com"
+    }
+]

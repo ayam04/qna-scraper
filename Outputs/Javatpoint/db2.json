@@ -1,0 +1,227 @@
+[
+    {
+        "question": "",
+        "answer": "DB2 also known IBM Db2 is a relational database management system (RDBMS) product form IBM. It is designed to store, analyse and retrieve data efficiently.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Which components manage deadlocks in DB2?",
+        "answer": "Locking services are provided by Locking services component known as \"Internal Resource Lock Manager\" (IRLM) and manages concurrency issues and deadlocks.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How can you classify the locks in DB2?",
+        "answer": "Locks can be classified based on size, duration and mode.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) On which levels locks can be applied?",
+        "answer": "Locking can be applied on either of Page, table and table space.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) How many types of page locks can be held in DB2?",
+        "answer": "Three types of page locks can be held in DB2:\nADVERTISEMENT\nExclusive\nUpdate\nShare",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the use of COMMIT in DB2?",
+        "answer": "COMMIT is used to change the data permanently by commits the database changes occur in the current transaction and made that changes permanent.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the various data types available in DB2?",
+        "answer": "The data types available in DB2 are:\nSMALLINT\nINTEGER\nFLOAT\nDECIMAL\nCHAR\nVARCHAR\nDATE\nTIME",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the picture clause of Null indicator variable?",
+        "answer": "S9(4)COMP is the picture clause of a null indicator variable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the use of DB2 Optimizer?",
+        "answer": "DB2 Optimizer is used to process the SQL statement.\nDB2 Optimizer can be used to enhance the performance of SQL.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Which component is used to execute the SQL statements?",
+        "answer": "Database Services component is used to execute the SQL statement. It also manages buffer pool.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Which component is responsible for DB2 startup and shutdown?",
+        "answer": "System Services component is responsible for handling DB2 startup and shutdown.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is SQLCA?",
+        "answer": "SQLCA stands for Server Query Language Communication Area. Basically, it is a collection of variables that may be updated after the execution of every SQL statement.\n\nA program having SQL executable statement can provide maximum one SQLCA whereas in Java it is not applicable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the maximum length of SQLCA?",
+        "answer": "136 is the maximum length of the SQLCA.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The following three are the fields from SQLCA:\nSQLCODE\nSQLERRM\nSQLERRD",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is CHECK constraint in DB2?",
+        "answer": "Check constraint is a database rule that checks data integrity. Thus, only values from the domain for the attribute or column are allowed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is DB2 Bind?",
+        "answer": "DB2 bind is process that prepares an access path to the data. This access path is stored as a package in the DB2 catalogue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is DBRM?",
+        "answer": "DBRM stands for Database Request Module. It is a component inside DB2, which is created by the pre compiler of DB2. It contains SQL source statements that get extracted out of the application program. DBRMs form inputs that are helpful in the binding process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is buffer Pool?",
+        "answer": "Buffer pool is part of main memory space. This space is allotted by the database manager. It cache table and index data from the disk.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is data manager?",
+        "answer": "Data manager is a DB2 component that is responsible to manage physical database. It performs logging and locking by invoking other system components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What do you mean by storage group (STOGROUP)?",
+        "answer": "Storage group is a storage path where data can be stored. A table space can also be assigned to storage group.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the use of predicate?",
+        "answer": "Predicates are used to enhance the performance of query.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the physical storage length of TIME data type?",
+        "answer": "The physical storage length of TIME data type is 3 bytes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the physical storage length of DATE data type?",
+        "answer": "The physical storage length of TIME data type is 4 bytes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the physical storage length of TIMESTAMP data type?",
+        "answer": "TIMESTAMP data type takes 10 bytes and default is YYYY-MM-DD: HH: MM:SS-NNNNNN",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is DCLGEN (Declaration Generator)?",
+        "answer": "The declaration generator provides an SQL Declare Table statement and language like COBOL, C data declaration for a particular table or view.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the default page size of buffer pools?",
+        "answer": "The default page size of buffer pool is 4kb.\nBP0\nBP1\nBP2\nBP32",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) Which component is responsible for processing SQL statements and selecting access paths?",
+        "answer": "DB2 optimizer is used to select the access paths and for processing SQL statements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is concurrency in DB2?",
+        "answer": "Concurrency is the process in which more than one application can access the similar data at same time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) Which isolation level provides maximum concurrency?",
+        "answer": "Uncommitted read provides maximum concurrency.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) Which isolation level provides highest data integrity?",
+        "answer": "Repeatable Read provides highest data integrity as it holds page and lock the rows until a COMMIT point.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is RCT?",
+        "answer": "Resource Control Table (RCT) is controller that directs the CICS DB2 interface. Using DSNCRCT, RCT can produce a micro table.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What action DB2 takes when a program aborts in the middle of a transaction?",
+        "answer": "DB2 performs auto rollback when a program is aborted in the middle of some transaction.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) Where can you declare a cursor in a COBOL-DB2 program?",
+        "answer": "A cursor can be declared either in Working Storage Section or in Procedure Division also.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) How can you count the number of rows from a table TAB?",
+        "answer": "By applying the following query:\nSELECT COUNT(*) FROM TAB",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What is the maximum size of a CHAR data type in DB2?",
+        "answer": "The maximum size of a CHAR data type in DB2 is 254 bytes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the maximum size of VARCHAR data type in DB2?",
+        "answer": "The maximum size of a VARCHAR data type in DB2 is 4046 bytes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is SPUFI?",
+        "answer": "SPUFI stands for SQL Processor Using File Input.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is role in DB2?",
+        "answer": "In DB2, a role is an object of database that group various privileges together and can be assigned to groups or user by GRANT statement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is cursor stability in DB2?",
+        "answer": "Cursor stability ensures that any row that has been changed by activation group with a dissimilar commitment definition cannot be read before committing.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What is the reason behind not using SELECT * in Embedded SQL programs?",
+        "answer": "There are three reasons for not using SELECT * in embedded SQL programs:\nIf you change the table structure i.e. adding a field, the program will have to be modified.\nProgram can retrieve the columns which it might not use, leading an I/O overhead.\nThe chance of an index only scan is lost.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What is the usage of OPEN CURSOR command?",
+        "answer": "If you use the OPEN CURSOR command with ORDER BY clause, the rows are fetched, sorted and made available for the FETCH statement. Otherwise simply the cursor is placed on the first row.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What is the COBOL picture clause of the DB2 data types DATE, TIME, TIMESTAMP?",
+        "answer": "DATE: PIC X(10)\nTIME PIC X(08)\nTIMESTAMP PIC X(26)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) What is DCLGEN?",
+        "answer": "DCLGEN is stands for DeCLarations GENErator. It is used to create the host language copy books for the table definitions. It also creates the DECLARE table.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) What are the contents of a DCLMGEN?",
+        "answer": "EXEC SQL DECLARE TABLE statement which gives the layout of the table in terms of DB2 data type.\nA host language copy book that gives the host variable definitions for the column name.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What are the advantages of using a package?",
+        "answer": "The package provides following advantages:\nModularity\nEasy to design the applications\nBetter performance\nHiding information\nAdded functionality\nOverloading",
+        "reference": "javatpoint.com"
+    }
+]

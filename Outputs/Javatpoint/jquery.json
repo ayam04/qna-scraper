@@ -1,0 +1,172 @@
+[
+    {
+        "question": "1) What is jQuery?",
+        "answer": "jQuery is a fast, lightweight, feature-rich client-side JavaScript library. It is cross-platform and supports different types of browsers. It has provided a much-needed boost to JavaScript. Before jQuery, JavaScript codes were lengthy and bigger, even for smaller functions. It makes a website more interactive and attractive.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Is jQuery a programming language?",
+        "answer": "jQuery is not a programming language but a well-written JavaScript code. It is used to traverse documents, event handling, Ajax interaction, and Animation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is the difference between JavaScript and jQuery?",
+        "answer": "The simple difference is that JavaScript is a language while jQuery is a built-in library built for JavaScript. jQuery simplifies the use of JavaScript language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Is jQuery replacement of JavaScript?",
+        "answer": "No, jQuery is not the replacement of JavaScript. jQuery is written on the top of JavaScript, and it is a different library. jQuery is a lightweight JavaScript library which is used to interact with JavaScript and HTML.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Why do we use jQuery?",
+        "answer": "ADVERTISEMENT\nIt is very easy to learn and use.\nIt is used to develop browser compatible web applications.\nIt improves the performance of an application.\nIt is very fast and extensible.\nIt facilitates you to write minimal lines of codes for UI related functions.\nIt provides cross-browser support.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is $() in jQuery library?",
+        "answer": "The $() function is an alias of jQuery() function. It is used to wrap any object into jQuery object which later facilitates you to call the various method defined jQuery object. You can pass a selector string to $() function, and it returns a jQuery object which contains an array of all matched DOM elements.\nSyntax:\n$(document).ready(function() {  \n$(\"p\").css(\"background-color\", \"pink\");  \n});",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the effects methods used in jQuery?",
+        "answer": "These are some effects methods used in jQuery:\nshow() - It displays or shows the selected elements.\nhide() - It hides the matched or selected elements.\ntoggle() - It shows or hides the matched elements. In other words, it toggles between the hide() and shows() methods.\nfadeIn() - It shows the matched elements by fading it to opaque. In other words, it fades in the selected elements.\nfadeOut() - It shows the matched elements by fading it to transparent. In other words, it fades out the selected elements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the use of toggle() method in JQuery?",
+        "answer": "The jQuery toggle() is a particular type of method which is used to toggle between the hide() and show() method. It shows the hidden elements and hides the shown element.\nSyntax:\n$(selector).toggle();  \n$(selector).toggle(speed, callback);  \n$(selector).toggle(speed, easing, callback);  \n$(selector).toggle(display);  \nspeed: It is an optional parameter. It specifies the speed of the delay. Its possible values are slow, fast and milliseconds.\neasing: It specifies the easing function to be used for transition.\ncallback: It is also an optional parameter. It specifies the function to be called after completion of toggle() effect.\ndisplay: If true, it displays an element. If false, it hides the element.\nFor more: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the purpose of fadeToggle() method in JQuery?",
+        "answer": "The jQuery fadeToggle() method is used to toggle between the fadeIn() and fadeOut() methods. If the elements are faded in, it makes them faded out, and if they are faded out, it makes them faded in.\nSyntax:\n$(selector).fadeToggle();  \n$(selector).fadeToggle(speed,callback);   \n$(selector).fadeToggle(speed, easing, callback);  \nspeed: It is an optional parameter. It specifies the speed of the delay. Its possible values are slow, fast and milliseconds.\neasing: It specifies the easing function to be used for transition.\ncallback: It is also an optional parameter. It specifies the function to be called after completion of fadeToggle() effect.\nFor more: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is the use of delay() method in JQuery?",
+        "answer": "The jQuery delay() method is used to delay the execution of functions in the queue. It is the best method to make a delay between the queued jQuery effects. The jQUery delay () method sets a timer to delay the execution of the next item in the queue.\nSyntax:\n$(selector).delay (speed, queueName)    \nspeed: It is an optional parameter. It specifies the speed of the delay. Its possible values are slow, fast and milliseconds.\nqueueName: It is also an optional parameter. It specifies the name of the queue. Its default value is \"fx\" the standard queue effect.\nFor more: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Is it possible that jQuery HTML work for both HTML and XML document?",
+        "answer": "No, jQuery HTML only works for HTML document. It doesn't work for XML documents.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the use of html() method in JQuery?",
+        "answer": "The jQuery html() method is used to change the entire content of the selected elements. It replaces the selected element content with new contents.\nSyntax:\n$(document).ready(function(){    \n    $(\"button\").click(function(){    \n        $(\"p\").html(\"Hello <b>Javatpoint.com</b>\");    \n    });    \n});    \nFor complete example: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the use of css() method in JQuery?",
+        "answer": "The jQuery CSS() method is used to get (return)or set style properties or values for selected elements. It facilitates you to get one or more style properties. The jQuery CSS() provides two ways:\nReturn a CSS property\nIt is used to get the value of a specified CSS property.\n$(document).ready(function(){    \n    $(\"button\").click(function(){    \n        alert(\"Background color = \" + $(\"p\").css(\"background-color\"));    \n    });    \n});    \nSet a CSS property\nThis property is used to set a specific value for all matched element.\n$(document).ready(function(){    \n    $(\"button\").click(function(){    \n        $(\"p\").css(\"background-color\", \"violet\");    \n    });    \n});  \n\nFor more: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) Is jQuery library used for server scripting or client scripting?",
+        "answer": "It is a library for client-side Scripting.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) Is jQuery a W3C standard?",
+        "answer": "No, jQuery is not a W3C standard.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the starting point of code execution in jQuery?",
+        "answer": "$(document).ready() function is the starting point of jQuery code. It is executed when DOM is loaded.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the basic requirement to start with the jQuery?",
+        "answer": "You need refer to its library to start with jQuery. You can download the latest version of jQuery from jQuery.com.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Can you use any other name in place of $ (dollar sign) in jQuery?",
+        "answer": "Yes, instead of $ (dollar sign) we can use jQuery as a function name. For example:\njQuery(document).ready(function() {    \njQuery(\"p\").css(\"background-color\", \"pink\");    \n});",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "ready() function on the same page?",
+        "answer": "Yes. You can use any number of document.ready() function on the same page. For example:\n$(document).ready(function() {    \n$(\"h1\").css(\"background-color\", \"red\");    \n });    \n$(document).ready(function() {    \n$(\"p\").css(\"background-color\", \"pink\");    \n });",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the difference between find and children methods?",
+        "answer": "Find method is used to find all levels down the DOM tree while children method is used to find single level down the DOM tree.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is a CDN?",
+        "answer": "CDN stands for Content Delivery Network or Content Distribution Network. It is a large distributed system of servers deployed in multiple data centers across the internet. It provides the files from servers at a higher bandwidth that leads to faster loading time. These are several companies that provide free public CDNs:\nGoogle\nMicrosoft\nYahoo",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the goal of CDN and what are the advantages of using CDN?",
+        "answer": "The primary goal of the CDN is to provide content to the end-users with high availability and high performance.\nAdvantages of using CDN:\nIt reduces the load from the server.\nIt saves bandwidth. jQuery framework is loaded faster from these CDN.\nIf a user regularly visits a site which is using jQuery framework from any of these CDN, it will be cached.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How can you use a jQuery library in your project?",
+        "answer": "You can use a jQuery library in the ASP.Net project from downloading the latest jQuery library from jQuery.com and include the references to the jQuery library file in your HTML/PHP/JSP/Aspx page.\n<script src=\"_scripts/jQuery-1.2.6.js\" type=\"text/javascript\"></script>   \n<script language=\"javascript\">   \n$(document).ready(function() {   \nalert('test');   \n});   \n</script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What are the selectors in jQuery? How many types of selectors in jQuery?",
+        "answer": "If you want to work with an element on the web page, first you need to find it. Selectors find the HTML elements in jQuery. There are many types of selectors. Some basic selectors are:\nName: It is used to select all elements which match with the given element Name.\n#ID: It is used to select a single element which matches with the given ID\n.Class: It is used to select all elements which match with the given Class.\nUniversal (*): It is used to select all elements available in a DOM.\nMultiple Elements E, F, G: It is used to selects the combined results of all the specified selectors E, F or G.\nAttribute Selector: It is used to select elements based on its attribute value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is a use of jQuery filter?",
+        "answer": ": jQuery filter is used to filter the specific values from the object. It filters the result of your original query into specific elements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are the different types of selectors in jQuery?",
+        "answer": "There are three types of selectors in jQuery:\nCSS Selector\nCustom Selector\nXPath Selector",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is the difference between the ID selector and class selector in jQuery?",
+        "answer": "ID selector and class selector are the same as they are in CSS. ID selector uses ID while class selector uses a class to select elements.\nYou use an ID selector to select just one element. If you want to select a group of elements, having the same CSS class, use class selector.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the use of serialize() method in JQuery?",
+        "answer": "The jQuery serialize() method is used to create a text string in standard URL-encoded notation. It serializes the form values so that its serialized values can be used in the URL query string while making an AJAX request.\nSyntax:\n$(document).ready(function(){    \n    $(\"button\").click(function(){    \n        $(\"div\").text($(\"form\").serialize());    \n    });    \n});     \nFor complete example: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is the use of val() method in JQuery?",
+        "answer": "The jQuery val() method is used:\nTo get the current value of the first element in the set of matched elements.\nTo set the value of every matched element.\nSyntax:\n$(selector).val()  \nFor complete example: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) How to add and remove CSS classes to an element using jQuery?",
+        "answer": "You can use addclass() jQuery method to add CSS class to an element and removeclass() jQuery method to remove CSS class from an element.\nCSS addClass() Example\n<!DOCTYPE html>    \n<html>    \n<head>    \n <title>jQuery Example</title>    \n<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">    \n </script>    \n <script type=\"text/javascript\" language=\"javascript\">    \n$(document).ready(function()  \n{  \n$(\"#btn\").click(function()  \n{  \n    $(\"#para\").addClass(\"change\");  \n});  \n});  \n </script>    \n<style>  \n    .change  \n    {  \n        color:blue;  \n    }  \n</style>  \n </head>    \n<body>    \n<p id=\"para\">This method adds CSS class from an element</p>    \n<input type=\"button\" id=\"btn\" value=\"Click me\">   \n</body>    \n</html>    \nCSS removeClass() Example\n<!DOCTYPE html>    \n<html>    \n<head>    \n <title>jQuery Example</title>    \n<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">    \n </script>    \n <script type=\"text/javascript\" language=\"javascript\">    \n$(document).ready(function()  \n{  \n$(\"#btn\").click(function()  \n{  \n    $(\"p\").removeClass(\"change\");  \n});  \n});  \n </script>    \n<style>  \n    .change  \n    {  \n        color:blue;  \n    }  \n</style>  \n </head>    \n<body>    \n<p class=\"change\">This method removes CSS class to an element</p>    \n<input type=\"button\" id=\"btn\" value=\"Click me\">   \n</body>    \n</html>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) Can you write a jQuery code to select all links inside the paragraph?",
+        "answer": "Yes. You can use <a> tag nested inside paragraph <p> tag to select all links. For example:\n<!DOCTYPE html>    \n<html>    \n<head>    \n <title>jQuery Example</title>    \n<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\">    \n </script>    \n <script type=\"text/javascript\" language=\"javascript\">    \n$(document).ready(function()  \n{  \n    $(\"p a\").attr(\"href\", \"https://www.javatpoint.com\");  \n});  \n </script>    \n </head>    \n<body>    \n    <p><a>Learn JavaScript</a></p>  \n    <p><a>Learn jQuery</a></p>   \n</body>     \n</html>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What is the difference between prop and attr?",
+        "answer": "attr(): It gets the value of an attribute for the first element in the set of matched element.\nprop(): it gets the value of a property for the first element in the set of matched elements. It is introduced in jQuery 1.6.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What are the two types of CDNs?",
+        "answer": "There are two types of CDN:\nMicrosoft: It loads jQuery from AJAX CDN.\nGoogle: It loads jQuery from Google libraries API.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is the use of the animate() method in jQuery?",
+        "answer": "The animate function is used to apply the custom animation effect to elements. Syntax:\n$(selector).animate({params}, [duration], [easing], [callback])  \nHere,\n\"param\" defines the CSS properties on which you want to apply the animation.\n\"duration\" specify how long the animation run. It can be one of the following values: \"slow,\" \"fast,\" \"normal\" or milliseconds\n\"easing\" is the string which specifies the function for the transition.\n\"callback\" is the function which we want to run once the animation effect is complete.",
+        "reference": "javatpoint.com"
+    }
+]

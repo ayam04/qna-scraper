@@ -1,0 +1,192 @@
+[
+    {
+        "question": "1) What do you understand by OSPF? / What is the OSPF Routing protocol?",
+        "answer": "OSPF is an acronym that stands for Open Shortest Path First. It is an open average link-state routing protocol that utilizes Dijkstra's SPF algorithm and is used to find the straight and the shortest path. It follows that by populating the routing table with the resulting best path.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is the algorithm used by OSPF?",
+        "answer": "OSPF uses the SPF (Shortest Path First) algorithm, also known as the Dijkstra algorithm. It is used for calculating the best path and preparing the OSPF database.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) Why is it required to divide the autonomous system into various areas in OSPF?",
+        "answer": "In the OSPF algorithm, dividing the autonomous system into various areas keeps the route updates to a minimum. It reduces the number of routing updates in the network, conserves resources, and keeps problems from propagating throughout the network.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the key attributes of OSPF?",
+        "answer": "Following is a list of some key attributes of OSPF:\nADVERTISEMENT\nEqual Cost Routes management: CEF Load corresponding\nProtocol Type of OSPF: Link State\nTransport: IP (Port89) submit to network walks website\nMetric of OSPF: Cost (Bandwidth)\nStandard: RFC2328 (OSPFv2), RFC2740 (OSPFv3/IPv6)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the different functioning and working of OSPF?",
+        "answer": "Following is the list of different functioning and working of OSPF:\nOSPF uses the Dijkstra Shortest Path First algorithm to determine the shortest path.\nOSPF follows a hierarchical network design using Areas.\nOSPF forms neighbor relationships with adjacent routers in the same area.\nOSPF is a classless protocol and supports VLSMs.\nInstead of advertising the distance to connected networks, OSPF advertises the status of directly connected links using Link-State Advertisements (LSAs).\nOSPF sends updates (LSAs) when there is a change to one of its links and will only send the change during the updation. LSAs are additionally refreshed every 30 minutes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the benefit of dividing the entire network into areas?",
+        "answer": "Following are the advantages of dividing the entire network into areas:\nIt decreases the routing overhead.\nIt can speed up the convergence.\nIt can also confine the network instability to single areas of the network.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the key characteristics of OSPF?",
+        "answer": "Following is a list of the key characteristics of OSPF:\nOSPF is a classless routing protocol that supports VLSM and CIDR.\nOSPF allows for the creation of areas and an autonomous system.\nOSPF supports both IPV4 and IPV6.\nOSPF uses cost as its metric, which is computed based on the bandwidth of the link.\nOSPF has no hop-count limit. It supports unlimited Hop count.\nOSPF routes have an administrative distance of 110.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is OSPF Router ID, and how is it elected?",
+        "answer": "The OSPF Router ID is a 32-bit number similar to a normal IP address. It is elected as the highest IP Address of Loopback interfaces or the Highest IP of the active physical interfaces if loopback is not present. We can set it manually, but when the OSPF process is reset completely, or the device is reloaded, it will take effect. To avoid database issues, we should run only one router-id per device.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the role of topology and routing table in OSPF?",
+        "answer": "The OSPF process is used to build and maintain three separate tables:\nNeighbor table: This table contains a list of all neighboring routers.\nTopology table: This table contains a list of all possible routes to all known networks within an area.\nRouting table: This table contains the best route for each known network.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "OSPF protocol is used by routers to send routing information and associated changes in the table. Instead of sending the entire table, OSPF only sends the part that has been altered. This configuration information is stored in a Link State Database, and using this data determines the best and fastest route to send data packets to a destination.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the key benefits of using OSPF Summarization?",
+        "answer": "The key benefits of using OSPF Summarization are:\nIt minimizes the update messages and scales the OSPF network to large scales.\nIt is also used to limit the quantity of information stored in routing tables.\nIt takes off the weight placed on the Router processor and reduces the bandwidth practice.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the full form of LSA, LSU, and LSR in OSPF?",
+        "answer": "In OSPF, the full form of LSA is Link State Advertisement. It is used in the Link State database for sharing the basic routing topology information to the other local routers. OSPF fills the Link State database with the LSA information. These LSAs are exchanged between routers until all of them have the same database of topology data.\nLSA = Link State Advertisement\nLSU = Link State Update\nLSR = Link State Request\nWhen two neighbors try to exchange routes, they have to send each other a list of all LSAs in their respective topology databases. Then each Router checks its topology database and sends an LSR message requesting all LSAs that were not found in its topology table. Other Router responds with the LSU that contains all LSAs requested by the neighbor.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are the different types of LSA in OSPF?",
+        "answer": "Following are the different types of LSA in OSPF:\nLSA Type 1: Router LSA\nLSA Type 2: Network LSA\nLSA Type 3: Summary LSA\nLSA Type 4: Summary ASBR LSA\nLSA Type 5: Autonomous system external LSA\nLSA Type 6: Multicast OSPF LSA\nLSA Type 7: Not-so-stubby area LSA\nLSA Type 8: External attribute LSA for BGP\nLSA Type 9: Link Scope Opaque (OSPFv2) / Intra Area Prefix LSA (OSPFv3)\nLSA Type 10: Area Scope Opaque LSA\nLSA Type 11: AS (Autonomous System) Scope Opaque LSA",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What are the different networks types in OSPF?",
+        "answer": "Following are the different network types available in OSPF:\nPoint-to-point network types: In this network type, the data packets are sent between exactly two routers.\nBroadcast network types: The data packets are sent from one Router to multiple routers in this network type.\nNon-Broadcast network types: In this network type, the network here supports access to many devices but does not allow broadcast capability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How can you change the neighbor ships into adjacency?",
+        "answer": "We need to follow the following steps to change the neighbor ships into adjacency:\nFirst, we need to send a state request to create a link. This link will inform LSU packets.\nNow, both routers will exchange database description packets to ensure database synchronization.\nOnce the database synchronization is established, the two routers can be measured as adjacent routers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the main usage of the OSPF protocol?",
+        "answer": "The OSPF protocol is mainly used for exchanging routing information between the neighboring routers. The LSA (Link State Advertisement) helps the routers ensure that all of the routers have the same topology information in their databases and helps determine the nearest hop address by using the SPF algorithm.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What are the different OSPF Router types?",
+        "answer": "Following is a list of four OSPF Router types:\nInternal Routers (IR): Internal Routers are OSPF Router whose all interfaces belong to the same area.\nBackbone Routers (BR): Backbone Routers are the OSPF Router that acts as Internal Router in Area 0.\nArea Border Routers (ABR): Area Border Routers are the type of OSPF Routers that has interfaces in more than one area.\nAutonomous System Boundary Routers (ASBR): Autonomous System Boundary Routers are the type of OSPF Routers that advertise external routes into the OSPF Domain.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What are the issues that DR and BDR solve in OSPF?",
+        "answer": "DR and BDR solve the following two problems in OSPF:\nExcessive LSA flooding\nHigh No. of Adjacenci\n19) What do you understand by Link State Retransmit Interval?\nOSPF sends recognition of each newly conventional LSA. LSAs are retransmitted until they are approved.\nThe Link State Retransmit Interval defines the time among retransmissions. We can use the command IP OSPF retransmit-interval to place the retransmit-interval.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What do you understand by Link State Retransmit Interval?",
+        "answer": "OSPF sends recognition of each newly conventional LSA. LSAs are retransmitted until they are approved.\nThe Link State Retransmit Interval defines the time among retransmissions. We can use the command IP OSPF retransmit-interval to place the retransmit-interval.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What are the most commonly known OSPF Neighbor States?",
+        "answer": "Following is a list of the most commonly known OSPF Neighbor States:\n\nDown State: In the Down State process, no Hello packets have been revealed on the interface. The Hello packets either are deleted or fail to meet the dead timer interval. In this state, the neighbors usually found are manually configured.\nInit State: The Init State is progressive and involves acknowledging a \"Hello message\" by a router from an OSPF neighbor. The Router receives the message in this state but has not properly established two-way communication with the neighbor.\n2way state: In this state, two-way communication is established when a router sees its ID in the neighbor's Hello packets' field category. A two-way state can also be established when a Data-Based Descriptor packet is received from another neighbor's init state.\nExstart and Exchange state: This state provides a point where OSPF neighbors exchange DBD packets. In this state, the adjacencies between DR & BDR in the network are also built. This state also facilitates to transfer of routing information using Link State Requests in this state.\nLoading state: This state follows the exchange state and is responsible for forwarding LSRs (Link State Requests) by routers to neighbors. In return, neighbors send in LSUs (Link State Updates) containing information about requested networks.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) Is it possible to have one numbered side and leave the other side unnumbered in OSPF?",
+        "answer": "No. It is not possible to have one numbered side and leave the other side unnumbered in OSPF. If you try to do this, it will create an inconsistency in the OSPF database, which will prevent the routes from being installed in the steering table.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the difference between E1 and E2 in OSPF?",
+        "answer": "Difference between E1 and E2 in OSPF:\nE1: In OSPF, E1 is an External Type route that defines the cost required from ASBR (Autonomous System Boundary Router) to the destination. In this type, the internal cost and the external metric are considered.\nE2: E2 is also the External Type route, but the internal costs are not considered in this type. In E2, only the external metrics are calculated to reach a particular destination. If you have two E2 routes for reaching a destination, the path having the lowest metric from the ASBR is considered for sending data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What do you understand by OSPF adjacency?",
+        "answer": "An OSPF adjacency is a theoretical link to a neighbor over which we can send the Link State Advertisements (LSAs).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What are the OSPF Hello and Dead Interval?",
+        "answer": "OSPF implements two timers and hello packets to analyze whether a neighboring router is alive or not.\nHello Interval: The Hello interval is used to describe the time interval in which an OSPF router transmits a Hello packet. The default interval value is 10 seconds for point-to-point links and a shared network in this interval.\nDead Interval: The Dead interval is used to define a time interval for which a router will wait before declaring a neighboring router dead. Both Hello and Dead interval values can be different depending on the type of network.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are the five OSPF packet types?",
+        "answer": "Following is the list of five main OSPF packet types:\nDBD\nHELLO\nLSU\nLSR\nLSack",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What do you understand by the OSPF Router ID?",
+        "answer": "The OSPF Router ID is an identifier used to recognize the Router, and it is a 32-bit number.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) Is it possible to have OSPF over a GRE tunnel?",
+        "answer": "Yes, it is possible to have OSPF run over a GRE tunnel.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What are the different tables maintained by OSPF?",
+        "answer": "The router participating in the OSPF routing protocol has to maintain three OSPF tables. Following is the list of these tables:\nNeighbor table: This table is used to store the information about OSPF neighbors.\nTopology table: This table is used to store the topology structure of a network.\nRouting table: This table is used to store the best routes to all known network",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the different OSPF timers?",
+        "answer": "There are mainly two types of OSPF timers:\nDead Interval Timer: The Dead Interval Timer is used to define how the extended router waits for hello packets before it declares the neighbor dead.\nHello Interval Timer: The Hello Interval Timer is used to define how frequently the OSPF router sends the hello packet to another OSPF router.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What are DR and BDR in OSPF?",
+        "answer": "In OSPF, DR stands for Designated Router, and BDR stands for Backup Designated Router. Both are used for exchanging information between different routers. It depends upon the network; one router is selected as DR and another as the BDR.\nBy default, in each broadcast network, DR is the contact point for the network segment. All routers become adjacent with the DR while handling all the LSAs for the network. The information about the DR is sent by the router using the multicast address 224.0.0.6.\nIf any problem occurs with DR, then to avoid problems in case of DR failure, BDR is selected for the network. It becomes active when the DR fails and listens to the multicast address 224.0.0.6.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is the importance of area 0 in OSPF?",
+        "answer": "In OSPF, area 0 is the backbone area, and this is important because all other areas must have to send their inter-area transfer through the backbone area.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What is the concept of Virtual-link in OSPF? Can we form a virtual link through the stub area?",
+        "answer": "According to the OSPF rule, inter-area communication happens when at least one area should be area 0 or backbone area. If this is not possible, then we have to use virtual-link to form a logical association. A virtual link is not possible through the stub area.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What are the multicast IPs used by OSPF? What multicast IP does DR/BDR router and non-DR use?",
+        "answer": "OSPF Routers use 224.0.0.5 and 224.0.0.6 multicast IP addresses. In DR/BDR, it uses 224.0.0.5 and 224.0.0.6. DR/BDR uses 224.0.0.6 while replying to OSPF routers in the Broadcast Multi-access network.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) Is it possible to use OSPF without a backbone area?",
+        "answer": "Yes, we can use OSPF without backbone area, but only intra-area communication is possible. For inter-area communication, we must use the backbone area, and inter-area communication is not achievable without a backbone area.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) Why is OSPF called a loop-free protocol?",
+        "answer": "OSPF is called a loop-free protocol because of the presence of the link-state database. In OSPF, the database offers a complete view of the network and prevents routing loops common in distance vector protocols. OSPF avoids loops by applying the inter-area loop-free topology. That's why it is called a loop-free protocol. s",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the default value of Hello Interval and Dead Interval?",
+        "answer": "The default value for Hello Interval for OSPF is 10 seconds, and for the Dead, Interval is four times the Hello Interval. By default, it is 40 seconds.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is the difference between EIGRP vs OSPF?",
+        "answer": "Following is the list of key differences between EIGRP and OSPF:\nEIGRP OSPF\nEIGRP stands for Enhanced Interior Gateway Protocol. It is a hybrid type protocol. OSPF is an acronym that stands for Open Shortest Path First. It is a link-state protocol.\nEIGRP requires a very low CPU power and memory. OSPF always requires high processing power and memory.\nEIGRP is based on the Cisco Proprietary standards. The OSPF protocol is based on the IETF Open Standard.\nIn EIGRP, the routing metrics consist of load, reliability, bandwidth, and delay. In OSPF, the routing metrics consist of the interface bandwidth.\nEIGRP facilitates summarization and filtering, and these are possible anywhere in the network. OSPF is possible only on ABR or ASBR.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What are the different activities that a neighbor router can perform in OSPF?",
+        "answer": "In OSPF, a neighbor table can include the following information:\nThe Router ID of each neighboring router.\nThe current \"state\" of each neighboring router.\nThe interface is directly connected to each neighbor.\nThe IP address of the remote interface of each neighbor.",
+        "reference": "javatpoint.com"
+    }
+]

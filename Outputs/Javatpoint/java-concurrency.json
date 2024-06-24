@@ -1,0 +1,152 @@
+[
+    {
+        "question": "",
+        "answer": "The Countdownlatch is a synchronizer in Java that allows one thread to wait for one or more threads before starting processing. It plays an important role in server-side Java applications.\nIf one or more events are used in other threads, and we want to use those events in the currently executing thread, we can push that thread in the waiting state by using Countdownlatch until the threads that are using those events are not complete.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Just like the Countdownlatch, the Cyclicbarrier concept is also used to set the thread in the waiting state. The Cyclicbarrier sets the thread in the waiting state for each other to reach a common barrier point. On the Cyclicbarrier object, we need to call the await() method when each thread reaches the barrier.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "Is it required to have three threads for the countdown?",
+        "answer": "It is not required to have three threads or we can say there is no need to have the same number of threads for the countdown.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Phaser plays an important role in the synchronization of threads over one or more than one phase of activity. The Phaser acts like Cyclicbarrier when it is used for synchronizing the single phase. It is very flexible and reusable in usage.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "As the name suggests, it is related to exchanging something. Exchanger plays an important role in exchanging data between two threads. Exchanger makes the process easy for threads to share data between themselves. The exchanger provides a point at which these threads can pair and swap elements, and that point is called a synchronization point.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Semaphore is a class that is present in the concurrent package of Java.util. It is basically a semaphore that maintains a set of permissions.\nThe thread uses acquire() method for acquiring permits to get access to the shared resource. At the same time, if the value of the Semaphore's count is not equal to 0, the count value of the Semaphore will be decremented by one and acquire a permit. Else the thread will be blocked until a permit is available. The thread uses the release() method to release the shared resources when it is done with it.\nADVERTISEMENT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The ReentrantLock is basically a class that implements the Lock interface. When a thread accesses the shared resources, it provides synchronization to methods. On a resource, the ReentrantLock allows the thread to enter into the lock more than once.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Readwritelock plays an important role in Java multi-threading applications. In multi-threading applications, multiple read and write can occur simultaneously for a shared resource. It is mainly used when two multiple writes occur or 'read and write' occur at the same time. In the read and write case, there will be a chance of writing and reading the wrong value. So, Readwritelock is mainly used to boost the performance by locking either read or write operation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "It is an interface class that implements the ReadWriteLock interface and provides us a read-write lock pair. We use the readWrite.readLock.lock() and readWrite.writeLock.lock() methods to get read and write lock respectively. Here, the readWrite is an instance of the Reentrantreadwritelock class. ReentrantReadWriteLock also allows downgrading from write lock to read lock.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The concurrenthashmap is similar to the HashMap. The only difference between HashMap and Concurrenthashmap is the locking strategy used by the Concurrenthashmap. The Concurrenthashmap doesn't synchronize each method on a common lock.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Lock Striping concept is used to separate locks for a portion of a data structure where each lock is locking on a variable size set of independent objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Copywritearraylist is a class that implements the List interface. The main difference between List and Copywritearraylist is that the Copywritearraylist is thread-safe, but List is not. It provides better performance in scenarios where there are more iterations of the lint than mutation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The main difference b/w both of them is that the ArrayList is not thread-safe and not good to use in a multi-threaded environment. The Copywritearraylist is suitable to use in the multi-threaded environment because it is thread-safe. Iterator returned by ArrayList and CopyOnWriteArrayList is fail-fast and fail-safe, respectively.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Another thread-safe collection that takes the support of CopyOnWriteArrayList to perform all of its operations is known as Copywritearrayset. The Copywritearrayset achieves thread-safety in the same way as the Copywritearraylist achieved because the Copywritearraylist is used by the Copywritearrayset internally.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Concurrentskiplistmap is a class that implements the ConcurrentNavigableMap. The ConcurrentNavigableMap is similar to the TreeMap with the added feature of being concurrent. It sorts the element based on the natural order of keys.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In Java, Callable is an interface that is available in Java5 or later versions. It is mainly used to perform a task asynchronously by a thread. It provides a Call() method which can return any type of value because the Callable interface is a generic interface.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In Java, Future is also an interface that is mainly used to represent the outcome of the asynchronous task. The Future object is returned by the Submit() method of the ExecutorService. The future interface provides several methods for checking whether the computation is complete or not, for waiting for its completion, and for retrieving the result of the computation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Threadpool plays a very important role in Java concurrency. It is basically a collection of worker threads that are waiting for the job and which we can use again. In threadpool, a collection of threads(fixed size) are created, and a thread from it is pulled out, and the service provider assigned a job to that thread.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The ExecutorService interface takes the support of the Executor interface and allows us to manage termination and methods that return Future objects to track the progress of more than one asynchronous task by providing several methods.\nThe Submit method of the ExecutorService interface is more versatile compared to others. The submit accepts not only runnable objects but also Callable objects too.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In Java, there are several classes that implement the Executor or ExecutorService interface. Some of them are as follows:\nThe ThreadPoolExecutor is a class that takes the support of both the interfaces for executing the submitted task by using one of the pooled threads.\nThe ForkJoinPool takes the support of both interfaces. This class is mainly used by the Fork/Join Framework.\nThe ScheduledThreadPoolExecutor takes the support of the ThreadPoolExecutor class and the ScheduledExecutorService The ScheduledThreadPoolExecutor class is mainly used for scheduling commands to run after a given delay or to execute periodically.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Executor interface provides the execute() method. The execute() method doesn't return anything and takes the Runnable command as an argument.\nThe ExecutorService interface provides the Submit() method, which is more versatile compared to the execute() method. The Submit() method accepts not only the Runnable interface but also the Callable objects too. Unlike execute() method, the Submit() method returns a value or an object of type Future.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The ScheduledExecutorService interface plays a very important role in Java concurrency. This interface takes the support of the Executor interface and provides methods for scheduling the command to execute periodically or to run after a given time.\n\nIt provides the following two methods for executing the Callable and Runnable task after a specified time period:\nschedule(Callable<V> callable, long delay, TimeUnit unit)\nschedule(Runnable command, long delay, TimeUnit unit)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Executors class has several methods for the classes of the Executor Framework such as ExecutorService, Executor, Callable, ScheduledExecutorService, etc. We can directly use the ThreadPoolExecutor and ScheduledThreadPoolExecutor, but it is not the best way. The best way of getting an executor is to use the static factory methods of the utility class. These are some of the following static factory methods:\n1. The newCachedThreadPool() method\nThis method is mainly used for creating thread pools that use previously created threads or create new ones as needed.\n2. The newFixedThreadPool(int numThreads)\nThis method is also used for creating thread pools that use the fixed size of previously created threads.\n3. The newScheduledThreadPool(int numThreads)\nThis method is also used to create a thread pool for scheduling commands to execute periodically or to run after a specified time.\n4. The newSingleThreadExecutor()\nThis method is mainly used for creating an Executor. The created executor uses a single worker thread operating off an unbounded queue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The ConcurrentLinkedQueue is a queue which is unbounded and thread-safe. It stores the elements as linked nodes. It follows the concept of FIFO(First In First Out).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Just like ConcurrentLinkedQueue, the ConcurrentLinkedDequeue is also an unbounded thread-safe deque. It takes the support of the Deque interface, and due to which, the insertion and deletion are possible from both ends.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The BlockingQueue interface is available in Java 5 or later. The BlockingQueue is a queue that is mainly used to block operations. BlockingQueue supports only those operations which are waiting for the queue.\nBlockingQueue has the following two methods for blocking the operations.\nThe put(element) is used to insert the specified element into the queue.\nThe take() method is used to retrieve and remove the head from the queue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What are blocking methods in Java Concurrency?",
+        "answer": "Blocking methods are those methods which execute the assigned task without relinquishing control to the other threads.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The LinkedBlockingQueue takes the support of the BlockingQueue interface, and for storing elements, it uses linked nodes internally. Unlike ArrayBlockingQueue, the LinkedBlockingQueue is optionally bound.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The PriorityBlockingQueue also takes the support of the BlockingQueue interface and stores the elements in the same way as they are naturally ordered. The order of elements is also based on the comparator, which is provided at queue construction time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Synchronous queue also takes the support of the BlockingQueue having no internal capacity. In this queue, each 'insert' operation must wait for a corresponding remove operation by another thread, and vice versa.\nDelayQueue also takes the support of BlockingQueue and is an unbounded queue interface. We can store only delayed types of elements and retrieve them only when the delay has expired.",
+        "reference": "javatpoint.com"
+    }
+]

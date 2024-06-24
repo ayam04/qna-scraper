@@ -1,0 +1,172 @@
+[
+    {
+        "question": "1) What is CSS?",
+        "answer": "CSS stands for Cascading Style Sheet. It is a popular styling language which is used with HTML to design websites. It can also be used with any XML documents including plain XML, SVG, and XUL.More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is the origin of CSS?",
+        "answer": "SGML (Standard Generalized Markup Language) is the origin of CSS. It is a language that defines markup languages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the different variations of CSS?",
+        "answer": "Following are the different variations of CSS:\nADVERTISEMENT\nCSS1\nCSS2\nCSS2.1\nCSS3\nCSS4",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) How can you integrate CSS on a web page?",
+        "answer": "There are three methods to integrate CSS on web pages.\nInline method - It is used to insert style sheets in HTML document\nEmbedded/Internal method - It is used to add a unique style to a single document\nLinked/Imported/External method - It is used when you want to make changes on multiple pages.\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the advantages of CSS?",
+        "answer": "Bandwidth\nSite-wide consistency\nPage reformatting\nAccessibility\nContent separated from presentation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the limitations of CSS?",
+        "answer": "Ascending by selectors is not possible\nLimitations of vertical control\nNo expressions\nNo column declaration\nPseudo-class not controlled by dynamic behavior\nRules, styles, targeting specific text not possible",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the CSS frameworks?",
+        "answer": "CSS frameworks are the preplanned libraries which make easy and more standard compliant web page styling. The frequently used CSS frameworks are: -\nBootstrap\nFoundation\nSemantic UI\nGumby\nUlkit",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Why background and color are the separate properties if they should always be set together?",
+        "answer": "There are two reasons behind this:\nIt enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.\nColor is an inherited property while the background is not. So this can make confusion further.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is Embedded Style Sheet?",
+        "answer": "An Embedded style sheet is a CSS style specification method used with HTML. You can embed the entire stylesheet in an HTML document by using the STYLE element. More details...\n <style>    \nbody {    \n    background-color: linen;    \n}    \nh1 {    \n    color: red;    \n    margin-left: 80px;    \n}     \n</style>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the advantages of Embedded Style Sheets?",
+        "answer": "You can create classes for use on multiple tag types in the document.\nYou can use selector and grouping methods to apply styles in complex situations.\nNo extra download is required to import the information.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is a CSS selector?",
+        "answer": "It is a string that identifies the elements to which a particular declaration apply. It is also referred as a link between the HTML document and the style sheet. It is equivalent of HTML elements. There are several different types of selectors in CSS: -\nCSS Element Selector\nCSS Id Selector\nCSS Class Selector\nCSS Universal Selector\nCSS Group Selector\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Some CSS Style components are:\nSelector\nProperty\nValue",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the use of CSS Opacity?",
+        "answer": "The CSS opacity property is used to specify the transparency of an element. In simple word, you can say that it specifies the clarity of the image. In technical terms, Opacity is defined as the degree to which light is allowed to travel through an object. For example:\n<style>    \nimg.trans {    \n    opacity: 0.4;    \n    filter: alpha(opacity=40); /* For IE8 and earlier */    \n}    \n</style>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The universal selector matches the name of any of the element type instead of selecting elements of a specific type.\n<style>    \n* {    \n   color: green;    \n   font-size: 20px;    \n}     \n</style>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) Which command is used for the selection of all the elements of a paragraph?",
+        "answer": "The p[lang] command is used for selecting all the elements of a paragraph.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the use of % unit?",
+        "answer": "It is used for defining percentage values.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The background-color property is used to specify the background color of the element. For example:\n\n<style>    \nh2,p{    \n    background-color: #b0d4de;    \n}    \n</style>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The background-repeat property repeats the background image horizontally and vertically. Some images are repeated only horizontally or vertically.\n\n<style>    \nbody {    \nbackground-image: url(\"paper1.gif\");    \nmargin-left:100px;    \n}    \n</style>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The background-position property is used to define the initial position of the background image. By default, the background image is placed on the top-left of the webpage.\nYou can set the following positions:\ncenter\ntop\nbottom\nleft\nright\nbackground: white url('good-morning.jpg');  \nbackground-repeat: no-repeat;  \nbackground-attachment: fixed;  \nbackground-position: center;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The background-attachment property is used to specify if the background image is fixed or scroll with the rest of the page in the browser window. If you set fixed the background image, then the image not move during scrolling in the browser. Let's take an example with the fixed background image.\n\nbackground: white url('bbb.gif');  \nbackground-repeat: no-repeat;  \nbackground-attachment: fixed;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the use of ruleset?",
+        "answer": "The ruleset is used to identify that selectors can be attached with other selectors. It has two parts:\nSelector - Selector indicates the HTML element you want to style.\nDeclaration Block - The declaration block can contain one or more declarations separated by a semicolon.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the difference between class selectors and id selectors?",
+        "answer": "An overall block is given to class selector while id selectors take only a single element differing from other elements.\nCSS Class Selector\n<style>    \n.center {    \n    text-align: center;    \n    color: blue;    \n}    \n</style>  \n   \nCSS Id Selector\n<style>    \n#para1 {    \n    text-align: center;    \n    color: blue;    \n}    \n</style>    \n   \nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What are the advantages of External Style Sheets?",
+        "answer": "You can create classes for reusing it in many documents.\nBy using it, you can control the styles of multiple documents from one file.\nIn complex situations, you can use selectors and grouping methods to apply styles.\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the difference between inline, embedded and external style sheets?",
+        "answer": "Inline: Inline Style Sheet is used to style only a small piece of code.\nSyntax\n<htmltag style=\"cssproperty1:value; cssproperty2:value;\"> </htmltag>     \n       \nEmbedded: Embedded style sheets are put between the <head>...</head> tags.\nSyntax\n<style>    \nbody {    \n    background-color: linen;    \n}    \nh1 {    \n    color: red;    \n    margin-left: 80px;    \n}     \n</style>    \n       \nExternal: This is used to apply the style to all the pages within your website by changing just one style sheet.\nSyntax\n<head>    \n<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">    \n</head>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is RWD?",
+        "answer": "RWD stands for Responsive Web Design. This technique is used to display the designed page perfectly on every screen size and device, for example, mobile, tablet, desktop and laptop. You don't need to create a different page for each device.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are the benefits of CSS sprites?",
+        "answer": "If a web page has a large number of images that take a longer time to load because each image separately sends out an HTTP request. The concept of CSS sprites is used to reduce the loading time for a web page because it combines the various small images into one image. It reduces the number of HTTP requests and hence the loading time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is the difference between logical tags and physical tags?",
+        "answer": "Physical tags are referred to as presentational markup while logical tags are useless for appearances.\nPhysical tags are newer versions, on the other hand, logical tags are old and concentrate on content.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the CSS Box model and what are its elements?",
+        "answer": "The CSS box model is used to define the design and layout of elements of CSS.\n\nThe elements are:\nMargin - It removes the area around the border. It is transparent.\nBorder - It represents the area around the padding\nPadding - It removes the area around the content. It is transparent.\nContent - It represents the content like text, images, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is the float property of CSS?",
+        "answer": "The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it. It doesn't change the property of the elements used before it.\nTo understand its purpose and origin, let's take a look at its print display. In the print display, an image is set into the page such that text wraps around it as needed.\n\nIts web layout is also just similar to print layout.\n\n\n\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) How to restore the default property value using CSS?",
+        "answer": "In short, there is no easy way to restore to default values to whatever a browser uses.\n\nThe closest option is to use the 'initial' property value, which restores the default CSS values, rather than the browser's default styles.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is the purpose of the z-index and how is it used?",
+        "answer": "The z-index helps to specify the stack order of positioned elements that may overlap one another. The z-index default value is zero and can take on either a positive or negative number.\nAn element with a higher z-index is always stacked above than a lower index.\nZ-Index can take the following values:\nAuto: Sets the stack order equal to its parents.\nNumber: Orders the stack order.\nInitial: Sets this property to its default value (0).\nInherit: Inherits this property from its parent element.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) Explain the difference between visibility: hidden and display: none?",
+        "answer": "visibility: hidden hides the element, but it occupies space and affects the layout of the document.\n <!DOCTYPE html>  \n<html>  \n<head>  \n<style>  \nh1.vis {  \n    visibility: visible;  \n}  \n  h1.hid {  \n    visibility: hidden;  \n}  \n</style>  \n</head>  \n<body>  \n<h1 class=\"vis\">It is visible</h1>  \n<h1 class=\"hid\">It is hidden</h1>  \n  <p>Note - Second heading is hidden, but it still occupy space.</p>  \n</body>  \n</html>  \n       \n\ndisplay: none also hides the element but not occupy space. It will not affect the layout of the document.\n<!DOCTYPE html>  \n<html>  \n<head>  \n<style>  \nh1.vis {  \n    display: block;  \n}  \n  h1.hid {  \n     display: none;  \n}  \n</style>  \n</head>  \n<body>  \n<h1 class=\"vis\">It is visible</h1>  \n<h1 class=\"hid\">It is hidden</h1>  \n  <p>Note - Second heading is hidden and not occupy space.</p>  \n</body>  \n</html>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What do you understand by W3C?",
+        "answer": "W3C stands for World Wide Web Consortium. Its purpose is to deliver the information of the World Wide Web. It also develops rules and guidelines for the Web.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is tweening?",
+        "answer": "It is the process of generating intermediate frames between two images.\nIt gives the impression that the first image has smoothly evolved into the second one.\n\nIt is an important method used in all types of animations.\nIn CSS3, Transforms (matrix, translate, rotate, scale) module can be used to achieve tweening.",
+        "reference": "javatpoint.com"
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "question": "1) What is Ansible?",
+        "answer": "Ansible is an open-source IT engine that automates application deployment, cloud provisioning, intra service orchestration, and other IT tools.\nAnsible is very easy to deploy because it does not use any agents or custom security infrastructure on the client-side, and by pushing modules to the clients. These modules are executed locally on the client-side, and the output is pushed back to the Ansible server. It can easily connect to clients using SSH-Keys.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the uses of Ansible?",
+        "answer": "ADVERTISEMENT\nAnsible is free to use by everyone.\nAnsible is very consistent and lightweight, and no constraints regarding the operating system or underlying hardware are present.\nIt is very secure due to its agentless capabilities and open SSH security features.\nAnsible does not need any special system administrator skills to install and use it.\nAnsible has a smooth learning curve determined by the comprehensive documentation and easy to learn structure and configuration.\nIts modularity regarding plugins, inventories, modules, and playbooks make Ansible perfect companion orchestrate large environments.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is Ansible Tower?",
+        "answer": "Ansible Tower is like Ansible at a more enterprise level. It is the web-based solution for managing your organization with an easy user interface that provides a dashboard with all of the state summaries of all the hosts. And allows quick deployments, and monitors all configurations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is Ansible Galaxy?",
+        "answer": "Ansible Galaxy is a galaxy website where users can share roles and to a command-line tool for installing, creating, and managing roles.\nAnsible Galaxy gives greater visibility to one of Ansible's most exciting features, such as application installation or reusable roles for server configuration. Lots of people share roles in the Ansible Galaxy.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is Ansible Modules?",
+        "answer": "Ansible modules are discrete units of code which can be used from the command line or in a playbook task.\nThe modules also referred to as task plugins or library plugins in the Ansible.\nAnsible ships with several modules that are called module library, which can be executed directly or remote hosts through the playbook.\nUsers can also write their modules. These modules can control like services, system resources, files, or packages, etc. and handle executing system commands.\nADVERTISEMENT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) How does Ansible work?",
+        "answer": "Ansible works by connecting to the nodes and pushing out a small program called Ansible modules to them. Then Ansible executed these modules and removed them after finished. The library of the modules can reside on any machine, and there are no daemons, servers, or databases required.\n\nThe Management Node is the controlling node that controls the entire execution of the playbook. The inventory files provide the list of hosts where the Ansible modules need to be run. The Management Node makes an SSH connection and executes the small modules on the host's machine and install the software.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the Ansible Server requirements?",
+        "answer": "If you are a windows user, then you required to have a virtual machine in which Linux should be installed.\nAnd it requires python 2.6 version or higher.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are the variables in Ansible?",
+        "answer": "The variable is very similar to using the variables in a programming language. It helps you to assign a value to a variable and use it anywhere in the playbook. You can put the conditions around the value of the variables and use them in the playbook accordingly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is Ansible Task?",
+        "answer": "Ansible Task allows us to break up bits of configuration policy into smaller files. These are the block of code which can be used to automate any process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Explain the basic terminologies or concepts in Ansible?",
+        "answer": "Some basic terms which are commonly used in Ansible, such as:\nController Machine: The Controller machine is used to provisioning the servers, which is managed. This is the machine where Ansible is installed.\nInventory: An inventory is an initialization file which has details about the different servers you are managing.\nPlaybook: It is a code file that is written in the YAML format. A playbook contains the tasks that need to be automated or executed.\nTask: Every task represents a single procedure that needs to be executed, e.g., installs a library.\nModule: A module is the set of tasks that can be executed. Ansible has 100s of built-in modules, and also you can create custom ones.\nRole: The role is a pre-defined way for organizing playbooks and other files to facilitate sharing and reusing portions of provisioning.\nPlay: The task executed from start to finish, or the execution of a playbook is called the play.\nFacts: Facts are global variables which are store details about the system, such as network interfaces or operating system.\nHandlers: Handlers are used to trigger the status of a service, such as restarting or stopping a service.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are Ad-hoc commands?",
+        "answer": "Ad-hoc commands are simple one-line commands which are used to perform a certain task. You can think of Ad-hoc commands as an alternative to writing playbooks. An example of an Ad-hoc command, as shown as follows:\nansible host -m netscaler -a \"nsc_host=nsc.example.com user=ansiuser password=ansipass\"  \nThe above Ad-hoc command accesses the NetScaler module to disable the server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) How would you access a variable of the first host in a group?",
+        "answer": "Executes the following commands to access a variable of the first host in a group:\n{{ hostvars[groups['webservers'][0]]['ansible_eth0']['ipv4']['address'] }}  \nThis command is accessing the hostname of the first machine in the webservers group. If you are doing this by a template, then use the jinja2 '#set', or you can use set_fact.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How to keep secrete data in a playbook?",
+        "answer": "The following command is used to keep verbose output but hide the sensitive information from others who would like to be able to see the output.\n-   name: secrete task  \nshell: /user/bin/do_somthing -value={{secrete value}}  \nno_log: True   \nAlso, the no_log attribute can apply to an entire play.\n-   hosts: all  \nno_log: True",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What are Ansible Vaults, and why are they used?",
+        "answer": "Ansible Vault is a feature that allows keeping all your secrets safe. It can encrypt entire files, YAML playbooks, or even a few variables. It provides a facility where you also can integrate the sensitive data into your playbooks.\n\nVault is implemented with file-level granularity, where the files are completely encrypted or unencrypted. It uses the same password for encrypting as well as decrypt the data, which makes Ansible vault user-friendly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the way to access shell environment variables in Ansible?",
+        "answer": "In Ansible, if you want to access existing variables, then you need to use the 'env' lookup plugin.\nFor example, you want to access the value of the Office environment on the management machine, as shown in the following command, such as:\n---  \n# ...  \nvars:  \nlocal_home: \"{{ lookup('env','Office') }}\"  \nI  \n{{ ansible_env.SOME_VARIABLE }}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) Who you can copy file recursively onto a target host?",
+        "answer": "The \"copy\" module has a recursive parameter. Therefore, if you want to perform more efficient for a large number of files, then the \"synchronize\" module is the best option for doing this task.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How do you set the path or any other environment variable for a task?",
+        "answer": "The environment variables can be set by using the 'environment' keyword. It can be set for either a task or an entire playbook. Follow the following code to see how do set the path, such as:\nenvironment:  \nPATH: \"{{ansible_env.PATH}}:/thingy/bin\"  \nSOME: value",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How can you see all variables for a host?",
+        "answer": "You can see all the variables using the host vary variable. It stores host variables with the hostname as key. For example, to look at the variables defined for localhost, you can run the following command, such as:\nansible -m debug -a \"var=hostvars[inventory_hostname]\"",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the difference between the Variable Name and Environment Variable in Ansible?",
+        "answer": "Variable Name Environment Variable\nYou need to add strings to create variable names. You need existing variables to access environment variables.\nYou can easily create multiple variable names by adding strings. To create environment variables, you must refer to the advanced Ansible playbook.\nUse the IPV4 address for variable names. Use {{ansible_env.SOME_VARIABLE}} for remote environment variables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is RedHat Ansible?",
+        "answer": "Ansible and Ansible Tower by Red Hat, both are the end to end complete automation platforms which are capable of providing the following features or functionalities:\nProvisioning\nDeploying applications\nOrchestrating workflows\nManage IT systems\nConfiguration of IT systems\nNetworks\nApplications\nAll of these activities are dealing with Ansible, where it can help the business to solve real-time business problems.",
+        "reference": "javatpoint.com"
+    }
+]

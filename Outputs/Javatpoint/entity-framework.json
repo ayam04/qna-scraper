@@ -1,0 +1,202 @@
+[
+    {
+        "question": "1) What is meant by the Entity Framework?",
+        "answer": "An Entity Framework (EF) is an open-source ORM (Object-Relational Mapper) from Microsoft. It allows developers to work with .NET applications and other domain-specific objects. It helps streamline mapping between different objects within the software by providing tables and columns.\nA framework uses objects of domain-specific classes and also provides an option to store and access data in the database automatically. This concept is derived from MVC. However, the Entity framework does not focus on the original database columns and tables used to store data. This makes it easier to operate an abstraction of a higher level while creating new applications or maintaining the existing ones.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Why should we use the Entity Framework?",
+        "answer": "It is a kind of a problematic task when it comes to writing and managing ADO.NET codes. Therefore, Microsoft introduced the Entity Framework to make this tedious task more manageable. Entity Framework reduces a significant amount of code-based tasks by providing relational data in the form of domain-specific objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "NET EF?",
+        "answer": "ADO.NET Entity Framework is an ORM framework that allows us to work with different relational databases, such as Oracle, MYSQL, SQL Server, DB2, etc. It enables us to work with the data either as objects or entities.\nApart from this, ADO.NET also helps create senior abstract object model on the top of ADO.NET components. This eventually enables us to use advanced level domain objects, such as customers, suppliers, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "NET from Entity Framework?",
+        "answer": "We can differentiate ADO.NET from Entity framework using the following table:\nADO.NET Entity Framework\nADO.NET is fast. Entity Framework is comparatively slower.\nIt creates several data layer codes. It does not create any data layer codes.\nIt does not create codes for the data access layers, intermediate layers, and mapping codes by itself. It automatically creates codes for the data access layers, intermediate layers, and mapping codes. This eventually helps developers cut down the development of work and time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the main advantages and disadvantages of the Entity Framework?",
+        "answer": "Advantages:\nADVERTISEMENT\nIt provides a wide range of prototypes that helps write object-oriented codes.\nIt includes auto migration support that helps configure or manage a database easily and quickly.\nIt provides many alternate commands that help shorten codes and make a coding job a lot easier.\nDisadvantages:\nIt is considered a slower form of ORM.\nIf a user does not use raw SQL codes, things might become difficult.\nIt directs the shape of the entire model when it comes to difficult projects. Additionally, cleaning a model is not possible without an ORM technique.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The following are the main components of the Entity Framework Architecture:\nEntity Data Model (EDM): It consists of the three parts, such as storage model, conceptual model, and mapping.\nEntity SQL: It is an alternate query language used in Entity Frameworks along with L2E. However, L2E is comparatively more straightforward.\nLINQ to Entities (L2E): It is a query language that helps write queries against the object, which further helps to retrieve the entities based on the definitions specifies in the conceptual model.\nEntity Client Data Provider: It is defined as the layer that helps convert the L2E queries to SQL queries to be easily understood by the database. Additionally, it can interact with the ADO.NET data provider to transfer or retrieve data from different databases.\nNet Data Provider: It is another layer that helps interact with the database by using standard ADO.NET.\nObject Service: It is an entry point into the database used to access and send back the data when needed. It helps convert the data coming from an entity client data provider into an entity object structure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the primary functions of the Entity Framework?",
+        "answer": "The following are the primary functions of EF:\nIt helps map domain classes to the database schema translates.\nIt keeps tracks of changes in the entities.\nIt helps execute LINQ queries to SQL.\nIt stores the changes stats to the database.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Entity Framework contains a migration tool that automatically helps users update the entire database whenever there is a change in the model. The tool updates the database without losing the stored data or any database objects.\nThere are mainly two types of migration in Entity Framework:\nAutomated Migration\nCode-based Migration",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the processes used to load related entities in the Entity Framework?",
+        "answer": "We can use any of the following processes to load related entities in the Entity Framework:\nLazy Loading: This process delays the loading of related objects until there is a requirement of them. Lazy loading only returns objects needed by the user, and all other related objects are only returned when required in the process.\nEager Loading: This process mainly takes place when we query for an object. Eager loading returns all the related objects. Additionally, all the related objects are automatically loaded with the parent object.\n\nExplicit Loading: This process only occurs when we want to use lazy loading, even when we have already disabled lazy loading. To process explicit loading, we are required to call the relevant load method on the related entities explicitly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the different types of inheritance supported in Entity Framework?",
+        "answer": "There are mainly three types of inheritance supported in Entity Framework, such as:\nTable per Hierarchy (TPH): This type of inheritance depicts a single table for the entire inheritance hierarchy class. Besides, the table consists of a discriminator column that helps distinguish different inheritance classes. It is the default inheritance mapping technique in Entity Framework.\nTable per Type (TPT): This type of inheritance depicts a separate or specific table for all and each domain class.\nTable per Concrete Class (TPC): This type of inheritance depicts a single table for a single concrete class, but it does not include the abstract class. Therefore, if an abstract class is inherited in various concrete classes, then every concrete class table will have the same properties as the abstract class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the primary parts of the Entity Data Model?",
+        "answer": "There are mainly three parts of the Entity Data Model, such as:\nStorage Model\nConceptual Model\nMapping",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is meant by a model in context to Entity Framework?",
+        "answer": "A model is nothing but a class mainly used to represent the data. In context to EF, a model represents the data from a table inside the existing database.\nExample: The following codes display the basic customer model:\npublic class Customer  \n{  \n  public int ID { get; set; }  \n  public string Name { get; set; }  \n  public DateTime JoinDate { get; set; }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How will you differentiate LINQ from Entity Framework?",
+        "answer": "We can differentiate LINQ from Entity Framework with the help of the following table:\nLINQ Entity Framework\nIt only operates with the help of the SQL Server Database. It has various databases, such as SQL Server, MYSQL, Oracle, DB2, etc.\nIt supports one to one mapping between entity classes and the relational tables. It supports one to one, one to many, and many to many mapping types between the entity classes and the relational tables.\nIt maintains a relation by creating a .dbml file. It first creates the .edmx file. After that, it maintains a relation using three types of files: .ssdl, .msl and .csdl.\nIt does not support complex types. It supports complex types.\nIt cannot generate a database by using the model. It can generate a database using the model.\nIt enables users to query the data with DataContext. It allows users to query the data with DbContext, ObjectContext, and EntitySQL.\nIt contains a tightly coupled mechanism. It contains a loosely coupled mechanism.\nIt is mainly used for faster application developments with SQL Server. It is primarily used for faster application developments using SQL Server and other databases like MYSQL, Oracle, DB2, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How will you define the Conceptual Model?",
+        "answer": "The conceptual model is usually defined as the model class that consists of relationships. This type of model remains independent of the database structure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How will you explain the Storage Model?",
+        "answer": "The storage model is usually explained as the database design model that consists of database tables, stored procs, views, and keys with relationships.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "EDM in EF is a short form of 'Entity Data Model'. It is defined as the entity-relationship prototype that helps assign basic prototypes for the data utilizing various modeling procedures. Additionally, it is referred to as a collection of core principles that define data that disregards its aggregated form. In short, it is nothing but a simple connection formed between the database and the prototype.\nThe following are the steps that help create an Entity Data Model:\nFirst, we need to right-click on the project's name given in the solution explorer tab.\nNext, we are required to click on 'Add a new item from the menu'.\nAfter that, we are required to select the ADO.NET Entity Data Model arrangement or any template.\nFinally, we must specify a name for the model and click on the 'ADD' button.\nThat is how we can create EDM in Entity Framework.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The following are the steps required to retrieve data from the database in MVC with the help of Entity Framework:\nFirst of all, we need to create a new project.\nNext, we need to add Entity Framework reference from the NuGet package manager.\nThen, we need to create a new class within the model inside the table structure.\nAfter that, we are required to add a connection string in the web.config.connection. It should be matched with the context.\nNext, we need to open the Global.asax.cs class, and implement the new namespace of EF. Then, we need to initialize the database.\nWe are now required to right-click on the Controller folder and add a new controller along with the model reference in section namespace.\nFinally, we need to right-click on the Controller name and add the sections we want to retrieve.\nThat is how we can view or retrieve the data from the database in MVC using EF.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is meant by dbcontext and dbset?",
+        "answer": "DbContext is referred to as a class in the Entity Framework API that helps create a communication between the database and the domain/entity class. In simple terms, it is a class mainly used for communicating with the database.\nDbSet is also referred to as a class that helps represent an entity set for different operations, such as creating, updating, reading, and deleting. The context class in DbContext must include the DbSet type properties for all such entities that help join database tables and views.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How will you define POCO classes concerning the Entity Framework?",
+        "answer": "The term POCO is a short form of 'Plain Old CLR Objects'. However, it does not mean that the classes used here are plain or old. POCO classes are usually defined as the classes that do not include any reference specific to the EF or .NET framework. The POCO entities are referred to as the available domain objects in the Entity Framework application.\nUnlike standard .NET class, POCO class of any object is independent of a framework-specific base class. POCO classes support various LINQ queries that are supported by the derived entities of the Entity Object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What are the different types of approaches used in Entity Framework?",
+        "answer": "There are mainly three types of approaches used in Entity Framework, such as:\nModel First Approach\nCode First Approach\nDatabase First Approach",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Code First Approach: In Entity Framework, the Code First approach is mainly used to create a model and its relationships using classes, which further help create a database. This enables developers to work in an object-oriented manner without thinking about the structure of the database. In this approach, the developers first write POCO classes and then create the database with the help of these POCO classes. Most developers following Domain-Driven Design (DDD) technique use the Code First approach.\nAdvantages of Code First Approach:\nIt allows developers to decide the database structure according to business objects, making it more beneficial for smaller applications.\nIt enables developers to decide which classes should be serialized. It also allows us to specify the collection to eager load.\nModel First Approach: On the other side, the Model First approach is used to create model classes and their relationships using ORM. Once the model classes and relationships are created successfully, the physical database is created with the help of these models.\nAdvantages of Model First Approach:\nIt offers flexibility for designing the Entity Models separately and provides options to improve them in further stages.\nIt does not use many databases because we can create model classes by drawing them using the EDMX designer.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In terms of the Entity Framework, the Database First approach is the method of generating an entity model from the available database. The primary motive of this approach is to lower the number of codes to be written. This approach mainly helps create domain and context classes based on the existing classes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Which, according to you, is the best approach in the Entity Framework?",
+        "answer": "There is no particular approach that can be referred to as the best approach in Entity Framework. The selection of the development approach primarily depends on the project requirements and the project's types. If there is the database's existence, then it is good to use the Database First approach. If there is no database and the model classes, then the Model First approach is the best selection. If there is the availability of the domain classes, the Code First approach is the most suitable choice.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In the context of Entity Framework, a .edmx file is a simple XML file that may contain storage models, conceptual models, and the mapping between them. It contains all the mapping information of how object maps with SQL tables. Besides, it can include information required by ADO.NET Entity Data Designer to render a model graphically.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is meant by database concurrency and how to handle it?",
+        "answer": "EF's database concurrency is defined as the scenario when multiple users access and modify the same data in the same database simultaneously. The systems that protect the consistency of data in such situations are known as concurrency controls.\nThe database concurrency is usually handled by implementing optimistic locking. To implement the locking, we must first right-click on the EDMX designer and then set the concurrency mode to Fixed. After making this change, we will get a positive concurrency exception error if there is a concurrency issue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are the different types of properties supported in Entity Framework?",
+        "answer": "There are mainly three types of properties supported in Entity Framework, such as:\nNavigational Property\nComplex Property\nScalar Property",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) How will you define Mapping in Entity Framework?",
+        "answer": "The mapping in Entity Framework is defined as the information that explains how the conceptual models are mapped to the storage models.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What do you understand by LINQ to Entities?",
+        "answer": "LINQ to Entities (L2E) is defined as one of the popular query languages in Entity Framework. L2E mainly helps write queries against the objects to retrieve entities based on the conceptual model's definitions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What do you understand by the Entity SQL?",
+        "answer": "Entity SQL is an alternate query language that is similar to a LINQ to Entities. However, it is more complicated than LINQ to Entities. Developers who want to use this language will have to learn it separately.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the role of Pluralize and Singularize in Entity Framework?",
+        "answer": "In Entity Framework, Pluralize and Singularize are primarily responsible for assigning meaningful naming conventions to objects. We can access this feature while adding a .edmx file. While using this feature, the Entity Framework will assign to Singular or Plural coding conventions. An extra 's' is added while giving convention names if there is more than one record within the object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What are the methods used for executing plain SQL in Entity Framework?",
+        "answer": "The following are the methods used for executing plain SQL in Entity Framework:\nSqlQuery()\nDatabase.SqlQuery()\nDatabase.ExecuteSqlCommand()",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What do you understand by the SQL injection attack?",
+        "answer": "SQL injection attacks involve attackers stealing confidential information from an organization's database. This type of attack is usually done by adding SQL commands to the existing applications' coding based on SQL statements. This is an application-layer attack, meaning front-end attack, as attackers use and modify existing code, which is improperly coded.\nSQL injection attack is usually inserted using the fields that are available for user input. It occurs as these fields allow SQL statements to be pass through it and query the database directly. The SQL injection problem is a common problem with ADO.NET data service queries. Besides, Entity Framework is an injection safe because it creates parameterized SQL commands every time to secure the database from SQL injection. Also, the developers should never combine user inputs with Entity SQL command text. This will add extra layers of security.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In Entity Framework, the navigation property is used to represent a foreign key relationship in the database. This type of property allows users to assign specific relationships between the entities within the database. A relationship is defined in such a way that they remain coherent in the object-oriented language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What do you know about ComplexType in Entity Framework?",
+        "answer": "In Entity Framework, ComplexType is a non-scalar property of entity types. This type of property helps users to assign scalar relationships between entities.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The O/RMs listed below can be used with .NET based applications:\nEntity Framework 6.x\nEntity Framework Core\nN Hibernate\nDapper",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) How will you explain Micro O/RMs?",
+        "answer": "A Micro ORM is designed to focus on the essential task of working with database tables rather than creating database schemas, modifying database schemas, tracking changes, etc. Entity Framework 6.x and Entity Framework core are called O/RMs because they provide a complete set of features and functionalities.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is meant by a Dapper?",
+        "answer": "Dapper is a simple micro ORM that helps map the native query's output to a domain or any c# class. It is a powerful system used for data access in the .NET world. Dapper was developed by the StackOverflow team and released as an open-source project. It consists of a NuGet library that can be easily inserted into any.NET project based on database operations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What can we do to improve the performance of the Entity Framework?",
+        "answer": "We can use the following ways to improve the performance of the Entity Framework:\nWe can use compiled queries whenever required.\nWe must avoid the use of Views and Contains.\nWe can disable and alter tracking for the entity when it is not needed.\nWe can Debug and Optimize the LINQ query.\nIf not obligatory, we must try to evade fetching all the fields.\nWe should retrieve only the desired number of records when binding data to the grid.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is meant by the Object Set in Entity Framework?",
+        "answer": "Object set is a specific type of entity set that can be used to read, update, create, and remove operations from any existing entity. It can only be created by using Object Context instance. It does not support any kind of Entity SQL method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What are the different Entity states present in Entity Framework?",
+        "answer": "Each entity contains a specific state throughout the lifecycle. Various states are defined by an enum (known as EntityState), with a particular value next to it, such as added, deleted, modified, detached, or unchanged.",
+        "reference": "javatpoint.com"
+    }
+]

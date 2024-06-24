@@ -1,0 +1,152 @@
+[
+    {
+        "question": "1) What is JDBC?",
+        "answer": "JDBC is a Java API that is used to connect and execute the query to the database. JDBC API uses JDBC drivers to connect to the database. JDBC API can be used to access tabular data stored into any relational database.\n\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is JDBC Driver?",
+        "answer": "JDBC Driver is a software component that enables Java application to interact with the database. There are 4 types of JDBC drivers:\nJDBC-ODBC bridge driver: The JDBC-ODBC bridge driver uses the ODBC driver to connect to the database. The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC function calls. This is now discouraged because of the thin driver. It is easy to use and can be easily connected to any database.\nNative-API driver (partially java driver): The Native API driver uses the client-side libraries of the database. The driver converts JDBC method calls into native calls of the database API. It is not written entirely in Java. Its performance is better than JDBC-ODBC bridge driver. However, the native driver must be installed on each client machine.\nNetwork Protocol driver (fully java driver): The Network Protocol driver uses middleware (application server) that converts JDBC calls directly or indirectly into the vendor-specific database protocol. It is entirely written in Java. There is no requirement of the client-side library because of the application server that can perform many tasks like auditing, load balancing, logging, etc.\nThin driver (fully java driver): The thin driver converts JDBC calls directly into the vendor-specific database protocol. That is why it is known as the thin driver. It is entirely written in Java language. Its performance is better than all other drivers however these drivers depend upon the database.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the steps to connect to the database in java?",
+        "answer": "The following steps are used in database connectivity.\nADVERTISEMENT\nRegistering the driver class:\nThe forName() method of the Class class is used to register the driver class. This method is used to load the driver class dynamically. Consider the following example to register OracleDriver class.\nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \n\nCreating connection:\nThe getConnection() method of DriverManager class is used to establish the connection with the database. The syntax of the getConnection() method is given below.\n1) public static Connection getConnection(String url)throws SQLException  \n2) public static Connection getConnection(String url,String name,String password)  \nthrows SQLException  \nConsider the following example to establish the connection with the Oracle database.\nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"password\");  \n\nCreating the statement:\nThe createStatement() method of Connection interface is used to create the Statement. The object of the Statement is responsible for executing queries with the database.\npublic Statement createStatement()throws SQLException  \nconsider the following example to create the statement object\nStatement stmt=con.createStatement();  \n\nExecuting the queries:\nThe executeQuery() method of Statement interface is used to execute queries to the database. This method returns the object of ResultSet that can be used to get all the records of a table.\nSyntax of executeQuery() method is given below.\npublic ResultSet executeQuery(String sql)throws SQLException  \nExample to execute the query\nResultSet rs=stmt.executeQuery(\"select * from emp\");  \nwhile(rs.next()){  \nSystem.out.println(rs.getInt(1)+\" \"+rs.getString(2));  \n}  \nHowever, to perform the insert and update operations in the database, executeUpdate() method is used which returns the boolean value to indicate the successful completion of the operation.\nClosing connection:\nBy closing connection, object statement and ResultSet will be closed automatically. The close() method of Connection interface is used to close the connection.\nSyntax of close() method is given below.\npublic void close()throws SQLException  \nConsider the following example to close the connection.\ncon.close();  \nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the JDBC API components?",
+        "answer": "The java.sql package contains following interfaces and classes for JDBC API.\nInterfaces:\nConnection: The Connection object is created by using getConnection() method of DriverManager class. DriverManager is the factory for connection.\n\nStatement: The Statement object is created by using createStatement() method of Connection class. The Connection interface is the factory for Statement.\n\nPreparedStatement: The PrepareStatement object is created by using prepareStatement() method of Connection class. It is used to execute the parameterized query.\n\nResultSet: The object of ResultSet maintains a cursor pointing to a row of a table. Initially, cursor points before the first row. The executeQuery() method of Statement interface returns the ResultSet object.\n\nResultSetMetaData: The object of ResultSetMetaData interface cotains the information about the data (table) such as numer of columns, column name, column type, etc. The getMetaData() method of ResultSet returns the object of ResultSetMetaData.\n\nDatabaseMetaData: DatabaseMetaData interface provides methods to get metadata of a database such as the database product name, database product version, driver name, name of the total number of tables, the name of the total number of views, etc. The getMetaData() method of Connection interface returns the object of DatabaseMetaData.\n\nCallableStatement: CallableStatement interface is used to call the stored procedures and functions. We can have business logic on the database through the use of stored procedures and functions that will make the performance better because these are precompiled. The prepareCall() method of Connection interface returns the instance of CallableStatement.\nClasses:\nDriverManager: The DriverManager class acts as an interface between the user and drivers. It keeps track of the drivers that are available and handles establishing a connection between a database and the appropriate driver. It contains several methods to keep the interaction between the user and drivers.\n\nBlob: Blob stands for the binary large object. It represents a collection of binary data stored as a single entity in the database management system.\n\nClob: Clob stands for Character large object. It is a data type that is used by various database management systems to store character files. It is similar to Blob except for the difference that BLOB represent binary data such as images, audio and video files, etc. whereas Clob represents character stream data such as character files, etc.\n\nSQLException It is an Exception class which provides information on database access errors.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the JDBC statements?",
+        "answer": "In JDBC, Statements are used to send SQL commands to the database and receive data from the database. There are various methods provided by JDBC statements such as execute(), executeUpdate(), executeQuery, etc. which helps you to interact with the database.\nThere is three type of JDBC statements given in the following table.\nStatements Explanation\nStatement Statement is the factory for resultset. It is used for general purpose access to the database. It executes a static SQL query at runtime.\nPreparedStatement The PreparedStatement is used when we need to provide input parameters to the query at runtime.\nCallableStatement CallableStatement is used when we need to access the database stored procedures. It can also accept runtime parameters.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "forName() method?",
+        "answer": "The Class.forName() method returns the object of java.lang.Class object.\nADVERTISEMENT\n7) What are the differences between Statement and PreparedStatement interface?\nStatement PreparedStatement\nThe Statement interface provides methods to execute queries with the database. The statement interface is a factory of ResultSet; i.e., it provides the factory method to get the object of ResultSet.\nThe PreparedStatement interface is a subinterface of Statement. It is used to execute the parameterized query.\nIn the case of Statement, the query is compiled each time we run the program. In the case of PreparedStatement, the query is compiled only once.\nThe Statement is mainly used in the case when we need to run the static query at runtime.\nPreparedStatement is used when we need to provide input parameters to the query at runtime.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the differences between Statement and PreparedStatement interface?",
+        "answer": "Statement PreparedStatement\nThe Statement interface provides methods to execute queries with the database. The statement interface is a factory of ResultSet; i.e., it provides the factory method to get the object of ResultSet.\nThe PreparedStatement interface is a subinterface of Statement. It is used to execute the parameterized query.\nIn the case of Statement, the query is compiled each time we run the program. In the case of PreparedStatement, the query is compiled only once.\nThe Statement is mainly used in the case when we need to run the static query at runtime.\nPreparedStatement is used when we need to provide input parameters to the query at runtime.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) How can we set null value in JDBC PreparedStatement?",
+        "answer": "By using setNull() method of PreparedStatement interface, we can set the null value to an index. The syntax of the method is given below.\nvoid setNull(int parameterIndex, int sqlType) throws SQLException",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the benefits of PreparedStatement over Statement?",
+        "answer": "The benefits of using PreparedStatement over Statement interface is given below.\nThe PreparedStatement performs faster as compare to Statement because the Statement needs to be compiled everytime we run the code whereas the PreparedStatement compiled once and then execute only on runtime.\nPreparedStatement can execute Parameterized query whereas Statement can only run static queries.\nThe query used in PreparedStatement is appeared to be similar every time. Therefore, the database can reuse the previous access plan whereas, Statement inline the parameters into the String, therefore, the query doesn't appear to be same everytime which prevents cache reusage.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the differences between execute, executeQuery, and executeUpdate?",
+        "answer": "execute executeQuery executeUpdate\nThe execute method can be used for any SQL statements(Select and Update both). The executeQuery method can be used only with the select statement. The executeUpdate method can be used to update/delete/insert operations in the database.\nThe execute method returns a boolean type value where true indicates that the ResultSet s returned which can later be extracted and false indicates that the integer or void value is returned. The executeQuery() method returns a ResultSet object which contains the data retrieved by the select statement. The executeUpdate() method returns an integer value representing the number of records affected where 0 indicates that query returns nothing.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the different types of ResultSet?",
+        "answer": "ResultSet is categorized by the direction of the reading head and sensitivity or insensitivity of the result provided by it. There are three general types of ResultSet.\nType Description\nResultSet.TYPE_Forward_ONLY The cursor can move in the forward direction only.\nResultSet.TYPE_SCROLL_INSENSITIVE The cursor can move in both the direction (forward and backward). The ResultSet is not sensitive to the changes made by the others to the database.\nResultSet.TYPE_SCROLL_SENSITIVE The cursor can move in both the direction. The ResultSet is sensitive to the changes made by the others to the database.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the differences between ResultSet and RowSet?",
+        "answer": "ResultSet RowSet\nResultSet cannot be serialized as it maintains the connection with the database. RowSet is disconnected from the database and can be serialized.\nResultSet object is not a JavaBean object ResultSet Object is a JavaBean object.\nResultSet is returned by the executeQuery() method of Statement Interface. Rowset Interface extends ResultSet Interface and returned by calling the RowSetProvider.newFactory().createJdbcRowSet() method.\nResultSet object is non-scrollable and non-updatable by default. RowSet object is scrollable and updatable by default.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How can we execute stored procedures using CallableStatement?",
+        "answer": "Following are the steps to create and execute stored procedures. Here, we are creating a table user420 by using a stored procedure and inserting values into it.\nCreate the procedure in the database.\nTo call the stored procedure, you need to create it in the database. Here, we are assuming that the stored procedure looks like this.\ncreate or replace procedure \"INSERTR\"  \n(id IN NUMBER,  \nname IN VARCHAR2)  \nis  \nbegin  \ninsert into user420 values(id,name);  \nend;  \n/     \nThe table structure is given below:\ncreate table user420(id number(10), name varchar2(200));  \n\nEstablish a network connection.\nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \n\nCreate the Object of CallableStatement.\nCallableStatement stmt=con.prepareCall(\"{call insertR(?,?)}\");  \n\nProvide the values and execute the query by using the following syntax.\nstmt.setInt(1,1011);  \nstmt.setString(2,\"Amit\");  \nstmt.execute();  \n\nCheck the database; the values will be found there. However, the complete code will look like the following.\nimport java.sql.*;  \npublic class Proc {  \npublic static void main(String[] args) throws Exception{  \n  Class.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \n  CallableStatement stmt=con.prepareCall(\"{call insertR(?,?)}\");  \nstmt.setInt(1,1011);  \nstmt.setString(2,\"Amit\");  \nstmt.execute();  \n  System.out.println(\"success\");  \n}  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the role of the JDBC DriverManager class?",
+        "answer": "The DriverManager class acts as an interface between user and drivers. It keeps track of the drivers that are available and handles establishing a connection between a database and the appropriate driver. The DriverManager class maintains a list of Driver classes that have registered themselves by calling the method DriverManager.registerDriver().\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the functions of the JDBC Connection interface?",
+        "answer": "The Connection interface maintains a session with the database. It can be used for transaction management. It provides factory methods that return the instance of Statement, PreparedStatement, CallableStatement, and DatabaseMetaData.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What does the JDBC ResultSet interface?",
+        "answer": "The ResultSet object represents a row of a table. It can be used to change the cursor pointer and get the information from the database. By default, ResultSet object can move in the forward direction only and is not updatable. However, we can make this object to move the forward and backward direction by passing either TYPE_SCROLL_INSENSITIVE or TYPE_SCROLL_SENSITIVE in createStatement(int, int) method.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What does the JDBC ResultSetMetaData interface?",
+        "answer": "The ResultSetMetaData interface returns the information of table such as the total number of columns, column name, column type, etc.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What does the JDBC DatabaseMetaData interface?",
+        "answer": "The DatabaseMetaData interface returns the information of the database such as username, driver name, driver version, number of tables, number of views, etc. Consider the following example.\nimport java.sql.*;  \nclass Dbmd{  \npublic static void main(String args[]){  \ntry{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \n  Connection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \nDatabaseMetaData dbmd=con.getMetaData();  \n  System.out.println(\"Driver Name: \"+dbmd.getDriverName());  \nSystem.out.println(\"Driver Version: \"+dbmd.getDriverVersion());  \nSystem.out.println(\"UserName: \"+dbmd.getUserName());  \nSystem.out.println(\"Database Product Name: \"+dbmd.getDatabaseProductName());  \nSystem.out.println(\"Database Product Version: \"+dbmd.getDatabaseProductVersion());  \n  con.close();  \n}catch(Exception e){ System.out.println(e);}  \n}  \n}  \nOutput\nDriver Name: Oracle JDBC Driver\nDriver Version: 10.2.0.1.0XE\nDatabase Product Name: Oracle\nDatabase Product Version: Oracle Database 10g Express Edition Release 10.2.0.1.0 -Production\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Which interface is responsible for transaction management in JDBC?",
+        "answer": "The Connection interface provides methods for transaction management such as commit(), rollback() etc.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is batch processing and how to perform batch processing in JDBC?",
+        "answer": "By using the batch processing technique in JDBC, we can execute multiple queries. It makes the performance fast. The java.sql.Statement and java.sql.PreparedStatement interfaces provide methods for batch processing. The batch processing in JDBC requires the following steps.\nLoad the driver class\nCreate Connection\nCreate Statement\nAdd query in the batch\nExecute the Batch\nClose Connection\n\nConsider the following example to perform batch processing using the Statement interface.\nimport java.sql.*;  \nclass FetchRecords{  \npublic static void main(String args[])throws Exception{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \ncon.setAutoCommit(false);  \n  Statement stmt=con.createStatement();  \nstmt.addBatch(\"insert into user420 values(190,'abhi',40000)\");  \nstmt.addBatch(\"insert into user420 values(191,'umesh',50000)\");  \n  stmt.executeBatch();//executing the batch  \n  con.commit();  \ncon.close();  \n}}  \nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are CLOB and BLOB data types in JDBC?",
+        "answer": "BLOB: Blob can be defined as the variable-length, binary large object which is used to hold the group of Binary data such as voice, images, and mixed media. It can hold up to 2GB data on MySQL database and 128 GB on Oracle database. BLOB is supported by many databases such as MySQL, Oracle, and DB2 to store the binary data (images, video, audio, and mixed media).\nCLOB: Clob can be defined as the variable-length, character-large object which is used to hold the character-based data such as files in many databases. It can hold up to 2 GB on MySQL database, and 128 GB on Oracle Database. A CLOB is considered as a character string.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What are the different types of lockings in JDBC?",
+        "answer": "A lock is a certain type of software mechanism by using which, we can restrict other users from using the data resource. There are four type of locks given in JDBC that are described below.\nRow and Key Locks: These type of locks are used when we update the rows.\nPage Locks: These type of locks are applied to a page. They are used in the case, where a transaction remains in the process and is being updated, deleting, or inserting some data in a row of the table. The database server locks the entire page that contains the row. The page lock can be applied once by the database server.\nTable locks: Table locks are applied to the table. It can be applied in two ways, i.e., shared and exclusive. Shared lock lets the other transactions to read the table but not update it. However, The exclusive lock prevents others from reading and writing the table.\nDatabase locks: The Database lock is used to prevent the read and update access from other transactions when the database is open.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How can we store and retrieve images from the database?",
+        "answer": "By using the PreparedStatement interface, we can store and retrieve images. Create a table which contains two columns namely NAME and PHOTO.\nCREATE TABLE  \"IMGTABLE\"   \n   (    \"NAME\" VARCHAR2(4000),   \n    \"PHOTO\" BLOB  \n   )  \nConsider the following example to store the image in the database.\nimport java.sql.*;  \nimport java.io.*;  \npublic class InsertImage {  \npublic static void main(String[] args) {  \ntry{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \n              PreparedStatement ps=con.prepareStatement(\"insert into imgtable values(?,?)\");  \nps.setString(1,\"sonoo\");  \n  FileInputStream fin=new FileInputStream(\"d:\\\\g.jpg\");  \nps.setBinaryStream(2,fin,fin.available());  \nint i=ps.executeUpdate();  \nSystem.out.println(i+\" records affected\");  \n          con.close();  \n}catch (Exception e) {e.printStackTrace();}  \n}  \n}  \n\nConsider the following example to retrieve the image from the table.\nimport java.sql.*;  \nimport java.io.*;  \npublic class RetrieveImage {  \npublic static void main(String[] args) {  \ntry{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \n      PreparedStatement ps=con.prepareStatement(\"select * from imgtable\");  \nResultSet rs=ps.executeQuery();  \nif(rs.next()){//now on 1st row  \n              Blob b=rs.getBlob(2);//2 means 2nd column data  \nbyte barr[]=b.getBytes(1,(int)b.length());//1 means first image  \n              FileOutputStream fout=new FileOutputStream(\"d:\\\\sonoo.jpg\");  \nfout.write(barr);  \n              fout.close();  \n}//end of if  \nSystem.out.println(\"ok\");  \n              con.close();  \n}catch (Exception e) {e.printStackTrace();  }  \n}  \n}  \nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How can we store the file in the Oracle database?",
+        "answer": "The setCharacterStream() method of PreparedStatement interface is used to set character information into the parameterIndex. For storing the file into the database, CLOB (Character Large Object) datatype is used in the table. For example:\nCREATE TABLE  \"FILETABLE\"   \n   (    \"ID\" NUMBER,   \n    \"NAME\" CLOB  \n   )  \nJava Code\nimport java.io.*;  \nimport java.sql.*;  \n  public class StoreFile {  \npublic static void main(String[] args) {  \ntry{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \n              PreparedStatement ps=con.prepareStatement(  \n\"insert into filetable values(?,?)\");  \n              File f=new File(\"d:\\\\myfile.txt\");  \nFileReader fr=new FileReader(f);  \n              ps.setInt(1,101);  \nps.setCharacterStream(2,fr,(int)f.length());  \nint i=ps.executeUpdate();  \nSystem.out.println(i+\" records affected\");  \n              con.close();  \n              }catch (Exception e) {e.printStackTrace();}  \n}  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) How can we retrieve the file in the Oracle database?",
+        "answer": "The getClob() method of PreparedStatement is used to get file information from the database. Let's see the table structure of the example to retrieve the file.\nCREATE TABLE  \"FILETABLE\"   \n   (    \"ID\" NUMBER,   \n    \"NAME\" CLOB  \n   )  \nThe example to retrieve the file from the Oracle database is given below.\nimport java.io.*;  \nimport java.sql.*;  \n  public class RetrieveFile {  \npublic static void main(String[] args) {  \ntry{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(  \n\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \n              PreparedStatement ps=con.prepareStatement(\"select * from filetable\");  \nResultSet rs=ps.executeQuery();  \nrs.next();//now on 1st row  \n              Clob c=rs.getClob(2);  \nReader r=c.getCharacterStream();              \n              FileWriter fw=new FileWriter(\"d:\\\\retrivefile.txt\");  \n              int i;  \nwhile((i=r.read())!=-1)  \nfw.write((char)i);  \n              fw.close();  \ncon.close();  \n              System.out.println(\"success\");  \n}catch (Exception e) {e.printStackTrace();  }  \n}  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are the differences between stored procedure and functions?",
+        "answer": "The differences between stored procedures and functions are given below:\nStored Procedure Function\nIs used to perform business logic. Is used to perform the calculation.\nMust not have the return type. Must have the return type.\nMay return 0 or more values. May return only one value.\nThe procedure supports input and output parameters. The function supports only input parameter.\nException handling using try/catch block can be used in stored procedures. Exception handling using try/catch can't be used in user-defined functions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) How can we maintain the integrity of a database by using JDBC?",
+        "answer": "To maintain the integrity of a database, we need to ensure the ACID properties. ACID properties mean Atomicity, Consistency, Isolation, and durability. In JDBC, Connection interface provides methods like setAutoCommit(), commit(), and rollback() which can be used to manage transaction. Let's see an example of transaction management in JDBC.\nimport java.sql.*;  \nclass FetchRecords{  \npublic static void main(String args[])throws Exception{  \nClass.forName(\"oracle.jdbc.driver.OracleDriver\");  \nConnection con=DriverManager.getConnection(\"jdbc:oracle:thin:@localhost:1521:xe\",\"system\",\"oracle\");  \ncon.setAutoCommit(false);  \n  Statement stmt=con.createStatement();  \nstmt.executeUpdate(\"insert into user420 values(190,'abhi',40000)\");  \nstmt.executeUpdate(\"insert into user420 values(191,'umesh',50000)\");  \n  con.commit();  \ncon.close();  \n}}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the JDBC Rowset?",
+        "answer": "JDBC Rowset is the wrapper of ResultSet. It holds tabular data like ResultSet, but it is easy and flexible to use. The implementation classes of RowSet interface are as follows:\nJdbcRowSet\nCachedRowSet\nWebRowSet\nJoinRowSet\nFilteredRowSet",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "Date data type?",
+        "answer": "The major difference between java.util.Date and java.sql.Date is that, java.sql.Date represents date without time information whereas, java.util.Date represents both date and time information.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What does JDBC setMaxRows method do?",
+        "answer": "The setMaxRows(int i) method limits the number of rows the database can return by using the query. This can also be done within the query as we can use the limit cause in MySQL.\n1 2 3 4 5 6 7 8",
+        "reference": "javatpoint.com"
+    }
+]

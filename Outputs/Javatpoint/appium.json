@@ -1,0 +1,177 @@
+[
+    {
+        "question": "1) What is Appium? Why is it used?",
+        "answer": "Appium is an open-source, freely distributed mobile application UI Testing framework or automation mobile testing tool used to test mobile applications. It is developed and supported by Sauce Labs to automate native and hybrid mobile apps. Appium is a cross-platform mobile automation tool. It means you can run the same test on multiple platforms. You can also quickly test multiple devices parallel by using Appium.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the crucial features of Appium?",
+        "answer": "Following is the list of crucial features of Appium:\nADVERTISEMENT\nThere is a strong and active community available for Appium.\nAppium does not require application source code or library.\nIt is open-source, freely distributed, and cross-platform support.\nDue to its multi-platform support, you can run the same test cases on multiple platforms.\nAppium allows the parallel execution of test scripts.\nAppium is time-efficient because a small change does not require re-installation of the application.\nAppium supports various languages like Java, Python, C#, Ruby, PHP, JavaScript with Node.js, and many others that have Selenium client library.\nIt supports JSON wire protocol.\nIt does not require recompilation of App.\nAppium has no dependency on mobile devices.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the similarities between Appium and Selenium Webdriver?",
+        "answer": "There are a lot of similarities between Appium and Selenium Webdriver testing tools. So, if you already know Selenium Webdriver, you can quickly learn Appium.\nAppium doesn't have any dependency on mobile devices OS because its framework converts the Selenium Webdriver commands to UIAutomator, and UIAutomation commands for Android and iOS, respectively, according to the device type rather than the OS type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the advantages and disadvantages of Appium?",
+        "answer": "Following are the list of advantages and disadvantages of Appium:\nAdvantages of Appium\nAppium is an open-source tool, which means it is freely available. So, we don't have to pay for installing it.\nIf you are aware of Selenium Webdriver, you can quickly learn Appium because there are many similarities between them. So, it is easy to install.\nIt allows the automated testing of hybrid, native, and web applications.\nAppium is fully compatible with automation. We don't need to include any additional agents in our App like other testing tools to make it compatible with automation. It tests the same App, which is going to upload to App Store.\nAlong with the mobile application testing, it would also support desktop application testing for windows.\nThis is a cross-platform, freely available mobile testing tool. We can test it on multiple platforms (single API for both Android and IOS platforms).\nDisadvantages of Appium\nAppium has some great features and advantages, but it has some drawbacks too, which are as follows:\nIt doesn't provide detailed reports.\nIt uses the remote web driver for testing, so it is a bit slow.\nIt is not a limitation, but an overhead that Appium uses UIAutomator for Android supports Android SDK, API 16, or higher. However, Appium supports older APIs, but not directly. It uses another open-source library Selendroid to support older APIs.\nIn iOS, it supports only one instance (iOS Script) to run on one Mac OS device. It means one test can be executed at a time per Mac. If you want to run your tests on multiple iOS devices simultaneously, you need to arrange the same number of Mac machines. But it would be costly to set various Mac machines.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Which types of applications can be tested using Appium?",
+        "answer": "Appium can test all types of applications, i.e., native, hybrid, and web. Let's see them in detail:\nNative Applications: The native applications are software programs that are developed using a specific software development kit. Native apps are designed for use on a particular device and installed from the App Store, such as Google Play Store or Apple's App Store. These applications can work offline and can also use the device notification system.\nExamples of native applications are Pinterest, Skype, Snapchat, etc.\nWeb Applications: Web applications are websites that run on browsers. These applications are developed using HTML, CSS, and JavaScript, unlike Android and iOS apps. They do not require a Software Development Kit (SDK) for developers to work with. Web applications run on web browsers so, they don't need any installation.\nExamples of some web applications are Flipkart, Facebook, Twitter, etc.\nHybrid Applications: Hybrid applications are a combination of native and web applications. Like native applications, you can download them from the App Store, but actually, they are web applications inside. These applications are developed using web development languages such as HTML, CSS, JavaScript, etc., which allows them to run on any platform.\nExamples of some hybrid applications are OLA, Instagram, Basecamp, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the main prerequisites to use Appium?",
+        "answer": "You must have the following things on your system to use Appium. You must have installed the following software:\nJava (JDK) on your system.\nAndroid Studio\njs\nAdditional Android SDK tools\nAppium jar file\nAppium Desktop Client\nEclipse IDE for Java\nTestNG\nEclipse\nSelenium Server JAR\nWebdriver Language Binding Library\nAPPIUM for Windows\nAPK App Info On Google Play\njs\nNote: The js by default comes with \"node.js\" and \"NPM\" whenever you install the Appium server. So, you don't need to install node.js and NPM separately. It is already included in the current version of Appium.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Appium is an \"HTTP Server\" written using Node.js platform and drives iOS and Android sessions using Webdriver JSON wire protocol. So, before initializing the Appium Server, you must have preinstalled Node.js on your system.\nWhen we download and install Appium on our system, it installs a server and it on the machine that exposes the REST API. When the clients send the command and connection requests, it executes that command on devices like iOS or Android and replies with the HTTP responses. To execute the requests, it uses a mobile test automation framework to run the app's user interface.\nFor Example, it uses Apple instruments for iOS, Selendroid for Android API 15 or lesser version, and Google UIAutomator for Android API 16 or higher versions.\nNote: Appium uses the open-source library Selendroid to support older APIs because UIAutomator only supports API 16 or higher.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you understand by Appium Inspector?",
+        "answer": "Appium Inspector is similar to Selenium IDE record and Playback tool. It is also is used for record and playback tasks. It is used to record and play the native application behavior by inspecting DOM and generate the test scripts in any desired language.\nAppium Inspector does not support Windows and uses UIAutomator viewer as its option.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the difference between Appium and Selendroid?",
+        "answer": "A list of differences between Appium and Selendroid:\nAppium Selendroid\nAppium is an open-source automation tool that supports both iOS and Android. Selendroid is a test automation framework that only supports Android.\nAppium is easy to use as a small change does not require reinstallation of the application. On the other hand, In Selendroid, when you do changes, it requires reinstallation of the application.\nAppium has a strong and active community. Selendroid does not have a strong community like Appium.\nAppium supports many frameworks and languages such as Java, Python, C#, Ruby, JavaScript, PHP, etc. On the other hand, Selendroid is compatible with Jenkins and Selenium only.\nIt doesn't require application source code or library in Appium. In Selendroid, The application source code or library is required.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the basic requirements for writing Appium tests?",
+        "answer": "We need the following things for writing Appium tests:\nDriver Client: Appium drives mobile applications such as a user. It needs a Driver Client library to write your Appium tests, which wraps test steps and sends them to the Appium server over HTTP.\nAppium Session: We have first to initialize a session so that the Appium test can take place in the session. Once the Automation is done for one session, it can be ended and wait for another session.\nDesired Capabilities: Desired Capabilities are certain parameters such as PlatformName, PlatformVersion, and Device Name, etc., which are required to initialize an Appium session. It specifies the kind of automation one requires from the Appium server.\nDriver Commands: Driver Commands are used to write test steps using a large and expressive vocabulary of commands.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the difference between Appium and Robotium?",
+        "answer": "A list of differences between Appium and Robotium:\nAppium Robotium\nAppium is an open-source, cross-platform testing tool that is used with both iOS and Android. Robotium is only used with Android.\nAppium supports many frameworks and languages such as Java, Python, C#, Ruby, JavaScript, PHP, etc. Robotium only supports Java programming language.\nAppium does not need application source code or library. Robotium tool requires application source code or library.\nWe can use Appium to test native, web, and hybrid mobile applications. Robotium is only used to test native and hybrid applications.\nAppium supports many frameworks, such as Selenium. Robotium is not compatible with Selenium at all.\nIn Appium, a small change does not require reinstallation of the application. In Robotium, you have to completely rebuild the code, even for a small change.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are some possible errors that a developer can face while using Appium?",
+        "answer": "Following is the list of some possible errors a developer can face using Appium:\nError 1: The following desired capabilities are needed but not provided: Device Name, platformName\nError 2: Could not find adb. Please set the ANDROID_HOME environment variable with the Android SDK root directory path.\nError 3:selenium.SessionNotCreatedException: A new session could not be created\nError 4: How to find DOM element or XPath in a mobile application?",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are the main types of mobile app testing?",
+        "answer": "Following is the list of some types of mobile app testing:\nUsability testing\nCompatibility testing\nPerformance testing\nInterface testing\nServices testing\nLow-level resource testing\nOperational testing\nInstallation testing\nSecurity testing etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is Mobile Application Testing (MAT), and how is it different from Mobile Testing (MT)?",
+        "answer": "Mobile Application Testing is the testing of an application on mobile devices. It is entirely different from Mobile Testing. In Mobile Testing, the main focus is on the native application features of Mobile devices such as Calls, SMS, Media Player, etc. On the other hand, in Mobile Application Testing, the main focus is only on the application's functionality and features we want to test.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the most challenging scenario to test with Appium?",
+        "answer": "The data exchange is the most challenging scenario to test with Appium.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the difference between simulator and emulator?",
+        "answer": "A simulator creates an environment that mimics the behavior and configurations of an actual device. On the other hand, an emulator is used to duplicate all the device's hardware and software features. Emulation and simulation processes are both used in mobile app testing in addition to real devices.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) Is a server machine required to run tests on Appium?",
+        "answer": "No. There is no need for a server machine to run tests on Appium. Appium provides a 2-tier architecture where a test machine connects to a test server running Appium and automating the whole thing. We can run Appium on the same machine where we run our test.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is the general structure of mobile application testing frameworks?",
+        "answer": "There are mainly three segments used in Mobile Application Testing frameworks:\nApplication Package: the Application Package is the target application that we have to test.\nInstrumentation TestRunner: The Instrumentation TestRunner can be defined as a test case runner that runs test cases on the target application. It consists of an SDK tool for building tests and a tool that provides APIs for writing a program that controls an Android device, for example, MonkeyRunner.\nTest Package: The Test Package contains two classes, Test case classes and Mock objects. The Test case classes include test methods to perform on the target application, while the mock object has mock data that will be used as sample input for test cases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Is it possible to interact with apps using JavaScript while testing with Appium?",
+        "answer": "Yes. We can easily interact with Apps while using JavaScript. When we run the commands on Appium, the server sends the script to our app wrapped into an anonymous function to be executed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "exe, jad, and prc?",
+        "answer": "The full form of these terms is as follows:\niPA: iOS APP Store Package\nAPK: Android Application Package file\n.exe: Executable File\njad: Java Application Descriptor\nprc: Palm Resource Compiler",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the desired capabilities in testing?",
+        "answer": "The desired capabilities are keys and values such as a map or hash sent by the client to the server. The client sends these to tell the server what kind of automation session they want.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Can a tester run the tests in a multithreaded environment while using Appium?",
+        "answer": "Yes, testers can run the tests in a multithreaded environment while using Appium. The only thing that they have to care about is to ensure that no more than one test runs at the same time against the same Appium server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How can you inspect elements of the Native Android App?",
+        "answer": "It is easy to inspect the elements of the Native Android App using the UIAutomator tool in Android SDK. You can also get access to the object locators of the Android Native Apps.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What do you understand by Appium package master? How would you create a package?",
+        "answer": "Appium package master is a set of tools used to manage and create Appium packages. We can use the following code to create a package:\n# using es7/babe1:\nGulp create-package -n <package-name>\n#regular es5:\nGulp create-package ---nobabe1 -n <package-name>\nThe package will be generated in the out/<package-name>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are some critical issues you faced with cross-platform testing?",
+        "answer": "Generally, cross-platform testing is compatible with multiple platforms, but one can face cross-platform testing issues. The issues depend upon the different OS/device versions. You can see that the same application works on one OS while it might not work on another version.\nFor example, we have faced an issue that our application was working fine on iOS 6.x version devices but on tapping a few modules on iOS 5.x devices, the application crashes. The same thing happened with 2.3.5 Vs.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "apk or you also need the app in my workspace?",
+        "answer": "In Android, we only need a .apk file to automate using Appium.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) Does Appium support test frameworks?",
+        "answer": "Appium does not support test frameworks because there is no need to keep them. We can use Appium with any frameworks that we want.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the difference between Appium and Calabash?",
+        "answer": "Feature Comparison Appium Calabash\nSupporting Languages Appium supports Java, Python, JavaScript, .Net, Ruby, and all major available programming languages. Calabash only supports the Ruby programming language.\niOS mobile web page It requires a custom safari app for automation. This is not well supported.\nHybrid iOS app It requires custom UI commands & iOS UI Automator. It requires custom UI commands & an iOS framework.\nNative iOS app Only the iOS UI Automator iOS instrumentation - calabash iOS\nAndroid Mobile web app It only automates chrome browser. It is not well supported.\nHybrid Android app It requires only the Selendroid app. It requires Android instrumentation - calabash android.\nNative Android app It requires.s both android UI Autometer & Selendroid It requires Android instrumentation - calabash android.\nInternal tools It requires Android, iOS UI Autometer & Selendroid. It requires an Android & iOS instrumentation framework.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What do you understand by native Apps?",
+        "answer": "Those Apps which are written by using Android SDKs and iOS are known as Native Apps.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What do you understand by Mobile Web Apps?",
+        "answer": "The mobile web pages that can be accessed with mobile browsers are known as Mobile Web Apps. In the case of the iOS platform, Appium supports the Safari browser, and for the Android platform, it uses Chrome or any other built-in browser.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What do you understand by hybrid apps?",
+        "answer": "The apps equipped with a wrapper around the web view are known as Hybrid apps.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) How much time is required to write a test in Appium?",
+        "answer": "The time to write a test in Appium depends on the test. If your test runs a scenario, it will take as many commands as the number of interactions needed to be performed (thus very few lines), then it will take less time. If you are trying to exchange data, your test will take more time for sure, and the test will also become challenging to read.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) How is the data exchanged between your test and the app while testing the app?",
+        "answer": "In Appium, the Web driver doesn't require to exchange data with the app. But it is not impossible to exchange data. You can quickly achieve this by building more layers of testability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) Is debugging a problematic task in Appium?",
+        "answer": "No, debugging is not much tricky in Appium. Appium is a Node.js application; thus, the code is written in JavaScript. You can find the code on GitHub and downloaded it in a few seconds as it is small and not so complex. The complexity also depends on what you have to debug.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How can you inspect elements on the iOS apps?",
+        "answer": "We can quickly inspect elements on the iOS apps by using an Appium inspector. It is a GUI-based tool used to identify elements on iOS apps. This is quite similar to that of selenium IDE.",
+        "reference": "javatpoint.com"
+    }
+]

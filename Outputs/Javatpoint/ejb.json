@@ -1,0 +1,102 @@
+[
+    {
+        "question": "1) What is EJB?",
+        "answer": "EJB stands for Enterprise Java Bean. It is a server-side component to develop scalable, robust and secured enterprise applications in java. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the types of Enterprise Bean?",
+        "answer": "There are three types of enterprise bean in java.\nSession Bean\nMessage Driven Bean\nEntity Bean\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is session bean?",
+        "answer": "Session Bean encapsulates business logic. It can be invoked by local, remote or web service client.\nThere are 3 types of session bean.\nStateless Session Bean\nStateful Session Bean\nSingleton Session Bean\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is stateless session bean?",
+        "answer": "A Stateless session bean is a business object that doesn't maintain the conversational state with the client. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "ADVERTISEMENT\nCreate a local interface.\nThe interface is to be used by the client application.\nIn case the EJB client environment is the same, use @Local annotation.\nIn case the EJB client environment is different, use @Remote annotation.\nCreate a stateful session bean.\nTo signify a stateful bean, use @Stateful annotation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is stateful session bean?",
+        "answer": "A Stateful session bean is a business object that maintains the conversational state with the client. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is singleton session bean?",
+        "answer": "Singleton session bean is instantiated only once for the application. It exists for the life cycle of the application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is JMS?",
+        "answer": "Java Message Service is a messaging service to create, send and receive messages asynchronously. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the advantages of JMS?",
+        "answer": "Asynchronous\nReliable\nMore details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is PTP model?",
+        "answer": "In Point to Point model, one message is delivered to one receiver only. Here, Queue is used as a message-oriented middleware. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is Pub/Sub model?",
+        "answer": "In the Publisher/Subscriber model, one message is delivered to all subscribers. Here, Topic is used as a message-oriented middleware. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is MDB?",
+        "answer": "Message Driven Bean (MDB) encapsulates business logic. It is invoked by passing the message. It is like JMS receiver. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is Entity Bean?",
+        "answer": "Entity Bean is a server-side component that represents the persistent data. Since EJB 3.x, it is replaced by JPA. More details...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is Session Facade?",
+        "answer": "Session Facade is a design pattern to access enterprise bean through the local interface. It abstracts the business object interactions and provides a service layer. It makes the performance fast over the network.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Some of the key actors in persistence API are:\nEntity\nEntityManager\nPersistence unit\nData source",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Create a database table\nCreate entity classes for the table\nCreate persistent unit and data source\nCreate a stateless EJB\nUpdate stateless EJBM\nConsole based application accesses the stateless EJB.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Name\nmappedName\nDescription",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "beanInterface\nbeanName\nmappedName",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Default\nClass\nMethod",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "java.sql.Blob\nString\nbyte[]\njava.sql.Clob\nSerializable Object",
+        "reference": "javatpoint.com"
+    }
+]

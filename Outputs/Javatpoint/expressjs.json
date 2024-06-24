@@ -1,0 +1,92 @@
+[
+    {
+        "question": "js?",
+        "answer": "Express.js, or simply Express, is a free, open-source, lightweight, and fast backend web application framework for Node.js. It is released as open-source software under the MIT License.\nIt is designed for building single-page, multi-page, and hybrid web applications and APIs. It is called the de facto standard server framework for Node.js. It was founded and developed by TJ Holowaychuk in 2010 and written in JavaScript.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are some distinctive features of Express?",
+        "answer": "As Express is a lightweight, minimal and flexible Node.js web application framework, it provides a robust set of features for web and mobile applications. Following is the list of some distinctive features of this framework:\nADVERTISEMENT\njs can be used to design single-page, multi-page, and hybrid web applications and APIs.\nIt allows to set up middleware to respond to HTTP/RESTful Requests.\nIt defines a routing table to perform different HTTP operations (method and URL).\nIt allows to dynamically rendering HTML Pages based on passing arguments to templates.\nIt provides high performance because of its ultra-fast I/O. It prepares a thin layer; therefore, the performance is adequate.\nIts MVC-like structure makes it organize the web application into MVC architecture.\nIt provides good database support. It supports RDBMS as well as NoSQL databases.\nIt is asynchronous and single-threaded.\nIts robust API makes routing easy.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js front-end or backend framework?",
+        "answer": "Express.js or Express is a JavaScript backend framework. It is mainly designed to develop complete web applications (single-page, multi-page, and hybrid web applications) and APIs. Express is the backend component of the MEAN stack where M stands for MongoDB, which handles database; E stands for Express, which handles backend; A stands for AngularJS, which is for the front-end, and N stands for Node.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Node.js is an open-source, cross-platform run-time environment used for executing JavaScript code outside of a browser. Node.js is not a framework or a programming language; it is a platform that acts as a web server. Many big companies such as Paypal, Uber, Netflix, Wallmart, etc., are using this. On the other hand, Express is a small framework based on the functionality of Node.js.\nSome key differences between Express.js and Node.js:\nFeature Express.js Node.js\nDefinition Express.js is a lightweight and fast backend web application framework for Node.js. Node.js is an open-source and cross-platform that is used to execute JavaScript code outside of a browser.\nUsage Express.js is used to develop complete web applications such as single-page, multi-page, and hybrid web applications and APIs. It uses approaches and principles of Node.js. Node.js is used to build server-side, input-output, event-driven apps.\nFeatures Express has more features than Node.js. Node.js has fewer features as compared to Express.js.\nBuilding Block Express.js is built on Node.js. Node.js is built on Google's V8 engine.\nWritten in Express.js is written in JavaScript only. Node.js is written in C, C++, and JavaScript language.\nFramework/Platform Express.js is a framework of Node.js based on its functionalities. Node.js is a run-time platform or environment designed for server-side execution of JavaScript.\nControllers Express.js is assigned with controllers. Node.js is assigned with controllers.\nRouting Routing is provided in Express.js. Routing is not provided in Node.js.\nMiddleware Express.js uses middleware to arrange the functions systematically on the server-side. Node.js doesn't use any such provision of middleware.\nCoding Express is easy to code and requires less coding time. Node.js requires more coding time as compare to Express.js.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) How does an Express code look like?",
+        "answer": "The express.js program is saved with \".js\" extension.\nSee the example:\nvar express = require('express');    \nvar app = express();    \napp.get('/', function (req, res) {    \n  res.send('Welcome to JavaTpoint!');    \n});    \nvar server = app.listen(8000, function () {    \n  var host = server.address().address;    \n  var port = server.address().port;    \n  console.log('Example app listening at http://%s:%s', host, port);    \n});   \nWhen you run the Node.js command prompt, the app will listen at the specified server address and give the following output.\nOutput:\nWelcome to JavaTpoint!",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "var bodyParser = require('body-parser')  \napp.use( bodyParser.json() );       // to support JSON-encoded   \napp.use(bodyParser.urlencoded({     // to support URL-encoded   \n  extended: true  \n}));",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Scaffolding is a technique used for creating the skeleton structure of an application. It facilitates users to easily create their public directories, routes, views, etc., or a web application skeleton. Generally, users manually create their public directory, add middleware, create separate route files, etc. Using a scaffolding tool, they can set up all these things to directly get started with building their application.\nThere are two ways to install Scaffolding and use it in your application.\nExpress application generator\nYeoman\nExpress application generator: This is used to create an application skeleton quickly. Use the following command to install the Express application generator.\nnpm install express-generator -g  \nexpress myApp  \nBy using the above command, a project named \"myApp\" will be created along with following the files/folders in the project.\nBin: The bin folder contains one file called www is the main configuration file of the app.\nPublic: The public folder contains JavaScript, CSS, and images, etc.\nRoutes: This folder contains the routing files.\nViews: The view folder contains the view files of the application.\njs: The app.js file is the main file of the application.\njson: The package.json file is the manifest file. It contains all metadata of the project, such as the packages used in the app (called dependencies) etc.\nNow, we have to install all the dependencies mentioned in the package.json file by using the following command:\ncd myApp  \nnpm install  \nYeoman: Use the following command in your terminal to install Yeoman:\nnpm install -g yeoman  \nYeoman uses generators to scaffold out applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Do Other MVC frameworks also support scaffolding?",
+        "answer": "The Scaffolding technique is also supported by other MVC frameworks other than Express. The following frameworks mainly support it: Ruby on Rails, OutSystems Platform, Play framework, Django, MonoRail, Brail, Symfony, Laravel, CodeIgniter, YII, CakePHP, Phalcon PHP, Model-Glue, PRADO, Grails, Catalyst, Seam Framework, Spring Roo, ASP.NET, etc.\nClick here for more information on Scaffolding: https://www.javatpoint.com/expressjs-scaffolding",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Which are the arguments available to an Express JS route handler function?",
+        "answer": "Following are the arguments that are available to an Express.js route handler-function:\nReq: the request object\nRes: the response object\nNext (optional): It is a function employed to pass management to one of the above route handlers.\nNote: The third argument is optional and should be omitted; however, in some cases, it is helpful.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the difference between Express and Django?",
+        "answer": "Django is a standalone and lightweight web server for testing and development. On the other hand, Express.js is a Node.js framework that can set the middleware to reply to any HTTP request.\nFollowing is a list of some key differences between Express.js and Django:\nAspects Express.js Django\nArchitecture Express follows the MVC architecture. Django supports the MTV (Model Template View) design. It uses managing data for interacting and validating.\nFramework Express is a free, open-source, lightweight, and fast backend web application framework for Node.js to build single-page, multi-page, and hybrid web applications and APIs. This is a Python-based framework used to develop computer apps in a specified time frame.\nEfficiency It is best for developing web applications rapidly on Node.js. It is more efficient and delivers at a fast speed so, it is cost-effective.\nProgramming language The Express framework is programmed in Node.js. Django is programmed in Python programming language.\nComplexity Express.js is less complex than Django. Django is more complex than Express.js\nScalability It provides better scalability. It is less scalable.\nFlexibility Express is a flexible, minimal API-developing Node.js tool. It provides limited flexibility.\nFull-stack development It provides a full-stack development that reduces the cost as you don't need to hire several developers to administer a web application's backend and frontend. It does not deliver full-stack development.\nCompanies using this technology Companies such as PayPal, IBM, Fox Sports, etc., are using this technology. Companies such as Instagram, Mozilla, Bitbucket, etc., are using this technology.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js app?",
+        "answer": "There are different ways to enable debugging in Express.js app in different Operating Systems\nUse the following command on Linux:\nDEBUG=express:*   \nnode app.js  \nUse the following command on Windows:\nset DEBUG=express:*   \nnode app.js",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "We can allow CORS in Express.js, by adding the following code in server.js:\napp.all('*', function(req, res, next) {  \nres.set('Access-Control-Allow-Origin', '*');  \nres.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');  \nres.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');  \nif ('OPTIONS' == req.method) return res.send(200);  \nnext();  \n});",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Error handling is much easier in the Express versions over Express 4.0. Use the following steps to do the error handling:\nCreate an Express.js application. There is no built-in middleware like error handler in express 4.0, so you have to either install a middleware or create a custom one.\nCreate a Middleware:\nCreate a middleware as following:\n// error handler  \napp.use(function(err, req, res, next) {  \n// set locals, only providing error in development  \nres.locals.message = err.message;  \nres.locals.error = req.app.get('env') === 'development' ? err : {};  \n// render the error page  \nres.status(err.status || 500);  \nres.render('error');  \n});  \nInstall Error Handler Middleware:\nInstall the errorhandler as following:\nnpm install errorhandler --save  \nCreate a variable:\nvar errorhandler = require('errorhandler')  \nUse the middleware as following:\nif (process.env.NODE_ENV === 'development') {  \n // only use in development  \n  app.use(errorhandler({log: errorNotification}))  \n}  \nfunction errorNotification(err, str, req) {  \n var title = 'Error in ' + req.method + ' ' + req.url  \n notifier.notify({  \n   title: title,  \n   message: str  \n })  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "See the Example:\napp.use(express.static('public'))  \napp.use('/static', express.static(path.join(__dirname, 'public')))",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js? What are the different types of Middleware?",
+        "answer": "Middleware is a function invoked by the Express routing layer before the final request handler.\nMiddleware functions are used to perform the following tasks:\nIt is used to execute any code.\nIt is also used to make changes to the request and the response objects.\nIt is responsible for ending the request-response cycle.\nIt can call the next middleware function in the stack.\nNote: If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function. Otherwise, the request will be left hanging.\nType of Middleware\nFollowing are the main types of Middleware:\nApplication-level Middleware\nRouter-level Middleware\nError-handling Middleware\nBuilt-in Middleware\nThird-party Middleware\nApplication-level middleware: The application-level middleware method is used to bind to the app object using app.use() method. It applies on all routes.\n//This middleware will execute for each route.  \napp.use(function (req, res, next) {  \n  console.log('Current Time:', Date.now())  \n  next()  \n})  \nRouter-level Middleware: The router-level Middleware is used to bind to a specific instance of express.Router().Built-in Middleware: The built-in Middleware was introduced with version 4.x. It ends the dependency on Connect.\nThere are the following built-in middleware functions in Express.js:\nstatic: It is used to serve static assets such as HTML files, images, etc.\njson: It is used to parse the incoming requests with JSON payloads. It is available with Express 4.16.0+\nurlencoded: It is used to parse the incoming requests with URL-encoded payloads. It is available with Express 4.16.0+\nThird-party Middleware: There are many third-party middleware available such as:\nBody-parser\nCookie-parser\nMongoose\nSequelize\nCors\nExpress-validator\nTo handle HTTP POST requests in Express.js version 4 and above, we have to install a middleware module called body-parser. Body-parser extracts the entire body portion of an incoming request stream and exposes it on req.body, The Middleware was a part of Express.js earlier, but now you have to install it separately. You can install it by using the following command:\nnpm install MODULE_NAME  \nYou can load it by using requires and used later:\nSee the Example:\nvar bodyParser = require('body-parser');  \napp.use(bodyParser.json());  \napp.use(bodyParser.urlencoded({ extended: false }))  \nNote: You can use multiple middleware as an array on a single route.\nSee the Example:\nvar middlewareArray = [middleware1, middleware2]  \napp.get('/home', middlewareArray, function (req, res, next) {  \n  //Code snippets  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) Which template engines do Express support?",
+        "answer": "Express.js supports any template engine that follows the (path, locals, callback) signature.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How can we render a pain HTML?",
+        "answer": "There is no need to \"render\" HTML with the res.render() function. If you have a specific file, you can use the res.sendFile() function, but you should use the express if you serve many assets from a directory.static() middleware function.",
+        "reference": "javatpoint.com"
+    }
+]

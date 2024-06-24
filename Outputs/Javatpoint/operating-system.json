@@ -1,0 +1,447 @@
+[
+    {
+        "question": "1) What is an operating system?",
+        "answer": "The operating system is a software program that facilitates computer hardware to communicate and operate with the computer software. It is the most important part of a computer system without it computer is just like a box.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is the main purpose of an operating system?",
+        "answer": "There are two main purposes of an operating system:\nADVERTISEMENT\nIt is designed to make sure that a computer system performs well by managing its computational activities.\nIt provides an environment for the development and execution of programs.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the different operating systems?",
+        "answer": "Batched operating systems\nDistributed operating systems\nTimesharing operating systems\nMulti-programmed operating systems\nReal-time operating systems",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is a socket?",
+        "answer": "A socket is used to make connection between two applications. Endpoints of the connection are called socket.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is a real-time system?",
+        "answer": "Real-time system is used in the case when rigid-time requirements have been placed on the operation of a processor. It contains a well defined and fixed time constraints.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is kernel?",
+        "answer": "Kernel is the core and most important part of a computer operating system which provides basic services for all parts of the OS.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is monolithic kernel?",
+        "answer": "A monolithic kernel is a kernel which includes all operating system code is in single executable image.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you mean by a process?",
+        "answer": "An executing program is known as process. There are two types of processes:\nOperating System Processes\nUser Processes",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the different states of a process?",
+        "answer": "A list of different states of process:\nNew Process\nRunning Process\nWaiting Process\nReady Process\nTerminated Process",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is the difference between micro kernel and macro kernel?",
+        "answer": "Micro kernel: micro kernel is the kernel which runs minimal performance affecting services for operating system. In micro kernel operating system all other operations are performed by processor.\nMacro Kernel: Macro Kernel is a combination of micro and monolithic kernel.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the concept of reentrancy?",
+        "answer": "It is a very useful memory saving technique that is used for multi-programmed time sharing systems. It provides functionality that multiple users can share a single copy of program during the same period.\nIt has two key aspects:\nThe program code cannot modify itself.\nThe local data for each user process must be stored separately.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the difference between process and program?",
+        "answer": "A program while running or executing is known as a process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the use of paging in operating system?",
+        "answer": "Paging is used to solve the external fragmentation problem in operating system. This technique ensures that the data you need is available as quickly as possible.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the concept of demand paging?",
+        "answer": "Demand paging specifies that if an area of memory is not currently being used, it is swapped to disk to make room for an application's need.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the advantage of a multiprocessor system?",
+        "answer": "As many as processors are increased, you will get the considerable increment in throughput. It is cost effective also because they can share resources. So, the overall reliability increases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is virtual memory?",
+        "answer": "Virtual memory is a very useful memory management technique which enables processes to execute outside of memory. This technique is especially used when an executing program cannot fit in the physical memory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is thrashing?",
+        "answer": "Thrashing is a phenomenon in virtual memory scheme when the processor spends most of its time in swapping pages, rather than executing instructions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What are the four necessary and sufficient conditions behind the deadlock?",
+        "answer": "These are the 4 conditions:\n1) Mutual Exclusion Condition: It specifies that the resources involved are non-sharable.\n2) Hold and Wait Condition: It specifies that there must be a process that is holding a resource already allocated to it while waiting for additional resource that are currently being held by other processes.\n\n3) No-Preemptive Condition: Resources cannot be taken away while they are being used by processes.\n4) Circular Wait Condition: It is an explanation of the second condition. It specifies that the processes in the system form a circular list or a chain where each process in the chain is waiting for a resource held by next process in the chain.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is a thread?",
+        "answer": "A thread is a basic unit of CPU utilization. It consists of a thread ID, program counter, register set and a stack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is FCFS?",
+        "answer": "FCFS stands for First Come, First Served. It is a type of scheduling algorithm. In this scheme, if a process requests the CPU first, it is allocated to the CPU first. Its implementation is managed by a FIFO queue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is SMP?",
+        "answer": "SMP stands for Symmetric MultiProcessing. It is the most common type of multiple processor system. In SMP, each processor runs an identical copy of the operating system, and these copies communicate with one another when required.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is RAID? What are the different RAID levels?",
+        "answer": "RAID stands for Redundant Array of Independent Disks. It is used to store the same data redundantly to improve the overall performance.\n\nFollowing are the different RAID levels:\nRAID 0 - Stripped Disk Array without fault tolerance\nRAID 1 - Mirroring and duplexing\nRAID 2 - Memory-style error-correcting codes\nRAID 3 - Bit-interleaved Parity\nRAID 4 - Block-interleaved Parity\nRAID 5 - Block-interleaved distributed Parity\nRAID 6 - P+Q Redundancy",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Deadlock is a specific situation or condition where two processes are waiting for each other to complete so that they can start. But this situation causes hang for both of them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) Which are the necessary conditions to achieve a deadlock?",
+        "answer": "There are 4 necessary conditions to achieve a deadlock:\nMutual Exclusion: At least one resource must be held in a non-sharable mode. If any other process requests this resource, then that process must wait for the resource to be released.\nHold and Wait: A process must be simultaneously holding at least one resource and waiting for at least one resource that is currently being held by some other process.\nNo preemption: Once a process is holding a resource ( i.e. once its request has been granted ), then that resource cannot be taken away from that process until the process voluntarily releases it.\nCircular Wait: A set of processes { P0, P1, P2, . . ., PN } must exist such that every P[ i ] is waiting for P[ ( i + 1 ) % ( N + 1 ) ].\nNote: This condition implies the hold-and-wait condition, but it is easier to deal with the conditions if the four are considered separately.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is Banker's algorithm?",
+        "answer": "Banker's algorithm is used to avoid deadlock. It is the one of deadlock-avoidance method. It is named as Banker's algorithm on the banking system where bank never allocates available cash in such a manner that it can no longer satisfy the requirements of all of its customers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the difference between logical address space and physical address space?",
+        "answer": "Logical address space specifies the address that is generated by CPU. On the other hand physical address space specifies the address that is seen by the memory unit.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is fragmentation?",
+        "answer": "Fragmentation is a phenomenon of memory wastage. It reduces the capacity and performance because space is used inefficiently.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) How many types of fragmentation occur in Operating System?",
+        "answer": "There are two types of fragmentation:\nInternal fragmentation: It is occurred when we deal with the systems that have fixed size allocation units.\nExternal fragmentation: It is occurred when we deal with systems that have variable-size allocation units.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is spooling?",
+        "answer": "Spooling is a process in which data is temporarily gathered to be used and executed by a device, program or the system. It is associated with printing. When different applications send output to the printer at the same time, spooling keeps these all jobs into a disk file and queues them accordingly to the printer.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the difference between internal commands and external commands?",
+        "answer": "Internal commands are the built-in part of the operating system while external commands are the separate file programs that are stored in a separate folder or directory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is semaphore?",
+        "answer": "Semaphore is a protected variable or abstract data type that is used to lock the resource being used. The value of the semaphore indicates the status of a common resource.\nThere are two types of semaphore:\nBinary semaphores\nCounting semaphores",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What is a binary Semaphore?",
+        "answer": "Binary semaphore takes only 0 and 1 as value and used to implement mutual exclusion and synchronize concurrent processes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What is Belady's Anomaly?",
+        "answer": "Belady's Anomaly is also called FIFO anomaly. Usually, on increasing the number of frames allocated to a process virtual memory, the process execution is faster, because fewer page faults occur. Sometimes, the reverse happens, i.e., the execution time increases even when more frames are allocated to the process. This is Belady's Anomaly. This is true for certain page reference patterns.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is starvation in Operating System?",
+        "answer": "Starvation is Resource management problem. In this problem, a waiting process does not get the resources it needs for a long time because the resources are being allocated to other processes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What is aging in Operating System?",
+        "answer": "Aging is a technique used to avoid the starvation in resource scheduling system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What are the advantages of multithreaded programming?",
+        "answer": "A list of advantages of multithreaded programming:\nEnhance the responsiveness to the users.\nResource sharing within the process.\nEconomical\nCompletely utilize the multiprocessing architecture.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is the difference between logical and physical address space?",
+        "answer": "Logical address specifies the address which is generated by the CPU whereas physical address specifies to the address which is seen by the memory unit.\nAfter fragmentation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What are overlays?",
+        "answer": "Overlays makes a process to be larger than the amount of memory allocated to it. It ensures that only important instructions and data at any given time are kept in memory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) When does trashing occur?",
+        "answer": "Thrashing specifies an instance of high paging activity. This happens when it is spending more time paging instead of executing.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What is a Batch Operating System?",
+        "answer": "Batch Operating System is a type of Operating System which creates Batches for the execution of certain jobs or processes.\nThe Batches contains jobs of such a kind that the jobs or processes which are very similar in the procedure to be followed by the jobs or processes. The Batch Operating System has an operator which performs these tasks.\nAn operator groups together comparable jobs or processes that have the same criteria into batches. The operator is in charge and takes up the job of grouping jobs or processes with comparable requirements.\nBatch Operating System follows First Come First Serve principle.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) Do the Batch Operating System interact with Computer for processing the needs of jobs or processes required?",
+        "answer": "No, this is not that kind of Operating Systems which tries to interact with the computer. But, this job is taken up by the Operator present in the Batch Operating Systems.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What are the advantages of Batch Operating System?",
+        "answer": "Advantages of Batch Operating System:\nThe time which the Operating System is at rest is very small or also known as Idle Time for the Operating System is very small.\nVery big tasks can also be managed very easily with the help of Batch Operating Systems\nMany users can use this Batch Operating Systems.\nIt is incredibly challenging to estimate or determine how long it will take to finish any task. The batch system processors are aware of how long a work will take to complete when it is in line.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) What are the disadvantages of Batch Operating System?",
+        "answer": "Disadvantages of Batch Operating System:\nIf any work fails in the Batch Operating System, the other jobs will have to wait for an indeterminate period of time.\nBatch Operating systems are very challenging to debug,\nBatch Operating Systems can be expensive at times\nThe computer operators who are using Batch Operating Systems must to be knowledgeable with batch systems.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) Where is Batch Operating System used in Real Life",
+        "answer": "They are used in Payroll System and for generating Bank Statements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What is the Function of Operating System?",
+        "answer": "The most important functions of Operating Systems are:\nFile Management\nJob Management\nProcess Management\nDevice Management\nMemory Management",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What are the Services provided by the Operating System?",
+        "answer": "The services provided by the Operating Systems are:\nSecurity to your computer\nProtects your computer from external threats\nFile Management\nProgram Execution\nHelps in Controlling Input Output Devices\nUseful in Program Creation\nHelpful in Error Detection\nOperating System helps in communicating between devices\nAnalyzes the Performance of all devices",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) What is a System Call in Operating Systems?",
+        "answer": "Programs can communicate with the operating system by making a system call. When a computer application requests anything from the kernel of the operating system, it performs a system call.System call uses Application Programming Interfaces(API)to deliver operating system services to user programs",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) What are the Types of System Calls in Operating Systems?",
+        "answer": "The System Calls in Operating Systems are:\nCommunication\nInformation Maintenance\nFile Management\nDevice Management\nProcess Contro",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) What are the functions which are present in the Process Control and File Management System Call?",
+        "answer": "The Functions present in Process Control System Calls are:\nCreate\nAllocate\nAbort\nEnd\nTerminate\nFree Memory",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) What are the functions which are present in the File Management System Call?",
+        "answer": "The Functions present in File Management System Calls are:\nCreate\nOpen\nRead\nClose\nDelete",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "51) What is a Process in Operating Systems?",
+        "answer": "A process is essentially software that is being run on the Operating System. The Process is a Procedure which must be carried out in a sequential manner.\nThe fundamental unit of work that has to be implemented in the system is called a process.\nAn active program known as a process is the basis of all computing. Although relatively similar, the method is not the same as computer code. A process is a \"active\" entity, in contrast to the program, which is sometimes thought of as some sort of \"passive\" entity.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "52) What are the types of Processes in Operating Systems?",
+        "answer": "The types of Operating System processes are:\nOperating System Process\nUser Process",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "53) What is Process Control Block (PCB)?",
+        "answer": "A data structure called a Process Control Block houses details about the processes connected to it. The term \"process control block\" can also refer to a \"task control block,\" \"process table entry,\" etc.\nAs data structure for processes is done in terms of the Process Control Block (PCB), it is crucial for process management. Additionally, it describes the operating system's present condition.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "54) What are the Data Items in Process Control Block?",
+        "answer": "The Data Items in Process Control Block are:\nProcess State\nProcess Number\nProgram Counter\nRegisters\nMemory Limits\nList of Open Files",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "55) What are the Files used in the Process Control Block?",
+        "answer": "The Files used in Process Control Block are:\nCentral Processing Unit (CPU) Scheduling Information\nMemory Management Information\nAccounting Information\nInput Output Status Information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "56) What are the differences between Thread and Process",
+        "answer": "Thread Process\nThreads are executed within the same process Processes are executed in the different memory spaces\nThreads are not independent of each other Processes are independent of each other",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "57) What are the advantages of Threads in Operating Systems?",
+        "answer": "The advantages of Threads in Operating System are:\nThreads are executed very faster than Switches\nThreads ensure that the communication between threads are very easier\nThe Throughput of the system is increased if the process is divided into multiple threads\nWhen a thread in a multi-threaded process completes its execution, its output can be returned right away.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "58) What are the disadvantages of Threads in Operating Systems?",
+        "answer": "The disadvantages of Threads in Operating System are:\nThe code becomes more challenging to maintain and debug as there are more threads.\nThe process of creating threads uses up system resources like memory and CPU.\nBecause unhandled exceptions might cause the application to crash, we must manage them inside the worker method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "59) What are the types of Threads in Operating System?",
+        "answer": "The types of Threads in Operating System are:\nUser Level Threads\nKernel Level Threads",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "60) What is User Kernel Thread?",
+        "answer": "The kernel is unaware of the user-level threads since they are implemented at the user level.\nThey are treated like single-threaded processes under this system. User Kernel Threads are smaller and quicker than kernel-level threads\nThe User Kernel Threads are represented by a Small Process Control Block (PCB), Stack, Program Counter (PC), Stack.\nHere, the User Kernel Threads are independent of Kernel Involvement in Synchronization.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "61) What are User Kernel Threads Advantages and Disadvantages?",
+        "answer": "The following are a few advantages of User Kernel Threads:\nCreating user-level threads is quicker and simpler than creating kernel-level threads. They are also simpler to handle.\nAny operating system may be used to execute user-level threads.\nThread switching in user-level threads does not need kernel mode privileges.\nThe following are a few drawbacks of User Kernel Threads:\nMultiprocessing cannot be used effectively by multithreaded applications in user-level threads.\nIf one user-level thread engages in a blocking action, the entire process is halted.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "62) What is Kernel Level Thread?",
+        "answer": "Kernel Level Threads are the threads which are handled by the Operating System directly. The kernel controls both the process's threads and the context information for each one. As a result, kernel-level threads execute more slowly than user-level threads.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "63) What are Kernel Level Threads Advantages and Disadvantages?",
+        "answer": "The following are some benefits of using kernel-level threads:\nKernel-level threads allow the scheduling of many instances of the same process across several CPUs.\nThe kernel functions also support multithreading.\nAnother thread of the same process may be scheduled by the kernel if a kernel-level thread is stalled.\nThe following list includes several drawbacks of kernel-level threads:\nTo pass control from one thread in a process to another, a mode switch to kernel mode is necessary.\nCompared to user-level threads, kernel-level threads take longer to create and maintain.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "64) What is Process Scheduling In Operating Systems?",
+        "answer": "The task of the process manager that deals with removing the active process from the CPU and choosing a different process based on a certain strategy is known as process scheduling.\nAn integral component of a multiprogramming operating system is process scheduling. Such operating systems provide the simultaneous loading of numerous processes into the executable memory, each of which utilizes temporal multiplexing to share the CPU.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "65) What are types of Process Scheduling Techniques in Operating Systems?",
+        "answer": "The types of Process Scheduling Techniques in Operating Systems are:\nPre Emptive Process Scheduling\nNon Pre Emptive Process Scheduling",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "66) What is Pre Emptive Process Scheduling in Operating Systems?",
+        "answer": "In this instance of Pre Emptive Process Scheduling, the OS allots the resources to a process for a predetermined period of time. The process transitions from running state to ready state or from waiting state to ready state during resource allocation. This switching happens because the CPU may assign other processes precedence and substitute the currently active process for the higher priority process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "67) What is Non Pre Emptive Process Scheduling in Operating Systems?",
+        "answer": "In this case of Non Pre Emptive Process Scheduling, the resource cannot be withdrawn from a process before the process has finished running. When a running process finishes and transitions to the waiting state, resources are switched.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "68) What is Context Switching?",
+        "answer": "Context switching is a technique or approach that the operating system use to move a process from one state to another so that it can carry out its intended function using system CPUs.\nWhen a system performs a switch, it maintains the status of the previous operating process in the form of registers and allots the CPU to the new process to carry out its operations.\nThe old process must wait in a ready queue while a new one is running in the system. At the point when another process interrupted it, the old process resumes execution.\nIt outlines the features of an operating system that supports numerous workloads at once without the use of extra processors by allowing several processes to share a single CPU.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "69) What is the use of Dispatcher in Operating Systems?",
+        "answer": "After the scheduler completes the process scheduling, a unique application called a dispatcher enters the picture. The dispatcher is the one who moves a process to the desired state or queue once the scheduler has finished its selection task. The module known as the dispatcher is what grants a process control over the CPU once the short-term schedule has chosen it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "70) What is the Difference between Dispatcher and Scheduler?",
+        "answer": "Dispatcher Scheduler\nDispatcher is the one who moves the process to the desired state Scheduler is the one which selects a process which is feasible to be executed at this point of time.\nThe time taken by Dispatcher is known as Dispatch Latency The Time taken by the Scheduler is not counted basically\nDispatcher is dependent on Scheduler Scheduler is not dependent of Dispatcher\nDispatcher allows Context Switching to occur Scheduler only allows the process to the ready queue",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "71) What is Process Synchronization in Operating Systems?",
+        "answer": "Process synchronization, often known as synchronization, is the method an operating system uses to manage processes that share the same memory space. By limiting the number of processes that may modify the shared memory at once via hardware or variables, it helps ensure the consistency of the data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "72) What are the Classical Problems of Process Synchronization?",
+        "answer": "The Classical Problems of Process Synchronization are:\nBound Buffer Problem or Consumer Producer Problem\nDining Philosopher's Problem\nReaders and writers Problem\nSleeping Barber Problem",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "73) What is a Peterson's Solution?",
+        "answer": "Peterson's solution to the critical section issue is a traditional one. The critical section problem makes sure no two processes or jobsalter or modify the value of a resource at the same time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "74) What are the Operations in Semaphores?",
+        "answer": "The Operations in Semaphores are:\nWait or P Function ()\nSignal or V Function ()",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "75) What is a Critical Section Problem?",
+        "answer": "The section of a program known as the Critical Section attempts to access shared resources.\nThe operating system has trouble authorizing and preventing processes from entering the crucial part because more than one process cannot operate in the critical area at once.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "76) What are the methods of Handling Deadlocks?",
+        "answer": "The methods of handling deadlock are:\nDeadlock Prevention\nDeadlock Detection and Recovery\nDeadlock Avoidance\nDeadlock Ignorance",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "77) How can we avoid Deadlock?",
+        "answer": "We can avoid Deadlock by using Banker's Algorithm.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "78) How can we detect and recover the Deadlock occurred in Operating System?",
+        "answer": "First, what we need to do is to allow the process to enter the deadlock state. So, it is the time of recovery.\nWe can recover the process from deadlock state by terminating or aborting all deadlocked processes one at a time.\nProcess Pre Emption is also another technique used for Deadlocked Process Recovery.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "79) What is paging in Operating Systems?",
+        "answer": "Paging is a storage mechanism. Paging is used to retrieve processes from secondary memory to primary memory.\nThe main memory is divided into small blocks called pages. Now, each of the pages contains the process which is retrieved into main memory and it is stored in one frame of memory.\nIt is very important to have pages and frames which are of equal sizes which are very useful for mapping and complete utilization of memory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "80) What is Address Translation in Paging?",
+        "answer": "Logical and physical memory addresses, both of which are distinct, are the two types of memory addresses that are employed in the paging process. The logical address is the address that the CPU creates for each page in the secondary memory, but the physical address is the actual location of the frame where each page will be allocated. We now require a technique known as address translation carried out by the page table in order to translate this logical address into a physical address.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "81) What is Translational Look Aside Buffer?",
+        "answer": "Whenever logical address is created by the Central Processing Unit (CPU), the page number is stored in the Translational Look Aside Buffer. Along, with the page number, the frame number is also stored.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "82) What are Page Replacement Algorithms in Operating Systems?",
+        "answer": "The Page Replacement Algorithms in Operating Systems are:\nFirst In First Out\nOptimal\nLeast Recently Used\nMost Recently Used",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "83) In which Page Replacement Algorithm does Belady's Anomaly occur?",
+        "answer": "In First in First out Page Replacement Algorithm Belady's Anomaly occurs.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "84) What are Process Scheduling Algorithms in Operating System?",
+        "answer": "The Process Scheduling Algorithms in Operating Systems are:\nFirst Come First Serve CPU Scheduling Algorithm\nPriority Scheduling CPU Scheduling Algorithm\nShortest Job First CPU Scheduling Algorithm\nRound Robin CPU Scheduling Algorithm\nLongest Job First CPU Scheduling Algorithm\nShortest Remaining Time First CPU Scheduling Algorithm\nMultiple Queue CPU Scheduling Algorithm",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "85) What is Round Robin CPU Scheduling Algorithm?",
+        "answer": "Round Robin is a CPU scheduling mechanism whose cycles around assigning each task a specific time slot. It is the First come First Serve CPU Scheduling method prior Pre Emptive Process Scheduling approach. The Round Robin CPU algorithm frequently emphasizes the Time Sharing method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "86) What is Disk Scheduling in Operating Systems?",
+        "answer": "Operating systems use disk scheduling to plan when Input or Output requests for the disk will arrive. Input or Output scheduling is another name for disk scheduling.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "87) What is the importance of Disk Scheduling in Operating Systems?",
+        "answer": "One Input or Output request may be fulfilled by the disk controller at a time, even if several Input or Output requests could come in from other processes. Other Input or Output requests must thus be scheduled and made to wait in the waiting queue.\nThe movement of the disk arm might increase if two or more requests are placed far apart from one another.\nSince hard disks are among the slower components of the computer system, they must be accessible quickly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "88) What are the Disk Scheduling Algorithms used in Operating Systems?",
+        "answer": "The Disk Scheduling Algorithms used in Operating Systems are:\nFirst Come First Serve\nShortest Seek Time First\nLOOK\nSCAN\nC SCAN\nC LOOK",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "89) What is Monitors in the context of Operating Systems?",
+        "answer": "A feature of programming languages called monitors and ithelps in controlledaccess to shared data. The Monitor is a collection of shared actions, data structures, and synchronization between parallel procedure calls. A monitor is therefore sometimes referred to as a synchronization tool. Some of the languages that support the usage of monitors are Java, C#, Visual Basic, Ada, and concurrent Euclid. Although other processes cannot access the monitor's internal variables, they can invoke its methods",
+        "reference": "javatpoint.com"
+    }
+]

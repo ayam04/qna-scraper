@@ -1,0 +1,252 @@
+[
+    {
+        "question": "1) What is Salesforce?",
+        "answer": "Salesforce is a cloud-based service. It is a customer relationship management (CRM) platform. Salesforce is a software as a Service (SaaS). It helps you to manage customer relationships, integrate with other systems, and build apps. The tool helps you to manage and create a custom solution as per your business requirement.\n\nBefore Salesforce, companies had their servers for customer relationship management (CRM). They were costly and time taking. They were very hard to use. Feasible solution to this problem is to build an affordable CRM software and delivering it entirely online as a service.\nIn a few years, there has been a significant surge in cloud computing technologies. Salesforce has an immense impact on the world of computing. Salesforce is developed as the fifth largest software company in the world. It is the top CRM service provider.\nADVERTISEMENT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is an app in Salesforce?",
+        "answer": "An app is a collection of tabs that works as a unit to provide functionality. Users can switch between apps in force.com app's drop-down menu.\nA Salesforce application is a container of tabs, processes, and services.\nWe can create new apps by grouping some standard app, customize existing apps according to our work.\nSalesforce provides many standard apps such as call center, marketing, sales, etc.\nThere are two types of Salesforce application:\nADVERTISEMENT\nADVERTISEMENT\nCustom App\nService cloud control\nSalesforce create application\nADVERTISEMENT\nFollow the below steps to create a Salesforce app:\nStep1: Follow this navigation: Setup-> AppSetup-> create-> apps-> click on 'new'\nStep2: Select custom application radio button-> provide the app name\nStep3: Click on the next button\nStep4: Select the image from the document object\nStep5: Select the objects\nStep6: Click on the visible checkbox and save\nTo add this Salesforce app to any other profiles or tabs. Follow the below steps\nStep1: Setup-> Appsetup-> create-> apps->\nStep2: Select the app from the list and click on edit\nStep3: If we want to change the image, then click on insert an image and take the image from documents.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are objects in Salesforce?",
+        "answer": "Objects are the database tables in Salesforce. Objects allow storing data specific to the organization in Salesforce.\n\nThere are two types of objects in Salesforce:\nStandard objects\nCustom objects\nStandard objects\nStandard objects are such objects that are inbuilt in Salesforce.com.\nExample: accounts, contacts, products, leads, opportunities, campaigns, users, contracts, Report, and dashboards, etc.\nCustom objects\nCustom objects are such objects that are created by us. These objects are user-defined objects. Custom objects store information which is important and unique to our organization.\n\nCustom objects are an integral part of any application. They provide a structure for sharing data.\nCustom objects hold the following properties.\nCustom fields\nRelationship to other objects\nPage layouts\nA custom user interface tab",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are user profiles in Salesforce?",
+        "answer": "User profiles are a group of permissions and settings which provide lightning access to a user. Salesforce admins can assign the users with a profile depending upon their job roles. The user profile includes all the tabs, records, and page access that user require.\nYou can set up and manage the profile by which you can conventionally create a secure boundary that dictates user's access rights.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Can we assign the same profile to two different users? Is it possible that two profiles can be assigned to the same user?",
+        "answer": "The profile defines the level of access a user can have in Salesforce.\nIn Salesforce org, it is possible to assign a single profile to any number of users. For example, we can consider a sales or service team in a company. The entire team has access to the same profile. The admin can create one profile for the whole sales team, which will have access to the leads, campaigns, contacts, and other objects deemed necessary by the company.\nIn this functionality, many users can be assigned with the same profile. In case the team leader needs access to additional records, then it can be done by assigning permission sets only for those users.\nEach user can be assigned only one profile.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "com?",
+        "answer": "Salesforce.com is a software as a service (SaaS), and Force.com is a platform as a service (PaaS).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is the relationship in Salesforce? What are its types?",
+        "answer": "We can establish a relation between objects in Salesforce. We can associate one object with others.\nExample: We have an object party (To store information about the party), and you want to associate it with other objects like people (information of participants) so that you can associate the object party with people. These relationship types also determine how they handle record sharing, required field in page layouts, data deletion capability.\nSalesforce supports the following types of relationships that can be established among objects.\nMaster-Detail Relationship\nLookup relationship\nSelf-relationship\nExternal lookup relationship\nIndirect lookup relationship\nMany-to-Many relationship\nHierarchical relationship",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is Master-detail relationship?",
+        "answer": "It's a tightly coupled relationship among Salesforce objects. In the Master-detail relationship, the parent record controls the behavior of the child record regarding visibility and sharing. If a master record gets deleted, then the child records associated with it are also deleted. The security setting of the parent object applies to the child object.\nExample:\nIf we create a Master-detail relationship between the objects party and people. Where a party is a parent object, and people is a child object. Then if we delete party record, all the associated record will also get deleted.\n\nWhen two objects form a Master-detail relationship, we can create a unique type of field over the master object, called Roll-up summary.\nA Roll-up summary allows us to calculate values related to child record, such as the number of child record, average, sum, etc., linked to a parent record.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the lookup relationship?",
+        "answer": "It's a loosely coupled relationship among Salesforce objects. In the Lookup relationship, both parent and child have their sharing setting and security controls, which means if a parent record gets deleted, then child records remain in the system.\nLet's see the party and the people objects. For example, the below figure provdes a visual representation of the Lookup relationship between the party and people objects.\n\nIn this diagram, the party object record has been deleted, but the people record is still available. This relationship between objects is Lookup relationship.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are reports in Salesforce?",
+        "answer": "Reports are an essential part of any business. Descriptions provide a clear picture of the management.\nReports are used to track the process towards its various tasks, control expenditure, increase revenue. Reports help in trend prediction.\nSalesforce.com allows you to generate reports in different styles.\nIn Salesforce.com, we can create four types of reports:\nTabula reports\nSummary Reports\nMatrix report\nJoined report",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are some Governor limits in Salesforce?",
+        "answer": "Governor limits control how much data and how many records you can store in the shared databases because Salesforce is a multi-tenant architecture based. In other words, Salesforce uses a single database to store the data of multiple customers.\nSalesforce introduced the concept of the Governor limits to prevent monopolization of the shared resources between users.\nGovernor limits are the biggest challenge of a Salesforce developer. This is because if the apex code exceeds the limit, then the issue is a runtime exception that can't be handled. So as a Salesforce developer, you should be very careful while developing application.\nHere is a list of some significant Governor limits.\nPre-transaction Apex limits\nStatic Apex limits\nSize-Specific Apex limits\nMiscellaneous Apex limits\nForce.com Platform Apex Limits\nEmail limits\nPush Notification limits",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the different ways to store various types of records in Salesforce?",
+        "answer": "There are many different ways in Salesforce to store various records, such as Images, files, and documents. Some of them are as follows:\nAttachment\nGoogle drive\nChatter files\nLibraries",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the fiscal year in Salesforce?",
+        "answer": "Starting and ending date of a company financial year is considered as Fiscal year. The fiscal year is used to calculate annual financial statements in business and other organizations. Salesforce has two types of the fiscal year:\nStandard Fiscal year\nCustom Fiscal year\nStandard fiscal year\nSalesforce provides a calendar by default as the standard fiscal year. It's a Gregorian calendar. But it is not necessary that all the organizations use the same calendar, some organizations use different calendars and need to change the fiscal year start month. It can be defined whether the fiscal year is based on the start or end of the selected month.\nTo set up a standard fiscal year navigate to\nSetup-> Administer->company profile-> Fiscal year  \nSelect the option of Standard Fiscal year\nCustom fiscal year\nWhen the standard fiscal year does not meet the requirements of the organization, then Custom fiscal year is used. To use the custom fiscal year, the administrator has to enable it. The administrator must define the fiscal year to fit the company's calendar.\nTo set up the company's fiscal year, navigate to\nSetup-> Administer-> company profile-> Fiscal year  \nSelect the option of Custom Fiscal year\nSelect the checkbox next to the terms statement\nClick on Enable custom fiscal year\nClick on OK",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How many Master-detail relationship fields can be created in an object?",
+        "answer": "There is a maximum of two Master-detail relationship fields possible in an object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How many Lookup relationship fields can be created in an object?",
+        "answer": "There is a maximum of 40 Lookup relationship fields possible in an object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What are the benefits of the Salesforce?",
+        "answer": "Salesforce is the largest and leading cloud platform provider in the world. Their customer relationship manager (CRM) is one of the most beneficial software.\nADVERTISEMENT\nWe get the following benefits by using CRM\nImproved understanding of the organization\nEnhanced communication b/w client and service provider\nWe can facilitate the customer better by understanding them.\nSalesforce automates the repeated tasks.\nSalesforce reduces cost and cycle time.\nSalesforce improves the efficiency of teams.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is a sandbox org? What are the different types of sandboxes in Salesforce?",
+        "answer": "A sandbox is a copy of the production org/environment. It is used for testing and development purpose. It is beneficial because it allows for the development of Apex programming without disturbing the production environment.\nSandbox can be used when we want to test a newly developed force.com application. We can develop and test it in the sandbox org, there is no need to do it directly in production.\nThere are four types of sandboxes are in Salesforce.com:\nDeveloper\nDeveloper Pro\nPartial Copy\nFull",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is Apex in Salesforce?",
+        "answer": "Apex is a strongly typed object-oriented programming language. It allows developers to execute flow and transaction control statements on Salesforce server in combination with calls to the API. Its syntax looks like Java. It uses syntax and acts as a database stored procedure. Apex allows the developer to add business logic to system events like button clicks, related record update, and Visualforce pages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is Visualforce?",
+        "answer": "Visualforce is a framework for the Force.com platform. It is a component based markup language. It allows defining user interface component in Salesforce. Page layout feature will enable you to configure the user interface easily, but by using Visualforce pages, you can customize your user interface.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Can you edit an apex trigger/ apex class in a production environment? Can you edit a Visualforce page in a production environment?",
+        "answer": "No, we can't edit apex classes and triggers directly in the production environment.\nTo edit an apex trigger/ class, first, it needs to be done in Developer edition or testing org or Sandbox org. Then, we can deploy it in production. A user that has apex permission must deploy the triggers and classes using deployment tools.\nThough, Visualforce page can be created and edited in both production and sandbox.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) Why are Visualforce pages served from a different domain?",
+        "answer": "Visualforce pages are served from a different domain to block cross-site scripting and improve security standard.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What are the static and dynamic dashboards? Can dynamic dashboards be scheduled?",
+        "answer": "Static dashboards are the ordinary dashboards that will be visible to any other user who has made a report out of his data. Example; sales managers/ marketing manager would be able to see on his Salesforce Org. Moreover, a normal dashboard that shows the data for a single user.\nDynamic dashboards display information which is customized for a specific user. Let's consider the above example. In case the sales manager wants to view the report of a particular team member, then he can use dynamic dashboards.\nWe can use dynamic dashboards when we want to show user-specific data such as a particular user's quota, sales, productivity, meetings, etc.\nWe can use a normal/ static dashboard to show regional and organization-wide data to a set of users, such as sale in a region, or team performance, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Which fields are automatically indexed in Salesforce?",
+        "answer": "Following fields are automatically indexed in Salesforce:\nPrimary keys (id, name and owner fields)\nForeign keys (master-detail or lookup fields)\nAudit keys (Such as SystemModStamp)\nCustom fields ( These fields Patent as an External ID or a unique area)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What are skinny tables?",
+        "answer": "Salesforce can create skinny tables to avoid join and contain frequently used fields. Thin tables improve the performance of read-only operations. Skinny tables are set aside in sync with their source tables when the source table is modified.\nContact Salesforce customer support to use skinny tables. These tables are created and used automatically where appropriate. We can't create, modify, or thin access tables.\nConsiderations for skinny tables\nADVERTISEMENT\nIt can contain a maximum of 100 columns.\nTables cannot contain fields from other objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is an Audit trail in Salesforce?",
+        "answer": "The Audit trail tracks the recent setup changes that other administrators and you have made to your organization. This is useful for organizations that have more than one administrator.\nIt can track the last twenty changes made to your organization. It displays\nThe date and time of the change.\nWho made it (administrator name)\nWhat was before the change",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) Can we delete a user in Salesforce?",
+        "answer": "No, it is not possible to delete the user in the salesforce.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) Can we change the license when we create a profile?",
+        "answer": "No, we cannot change the license after creating the profile.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is Deployment in Salesforce?",
+        "answer": "In SFDC (Salesforce development cycle), you have to develop code in Sandbox, and then you might need to deploy this to another sandbox or production environment this is called deployment.\nIn other words, the movement of metadata from one organization to another organization is called deployment. The main reason behind deployment is that you cannot develop apex in your Salesforce production.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the different ways of deployment in Salesforce?",
+        "answer": "Deployment can be done in the following ways.\nChange Sets\nEclipse with Force.com IDE\nForce.com Migration Tool - ANT/Java based\nSalesforce Package",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the difference between a standard controller and a custom controller?",
+        "answer": "The standard controller automatically contains all the standard object properties and standard button functionality. It contains all the functionalities and logic as used in standard Salesforce pages.\nCustom controllers are like an Apex class that implements all the logic of a page without taking an advantage of a standard controller. Custom controllers are related with Visualforce page through the controller attribute.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is cloud computing?",
+        "answer": "Cloud computing is the provision of computational services such as storage, servers, database, software, networking, analytics, intelligence, and moreover the internet (cloud). It brings the organization faster innovation, flexibility in allocating resources, economies of scale. It reduces the costs of organizations that are associated with the task of storage.\nCloud-based storage makes it possible to save the files in a remote database instead of proprietary hard drive or local storage device. It provides access to the data and the software programs to run it till an electronic accessory has access to the web.\nCloud services can be both private and public. Private cloud services provide services to a certain number of people. On the other hand, public cloud services offer their services over the internet which is chargeable. These services are a group of networks that supply hosted services. Cloud services also provide a hybrid option, which combines both private and public services.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What are the types of Cloud services?",
+        "answer": "Based on services, cloud services provide users with a series of functionalities like\nEmail\nBackup, Storage, and data retrieval\nCreating and testing app\nData Analyzing\nAudio and Video streaming\nCloud computing is still a new service, but it comes in a trend in a very short time. Nowadays, government agencies, small businesses, non-profit agencies, and individual consumers are using cloud computing.\nCloud computing is not a single part of technology like a microchip. It's a primary combination of three services software as a service (SaaS), infrastructure as a service (IaaS), and platform as a service (PaaS)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) How many certifications are available in Salesforce?",
+        "answer": "There are eight kinds of certifications available in Salesforce which cater to different stages:\nAdministrator certifications\nDeveloper Certifications\nArchitects Certifications\nApp Builders Certifications\nImplementation Experts or Consultant Certification.\nMarketers Certification\nPardot Experts Certifications\nCPQ Certification",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is Salesforce environment?",
+        "answer": "Environment or organization is the workspace for a particular user.\nFor Example, if you sign up to a Facebook account, you will be provided a unique username and password. The same approach, if you subscribe to the Force.com cloud computing, you will be provided a valid credential to work in your specified cloud computing area of the environment or Org.\nThe Salesforce environment provides accessibility to develop, test the apps, and can be used for production also. This environment can be customized according to your requirements such as Apex code, workflow, Custom DB attributes, and objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How to check for user License in Salesforce work environment?",
+        "answer": "To check the Salesforce license, open the SF workspace and navigate as follows:\nSetup-> Monitor->System Overview  \nAnd go to Data Storage section, here you can see the user license in the highlighted area.\nIf you want to check for all user licenses, then select the \"Show All\" option.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is MVC architecture in Visualforce?",
+        "answer": "MVC is a widely used architecture design pattern which divides the design component in three phases Model, View, Controller.\n\n\nIn Visualforce MVC, architecture can be implemented by using the standard as well as custom objects. Also, we can use three newly introduced Salesforce objects, pages, components, and controllers.\nThese pages work like JSP pages, give the user-friendly presentation. Each view has an associated controller. Developers can write their controller using Apex programming language or can use a standard controller. VF has some auto-generated controller to interact with databases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) When should apex be used?",
+        "answer": "Apex can be used in different scenarios, such as\nTo create Email services\nTo create web services\nTo perform complex validation over multiple objects\nTo create complex business processes that are not supported by the workflow.\nTo create custom transaction logic\nTo attach custom logic to another operation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) How does Apex work?",
+        "answer": "All Apex programs run on-demand exclusively on force.com platform.\nFirst, the application server compiles the apex code into an abstract set of instructions that can be understood by apex runtime interpreter.\nAfter the compilation, the compiled code is stored to metadata.\nAnd now, when the end users initiate the execution of apex by clicking the button or visual force page, the application servers retrieve the compiled instructions from the metadata and forward them to runtime interpreter before returning the result.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What are the types of SOql statements in Salesforce?",
+        "answer": "Salesforce Object Query Language is used to perform database operations in Salesforce.com. It is similar to the select statement in the widely used Structured Query Language (SQL), but it is designed especially for Salesforce data.\nWith the use of SOql, we can create a simple but powerful query string in the following environments:\nIn the query call () of the query String parameter.\nIn apex statements\nIn Visualforce controllers and getters method\nIn the schema explorer of Force.com IDE",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What could be the reason to lose data in Salesforce?",
+        "answer": "Few reasons to loss data in Salesforce are as follows:\nBy changing date and date-time\nBy migrating number, percent, currency from another datatype.\nBy changing from the multi-select picklist, checkbox, auto number to other types.\nBy altering the multi-select picklist from any type except picklist\nBy changing to auto number except for the text\nBy switching from text area to email, URL, phone, and text.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What is Workflow?",
+        "answer": "The workflow is a programmed process which is used to validate evaluation criteria and rule criteria.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What is the difference between WhoID and WhatId?",
+        "answer": "\"WhoID\" denotes the people like contacts or leads. Whereas \"WhatId\" denotes the objects. Let us consider LeadID, ContactID are fields of \"WhoId\" and AccountID, OpportunityID are \"WhatId\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) What is Data Skew in Salesforce?",
+        "answer": "When a maximum number of child records (more than 10k) are connected to one parent record that situation is called data skew in Salesforce.\nData skew can be three types\nAccount data skew\nOwnership skew\nLookup skew",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) What is collection in Apex? List out all different kinds of collections supported by Salesforce?",
+        "answer": "Collections in Apex are variables that are used to store multiple data records. As there is a limitation on the number of records to be retrieved per transaction, we can use the collection variable to retrieve records.\nThere are three types of collections in Salesforce.\nList\nMaps\nSets",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What are static Resources?",
+        "answer": "Static resources are used to upload images, zip files, jar files, Javascript and CSS files that can be referred in a visual force page. We can upload a maximum of the 250mb file using Static resources.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What is the difference between Action support and Action function?",
+        "answer": "To understand the difference between Action support and Action function, let's understand their functionalities:\nBoth Action support and action function are used to call a controller method via an Ajax request.\nThe difference between them is as follows:\nAction function can call a controller method from JavaScript.\nAction function provides Ajax that supports another visualforce component and then call the controller method.\nAction function cannot support Ajax to another component. But from a particular component which supports Ajax (onclick, onblur, etc.) action function can be called to the controller method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) How many types of email templates can be created in Salesforce?",
+        "answer": "Different types of email templates can be created In Salesforce. Some of them are listed below.\nHTML with letterhead\nEdit HTML Templates\n\nCustom HTML\nEdit HTML Templates\n\nVisualforce",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) How to handle comma within a field while uploading using Data Loader?",
+        "answer": "If there is a comma in field content, you will have to enclose the contents within double quotation mark;\" \".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) How many callouts to external service can be made in a single Apex transaction?",
+        "answer": "An Apex transaction can make a maximum of 100 callouts to an HTTP request or an API call after that governor limits will restrict it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) What is pagination in salesforce? How can we implement it in Visualforce?",
+        "answer": "Pagination is a technique to display a large number of records and displaying the records on multiple pages. We use pagination instead of controlling the number of records displayed on each page.\nBy default, a list controller shows 20 pages in a page. To customize it, we use a controller extension to set the Page Size.\nTake a look at the below sample code:\n<apex:page standardController=\"Salary\" recordSetVar=\"Salaries\">  \n<apex:pageBlock title=\"Viewing Salaries\">  \n<apex:form id=\"theForm\">  \n<apex:pageBlockSection >  \n<apex:dataList var=\"opp\" value=\"{!Salaries }\">  \n{!opp.Name}  \n</apex:dataList>  \n</apex:pageBlockSection>  \n<apex:panelGrid columns=\"4\">  \n<apex:commandLink action=\"{!first}\">FIRST</apex:commandLink>  \n<apex:commandLink action=\"{!next}\">NEXT</apex:commandLink>  \n<apex:commandLink action=\"{!previous}\">PREVIOUS</apex:commandLink>  \n<apex:commandLink action=\"{!last}\">LAST</apex:commandLink>  \n</apex:panelGrid>  \n   </apex:form>  \n</apex:pageBlock>  \n</apex:page>",
+        "reference": "javatpoint.com"
+    }
+]

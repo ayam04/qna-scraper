@@ -1,0 +1,257 @@
+[
+    {
+        "question": "1) What is Zend Framework, and why is used?",
+        "answer": "The Zend framework is an open-source structure for creating object-oriented web applications using PHP 5 or above. The main purpose of the structure is to streamline the development of Web applications by using object-oriented processes, which allow the creation of expandable classes and objects. It promotes best practices for building web services and applications.\nZend framework consists of loosely connected components, which are utilized easily in an application. It is used for the web application that utilizes many functions and libraries without using much of coding. It is a pure object-oriented web application system, which is built up of advanced MVC design patterns.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Who developed the Zend framework?",
+        "answer": "Zend Technologies develop a Zend Framework. It is a Cupertino, California, U.S.-based World Wide Web infrastructure Software Company founded by Andi Gutmans and Zeev Suraski in 1999. The Zend framework was initially released on March 3, 2006.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) Which version of PHP does the Zend framework require?",
+        "answer": "Zend Framework requires PHP 5.2.4 and above versions. Zend framework is enhanced to utilize all of the object-oriented features of PHP 5.2.4 and have the advantage of prominent security and performance enhancements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is the latest version of the Zend framework?",
+        "answer": "Zend Framework 3 is the latest version of Zend Framework. It was released on June 28, 2016.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) How to install the Zend framework?",
+        "answer": "Here are the following steps to install Zend in a local machine:\nStep 1: Create a new SSH user.\nStep 2: Create a fully hosted domain or subdomain.\nStep 3: Create a phprc file.\nStep 4: Change the default PHP CLI the user shell uses.\nStep 5: Download the Zend framework.\nStep 6: Log in to the server via SSH.\nStep 7: Change the directory of the project.\nStep 8: Close the repository and change the directory.\nStep 9: Then, locally install the composer into the directory.\nStep 10: Run the following syntax to install the Zend framework.\n[server]$ php composer.phar self-update  \n[server]$ php composer.phar install",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the features of Zend Framework?",
+        "answer": "Below are some features of the Zend framework, such as:\nADVERTISEMENT\nZend provides RESTful API development support.\nIt has flexible URI Routing and session management.\nZend has a simple cloud API.\nIt supports multi databases, including PostgreSQL, SQLite, etc.\nIt is a pure object-oriented web application framework.\nIt supports advanced MVC implementation.\nCode is reusable and easier to maintain.\nIt provides data encryption.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What does autoloader in Zend Framework?",
+        "answer": "The Zend Framework has the default Zend_Loader_Autoloader, that's called autoloader. The autoloader ends the need to include the file manually. Whenever any class or interface is called, the autoloader is called automatically to load all the objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is Zend_Controller_Front in Zend Framework?",
+        "answer": "The Zend_Controller_Front implements the front controller pattern used in the Model-View-Controller of applications in the Zend framework. Its main purpose is to manage the request, route the incoming request, and then dispatch actions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the purpose of bootstrap in the Zend framework?",
+        "answer": "In the Zend framework, then bootstrapping is the process to load the application. All the resources required to apply the request to the application are bootstrapped/loaded/initialized before the request is completed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the components of the Zend framework?",
+        "answer": "Zend framework provides three types of components, such as:\nEvent Manager: It provides the ability to create event-based programming. It also helps to create, inject and manage new events.\nService Manager: It provides the ability to consume any services from anywhere with little effort.\nModule manager: It provides the ability to convert a collection of PHP classes with identical functionality into a single unit. It can use to be maintained and configured as a single unit.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are Zend_Form and its features in Zend Framework?",
+        "answer": "In Zend Framework, Zend_Form is used to create an HTML form. It provides various components, such as input, select, radio, checkbox, etc. below are the following features of the Zend form.\nFiltering and validation\nOrdering\nElement and Form rendering, including escaping\nElement and form grouping\nElement and form-level configuration",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) How to check a Form is posted or not in the Zend framework?",
+        "answer": "We can check whether a form is posted or not in Zend Framework in the following two ways:\nProcess the form submission and store it in the database.\nDisplay a form for the user to provide details.\nWe utilize Zend\\form to check whether a form is posted or not in a Zend framework. The Zend\\Form component manages the form and form validation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is Front Controller in the Zend framework?",
+        "answer": "Following are the front controller in the Zend Framework:\nrouteStartup: This function is called before Zend_Controller_Front calls on the router to evaluate the request.\nrouteShutdown: This function is called after the router finishes routing the request.\npreDispatch: It is called before the dispatcher dispatches an action.\ndispatchLoopStartup: It is used before enters of Zend_Controller_Front.\npostDispatch: It is called after the dispatcher dispatches an action.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What are the benefits of the Zend framework over the other frameworks?",
+        "answer": "Here are the following benefits of the Zend framework over the other frameworks of PHP.\nZend is a fully object-oriented framework and utilizes many object-oriented concepts such as interfaces and inheritance.\nIt builds web applications more comfortably and faster.\nIt supports multiple vendors and database systems.\nZend has excellent scope for customization.\nIt supports an attractive and meaningful URL database.\nZend framework composes and sends email features.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is Zend Auth?",
+        "answer": "The Zend\\Authentication is the Zend component that is related to authentication. It is used to determining an entity based on a certain set of credentials. Zend Auth provides authentication for the user like admin, general, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is Authorization in Zend Framework?",
+        "answer": "Unlike authentication, Zend Authorization is the process of deciding to allow access to an entity or performing certain operations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is Zend Permission Acl?",
+        "answer": "The Zend\\Permissions\\Acl component is used in the Zend application for access control to certain protected objects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "ini file in Zend Framework?",
+        "answer": "In the Zend Framework, the application.ini file is used for the configuration of the application. This file is located in the application/configs/application.ini location.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the difference between Zend_Auth and Zend_Acl?",
+        "answer": "Here are some common differences between Zend_Auth and Zend_Acl, such as:\nZend_Auth Zend_Acl\nZend_Auth utilizes the method like OpenID, LDAP, and HTTP to provide the confirmation. Zend_Acl utilizes Access Control List for approval.\nZend_Auth gives the validation protocol to the clients utilizing numerous methods. Zend_Acl is utilized for approval purposes.\nZend_Auth confirms checking and providing the certifications to the client's system. Zend_Acl utilizes the list of parts that are being implemented, just the approved individuals.\nZend_Auth supports the authentication stages features. Zend_Acl supports the propelled definitions with features of different legacy and other similar highlights.\nZend_Auth gives an environment to the framework through which the user is authenticated for utilize. Zend_Acl plays out a few tasks on the particular assets that need to be composed on the system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What are Decorators in the Zend framework?",
+        "answer": "Zend framework utilizes the decorator pattern to render elements and forms. The decorator is generally used to comply with the single responsibility principle as it admits functionality to be divided between classes with unique areas of concern.\nOne basic technique to define a common decorator pattern is a design that allows the behavior to be added to a particular object, either statically or dynamically, without affecting various other objects from the same class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the default methods provided by decorators in the Zend framework?",
+        "answer": "Decorators are utilized as a part of the application to give the functionality and make components work. The default methods, which are provided by decorators in the Zend framework, are as follows:\nView Helper: It is a strategy that permits the review of the helper files utilized. It permits the replacement of the substance that is being given.\nErrors: It gives the error codes and messages that came during the execution of the application. It gives attaching of the substance.\nHTML Tag: It enables the labels to be written by utilizing the parameters and attributes. It gives the wrapping up of the substance and decreasing the length of the code.\nLabels:Labels are utilized to give the informative keywords as it gives pre-pending of the substance that is being given.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is Lucene in the Zend framework?",
+        "answer": "Lucene is a superior, full-featured text search engine that uses an open, binary format for putting search indexes and a standardized question design for questioning against the indexes.\nLucene was initially written in Java as a part of the Apache project. Zend_Search_Lucene is a PHP usage that brings full binary similarity with Java Lucene.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is Zend Framework 2?",
+        "answer": "Zend Framework 2 is an open-source framework for developing web applications and services using PHP 5.3+. Zend Framework 2 uses 100% object-oriented code and utilizes most new features, such as namespaces, late static binding, lambda functions, and closures.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How to disable layout in Zend Framework?",
+        "answer": "In Zend Framework, We need to disable layout when we make an AJAX request to fetch data with the help of the following code.\n$this->_helper->layout()->disableLayout();  \n$this->_helper->viewRenderer->setNoRender(true);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is service manager registration?",
+        "answer": "Service manager registration is a set of methods that are used to register a component. Here are some important methods, such as:\nFactory method\nAbstract factory method\nInitialize method\nDelegator factory method",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is Zend Engine?",
+        "answer": "Zend Engine is a set of various components used internally by PHP as a compiler and runs engine time. The most important Zend Engine part is the Zend Virtual Machine, which stabilizes the Zend Executor components and the Zend Compiler. PHP scripts are loaded into memory and organized into Zend opcodes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What are Plugins in the Zend Framework?",
+        "answer": "Zend framework generates heavy usage of plugin architectures. Plugins admit for easy compliance and customization of the framework while having your code separate from Zend framework code. Following are the plugins in Zend Framework:\nActivated by front controller events\nEvents bookend each significant procedure of the front controller\nAllow automating activities that apply comprehensively",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is routing, and how it works?",
+        "answer": "Routing is the process of taking a URI endpoint (that part of the URI which comes after the base URL) and decomposing it into parameters to determine which module, controller, and action of that controller should receive the request.\nThese values of the module, controller, action, and other parameters are packaged into a Zend_Controller_Request_Http object which is then processed by Zend_Controller_Dispatcher_Standard.\nRouting occurs only once when the request is initially received and before the first controller is dispatched. Zend_Controller_Router_Rewrite is the standard framework router.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the types of routing in the Zend framework?",
+        "answer": "There are the following types of routing in the Zend framework:\nHostname: It is used to match the host part of the URI.\nLiteral: It is used to match the exact URI.\nMethod: It is used to match the HTTP method of the incoming request.\nPart: It is used to match the part of the URI path segment using custom logic.\nRegex: It is used to match the URI path segment by Regex Pattern.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is Zend_registry?",
+        "answer": "zend_registry is a container that is used for storing objects and values in the application space. The objects stored in the Zend registry are available throughout your application. You can Zend registry is used as a substitute for global storage.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is the difference between Zend_registry and Zend_session?",
+        "answer": "Here are some basic differences between Zend_registry and Zend_session.\nZend_registry Zend_session\nZend_Registry has a request scope. Zend_Session has session scope.\nZend_Registry is used to store objects/values for the current request. Zend_Session uses PHP sessions. Data stored using Zend_Session can be accessed in different/all pages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) Can we call a Model in View?",
+        "answer": "Yes, you can call a model in view. Simple create the object and call the method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) How to define the library path in Zend framework?",
+        "answer": "First create directory 'library', and put 'Zend' directory in it. Now you should add library to your include path. Edit index.php file:\n$includePath = array();  \n$includePath[] = '.';  \n$includePath[] = './../application';  \n$includePath[] = './../library';  \n$includePath[] = get_include_path();  \n$includePath = implode(PATH_SEPARATOR,$includePath);  \nset_include_path($includePath);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) How to include Js from Controller and View in Zend?",
+        "answer": "From within a view file: $this->headScript()->appendFile('filename.js');\nFrom within a controller: $this->view->headScript()->appendFile('filename.js');\nAnd then somewhere in your layout you need to echo out your headScript object:\nheadScript();?>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How to check request is ajax or not in Zend framework?",
+        "answer": "$this->getRequest()->isXmlHttpRequest() method is used to check request is Ajax type or not in Zend Framework.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is Caching in Zend framework?",
+        "answer": "Caching is operated by frontends in the Zend framework while cache records are stored through back-end adapters, such as File, Sqlite, Memcache, through a flexible system of IDs and tags. Using those, it is easy to delete specific types of records afterward.\nThe core of the module (Zend_Cache_Core) is generic, flexible, and configurable. Yet, there are cache frontends that extend Zend_Cache_Core convenience for your specific needs: Output, File, Function, and Class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) Is Zend a component Library or a Framework?",
+        "answer": "Zend is both a component library as well a framework. Zend Framework provides all the components required for most web applications in a single distribution. But Zend Framework components are also loosely coupled, making it easy to use just a few components in a web application- even alongside other frameworks.\nUsing this use-at-will architecture, we are implementing features commonly found in more monolithic frameworks. We are currently working on a tooling component for the 1.8 release that will make it simpler to build applications using ZF components yet will not sacrifice the use-at-will nature of existing ZF components. It's a testament to the use-at-will architecture of Zend Framework that the tooling component itself can be used standalone.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What are the types of methods of Cookies class in the Zend framework?",
+        "answer": "In the Zend framework, there are various methods of Cookies class that are listed below:\naddCookie(uri): It is used to add a cookie into the request object of the given URI.\ngetCookie(cookieName, $cookieForm): It is used to get the cookie, $cookieName available in the given URI.\nfromResponse(uri): It is used to extract cookies from the response object of the given URI.\nisEmpty(): It is used to find whether the given Cookie object has any cookie or not.\nreset(): It is used to clear all the cookies in the given URI.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "In the Zend framework, there are various methods of Cookies class that are listed below:",
+        "answer": "addCookie(uri): It is used to add a cookie into the request object of the given URI.\ngetCookie(cookieName, $cookieForm): It is used to get the cookie, $cookieName available in the given URI.\nfromResponse(uri): It is used to extract cookies from the response object of the given URI.\nisEmpty(): It is used to find whether the given Cookie object has any cookie or not.\nreset(): It is used to clear all the cookies in the given URI.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) Which command is used for debugging PHP applications in the Zend framework?",
+        "answer": "In the Zend framework, echo and die command is used for debugging PHP applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) How to implement exchangeArray in the Zend framework?",
+        "answer": "You need to use the following code to implement exchangeArray in the Zend framework:\n<?php     \n   namespace Employee\\Model;     \n   class Employee {     \n      public $id;     \n      public $emp_name;     \n      public $emp_job;      \n      public function exchangeArray($data) {     \n         $this->id = (!empty($data['id'])) ? $data['id'] : null;     \n         $this->emp_name = (!empty($data['emp_name'])) ? $data['emp_name'] : null;     \n         $this->emp_job = (!empty($data['emp_job'])) ? $data['emp_job'] : null;     \n      }     \n   }",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What are the session components in the Zend framework?",
+        "answer": "Here are the following Session components in the Zend framework, such as:\nZend\\Session\\Container: It is used to read and write API session information.\nZend\\Session\\SessionManager: It is used to manage the entire lifecycle of a session.\nZend\\Session\\Storage: It is used to specify the session data that will be stored in the memory.\nZend\\Session\\SaveHandler: It is used to store and retrieve the session data into a physical location.\nZend\\Session\\Validator: It is used to protect sessions from hijacking.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) How to set Module Name, Controller Name, and Action Name in Zend framework?",
+        "answer": "$request->setModuleName('front');  \n$request->setControllerName('address');  \n$request->setActionName('addresslist');",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "php file outside the public folder?",
+        "answer": "Yes, you can move the index.php file outside the public folder.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) Why can't Zend_form render my file element without errors?",
+        "answer": "The file element needs a special file decorator, which is added by default. When you set your own decorators for file elements, you delete the default decorators. For example:\n$element->setDecorators(array(  \narray('ViewHelper'),  \narray('Errors')  \n));  \nYou should use a File decorator instead of the ViewHelper for the file element, as shown below:\n$element->setDecorators(array(  \narray('File'),  \narray('Errors')  \n));",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) Why does the Zend framework project have a CLA?",
+        "answer": "The CLA protects all users, including individuals, small and medium businesses, and large corporations. By having a CLA in place, we mitigate the risk that companies who claim intellectual property infringement may demand royalties or fees from users of Zend Framework, whether individuals or companies.\nThis is especially important for companies basing their business or products on Zend Framework. The Zend Framework CLA helps to ensure that code and other IP in Zend Framework remain free.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) Does Zend support PHP 4?",
+        "answer": "No. Zend was built to use all of the object-oriented features of PHP 5 and take benefits of significant performance and security enhancements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) What services are available from Zend Technologies for Zend Framework?",
+        "answer": "Zend Technologies provides a comprehensive set of services for Zend Framework, including:\nSupport\nTraining\nConsulting\nCertification",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) What is Inflection in the Zend framework?",
+        "answer": "Inflection is a class in Zend that modifies the string-like convert to lowercase, changing to Url by removing special chars and converting underscore to a hyphen.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) What is Zend_filter?",
+        "answer": "Zend_filter filters the data by removing the tags, trailing the spaces, and removing all except digits.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) How to protect a website from SQL injection in Zend using select Query?",
+        "answer": "In Zend, you can protect a website from sql injection using select query:\n$this->getAdapter()->quote();  \n$select->where(\" = \",);  \n$select->where(\" = ? \",);",
+        "reference": "javatpoint.com"
+    }
+]

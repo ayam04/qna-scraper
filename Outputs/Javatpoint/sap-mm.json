@@ -1,0 +1,292 @@
+[
+    {
+        "question": "1) What is SAP MM? / What do you understand by SAP MM?",
+        "answer": "We know that SAP stands for Systems, Applications & Products in Data Processing. SAP MM is a functional module in SAP that deals with procurement handling and material management. In SAP MM, MM stands for Material Management. The SAP MM module contains master data, material valuation, invoice verification, material requirement planning, system configuration, transactions, etc., to complete the procurement to pay process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the key advantages of SAP MM or SAP Material Management?",
+        "answer": "SAP MM is one of the largest functional modules in SAP. This module mainly deals with the Procurement Process, Master Data (Material & Vendor Master), Inventory Management, Valuation of Material & Account Determination, Material Requirement Planning, Invoice Verification, etc.\nFollowing are the main key advantages of SAP MM or SAP Material Management:\nADVERTISEMENT\nSAP MM reduces material costs by avoiding stocking unnecessary or obsolete materials.\nIn SAP MM, inventory losses are minimized because it provides multi-location inventory.\nSAP MM reduces direct labor costs, and labor can be used efficiently.\nIt can improve the delivery time and increase transparency across the organization.\nIt provides the lot and serial traceability.\nIt also provides bin management, scheduling, and resourcing.\nIt reduces the manufacturing cycle times and can be controlled effectively.\nIt provides effective inventory management and reduces expenditure on unwanted material storage.\nIt also provides inventory replenishment and product life cycle management.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the main master files used in SAP MM?",
+        "answer": "The main master files used in SAP MM are:\nMaterial master file\nInventory master file\nVendor master file",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the most necessary components of SAP MM or SAP Material Management?",
+        "answer": "The most necessary components of SAP MM or SAP Material Management are:\nVendor Selection\nSource determination\nInvoice Verification\nOrder Processing\nOrder follow up\nDetermine requirements\nGoods receipts and Inventory management",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What do you understand by goods receipt and post goods receipt?",
+        "answer": "Goods Receipt: In SAP MM, goods receipt is the physical inbound transfer for goods or material into the warehouse. It specifies the transfer of goods used to post goods received from external vendors or in-plant production. All goods receipts result in an increase in stock in the warehouse.\nPost-Goods Receipt: The Post Goods Receipt specifies the reference to the purchase order with which the goods were ordered. It is used to post the receipt of goods with reference orders after purchase. If the material is delivered for some purchase order, it is important for all departments involved that the goods receipt entry in the system references this purchase order.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the different types of stocks used in SAP MM?",
+        "answer": "Following are the three different types of stocks used in SAP MM:\nValuated Stock\nNon-valuated stock\nSpecial Stock\nHere, the valuated stock is further divided into three parts:\nUnrestricted stock\nBlocked stock\nQuality Inspection Stock\nThe Special Stock is classified as follows:\nStock Transport Order\nSubcontracting\nConsignment\nReturnable Transport Packaging\nStock Transport Order\nPipeline Handling\nThird-Party Processing",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What do you understand by Consignment Stock?",
+        "answer": "The Consignment Stocks are used to specify those materials that are still available in the store premises but belong to the owner or seller. When the buyer uses the consignment stocks, he has to pay for them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Which type of document is a purchase requisition, internal, or external document?",
+        "answer": "A purchase requisition is an internal document, and it is the phase in which purchasing department is informed about the requirement of items or services required for business purposes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the different info record types in SAP MM?",
+        "answer": "The different info record types in SAP MM are:\nStandard\nPipeline\nSubcontracting\nConsignment",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What do you understand by an internal procurement?",
+        "answer": "The big corporate organizations own multiple separate businesses or companies. Here, internal procurement is a process of getting material and services from identical companies. So, each of these companies maintains a complete bookkeeping system with separate Balance, Profit & Loss Statements so that when a trade occurs between them, it will be recorded.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What do you understand by Special Procurement in SAP MM?",
+        "answer": "In SAP MM, Special Procurement is used to specify those stocks that do not belong to a company, and these are kept at different locations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following are the different steps used in Procurement Lifecycle:\nRequirement and Information Gathering\nThe procurement process begins with gathering information about a product and its quantity first. Then for required products and services, it is necessary to look for suppliers who can satisfy the requirements.\nSupplier Contact\nThis step comes after requirement and information gathering. After gathering requirements, one will look for the suppliers who can fulfill the requirements. Based on that, we can make a quotation request or information request to the suppliers or direct contact with them.\nBackground Review\nOnce the supplier is known, product/service quality is checked, and any necessities for services such as Installation, warranty, and maintenance are investigated. Some samples of the products can be obtained for qualifying examination.\n\nNegotiation\nSome negotiations with suppliers are made regarding the products/services' price, availability, and delivery schedule of the products/services. In this step, a contract is signed, a binding legal document between the supplier and the ordering party. A contract will include all necessary information like price and quantity of material, delivery date, etc.\nOrder fulfillment\nOrdered material will be shipped, delivered to the ordering party, and the supplier is paid accordingly. Training and Installation of products or services may also be included.\nConsumption, Maintenance, and Disposal\nAs the products/service is consumed, the performance of the products or services is evaluated, and any follow-up service support, if required, is analyzed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are the different types of special stocks available in SAP MM?",
+        "answer": "Different types of special stocks available in SAP MM are:\nSubcontracting\nConsignment\nProject\nPipeline\nSales order\nStock transfer\nReturnable packaging with a customer, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What are some common assignment types in the SAP Material Management system?",
+        "answer": "Following is a list of some common assignment types in the SAP Material Management system:\nPurchasing organization to company code\nStandard purchasing organization to plant\nPlant to Company code\nPurchasing organization to Plant",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the important fields in the purchasing view in SAP MM?",
+        "answer": "The most important fields in the purchasing view in SAP MM are:\nThe base unit of measure\nOrder unit\nPurchasing group\nMaterial group\nValid from\nTax indicator for the material\nManufacturer part number\nManufacturer, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What do you understand by a Purchase Order?",
+        "answer": "A Purchase Order is a type of confirmation list that a buyer sends to his sender to confirm the requirements finally. The Purchase Order not only includes the names and quantity of materials, but it also has valuable information like details of purchasing company with a company code, name of material along with the corresponding Plant, and date for delivery of material.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the importance of the batch record in SAP MM?",
+        "answer": "In SAP MM, a batch is used to specify the quantity of a particular product, which is processed or produced simultaneously with the same parameters. The materials produced in these batches have the same values and characteristics. On the other hand, the batch record is used to give information about a particular batch product and is mainly used in knowing whether the product has gone through GMP (Good Manufacturing Process).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How can you link a document to a vendor master record?",
+        "answer": "We can link a document to a vendor master record by using the XK01 transaction code or by using the following menu path:\nSAP Menu > Logistics > Material Management > Purchasing > Master Data > Vendor > Central > XK01- Create.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are some common assignment types in the SAP Material Management system?",
+        "answer": "Some of the most common assignment types in the SAP Material Management system are:\nPurchasing organization to company code\nPlant to Company code\nStandard purchasing organization to plant\nPurchasing organization to Plant etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What type of data mainly the information record contains?",
+        "answer": "The information record mainly contains the data related to the units of measurement, such as the products, vendor price, materials used by specific vendors, etc. It also contains information on the tolerance limit of the under-delivery of data, planned delivery time, vendor evaluation data, availability status for goods, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What transaction code is used to delete a batch in SAP MM?",
+        "answer": "In SAP MM, the transaction code MSC2N is used to delete a batch. There is an alternate way to delete a batch record which we can do by flagging the batch master record.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How can you release a purchase order? Which Transaction Code is used to display and reset the release of a purchase order?",
+        "answer": "We can release a purchase order at the header level. It is not possible to release a single item in the purchase order, and we have to release all the items at a time. The ME29N Transaction Code is used to display and reset the release of a purchase order.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the transaction code used to extend the material view in SAP MM?",
+        "answer": "In SAP MM, the transaction code MM50 is used to extend the material view.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What do you understand by Consignment Stock?",
+        "answer": "Consignment Stock is the material that is available at our store premises but still belongs to the vendor (seller)/Owner of the material. That's why we have to pay the vendor for utilizing the material from consignment stocks.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What do you understand by Source List? What is the transaction code used for creating the Source List?",
+        "answer": "The Source List is used to identify the sources of supply for materials. The transaction code ME01 is used for creating the Source List.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the full form of ERS in the context of SAP MM?",
+        "answer": "In SAP MM, ERS stands for Evaluated Receipts Settlement. It refers to the process of settling down receipts of the goods automatically. In the ERS process, an agreement between the vendor and the user that vendors do not prepare an invoice for the goods ordered. Rather, the system would automatically generate and post the invoice document based on the purchase order and goods receipts.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What are the pre-requisites for creating a purchasing info record in SAP MM?",
+        "answer": "Following is the list of pre-requisites used for creating a purchasing info record in SAP MM:\nMaterial Number\nMPN ( Manufacturer Part Number )\nVendor Number\nOrganizational level code",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) How can you flag a material for deletion in SAP MM?",
+        "answer": "We can set a deletion flag at the client level, plant level, or storage location level. The Transaction Code MM06 is used to mark material for deletion.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) How can you change the standard price in the SAP master material?",
+        "answer": "There is no way to update or change the standard price for the material data directly. However, we can perform the following steps to change the standard price:\nFill in the future fields price (MBEW-ZKPRS) and the materials' effective data (MBEW-ZKDAT).\nSelect Logistics > Material Management > Valuation > Valuation Price Determination > Future Price.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the use of keeping a record of the information of purchase?",
+        "answer": "It is necessary to keep a record of purchase information because it collects various information of the vendors and the materials supplied by them. For example, the current price at which the vendor sells the material is recorded in the purchase record.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What do you understand by the terms Planned delivery and GR processing time?",
+        "answer": "Planned delivery: The term Planned delivery specifies the number of calendar days required to obtain the material.\nGR processing: The term GR processing specifies the number of workdays required after receiving the material for inspection and placement into storage.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What do you understand by Goods Receipt in SAP system?",
+        "answer": "After the vendor process the purchase order, the material is delivered to the ordering party. This process is called a goods receipt. So, the Goods Receipts is the phase in which the ordering party receives the material, and the condition and quality are verified. Once the material is verified against the quality, then the Goods Receipt is posted.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What do you understand by purchase requisition?",
+        "answer": "A purchase requisition is a primary document used as part of the accounting method to launch merchandise or supply purchase. We have to process the purchase order for suitable controls, monitor the legitimacy of purchase, and identify the business requirement for the products.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is the full form of RFQ in SAP MM? Why is it used?",
+        "answer": "In SAP MM, the full form of RFQ is Request For Quotation. It is an invitation sent to sellers to provide the quotation showing pricing and the terms and conditions for that purchase. RFQ also contains information about the date of delivery, goods and services, quantity, and submission date.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What do you understand by the terms production order and purchase order?",
+        "answer": "Production order: The term production order specifies which material needs to be prepared at which time and location. It is also concerned about the quantity required. It also determines the components and sequence of operations and the order costs that need to be resolved.\nPurchase order: The Purchase order is issued by the Vendor or the factory to supply a certain quantity of products and services at a particular time and location.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the purpose of the material valuation?",
+        "answer": "In SAP MM, material valuation is a module necessary to determine the stock value of materials.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is the use of document type in the SAP system?",
+        "answer": "In the SAP system, the document type indicates different procedures for a transaction within the system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is the storage location in SAP MM?",
+        "answer": "In SAP MM, a storage location is where we can store our stock of goods within the premises of a plant. Each plant has at least one storage location assigned to it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is the use of Purchase Info Record?",
+        "answer": "The Purchase Info Record is used to store information about the material and the VendorVendor who supplies that material.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) How can you create a vendor account group in SAP MM?",
+        "answer": "We can create a vendor account group in SAP MM by following the steps given below:\nSelect display IMG > Financial Accounting > Accounts Payable/Receivable >Vendor Accounts > Master Records > Preparation of creating vendor master records > Define Accounts groups with Screen Layout",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What are the different Procurement types that we can establish Purchase requisition in SAP MM?",
+        "answer": "We can create a purchase requisition for the following procurement types:\nStock transfer: It is used to specify a transfer of material within the organization.\nSubcontracting: It is used for sending raw material to the seller and getting back finished material.\nStandard: It is used for getting back finished material from the seller.\nExternal service: It is used to specify the availing services from third-party sellers like maintenance.\nConsignment: It is used to pay the seller regarding the procuring material available on the company's premises.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What do you understand by master data?",
+        "answer": "Master Data is created centrally and is valid for almost all applications, and it remains constant over time, but we have to update it regularly. For example, the VendorVendor is a type of master data, and it is used for creating purchase orders.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) What do you understand by consumption-based planning (CBP)?",
+        "answer": "CBP stands for Consumption-Based Planning, which is used to forecast to find out the future requirements. It is dependent upon past consumption values. Based on CBP, the net requirement of goods is calculated. CBP is activated either when the stock level comes below a particular reorder point or when the forecast needs to calculate past consumption values.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) What do you understand by the term material requirement planning (MRP)?",
+        "answer": "In SAP MM, MRP stands for Material Requirement Planning. It is a module or a sort of planning tool in SAP ERP (Enterprise Resource Planning). It is used to assist procurement and production planners in establishing realistic and possible plans to help initiate procurement and production procedures.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What is the difference between the terms MRP and CBP?",
+        "answer": "The primary difference between the term CBP and MRP is that when we plan material, we use MRP to predict the requirements of materials based on SOP (sales and operations planning). On the other hand, in CBP, we have to forecast the MM (material management) depending upon the historical demand for materials.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What do you understand by a transaction code in SAP MM?",
+        "answer": "A transaction code is made of letters, numbers, or both. It is entered in the command field at the top of an SAP GUI screen. Each function in SAP ERP has an associated SAP transaction code that facilitates you to access any function in SAP directly. A transaction code is also called t-code.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) What is a material ledger in SAP MM?",
+        "answer": "In SAP MM, a material ledger is used to retain all transactions related to purchasing and using materials for producing goods. Material ledger data is valuation and control data for a material in a plant for a specific posting period. The material ledger contains data for material movements that are relevant to the valuation of the material.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) How can a vendor return be processed without a purchase order reference?",
+        "answer": "A vendor return can be processed without a purchase order reference by following the steps given below:\nFirst, observe the return column and then select Item Detail > MIGO_GR > Goods Receipt for Purchase Order.\nUse the movement type 161 if the intention is to deduct the stock; otherwise, use the 162 to undo the changes.\nEnsure that the document is a return purchase order, and then save the document.\nWe can also use transaction code M21N for this purpose.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) What do you understand by the Master Production Schedule (MSP) in SAP MM?",
+        "answer": "In SAP MM, MSP stands for Master Production Schedule. It is used to plan for individual commodities that need to produce in each time, such as production, inventory, staffing, etc. It is linked to manufacturing, where the plan shows how much and when each product will be demanded.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) What is the use of the Confirmation Control Key (CCK)?",
+        "answer": "The Confirmation Control Key or CCK is used to specify whether a notification for shipping is an expected purchase order item or not.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "51) What are the different accounts used in Invoicing?",
+        "answer": "Following are the different accounts used in Invoicing:\nVendor accounts\nStock accounts\nGR/IR clearing accounts\nTax account\nPrice differences account Cash difference clearing account Freight clearing account.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "52) What is a Batch Information Cockpit in SAP MM?",
+        "answer": "The Batch Information Cockpit (BIC) is the main switching point having a wide range of options for scrutiny and control. In SAP MM, the BIC stores all the information related to analyzing a particular batch at a single location.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "53) What do you understand by the Lot Size in SAP MM?",
+        "answer": "In SAP MM, the Lot Size is the number of materials used for re-ordering. It can be static, periodic, optimum, or fixed in attributes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "54) What do you understand by release group in SAP MM?",
+        "answer": "In SAP MM, the release group is a two-digit code assigned with a class and contains one or more release strategies. For example, release group 01 is defined for purchase requisitions, and release group 02 is defined for the purchase order.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "55) What is the use of 'Split Valuation' in SAP MM?",
+        "answer": "In SAP MM, the Split Valuation is used in cases where we need to evaluate various material stocks separately. It can be because of different origins, quality, status, etc. In Split Valuation, the material is managed at several partial stocks, which are sub-stocks of main material stock. Any transaction relevant for valuation is carried at this partial stock level. In the accounting view, we define if we need a split valuation for any material.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "56) How is Material Valuation associated with Financial Accounting?",
+        "answer": "In SAP MM, Material valuation is directly associated with Financial Accounting. If you make any changes in the stock value, it also updates the G/L account in Financial Accounting.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "57) What are the accounts created in SAP MM? What is the importance of the assignment of these accounts?",
+        "answer": "In SAP MM, the assignment of account is necessary for the purchase order item. It is important as it determines the following things:\nAccount assignment type\nAn account that will be charged when you post the invoice or goods receipt\nAccount assignment data that you have to provide",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "58) How is the list of all reservations in the system displayed?",
+        "answer": "The list of all reservations can be displayed by running the RM07RESL report in SAP MM.\nTo change a batch record, we can use the transaction code MSC2N. Following is the navigation path of changing the batch record:\nSAP Menu -> Logistics -> Materials Management -> Material Master -> Batch ->> Change  \nNote: You should always be aware that the changes in the batch record are also available for review.",
+        "reference": "javatpoint.com"
+    }
+]

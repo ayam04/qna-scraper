@@ -1,0 +1,207 @@
+[
+    {
+        "question": "1) What is Go programming language?",
+        "answer": "GO is an open source programming language developed at Google. It is also known as Golang. This language is designed primarily for system programming.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Why should one use Go programming language?",
+        "answer": "Because Go is an open source programming language so, it is very easy to build simple, reliable and efficient software.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) Who is known as the father of Go programming language?",
+        "answer": "Go programming language is designed by Robert Griesemer, Rob Pike, and Ken Thompson. It is developed at Google Inc. in 2009.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are packages in Go program?",
+        "answer": "Go programs are made up of packages. The program starts running in package main. This program is using the packages with import paths \"fmt\" and \"math/rand\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Does Go support generic programming?",
+        "answer": "Go programming language doesn't provide support for generic programming.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Is Go a case sensitive language?",
+        "answer": "Yes! Go is a case sensitive programming language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is a string literal in Go programming?",
+        "answer": "A string literals specifies a string constant that is obtained from concatenating a sequence of characters.\nThere are two types of string literals:\nADVERTISEMENT\nRaw string literals: The value of raw string literals are character sequence between back quotes \". Its value is specified as a string literal that composed of the uninterrupted character between quotes.\nInterpreted string literals: It is shown between double quotes \" \". The value of the literal is specified as text between the double quotes which may not contain newlines.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is workspace in Go?",
+        "answer": "A workspace contains Go code. A workspace is a directory hierarchy with three directories at its root.\n\"src\" directory contains GO source files organized into packages.\n\"pkg\" directory contains package objects.\n\"bin\" directory contains executable commands",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the default value of type bool in Go programming?",
+        "answer": "\"false\" is the default value of type \"bool\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is GOPATH environment variable in go programming?",
+        "answer": "The GOPATH environment variable specifies the location of the workspace. You must have to set this environment variable while developing Go code.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the advantages/ benefits of Go programming language?",
+        "answer": "Advantages/ Benefits of Go programming language:\nGo is fast and compiles very quickly.\nIt supports concurrency at the language level.\nIt has Garbage collection.\nIt supports various safety features and CSP-style concurrent programming features.\nStrings and Maps are built into the language.\nFunctions are first class objects in this language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the several built-in supports in Go?",
+        "answer": "A list of built-in supports in Go:\nContainer: container/list,container/heap\nWeb Server: net/http\nCryptography: Crypto/md5 ,crypto/sha1\nCompression: compress/ gzip\nDatabase: database/sql",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is goroutine in Go programming language?",
+        "answer": "A goroutine is a function which usually runs concurrently with other functions. If you want to stop goroutine, you pass a signal channel to the goroutine, that signal channel pushes a value into when you want the goroutine to stop.\nThe goroutine polls that channel regularly as soon as it detects a signal, it quits.\nQuit : = make (chan bool)  \ngo func ( ) {  \nfor  {  \nselect {  \ncase <- quit:  \nreturn  \ndefault  \n// do other stuff  \n}  \n}  \n}()  \n// Do stuff  \n// Quit goroutine  \nQuit <- true",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How to write multiple strings in Go programming?",
+        "answer": "To write multiple strings in Go, you should use a raw string literal, where the string is delimited by back quotes.\nFor example:\n'line  1  \nline  2  \nline  3 '",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the usage of break statement in Go programming language?",
+        "answer": "The break statement is used to terminate the for loop or switch statement and transfer execution to the statement immediately following the for loop or switch.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the usage of continue statement in Go programming language?",
+        "answer": "The continue statement facilitates the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the usage of goto statement in Go programming language?",
+        "answer": "The goto statement is used to transfer control to the labeled statement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The syntax of a for loop in Go programming language is:\nfor [condition |  ( init; condition; increment ) | Range]  \n{  \n   statement(s);  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Write the syntax to create a function in Go programming language?",
+        "answer": "Syntax to create a function in Go:\nfunc function_name( [parameter list] ) [return_types]  \n{  \n   body of the function  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Explain static type declaration of variable in Go programming language?",
+        "answer": "Static type variable declaration is used to provide assurance to the compiler that there is one variable in the given type and name so that there is no need for compiler to know complete detail about the variable for further processing. A variable declaration has its meaning at the time of compilation only, compiler needs actual variable declaration at the time of linking of the program.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) Explain dynamic type declaration of a variable in Go programming language?",
+        "answer": "A dynamic type variable declaration needs a compiler to interpret the type of variable according to the value passed to it. Compilers don't need a variable to have type statically as a necessary requirement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How would you print type of variable in Go?",
+        "answer": "You have to use the following code to print the type of a variable:\nvar a, b, c = 3, 4, \"foo\"    \nfmt.Printf(\"a is of type %T\\n\", a)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is a pointer in Go?",
+        "answer": "A pointer is used to hold the address of a variable.\nFor example:\n   var x = 5  \nvar p *int  \np = &x  \nfmt.Printf(\"x = %d\", *p)  \n\nHere x can be accessed by *p.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How a pointer is represented in Go?",
+        "answer": "In Go, a pointer is represented by using the *(asterisk) character followed by the type of the stored value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) Is it true that short variable declaration := can be used only inside a function?",
+        "answer": "Yes. A short variable declaration := can be used only inside a function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) How can you format a string without printing?",
+        "answer": "You should the following command to format a string without printing:\nreturn fmt.Sprintf (\"at %v, %s\" , e.When , e.What )",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is Syntax like in Go programming language?",
+        "answer": "The GO programming language syntax is specified using Extended Backus-Naur Form (EBNF):\nProduction = production_name \"=\" [ Expression ]\nExpression = Alternative { \"l\" Alternative }\nAlternative = Term { Term }\nTerm = Production_name l token [ \"?\"token] l Group l Option l Repetition\nGroup = \" ( \"\" Expression\")\"\nOption = \" [ \" Expression \"\" ]\"\nRepetition = \" {\" Expression \"}\"",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Does Go programming language support type inheritance?",
+        "answer": "Go programming language doesn't provide support for type inheritance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) Does Go programming language support operator overloading?",
+        "answer": "Go programming language doesn't provide support for operator overloading.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) Does Go support method overloading?",
+        "answer": "Go programming language doesn't provide support for method overloading.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) Does Go support pointer arithmetics?",
+        "answer": "Go programming language doesn't provide support for pointer arithmetic.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What will be the output of the following code?",
+        "answer": "package main  \nimport \"fmt\"  \n const (   \n       i = 7  \n       j   \n       k   \n )  \nfunc main() {  \n fmt.Println(i, j, k)  \n}  \n\n777",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What is Go Interfaces?",
+        "answer": "In GO, interfaces is a way to identify the behavior of an object. An interface is created by using the \"type\" word, followed by a name and the keyword interface. An interface is specified as two things.\nA set of methods.\nAlso it is referred as type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is Type assertion in Go? What does it do?",
+        "answer": "A type assertion takes an interface value and retrieves from it a value of the specified explicit type.\nType conversion is used to convert dissimilar types in GO.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What are the different methods in Go programming language?",
+        "answer": "In Go programming language there are several different types of functions called methods. In method declaration syntax, a \"receiver\" is used to to represent the container of the function. This receiver can be used to call function using \".\" operator.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the default value of a local variable in Go?",
+        "answer": "The default value of a local variable is as its corresponding 0 value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is default value of a global variable in Go?",
+        "answer": "The default value of a local variable is as its corresponding 0 value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is the default value of a pointer variable in Go?",
+        "answer": "In Go programming language, the pointer is initialized to nil.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) How can you check a variable type at runtime in Go programming language?",
+        "answer": "In Go programming language, there is a special type of switch dedicated to check variable type at runtime. This switch is referred as type switch.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) Is it recommended to use Global Variables in a program that implements go routines?",
+        "answer": "Global variables are not recommended because they may get accessed by multiple go routines (threads) concurrently and this can easily lead to an unexpected behavior causing arbitrary results.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What do you know about modular programming?",
+        "answer": "Modular programming is a way to divide the program in to sub programs (modules / function) to achieve maximum efficiency.\nMore generic functions definition facilitates you to re-use the functions, such as built-in library functions.",
+        "reference": "javatpoint.com"
+    }
+]

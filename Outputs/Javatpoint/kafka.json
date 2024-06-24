@@ -1,0 +1,177 @@
+[
+    {
+        "question": "1) What is Apache Kafka?",
+        "answer": "Apache Kafka is a publish-subscribe messaging application developed by Apache and written in Scala programming language. It is an open-source distributed, partitioned and replicated log service and a message broker application. The design pattern of Kafka is mainly based on the design of the transactional log.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are some key features of Apache Kafka?",
+        "answer": "Following is the list of some of the key features of Apache Kafka:\n\nADVERTISEMENT\nKafka was started by the Apache software and written in Scala programming language.\nKafka is a publish-subscribe messaging system built for high throughput and fault tolerance.\nKafka has a built-in partition system known as a Topic.\nKafka provides the feature of replication.\nKafka provides a queue that can handle large amounts of data and move messages from one sender to another.\nKafka can also save the messages to storage and replicate them across the cluster.\nKafka collaborates with Zookeeper to coordinate and synchronize with other services.\nApache Spark is well supported by Kafka.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the different elements or components available in Apache Kafka?",
+        "answer": "Following are some important elements or components available in Apache Kafka:\n\nTopic: In Kafka, a topic is a collection or a stream of messages that belong to the same type.\nProducer: In Kafka, Producers are used to issuing communications and publishing messages to a specific Kafka topic.\nConsumer: Kafka Consumers are used to subscribing a topic and also read and process messages from the topic. These are also responsible for subscribing to various topics and pull the data from different brokers.\nBrokers: Brokers are a set of servers that has the capability of storing publisher messages. They are used to manage the storage of messages in the topic.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What do you understand by a consumer group in Apache Kafka?",
+        "answer": "A consumer group is an exclusive concept of Kafka, which specifies that we will have one or more consumers who consume subscribed topics within each Kafka consumer group.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the role of the ZooKeeper in Kafka?",
+        "answer": "Apache Kafka is a distributed system. Within the Kafka environment, the ZooKeeper stores offset-related information, which is used to consume a specific topic and by a specific consumer group. The main role of Zookeeper is to build coordination between different nodes in a cluster, but it can also be used to recover from previously committed offset if any node fails as it works as periodically commit offset.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Can we use Apache Kafka without ZooKeeper? / Is it possible to use Kafka without ZooKeeper?",
+        "answer": "It is impossible to sideline Zookeeper and connect directly to the Kafka server. So, we cannot use Apache Kafka without ZooKeeper. If ZooKeeper is down, we cannot serve any client request in Kafka.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is the traditional method of message transfer in Kafka?",
+        "answer": "In Apache Kafka, the traditional method of message transfer has two ways:\nQueuing: In the queuing method, a pool of consumers may read messages from the server, and each message goes to one of them.\nPublish-Subscribe: In the Publish-Subscribe model, messages are broadcasted to all consumers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the role of offset in Apache Kafka?",
+        "answer": "Offset is a sequential ID number or a unique id assigned to the messages in the partitions. Offsets are used to identify each message in the partition uniquely with the id available within the partition.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What do you understand by a Consumer Group in Kafka?",
+        "answer": "Consumer Group in Kafka is nothing but an exclusive concept of Kafka. Every Kafka consumer group consists of one or more consumers who consume a set of subscribed topics.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the key benefits of Apache Kafka over the other traditional techniques?",
+        "answer": "Following is a list of key benefits of Apache Kafka above other traditional messaging techniques:\nADVERTISEMENT\nKafka is Fast: Kafka is extremely fast because a single Kafka broker can serve thousands of clients by handling megabytes of reads and writes per second.\nKafka is Scalable: In Kafka, we can partition data and streamline over a cluster of machines to enable larger data.\nKafka is Durable: In Kafka, messages are persistent and are replicated within the cluster to prevent data loss. That's why Kafka is durable.\nKafka is Distributed by Design: Kafka provides fault tolerance features, and its distributed design also guarantees durability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the four core API architectures that Kafka uses?",
+        "answer": "Following are the four core APIs that Kafka uses:\n\nProducer API: In Apache Kafka, the Producer API allows an application to publish a stream of records to one or more Kafka topics.\nConsumer API: In Apache Kafka, the consumer API allows an application to subscribe to one or more Kafka topics. It also enables the application to process streams of records generated about such topics.\nStreams API: In Apache Kafka, the Kafka Streams API allows an application to use a stream processing architecture to process data in Kafka. We can also use this application API to take input streams from one or more topics, process those using stream operations, and generate output streams to transmit to more topics. We can also use the Streams API to convert input streams into output streams.\nConnect API: In Apache Kafka, the Kafka Connect API (also called Connector API) connects Kafka topics to applications. This API constructs and manages the operations of producers and consumers and establishing reusable links between these solutions. For example, A Connect API may capture all database updates and ensure they are made available in a Kafka topic.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What do you understand by the terms leader and follower in the Kafka environment?",
+        "answer": "The terms leader and follower are used in the Apache Kafka environment to maintain the overall system and ensure the load balancing on the servers. Following is a list of some important features of leader and follower in Kafka:\nFor every partition in the Kafka environment, one server plays the role of leader, and the remaining servers act as followers.\nThe leader level is responsible for executing the all data read and write commands, and the rest of the followers have to replicate the process.\nSuppose any time any fault occurs and the leader is not able to function appropriately. In that case, one of the followers takes the place and responsibility of the leaders and makes the system stable and helps in the server's load balancing.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What do you understand by the partition in Kafka?",
+        "answer": "In every Kafka broker, some partitions are available, either a leader or a replica of a topic.\nEvery Kafka topic separated into partitions contains records in a fixed order in each of them.\nEach record in a partition is assigned and attributed with a unique offset. Multiple partition logs are possible in a single topic. Because of this facility, several users can read from the same topic at the same time.\nTopics can be parallelized via partitions, which split data into a single topic among numerous brokers.\nIn Kafka, replication is done at the partition level, and a replica is the redundant element of a topic partition.\nEach partition can contain one or more replicas, and it means the partitions can contain messages that are duplicated across many Kafka brokers in the cluster.\nOne server acts as the leader of each partition or replica, while the others act as followers.\nIf the leader goes down in any circumstances, one of the followers takes over as the leader.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) Why is Kafka technology significant to use? / What are some key advantages of using Kafka?",
+        "answer": "Following are some key advantages of Kafka, which makes it significant to use:\nMinimum Input High-throughput: Apache Kafka doesn't require any large hardware to handle a huge amount of data. It can handle high-velocity and high-volume data by itself and support a message throughput of thousands of messages per second.\nFault-Tolerant: Kafka is fault-tolerant, and it is resistant to any node or machine failure within a cluster.\nScalability: Kafka is fully scalable. It can be scaled-out, without facing any downtime in its execution by adding some additional nodes.\nLow Latency: Low latency is one of the biggest advantages of Kafka, and it can easily handle many messages with the very low latency of milliseconds demanded by most new use cases.\nDurability: Kafka is a great example of durability. It supports messages replication to ensure that any messages are never lost, which is why its durability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the importance of Topic Replication in Kafka? What do you understand by ISR in Kafka?",
+        "answer": "Topic replication is very important in Kafka. It is used to construct Kafka deployments to ensure durability and high availability. When one broker fails, topic replicas on other brokers remain available to ensure that data is not lost and Kafka deployment is not disrupted in any case. The replication ensures that the messages published are not lost.\nThe replication factor specifies the number of copies of a topic kept across the Kafka cluster. It takes place at the partition level and is defined at the subject level. For example, taking a replication factor of two will keep two copies of a topic for each partition. The replication factor cannot be more than the cluster's total number of brokers.\nISR stands for In-Sync Replica, and it is a replica that is up to date with the partition's leader.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What would be if a replica stays out of the ISR for a very long time?",
+        "answer": "If a replica stays out of the ISR for a very long time, or if a replica is not in sync with the ISR, then it means that the follower server cannot receive and execute data as fast as possible the leader is doing. So, it specifies that the follower is not able to come up with the leader activities.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the process of starting a Kafka server?",
+        "answer": "When you start to run the Kafka environment on a zookeeper, you must ensure to run the zookeeper server first and then start the Kafka server. This is the correct way to start the Kafka server. Follow the steps given below:\nFirst, download the most recent version of Kafka and extract it.\nEnsure that the local environment has Java 8+ installed to run Kafka.\nUse the following commands to start the Kafka server and ensure that all services are started in the correct order:\nStart the ZooKeeper service by doing the following:\n$bin/zookeeper-server-start.sh config/zookeeper.properties  \nTo start the Kafka broker service, open a new terminal and type the following command:\n$ bin/kafka-server-start.sh config/server.properties",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What do you understand by a consumer group in Kafka?",
+        "answer": "In Apache Kafka, a consumer group is a collection of consumers who work together to ingest data from the same topic or range of topics.\n\n\nIn Apache Kafka, a consumer group is a collection of consumers who work together to ingest data from the same topic or range of topics. The consumer group essentially represents the name of an application. There are several categories of consumers in Kafka. The '-group' command must be used to consume messages from a consumer group.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the role of Kafka producer API?",
+        "answer": "The Kafka procedure API does the producer functionality through one API call to the client. Especially, the Kafka producer API combines the efforts of Kafka.producer.SyncProducer and the Kafka.producer.async.Async Producer.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the maximum size of a message that Kafka can receive?",
+        "answer": "By default, the maximum size of a Kafka message is 1MB (megabyte), but we can modify it accordingly. The broker settings facilitate us to modify the size.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the key differences between Apache Kafka and Apache Flume?",
+        "answer": "A list of key differences between Apache Kafka and Apache Flume:\nApache Kafka Apache Flume\nApache Kafka is a distributed data store or a data system. Apache Flume is a distributed, available, and reliable system.\nApache Kafka is optimized for ingesting and processing streaming data in real-time. Apache Flume can efficiently collect, aggregate and move a large amount of log data from many different sources to a centralized data store.\nApache Kafka is easy to scale. Apache Flume is not scalable as Kafka. It is not easy to scale.\nIt is working as a pull model. It is working as a push model.\nIt is a highly available, fault-tolerant, efficient and scalable messaging system. It also supports automatic recovery. It is specially designed for Hadoop. In case of flume-agent failure, it is possible to lose events in the channel.\nApache Kafka runs as a cluster and easily handles the incoming high volume data streams in real-time. Apache Flume is a tool to collect log data from distributed web servers.\nApache Kafka treats each topic partition as an ordered set of messages. Apache Flume takes in streaming data from multiple sources for storage and analysis, which is used in Hadoop.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What do you understand by geo-replication in Kafka?",
+        "answer": "In Kafka, geo-replication is a feature that facilitates you to copy messages form one cluster to many other data centers or cloud regions. Using geo-replication, you can replicate all of the files and store them throughout the globe if required. We can accomplish geo-replication by using Kafka's MirrorMaker Tool. By using the geo-replication technique, we can ensure data backup without any failure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Is Apache Kafka a distributed streaming platform? What can you do with it?",
+        "answer": "Yes. Apache Kafka is a distributed streaming platform. A streaming platform contains the following three important capabilities:\nA distributed streaming platform helps us to push records easily.\nIt provides huge storage space and also helps us to store a lot of records without any problem.\nIt helps us to process the records as they come in.\nKafka technology facilitates us to do the following things:\nWith Apache Kafka, we can build a real-time stream of data pipelines to transmit data between two systems.\nWe can also build a real-time streaming platform that can react to the data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What are the types of the traditional method of message transfer?",
+        "answer": "There are mainly two types of the traditional message transfer method. These types are:\nQueuing: In Queuing method, a pool of consumers can read a message from the server, and each message goes to one of them.\nPublish-Subscribe: In the Publish-Subscribe method, messages are broadcasted to all consumers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are the biggest disadvantages of Kafka?",
+        "answer": "Following is the list of most critical disadvantages of Kafka:\nWhen the messages are continuously updated or changed, Kafka performance degrades. Kafka works well when the message does not need to be updated.\nBrokers and consumers reduce Kafka's performance when they get huge messages because they have to deal with the data by compressing and decompressing the messages. This can reduce the overall Kafka's throughput and performance.\nKafka doesn't support wildcard topic selection. It is necessary to match the exact topic name.\nKafka doesn't support certain message paradigms such as point-to-point queues and request/reply.\nKafka does not have a complete set of monitoring tools.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the purpose of the retention period in the Kafka cluster?",
+        "answer": "Within the Kafka cluster, the retention period is used to retain all the published records without checking whether they have been consumed or not. Using a configuration setting for the retention period, we can easily discard the records. The main purpose of discarding the records from the Kafka cluster is to free up some space.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What do you understand by load balancing? What ensures load balancing of the server in Kafka?",
+        "answer": "In Apache Kafka, load balancing is a straightforward process that the Kafka producers by default handle. The load balancing process spreads out the message load between partitions while preserving message ordering. Kafka enables users to specify the exact partition for a message.\nIn Kafka, leaders perform the task of all read and write requests for the partition. On the other hand, followers passively replicate the leader. At the time of leader failure, one of the followers takes over the role of the leader, and this entire process ensures load balancing of the servers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) When does the broker leave the ISR?",
+        "answer": "ISR is a set of message replicas that are completely synced up with the leaders. It means ISR contains all the committed messages, and ISR always includes all the replicas until it gets a real failure. An ISR can drop a replica if it deviates from the leader.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) How can you get exactly-once messaging from Kafka during data production?",
+        "answer": "To get exactly-once messaging during data production from Kafka, we must follow the two things avoiding duplicates during data consumption and avoiding duplication during data production.\nFollowing are the two ways to get exactly one semantics while data production:\nAvail a single writer per partition. Whenever you get a network error, you should check the last message in that partition to see if your last write succeeded.\nIn the message, include a primary key (UUID or something) and de-duplicate on the consumer.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the use of Apache Kafka Cluster?",
+        "answer": "Apache Kafka Cluster is a messaging system used to overcome the challenges of collecting a large volume of data and analyzing the collected data. Following are the main benefits of Apache Kafka Cluster:\nUsing Apache Kafka Cluster, we can track web activities by storing/sending the events for real-time processes.\nBy using this, we can alert as well as report the operational metrics.\nApache Kafka Cluster also facilitates us to transform data into the standard format.\nIt allows continuous processing of streaming data to the topics.\nBecause of its awesome features, it is ruling over some of the most popular applications such as ActiveMQ, RabbitMQ, AWS etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What are some of the real-world usages of Apache Kafka?",
+        "answer": "Following are some of the real-world usages of Apache Kafka:\nApache Kafka as a Message Broker: Apache Kafka has a great throughput value, so; it can manage a huge amount of comparable types of messages or data. Apache Kafka can be used as a publish-subscribe messaging system that allows data to be read and published conveniently.\nTo track website activities: Apache Kafka can check if the data is transferred and received successfully by websites. Apache Kafka can handle the massive amounts of data created by websites for each page and the activities of users.\nTo monitor operational data: We can use Apache Kafka to keep track of metrics related to certain technologies, such as security logs.\nData logging: Apache Kafka provides data replication between nodes functionality that can be used to restore data on failed nodes. It can also be used to collect data from various logs and make it available to consumers.\nStream Processing with Kafka: Apache Kafka can also handle streaming data, the data that is read from one topic, processed, and then written to another. Users and applications will have access to a new topic containing the processed data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What do you understand by the term \"Log Anatomy\" in Apache Kafka?",
+        "answer": "Log Anatomy is a way to view a partition. We view the log as the partitions, and a data source writes messages to the log. It facilitates that one or more consumers read that data from the log at any time they want. It specifies that the data source can write a log, and the log is being read by consumers at different offsets simultaneously.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What are the ways to tune Kafka for optimal performance?",
+        "answer": "There are mainly three ways to tune Kafka for optimal performance:\nTuning Kafka Producers\nKafka Brokers Tuning\nTuning Kafka Consumers",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What are the use cases of Kafka monitoring?",
+        "answer": "Following are the use cases of Apache Kafka monitoring:\nApache Kafka monitoring can keep track of system resources consumption such as memory, CPU, and disk utilization over time.\nApache Kafka monitoring is used to monitor threads and JVM usage. It relies on the Java garbage collector to free up memory, ensuring that it frequently runs, thereby guaranteeing that the Kafka cluster is more active.\nIt can be used to determine which applications are causing excessive demand, and identifying performance bottlenecks might help rapidly solve performance issues.\nIt always checks the broker, controller, and replication statistics to modify the partitions and replicas status if required.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What is the difference between Apache Kafka and RabbitMQ?",
+        "answer": "RabbitMQ is one of Apache Kafka's alternatives. Let's see the key differences between Apache Kafka and RabbitMQ:\nDifferences between Apache Kafka and RabbitMQ:\nApache Kafka RabbitMQ\nApache Kafka provides message ordering because of its partitions. Here, messages are sent to topics by message key. RabbitMQ doesn't support message ordering.\nApache Kafka is distributed, durable and highly available. Here, data is shared as well as replicated. There are no such features in RabbitMQ.\nApache Kafka is a log, and it supports message logging that means messages are always there. We can manage this by specifying a message retention policy. Rabbit MQ is a queue. Here, messages are destroyed once consumed, and acknowledgement is provided.\nIt retains order only inside a partition and guarantees that the whole batch of messages either fails or passes. It doesn't provide a guarantee, even in relation to transactions involving a single queue.\nIn Apache Kafka, the performance rate is around 100,000 messages/second. In the case of RabbitMQ, the performance rate is around 20,000 messages/second.",
+        "reference": "javatpoint.com"
+    }
+]

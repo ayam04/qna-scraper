@@ -1,0 +1,227 @@
+[
+    {
+        "question": "1) What is Hadoop?",
+        "answer": "Hadoop is a distributed computing platform. It is written in Java. It consists of the features like Google File System and MapReduce.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What platform and Java version are required to run Hadoop?",
+        "answer": "Java 1.6.x or higher versions are good for Hadoop, preferably from Sun. Linux and Windows are the supported operating system for Hadoop, but BSD, Mac OS/X, and Solaris are more famous for working.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What kind of Hardware is best for Hadoop?",
+        "answer": "Hadoop can run on a dual processor/ dual core machines with 4-8 GB RAM using ECC memory. It depends on the workflow needs.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the most common input formats defined in Hadoop?",
+        "answer": "These are the most common input formats defined in Hadoop:\nTextInputFormat\nKeyValueInputFormat\nSequenceFileInputFormat\nTextInputFormat is a by default input format.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) How do you categorize a big data?",
+        "answer": "The big data can be categorized using the following features:\nADVERTISEMENT\nVolume\nVelocity\nVariety",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "mecia class?",
+        "answer": "For the floating of media objects from one side to another, we use this class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "We use panels in bootstrap from the boxing of DOM components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the purpose of button groups?",
+        "answer": "Button groups are used for the placement of more than one buttons in the same line.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Ordered list\nUnordered list\nDefinition list",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Which command is used for the retrieval of the status of daemons running the Hadoop cluster?",
+        "answer": "The 'jps' command is used for the retrieval of the status of daemons running the Hadoop cluster.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "When a Hadoop job runs, it splits input files into chunks and assigns each split to a mapper for processing. It is called the InputSplit.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is TextInputFormat?",
+        "answer": "In TextInputFormat, each line in the text file is a record. Value is the content of the line while Key is the byte offset of the line. For instance, Key: longWritable, Value: text",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the SequenceFileInputFormat in Hadoop?",
+        "answer": "In Hadoop, SequenceFileInputFormat is used to read files in sequence. It is a specific compressed binary file format which passes data between the output of one MapReduce job to the input of some other MapReduce job.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How many InputSplits is made by a Hadoop Framework?",
+        "answer": "Hadoop makes 5 splits as follows:\nOne split for 64K files\nTwo splits for 65MB files, and\nTwo splits for 127MB files",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the use of RecordReader in Hadoop?",
+        "answer": "InputSplit is assigned with a work but doesn't know how to access it. The record holder class is totally responsible for loading the data from its source and convert it into keys pair suitable for reading by the Mapper. The RecordReader's instance can be defined by the Input Format.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is JobTracker in Hadoop?",
+        "answer": "JobTracker is a service within Hadoop which runs MapReduce jobs on the cluster.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is WebDAV in Hadoop?",
+        "answer": "WebDAV is a set of extension to HTTP which is used to support editing and uploading files. On most operating system WebDAV shares can be mounted as filesystems, so it is possible to access HDFS as a standard filesystem by exposing HDFS over WebDAV.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is Sqoop in Hadoop?",
+        "answer": "Sqoop is a tool used to transfer data between the Relational Database Management System (RDBMS) and Hadoop HDFS. By using Sqoop, you can transfer data from RDBMS like MySQL or Oracle into HDFS as well as exporting data from HDFS file to RDBMS.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the functionalities of JobTracker?",
+        "answer": "These are the main tasks of JobTracker:\nTo accept jobs from the client.\nTo communicate with the NameNode to determine the location of the data.\nTo locate TaskTracker Nodes with available slots.\nTo submit the work to the chosen TaskTracker node and monitors the progress of each task.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "TaskTracker is a node in the cluster that accepts tasks like MapReduce and Shuffle operations from a JobTracker.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is Map/Reduce job in Hadoop?",
+        "answer": "Map/Reduce job is a programming paradigm which is used to allow massive scalability across the thousands of server.\n\nMapReduce refers to two different and distinct tasks that Hadoop performs. In the first step maps jobs which takes the set of data and converts it into another set of data and in the second step, Reduce job. It takes the output from the map as input and compresses those data tuples into the smaller set of tuples.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is \"map\" and what is \"reducer\" in Hadoop?",
+        "answer": "Map: In Hadoop, a map is a phase in HDFS query solving. A map reads data from an input location and outputs a key-value pair according to the input type.\nReducer: In Hadoop, a reducer collects the output generated by the mapper, processes it, and creates a final output of its own.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is shuffling in MapReduce?",
+        "answer": "Shuffling is a process which is used to perform the sorting and transfer the map outputs to the reducer as input.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is NameNode in Hadoop?",
+        "answer": "NameNode is a node, where Hadoop stores all the file location information in HDFS (Hadoop Distributed File System). We can say that NameNode is the centerpiece of an HDFS file system which is responsible for keeping the record of all the files in the file system, and tracks the file data across the cluster or multiple machines.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is heartbeat in HDFS?",
+        "answer": "Heartbeat is a signal which is used between a data node and name node, and between task tracker and job tracker. If the name node or job tracker doesn't respond to the signal then it is considered that there is some issue with data node or task tracker.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) How is indexing done in HDFS?",
+        "answer": "There is a very unique way of indexing in Hadoop. Once the data is stored as per the block size, the HDFS will keep on storing the last part of the data which specifies the location of the next part of the data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What happens when a data node fails?",
+        "answer": "If a data node fails the job tracker and name node will detect the failure. After that, all tasks are re-scheduled on the failed node and then name node will replicate the user data to another node.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is Hadoop Streaming?",
+        "answer": "Hadoop streaming is a utility which allows you to create and run map/reduce job. It is a generic API that allows programs written in any languages to be used as Hadoop mapper.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is a combiner in Hadoop?",
+        "answer": "A Combiner is a mini-reduce process which operates only on data generated by a Mapper. When Mapper emits the data, combiner receives it as input and sends the output to a reducer.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What are the Hadoop's three configuration files?",
+        "answer": "Following are the three configuration files in Hadoop:\ncore-site.xml\nmapred-site.xml\nhdfs-site.xml",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What are the network requirements for using Hadoop?",
+        "answer": "Following are the network requirement for using Hadoop:\nPassword-less SSH connection.\nSecure Shell (SSH) for launching server processes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What do you know by storage and compute node?",
+        "answer": "Storage node: Storage Node is the machine or computer where your file system resides to store the processing data.\nCompute Node: Compute Node is a machine or computer where your actual business logic will be executed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) Is it necessary to know Java to learn Hadoop?",
+        "answer": "If you have a background in any programming language like C, C++, PHP, Python, Java, etc. It may be really helpful, but if you are nil in java, it is necessary to learn Java and also get the basic knowledge of SQL.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) How to debug Hadoop code?",
+        "answer": "There are many ways to debug Hadoop codes but the most popular methods are:\nBy using Counters.\nBy web interface provided by the Hadoop framework.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Yes, It is possible. The input format class provides methods to insert multiple directories as input to a Hadoop job.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the relation between job and task in Hadoop?",
+        "answer": "In Hadoop, A job is divided into multiple small parts known as the task.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is the difference between Input Split and HDFS Block?",
+        "answer": "The Logical division of data is called Input Split and physical division of data is called HDFS Block.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is the difference between RDBMS and Hadoop?",
+        "answer": "RDBMS Hadoop\nRDBMS is a relational database management system. Hadoop is a node based flat structure.\nRDBMS is used for OLTP processing. Hadoop is used for analytical and for big data processing.\nIn RDBMS, the database cluster uses the same data files stored in shared storage. In Hadoop, the storage data can be stored independently in each processing node.\nIn RDBMS, preprocessing of data is required before storing it. In Hadoop, you don't need to preprocess data before storing it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is the difference between HDFS and NAS?",
+        "answer": "HDFS data blocks are distributed across local drives of all machines in a cluster whereas, NAS data is stored on dedicated hardware.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What is the difference between Hadoop and other data processing tools?",
+        "answer": "Hadoop facilitates you to increase or decrease the number of mappers without worrying about the volume of data to be processed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What is distributed cache in Hadoop?",
+        "answer": "Distributed cache is a facility provided by MapReduce Framework. It is provided to cache files (text, archives etc.) at the time of execution of the job. The Framework copies the necessary files to the slave node before the execution of any task at that node.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What commands are used to see all jobs running in the Hadoop cluster and kill a job in LINUX?",
+        "answer": "Hadoop job - list\nHadoop job - kill jobID",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What is the functionality of JobTracker in Hadoop? How many instances of a JobTracker run on Hadoop cluster?",
+        "answer": "JobTracker is a giant service which is used to submit and track MapReduce jobs in Hadoop. Only one JobTracker process runs on any Hadoop cluster. JobTracker runs it within its own JVM process.\nFunctionalities of JobTracker in Hadoop:\nWhen client application submits jobs to the JobTracker, the JobTracker talks to the NameNode to find the location of the data.\nIt locates TaskTracker nodes with available slots for data.\nIt assigns the work to the chosen TaskTracker nodes.\nThe TaskTracker nodes are responsible to notify the JobTracker when a task fails and then JobTracker decides what to do then. It may resubmit the task on another node or it may mark that task to avoid.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) How JobTracker assign tasks to the TaskTracker?",
+        "answer": "The TaskTracker periodically sends heartbeat messages to the JobTracker to assure that it is alive. This messages also inform the JobTracker about the number of available slots. This return message updates JobTracker to know about where to schedule task.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) Is it necessary to write jobs for Hadoop in the Java language?",
+        "answer": "No, There are many ways to deal with non-java codes. HadoopStreaming allows any shell command to be used as a map or reduce function.",
+        "reference": "javatpoint.com"
+    }
+]

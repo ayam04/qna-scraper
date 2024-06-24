@@ -1,0 +1,102 @@
+[
+    {
+        "question": "1) What is a RESTful API?",
+        "answer": "A RESTful API is an architectural style for designing networked applications. It stands for Representational State Transfer and is characterized by stateless communication, a uniform interface, and resource-based URLs. In a RESTful API, resources are represented as URLs, and interactions with these resources are performed using standard HTTP methods (GET, POST, PUT, DELETE) based on the state of the resource.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The main components of a RESTful API are:\nADVERTISEMENT\nResource: Resources are the key abstractions in a RESTful API. They represent the data or objects that the API interacts with. Each resource is identified by a unique URL.\nHTTP Methods: RESTful APIs use standard HTTP methods for interacting with resources:\nGET: Used for retrieving data from the server.\nPOST: Used for creating new resources on the server.\nPUT: Used for updating existing resources.\nDELETE: Used for removing resources.\nURI (Uniform Resource Identifier): URIs are used to uniquely identify resources. They are the URLs that clients use to interact with the API.\nRepresentation: Representations define the format in which resources are sent or received. Common representations include JSON, XML, HTML, etc.\nStateless: RESTful APIs are stateless, meaning each request from a client must contain all the information needed to understand and process the request. The server does not store any information about previous requests.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is the difference between PUT and POST methods?",
+        "answer": "PUT: The PUT method is used to update an existing resource or create a new resource if it does not exist. When a client sends a PUT request, it includes the entire representation of the resource. If the resource already exists, it will be replaced with the new representation sent by the client.\nPOST: The POST method is used to create a new resource. When a client sends a POST request, the server typically generates a unique identifier for the new resource and returns it to the client. It is commonly used for operations that cause side-effects or involve server-generated content.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is content negotiation in RESTful APIs?",
+        "answer": "Content negotiation is the process of determining the best representation of a resource based on the client's preferences. In a RESTful API, this is typically achieved using the Accept header in the HTTP request. The server examines the Accept header and responds with the most suitable representation of the resource, which could be in JSON, XML, HTML, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "HTTP status codes indicate the result of a client's request. They provide information about whether the request was successful, encountered an error, or requires further action. Common HTTP status codes in a RESTful API include:\n200 OK: Successful request.\n201 Created: Resource created successfully.\n204 No Content: Successful request with no additional content to send.\n400 Bad Request: Invalid request.\n401 Unauthorized: Authentication required or credentials invalid.\n404 Not Found: Resource not found.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the purpose of the OPTIONS method in RESTful APIs?",
+        "answer": "The OPTIONS method is used to retrieve the communication options for a given resource. When a client sends an OPTIONS request to a server, the server responds with information about the supported HTTP methods, headers, and other options for interacting with the resource. This can be helpful for clients to understand what operations are permitted on a particular resource.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are query parameters in a RESTful API, and how are they used?",
+        "answer": "Query parameters are additional pieces of information appended to the end of a URL. They are used to filter, sort, or modify the response of a request. In a RESTful API, query parameters are often used to specify criteria for retrieving resources. For example, in a GET request for a list of users, query parameters could be used to filter users by their attributes like name, age, or location.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is HATEOAS in the context of RESTful APIs?",
+        "answer": "HATEOAS stands for Hypermedia as the Engine of Application State. It is a principle of RESTful APIs that encourages including hyperlinks in the response to facilitate navigation to related resources. In a HATEOAS-compliant API, the server provides links to related resources along with the representation of the requested resource. This allows clients to discover and interact with the API in a more dynamic and self-descriptive manner.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Versioning in RESTful APIs is the practice of providing multiple versions of the API to handle changes or updates in the API's structure or behavior. This is important to ensure that existing clients continue to function correctly even when the API undergoes changes.\nThere are several common approaches to versioning, including using URI versioning (e.g., /v1/resource), using custom request headers (e.g., X-API-Version), or using content negotiation in the Accept header (e.g., Accept: application/vnd.example.v2+json).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is the purpose of authentication and authorization in a RESTful API?",
+        "answer": "Authentication: Authentication is the process of verifying the identity of a client or user. It ensures that the client making a request to the API is who they claim to be. Common authentication methods include API keys, tokens, and OAuth.\nAuthorization: Authorization controls what actions a user or client can perform on a resource. It specifies the level of access granted to a particular user or client. This is typically done after authentication is successful and involves checking the permissions associated with the authenticated user.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How do you handle exceptions in a Java REST API?",
+        "answer": "In a Java REST API, exceptions can be handled using various approaches. One common method is to use try-catch blocks to catch exceptions and return appropriate HTTP status codes and error messages in the response. Additionally, you can implement exception mappers to customize the response format for different types of exceptions. For example, you can use @Provider annotations and implement ExceptionMapper interfaces to handle specific exceptions and map them to desired HTTP responses.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the purpose of the @PathParam annotation in JAX-RS?",
+        "answer": "The @PathParam annotation in JAX-RS is used to extract values from the path of the URL. It allows you to dynamically parse parts of the URL and use them as parameters in your resource methods. For example, if your API endpoint is /users/{userId}, you can use @PathParam(\"userId\") to retrieve the value of userId from the URL.\n@Path(\"/users\")  \npublic class UserController {  \n    @GET  \n    @Path(\"/{userId}\")  \n    public Response getUserById(@PathParam(\"userId\") int userId) {  \n        // Implementation here  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the purpose of the @Consumes and @Produces annotations in JAX-RS?",
+        "answer": "@Consumes: The annotation specifies the media types that a resource can consume. It is used to restrict the types of content that a resource can accept as input. For example, @Consumes(\"application/json\") indicates that the resource method can consume JSON data.\n@Produces: The annotation specifies the media types that a resource can produce as output. It is used to declare the type of content that the resource method will return in the response. For example, @Produces(\"application/json\") indicates that the resource method will produce JSON output.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How can you secure a Java REST API?",
+        "answer": "There are several ways to secure a Java REST API, including:\nToken-Based Authentication: Implementing mechanisms like JWT (JSON Web Tokens) to authenticate and authorize requests.\nOAuth: Using OAuth 2.0 for delegated authorization, allowing third-party applications to access resources on behalf of a user.\nBasic Authentication: Sending credentials (username and password) in the HTTP headers. However, it's recommended to use HTTPS to encrypt the credentials.\nOAuth 1.0a: An older version of OAuth that involves signing requests using a shared secret.\nRole-Based Access Control (RBAC): Implementing roles and permissions to control access to resources based on user roles.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How can you handle pagination in a Java REST API?",
+        "answer": "Pagination in a Java REST API can be implemented by using query parameters to specify the page number and the number of items per page. For example, using page and pageSize query parameters:\n@GET  \n@Path(\"/users\")  \npublic Response getUsers(  \n        @QueryParam(\"page\") int page,  \n        @QueryParam(\"pageSize\") int pageSize) {  \n    // Calculate offset and limit for pagination  \n    int offset = (page - 1) * pageSize;  \n    int limit = pageSize;  \n    // Retrieve users from database using offset and limit  \n    List<User> users = userRepository.getUsers(offset, limit);  \n    // Return paginated results  \n    return Response.ok(users).build();  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the purpose of the @PathParam annotation in JAX-RS?",
+        "answer": "The @PathParam annotation in JAX-RS is used to extract values from the path of the URL. It allows you to dynamically parse parts of the URL and use them as parameters in your resource methods. For example, if your API endpoint is /users/{userId}, you can use @PathParam(\"userId\") to retrieve the value of userId from the URL.\n@Path(\"/users\")  \npublic class UserController {  \n    @GET  \n    @Path(\"/{userId}\")  \n    public Response getUserById(@PathParam(\"userId\") int userId) {  \n        // Implementation here  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the purpose of the @QueryParam annotation in JAX-RS?",
+        "answer": "The @QueryParam annotation in JAX-RS is used to extract values from the query parameters of the URL. It allows you to retrieve and use the values passed in the query string of the URL. For example, if your API endpoint is /users and accepts a query parameter for filtering, you can use @QueryParam(\"filter\") to retrieve the value of the \"filter\" parameter.\n@Path(\"/users\")  \npublic class UserController {  \n    @GET  \n    public Response getUsers(@QueryParam(\"filter\") String filter) {  \n        // Implementation here  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is the purpose of the @HeaderParam annotation in JAX-RS?",
+        "answer": "The @HeaderParam annotation in JAX-RS is used to extract values from the HTTP headers of the request. It allows you to access and use information sent in the headers, such as authentication tokens or other metadata.\n@Path(\"/resource\")  \npublic class MyResource {  \n    @GET  \n    public Response myMethod(@HeaderParam(\"Authorization\") String authorization) {  \n        // Implementation here  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the role of the Jackson library in a Java REST API?",
+        "answer": "Jackson is a popular Java library for JSON processing. In the context of a Java REST API, Jackson is often used to serialize Java objects to JSON format (for response bodies) and deserialize JSON data from incoming requests into Java objects. It provides annotations like @JsonProperty to customize the mapping between Java objects and JSON.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "CORS is a security feature implemented by web browsers to restrict web pages from making requests to a different domain than the one that served the web page. In the context of a Java REST API, CORS issues can be addressed by configuring the API server to include the appropriate CORS headers in its responses. It involves setting headers like \"Access-Control-Allow-Origin\" to specify which domains are allowed to access the API, \"Access-Control-Allow-Methods\" to define the allowed HTTP methods, and others as needed.\n@Provider  \npublic class CorsFilter implements ContainerResponseFilter {  \n    @Override  \n    public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)  \n            throws IOException {  \n        responseContext.getHeaders().add(\"Access-Control-Allow-Origin\", \"*\");  \n        responseContext.getHeaders().add(\"Access-Control-Allow-Methods\", \"GET, POST, PUT, DELETE\");  \n        responseContext.getHeaders().add(\"Access-Control-Allow-Headers\", \"Content-Type\");  \n    }  \n}  \nThese questions cover various aspects of Java REST API development, from the basics of RESTful principles to more specific topics like JAX-RS annotations and security considerations.",
+        "reference": "javatpoint.com"
+    }
+]

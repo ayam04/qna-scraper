@@ -1,0 +1,177 @@
+[
+    {
+        "question": "1) What is WPF?",
+        "answer": "WPF stands for Window Presentation Framework. It is the latest presentation API by Microsoft Windows. WPF is a 2D and 3D graphics engine.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the capabilities of WPF?",
+        "answer": "WPF has following capabilities:\nADVERTISEMENT\nIt has all the equivalent common user controls like buttons, checkboxes, sliders etc.\nIt has all the capabilities of HTML and Flash.\nIt supports fix and flow format document.\nIt provides the facility of data binding, animation and multimedia.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are resources in WPF?",
+        "answer": "In WPF, resources are used to provide a simple way to reuse commonly defined objects and values. They also facilitate you to set the properties of multiple controls at a time. For example, you can set the background property on several elements in a WPF application using a single resource.\nADVERTISEMENT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is XAML?",
+        "answer": "XAML is a declarative XML based language. It facilitates you to define objects and properties in XML. Its documents are loaded by XAML parser.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the use of XAML?",
+        "answer": "XAML is used to describe the objects, properties and their relation in between them. It makes you able to create any type of objects i.e. graphical and non-graphical.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is a routed event?",
+        "answer": "There are many types of elements in a typical WPF application and these elements are set in an element tree relationship. A routed event is a type of event that is used to invoke handlers on multiple listeners in an element tree.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) How many types of documents are supported by WPF?",
+        "answer": "Two types of documents are supported by WPF.\nFlow format document: Flow format document is used to alter the content to fit on the screen size.\nFixed format document: Fixed format document present content irrespective of the screen size.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you know by content alignment in WPF?",
+        "answer": "There are two types of content alignment in WPF:\nHorizontalContentAlignment\nVerticalContentAlignment\nThese both properties are defined in the System.Windows.Controls.Control class which is the parent class of all controls in WPF.\nBy default the vertical and horizontal alignment of content of a TextBox is left and top and button is center.\nFor example:",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Syntax:\n<elementName propertyName=\"{markupExtension keyName}\">  \n   <!-Content -->  \n</elementName>   \nHere,\nelementName: Name of the element that uses the resource.\npropertyName: Name of the property that takes its value from the resource.\nmarkupExtension: Define type of resource.\nkeyName: key name of the resource, which is unique string to identify the resource.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) How many types of resources available in WPF?",
+        "answer": "There are mainly two types of resources in WPF:\nStatic Resource\nDynamic Resource",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Which namespace is required for working with 3D?",
+        "answer": "System.Windows.Media.Medi3D is the namespace required for working with 3D.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Can we say that WPF is the replacement of DirectX?",
+        "answer": "No, WPF cannot replace DirectX, because WPF is not enough efficient to create games with stunning graphics. WPF is only meant to be a replacement of windows forms, not DirectX.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are the dependency properties?",
+        "answer": "Dependency properties are the type of properties which belong to a specific class but can be used for another class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is CLR?",
+        "answer": "CLR stands for Common Language Runtime. It is a run time environment for .NET",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the freezable objects in WPF?",
+        "answer": "An object which is unchangeable is known as freezable object. The freezable objects perform better and also safer if they are required to be shared between threads.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is value converter in WPF?",
+        "answer": "A value converter acts as a bridge between a target and a source and it is necessary when a target is bound with one source, for instance you have a text box and a button control. You want to enable or disable the button control when the text of the text box is filled or null. In this case you need to convert the string data to Boolean. This is possible using a Value Converter. To implement Value Converters, there is the requirement to inherit from I Value Converter in the System.Windows.Data namespace and implement the two methods Convert and Convert Back.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the difference between Silverlight and WPF browser application?",
+        "answer": "These are the main differences between the Silverlight and WPF browser application:\n.NET framework is needed for running WPF browser application on the client machine while Silverlight runs using only plug-in.\nThe applications made in WPF depend on the operating system because .NET framework only runs on Windows. On the other hand, Silverlight plug-ins can be installed on those OS also, which are not Windows.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Which tool is required to sketch a mock of your WPF application?",
+        "answer": "The SketchFlow tool is used to sketch a mock of WPF application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the different types of layout controls?",
+        "answer": "Following are the different types of layout controls:\nGrid\nDockPanel\nWrapPanel\nCanvas\nUniformGrid\nStackPanel",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is PRISM?",
+        "answer": "PRISM is a framework that is used for creating complex applications for WPF, Silverlight or Window phones. It uses MVVM, IC, Command Pattern, DI and separation of concerns to get loose coupling.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is CustomControl?",
+        "answer": "CustomControl is used to expand the functions of existing controls. It contains a default style in theme and code file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the use of custom control?",
+        "answer": "Custom control is the best way to make a control library. It can also be styled or template.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the Path animation in WPF?",
+        "answer": "Path animation is a different type of animation. In this animation, the animated objects follow a path set by the path geometry.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the meaning of BAML in WPF?",
+        "answer": "BAML stands for Binary Application Markup Language. It is a type of XAML that has been tokenized, parsed, and changed into binary form.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is the difference between XAML and BAML?",
+        "answer": "The only difference between XAML and BAML is that BAML is a compressed declarative language which is loaded and parsed quicker than XAML.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the difference between Page control and Window Control in WPF?",
+        "answer": "No.\nPage controls\nWindow controls\n1. Page controls preside over the hosted browsers applications.\nWindow controls preside over windows application.\n2. Page controls cannot contain window control.\nWindow controls may contain page control.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is the parent class of control class of WPF?",
+        "answer": "The control class of WPF is derived from FrameworkElement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the difference between DynamicResource and StaticResource?",
+        "answer": "StaticResource\nDynamicResource\nStaticResources evaluate the resource one time only.\nDynamicResource evaluates the resources every time they are required.\nStaticResource is light.\nDynamicResource is heavy due to frequently evaluated.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) Is MDI supported in WPF?",
+        "answer": "MDI is not supported in WPF. The same functionality of MDI can be given by UserControl.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is serialization?",
+        "answer": "Serialization is a process of converting the state of an object to stream of bytes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is MVVM?",
+        "answer": "MVVM is stand for Model View ViewModel. It is a framework for making applications in WPF. MVVM is the same as the MVC framework. It is a 3-tier architecture plus one more layer. Loose coupling can be attained by using MVVM.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) When did MVVM introduced?",
+        "answer": "MVVM was introduced by John Gossman in 2005. It was introduced specifically to use with WPF as a concrete application of Martin Fowler's broader Presentation Model pattern.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What are the advantages of MVVM?",
+        "answer": "MVVM has the following advantages:\nModularity\nTest driven approach.\nSeparation UI and Business layer as view and view model.\nCode sharing between pages and forms.\nEasy to Maintain.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What are the most important features of MVVM?",
+        "answer": "A list of most important features of MVVM:\nMVVM separates the business and presentation layers, like MVP and MVC.\nIt improves Structure/separation of concerns (View, ViewModel and Model).\nIt enables a better Design/Developer Workflow.\nIt improves simplicity and testability.\nIt is enabled by the robust data binding capability of XAML.\nNo need to use a code behind file (minimalist code-behind file).\nProvides application development ability for multiple environments.\nPowerful Data Binding, command, validation and much more.\nThe designer and developer can work together.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How is MVVM different from MVC?",
+        "answer": "MVC stands for Model-View Controller and.MVVM stands for Model-View ViewModel.\nIn MVVM, View Model is used instead of a controller. This View Model is present beneath the UI layer. It reveals the command objects and data that the view requires. It acts like a container object from which view gets its actions and data.",
+        "reference": "javatpoint.com"
+    }
+]

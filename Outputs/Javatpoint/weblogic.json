@@ -1,0 +1,197 @@
+[
+    {
+        "question": "1) What is the WebLogic server, and what are its main usages?",
+        "answer": "WebLogic Server is a Java-based Java EE application server currently developed and managed by Oracle Corporation. That's why it is also called Oracle WebLogic Server. The Oracle organization acquired WebLogic Server when it purchased BEA Systems in 2008. The Oracle WebLogic Server is a unified and extensible platform for developing, deploying, and running enterprise applications, such as Java, on-premises, and in the cloud.\nIt can host Java-based applications. It provides a robust, mature, and scalable implementation of Java Enterprise Edition (EE) and Jakarta EE. Web applications and Enterprise applications that are developed can be deployed in a WebLogic server to serve the business logic. In Layman's words, we can say that, with a WebLogic server, we can easily deploy, distribute, and run Java-based applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What do you understand by deployment descriptors?",
+        "answer": "In Oracle WebLogic Server, the deployment descriptors are associated with almost all the modules and applications. We can see the deployment descriptors in the form of XML documents. They are mainly used to describe the contents that are part of the directory or the jar file. J2EE specifications usually define the standard and the deployment descriptors that are portable for J2EE applications and modules.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the different versions of the WebLogic Server?",
+        "answer": "The following is the list of different versions of the WebLogic Server:\nADVERTISEMENT\nServer Name Version Launched Year\nWebLogic Server 14c (14.1.1) March 30, 2020\nWebLogic Server 12cR2 (12.2.1.4) September 27, 2019\nWebLogic Server 12cR2 (12.2.1.3) August 30, 2017\nWebLogic Server 12cR2 (12.2.1.2) October 19, 2016\nWebLogic Server 12cR2 (12.2.1.1) June 21, 2016\nWebLogic Server 12cR2 (12.2.1.0) October 23, 2015\nWebLogic Server 12cR1 (12.1.3) June 26, 2014\nWebLogic Server 12cR1 (12.1.2) July 11, 2013\nWebLogic Server 12cR1 (12.1.1) Dec 1, 2011\nWebLogic Server 11gR1 (10.3.6) February 26, 2012\nWebLogic Server 11gR1 (10.3.5) May 16, 2011\nWebLogic Server 11gR1 (10.3.4) January 15, 2011\nWebLogic Server 11gR1 (10.3.3) April 2010\nWebLogic Server 11gR1 (10.3.2) November 2009\nWebLogic Server 11gR1 (10.3.1) July 2009\nWebLogic Server 10gR3 (10.3.0) August 2008\nWebLogic Server 10.0 March 2007\nWebLogic Server 9.2\nWebLogic Server 9.1\nWebLogic Server 9.0 November 2006\nWebLogic Server 8.1 July 2003\nWebLogic Server 7.0 June 2002\nWebLogic Server 6.1\nWebLogic Server 6.0 file date March 2001 on an old CD\nWebLogic Server 5.1 (The code name of this version was Denali. It was the first version supporting hot deployment for applications via the command line.)\nWebLogic Server 4.0 May 1999\nWebLogic Tengah 3.1 June 1998\nWebLogic Tengah 3.0.1 March 1998\nWebLogic Tengah 3.0 January 1998\nWebLogic Tengah November 1997",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Is Oracle WebLogic Server supported on Kubernetes?",
+        "answer": "The Oracle WebLogic Server is fully supported on Kubernetes. It enables users to migrate and efficiently build modern container apps with comprehensive Java services. It provides WebLogic Kubernetes ToolKit, which is a complete set of open-source tools that simplify running on Kubernetes, on-premises, or in the cloud.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the core components of the Oracle WebLogic Server?",
+        "answer": "Following is the list of the core components of the Oracle WebLogic Server:\nADVERTISEMENT\nDomains\nNode Manager\nAdmin server\nManaged server\nWebLogic server cluster\nEnterprise Grid Messaging\nJMS Messaging Standard\nJRockit\nOracle Coherence\nOracle TopLink\nOracle WebLogic Server Web Services\nTuxedo",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is a domain in an Oracle WebLogic server?",
+        "answer": "In the Oracle WebLogic server, domains are the logical set of resources that individually constitutes a single unit. In other words, domains are the logically related groups of Oracle WebLogic Server resources that are managed as a single unit.\nA domain provides one point of administration. It contains a special Oracle WebLogic server instance known as Administration Server, which can be used to configure and manage all resources in that specific domain. A domain can logically separate development, test, production applications, and organizational divisions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What do you understand by a Server?",
+        "answer": "Oracle WebLogic Server is an application server. It is a unified and extensible platform for developing and deploying multitier distributed enterprise applications and running enterprise applications, such as Java, for on-premises and in the cloud.\nWebLogic Server provides a robust, mature, and scalable implementation of Java Enterprise Edition (EE) and Jakarta EE.\nThe WebLogic Server has the following properties:\nIt is multithreaded.\nIt runs on a designated Oracle WebLogic Server machine.\nIt has a dedicated amount of RAM for processing.\nThere are mainly two types of Oracle WebLogic Servers:\nAdministration or Admin Server\nManaged Server",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you understand by the Admin Server in Oracle WebLogic Servers?",
+        "answer": "The Administration Server or Admin Server is a certain category of Oracle WebLogic Servers. It provides a central point for managing a WebLogic Server domain. Except for this type of server, all other WebLogic Server instances in a domain are called Managed Servers. As the Admin Server is the central domain configuration interface, it is used to create, delete and configure the resources of a domain like managed server, machine, cluster, data source, work managers, etc.\nIf a domain has only a single WebLogic Server instance, it works as both the Administration Server and the Managed Server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the Managed Server in Oracle WebLogic Servers?",
+        "answer": "The Managed Server is an instance of the WebLogic server that runs on JVM and has its configuration. We deploy the java components such as Web Applications, EJB Applications, JMS Applications, and Web services in the managed server. The managed server contacts the administration server for configuration information. It runs the business application in a production environment. It does not depend on any other managed servers in a domain unless they are not in a cluster. We can have many managed servers in a domain. Generally, a single domain can have zero to N Managed Server.\nServer instances other than the Administration Server are called Managed Servers in a domain. The Managed Servers in a domain can start-up independently of the Administration Server if the Administration Server is unavailable. We can configure two or more Managed Servers as a WebLogic Server cluster to increase the application scalability and availability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "xml in the WebLogic server?",
+        "answer": "The web.xml is an XML document mainly used for application purposes. It is very useful and helps list out the J2EE components and configuration of the application in J2EE modules format.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Is WebLogic Server an Application Server or a Web Server?",
+        "answer": "The WebLogic Server is an application server. It is a platform used to develop and deploy multitier distributed enterprise applications.\nSome important features of WebLogic Server:\nThe WebLogic Server is operated in the middle tier of a multitier or n-tier architecture.\nDue to its multitier architecture, we can choose the best location for each software component, which can help develop applications faster, ease deployment and administration, and provide greater control over performance, utilization, security, scalability, and reliability.\nIt centralizes application services such as Web server functionality and business components and is used to access backend enterprise systems.\nIt uses caching and connection pooling technologies to improve resource use and application performance.\nIt also provides enterprise-level security and powerful administration facilities.\nThe WebLogic server can host both Web applications and Enterprise applications (such as EJBs).\nIt implements J2EE, the Java Enterprise standard.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the different thread states in a WebLogic server?",
+        "answer": "Following is a list of several thread states used in a WebLogic server:\nACTIVE\nIDLE\nSTUCK\nHOGGER\nSTANDBY",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What methods can be used to provide user credentials for starting the server?",
+        "answer": "When the domain is created, the wizard for setting configuration asks for the details, like user name, password, etc., from the user who is logging in for the first time as the administrator. If you have created the domain in development mode, the configuration wizard saves the encrypted password and the username inside the identity file. When the system is booting, this file is available for reference so that in the absence of this file, the system can prompt the user so that it can enter the credentials. A new boot named \"identity file\" can be created if you want to change the user credentials or if you have the requirement of creating a domain in production mode.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What would happen if the Administration Server fails?",
+        "answer": "If the Administration Server fails for a domain, it does not affect the operation of Managed Servers in the domain. If an Administration Server for a domain becomes unavailable while the server instances it manages (clustered or otherwise) are up and running, those Managed Servers continue to run. If the domain contains clustered server instances, the load balancing and failover capabilities supported by the domain configuration remain available, even if the Administration Server fails. In this case, if the Administration Server stops running while the Managed Servers in the domain continue to run, then each Managed Server periodically attempts to reconnect to the Administration Server.\n\nIf the system faces any hardware or software failure on its host machine, and if the Administration Server fails, then the other server instances on the same machine may be similarly affected. But, if the Administration Server fails, it does not interrupt the operation of Managed Servers in the domain. You can start a Managed Server even if the Administration Server is not running. In this case, the Managed Server uses a local copy of its configuration files for its starting configuration and then periodically attempts to connect with the Administration Server. In this case, if the connection doesn't occur, it synchronizes its configuration state with the Administration Server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What are the different supported installation modes available for WebLogic Server?",
+        "answer": "Following are the three supported installation modes available for WebLogic Server:\nConsole mode: The console mode is an installation mode based on interactive text messages.\nGraphical mode: The graphical mode is an installation mode based on the interactive GUI.\nSilent mode: The silent mode is an installation mode based on the properties file that is provided with it, which doesn't require any interaction.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the use of HTTP?",
+        "answer": "HTTP is a protocol that enables the communication between the WebLogic server and processes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What are the key differences between the stage and the non-stage deployments in Weblogic Server?",
+        "answer": "The stage deployment is a process where the Admin receives a copy which is later distributed amongst the available instances. On the other hand, the Non-Stage deployment provides a restriction that each instance needs to contact the source for the necessary deployments.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How many ways can we provide credentials to start the WebLogic server?",
+        "answer": "There are three ways to provide credentials to start the WebLogic server:\nCommand-line: When a domain is created in the command-line, details like the username and password are prompted via a wizard to configure.\nVia boot.properties file: It specifies that if a domain is already created in Development mode, the encrypted credentials are stored in an identity file. We can enter the password if this identity file isn't available during the boot-up process.\nJava Option: In this option, on a new boot, we can create a new identity file with the credentials or if there is a requirement to create a new domain in Production mode.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the default port of the Weblogic admin server?",
+        "answer": "The default port of the WebLogic Admin server is 7001. It is 7002 for SSL.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How can we start and stop a WebLogic server?",
+        "answer": "There are several ways to start and stop a WebLogic server. Some of them are as follows:\nBy using the command java WebLogic.server\nBy using Windows services\nBy using scripts\nWLST with or without Node Managers",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the auto-deployment feature in the WebLogic server? How can you turn off this feature?",
+        "answer": "The auto-deployment mode or auto-deployment feature of the WebLogic server works for the development mode. Here it checks every 3 seconds to see if any new applications are available or any new changes are available for the existing applications and deploy them.\nFollowing are some available options that can be used to disable this automatic deployment feature in the WebLogic server:\nSelect the Production mode checkbox from the Administration Console for the necessary domain.\nOn CLI, use option -Dweblogic.ProductionModeEnabled=true when starting the respective domain's Administration Server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How can you set a CLASSPATH in a WebLogic server?",
+        "answer": "We can use the script files from WebLogic to set a CLASSPATH in a WebLogic server. These files should be used based on the OS type (Windows or Linux):\nWL_HOME/server/bin/setWLSEnv.cmd for Windows\nWL_HOME/server/bin/setWLSEnv.sh for Linux",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the process to access the admin console of the WebLogic server?",
+        "answer": "We can access the admin console of the WebLogic server by entering the administration machine name and port in the browser's navigation bar. After that, we have to ask for the login credentials.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How can you see the version of the WebLogic server that you are using?",
+        "answer": "Follow the steps given to see the version of the WebLogic server that you are using:\nFirst, go to the WebLogic Server console\nClick on the Environment -> Servers -> Monitoring -> WebLogic Version field\nSee there to check the version of the WebLogic server that you are using.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are the different ways to configure a Managed server in the WebLogic server?",
+        "answer": "There are three ways to configure a Managed server in the WebLogic server:\nWebLogic scripting tool\nAdministration Console\nDomain Configuration wizard",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are the main capabilities of a WebLogic server?",
+        "answer": "Following is the list of the main capabilities of a WebLogic server:\nTo make changes in dynamic configuration.\nTo redeploy the production application.\nFor Rolling upgrades.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is the main functionality of IIOP?",
+        "answer": "IIOP is a protocol that enables communication between the WebLogic server and object request broker.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What do you understand by BSU in the WebLogic server?",
+        "answer": "BSU stands for BEA Smart Update utility or WebLogic Smart Update. It is a utility available to update or apply patches on WebLogic Servers. You can see it under the following folder (WL_HOME/utils/bsu).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is the difference between Weblogic Development and Production Mode?",
+        "answer": "Following is a list of some differences between Weblogic Development Mode and Production Mode:\nWeblogic Development Mode Production Mode\nIn Weblogic Development Mode, the default JDK for the development domain is Sun Hotspot. In Production Mode, the default JDK for the production domain is JRockit.\nIt facilitates us to use the demo certificates for SSL. It displays a warning if you use the demo certificates for SSL.\nIt enables auto-deployment. Auto deployment is disabled in development mode.\nServer instances rotate their log files on startup. Admin Server prompts for username and password during startup.\nIts default maximum capacity for JDBC Data source is 15. Its default maximum capacity for JDBC Data source is 25.\nIn Weblogic Development Mode, the admin server uses an automatically created boot.properties during startup. In this mode, the server instances rotate their log files when it reaches 5MB.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the main functionality of T3 associated with the WebLogic server?",
+        "answer": "The main functionality of T3 associated with the WebLogic server is providing a framework or overall structure for the messages that can support the enhancements. T3 performs serialization of java object and also predation of RMI. It is considered a superset associated with java objects. The enhancements include product tunneling, working in the context associated with WebLogic server clusters, and object replacement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) How can you set a classpath in the WebLogic server?",
+        "answer": "We can set a classpath in the WebLogic server by making use of the following script:\nWL_HOME\\server\\bin\\setWLSEnv.cmd (in case of the Windows).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What steps are involved in creating Pooling within the Tomcat server?",
+        "answer": "There are mainly two steps involved in the creation of Pooling within the Tomcat server:\nIn the first step, we have to download three jar files: the commons-dbcp-1.2 jar, commons-pool-1.3.jar, and commons-collections-3.1 jar.\nIn the next step, we have to enter the server.xml of the tomcat factory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) How do stubs function inside the WebLogic server cluster at the time of failure?",
+        "answer": "Stubs are used to remove the failed instance from the list whenever a failure occurs. It generally uses DNS to find the running server and obtain the list of the instances currently available with the application. A list of the instances available with the server inside the cluster gets refreshment periodically and allows for acquiring advantages associated with new servers. As the server gets added to the cluster, the advantages are achieved.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is the key difference between server crash and server hang?",
+        "answer": "The main difference between server crash and server hang is that in a server crash, there is no existence of the Java process. On the other hand, in the server hang, the Java process stops responding.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How can you solve the server hang problem?",
+        "answer": "To solve the server hang problem, we have to check the Java WebLogic.Admin PING whether we get a normal and positive response. We can find out the root cause for hanging from this file by rectifying the errors that are identified in this file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What are the main reasons for server hang?",
+        "answer": "The main reasons for server hang are memory leak, deadlock, and a long return time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What are the main causes of a server crash?",
+        "answer": "The main causes of server crashes are the native IO, JVM, supported configuration, JDBC driver issues, and SSL native libraries.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "properties file in the WebLogic server? Why is it important?",
+        "answer": "The boot.properties file is available under the domain/servers/<YOUR_SERVER_NAME>/security folder. This file can be used by both the Administration server and/or the Managed server to get the login credentials.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) How can you solve the problem of a server crash?",
+        "answer": "We can solve the problem of server crashes by focusing on the following things:\nA crash associated with JVM generates the hs_err_pid file. We have to refer to this file to find the root cause of such a crash. If the native IO is the origin of the thread, we need to disable it. If the origin of the problem is from the driver, we need to contact the driver team.",
+        "reference": "javatpoint.com"
+    }
+]

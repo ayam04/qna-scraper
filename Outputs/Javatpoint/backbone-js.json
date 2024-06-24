@@ -1,0 +1,212 @@
+[
+    {
+        "question": "",
+        "answer": "Backbone.js is a light weighted client-side (front-end) web framework based on JavaScript. It is used to develop client-side applications which run on a web browser. Developing client-side applications in Backbone.js is pretty easy and consumes a lesser amount of time. It makes developing single-page applications also easier. It supports MVC (Model, View, and Controller) architecture.\nADVERTISEMENT\nModel: Model is a part of the code that populates and retrieves the data\nView: View is nothing but the HTML representation of this model. If you make any model changes, this will instantly reflect in the View.\nController: The controller makes you able to save your JavaScript application via an URL.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js is written?",
+        "answer": "The backbone.js is written in JavaScript. It is a JavaScript library that contains a RESTful JSON interface.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Main components of Backbone.js:\nModel - It performs various types of action on the data like validation, conversion, computed properties, access control.\nView - It specifies how your data looks like.\nCollection - It handles the loading and saving of new models to the server.\nRouter - It is used for routing client-side applications and connecting them to actions and events.\nEvent class object - It facilitates the objects to bind and trigger the custom events by using the desired name of our choice.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js",
+        "answer": "Backbone.js supports Model-View-Controller architecture that allows developers to separate business logic and GUI logic.\nModel: It consists of data and the logic of the data retrieval from the server.\nView: It consists of the code which is responsible for the end user interface, i.e., the way in which the application is presented to the user.\nController: It is the main application logic which controls the behavior of the application. It is a part of the code which acts as a bridge between Model and View.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Backbone.js is required in following conditions:\nWhen you are developing a web application that requires a lot of JavaScript.\nIt is required when you want to give structure to your code if your application needs to be scalable.\nBackbone is useful when a web application has to work with jQuery to traverse the DOM or give animations.\nWhen model changes and you want to update the HTML application automatically.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "A Collection can be defined as an ordered set of modules. In Backbone.js, there is a collection class which provides some useful methods to deal with the collections. We can extend the collection class to provide some additional functionalities. For example:\n<script type=\"text/javascript\">    \n        //The model 'MyTeam' includes default values and  extended using the Backbone.Model class    \n         var MyTeam = Backbone.Model.extend({    \n            defaults: {    \n               player: \"Dhyanchand\",    \n               country: \"India\"    \n            },    \n         });    \n             //'MyTeam1' is an instance of the collection    \n         var MyTeam1 = Backbone.Collection.extend({    \n            model: MyTeam  //model 'MyTeam' is specified for a collection by overriding the 'model' property    \n         });    \n             //The collection 'MyTeam1' is instantiated by using new keyword    \n         var myval=new MyTeam1({});    \n             //The JSON.stringify() method returns values of collection in the JSON format    \n         document.write(\"The values in the collection are: \",JSON.stringify(myval));    \n      </script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Following are the three js files that we require to setup Backbone.js and make a working environment:\njQuery\nBackbone\nUnderscore\nIn our application, we have to put these files within the js folder and use it on our index.html page.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js router?",
+        "answer": "Backbone.js routers are used to route the application's URL to some particular actions and events. At least one route must be present for every defined router. It also defines the URL representation of the application's object when web applications provide linkable, bookmarkable, and sharable URL.\n<script type=\"text/javascript\">    \n        var RouteMenu = Backbone.View.extend({    \n           el: '#routemenu',  //'el' defines which element to be used as the view reference    \n           events: {    \n              'click a' : 'onClick'    \n           },    \n           onClick: function( e ) {    \n              router.navigate('/');    \n           }    \n       });    \n       var Router = Backbone.Router.extend({    \n          routes: {    \n             'route/:id' : 'defaultRoute'    \n          },    \n       });    \n       var routemenu = new RouteMenu();    \n       Backbone.history.start();    \n     </script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Describe Backbone events?",
+        "answer": "Backbone.js event can be defined as the module which can be mixed with any object. There are following methods which are used to manipulate Backbone.js events,\non - It binds an event to an object and executes the callback whenever an event is fired.\noff - It removes callback functions or all events from an object.\ntrigger - It invokes the callback functions for the given events.\nonce - It extends the backbone model class while creating your own backbone model.\nlistenTo - It informs one object to listen to an event on another object.\nstopListening - It can be used to stop listening to events on the other objects.\nlistenToOnce - It causes the listener, to occur only once before the callback function is being removed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "A view is the important part of the Backbone.js architecture. In a Backbone.js application, a view is responsible for the end user interface. The view defines the way in which the application looked at the user. The View is also responsible for listening to the events and reacting to them accordingly.\n<script type=\"text/javascript\">    \n        var ViewDemo = Backbone.View.extend({    \n               initialize:function(){    \n              document.write('JavaTpoint is the best online tutorial website for all techologies.');    \n            }    \n        });    \n        var myview = new ViewDemo();    \n        </script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Model Binder is a class which is used to bind the model and the view together. The binding is done to archive synchronization.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Mention some most robust functionalities of Model binder?",
+        "answer": "Some most robust functionalities of the model binder are\nIt allows the developer to define the scope when binding is created using J-Query.\nIn some of the cases, we can rely on the default scoping rules which are based on the name attribute of HTML.\nThe scoping rules can be redefined if the views are complicated.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Advantages of Backbone.js:\nYou can develop a web application with Backbone.js by using JavaScript with the minimal set of data-structuring (models & collections) and user interface (views & URLs).\nIt is best for developing MVC like web applications, single page web applications or complex JavaScript web applications in an organized and structured manner without JavaScript code mixing with HTML.\nIt provides API with many functions.\nIt provides a key-value binding and custom events.\nIt facilitates you to abstract your data into models and your DOM application into views and binds the two together using events.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The Converter is a function which is used to convert the JavaScript object to a model. It is invoked when the transition is made between an HTML element and the model's attribute.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Sync is a function that is called every time. It attempts to read or save a model to the server. It persists the state of the model to the server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Two methods can be used to manipulate the Backbone.js utility:\nBackbone.noConflict: It returns the Backbone objects to its original value and provides a facility to store the reference to a backbone. It can be used to embed the backbone on third-party websites, where you don't want to thrash the existing backbone.\nBackbone.$: This property is used when you have multiple copies of jQuery on the page or want to tell Backbone to use a particular object as its DOM / Ajax library.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Backbone.js, the unbinding function is used to remove the bindings on the model. When we want to remove the validation binding on the model or all models, we must remove all the events hooked up on the collection. In this case, we use the unbinding function.\nFor example:\nBackbone.Validation.Unbind(view)   [ This will remove the validation binding]",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "There are the following configuration options available in Backbone.js.\nmodelSetOptions\nboundAttributes\nsupressThrows\nconverter\nchange Triggers\nInitialCopyDirection",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js's dependencies?",
+        "answer": "Backbone.js has only one hard dependency named Underscore.js. However, we have to often include jQuery and json2.js to support certain features of Backbone.js.\n\nAs we talk about alternatives of Underscore.js and jQuery, sometimes, it is possible to use Lo-Dash and Zepto along with Backbone.js. These two are more lightweight alternatives to Underscore.js and jQuery.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Backbone.js, the \"id\" property on a model is automatically assigned based on the \"id\" set in the model's attributes hash. This is the ID that we receive from the rest of API for the resource that we are querying. On the other hand, the \"cid\" is a temporary ID assigned to each model and is useful until an actual ID is assigned for the object. For example, a model pushed to a collection that has not yet been persisted can be called \"cid\", until it is saved in the database and an actual ID is generated for it. After that, it can be called \"id\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the main advantages of using \"listenTo()\" to bind event handlers instead of \"on()\"?",
+        "answer": "There are mainly two advantages to using \"listenTo()\" instead of using \"on()\" to bind event handlers. See the syntax of using these both because they are used differently:\nSyntax:\nlistener.listenTo(object, event, callback)  \nobject.on(event, callback)  \nWhile using \"listenTo()\", the object whose events you want to listen to is passed as the first argument. On the other hand, in the case of \"on()\", it is a method on that object.\nThe key advantages of \"listenTo()\" over \"on()\" are:\nThe listener keeps track of all the event handlers, making it easier to remove them all at once when required.\nThe callback's context is always set to the listener itself.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How can you sort a collection? When is it important to explicitly invoke \"sort()\" on a collection?",
+        "answer": "In Backbone.js, by default, collections are not explicitly sorted. We can sort the collections by defining a comparator on the collection object. By defining a comparator, a collection is sorted whenever a model is added or the \"sort()\" method is invoked on a collection:\nExample:\nvar Fruits = Backbone.Collection.extend({  \n    comparator: function(a, b) { /* .. */ }  \n})  \n// Or  \nvar Fruits = Backbone.Collection.extend({})  \nvar fruits = new Fruits()  \nfruits.comparator = function(a, b) { /* .. */ }  \nThe comparator property can be a function with one argument or two arguments (similarly used in \"sort\"), or a string identifying the attribute by name to sort on.\nWhen an attribute of a model in a collection changes, the collection doesn't sort itself. In this case, the sort must be invoked explicitly to update the order of models in the collection.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js's default support for REST APIs?",
+        "answer": "To override the Backbone.js's default behavior on a per-model basis for REST APIs, we can set a custom function to \"Model.sync\". To make the changing global, we can set the custom function to \"Backbone.sync\". Ideally, the \"sync\" function should handle four methods: \"create\", \"read\", \"update\", and \"delete\". The function receives the CRUD method name, the model itself, and an object with additional options.\nThere is also a method to do the same. Sometimes setting \"Backbone.emulateJSON\" to true can do the job, in this case we have to submit requests as \"application/x-www-form-urlencoded\" instead of \"application/json\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "A list of some prominent features or key points of Backbone.js:\nBackbone.js has a hard dependency with underscore.js, making it more functional and providing support for a range of useful collection-based operations.\nBackbone.js has a soft dependency on jQuery.\nBackbone.js is based on MVC architecture. When the model changes, it can update the HTML of your application automatically.\nBackbone.js uses a client-side rendering framework or Javascript templating to render HTML, enabling you not to embed HTML code inside JavaScript code.\nBackbone.js offers a significantly clean and elegant way for UI updates and DOM manipulations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "sync?",
+        "answer": "Backbone.sync is a function called when Backbone.js wants to save or read a model to the server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Use the following syntax to create a Model in Backbone.js.\nSyntax:\nStudent = Backbone.Model.extend({ initialize: function(){ alert(\"Welcome to Backbone.js\"); } }); var student = new Student;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js is must be required?",
+        "answer": "Generally, Backbone.js is required in the following conditions:\nWhen we have to develop a web application that requires a lot of JavaScript codes.\nIt is also required if your application needs to be scalable and give a structure to your code.\nBackbone is required when a web application works with jQuery to traverse the DOM or give animations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Backbone.js uses two styles of variables \":params\" and \"*splats\" when implementing routes. Let's see what the uses of \":params\" and \"*splats are\":\n\":params\" is used to match any URL components between slashes. You can specify a single fragment using \".params\". On the other hand, \"*splats\" is used to match any number of URL fragments after the query. Due to the nature of a \"*splat\", it should always be the last variable in your URL as it will match any components.\nIn route definitions, the \"*splats\" or \":params\" are passed as arguments (in respective order) to the associated function. A route defined as \"/:route/:action\" will pass 2 variables (\"route\" and \"action\") to the callback function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js for a multiple-page web app? If yes, how?",
+        "answer": "Yes, we can use Backbone.js for a multiple-page web app. There are a lot of considerations for multiple page web apps in Backbone.js, but the following two are the most useful:\nServing the page: In this method, where you want to have your web server, set everything to the server route to serve the same static page. For example, everything in https://javatpoint.com/* will serve /var/www/javatpoint.com/index.html. Once the static page is loaded, the JavaScript will decide what to do to the given URL.\nPush State: In this method, you can still use Backbone routing to do the routing tasks, but don't use hashbangs. This method facilitates you to navigate to URLs without actually needing a page refresh.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js view?",
+        "answer": "In the Backbone.js view, the \"el\" property is used to reference the DOM object created in the browser. Every Backbone.js view has an \"el\" property, and if it is not defined, Backbone.js will construct its own as an empty div element.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Backbone.js, the most powerful capabilities of ModelBinder class is that it makes you able to define scope when you create your bindings using jQuery.\nYou can rely on default scoping rules according to the HTML \"name\" attribute for simple views.\nFor complex views, you can define scoping with jQuery selectors.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The main function of toJSON in Backbone.js is to return a shallow copy of the model's attribute for JSON stringification. It does not return a JSON string and provides persistence, serialization, and augmentation before being sent to the server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Backbone.js, the models' attributes are stored in a hash.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js view code?",
+        "answer": "Following is a list of the most typical problems one can face with the Backbone.js view code:\nThe application models do not change often.\nThe application pages are frequently refreshed from scratch from the server.\nThe models are not shared between different views.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Backbone.js, the model.cid is a special property of models, the cid or client id, which is automatically assigned to all models when they are first created. The model.cid works as a unique identifier. This is very useful when the model is not saved to the server, but you want to show it on the UI.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) Give an example to demonstrate how can you see the changes on a single attribute of a model?",
+        "answer": "Whenever you change some data within the model, the model objects fire the \"change\" event. However, the object fires another event with a name specific to the change attribute: \"change:[attribute]\".\nFor example:\nvar Fruit = Backbone.Model.extend({})  \nvar fruit = new Fruit({  \n    weight: 3.25  \n})  \nfruit.on('change:weight, function() {  \n    // Event \"change:weight\" will fire whenever the weight attribute of fruit changes.  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Backbone.js, the escape is used to get the current value of an attribute from the model, but it returns the HTML-escaped version of a model's attribute. It helps to prevent XSS attacks when you interpolate data from the model into HTML.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) Why is it not recommended to change the \"el\" property of a view directly? What is the correct way to do it instead?",
+        "answer": "It is not recommended to change the \"el\" property of a view directly because when you attempt to change the \"el\" property directly, it may lead to inconsistent behavior from the Backbone.js view. The reason behind this inconsistent behavior is that when you change the \"el\" property directly, it doesn't automatically update the cached jQuery object property corresponding to it, which is \"$el\".\nThe correct way to do this is to use \"setElement()\" on the view.\nSyntax:\nview.setElement(otherElement)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The Backbone.js attributes define a model's property and use the set() method to update the attributes. It is usually a form of the JSON object representing the model data on the server.\nSyntax:\nmodel.attributes    \nExample:\n<script type=\"text/javascript\">    \nvar  Person = Backbone.Model.extend();    \nvar person = new Person();    \nperson.set({ name: \"Alex Conwey\"});    \ndocument.write(person.get('name'));   \n</script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js utility class?",
+        "answer": "The Backbone.js utility class contains a set of methods for implementing Backbone utility. There are two methods used to manipulate the Backbone.js utility:\nnoConflict(): This returns the Backbone objects to their original value and provides a facility to store a reference to a backbone.\n$(): This is used when you have multiple copies of jQuery on the page or simply want to tell Backbone to use a particular object as its DOM / Ajax library.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The data, which is returned from the server in response to a fetch or store operation, is called parse. It is used to return the model's data by passing into the response object.\n<script type=\"text/javascript\">    \n    var myData ={    \n       \"values\": [{    \n           \"fname\": \"Ratan\",    \n           \"lname\": \"Tata\",    \n           \"country\": \"India\"    \n        }]    \n    };    \n    var Person  = Backbone.Model.extend({    \n       parse : function(response, options){    \n          document.write(JSON.stringify(response));    \n       }    \n    });    \n    var person = new Person(myData, {parse: true});    \n    </script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What is the function of setElement?",
+        "answer": "The Backbone.js setElement method is used to apply the backbone view to a different DOM element. For example:\n<script type=\"text/javascript\">    \n       var ViewDemo = Backbone.View.extend({    \n             events: {    \n             'change input': 'sayHi'    \n          },    \n             initialize: function() {    \n              this.setElement($('#myview'));       \n          },    \n                           sayHi: function() {    \n             document.write('JavaTpoint: A solution of all technology...');    \n          }    \n       });    \n          var viewdemo = new ViewDemo;    \n       </script>",
+        "reference": "javatpoint.com"
+    }
+]

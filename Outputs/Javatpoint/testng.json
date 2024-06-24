@@ -1,0 +1,87 @@
+[
+    {
+        "question": "1) What is TestNG?",
+        "answer": "TestNG stands for \"Testing Next Generation\". It is an` automation testing framework used for java programming language developed by Credric beust, and it comes after the inspiration from the JUnit framework. TestNG consists of all the features of JUnit framework but also contains some more additional features that make TestNG more powerful.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the advantages of TestNG?",
+        "answer": "The following are the advantages of TestNG are:\nADVERTISEMENT\nADVERTISEMENT\nIt generates the report in a proper format, which includes the following information:\nNumber of test cases executed.\nNumber of test cases passed.\nNumber of test cases failed.\nNumber of test cases skipped\nMultiple test cases can be grouped easily by converting them into a testng.xml file, in which you can set the priority of each test case that determines which test case should be executed first.\nWith the help of TestNG, you can execute the multiple test cases on multiple browsers known as cross-browser testing.\nThe TestNG framework can be easily integrated with other tools such as Maven. Jenkins, etc.\nAnnotations used in a TestNG framework are easily understandable such as @BeforeMethod, @AfterMethod, @BeforeTest, @AfterTest.\nWebDriver does not generate the reports while TestNG generates the reports in a readable format.\nTestNG simplifies the way the test cases are coded. We do not have to write the static main method. The sequence of actions is maintained by the annotations only.\nTestNG allows you to execute the test cases separately. For example, if you have six test cases, then one method is written for each test case. When we run the program, five methods are executed successfully, and the sixth method is failed. To remove the error, we need to run only the sixth method, and this can be possible only through TestNG. Because TestNG generates testng-failed.xml file in the test output folder, we will run only this xml file to execute the failed test case.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How to run the test script in TestNG?",
+        "answer": "You can run the test script in TestNG by clicking right click on the TestNG class, click on \"Run As\" and then select \"TestNG test\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the annotations used in the TestNG?",
+        "answer": "The following are the annotations used in the TestNG are:\nPrecondition annotations\nPrecondition annotations are executed before the execution of test methods The Precondition annotations are @BeforeSuite, @BeforeClass, @BeforeTest, @BeforeMethod.\nTest annotation\nTest annotation is specified before the definition of the test method. It is specified as @Test.\nPostcondition annotations\nThe postcondition annotations are executed after the execution of all the test methods. The postcondition annotation can be @AfterSuite, @AfterClass, @AfterTest, @AfterMethod.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the sequence of execution of all the annotations in TestNG?",
+        "answer": "The sequence of execution of all the annotations in TestNG is given below:\n@BeforeSuite\n@BeforeTest\n@BeforeClass\n@BeforeMethod\n@Test\n@AfterSuite\n@AfterTest\n@AfterClass\n@AfterMethod",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) How to set the priorities in TestNG?",
+        "answer": "If we do not prioritize the test methods, then the test methods are selected alphabetically and executed. If we want the test methods to be executed in the sequence we want, then we need to provide the priority along with the @Test annotation.\nLet's understand through an example.\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Test_methods   \n{  \n@Test(priority=2)  \npublic void test1()  \n{  \nSystem.out.println(\"Test1\");  \n}  \n@Test(priority=1)  \npublic void test2()  \n{  \nSystem.out.print(\"Test2\");  \n}  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Define grouping in TestNG?",
+        "answer": "The group is an attribute in TestNG that allows you to execute the multiple test cases. For example, if we have 100 test cases of it_department and 10 test cases of hr_department, and if you want to run all the test cases of it_department together in a single suite, this can be possible only through the grouping.\nLet's understand through an example.\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Test_methods   \n{  \n@Test(groups=\"it_department\")  \npublic void java()  \n{  \nSystem.out.println(\"I am a java developer\");  \n}  \n@Test(groups=\"it_department\")  \npublic void dot_net()  \n{  \nSystem.out.println(\"I am a .Net developer\");  \n}  \n@Test(groups=\"it_department\")  \npublic void tester()  \n{  \nSystem.out.println(\"I am a software tester\");  \n}  \n@Test (groups=\"hr\")  \npublic void hr()  \n{  \nSystem.out.print(\"I am hr\");  \n}  \n}  \ntestng.xml\n?xml version=\"1.0\" encoding=\"UTF-8\"?>  \n<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\">  \n<suite name=\"Suite\">  \n<test name=\"It Company\">  \n<groups>  \n<run>  \n<include name=\"it_department\"/>  \n</run>  \n</groups>  \n<classes>  \n<class name=\"com.javatpoint.Test_methods\"></class>  \n</classes>  \n</test>  \n</suite> <!-- Suite -->",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is dependency in TestNG?",
+        "answer": "When we want to run the test cases in a specific order, then we use the concept of dependency in TestNG.\nTwo types of dependency attributes used in TestNG:\ndependsOnMethods\nThe dependsOnMethods attribute tells the TestNG on which methods this test will be dependent on, so that those methods will be executed before this test method.\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Login   \n{  \n @Test  \n public void login()  \n {  \n     System.out.println(\"Login page\");  \n }  \n @Test(dependsOnMethods=\"login\")  \n public void home()  \n {  \n     System.out.println(\"Home page\");  \n        }  \n}  \ndependsOnGroups\nIt is similar to the dependsOnMethods attribute. It allows the test methods to depend on the group of test methods. It executes the group of test methods before the dependent test method.\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Test_cases  \n{  \n @Test(groups=\"test\")  \n public void testcase1()  \n {  \n     System.out.println(\"testcase1\");  \n }  \n @Test(groups=\"test\")  \n public void testcase2()  \n {  \n     System.out.println(\"testcase2\");  \n }  \n @Test(dependsOnGroups=\"test\")  \n public void testcase3()  \n {  \n     System.out.println(\"testcase3\");  \n }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is timeOut in TestNG?",
+        "answer": "While running test cases, there can be a case when some test cases take much more time than expected. In such a case, we can mark the test case as a failed test case by using timeOut.\nTimeOut in TestNG allows you to configure the time period to wait for a test to get completely executed. It can be configured in two levels:\nAt the suit level: It will be available to all the test methods.\nAt each method level: It will be available to a particular test method.\nThe timeOut attribute can be specified as shown below:\n@Test( timeOut = 700)  \nThe above @Test annotation tells that the test method will be given 700 ms to complete its execution otherwise it will be marked as a failed test case.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is invocationCount in TestNG?",
+        "answer": "An invocationCount in TestNG is the number of times that we want to execute the same test.\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Test_cases  \n{  \n @Test(invocationCount=5)  \n public void testcase1()  \n {  \n     System.out.println(\"testcase1\");  \n }  \n  }  \nOutput",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "xml file?",
+        "answer": "The testng.xml file is important because of the following reasons:\nIt defines the order of the execution of all the test cases.\nIt allows you to group the test cases and can be executed as per the requirements.\nIt executes the selected test cases.\nIn TestNG, listeners can be implemented at the suite level.\nIt allows you to integrate the TestNG framework with tools such as Jenkins.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "xml file?",
+        "answer": "We can also pass the value to test methods at runtime, we can achieve this by sending parameter values through the testng.xml file. We can use the @Parameter annotation:\n@Parameter(\"param-name\");  \nLet's understand through an example:\npackage com.javatpoint;  \nimport org.openqa.selenium.By;  \nimport org.openqa.selenium.WebDriver;  \nimport org.openqa.selenium.chrome.ChromeDriver;  \nimport org.testng.annotations.Test;  \nimport org.testng.annotations.Parameters;  \npublic class Web {  \n@Parameters({\"text\"})  \n@Test  \npublic void search()  \n{  \n// TODO Auto-generated method stub  \nSystem.setProperty(\"webdriver.chrome.driver\", \"D:\\\\chromedriver.exe\");  \nWebDriver driver=new ChromeDriver();  \ndriver.get(\"http://www.google.com/\");  \ndriver.findElement(By.name(\"q\")).sendKeys(\"javatpoint tutorial\");  \n}  \n}  \n\ntestng.xml file\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>  \n<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\">  \n<suite name=\"Suite\">  \n<test name=\"It Company\">  \n<parameter name=\"text\" value=\"javatpoint\"/>  \n<classes>  \n<class name=\"com.javatpoint.Web\"></class>  \n</classes>  \n</test>  \n</suite> <!-- Suite -->  \nOn running the testng.xml file, we get the output as shown below:",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How can we disable the test case from running?",
+        "answer": "We can disable the test case from running by using the enabled attribute. We can assign the false value to the enabled attribute, in this way we can disable the test case from running.\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Test_cases  \n{  \n @Test(enabled=false)  \n public void testcase1()  \n {  \n     System.out.println(\"testcase1\");  \n }  \n @Test   \n public void testcase2()  \n {  \n     System.out.println(\"testcase2\");  \n }  \n  }",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the difference between soft assertion and hard assertion?",
+        "answer": "Soft Assertion: In case of Soft Assertion, if TestNG gets an error during @Test, it will throw an exception when an assertion fails and continues with the next statement after the assert statement.\nHard Assertion: In the case of Hard Assertion, if TestNG gets an error during @Test, it will throw an AssertException immediately when an assertion fails and stops execution after the assert statement.\nLet's understand through an example.\npackage com.javatpoint;  \nimport org.testng.Assert;  \nimport org.testng.annotations.Test;  \nimport org.testng.asserts.SoftAssert;  \npublic class Assertion {  \nSoftAssert soft_assert=new SoftAssert();  \n@Test  \npublic void Soft_Assert()  \n{  \n soft_assert.assertTrue(false);  \n System.out.println(\"soft assertion\");  \n}  \n@Test  \npublic void Hard_Assert()  \n{  \n Assert.assertTrue(false);  \n System.out.println(\"hard assertion\");  \n}  \n}  \n\nOutput",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the use of @Listener annotation in TestNG?",
+        "answer": "TestNG provides different kinds of listeners which can perform different actions whenever the event is triggered. The most widely used listener in TestNG is ITestListener interface. The ITestListener interface contains methods such as onTestSuccess, onTestfailure, onTestSkipped, etc.\nFollowing are the scenarios that can be made:\nIf the test case is failed, then what action should be performed by the listener.\nIf the test case is passed, then what action should be performed by the listener.\nIf the test case is skipped, then what action should be performed by the listener.\nLet's understand through an example.\npackage com.javatpoint;  \nimport org.testng.Assert;  \nimport org.testng.annotations.Listeners;  \nimport org.testng.annotations.Test;  \n@Listeners(com.javatpoint.Listener.class)  \npublic class Test_cases  \n{  \n       @Test  \n public void test_to_success()  \n {  \n     Assert.assertTrue(true);  \n }  \n @Test  \n public void test_to_fail()  \n {  \n     Assert.assertTrue(false);  \n }  \n  }  \nListener.java\npackage com.javatpoint;  \nimport org.testng.ITestContext;  \nimport org.testng.ITestListener;  \nimport org.testng.ITestResult;  \npublic class Listener implements ITestListener   \n{  \n@Override  \npublic void onTestStart(ITestResult result) {  \n// TODO Auto-generated method stub  \n}  \n@Override  \npublic void onTestSuccess(ITestResult result) {  \n// TODO Auto-generated method stub  \nSystem.out.println(\"Success of test cases and its details are : \"+result.getName());  \n}  \n@Override  \npublic void onTestFailure(ITestResult result) {  \n// TODO Auto-generated method stub  \nSystem.out.println(\"Failure of test cases and its details are : \"+result.getName());  \n}  \n@Override  \npublic void onTestSkipped(ITestResult result) {  \n// TODO Auto-generated method stub  \nSystem.out.println(\"Skip of test cases and its details are : \"+result.getName());  \n}  \n@Override  \npublic void onTestFailedButWithinSuccessPercentage(ITestResult result) {  \n// TODO Auto-generated method stub  \nSystem.out.println(\"Failure of test cases and its details are : \"+result.getName());  \n}  \n@Override  \npublic void onStart(ITestContext context) {  \n// TODO Auto-generated method stub  \n}  \n@Override  \npublic void onFinish(ITestContext context) {  \n// TODO Auto-generated method stub  \n}}  \nOutput",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the use of @Factory annotation?",
+        "answer": "The @Factory annotation is useful when we want to run multiple test cases through a single test class. It is mainly used for the dynamic execution of test cases.\nLet's understand through an example.\ntestcase1.java\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Testcase1  \n{  \n@Test  \npublic void test1()  \n{  \nSystem.out.println(\"testcase 1\");  \n}  \n}  \ntestcase2.java\npackage com.javatpoint;  \nimport org.testng.annotations.Test;  \npublic class Testcase2   \n{  \n@Test  \npublic void test1()  \n{  \nSystem.out.println(\"testcase 2\");  \n}  \n}  \nFactory.java\nimport org.testng.annotations.Factory;  \npublic class Factory1  \n{  \n@Factory  \npublic Object[] getTestClasses()  \n{  \nObject tests[]=new Object[2];  \ntests[0]=new Testcase1();  \ntests[1]=new Testcase2();  \nreturn tests;  \n}  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the difference between @Factory and @DataProvider annotation?",
+        "answer": "@DataProvider: It is annotation used by TestNG to execute the test method multiple numbers of times based on the data provided by the DataProvider.\n@Factory: It is annotation used by the TestNG to execute the test methods present in the same test class using different instances of the respective class.",
+        "reference": "javatpoint.com"
+    }
+]

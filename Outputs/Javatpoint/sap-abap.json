@@ -1,0 +1,147 @@
+[
+    {
+        "question": "1) What is ABAP?",
+        "answer": "The term ABAP stands for Advanced Business Application Programming. It is a high-level programming language created by the German software company SAP SE. It is currently positioned together with Java as the programming language for the SAP NetWeaver Application Server which is part of the SAP NetWeaver platform for building business applications.\nIt is one of the many application-specific languages of the fourth generation and was developed in the 1980s.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Describe the SAP R/3?",
+        "answer": "It is a 3 tier architecture consisting of 3 layers.\nADVERTISEMENT\nPresentation\nApplication\nDatabase\n\nIt's a client-server architecture. The term R stands for Real-time system, and 3 represents the 3-tier architecture.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How many ways can a SAP system be accessed?",
+        "answer": "Users can access a SAP system in two ways.\nThrough SAP GUI\nThrough a Web browser\nThis is called a front-end. User can install only the front-end, not the application databases server. Front-end accept the user's requests to the database server and application servers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the Pooled and Cluster Tables?",
+        "answer": "Pooled tables and clusters tables are special table types in the ABAP Dictionary. We can store the data from several different tables into a table pool or table cluster. Tables assigned to a table pool or table cluster denoted as pooled tables or cluster tables.\nWe should use a table pool, especially for storing internal control information. The control information can be screen sequences, program parameters, temporary data, and continuous texts such as documentation.\nCommercial relevance data is stored in transparent tables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the Major difference between pool tables and transparent tables?",
+        "answer": "The major difference between the pool tables and the transparent tables is that the pool tables have many to one relationship with the database table, on the other hand, the transparent tables have one to one relationship with the same.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Explain Data Dictionary in ABAP?",
+        "answer": "The ABAP Dictionary is used to create and manage data definitions (metadata). The ABAP Dictionary allows the essential description of all the data used in the system without redundancies. New or updated information is automatically provided for all the system components. This ensures data integrity, data security, and data consistency.\nThe ABAP Dictionary supports the definition of user-defined data elements, structures, and table types. You can create the related objects (tables or views) in the basic relational database using these data definitions. The ABAP Dictionary describes the logical structure of the objects which is used in application development. These objects show the connectivity with the underlying relational database in tables or views.\n\nThe ABAP Dictionary also supports some standard functions for editing fields on the screen like assigning input help to a screen field.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Explain some essential objects in ABAP Dictionary?",
+        "answer": "Some essential object types in the ABAP Dictionary are as follows.\nTables\nTables are defined independently in the ABAP Dictionary of the database.\nViews\nViews are rational views of more than one table. The view structure is defined in the ABAP Dictionary. An overlook of the database can be created from this structure.\nTypes\nThe type structure can be defined globally in ABAP programs. Changes to a type are activated automatically in all the programs using the type.\nLock objects\n\nLock objects are used to synchronize access to similar data by the various user.\nDomains\nThe Domain can combine the different fields having the same technical type. A domain defines the value range of all table fields and structure modules that refer to this domain.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Define Structure in ABAP Data Dictionary?",
+        "answer": "The structure is a data object that is made up of components of various data type stored respectively in the memory. Structures are Just like a user-defined data type. It is like a table for the Data Dictionary and can be addressed from ABAP programs. The structure holds data at runtime.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the internal tables and Work Area?",
+        "answer": "Internal tables and work areas are temporary memory areas which are used to store data at run-time. These are the instances of database tables and Internal tables. Work Area is a standard data type object. These tables exist only during the execution of the program. It is used to perform table operations on subsets of database tables to re-organize the contents of database tables according to users need.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is ITS? What are the merits of ITS?",
+        "answer": "ITS stands for Internet Transaction Server. It creates an interface between the HTTP server and R/3 system to convert screen provided data by the R/3 system into HTML documents and vice versa.\n\nMerits of ITS\nA comprehensive web transaction can be developed and tested in the R/3 system.\nIt acts on all transaction components, including those used by the ITS outside.\nThe advantage of automatic language processing in the R/3 system that we can utilize the language-dependent HTML documents at runtime.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "SAP script is a text-processing system of the SAP System's itself. It is much like other leading text-processing systems. It is used to print preformatted text in respective forms.\n\nSAP scripts is a SAP tool used for word processing. SAP Script has the following components:\nStandard text\nIt is similar to standard normal documents.\nLayout sets\nLayout set consists of the following components:\nFormat Components of Sap Scripts are Windows and pages, Paragraph formats, Character.\nForms in the R/3 system.\nEvery layout set contains a Header, paragraph, and character string in ABAP/4 program.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is a foreign key relationship?",
+        "answer": "A foreign key relationship can be defined between tables and should be explicitly defined at the field level. Foreign keys are used to make sure the consistency of data. The entered data must be checked against existing data to ensure the contradiction. The Cardinality must be specified while defining a foreign key relationship. Cardinality represents how many dependent records and referenced records are possible.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The different types of database integrities are as follows.\nSemantic Integrity\nPrimary Key Integrity\nRelational Integrity\nValue Set Integrity\nOperational Integrity\nForeign Key Integrity",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The ABAP memory is treated as a memory area in which the ABAP program is availed in the internal section. Data is stored in the program calls. These program calls allow the data to be passed from one program calls to another.\nIt is possible to pass the data from one session to another by the SAP Memory. All the sessions of SAP GUI have suspected to the memory area known as SAP Memory. Data transfer from one session of the programming system to another session is effortless.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The term BADI stands for Business Add-In. It is a new SAP Object Oriented enhancement technique. BADI is used to implement our business functionality to the existing SAP standard functionality.\nBADI's are available in SAP R/3 from the system release version 4.6c\nBADI follows the Object-Oriented approach to reuse the enhancement technique. We can use a BADI many times.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What are the two statements which are required in an ABAP program to output an icon using a write statement?",
+        "answer": "There are two statements which are required in the ABAP program:\nINCLUDE:\nInclude Statement is a required statement for the program.\nWRITE:\nThe syntax of the Write Statement is given below:\nWRITE AS ICON",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How to insert a line into ABAP internal tables?",
+        "answer": "We can insert line or lines to ABAP internal tables using the INSERT statement . To insert a line, first put the values which we want to insert in a work area then use the INSERT statement to insert the values in the work area to the internal table.\nThe syntax for inserting a line into an internal table:\nINSERT <work area> INTO TABLE <internal table>.  \n                       OR  \nINSERT <work area> INTO <internal table> INDEX <index>.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is Web Dynpro for ABAP?",
+        "answer": "Web Dynpro (WD) is a SAP web interface model for ABAP. It is used to develop web application in SAP. It provides a front-end user interface to connect directly to backend SAP R/3. It accesses data and function for reporting.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What do you mean by BDC (Batch Data Communications) programming?",
+        "answer": "BDC is an automatic procedure to forward massive or external data into the SAP system. Queue file is the essential component of the transfer. Queue files receive the data through batch input programs and groups that are affiliated into 'sessions.'",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Describe the data classes?",
+        "answer": "The data classes can be classified into the following classes.\nMaster Data:\nThe data in the master class rarely change.\nTransaction Data:\nIn the Transaction class, the data can be changed frequently.\nOrganization Data:\nIn Organize Data class, the data is a customized data and is entered into the system when the system is configured. It is rarely changed.\nSystem Data:\nThe R/3 system itself uses this data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the different types of LUWs?",
+        "answer": "A LUW (Logical Unit of Work) is an attached sequence of database operations which must be executed either entirely or not at all. Thus, it constitutes a unit for the database system.\nThere are two types of LUW are:\nDB LUW\nA database LUW is a method used by the database to ensure data consistency. It is an attached sequence of database operations that ends with a database commit. If a database LUW has been successfully executed, the database will be in a consistent state. If a database LUW contains an error, then all of the database affected by this error. This makes the database as it was during the startup database.\nSAP LUW\nIt is a logical unit consisting of dialog steps. The changes of these steps are written to the database in a single database LUW is called an SAP LUW. A SAP LUW can span several dialog steps. It can be executed using a series of different work processes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Below are some important events in ABAP programming:\nLOAD-OF-PROGRAM\nThis is the first event to be called before any of the other ABAP code is processed.\nINITIALIZATION\nIt is called after the ABAP selection screen code has been processed. This event is used to initialize input fields of the selection screen or change the default values of these.\nAT SELECTION-SCREEN OUTPUT\n\nThis event is called just before the selection screen is displayed. It can be used to manipulate the actual selection screen attributes using the loop at screen functionality. This event allows functionality like hiding fields, grey them out, so they are output only or make them intensified, etc.\nTOP-OF-PAGE\nThis event is called when a new page is started with an ABAP list. It is used to display a header for the list.\nTOP-OF-PAGE During LINE_SELECTION\nThis event is also activated while creating detailed lists.\nEND-OF-PAGE\nThis event is displayed at the end of each page.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What are the Differences between Macro and Subroutine?",
+        "answer": "Macros are only used in the program in which they are defined. The definition of macros can be expanded at compilation/generation.\nSubroutines (FORM) can be called from any program, whether they are defined in or other programs.\nA MACRO is an abbreviation for some lines of code that are used more than one time or two. It is a local subroutine.\nSince debugging the MACRO is not possible, so we prevent the use of them. Use a FORM, if the subroutine is used as local only. For external use, use a FUNCTION.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "There are various types of objects that are used in the SAP Data Dictionary space. A list of such objects is as follows.\nTables\nViews\nDomain\nData Element\nType Groups\nSearch Helps/Math Code Objects\nLock Objects\nStructures\nTable Types",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Database Index contains fields from only one table on the other hand; Match Code Objects can be built on cluster tables, transparent tables, and pooled tables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) Why do we use events and actions in Web Dynpro?",
+        "answer": "In Web Dynpro, events can be created to establish a connection between controllers. With the connection, one controller can be allowed to trigger events in other controllers. All events are organized in component controllers and available in particular components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is a Subroutine?",
+        "answer": "The subroutine is a reusable section of code. It is a customized unit within ABAP programs where functions are encapsulated in the form of their source code. A part of a program can be called out to a subroutine for getting a better overview of the main program.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Difference between user exit and BADIs?",
+        "answer": "User exit is used for single implementation, and it is a procedural approach. In the case of BADIs, they are used for multiple implementations and object-oriented approaches.\nHere multiple implementations mean Reusability of the object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are some Control break events in ABAP?",
+        "answer": "Some control break events are as follows.\nAT-FIRST:\nThis event is used to execute the statements before records are processed.\nAT-LAST:\nThis event is used to execute the statements after all records are processed.\nAT-NEW:\nThis event is used to execute the statement before the collection of records are processed.\nAT-END:\nThis event is used to execute the statements after processing of a group of records.",
+        "reference": "javatpoint.com"
+    }
+]

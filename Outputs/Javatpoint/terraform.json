@@ -1,0 +1,202 @@
+[
+    {
+        "question": "1) What is Terraform? / What do you understand by Terraform?",
+        "answer": "Terraform is an open-source communication as system software tool created by HashiCorp. It is used to build an infrastructure for building, altering, and versioning transportation safely and professionally. Terraform can manage leading and popular service providers and in-house convention solutions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the most important features of Terraform?",
+        "answer": "Following is a list of the most important features of Terraform:\nInfrastructure as Code: The high-level configuration language of Terraform is used to describe the infrastructure in declarative configuration files that are human-readable. It facilitates us to generate a blueprint that can be edited, shared, and reused.\nExecution Strategies: Before making any infrastructure modifications, Terraform develops an execution plan to describe what it will do and asks for your agreement. It facilitates us to evaluate the changes before Terraform produces, upgrades or destroys infrastructure.\nGraph of Resources: Terraform develops or alters non-dependent resources while simultaneously building a resource graph. This can be used to construct resources as quickly as possible while also providing more information about your infrastructure.\nAutomation of Change: Terraform can be used to automate the application of complex changesets to your infrastructure with little to no human intervention. Terraform also identifies what happens when you update configuration files and provides incremental execution plans that take dependencies into account.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) Are callbacks possible with Terraform on Azure?",
+        "answer": "Callbacks are possible by using the Azure Event Hubs. Terraform's Azure supplier provides effortless functionality to users, and Microsoft Azure Cloud Shell provides an already installed Terraform occurrence.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the main reasons for choosing Terraform for DevOps?",
+        "answer": "Following are the main reasons for choosing Terraform for DevOps:\nFollowing are the reasons for choosing Terraform for DevOps:\nADVERTISEMENT\nTerraform is preferred for DevOps because it can do complete orchestration and not just configuration management such as Ansible and Puppet.\nIt provides amazing support to almost all the popular cloud providers like AWS, Azure, GCP, DigitalOcean, etc.\nIt can easily manage the configuration of an immutable (dynamic) infrastructure.\nIt provides an immutable infrastructure where configuration changes smoothly.\nIt works on HCL (HashiCorp Configuration Language), which is very easy to learn and understand.\nIt is easily portable from one provider to another.\nThe installation of Terraform for DevOps is easy.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What do you understand by Terraform init?",
+        "answer": "Terraform init is a control used to initialize an operational index containing Terraform pattern files. This control is the first command that should be run after writing the new Terraform design and can be looped multiple times.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the null resource in Terraform?",
+        "answer": "The null_resource is used to implement a standard resource library, but no further action is taken. The triggers argument allows an arbitrary set of values that will cause the replacement of resources when changed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is Terraform D?",
+        "answer": "Terraform D is a plugin used on most in-service systems and Windows. Terraform init by default searches next directories for plugins.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you understand by Terraform backend?",
+        "answer": "The Terraform backend is used to specify how an operation is executed and how the state is loaded. It uses the 'local' backend by default. The abstraction enables remote execution, non-local file state storage, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "terraform\" directory?",
+        "answer": "The \".terraform\" directory is a local cache where Terraform retains some files required for subsequent operations against this configuration. Its contents are not intended to be included in version control.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are some major competitors of Terraform?",
+        "answer": "Following are some major competitors of Terraform:\nPacker\nCloud Foundry\nAnsible\nKubernetes",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the usage of Terraform init?",
+        "answer": "Terraform init is a command used to initialize the Terraform code. Let's see the all usage of Terraform init command:\nTerraform init command is used to initialize the working directory containing Terraform configuration files.\nIt is used for Plugin Installation.\nIt is also used for Child Module Installation.\nIt is used for Backend Initialization.\nYou can safely run this command multiple times.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What do you understand by Terraform in AWS?",
+        "answer": "In AWS, Terraform is an infrastructure as a code tool. It facilitates us to store our Amazon Web Services infrastructure and produce an update, and it is very similar to AWS Cloud Formation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) Why is Terraform used for DevOps?",
+        "answer": "Terraform is preferred to use for DevOps because it facilitates us to manage infrastructure as code. The infrastructure as code is the foundation for DevOps practices such as continuous integration, version control, continuous deployment, and code review.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the full form of IAC in the context of Terraform?",
+        "answer": "The full form of the term IAC is \"Infrastructure as Code\". IaC refers to a scheme whereby developers can run and provision the computer data center's mechanically instead of getting into a physical process. For example, Terraform is a case tool of IaC.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What do you understand by Oracle Cloud Infrastructure?",
+        "answer": "Oracle Cloud Infrastructure is a cloud computing service offered by Oracle Corporation. It provides storage, servers, applications, services, and networks through a global network of managed data centers by Oracle Corporation. These services are provisioned on-demand over the Internet by the company.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) Is Terraform cloud-agostic? If yes, then what does it mean?",
+        "answer": "Yes, Terraform is cloud-agostic and allows a single configuration to manage multiple providers and handle cross-cloud dependencies. It is also used to simplify management and orchestration, facilitates operators to build large-scale multi-cloud infrastructures.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What do you understand by Terraform providers?",
+        "answer": "Providers are plugins on that Terraform relies to interact with cloud providers, SaaS providers, and other APIs. The Terraform configurations have to declare which providers they require so that Terraform can install and use them. Some Terraform providers require configuration such as endpoint URLs or cloud regions before using them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is the use of Terraform provider?",
+        "answer": "Terraform providers add a set of resource types and data sources that Terraform can manage.\nA provider implements every resource type; without providers, Terraform can't manage any infrastructure.\nTerraform providers configure a specific infrastructure platform (either cloud or self-hosted).\nTerraform providers can also offer local utilities for tasks such as generating random numbers for unique resource names.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What do you understand by Terraform Backends? What are the most recommended Backends we should use?",
+        "answer": "Terraform backends are used to define where and how operations are performed, where state snapshots are stored, etc. Each Terraform configuration can specify a backend.\nFollowing are the two types of most recommended Terraform Backends:\nIf the new users are still learning how to use Terraform, the default \"local\" backend is most recommended, which requires no configuration.\nFor the expert users, if they or their team are using Terraform to manage meaningful infrastructure, the most recommended backend is the \"remote\" backend with Terraform Cloud or Terraform Enterprise.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What are the biggest competitors of Terraform?",
+        "answer": "The following list specifies some of the biggest competitors of Terraform:\nAnsible\nKubernetes\nTurbonomic\nCloudBolt\nAzure Management Tools\nMorpheus\nCloudHealth\nApptio Cloudability\nPlatform9 Managed Kubernetes etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the working of Terraform core?",
+        "answer": "The Terraform core is used to look after the configuration monitoring and create analysis and evaluation based on the configuration. It is also used to keep track and compare the current and previous versions and display the output through the terminal.\nTerraform core mainly takes two inputs:\nThe first one is Terraform Configuration, used to keep track of the infrastructure detail.\nThe second one is Terraform state that is used to keep track of the infrastructure status.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the usage of provisioners in Terraform?",
+        "answer": "In Terraform, provisioners are used to preparing servers or other infrastructure objects for service. They are used on the local machine as well as on the remote machines.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What are some Built-in provisioners available in Terraform?",
+        "answer": "Following is the list of some Built-in provisioners in Terraform:\nFile Provisioner\nChef Provisioner\nHabitat Provisioner\nPuppet Provisioner\nLocal-exec Provisioner\nRemote-exec Provisioner\nSalt-masterless Provisioner",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What do you understand by Terraform cloud? What are the benefits of using it?",
+        "answer": "The Terraform cloud is a collaboration tool for teams using Terraform. It is a platform that can make teams use Terraform together, either on-demand or in response to various events. Terraform Cloud is deeply integrated with Terraform's workflows and data, unlike a general-purpose continuous integration system. It can also use for easy access to shared state and secret data, detailed policy controls for updating infrastructure and governing the contents of Terraform, and many more.\nThe Terraform cloud is hosted as a service at https://app.terraform.io.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is Terraform Cloud for Business?",
+        "answer": "Terraform Cloud for Business is very much similar to Terraform Cloud, and it also uses the same hosted environment as Terraform Cloud but with additional features for larger teams. It provides some additional features such as single sign-on, audit logging, and the ability to Terraform on-premise resources from the Cloud, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What are the usages of Terraform CLI?",
+        "answer": "The Terraform CLI stands for Terraform Command Line Interface. It is used to manage infrastructure and interact with Terraform state, configuration files, providers, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What are some basic CLI commands?",
+        "answer": "Following is a list of some basic CLI commands:\nterraform init: The terraform init CLI command is used to prepare a working directory for other commands.\nterraform destroy: The terraform destroy CLI command is used to destroy the previously-created infrastructure.\nterraform validate: The terraform validate CLI command is used to check whether the configuration is valid or not.\nterraform apply: The terraform apply CLI command is used to create or update the infrastructure.\nterraform plan: The terraform plan CLI command shows the changes needed by the current configuration.\nterraform refresh: The terraform refresh CLI command is used to refresh the state file.\nterraform graph: The terraform graph CLI command creates a DOT-formatted graph.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the full form of Terraform HCL?",
+        "answer": "The full form of Terraform HCL is Terraform HashiCorp Configuration Language. It is a configuration language built by HashiCorp Corporation. It is used to build a structured configuration language that is both human and machine-friendly for use with command-line tools but specifically targeted towards DevOps tools, servers, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the modules in Terraform?",
+        "answer": "A Terraform module is a set of numerous resources used jointly. It is a single directory containing Terraform configuration files. A simple arrangement with a single directory having one or more files can be referred to as a module. The directory is called the root module when Terraform commands are run directly, and the files have the extension .tf. A module that is called by another configuration is called configuration's \"child module.\"",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) Is Terraform usable for an on-prem infrastructure?",
+        "answer": "Yes, Terraform is usable for an on-prem infrastructure as it allows a lot of obtainable providers which we can choose according to the best usage by using an API.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) Does Terraform support multi-provider deployments?",
+        "answer": "Yes, Terraform supports multi-provider deployments such as on-prem like Openstack, VMware, etc. We can manage SDN even using Terram too.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What do you understand by the term IaC?",
+        "answer": "The full form of IaC is \"Infrastructure as Code\". It specifies a system where developers can automatically manage the computer data centers instead of getting into a manual process. Terraform, for instance, is an example tool of IaC.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What guidelines should we follow while using Terraform modules?",
+        "answer": "Following is a list of some guidelines that should be followed while using Terraform modules:\nIf you want to publish to the Terraform Cloud or Terraform Enterprise module registries, you can use this convention terraform-<PROVIDER>-<NAME>.\nYou can select modules just after writing your setup. The benefits of using modules are that you can utilize them properly, even for somewhat complicated Terraform settings maintained by a single person.\nYou should use local modules to organize and encapsulate your code. Even if you aren't using or publishing remote modules, structuring your configuration in terms of modules from the start will dramatically minimize the time and effort required to maintain and update your setup as your infrastructure becomes more complicated.\nThe Terraform Registry is open to the public, where you can identify useful modules. You can create and implement your configuration more quickly and confidently without relying on the efforts of others to create common infrastructure scenarios.\nYou can publish and share modules with your team. Individuals handle the majority of infrastructure, and modules are a vital tool for teams to collaborate on infrastructure creation and maintenance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What can you do to ignore duplicate resource errors during Terraform apply?",
+        "answer": "We can follow the steps given below to ignore duplicate resource errors during Terraform apply:\nYou can delete those resources from the cloud provider (API) and recreate them using Terraform.\nYou can delete those resources from Terraform code to stop its management.\nYou can do a Terraform import of the resource and remove the code trying to recreate them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What is the Remote Backend in Terraform?",
+        "answer": "In Terraform, the Remote Backend is an extension used to state the status of Terraform and run the Terraform cloud operations. The backend operation consists of several commands to carry out all the operations of Terraform. The remote function can work on a single cloud workspace to access multiple fronts for executing remote applications like a plan or application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What are the version controls supported by Terraform?",
+        "answer": "Following is the list of all version controls supported by Terraform:\nAzure DevOps Services\nAzure DevOps Server\nBitbucket Server\nBitbucket Cloud\nGitlab EE and CE\nGitlab.com\nGitHub Enterprise\nGitHub.com\nGitHub.com (OAuth)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) Is there any way to lock the Terraform Module Versions?",
+        "answer": "Yes, there is a way to lock the Terraform Module Versions. If the Terraform module registry is being used as a source, then the 'version' attribute can be used in the module in a configuration file of Terraform.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is the difference between Terraform and Cloudformation?",
+        "answer": "The following table specifies the main differences between Terraform and Cloudformation:\nTerraform Cloudformation\nTerraform is more user-friendly as it encompasses numerous Cloud Service Providers such as AWS, Azure, Google Cloud Platform, and many more. CloudFormation is only limited to AWS services.\nTerraform saves the state of the infrastructure on a virtual machine or a remote computer. The state is saved as a JSON file used as a map to describe the resources it manages. The state of Cloudformation is managed out-of-the-box by CloudFormation, which prevents conflicting updates.\nTerraform is a completely free and open-source application. It provides a premium enterprise version with more collaboration and governance features. Cloudformation is completely free. Consumers have to pay only for the AWS service that CloudFormation provides.\nTerraform can work with various cloud providers such as AWS, GCP, Azure, etc. Cloudformation may be complicated if your setup requires several cloud installations. It is best for AWS resources such as EC2, S3, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) How can we create a dependency between modules in Terraform?",
+        "answer": "In Terraform, the dependencies between modules are generally created automatically by references, rather than explicitly using depends_on. In Terraform, there is no way to use depends_on variables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What do you understand by SDN or Software Defined Networking?",
+        "answer": "The term SDN stands for Software Defined Networking. It is an approach used for network management that facilitates us to create dynamic, programmatically efficient network configurations to improve network performance and monitoring.",
+        "reference": "javatpoint.com"
+    }
+]

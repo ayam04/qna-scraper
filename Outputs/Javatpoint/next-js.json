@@ -1,0 +1,92 @@
+[
+    {
+        "question": "js?",
+        "answer": "Next.js is an open-source, lightweight React.js framework that facilitates developers to build static and server-side rendering web applications. It was created by Zeit. Next.js framework is based on React, Webpack, and Babel and allows us to write server-rendered React apps easily. It doesn't require any webpack configuration and only needs npm run dev start building your next feature-filled web application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "If you want to build a complete web application with React from scratch, you have to fulfill the following points:\nADVERTISEMENT\nADVERTISEMENT\nYour code has to be bundled using a bundler like webpack and transformed using a compiler like Babel.\nYou have to do production optimizations such as code splitting.\nYou have to pre-render some pages for performance and SEO statically. You might also want to use server-side rendering or client-side rendering.\nYou might have to write some server-side code to connect your React app to your data store.\nNext.js fulfills the above all requirements.\nReasons why the world's leading companies prefer Next.js:\nZero Setup: Next.js provides automatic code-splitting, filesystem-based routing, hot code reloading, and universal rendering; that's why the world's leading companies prefer it.\nFully Extensible: Next.js is fully extensible and has complete control over Babel and Webpack. It provides a customizable server, routing, and next plugins.\nReady for Production: Next.js is optimized for smaller build sizes, faster dev compilation, and many other improvements, making it a popular choice.\nNext.js can Deploy Anywhere: Next.js is an open-source, lightweight React.js framework that facilitates developers to build static and server-side rendering web applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js:",
+        "answer": "Zero Setup: Next.js provides automatic code-splitting, filesystem-based routing, hot code reloading, and universal rendering; that's why the world's leading companies prefer it.\nFully Extensible: Next.js is fully extensible and has complete control over Babel and Webpack. It provides a customizable server, routing, and next plugins.\nReady for Production: Next.js is optimized for smaller build sizes, faster dev compilation, and many other improvements, making it a popular choice.\nNext.js can Deploy Anywhere: Next.js is an open-source, lightweight React.js framework that facilitates developers to build static and server-side rendering web applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Before installing Next.js, you must have installed Node.js on your system. Learn how to install Node.js on your system: https://www.javatpoint.com/install-nodejs\nIt requires NPM to start installing Next.js with all its dependencies.\nFollow the steps given below to install Next.js:\nFirst, create a directory to keep the Next.js project and go into it:\nmkdir my-portfolio-site  \ncd my-portfolio-site  \nNow, initialize this with a package.json file.\nUse the y flag by npm init -y\nUse the following syntax to install Next.js\nnpm install react react-dom next  \nUpdate package.json with run script languages to start the initialization of the Next.js application.\nNow, find the package.json file on the root folder and add the below mentioned script\n{  \n  \"scripts\": {  \n    \"dev\": \"next\",  \n    \"build\": \"next build\",  \n    \"start\": \"next start\"  \n  }  \n}  \nAfter that, the filesystem is the main API. Every \".js\" file becomes a route that gets automatically processed and rendered.\nNow, the process is completed, and Next.js is installed on your system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Following is a list of the most prominent features of Next.js that excite the developers most:\njs provides the by default and easy server rendering.\njs supports static exporting.\nIt provides a Webpack-based dev environment which supports Hot Module Replacement (HMR)\nIt seaports automatic code-splitting for faster page loads.\nIt supports simple client-side routing (page-based) or file system-based routing.\nIt provides complete Webpack and Babel control.\nIt provides a faster and optimized development compilation.\nIt can be implemented with Express or any other Node.js HTTP server.\nYou can easily customize it with your own Babel and Webpack configurations.\nIt supports hot code reloading.\nBesides this, Next.js also has some awesome features such as:\nDynamic styles and themes support\nBuilt-in CSS vendor prefixing\nCSS Preprocessing via Plugins\nFull CSS support, no tradeoffs in power\nIts runtime size is very small. It is just 3kb (zipped from 12kb)\nIt provides source maps support",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Next.js is a popular framework of React.js that is most popularly used for building the following types of apps and websites:\nStatic Websites\nDesktop Websites\nSEO Friendly Websites\nServer Rendered Apps\nProgressive Web Apps (PWA) etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js with Redux?",
+        "answer": "Yes. You can easily use Next.js with Redux.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "There are multiple ways to fetch data in Next.js, but Next.js itself recommends getInitialProps, an async function to retrieve data from anywhere. When we use getInitialProps to retrieve data, it receives a context object which has the following properties:\npathname- It specifies the path section of the URL.\nquery- It is used to specify the query string section of URL parsed as an object.\nasPath- It specifies the string of the actual path (including the query) shows in the browser.\nreq- It is used to specify the HTTP request object (server only).\nres- It is used to specify the HTTP response object (server only).\nerr- It is used to specify the error object if any error is encountered during the rendering.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "To setup CDN in Next.js, the developers have to follow the steps given below:\nTo start, we have to first set up the \"assetPrefix\" setting and configure our CDN origin to support and resolve the domain that our Next.js is hosted on.\nconst isProd = process.env.NODE_ENV === 'production';  \n module.exports = {  \n// You may only need to add assetPrefix in the production.  \n assetPrefix: isProd ? 'https://cdn.mydomain.com' : ''  \n};  \nIf the CDN is present on a separate domain, we have to set a configuration option as following:\n// next.config.js  \nodule.exports = {  \ncrossOrigin: 'anonymous'  \n;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js used for the same thing?",
+        "answer": "The Create-React-App is basically React with an integrated build system. It acts like a good boilerplate, so we don't need to set up Webpack, Babel, and other dependent packages to run React. Other than that, if you require extra functionalities such as routing, server-side rendering, and so on, you just need to add packages on top of Create-React-App. On the other hand, The Next.js is an open-source, lightweight full-stack React framework that comes bundled with an efficient build system, server-side rendering, routing, API routing, and many other awesome features that make the production environment easy.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "There are mainly two ways to install and run Next.js on your system. If you're new to Next.js, we recommend that you make sure that your development environment is ready. Next.js is a React framework, and it requires Node.js to be installed on your system. If you don't have Node.js installed, you can install it from here: https://www.javatpoint.com/install-nodejs. Next.js requires Node.js version 10.13 or later. You should also have your text editor and terminal.\nSystem Requirement for Next.js\nYou must have installed Node.js version 12.0 or later.\njs supports Windows, MacOS, and Linux also.\n\nThe simplest way to install Next.js\nThe simplest way to install and run Next.js on your system is by creating a new Next.js app using create-next-app. It sets up everything automatically for you. To create a project, run the following command on the Node.js console.\nnpx create-next-app  \n# or  \nyarn create next-app   \nIf you want to start with a TypeScript project, you can use the following command:\nnpx create-next-app --typescript  \n# or  \nyarn create next-app -typescript   \nAfter completing the installation, follow the instructions to start the development server. You can also try to edit the pages/index.js and see the result on your browser, which by default runs on http://localhost:3000\nManual Installation and Setup of Next.js\nFirst, install the next react and react-dom in your project by running the following command.\nnpm install next react react-dom  \nor  \nyarn add next react react-dom  \nNow, open the package.json file and add the following scripts:\n\"scripts\": {  \n  \"dev\": \"next dev\",  \n  \"build\": \"next build\",  \n  \"start\": \"next start\",  \n  \"lint\": \"next lint\"  \n}  \nThe above script specifies the different stages of developing an application:\ndev - It runs the next dev, which starts Next.js in development mode.\nbuild - It runs \"next build\", which builds the application for production usage.\nstart - It runs \"next start\", which starts a Next.js production server.\nlint - It runs \"next lint\", which sets up Next.js' built-in ESLint configuration.\nNext.js is built around the concept of pages. A page is a React Component exported from a .js, .jsx, .ts, or .tsx file in the pages directory. Pages are associated with a route based on their filename. For example, pages/about.js is mapped to /about. You can even add dynamic route parameters with the filename.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Generally, we use the app.disable('etag') syntax to disable the etag generation in Next.js. But, this may not work for all static contents. So, we should use the following syntax to disable the etag for all static contents.\nSyntax:\napp.use(express.static(path.join(__dirname, 'public'), {  \netag: false  \n}));",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "To configure the build-id in Next.js, we must configure a static ID between our builds. So, we have to provide the \"generateBuildId\" function with the following configuration.\nSyntax:\n// next.config.js  \nmodule.exports = {  \n   generateBuildId: async () => {  \n  // For example get the latest git commit hash here  \n  return 'my-build-id';  \n  }  \n};",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How can you create a page directory inside your project?",
+        "answer": "To create a page directory inside our project we have to populate the ./pages/index.js with the following contents:\nfunction HomePage() {  \n  return <div>Welcome to Next.js!</div>  \n}  \nTo start developing our application, we have to run the npm run dev or yarn dev command. This will start the development server on http://localhost:3000. Now we can visit the localhost: http://localhost:3000 to view our application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "We can create our custom error page by defining a _error.js in the pages folder. See the following example:\nimport React from \"react\";  \nclass Error extends React.Component {  \n  static getInitialProps({ res, err }) {  \n    const statusCode = res ? res.statusCode : err ? err.statusCode : null;  \n    return { statusCode };  \n  }  \n  render() {  \n    return (  \n           {this.props.statusCode  \n          ? `An error ${this.props.statusCode} has occurred on the server`  \n          : \"An error occurred on client-side\"}  \n            );  \n  }  \n}  \nexport default Error;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Generally, code splitting is one of the most compelling features of webpack. This feature facilitates us to split our code into various bundles, which can be loaded only on-demand or in parallel. This is mainly used to achieve the smaller bundles and facilitates us to control resource load prioritization which finally has a great impact on the load time.\nThere are mainly three approaches to code splitting:\nEntry Points: It is used to split code using entry configuration manually.\nPrevent Duplication: It uses Entry dependencies or SplitChunksPlugin to dedupe and split chunks.\nDynamic Imports: It splits the code via inline function calls within modules\nIt is mainly used to enable pages that can never load unnecessary code.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "This is an important question and is asked in many Next.js interview questions. There are two ways to enable AMP in Next.js.\nAMP-First Pages\nHybrid AMP Pages\nAMP-First Pages: The AMP-First Pages are served to the primary traffic of the website as well as traffic generated from the search engine. Use the following syntax to implement AMP-first pages.\nExample:\n// pages/index.js  \nimport { withAmp } from 'next/amp'  \nfunction HomePage() {  \nreturn <p> Welcome to AMP + Next.js.</p>  \n}  \nexport default withAmp(HomePage)  \nHybrid AMP Pages: The Hybrid AMP pages allow the users to have coexisted AMP version of a traditional page so that the search engines can display the AMP version or the page in different mobile search results.\nSee the following example to understand how to implement the Hybrid AMP to pages:\nExample:\n// pages/index.js  \nimport { withAmp } from 'next/amp'  \nfunction HomePage() {  \nreturn <p> Welcome to AMP + Next.js.</p>  \n}  \nexport default withAmp(HomePage)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js in a web server like Nginx?",
+        "answer": "Next.js is not as simple as static html files. It requires an application server that runs Node.js to deploy and run a Next.js application. Here, we get requests that have to be processed on the server.",
+        "reference": "javatpoint.com"
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "question": "",
+        "answer": "Django is a free and open source web application framework, written in Python. It is a server-side web framework that provides rapid development of secure and maintainable websites.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What does Django mean?",
+        "answer": "Django is named after Django Reinhardt, a gypsy jazz guitarist from the 1930s to early 1950s who is known as one of the best guitarists of all time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) Which architectural pattern does Django follow?",
+        "answer": "Django follows Model-View-Template (MVT) architectural pattern.\nSee the following graph that shows the MVT based control flow.\n\nHere, a user requests for a resource to the Django, Django works as a controller and check to the available resource in URL.\nIf URL maps, a view is called that interact with model and template, it renders a template.\nDjango responds back to the user and sends a template as a response.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Django follows MVT (Model View Template) pattern. It is slightly different from MVC.\nModel: It is the data access layer. It contains everything about the data, i.e., how to access it, how to validate it, its behaviors and the relationships between the data.\nLet's see an example. We are creating a model Employee who has two fields first_name and last_name.\nfrom django.db import models  \n  class Employee(models.Model):  \n    first_name = models.CharField(max_length=30)  \n    last_name = models.CharField(max_length=30)  \nView: It is the business logic layer. This layer contains the logic that accesses the model and defers to the appropriate template. It is like a bridge between the model and the template.\nimport datetime  \n# Create your views here.  \nfrom django.http import HttpResponse  \ndef index(request):  \n    now = datetime.datetime.now()  \n    html = \"<html><body><h3>Now time is %s.</h3></body></html>\" % now  \n    return HttpResponse(html)    # rendering the template in HttpResponse  \nTemplate: It is a presentation layer. This layer contains presentation-related decisions, i.e., how something should be displayed on a Web page or other type of document.\nTo configure the template system, we have to provide some entries in settings.py file.\nTEMPLATES = [  \n    {  \n        'BACKEND': 'django.template.backends.django.DjangoTemplates',  \n        'DIRS': [os.path.join(BASE_DIR,'templates')],  \n        'APP_DIRS': True,  \n        'OPTIONS': {  \n            'context_processors': [  \n                'django.template.context_processors.debug',  \n                'django.template.context_processors.request',  \n                'django.contrib.auth.context_processors.auth',  \n                'django.contrib.messages.context_processors.messages',  \n            ],  \n        },  \n    },  \n]",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Is Django a high-level web framework or low-level framework?",
+        "answer": "Django is a high-level Python's web framework which was designed for rapid development and clean, realistic design.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) How would you pronounce Django?",
+        "answer": "Django is pronounced JANG-oh. Here D is silent.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) How does Django work?",
+        "answer": "Django can be broken into many components:\nModels.py file: This file defines your data model by extending your single line of code into full database tables and add a pre-built administration section to manage content.\nUrls.py file: It uses a regular expression to capture URL patterns for processing.\nViews.py file: It is the main part of Django. The actual processing happens in view.\nWhen a visitor lands on Django page, first Django checks the URLs pattern you have created and used the information to retrieve the view. After that view processes the request, querying your database if necessary, and passes the requested information to a template.\nAfter that, the template renders the data in a layout you have created and displayed the page.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Which foundation manages the Django web framework?",
+        "answer": "Django web framework is managed and maintained by an independent and non-profit organization named Django Software Foundation (DSF). The primary foundation goal is to promote, support, and advance the Django Web framework.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Is Django stable?",
+        "answer": "Yes, Django is quite stable. Many companies like Disqus, Instagram, Pinterest, and Mozilla have been using Django for many years.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the features available in Django web framework?",
+        "answer": "Features available in Django web framework are:\nADVERTISEMENT\nAdmin Interface (CRUD)\nTemplating\nForm handling\nInternationalization\nA Session, user management, role-based permissions\nObject-relational mapping (ORM)\nTesting Framework\nFantastic Documentation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Explain the advantages of Django?",
+        "answer": "Advantages of Django:\nDjango is a Python's framework which is easy to learn.\nIt is clear and readable.\nIt is versatile.\nIt is fast to write.\nNo loopholes in design.\nIt is secure.\nIt is scalable.\nIt is versatile.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the disadvantages of Django?",
+        "answer": "Following is the list of disadvantages of Django:\nDjango' modules are bulky.\nIt is completely based on Django ORM.\nComponents are deployed together.\nYou must know the full system to work with it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are the inheritance styles in Django?",
+        "answer": "There are three possible inheritance styles in Django:\n\n1) Abstract base classes: This style is used when you only want parent's class to hold information that you don't want to type out for each child model.\n2) Multi-table Inheritance: This style is used if you are sub-classing an existing model and need each model to have its database table.\n3) Proxy models: This style is used, if you only want to modify the Python level behavior of the model, without changing the model's fields.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) Is Django a content management system (CMS)?",
+        "answer": "No, Django is not a CMS. Instead, it is a Web framework and a programming tool that makes you able to build websites.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How can you set up static files in Django?",
+        "answer": "There are three main things required to set up static files in Django:\n1) Set STATIC_ROOT in settings.py\n2) run manage.py collect static\n3) set up a Static Files entry on the PythonAnywhere web tab",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is some typical usage of middlewares in Django?",
+        "answer": "Some usage of middlewares in Django is:\nSession management,\nUse authentication\nCross-site request forgery protection\nContent Gzipping",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What does of Django field class types do?",
+        "answer": "The Django field class types specify:\nThe database column type.\nThe default HTML widget to avail while rendering a form field.\nThe minimal validation requirements used in Django admin.\nAutomatic generated forms.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "py?",
+        "answer": "Django-admin.py: It is a Django's command line utility for administrative tasks.\nManage.py: It is an automatically created file in each Django project. It is a thin wrapper around the Django-admin.py. It has the following usage:\nIt puts your project's package on sys.path.\nIt sets the DJANGO_SETTING_MODULE environment variable to points to your project's setting.py file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the signals in Django?",
+        "answer": "Signals are pieces of code which contain information about what is happening. A dispatcher is used to sending the signals and listen for those signals.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What are the two important parameters in signals?",
+        "answer": "Two important parameters in signals are:\nReceiver: It specifies the callback function which connected to the signal.\nSender: It specifies a particular sender from where a signal is received.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) How to handle URLs in Django?",
+        "answer": "To handle URL, django.urls module is used by the Django framework.\nLet's open the file urls.py of the project and see the what it looks like:\n// urls.py\nfrom django.contrib import admin  \nfrom django.urls import path  \n  urlpatterns = [  \n    path('admin/', admin.site.urls),  \n]  \nSee, Django already has mentioned a URL here for the admin. The path function takes the first argument as a route of string or regex type.\nThe view argument is a view function which is used to return a response (template) to the user.\nThe django.urls module contains various functions, path(route,view,kwargs,name) is one of those which is used to map the URL and call the specified view.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is Django Exception?",
+        "answer": "An exception is an abnormal event that leads to program failure. To deal with this situation, Django uses its exception classes and supports all core Python exceptions as well. Django core exceptions classes are defined in django.core.exceptions module.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What are the different types of Django Exception Classes?",
+        "answer": "The django.core.exceptions module contains the following classes\nException Description\nAppRegistryNotReady It is raised when attempting to use models before the app loading process.\nObjectDoesNotExist The base class for DoesNotExist exceptions.\nEmptyResultSet If a query does not return any result, this exception is raised.\nFieldDoesNotExist It raises when the requested field does not exist.\nMultipleObjectsReturned This exception is raised by a query if only one object is expected, but multiple objects are returned.\nSuspiciousOperation This exception is raised when a user has performed an operation that should be considered suspicious from a security perspective.\nPermissionDenied It is raised when a user does not have permission to perform the action requested.\nViewDoesNotExist It is raised by django.urls when a requested view does not exist.\nMiddlewareNotUsed It is raised when a middleware is not used in the server configuration.\nImproperlyConfigured The ImproperlyConfigured exception is raised when Django is somehow improperly configured.\nFieldError It is raised when there is a problem with a model field.\nValidationError It is raised when data validation fails to form or model field validation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is Django Session?",
+        "answer": "A session is a mechanism to store information on the server side during the interaction with the web application. By default, session stores in the database and also allows file-based and cache based sessions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is the role of Cookie in Django?",
+        "answer": "A cookie is a small piece of information which is stored in the client browser. It is used to store user's data in a file permanently (or for the specified time). Cookie has its expiry date and time and removes automatically when gets expire. Django provides built-in methods to set and fetch cookie.\nThe set_cookie() method is used to set a cookie and get() method is used to get the cookie.\nThe request.COOKIES['key'] array can also be used to get cookie values.\nfrom django.shortcuts import render  \nfrom django.http import HttpResponse  \n  def setcookie(request):  \n    response = HttpResponse(\"Cookie Set\")  \n    response.set_cookie('java-tutorial', 'javatpoint.com')  \n    return response  \ndef getcookie(request):  \n    tutorial  = request.COOKIES['java-tutorial']  \n    return HttpResponse(\"java tutorials @: \"+  tutorial);",
+        "reference": "javatpoint.com"
+    }
+]

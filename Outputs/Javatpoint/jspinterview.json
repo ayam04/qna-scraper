@@ -1,0 +1,207 @@
+[
+    {
+        "question": "1) What is JSP?",
+        "answer": "Java Server Pages technology (JSP) is a server-side programming language used to create a dynamic web page in the form of HyperText Markup Language (HTML). It is an extension to the servlet technology.\nA JSP page is internally converted into the servlet. JSP has access to the entire family of the Java API including JDBC API to access enterprise database. Hence, Java language syntax has been used in the java server pages (JSP). The JSP pages are more accessible to maintain than Servlet because we can separate designing and development. It provides some additional features such as Expression Language, Custom Tags, etc.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the life-cycle methods for a JSP?",
+        "answer": "Method Description\npublic void jspInit() It is invoked only once, same as init method of the servlet.\npublic void _jspService(ServletRequest request,ServletResponse)throws ServletException,IOException It is invoked at each request, same as service() method of the servlet.\npublic void jspDestroy() It is invoked only once, same as destroy() method of the servlet.\n3) List out some advantages of using JSP.\nADVERTISEMENT\nBetter performance.\nThe compilation of JSP is done before it is processed by the server which eradicates the need for loading of interpreter and code script each time.\nJSP has access to all-powerful enterprises.\nEasy to maintain: JSP can be easily managed because we can easily separate our business logic with presentation logic. In Servlet technology, we mix our business logic with the presentation logic.\nJSP can also be used in combination with servlets.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "ADVERTISEMENT\nBetter performance.\nThe compilation of JSP is done before it is processed by the server which eradicates the need for loading of interpreter and code script each time.\nJSP has access to all-powerful enterprises.\nEasy to maintain: JSP can be easily managed because we can easily separate our business logic with presentation logic. In Servlet technology, we mix our business logic with the presentation logic.\nJSP can also be used in combination with servlets.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The syntax for JSP comments is:\n<%-- Comment --%>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the difference between hide comment and output comment?",
+        "answer": "The JSP comment is called hide comment whereas HTML comment is called output comment. If a user views the source of the page, the JSP comment will not be shown whereas HTML comment will be displayed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the JSP implicit objects?",
+        "answer": "JSP provides nine implicit objects by default. They are as follows:\nObject Type\n1) out JspWriter\n2) request HttpServletRequest\n3) response HttpServletResponse\n4) config ServletConfig\n5) session HttpSession\n6) application ServletContext\n7) pageContext PageContext\n8) page Object\n9) exception Throwable\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is the difference between include directive and include action?",
+        "answer": "include directive include action\n1) The include directive includes the content at page translation time. 1) The include action includes the content at request time.\n2) The include directive includes the original content of the page, so page size increases at runtime 2) The include action doesn't include the original content rather invokes the include() method of Vendor provided class.\n3) It's better for static pages. 3) 3) It's better for dynamic pages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Is JSP technology extensible?",
+        "answer": "Yes. JSP technology is extensible through the development of custom actions, or tags, which are encapsulated in tag libraries.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) How can I implement a thread-safe JSP page? What are the advantages and Disadvantages of using it?",
+        "answer": "You can make your JSPs thread-safe by having them implement the SingleThreadModel interface. This is done by adding the directive <%@ page isThreadSafe=\"false\" %> within your JSP page.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) How can I prevent the output of my JSP or Servlet pages from being cached by the browser?",
+        "answer": "(OR) How to disable caching on the back button of the browser?\n<%  \nresponse.setHeader(\"Cache-Control\",\"no-store\");   \nresponse.setHeader(\"Pragma\",\"no-cache\");   \nresponse.setHeader (\"Expires\", \"0\"); //prevents caching at the proxy server  \n%>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "(OR) How to disable caching on the back button of the browser?",
+        "answer": "<%  \nresponse.setHeader(\"Cache-Control\",\"no-store\");   \nresponse.setHeader(\"Pragma\",\"no-cache\");   \nresponse.setHeader (\"Expires\", \"0\"); //prevents caching at the proxy server  \n%>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How can we handle the exceptions in JSP?",
+        "answer": "There are two ways to perform exception handling, one is by the errorPage element of page directive, and second is by the error-page element of the web.xml file.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "?",
+        "answer": "There are two ways to include the result of another page:\nBy include directive\nBy include action",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How can we forward the request from JSP page to the servlet?",
+        "answer": "Yes of course! With the help of \"forward action\" tag, but we need to give the URL-pattern of the servlet.\nforward action tag",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) Can we use the exception implicit object in any JSP page?",
+        "answer": "No. The exception implicit object can only be used in the error page which defines it with the isErrorPage attribute of page directive.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How is JSP used in the MVC model?",
+        "answer": "JSP is usually used for presentation in the MVC pattern (Model View Controller ), i.e., it plays the role of the view. The controller deals with calling the model and the business classes which in turn get the data, and this data is then presented to the JSP for rendering on to the client.\nforward action tag",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What are context initialization parameters?",
+        "answer": "Context initialization parameters are specified by the <context-param> in the web.xml file, and these are initialization parameter for the whole application and not specific to any servlet or JSP.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What are the different scope values for the <jsp:useBean> tag?",
+        "answer": "There are 4 values:\npage\nrequest\nsession\napplication\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What do JSP literals consist of?",
+        "answer": "Boolean\nInteger\nFloating point\nString\nNull",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the purpose of <jsp:useBean>?",
+        "answer": "The jsp:useBean action searches for the existence of the object with specified name. If not found, it creates one.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the purpose of <jsp:setProperty >?",
+        "answer": "This action sets the properties of a bean.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the purpose of <jsp:getProperty >?",
+        "answer": "This action retrieves the properties of a bean.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The possible scope values are:\npage\nrequest\nsession\napplication",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the use of 'out' implicit object?",
+        "answer": "The object is used to give a response to contents.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The object is used between the client requests for the tracking of client sessions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The object is used for the generation of a response to the errors thrown.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the difference between ServletContext and PageContext?-",
+        "answer": "ServletContext gives the information about the container whereas PageContext gives the information about the Request.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "getRequestDispatcher()?",
+        "answer": "request.getRequestDispatcher(path) is used to create it we need to give the relative path of the resource whereas context.getRequestDispatcher(path)to create it we need to give the absolute path of the resource.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is EL in JSP?",
+        "answer": "The Expression Language(EL) is used in JSP to simplify the accessibility of objects. It provides many objects that can be used directly like param, requestScope, sessionScope, applicationScope, request, session, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the primary differences between the JSP custom tags and java beans?",
+        "answer": "Custom tags can manipulate JSP content whereas beans cannot.\nComplex operations can be reduced to a significantly simpler form with custom tags than with beans.\nCustom tags require quite a bit more work to set up than do beans.\nCustom tags are available only in JSP 1.1 and later, but beans can be used in all JSP 1.x versions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) Can an interface be implemented in the JSP file?",
+        "answer": "No.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is JSTL?",
+        "answer": "JSP Standard Tag Library is a library of predefined tags that ease the development of JSP.\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) How many tags are provided in JSTL?",
+        "answer": "There is 5 type of JSTL tags.\ncore tags\nsql tags\nxml tags\ninternationalization tags\nfunctions tags\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) Which directive is used in JSP custom tag?",
+        "answer": "The JSP taglib directive.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What are the three tags used in JSP bean development?",
+        "answer": "jsp:useBean\njsp:setProperty\njsp:getProperty\nMore details.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How to disable session in JSP?",
+        "answer": "<%@ page session=\"false\" %>   \n36) List the various action tags used in JSP.\nFollowing are the list of various action tags used in JSP:\njsp:forward: This action tag forwards the request and response to another resource.\njsp:include: This action tag is used to include another resource.\njsp:useBean: This action tag is used to create and locates bean object.\njsp:setProperty: This action tag is used to set the value of the property of the bean.\njsp:getProperty: This action tag is used to print the value of the property of the bean.\njsp:plugin: This action tag is used to embed another component such as the applet.\njsp:param: This action tag is used to set the parameter value. It is used in forward and includes mostly.\njsp:fallback: This action tag can be used to print the message if the plugin is working.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following are the list of various action tags used in JSP:\njsp:forward: This action tag forwards the request and response to another resource.\njsp:include: This action tag is used to include another resource.\njsp:useBean: This action tag is used to create and locates bean object.\njsp:setProperty: This action tag is used to set the value of the property of the bean.\njsp:getProperty: This action tag is used to print the value of the property of the bean.\njsp:plugin: This action tag is used to embed another component such as the applet.\njsp:param: This action tag is used to set the parameter value. It is used in forward and includes mostly.\njsp:fallback: This action tag can be used to print the message if the plugin is working.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) Explain the steps for creating custom tags in JSP?",
+        "answer": "For creating any custom tag, we need to follow the following steps:\nCreate the Tag handler class\nTo generate the Tag Handler, we are inheriting the TagSupport class and overriding its method doStartTag().To write data for the JSP, we need to use the JspWriter class.\nThe PageContext class provides getOut() method that returns the instance of JspWriter class. TagSupport class provides an instance of pageContext by default.\nCreate the TLD file\nTag Library Descriptor (TLD) file contains information of tag and Tag Hander classes. It must hold inside the WEB-INF directory.\nCreate the JSP file\nLet's use the tag in our JSP file. Here, we are specifying the path of tld file directly. However, it is recommended to use the URI name instead of full a path of tld file. We will learn about URI later. It uses taglib directive to use the tags defined in the tld file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The jsp:plugin action tag is used to embed an applet in the JSP file. The jsp:plugin action tag downloads plugin at client side to execute an applet or bean.\nExample of displaying applet in JSP\n<html>    \n    <head>    \n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">    \n        <title>Mouse Drag</title>    \n    </head>    \n    <body bgcolor=\"khaki\">    \n<h1>Mouse Drag Example</h1>    \n     <jsp:plugin align=\"middle\" height=\"500\" width=\"500\"    \n     type=\"applet\"  code=\"MouseDrag.class\" name=\"clock\" codebase=\".\"/>    \n        </body>    \n</html>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is Expression language in JSP?",
+        "answer": "The Expression Language (EL) simplifies the accessibility of data stored in the Java Bean component, and other objects like request, session, application.\nThere are many implicit objects, operators and reserve words in EL.\nIt is the newly added feature in JSP technology version 2.0.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Implicit Objects Usage\npageScope it maps the given attribute name with the value set in the page scope\nrequestScope it maps the given attribute name with the value set in the request scope\nsessionScope it maps the given attribute name with the value set in the session scope\napplicationScope it maps the given attribute name with the value set in the application scope\nparam it maps the request parameter to the single value\nparamValues it maps the request parameter to an array of values\nheader it maps the request header name to the single value\nheaderValues it maps the request header name to an array of values\ncookie it maps the given cookie name to the cookie value\ninitParam it maps the initialization parameter\npageContext it provides access to many objects request, session, etc.",
+        "reference": "javatpoint.com"
+    }
+]

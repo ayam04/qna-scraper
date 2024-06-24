@@ -1,0 +1,297 @@
+[
+    {
+        "question": "js?",
+        "answer": "Vue.js is a progressive framework of JavaScript used to create Dynamic User Interfaces and single-page applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js called a progressive framework?",
+        "answer": "Vue.js called a progressive framework because it is being changed and developed continually.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js supposed to be a competitor of Angular in upcoming days?",
+        "answer": "Vue.js is also used to build User Interfaces and single-page applications like Angular. Nowadays, it is evolving very fast, and with time, new libraries and extensions are coming into existence.\nMany developers' community is using Vue.js, and the popularity of this JavaScript language is increasing day by day. That's why it is supposed to be a potential competitor of Angular.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Evan you is the founder of Vue.js. He was working at Google on several Angular projects when he founded Vue.js.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the VUE-resource? How would you install the Vue-Resource?",
+        "answer": "The VUE-resource is a plug-in for Vue.js. This plug-in is used with Vue.js to make web requests and handle responses, in which XHMLHttpRequests or JSONP is used.\nYou can use the following yarn or npm command to install VUE-resource:\n$ yarn add vue-resource  \n$ npm install vue-resource",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js in your project?",
+        "answer": "You can install Vue.js in your project by using the following 4 methods:\nYu can use CDN by including <script> tag in HTML file.\nYou can install Vue.js by using Node Package Manager (NPM).\nYou can install Vue.js using Bower.\nYou can also use Vue-cli to setup your project.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "You can create a new Vue instance by using the Vue function:\nvar vm = new Vue({  \n  // options  \n})   \nYou have to create a new Vue instance when you want to start a Vue application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Following is the list of advantages of using Vue.js:\nVery Small In Size\nOne of Vue.js' biggest advantages is that it is very small in size. This exciting JavaScript plug-in is only 18-21KB, so you can download and use it very easily in no time.\nEasy to Understand and Use\nThe framework of Vue.js is very easy to understand, and it id one of the reasons for the popularity of this framework. The users can easily add Vue.js to their web project because of its simple structure and develop applications.\nSimple Integration with Existing Applications\nVue.js framework can be integrated with the existing applications very easily. Vue.js has a lot of components for everything. You can integrate it with any application that is written in JavaScript.\nFlexible in nature\nThe flexible nature of Vue.js also makes it easy to understand for the developers of React.js, Angular.js, and any other new JavaScript framework. It provides a lot of flexibility to use virtual nodes to write HTML files, JavaScript files, and pure JavaScript files.\nComponents\nYou can create reusable custom elements in Vue.js applications.\n\nEasy & comprehensive documentation\nThe documentation of Vue.js is very easy and comprehensive so that developers can develop applications or web pages, only having little knowledge about HTML.\nVirtual DOM\nVue.js uses virtual DOM similar to other existing frameworks such as ReactJS, Ember, etc. Virtual DOM is a light-weight in-memory tree representation of the original HTML DOM and updated without affecting the original DOM.\nTwo-Way Communication\nVue.js provides two-way communications with its MVVM architecture that makes it very easy to handle HTML blocks.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Following is the list of some websites using Vue.js on parts of their projects and applications:\nADVERTISEMENT\nGrammarly\nNetflix\nAdobe\nFacebook\nLaracast\nBehance\nGitlab\nEuronews\nCodeship\nLivestorm\nXiaomi\nAlibaba\nWizzair etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is the difference between one-way data flow/ or one-way data binding and two-way data binding?",
+        "answer": "In one-way data binding or one-way data flow, the view (UI) part of the application does not update automatically. In this model, when the data Model is changed, you need to write some custom code to make it updated every time after the change. The v-bind directive is used for one-way data flow or binding in Vue.js.\nOn the other hand, in two-way data binding, the view (UI) part of the application is automatically updated when the data Model is changed. The v-model directive is used for two way data binding in Vue.js.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The v-model directive is used to create Two-Way Bindings in Vue js. In Two-Way Bindings, data or model binds with DOM, and Dom binds back to the model.\nLet's see an example to demonstrate how Two-Way Bindings is implemented.\n<div id=\"app\">  \n  {{message}}  \n  <input v-model=\"message\">  \n</div>  \n<script type=\"text/javascript\">  \n  var message = 'Vue.js is rad';  \n  new Vue({ el: '#app', data: { message } });  \n</script>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, every component instance has its own isolated scope. So, you cannot directly reference parent data in a child component's template.\nProps are used to pass down data to the child components. Props are custom attributes. You can register on a component. When a value is passed to a prop attribute, it becomes a property on that component instance.\nVue.component('blog-post', {  \n  // camelCase in JavaScript  \n  props: ['postTitle'],  \n  template: '<h3>{{ postTitle }}</h3>'  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Mixins in Vue.js are a set of defined logic that is stored in a particular way. Mixins can be re-used repeatedly to add functionality to your Vue instances and components. Mixins are important because they provide a lot of functionalities. Following is the list of features that Mixins provide:\nMixins facilitate you to easily adhere to the DRY principle and ensure that you do not repeat yourself.\nMixins provide great flexibility.\nMixin contains options for Vue components.\nYou can use Mixins in Vue.js safely because they do not affect changes outside their defined scope.\nMixins in Vue.js provide a great platform for code reusability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is Vuex?",
+        "answer": "VueX is a state management pattern and library for the Vue.js application. It is used as a centralized store for all the different components in the Vue.js application. Vuex provides some rules to ensure that the state can only be mutated in a predictable fashion. You can get a lot of additional features by integrating Vuex with the official devtool extension of Vue.js.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The Filters are functionality provided by Vue.js components that allow you to apply formatting and transformations to your dynamic template data. Filters are used in two places, mustache interpolations, and v-bind expressions. Filters don't change a component data or anything, but they only affect the output.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Following is the list of main usages of filters in Vue.js:\nFilters are mainly used to filter the data on the DOM level to provide you the data that is still intact in the storage but is represented in the custom specified manner.\nFilters are used to enhance the presentation of the view layer.\nThe filters are also reusable.\nYou can declare a filter globally and use it on any desirable component.\nFilters facilitate you to format your data at the view level.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js? How?",
+        "answer": "Yes, we can call Rest API from Vue.js. There are several HTTP libraries that can used to call REST Api's from Vue.js. One of the popular libraries is Axios. It is very simple to use and lightweight. You can include it in your project by using the following command.\nnpm install axios --save  \nImplementing GET method using Axios in Vue JS  \naxios({ method: \"GET\", \"URL\": \"https://httpbin.org/ip\" }).then(result => {  \n                this.ip = result.data.origin;  \n            }, error => {  \n                console.error(error);  \n            });",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js application?",
+        "answer": "You can create a project by using the following command:\nvue init webpack myproject  \nTo run your project, run the following command:\nnpm run build  \nAfter executing the above command, copy index.html and /dist/ folder into your website root directory, and your project will be deployed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The Vue-loader is a loader module for webpack in Vue.js that is used to write single file components using the .vue file format.\nThe single-file component contains three sections called template, script, and style. The webpack can extract and process each section using separate loader modules such as the SASS or SCSS loaders. The vue-loader module makes static assets to be treated as module dependencies and enables processing using webpack loaders.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "See the following example which demonstrates how to handle Events in Vue.js:\nHTML Code:\n<div id=\"app\">  \n  Name: <input type=\"text\" v-model=\"name\">  \n  <button v-on:click=\"myClickHandler\">Say Hello button>  \ndiv>   \nJS Code:\nvar myViewModel = new Vue({  \n  el: '#app',  \n  data: my Model,  \n  // A click handler inside methods  \n  methods: {  \n    ClickHandler: function(e) {  \n      alert(\"Hello \" + this.name);  \n    }  \n  }  \n });",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "There are a set of directives in Vue.js used to show or hide elements according to the conditions. These directives are also known as conditional directives.\nv-if\nv-else\nv-else-if\nv-show\nv-model\nv-on\nv-if directive: The v-if directive is used to add or remove the DOM elements based on the given expression. For example, the below button will not show if isLoggedIn if you set it to false.\n<button v-if=\"isLoggedIn\">Logout</button>  \nThe v-if directive also facilitates you to control multiple elements with a single v-if statement by wrapping all the elements in a <template> element with the condition. For example, you can conditionally apply both label and button together.\n<template v-if=\"isLoggedIn\">  \n  <label> Logout </button>  \n  <button> Logout </button>  \n</template>  \nv-else directive: The v-else directive is used to display content only when the expression adjacent v-if set to false. This is same as else block in any programming language to display alternative content and it is preceded by v-if or v-else-if block. You don't need to pass any value to this. For example, v-else is used to display LogIn button if isLoggedIn is set to false (not logged in).\n<button v-if=\"isLoggedIn\"> Logout </button>  \n<button v-else> Log In </button>  \nv-else-if directive: The v-else-if directive is used when you want more than two options to be checked. For example, if you want to display some text instead of LogIn button when ifLoginDisabled property is set to true, you can achieve this through v-else statement.\n<button v-if=\"isLoggedIn\"> Logout </button>  \n<label v-else-if=\"isLoginDisabled\"> User login disabled </label>  \n<button v-else> Log In </button>  \nv-show directive: The v-show directive is similar to v-if but it renders all elements to the DOM and then uses the CSS display property to show/hide elements. This directive is preferred if you want the elements to switch on and off frequently.\n<span v-show=\"user.name\">Welcome user,{{user.name}}</span>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the difference between v-show and v-if directives?",
+        "answer": "The most common differences between v-show and v-if directives are given below:\nIndex v-show directive v-if directive\n1. The v-if directive is used to render the element to the DOM only if the expression passes. The v-show directive is used to render all elements to the DOM and then uses the CSS display property to show/hide elements according to the expression.\n2. The v-if directive also supports v-else and v-else-if directives. The v-show directive doesn't support the v-else and v-else-if directives.\n3. The v-if directive has higher toggle costs since it adds or removes the DOM every time. The v-show directive has higher initial render costs.\n4. The v-if directive has the advantage when it comes to initial render time. The v-show directive has a performance advantage if you have to switch on and switch off the elements frequently.\n5. The v-if directive supports the tab. The v-show directive doesn't support the tab.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "To render DOM elements more efficiently, Vue.js reuses the elements instead of creating a new element every time. The key is a kind of flag that tells Vue \"if the data associated with this child component is moved somewhere else, then move the component along with it to preserve the changes that already exist.\"",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "It is recommended not to use v-if and v-for directives together on the same element because the v-for directive has a higher priority than v-if directive. If you use both directives together, then there are two common cases where this may be tempting:\nWhen you have to filter items in a list (e.g. v-for=\"user in users\" v-if=\"user.isActive\"). In these cases, replace users with a new computed property that returns your filtered list (e.g., activeUsers).\nTo avoid rendering a list if it should be hidden (e.g. v-for=\"user in users\" v-if=\"shouldShowUsers\"). In these cases, move the v-if to a container element (e.g., ul, ol).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The following types of directives are used in Vue.js:\nGeneral Directives\nLiteral Directives\nEmpty Directives\nCustom Directives",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "As the name suggests, the array detection mutation methods in Vue.js are used to modify the original array. Following is a list of array mutation methods which trigger view updates:\npush()\npop()\nshift()\nunshift()\nsplice()\nsort()\nreverse()\nWhen you perform any of the above mutation methods on the list, then it triggers view update.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The array detection non-mutation methods in Vue.js are the methods that do not mutate the original array but always return a new array.\nFollowing is a list of the non-mutation methods:\nfilter()\nconcat()\nslice()\nFor example, let's take a todo list where it replaces the old array with new one based on status filter:\nvmvm.todos = vm.todos.filter(function (todo) {  \n  return todo.status.match(/Completed/)  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js provides?",
+        "answer": "Normally, JavaScript provides event.preventDefault() or event.stopPropagation() inside event handlers. We can use Vue.js methods, but these methods are meant for data logic instead of dealing with DOM events.\nVue.js provides the following event modifiers for v-on and these modifiers are directive postfixes denoted by a dot symbol.\n.stop\n.prevent\n.capture\n.self\n.once\n.passive\nSee the following example of stop modifier:\n<!-- the click event's propagation will be stopped -->  \n<a v-on:click.stop=\"methodCall\"></a>  \nExample of chain modifiers as follows:\n<!-- modifiers can be chained -->  \n<a v-on:click.stop.prevent=\"doThat\"></a>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) Give an example to demonstrate how can you use event handlers?",
+        "answer": "Event handlers are used in Vue.js are similar to plain JavaScript. The method calls also support the special $event variable.\nExample:\n<button v-on:click=\"show('Welcome to VueJS world', $event)\">  \n  Submit  \n</button>  \nmethods: {  \n  show: function (message, event) {  \n    // now we have access to the native event  \n    if (event) event.preventDefault()  \n    console.log(message);  \n  }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "We can define custom key modifier aliases via the global config.keyCodes. Following are some guidelines for the properties:\nWe can't use camelCase. Instead, we should use a kebab-case with double quotation marks.\nWe can define multiple values in an array format.\nSee the example:\nVue.config.keyCodes = {  \n  f1: 112,  \n  \"media-play-pause\": 179,  \n  down: [40, 87]  \n}  \nNote: The use of keyCode events is deprecated, and the new browsers don't support it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Vue.js supports the following modifiers to trigger mouse or keyboard event listeners when we press the corresponding keys. The list of supported System Modifier Keys is:\n\n.ctrl\n.alt\n.shift\n.meta\nSee the following example of a control modifier with the click event.\nExample:\n<!-- Ctrl + Click -->  \n<div @click.ctrl=\"doAction\">Do some action here</div>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, local registration is required when the global registration seems not ideal. For example, suppose you are using a build system like Webpack and globally registering all components. In that case, even if we stop using a component, it could still be included in your final build. This unnecessarily increases the amount of JavaScript your users have to download. In these cases, it is better to define your components as plain JavaScript objects as follows:\nvar ComponentA = {/*.......*/}   \nvar ComponentB = {/*.......*/}   \nvar ComponentC = {/*.......*/}  \nAfter that define the components you would like to use in a components option as follows:\nnew Vue({  \nel: '#app',  \ncomponents: {  \n'component-a': ComponentA,  \n'component-b': ComponentA  \n}  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Vue.js supports the following mouse button modifiers:\n.left\n.right\n.middle\nExample:\nThe usage of .right modifier as follows:\n<button   \n  v-if=\"button === 'right'\"  \n  v-on:mousedown.right=\"increment\"  \n  v-on:mousedown.left=\"decrement\"  \n/>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "Following are the three modifiers supported for the v-model directive in Vue.js:\nlazy: By default, the v-model directive syncs the input with the data after each input event. We can add the lazy modifier to instead sync after change events.\n<!-- synced after \"change\" instead of \"input\" -->  \n<input v-model.lazy=\"msg\" >   \nnumber: The number modifier is used to our v-model when we want user input to be automatically typecast as a number. With the type=\"number\", the value of HTML input elements always returns a string. That's why this typecast modifier is required.\n<input v-model.number=\"age\" type=\"number\">  \ntrim: We should add the trim modifier to our v-model when we want whitespace from user input to be trimmed automatically.\n<input v-model.trim=\"msg\">",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) When the components need a single root element?",
+        "answer": "In Vue.js 2.x version, every component must have a single root element when template has more than one element. In this case, you need to wrap the elements with a parent element.\n<template>  \n   <div class=\"todo-item\">  \n       <h2>{{ title }}</h2>  \n       <div v-html=\"content\"></div>  \n   </div>  \n</template>  \nOtherwise, it will show an error, saying that \"Component template should contain exactly one root element,\"\nThe Vue.js 3.x version facilitates that the components now can have multiple root nodes. This way of adding multiple root nodes is called as fragments.\n<template>  \n     <h2>{{ title }}</h2>  \n     <div v-html=\"content\"></div>  \n</template>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The global registration in components in Vue.js facilitates us to use it in the template of any root Vue instance (new Vue) created after registration.\nIn the global registration, the components created using Vue.component as follows:\nVue.component('my-component-name', {  \n  // ... options ...  \n})  \nWe can take multiple components which are globally registered in the vue instance,\nVue.component('component-a', { /* ... */ })  \nVue.component('component-b', { /* ... */ })  \nVue.component('component-c', { /* ... */ })  \nnew Vue({ el: '#app' })  \nThe above components can be used in the vue instance as follows:\n<div id=\"app\">  \n  <component-a></component-a>  \n  <component-b></component-b>  \n  <component-c></component-c>  \n</div>  \nNote: The components can be used in subcomponents as well.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, the v-for directive is used because it allows us to loop through items in an array or object. By using this directive, we can iterate on each element in the array or object.\nExample of v-for directive usage in Array:\n<ul id=\"list\">  \n  <li v-for=\"(item, index) in items\">  \n    {{ index }} - {{ item.message }}  \n  </li>  \n</ul>  \nvar vm = new Vue({  \n  el: '#list',  \n  data: {  \n    items: [  \n      { message: 'Alex' },  \n      { message: 'Muler' }  \n    ]  \n  }  \n})  \nWe can also use the delimiter instead of in, similar to JavaScript iterators.\nExample of v-for directive usage in Object:\n<div id=\"object\">  \n  <div v-for=\"(value, key, index) of user\">  \n    {{ index }}. {{ key }}: {{ value }}  \n  </div>  \n</div>  \nvar vm = new Vue({  \n  el: '#object',  \n  data: {  \n    user: {  \n      firstName: 'Alex',  \n      lastName: 'Muller',  \n      age: 30  \n    }  \n  }  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) Give an example to demonstrate how do you reuse elements with key attribute?",
+        "answer": "Vue.js always facilitates us to render elements as efficiently as possible. So, it is possible to reuse the elements instead of building them from scratch. But this can create problems in few scenarios. For example, if you try to render the same input element in both v-if and v-else blocks then it holds the previous value as follows:\n<template v-if=\"loginType === 'Admin'\">  \n  <label>Admin</label>  \n  <input placeholder=\"Enter your ID\">  \n</template>  \n<template v-else>  \n  <label>Guest</label>  \n  <input placeholder=\"Enter your name\">  \n</template>  \nIn the above case, we should not reuse it. It is better to make both input elements as separate by applying key attribute as follows:\n<template v-if=\"loginType === 'Admin'\">  \n  <label>Admin</label>  \n  <input placeholder=\"Enter your ID\" key=\"admin-id\">  \n</template>  \n<template v-else>  \n  <label>Guest</label>  \n  <input placeholder=\"Enter your name\" key=\"user-name\">  \n</template>  \nIn the above example, both inputs are independent and do not impact each other.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) Why is it recommended to use a key attribute for directive?",
+        "answer": "It is recommended to use a key attribute for a directive to track each node's identity and thus reuse and reorder existing elements. We have to provide a unique key attribute for each item with in v-for iteration. An ideal value for the key would be the unique id of each item.\nExample:\n<div v-for=\"item in items\" :key=\"item.id\">  \n  {{item.name}}  \n</div>  \nThat's why it is always recommended to provide a key with v-for whenever possible unless the iterated DOM content is simple.\nNote: We should use string or numeric values instead of non-primitive values like objects and arrays.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What do you understand by the array detection non-mutation methods?",
+        "answer": "The methods that do not mutate the original array but always return a new array are known as non-mutation methods.\nFollowing is a list of the non-mutation methods:\nfilter() method\nconcat() method\nslice() method\nLet's take an example to understand it better. We have a todo list replacing the old array with a new one based on the status filter.\nExample:\nvmvm.todos = vm.todos.filter(function (todo) {  \n  return todo.status.match(/Completed/)  \n})  \nThis approach would not re-render the entire list due to Vue.js implementation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, if you are using vue-router, you should use router.go(path) to navigate to any particular route. You can access the router from within a component using this.$router. router.go() changed in Vue.js 2.0. You can use router.push({ name: \"yourroutename\"}) or just router.push(\"yourroutename\") now to redirect.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, the <slot> element is used to serve as distribution outlets for content.\nLet's take an example to create an alert component with slots for content insertion.\nExample:\nIn Vue.js, the <slot> element is used to serve as distribution outlets for content.\nLet's take an example to create an alert component with slots for content insertion.\nExample:\nVue.component('alert', {  \n  template: `  \n    <div class=\"alert-box\">  \n      <strong>Error!</strong>  \n      <slot></slot>  \n    </div>`  \n})  \nWe can insert dynamic content as follows:\n<alert>  \n  There is an issue with in application.  \n</alert>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, the Single File Components are used to solve the common problems in a JavaScript-driven application with a .vue extension.\nFollowing is a list of issues solved by Single File Components in Vue.js:\nGlobal definitions specify unique names for every component.\nString templates lack syntax highlighting and require ugly slashes for multiline HTML.\nNo CSS support. It means while HTML and JavaScript are modularized into components, CSS is conspicuously left out.\nNo, build step restrictions to HTML and ES5 JavaScript, rather than preprocessors like Pug and Babel.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) What are the different ways to create filters?",
+        "answer": "There are two ways to define filters:\nLocal filters: You can define local filters in a component's options. In this case, filter is applicable to that specific component.\nfilters: {  \n  capitalize: function (value) {  \n    if (!value) return ''  \n    valuevalue = value.toString()  \n    return value.charAt(0).toUpperCase() + value.slice(1)  \n  }  \n}  \nGlobal filters: You can also define a filter globally before creating the Vue instance. In this case, filter is applicable to all the components within the vue instance,\nVue.filter('capitalize', function (value) {  \n  if (!value) return ''  \n  valuevalue = value.toString()  \n  return value.charAt(0).toUpperCase() + value.slice(1)  \n})  \nnew Vue({  \n  // ...  \n})",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What do you understand by mapState helper?",
+        "answer": "In the Vuex application, creating a computed property every time whenever we want to access the store's state property or getter is going to be repetitive, difficult, and boring, especially if a component needs more than one state property. In this situation, we can use the mapState helper of vuex, which generates computed getter functions for us.\nIn the following increment example, we have demonstrated the mapState helper:\n// in full builds helpers are exposed as Vuex.mapState  \nimport { mapState } from 'vuex'  \nexport default {  \n  // ...  \n  computed: mapState({  \n    // arrow functions can make the code very succinct!  \n    username: state => state.username,  \n    // passing the string value 'username' is same as `state => state.username`  \n    usernameAlias: 'username',  \n    // to access local state with `this`, a normal function must be used  \n     greeting (state) {  \n      return this.localTitle + state.username  \n    }  \n  })  \n}  \nYou can also pass a string array to mapState when the name of a mapped computed property is the same as a state sub-tree name\ncomputed: mapState([  \n  // map this.username to store.state.username  \n  'username'  \n])",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What are the most prominent features of stylelint?",
+        "answer": "Following is a list of the most prominent features of stylelint:\nThe stylelint has more than 160 built-in rules to catch errors, apply limits and enforce stylistic conventions.\nIt understands the latest CSS syntax, including custom properties and level 4 selectors.\nIt extracts the embedded styles from HTML, markdown, and CSS-in-JS object & template literals.\nIt is also used to parse CSS-like syntaxes like SCSS, Sass, Less, and SugarSS.\nIt supports for reusing community plugins and creating their plugins.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, a single-file component is a file with a .vue extension that contains a Vue component. The single-file component consists of the component's template, logic, and styles, all bundled together in one file. It also contains one <script> block, optional <template> and <style> blocks, and possible additional custom blocks.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "To use a single-file component in Vue.js, we have to set up Vue Loader for parsing the file (It is done automatically as a part of a webpack building pipeline). It also supports non-default languages such as Sass or HTML templating languages with pluggable pre-processors.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, the $parent property is used to access the parent instance from a child. It is similar to the $root property. The $parent property provides direct access, but it makes the application hard to test and debug. In this property, it is very difficult to find out where the mutation comes from.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, the $child property is just like $parent property, but it is used to access the child instance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The ref if an attribute that is used to access a component directly. Despite having the props and events, if you want to access a child component directly, you can assign a reference ID to the child component using the ref attribute.\nExample:\n<base-input ref =\"usernameInput\"></base-input>   \nNow you can use this.$refs.usernameInput where we have to define this ref in the component.\nYou should avoid accessing $refs from within templates or computed properties because $refs are only populated after the component has been rendered, and they are not reactive.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js apps, and how can they be solved?",
+        "answer": "In Vue.js applications, memory leaks often come from using third-party libraries that create their own instances and/or manipulate the DOM. The v-if directive and the Vue Router destroy Vue component instances. To overcome this issue, do a cleanup action before the component gets destroyed. It should be done manually in the beforeDestroy() lifecycle hook.\nFor example, suppose we have a fictional library named PowerGraph.js, inside our component. It creates a graph instance that displays some data on the page:\nmounted() {  \n  this.chart = new PowerGraph();  \n}  \nHere, we have to call the graph instance's destroy() method or implement our own cleanup method:\nbeforeDestroy() {  \n  this.chart.destroy();  \n}  \nIf we don't do cleanup action before our component gets destroyed, then that memory will never be released, and this will be a memory leak.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "When a Vue instance is created in Vue.js, it goes through a series of steps after creation. First, they are created then mounted and after that destroyed at the end. In this process, it also runs functions known as life cycle hooks. These life cycle hooks allow the developers to add their own code at a specific stage.\nFollowing is the list of all events or hooks a Vue instance goes through:\nbeforeCreate event: This is the first event or hook that occurs in the creation process. It facilitates developers to perform actions even before the component has been added to the DOM. We cannot access the DOM inside of this event.\ncreated event: This event is used to run the code after creating the instance. It facilitates you to access the reactive data, but the mounting or rendering of templates and Virtual DOM is not completed yet.\nbeforeMount event: The beforeMount event is used to execute just before the initial render happens and after the template or render functions have been compiled. This is the rarely used event, and in most cases, you don't need to use this event.\nmounted event: This is the most frequently used event or hook. In this event, you have full access to the reactive component, templates, and rendered DOM.\nbeforeUpdate event: This event is executed just before the data changes on the component and the update cycle's start. It runs right before the DOM is patched and re-rendered.\nupdated: This event is used to execute after the data changes on the component and the DOM re-renders. If you want to access the DOM after a property change, it is the best place to complete this action.\nbeforeDestroy: This event is used to execute just before tearing down the instance. This is the second last step of the Vue Instance life process and is the right place to clean up events or reactive subscriptions if you have to do this.\ndestroyed: This is the last step of the Vue Instance life process and used to do any last minute clean up.\nLifecycle Diagram of the Vue Instance\nThe following diagram shows the complete life cycle of Vue Instance:",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "Lifecycle Diagram of the Vue Instance",
+        "answer": "The following diagram shows the complete life cycle of Vue Instance:",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "54) What is Vue Router? What do you understand by Vue Router?",
+        "answer": "The official router of Vue.js is called Vue Router. It is by default integrated with Vue.js core and used to build Single Page Applications with Vue.js.\nFollowing is the list of important features of Vue Router:\nVue Router follows a modular, component-based router configuration.\nVery easy to implement.\nYou can customize the Scroll Behavior.\nProvides Nested route/view mapping.\nProvides fine-grained navigation control.\nRoute params, query, wildcards\njs' transition system provides View transition effects.\nLinks with automatic active CSS classes.\nHTML5 history mode or hash mode, with auto-fallback in IE9.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, a slot is a placeholder in a child component filled with content passed from the parent component.\nIn the slot, the component is compiled in the parent's scope and then passed to the child component. So, it is not possible to use child component properties in a slot's content.\nIn Scoped slot, you can pass child component data to the parent scope and then use it in slot content.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "In Vue.js, the virtual DOM is a tree-like data structure or a collection of JavaScript objects that represents DOM nodes. Vue.js manage the nodes of the virtual DOM, and that should be rendered on the page. These objects are called \"virtual nodes\" or VNodes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js?",
+        "answer": "The virtual DOM's main purpose is to make DOM manipulation faster and more efficient. It becomes very crucial when you have a lot of nodes in your DOM. In this case, updating these nodes is a very expensive task for processing power and resources required. Here, virtual DOM comes into action and makes JavaScript object significantly faster. Vue.js automatically organizes DOM updates in batches to enhance efficiency.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "js app?",
+        "answer": "In Vue.js, the data is passed to child components from the parent component using a prop or a custom attribute. This custom attribute becomes a property on the child component instance. This procedure is called a one-way data flow.\nOnce the parent component updates a prop value, the child component is automatically updated. The child component can communicate back to the parent via an event, but mutating a property inside a child component should not be done. It does not affect the parent component also unless it is an object or array. When the child component instance emits an event, the parent assigns a handler to that event, and data is passed back to the parent.",
+        "reference": "javatpoint.com"
+    }
+]

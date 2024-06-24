@@ -1,0 +1,252 @@
+[
+    {
+        "question": "1) What is the best way to debug a Python program?",
+        "answer": "This command can be used to debug a Python program.\nPython -m pdb Python-script.py",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What does the Python keyword imply?",
+        "answer": "In Python, we can use the <yield> keyword to convert any Python function into a Python generator. Yields function similarly to a conventional return keyword. However, it will always return a generator object. A function can also use the <yield> keyword multiple times.\nCode\ndef creating_gen(index):  \n    months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']  \n    yield months[index]  \n    yield months[index+2]  \nnext_month = creating_gen(3)  \nprint(next(next_month), next(next_month))  \nOutput:\napr jun\nExplanation:\nThe given code characterizes a generator capability named creating_gen that accepts a record as a contention and yields two sequential months from a predefined list. The generator is then introduced with an underlying file of 3, making a generator object called next_month. The following() capability is utilized two times to acquire the following two yielded values from the generator, which address two sequential months. At long last, the code prints these two months. Fundamentally, the generator effectively delivers sets of months, and the code exhibits the successive extraction of these month matches utilizing the following() capability.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How can I make a tuple out of a list?",
+        "answer": "We can transform a list into a tuple using the Python tuple() method. Since a tuple is immutable, we can't update the list after it has been converted to a tuple.\nCode\nmonth = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']  \nconverting_list = tuple(month)  \nprint(converting_list)  \nprint(type(converting_list))  \nOutput:\n('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')\n<class 'tuple'>\nExplanation:\nThe code scrap instates a rundown called month containing the names of the a year. It then changes over this rundown into a tuple utilizing the tuple() capability and relegates the outcome to the variable converting_list. The code prints the changed over tuple and its sort utilizing print(converting_list) and print(type(converting_list)), individually. In outline, this code exhibits the change of a rundown of months into a tuple, displaying the subsequent tuple and its information type. Tuples, similar to records, are iterable and requested assortments, yet they are changeless, meaning their components can't be altered after creation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What exactly is a NumPy array?",
+        "answer": "NumPy arrays are much more versatile than Python lists. Reading and writing objects are quicker and more efficient using NumPy arrays.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) In Python, in what ways can you make an empty NumPy array?",
+        "answer": "In Python, there are two ways to build an empty array:\nCode\nimport numpy  \n#method 1  \narray_1 = numpy.array([])  \nprint(array_1)  \n#method 2  \narray_2 = numpy.empty(shape=(3,3))  \nprint(array_2)  \nOutput:\n[]\n[[9.03420200e-308 7.54982336e-308 0.00000000e+000]\n [0.00000000e+000 0.00000000e+000 0.00000000e+000]\n [0.00000000e+000 0.00000000e+000 1.20953760e-311]]\nExplanation:\nThe gave code shows two unique strategies for making NumPy exhibits. In the main strategy, an unfilled cluster called array_1 is made utilizing numpy.array([]), bringing about an underlying void exhibit. In the subsequent technique, array_2 is made utilizing numpy.empty(shape=(3,3)), which creates a 3x3 exhibit loaded up with uninitialized values. The code then prints the two exhibits, displaying the result. In synopsis, the code outlines how to make a vacant exhibit and one more with uninitialized values involving NumPy in Python.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) In Python, what is a negative index?",
+        "answer": "In Arrays and Lists, Python contains a unique feature called negative indexing. Python starts indexing from the beginning of an array or list in a positive integer but reads items from the ending of an array or list in a negative index.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Tell the output of the following code?",
+        "answer": "Code\nimport array  \na = [4, 6, 8, 3, 1, 7]  \nprint(a[-3])  \nprint(a[-5])  \nprint(a[-1])  \nOutput:\n3\n6\n7\nExplanation:\nThe given code utilizes a standard Python list named 'a' containing components [4, 6, 8, 3, 1, 7]. It shows the utilization of negative records to get to components from the finish of the rundown. The articulations a[-3], a[-5], and a[-1] recover the third-to-endure, fifth-to-endlessly last components of the rundown, individually. At the point when printed, these qualities are 3, 6, and 7, exhibiting the capacity to get to components in switch request utilizing negative files. Generally, negative ordering gives a helpful method for getting to components comparative with the finish of the rundown.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the Python data type SET, and how can I use it?",
+        "answer": "\"set\" is a Python data type which is a sort of collection. Since Python 2.4, it's been a part of the language. A set is a collection of distinct and immutable items that are not in any particular sequence.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) In Python, how do you create random numbers?",
+        "answer": "We can create random data in Python utilizing several functions. They are as follows:\nADVERTISEMENT\nrandom() - This instruction gives a floating-point value ranging from 0 to 1.\nuniform(X, Y) - This function gives a floating-point value in the X and Y range.\nrandint(X, Y) - This function gives a random integer between X and Y values.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) How do you print the summation of all the numbers from 1 to 101?",
+        "answer": "Using this program, we can display the summation of all numbers from 1 to 101:\nCode\nPrint( sum(range(1,102)) )  \nOutput:\n5151\nExplanation:\n\nThe gave code computes the amount of numbers from 1 to 101 utilizing the aggregate() capability and the reach() capability. The articulation sum(range(1, 102)) creates a succession of numbers from 1 to 101 (comprehensive) and afterward computes their total. The outcome is printed utilizing the print() capability. In synopsis, this code proficiently figures and shows the amount of the whole numbers from 1 to 101.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) In a function, how do you create a global variable?",
+        "answer": "We can create a global variable by designating it as global within every function that assigns to it; we can utilize it in other functions:\nCode\nglobal_var = 0  \ndef modify_global_var():  \n    global global_var # Setting global_var as a global variable  \n    global_var = 10  \ndef printing_global_var():  \n    print(global_var) # There is no need to declare global variable  \nmodify_global_var()  \nprinting_global_var() # Prints 10  \nOutput:\n10\nExplanation:\nThe code characterizes a worldwide variable named global_var introduced to 0. It then characterizes two capabilities: modify_global_var() sets the worldwide variable to 10 utilizing the worldwide catchphrase, and printing_global_var() prints the worldwide variable. Subsequent to calling modify_global_var(), the worldwide variable is changed to 10, and when printing_global_var() is executed, it prints the refreshed worth. In outline, the code shows the utilization of the worldwide watchword to alter a worldwide variable inside a capability, permitting changes to engender outside the capability's extension.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Is it possible to construct a Python program that calculates the mean of numbers in a list?",
+        "answer": "Calculating the Average of Numbers in Python:\nCode\nn = int(input(\"Number of Elements to take average of: \"))  \nl=[]  \nfor i in range(1,n+1):  \n    element = int(input(\"Enter the element: \"))  \n    l.append(element)  \naverage = sum(l)/n  \nprint(\"Average of the elements in list\",round(average,2))  \nOutput:\nNumber of Elements to take average of: 4\nEnter the element: 5\nEnter the element: 25\nEnter the element: 74\nEnter the element: 24\nAverage of the elements in list 32.0\nExplanation:\nThis code works out the normal of a rundown of numbers given by the client. It takes client input for the quantity of components (n) and iteratively prompts for every component. The components are put away in a rundown l, and the normal is determined by separating the amount of the components by the complete number of components. The outcome is then printed with an adjusted worth to two decimal spots. In rundown, the code productively processes and shows the normal of a client characterized rundown of numbers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) Is it possible to build a Python program that reverses a number?",
+        "answer": "Python program to reverse number:\nCode\nn = int(input(\"Enter number: \"))  \n  reverse = 0  \n  while(n>0):  \n    digit = n%10  \n    reverse = reverse*10+digit  \n    n=n//10  \nprint(\"The reverse of the number:\",reverse)  \nOutput:\nEnter number: 35257\nThe reverse of the number: 75253\nExplanation:\nThis code piece switches a number entered by the client. It takes a number info (n) and instates a variable converse to 0. The code then, at that point, utilizes some time circle to iteratively separate the last digit of the number (digit) and constructs the switched number (turn around) by duplicating the ongoing worth of opposite by 10 and adding the extricated digit. The circle go on until all digits are handled. At last, the switched number is printed. Basically, the code proficiently works out and shows the opposite of a client input whole number utilizing some time circle.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) In Python, what is the distinction between a list and a tuple?",
+        "answer": "S. No. List Tuple\n1. Lists are editable, which means that we can change them. Tuples (which are just lists that we cannot alter) are immutable.\n2. Lists are comparatively slower Tuples are more efficient than lists.\n3. Syntax: list1 = [100, 'Itika', 200] Syntax: tup1 = (100, 'Itika', 200)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) Is Python programming language or scripting language?",
+        "answer": "Python is a programming language that is frequently utilized for prearranging because of its straightforwardness and coherence. Be that as it may, it is a flexible language fit for taking care of a great many undertakings, from little scripts to huge scope programming improvement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Python is a deciphered programming language, significance its code is executed line by line by the Python translator without a different gathering step. This prompts more prominent adaptability, simplicity of improvement, and movability, though with possibly somewhat more slow execution contrasted with gathered dialects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the meaning of pep 8?",
+        "answer": "PEP 8 is a style guide for Python code, illustrating best practices and shows to further develop code coherence. It covers viewpoints like space, naming shows, whitespace, and that's only the tip of the iceberg. PEP means \"Python Improvement Proposition,\" and Energy 8 explicitly centers around code designing to upgrade consistency and viability across Python projects. Adhering to Enthusiasm 8 rules is prescribed to guarantee spotless, intelligible, and steady Python code.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What are the advantages of Python?",
+        "answer": "The advantages of utilizing Python are as follows:\nSimple to understand and utilize- Python is a powerful language of programming that is simple to learn, read, and write.\nInterpreted language- Python is an interpreted language, which means it runs the program line by line & pauses if any line contains an error.\nDynamically typed- when coding, the programmer does not set data types to variables. During execution, it is automatically assigned.\nPython is free and open-source to use and share. It's free and open source.\nExtensive library support- Python has a large library of functions that can perform practically any task. It also allows you to use Python Package Manager to import additional packages (pip).\nPython applications are portable and can execute on any system without modification.\nPython's data structures are easy to understand.\nIt allows for additional functionality while requiring less coding.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) In Python, what are decorators?",
+        "answer": "Decorators are just employed to add certain layout patterns to a method without affecting the structure of the function. Typically, decorators are identified before the event they will be improving. We should first define a decorator's function before using it. The function to which We will implement the decorator's function is then written, and the decorator function is simply positioned above it. In this instance, the @ symbol comes preceding the decorator.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How is a Python Dictionary different from List comprehensions?",
+        "answer": "Dictionary & list comprehensions are yet another means of defining dictionaries and lists in a simple manner.\nThis is example of list comprehension\nCode\nlist_comp = [i for i in range(4)]  \nprint(list_comp)  \nOutput:\n[0, 1, 2, 3]\nThis is example of dictionary\nExplanation:\nThe code uses a rundown understanding to make a rundown called list_comp containing numbers from 0 to 3. The print(list_comp) proclamation yields the created list. Generally, it shows a succinct method for developing and show a rundown of successive numbers in Python.\nCode\ndictt = {i : i+2 for i in range(10)}  \nprint(dictt)  \nOutput:\n{0: 2, 1: 3, 2: 4, 3: 5, 4: 6, 5: 7, 6: 8, 7: 9, 8: 10, 9: 11}\nExplanation:\nThis code scrap utilizes a word reference understanding to make a word reference called dictt. It coordinates each number from 0 to 9 with its comparing esteem increased by 2. The print(dictt) proclamation yields the subsequent word reference, outlining an effective method for creating and show a word reference with key-esteem matches in Python. In synopsis, the code features the brief development and printing of a word reference utilizing an understanding.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the most prevalent Python built-in data types?",
+        "answer": "Numbers- Integers, complex numbers, and floating points are Python's most prevalent built-in data structures. For example, 1, 8.1, 3+6i.\nList- A list is a collection of objects that are arranged in a specific order. A list's components could be of multiple data kinds. For example, [[10,'itika',7] .4]\nTuple- It's also a set of items in a specific order. Tuples, not like lists, are immutable, meaning we cannot modify them. For example, (7,'itika',2)\nString- A string is a collection of characters. Single or double quotations are used to declare them. \"Itika,\" \"She is learning coding through Javatpoint\", and so on.\nSet- A set is a group of unrelated elements which are not in any particular sequence. (2, 3, 4, 5)\nDictionary- A dictionary is a collection of key and value combinations in which each value may be accessed by its key. The sequence of the items is irrelevant. For example, {3:'ape', 6:'monkey'}\nBoolean- True and False is indeed the two possible boolean values.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "pyc files?",
+        "answer": "The Python code we save is contained in the .py files. The .pyc files are created when the program is integrated into the current program from some other source. This file contains the bytecode for the Python files that we imported. The interpreter reduces processing time if we transform the source files having the format of .py files to .pyc files.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How is a local variable different from a global variable?",
+        "answer": "Global Variables: Global variables are those that have been declared outside of a function. The scope outside of the function is known as global space. Any program function has access to these variables.\nLocal Variables: Any variable declared inside a function is referred to as a local variable. This variable does not exist in the global domain; it only exists locally.\nCode\n# Python program to show how global variables and local variables are different  \nvar = 56  \n# Creating a function  \ndef addition():  \n    var1 = 7  \n    c = var + var1  \n    print(\"In local scope: \", var1)  \n    print(\"Adding a global scope and a local scope variable: \", c)  \naddition()  \nprint(\"In global scope: \", var)  \nOutput:\nIn local scope:  7\nAdding a global scope and a local scope variable:  63\nIn global scope:  56\nExplanation:\n\nThe code exhibits the qualification among worldwide and nearby factors in Python. It instates a worldwide variable var with a worth of 56. Inside the function expansion(), a neighborhood variable var1 is made with a worth of 7. The function adds the worldwide variable var and the nearby factor var1, and the outcomes are printed inside the neighborhood scope. Outside the function, the worldwide variable var is printed. The code outlines how factors pronounced inside a function have neighborhood scope, and their qualities don't influence worldwide factors. In outline, it features the detachment among worldwide and neighborhood scopes in Python.\nIt will generate an error if you attempt to access the local variable exterior of the function addition().",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the distinction between Python Arrays and Python Lists?",
+        "answer": "In Python, arrays and lists both store data similarly. On the other hand, arrays can only have a single data type element, while lists can contain any data type component.\nCode\n# Python program to show the difference between a list and an array  \n  # Importing array module  \nimport array as arr  \n  # Creating an array and a list  \narray_1 = arr.array(\"i\", [3, 6, 2, 7, 9, 5])  \nlist_1 = [4, 'Interview', 7.20]  \n  print(array_1)  \nprint(list_1)  \n  # Trying to create an array with multiple data types  \ntry:  \n    array_2 = arr.array(\"i\", [3, 7, 3, \"Interview\"])  \nexcept Exception as e:  \n    print(e)  \nOutput:\narray('i', [3, 6, 2, 7, 9, 5])\n[4, 'Interview', 7.2]\n'str' object cannot be interpreted as an integer\nExplanation:\nThe code uses the cluster module to make a number exhibit named array_1 and a rundown named list_1. It prints both the exhibit and the rundown, displaying the adaptability of Python information structures. Nonetheless, while endeavoring to make another exhibit (array_2) with blended information types, the code experiences an exemption because of the predefined type code \"I\" for numbers. The blunder is gotten and printed utilizing an attempt with the exception of block. In synopsis, the code features the creation and printing of a whole number cluster and a rundown, and it exhibits the impediment of making exhibits with blended information types utilizing the cluster module.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What exactly is __init__?",
+        "answer": "In Python, __init__ is a function or function Object() { [native code] }. When a new object/instance of a class is created, this function is automatically called to reserve memory. The __init__ method is available in all classes.\nHere's an instance of how to put it to good use.\nCode\n# Python program to explain __init__  \n  class Student:  \n    def __init__(self, st_name, st_class, st_marks):  \n        self.st_name = st_name  \n        self.st_class = st_class  \n        self.st_marks = 67  \nS1 = Student(\"Itika\", 10, 67)  \nprint(S1.st_name)  \nprint(S1.st_class)  \nOutput:\nItika\n10\nExplanation:\nThe code characterizes a Python class named Understudy with a __init__ strategy, which fills in as the constructor. The __init__ technique introduces the qualities st_name, st_class, and st_marks for each example of the class. At the point when an occurrence S1 is made with explicit qualities for these traits, the __init__ strategy is naturally called to set the underlying qualities. The code then, at that point, prints the st_name and st_class qualities of the occurrence S1. In synopsis, the code exhibits the utilization of the __init__ technique to instate credits while making cases of a class, displaying the capacity to tweak object instatement in Python.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is a lambda function, and how does it work?",
+        "answer": "A lambda function is a type of nameless function. This method can take as many parameters as you want but a single statement.\nCode\n# Python program to show how to use lambda functions  \n  # Creating a lambda function for addition  \nsum_ = lambda x, y, z : x + y + z  \nprint(\"Sum using lambda function is: \", sum_(4, 6, 8))  \nOutput:\nSum using lambda function is:  18\nExplanation:\nThe code defines a lambda function named sum_ for expansion, taking three boundaries (x, y, and z). The lambda function ascertains the amount of these boundaries and prints the outcome utilizing the print() proclamation. Basically, it shows the succinct creation and utilization of a lambda function for expansion, giving a shorthand method for characterizing little, unknown capabilities in Python. The result of the code is the amount of the qualities 4, 6, and 8, displaying the usefulness of the lambda function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) In Python, what is the self?",
+        "answer": "A self is a class instance or object. This is explicitly supplied as the initial argument in Python. However, in Java, in which it is optional, that's not the case. Local variables make it easy to differentiate between a class's methods and attributes.\nIn the init method of a class, the self variable corresponds to the freshly generated objects, whereas it relates to the entity whose method can be called in the class's other methods.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) How do these commands work: break, pass and continue?",
+        "answer": "Break The loop is terminated when a criterion is fulfilled, and control is passed to the subsequent statement.\nPass You can use this when you need a code block syntactically correct but don't want to run it. This is a null action in essence. When it is run, nothing takes place.\nContinue When a specified criteria is fulfilled, the control is moved to the start of the loop, allowing some parts of the loop currently in execution to be skipped.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) In Python, how would you randomise the elements of a list while it's running?",
+        "answer": "Consider the following scenario:\nCode\n# Python program to show to randomise elements of a list  \n  # Importing the random module  \nimport random  \nlist_ = [\"Python\", \"Interview\", \"Questions\", \"Randomise\", \"List\"]  \nprint(\"Original list: \", list_)  \nrandom.shuffle(list_)  \nprint(\"After randomising the list: \", list_)  \nOutput:\nOriginal list:  ['Python', 'Interview', 'Questions', 'Randomise', 'List']\nAfter randomising the list:  ['List', 'Interview', 'Python', 'Randomise', 'Questions']\nExplanation:\nThe code utilizes the random.shuffle() function to haphazardly reorder the components of a rundown named list_. It first prints the first rundown and afterward applies the random.shuffle() function to haphazardly rearrange the components. The subsequent rundown is printed, exhibiting the successful randomization of the first rundown. In synopsis, the code features how to utilize the random.shuffle() function to rearrange the components of a rundown in an irregular request, giving a basic method for acquainting haphazardness with the grouping of components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the difference between pickling and unpickling?",
+        "answer": "The Pickle module takes any Python object and then transforms it into the representation of a string, which it then dumps into a file using the dump method. Unpickling is the procedure of recovering authentic Python items from a saved string representation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What method will you use to turn the string's all characters into lowercase letters?",
+        "answer": "The lower() function could be used to reduce a string to lowercase.\nCode\n# Python program to show how to convert a string to lower case  \n  string = 'JAVATPOINT'  \nprint(string.lower())  \nOutput:\njavatpoint\nExplanation:\nThe code changes the string 'JAVATPOINT' over completely to lowercase utilizing the lower() strategy and prints the outcome. This shows a straightforward method for changing the instance of characters in a string in Python.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) How do you comment on multiple lines at once in Python?",
+        "answer": "Multi-line comments span many lines. A # must precede all lines that we will comment on. You could also use a convenient alternative to comment on several lines. All you have to do is press down the ctrl key, hold it, and click the left mouse key in every area where you need a # symbol to appear, then write a # once. This will add a comment to the lines wherever you insert your cursor.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) In Python, what are docstrings?",
+        "answer": "Docstrings stands for documentation strings, which are not just comments. We enclose the docstrings in triple quotation marks. They are not allocated to any variable, and, as a result, they can also be used as comments.\nCode\n# Python program to show how to write a docstring  \n  \"\"\" \nThis is a docstring. \nWe write docstrings to explain a program. \nThis program will multiply two numbers and then display the output. \n\"\"\"  \na = 39  \nb = 45  \nc = a * b  \nprint(\"Result of multiplication: \", c)  \nOutput:\nResult of multiplication:  1755\nExplanation:\nThe given code duplicates two numbers, 39 and 45, and allocates the outcome to the variable c. The print() proclamation then, at that point, shows the consequence of the augmentation, which is the result of these two numbers. In outline, the code proficiently works out and prints the duplication of 39 and 45, displaying an essential number juggling activity in Python.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Python's \"re\" module provides three ways for modifying strings. They are as follows:\nsplit() \"splits\" a string into a list using a regex pattern.\nsub() finds all substrings that match the regex pattern given by us. Then it replaces that substring with the string provided.\nsubn() is analogous to sub() in that it gives the new string and the number of replacements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What is the best way to add items to a Python array?",
+        "answer": "We can use the append(), extend(), as well as insert (i,x) methods to add items to an array.\nCode\n# Python program to show how to add elements to an array  \n  array = arr.array('d', [1 , 2 ,3] )  \narray.append(8) # appending will add an element to the end of the array  \nprint(array)  \narray.extend([4,6,9]) # extending will add elements by looping through the given iterable  \nprint(array)  \narray.insert(2, 9) # inserting will add the element at the specified index  \nprint(array)  \nOutput:\narray('d', [1.0, 2.0, 3.0, 8.0])\narray('d', [1.0, 2.0, 3.0, 8.0, 4.0, 6.0, 9.0])\narray('d', [1.0, 2.0, 9.0, 3.0, 8.0, 4.0, 6.0, 9.0])\nExplanation:\nThe code utilizes the exhibit module to make a twofold accuracy drifting point cluster named 'exhibit' introduced with values [1.0, 2.0, 3.0]. It then, at that point, shows three unique strategies to adjust the cluster:\nThe append() technique adds the worth 8 to the furthest limit of the cluster.\nThe extend() technique attaches various components (4, 6, 9) to the cluster.\nThe insert() technique adds the worth 9 at list 2 in the exhibit.\nEvery adjustment is trailed by printing the refreshed exhibit, displaying different ways of controlling cluster components in Python.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the best way to remove values from a Python array?",
+        "answer": "The pop() or remove() methods can be used to remove array elements. The distinction between these 2 methods is that the first returns the removed value, while the second does not.\nCode\n# Python program to show how to remove elements from a Python array  \n  array = arr.array('d', [1, 3, 8, 1, 4, 8, 2, 4])  \nprint(array.pop()) # By default it will remove and return the last element of the array  \nprint(array.pop(5)) # It will return and remove the element present at 5th index  \narray.remove(1) # It will remove only the first occurrence of the element - 1 from the array  \nprint(array)  \nOutput:\n4.0\n8.0\narray('d', [3.0, 8.0, 1.0, 4.0, 2.0])\nExplanation:\nThe code introduces a twofold accuracy drifting point exhibit named 'cluster' with values [1.0, 3.0, 8.0, 1.0, 4.0, 8.0, 2.0, 4.0]. It then exhibits three distinct strategies for eliminating components from the cluster:\nThe pop() technique, without a file indicated, eliminates and returns the last component of the cluster.\nThe pop(5) strategy eliminates and returns the component at the fifth list.\nThe remove(1) strategy dispenses with the principal event of the worth 1 from the exhibit.\nEvery expulsion activity is trailed by printing the refreshed exhibit, showing different ways of erasing components from a Python cluster.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) In Python, what is monkey patching?",
+        "answer": "The phrase \"monkey patch\" in Python exclusively references run-time dynamic alterations to a module.\nCode\nclass My_Class:  \n    def f(self):  \n        print(\"f()\")  \nThe monkey-patch testing will then be done as follows:\nimport monk  \ndef monkey_f(self):  \n     print (\"we  are calling monkey_f()\")  \n     # changing address of func  \nmonk.My_Class.func = monkey_f  \nobject_ = monk.My_Class()  \n    object_.func()  \nExplanation:\nIn the given code code, a class named My_Class is characterized with a strategy f(), which basically prints the string \"f()\". Following this, a monkey-fix testing situation is illustrated. Monkey fixing includes powerfully changing or broadening code at runtime, commonly to adjust the way of behaving of existing classes or works.\nFor this situation, an outer module named priest is imported, and another capability named monkey_f is characterized. This new capability prints the string \"we are calling monkey_f()\". The monkey fixing itself is performed by doling out the monkey_f capability to the func characteristic of the My_Class class in the priest module. This really replaces the first f() technique with the recently characterized monkey_f().\nA while later, an example of My_Class is made and doled out to the variable object_. When the func() technique is approached this article, it currently alludes to the monkey-fixed monkey_f() capability. Subsequently, the result of the code will be \"we are calling monkey_f()\" rather than the first \"f()\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) In Python, how do you make an empty class?",
+        "answer": "An empty class has no statements contained within its blocks. It can be produced by using the pass keyword. But you can make an object outside the class. The PASS statement doesn't do anything in Python.\nCode\n# Python program to show how to make an empty class  \n  class my_class:  \n    pass  \nobject_ = my_class()  \nobject_.name = \"Javatpoint\"  \nprint(\"Name = \", object_.name)  \nOutput:\nName = \nJavatpoint\nExplanation:\nThe code characterizes a basic class my_class, makes a case of it, and powerfully adds a property named name with the worth \"Javatpoint\" to the example. It then, at that point, prints the worth of the name trait, outlining the unique idea of characteristic task in Python classes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Code\n# Python program to show how to implement bubble sort  \n  def bubble_Sort(array):  \n    n = len(array)  \n  for i in range(n-1):  \n         for j in range(0, n-i-1):  \n             if array[j] > array[j + 1] :  \n                array[j], array[j + 1] = array[j + 1], array[j]  \n     print(array)  \n  #example array  \narr = [23, 14, 64, 13, 64, 23, 86]  \n  bubble_Sort(arr)  \nOutput:\n[13, 14, 23, 23, 64, 64, 86]\nExplanation:\nThe code characterizes an essential execution of the Air pocket Sort calculation to sort a cluster in climbing request. The bubble_Sort function accepts an exhibit as information and repeats through its components, looking at nearby coordinates and trading them on the off chance that they are all mismatched. This cycle is rehashed for every component until the whole exhibit is arranged. The code exhibits the arranging of a model cluster [23, 14, 64, 13, 64, 23, 86] utilizing the bubble_Sort function and prints the arranged exhibit. In synopsis, the code shows a straightforward Air pocket Sort calculation for arranging an exhibit in climbing request.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Code\n#taking number of terms to print the series  \nn = 9  \nfirst = 0 #first value of series  \nsecond = 1 #second value of series  \nseries = [first, second]  \nif n == 0:  \n     print(\"The required fibonacci series is\",first)  \nelse:  \n     for i in range(0,n-2):   \n         num = series[i] + series[i+1]  \n         series.append(num)  \nprint(series)  \nOutput:\n[0, 1, 1, 2, 3, 5, 8, 13, 21]\nExplanation:\nThe given Python code means to produce a Fibonacci series in light of the quantity of terms determined by the variable n. It introduces the initial two upsides of the series (first and second) as 0 and 1, separately, and stores them in a rundown named series. The code then, at that point, checks if the quantity of terms (n) is zero; assuming this is the case, it prints the primary worth of the series. In any case, it enters a circle that repeats n - twice, computing the following term in the series by adding the past two terms and adding it to the series list. At long last, the created Fibonacci series is printed. In any case, there is a slight issue with the circle end condition, as it probably won't create the right number of terms in the event that n is under 2. Generally, the code expects to produce a Fibonacci series in view of the predetermined number of terms, utilizing a rundown to store the series components and a circle to register them.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Code\n# Python program to check if a number is prime or not  \n  # Declaring a variable  \nn = 37  \nif n == 2:  \n    print(\"2 is a prime number\")  \n  if n != 1:  \n    for i in range(2, n):  \n        if n % i == 0:  \n            print(\"The given number is a composite number\")  \n            break  \n        if i == n-1:  \n            print(\"The given number is a prime number\")  \nelse:  \n    print(\"1 is not a prime number\")  \nOutput:\nThe given number is a prime number\nExplanation:\nThe code decides if a given number 'n' is prime or composite. On the off chance that 'n' is 2, it straightforwardly expresses that it is an indivisible number. For different cases, it actually takes a look at detachability by numbers from 2 to 'n-1'. If 'n' is separable by any number here, it is viewed as a composite number, and the circle breaks. On the off chance that 'n' isn't distinguishable by any number, it is recognized as an indivisible number. On the off chance that 'n' is 1, it expresses that 1 is definitely not an indivisible number. In rundown, the code really arranges the given number as one or the other prime or composite and handles the extraordinary instance of 1.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Below is the program.\nCode\n# Python program to check if the given string is a palindrome  \n  # Creating a string  \nsequence = 'abjucujba'  \n# Reversing the string  \nreverse = sequence[::-1]  \n  # Checking if the string is a palindrome  \nif reverse == sequence:  \n    print(\"The sequence is a palindrome\")  \nelse:  \n    print(\"The sequence is not a palindrome\")  \nOutput:\nThe sequence is a palindrome\nExplanation:\nThe code checks if a given string 'succession' is a palindrome. It first switches the string utilizing cutting documentation (sequence[::- 1]) and stores the outcome in the variable 'turn around'. Then, at that point, it contrasts 'opposite' and the first 'arrangement'. Assuming they are equivalent, the string is recognized as a palindrome, and the code prints that it is a palindrome. In any case, it prints that the string isn't a palindrome. In rundown, the code proficiently decides if the info string is a palindrome or not.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) In a NumPy array, how do I extract the indices of N maximum values?",
+        "answer": "Using the code below.\nCode\nimport numpy   \narray = numpy.array([4, 8, 4, 9, 2])  \nprint(array.argsort()[-2:][::-1])  \nOutput:\n[3 1]\nExplanation:\nThe code uses the NumPy library to make an exhibit named 'cluster' containing whole numbers. It then, at that point, applies the argsort() function, which returns the records that would sort the cluster. The code chooses the last two records (files of the two biggest components) utilizing [-2:] and turns around the request with [::- 1]. At long last, it prints the files of the two biggest components in sliding request. Basically, the code proficiently distinguishes and shows the records of the two biggest components in the NumPy exhibit.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) Using Python/ NumPy, write code to compute percentiles?",
+        "answer": "The following method can be used to determine percentiles.\nCode\nimport numpy   \narray = numpy.array([3, 6, 1, 6, 5, 2])  \npercentile = numpy.percentile(array, 45) #Returns 45th percentile  \nprint(percentile)  \nOutput:\n3.5\nExplanation:\nThe code utilizes the NumPy library to make an exhibit named 'cluster' containing numbers. It then, at that point, utilizes the percentile() function to work out the 45th percentile of the exhibit, addressing the worth beneath which 45% of the information falls. The outcome is printed, exhibiting the way that NumPy works with the calculation of percentiles for mathematical information. In rundown, the code proficiently ascertains and shows the 45th percentile of the given exhibit.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is the code.\nCode\nnum = 1101001  \nwhile(num > 0):  \n    l = num % 10  \n     if l!=0 and l!=1:  \n         print(\"given number is not binary\")  \n         break  \n     num = num // 10  \n     if num == 0:  \n         print(\"given number is binary\")  \nOutput:\ngiven number is binary\nExplanation:\nThe code checks if a given number, 'num', is in paired design. It emphasizes through every digit of the number utilizing some time circle. Inside the circle, it checks assuming every digit is either 0 or 1. Assuming any digit other than 0 or 1 is experienced, it prints that the given number isn't in twofold configuration and breaks unaware of everything going on. Assuming the circle finishes without experiencing some other digit, it prints that the given number is in twofold configuration. The code effectively decides the double idea of the info number.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is the code.\nCode\nnum = 12  \nfact = 1  \nif num < 0:  \n     print(\"Since number is negative factorial cannot be calculated\")  \nelif num == 0:  \n     print(\"Factorial of 0 is 1\")  \nelse:  \n     for f in range(1, num + 1):  \n         fact = fact * i  \n     print(\"Factorial of\",num ,\"is\",fact)  \nOutput:\nFactorial of 12 is 1449225352009601191936\nExplanation:\nThe code computes the factorial of a given number 'num'. It instates a variable 'truth' to 1. It first checks in the event that the number is negative and prints a proper message. Assuming the number is zero, it prints that the factorial is 1. For positive numbers, it utilizes a for circle to repeat from 1 to the given number, refreshing the factorial at each step. The end-product is printed. The code productively registers and shows the factorial of a non-negative whole number. Note: There's a grammatical error in the know variable; it ought to be 'for I in range(1, num + 1)' rather than 'for f in range(1, num + 1)'.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is the code\nCode\nnum_1 = 24   \nnum_2 = 92   \nif num_1 > num_2:    \n     greater_num = num_1    \nelse:   \n     greater_num = num_2    \nwhile(True):    \n     if((greater_num % num_1 == 0) and (greater_num % num_2 == 0)):    \n         lcm = greater_num  \n         break    \n     greater_num += 1    \nprint(\"LCM of\", num_1, \"and\", num_2, \"=\", greater_num)  \nOutput:\nLCM of 24 and 92 = 552\nExplanation:\nThe code ascertains the Most un-Normal Various (LCM) of two numbers, 'num_1' and 'num_2'. It begins by deciding the more prominent of the two numbers and afterward enters some time circle. Inside the circle, it checks if the current 'greater_num' is separable by both 'num_1' and 'num_2'. If valid, it doles out 'greater_num' to the LCM and breaks unaware of everything going on. If not, it increases 'greater_num' and proceeds with the circle. The last LCM is printed. The code proficiently processes and shows the LCM of two given numbers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is the code.\nCode\narray = [23, 12, 5, 24, 23, 76, 86, 24, 86, 24, 75]  \n  print(\"Reverse order of array is\")  \n# Reversing the given array  \nfor i in range(len(array)-1, -1, -1):  \n  print(array[i], end=' ')  \nOutput:\nReverse order of array is\n75 24 86 24 86 76 23 24 5 12 23",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is the code.\nCode\nstring = 'Javatpoint'  \nresult=''  \nfor s in string:    \nif s in ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'):       \ns = ''    \nresult += s  \nprint(\"Required string without vowels is:\", result)  \nOutput:\nRequired string without vowels is: Jvtpnt\nExplanation:\nThe code eliminates vowels from a given 'string' and stores the outcome in 'result'. It emphasizes through each person in the string utilizing a for circle, and in the event that the person is a vowel (either lowercase or capitalized), it replaces it with an unfilled string. The adjusted characters are then connected to shape the last string 'result', which is printed as the result. This code exhibits a direct way to deal with kill vowels from a string in Python.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Following is the code.\narray = [23, 12, 5, 24, 23, 76, 86, 24, 86, 24, 75]  \n  print(\"Reverse order of array is\")  \n# Reversing the given array  \nfor i in range(len(array)-1, -1, -1):       \n     print(array[i], end=' ')  \nOutput:\nReverse order of array is\n75 24 86 24 86 76 23 24 5 12 23\nExplanation:\nThe code prints the converse request of a given cluster. It utilizes a for circle to emphasize through the exhibit backward, beginning from the last component and decrementing the file. The circle prints every component isolated by a space, bringing about the switched request of the first exhibit. In outline, the code effectively shows the converse request of the given cluster.",
+        "reference": "javatpoint.com"
+    }
+]

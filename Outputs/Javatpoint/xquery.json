@@ -1,0 +1,167 @@
+[
+    {
+        "question": "1) What is XQuery?",
+        "answer": "XQuery is a case-sensitive XML query language which was designed to query XML data. It is same like SQL for database tables. XQuery is used to retrieve data from the XML file.\nExample: Suppose we have to find out the list of students who situated in a particular area in an XML file. XQuery can solve these type of queries.\nFor more information: http://www.javatpoint.com/what-is-xquery",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is the use of XQuery language?",
+        "answer": "XQuery is a functional language for finding and extracting elements and attributes from XML documents. Some usage of the XQuery language is as follows:\nADVERTISEMENT\nTo retrieve both hierarchal and tabular data.\nTo query both tree and graphical structures.\nTo build web pages.\nTo query web pages.\nTo transform XML documents into XHTML documents.\nBest for XML-based databases and object-based databases. Object databases are much more flexible and powerful than purely tabular databases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) In which year XQuery first appeared?",
+        "answer": "XQuery was first appeared in 2007. It was designed by W3C and became the W3C recommendation on January 23, 2007. XQuery 3.0 is a W3C recommendation from April 8, 2014.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "A list of basic syntax rules for XQuery:\nXQuery is case sensitive.\nAttributes and variables that we used should have valid XML names in XQuery elements.\nXQuery should be written within single and double quotes.\nXQuery variables should be defined as $(variable name). For example: $book.\nXQuery comment can be written between colon (:). Like :(: Comment in XQuery:)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the difference between XQuery and XPath?",
+        "answer": "Difference between XQuery and XPath:\nXQuery is the functional programming and query language while XPath is XML path language.\nXQuery is used to extract and manipulate data from either XML documents or relational databases while XPath is used to compute values like strings, numbers and Boolean types from another XML documents.\nFor more information: http://www.javatpoint.com/difference-between-xquery-and-xpath",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the difference between XQuery and XSLT?",
+        "answer": "XQuery is program driven while XSLT is document-driven.\nXQuery is declarative while XSLT is functional.\nXSLT is written in XML while XQuery is not written in XML.\nFor more information: http://www.javatpoint.com/xquery-vs-xslt",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) How to define functions in XQuery?",
+        "answer": "XML has many built-in functions. XQuery functions generally made perform with string values, numeric values, date and time comparisons, Boolean values.\nXQuery also facilitates you to make your functions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) How to call XQuery functions:",
+        "answer": "Example 1: When you use function in an element.\n<name>{uppercase($booktitle)}</name>  \nExample 2: When you use function in the predicate of a path expression.\ndoc(\"bookmart.xml\")/bookstore/book[substring(title,1,5)='Jungle']  \nExample 3: When you use function in a let clause\nlet $name := (substring($booktitle,1,4))",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) How to perform the comparison in XQuery?",
+        "answer": "In XQuery, a comparison is performed with the general comparison or value comparison.\n1. General Comparison: It is achieved by using the following symbols.\nEx: =, !=, <, <=, >, >=\n2. Value Comparison: The value comparison is performed by using the following symbols.\nEx: ne, lt, le, eq, ge, gt.\nSee this example:\n$bookstore//book/@q > 100  \nIf any q attributes have values higher than 100, the expression returns true otherwise false.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What type of queries can the XQuery solve?",
+        "answer": "XQuery can be used to solve the following queries in XML data:\nXQuery is used to retrieve information in a web service.\nIt is used to generate the summary report.\nIt is used to transform data from XML to XHTML.\nIt can be used when we want some relevant information from Web documents.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What do you mean by XQuery FLWOR?",
+        "answer": "FLWOR is an acronym which stands for \"For, Let, Where, Order by, Return.\"\nFor - It is used to select a sequence of nodes.\nLet - It is used to bind a sequence to a variable.\nWhere - It is used to filter the nodes.\nOrder by - It is used to sort the nodes.\n\nReturn - It is used to specify what to return (gets evaluated once for every node).\nFor more information: http://www.javatpoint.com/xquery-flwor",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the use of XQuery HTML format?",
+        "answer": "XQuery HTML format is a way to transform an XML document into an HTML page. For more information: http://www.javatpoint.com/xquery-html-format",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is selecting and filtering element in XQuery?",
+        "answer": "Selecting and filtering refer to query to the database for selecting a group of data and filtering that data for a specific type. For example to select the name of books whose price is less than 30 dollars? XQuery FLWOR and Path expression are used for selecting and filtering the XML elements. Both are used to select and filter the desired elements.\nFor example:\nfor $a in doc(\"bookmart.xml\")/bookstore/book  \nwhere $a/price<150  \norder by $a/title  \nreturn $a/title",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How to perform conditional operations in XQuery?",
+        "answer": "Conditional operation in XQuery is If-Then-Else operation. Let?s take an example to see how to use it:\nExample:\nfor $a in doc(\"bookmart.xml\")/bookstore/book  \nreturn  if ($a/@category=\"ADVENTURE\")  \nthen <child>{data($a/title)}</child>  \nelse <adult>{data($a/title)}</adult>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the syntax of XQuery language?",
+        "answer": "The elements, attributes and variables in XQuery language must be valid XML names and follow case sensitivity. For more information: http://www.javatpoint.com/xquery-syntax",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What do you mean by XQuery add?",
+        "answer": "XQuery add is used for adding elements, attributes, HTML elements and text in the results from the input documents.\nFor more information: http://www.javatpoint.com/xquery-add\n\n17) How to use XQuery FLWOR with HTML?\nIf you want to put HTML element with XQuery FLWOR, you should have to add and tags into the FLWOR expression.\nFor example:\n<ul>    \n{    \nfor $x in doc(\"books.xml\")/bookstore/book/title    \norder by $x    \nreturn <li>{$x}</li>    \n}    \n</ul>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "17) How to use XQuery FLWOR with HTML?\nIf you want to put HTML element with XQuery FLWOR, you should have to add and tags into the FLWOR expression.\nFor example:\n<ul>    \n{    \nfor $x in doc(\"books.xml\")/bookstore/book/title    \norder by $x    \nreturn <li>{$x}</li>    \n}    \n</ul>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How to use XQuery FLWOR with HTML?",
+        "answer": "If you want to put HTML element with XQuery FLWOR, you should have to add and tags into the FLWOR expression.\nFor example:\n<ul>    \n{    \nfor $x in doc(\"books.xml\")/bookstore/book/title    \norder by $x    \nreturn <li>{$x}</li>    \n}    \n</ul>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What are the different types of XQuery functions?",
+        "answer": "A list of different types of XQuery functions:\nAccessor Functions\nError and Trace Functions\nNumeric Functions\nString Functions\nAnyURI Functions\nBoolean Functions\nDuration/Date/Time Functions\nQName Functions\nNode Functions\nSequence Functions\nContext Functions",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the uses of time and date function in XQuery?",
+        "answer": "In XQuery, time and date function are used to get time and date. There are three types of time and date functions in XQuery:\ncurrent-date()\ncurrent-time()\ncurrent-datetime()",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the use of current-date() function in XQuery?",
+        "answer": "The XQuery current date function is used to retrieve the current date.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the use of current-time() function in XQuery?",
+        "answer": "The XQuery current-time function is used to retrieve the current time.\nFor more information: http://www.javatpoint.com/xquery-current-time-function",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the use of current-datetime() function in XQuery?",
+        "answer": "The XQuery current-date time() function is used to return the current date and time.\nFor more information: http://www.javatpoint.com/xquery-current-datetime-function\n\n23) What is the difference between XPath expressions and FLWOR expressions in XQuery?\nPath and FLWOR both can be used to query the XML file but differently. In XPath expression, we can specify the node which should be selected from the XML document along with a condition which should be filled to fetch the XML document. A condition can be of any type, for example, if we want to display the names of the books whose price is less than thirty dollars. Such condition can be applied to XPath expressions.\nWhereas in FLWOR expression as the name suggests 'F' 'L' 'W' 'O' 'R' refers to 'for' 'let' 'Where' 'Order by' 'Return.' Where Return is compulsory and the rest of the elements such as 'for' 'let' 'where' 'order by' are optional.\n24) What is meant by the word ?node? in XQuery?\nEvery element inside the XML document is treated as a node.\n25) How many kinds of nodes are there in XQuery?\nThere were mainly seven kinds of nodes available in the XQuery listed below:\nElement\nAttribute\nText\nNamespace\nProcessing-instruction\nComment\nDocument (root) node.\n26) What do you mean by atomic values in XQuery?\nAtomic values refer to the nodes with no parent and children.\n27) Explain the relationship of different nodes in XQuery?\nParent: Each element and attribute has one parent node.\nChildren: Elements node may have zero, one or multiple children.\nSiblings: Siblings refers to the nodes which have the same parent node.\nAncestors: A node's parent's parent' parents... etc.\nDescendants: A node's children's children's .... Etc.\n28) Write the syntax of XQuery to select books only having the price less than 30 dollars.\ndoc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the difference between XPath expressions and FLWOR expressions in XQuery?",
+        "answer": "Path and FLWOR both can be used to query the XML file but differently. In XPath expression, we can specify the node which should be selected from the XML document along with a condition which should be filled to fetch the XML document. A condition can be of any type, for example, if we want to display the names of the books whose price is less than thirty dollars. Such condition can be applied to XPath expressions.\nWhereas in FLWOR expression as the name suggests 'F' 'L' 'W' 'O' 'R' refers to 'for' 'let' 'Where' 'Order by' 'Return.' Where Return is compulsory and the rest of the elements such as 'for' 'let' 'where' 'order by' are optional.\n24) What is meant by the word ?node? in XQuery?\nEvery element inside the XML document is treated as a node.\n25) How many kinds of nodes are there in XQuery?\nThere were mainly seven kinds of nodes available in the XQuery listed below:\nElement\nAttribute\nText\nNamespace\nProcessing-instruction\nComment\nDocument (root) node.\n26) What do you mean by atomic values in XQuery?\nAtomic values refer to the nodes with no parent and children.\n27) Explain the relationship of different nodes in XQuery?\nParent: Each element and attribute has one parent node.\nChildren: Elements node may have zero, one or multiple children.\nSiblings: Siblings refers to the nodes which have the same parent node.\nAncestors: A node's parent's parent' parents... etc.\nDescendants: A node's children's children's .... Etc.\n28) Write the syntax of XQuery to select books only having the price less than 30 dollars.\ndoc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is meant by the word ?node? in XQuery?",
+        "answer": "Every element inside the XML document is treated as a node.\n25) How many kinds of nodes are there in XQuery?\nThere were mainly seven kinds of nodes available in the XQuery listed below:\nElement\nAttribute\nText\nNamespace\nProcessing-instruction\nComment\nDocument (root) node.\n26) What do you mean by atomic values in XQuery?\nAtomic values refer to the nodes with no parent and children.\n27) Explain the relationship of different nodes in XQuery?\nParent: Each element and attribute has one parent node.\nChildren: Elements node may have zero, one or multiple children.\nSiblings: Siblings refers to the nodes which have the same parent node.\nAncestors: A node's parent's parent' parents... etc.\nDescendants: A node's children's children's .... Etc.\n28) Write the syntax of XQuery to select books only having the price less than 30 dollars.\ndoc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) How many kinds of nodes are there in XQuery?",
+        "answer": "There were mainly seven kinds of nodes available in the XQuery listed below:\nElement\nAttribute\nText\nNamespace\nProcessing-instruction\nComment\nDocument (root) node.\n26) What do you mean by atomic values in XQuery?\nAtomic values refer to the nodes with no parent and children.\n27) Explain the relationship of different nodes in XQuery?\nParent: Each element and attribute has one parent node.\nChildren: Elements node may have zero, one or multiple children.\nSiblings: Siblings refers to the nodes which have the same parent node.\nAncestors: A node's parent's parent' parents... etc.\nDescendants: A node's children's children's .... Etc.\n28) Write the syntax of XQuery to select books only having the price less than 30 dollars.\ndoc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What do you mean by atomic values in XQuery?",
+        "answer": "Atomic values refer to the nodes with no parent and children.\n27) Explain the relationship of different nodes in XQuery?\nParent: Each element and attribute has one parent node.\nChildren: Elements node may have zero, one or multiple children.\nSiblings: Siblings refers to the nodes which have the same parent node.\nAncestors: A node's parent's parent' parents... etc.\nDescendants: A node's children's children's .... Etc.\n28) Write the syntax of XQuery to select books only having the price less than 30 dollars.\ndoc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) Explain the relationship of different nodes in XQuery?",
+        "answer": "Parent: Each element and attribute has one parent node.\nChildren: Elements node may have zero, one or multiple children.\nSiblings: Siblings refers to the nodes which have the same parent node.\nAncestors: A node's parent's parent' parents... etc.\nDescendants: A node's children's children's .... Etc.\n28) Write the syntax of XQuery to select books only having the price less than 30 dollars.\ndoc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "doc(\"books123.xml\")/bookstore/book[price<30]\n29) Write a syntax to demonstrate the use of FLWOR expression in XQuery.\nfor $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "for $x in doc(\"books123.xml\")/bookshop/book\nwhere $x/price>60\norder by $x/category\nreturn $x/category\n30) What is meant by for clause in XQuery?\nFor clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is meant by for clause in XQuery?",
+        "answer": "For clause is used inside the FLWOR expression to bind a variable to each item returned by the expression. There can be one or more 'for' clause in the same expression.\n31) What is meant by the order by clause in XQuery?\nOrder by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What is meant by the order by clause in XQuery?",
+        "answer": "Order by clause is used inside the FLWOR expression to arrange the returned value by the FLWOR expression either in ascending order or in descending order or alphabetically. Order by clause is optional in FLWOR.\n32) Which clause is compulsory in XQuery and why?\nReturn clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) Which clause is compulsory in XQuery and why?",
+        "answer": "Return clause is mandatory to be added in the FLWOR expression because the primary objective of the query is to select some data.",
+        "reference": "javatpoint.com"
+    }
+]

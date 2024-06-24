@@ -1,0 +1,252 @@
+[
+    {
+        "question": "1) What is R?",
+        "answer": "R is an interpreted computer programming language which was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand\". It is a software environment used to analyze statistical information, graphical representation, reporting, and data modeling. R is the implementation of the S programming language, which is combined with lexical scoping semantics.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "A vector is a series of data elements of the same basic type. The members in the vector are known as a component.\nThe R object that contains elements of different types such as numbers, strings, vectors, or another list inside it, is known as List.\nADVERTISEMENT\nA two-dimensional data structure used to bind the vectors from the same length, known as the matrix. The matrix contains the same types of elements.\nA Data frame is a generic form of a matrix. It is a combination of lists and matrices. In the Data frame, different data columns contain different data types.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "There are the following packages which are used for data imputation\nMICE\nmissFores\nMi\nHmisc\nAmelia\nimputeR",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Explain initialize() function in R?",
+        "answer": "This function is used to initialize the private data members while declaring the object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) How can we find the mean of one column with respect to another?",
+        "answer": "In iris dataset, there are five columns, i.e., Sepal.Length, Sepal.Width, Petal.Length, Petal.Width and Species. We will calculate the mean of Sepal-Length across different species of iris flower using the mean() function from the mosaic package.\nmean(iris$Sepal.Length~iris$Species)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is a Random Walk model?",
+        "answer": "A random walk is the simplest example of a non-stationary process. A random walk has no specified mean or variance, strong dependence over time, and its changes or increments are white noise. Simulating random walk in R:\nADVERTISEMENT\narima.sim(model=list(order=c(0,1,0)),n=40)->rw ts.plot(rw)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is a White Noise model?",
+        "answer": "It is a basic time series model and a simple example of a stationary process. A white noise model has a fixed constant mean, a fixed constant variance, and no correlation over time. We can simulate a white noise model in the following way:\narima.sim(model=list(order=c(0,0,0)),n=50)->wn",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Simple and effective programming language.\nIt is a data analysis software.\nIt gives effective storage facility and data handling.\nIt gives high extensible graphical techniques.\nIt is an interpreted language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Differentiate between R and Python in terms of functionality?",
+        "answer": "For data analysis, R has inbuilt functionality, but in Python, the data analysis functionalities are not inbuilt. They are available by packages like Pandas and Numpy.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the applications of R?",
+        "answer": "There are various applications available in real-time. These applications are as follows:\nFacebook\nGoogle\nTwitter\nHRDAG\nNDAA",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "RStudio is an integrated development environment which allows us to interact with R more readily. RStudio is similar to the standard RGui, but it is considered more user-friendly. This IDE has various drop-down menus, windows with multiple tabs, and so many customization processes. The first time when we open RStudio, we will see three Windows. The fourth Window will be hidden by default.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the advantages and disadvantages of R?",
+        "answer": "Advantages\nOpen Source\nData Wrangling\nArray of Packages\nPlatform Independent\nMachine Learning Operations\nDisadvantages\nWeak origin\nData Handling\nBasic Security\nComplicated Language\nLesser Speed",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the purpose behind R and Hadoop integration?",
+        "answer": "For executing Hadoop to execute R code.\nFor using R to access the data stored in Hadoop.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "R Hadoop\nHadoop Streaming\nRHIPE\nORCH",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What will be the output of the expression all(NA==NA)?",
+        "answer": "[1] NA",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the difference b/w sample() and subset() in R?",
+        "answer": "The sample() method is used to choose a random sample of size n from a dataset while the subset method is used to choose variables and observations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "choose(), repos=NULL)?",
+        "answer": "This command is used to install an R package from the local directory by browsing and selecting the file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Give the command to create a histogram and to remove a vector from the R workspace?",
+        "answer": "hist() and rm() function are used as a command to create a histogram and remove a vector from the R workspace.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The \"%%\" provides a reminder of the division of the first vector with the second, and the \"%/%\" gives the quotient of the division of the first vector with the second.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Why do we use apply() function in R?",
+        "answer": "This is used to apply the same function to each of the elements in an Array. For example, finding the mean of the rows in every row.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "If the desired package cannot be loaded, then the library() function gives an error message and display while the required () function is used inside the function and throws a warning message whenever a particular package is not found.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the t-test() in R?",
+        "answer": "The t-test() function is used to determine that the mean of the two groups are equal or not.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the use of with() and by() functions in R?",
+        "answer": "The with() function applies an expression to a dataset, and the by() function applies a function to each level of factors.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The lapply is used to show the output in the form of the list, whereas sapply is used to show the output in the form of a vector or data frame.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The aggregate() function is used to aggregate data in R. There are two methods which are collapsing data by using one or more BY variable and other is an aggregate() function in which By variable should be in the list.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) Explain the doBy package?",
+        "answer": "This package is used to define the desired table using function and model formula.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "This function is used to create the frequency table in R.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Explain fitdistr() function?",
+        "answer": "This function is used to give the maximum likelihood fitting of univariate distribution and defined under the MASS package.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are GGobi and iPlots?",
+        "answer": "The GGobi is an open-source program for visualization to exploring high dimensional typed data, and the iPlots is a package which provides bar plots, mosaic plots, box plots, parallel plots, histograms, and scatter plots.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The lattice package is meant to improve upon the base R graphics by giving better defaults and has the ability to display multivariate relationships easily.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The anova() function is used for comparing the nested models.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The cv.lm() function is defined under the DAAG package used for k-fold validation while the stepAIC() function is defined under the MASS package that performs stepwise model selection under exactAIC.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The leaps() function is used to perform the all-subsets regression and defined under the leaps package.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "This package is used to measure the relative importance of every predictor in the model, and the robust package gives a library of robust methods, including regression.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "MANOVA stands for Multivariate Analysis of Variance, and it is used to test more than one dependent variable simultaneously.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "This function defines in the mvnormtest package and produces the Shapiro-wilk test to multivariate normality. The barlett.test() is used to provide a parametric k-sample test of the equality of variances.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The forecast package gives the functions which are used to automatic selection of exponential and ARIMA models.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The qda() function prints a quadratic discriminant function while lda() function print the discriminant functions based on the centered variable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The auto.arima() function handle both the seasonal and non-seasonal ARIMA model and the principal() function used for rotating and extracting the principal components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The FactoMineR is a package that includes qualitative and quantitative variables. The observations and supplementary variables are also included in these packages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What is the full form of SEM and CFA?",
+        "answer": "CFA stands for Confirmatory Factor Analysis, and SEM stands for Structural Equation Modeling.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The cluster.stats() function define in the fpc package that provides a method for comparing the similarity of two cluster solutions using different validation criteria, and the pvclust() function is defined in the pvclust package that provides p-values for hierarchical clustering.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "This package includes wrapper functions and variable which are used for replicating Matlab function calls.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "In oops, the S3 is used to overload any function. So that we can call the functions with different names, and it depends on the type of input parameter or the number of parameters, and the S4 is the most important characteristic of oops. However, this is a limitation, as it is quite difficult to debug. There is an optional reference class for S4.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "There are the following packages of visualization in R:\nPlotly\nggplot2\ntidyquant\ngeofacet\ngoogleVis\nShiny",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) Explain Chi-Square Test",
+        "answer": "The Chi-Square Test is used to analyze the frequency table (i.e., contingency table), which is formed by two categorical variables. The chi-square test evaluates whether there is a significant relationship between the categories of the two variables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Random Forest is also known as Decision Tree Forest. It is one of the popular decision tree-based ensemble models. The accuracy of these models is higher than other decision trees. This algorithm is used for both classification and regression applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Any metric which is measured over regular time intervals creates a time series. Analysis of time series is commercially important due to industrial necessity and relevance, especially with respect to the forecasting (demand, supply, and sale, etc.). A series of data points in which each data point is associated with a timestamp is known as time series.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "R programming language has several libraries for creating charts and graphs. A pie-chart is a representation of values in the form of slices of a circle with different colors.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "A histogram is a type of bar chart which shows the frequency of the number of values which are compared with a set of values ranges. The histogram is used for the distribution, whereas a bar chart is used for comparing different entities. In the histogram, each bar represents the height of the number of values present in the given range.",
+        "reference": "javatpoint.com"
+    }
+]

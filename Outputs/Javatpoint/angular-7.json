@@ -1,0 +1,82 @@
+[
+    {
+        "question": "1) What is Angular 7? How is it different from AngularJS?",
+        "answer": "Angular7 is the latest and recent version of Angular. AngularJS was the first version of Angular which is also known as Angular 1.0.\nAngular7 is the complete rewrite of the Angular1.0. It supports two-way data binding, and some other features like ng update, ng add, Angular Elements, Angular Material + CDK Components, Angular Material Starter Components, CLI Workspaces, Library Support, Tree Shakable Providers, Animations Performance Improvements, and RxJS v6 etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is Angular framework?",
+        "answer": "Angular is a TypeScript-based open-source web framework and a platform. It is used to build web/ mobile and desktop applications.\nMain features of this framework are: Declarative templates, dependency injection, end to end tooling etc. These features make web development easy in Angular.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is the difference between AngularJS and Angular?",
+        "answer": "Angular is a complete rewrite of AngularJS. It is a component-based framework in which an application is a tree of individual components.\nDifference between AngularJS and Angular:\nAngularJS Angular\nAngularJS is based on MVC architecture. Angular is based on Service/Controller.\nIt uses JavaScript to build the application. It uses TypeScript to build the application.\nIt follows controller concept. It follows Component based UI approach.\nIt is not a mobile-friendly framework. It is a mobile friendly framework.\nIt is very difficult to create a SEO friendly application in AngularJS. By using Angular, you can easily create a SEO friendly application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is the difference between structural directive and attribute directive in Angular 7?",
+        "answer": "Structural directives are used to alter the DOM layout by removing and adding DOM elements. These directives are far better in changing the structure of the view. Examples of Structural directives are NgFor and Nglf.\nAttribute Directives are used as characteristics of elements. For example, a directive such as built-in NgStyle in the template Syntax guide is an attribute directive.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the difference among \"declarations\", \"providers\" and \"import\" in NgModule?",
+        "answer": "Difference among declarations\", \"providers\" and \"import\" in NgModule:\nADVERTISEMENT\ndeclarations are used to make directives (including components and pipes) from the current module available to other directives in the current module. Selectors of directives, components or pipes are only matched against the HTML if they are declared or imported.\nproviders are used to make services and values known to DI. They are added to the root scope and they are injected to other services or directives that have them as dependency. A special case for providers is lazy loaded modules that get their own child injector. Providers of a lazy loaded module are only provided to this lazy loaded module by default (not the whole application as it is with other modules).\nimport makes the exported declarations of other modules available in the current module.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the key components of Angular?",
+        "answer": "Key components of Angular:\nComponents: Components are the basic building blocks of angular application and used to control HTML views.\nModules: Modules are the set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" and used to perform a single task.\nTemplates: Templates are used to represent the views of an Angular application.\nServices: It is used to create components which can be shared across the entire application.\nMetadata: This can be used to add more data to an Angular class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Angular is the most popular web development framework for developing mobile and web applications. It uses cross platform mobile development called IONIC that's why it is not limited to web apps only.\nThere are 7 main building blocks of an Angular application:\nComponent\nTemplates\nMetadata\nData Binding\nDirectives\nServices\nDependency Injection\nThe basic building blocks of an Angular application are NgModules, which provide a compilation context for components. Angular app is defined by a set of NgModules and it always has at least a root module that enables bootstrapping, and many more feature modules.\nComponents define Template views\nComponents use services\nThe NgModules make developers to organize an application into connected blocks of functionality.\nThe NgModule properties for the minimum \"AppModule\" generated by the CLI are as follows:\nDeclarations: Use to declare the application components.\nImports: Every application must import BrowserModule to run the app in a browser.\nProviders: There are none to start.\nBootstrap: This is a root AppComponent that Angular creates and inserts into the index.html host web page.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) How would you update Angular 6 to Angular 7?",
+        "answer": "You can update Angular 6 to Angular 7 by using the following command:\nng update @angular/cli @angular/core",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the UrlSegment Interface in Angular 7?",
+        "answer": "In Angular 7, the UrlSegment interface represents a single URL segment, constructor, properties and methods like this:\nclass UrlSegment {  \nconstructor(path: string, parameters: {...})  \npath: string  \nparameters: {...}  \ntoString(): string  \n}  \nThe UrlSegment is a part of a URL between the two slashes and it contains a path and matrix parameters associated with the segment.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is Do Bootstrap (ng Do Bootstrap) In Angular 7?",
+        "answer": "The ng Do Bootstrap is a new life-cycle hook added in Angular 7 and Do Bootstrap is an interface.\nExample\n//ng Do Bootstrap - Life-Cycle Hook Interface  \nclassApp Module implements Do Bootstrap {  \nng Do Bootstrap(appRef: ApplicationRef) {  \nappRef.bootstrap(AppComponent);  \n  }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are directives in Angular7?",
+        "answer": "In Angular7, directives are used to add behavior to an existing DOM element or an existing component instance.\nFor Example\nimport { Directive, ElementRef, Input } from '@angular/core';  \n@Directive({ selector: '[myHighlight]' })  \nexport class HighlightDirective {  \n    constructor(el: ElementRef) {  \n       el.nativeElement.style.backgroundColor = 'green';  \n    }  \n}  \n\nNow this directive extends HTML element behavior with a green background as below:\nHighlight me!",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are components in Angular7?",
+        "answer": "Components are the basic building blocks of an Angular app formed like a tree structure. Components are subset of directives but unlike directives, components always have a template and only one component can be instantiated per an element in a template.\nFor example:\nimport { Component } from '@angular/core';  \n@Component ({  \n   selector: 'my-app',  \n   template: ` <div>  \n      <h1>{{title}}</h1>  \n      <div>Learn Angular6 with examples</div>  \n   </div> `,  \n})  \nexport class AppComponent {  \n   title: string = 'Welcome to Angular world';  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the difference between component and directive?",
+        "answer": "A component (@component) is a directive with a template. Some major difference between components and directives are:\nComponent Directive\nIf you register a component, you have to use @Component meta-data annotation If you register a directive, you have to use @Directive meta-data annotation\nComponents are used to break up the application into smaller components. Directives are used to design re-usable components.\nComponents are used to create UI widgets. Directives are used to add behavior to an existing DOM element.\nOnly one component can be present per DOM element. Many directives can be used per DOM element.\n@View decorator or templateurl/template are mandatory Directives don't use View.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is a template in Angular7?",
+        "answer": "A template is a HTML view where you display your data by binding controls to Angular component's properties. You can store your component's template in one of two places. You can define it inline using the template property, or you can define the template in a separate HTML file and link to it in the component metadata using the @Component decorator's templateUrl property.\nFor example:\nUsing inline template with template syntax\nimport { Component } from '@angular/core';  \n@Component ({  \n   selector: 'my-app',  \n   template: '  \n      <div>  \n         <h1>{{title}}</h1>  \n         <div>Learn Angular</div>  \n      </div>  \n   '  \n})  \nexport class AppComponent {  \n   title: string = 'Hello World';  \n}  \nUsing separate template file such as app.component.html\nimport { Component } from '@angular/core';  \n@Component ({  \n   selector: 'my-app',  \n   templateUrl: 'app/app.component.html'  \n})  \nexport class AppComponent {  \n   title: string = 'Hello World';  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is a module?",
+        "answer": "Modules are the logical boundaries in the application. An application is divided into separate modules to separate the functionalities of the application.\nFor example: app.module.ts root module declared with @NgModule decorator\nimport { NgModule }      from '@angular/core';  \nimport { BrowserModule } from '@angular/platform-browser';  \nimport { AppComponent }  from './app.component';  \n@NgModule ({  \n   imports:      [ BrowserModule ],  \n   declarations: [ AppComponent ],  \n   bootstrap:    [ AppComponent ]  \n})  \nexport class AppModule { }  \nHere, the NgModule decorator has three options:\nThe imports option is used to import other dependent modules. The BrowserModule is required by default for any web based angular application.\nThe declarations option is used to define components in the respective module.\nThe bootstrap option tells Angular which Component to bootstrap in the application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What are the new features added in Angular7?",
+        "answer": "Following is a list of new features added in Angular7:\nAngular7 displays an elegant look in the new update.\nIt provides virtual scrolling by using the scrolling package .\nIt facilitates you to use drag and drop property by using the @angular/cdk/drag-drop module.\nIn Angular7, libraries make changes to itself automatically with the updated version of the Material design.\nAngular7 provides better error handling for @Output if property is not initialized.\nAngular7 provides added support for Node v10.\nSome more Angular7 features are:\nAngular Console: It is a downloadable console to start and run Angular projects on your local machine.\n@angular/fire: It is a latest update on npm, and has its first stable release for Angular7.\nNativeScript: It facilitates you to make a single project that builds for both web and installed mobile.\nStackBlitz: StackBlitz 2.0 is now released and includes the Angular Language Service and more features like tabbed editing.",
+        "reference": "javatpoint.com"
+    }
+]

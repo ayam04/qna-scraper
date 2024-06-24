@@ -1,0 +1,127 @@
+[
+    {
+        "question": "1) What is C#?",
+        "answer": "C# is a simple, modern, general purpose programming language. It is an object oriented programming language developed by Microsoft. It is a safe and managed language that is compiled by .NET framework to generate Microsoft intermediate language (machine code).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is the reason behind the invention of C#?",
+        "answer": "C# is designed for Common Language Infrastructure (CLI). It contains the executable code and runtime environment that makes the users able to use various high-level languages on different computer platforms and architectures.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the main reasons to use C# language?",
+        "answer": "These are top reasons to use C# language:\nADVERTISEMENT\nEasy to learn\nGeneral purpose and object oriented programming language\nComponent oriented\nStructured language\nCan be compiled on variety of computer platforms\nProduces efficient programs\nPart of .net framework",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is the difference between public, static and void?",
+        "answer": "You can access public declared variables anywhere in the application.\nStatic declared variables are globally accessible without creating an instance of the class.\nVoid is a type modifier that specifies that the method doesn't return any value.\n5) What are constructors in C#?\nA constructor is a member function in the class and has the same name as its class. Whenever the object class is created, the constructor is automatically invoked. It constructs the value of data members while initializing the class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are constructors in C#?",
+        "answer": "A constructor is a member function in the class and has the same name as its class. Whenever the object class is created, the constructor is automatically invoked. It constructs the value of data members while initializing the class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the different types of constructors in C#?",
+        "answer": "Basically, there are five types of constructors:\nStatic constructor\nPrivate constructor\nCopy constructor\nDefault constructor\nParameterized constructor",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is static constructor?",
+        "answer": "Static constructor is used to initialize static data members as soon as the class is referenced first time.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is method overloading in C#?",
+        "answer": "Method overloading is mechanism to create multiple methods with the same name and unique signature in the same class. When you go for compilation, the compiler uses overload resolution to determine the specific method to be invoked.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Is overriding of a function possible in the same class?",
+        "answer": "No",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is array?",
+        "answer": "Array is a set of related instances either value or reference types.\nThere are three types of array supported by C#:\nSingle Dimensional Array: It contains a single row. It is also known as vector array.\nMulti Dimensional Array: It is rectangular and contains rows and columns.\nJagged Array: It also contains rows and columns but it has an irregular shape.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is ArrayList?",
+        "answer": "ArrayList is a dynamic array. You can add and remove the elements from an ArrayList at runtime. In the ArrayList, elements are not automatically sorted.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is a collection?",
+        "answer": "A collection works as a container for instances of other classes. All classes implement ICollection interface.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is an interface?",
+        "answer": "Interface is an abstract class that has only public abstract method. These methods only have declaration not the definition. These abstract methods must be implemented in the inherited classes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the lock statement in C#?",
+        "answer": "Lock statement is used to ensure that one thread doesn?t enter a critical section of code while another thread is in the critical section. If another thread attempts to enter a locked code it will wait, block, until the object is released.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is serialization?",
+        "answer": "If you want to transport an object through network then you have to convert the object into a stream of bytes. The process of converting an object into a stream of bytes is called serialization.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) How to declare a property in a class?",
+        "answer": "int m_PersonID = 0;  \npublic int PersonID  \n{  \nget { return m_PersonID; }  \nset { m_PersonID = value; }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the difference between early binding and late binding in C#?",
+        "answer": "Early binding and late binding are the concept of polymorphism. There are two types of polymorphism in C#.\nCompile Time Polymorphism: It is also known as early binding.\nRun Time Polymorphism: It is also known as late binding or method overriding or dynamic polymorphism.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Which are the access modifiers available in C#?",
+        "answer": "Following are the access modifiers generally used for accessibility:\nPublic: If you define an attribute or method as public, it can be accessed from any code of the project.\nPrivate: A private defined attribute or method can be accessed by any code within the containing class only.\nProtected: If you define the method or attribute as protected it can be accessed by any method in the inherited classes and any method within the same class.\nInternal: If you define an attribute or a method as internal, it is restricted to classes within the current position assembly.\nProtected internal: If you define an attribute or method as protected internal, access is restricted to classes within the current project assembly or types derived from the containing class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the difference between abstract class and interface in C#?",
+        "answer": "Abstract class can have abstract and concrete methods whereas interface has only abstract methods.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the difference between dispose() and finalize() methods in C#?",
+        "answer": "The dispose() method is explicitly called by user to free unmanaged resources such as files, database connections etc whereas finalize() method is implicitly called by garbage collector to free unmanaged resources like files, database connections etc.\nThe dispose() method belongs to IDisposable interface whereas finalize() method belongs the Object class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is the difference between method overloading and method overriding in C#?",
+        "answer": "Method parameters must be different in method overloading whereas it must be same in method overriding.\nInheritance is not required in method overloading, it occurs within the same class. But inheritance is required in method overriding.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "Net?",
+        "answer": "Object pool is a container of ready to use objects. It reduces the overhead of creating new object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is delegate in C#?",
+        "answer": "A delegate in C# is an object that holds the reference to a method. It is like function pointer in C++.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is Hashtable?",
+        "answer": "A Hashtable is a collection of key/value pairs. It contains values based on the key.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is Reflection?",
+        "answer": "Reflection allows us to get metadata and assemblies of an object at runtime.",
+        "reference": "javatpoint.com"
+    }
+]

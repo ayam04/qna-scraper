@@ -1,0 +1,127 @@
+[
+    {
+        "question": "1) What is LINQ?",
+        "answer": "The word LINQ is the abbreviation of the Language Integrated Query. It's a .NET framework module that connects native data querying capabilities to .net Language. It offers easy data access from in-memory objects, databases, XML documents, and many more.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the advantages of using LINQ in Dataset?",
+        "answer": "The advantages of LINQ are as follows -\nADVERTISEMENT\nThe primary purpose of using LINQ is to retrieve complex query in a dataset.\nLINQ is used to combine the values from two different data set.\nIt is also used to fetch a unique value from the data set.\nLINQ gives a more precise way than SQL query of querying the dataset.\nLINQ also provides more functionality as compared with ADO.NET.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the different ways to write LINQ query syntax?",
+        "answer": "There are two common ways to write a LINQ query to data sources.\nQuery syntax or Expression syntax\nMethod syntax or method Extension Syntax",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is the Query syntax?",
+        "answer": "Query syntax is similar to Structured Query Language for the database. It is described within the C# or VB code.\nSyntax\nfrom <range variable> in <IEnumerable<T> or IQueryable<T> Collection>  \n<specific Query Operators> <lambda expression>  \n<select or groupBy operator> <result formation>  \nFew important points about Query syntax are as follows.\nIt starts with FROM keyword and ends with SELECT or GROUP BY keyword.\nIt is same as SQL (Structured Query Language) syntax.\nIt uses some different operators like joining, grouping, sorting, filtering operators to construct the desired result.\nIt uses implicitly typed variable to hold the result of the LINQ query.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Explain LINQ method syntax and give an example?",
+        "answer": "The LINQ method syntax or fluent syntax uses some additional methods included in the Enumerable or Queryable static class.\nMethod Syntax is the same as calling extension method.\nLINQ Method Syntax is also known as fluent syntax because it facilitates a series of extension methods call.\nImplicitly typed variable can be used to hold the result of the LINQ query\nSyntax\n// string collection  \nIList<string> stringList = new List<string>() {   \n                                     \"Java Developer\",  \n            \".Net Developer\",  \n            \"Graphics Designer\",  \n            \"Mean Stack Developer\" ,  \n            \"Java\"};  \n// LINQ Query Syntax  \nvar result = stringList.Where(s => s.Contains(\"Tutorials\"));  \nExample: C# Program for Method Syntax\nusing System;  \nusing System.Linq;  \nusing System.Collections.Generic;  \npublic class Program  \n{  \n    public static void Main()  \n    {  \n        // string collection  \n        IList<string> stringList = new List<string>() {   \n            \"Java Developer\",  \n            \".Net Developer\",  \n            \"Graphics Designer\",  \n            \"Mean Stack Developer\" ,  \n            \"Java\"   \n        };  \n                  // LINQ Method Syntax  \n        var result = stringList.Where(s => s.Contains(\"Developer\"));  \n        foreach (var str in result)  \n        {  \n            Console.WriteLine(str);  \n        }  \n    }  \n}  \nOutput:\nJava Developer\n.Net Developer\nMean Stack Developer",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Define different types of LINQ?",
+        "answer": "The different types of LINQ are as follows.\nLINQ to Objects\nLINQ to XML(XLINQ)\nLINQ to DataSet\nLINQ to SQL (DLINQ)\nLINQ to Entities\nApart from the above, there is also a LINQ type named PLINQ, which is Microsoft's parallel LINQ.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Describe the architecture of LINQ?",
+        "answer": "LINQ has 3-Layered architecture. The uppermost layer contains the language extensions, and the bottom layer contains the data sources. The data sources are usually object implementing IEnumerable or IQueryable generic interfaces.\n\nExcept the basic LINQ query and data sources, there is another component called LINQ provider. The functionality of LINQ provider is to convert the LINQ query into a format so that the available data source can understand it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Explain LINQ to SQL?",
+        "answer": "LINQ to SQL is a part of ADO.NET technologies. It manages the relational data as an object. LINQ to SQL converts the language integrated query in the object to SQL and forward them to the database for execution. When the database responses, the result LINQ to SQL translate them back to objects.\nLINQ to SQL supports user-defined functions and stored procedure in the database.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Explain LINQ to XML?",
+        "answer": "LINQ to XML provides the in-built document reform capabilities of the DOM (Document Object Model) and supports LINQ Queries. Using it, we can modify query, navigate, and save the changes of an XML document. It allows us to write queries to retrieve and navigate a collection of elements and attributes. It is quite similar to XPath and XQuery.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Differentiate between LINQ and Stored Procedure?",
+        "answer": "Some significant differences between LINQ and Stored Procedure are as follows -\nThe stored procedure is faster than a LINQ query because they follow a proper (Expected) execution plan.\nIt is easy to avoid run time errors in SQL query than in comparison to a stored procedure.\nLINQ uses the .NET debugger to allow debugging, which is not in case of stored procedures.\nLINQ supports multiple databases in contrast to stored procedures.\nDeployment of LINQ based solution is more comfortable than the deployment of a stored procedure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is a LinqDataSource control?",
+        "answer": "If you want to use LINQ in an ASP.NET webpage, then LinqDataSource is an important part of the dataset. It is used to set the properties in the markup text, control, retrieve, and modify data. It can also be used to declaratively bind other ASP.NET controls on a page to a data source. In this manner, it is similar to SQL Datasource and ObjectDataSource controls.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Explain LINQ Lambda expression with example?",
+        "answer": "In LINQ, Lambda expression is a function that has no name. It makes the syntax more comprehensive by making it short and precise. It is equally important as the LINQ query although it is not as readable as LINQ query. The scope of Lambda expression is limited. It can't be reused.\nSyntax\n(Input Parameter) => Method Expression  \nLambda expression decides the type in compile time. On the left-hand side of the expression, we put an input parameter under a bracket (). The parameter name can be anything. Ahead of the parameter name sign equal to (=) followed by greater one (>) symbol is used to pass the parameter from left to right side. On the right side, the required operation is performed using the input password passes by the left side parameter. The whole syntax is called Lambda expression.\nExample: C# program for lambda expression\nusing System;  \nusing System.Collections.Generic;  \nusing System.Linq;  \nnamespace LINQExamples  \n{  \nclass Example  \n{  \npublic static void Main(string[] args)  \n{  \nList<string> sports = new List<string>();  \nsports.Add(\"Cricket\");  \nsports.Add(\"Hockey\");  \nsports.Add(\"Football\");  \nsports.Add(\"Rugby\");  \nIEnumerable<string> result = sports.Select(x => x);  \nforeach (var item in result)  \n{  \nConsole.WriteLine(item);  \n}  \nConsole.ReadLine();  \n}  \n}}  \nOutput:\nCricket\nHockey\nFootball\nRugby",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How would you count the elements in a list or collection?",
+        "answer": "The Count() function is used to count the number of items in the list.\n\nSyntax\nIn C#\nint[] Num = { 5,4,3,2,1};  \nint Count = Num.Count();  \nIn VB.net\nDim Num As Integer() = {5,4,3,2,1}  \nDim Count As Integer = Num.Count()  \nIf we consider the above syntax, we are counting total number of items in the \"Num\" list using LINQ Count() function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) Define API in LINQ?",
+        "answer": "LINQ queries can be written for the classes that implement IEnumerable or IQueryable interface. The System.Linq namespace provides many classes for interfaces require for LINQ queries.\nLINQ queries use some extension methods for such classes that implement IEnumerable or IQueryable interface.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is Expression Tree in LINQ?",
+        "answer": "Lambda expressions are extensively used in Expression Tree construction. An Expression Tree represents code in a tree-like format, where each node acts as an impression. Expression trees can be converted into compiled code and run it.\nIn, .NET framework, Expression class is used to create expression tree through the API. Expression Trees API also support assignment and some control flow expression such as conditional blocks, loops, and try-catch blocks. By using the API, we can generate expression trees that are more complex than those that can be created from lambda expressions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What do you understand by DataContext class? How is it related to LINQ?",
+        "answer": "The DataContext class acts as a passing point for the LINQ to SQL framework. It is the foundation of all accesses mapped over a database connection.\nA Datacontext is lightweight and cheap to create. After adding LINQ to SQL classes, empty DataContext classes that are ready to be configured are represented by empty design surface. DataContext class holds information about the methods for connecting to a database. It also manipulates the data in the database. DataContext classes are configured with the connection data that is availed by the first item.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is the basic syntax of a LINQ query in Visual Basic as well as in C#?",
+        "answer": "In Visual Basic, From keyword is used to start the basic syntax of LINQ query and it ends with Select or Group By keyword. You can use another keyword like Where, Order By, Order By Descending, etc., for performing additional functions like filtering data or generating data in a specific order.\nIn C#, the basic syntax starts with from keyword and terminates with Select or Group By keyword. We can use another clause like Where, Order By, Order By Descending, etc. For performing activities like filtering data or generating data in a specific order.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Elaborate the PLINQ?",
+        "answer": "The term PLINQ stands for parallel LINQ. It's a parallel implementation of LINQ to objects. It supports parallel programming, and it is so closely related to the task parallel library. It facilitates with some queries to automatically take advantage of multiple processors. PLINQ is capable of increasing the speed of LINQ to Objects queries by using all available cores on the host computer more efficiently.\nSyntax of PLINQ\nFollowing is the syntax of using PLINQ to increase the performance of LINQ queries in c#, vb.net.\nC# Code\nIEnumerable<int> rvals = Enumerable.Range(1, 100000000);  \nvar output1 = rvals.AsParallel().Where(x => x % 12345678 == 0).Select(x => x);  \nVB.NET Code\nDim rvals As IEnumerable(Of Integer) = Enumerable.Range(1, 100000000)  \nDim output1 = rvals.AsParallel().Where(Function(x) x Mod 12345678 = 0).[Select](Function(x) x)  \nIf you notice the given syntax, I have used Parallel method with LINQ queries to increase performance of LINQ queries.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the LINQ Standard Query Operators in LINQ?",
+        "answer": "The standard query operators are the techniques that form the LINQ pattern. These techniques applied on sequences, where a sequence is an object that implements the IEnumerable<T> interface or the IQueryable<T> interface. The standard query operators provide query capabilities for filtering, projection, sorting, aggregation, and more.\nLINQ standard query operators have two groups. The one group that operates on IEnumerable<T> type objects and the other operates on IQueryable<T> type objects.\nConsider the following syntax\nvar students= from s in studentList where s.age>18 select s;  \nIn the above example, the operators where and select are standard query operators.\nHere is the brief classification of some Standard Query operators based on their functionality.\nClassification Standard Query Operators\nFiltering Where, OfType\nSorting OrderBy, ThenBy, Reverse, OrderByDescending, ThenByDescending\nGrouping GroupBy, ToLookup\nJoin GroupJoin, Join\nProjection Select, SelectMany\nAggregation Aggregate, Average, Count, LongCount, Max, Min, Sum\nQuantifiers All, Any, Contains\nSet Distinct, Except, Intersect, Union\nPartitioning Skip, SkipWhile, Take, TakeWhile\nConcatenation Concat\nEquality SequenceEqual\nConversion AsEnumerable, AsQueryable, Cast, ToArray, ToDictionary, ToList",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) List out the main components of LINQ? Tell what is the extension of the file, when LINQ to SQL is used?",
+        "answer": "Three major components of LINQ are\nStandard Query Operators\nLanguage Extensions\nLINQ Providers\nThe extension of the file when LINQ to SQL is used is .dbml.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) Explain why SELECT clause comes after FROM clause in LINQ?",
+        "answer": "LINQ requires all the variables to be declared first. The \"FROM\" clause of LINQ query defines the condition or range to select records so FROM clause must act before SELECT in LINQ query.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What are Anonymous Types?",
+        "answer": "Anonymous types are run-time compiler generated by the compiler. There is no need to specify the name while creating the Anonymous compiler yet we can write properties names and their values. The compiler creates these properties and assigns values to them at runtime.\nvar v = new { PropertyFirst = \"first value\", PropertySecond = \"second value\" };  \nConsole.WriteLine(k.PropertyFirst);  \nAnonymous class is helpful in LINQ queries. It saves the intermediate result while performing queries.\nThere are some restrictions on Anonymous types as well:\nAnonymous types cannot implement interfaces.\nAnonymous types can not specify any methods.\nWe cannot define static members.\nAll defined properties must be initialized.\nWe can only define public fields.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Explain what are LINQ compiled queries?",
+        "answer": "There may be a scenario where we repeatedly need to execute a particular query. LINQ allows us to create a query and make it compiled always.\nBenefits of Compiled Queries\nThese Queries do not need to compile each time, so the execution of the query is fast.\nThese Queries are compiled once and can be used any number of times.\nThese Queries does need to be recompiled even if the parameter of the query is being changed.\nExample\nstatic class MyCompliedQueries {  \n    public static Func <DataClasses1DataContext, IQueryable <Person>> CompliedQueryForPerson =   \n        CompiledQuery.Compile((DataClasses1DataContext context) = >from c in context.Persons select c);  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the difference between First() and FirstOrDefault() selector methods in LINQ?",
+        "answer": "The First() method always expects at least one element in the result set. If there isn't any element in the result, First() returns an exception. While FirstOrDefault() is compatible with a result set having 0 elements, it does not throw any exception.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is the difference between N-tier and N-layer architecture?",
+        "answer": "N-Tier and N-Layer are two different concepts. These terms are generally used during the design of the application architecture. N-Tier stands for the actual n system components of your application. On the other hand, N-Layers stands for the internal architecture of your component.\nThe main advantages of the layered architectural style are as follows.\nAbstraction\nIsolation\nManageability\nPerformance\nReusability\nTestability\nThe main advantages of tier architecture styles are as follows.\nMaintainability\nScalability\nFlexibility\nAvailability",
+        "reference": "javatpoint.com"
+    }
+]

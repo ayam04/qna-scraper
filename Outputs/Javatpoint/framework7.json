@@ -1,0 +1,152 @@
+[
+    {
+        "question": "1) What is Framework7?",
+        "answer": "The Framework7 is a free and open-source mobile HTML framework. It is used to develop hybrid mobile apps or web apps for iOS and Android devices. It is compatible with other frameworks like also be like Angular, React.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) In which year Framework7 was introduced?",
+        "answer": "The Framework7 was introduced in 2014. Its latest version v3.1.1 was released on August 3, 2018, licensed under MIT.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is the reason behind Framework7 popularity?",
+        "answer": "The Framework7 is popular because of the following reasons:\nADVERTISEMENT\nIt facilitates you to develop apps for iOS and Android both.\nThe learning curve for Framework7 is very easy.\nFramework7 has many pre-styled widgets/components.\nIt has built-in helper libraries.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the main features of Framework7?",
+        "answer": "Main features of Framework7:\nFramework7 is an open source framework, so it is free to use.\nFramework7 has easy and familiar jQuery syntax so you can learn it very easily.\nFramework7 has the built-in FastClick library, so it is very easy to control-click delay for touch UI's.\nFramework7 has built-in grid system layout for arranging your elements responsively.\nFramework7 dynamically loads the page from the template via flexible router API.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the advantages of Framework7?",
+        "answer": "Advantages of Framework7:\nFramework7 is not dependent on any third party library.\nFramework7 has its custom DOM7 for DOM manipulation.\nFramework7 can also be used with Angular and React frameworks.\nFramework7 facilitates you to create apps once you know HTML, CSS, and some basic JavaScript.\nIt supports faster development via Bower.\nIt is easy to develop apps for iOS and Android without learning it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the disadvantages of Framework7?",
+        "answer": "Disadvantages of Framework7:\nFramework7 only supports platforms like iOS and Android.\nThe online community support for Framework7 is not as broad as iOS and Andriod.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the several layouts for Framework7?",
+        "answer": "Framework7 provides different types of layouts for your application. It supports mainly four types of Navbar/Toolbar layouts:\nStatic Layout: The static layout is most often used layout type and includes navbar and toolbar which can be scrollable page content and each page contains its navbar and toolbar.\nFixed Layout: Fixed layout uses its navbar and toolbar which can be visible on screen and cannot be scrollable on the page.\nThrough Layout: In through layout, the navbar and toolbar appear fixed for all pages within a single view.\nMixed Layout: This layout is a mix of all the above layouts in the single view.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are Navbars in Framework7?",
+        "answer": "There are three parts in navbars which may contain any HTML content in the following way:\nLeft: It is designed to place backlink icons or single text link.\nCenter: It is used to display the title of the page or tab links.\nRight: This part can be used similarly as left part.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the use of different navbars in Framework7?",
+        "answer": "Following is a list of different navbars with details:\nBasic navbar: A basic navbar can be created by using the navbar, navbar-inner, left, center and right classes.\nNavbar with links: To use links in left and right part of your navbar, add <a> tag with a class link.\nMultiple links: To use multiple links, add a few more <a class=\"link\"> to the part of your choice.\nLinks with text and icons: The links can be provided with icons and text by adding classes for icons and wrapping the link text with the <span> element.\nLinks with only icons: Navbar links can be provided with only icons by adding icon-only class to links.\nRelated app and view methods: On initializing the View, framework7 allows you to use methods available for the navbar.\nHide navbar automatically: The navbar can be hidden/shown automatically for some Ajax loaded pages where a navbar is not required.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the toolbars in Framework7?",
+        "answer": "Toolbars are used to provide easy access to other pages by using navigation elements at the bottom of the screen.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are the different Framework7 toolbars to use?",
+        "answer": "You can use toolbars in two ways as specified in the table.\nHide Toolbar: If you want to hide the toolbar automatically when you load the pages, use the no-toolbar class to loaded page.\nBottom Toolbar: Place the toolbar at the bottom of the page by using the toolbar-bottom class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the different methods used with the toolbar?",
+        "answer": "Following is a list of methods used with toolbars:\nmyApp.hideToolbar(toolbar): It hides the specified toolbar.\nmyApp.showToolbar(toolbar): It shows the specified toolbar.\nview.hideToolbar(): It hides the specified toolbar in the view.\nview.showToolbar(): It shows the specified toolbar in the view.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is Search Bar in Framework 7?",
+        "answer": "SearchBar is obtained in Framework 7 by using the SearchBar class. It is used for searching the elements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What are the different SearchBar properties in framework 7?",
+        "answer": "Following is a list of different SearchBar properties:\nmySearchbar.params: It represents the initialized parameters passed with an object.\nmySearchbar.query: It searches the current query.\nmySearchbar.searchList: It defines the search list block.\nmySearchbar.container: It defines the search bar container with HTML element.\nmySearchbar.input: It defines the search bar input with HTML element.\nmySearchbar.active: It defines whether the search bar is enabled or disabled.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the different SearchBar methods?",
+        "answer": "Following is a list of SearchBar methods:\nmySearchbar.search(query): This method is used to search the passed query.\nmySearchbar.enable(): It is used to enable the search bar.\nmySearchbar.disable(): It is used to disable the search bar.\nmySearchbar.clear(): It facilitates you can clear the query and search results.\nmySearchbar.destroy(): It is used to destroy the search bar instance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What do you mean by Content Block in Framework 7?",
+        "answer": "In Framework 7, Content Blocks make you able to add extra content with a different format. It is generally used when you have much content of different types, and you have to put all on a page. For example:\n<div class = \"page-content\">    \n                     <p>This is out side of content block!!!</p>        \n                     <div class = \"content-block\">    \n                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium     \n                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis     \n                        et quasi architecto beatae vitae dicta sunt explicabo.</p>    \n                     </div>    \nFor complete example: Click here",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is Layout grid in Framework 7?",
+        "answer": "The Framework7 provides different types of grid types for placing the content according to user needs.\nThe layout grid is used to provide different types of columns size.\nFor more: Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What do you know by Overlays in Framework 7?",
+        "answer": "In Framework7, overlays are used to work with applications smoothly. Following is a list of some Overlays in Framework 7:\nModal: Modal is a small window which is used to display content from separate sources without leaving the parent window.\nPopup: Popup is a popup box which is used to display the content when the user clicks on the element.\nPopover: It manages the presentation of the temporary content.\nAction Sheet: The Action Sheet is used to present the user with a set of possibilities for how to handle a given task.\nLogin Screen: Overlay login screen displays login screen format which can be used in page or popup or as a standalone overlay.\nPicker Modal: Picker modal is used to pick some custom content which is similar to calendar picker.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the Progress Bar in Framework 7?",
+        "answer": "The progress bars can be used to show the loading of assets or progress of a task to the users. The Progress bar can be specified by using the progress bar class. When the user doesn't know how long the loading processes the request, you can use progress bar-infinite class.\n<div class = \"progressbar-inline\">    \n                            <p><span data-progress = \"10\" class = \"progressbar\"></span></p>    \n                                                            <p class = \"buttons-row\">    \n                               <a href = \"#\" data-progress = \"25\" class = \"button button-raised\">25%</a>    \n                               <a href = \"#\" data-progress = \"50\" class = \"button button-raised\">50%</a>    \n                               <a href = \"#\" data-progress = \"75\" class = \"button button-raised\">75%</a>    \n                               <a href = \"#\" data-progress = \"100\" class = \"button button-raised\">100%</a>    \n                            </p>    \n                         </div>               \nFor complete example: Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What Is Accordion In Framework7?",
+        "answer": "In Framework 7, the accordion is a graphical control element displayed as a stacked list of items. Each accordion can be expanded or stretched to reveal the content associated with that accordion.\nFor complete example: Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the different classes used for accordion in Framework 7?",
+        "answer": "Following classes are used in Framework 7 accordion:\naccordion-list: It is an optional class contains the group of accordion items list.\naccordion-item: It is a required class for a single accordion item.\naccordion-item-toggle: It is a required class used to expand accordion item content.\naccordion-item-content: It is a required class used for hidden accordion item content.\naccordion-item-expanded: It is a single expanded accordion item.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What are the cards in Framework 7?",
+        "answer": "The Framework 7 cards contain organized information related to a single subject like a photo, link, and text.\nFollowing is a list of Framework 7 card type:\nCard HTML Layout: The basic card HTML layout uses card classes to arrange its items.\nList View With Cards: You can use cards as list view elements by adding cards-list class to <div class=\"list-block\">.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the use of the floating action button in Framework 7?",
+        "answer": "The Framework7 Floating Action Button is used for promoted action. It is like a circled icon floating above the UI and has motion behaviors that include morphing, launching, and a transferring anchor point.\nThere are 3 types of action buttons used in Framework7:\nFloating Action Button Layout: It is very simple. You have to place it as a child of page or view.\nMorph to Popover: If you want to open popover on clicking the floating action button, then you can use floating-button-to-popover class.\nSpeed Dial: You can invoke related actions upon clicking the floating action button by using speed dial.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What are tabs in Framework 7?",
+        "answer": "The Framework7 tabs are the set of logically grouped content that facilitates you to move between them and save the space like accordion quickly. Let's see the layout of a Framework7 tab:\n<!-- Tabs wrapper should have \"tabs\" class. It is a required element -->  \n<div class = \"tabs\">  \n   <!-- The tab should have \"tab\" class and unique id attribute -->  \n        <!-- The tab is active by default - \"active\" class -->  \n   <div class = \"tab active\" id = \"tab1\">  \n      ...  The content for Tab 1 goes here ...  \n   </div>  \n        <!-- The second tab, should have \"tab\" class and unique id attribute -->  \n   <div class = \"tab\" id = \"tab2\">  \n      ... The content for Tab 2 goes here ...  \n   </div>  \n</div>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is the message bar in Framework 7?",
+        "answer": "The Framework7 Message bar is a resizable toolbar for usage with messages. It provides a special resizable toolbar to work with the messaging system in the application.\nSyntax:\n<div class=\"page toolbar-fixed\">    \n  <div class=\"toolbar messagebar\">    \n  <div class=\"toolbar-inner\">    \n    <textarea placeholder=\"Message\"></textarea><a href=\"#\" class=\"link\">Send</a>    \n  </div>    \n</div>       \n</div>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the picker in Framework 7?",
+        "answer": "In Framework7, the picker is a very powerful component which facilitates you to choose any values from the list and also used to create custom overlay pickers. It looks like native iOS picker and can be used as an inline component or as an overlay.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is the use of infinite scroll in Framework 7?",
+        "answer": "The Infinite scroll is used when you want to load additional content and perform the required actions when the page is near to the bottom.\nSyntax\n<div class = \"page\">  \n   <div class = \"page-content infinite-scroll\" data-distance = \"100\">  \n      ...  \n   </div>  \n</div>  \nHere:\npage-content infinite-scroll: It is used for infinite scroll container.\ndata-distance: This attribute is used to configure distance from the bottom of a page (in px) to trigger infinite scroll event, and its default value is 50px.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the autocomplete in Framework 7?",
+        "answer": "In Framework7, autocomplete is a mobile friendly and touch-optimized component, which can be a drop-down or in a standalone way. You can create and initialize Autocomplete instance by using the JavaScript method:\nmyApp.autocomplete(parameters)   \nHere, parameters are required objects used to initialize the Autocomplete instance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) How can we use the date functionality in Framework 7?",
+        "answer": "The Framework7 provides Calender component which facilitates you to handle dates easily and can be used as an inline or as an overlay component. The overlay calendar converted to pop over on tablets automatically.\nmyApp.autocomplete(parameters)   \nHere, parameters are required objects used to initialize the Autocomplete instance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the use of notifications in Framework7?",
+        "answer": "Notifications are used to display required messages which appear like Push (or Local) iOS notifications.\nUsage of Framework7 Notification are:\nIndex Notification Usage Description\n1) Notifications JavaScript API The notifications can also be added or closed with JavaScript by using the related app methods.\n2) Notifications Layout Framework7 notifications added by using JavaScript.\n3) Example iOS Framework7 allows you to use different types of notifications in your iOS layout.\n4) Example Material Framework7 notifications can also be used in the material layout.",
+        "reference": "javatpoint.com"
+    }
+]

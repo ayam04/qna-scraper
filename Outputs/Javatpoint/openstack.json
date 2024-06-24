@@ -1,0 +1,102 @@
+[
+    {
+        "question": "",
+        "answer": "OpenStack is an open source and free set of software tools or cloud computing platform which is used for managing and building cloud computing platform for private and public cloud.\nOpenStack is referred as the future of Cloud Computing.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the modular architectural components of OpenStack?",
+        "answer": "Following is a list of OpenStack modular architectural components:\nADVERTISEMENT\nDashboard\nCompute\nNetworking\nObject Storage\nBlock Storage\nIdentity service\nImage Service\nTelemetry\nOrchestration\nDatabase Service etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the advantages/benefits of using OpenStack?",
+        "answer": "Advantages/Benefits of using OpenStack:\nOpenStack can be used to develop any software as a service (SAAS) applications, for new developments or to improve existing solutions.\nIt can be used as a strong foundation to deliver self-service storage to IT users.\nIt provides easy to handle storage at lower costs.\nIt can deliver on-demand objective or block storage with higher scalability.\nAn enterprise can save a lot of licensing fees by switching virtual machines running on VMware to OpenStack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is \"role\" and \"tenant\" in OpenStack?",
+        "answer": "role: It specifies the authorization level of the user.\nTenant: It specifies a group of users.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the storage types allowed by OpenStack compute?",
+        "answer": "OpenStack supports two types of storage:\n1. Persistent Storage or volume storage\n2. Ephemeral Storage\nPersistent Storage / Volume Storage: It is persistent and independent of any particular instance. This storage is created by users. There are three types of persistent storage:\nObject storage: It is used to access binary objects through the REST API.\nBlock storage: It offers access-to-block storage devices by affixing volumes their current VM instances.\nShared File System storage: It provides a set of services to manage multiple files together for storage and exchange with multiple users at one time.\nEphemeral Storage: The ephemeral storage specifies a single instance. It is a temporary and short-lived storage that is disappeared once the VM is terminated.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is hypervisor? Which type of hypervisors are supported in OpenStack?",
+        "answer": "Hypervisor is a software or hardware tool which is used to create and run a virtual machine. OpenStack supports a variety of hypervisors like VMware, Citrix, and Microsoft etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Which is the most important identity service in OpenStack?",
+        "answer": "Keystone is the most important and preferred Identity Service in OpenStack. It executes the complete OpenStack Identity API.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are the different networking options used in OpenStack?",
+        "answer": "The networking options used in Open Stack are:\nFlat DHCP Network Manager: It is used to fetch IP addresses from the subnet for VM instances but IP addresses to VM are assigned via DHCP (Dynamic Host Configuration Protocol).\nFlat Network Manager: It is used to fetch IP addresses from the subnet for VM instances, and then injected into the image on launch.\nVLAN Network Manager: : VLAN provides more secure and separate network to VMs. It has a physical switch to offer separate virtual network and separate IP range and bridge for each tenant. It is more preferable choice.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Which commands are used to pause and un-pause (resume) an instance?",
+        "answer": "For Pausing: $nova pause INSTANCE_NAME\nFor Un-pausing: $novaunpause INSTANCE_NAME",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Where the OpenStack images are stored?",
+        "answer": "Glance is the image manager for OpenStack. So OpneStack images are stored in:\nDefault: /var/lib/glance/images/",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is Token in OpenStack?",
+        "answer": "Token is a type of authentication like password-based validation. It is generated when the user inserts the credential and authenticate as a keystone user then Tokens can be used to access OpenStack services without any revalidation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) How can you create a Token?",
+        "answer": "Users first need to authenticate their Keystone credentials to create a token.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) Explain is OpenStack Python SDK?",
+        "answer": "Python SDK (Software Development Kit) is used to help users to write applications for performing automation tasks in Python by calling Python objects.\nIt provides a platform to work with multiple OpenStack services at one place.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) Explain is the role of API server in OpenStack?",
+        "answer": "In OpenStack, an API server provides an interface for the external world to interact with the cloud infrastructure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the commands used to generate key pairs in OpenStack?",
+        "answer": "Commands used to generate key pairs in OpenStack:\nssh-keygen\ncd.ssh\nnova keypair-add -pub_key id_rsa.pub mykey",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) Which hardware is required for networking in OpenStack?",
+        "answer": "In OpenStack,networking can be done with following hardware:\nNetworks\nRouters\nSubnets\nPorts\nVendor Plugins",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) Which command is used to manage floating IP addresses in OpenStack?",
+        "answer": "nova floating-ip-*",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Explain the usage of Cinder in OpenStack?",
+        "answer": "OpenStack Cinder is used to handle block storage in the context of OpenStack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the use of $ nova floating-ip-pool-list command in OpenStack?",
+        "answer": "The $ nova floating-ip-pool-list command is used to list IP address information in OpenStack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Explain the term \"flavor\" in OpenStack?",
+        "answer": "The term \"flavor\" is an available hardware configuration for a server, which defines the size of a virtual server that can be launched.",
+        "reference": "javatpoint.com"
+    }
+]

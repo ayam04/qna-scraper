@@ -1,0 +1,137 @@
+[
+    {
+        "question": "1) What is Memcached?",
+        "answer": "Memcached is a general-purpose free and open source, high performance, distributed memory object caching system. It is used to speed up database-driven websites by caching data and objects in RAM.\nIn simple words, you can say that Memcached is a component which stores data temporally for 1hour/ 6 hour/ 12 hours/ 1 day, etc. and you can integrate this component with your applications to increase their performance.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) In which language Memcached is written and who is the author?",
+        "answer": "Memcached is written in \"C language\". It was developed by Brad Fitzpatrick in 2003. Initially, it is developed for LiveJournal, but now it is used by Wikipedia, Twitter, Facebook, Flickr, Netlog, YouTube, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How Memcached works?",
+        "answer": "See the following steps to understand how Memcached works:\nADVERTISEMENT\nMemcached first tries to get the detail of the user, and the browser sends the request to the application.\nAn application calls the Memcached for a particular user.\nIf Result found in Memcached, Return the result from Memcached.\nIf Result Not found in Memcached, Application sends the request to the database and save the result in Memcached.\nEach Memcached have one unique key.\nGet/Set the data work on behalf of the key.\nYou can also delete one or more keys.\nYou can also assign tags to one/more keys.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) When was the first version of Memcached launched?",
+        "answer": "The first version of Memcached was launched on May 22, 2003.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is the usage of Memcached? In which types of websites, it is generally used?",
+        "answer": "Memcached is used to increase the speed of dynamic database driven websites. It caches data and objects in RAM to reduce the execution time.\nIt is generally used:\nIn social networking sites for profile caching.\nFor content aggregation i.e. HTML/Page caching.\nIn E-commerce websites for Session and HTML caching.\nIn location-based services for database query scaling.\nIn gaming and entertainment services for session caching.\nIt can also be used to track cookie/ profile for ad targeting.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the best usage of Memcached?",
+        "answer": "Best usage of Memcached:\nIt is easy to install in Windows as well as in the UNIX operating system.\nIt provides API integration for all the major languages like Java, PHP, C/C++, Python, Ruby, Perl, etc.\nIt enhances the performance of web application by caching.\nIt reduces the burden of the database server.\nIt facilitates you to delete one or more values.\nIt facilitates you to update the values of keys.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the drawbacks/ limitations of Memcached?",
+        "answer": "A list of the limitations or drawbacks of Memcached:\nMemcached cannot store data persistently and permanently.\nMemcached is not a database. It stores only temporary data.\nMemcached cannot cache large objects.\nMemcached is not application specific.\nMemcached is not fault-tolerant or highly available.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) In which conditions cache cannot retain the stored information?",
+        "answer": "The cache cannot retain the stored information in following conditions:\nWhen the allocated memory for the cache is exhausted.\nWhen an item from the cache is deleted.\nWhen an individual item in the cache is expired.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the difference between Memcache and Memcached?",
+        "answer": "Difference between Memcache and Memcached:\nTable:\nMemcache Memcached\nMemcache module provides handy procedural and object-oriented interface to Memcached. Memcached is a high-performance, distributed memory object caching system.\nMemcache is an extension that allows you to work through handy object-oriented (OOP's) and procedural interfaces. Memcached is an extension that uses the libMemcached library to provide API for communicating with Memcached servers.\nThe Memcache module provides a session handler (Memcache). The Memcached provides a session handler (Memcached).\nIt is designed to reduce database load in dynamic web applications. It is used to increase the dynamic web applications by reducing database load. It is the latest API.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Can we share a single instance of Memcache between multiple projects?",
+        "answer": "Yes, we can share a single instance of Memcache between multiple projects because being a memory storage space, Memcache can be run on one or more servers. In Memcache, you can also configure your client to speak to a particular set of instances.\nWe can also run two different Memcache processes on the same host being completely independent and without any interference. If you partition your data, it is important to know from which instance to get the data from or to put into.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Explain the differences between SAP HANA and Memcached?",
+        "answer": "SAP HANA is an in-memory RDBMS and mostly used for accelerating SAP applications while Memcached is a key/value caching system and used for accessing both RDBMS and NoSQL databases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) How to connect Memcached server with telnet command?",
+        "answer": "By using telnet hostname portNumber command, you can connect Memcached server with telnet command.\nSyntax\n$telnet HOST PORT  \nExample\nThe given example shows that how to connect to a Memcached server and execute a simple set and get command. Let's assume that the server of Memcached is running on host 127.0.0.1 and port 11211.\n$telnet 127.0.0.1 11211  \nTrying 127.0.0.1...  \nConnected to 127.0.0.1.  \nEscape character is '^]'.  \n// store data and get that data from server  \nset javatpoint 0 900 9  \nmemcached  \nSTORED  \nget javatpoint  \nVALUE javatpoint 0 9  \nmemcached  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How to get the value of key?",
+        "answer": "By using the get command, you can get the value of the key.\nSyntax\nget key  \nExample\nIn the given example, we use javatpoint as the key and store Memcached in it with an expiration time of 900 seconds.\nimport net.spy.memcached.MemcachedClient;  \npublic class MemcachedJava {  \n   public static void main(String[] args) {  \n      // Connecting to Memcached server on localhost  \n      MemcachedClient mcc = new MemcachedClient(new  \n      InetSocketAddress(\"127.0.0.1\", 11211));  \n      System.out.println(\"Connection to server sucessfully\");  \n      System.out.println(\"set status:\"+mcc.set(\"javatpoint\", 900, \"memcached\").done);  \n            // Get value from cache  \n      System.out.println(\"Get from Cache:\"+mcc.get(\"javatpoint\"));  \n   }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How to set the value of key?",
+        "answer": "By using set command, you can set the value of the key.\nSyntax\nset key flags exptime bytes [noreply]   \nvalue   \nExample\nIn the given example, we use javatpoint as the key and set value Memcached in it with an expiration time of 900 seconds.\nset javatpoint 0 900 9  \nmemcached  \nSTORED  \nget javatpoint  \nVALUE javatpoint 0 9  \nMemcached  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How to add value in the key?",
+        "answer": "By using add command, you can add value in the key.\nSyntax\nadd key flags exptime bytes [noreply]  \nvalue  \nExample\nIn the given example, we use \"key\" as the key and add the value Memcached in it with 900 seconds expiration time.\nadd key 0 900 9  \nmemcached  \nSTORED  \nget key  \nVALUE key 0 9  \nMemcached  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) How to replace the value of the key?",
+        "answer": "By using replace command, you can replace the value of the key.\nSyntax\nreplace key flags exptime bytes [noreply]  \nvalue  \nExample\nIn the given example, we use \"key\" as the key and add the value Memcached in it with 900 seconds expiration time. After this, the same key is replaced with the \"redis\".\nadd key 0 900 9  \nmemcached  \nSTORED  \nget key  \nVALUE key 0 9  \nmemcached  \nEND  \nreplace key 0 900 5  \nredis  \nget key  \nVALUE key 0 5  \nredis  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How to append the value of the key?",
+        "answer": "By using append command, you can append the value of the key.\nSyntax\nappend key flags exptime bytes [noreply]  \nvalue  \nExample\nIn the given example, we are trying to add some data in a key that does not exist. Hence, NOT_STORED is returned by Memcached. After this, we set one key and append data into it.\nappend javatpoint 0 900 5  \nredis  \nNOT_STORED  \nset javatpoint 0 900 9  \nmemcached  \nSTORED  \nget javatpoint  \nVALUE javatpoint 0 14  \nmemcached  \nEND  \nappend javatpoint 0 900 5  \nredis  \nSTORED  \nget javatpoint  \nVALUE javatpoint 0 14  \nmemcachedredis  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How to prepend value of key?",
+        "answer": "By using prepend command, you can prepend value of the key.\nSyntax\nprepend key flags exptime bytes [noreply]  \nvalue  \nExample\nIn the given example, we are trying to add some data in a key that does not exist. Hence, NOT_STORED is returned by Memcached. After this, we set one key and prepend data into it.\nprepend tutorials 0 900 5  \nredis  \nNOT_STORED  \nset tutorials 0 900 9  \nmemcached  \nSTORED  \nget tutorials  \nVALUE tutorials 0 14  \nmemcached  \nEND  \nprepend tutorials 0 900 5  \nredis  \nSTORED  \nget tutorials  \nVALUE tutorials 0 14  \nredismemcached  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How to delete the key?",
+        "answer": "By using delete command, you can delete the key.\nSyntax\ndelete key [noreply]  \nExample\nIn the given example, we use javatpoint as a key and add the value Memcached in it with 900 seconds expiration time. After this, it deletes the stored key.\nset javatpoint 0 900 9  \nmemcached  \nSTORED  \nget javatpoint  \nVALUE javatpoint 0 9  \nmemcached  \nEND  \ndelete javatpoint  \nDELETED  \nget javatpoint  \nEND  \ndelete javatpoint  \nNOT_FOUND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How to show the stats?",
+        "answer": "By using stats command, you can show the stats.\nSyntax\nstats  \nExample\nstats  \nSTAT pid 1162  \nSTAT uptime 5022  \nSTAT time 1415208270  \nSTAT version 1.4.14  \nSTAT libevent 2.0.19-stable  \nSTAT pointer_size 64  \nSTAT rusage_user 0.096006  \nSTAT rusage_system 0.152009  \nSTAT curr_connections 5  \nSTAT total_connections 6  \n  STAT connection_structures 6  \nSTAT reserved_fds 20  \nSTAT cmd_get 6  \nSTAT cmd_set 4  \nSTAT cmd_flush 0  \nSTAT cmd_touch 0  \nSTAT get_hits 4  \nSTAT get_misses 2  \nSTAT delete_misses 1  \nSTAT delete_hits 1  \n  STAT incr_misses 2  \nSTAT incr_hits 1  \nSTAT decr_misses 0  \nSTAT decr_hits 1  \nSTAT cas_misses 0  \nSTAT cas_hits 0  \nSTAT cas_badval 0  \nSTAT touch_hits 0  \nSTAT touch_misses 0  \nSTAT auth_cmds 0  \n  STAT auth_errors 0  \nSTAT bytes_read 262  \nSTAT bytes_written 313  \nSTAT limit_maxbytes 67108864  \nSTAT accepting_conns 1  \nSTAT listen_disabled_num 0  \nSTAT threads 4  \nSTAT conn_yields 0  \nSTAT hash_power_level 16  \n  STAT hash_bytes 524288  \nSTAT hash_is_expanding 0  \nSTAT expired_unfetched 1  \nSTAT evicted_unfetched 0  \nSTAT bytes 142  \nSTAT curr_items 2  \nSTAT total_items 6  \nSTAT evictions 0  \nSTAT reclaimed 1  \nEND",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) How to get the versions?",
+        "answer": "By using Version command, you can get the versions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How to close the connection?",
+        "answer": "By using the Quit command, you can close the connection.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How would you update Memcached when data changes?",
+        "answer": "There are two methods to update Memchached when data changes:\nBy clearing the cache proactively: You can update Memcached by clearing the cache while insertion or updation is made.\nBy resetting the cache: It is slightly similar to the first method, but it doesn't delete the keys and wait for the next request for the data to refresh the cache, it resets the values after the insert or update.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is Dogpile effect? How can you prevent this effect?",
+        "answer": "If the cache expires, and websites are hit by multiple requests made by the client at the same time, this effect is known as Dogpile effect.\nThis effect can be prevented by using a semaphore lock. In this system when value expires, the first process acquires the lock and starts generating new value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What happens to the data stored in Memcached when server accidentally gets shut down?",
+        "answer": "In Memcached, data is not permanently stored. It is not a durable data so, if the server is shut down or restarted, all the data stored in Memcached will be deleted.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) If you have multiple Memcache servers and one of the Memcache servers fails which has your data, will it ever try to get key data from that one failed server?",
+        "answer": "The data in the failed server won't get removed, but there is a provision for auto-failure, which can be configured for multiple nodes. Fail-over can be triggered during any socket or Memcached server level errors and not during normal client errors like adding an existing key, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) How can you minimize the Memcached server outages?",
+        "answer": "Following are the methods to minimize the Memcached server outage:\nWhen one instance fails, several of them go down, this situation will put larger load on the database server when the client reloaded the lost data. To avoid this, you should write your code to minimize cache stampedes, and it will leave a comparatively less impact.\nYou can bring up an instance of Memcached on a new machine using the lost machines IP address.\nThe Code is another option to minimize server outages as it gives you the liberty to change the Memcached server list with minimal work.\nSetting timeout value is another option that some Memcached clients implement for Memcached server outage. When your Memcached server goes down, the client will keep trying to send a request till the time-out limit is reached.",
+        "reference": "javatpoint.com"
+    }
+]

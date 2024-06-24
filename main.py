@@ -12,9 +12,10 @@ driver_path = "C:/Users/ayamu/python programs/drivers/chromedriver-win64/chromed
 
 ib_url = "https://www.interviewbit.com/technical-interview-questions/"
 jtp_url = "https://www.javatpoint.com/interview-questions-and-answers"
+itp_url = "https://intellipaat.com/blog/interview-questions/"
 
 options = webdriver.ChromeOptions()
-options.add_argument("--headless")
+# options.add_argument("--headless")
 options.add_argument("--disable-cookies")
 
 driver = webdriver.Chrome(service=Service(driver_path), options=options)
@@ -129,6 +130,32 @@ def extract_jtp_roles(link):
                 json.dump(extracted_data, f, indent=4)
     except Exception as e:
         pass
-get_ib_roles()
-# get_jtp_roles()
-# extract_jtp_roles('https://www.javatpoint.com/java-8-multithreading-interview-questions')
+
+# Intellipat Roles
+
+def get_itp_roles():
+    print("Getting Intellipat Roles..")
+    links = []
+    driver.get(itp_url)
+    try:
+        wait = WebDriverWait(driver, 10)
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".category-question-list a")))
+        elements = driver.find_elements(By.CSS_SELECTOR, ".category-question-list a")
+        for element in elements:
+            links.append(element.get_attribute('href'))
+    except Exception as e:
+        print(e)
+        driver.quit()
+        return
+
+    for link in links:
+        extract_itp_roles(link)
+
+    driver.quit()
+
+def extract_itp_roles(link):
+    pass
+
+# get_ib_roles()
+get_jtp_roles()
+get_itp_roles()

@@ -1,0 +1,152 @@
+[
+    {
+        "question": "1) What is Tableau?",
+        "answer": "ADVERTISEMENT\nableau is a powerful data visualization tool used in the business intelligence industry.\nIt simplifies the raw data into a very easily understandable format.\nIt visualizes and creates interactive, sharable dashboards.\nTableau is not required any technical or programming skills.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Explain the features of Tableau?",
+        "answer": "There are three main features of Tableau, such as:\nData Blending: Data blending is an essential feature in Tableau. It is used when we combine related data from multiple data sources, which you want to analyze together in a single view, and represent in the form of a graph.\nReal-time Analysis: Real-Time Analysis makes users able to quickly understand and analyze dynamic data when the Velocity is high, and real-time analysis of data is complicated. Tableau can help extract valuable information from fast-moving data with interactive analytics.\nThe Collaboration of Data: Data analysis is not isolating task. That's why Tableau is built for collaboration. Team members can share data, make follow up queries, and forward easy-to-digest visualizations to others who could gain value from the data. Making sure everyone understands the data and can make informed decisions is critical to success.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How many tools in Tableau?",
+        "answer": "There are five tools in Tableau, such as:\nTableau Desktop: Tableau Desktop establish connectivity between the Data Warehouse and other various types of files. The dashboards and the workbooks created here can be either shared locally or publicly. It allows us to code and customizes reports. Right from establishing the stories, charts to blending them all to form a dashboard, all the necessary work is created in Tableau Desktop.\nTableau Public: This Tableau version is specially built for cost-effective users. The word 'Public' means that the created workbooks cannot be saved locally. They should be kept on the Tableau's public cloud, which can be accessed and viewed by anyone.\nTableau Online: Its functionality is similar to the Tableau server, but data is stored on the server that hosted on the cloud, which is maintained by the Tableau group. There is no storage limit on the data which is published in the Tableau Online. Tableau Online creates a direct link over 40 data sources who are hosted in the cloud such as the Hive, MySQL, Spark SQL, Amazon Aurora, and many more.\nTableau Server: The software is correctly used to share the workbooks, visualizations, which is created in the Tableau Desktop application over the organization. To share dashboards in the Tableau Server, you should first publish your workbook in the Tableau Desktop. Once the workbook has been uploaded to the server, it will be accessible only to the authorized users.\nTableau Reader: Tableau Reader is a free tool which allows us to view the visualizations and workbooks, which is created using Tableau Desktop or Tableau Public. The data can be filtered, but modifications and editing are restricted. There is no security in Tableau Reader as anyone can view workbook using Tableau Reader.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Explain all data terminologies in Tableau?",
+        "answer": "There are several types of data terminologies in Tableau, such as:\nBookmark: A .tbm document in the bookmarks folder in the Tableau repository that contains a single worksheet. It helps in improving data analysis. Unlike, web browser bookmarks, .tbm files are a compatible way to display various studies quickly.\nWorkbook: A workbook is a file with .twb extension that holds one or more worksheets as well as dashboards and stories.\nDashboard: The dashboard is a combination of several views that are arranged on a single page. In Tableau, dashboards are used to observe and compare a variety of data together, and also it allows interacting with other worksheets.\nData Source Page: Data Source is a page where you can set up your data source. Does this data source page generally consist of four main areas? Join area, left pane, a preview area, and metadata area.\nWorksheet: The worksheet is a collection of sheets. It's a place where you build views of your data by dragging various fields onto the shelves.\nDimensions: Dimension is commonly known as a field of categorical data. Dimensions hold discrete data such as members and hierarchies that cannot be aggregated. It also contains characteristic values such as dates, names, and geographical data. The dimensions used to reveal details of your information.\nMeasures: measures are the measurable quantities of the data, which can be analyzed by a dimension table. Measures are stored in a table which contains foreign keys referring uniquely to the associated dimension tables. The table supports data storage at the atomic level and thus, allows the number of records to be inserted at one time.\nFor example, a Sales table can have a product key, customer key, promotion key, items sold, referring to a specific event.\nFilters shelf: Filter shelf is located on the left side of the workbook. Filters shelf is used to exclude the data from a view by filtering it using both dimensions and measures.\nPages shelf: Page shelf is on the left side of the view. With the help of the page shelf, you can split a view into a sequence of pages based on the values and members in a continuous or discrete field. Adding a field with the pages shelf is similar to adding a field in rows shelf. For each new row, a new page is created.\nMarks card: Marks card is on the left side of the worksheet. The user can drag fields to the control mark properties such as color, type, shape, size, label, detail, and tooltip.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "twbx extension?",
+        "answer": ".twb .twbx\nA .twb is an xml document that contains the information about your dashboards, sheets, and stories. It doesn't contain any data so to share your workbook, and you have send both workbook file and the data source file of Tableau.\nA .twbx is a package of files \"compressed\" together. It includes data source file and any other file used to produce the workbook, including images.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the difference between traditional BI tools and Tableau?",
+        "answer": "Traditional BI tools Tableau\nTraditional BI architecture has hardware limitations. Tableau doesn't have dependencies.\nIt based on the complex set of technologies. Tableau based associative search that makes it fast and dynamic.\nIt does not support in-memory, multi-thread, and multi-core computing. It supports in-memory when used with advanced technologies.\nIt has a predefined view of data. It uses predictive analysis for various business operations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the different data types in Tableau?",
+        "answer": "Tableau expresses fields and assigns data types automatically. If the data source appoints the data type, Tableau will use that data type. If the data source doesn't individually assign a data type, Tableau will assign one. Tableau consist of the following data types:\nDate values\nText values\nNumerical values\nDate and time values\nBoolean values (True or False conditions)\nGeographic values (longitude and latitude used for maps)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are the different types of joins in Tableau?",
+        "answer": "The joins in Tableau are the same as SQL joins. There are five main joins, such as:\n1) Cross Joins: Cross join produces rows which combine each row from the first table with each row from the second table.\n\n2) Inner Joins: An inner join returns the matching rows from the tables that are being merged.\n\n3) Left Outer Join: The left outer join returns matching rows from the tables being joined, and also non-matching rows from the left table in the result and places NULL values in the attributes that come from the right table.\n\n4) Right Outer Join: The right outer join operation returns matching rows from the tables being merged, and also non-matching rows from the right table as the result and places NULL values in the attributes that come from the left table.\n\n\n4) Full Outer Join: The full outer join is used to combine tables. As a result, it contains all values from both tables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) How many tables you can join in Tableau?",
+        "answer": "In Tableau, you can join an atmost 32 tables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Explain the different connections you can make with your datasets?",
+        "answer": "We can connect the datasets in two ways, such as:\n\nLive: Live connection sends queries to your database and retrieves data. These queries will return whatever data is currently in the database.\nExtract: Extracts connection saved subsets of data that use to improve performance or to take the advantages of Tableau functionality which are not supported or available in your original data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What are Shelves?",
+        "answer": "Shelves are the named areas placed on the left and top of the view in the worksheet. You can build a view by drag and drop fields onto the shelves. Some shelves are available when you select a specific mark type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What are the Sets?",
+        "answer": "In Tableau, sets are used to create subsets of data based on the specific condition defined by the user. Sets are only created based on the dimension field.\nThere are two types of sets in Tableau, such as:\nDynamic Sets: The values or members in the dynamic sets get change when the underlying data changes.\nFixed Sets: The values or members in the fixed sets does not change when the underlying data changes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are Groups?",
+        "answer": "A group is a combination of the members of the dimension which make higher-level categories.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is the Hierarchical Field?",
+        "answer": "In Tableau a hierarchical field is used for drilling down data. It means viewing your data at a more granular level.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is a Tableau Data Server?",
+        "answer": "Tableau server acts as a middle man between the data and Tableau uses. Tableau Data Server allows you to share and upload data extracts, preserve database connections, as well as reuse calculations and field metadata.\nThis means any changes you can make for the calculated field, data-set, aliases, definitions or parameters, can be saved and shared with others, that allows for a secure, centrally managed and standardized dataset as well as you can leverage your server's resources to run queries on extracts without having first to transfer them to your local machine.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the Tableau Data Engine?",
+        "answer": "Tableau Data Engine is a cool feature in Tableau. It?s an analytical database that designed to achieve instant query response, predictive performance, integrate seamlessly into existing data infrastructure, and it is not limited to load entire data sets into the memory.\n\nIf you are work with a large amount of data, it does take some time to create indexes, import, and sort data, but after that everything speeds up. Tableau Data Engine is not in-memory technology. The data is stored in disk after its import, and the RAM is hardly utilized.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How to create a Calculated Field in Tableau?",
+        "answer": "Click on the drop-down option to the right of dimension on the data pane and go to the create options and select the calculated field to open the calculation editor.\nName the calculated field and create a formula.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The dual-axis is used to visualize two different measures in two different chart types. A date column and two measures are necessary to build a dual-axis chart.\nThe different scales are used in the graph that helps the user to understand both measures.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the difference between the Tree map and Heat map?",
+        "answer": "Tree map Heat map\nA treemap also does the same thing as well as it can be used for illustrating hierarchical data and part of whole relationships. A heat map can compare categories with color and size\nIn the heat map, you can compare two different measures together.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the difference between Data Joining and Data blending?",
+        "answer": "Data joining Data blending\nData joining is used when you are combing the data from the same source. Data blending is required two completely defined data sources in a report.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is TDE file?",
+        "answer": "TDE is a Tableau desktop file which contains a .tde extension. It refers to the file to include data extracted from external sources like MS Access or CSV file, MS excel.\nThere are two aspects of TDE file that make them ideal for supporting analytics and data discovery.\nTDE is a columnar store.\nTDE uses all parts of the computer memory from RAM to the hard disk and puts each piece to work what is the best for its characteristics.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is the Story in Tableau?",
+        "answer": "A story is a sheet which contains a sequence of dashboards or worksheets that work together to deliver information.\n\nYou can create stories to show how the facts are connected, provide context, and demonstrate how decisions relate to outcomes or make a compelling case. Each sheet in a story is known as a story point.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the difference between discrete and continuous data in Tableau?",
+        "answer": "Discrete Continuous\nDiscrete data is the value that is counted as distinct or separate. Continuous data is used to measure continuous data.\nOnly It can take individual values within a range. It can take any values within a finite and infinite range.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How many numbers of rows Tableau can utilize at one time?",
+        "answer": "Tableau is not restricted by the number of rows in the table. Tableau is used to access petabytes of data because it only retrieves the rows and columns.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) Can Tableau be installed on macOS?",
+        "answer": "Yes, Tableau Desktop can be installed on Mac as well as window operating system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) Tableau software is suitable for strategic acquisition or not?",
+        "answer": "Yes, Tableau software is suitable for strategic acquisition because it gives data insight to the extent that other tools can't.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) Can we place an excel file in a shared location in Tableau?",
+        "answer": "Yes, we can place an excel file in a shared location, but for better performance, we should use extract.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Suppose license expires today, will users be able to view dashboard or worksheet which published on the server?",
+        "answer": "If Tableau Desktop license expires today, then you cannot access the dashboard or worksheet because the username on the server will have to unroll unlicensed.\nBut others can access because the site admin can change the ownership to another person, so the extracts do not fail.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the different Tableau files?",
+        "answer": "Bookmarks: It contains only single worksheet and its easy way to share your work.\nWorkbooks: Workbook can hold one or more dashboards and worksheets.\nPackaged workbooks: It contains the workbook along with any supporting local file data and background images.\nData extraction files: Data extraction files are a local copy of a data source or a subset.\nData connection files: Data connection file is a small XML file that contain various connection information.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the difference between the published data source and an embedded data source?",
+        "answer": "Published data source Embedded data source\nIt contains connection information which is independent of any workbook, and multiple workbooks can use it. It contains connection information, and it is associated with a workbook.",
+        "reference": "javatpoint.com"
+    }
+]

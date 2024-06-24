@@ -1,0 +1,117 @@
+[
+    {
+        "question": "1) What is Knockout JS?",
+        "answer": "Knockout JS is a JavaScript library based on the MVVM (Model View View Model) pattern that helps developers building rich and responsive websites. It is a small, lightweight JavaScript library that is mostly used to design and develop a SPA (Single Page Application). It assists rapid development in the browser, especially where ViewModels and arrays are involved.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Why and how is Knockout JS useful?",
+        "answer": "Knockout Js is a lightweight framework that can dramatically reduce the amount of code needed to synchronize a data model and user interface controls. It is extremely fast, cross-browser compatible, and not reliant on any other libraries.\nIts lightweight feature (It is < 20kb after compression) can be easily integrated with most web applications without any major architectural update. That's why it is getting popular day by day.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the most prominent features of Knockout JS?",
+        "answer": "Most prominent features of Knockout JS are:\nADVERTISEMENT\nAutomatic UI Refresh\nDependency Tracking\nSupport all modern browsers\nTemplate Binding\nDeclarative Binding\nCompact Size less than 20 kb.\nWritten in Pure JavaScript\nEasy to implement",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Which types of data binding Knockout JS supports?",
+        "answer": "Knockout JS supports two types of data binding:\nOne-way binding\nTwo-way binding",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is two-way data binding in Knockout JS?",
+        "answer": "Knockout JS deploys the two-way data binding. It uses the \"data-*\" tags to create a live dynamic link between a browser UI control and a member or method inside a data ViewModel. Let's understand it by a demo example: Suppose you have a data model with a field 'FirstName' and an edit box linked using the data-bind attribute to 'FirstName,' then anytime the data model changes (for example, programmatically), that change immediately shows in the edit box, and any time a user makes a change to the FirstName in the edit box, the underlying data in the field 'FirstName' is changed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is dependency tracking in Knockout JS?",
+        "answer": "The dependency tracking is a feature in Knockout JS that facilitates Knockout JS to update the UI (DOM) automatically when your data model is changed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Is Knockout JS easy to learn?",
+        "answer": "Knockout JS is quick and easy to learn. It is not as complete as Angular and doesn't have anywhere near the functionalities of Angular, but it provides a powerful mechanism for working with data and vastly reduces the amount of code needed to implement a robust modern, client-side solution. The best feature of Knockout JS is that it provides highly efficient data-binding, and it does it well. That's why it is gaining popularity day by day.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you understand by observables in Knockout JS?",
+        "answer": "In Knockout JS, observables are a special type of JavaScript objects used to notify subscribers about changes and automatically detect dependencies. Observables help Knockout JS to update your UI automatically when the view model changes.\nADVERTISEMENT\nThis is how an observable is created in Knockout JS:\nvar myViewModel = {  \npersonName: ko.observable('Bob'),  \npersonAge: ko.observable(123)  \n};",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is computed observable in Knockout JS?",
+        "answer": "The computed observable in Knockout JS is a special type of function that depends on one or more observables to work. For example, when the value of one or more linked observable is changed, the computed observable gets called. The classic example of a computed observable is 'Full Name,' which observes and combines 'first name' and 'last name' to make 'Full name.'",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Knockout JS ViewModel looks similar to a basic class created in JavaScript as a function. It is declared as a variable and can have members and methods.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How can we activate a Knockout JS Model?",
+        "answer": "We can easily activate a Knockout JS model by calling the key method 'ko.applyBindings' and passing in the model's name to bind to as a parameter. For example:\n'ko.applyBindings(MyNewKOModel)'.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) Can you bind multiple Knockout JS models on one page, and if yes, how would you use them?",
+        "answer": "Yes. We can bind Knockout JS to multiple models at one time easily. We have to keep the different models isolated to put any mark-up in separate div containers, named with a unique ID, and call the key 'applyBindings' method for each model, passing in the ViewModel as the first parameter, and the matching div ID as the second parameter.\n'ko.applyBindings(MyFirstKOModel, document.getElementByID('firstDiv'))'.  \n'ko.applyBindings(MySecondKOModel document.getElementByID('secondDiv'))'.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are observable arrays in Knockout JS?",
+        "answer": "The Observable arrays are the set of knockout properties that contain all the things gathered in the view model. This property is bind with UI (View) in two-way binding.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How the Knockout JS is used in context properties?",
+        "answer": "The Knockout JS is used in context properties in the following ways:\n$parent property: The $index property returns the current context item index in the array.\n$index property: The $parent property allows us to examine the parent of an object.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is the difference between JQuery and Knockout JS? Or How JQuery differ from Knockout JS?",
+        "answer": "The Knockout JS does not depend on the jQuery library, but we can use jQuery simultaneously. Using Knockout JS, we can handle client and server-side applications simultaneously in an easy way.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is the difference between Knockout JS and MVC?",
+        "answer": "The following table specifies the differences between the Knockout JS and MVC:\nKnockout JS MVC\nKnockout JS is an MVVM (Model View View Model) pattern. MVC is a design pattern.\nKnockout JS works like a connected mode. MVC works in disconnected mode.\nKnockout JS supports two types of data binding:\nOne-way binding and two-way binding. MVC supports only one-way binding.\nIn Knockout JS, the UI part is automatically updated when you update the data model. In MVC, the UI part is not automatically updated when your data model is updated. It needs an event to call the data model and update it.\nIn Knockout JS, the model part is not directly bound with the view page. Models bind with the view-model and view-model directly with the view page. Model parts directly bind with the view page.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How dependency tracking works?",
+        "answer": "The dependency tracking algorithm works in the following way:\nWhenever we declare a computed observable, KO immediately invokes its evaluator function to get its initial value.\nWhile your evaluator function is running, KO keeps a log of any observables (or computed observables) that your evaluator reads the value of.\nWhen your evaluator is finished, KO sets up subscriptions to each of the observables (or computed observables) that you've touched. The subscription callback is set to cause your evaluator to run again, looping the whole process back to step 1 (disposing of any old subscriptions that no longer apply).\nKO notifies any subscribers about the new value of your computed observable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The KO is known as the heart and soul of Knockout JS. It is used to provide an interdependent way to link the ViewModel to Model and ViewModel to UI (user interface).\nThe KO does not depend on the jQuery library, but we can use jQuery simultaneously. Using KO, you can simply handle client and server-side applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How would you prepare a Knockout object for data transfer?",
+        "answer": "We can easily prepare a Knockout object for data transfer by serializing JSON using ko.toJSON(viewModel) and a simple JavaScript object using ko toJS(viewModel).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How do you control flow with bindings in Knockout JS?",
+        "answer": "When you have an array of items in a Knockout ViewModel, you can tell your mark-up to iterate through them using the data-bind 'for-each' for example.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) How can you delete an item from a Knockout array?",
+        "answer": "To delete an item from a Knockout array, we should use the remove or removeAll methods. You have to pass these methods in the item you want to match for deletion.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Explain the ViewModel in Knockout JS?",
+        "answer": "A viewModel in Knockout JS is a basic class that is created as JavaScript function. It is declared as a variable that have member variables and methods.\nvar myViewModel = {  \npersonName: 'Bob',  \npersonAge: function(age){  \nreturn age+\"years old\";  \n}  \n};",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the benefit of using Knockout form binding?",
+        "answer": "As a normal functionality, we might implement around form fields such as getting/setting the field value, hooking events, etc., which can be carried out using 'form data-bind.' The benefit of using Knockout form binding is that it allows control of the form to be tied to the data model and its rules.",
+        "reference": "javatpoint.com"
+    }
+]

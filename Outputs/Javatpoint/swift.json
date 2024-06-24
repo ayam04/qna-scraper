@@ -1,0 +1,112 @@
+[
+    {
+        "question": "1) What is Swift? How is it different from Objective-C?",
+        "answer": "Swift and Objective-C both are used in iOS development but both are significantly different in terms of efficiency and usage.\nADVERTISEMENT\nSwift is an open-source programming language developed by Apple platform and expanded to build on Linus while Objective-C is not an open-source programming language and is limited to Apple.\nSwift syntax is easy, clear and brief. It makes API's easy to read and maintain while Objective-C is based on C language which is comparatively hard to use.\nSwift is more rational and precise that's why it has less number of code and easy to learn while Objective-C code is lengthy as double to Swift code.\nSwift can be compiled as a dynamic framework while Objective-C cannot be compiled into static libraries and dynamic framework.\nFor more information: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is the meaning of question mark \"?\" in Swift?",
+        "answer": "In Swift, question mark \"?\" is used in property declaration. It tells the compiler that this property is optional. The property may hold a value or not. It avoids runtime errors when accessing that property by using ?. This is useful in optional chaining and a variant of this example is in conditional clauses.\nFor example:\nvar optionalName : String? = \"John\"  \nif optionalName != nil {  \n    print(\"Your name is \\(optionalName!)\")  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) How can you make a property optional in Swift?",
+        "answer": "We have to declare a question mark ??' in the code to make a property optional. If a property doesn't have a value, then the symbol ? helps to avoid the runtime error.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the Half Open Range operators in Swift?",
+        "answer": "Swift supports several types of operators. One of them is Half Open Range operator. The half open range operator specifies a range between two values a and b (a<b) where b is not included. It is known as half open range operator because it contains its first value only not the final value.\nTo learn more on Swift operators: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are functions in Swift?",
+        "answer": "Functions are the set of codes used to perform specific task. In Swift programming language, functions are used to pass local as well global parameter values inside the function's call.\nIn Swift4, functions can be categorized in two types:\nUser Defined Functions\nBuilt-in Functions (Library Functions)\nTo learn more functions in Swift: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is Nested Function in Swift?",
+        "answer": "A function inside a function is called a nested function.\nSyntax:\nfunc function1() {    \n    //statements of outer function    \n    func function2() {    \n        //statements of inner function    \n    }    \n}    \nTo learn more about nested functions: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Enum is also known as Swift Enumeration. Enum is a data type which contains a set of the related values. It is declared in a class and its values are accessed through the instance members of that class.\nSyntax:\nenum enum_name    \n{    \n// values are described here    \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are Regular Expression and Responder Chain in Swift?",
+        "answer": "Regular Expression: Regular expressions are the special string patterns that specify how to perform a search through a string.\nResponder Chain: Responder Chain is a hierarchy of objects that obtain the opportunity to respond to the events.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Swift Dictionary is used to store the key-value pairs and access the value by using the key. It is just like hash tables in other programming languages.\nTo learn more about Swift dictionary: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) How would you define variables and constants in Swift programming language?",
+        "answer": "You have to declare variables and constants before using it. Constants are declared by using let keyword and variables by var keyword.\nExample:\nvar javatpoint = \"This is JavaTpoint\"  \nlet fees = 10000",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Explain the different features of Swift programming language?",
+        "answer": "Features of Swift programming language:\nSwift is very easy to learn and precise to use. It provides a safe programming approach.\nIn Swift programming language, variables and constants must be initialized before use.\nAutomatic memory management.\nSwift uses \"switch\" function instead of \"if\" statement for conditional programming.\nSwift follows Objective-C like syntax.\nIt checks Arrays and integers for overflow.\n\nRead more features of Swift: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What type of literals does Swift language have?",
+        "answer": "A Swift literal is a direct value of a variable or a constant. It may be a number, character or string. Literals are used to initialize or assign value to variables or constants.\nDifferent types of literals are:\nBinary Literals\nOctal Literals\nHexadecimal Literals\nDecimal Literals\nLearn more about Swift literals: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is floating point number in Swift? What are the different floating point numbers in Swift?",
+        "answer": "Numbers with decimal values or fractional components are called floating numbers. For example: 1.34 is a floating point number. Floating point types can represent a wider range of values than integer types. There are two signed floating point number:\nDouble: It represents a 64 bit floating point number. It is used when floating point values are very large.\n\nFloat: It represents a 32 bit floating point number. It is used when floating point values does not need 64 bit precision.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How can you write a comment in Swift?",
+        "answer": "In Swift programming language, single-line comments are started with double slashes (//).\nFor example:\n// This is a single line comment.  \nMulti-line comment: Multiline comments are started with a forward-slash followed by an asterisk (/*) and end with an asterisk followed by a forward-slash (*/).\nFor example:\n/* this is multi \nLine comment*/  \nLearn more about Swift syntax: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the different control transfer statements used in Swift?",
+        "answer": "Swift language consists of following Control transfer statements:\nContinue\nBreak\nFallthrough\nReturn",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What do you mean by Optional Chaining in Swift?",
+        "answer": "In Swift programming language, Optional Chaining is a process of querying and calling properties. You can chain multiple queries together, but if any link in the chain is nil then, the entire chain fails.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is lazy stored procedure in Swift and when is it used?",
+        "answer": "Lazy stored properties are used for a property whose initial values are not calculated until the first time it is used. A lazy stored property can be declared by writing the lazy modifier before its declaration. Lazy properties are useful when the initial value for a property is reliant on outside factors whose values are unknown.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is the usage of switch statement in Swift language?",
+        "answer": "Switch statement are used as a substitute for the long if-else-if statements.\nSwitch statement supports any type of data, synchronizes them and also checks for equality.\nBreak is not required in switch statement because there is no fall through in switch statement.\nSwitch statement must have covered all possible values for your variable.\nTo read more about Swift switch statement: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is the use of break statement in Swift language?",
+        "answer": "The break statement is used within a loop where you have to immediately terminate a statement. It is also used to terminate a case in switch statement.\nTo read more about Swift break statement: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is the use of continue statement in Swift loop?",
+        "answer": "The continue statement is used in Swift loop to change execution from its normal sequence. It stops currently executing statement and starts again at the beginning of the next iteration through the loop.\nTo read more about Swift continue statement: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the different collection types available in Swift?",
+        "answer": "There are two varieties of collection types in Swift:\nArray: In Swift, you can create an array of single type or an array of multiple type.\nRead more information about Swift array: Click Here...\nDictionary: In Swift, dictionary is similar to hash table in other programing language. You can store a key-value pair in a dictionary and access the value by using the key.\nRead more information about Swift dictionary: Click Here...",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is Inheritance in Swift?",
+        "answer": "Inheritance is a process in which a class can inherit properties, methods and other characteristics from another class. Inheritance is supported in Swift programming language. There are two types of classes in Inheritance in Swift:\nSub class: The class which inherits the properties from other class is called child class or sub class.\nSuper class: The main class from where the subclass inherits the properties is known as parent class or super class.\nRead more information about Swift inheritance: Click Here...",
+        "reference": "javatpoint.com"
+    }
+]

@@ -1,0 +1,412 @@
+[
+    {
+        "question": "1) What is React?",
+        "answer": "React is a declarative, efficient, flexible open source front-end JavaScript library developed by Facebook in 2011. It follows the component-based approach for building reusable UI components, especially for single page application. It is used for developing interactive view layer of web and mobile apps. It was created by Jordan Walke, a software engineer at Facebook. It was initially deployed on Facebook's News Feed section in 2011 and later used in its products like WhatsApp & Instagram.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What are the features of React?",
+        "answer": "React framework gaining quick popularity as the best framework among web developers. The main features of React are:\nADVERTISEMENT\nJSX\nComponents\nOne-way Data Binding\nVirtual DOM\nSimplicity\nPerformance\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the most crucial advantages of using React?",
+        "answer": "Following is a list of the most crucial advantages of using React:\nReact is easy to learn and use\nReact comes with good availability of documentation, tutorials, and training resources. It is easy for any developer to switch from JavaScript background to React and easily understand and start creating web apps using React. Anyone with little knowledge of JavaScript can start building web applications using React.\nReact follows the MVC architecture.\nReact is the V (view part) in the MVC (Model-View-Controller) architecture model and is referred to as \"one of the JavaScript frameworks.\" It is not fully featured but has many advantages of the open-source JavaScript User Interface (UI) library, which helps execute the task in a better manner.\nReact uses Virtual DOM to improve efficiency.\nReact uses virtual DOM to render the view. The virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser. Therefore, with the use of virtual DOM, the efficiency of the app improves. That's why React provides great efficiency.\nCreating dynamic web applications is easy.\nIn React, creating a dynamic web application is much easier. It requires less coding and gives more functionality. It uses JSX (JavaScript Extension), which is a particular syntax letting HTML quotes and HTML tag syntax to render particular subcomponents.\nReact is SEO-friendly.\nReact facilitates a developer to develop an engaging user interface that can be easily navigated in various search engines. It also allows server-side rendering, which is also helpful to boost the SEO of your app.\nReact allows reusable components.\nReact web applications are made up of multiple components where each component has its logic and controls. These components provide a small, reusable piece of HTML code as an output that can be reused wherever you need them. The code reusability helps developers to make their apps easier to develop and maintain. It also makes the nesting of the components easy and allows developers to build complex applications of simple building blocks. The reuse of components also increases the pace of development.\nSupport of handy tools\nReact provides a lot of handy tools that can make the task of the developers understandable and easier. Use these tools in Chrome and Firefox dev extension, allowing us to inspect the React component hierarchies in the virtual DOM. It also allows us to select the particular components and examine and edit their current props and state.\nReact has a rich set of libraries.\nReact has a huge ecosystem of libraries and provides you the freedom to choose the tools, libraries, and architecture for developing the best application based on your requirement.\n\nScope for testing the codes\nReact web applications are easy to test. These applications provide a scope where the developer can test and debug their codes with the help of native tools.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the biggest limitations of React?",
+        "answer": "Following is the list of the biggest limitations of React:\nReact is just a library. It is not a complete framework.\nIt has a huge library which takes time to understand.\nIt may be difficult for the new programmers to understand and code.\nReact uses inline templating and JSX, which may be difficult and act as a barrier. It also makes the coding complex.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What is JSX?",
+        "answer": "JSX stands for JavaScript XML. It is a React extension which allows writing JavaScript code that looks similar to HTML. It makes HTML file easy to understand. The JSX file makes the React application robust and boosts its performance. JSX provides you to write XML-like syntax in the same file where you write JavaScript code, and then preprocessor (i.e., transpilers like Babel) transform these expressions into actual JavaScript code. Just like XML/HTML, JSX tags have a tag name, attributes, and children.\nExample\nclass App extends React.Component {  \n  render() {  \n    return(  \n      <div>  \n        <h1>Hello JavaTpoint</h1>  \n      </div>  \n    )  \n  }  \n}  \n\nIn the above example, text inside <h1> tag return as JavaScript function to the render function. After compilation, the JSX expression becomes a normal JavaScript function, as shown below.\nReact.createElement(\"h1\", null, \"Hello JavaTpoint\");  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Why can't browsers read JSX?",
+        "answer": "Browsers cannot read JSX directly because they can only understand JavaScript objects, and JSX is not a regular JavaScript object. Thus, we need to transform the JSX file into a JavaScript object using transpilers like Babel and then pass it to the browser.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) Why we use JSX?",
+        "answer": "It is faster than regular JavaScript because it performs optimization while translating the code to JavaScript.\nInstead of separating technologies by putting markup and logic in separate files, React uses components that contain both.\nt is type-safe, and most of the errors can be found at compilation time.\nIt makes easier to create templates.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What do you understand by Virtual DOM?",
+        "answer": "A Virtual DOM is a lightweight JavaScript object which is an in-memory representation of real DOM. It is an intermediary step between the render function being called and the displaying of elements on the screen. It is similar to a node tree which lists the elements, their attributes, and content as objects and their properties. The render function creates a node tree of the React components and then updates this node tree in response to the mutations in the data model caused by various actions done by the user or by the system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Virtual DOM works in three steps:\n1. Whenever any data changes in the React App, the entire UI is re-rendered in Virtual DOM representation.\n\n2. Now, the difference between the previous DOM representation and the new DOM is calculated.\n\n3. Once the calculations are completed, the real DOM updated with only those things which are changed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) How is React different from Angular?",
+        "answer": "The React is different from Angular in the following ways.\nAngular React\nAuthor Google Facebook Community\nDeveloper Misko Hevery Jordan Walke\nInitial Release October 2010 March 2013\nLanguage JavaScript, HTML JSX\nType Open Source MVC Framework Open Source JS Framework\nRendering Client-Side Server-Side\nData-Binding Bi-directional Uni-directional\nDOM Regular DOM Virtual DOM\nTesting Unit and Integration Testing Unit Testing\nApp Architecture MVC Flux\nPerformance Slow Fast, due to virtual DOM.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How React's ES6 syntax is different from ES5 syntax?",
+        "answer": "The React's ES6 syntax has changed from ES5 syntax in the following aspects.\nrequire vs. Import\n// ES5  \nvar React = require('react');  \n   // ES6  \nimport React from 'react';  \nexports vs. export\n// ES5  \nmodule.exports = Component;  \n   // ES6  \nexport default Component;  \ncomponent and function\n// ES5  \nvar MyComponent = React.createClass({  \n    render: function() {  \n        return(  \n          <h3>Hello JavaTpoint</h3>  \n        );  \n    }  \n});  \n   // ES6  \nclass MyComponent extends React.Component {  \n    render() {  \n        return(  \n          <h3>Hello Javatpoint</h3>  \n        );  \n    }  \n}  \nprops\n// ES5  \nvar App = React.createClass({  \n    propTypes: { name: React.PropTypes.string },  \n    render: function() {  \n        return(  \n           <h3>Hello, {this.props.name}!</h3>  \n        );  \n    }  \n});  \n   // ES6  \nclass App extends React.Component {  \n    render() {  \n        return(  \n          <h3>Hello, {this.props.name}!</h3>  \n        );  \n    }  \n}  \nstate\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return(  \n          <h3>Hello, {this.state.name}!</h3>  \n        );  \n    }  \n});  \n   // ES6  \nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return(  \n          <h3>Hello, {this.state.name}!</h3>  \n        );  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the difference between ReactJS and React Native?",
+        "answer": "The main differences between ReactJS and React Native are given below.\nSN ReactJS React Native\n1. Initial release in 2013. Initial release in 2015.\n2. It is used for developing web applications. It is used for developing mobile applications.\n3. It can be executed on all platforms. It is not platform independent. It takes more effort to be executed on all platforms.\n4. It uses a JavaScript library and CSS for animations. It comes with built-in animation libraries.\n5. It uses React-router for navigating web pages. It has built-in Navigator library for navigating mobile applications.\n6. It uses HTML tags. It does not use HTML tags.\n7. In this, the Virtual DOM renders the browser code. In this, Native uses its API to render code for mobile applications.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is the difference between Real DOM and Virtual DOM?",
+        "answer": "The following table specifies the key differences between the Real DOM and Virtual DOM:\nReal DOM Virtual DOM\nThe real DOM updates slower. The virtual DOM updates faster.\nThe real DOM can directly update HTML. The virtual DOM cannot directly update HTML.\nThe virtual DOM updates the JSX if the element updates.\nIn real DOM, DOM manipulation is very expensive. In virtual DOM, DOM manipulation is very easy.\nThere is a lot of memory wastage in The real DOM. There is no memory wastage in the virtual DOM.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "\"",
+        "answer": "In React, components are the building blocks of React applications. These components divide the entire React application's UI into small, independent, and reusable pieces of code. React renders each of these components independently without affecting the rest of the application UI. Hence, we can say that, in React, everything is a component.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "It is mandatory for each React component to have a render() function. Render function is used to return the HTML which you want to display in a component. If you need to rendered more than one HTML element, you need to grouped together inside single enclosing tag (parent tag) such as <div>, <form>, <group> etc. This function returns the same result each time it is invoked.\nExample: If you need to display a heading, you can do this as below.\nimport React from 'react'  \n   class App extends React.Component {  \n   render (){  \n      return (  \n         <h1>Hello World</h1>  \n      )  \n   }  \n}  \nexport default App  \nPoints to Note:\nEach render() function contains a return statement.\nThe return statement can have only one parent HTML tag.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) How can you embed two or more components into one?",
+        "answer": "You can embed two or more components into the following way:\nimport React from 'react'  \n   class App extends React.Component {  \n   render (){  \n      return (  \n         <h1>Hello World</h1>  \n      )  \n   }  \n}  \n   class Example extends React.Component {  \n   render (){  \n      return (  \n         <h1>Hello JavaTpoint</h1>  \n      )  \n   }  \n}  \nexport default App",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is Props?",
+        "answer": "Props stand for \"Properties\" in React. They are read-only inputs to components. Props are an object which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from the parent to the child components throughout the application.\nIt is similar to function arguments and passed to the component in the same way as arguments passed in a function.\nProps are immutable so we cannot modify the props from inside the component. Inside the components, we can add attributes called props. These attributes are available in the component as this.props and can be used to render dynamic data in our render method.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is a State in React?",
+        "answer": "The State is an updatable structure which holds the data and information about the component. It may be changed over the lifetime of the component in response to user action or system event. It is the heart of the react component which determines the behavior of the component and how it will render. It must be kept as simple as possible.\nLet's create a \"User\" component with \"message state.\"\nimport React from 'react'  \n  class User extends React.Component {  \n  constructor(props) {  \n    super(props)  \n      this.state = {  \n      message: 'Welcome to JavaTpoint'  \n    }  \n  }  \n    render() {  \n    return (  \n      <div>  \n        <h1>{this.state.message}</h1>  \n      </div>  \n    )  \n  }  \n}  \nexport default User  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The major differences between States and Props are given below.\nSN Props State\n1. Props are read-only. State changes can be asynchronous.\n2. Props are immutable. State is mutable.\n3. Props allow you to pass data from one component to other components as an argument. State holds information about the components.\n4. Props can be accessed by the child component. State cannot be accessed by child components.\n5. Props are used to communicate between components. States can be used for rendering dynamic changes with the component.\n6. The stateless component can have Props. The stateless components cannot have State.\n7. Props make components reusable. The State cannot make components reusable.\n8. Props are external and controlled by whatever renders the component. The State is internal and controlled by the component itself.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How can you update the State of a component?",
+        "answer": "We can update the State of a component using this.setState() method. This method does not always replace the State immediately. Instead, it only adds changes to the original State. It is a primary method which is used to update the user interface(UI) in response to event handlers and server responses.\nExample\nimport React, { Component } from 'react';  \nimport PropTypes from 'prop-types';  \n  class App extends React.Component {  \n   constructor() {  \n      super();        \n      this.state = {  \n          msg: \"Welcome to JavaTpoint\"  \n      };      \n      this.updateSetState = this.updateSetState.bind(this);  \n   }  \n   updateSetState() {  \n       this.setState({  \n          msg:\"Its a best ReactJS tutorial\"  \n       });  \n   }  \n   render() {  \n      return (  \n         <div>  \n             <h1>{this.state.msg}</h1>  \n             <button onClick = {this.updateSetState}>SET STATE</button>  \n         </div>  \n      );  \n   }  \n}  \nexport default App;  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The difference between stateless and stateful components are:\nSN Stateless Component Stateful Component\n1. The stateless components do not hold or manage state. The stateful components can hold or manage state.\n2. It does not contain the knowledge of past, current, and possible future state changes. It can contain the knowledge of past, current, and possible future changes in state.\n3. It is also known as a functional component. It is also known as a class component.\n4. It is simple and easy to understand. It is complex as compared to the stateless component.\n5. It does not work with any lifecycle method of React. It can work with all lifecycle method of React.\n6. The stateless components cannot be reused. The stateful components can be reused.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is arrow function in React? How is it used?",
+        "answer": "The Arrow function is the new feature of the ES6 standard. If you need to use arrow functions, it is not necessary to bind any event to 'this.' Here, the scope of 'this' is global and not limited to any calling function. So If you are using Arrow Function, there is no need to bind 'this' inside the constructor. It is also called 'fat arrow '(=>) functions.\n//General way  \nrender() {      \n    return(  \n        <MyInput onChange={this.handleChange.bind(this) } />  \n    );  \n}  \n//With Arrow Function  \nrender() {    \n    return(  \n        <MyInput onChange={ (e) => this.handleOnChange(e) } />  \n    );  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is an event in React?",
+        "answer": "An event is an action which triggers as a result of the user action or system generated event like a mouse click, loading of a web page, pressing a key, window resizes, etc. In React, the event handling system is very similar to handling events in DOM elements. The React event handling system is known as Synthetic Event, which is a cross-browser wrapper of the browser's native event.\nHandling events with React have some syntactical differences, which are:\nReact events are named as camelCase instead of lowercase.\nWith JSX, a function is passed as the event handler instead of a string.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How do you create an event in React?",
+        "answer": "We can create an event as follows.\nclass Display extends React.Component({      \n    show(msgEvent) {  \n        // code     \n    },     \n    render() {        \n        // Here, we render the div with an onClick prop      \n        return (              \n          <div onClick={this.show}>Click Me</div>   \n        );      \n    }  \n});  \nExample\nimport React, { Component } from 'react';  \nclass App extends React.Component {  \n    constructor(props) {  \n        super(props);  \n        this.state = {  \n            companyName: ''  \n        };  \n    }  \n    changeText(event) {  \n        this.setState({  \n            companyName: event.target.value  \n        });  \n    }  \n    render() {  \n        return (  \n            <div>  \n                <h2>Simple Event Example</h2>  \n                <label htmlFor=\"name\">Enter company name: </label>  \n                <input type=\"text\" id=\"companyName\" onChange={this.changeText.bind(this)}/>  \n                <h4>You entered: { this.state.companyName }</h4>  \n            </div>  \n        );  \n    }  \n}  \nexport default App;  \nFor More Information, Click here.\nADVERTISEMENT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are synthetic events in React?",
+        "answer": "A synthetic event is an object which acts as a cross-browser wrapper around the browser's native event. It combines the behavior of different browser's native event into one API, including stopPropagation() and preventDefault().\nIn the given example, e is a Synthetic event.\nfunction ActionLink() {  \n    function handleClick(e) {  \n        e.preventDefault();  \n        console.log('You had clicked a Link.');  \n    }  \n    return (  \n        <a href=\"#\" onClick={handleClick}>  \n              Click_Me  \n        </a>  \n    );  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) what is the difference between controlled and uncontrolled components?",
+        "answer": "The difference between controlled and uncontrolled components are:\nSN Controlled Uncontrolled\n1. It does not maintain its internal state. It maintains its internal states.\n2. Here, data is controlled by the parent component. Here, data is controlled by the DOM itself.\n3. It accepts its current value as a prop. It uses a ref for their current values.\n4. It allows validation control. It does not allow validation control.\n5. It has better control over the form elements and data. It has limited control over the form elements and data.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Lists are used to display data in an ordered format. In React, Lists can be created in a similar way as we create it in JavaScript. We can traverse the elements of the list using the map() function.\nExample\nimport React from 'react';   \nimport ReactDOM from 'react-dom';   \n  function NameList(props) {  \n  const myLists = props.myLists;  \n  const listItems = myLists.map((myList) =>  \n    <li>{myList}</li>  \n  );  \n  return (  \n    <div>  \n        <h2>Rendering Lists inside component</h2>  \n              <ul>{listItems}</ul>  \n    </div>  \n  );  \n}  \nconst myLists = ['Peter', 'Sachin', 'Kevin', 'Dhoni', 'Alisa'];   \nReactDOM.render(  \n  <NameList myLists={myLists} />,  \n  document.getElementById('app')  \n);  \nexport default App;  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the significance of keys in React?",
+        "answer": "A key is a unique identifier. In React, it is used to identify which items have changed, updated, or deleted from the Lists. It is useful when we dynamically created components or when the users alter the lists. It also helps to determine which components in a collection needs to be re-rendered instead of re-rendering the entire set of components every time. It increases application performance.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) How are forms created in React?",
+        "answer": "Forms allow the users to interact with the application as well as gather information from the users. Forms can perform many tasks such as user authentication, adding user, searching, filtering, etc. A form can contain text fields, buttons, checkbox, radio button, etc.\nReact offers a stateful, reactive approach to build a form. The forms in React are similar to HTML forms. But in React, the state property of the component is only updated via setState(), and a JavaScript function handles their submission. This function has full access to the data which is entered by the user into a form.\nimport React, { Component } from 'react';  \n  class App extends React.Component {  \n  constructor(props) {  \n      super(props);  \n      this.state = {value: ''};  \n      this.handleChange = this.handleChange.bind(this);  \n      this.handleSubmit = this.handleSubmit.bind(this);  \n  }  \n  handleChange(event) {  \n      this.setState({value: event.target.value});  \n  }  \n  handleSubmit(event) {  \n      alert('You have submitted the input successfully: ' + this.state.value);  \n      event.preventDefault();  \n  }  \n  render() {  \n      return (  \n          <form onSubmit={this.handleSubmit}>  \n            <h1>Controlled Form Example</h1>  \n            <label>  \n                Name:  \n                <input type=\"text\" value={this.state.value} onChange={this.handleChange} />  \n            </label>  \n            <input type=\"submit\" value=\"Submit\" />  \n         </form>  \n      );  \n  }  \n}  \nexport default App;  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What are the different phases of React component's lifecycle?",
+        "answer": "The different phases of React component's lifecycle are:\nInitial Phase: It is the birth phase of the React lifecycle when the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. These default properties are done in the constructor of a component.\nMounting Phase: In this phase, the instance of a component is created and added into the DOM.\nUpdating Phase: It is the next phase of the React lifecycle. In this phase, we get new Props and change State. This phase can potentially update and re-render only when a prop or state change occurs. The main aim of this phase is to ensure that the component is displaying the latest version of itself. This phase repeats again and again.\nUnmounting Phase: It is the final phase of the React lifecycle, where the component instance is destroyed and unmounted(removed) from the DOM.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The important React lifecycle methods are:\ngetInitialState(): It is used to specify the default value of this.state. It is executed before the creation of the component.\ncomponentWillMount(): It is executed before a component gets rendered into the DOM.\ncomponentDidMount(): It is executed when the component gets rendered and placed on the DOM. Now, you can do any DOM querying operations.\ncomponentWillReceiveProps(): It is invoked when a component receives new props from the parent class and before another render is called. If you want to update the State in response to prop changes, you should compare this.props and nextProps to perform State transition by using this.setState() method.\nshouldComponentUpdate(): It is invoked when a component decides any changes/updation to the DOM and returns true or false value based on certain conditions. If this method returns true, the component will update. Otherwise, the component will skip the updating.\ncomponentWillUpdate(): It is invoked before rendering takes place in the DOM. Here, you can't change the component State by invoking this.setState() method. It will not be called, if shouldComponentUpdate() returns false.\ncomponentDidUpdate(): It is invoked immediately after rendering takes place. In this method, you can put any code inside this which you want to execute once the updating occurs.\ncomponentWillUnmount(): It is invoked immediately before a component is destroyed and unmounted permanently. It is used to clear up the memory spaces such as invalidating timers, event listener, canceling network requests, or cleaning up DOM elements. If a component instance is unmounted, you cannot mount it again.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What are Pure Components?",
+        "answer": "Pure components introduced in React 15.3 version. The React.Component and React.PureComponent differ in the shouldComponentUpdate() React lifecycle method. This method decides the re-rendering of the component by returning a boolean value (true or false). In React.Component, shouldComponentUpdate() method returns true by default. But in React.PureComponent, it compares the changes in state or props to re-render the component. The pure component enhances the simplicity of the code and performance of the application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What are Higher Order Components(HOC)?",
+        "answer": "In React, Higher Order Component is an advanced technique for reusing component logic. It is a function that takes a component and returns a new component. In other words, it is a function which accepts another function as an argument. According to the official website, it is not the feature(part) in React API, but a pattern that emerges from React's compositional nature.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What can you do with HOC?",
+        "answer": "You can do many tasks with HOC, some of them are given below:\nCode Reusability\nProps manipulation\nState manipulation\nRender highjacking",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What is the difference between Element and Component?",
+        "answer": "The main differences between Elements and Components are:\nSN Element Component\n1. An element is a plain JavaScript object which describes the component state and DOM node, and its desired properties. A component is the core building block of React application. It is a class or function which accepts an input and returns a React element.\n2. It only holds information about the component type, its properties, and any child elements inside it. It can contain state and props and has access to the React lifecycle methods.\n3. It is immutable. It is mutable.\n4. We cannot apply any methods on elements. We can apply methods on components.\n5. Example:\nconst element = React.createElement(\n'div',\n{id: 'login-btn'},\n'Login'\n)\nExample:\nfunction Button ({ onLogin }) {\nreturn React.createElement(\n'div',\n{id: 'login-btn', onClick: onLogin},\n'Login'\n)\n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) How to write comments in React?",
+        "answer": "In React, we can write comments as we write comments in JavaScript. It can be in two ways:\n1. Single Line Comments: We can write comments as /* Block Comments */ with curly braces:\n{/* Single Line comment */}  \n2. Multiline Comments: If we want to comment more that one line, we can do this as\n{ /*  \n   Multi \n   line \n   comment \n*/ }",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) Why is it necessary to start component names with a capital letter?",
+        "answer": "In React, it is necessary to start component names with a capital letter. If we start the component name with lower case, it will throw an error as an unrecognized tag. It is because, in JSX, lower case tag names are considered as HTML tags.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What are fragments?",
+        "answer": "In was introduced in React 16.2 version. In React, Fragments are used for components to return multiple elements. It allows you to group a list of multiple children without adding an extra node to the DOM.\nExample\nrender() {  \n  return (  \n    <React.Fragment>  \n      <ChildA />  \n      <ChildB />  \n      <ChildC />  \n    </React.Fragment>  \n  )  \n}  \nThere is also a shorthand syntax exists for declaring Fragments, but it's not supported in many tools:\nrender() {  \n  return (  \n    <>  \n      <ChildA />  \n      <ChildB />  \n      <ChildC />  \n    </>  \n  )  \n}  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) Why are fragments better than container divs?",
+        "answer": "Fragments are faster and consume less memory because it did not create an extra DOM node.\nSome CSS styling like CSS Grid and Flexbox have a special parent-child relationship and add <div> tags in the middle, which makes it hard to keep the desired layout.\nThe DOM Inspector is less cluttered.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) How to apply validation on props in React?",
+        "answer": "Props validation is a tool which helps the developers to avoid future bugs and problems. It makes your code more readable. React components used special property PropTypes that help you to catch bugs by validating data types of values passed through props, although it is not necessary to define components with propTypes.\nWe can apply validation on props using App.propTypes in React component. When some of the props are passed with an invalid type, you will get the warnings on JavaScript console. After specifying the validation patterns, you need to set the App.defaultProps.\nclass App extends React.Component {  \n          render() {}  \n}  \nComponent.propTypes = { /*Definition */};  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What is create-react-app?",
+        "answer": "Create React App is a tool introduced by Facebook to build React applications. It provides you to create single-page React applications. The create-react-app are preconfigured, which saves you from time-consuming setup and configuration like Webpack or Babel. You need to run a single command to start the React project, which is given below.\n$ npx create-react-app my-app  \nThis command includes everything which we need to build a React app. Some of them are given below:\nIt includes React, JSX, ES6, and Flow syntax support.\nIt includes Autoprefixed CSS, so you don't need -webkit- or other prefixes.\nIt includes a fast, interactive unit test runner with built-in support for coverage reporting.\nIt includes a live development server that warns about common mistakes.\nIt includes a build script to bundle JS, CSS, and images for production, with hashes and source maps.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) How can you create a component in React?",
+        "answer": "There are two possible ways to create a component in React:\nFunction Components: This is the simplest way to create a component in React. These are the pure JavaScript functions that accept props object as the first parameter and return React elements:\nfunction Greeting({ message }) {  \n  return <h1>{`Hello, ${message}`}</h1>  \n}  \nClass Components: The class components method facilitates you to use ES6 class to define a component. The above function component can be written as:\nclass Greeting extends React.Component {  \n  render() {  \n    return <h1>{`Hello, ${this.props.message}`}</h1>  \n  }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) When do we prefer to use a class component over a function component?",
+        "answer": "If a component needs state or lifecycle methods, we should use the class component; otherwise, use the function component. However, after React 16.8, with the addition of Hooks, you could use state, lifecycle methods, and other features that were only available in the class component right in your function component.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) Is it possible for a web browser to read JSX directly?",
+        "answer": "Web browsers can't read JSX directly. This is because the web browsers are built to read the regular JS objects only, and JSX is not a regular JavaScript object.\nIf you want a web browser to read a JSX file, you must transform the files into a regular JavaScript object. For this purpose, Babel is used.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What do you understand by the state in React?",
+        "answer": "In react, the state of a component is an object that holds some information that may change over the component's lifetime. It would be best to try to make your state as simple as possible and minimize the number of stateful components.\nLet's see how to create a user component with message state:\nclass User extends React.Component {  \n  constructor(props) {  \n    super(props)  \n    this.state = {  \n      message: 'Welcome to React world'  \n    }  \n  }  \n  render() {  \n    return (  \n      <div>  \n        <h1>{this.state.message}</h1>  \n      </div>  \n    )  \n  }  \n}   \nThe state is very similar to props, but it is private and fully controlled by the component. i.e., It is not accessible to any other component till the owner component decides to pass it.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What are the main changes that appear in React's ES6 syntax compared to ES5 syntax?/How different is React's ES6 syntax compared to ES5?",
+        "answer": "Following are the most visible syntax we can see while comparing ES6 and ES5:\nrequire vs import\nSyntax in ES5:\nvar React = require('react');  \nSyntax in ES6:\nimport React from 'react';  \nexport vs exports\nSyntax in ES5:\nmodule.exports = Component;  \nSyntax in ES6:\nexport default Component;  \ncomponent and function\nSyntax in ES5:\nvar MyComponent = React.createClass({  \n    render: function() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass MyComponent extends React.Component {  \n    render() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n}  \nprops\nSyntax in ES5:\nvar App = React.createClass({  \n    propTypes: { name: React.PropTypes.string },  \n    render: function() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    render() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n}  \nstate\nSyntax in ES5:\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "require vs import",
+        "answer": "Syntax in ES5:\nvar React = require('react');  \nSyntax in ES6:\nimport React from 'react';  \nexport vs exports\nSyntax in ES5:\nmodule.exports = Component;  \nSyntax in ES6:\nexport default Component;  \ncomponent and function\nSyntax in ES5:\nvar MyComponent = React.createClass({  \n    render: function() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass MyComponent extends React.Component {  \n    render() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n}  \nprops\nSyntax in ES5:\nvar App = React.createClass({  \n    propTypes: { name: React.PropTypes.string },  \n    render: function() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    render() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n}  \nstate\nSyntax in ES5:\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "export vs exports",
+        "answer": "Syntax in ES5:\nmodule.exports = Component;  \nSyntax in ES6:\nexport default Component;  \ncomponent and function\nSyntax in ES5:\nvar MyComponent = React.createClass({  \n    render: function() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass MyComponent extends React.Component {  \n    render() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n}  \nprops\nSyntax in ES5:\nvar App = React.createClass({  \n    propTypes: { name: React.PropTypes.string },  \n    render: function() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    render() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n}  \nstate\nSyntax in ES5:\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "component and function",
+        "answer": "Syntax in ES5:\nvar MyComponent = React.createClass({  \n    render: function() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass MyComponent extends React.Component {  \n    render() {  \n        return  \n<h3>Hello JavaTpoint!</h3>  \n;  \n    }  \n}  \nprops\nSyntax in ES5:\nvar App = React.createClass({  \n    propTypes: { name: React.PropTypes.string },  \n    render: function() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    render() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n}  \nstate\nSyntax in ES5:\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "props",
+        "answer": "Syntax in ES5:\nvar App = React.createClass({  \n    propTypes: { name: React.PropTypes.string },  \n    render: function() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    render() {  \n        return   \n<h3>Hello, {this.props.name}!</h3>  \n;  \n    }  \n}  \nstate\nSyntax in ES5:\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "state",
+        "answer": "Syntax in ES5:\nvar App = React.createClass({  \n    getInitialState: function() {  \n        return { name: 'world' };  \n    },  \n    render: function() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n});  \nSyntax in ES6:\nclass App extends React.Component {  \n    constructor() {  \n        super();  \n        this.state = { name: 'world' };  \n    }  \n    render() {  \n        return  \n<h3>Hello, {this.state.name}!</h3>  \n;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) What do you understand by props in React?",
+        "answer": "In React, the props are inputs to components. They are single values or objects containing a set of values passed to components on creation using a naming convention similar to HTML-tag attributes. They are data passed down from a parent component to a child component.\nThe main purpose of props in React is to provide the following component functionality:\nPass custom data to your component.\nTrigger state changes.\nUse via this.props.reactProp inside component's render() method.\nFor example, let us create an element with reactProp property:\n<Element reactProp={'1'} />  \nThis reactProp name becomes a property attached to React's native props object, which already exists on all React library components.\nprops.reactProp",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) What do you understand by refs in React?",
+        "answer": "Refs is the shorthand used for references in React. It is an attribute which helps to store a reference to particular DOM nodes or React elements. It provides a way to access React DOM nodes or React elements and how to interact with it. It is used when we want to change the value of a child component, without making the use of props.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) How to create refs?",
+        "answer": "Refs can be created by using React.createRef() and attached to React elements via the ref attribute. It is commonly assigned to an instance property when a component is created, and then can be referenced throughout the component.\nclass MyComponent extends React.Component {  \n  constructor(props) {  \n    super(props);  \n    this.callRef = React.createRef();  \n  }  \n  render() {  \n    return <div ref={this.callRef} />;  \n  }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) What are Forward Refs?",
+        "answer": "Ref forwarding is a feature which is used for passing a ref through a component to one of its child components. It can be performed by making use of the React.forwardRef() method. It is particularly useful with higher-order components and specially used in reusable component libraries.\nExample\nimport React, { Component } from 'react';  \nimport { render } from 'react-dom';  \n  const TextInput = React.forwardRef((props, ref) => (  \n  <input type=\"text\" placeholder=\"Hello World\" ref={ref} />  \n));  \n  const inputRef = React.createRef();  \n  class CustomTextInput extends React.Component {  \n  handleSubmit = e => {  \n    e.preventDefault();  \n    console.log(inputRef.current.value);  \n  };  \n  render() {  \n    return (  \n      <div>  \n        <form onSubmit={e => this.handleSubmit(e)}>  \n          <TextInput ref={inputRef} />  \n          <button>Submit</button>  \n        </form>  \n      </div>  \n    );  \n  }  \n}  \nexport default App;  \nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "51) Which is the preferred option callback refs or findDOMNode()?",
+        "answer": "The preferred option is to use callback refs over findDOMNode() API. Because callback refs give better control when the refs are set and unset whereas findDOMNode() prevents certain improvements in React in the future.\nclass MyComponent extends Component {  \n  componentDidMount() {  \n    findDOMNode(this).scrollIntoView()  \n  }  \n  render() {  \n    return <div />  \n  }  \n}  \nThe recommended approach is:\nclass MyComponent extends Component {  \n  componentDidMount() {  \n    this.node.scrollIntoView()  \n  }  \n  render() {  \n    return <div ref={node => this.node = node} />  \n  }  \n}  \nclass MyComponent extends Component {  \n  componentDidMount() {  \n    this.node.scrollIntoView()  \n  }  \n  render() {  \n    return <div ref={node => this.node = node} />  \n  }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "52) What is the use of Refs?",
+        "answer": "The Ref in React is used in the following cases:\nIt is used to return a reference to the element.\nIt is used when we need DOM measurements such as managing focus, text selection, or media playback.\nIt is used in triggering imperative animations.\nIt is used when integrating with third-party DOM libraries.\nIt can also use as in callbacks.\nFor More Information, Click here.\nReact Router Interview Questions\n53) What is React Router?\nReact Router is a standard routing library system built on top of the React. It is used to create Routing in the React application using React Router Package. It helps you to define multiple routes in the app. It provides the synchronous URL on the browser with data that will be displayed on the web page. It maintains the standard structure and behavior of the application and mainly used for developing single page web applications.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "53) What is React Router?",
+        "answer": "React Router is a standard routing library system built on top of the React. It is used to create Routing in the React application using React Router Package. It helps you to define multiple routes in the app. It provides the synchronous URL on the browser with data that will be displayed on the web page. It maintains the standard structure and behavior of the application and mainly used for developing single page web applications.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "54) Why do we need a Router in React?",
+        "answer": "React Router plays an important role to display multiple views in a single page application. It is used to define multiple routes in the app. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular Route. So, we need to add a Router library to the React app, which allows creating multiple routes with each leading to us a unique view.\n<switch>  \n      <h1>React Router Example</h1>  \n      <Route path=\"/\" component={Home} />  \n      <Route path=\"/about\" component={About} />  \n      <Route path=\"/contact\" component={Contact} />  \n</switch>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The important advantages of React Router are given below:\nIn this, it is not necessary to set the browser history manually.\nLink uses to navigate the internal links in the application. It is similar to the anchor tag.\nIt uses Switch feature for rendering.\nThe Router needs only a Single Child element.\nIn this, every component is specified in <Route>.\nThe packages are split into three packages, which are Web, Native, and Core. It supports the compact size of the React application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "56) How is React Router different from Conventional Routing?",
+        "answer": "The difference between React Routing and Conventional Routing are:\nSN Conventional Routing React Routing\n1. In Conventional Routing, each view contains a new file. In React Routing, there is only a single HTML page involved.\n2. The HTTP request is sent to a server to receive the corresponding HTML page. Only the History attribute <BrowserRouter> is changed.\n3. In this, the user navigates across different pages for each view. In this, the user is thinking he is navigating across different pages, but its an illusion only.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "57) Why you get \"Router may have only one child element\" warning?",
+        "answer": "It is because you have not to wrap your Route's in a <Switch> block or <div> block which renders a route exclusively.\nExample\nrender((  \n  <Router>  \n    <Route {/* ... */} />  \n    <Route {/* ... */} />  \n  </Router>  \n)  \nshould be\nrender(  \n  <Router>  \n    <Switch>  \n      <Route {/* ... */} />  \n      <Route {/* ... */} />  \n    </Switch>  \n  </Router>  \n)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "58) Why switch keyword used in React Router v4?",
+        "answer": "The 'switch' keyword is used to display only a single Route to rendered amongst the several defined Routes. The <Switch> component is used to render components only when the path will be matched. Otherwise, it returns to the not found component.\n\nReact Styling Interview Questions\n59) How to use styles in React?\nWe can use style attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string. The style attribute is consistent with accessing the properties on DOM nodes in JavaScript.\nExample\nconst divStyle = {  \n  color: 'blue',  \n  backgroundImage: 'url(' + imgUrl + ')'  \n};  \n  function HelloWorldComponent() {  \n  return <div style={divStyle}>Hello World!</div>  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "59) How to use styles in React?",
+        "answer": "We can use style attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string. The style attribute is consistent with accessing the properties on DOM nodes in JavaScript.\nExample\nconst divStyle = {  \n  color: 'blue',  \n  backgroundImage: 'url(' + imgUrl + ')'  \n};  \n  function HelloWorldComponent() {  \n  return <div style={divStyle}>Hello World!</div>  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "60) How many ways can we style the React Component?",
+        "answer": "We can style React Component in mainly four ways, which are given below:\nInline Styling\nCSS Stylesheet\nCSS Module\nStyled Components\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "CSS Module is a CSS file where all class names and animation names are scoped locally by default. It is available only for the component which imports it, and without your permission, it cannot be applied to any other Components. You can create CSS Module file with the .module.css extension.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "62) What are Styled Components?",
+        "answer": "Styled-Components is a library for React. It is the successor of CSS Modules. It uses enhance CSS for styling React component systems in your application, which is written with a mixture of JavaScript and CSS. It is scoped to a single component and cannot leak to any other element in the page.\nThe styled-components provides:\nAutomatic critical CSS\nNo class name bugs\nEasier deletion of CSS\nSimple dynamic styling\nPainless maintenance\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "63) What are hooks in React?",
+        "answer": "Hooks are the new feature introduced in React 16.8 version that facilitates us to use state and other React features without writing a class.\nSee the following example of useState hook:\nimport { useState } from 'react';  \nfunction Example() {  \n  // Declare a new state variable, which we'll call \"count\"  \n  const [count, setCount] = useState(0);  \n  return (  \n    <div>  \n      <p>You clicked {count} times</p>  \n      <button onClick={() => setCount(count + 1)}>  \n        Click on this button  \n      </button>  \n    </div>  \n  );  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "64) What are the rules you should follow for the hooks in React?",
+        "answer": "We have to follow the following two rules to use hooks in React:\nYou should call hooks only at the top level of your React functions and not inside the loops, conditions, or nested functions. This is used to ensure that hooks are called in the same order each time a component renders, and it also preserves the state of hooks between multiple useState and useEffect calls.\nYou should call hooks from React functions only. Don't call hooks from regular JavaScript functions.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "65) What are forms in React?",
+        "answer": "In React, forms are used to enable users to interact with web applications. Following is a list of the most common usage of forms in React:\nForms facilitate users to interact with the application. By using forms, the users can communicate with the application and enter the required information whenever required.\nForms contain certain elements, such as text fields, buttons, checkboxes, radio buttons, etc., that can make the application more interactive and beautiful.\nForms are the best possible way to take inputs from the users.\nForms are used for many different tasks such as user authentication, searching, filtering, indexing, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "66) What is an error boundary or error boundaries?",
+        "answer": "An error boundary is a concept introduced in version 16 of React. Error boundaries provide a way to find out the errors that occur in the render phase. Any component which uses one of the following lifecycle methods is considered an error boundary. Let's see the places where an error boundary can detect an error:\nRender phase\nInside a lifecycle method\nInside the constructor\nLet's see an example to understand it better:\nWithout using error boundaries:\nclass CounterComponent extends React.Component{  \n constructor(props){  \n   super(props);  \n   this.state = {  \n     counterValue: 0  \n   }  \n   this.incrementCounter = this.incrementCounter.bind(this);  \n }  \n incrementCounter(){  \n   this.setState(prevState => counterValue = prevState+1);  \n }  \n render(){  \n   if(this.state.counter === 2){  \n     throw new Error('Crashed');  \n   }  \n   return(  \n     <div>  \n       <button onClick={this.incrementCounter}>Increment Value</button>  \n       <p>Value of counter: {this.state.counterValue}</p>  \n     </div>  \n   )  \n }  \n}  \nIn the above code, you can see that when the counterValue equals 2, it throws an error inside the render method. We know that any error inside the render method leads to unmounting of the component so, to display an error that occurs inside the render method, we use error boundaries. When we are not using the error boundary, we see a blank page instead of seeing an error.\nWith error boundaries:\nWe have specified earlier that error boundary is a component using one or both of the following methods:\nstatic getDerivedStateFromError\ncomponentDidCatch\nSee the following code where we create an error boundary to handle errors in render phase:\nclass ErrorBoundary extends React.Component {  \n constructor(props) {  \n   super(props);  \n   this.state = { hasError: false };  \n }  \n static getDerivedStateFromError(error) {       \n   return { hasError: true };   \n }  \n  componentDidCatch(error, errorInfo) {         \n   logErrorToMyService(error, errorInfo);   \n }  \n render() {  \n   if (this.state.hasError) {       \n     return <h4>Something went wrong</h4>       \n   }  \n   return this.props.children;  \n }  \n}  \nYou can see in the above code the getDerivedStateFromError function renders the fallback UI interface when the render method has an error.\nThe componentDidCatch logs the error information to an error tracking service.\nNow with error boundary, we can render the CounterComponent in the following way:\n<ErrorBoundary>  \n  <CounterComponent/>  \n</ErrorBoundary>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "67) In which cases do error boundaries not catch errors?",
+        "answer": "Following are some cases in which error boundaries don't catch errors:\nError boundaries don't catch errors inside the event handlers.\nDuring the server-side rendering.\nIn the case when errors are thrown in the error boundary code itself.\nAsynchronous code using setTimeout or requestAnimationFrame callbacks.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "68) What were the major problems with MVC framework?",
+        "answer": "The major problems with the MVC framework are:\nDOM manipulation was very expensive.\nIt makes the application slow and inefficient.\nThere was a huge memory wastage.\nIt makes the application debugging hard.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Flux is an application architecture that Facebook uses internally for building the client-side web application with React. It is neither a library nor a framework. It is a kind of architecture that complements React as view and follows the concept of Unidirectional Data Flow model. It is useful when the project has dynamic data, and we need to keep the data updated in an effective manner.\n\n\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "70) What is Redux?",
+        "answer": "Redux is an open-source JavaScript library used to manage application state. React uses Redux for building the user interface. The Redux application is easy to test and can run in different environments showing consistent behavior. It was first introduced by Dan Abramov and Andrew Clark in 2015.\nReact Redux is the official React binding for Redux. It allows React components to read data from a Redux Store, and dispatch Actions to the Store to update data. Redux helps apps to scale by providing a sensible way to manage state through a unidirectional data flow model. React Redux is conceptually simple. It subscribes to the Redux store, checks to see if the data which your component wants have changed, and re-renders your component.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "71) What are the three principles that Redux follows?",
+        "answer": "The three principles that redux follows are:\nSingle source of truth: The State of your entire application is stored in an object/state tree inside a single Store. The single State tree makes it easier to keep changes over time. It also makes it easier to debug or inspect the application.\nThe State is read-only: There is only one way to change the State is to emit an action, an object describing what happened. This principle ensures that neither the views nor the network callbacks can write directly to the State.\nChanges are made with pure functions: To specify how actions transform the state tree, you need to write reducers (pure functions). Pure functions take the previous State and Action as a parameter and return a new State.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The components of Redux are given below.\nSTORE: A Store is a place where the entire State of your application lists. It is like a brain responsible for all moving parts in Redux.\nACTION: It is an object which describes what happened.\nREDUCER: It determines how the State will change.\nFor More Information, Click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Reducers read the payloads from the actions and then updates the Store via the State accordingly. It is a pure function which returns a new state from the initial State. It returns the previous State as it is if no work needs to be done.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "74) What is the significance of Store in Redux?",
+        "answer": "A Store is an object which holds the application's State and provides methods to access the State, dispatch Actions and register listeners via subscribe(listener). The entire State tree of an application is saved in a single Store which makes the Redux simple and predictable. We can pass middleware to the Store which handles the processing of data as well as keep a log of various actions that change the Store's State. All the Actions return a new state via reducers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "75) How is Redux different from Flux?",
+        "answer": "The Redux is different from Flux in the following manner.\nSN Redux Flux\n1. Redux is an open-source JavaScript library used to manage application State. Flux is neither a library nor a framework. It is a kind of architecture that complements React as view and follows the concept of Unidirectional Data Flow model.\n2. Store's State is immutable. Store's State is mutable.\n3. In this, Store and change logic are separate. In this, the Store contains State and change logic.\n4. It has only a single Store. It can have multiple Store.\n5. Redux does not have Dispatcher concept. It has single Dispatcher, and all actions pass through that Dispatcher.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "76) What are the advantages of Redux?",
+        "answer": "The main advantages of React Redux are:\nReact Redux is the official UI bindings for react Application. It is kept up-to-date with any API changes to ensure that your React components behave as expected.\nIt encourages good 'React' architecture.\nIt implements many performance optimizations internally, which allows to components re-render only when it actually needs.\nIt makes the code maintenance easy.\nRedux's code written as functions which are small, pure, and isolated, which makes the code testable and independent.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "77) How to access the Redux store outside a component?",
+        "answer": "You need to export the Store from the module where it created with createStore() method. Also, you need to assure that it will not pollute the global window space.\nstore = createStore(myReducer)  \nexport default store",
+        "reference": "javatpoint.com"
+    }
+]

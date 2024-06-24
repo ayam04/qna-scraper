@@ -1,0 +1,162 @@
+[
+    {
+        "question": "1) What is System Design?/ What do you understand by System Design?",
+        "answer": "System design is the process of defining elements of a system such as modules, architecture, components, interfaces, and data for a system according to some specified requirements. In this process, the companies define, develop, and design systems that satisfy a business or an organization's specific needs and requirements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What types of questions are asked in System Design Interview?",
+        "answer": "In a system design interview, the candidates are asked many questions from the part of a system such as modules, architecture, components, interfaces, communication, data storage, chat services, etc., as well as the real-life problems that a company might be facing. After that, the candidates are categorized according to their field of expertization, such as programmers, designers, developers, and software engineers.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the essential skills of system designers? / What skills are needed to be a designer?",
+        "answer": "The System Designers must have the following qualities:\nADVERTISEMENT\nThey must be able to understand and solve complex problems.\nThey have a logical and analytical approach to solve problems and customer's requirements.\nThey must have good communication skills.\nThey must be able to work independently as well as part of a team.\nThey must have a good knowledge of IT and the ability to apply it in their project.\nA system designer should be capable of directing the work of others.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is Pastebin? What are the benefits of designing such a system as Pastebin?",
+        "answer": "Pastebin is a website that allows us to paste text or code to it. The biggest advantage of designing such a system is that we can share a link to that code or text (which we have earlier paste here) anywhere we want. It is not an online code editor, but we can use this system or website as a tool to store any text or code.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) As a system designer, can you design universal file sharing and storage apps like Google Drive or Dropbox?",
+        "answer": "Both apps Google Drive and Dropbox, are used to store and share files, photos, and other media services. We can design things that will allow users to upload/search/view files or photos etc. It will check permissions for file sharing and enables multiple users to make changes in the same document.\nBy asking this question, the interviewers are interested in knowing how you would handle the following things:\nHow would users be able to upload/view/search/share files or photos?\nHow would you track permissions for file sharing?\nHow would you allow multiple users to edit the same document?",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) How can you design the websites or apps like Facebook, Twitter, or Instagram (the social media services which handle hundreds of millions of users)?",
+        "answer": "The interviewers ask this question to see how you can deal with a huge quantity of users because it will require many storage systems and other complications. When we design social media services that have to handle millions or billions of users, we must focus on the following components:\nHuge and efficient storage and search for posts or tweets.\nNewsfeed generation and maintenance\nSocial Graph (who befriends whom or who follows whom,?especially when millions of users are following a celebrity)\nMany times, interviewers spend the whole interview discussing the design and your creative idea of the newsfeed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) How can you design a social network and message board service like Quora or Reddit, or HackerNews?",
+        "answer": "The websites like Quora or Reddit, or HackerNews facilitate users to post questions or share links, and other users can answer these questions or comment on the shared links. The interviewer asks this question to check that if you can provide the following services in your application:\nMaintain and record the stats for each answer, e.g., the total number of views, upvotes/downvotes, etc.\nMake users follow other users or topics.\nThe users' timeline must consist of the top questions from all the users and topics they follow (similar to newsfeed generation).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the use of traffic control software? How can you design such an app?",
+        "answer": "The traffic control software is used to make traffic control easy, hassle-free, and automatic. To design traffic control software, we must know how to transition from one state to other works. For example, how the signal goes red to green and from green to orange to red.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "?",
+        "answer": "The interviewer asks this question to check how you can handle such a huge database and provide the user an uninterrupted stream over the internet. Video streaming services or websites/applications such as YouTube, Netflix, or Twitch store and transmit hundreds of petabytes of video data. They also store statistics such as views, likes, number of views, etc.) and allow users to post comments. So the solution you are going to provide must be scalable to support millions of concurrent users.\nYou should keep the following features in your mind:\nYour application must support all types of video formats to upload over the web.\nUsers should receive an uninterrupted stream over the internet.\nYou have to provide all video statistics such as total numbers of views, up-votes/down-votes, etc., that should be stored and accessible for every video.\nThe comments on the video must be saved and displayed with the video to be visible to other users. The reply feature also available for every comment.\nThe application should support high traffic of several thousand users.\nWhat type of questions the interviewer can discuss while you answer this question:\nHow would you ensure that your service will provide smooth video streaming on various internet qualities?\nHow do you deal with the problem if your service faces a sudden drop in streaming speed (buffering, reduced quality, etc.)?\nHow would you store the videos?\nThe developer should use the following technologies:\nCloud technology to store and transmit video data.\nMachine learning for new videos suggestion.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "?",
+        "answer": "The interviewer asks this question to check if you can create a program that can shorten long URLs like TinyURL or bit.ly. These programs take a long URL and generate a new and unique short URL. You can also put shortened URL here and get the original full-length URL.\nHere, you have to show your solid foundation in design. You can also specify things that are not listed in the example response, such as creating a unique ID for each URL, handling redirects and how you delete expired URLs, etc.?\nYou should keep the following features in your mind:\nYour application must return a URL shorter than the original URL.\nYou have to store the original URL for future purposes.\nThe newly generated URL must be able to link to the stored original URL.\nShortened URL should allow redirects to the original.\nIt must support custom short URLs.\nIt should also be capable of supporting many requests at once.\nWhat type of questions the interviewer can discuss while you answer this question:\nHow can you deal with the issues such as if two users input the same custom URL or get more users than expected?\nHow would you regulate your database storage space?\nWhat technologies would be best to use to develop such applications?\nHashing to link original and new URLs.\nREST API to load high balance traffic and handle front-end client communication.\nUse multithreading to handle multiple requests simultaneously.\nUse NoSQL database to store original URLs (no relation between stored URLs).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How can you design a limit order book?",
+        "answer": "The limit order books are used in stock exchanges to match a buy order with a sell order according to the price and time priority. By asking this question, the interviewer wants to know how you would do that. Which data structure will you use? You should always remember that matching speed should be fast, and the reliability should be good.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) How can you design a vending machine in any of the programming languages?",
+        "answer": "Here, you have to write code to implement a vending machine that must contain many products, e.g., chocolates, candy, cold drinks, and accepts different types of coins, e.g., rupees, cent, nickles, dimes, quarters, etc. You should also ensure that when you insert a coin, get a product back and get your change back.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "?",
+        "answer": "When the interviewer asks this question to the candidates, he/she wants you to design a service where the users can request a ride from the app, and a driver arrives to take them to their destination.\nYou should keep the following features in your mind while designing this service:\nThis is a real-time service, so its architecture should be monolithic/microservices and should have a fast database.\nThis application's backend primarily serves mobile phone traffic, so the service must be compatible to talk to the backend over mobile data.\nYou have to provide an efficient approach to store millions of geographical locations for drivers/riders who are always on the move.\nWhat type of questions the interviewer can discuss while you answer this question:\nHow would you handle the most critical use case when a customer requests a ride, and you have to match them with the nearby drivers?\nHow would you store the millions of geographical locations for drivers and riders who are always moving?\nHow would you handle the driver/rider locations periodically where millions of updates required every second?\nHow would you map and set routes, and how will you calculate ETAs?\nHow would you efficiently match the user request with the nearby drivers?\nThe developer should use the following technologies:\nUse the best approach to handle millions of updates to driver locations.\nFor backend and dispatching, Node.js is most preferred to use.\nIt is best to write business logic services in Python.\nIt would be best if you use PostgreSQL, Redis, or MySQL for the database.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What do you understand by Search Typeahead, and how can you design it?",
+        "answer": "Search Typeahead is a service that facilitates users to type some queries, and according to the query, it suggests top searched items starting with whatever the user has typed.\nWhat type of questions the interviewer can discuss while you answer this question:\nWhat approach will you use to store previous search queries?\nWhat would be the real-time requirement of the system?\nWhat approach will you use to keep the data fresh?\nWhat approach will you use to find the best matches to the already typed string?\nWhat would you do to handle the queries per second by the system?\nWhat criteria will you set for choosing the suggestions?\nHow would you store the total number of data queries?\nWhat approach would you use to find the best matches to the already typed string?",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What do you understand by a Web Crawler, and how does it work?",
+        "answer": "A Web Crawler is a computer program that automatically searches documents on the Web and crawls them easily. It is operated by search engines such as Google and Bing. Crawlers are programmed in a way that they can do repetitive actions and make the browsing automated. Every search engine uses crawlers most frequently to browse the InternetInternet and build an index. Crawlers are also called spiders or search engine bots.\nThe main purpose of crawlers is to index websites worldwide to make them available for every search engine result.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) How would you design a Web Crawler?",
+        "answer": "The Web crawler is a search engine-related service used to index the content of websites over the Internet to make them available for every search engine result. In other words, we can say that it is a scalable service that collects information from the entire Web and fetches hundreds of millions of web documents to the users.\nWhat type of questions the interviewer can discuss while you answer this question:\nHow could you store previous search queries?\nWhat technique would you use to keep the data fresh?\nHow would you find the best matches to the already typed string?\nHow can you handle updates if the user is typing too fast?\nWhat approach would you use to find new web pages?\nWhat approach would you use to prioritize web pages that change dynamically?\nHow can you ensure that the crawler is not unbounded on the same domain?",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How can you design an API Rate Limiter like Github?",
+        "answer": "When the interviewer asks this question to the candidates, he/she wants you to design a service or tool that monitors the number of requests per window time a service agrees to allow. If the number of the request exceeds, the rate limiter blocks the entire excess request.\nYou should keep the following features in your mind while designing this service:\nYou have to limit the number of requests an entity can send to an API within the time window. For example, ten requests per second.\nThe rate-limiting should work for a distributed setup, as the APIs are available through a group of servers.\nYou have to handle soft and hard throttling very well.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is the role of a search engine? How would you design a search engine like Google, Bing, or Baidu?",
+        "answer": "A search engine is a program or a software system designed to carry out web searches which mean to search the World Wide Web in a systematic way for particular information specified in a textual web search query. When we search for something on the search engines, the results are generally presented in a line of results. These search results are referred to as search engine results pages (SERP). A customized search engine can be used within an organization's specific department to locate an item or important employee information systematically. The interviewer asks this question to check if you can make such designs to fulfill the company's needs. You can detail some of the overall architecture and explain it using the foundation below. You can also consider discussing any other relevant issues such as website front-end performance, testing search engine improvements, and integrating previous search data and trends in indexing.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How can you design an ATM system?",
+        "answer": "In banking systems, an ATM is used to deposit and withdraw money from their customers. It also facilitates users to see their account balance. It would be best if you made a design plan to create this system.\nYou should keep the following features in your mind while designing this service:\nEach user has at least one bank account at the bank.\nThe user should be able to insert a card and perform transactions.\nATM should authenticate the user based on the PIN entered.\nOnce authenticated user should be able to transactions, namely view account balance, deposit cash, and withdraw cash.\nUsers can only perform one transaction at any given time.\nAt the end of a transaction, appropriate messages should be displayed to the user to communicate the success/failure of the transaction.\nAt the end of a transaction, the user should be able to start another transaction.\nThe machine should return the card when the user exits.\nArchitecture of ATM\nFollowing is the list of possible states in the ATM:\nREADY: This is the first state which is ready to accept ATM cards.\nENTER PIN: This state waits for the user to enter the PIN once they have inserted the card.\nSELECT TRANSACTION: This state waits for the user to select a transaction.\nDEPOSIT: This state waits for the user to insert cash once they have selected the deposit cash option.\nWITHDRAW: This state waits for the user to input the required amount once they have selected the withdraw cash option.\nDISPLAY BALANCE: This state displays the account balance once the transaction is over and waits for the user to decide the next transaction or exit.\nCASH DISPENSED: This state is used to dispense cash once the transaction is over and wait for the user to collect it.\nERROR MESSAGE DISPLAYED: This state is used to display an error message if the ATM has insufficient cash or the user's account has insufficient balance and wait for the user to decide the next transaction or exit.\nINVALID CASH RETURNED: This state is used to return invalid currency, if any found once the transaction is over, and wait for the user to collect it.\nEXIT MESSAGE DISPLAYED: This state is used to display exit messages once they exit and return the card.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "Architecture of ATM",
+        "answer": "Following is the list of possible states in the ATM:\nREADY: This is the first state which is ready to accept ATM cards.\nENTER PIN: This state waits for the user to enter the PIN once they have inserted the card.\nSELECT TRANSACTION: This state waits for the user to select a transaction.\nDEPOSIT: This state waits for the user to insert cash once they have selected the deposit cash option.\nWITHDRAW: This state waits for the user to input the required amount once they have selected the withdraw cash option.\nDISPLAY BALANCE: This state displays the account balance once the transaction is over and waits for the user to decide the next transaction or exit.\nCASH DISPENSED: This state is used to dispense cash once the transaction is over and wait for the user to collect it.\nERROR MESSAGE DISPLAYED: This state is used to display an error message if the ATM has insufficient cash or the user's account has insufficient balance and wait for the user to decide the next transaction or exit.\nINVALID CASH RETURNED: This state is used to return invalid currency, if any found once the transaction is over, and wait for the user to collect it.\nEXIT MESSAGE DISPLAYED: This state is used to display exit messages once they exit and return the card.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What are the different types of documentation in System Design?",
+        "answer": "There are mainly four types of documentation used in System Design:\nProgram documentation\nSystem documentation\nOperations documentation\nUser documentation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What should we keep in mind while preparing documentation?",
+        "answer": "We should keep in mind that we have to prepare documentation at every system design stage.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Where is problem analysis done in the system design process?",
+        "answer": "In System design, problem analysis is done at the systems analysis phase.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Can the size of the organization be a factor in the failure of the system?",
+        "answer": "No, the organization's size cannot be considered a factor for system development and designing projects.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What do you understand by the term controller?",
+        "answer": "A controller is a program component used to make decisions. It is also used to direct other components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is an algorithm? What is the usage of the algorithm?",
+        "answer": "An algorithm is a finite sequence of well-defined, computer-implementable instructions used to solve a class of problems or perform computation. It is generally used in Mathematics and Computer Science.\nAn algorithm should always be unambiguous and is used as specifications for performing calculations, data processing, automated reasoning, and other tasks.\nFeatures of an algorithm\nAn algorithm is a very effective method to solve complicated computational problems.\nAn algorithm can be expressed within a finite amount of space and time.\nAn algorithm should be in a well-defined formal language for calculating a function.\nAn algorithm starts with an initial state, and after some instructions to describe a computation, it proceeds through a finite number of well-defined successive states, eventually producing output.\nThe output is the last and is terminated at a final ending state.\nIn an algorithm, the transition from one state to the next is not necessarily deterministic; some algorithms, known as randomized algorithms, incorporate random input.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is the top-down approach in system analysis and design?",
+        "answer": "The top-down approach is a strategy of information processing and knowledge ordering, used in various fields such as software, humanistic and scientific theories, and management. It is also used in companies and organizations. It is also known as stepwise design and stepwise refinement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What we have to do in a top-down approach?",
+        "answer": "In the top-down approach, we have to identify a top-level function and then create a hierarchy of lower-level modules and components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What do you understand by the System Study?",
+        "answer": "System Study is a detailed study process used to determine whether, to what extent, and how we should use the automatic data-processing equipment. This process includes an analysis of the existing system and the design of the new system, along with the development of system specifications that provide a basis for selecting equipment.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are the important aspects of the System Study?",
+        "answer": "System study is the main requirement to design any system. Following is the list of most important aspects of System Study:\nFirst, we have to identify the current issues and then establish new goals.\nDetail study of the existing system.\nDocumentation of the existing system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is the autocomplete functionality, and how can you design this?",
+        "answer": "Autocomplete is a feature used to predict the upcoming words or rest of a word a user is typing. The autocomplete feature is used to speed up human-computer interactions. It correctly predicts the word a user intends to enter after only a few characters have been typed into a text input field. It is also called the word completion feature.\nWe should keep the following features in our mind while designing the autocomplete functionality:\nEnsure that the typeahead suggestion is on.\nThe system should handle the queries per second.\nWe have to provide support personalization with the suggestions.\nEnsure that the amount of data is stored.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What are the most important structure tools used in system analysis and design?",
+        "answer": "Following are the most important structure tools used in system analysis and design:\nData Flow Diagrams\nData Dictionary\nDecision Trees\nStructure English\nPseudocode",
+        "reference": "javatpoint.com"
+    }
+]

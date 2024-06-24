@@ -1,0 +1,212 @@
+[
+    {
+        "question": "1) What is Embedded C? / What do you understand by Embedded C language?",
+        "answer": "Embedded C is a set of language extensions for the C programming language specified by the C Standards Committee. It is generally used to address commonality issues that exist between C extensions for different embedded systems. Embedded C programming typically requires nonstandard extensions to the C language to support enhanced microprocessor features such as fixed-point arithmetic, multiple distinct memory banks, and basic I/O operations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What do you understand by the embedded system?",
+        "answer": "An embedded system is a microprocessor-based computer hardware system and software designed to perform a specific function. An embedded system is either an independent system or acts as a part of a large system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the key differences between C and Embedded C?",
+        "answer": "C is a general-purpose, high-level programming language used to design any desktop-based applications. On the other hand, Embedded C is an extension of the C language, and it is used to develop micro-controller based applications. Here, Embedded refers to the hosting computer or microcontroller and not the programming language. Let's see the key differences between C and Embedded C in the following table.\nDifferences between C and Embedded C:\nC language Embedded C\nC is a general-purpose programming language used to design any desktop-based applications. Embedded C is nothing but an extension C programming language, and it is used to develop micro-controller based applications.\nC is a type of high-level programming language. Embedded C is an extension of the C programming language.\nC programming language is the hardware-independent language. Embedded C is a completely hardware-dependent language.\nC is a simple language, and it is easy to read and modify. Embedded C is comparatively tough, and it is not easy to read and modify the Embedded C language.\nThe compilers of the C programming language are OS-dependent. The compilers of Embedded C are OS independent.\nIn the C programming language, the standard compilers are used to compile and execute the program. In Embedded C language, a specific compiler that can generate particular hardware/micro-controller based output is used to compile the code.\nSome popular compilers used to execute a C language program are:\nGCC (GNU Compiler collection)\nBorland Turbo C\nIntel C++ Some popular compilers used to execute an Embedded C language program are:\nKeil compiler\nBiPOM ELECTRONIC\nGreen Hill software\nC programming language has a free format of program coding. In Embedded C language, formatting depends upon the type of microprocessor used in the application.\nBug fixing is easy in a C language program. Bug fixing is complicated in an Embedded C language program.\nC language also supports other various programming languages during application. Embedded C language supports only the required processor of the application and not the programming languages.\nC programming language must require an operating system. Embedded C may or may not require an operating system.\nIn the C programming language, we can give input to the program while it is running. In Embedded C language, we can give only the pre-defined inputs to the running program.\nThe C programming language supports normal optimization. Embedded C supports the high level of optimization.\nC programming language generally uses the resources of a desktop PC like memory, OS, etc. Embedded C language has to use with the limited resources, such as RAM, ROM, I/Os on an embedded processor.\nSome examples of the C Program applications:\nLogical programs\nSystem software programs etc. Some examples of the Embedded C Program applications:\nDVD\nTV\nDigital camera etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Is embedded C a programming language?",
+        "answer": "Embedded C is not a core programming language. It is an extension of C programming language that is used to develop micro-controller based applications. The extensions introduced in Embedded C language from normal C programming language are the I/O Hardware Addressing, fixed-point arithmetic operations, accessing address spaces, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the main advantages of Embedded C?",
+        "answer": "Embedded C is the extension of the C programming language. Let's see the key advantages of Embedded C:\nKey advantages of Embedded C:\nADVERTISEMENT\nThe coding speed of Embedded C is high, and it is simple and easy to understand.\nIt doesn't require any hardware changes such as extra memory or space for storage as it performs the same task all the time.\nIt is dedicated to its specific task and performs only one task at one time.\nIt is mainly used in modern automatic applications. Embedded applications are very suitable for industrial purposes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What are the main disadvantages of Embedded C?",
+        "answer": "Disadvantages of Embedded C:\nEmbedded C performs only one task at a time, so it is not preferred when we have to perform multiple tasks simultaneously.\nEmbedded C only supports the hardware system. So, if you have to change the program, then you must have to change the hardware.\nEmbedded C also has some scalability issues, so; it cannot be easily scaled up as scope change or demand.\nIt has some limitations, such as limited memory or computer compatibility.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is the volatile keyword in Embedded C, and what is its usage?",
+        "answer": "In Embedded C, the volatile keyword is a type qualifier that prevents the objects from compiler optimization. According to the C standard, we can modify the volatile-qualified type object in ways unknown to the implementation. In other words, we can say that the value of the volatile-qualified object can be changed at any time without making any changes in the code. If the volatile qualifier qualifies an object, the compiler will reload the value from memory each time the program accesses it. Reading the value from memory is the only way to check the unpredictable change of the value.\nThe volatile keyword is mainly used when we have to deal with GPIO, interrupt or flag Register directly. It is also used with a global variable or buffer shared between the threads.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is the segmentation fault error in C? What are some common causes for the segmentation fault error?",
+        "answer": "Segmentation fault error is a runtime error, which may occur due to some causes when a program runs.\nFollowing is a list of some common causes for the segmentation fault error in C:\nUsages of the dereferenced pointer: If we use a pointer that may not have a valid address/memory location to point, it may create a segmentation fault error.\nA program may return a segmentation fault error if you try to access a read-only memory area.\nSegmentation fault error may also occur when you try to free memory (using a pointer), which is already freed.\nThe occurrence of segmentation fault error is the reason to generate stack overflow error in C.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is the full form of ISR in Embedded C?",
+        "answer": "In Embedded C, ISR stands for Interrupt Service Routines. These are the procedures stored at specific memory addresses and called when a certain type of interrupt occurs.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is a stack overflow error in C?",
+        "answer": "In C language, the stack overflow error may occur if the program tries to access the memory beyond its available maximum limit. For example, the stack overflow error may occur if a pointer exceeds the stack limitations (boundaries).\nWhen the stack overflow error occurs, the program terminates and does not execute further instructions. So, we must be very careful while using the pointer and limit boundaries.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) Is it possible to pass any parameter and return a value from the ISR?",
+        "answer": "No. It is not possible to pass any parameter and return a value from the ISR. The ISR returns nothing and does not allow passing any parameter. An ISR is called when a hardware or software event occurs, and the code does not call it. That's why no parameters are passed into an ISR. As the code does not call ISR, there is no calling code to read the returned values of the ISR. That's why an ISR does not return any value.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What do you understand by interrupt latency?",
+        "answer": "Interrupt Latency is the number of clock cycles the processor takes to respond to an interrupt request. This clock cycle number is count between the interrupt request's assertions and the interrupt handler's first instruction.\nInterrupt Latency on the Cortex-M processor family:\nCortex-M processors have very low interrupt latency. The following table shows the Interrupt latency of Cortex-M processors with zero wait state memory systems.\nProcessors Cycles with zero wait state memory\nCortex-M0 16\nCortex-M0+ 15\nCortex-M3 12\nCortex-M4 12\nCortex-M7 12",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How can you measure the interrupt latency in Embedded C?",
+        "answer": "In Embedded C, we can measure the interrupt latency with the help of the oscilloscope. Follow the steps given below:\nTake two GPIOs first. Configure one GPIO to generate the interrupt and the second for the toggling (you can attach an LED also).\nUse the oscilloscope or analyzer to monitor the PIN, which is already configured to generate the interrupt.\nNow, monitor the second pin, which is toggled at the beginning of the interrupt service routine by using the oscilloscope or analyzer.\nWhen you generate the interrupt, the signal of both GPIOs will change.\nNow, you can easily read the instrument's interval between the two signals (interrupt latency).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How can you reduce the interrupt latency?",
+        "answer": "There are several ways to reduce the interrupt latency in Embedded C. The interrupt latency depends on many factors. Following is a list of some factors:\nPlatform and interrupt controller\nCPU clock speed\nTimer frequency\nCache configuration\nApplication program etc.\nSo, we can easily reduce the interrupt latency by using the proper selection of platform and processor. We can also reduce the interrupt latency by making the ISR shorter and avoid to calling a function within the ISR.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is a static variable in C? Why do we use a static variable in C?",
+        "answer": "Static variables have the property of preserving their value even after they are out of their scope. It means we can initialize static variables only once. Its scope is local, but it lives until the end of the program. The compiler persists with the variable till the end of the program. We can define static variables inside or outside the function. The default value of static variables is zero. The static variables are alive till the execution of the program.\nSyntax for the static variables in C language:\nstatic datatype variable_name = value;  \nA static variable is generally used to count something. For example, the function openBakAccount() calls whenever a new account opens in the bank. Then, to count the total number of opened accounts, we can declare a static variable in the function and increase it on each function call.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What are some interesting facts about static variables in C?",
+        "answer": "Following is a list of some interesting facts about static variables in C:\nThere are two types of static variables, static int variable and static auto variable. A static int variable remains in memory while the program is running and a normal or auto variable is destroyed when a function call declared is over. For example, we can use a static int variable to count the number of times a function is called, but we cannot use an auto variable for this purpose.\nStatic variables are allocated memory in the data segment, not the stack segment.\nThe default value for static variables is 0. Like global variables, they are initialized as 0 if not initialized explicitly.\nIn C language, we can initialize the static variables using only constant literals.\nStatic global variables and functions are also possible in C++. They are mainly used to limit the scope of a variable or function to a file.\nWe should not declare static variables inside the structure because the C compiler requires the entire structure elements to be placed together.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How can you use a variable in a source file defined in another source file?",
+        "answer": "We can use the \"extern\" keyboard to declare a variable that allows accessing the variable in another file. This is how we can use a variable in a source file defined in another source file.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How can you protect a character pointer by some accidental modification with the pointer address?",
+        "answer": "We can use the constant character pointer (const char*) to protect a character pointer by accidentally modifying the pointer address. It prevents unnecessary modifications with the pointer address in the string.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the main differences between CISC and RISC?",
+        "answer": "There are many differences between the RISC and CISC. Some of them are as follows:\nRISC CISC\nRISC stands for Reduced Instruction Set Computer. CISC stands for Complex Instruction Set Computer.\nRISC does not consist of a memory unit. CISC consists of a memory unit.\nRISC is a relatively faster processor than CISC in terms of calculations. CISC is a comparatively slower processor than RISC in terms of calculations.\nRISC is used to ensure the simple decoding of operations. CISC doesn't ensure simple decoding of operations.\nThe execution time is RISC is low. The execution time is CISC is high.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What do you understand by a function pointer?",
+        "answer": "A function pointer is a pointer that points to a function instead of a variable. That's why a function pointer is completely different from the class of other pointers. A function pointer stores the address of a particular function so that the concerned program can avail of it through function invoking.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) Can a variable be both constant and volatile in C?",
+        "answer": "Yes, a variable can be both constant and volatile in C. we can use constant and volatile both variables together. The volatile and const variable together is used at the time of accessing the GPIO registers. In this case, its value is changed by the 'external factors' if a switch or any output device is attached with GPIO. In this situation, the volatile variable is important because it ensures that the compiler always read the value from the GPIO address and avoids making any assumption.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is a dangling pointer in embedded C?",
+        "answer": "A dangling pointer is a pointer that points to a memory location that has been already free-ed by the application and is no longer in use. Sometimes, the programmers fail to initialize the pointer with a valid address; these types of initialized pointers are known as dangling pointers. Dangling pointers occur at the time of the object's destruction when the object is deleted or de-allocated from memory without modifying the pointer's value. If you try to dereference a dangling pointer, it will potentially lead to a runtime error.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is the size of a character, integer, integer pointer, and character pointer in C?",
+        "answer": "The size of the character is 1 byte, the size of the integer is 4 bytes, the size of the integer pointer, and the character pointer is 8 bytes on a 64-bit machine and 4 bytes on a 32-bit machine.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What are some Real-Time applications of Embedded Processors?",
+        "answer": "Some real-time applications of Embedded Processors are:\nDishwashers\nAutomatic passengers cars\nMobile Phones\nTelevision\nMedical equipment, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What are some examples of the embedded systems to use in Aerospace Applications?",
+        "answer": "Some examples of the embedded systems to use in Aerospace Applications are:\nFlight control systems\nAutopilot mode\nA passenger in-flight embedded system\nEngine controllers\nLanding and takeoff controller etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) How many bits that the Embedded Software supports?",
+        "answer": "The Embedded Software supports 8, 16 or 32 bit embedded processors.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What do you understand by a NULL pointer? What is its usage?",
+        "answer": "NULL is a macro defined in C. The Null pointer is a pointer that does not point to any valid location. The NULL pointer is defined when we want to ensure that the pointer does not point to any valid location and not to use that pointer to change anything. Without using a null pointer, we can't verify whether this pointer points to any valid location or not.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Are Countdown to zero loops better than Count_up_loops?",
+        "answer": "Yes, Countdown to zero loops are better than Count_up_loops because, at loop termination, comparison to zero can be optimized by the compiler. Most of the processors have instructions for comparing to zero. So they don't need to load the loop variable and the maximum value; subtract them and then compare them to zero. That is why count down to zero loops are better.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are some examples of Embedded systems in automotive applications?",
+        "answer": "Following are some examples of Embedded systems in automotive applications:\nTraffic control systems\nBraking systems\nsteer-by-wire systems\nCruise control applications\nAirbag release systems\nEngine management units etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What are some examples of domestic appliances that use an Embedded System?",
+        "answer": "Following is a list of some examples of domestic appliances that use Embedded Systems:\nSmart Televisions\nWashing machines\nMicrowave ovens\nDishwashers\nGarage door controllers\nVideo recorders and\nSecurity systems etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What do you understand by the term structure padding in Embedded C?",
+        "answer": "Structure padding is a concept used in the C programming language. It is used to add one or more empty bytes between the memory addresses to align the data in the memory. The compiler automatically does it to ensure that all its members are byte aligned.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What are some examples of Medical Equipments that uses the concept of Embedded Systems?",
+        "answer": "Following are some examples of Medical Equipments that uses the concept of Embedded Systems:\nAnaesthesia monitoring systems\nECG monitors\nMRI Scanners\nDrug delivery systems\nUltrasound equipment etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) Which Defense Systems use the concept of Embedded Systems?",
+        "answer": "Following are some examples of Defense Systems that use the concept of Embedded Systems:\nRadio systems\nRadar systems\nMissile guidance systems\nFighter aircraft flight control system\nTarget guidance systems etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What do you understand by Machine Code?",
+        "answer": "Machine Code is the language of the computer rather than the programmer. A computer only accepts the instructions in the form of machine code or object code. When a programmer interprets the code, it is complex and error-prone. Whether in languages such as C, C++, and Java, all software must ultimately be translated into machine code to be executed by the computer.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What are the Discrete Components used in Embedded systems?",
+        "answer": "The list of Discrete Components used in Embedded systems is:\nTransistors\nDiodes\nResistors\nCapacitor",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is the link between oscillator frequency and machine-cycle period?",
+        "answer": "A general rule specifies that the oscillator frequency directly determines the speed at which your application runs. So, in most cases, if you double the oscillator frequency, the speed of the application would be doubled.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is the full form of MIPS?",
+        "answer": "MIPS stands for Million Instructions Per Second. It is an approximate measure of a computer's raw processing power. It may be misleading because measurement techniques often differ, and different computers may require different sets of instructions to perform the same activity.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) How can we improve the 8051 microcontroller performance?",
+        "answer": "The simplest way to improve the performance of the 8051 microcontrollers is to increase the clock frequency. The 8051 microcontrollers allow the use of clock speeds well beyond the 12MHz limit of the original devices. The best way to improve the performance is to make internal changes to the microcontroller so that fewer oscillator cycles are required to execute each machine instruction.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is the range of maximum oscillator frequency and the peak performance in the 8051 microcontrollers?",
+        "answer": "The 8051 microcontroller has a maximum oscillator frequency of 12 MHz, and peak performance is 1 MIP.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What do you understand by Memory Fragmentation?",
+        "answer": "Memory Fragmentation is an issue that arises while using dynamic memory allocation. When we keep allocating and releasing memory spaces over time, in the end, we will get non-contiguous memory blocks that are free, and our in-use variables are scattered everywhere in the RAM. This is called memory fragmentation. This can potentially lead to dynamic memory allocation failure. For example, if you have to allocate an array of 100 integers and there is no contiguous block of memory with that space, this causes a runtime error. This is why we don't use dynamic memory allocation in embedded systems firmware in the first place.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What are inline functions in Embedded C?",
+        "answer": "Inline functions are the types of function whose definitions are small and be substituted at the place where its function call has happened. The ARM compilers support inline functions with the keyword __inline. These functions have a small definition, and the function body is substituted in each call to the inline function.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What are the types of memory in an Embedded System in C language?",
+        "answer": "Following are the types of memory in an Embedded System in C language:\nDRAM (Dynamic RAM)\nSRAM (Static RAM)\nMask Read-only Memory (ROM)\nPROM (Programmable Read-Only Memory)\nUV EPROM (UV Erasable Programmable Read-Only Memory)\nEEPROM (Electrically - Erasable PROM)",
+        "reference": "javatpoint.com"
+    }
+]

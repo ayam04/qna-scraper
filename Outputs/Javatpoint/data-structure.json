@@ -1,0 +1,282 @@
+[
+    {
+        "question": "",
+        "answer": "The data structure is a way that specifies how to organize and manipulate the data. It also defines the relationship between them. Some examples of Data Structures are arrays, Linked List, Stack, Queue, etc. Data Structures are the central part of many computer science algorithms as they enable the programmers to handle the data in an efficient way",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Describe the types of Data Structures?",
+        "answer": "Data Structures are mainly classified into two types:\nLinear Data Structure: A data structure is called linear if all of its elements are arranged in the sequential order. In linear data structures, the elements are stored in a non-hierarchical way where each item has the successors and predecessors except the first and last element.\nNon-Linear Data Structure: The Non-linear data structure does not form a sequence i.e. each item or element is connected with two or more other items in a non-linear arrangement. The data elements are not arranged in the sequential structure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Data structures are applied extensively in the following areas of computer science:\nADVERTISEMENT\nCompiler Design,\nOperating System,\nDatabase Management System,\nStatistical analysis package,\nNumerical Analysis,\nGraphics,\nArtificial Intelligence,\nSimulation",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is the difference between file structure and storage structure?",
+        "answer": "Difference between file structure and storage structure:\n\nThe main difference between file structure and storage structure is based on memory area that is being accessed.\nStorage structure: It is the representation of the data structure in the computer memory.\nFile structure: It is the representation of the storage structure in the auxiliary memory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "RDBMS uses Array data structure\nNetwork data model uses Graph\nHierarchal data model uses Trees",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Which data structure is used to perform recursion?",
+        "answer": "Stack data structure is used in recursion due to its last in first out nature. Operating system maintains the stack in order to save the iteration variables at each function call",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is a Stack?",
+        "answer": "Stack is an ordered list in which, insertion and deletion can be performed only at one end that is called the top. It is a recursive data structure having pointer to its top element. The stack is sometimes called as Last-In-First-Out (LIFO) list i.e. the element which is inserted first in the stack will be deleted last from the stack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) List the area of applications where stack data structure can be used?",
+        "answer": "Expression evaluation\nBacktracking\nMemory Management\nFunction calling and return",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are the operations that can be performed on a stack?",
+        "answer": "Push Operations\nPop Operations\nPeek Operations",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Overflow occurs when top = Maxsize -1",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is the difference between PUSH and POP?",
+        "answer": "PUSH and POP operations specify how data is stored and retrieved in a stack.\nPUSH: PUSH specifies that data is being \"inserted\" into the stack.\n\nPOP: POP specifies data retrieval. It means that data is being deleted from the stack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Push:\nIncrement the variable top so that it can refer to the next memory allocation\nCopy the item to the at the array index value equal to the top\nRepeat step 1 and 2 until stack overflows\nPop:\nStore the topmost element into the an another variable\nDecrement the value of the top\nReturn the topmost element",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is a postfix expression?",
+        "answer": "An expression in which operators follow the operands is known as postfix expression. The main benefit of this form is that there is no need to group sub-expressions in parentheses or to consider operator precedence.\nThe expression \"a + b\" will be represented as \"ab+\" in postfix notation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14)Write the postfix form of the expression: (A + B) * (C - D)",
+        "answer": "AB+CD-*",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": ")15) Which notations are used in Evaluation of Arithmetic Expressions using prefix and postfix forms?",
+        "answer": "Polish and Reverse Polish notations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16)What is an array?",
+        "answer": "Arrays are defined as the collection of similar types of data items stored at contiguous memory locations. It is the simplest data structure in which each data element can be randomly accessed by using its index number.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How to reference all the elements in a one-dimension array?",
+        "answer": "It can be done by using an indexed loop such that the counter runs from 0 to the array size minus one. In this manner, you can reference all the elements in sequence by using the loop counter as the array subscript.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is a multidimensional array?",
+        "answer": "The multidimensional array can be defined as the array of arrays in which, the data is stored in tabular form consists of rows and columns. 2D arrays are created to implement a relational database lookalike data structure. It provides ease of holding the bulk of data at once which can be passed to any number of functions wherever required.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How are the elements of a 2D array are stored in the memory?",
+        "answer": "There are two techniques by using which, the elements of a 2D array can be stored in the memory.\nRow-Major Order: In row-major ordering, all the rows of the 2D array are stored into the memory contiguously. First, the 1st row of the array is stored into the memory completely, then the 2nd row of the array is stored into the memory completely and so on till the last row.\nColumn-Major Order: In column-major ordering, all the columns of the 2D array are stored into the memory contiguously. first, the 1st column of the array is stored into the memory completely, then the 2nd row of the array is stored into the memory completely and so on till the last column of the array.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Row-Major Order: If array is declared as a[m][n] where m is the number of rows while n is the number of columns, then address of an element a[i][j] of the array stored in row major order is calculated as,\n\n\nAddress(a[i][j]) = B. A. + (i * n + j) * size\nColumn-Major Order: If array is declared as a[m][n] where m is the number of rows while n is the number of columns, then address of an element a[i][j] of the array stored in column major order is calculated as\nAddress(a[i][j]) = ((j*m)+i)*Size + BA.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Linked List is the collection of randomly stored data objects called nodes. In Linked List, each node is linked to its adjacent node through a pointer. A node contains two fields, i.e. Data Field and Link Field.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Are linked lists considered linear or non-linear data structures?",
+        "answer": "A linked list is considered both linear and non-linear data structure depending upon the situation.\nOn the basis of data storage, it is considered as a non-linear data structure.\nOn the basis of the access strategy, it is considered as a linear data-structure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What are the advantages of Linked List over an array?",
+        "answer": "The size of a linked list can be incremented at runtime which is impossible in the case of the array.\nThe List is not required to be contiguously present in the main memory, if the contiguous space is not available, the nodes can be stored anywhere in the memory connected through the links.\nThe List is dynamically stored in the main memory and grows as per the program demand while the array is statically stored in the main memory, size of which must be declared at compile time.\nThe number of elements in the linked list are limited to the available memory space while the number of elements in the array is limited to the size of an array.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "struct node   \n{  \n    int data;   \n    struct node *next;  \n};  \nstruct node *head, *ptr;   \nptr = (struct node *)malloc(sizeof(struct node));",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) If you are using C language to implement the heterogeneous linked list, what pointer type should be used?",
+        "answer": "The heterogeneous linked list contains different data types, so it is not possible to use ordinary pointers for this. For this purpose, you have to use a generic pointer type like void pointer because the void pointer is capable of storing a pointer to any type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) What is doubly linked list?",
+        "answer": "The doubly linked list is a complex type of linked list in which a node contains a pointer to the previous as well as the next node in the sequence. In a doubly linked list, a node consists of three parts:\nnode data\npointer to the next node in sequence (next pointer)\npointer to the previous node (previous pointer).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "#include<stdio.h>  \n#include<stdlib.h>  \nvoid beg_insert(int);  \nstruct node  \n{  \n    int data;  \n    struct node *next;  \n};  \nstruct node *head;  \nvoid main ()  \n{  \n    int choice,item;  \n    do   \n    {  \n        printf(\"\\nEnter the item which you want to insert?\\n\");  \n        scanf(\"%d\",&item);  \n        beg_insert(item);  \n        printf(\"\\nPress 0 to insert more ?\\n\");  \n        scanf(\"%d\",&choice);  \n    }while(choice == 0);  \n}  \nvoid beg_insert(int item)    \n{    \n            struct node *ptr = (struct node *)malloc(sizeof(struct node));    \n    struct node *temp;  \n    if(ptr == NULL)    \n    {    \n        printf(\"\\nOVERFLOW\");    \n    }    \n    else     \n    {    \n        ptr -> data = item;    \n        if(head == NULL)    \n        {    \n            head = ptr;    \n            ptr -> next = head;    \n        }    \n        else     \n        {       \n            temp = head;    \n            while(temp->next != head)    \n                temp = temp->next;    \n            ptr->next = head;     \n            temp -> next = ptr;     \n            head = ptr;    \n        }     \n    printf(\"\\nNode Inserted\\n\");  \n    }    \n                }",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "A queue can be defined as an ordered list which enables insert operations to be performed at one end called REAR and delete operations to be performed at another end called FRONT.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Applications of the queue is given as follows:\nQueues are widely used as waiting lists for a single shared resource like a printer, disk, CPU.\nQueues are used in the asynchronous transfer of data (where data is not being transferred at the same rate between two processes) for eg. pipes, file IO, sockets.\nQueues are used as buffers in most of the applications like MP3 media player, CD player, etc.\nQueues are used to maintain the playlist in media players to add and remove the songs from the play-list.\nQueues are used in operating systems for handling interrupts.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What are the drawbacks of array implementation of Queue?",
+        "answer": "Memory Wastage: The space of the array, which is used to store queue elements, can never be reused to store the elements of that queue because the elements can only be inserted at front end and the value of front might be so high so that, all the space before that, can never be filled.\nArray Size: There might be situations in which, we may need to extend the queue to insert more elements if we use an array to implement queue, It will almost be impossible to extend the array size, therefore deciding the correct array size is always a problem in array implementation of queue.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) What are the scenarios in which an element can be inserted into the circular queue?",
+        "answer": "If (rear + 1)%maxsize = front, the queue is full. In that case, overflow occurs and therefore, insertion can not be performed in the queue.\nIf rear != max - 1, the rear will be incremented to the mod(maxsize) and the new value will be inserted at the rear end of the queue.\nIf front != 0 and rear = max - 1, it means that queue is not full therefore, set the value of rear to 0 and insert the new element there.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What is a dequeue?",
+        "answer": "Dequeue (also known as double-ended queue) can be defined as an ordered set of elements in which the insertion and deletion can be performed at both the ends, i.e. front and rear.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What is the minimum number of queues that can be used to implement a priority queue?",
+        "answer": "Two queues are needed. One queue is used to store the data elements, and another is used for storing priorities.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Tree is a recursive data structure containing the set of one or more data nodes where one node is designated as the root of the tree while the remaining nodes are called as the children of the root. The nodes other than the root node are partitioned into the nonempty sets where each one of them is to be called sub-tree.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "There are six types of tree given as follows.\nGeneral Tree\nForests\nBinary Tree\nBinary Search Tree\nExpression Tree\nTournament Tree",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What are Binary trees?",
+        "answer": "A binary Tree is a special type of generic tree in which, each node can have at most two children. Binary tree is generally partitioned into three disjoint subsets, i.e. the root of the node, left sub-tree and Right binary sub-tree.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "void in-order(struct treenode *tree)  \n    {  \n        if(tree != NULL)  \n        {  \n            in-order(tree\u2192 left);  \n            printf(\"%d\",tree\u2192 root);  \n            in-order(tree\u2192 right);  \n        }  \n    }",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is the maximum number of nodes in a binary tree of height k?",
+        "answer": "2k+1-1 where k >= 1",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) Which data structure suits the most in the tree construction?",
+        "answer": "Queue data structure",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) Which data structure suits the most in the tree construction?",
+        "answer": "Queue data structure",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "int count (struct node* t)  \n{  \n    if(t)  \n    {  \n        int l, r;  \n        l = count(t->left);  \n        r=count(t->right);  \n        return (1+l+r);  \n    }  \n    else   \n    {  \n        return 0;  \n    }  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "int countHeight(struct node* t)  \n{  \n    int l,r;  \n    if(!t)  \n        return 0;  \n    if((!(t->left)) && (!(t->right)))  \n        return 0;  \n    l=countHeight(t->left);  \n    r=countHeight(t->right);  \n    return (1+((l>r)?l:r));  \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) How can AVL Tree be useful in all the operations as compared to Binary search tree?",
+        "answer": "AVL tree controls the height of the binary search tree by not letting it be skewed. The time taken for all operations in a binary search tree of height h is O(h). However, it can be extended to O(n) if the BST becomes skewed (i.e. worst case). By limiting this height to log n, AVL tree imposes an upper bound on each operation to be O(log n) where n is the number of nodes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "A B tree of order m contains all the properties of an M way tree. In addition, it contains the following properties.\nEvery node in a B-Tree contains at most m children.\nEvery node in a B-Tree except the root node and the leaf node contain at least m/2 children.\nThe root nodes must have at least 2 nodes.\nAll leaf nodes must be at the same level.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What are the differences between B tree and B+ tree?",
+        "answer": "SN B Tree B+ Tree\n1 Search keys cannot repeatedly be stored. Redundant search keys can be present.\n2 Data can be stored in leaf nodes as well as internal nodes Data can only be stored on the leaf nodes.\n3 Searching for some data is a slower process since data can be found on internal nodes as well as on the leaf nodes. Searching is comparatively faster as data can only be found on the leaf nodes.\n4 Deletion of internal nodes is so complicated and time-consuming. Deletion will never be a complexed process since element will always be deleted from the leaf nodes.\n5 Leaf nodes cannot be linked together. Leaf nodes are linked together to make the search operations more efficient.\n46) List some applications of Tree-data structure?\nApplications of Tree- data structure:\nThe manipulation of Arithmetic expression,\nSymbol Table construction,\nSyntax analysis\nHierarchal data model",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) List some applications of Tree-data structure?",
+        "answer": "Applications of Tree- data structure:\nThe manipulation of Arithmetic expression,\nSymbol Table construction,\nSyntax analysis\nHierarchal data model",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) Define the graph data structure?",
+        "answer": "A graph G can be defined as an ordered set G(V, E) where V(G) represents the set of vertices and E(G) represents the set of edges which are used to connect these vertices. A graph can be seen as a cyclic tree, where the vertices (Nodes) maintain any complex relationship among them instead of having parent-child relations.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) Differentiate among cycle, path, and circuit?",
+        "answer": "Path: A Path is the sequence of adjacent vertices connected by the edges with no restrictions.\nCycle: A Cycle can be defined as the closed path where the initial vertex is identical to the end vertex. Any vertex in the path can not be visited twice\nCircuit: A Circuit can be defined as the closed path where the intial vertex is identical to the end vertex. Any vertex may be repeated.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "For the graph implementation, following data structures are used.\nIn sequential representation, Adjacency matrix is used.\nIn Linked representation, Adjacency list is used.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) Which data structures are used in BFS and DFS algorithm?",
+        "answer": "In BFS algorithm, Queue data structure is used.\nIn DFS algorithm, Stack data structure is used.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "51) What are the applications of Graph data structure?",
+        "answer": "The graph has the following applications:\nGraphs are used in circuit networks where points of connection are drawn as vertices and component wires become the edges of the graph.\nGraphs are used in transport networks where stations are drawn as vertices and routes become the edges of the graph.\nGraphs are used in maps that draw cities/states/regions as vertices and adjacency relations as edges.\nGraphs are used in program flow analysis where procedures or modules are treated as vertices and calls to these procedures are drawn as edges of the graph.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "54) In what scenario, Binary Search can be used?",
+        "answer": "Binary Search algorithm is used to search an already sorted list. The algorithm follows divide and conqer approach\nExample:",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "52) What are the advantages of Binary search over linear search?",
+        "answer": "There are relatively less number of comparisons in binary search than that in linear search. In average case, linear search takes O(n) time to search a list of n elements while Binary search takes O(log n) time to search a list of n elements.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "53) What are the advantages of Selecetion Sort?",
+        "answer": "It is simple and easy to implement.\nIt can be used for small data sets.\nIt is 60 per cent more efficient than bubble sort.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "55) List Some Applications of Multilinked Structures?",
+        "answer": "Sparse matrix,\nIndex generation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "56) What is the difference between NULL and VOID?",
+        "answer": "Null is actually a value, whereas Void is a data type identifier.\nA null variable simply indicates an empty value, whereas void is used to identify pointers as having no initial size.",
+        "reference": "javatpoint.com"
+    }
+]

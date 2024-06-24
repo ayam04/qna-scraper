@@ -1,0 +1,462 @@
+[
+    {
+        "question": "1) What is MySQL?",
+        "answer": "MySQL is a multithreaded, multi-user SQL database management system which has more than 11 million installations. It is the world's second most popular and widely-used open source database. It is interesting how MySQL name was given to this query language. The term My is coined by the name of the daughter of co-founder Michael Widenius's daughter, and SQL is the short form of Structured Query Language. Using MySQL is free of cost for the developer, but enterprises have to pay a license fee to Oracle.\nFormerly MySQL was initially owned by a for-profit firm MySQL AB, then Sun Microsystems bought it, and then Oracle bought Sun Microsystems, so Oracle currently owns MySQL.\nMySQL is an Oracle-supported Relational Database Management System (RDBMS) based on structured query language. MySQL supports a wide range of operating systems, most famous of those include Windows, Linux & UNIX. Although it is possible to develop a wide range of applications with MySQL, it is only used for web applications & online publishing. It is a fundamental part of an open-source enterprise known as Lamp.\nWhat is the Lamp?\nThe Lamp is a platform used for web development. The Lamp uses Linux, Apache, MySQL, and PHP as an operating system, web server, database & object-oriented scripting language. And hence abbreviated as LAMP.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) In which language MySQL has been written?",
+        "answer": "MySQL is written in C and C++, and its SQL parser is written in yacc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the technical specifications of MySQL?",
+        "answer": "MySQL has the following technical specifications -\nADVERTISEMENT\nFlexible structure\nHigh performance\nManageable and easy to use\nReplication and high availability\nSecurity and storage management\nDrivers\nGraphical Tools\nMySQL Enterprise Monitor\nMySQL Enterprise Security\nJSON Support\nReplication & High-Availability\nManageability and Ease of Use\nOLTP and Transactions\nGeo-Spatial Support",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What is the difference between MySQL and SQL?",
+        "answer": "SQL is known as the standard query language. It is used to interact with the database like MySQL. MySQL is a database that stores various types of data and keeps it safe.\nA PHP script is required to store and retrieve the values inside the database.\nSQL is a computer language, whereas MySQL is a software or an application\nSQL is used for the creation of database management systems whereas MySQL is used to enable data handling, storing, deleting and modifying data",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "What is the difference between the database and the table?",
+        "answer": "There is a major difference between a database and a table. The differences are as follows:\nTables are a way to represent the division of data in a database while the database is a collection of tables and data.\nTables are used to group the data in relation to each other and create a dataset. This dataset will be used in the database. The data stored in the table in any form is a part of the database, but the reverse is not true.\nA database is a collection of organized data and features used to access them, whereas the table is a collection of rows and columns used to store the data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Why do we use the MySQL database server?",
+        "answer": "First of all, the MYSQL server is free to use for developers and small enterprises.\nMySQL server is open source.\nMySQL's community is tremendous and supportive; hence any help regarding MySQL is resolved as soon as possible.\nMySQL has very stable versions available, as MySQL has been in the market for a long time. All bugs arising in the previous builds have been continuously removed, and a very stable version is provided after every update.\nThe MySQL database server is very fast, reliable, and easy to use. You can easily use and modify the software. MySQL software can be downloaded free of cost from the internet.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the different tables present in MySQL?",
+        "answer": "There are many tables that remain present by default. But, MyISAM is the default database engine used in MySQL. There are five types of tables that are present:\nMyISAM\nHeap\nMerge\nINNO DB\nISAM",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) How to install MySQL?",
+        "answer": "Installing MySQL on our system allows us to safely create, drop, and test web applications without affecting our live website's data. There are many ways to use MySQL on our system, but the best way is to install it manually. The manual installation allows us to learn more about the system and provides more control over the database. To see the installation steps of MySQL in Windows goes to the below link:\nhttps://www.javatpoint.com/how-to-install-mysql\nManual installation of MySQL has several benefits:\nBacking up, reinstalling, or moving databases from one location to another can be achieved in a second.\nIt provides more control to how and when MySQL server starts and closes.\nWe can install MySQL anywhere, like in a portable USB drive.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) How to check the MySQL version?",
+        "answer": "We can check the MySQL version on Linux using the below command:\nmysql -v  \nIf we use the MySQL in windows, opening the MySQL command-line tool displayed the version information without using any flags. If we want to know more about the server information, use the below statement:\nSHOW VARIABLES LIKE \"%version%\";  \nIt will return the output as below:\n\nIn this output, we can see the additional version information about the installed MySQL software like innodb_version, protocol_version, version_ssl_library, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) How to add columns in MySQL?",
+        "answer": "A column is a series of cells in a table that stores one value for each row in a table. We can add columns in an existing table using the ALTER TABLE statement as follows:\nALTER TABLE table_name     \n    ADD COLUMN column_name column_definition [FIRST|AFTER existing_column];  \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How to delete a table in MySQL?",
+        "answer": "We can delete a table in MySQL using the Drop Table statement. This statement removes the complete data of a table, including structure and definition from the database permanently. Therefore, it is required to be careful while deleting a table. After using the statement, we cannot recover the table in MySQL. The statement is as follows:\nDROP TABLE  table_name;   \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) How to add foreign keys in MySQL?",
+        "answer": "The foreign key is used to link one or more tables together. It matches the primary key field of another table to link the two tables. It allows us to create a parent-child relationship with the tables. We can add a foreign key to a table in two ways:\nUsing the CREATE TABLE Statement\nUsing the ALTER TABLE Statement\nFollowing is the syntax to define a foreign key using CREATE TABLE OR ALTER TABLE statement:\n[CONSTRAINT constraint_name]    \n    FOREIGN KEY [foreign_key_name] (col_name, ...)    \n    REFERENCES parent_tbl_name (col_name,...)    \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How to connect to the MySQL database?",
+        "answer": "MySQL allows us to connect with the database server in mainly two ways:\nUsing Command-line Tool\nWe can find the command-line client tool in the bin directory of the MySQL's installation folder. To invoke this program, we need to navigate the installation folder's bin directory and type the below command:\nmysql  \nNext, we need to run the below command to connect to the MySQL Server:\nshell>mysql -u root -p  \nFinally, type the password for the selected user account root and press Enter:\nEnter password: ********  \nAfter successful connection, we can use the below command to use the:\nUSE database_name;  \nUsing MySQL Workbench\nWe can make a connection with database using MySQL Workbench, simply clicking the plus (+) icon or navigating to the menu bar -> Database -> Connect to Database, the following screen appears. Now, you need to fill all the details to make a connection:\n\nOnce we finished this setup, it will open the MySQL Workbench screen. Now, we can double click on the newly created connection to connect with the database server.\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How to change the MySQL password?",
+        "answer": "We can change the MySQL root password using the below statement in the new notepad file and save it with an appropriate name:\nALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';  \nNext, open a Command Prompt and navigate to the MySQL directory. Now, copy the following folder and paste it in our DOS command and press the Enter key.\nC:\\Users\\javatpoint> CD C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin    \nNext, enter this statement to change the password:\nmysqld --init-file=C:\\\\mysql-notepadfile.txt  \nFinally, we can log into the MySQL server as root using this new password. After launches the MySQL server, it is to delete the C:\\myswl-init.txt file to ensure the password change.\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How to create a database in MySQL Workbench?",
+        "answer": "To create a new database in MySQL Workbench, we first need to launch the MySQL Workbench and log in using the username and password. Go to the Navigation tab and click on the Schema menu. Right-click under the Schema menu and select Create Schema or click the database icon (red rectangle), as shown in the following screen.\n\nA new popup screen appears where we need to fill all the details. After entering the details, click on the Apply button and then the Finish button to complete the database creation.\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) How to create a table in MySQL Workbench?",
+        "answer": "Launch the MySQL Workbench and go to the Navigation tab and click on the Schema menu where all the previously created databases are shown. Select any database and double click on it. It will show the sub-menus where we need to select the Tables option.\n\n\nSelect Tables sub-menu, right-click on it and select Create Table option. We can also click on create a new table icon (shown in red rectangle) to create a table. It will open the new popup screen where we need to fill all the details to create a table. Here, we will enter the table name and column details. After entering the details, click on the Apply button and then the Finish button to complete the table creation.\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How to change the table name in MySQL?",
+        "answer": "Sometimes our table name is non-meaningful. In that case, we need to change or rename the table name. MySQL provides the following syntax to rename one or more tables in the current database:\nmysql> RENAME old_table TO new_table;    \nIf we want to change more than one table name, use the below syntax:\nRENAME TABLE old_tab1 TO new_tab1,    \n             old_tab2 TO new_tab2, old_tab3 TO new_tab3;   \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) How to change the database name in MySQL?",
+        "answer": "Sometimes we need to change or rename the database name because of its non-meaningful name. To rename the database name, we need first to create a new database into the MySQL server. Next, MySQL provides the mysqldump shell command to create a dumped copy of the selected database and then import all the data into the newly created database. The following is the syntax of using mysqldump command:\nmysqldump -u username -p \"password\" -R oldDbName > oldDbName.sql  \nNow, use the below command to import the data into the newly created database:\nmysql -u username -p\"password\" newDbName < oldDbName.sql",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) How to import a database in MySQL?",
+        "answer": "Importing database in MySQL is a process of moving data from one place to another place. It is a very useful method for backing up essential data or transferring our data between different locations. For example, we have a contact book database, which is essential to keep it in a secure place. So we need to export it in a safe place, and whenever it lost from the original location, we can restore it using import options.\nIn MySQL, we can import a database in mainly two ways:\nCommand Line Tool\nMySQL Workbench\nTo read more information for importing databases, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) How to change the column name in MySQL?",
+        "answer": "While creating a table, we have kept one of the column names incorrectly. To change or rename an existing column name in MySQL, we need to use the ALTER TABLE and CHANGE commands together. The following are the syntax used to rename a column in MySQL:\nALTER TABLE table_name     \n    CHANGE COLUMN old_column_name new_column_name column_definition [FIRST|AFTER existing_column];    \nSuppose the column's current name is S_ID, but we want to change this with a more appropriate title as Stud_ID. We will use the below statement to change its name:\nALTER TABLE Student CHANGE COLUMN S_ID Stud_ID varchar(10);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) How to delete columns in MySQL?",
+        "answer": "We can remove, drop, or delete one or more columns in an existing table using the ALTER TABLE statement as follows:\nALTER TABLE table_name DROP COLUMN column_name1, column_name2....;   \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) How to insert data in MySQL?",
+        "answer": "We can insert data in a MySQL table using the INSERT STATEMENT. This statement allows us to insert single or multiple rows into a table. The following is the basic syntax to insert a record into a table:\nINSERT INTO table_name ( field1, field2,...fieldN )    \nVALUES  ( value1, value2,...valueN );    \nIf we want to insert more than one rows into a table, use the below syntax:\nINSERT INTO table(field1, field2,...fieldN)  \nVALUES   \n   (value1, value 2, ...),  \n   (value1, value2, ...),  \n    ...  \n   (value1, value2, ...);  \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) How to delete a row in MySQL?",
+        "answer": "We can delete a row from the MySQL table using the DELETE STATEMENT within the database. The following is the generic syntax of DELETE statement in MySQL to remove one or more rows from a table:\nDELETE FROM table_name WHERE Condition_specified;    \nIt is noted that if we have not specified the WHERE clause with the syntax, this statement will remove all the records from the given table.\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) How to join two tables in MySQL?",
+        "answer": "We can connect two or more tables in MySQL using the JOIN clause. MySQL allows various types of JOIN clauses. These clauses connect multiple tables and return only those records that match the same value and property in all tables. The following are the four easy ways to join two or more tables in MySQL:\nInner Join\nLeft Join\nRight Join\nCross Join\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) How to join three tables in MySQL?",
+        "answer": "Sometimes we need to fetch data from three or more tables. There are two types available to do these types of joins. Suppose we have three tables named Student, Marks, and Details.\nLet's say Student has (stud_id, name) columns, Marks has (school_id, stud_id, scores) columns, and Details has (school_id, address, email) columns.\n1. Using SQL Join Clause\nThis approach is similar to the way we join two tables. The following query returns result from three tables:\nSELECT name, scores, address, email FROM Student s   \nINNER JOIN Marks m on s.stud_id = m.stud_id   \nINNER JOIN Details d on d.school_id = m.school_id;  \n2. Using Parent-Child Relationship\nIt is another approach to join more than two tables. In the above tables, we have to create a parent-child relationship. First, create column X as a primary key in one table and as a foreign key in another table. Therefore, stud_id is the primary key in the Student table and will be a foreign key in the Marks table. Next, school_id is the primary key in the Marks table and will be a foreign key in the Details table. The following query returns result from three tables:\nSELECT name, scores, address, email   \nFROM Student s, Marks m, Details d   \nWHERE s.stud_id = m.stud_id AND m.school_id = d.school_id;  \nTo read more information about the foreign key, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) How to update the table in MySQL?",
+        "answer": "We can update existing records in a table using the UPDATE statement that comes with the SET and WHERE clauses. The SET clause changes the values of the specified column. The WHERE clause is optional, which is used to specify the condition. This statement can also use to change values in one or more columns of a single row or multiple rows at a time. Following is a generic syntax of UPDATE command to modify data into the MySQL table:\nUPDATE table_name     \nSET field1=new-value1, field2=new-value2, ...    \n[WHERE Clause]    \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is MySQL Workbench?",
+        "answer": "MySQL Workbench is a unified visual database designing or GUI tool used for working on MySQL databases. It is developed and maintained by Oracle that provides SQL development, data migration, and comprehensive administration tools for server configuration, user administration, backup, etc. We can use this Server Administration to create new physical data models, E-R diagrams, and SQL development. It is available for all major operating systems. MySQL provides supports for it from MySQL Server version v5.6 and higher.\nIt is mainly available in three editions, which are given below:\nCommunity Edition (Open Source, GPL)\nStandard Edition (Commercial)\nEnterprise Edition (Commercial)\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) How to drop the primary key in MySQL?",
+        "answer": "MySQL primary key is a single or combination of the field used to identify each record in a table uniquely. A primary key column cannot be null or empty. We can remove or delete a primary key from the table using the ALTER TABLE statement. The following syntax is used to drop the primary key:\nALTER TABLE table_name  DROP PRIMARY KEY;    \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) How to create a Stored Procedure in MySQL?",
+        "answer": "A stored procedure is a group of SQL statements that we save in the database. The SQL queries, including INSERT, UPDATE, DELETE, etc. can be a part of the stored procedure. A procedure allows us to use the same code over and over again by executing a single statement. It stores in the database data dictionary.\nWe can create a stored procedure using the below syntax:\nCREATE PROCEDURE procedure_name [ (parameter datatype [, parameter datatype]) ]    \nBEGIN    \n    Body_section of SQL statements  \nEND;    \nThis statement can return one or more value through parameters or may not return any result. The following example explains it more clearly:\nDELIMITER $$    \nCREATE PROCEDURE get_student_info()    \nBEGIN    \nSELECT * FROM Student_table;    \nEND$$    \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) How to execute a stored procedure in MySQL?",
+        "answer": "We can execute a stored procedure in MySQL by simply CALL query. This query takes the name of the stored procedure and any parameters we need to pass to it. The following is the basic syntax to execute a stored procedure:\nCALL stored_procedure_name (argument_list);  \nLet's understand it with this example:\nCALL Product_Pricing (@pricelow, @pricehigh);  \nHere, a stored procedure named Product_Pricing calculates and returns the lowest and highest product prices.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) How to create a View in MySQL?",
+        "answer": "A view is a database object whose values are based on the base table. It is a virtual table created by a query by joining one or more tables. It is operated similarly to the base table but does not contain any data of its own. If any changes occur in the underlying table, the same changes reflected in the View also.\nFollowing is the general syntax of creating a VIEW in MySQL:\nCREATE [OR REPLACE] VIEW view_name AS    \nSELECT columns    \nFROM tables    \n[WHERE conditions];  \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) How to create a Trigger in MySQL?",
+        "answer": "A trigger is a procedural code in a database that automatically invokes whenever certain events on a particular table or view in the database occur. It can be executed when records are inserted into a table, or any columns are being updated. We can create a trigger in MySQL using the syntax as follows:\nCREATE TRIGGER trigger_name    \n    [before | after]    \n   {insert | update | delete}    \n    ON table_name [FOR EACH ROW]    \n    BEGIN    \n        --variable declarations    \n        --trigger code    \n    END;   \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) How to clear screen in MySQL?",
+        "answer": "If we use MySQL in Windows, it is not possible to clear the screen before version 8. At that time, the Windows operating system provides the only way to clear the screen by exiting the MySQL command-line tool and then again open MySQL.\nAfter the release of MySQL version 8, we can use the below command to clear the command line screen:\nmysql> SYSTEM CLS;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) How to create a new user in MySQL?",
+        "answer": "A USER in MySQL is a record in the USER-TABLE. It contains the login information, account privileges, and the host information for MySQL account to access and manage the databases. We can create a new user account in the database server using the MySQL Create User statement. It provides authentication, SSL/TLS, resource-limit, role, and password management properties for the new accounts.\nThe following is the basic syntax to create a new user in MySQL:\nCREATE USER [IF NOT EXISTS] account_name IDENTIFIED BY 'password';   \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) How to check USERS in MySQL?",
+        "answer": "If we want to manage a database in MySQL, it is required to see the list of all user's accounts in a database server. The following command is used to check the list of all users available in the database server:\nmysql> SELECT USER FROM mysql.user;   \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) How to import a CSV file in MySQL?",
+        "answer": "MySQL allows us to import the CSV (comma separated values) file into a database or table. A CSV is a plain text file that contains the list of data and can be saved in a tabular format. MySQL provides the LOAD DATA INFILE statement to import a CSV file. This statement is used to read a text file and import it into a database table very quickly. The full syntax to import a CSV file is given below:\nLOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/filename.csv'     \nINTO TABLE tablename     \nFIELDS TERMINATED BY ','    \nOPTIONALLY ENCLOSED BY '\"'    \nLINES TERMINATED BY '\\r\\n'     \nIGNORE 1 ROWS;    \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) How to insert Date in MySQL?",
+        "answer": "MySQL allows us to use the INSERT STATEMENT to add the date in MySQL table. MySQL provides several data types for storing dates such as DATE, TIMESTAMP, DATETIME, and YEAR. The default format of the date in MySQL is YYYY-MM-DD. Following is the basic syntax to insert date in MySQL table:\nINSERT INTO table_name (column_name, column_date) VALUES ('DATE: Manual Date', '2008-7-04');   \nIf we want to insert a date in the mm/dd/yyyy format, it is required to use the below statement:\nINSERT INTO table_name VALUES (STR_TO_DATE(date_value, format_specifier));",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) How to check database size in MySQL?",
+        "answer": "MySQL allows us to query the information_schema.tables table to get the information about the tables and databases. It will return the information about the data length, index length, collation, creation time, etc. We can check the size of the database on the server using the below syntax:\nSELECT table_schema AS 'Database Name',  \nSUM(data_length + index_length) 'Size in Bytes',  \nROUND(SUM(data_length + index_length) / 1024 / 1024, 2) 'Size in MB'  \nFROM information_schema.tables  \nWHERE table_schema = 'testdb'  \nGROUP BY table_schema;  \nIt will return the output as follows:\n\nIf we want to check the size of the table in a specific database, use the following statement:\nSELECT table_name AS 'Table Name',  \nROUND(((data_length + index_length) / 1024 / 1024), 2) AS 'Size in MB'  \nFROM information_schema.TABLES  \nWHERE table_schema = 'testdb'  \nORDER BY (data_length + index_length) DESC;  \nIt will return the output as follows:",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) How does indexing works in MySQL?",
+        "answer": "Indexing is a process to find an unordered list into an ordered list. It helps in maximizing the query's efficiency while searching on tables in MySQL. The working of MySQL indexing is similar to the book index.\nSuppose we have a book and want to get information about, say, searching. Without indexing, it is required to go through all pages one by one, until the specific topic was not found. On the other hand, an index contains a list of keywords to find the topic mentioned on pages. Then, we can flip to those pages directly without going through all pages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) Who owns MySQL?",
+        "answer": "MySQL is the most popular free and open-source database software which comes under the GNU General Public License. In the beginning, it was owned and sponsored by the Swedish company MySQL AB. Now, it is bought by Sun Microsystems (now Oracle Corporation), who is responsible for managing and developing the database.\nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) How to view the database in MySQL?",
+        "answer": "Working with the MySQL server, it is a common task to view or list the available databases. We can view all the databases on the MySQL server host using the following command:\nmysql> SHOW DATABASES;  \nTo read more information, click here.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) How to set auto increment in MySQL?",
+        "answer": "Auto Increment is a constraint that automatically generates a unique number while inserting a new record into the table. Generally, it is used for the primary key field in a table. In MySQL, we can set the value for an AUTO_INCREMENT column using the ALTER TABLE statement as follows:\nALTER TABLE table_name AUTO_INCREMENT = value;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) How to find the second highest salary in MySQL?",
+        "answer": "MySQL uses the LIMIT keyword, which can be used to limit the result set. It will allow us to get the first few rows, last few rows, or range of rows. It can also be used to find the second, third, or nth highest salary. It ensures that you have use order by clause to sort the result set first and then print the output that provides accurate results. The following query is used to get the second highest salary in MySQL:\nSELECT salary   \nFROM (SELECT salary FROM employees ORDER BY salary DESC LIMIT 2) AS Emp ORDER BY salary LIMIT 1;  \nThere are some other ways to find the second highest salary in MySQL, which are given below:\nThis statement uses subquery and IN clause to get the second highest salary:\nSELECT MAX(salary)   \nFROM employees   \nWHERE salary NOT IN ( SELECT Max(salary) FROM employees);  \nThis query uses subquery and < operator to return the second highest salary:\nSELECT MAX(salary) From employees   \nWHERE salary < ( SELECT Max(salary) FROM employees);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) What is the difference between TRUNCATE and DELETE in MySQL?",
+        "answer": "TRUNCATE is a DDL command, and DELETE is a DML command.\nIt is not possible to use Where command with TRUNCATE QLbut you can use it with DELETE command.\nTRUNCATE cannot be used with indexed views, whereas DELETE can be used with indexed views.\nThe DELETE command is used to delete data from a table. It only deletes the rows of data from the table while truncate is a very dangerous command and should be used carefully because it deletes every row permanently from a table.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) How many Triggers are possible in MySQL?",
+        "answer": "There are only six Triggers allowed to use in the MySQL database.\nBefore Insert\nAfter Insert\nBefore Update\nAfter Update\nBefore Delete\nAfter Delete",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What is the heap table?",
+        "answer": "Tables that are present in memory is known as HEAP tables. When you create a heap table in MySQL, you should need to specify the TYPE as HEAP. These tables are commonly known as memory tables. They are used for high-speed storage on a temporary basis. They do not allow BLOB or TEXT fields.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) What is BLOB and TEXT in MySQL?",
+        "answer": "BLOB is an acronym that stands for a large binary object. It is used to hold a variable amount of data.\nThere are four types of the BLOB.\nTINYBLOB\nBLOB\nMEDIUMBLOB\nLONGBLOB\nThe differences among all these are the maximum length of values they can hold.\nTEXT is a case-insensitive BLOB. TEXT values are non-binary strings (character string). They have a character set, and values are stored and compared based on the collation of the character set.\nThere are four types of TEXT.\nTINYTEXT\nTEXT\nMEDIUMTEXT\nLONGTEXT",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) What is a trigger in MySQL?",
+        "answer": "A trigger is a set of codes that executes in response to some events.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) What is the difference between the heap table and the temporary table?",
+        "answer": "Heap tables:\nHeap tables are found in memory that is used for high-speed storage temporarily. They do not allow BLOB or TEXT fields.\nHeap tables do not support AUTO_INCREMENT.\nIndexes should be NOT NULL.\nTemporary tables:\nThe temporary tables are used to keep the transient data. Sometimes it is beneficial in cases to hold temporary data. The temporary table is deleted after the current client session terminates.\nMain differences:\nThe heap tables are shared among clients, while temporary tables are not shared.\nHeap tables are just another storage engine, while for temporary tables, you need a special privilege (create temporary table).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) What is the difference between FLOAT and DOUBLE?",
+        "answer": "FLOAT stores floating-point numbers with accuracy up to 8 places and allocate 4 bytes. On the other hand, DOUBLE stores floating-point numbers with accuracy up to 18 places and allocates 8 bytes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "51) What are the advantages of MySQL in comparison to Oracle?",
+        "answer": "MySQL is a free, fast, reliable, open-source relational database while Oracle is expensive, although they have provided Oracle free edition to attract MySQL users.\nMySQL uses only just under 1 MB of RAM on your laptop, while Oracle 9i installation uses 128 MB.\nMySQL is great for database enabled websites while Oracle is made for enterprises.\nMySQL is portable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "52) What are the disadvantages of MySQL?",
+        "answer": "MySQL is not so efficient for large scale databases.\nIt does not support COMMIT and STORED PROCEDURES functions version less than 5.0.\nTransactions are not handled very efficiently.\nThe functionality of MySQL is highly dependent on other addons.\nDevelopment is not community-driven.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "53) What is the difference between CHAR and VARCHAR?",
+        "answer": "CHAR and VARCHAR have differed in storage and retrieval.\nCHAR column length is fixed, while VARCHAR length is variable.\nThe maximum no. of character CHAR data types can hold is 255 characters, while VARCHAR can hold up to 4000 characters.\nCHAR is 50% faster than VARCHAR.\nCHAR uses static memory allocation, while VARCHAR uses dynamic memory allocation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "54) What is the difference between MySQL_connect and MySQL_pconnect?",
+        "answer": "Mysql_connect:\nIt opens a new connection to the database.\nEvery time you need to open and close the database connection, depending on the request.\nOpens page whenever it is loaded.\nMysql_pconnect:\nIn Mysql_pconnect, \"p\" stands for persistent connection, so it opens the persistent connection.\nThe database connection cannot be closed.\nIt is more useful if your site has more traffic because there is no need to open and close connection frequently and whenever the page is loaded.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "55) What does \"i_am_a_dummy flag\" do in MySQL?",
+        "answer": "The \"i_am_a_dummy flag\" enables the MySQL engine to refuse any UPDATE or DELETE statement to execute if the WHERE clause is not present. Hence it can save the programmer from deleting the entire table my mistake if he does not use WHERE clause.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "56) How to get the current date in MySQL?",
+        "answer": "To get current date, use the following syntax:\nSELECT CURRENT_DATE();",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "57) What are the security alerts while using MySQL?",
+        "answer": "Install antivirus and configure the operating system's firewall.\nNever use the MySQL Server as the UNIX root user.\nChange the root username and password Restrict or disable remote access.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "58) How to change a password for an existing user via mysqladmin?",
+        "answer": "Mysqladmin -u root -p password \"newpassword\".",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "59) What is the difference between UNIX timestamps and MySQL timestamps?",
+        "answer": "Actually, both Unix timestamp and MySQL timestamp are stored as 32-bit integers, but MySQL timestamp is represented in the readable format of YYYY-MM-DD HH:MM:SS format.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "60) How to display the nth highest salary from a table in a MySQL query?",
+        "answer": "Let us take a table named the employee.\nTo find Nth highest salary is:\nselect distinct(salary)from employee order by salary desc limit n-1,1\nif you want to find 3rd largest salary:\nselect distinct(salary)from employee order by salary desc limit 2,1",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "61) What is the MySQL default port number?",
+        "answer": "MySQL default port number is 3306.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "62) What is REGEXP?",
+        "answer": "REGEXP is a pattern match using a regular expression. The regular expression is a powerful way of specifying a pattern for a sophisticated search.\nBasically, it is a special text string for describing a search pattern. To understand it better, you can think of a situation of daily life when you search for .txt files to list all text files in the file manager. The regex equivalent for .txt will be .*\\.txt.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "63) How many columns can you create for an index?",
+        "answer": "You can a create maximum of 16 indexed columns for a standard table.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "64) What is the difference between NOW() and CURRENT_DATE()?",
+        "answer": "NOW() command is used to show current year, month, date with hours, minutes, and seconds while CURRENT_DATE() shows the current year with month and date only.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "65) What is the query to display the top 20 rows?",
+        "answer": "SELECT * FROM table_name LIMIT 0,20;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "66) Write a query to display the current date and time?",
+        "answer": "If you want to display the current date and time, use -\nSELECT NOW();\nIf you want to display the current date only, use:\nSELECT CURRENT_DATE();",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "67) What is the save point in MySQL?",
+        "answer": "A defined point in any transaction is known as savepoint.\nSAVEPOINT is a statement in MySQL, which is used to set a named transaction savepoint with the name of the identifier.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "68) What is SQLyog?",
+        "answer": "SQLyog program is the most popular GUI tool for admin. It is the most popular MySQL manager and admin tool. It combines the features of MySQL administrator, phpMyadmin, and others. MySQL front ends and MySQL GUI tools.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "69) How do you backup a database in MySQL?",
+        "answer": "It is easy to back up data with phpMyAdmin. Select the database you want to backup by clicking the database name in the left-hand navigation bar. Then click the export button and make sure that all tables are highlighted that you want to back up. Then specify the option you want under export and save the output.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "70) What are the different column comparison operators in MySQL?",
+        "answer": "The =, <>, <=, <, >=, >, <<, >>, < = >, AND, OR or LIKE operator are the comparison operators in MySQL. These operators are generally used with SELECT statement.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "SELECT COUNT user_id FROM users;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "SELECT book_title FROM books LIMIT 20, 100;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "SELECT team_name FROM team WHERE team_won IN (1, 3, 5, 7);",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "74) What is the default port of MySQL Server?",
+        "answer": "The default port of MySQL Server is 3306.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "75) How is the MyISAM table stored?",
+        "answer": "MyISAM table is stored on disk in three formats.\n'.frm' file : storing the table definition\n'.MYD' (MYData): data file\n'.MYI' (MYIndex): index file",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "76) What is the usage of ENUMs in MySQL?",
+        "answer": "ENUMs are string objects. By defining ENUMs, we allow the end-user to give correct input as in case the user provides an input that is not part of the ENUM defined data, then the query won't execute, and an error message will be displayed which says \"The wrong Query\". For instance, suppose we want to take the gender of the user as an input, so we specify ENUM('male', 'female', 'other'), and hence whenever the user tries to input any string any other than these three it results in an error.\nENUMs are used to limit the possible values that go in the table:\nFor example:\nCREATE TABLE months (month ENUM 'January', 'February', 'March'); INSERT months VALUES ('April').",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "77) What are the advantages of MyISAM over InnoDB?",
+        "answer": "MyISAM follows a conservative approach to disk space management and stores each MyISAM table in a separate file, which can be further compressed if required. On the other hand, InnoDB stores the tables in the tablespace. Its further optimization is difficult.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "78) What are the differences between MySQL_fetch_array(), MySQL_fetch_object(), MySQL_fetch_row()?",
+        "answer": "Mysql_fetch_object is used to retrieve the result from the database as objects, while mysql_fetch_array returns result as an array. This will allow access to the data by the field names.\nFor example:\nUsing mysql_fetch_object field can be accessed as $result->name.\nUsing mysql_fetch_array field can be accessed as $result->[name].\nUsing mysql_fetch_row($result) where $result is the result resource returned from a successful query executed using the mysql_query() function.\nExample:\n$result = mysql_query(\"SELECT * from students\");    \nwhile($row = mysql_fetch_row($result))    \n{    \n        Some statement;    \n}",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "79) What is the difference between mysql_connect and mysql_pconnect?",
+        "answer": "Mysql_connect() is used to open a new connection to the database, while mysql_pconnect() is used to open a persistent connection to the database. It specifies that each time the page is loaded, mysql_pconnect() does not open the database.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "80) What is the use of mysql_close()?",
+        "answer": "Mysql_close() cannot be used to close the persistent connection. However, it can be used to close a connection opened by mysql_connect().",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "81) What is MySQL data directory?",
+        "answer": "MySQL data directory is a place where MySQL stores its data. Each subdirectory under this data dictionary represents a MySQL database. By default, the information managed my MySQL = server mysqld is stored in the data directory.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "82) How do you determine the location of MySQL data directory?",
+        "answer": "The default location of MySQL data directory in windows is C:\\mysql\\data or C:\\Program Files\\MySQL\\MySQL Server 5.0 \\data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "83) What is the usage of regular expressions in MySQL?",
+        "answer": "In MySQL, regular expressions are used in queries for searching a pattern in a string.\n* Matches 0 more instances of the string preceding it.\n+ matches one more instances of the string preceding it.\n? Matches 0 or 1 instances of the string preceding it.\n. Matches a single character.\n[abc] matches a or b or z\n| separates strings\n^ anchors the match from the start.\n\".\" Can be used to match any single character. \"|\" can be used to match either of the two strings\nREGEXP can be used to match the input characters with the database.\nExample:\nThe following statement retrieves all rows where column employee_name contains the text 1000 (example salary):\nSelect employee_name    \nFrom employee    \nWhere employee_name REGEXP '1000'    \nOrder by employee_name",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "84) What is the usage of the \"i-am-a-dummy\" flag in MySQL?",
+        "answer": "In MySQL, the \"i-am-a-dummy\" flag makes the MySQL engine to deny the UPDATE and DELETE commands unless the WHERE clause is present.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "85) Which command is used to view the content of the table in MySQL?",
+        "answer": "The SELECT command is used to view the content of the table in MySQL.\nExplain Access Control Lists.\nAn ACL is a list of permissions that are associated with an object. MySQL keeps the Access Control Lists cached in memory, and whenever the user tries to authenticate or execute a command, MySQL checks the permission required for the object, and if the permissions are available, then execution completes successfully.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "86) What is InnoDB?",
+        "answer": "InnoDB is a storage database for SQL. The ACID-transactions are also provided in InnoDB and also includes support for the foreign key. Initially owned by InnobaseOY now belongs to Oracle Corporation after it acquired the latter since 2005.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "87) What is ISAM?",
+        "answer": "It is a system for file management developed by IBM, which allows records to access sequentially or even randomly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "88) How can we run batch mode in MySQL?",
+        "answer": "To perform batch mode in MySQL, we use the following command:\nmysql;  \nmysql mysql.out;",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "89) What are federated tables?",
+        "answer": "Federated tables are tables that point to the tables located on other databases on some other server.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "90) What is the difference between primary key and candidate key?",
+        "answer": "To identify each row of a table, we will use a primary key. For a table, there exists only one primary key.\nA candidate key is a column or a set of columns, which can be used to uniquely identify any record in the database without having to reference any other data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "91) What are the drivers in MySQL?",
+        "answer": "Following are the drivers available in MySQL:\nPHP Driver\nJDBC Driver\nODBC Driver\nC WRAPPER\nPYTHON Driver\nPERL Driver\nRUBY Driver\nCAP11PHP Driver\nAdo.net5.mxz",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "92) What are DDL, DML, and DCL?",
+        "answer": "Majorly SQL commands can be divided into three categories, i.e., DDL, DML & DCL. Data Definition Language (DDL) deals with all the database schemas, and it defines how the data should reside in the database. Commands like CreateTABLE and ALTER TABLE are part of DDL.\nData Manipulative Language (DML) deals with operations and manipulations on the data. The commands in DML are Insert, Select, etc.\nData Control Languages (DCL) are related to the Grant and permissions. In short, the authorization to access any part of the database is defined by these.",
+        "reference": "javatpoint.com"
+    }
+]

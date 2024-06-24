@@ -1,0 +1,127 @@
+[
+    {
+        "question": "1) What is a data warehouse?",
+        "answer": "A data warehouse is a huge store of data accumulated from a broad range of sources within an organization and used to guide business decisions.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What is a dimensional table?",
+        "answer": "Dimensional tables include textual attributes of measurement saved in the fact tables. A dimensional table is a group of hierarchies, categories, and logic which can be used for the customer to traverse in hierarchy nodes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is a fact table?",
+        "answer": "The fact table includes the measurement of the business process. Fact table includes the foreign keys for the dimension tables.\nExample: If we are business phase is \"paper production,\" \"normal production of paper by one device, \"or \"weekly production of paper\" will be treated as a measurement of the business process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the different methods of loading dimension tables?",
+        "answer": "There are two different methods to load data in dimension tables:\nADVERTISEMENT\nADVERTISEMENT\nConventional (slow): All the constraints and keys are validated against the information before, it is loaded, and this method data integrity is maintained.\nDirect (fast): All the constraints and keys are disabled before the information is loaded. Once the information is loaded, it is validated against all the constraints and keys. If the data is found invalid, it is not contained in the index, and all the future processes are skipped in this data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) Describe the foreign key columns in fact tables and dimension tables?",
+        "answer": "Foreign keys of dimension tables are the primary key of entity tables.\nForeign keys of fact tables are the primary key of dimension tables.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is Data Mining?",
+        "answer": "Data mining is the phase of analysing data from several perspectives and summarizing it into useful data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What is Business Intelligence?",
+        "answer": "Business Intelligence defines the technologies, functions, and systems for the collection, integration, analysis, and demonstration of business data and sometimes to the data itself. The purpose of business intelligence is to provide better business decision making. Thus, BI is also defined as a decision support system (DSS).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is OLTP?",
+        "answer": "OLTP stands for online transaction processing. This system is a function that modifies data the instance it receives and has a huge number of concurrent users.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is OLAP?",
+        "answer": "OLAP stands for online analytical processing. This system is a function that collects, manages, processes, and presents multidimensional data for analysis and management process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is the difference between OLTP and OLAP?",
+        "answer": "Basic OLTP OLAP\nMeaning OLTP stands for online transaction processing. OLAP stands for online analytical processing.\nData Source Operational data is initial data source of data. Consolidation data is from different sources.\nProcess Goal Snapshot of business processes which does essential business tasks Multidimensional view of business events of planning and decision making\nQueries and Process scripts Simple quick running queries ran by customers. Complex long-running queries by a scheme to update the aggregate data.\nDatabase Design Normalize small databases. Speed will not be an issue due to the smaller database, and normalization will not degrade performance. This adopts an entity-relationship (ER) model and function-oriented database design. De-normalized large databases. Speed is an issue due to the larger databases, and de-normalizing will improve performance as there will be lesser tables to scan while performing tasks. This adopts star, snowflake, or fact constellation mode of subject-oriented database design.\nBack-up and system administration Regular database back-up and system administration can do the job. Reloading the OLTP data is well treated as a good backup option.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is ODS?",
+        "answer": "ODS stands for Operational data store. A database architecture that is a repository for near real-time operational records rather than long term trend data. The ODS may further become the enterprise shared an operational database, allowing operational functions that are being re-engineered to use the ODS as there operational databases.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is ETL?",
+        "answer": "ETL stands for extraction, transformation, and loading process. ETL is software that allows the business to develop their disparate records while moving it from place to place, and it doesn't really matter that data is in several forms or formats. The data can come from any source. ETL is powerful enough to manage such data disparities.\nFirst, the extract function reads data from a particular source database and extracts a desired subset of data.\nSecond, the transform function works with the acquired record using rules or lookup tables, or creating a combination with other records to convert it to the desired state.\nFinally, the load function is used to write the resulting information to a target database.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is VLDB?",
+        "answer": "VLDB stands for a Very large database. A one terabyte database would generally be considered to be a VLDB. Typically, there are decision support applications or transaction processing applications serving a huge number of users.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is real-time data warehousing?",
+        "answer": "Data warehousing capture business event data. Real-time data warehousing capture business event data as it occurs. As soon as the business event is complete, and there is data about it, the completed event data flows into the data warehouse and becomes feasible instantly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are conformed dimensions?",
+        "answer": "Conformed dimension defines the exact same thing with every possible fact table to which they are joined. They are simple to the cubes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What are non-additive facts?",
+        "answer": "Non-additive facts are the facts that cannot be examined for any of the dimensions present in the fact table. They are not treated as useless. If there is a transformation in dimensions, the same facts can be useful.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is Star Schema?",
+        "answer": "Star schema is a type of organizing the tables such that we can fetch the result from the database instantly in the warehouse environment.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What is a Snowflake Schema?",
+        "answer": "Any dimension with extended dimensions is called snowflake schema, the dimension may be interlinked or may have one too many relationships with other tables. This schema is normalized and outcome in complex join and very complex queries as well as slower results.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What is a surrogate key?",
+        "answer": "A surrogate key is a substitution for the essential primary key. It is just a unique identifier or statistic for each row that can be used for the primary key to the table. The only requirement for a surrogate primary key is that it is unique for each row in the table. It is useful because the essential primary key can change, and this makes updates more difficult. Surrogate keys are always integer or numeric.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is a junk dimension?",
+        "answer": "A number of very small dimension may be lumped together to form a single dimension, a junk dimension is the attributes are not closely related. Grouping of random flags and text attributes in dimensions and changing them to a separate subdimension is called the junk dimension.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is dimensional modeling?",
+        "answer": "Dimensional data model concept contains two types of tables, and it is different from the third normal form. This concept uses a fact table, which includes the measurement of the business and Dimensional tables, which includes the context (dimension of the calculations) of the dimensions.\nClick here for more information",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What is BUS Schema?",
+        "answer": "BUS schema is collected from a master suite of confirmed size and a standardized description of facts.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) What is active data warehousing?",
+        "answer": "An active data warehouses provide data that allow decision-makers within an organization to handle customer relationships efficiently and proactively.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the difference between data warehousing and Business Intelligence?",
+        "answer": "Data warehousing handle with all methods of managing the development, implementation and applications of a data warehouse or data mart containing metadata management, data acquisition, data cleansing, data transformation, storage management, data distribution, data archiving, operational documenting, analytical documenting, security management, backup/recovery planning, etc.\nBusiness Intelligence is a set of software tools that allows an organization to analyse measurable methods of their business, such as sales performance, profitability, operational efficiency, effectiveness, of marketing campaigns, market penetration among certain user groups, cost trends, anomalies and exceptions, etc. Business Intelligence is used to encompass OLAP, data visualization, data mining, and query document tools.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) Which one is faster, Multidimensional OLAP, or Relational OLAP?",
+        "answer": "Multidimensional OLAP (MOLAP) is faster than Relational OLAP (ROLAP).\nMOLAP: Here, data is saved in a multidimensional cube. The storage is not in the relational database but in a proprietary plan (one example is PowerOLAP's .olp file). MOLAP products are compatible with Excel, which can make record interactions easy to learn.\nROLAP: ROLAP products approach a relational database by using SQL (structured query language), which is the standard language that is used to describe and manipulate data in an RDBMS. Subsequent processing may occur in the RDBMS or within a middle-tier server, which accepts requests from users, translates them into SQL statements, and passes them on to the RDBMS.",
+        "reference": "javatpoint.com"
+    }
+]

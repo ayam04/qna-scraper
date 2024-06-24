@@ -1,0 +1,252 @@
+[
+    {
+        "question": "1) What is CakePHP?",
+        "answer": "CakePHP is an open-source, free web framework written in PHP scripting Language for rapid web development of web applications and APIs. CakePHP follows the model view controller (MVC) approach. CakePHP is inspired by the Ruby on Rails framework and distributed under the MIT License.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) When was CakePHP developed?",
+        "answer": "In April 2005, CakePHP was developed by Michal Tatarynowicz. As a Polish programmer, he wrote a minimal version of a Rapid Application Framework in PHP, dubbing it Cake. CakePHP version 1.0 was released in May 2006.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is CakePHP used for?",
+        "answer": "CakePHP is used for rapid development for PHP-based web applications, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What are the system requirements for CakePHP installation?",
+        "answer": "System requirements for CakePHP are:\nADVERTISEMENT\nPHP 5.4.16 or greater\nmbstring extension library\nintl extension\nMySQL with a minimum version of 5.5.3\nMariaDB with a minimum version of 5.5\nPostgreSQL\nSQLite 3\nMicrosoft SQL server with a minimum of 2008 version",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What are the server requirements to install CakePHP?",
+        "answer": "Here are the following server requirements for the installation of CakePHP:\nAn HTTP Server such as Apache or Microsoft IIS.\nPHP with a minimum version of 5.6.\nintl, mbstring, simplexml, PDO PHO extension is required.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) Where does the database configuration file reside in CakePHP?",
+        "answer": "CakePHP stores configure file here: /app/config/database.php.default",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the features of CakePHP?",
+        "answer": "CakePHP provides various significant features, such as:\nIt follows MVC architecture.\nBuilt-in validations\nCaching\nScaffolding\nAuth & ACL\nCSRF protection via Security Component etc.\nRapid development\nSecure, scalable, and stable",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) Explain layers of CakePHP?",
+        "answer": "CakePHP works on MVC structure. MVC stands for the model view controller. MVC is an architectural pattern that describes a way to structure our application and explains the responsibilities and interactions of each part in that structure:\nModel layer: This layer has business logic implemented for the application, such as retrieving data, converting or processing data, validating data that comes under this layer.\nView layer: This layer is responsible for rendering the front-end interface from the information provided from the model data.\nController layer: This layer is used to handle the request from the user. It gets requests from clients, checks its validity, fetches data accordingly, allocated resources, selects presentational data accordingly, and finally delegates the rendering process.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What are controllers in CakePHP?",
+        "answer": "The Controller acts as a layer between Model and Views. The Controller handles the incoming request data from the routing and makes sure correct models for the web application data are called and the correct view is called.\n\nYou can create your Controller to handle the model and your views. Each manually created Controller extends from the AppController class. AppController, in turn, extends from the Controller class. The CakePHP application uses convention to convert it into a view to be displayed in the browser-based on the requested parameters.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) Explain hooks in CakePHP?",
+        "answer": "Hooks in CakePHP are callback functions that can be called before or after a database-related operation like accessing, modifying, deleting, or saving the data in the database. This method is used to do logic just before or after database operation.\nSome other hooks are afterFind(), beforeValidate(), afterValidate(), beforeSave(), afterSave(), beforeDelete(), afterDelete(), and onError().",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) How do you check the CakePHP version?",
+        "answer": "There are two ways to find the CakePHP version:\necho Configure::version()  \nOr, go to the following path to find the version in the VERSION.txt file\n/path/to/cake/lib/Cake/VERSION.txt",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is scaffolding in CakePHP?",
+        "answer": "Scaffolding in CakePHP is an application creation technique used to create a basic application that does data operations such as create, read, update, & delete.\nIt is used to create a temporary quick application that is not in any way flexible. With scaffolding, you can also create or break the link between objects. To create scaffolding, you need to have a model and Controller defined. Then with a $scaffold variable in the Controller, you can create your application quickly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) How many types of cache are supported by CakePHP?",
+        "answer": "In CakePHP, Cache makes your application run faster by storing complex query results for faster access. The types of cache supported by CakePHP are,\nFile cache:It is the simplest and slowest cache to store large elements.\nAPCu cache:It is a fast cache and uses shared memory to store elements. It provides basic read and writes features.\nWincache:It is the same APCu cache, but it is optimized for Windows.\nRedis: It provides a fast and persistent cache.\nArray:It is a run-time storage cache for storing elements in order.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) How to get the current URL in CakePHP?",
+        "answer": "To get the complete URL from the hostname, write the following command,\necho $this->Html->url(null, true);  \nHere, we set the full option to true. So, we get the full scheme, hostname, and project path. Suppose the above command gives the following result,\nhttp://localhost/project/controller/action/1",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What are the sessions in CakePHP?",
+        "answer": "PHP Sessions allows you to identify unique users across requests and store persistent data for specific users against a unique session ID. It is used to persist state information between page requests.\n\nSession IDs are normally sent to the browser via session cookies, and the ID is used to retrieve existing session data.\nYou can access the session data any place you have access to a request object. It means the session is accessible from:\nControllers\nViews\nHelpers\nCells\nComponents",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) List some database-related functions in CakePHP?",
+        "answer": "CakePHP database layer provides help in working with a relational database like making a connection, building queries, making changes to the structure, preventing SQL injections, and many more. The following are some of the basic database functions that CakePHP offers,\nValidating Data:With the validator object, you can check the type, shape, and size of the data before converting them into entities.\nSaving Data:After loading and making changes to the data, you can use the save() function to insert or update the data into the database.\nDeleting Data: With the delete() function, you can do different delete types like cascading delete, bulk delete, strict delete with the data.\nRetrieving Data & Result set:With the help of the get() or find() function, you can retrieve the data. With the first() function, you can retrieve the resulting set.\nAssociation:In CakePHP, different association types are available. With the help of this, you can like two or more databases.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) How many types of associations are supported by CakePHP?",
+        "answer": "CakePHP supports four associations:\nhasOne: One to One relationship\nhasMany: One to Many relationship\nbelongsTo: Many to One relationship\nhasAndBelongsToMany (HABTM): Many to Many relationship",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "cipherSeed\" in CakePHP?",
+        "answer": "CakePHP provides various security features to keep data or passwords safe.\nSecurity.salt is a hash that is used to encrypt or decrypt text messages in CakePHP.\nSecurity::encrypt($text, $key, $hmacSalt = null)   \nHere, $hmacSalt() is the salt to use for HMAC process. Null is used to defined to use Security.salt\nSecurity.cipherSeed is nothing but the key used to encrypt or dedcrypt the message in Security::cipher() function.\nSecurity::encrypt($text, $key, $hmacSalt = null)   \n\nHere, $key is the 256 bit/32 byte cipher key or Security.cipherSeed",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) What are the components in CakePHP?",
+        "answer": "In CakePHP, components are packages of logic that are shared between controllers. CakePHP comes with a fantastic set of core components you can use to aid in various common tasks.\nUsing components in your application makes your controller code cleaner and allows you to reuse code between different controllers. Below are some commonly used CakePHP components, such as:\nAuthentication\nCookie\nCross-Site Request Forgery\nFlash\nSecurity\nPagination\nRequest Handling",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) What is a Helper in CakePHP?",
+        "answer": "Helpers are associated with Presentation layers of application. It contains presentational logic, which is available to share between many views, elements, or layouts. Here are some commonly used helpers, such as:\nFormHelper\nHtmlHelper\nJsHelper\nCacheHelper\nNumberHelper\nPaginator\nRSS\nSessionHelper\nTextHelper\nTimeHelper",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is Behavior in CakePHP?",
+        "answer": "In CakePHP, Behaviors are associated with Models. It is used to organize and enable horizontal reuse of Model layer logic. They are similar to traits. However, behaviors are implemented as separate classes. This allows them to hook into the life-cycle callbacks that models emit while providing trait-like features.\nBehaviors provide a convenient way to package up a behavior that is common across many models.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Why does CakePHP have two vendor folders?",
+        "answer": "Two vendor folders are available in the CakePHP, one folder in the root and another is in the \"app\" folder.\nThe root one is the global vendor folder. It is used to place the third-party libraries which are used for multiple applications. The multiple apps share the same root (Cake + plugins + vendors)\nThe APP one is the app-specific one and takes precedence. It is used to place the third-party libraries which are application-specific.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "The Application feature of CakePHP controls how the application is configured and what plugins, middleware, console commands, and routes are included.\nBootstrap: It is used to load configuration files, define constants, and other global functions.\nRoutes: It is used to load routes.\nMiddleware: It is used to add middleware to the application.\nConsole: It is used to add console commands to the application.\nEvents: It is used to add event listeners to the application event manager.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is the name of the CakePHP database configuration file?",
+        "answer": "In CakePHP, database.php.default file is used for database configuration. It is located in /app/config/ directory of CakePHP.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is the use of $this->set() in CakePHP?",
+        "answer": "In CakePHP, this method is used to create variables in the view file.\n$this->set('variable','value')   \nSet in conjunction with the compact function is used to pass multiple variables to the view.\n$this->set(compact('varible1','variable2','variable2',.......));   \nAnd then that variable will be available to use in the view template file for that action.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) Which function is executed before every action in the Controller?",
+        "answer": "beforeFilter() function is executed before every action in the controller.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) How to read, write, and delete the Session in CakePHP?",
+        "answer": "Session::read($key)function is used to read specific session data in CakePHP.\n$this->Session->read('MysessionVar');  \nSession::write($key, $value)function is used to write session data in CakePHP.\n$this->Session->write('MysessionVar', \"Hello\");  \nSession::delete($key)function is used to delete specific session data in CakePHP.\n$this->Session->delete('MysessionVar');",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is the class name for email configuration transport?",
+        "answer": "There are various class names for email configuration transport:\nMail: It is used to send mail by using the PHP mail function.\nSMTP:Send using SMTP\nDebug:Do not send the email, just return the result",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What are logging levels available in CakePHP?",
+        "answer": "In CakePHP, logging can be done very easily by using the log() function. CakePHP offers various levels of logging function, such as:\nEmergency:It infers that the system is unstable.\nCritical:It is used to announce critical conditions.\nNotice:It is used to announce important conditions.\nError: It is used to announce the error conditions.\nAlert:It is used to infer an alarm condition and to take action.\nDebug: It is announced the debug messages.\nInfo:It announces informational messages.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) How do to display the schema of the model in CakePHP?",
+        "answer": "You can use the following code to get the schema of the model.\n$this->ModelName->schema();  \nAnd by providing the ModelName, you can get the structure.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) How to create Cookie in CakePHP?",
+        "answer": "CakePHP offers an easy and secure way to manage cookies. In CakePHP, CookieComponent class is used to manage cookies. It sets the cookie path, expiration, domain, key, encryption, and many more. To configure a cookie, you need to use the config() method.\n$this->Cookie->config([   \n   'expires' => '+5 days',   \n   'httpOnly' => true   \n]);   \nThe above function is used to create and configure the cookie. After configuring the cookie, you can read, write, delete, and check cookie data with various methods provided by the CookieComponent class.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) What is Pagination in CakePHP?",
+        "answer": "In CakePHP, the controller Pagination component is used to building paginated queries. The PaginatorHelper is used to generate pagination links and buttons in view.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What is Composer? How to create a CakePHP project using the Composer?",
+        "answer": "A composer is a tool for managing project dependencies. You can create a CakePHP project using Composer by running the below commands on the terminal.\nphp composer.phar create-project --prefer-dist cakephp/app my_app_name",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is the default extension of view files? How can you change it?",
+        "answer": ".ctp is the default extension of the view file. You can change default extension to write public $ext = '.yourextension' in AppController. If you want to change it for a particular controller, then add it to that particular Controller only.\nYou can also change it for the specific action of the Controller by putting it in that action only.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) What are Elements in the CakePHP framework?",
+        "answer": "In CakePHP, Elements are smaller and reusable bits of view code. Elements are usually rendered inside views.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What is a Layout in the CakePHP framework?",
+        "answer": "In CakePHP, Layout is used to display the views that contain presentational code. In simple views are rendered inside a layout.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) How to set Layout in the Controller?",
+        "answer": "You can set Layout in the Controller by using the following command:\nvar $layout = 'layout_name';  \nTo overwrite for a specific action use below command:\n$this->layout =\"layout_name\";",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) How to include Helpers in Controller?",
+        "answer": "You can include Helpers in controller by using this command:\npublic $helpers = array('Form', 'Html', 'Js', 'Time');  \nIn specific action use below code:\n$this->helper[] =\"helper_name\";",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "39) What is the use of the RequestAction Method?",
+        "answer": "The method requestAction is used to call a controller's action from any location and returns data from the action.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) How to include Components in the Controller?",
+        "answer": "You can include the components in controller by using the following command:\npublic $components = array('Emails', 'ImageUploader', 'Sms');",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) How to change the structure of the URL in an application without modifying the whole code?",
+        "answer": "The following code is used to change the structure of the URL in an application.\nurl( string|array|null $url null , boolean $full false )",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) How can you encrypt and decrypt data in CakePHP?",
+        "answer": "In CakePHP, we can encrypt and decrypt data by using security library methods.\nstatic Cake\\Utility\\Security::hash($string, $type = NULL, $salt = false)",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) How can you create a validator in the Controller?",
+        "answer": "We can create a validator in Controller by using the following command:\nuse Cake\\Validation\\Validator;    \n  $validator = new Validator();",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) How to install CakePHP using Composer?",
+        "answer": "After checking that you have the requirements needed for the CakePHP installation, you can use the Composer to install it. Composer is nothing but a dependency management tool that CakePHP officially supports.\nBut first, you have to install Composer to create a CakePHP project. To download Composer on Mac or Linux:\nRun the following command in your terminal, and you'll have phar file in your current directory.\nphp -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\"  \n  php -r \"if (hash_file('sha384', 'composer-setup.php') === 'baf1608c33254d00611ac1705c1d9958c817a1a33bce370c0595974b342601bd80b92a3f46067da89e3b06bff421f182') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;\"  \n  php composer-setup.php  \n  php -r \"unlink('composer-setup.php');\"  \nThe above command will download the composer installer, verify SHA-384, run the installer to download the Composer, and delete the installer.\nAfter installing the Composer, move it to your working directory.\nTo create your first CakePHP project using Composer, type the following command.\ncomposer create-project --prefer-dist CakePHP/app:^3.8 my_app_name  \nThis command downloads all the necessary files and libraries required for the CakePHP application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) List few callback functions in CakePHP?",
+        "answer": "Callback function is used to so some logic before or after doing a database related operation. Some of the callback methods are,\nbeforeFind(array $query): This is called before doing find operation to execute the query that is passes to the function.\nafterFind(array $results, boolean $primary = false): This is called after executing the find operation and is used to modify the results from it.\nbeforeValidate(array $options = array()): It is used to modify data before it is validated.\nafterValidate(): It is used to do data clean up after validation process.\nbeforeSave(array $options = array()): It is used to do any logic before saving operation.\nbeforeSave(array $options = array()): It is used to do logic after the save operation.\nbeforeDelete(boolean $cascade = true): It is used to do pre-deletion logic.\nafterDelete(): It is used to do logic after deletion.\nonError(): It is called if any error occurs.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What do you understand by HABTM?",
+        "answer": "There are many types of associations in CakePHP that links are used to link different models. HABTM (Has And Belongs To Many) is a type of model association in CakePHP. HABTM is used to associate two models in many ways and repeatedly.\nThe unique thing about HABTM is that the link between the models is no exclusive. Also, the data in HABTM is a complete set. So, each time a new data association is added, the complete set in HABTM is dropped and created again.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) What is the difference between CakePHP and Yii?",
+        "answer": "Below are some major differences between CakePHP and Yii, such as:\nCakePHP Yii\nThe database model is object-relational documents-oriented. The database model is Relational object-oriented.\nIt is written in PHP Programming language. It is written in the PHP JavaScript language.\nThe programming paradigm of CakePHP is object-oriented, functional event-driven. The programming paradigm of Yii is object-oriented, functional event-driven.\nIts framework is under the MIT license. Its framework is under the BSD license.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) How can you include a JavaScript menu throughout the site?",
+        "answer": "Add the JavaScript files in webroot and call them in default views if needed everywhere or just in the related views.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "49) Which methods are used to create and destroy model associations on the fly?",
+        "answer": "The bindModel() and unbindModel() Model methods are used to create and destroy model associations on the fly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "50) What are the drawbacks of CakePHP?",
+        "answer": "The learning curve and loads the full application before it starts your task. It's not recommended for small projects because of its resource-heavy structure.",
+        "reference": "javatpoint.com"
+    }
+]

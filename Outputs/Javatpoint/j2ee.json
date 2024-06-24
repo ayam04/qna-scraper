@@ -1,0 +1,242 @@
+[
+    {
+        "question": "1) What do you understand by J2EE?",
+        "answer": "J2EE stands for Java 2 Enterprise Edition. The functionality of J2EE is developing and deploying multi-tier web-based enterprise applications. The J2EE platform is the combination of a set of services, application programming interfaces (APIs), and protocols. The J2EE platform adds the capabilities required to provide a complete, stable, secure, and fast Java platform at the enterprise level.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) What do you mean by J2EE Module?",
+        "answer": "A J2EE module is a software unit that consists of one or more J2EE components for the same container type with one deployment descriptor of that type. Modules can be easily deployed or assembled into J2EE applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What are the four types of J2EE modules?",
+        "answer": "J2EE defines four types of modules:\nADVERTISEMENT\nApplication Client Module\nWEB Module\nEnterprise JavaBeans Module\nResource Adapter Module",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) What does the application client module contain?",
+        "answer": "Application client module contains the following:\nClass files\nClient deployment descriptor\nIt is packaged as JAR files with a .jar extension.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What does the web module contain?",
+        "answer": "The web module contains the following:\nJSP (Java Server Pages) files\nClass files for servlets\nWeb deployment descriptor\nGIF (Graphics Interchange Format) and HTML (Hypertext Markup Language) files\nThese modules are packaged as JAR files with a .war (Web Archive) extension.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What does Enterprise JavaBeans module contain?",
+        "answer": "The Enterprise JavaBeans (EJB) module contains the following:\nClass files for enterprise beans\nAn EJB deployment descriptor\nThese modules are packaged as JAR files with a .jar extension.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What does resource adapt module contain?",
+        "answer": "The resource adapter module contains the following:\nJava interfaces\nClasses\nNative libraries\nOther documentation\nResource Adapter deployment descriptor\nThese modules are packaged as JAR files with a .rar (Resource Adapter Archive) extension.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What are the main components of the J2EE application?",
+        "answer": "A J2EE component is assembled into a J2EE application with its related classes and files. It can also communicate with other components. The J2EE defines the following main components:\nApplication clients components.\nJava Servlet and JavaServer Pages technology components.\nBusiness Components (Enterprise JavaBeans).\nResource adaptor components.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) What is considered as a web component?",
+        "answer": "Java Servlet and Java Server Pages technology components are considered as web components. Servlets are based on Java programming language which dynamically receives requests and generates responses. Java Server pages execute as servlets and allow a more natural approach to creating static content.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What are the types of J2EE clients?",
+        "answer": "Applets\nApplication clients\nJava Web Start-enabled clients\nWireless clients",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What do you understand by a word applet?",
+        "answer": "An applet is a J2EE component that typically executes in a web browser. It can also be executed in a variety of other applications or devices that support the applet programming model.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is the container?",
+        "answer": "A container is the runtime support of a system level entity. Containers provide components with features such as lifecycle management, security, deployment, and threading.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What is an \"applet container\"?",
+        "answer": "A container that provides support for the applet programming model is known as \"applet container.\"",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What do you understand by a thin client?",
+        "answer": "A thin client is a light-weight interface to the application that does not support operations like query database, execute complex business rules, or connect to legacy applications.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) What is JavaServer Faces (JSF)?",
+        "answer": "JavaServer Faces is a user interface (UI) designing framework which is used for Java-based web applications. JavaServer Faces provides a set of reusable UI components- a standard for web applications. JSF is based on the MVC design pattern. It automatically saves the form data to the server and populates the form dates when display on the client side.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What is an EJB platform?",
+        "answer": "EJB stands for The Enterprise JavaBeans. EJB platform manages functions such as transaction and state management, resource pooling, multithreading, and simple searches while you concentrate on writing business logic.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What do you mean by the deployment descriptor?",
+        "answer": "A deployment descriptor is based on XML (Extensible Markup Language) that supports .xml extension. It is used to describe a component's deployment settings. A J2EE application and its module, both have its deployment descriptor.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) Define the Struts in the J2EE framework?",
+        "answer": "Struts is an application development framework based on MVC (Model-View-Controller) architecture. It is a combination of Java Servlets, JSP, Custom tags, and messages. It is used to design applications for large enterprises. It can be described as:\nModel\n\nThe model defines the internal state of a system. It can be either single or a cluster of Java Beans based on app architecture.\nView\nJSP technology is used to design a view of any enterprise application.\nController\nA controller is used to manage the actions of users. It processes the client request and responds based on the request. The main component in the framework is a servlet of class ActionServlet. This servlet is configured by defining a set of ActionMappings.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Define Hashtable in J2EE?",
+        "answer": "Hashtable is similar to HashMap except that Hashtable is synchronized. Hashtable is a cluster of synchronized objects where null values and duplicate values are not allowed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Define Hibernate and HQL?",
+        "answer": "Hibernate is an object-relational mapping and query service. In hibernate, we can write HQL (Hibernate Query Language) scripts instead of SQL, which saves lots of time and effort. Hibernate provides a more powerful association, inheritance, polymorphism, composition, and collections. We can process queries easily into the database using the Java objects. Hibernate also allows us to express queries using Java-based criteria.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What are the limitations of Hibernate?",
+        "answer": "Following are some limitations of hibernate:\nSlower execution of queries.\nOnly HQL support is available for composite keys.\nNo shared references are available to the value type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) What are the major benefits of hibernate?",
+        "answer": "Following are some major benefits of hibernate:\nHibernate is independent of database and vendor so it is the portable framework.\nDomain objects can be mapped to the relational database.\nJPA support for standard ORM.\nBetter database connectivity in Hibernate when compared to JDBC.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Define ORM and its working in J2EE?",
+        "answer": "ORM refers to Object-Relational mapping. It is the object in a Java class which is mapped into the tables of a relational database using the metadata that describes the mapping between the objects and database. It transforms the data from one representation to another.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is authorization?",
+        "answer": "An authorization is a process by which access to a method or resource is determined. It relies on the determination of whether the principal associated with a request through authentication is in a given security role. A security role can be explained as a logical grouping of users defined by the person who assembles the application. A deployer maps the security roles to security identities. Security identities may be principles or groups in the operational environment.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) Define authorization constraint?",
+        "answer": "An authorization rule which determines who is permitted to access Web resource collection is known as authorization constraint.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) How will you explain save() and saveorupdate() methods in hibernate?",
+        "answer": "The Save() method in hibernate is used to store an object in the database. It creates a new entry if the record doesn't exist.\nThe Saveorupdate() method in hibernate is used for updating the object using the identifier. If the identifier is unavailable, this method calls save(). If the identifier is available, it will call the update method.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) How will you explain load() and get() methods?",
+        "answer": "Load(): If an object is missing in the Cache or database, Load() method will throw an exception. Load() method never returns null.\nGet(): If an object is missing in the Cache or database, Get() method returns a null value, not the exception.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) What is a web container in J2EE?",
+        "answer": "An interface between a component and the low-level platform with defined functionality that is designed to support the component is defined as the web container in J2EE.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What is the concept of connection pooling?",
+        "answer": "Connection pooling is a simple concept which is popular to reuse existing connections. It means that if object connections are already well-defined and connected, then they can be reused whenever there is a requirement instead of generating a new one.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What do you understand by the servlet?",
+        "answer": "Servlet is a server-side component which provides full functionalities to create a server-side program. There are different servlets available with a specific design for a variety of protocols. The most popular type of protocol for the servlet is HTTP.Servlets, which use the classes in the java packages javax.servlet, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.http.HttpSession;. All servlets must include the Servlet interface, which defines life-cycle methods.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "31) Give some advantages of ORM (object-relational mapping)?",
+        "answer": "Productivity\nThe automatic code is generated to reduce the overall data access time based on the data model defined.\nPerformance\nThe complete requirements of an application are managed by the automated code generated by the ORM, which means that there is no need for any extra code, and the overall data access process is made faster and optimized.\nVendor Independent\nThe generated code is independent of the vendor, which increases the overall portability of an application.\nMaintainability\nThe code is well tested and generated by the ORM, and only a developer can understand the code perfectly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) Tell about the core interfaces of the hibernate framework?",
+        "answer": "Session Interface\nSessionFactory Interface\nConfiguration Interface\nTransaction Interface\nQuery and Criteria Interface",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) What is B2b?",
+        "answer": "B2b indicates to business-to-business.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What is the file extension used for hibernate mapping file and hibernate configuration file?",
+        "answer": "For hibernate mapping, the file name should be like filename.hbm.xml.\nFor hibernate configuration, the file name should be like hibernate.cfg.xml.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) Define a way to add Hibernate mapping file in hibernate configuration file?",
+        "answer": "It can be easily performed by:\n<mapping resource=\"filename.hbm.xml\"/>",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) What are the main components of multi-tier architecture?",
+        "answer": "The main components of multi-tier architecture are:\nPresentation Tier\nThe front-end component existing in this tier is used to display the presentation.\nResource Tier\nThe back-end component existing in this tier is used to communicate with the database.\nBusiness Tier\nThe component existing in this tier is used to provide business logic for the system.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "JTA represents JAVA Transaction API, which is used for coordinating and managing transactions across the enterprise information system.\nJNDI represents Java Naming Directory Interface, which is used for accessing data from directory services.\nJMS represents the Java Messaging Service, which is used for receiving and sending messages through messaging systems.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "J2EE has the following tiers:\nClient Tier\nIt indicates to the browser from which request is processed to the server. The interfaces that are available in this tier are HTML browser, Java application, an applet, or a non-java application.\nMiddle Tier\nIt comprises of a presentation tier and integration tier. The UI (User Interface) is created in the presentation tier using JavaServer Pages. The business logic is written inside the business tier with the help of Enterprise Java Bean. The objects of the database are created in the integration tier.\nBackend\nIt constitutes the Enterprise Information System (EIS) which is used to store the data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "EAR stands for Enterprise Archive file. It consists of the components of the web, EJB, and client. All the components of the EAR are packed in a compressed file with the extension .ear.\nWAR stands for a Web Archive file. It consists of all the components related to the web application. All the components are packed in a compressed file with the extension .war.\nJAR stands for Java Archive file. It consists of all the class files and library files, which constitute an API (Application Programming Interface). All the components are packed in a compressed file with the extension .jar.\nEach type of file (.ear, .war, and .jar) is processed uniquely by application servers, servlet containers, EJB containers, etc.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) What do you understand by Spring?",
+        "answer": "Spring is a light-weight open source framework for developing enterprise applications. It resolves the complexity of enterprise application development and provides easy development for the J2EE. It was initially written by Rod Johnson. It was released under the Apache 2.0 license in June 2003.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What are the different modules used in Spring?",
+        "answer": "There are mainly seven core modules in spring:\nThe Core container module\nObject/Relational mapping module\nDAO module\nApplication context module\nAspect Oriented Programming\nWeb module\nMVC module",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "42) What is action mapping?",
+        "answer": "In action mapping, a user specifies action class for a particular URL, i.e., path and different target view, which means, forwards on to which request-response is forwarded. The ActionMapping defines the information that the ActionServlet knows about the mapping of a particular request to an instance of a specific Action class. The mapping is transferred to the execute() method of the Action class, enabling access to this information directly.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "43) What do you understand by ActionForm?",
+        "answer": "ActionForm is a Java bean which may associate one or more ActionMappings. A java bean changes to FormBean when a user extends a class org.apache.struts.action.ActionForm. ActionForm object is generally populated on the server side automatically, and the client enters data from UI. ActionForm manages the session state for a web application.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "44) What is backing bean?",
+        "answer": "A backing bean is a JavaBeans component which corresponds to JavaServer Pages that includes JavaServer Faces components. The backing bean describes the properties for the components on the page and methods which perform processing for the component.\nThis processing may include event handling, validation, and processing associated with navigation.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "45) What is the build file?",
+        "answer": "A build file is an XML file that consists of one or more asant targets. A target is a set of tasks that a user wants to get executed. When starting asant, a user can select which target is to be executed. If there is no target, then the default target of the project is executed.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "46) What do you understand by business logic?",
+        "answer": "Business logic is the code that includes the functionality of an application. In the EJB (Enterprise JavaBeans) architecture, this logic is implemented by the methods of an enterprise bean.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "47) How will you explain CDATA?",
+        "answer": "A CDATA is a predefined XML tag for the character data, which means \"don't interpret these characters,\" it is similar to parsed character data (PCDATA), in which the standard rules of XML syntax apply. CDATA sections are used to show examples of XML syntax.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "48) What do you mean by the Component Contract?",
+        "answer": "The contract between the J2EE component and its container is known as the component contract. This type of contract includes:\nLife-cycle management of the component\nAn interface which is used by instance to obtain various information and services from its container\nList of services that every container must provide for its components.",
+        "reference": "javatpoint.com"
+    }
+]

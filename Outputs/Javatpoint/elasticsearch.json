@@ -1,0 +1,207 @@
+[
+    {
+        "question": "1) What is Elasticsearch?",
+        "answer": "Elasticsearch is a NoSQL database search engine based on Apache Lucene. It is an open-source product developed in Java. Similar to MySQL and other databases, it is also used to store the data. Elasticsearch stores unstructured data in the document format. It offers an NRT (Near Real-Time Search) facility as well as allows to perform full-text search on data.\nElasticsearch is easy to deploy and manage. Even users can take the backup of data from Elasticsearch very easily and efficiently by setting up a few settings and executing queries.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "2) Who developed Elasticsearch and when?",
+        "answer": "Elasticsearch was first launched in Feb 2010. It is developed by Shay Banon. Elasticsearch is licensed under Apache 2.0.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "3) What is the latest version of Elasticsearch and when it released?",
+        "answer": "Elasticsearch 7.9.1 is the latest stable release of Elasticsearch. On 03 Sep 2020, the Elasticsearch community has released the latest version of Elasticsearch.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "4) Define the most essential features of Elasticsearch?",
+        "answer": "Although Elasticsearch has various features but here are some most important features of Elasticsearch -\nOpen Source product\nIt offers a REST API web interface.\nMulti-language and Geolocation support\nStores unstructured data\nSupport full-text search as well as Schema-free database\nFeature of Near Real-Time (NRT) Search on data",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "5) What types of basic operations can be performed with Elasticsearch?",
+        "answer": "Elasticsearch allows the users to perform the following basic operations with Elasticsearch -\nCreate an index\nUpdate index\nFetch data from an index\nDelete index\nFreeze index",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "6) What is the port number to access the Elasticsearch on the web? Can we change it?",
+        "answer": "Elasticsearch is accessed by using HTTP protocol on the web, which needs a port number along with localhost address. The default port number of Elasticsearch is 9200.\nIn case the Elasticsearch port 9200 is already in use or used by any other tool, you can change the port number. Elasticsearch port number can be changed in the elasticsearch.yml file. This file exists inside the config folder.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "7) What are the basic requirements to work with Elasticsearch?",
+        "answer": "To work with Elasticsearch, following requirements must be done -\nADVERTISEMENT\nYou should be familiar with the JSON object, APIs and document formats because the data is stored in the form of document in Elasticsearch.\nApart from knowledge, Java must be installed on your system to install Elasticsearch.\nA plugin to interact with Elasticsearch, e.g., elasticsearch-head plugin (available in google play store).",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "8) What is an index in Elasticsearch?",
+        "answer": "An index in Elasticsearch is equivalent to a database in MySQL relational database structure. An index consists of multiple types (tables) and documents inside it. Elasticsearch can have multiple indices.\nElasticsearch -> Index -> Type -> Document with properties\nMySQL -> Database -> Table -> Columns/Rows\nTypically, we can say that an index is a collection of documents that contain information inside it. It can store actual and analyzed value as well.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "9) Does Elasticsearch provide an interactive graphical user interface to its users?",
+        "answer": "No, Elasticsearch does not offer its own graphical user interface (GUI). We run it through a batch file (i.e., elasticsearch.bat) that provides a Command Line Interface (CLI).\nTo interact with Elasticsearch, we have to install a plugin or a data visualization tool. There are several plugins available, such as elasticsearch-head, icu-analyzer, etc. Despite this, you can install Kibana for data visualization, which is an essential component of ELK Stack.\nTo interact with Elasticsearch, we have to install a plugin or a data visualization tool. There are several plugins available, such as elasticsearch-head, icu-analyzer, etc. Despite this, you can install Kibana for data visualization, which is an essential component of ELK Stack.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "10) What is ELK stack? How Elasticsearch connect with it?",
+        "answer": "ELK Stack is a set of three components - Elasticsearch, Logstash, and Kibana. Each component of the ELK stack is used for different purposes.\nElasticsearch is a NoSQL database tool, which is used to store the unstructured data.\nLogstash is a log pipeline tool to perform transformation on data. It takes input from different sources and performs various transformations on it. At last, it exports the data into various targets.\nKibana is a data visualization tool, which provides an interactive UI (User Interface) to the users for data visualization.\nThese three components of ELK Stack work together and provide essential services to perform tasks for the users. Although Elasticsearch can also be used individually as well.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "11) What is tokenizer in Elasticsearch?",
+        "answer": "Tokenizers are used to generate the tokens from a text string. It breaks down the text string into tokens where it finds whitespace or other punctuation symbols. Elasticsearch offers a number of built-in tokenizers to generate tokens from a string. Standard tokenizer is one of the most popular tokenizers of Elasticsearch, which is mostly used to divides a string into multiple tokens.\nApart from that, there are several other tokenizers, such as - lowercase tokenizer, whitespace tokenizer, pattern tokenizer, keyword analyzer, NGram tokenizer, and many more offered by Elasticsearch. Usually, a tokenizer helps to analyze the text string.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "12) What is an analyzer in Elasticsearch?",
+        "answer": "Analyzer helps to transform the data while indexing it to Elasticsearch. It transforms the data internally defined for an index and then index it. Tokenizer and filters collectively make an analyzer.\nThere are following types of analyzers offered by Elasticsearch -\nStandard Analyzer\nWhitespace Analyzer\nSimple Analyzer\nKeyword Analyzer\nPattern Analyzer\nStop Analyzer\nLanguage Analyzer\nSnowball Analyzer",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "13) What are frozen indices in Elasticsearch?",
+        "answer": "Frozen indices are those indices which are rarely accessed. So, the users freeze these indices. Such indices are called frozen indices. Basically, we freeze those indices which are not in use to free up the memory.\n\nFrozen indices become read-only and its resources are no longer kept active. So, these indices are searchable, but to write again, we have to unfreeze them. Elasticsearch offers an ignore_throttled parameter, which is used to include the frozen indices in your search. Thus, we don't need to re-open them to make available for search.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "14) What is Elasticsearch Mapping?",
+        "answer": "Mapping is a mechanism of Elasticsearch to be performed on documents and fields. It is responsible for storing and indexing the documents and their fields in the Elasticsearch database. Elasticsearch allows users to perform mapping on fields by defining datatype for them.\nFor example, - string datatype for name or number datatype for age, etc.\nThere are two types of mapping, i.e., Static mapping and Dynamic mapping.\nStatic mapping is a type of mapping which is done by users at the time of index creation. In comparison, Dynamic mapping is automatically done for the tables by the Elasticsearch.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "15) How to delete an index in Elasticsearch?",
+        "answer": "To delete an index in Elasticsearch, you have to create a query having DELETE as the request method and index name you want to delete.\nDELETE index name",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "16) What do you understand by NRT in Elasticsearch?",
+        "answer": "NRT refers to the Near Real-Time Search platform. Elasticsearch offers a near real-time search facility to its users. It returns the data in a very short time when we perform search operations on it. Whenever you index a document, Elasticsearch takes a bit of time until it becomes searchable.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "17) What is Elasticsearch API?",
+        "answer": "API is an Application Programming Interface, which makes Elasticsearch easy to operate, manage, and create queries to perform operations on it. Elasticsearch provides REST APIs to manage, integrate, and perform several operations in various ways on it. It offers extensive APIs and methods. Typically, there are five types of APIs in Elasticsearch:\nDocument APIs\nSearch APIs\nAggregation APIs\nIndex APIs\nCluster APIs",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "18) What do you understand by multi-document APIs?",
+        "answer": "Multi-document API is a document API, which further has few more APIs. Multi-document APIs are basically used to perform queries across multiple documents. Simply says that - it allows the users to perform the operation in bulk like fetch or update multiple documents using a single query.\nIt is further classified and has the following APIs for bulk operations -\nBulk API\nMulti Get API\nDelete By Query API\nUpdate By Query API\nReindex API",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "19) Which method is used to fetch the documents from Elasticsearch?",
+        "answer": "Elasticsearch allows the users to search and fetch the documents from the database in two ways. We can use one of them accordingly -\nBy sending a GET request having a string parameter with a query, or\nBy sending a POST request which has a query in request body.\nAlong with the request method, we have to use a __search API to search the documents in database. Here GET and POST are request methods. Elasticsearch allows the users to search the documents as single or in bulk too.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "20) Elasticsearch uses which query language?",
+        "answer": "Elasticsearch uses Query DSL to perform operations on it. Query DSL is an Apache Lucene Query Language.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "21) What is a cluster in Elasticsearch?",
+        "answer": "In Elasticsearch, a cluster is a collection of nodes. Cluster and nodes work together and hold the data, where node is an instance of Elasticsearch. A cluster provides joined indexing as well as search capabilities to Elasticsearch users.\nElasticsearch can have several clusters where each cluster is identified by a unique name. Elasticsearch provides a default name to the cluster, which is elasticsearch.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "22) Does the Elasticsearch have a schema?",
+        "answer": "Yes, Elasticsearch has a schema, which is usually called as mapping. Basically, a schema is a description of fields, which describes the document type. It helps to manage the different fields of document.\nSchema is a mapping that emphasizes the JSON documents.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "23) Define a document in Elasticsearch?",
+        "answer": "In Elasticsearch, a document holds the information provided by Elasticsearch users. A document is similar to a row in relational databases like MySQL. The documents are stored inside the index created by the users. An index can hold several documents where each document has a unique id.\nA document has the data in the form of key-value (key: value) pairs. For example, {\"name\": \"Alen Walker\"}. Each document identifies by a unique id and it is associated with a type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "24) What is a document type in Elasticsearch?",
+        "answer": "In Elasticsearch, a type represents a class of similar documents. A type could be like student, customer, or item. A document type can be seen as the document schema/mapping, which has a mapping of all the fields in the document along with its data type.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "25) What is a shard in Elasticsearch?",
+        "answer": "The data stored in an index can be divided into multiple partitions. Each of these partitions is called Shard, which is managed and controlled by a separate node. An Elasticsearch index has five shards by default.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "26) Name atleast 5 companies that are using Elasticsearch?",
+        "answer": "Below is a list of companies which are using Elasticsearch -\nNetflix\nUdemy\nShopify\nWalmart\nUber\nSlack\nAdobe\nThere are several other companies that use Elasticsearch to store and manage their unstructured data.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "27) What is Index Lifecycle Management in Elasticsearch?",
+        "answer": "Index Lifecycle Management (ILM) is an essential mechanism of Elasticsearch, which has been introduced in Elasticsearch 6.6. It is also known as ILM. ILM establishes a hot-warm-cold architecture, which offers a lifecycle to the index. This lifecycle has four states Hot, Warm, Cold, and Delete state.\nAn index goes through this lifecycle having different states, first it goes from hot state, then warm and cold and at last from delete state.\nTypically, ILM manages the indexes and their operations. Elasticsearch offers the ILM APIs for managing the indexes. Policy Management API, Index Management API, and Operation Management API are the Index Lifecycle Management APIs. These APIs further offers APIs to its user to manage the indexes.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "28) Which basic operations can be performed on a document?",
+        "answer": "Elasticsearch allows performing various operations on an index, such as -\nAdd a document to an index\nDelete a document\nFetch the document\nUpdate the document data",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "29) What do you understand by an inverted index in Elasticsearch?",
+        "answer": "Inverted index is the heart of search engines. The main purpose of each search engine is to provide fast and efficient searches while finding the documents. Usually, an inverted index is a hash map just like the data structure that directs the users from a word to a document or web page. It provides speedy searches when you search for a document between millions of documents.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "30) What is from and size components in Elasticsearch?",
+        "answer": "The from and size components are used in pagination. They help to divide a large amount of data into several pages, where from is the initial point to start a search and size defines the number of items to be searched.\nFor example, - If there are 30 items calculated, but we want 15 items first and then remaining.\nSo, the first time from will be 0 and the size will be 14. Next time from will be 15 and the size will be 29.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "",
+        "answer": "Match query analyzes the input request and creates basic queries. While in term query, exact matching is done.\nFor example, if we search for the document containing name: Anurag, and if any document has name = Anupriya, then it will also be the result of the search query in case of Match query. On the other hand, exact matching is performed in term query. So, the document containing name: Anupriya will not return.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "32) To install the Elasticsearch, which type of files are required to be download on different operating systems?",
+        "answer": "On each operating system, a different type of file is required to be downloaded.\nFor example -\nOn Windows operating system, zip file needs to be download. Similarly,\nOn Linux operating system, download tar.gz file of Elasticsearch setup\nOn Mac Operating system, download tar.gz file of Elasticsearch setup\nFor Ubuntu-based system or Debian, download the deb package",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "33) Is Elasticsearch can integrate with other tools? If Yes, then list the name of those tools?",
+        "answer": "Yes, Elasticsearch can integrate with other tools and technologies. The most popular tools are Logstash and Kibana, which are the components of the ELK stack. There is a list of some other tools to which Elasticsearch can integrate -\nAmazon Elasticsearch Services\nCouchbase\nContentful\nDatadog",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "34) What do you understand by cluster health? How to check the health of a cluster?",
+        "answer": "In Elasticsearch, we can check the health of the cluster. Cluster health helps to show the health status of the cluster. It defines how many clusters are currently running in Elasticsearch. The health status is shown by three different colors, i.e., either Red, Green, or Yellow. Each color defines the different health status of a cluster.\nRED color indicates that some of the primary shards or nodes are not available in the cluster.\nRED - The cluster health status will be RED when some of the primary shards or nodes is not available in the cluster.\nYELLOW - The cluster health status will be RED when some or all shards are not allocated to any of the cluster.\nGREEN - The cluster health status will be RED when the shards are allocated to the node.\nBy executing simple cluster health, we can check the health of a cluster.\nGET _cluster/health  \nHere GET is a request method, _cluster is a cluster API, and health is a keyword for which we are looking for.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "35) Can we perform the write operation on frozen indices?",
+        "answer": "No, we cannot perform a write operation on frozen indices because frozen indices are read-only indices. These indices are searchable, but we cannot write on them without unfreezing. However, without unfreezing the frozen indices, we can include them in our searches.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "36) How x-pack helps to get SQL access in Elasticsearch?",
+        "answer": "X-pack comes with the SQL features that provide SQL access in Elasticsearch to execute the queries. This SQL support feature has been introduced in Elasticsearch 6.3.\nBasically, X-pack is an Elastic Stack extension with SQL features, which helps the users to execute the SQL queries against Elasticsearch. The SQL queries execute in a real-time environment and return the result in tabular form.\nWe can execute the Elasticsearch SQL command line using the elasticsearch-sql-cli.bat file that exists inside the bin folder. This Elasticsearch SQL translator can understand both SQL as well as Elasticsearch.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "37) What is Ingest Node in Elasticsearch?",
+        "answer": "The ingest node is used to transform the document before indexing it in Elasticsearch. Basically, an ingest node pre-process the document before the indexing occurs. Such operations like rename a field name, add or remove a field from a document are handled by the ingest node.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "38) What is a repository, and what its role in taking a snapshot in Elasticsearch?",
+        "answer": "A repository is a container or memory storage that holds the snapshots inside it. A single repository can store one or more snapshots. Snapshot is nothing; it is a data backup of Elasticsearch taken by the user to release the memory and secure the data.\nYou can create any number of repositories in Elasticsearch, which can hold several snapshots inside them. The repository provides a location and memory to store snapshots.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "repo?",
+        "answer": "To create a repository, we need to set up a location where it will store. So, before taking a snapshot, it is very important to configure the path.repo setting in the elasticsearch.yml file in which we need to set the location for the repository to be stored. The elasticsearch.yml file exists inside the elasticsearch/config folder.\nSteps to configure\nNavigate to the elasticsearch/config folder an open elasticsearch.yml file on notepad.\nCopy and paste the following line at the end of the file.\npath.repo: [\"/my_backup_location\"]\nSave the file and restart the elasticsearch to see the effect.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "40) Why use the wait_for_completion parameter?",
+        "answer": "Elasticsearch provides a wait_for_completion parameter, which is used while creating a snapshot query. This parameter is basically used in a snapshot query that indicates whether the request will wait for the snapshot to be complete or respond immediately once the snapshot is initialized. It is an optional parameter used as wait_for_completion=true.\nIt is used in snapshot query like the below query:\nPUT  \n_snapshot/repository_name/snapshot_name?wait_for_completion=true  \nNote that if you use wait_for_completion parameter in your query, the snapshot creation process will run in the background on Elasticsearch cli.",
+        "reference": "javatpoint.com"
+    },
+    {
+        "question": "41) What is the use of restore API?",
+        "answer": "Elasticsearch provides _restore API to restore the data, which backed up to a snapshot. So, the restore API helps to restore a snapshot into a running cluster.\nTo restore the data into Elasticsearch, both _snapshot and _restore APIs are used along with the snapshot name, which you want to restore. For example -\nPOST /_snapshot/snapshot_name/_restore",
+        "reference": "javatpoint.com"
+    }
+]
