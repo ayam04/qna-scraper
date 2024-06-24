@@ -1,0 +1,132 @@
+[
+    {
+        "question": "1. Compare Pentaho & Tableau",
+        "answer": "Criteria Pentaho Tableau\nFunctionality ETL, OLAP, & static Reports Data analytics\nAvailability Open source Proprietary\nStrengths Data Integration Interactive visualizations",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Define Pentaho and its usage.",
+        "answer": "Revered as one of the most efficient and resourceful data integration tools (DI), Pentaho virtually supports all available data sources and allows scalable data clustering and data mining. It is a light-weight Business Intelligence suite executing Online Analytical Processing (OLAP) services, ETL functions, reports and dashboards creation and other data-analysis and visualization operations.\nLearn more in this Pentaho Tutorial now.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. Explain the important features of Pentaho.",
+        "answer": "Pentaho is capable of creating Advanced Reporting Algorithms regardless of their input and output data format.\nIt supports various report formats, whether Excel spreadsheets, XMLs, PDF docs, CSV files.\nIt is a Professionally Certified DI Software rendered by the renowned Pentaho Company headquartered in Florida, United States.\nOffers enhanced functionality and in-Hadoop functionality.\nAllows dynamic drill down into larger and greater information.\nRapid Interactive response optimization.\nExplore and view multidimensional data.\nRead this blog to learn why Business Intelligence Tools like Pentaho are important in today\u2019s world.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Name major applications comprising Pentaho BI Project.",
+        "answer": "Business Intelligence Platform.\nDashboards and Visualizations.\nReporting.\nData Mining.\nData Analysis.\nData Integration and ETL (also called Kettle).\nData Discovery and Analysis (OLAP).\nInterested in learning Pentaho? Well, we have the comprehensive Pentaho Course to give you a head start in your career.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What is the importance of metadata in Pentaho?",
+        "answer": "A metadata model in Pentaho formulates the physical structure of your database into a logical business model. These mappings are stored in a central repository and allow developers and administrators to build business-logical DB tables that are cost effective and optimized. It further simplifies the working of business users allowing them to create formatted reports and dashboards ensuring security to data access.\nAll in all, metadata model provides an encapsulation around the physical definitions of your database and the logical representation and define relationships between them.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. Define Pentaho Reporting Evaluation.",
+        "answer": "Pentaho Reporting Evaluation is a particular package of a subset of the Pentaho Reporting capabilities, designed for typical first-phase evaluation activities such as accessing sample data, creating and editing reports, and viewing and interacting with reports.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Explain the benefits of Data Integration.",
+        "answer": "The biggest benefit is that integrating data improves consistency and reduces conflicting and erratic data from the DB. Integration of data allows users to fetch exactly what they look for, enabling them utilizeand work with what they collected.\nAccurate data extraction, which further facilitates flexible reporting and monitoring of the available volumes of data.\nHelps meet deadlines for effective business management.\nTrack customer\u2019s information and buying behavior to improve traffic and conversions in the future, thus advancing your business performance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is MDX and its usage?",
+        "answer": "MDX is an acronym for \u2018Multi-Dimensional Expressions,\u2019 the standard query language introduced by Microsoft SQL OLAP Services. MDX is an imperative part of XML for analysis API, which has a different structure than SQL. A basic MDX query is:\nSELECT {[Quantity].[Unit Sales], [Quantity].[Store Sales]} ON COLUMNS,\n{[Product].members} ON ROWS\nFROM [Sales]\nWHERE [Time].[1999].[Q2]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. Define three major types of Data Integration Jobs.",
+        "answer": "Transformation Jobs : Used for preparing data and used only when the there is no change in data until transforming of data job is finished.\nProvisioning Jobs : Used for transmission/transfer of large volumes of data. Used only when no change is data is allowed unless job transformation and on large provisioning requirement.\nHybrid Jobs : Execute both transformation and provisioning jobs. No limitations for data changes; it can be updates regardless of success/failure. The transforming and provisioning requirements are not large in this case.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. Illustrate the difference between transformations and jobs.",
+        "answer": "While transformations refer to shifting and transforming rows from source system to target system, jobs perform high level operations like implementing transformations, file transfer via FTP, sending mails, etc.\nAnother significant difference is that the transformation allows parallel execution whereas jobs implement steps in order.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. How to perform database join with PDI (Pentaho Data Integration)?",
+        "answer": "PDI supports joining of two tables form the same databse using a \u2018Table Input\u2019 method, performing the join in SQL only.\nOn the other hand, for joining two tables in different databases, users implement \u2018Database Join\u2019 step. However, in database join, each input row query executes on the target system from the main stream, resulting in lower performance as the number of queries implement on the B increases.\nTo avoid the above situation, there is yet another option to join rows form two different Table Input steps. You can use \u2018Merge Join \u2018step, using the SQL query having \u2018ORDER BY\u2019 clause. Remember, the rows must be perfectly sorted before implementing merge join.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Explain how to sequentialize transformations?",
+        "answer": "Since PDI transformations support parallel execution of all the steps/operations, it is impossible to sequentialize transformations in Pentaho. Moreover, to make this happen, users need to change the core architecture, which will actually result in slow processing.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. Explain Pentaho Reporting Evaluation.",
+        "answer": "Pentaho Reporting evaluation is a complete package of its reporting abilities, activities and tools, specifically designed for first-phase evaluation like accessing the sample, generating and updating reports, viewing them and performing various interactions. This evaluation consists of Pentaho platform components, Report Designer and ad hoc interface for reporting used for local installation.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Can fieldnames in a row duplicated in Pentaho?",
+        "answer": "No, Pentaho doesn\u2019t allow field duplication.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. Does transformation allow filed duplication?",
+        "answer": "\u201cSelect Values\u201d will rename a field as you select the original field also.  The original field will have a duplicate name of the other field now.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. How to use database connections from repository?",
+        "answer": "You can either create a new transformation/job or close and reopen the ones already loaded in Spoon.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. Explain in brief the concept Pentaho Dashboard.",
+        "answer": "Dashboards are the collection of various information objects on single page including diagrams, tables and textual information. The Pentaho AJAX API is used to extract BI information while Pentaho Solution Repository contains the content definitions.\nThe steps involved in Dashboard creation include\nAdding dashboard to the solution.\nDefining dashboard content.\nImplementing filters.\nEditing dashboards.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How to use logic from one transformation/job in other process?",
+        "answer": "Transformation logic can be shared using subtransformations, which provides seamless loading and transformation of variables enhancing efficiency and productivity of the system. Subtransformations can be called and reconfigured when required.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Explain the use of Pentaho reporting.",
+        "answer": "Pentaho reporting enables businesses to create structured and informative reports to easily access, format and deliver meaningful and important information to clients and customers. They also help business users to analyze and track consumer\u2019s behavior for the specific time and functionality, thereby directing them towards the right success path.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What is Pentaho Data Mining?",
+        "answer": "Pentaho Data Mining refers to the Weka Project, which consists of a detailed tool set for machine learning and data mining. Weka is open source software for extracting large sers of information about users, clients and businesses. It is built on Java programming.\nTake charge of your career by going through this professionally designed Pentaho Certification Training.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Is Data Integration and ETL Programming same?",
+        "answer": "No. Data Integration refers to passing of data from one type of systems to other within the same application. On the contrary, ETL is used to extract and access data from different sources. And transform it into other objects and tables.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. Explain Hierarchy Flattening.",
+        "answer": "It is just the construction of parent child relationships in a database. Hierarchy Flattening uses both horizontal and vertical formats, which enables easy and trouble-free identification of sub elements. It further allows users to understand and read the main hierarchy of BI and includes Parent column, Child Column, Parent attributes and Child attributes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. Give a brief about PDI architecture.",
+        "answer": "Below image depicts the architecture of PDI",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. Explain Pentaho report Designer (PRD).",
+        "answer": "PRD is a graphic tool to execute report-editing functions and create simple and advanced reports and help users export them in PDF, Excel, HTML and CSV files. PRD consists of Java-based report engine offering data integration, portability and scalability. Thus, it can be embedded in Java web applications and also other application servers like Pentaho BAserver.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. Define Pentaho Report types.",
+        "answer": "There are several categories of Pentaho reports : \nTransactional Reports : Data to be used form transactions. Objective is to publish detailed and comprehensive data for day-to-day organization\u2019s activities like purchase orders, sales reporting.\nTactical Reports : data comes from daily or weekly transactional data summary. Objective is to present short-term information for instant decision making like replacing merchandize.\nStrategic Reports : data comes from stable and reliable sources to create long-term business information reports like season sales analysis.\nHelper Reports : data comes from various resources and includes images, videos to present a variety of activities.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What are variables and arguments in transformations?",
+        "answer": "Transformations dialog box consists of two different tables: one of arguments and the other of variables. While arguments refer to command line specified during batch processing, PDI variables refer to objects that are set in a previous transformation/job in the OS.",
+        "reference": "intellipaat.com"
+    }
+]

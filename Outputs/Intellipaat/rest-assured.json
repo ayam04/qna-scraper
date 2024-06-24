@@ -1,0 +1,197 @@
+[
+    {
+        "question": "1. What is REST Assured?",
+        "answer": "REST Assured is an open-source Java library that provides a domain-specific language to write powerful automated tests for RESTful APIs. It offers a set of APIs that allow developers to easily test REST services without needing to write code from scratch. RESTful API and REST services enable networked applications to interact with resources adhering to the principles of REST.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. How do you add REST Assured to your project?",
+        "answer": "REST Assured can be added to a project using tools like Maven or Gradle. We can include the dependency in the project\u2019s pom.xml (Maven) or build.gradle (Gradle) file. For example, in a Maven project, we add the following to the pom.xml:\n<dependency>\n    <groupId>io.rest-assured</groupId>\n    <artifactId>rest-assured</artifactId>\n    <version>4.4.0</version>\n    <scope>test</scope>\n</dependency>",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. Explain the main components of a REST Assured test script.",
+        "answer": "The main components of a REST Assured test script are:\nBase URL: The base URL for the REST API\nRequest Specification: Used to construct the request details like method, path, headers, body, etc.\nValidation: Assertions to validate response status code, headers, body, etc.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What are the various HTTP methods supported by REST Assured?",
+        "answer": "All of the common HTTP methods used in RESTful API architecture are supported by REST Assured, which are:\nGET: Used for retrieving data from a specified resource.\nPOST: Used for submitting data to be processed to a specified resource.\nPUT: Used for updating a resource or creating a new resource if it doesn\u2019t exist.\nDELETE: Used for requesting the removal of a resource.\nPATCH: Used for applying partial modifications to a resource.\nOPTIONS: Used for describing the communication options for the target resource.\nHEAD: Similar to GET but retrieves only the headers, not the actual data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. How do you send a GET request using REST Assured?",
+        "answer": "To send a GET request, we use the get() method provided by REST Assured. \nFor example,\nResponse response = given().when().get(\"/api/resource\");",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. Explain REST Assured method chaining.",
+        "answer": "REST Assured is like a tool for checking if web services (websites that communicate with each other) are working correctly. It\u2019s made using the Java programming language. One cool thing about it is that you can use a technique called method chaining. This means you can link different actions together, making it easier to write and understand the instructions for checking the web services. So, when you make requests to a website, and you need to include lots of details like parameters or headers, method chaining in REST Assured helps keep things organized and easy to follow.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Explain the difference between 'given()', 'when()', and 'then()' in REST Assured.",
+        "answer": "given(): Sets up preconditions (e.g., base URI, headers, parameters).\nwhen()\n    .get(\"/api/resource\");\nwhen(): Specifies the action (HTTP method and endpoint).\nwhen()\n    .get(\"/api/resource\");\nthen(): Defines expected outcomes (e.g., status code, response body).\ngiven()\n    .baseUri(\"https://api.example.com\")\n    .header(\"Content-Type\", \"application/json\")\n    .param(\"key\", \"value\")\n.when()\n    .get(\"/api/resource\")\n.then()\n    .statusCode(200)\n    .body(\"data.name\", equalTo(\"John Doe\"));",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is the request specification, and how is it initiated?",
+        "answer": "In REST Assured, the request specification is initiated using \u2018given()\u2019. It\u2019s a starting point for setting up details like base URI, headers, and parameters before making an API call. \nFor example,\ngiven()\n    .baseUri(\"https://api.example.com\")\n    .header(\"Content-Type\", \"application/json\")\n    .param(\"key\", \"value\")\n.when()\n    .get(\"/api/resource\")\n.then()\n    .statusCode(200);\nPreparing for testing jobs? Check out our list of most asked Manual Testing Interview Questions.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. How do you handle authentication in REST Assured?",
+        "answer": "In REST Assured, you can handle authentication using various methods, depending on the type of authentication required. Here are two common approaches:\nBasic Authentication: Use the auth().basic(username, password) method to include basic authentication in your request.\nExample:\ngiven()\n    .baseUri(\"https://api.example.com\")\n    .auth().basic(\"username\", \"password\")\n.when()\n    .get(\"/api/resource\")\n.then()\n    .statusCode(200);\nBearer Token Authentication: If your API requires a bearer token, use the auth().oauth2(token) method.\nExample:\ngiven()\n    .baseUri(\"https://api.example.com\")\n    .auth().oauth2(\"yourBearerToken\")\n.when()\n    .get(\"/api/resource\")\n.then()\n    .statusCode(200);",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What is the role of the 'baseURL' and 'basePath' methods in REST Assured?",
+        "answer": "In REST Assured, the \u2018baseURI\u2019 and \u2018basePath\u2019 methods are used to define the base URL and base path for your API requests. \n\u2018baseURI\u2019(String baseUri) Method:\nRole: Specifies the base URL for the API.\nExample:\ngiven()\n    .baseUri(\"https://api.example.com\")\n.when()\n    .get(\"/api/resource\")\n.then()\n    .statusCode(200);\n\u2018basePath\u2019(String basePath) Method:\nRole: Specifies the base path for the API.\nExample:\ngiven()\n    .baseUri(\"https://api.example.com\")\n    .basePath(\"/v1\")\n.when()\n    .get(\"/resource\")\n.then()\n    .statusCode(200);\nUsing these methods, you can set the common base URL and path for multiple requests, reducing redundancy in your test code.\n\nIntermediate REST Assured Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. How do you validate responses in REST Assured?",
+        "answer": "Responses in REST Assured can be validated using various assertions provided by the library. For instance, you can verify the status code, response time, content type, and response body. This is typically done using the then() method, where you can chain assertions like statusCode(200) or body(\u201ckey\u201d, equalTo(\u201cvalue\u201d)).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Describe how to extract data from a response in REST Assured.",
+        "answer": "Data can be extracted from a response using the extract() method. This allows you to retrieve specific parts of the response, such as headers, cookies, or body, and store them in variables for further use.\nFor example, String value = response.extract().path(\u201ckey\u201d) extracts a value associated with a specific key from the JSON response.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What is GPath in REST Assured, and how is it used?",
+        "answer": "GPath is a syntax used in REST Assured for extracting and asserting data from a response. It\u2019s similar to XPath for XML and allows for easy navigation within JSON responses. GPath expressions can be used with the path() method to retrieve specific elements from the response.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Explain how to handle parameters in REST Assured.",
+        "answer": "Parameters in REST Assured can be handled using methods like param(), queryParams(), and formParams(). These methods allow you to add parameters to your request, whether they are query parameters, form parameters, or path parameters.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. How do you manage cookies in REST Assured?",
+        "answer": "Cookies can be managed using the \u2018cookie()\u2019 method for adding cookies to requests and the \u2018cookies()\u2019 method for extracting cookies from responses. REST Assured also allows for detailed cookie specifications, including setting their name, value, path, and expiry.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Discuss the use of filters in REST Assured.",
+        "answer": "Filters in REST Assured are used to intercept and modify requests and responses. They can be used for logging, authentication, or custom modifications of the request/response cycle. Filters can be added globally or on a per-request basis.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What is JSONPath in REST Assured, and how do you use it?",
+        "answer": "JSONPath is a query language for JSON, similar to XPath for XML. In REST Assured, JSONPath expressions are used to extract specific parts from a JSON response. This is done using the \u2018JsonPath\u2019 class or the \u2018path()\u2019 method in the response.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How do you perform path parameterization in REST Assured?",
+        "answer": "Path parameterization in REST Assured is done using the \u2018pathParam()\u2019 method. This allows for dynamic URLs where certain parts of the path can be set at runtime. For example, given().pathParam(\u201cid\u201d, 123).when().get(\u201c/users/{id}\u201d).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Explain the concept of serialization and deserialization in REST Assured.",
+        "answer": "Serialization in REST Assured refers to converting a Java object into a JSON or XML payload to send with a request. Deserialization is the opposite, where a JSON or XML response is converted back into a Java object. This is typically handled automatically by REST Assured using libraries like Jackson or Gson.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. How do you integrate REST Assured with TestNG or JUnit?",
+        "answer": "REST Assured can be integrated with TestNG or JUnit by simply writing REST Assured code within TestNG/JUnit test methods. Assertions in REST Assured can be combined with TestNG/JUnit assertions to create comprehensive API tests.\nIt involves a few steps, like adding dependencies, writing Test Class, and running Test.\nIntegrating REST Assured with TestNG:\nAdd Dependencies in pom.xml:\n<dependencies>\n    <dependency>\n        <groupId>io.rest-assured</groupId>\n        <artifactId>rest-assured</artifactId>\n        <version>4.4.0</version>          # Use the latest version available\n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.testng</groupId>\n        <artifactId>testng</artifactId>\n        <version>7.3.0</version>          #Use the latest version available\n        <scope>test</scope>\n    </dependency>\n</dependencies>\nWrite Test Class:\nimport io.restassured.RestAssured;\nimport org.testng.annotations.Test;\npublic class RestAssuredTestNGExample {\n    @Test\n    public void testGetRequest() {  \n        RestAssured.given()\n            .when()\n            .get(\"https://jsonplaceholder.typicode.com/posts/1\")\n            .then()\n            .statusCode(200);\n    }\nRun Tests:\nUse any method to run TestNG tests.\nIntegrating REST Assured with JUnit:\nAdd Dependencies in pom.xml:\n<dependencies>\n    <dependency>\n        <groupId>io.rest-assured</groupId>\n        <artifactId>rest-assured</artifactId>\n        <version>4.4.0</version> \n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.junit.jupiter</groupId>\n        <artifactId>junit-jupiter-api</artifactId>\n        <version>5.8.2</version>          \n        <scope>test</scope>\n    </dependency>\n</dependencies>\nWrite Test Class:\nimport io.restassured.RestAssured;\nimport org.junit.jupiter.api.Test;\npublic class RestAssuredJUnitExample {\n    @Test\n    public void testGetRequest() {\n        // Your REST Assured code for GET request\n        RestAssured.given()\n            .when()\n            .get(\"https://jsonplaceholder.typicode.com/posts/1\")\n            .then()\n            .statusCode(200);\n    }\nRun Tests:\nExecute your JUnit tests.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Discuss the importance of the ContentType enum in REST Assured.",
+        "answer": "The ContentType enum in REST Assured is used to specify the content type of the request and response. It\u2019s important to ensure that the API correctly interprets the data format being sent and received, such as JSON, XML, or HTML.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. Explain how to log requests and responses in REST Assured.",
+        "answer": "Logging in REST Assured can be done using the \u2018log()\u2019 method. You can log requests, responses, or both, and it can be configured to log only when the test fails. This is useful for debugging and verifying the details of API interactions.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. What are the common assertions used in REST Assured?",
+        "answer": "Common assertions in REST Assured include checking the status code (\u2018statusCode\u2019), content type (\u2018contentType\u2019), body content (\u2018body\u2019), headers, and response time. These assertions are used to validate different aspects of the response.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. How do you handle SSL/TLS certificates in REST Assured?",
+        "answer": "SSL/TLS certificates can be handled in REST Assured by configuring the SSL context or using methods like \u2018relaxedHTTPSValidation()\u2019 for less stringent validation, which is useful in testing environments.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. Explain the use of the 'extract()' method in REST Assured.",
+        "answer": "The \u2018extract()\u2019 method is used to extract details from the response, such as headers, cookies, body, and path parameters. This is useful for scenarios where you need to use data from a response in subsequent requests or assertions.\n\nAdvanced REST Assured Interview Questions for Experienced",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What exactly is 'client-server architecture?'",
+        "answer": "The client-server architecture model explains how a server shares services and resources with one or more clients. Servers, such as mail servers, data centers, and web servers, are examples of this. So, when a client asks for something, the server provides it.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. Discuss the architecture of REST Assured and its integration with other Java libraries.",
+        "answer": "To handle complex JSON structures in REST Assured, you can implement custom serializers and deserializers using Jackson or Gson. Here\u2019s a brief overview using Jackson:\nDefine Custom Serializer/Deserializer:\nCreate classes extending StdSerializer and JsonDeserializer from Jackson.\nImplement custom serialization and deserialization logic within these classes.\nConfigure ObjectMapper:\nInstantiate Jackson\u2019s ObjectMapper.\nRegister your custom serializer and deserializer to the ObjectMapper using SimpleModule.\nIntegrate with REST Assured:\nSet REST Assured\u2019s objectMapperFactory to use your custom-configured ObjectMapper.\nThis ensures REST Assured uses your custom serializer/deserializer for API requests and responses.\nExample Snippet:\nObjectMapper objectMapper = new ObjectMapper();\nSimpleModule module = new SimpleModule();\nmodule.addSerializer(MyClass.class, new MyCustomSerializer());\nmodule.addDeserializer(MyClass.class, new MyCustomDeserializer());\nobjectMapper.registerModule(module);\nRestAssured.objectMapperFactory = (type, s) -> objectMapper;\nThis setup is particularly useful for complex JSON structures that require specific parsing or formatting not covered by default serializers/deserializers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. How do you implement OAuth 2.0 authentication in REST Assured?",
+        "answer": "To implement OAuth 2.0 authentication in REST Assured in a simpler way, follow these steps:\nObtain the OAuth 2.0 Token:\nFirst, you need to get an access token from the OAuth 2.0 provider. This usually involves making a request to the token endpoint of the OAuth server with your client credentials.\nUse the Token in REST Assured Requests:\nOnce you have the access token, you can use it in your REST Assured requests. This is typically done by adding the token to the Authorization header as a Bearer token.\nHere\u2019s a basic example:\n// Obtain the OAuth 2.0 access token (this part depends on your OAuth server)\nString accessToken = \"your_access_token\";\n// Use the token in REST Assured requests\ngiven()\n  .auth()\n  .oauth2(accessToken)\n  .when()\n  .get(\"/your_api_endpoint\")\n  .then()\n  .statusCode(200);\nIn this example, replace \u201cyour_access_token\u201d with the actual token you obtained, and \u201c/your_api_endpoint\u201d with the API endpoint you want to test. This setup ensures that all requests made with REST Assured are authenticated using the OAuth 2.0 token.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. Explain advanced JSON and XML parsing techniques in REST Assured.",
+        "answer": "Advanced JSON Parsing:\nUsing JSONPath for Complex Queries:\nJSONPath is like XPath for JSON and lets you navigate through elements and structures within a JSON document.\nYou can extract values, arrays, or even perform conditional searches.\nExample:\nString response = given().when().get(\"/api\").asString();\nJsonPath jsonPath = new JsonPath(response);\nString value = jsonPath.getString(\"data[0].name\"); // Extracts the name from the first element in a data array.\nHandling Nested JSON Objects:\nFor deeply nested structures, you can chain the queries or use a more complex JSONPath expression.\nExample:\nString nestedValue =\njsonPath.getString(\"data[0].details.address.street\");\nAdvanced XML Parsing:\nUsing XmlPath for XML Data:\nXmlPath allows you to navigate and extract data from XML responses.\nYou can retrieve attributes, text values, or even apply filters.\nExample:\nString xmlResponse = given().when().get(\"/api/xml\").asString();\nXmlPath xmlPath = new XmlPath(xmlResponse);\nString value = xmlPath.getString(\"user.@id\"); // Extracts the 'id' attribute of a 'user' element.\nHandling Complex XML Structures:\nFor complex XML with nested elements, use a path that navigates through the hierarchy.\nExample:\nString nestedValue =\nxmlPath.getString(\"users.user[0].address.street\");\nIn both JSON and XML parsing, REST Assured provides a way to navigate through complex and nested data structures, allowing you to extract specific pieces of data needed for your tests. The key is understanding the structure of your JSON/XML and using the correct path syntax to access the data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. Discuss the handling of multipart file uploads in REST Assured.",
+        "answer": "Handling multipart file uploads in REST Assured involves sending a request where one or more files are included in the payload along with other form data. This is common in scenarios where you\u2019re testing endpoints for uploading documents, images, or other file types. Here\u2019s the explanation:\nUse the multiPart Method:\nREST Assured provides the multiPart method to handle file uploads.\nYou specify the file along with the form field name that the server expects.\nInclude Other Form Data (if needed):\nIf your API endpoint requires additional form data along with the file, you can add it using the formParam method.\nSend the Request:\nFinally, send your request to the server using the appropriate HTTP method (usually POST).\nHere\u2019s a simple example:\nFile fileToUpload = new File(\"path/to/your/file.txt\");\ngiven()\n  .multiPart(\"file\", fileToUpload)\n  .formParam(\"additionalParam\", \"value\") // Add other form fields if needed\n  .when()\n  .post(\"/upload_endpoint\")\n  .then()\n  .statusCode(200); // Check for successful upload",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. How do you customize and extend REST Assured functionalities?",
+        "answer": "Customizing and extending REST Assured can be achieved in several ways to suit specific testing needs. Here are the key methods:\nCustom Filters: We can create custom filters by implementing the Filter interface. This allows us to intercept and modify requests and responses. For example, we might add a filter to log all requests and responses in a specific format or add common headers to every request.\nCustom Matchers: For more tailored assertions, we can develop custom Hamcrest matchers. This is particularly useful when the standard matchers provided by REST Assured or Hamcrest don\u2019t meet our specific validation requirements.\nRequest and Response Specifications: To standardize our API tests and reduce code duplication, we can use RequestSpecBuilder and ResponseSpecBuilder. These builders help create reusable request and response specifications that can be used across multiple tests.\nIntegration with Other Libraries: REST Assured can be integrated with other Java libraries for enhanced functionality. For instance, we might use advanced JSON processing libraries if we need more complex JSON manipulation than what\u2019s provided out of the box.\nAn example of a custom filter might look like this:\npublic class MyCustomFilter implements Filter {\n    @Override\n    public Response filter(FilterableRequestSpecification requestSpec,\n                           FilterableResponseSpecification responseSpec,\n                           FilterContext ctx) {\n        // Custom logic to modify the request or response\n        return ctx.next(requestSpec, responseSpec);\n    }\n}\n// Usage in a test\ngiven()\n  .filter(new MyCustomFilter())\n  .when()\n  .get(\"/someEndpoint\")\n  .then()\n  .statusCode(200);",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. Explain the use of RequestSpecification and ResponseSpecification for reusable tests.",
+        "answer": "In REST Assured, RequestSpecification and ResponseSpecification are powerful features that allow for creating reusable templates for API requests and responses. This helps in making the test code more organized and readable and reduces redundancy. Let me explain each one:\nRequestSpecification:\n\u2018RequestSpecification\u2019 is used to create a template for an API request. It can include common request parameters such as headers, query parameters, body content, and authentication details.\nBy using \u2018RequestSpecification\u2019, we can define a standard setup for our API requests, which can then be reused across multiple tests. This is particularly useful when many API endpoints share similar request configurations.\nExample:\nRequestSpecification commonRequestSpec = new\nRequestSpecBuilder()\n    .setBaseUri(\"http://api.example.com\")\n    .addHeader(\"Content-Type\", \"application/json\")\n    .build();\ngiven()\n    .spec(commonRequestSpec)\n    .body(someRequestBody)\n    .when()\n    .post(\"/endpoint\")\n    .then()\n    .statusCode(200);\nIn this example, \u2018commonRequestSpec\u2019 is a reusable request specification that sets the base URI and content type, which is used in multiple tests.\nResponseSpecification:\nSimilarly, ResponseSpecification allows us to define a standard template for API responses. This can include expected status codes, response time, headers, and body content.\nIt helps in asserting common response attributes and ensures consistency in how responses are validated.\nExample:\nResponseSpecification commonResponseSpec = new ResponseSpecBuilder()\n    .expectStatusCode(200)\n    .expectContentType(ContentType.JSON)\n    .build();\ngiven()\n    .spec(commonRequestSpec)\n    .when()\n    .get(\"/someEndpoint\")\n    .then()\n    .spec(commonResponseSpec);\nHere, \u2018commonResponseSpec\u2019 is a reusable response specification that checks for a status code of 200 and a JSON content type.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. How do you perform data-driven testing using REST Assured?",
+        "answer": "Data-driven testing in REST Assured can be done by feeding multiple sets of data into the same test. This is usually achieved by integrating REST Assured with a testing framework like TestNG or JUnit. Here\u2019s a simple way to do it:\nFirst, prepare your test data. This could be in the form of an array, a list, or external files like CSV, JSON, or XML.\nUse a testing framework like TestNG or JUnit. These frameworks have features for data-driven testing, such as TestNG\u2019s @DataProvider annotation.\nCreate a test method that accepts data.\nThe testing framework will automatically run your test method with each set of data you\u2019ve provided.\nHere\u2019s a basic example using TestNG:\n@DataProvider(name = \"userData\")\npublic Object[][] createUserData() {\n    return new Object[][] {\n        {\"user1\", \"password1\"},\n        {\"user2\", \"password2\"}\n    };\n}\n@Test(dataProvider = \"userData\")\npublic void testLogin(String username, String password) {\n    given()\n        .param(\"username\", username)\n        .param(\"password\", password)\n        .when()\n        .post(\"/login\")\n        .then()\n        .statusCode(200);\n}\nIn this example, the \u2018testLogin\u2019 method will run twice, once with \u2018{\u201cuser1\u201d, \u201cpassword1\u201d}\u2019 and once with \u2018{\u201cuser2\u201d, \u201cpassword2\u201d}\u2019. This approach allows us to test different scenarios with various data sets.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. Explain the integration of REST Assured with CI/CD pipelines.",
+        "answer": "Integrating REST Assured with CI/CD pipelines is straightforward because it\u2019s a Java-based framework and fits well into standard Java project workflows. Here\u2019s a brief overview:\nWrite Tests in REST Assured: First, you write your API tests using REST Assured in your Java project.\nBuild Tool Configuration: Ensure your project\u2019s build tool, like Maven or Gradle, is set up to run these tests. This typically involves configuring the build script to execute tests during the build process.\nCI/CD Pipeline Setup: In your CI/CD tool (like Jenkins, GitLab CI or GitHub Actions), configure a pipeline that checks out your code, runs the build tool, and executes the REST Assured tests as part of the build.\nTest Reports and Feedback: After tests are executed, the CI/CD tool can be configured to generate reports and provide feedback. If tests fail, the pipeline can halt, preventing the deployment of faulty code.\nAutomated Triggers: You can set up the pipeline to be triggered automatically on code commits or at scheduled intervals.\nREST Assured tests are run as part of the build process in the CI/CD pipeline. Make sure that API tests are automatically and consistently executed, contributing to the overall quality and reliability of the software delivery process.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. Discuss the use of REST Assured in microservices testing.",
+        "answer": "REST Assured is a powerful testing library for API testing, and it\u2019s particularly handy in the context of microservices. In simpler terms, it helps us check if different parts of our microservices can talk to each other properly.\nImagine you have a bunch of mini-applications (microservices) that need to share information. REST Assured acts like a detective, making sure they\u2019re passing messages correctly. It sends requests to these microservices and checks if the responses are what we expect.\nSo, in microservices testing, REST Assured plays the role of a trustworthy messenger, ensuring that our microservices communicate effectively without any hiccups.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. How do you handle dynamic responses in REST Assured?",
+        "answer": "Handling dynamic responses in REST Assured is crucial for dealing with changing data or unpredictable server responses. Here are some techniques:\nUse of Placeholder Values: Replace dynamic parts of the response with placeholder values, like using any() for unpredictable data.\ngiven().get(\"/api/user\")\n.then().body(\"name\", any(String.class));\nJSONPath and XPath Expressions: Leverage JSONPath or XPath expressions to extract specific values from the response, even if the structure varies.\nString dynamicValue = get(\"/api/user\").path(\"some.element[0].value\");\nResponse Object and Assertions: Capture the entire response and then assert on specific fields. This way, dynamic parts won\u2019t affect the overall test.\nResponse response = get(\"/api/user\");\nassertEquals(\"Expected Value\",\nresponse.jsonPath().get(\"dynamicField\"));\nUsing Matchers for Collections: When dealing with dynamic lists, use Hamcrest matchers to check if certain elements are present without worrying about the order.\ngiven().get(\"/api/users\")\n.then().body(\"users\", hasItem(\"John Doe\"));\nThese methods help handle variability in responses and make sure that tests remain robust even when dealing with dynamic data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. Explain the significance of the RestAssured.config() method.",
+        "answer": "The \u2018RestAssured.config()\u2019 method in RestAssured is significant because it allows you to configure various settings and behaviors for your API tests. This method returns an instance of the \u2018RestAssuredConfig\u2019 class, which you can use to customize the behavior of RestAssured for your specific needs.\nDefault Configuration: You can use RestAssured.config() to set default configurations for all requests. For example, you might want to set a default base URI or authentication method for all your API requests.\nSSL Configuration: It allows you to configure SSL settings, such as trusting self-signed certificates or specifying a keystore.\nObject Mapping Configuration: You can customize how RestAssured maps JSON or XML responses to Java objects using RestAssuredConfig. This is useful when dealing with complex or custom serialization/deserialization scenarios.\nTimeouts and Connection Settings: Configure timeouts for requests, specifying how long to wait for a response or connection.\nHere\u2019s a simple example of how you might use RestAssured.config():\nRestAssured.config = RestAssuredConfig.config()\n    .sslConfig(SSLConfig.sslConfig().allowAllHostnames())\n    .objectMapperConfig(ObjectMapperConfig.objectMapperConfig().defaultObjectMapperType(ObjectMapperType.GSON));\nIn this example, it configures RestAssured to trust all hostnames for SSL and use the GSON library for object mapping. The RestAssured.config() method allows you to fine-tune RestAssured\u2019s behavior according to the requirements of your API testing scenarios.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. Discuss advanced error handling and debugging techniques in REST Assured.",
+        "answer": "Advanced error handling and debugging are crucial aspects of API testing with REST Assured. Here are some techniques to enhance error handling and debugging:\nLogging for Details: Use log().all() to print request and response details, aiding in quick issue identification.\ngiven().log().all().get(\"/api/endpoint\").then().log().all();\nExtract for Analysis: Leverage ValidatableResponse to extract specific response parts for detailed error analysis.\nValidatableResponse response = given().get(\"/api/endpoint\").then();\nString errorDetails = response.extract().body().asString();\nSoft Assertions: Implement soft assertions to capture multiple issues in a single test run.\nSoftAssertions softAssert = new SoftAssertions();\nsoftAssert.assertThat(response.statusCode()).isEqualTo(200);\nsoftAssert.assertThat(response.body(\"attribute\", equalTo(\"expectedValue\")));\nsoftAssert.assertAll();\nCustom Error Messages: Provide clear error messages for quick issue identification in failed assertions.\ngiven().get(\"/api/endpoint\")\n.then().assertThat().statusCode(200).withFailMessage(\"Expected status code: 200\");\nError Handling Filters: Use filters for custom actions on specific responses.\ngiven().get(\"/api/endpoint\")\n.then().statusCode(200)\n.filters((response, filterContext) -> {\n    if (response.statusCode() != 200) {\n        // Custom actions for non-200 responses\n    }\n});\nDebugging with Breakpoints: Set breakpoints strategically for step-by-step debugging during test execution.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. How do you test GraphQL APIs using REST Assured?",
+        "answer": "Testing GraphQL APIs with REST Assured involves a slightly different approach compared to traditional REST APIs, mainly because GraphQL typically uses a single endpoint with varying query or mutation requests. Here\u2019s how you can do it:\nSet Up the Request\nSince GraphQL requests are usually POST requests with a JSON payload, you\u2019ll set up your request in REST Assured accordingly.\nThe JSON payload typically contains at least two fields, query (or mutation) and optionally variables.\nSpecify the GraphQL Query or Mutation\nWrite the GraphQL query or mutation as a String. This is similar to what you would send in a GraphQL client.\nIf your query uses variables, define them in the variables field of your JSON payload.\nSend the Request and Validate the Response\nUse REST Assured to send the request to the GraphQL endpoint and validate the response.\nThe response validation can include checking the status code, the structure of the JSON response, and the values returned.\nHere\u2019s a basic example:\nString graphqlPayload = \"{ \\\"query\\\": \\\"{ user(id: 1) { name, email } }\\\" }\";\ngiven()\n  .contentType(ContentType.JSON)\n  .body(graphqlPayload)\n  .when()\n  .post(\"/graphql\")\n  .then()\n  .statusCode(200)\n  .body(\"data.user.name\", equalTo(\"John Doe\"));\nIn this example, we\u2019re sending a query to fetch a user\u2019s name and email. The \u2018given(\u2018) method sets up the request with the appropriate content type and body, and the \u2018then()\u2019 method asserts the response.\nWant to learn more about Selenium? Check out our Selenium Tutorial.",
+        "reference": "intellipaat.com"
+    }
+]

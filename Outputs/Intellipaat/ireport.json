@@ -1,0 +1,177 @@
+[
+    {
+        "question": "1. iReport Characteristics",
+        "answer": "Criteria Result\nFunctionality Designing visually appealing reports\nReport created by Using rich and simple use GUI\nFile type JRXML file",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What is the difference between iReport and JasperReport?",
+        "answer": "Basically iReport is the report designer and JasperReport is the reporting engine.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. How are JasperReports and iReports created?",
+        "answer": "Jasper Reports are created manually using jrxml file and compiling it. On the other hand iReport gives one the more user-friendly environment for developing reports.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. How to determine the version of Java used by iReport designers in an environment?",
+        "answer": "In order to determine the specific version of Java used by the installation of iReport designer, the setting in thecon/ireporpro.con  or in the ireport/etc/ireportpro.con should be used.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What are the steps for identifying the default Java version used for generating iReport?",
+        "answer": "When iReport designer is using the default Java installation for the environment, opening a command line and executing the following command would help \u2013 java-version.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is the command line for setting jdkhome specifically for iReport?",
+        "answer": "When the jdkhome is set specifically for the iReport, opening a command line and going to the bin directory within the listed directories in the setting for executing the command  java-version would help identifying the java version.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. How to change the version of Java used by the iReport?",
+        "answer": "To change the version of Java used by iReport, the following setting has to be added or updated. <irepor-install-directory>/fonf/ireportpro.conf or <ireport-install-directory>/ireport/etc/ireportpro.conf. The use of the command line would depend on the installation made.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is the command line for changing the version of Java used by the iReport?",
+        "answer": "The command line for changing the version of Java used by the iReport is jdkhome=\u201dC:\\Program Files\\Java\\jdk1.7\u2033",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What are the restrictions for using command line for changing the version of Java used by iReport?",
+        "answer": "User must ensure that the command line does not have any hash at the beginning of the line after it is updated. Because in such case it would no more be command line but would become comment only.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. Can JRE be selected to generate iReport?",
+        "answer": "JRE was created using the JSmooth and one can modify the file ireport/etc/ireport.jsmooth using the jsmooth to force use of particular JVM.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. How to solve the problem of running iReport when it generates Java error?",
+        "answer": "The config file is available in the etc folder where the jdkhome has been set. The path that is to be given there is the jdk path and not jre path. Installation of jdk is essential for the purpose.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. How to resolve the windows installer problem in Java?",
+        "answer": "User has to first check whether he or she is running the program in a container or as standalone. Checking this would enable the person to get the right JAVA_HOME version for running the iReport.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. How to add user defined functions In iReport?",
+        "answer": "User can use Java code in iReport using the scriptlets.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What is achieved by scriptlets?",
+        "answer": "Scriptlets are the bridges that get the Java Code in iReport. iReport.scriptlet is a Java class that extends JRDefaultScriptlet where one can write user defined functions that can later be accessed easily in the report.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. How to run user defined functions in iReport?",
+        "answer": "A few simple steps help to run the user defined functions. The first step is to go to Tools-options- claspath tab \u2013ADD Jar- choose Jar file. In iReport the Scriptlet node in Report Inspector chooses the property named \u2018Scriplet Class\u2019. Keying in the location of the user defined function would help.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. What is JAR?",
+        "answer": "In iReport JAR is made on building the project containing the Scriptlet.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What is the specific necessity of the class containing user defined function?",
+        "answer": "The class containing the user defined functions needs to be extended by the JRDefaultScriptlet.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. What is the parameter for using user defined function in iReport?",
+        "answer": "The parameter in iReport for using the user defined function is $P{REPORT SCRIPTLET} which is a predefined parameter for the user.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. What is the process of using user defined function in iReport?",
+        "answer": "The user defined function is used with the $ P{REPORT SCRIPTLET}.userDefinedFun(). This function returns values from the scriptlet.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What are other user defined functions used in iReport?",
+        "answer": "Other user defined functions in iReport are $P{REPORT SCRIPTLET}.userDefinedfun($F{field}). These functions give fluidity to Java from the Jasper to Java code.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Is there any way to know how the report looks?",
+        "answer": "There is a PDF export that would show exactly how the report looks.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. Is it possible using multiple parameters for the query in iReport?",
+        "answer": "Yes it is possible using a set of controls in Java. The user has full control on what he or she passes and what he or she received in Java.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. Is it necessary installing additional files after installing the standard version of iReport?",
+        "answer": "Setting up the JAVA_HOME  environmental variable with path as C:\\\\Program Files\\\\jasperserver-pro-3.7\\\\java\\\\jre can address the problem.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. What is the process of documentation of iReport in Java?",
+        "answer": "The documentation of iReport should be carried out by the user and not with some readymade packages that are mostly not fruitful for the purpose.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. Is it good using packages for iReport documentation?",
+        "answer": "If at all; only quality documentation package should be used and the iReport should not have any circular references that would create unnecessary problems.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What if the user cannot find Java.exe or (null)\\jre\\bin\\java.exe nor (null) bin\\java.exe while trying to generate iReport?",
+        "answer": "It is not necessary installing JasperReport in the system. Instead searching the system and setting the java.exe and set it to JAVA_HOMW would take care of the problem.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is basically iReport?",
+        "answer": "Basically is a visual designer for the JasperReports.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. What are the main features of JasperReport?",
+        "answer": "JasperReports is the best open source reporting engine that is available for Java community.\nBecome a Jaspersoft Expert with the Jaspersoft Training Course.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What are two main features of iReport?",
+        "answer": "Two main features of iReport are it supports 98% of JasperReport tags and it has an built in editor with syntax highlighting for write expression.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. What languages and codes are supported by iReport?",
+        "answer": "iReport supports Unicode and much non Latin language (Russian, Chinese, Korean). It also supports different fonts.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. Has the iReport any integrated features?",
+        "answer": "Integrated compiler and exporter are the integrated features in iReport. The other one is the document structure browser.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. What are the databases and data source that is supported by iReport?",
+        "answer": "iReport supports all JDBC compliant databases and also all kinds of JRData Source. It also supports sub reports as well as templates.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. Are there any facilities for having backup in iReport?",
+        "answer": "Yes. The user can backup data and information with iReport.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. What is the link where information about iReport would be available?",
+        "answer": "It is the iReport home page where user can get all information about the application and its uses.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. What are the system requirements for iReport?",
+        "answer": "Some of the system requirements for the iReport are Sun JDK 1.4 or greater, Ant, JasperReports 0.4.6, Sax 2.0 XML Parser, a host of Jakarta commons components and Acrobat Reader.",
+        "reference": "intellipaat.com"
+    }
+]

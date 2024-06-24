@@ -1,0 +1,217 @@
+[
+    {
+        "question": "1. What is Salesforce Lightning?",
+        "answer": "Salesforce Lightning is an app development framework developed by salesforce.com that simplifies business processes for users.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What is Lightning Framework?",
+        "answer": "The Lightning Component Framework is a UI Framework by Salesforce that is used to develop single-page applications for desktop and mobile devices. Lightning Components can be built using two programming models \u2013 the Aura Components Model, and the Lightning Web Components Model.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What are the components of Salesforce Lightning?",
+        "answer": "Salesforce Lightning includes the following components:\nLightning Component Framework \u2013 It is a javascript framework and a collection of general components that allow the development of recyclable components for personalizing the Salesforce1 mobile app and Lightning Experience.\nLightning Experience \u2013 It is the new and modern user experience and interface for Salesforce.\nLightning Exchange \u2013 It relates to a part of AppExchange, which has over 70 partner components to start the development process.\nLightning Design System \u2013 It helps build applications with the look and feel of Lightning Experience but without having to write a single line of CSS.\nVisual Building tools \u2013 These relates to drag-and-drop features that enable easy and quick customization and app building.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What is Lightning Experience?",
+        "answer": "Lightning Experience is the name for the latest Salesforce desktop application. It has the latest features with advanced UI and speed optimization.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. How are Lightning components built?",
+        "answer": "Lightning components are built using two programming models:\nNative Aura Components Model\nAura is a freeware technology that powers the Lightning components. It is a UI framework used for the development of dynamic web apps for mobile and desktop devices. Aura bridges the client and server through partitioned multi-tier component development and uses JavaScript on the client side as well as on the server side. It has a scalable long-lived lifecycle to allow the development of growth-oriented apps.\nAura allows the creation of apps that are not dependent on Salesforce data. Because of this, there is minimal disruption to the daily users. As the programs don\u2019t have to be optimized for each device, Aura allows for more efficiency in development.\nLightning Web Components Model\nThe aspects of Web Components that work well in browsers are supported by Lightning Web Components. It only adds what is necessary to work in all Salesforce-supported browsers. It is a W3C Web Components standard implementation.\nLightning Web Components Framework is a set of advanced lightweight frameworks that are based on the most recent web standards. It\u2019s a reusable code-based document object model element. It can help create sophisticated interfaces without using JS or the creation of a library making it simple and fast to use thus, saving a lot of time and work on the web stack.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is the use of aura: namespace?",
+        "answer": "Aura: namespace comprises all the main building blocks to define applications and components.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What are the different types of events of Salesforce Lightning components?",
+        "answer": "Following are the three events of Salesforce Lightning components:\nSystem Events: Salesforce fires the system events during the Lightning app lifecycle.\nApplication Event: It follows a traditional publish-subscribe model and is fired from an instance of a component. All the components that provide a handler for the event are notified.\nComponent Event: It is fired from an instance of a component and handled by the component that fired the event or a component in the containment hierarchy that receives the event.\nEnhance your knowledge after going through this blog on Aggregate Query in Salesforce!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is Lightning Data Service?",
+        "answer": "Lightning data service is used for carrying out basic tasks, such as creating, editing, loading, or deleting a record in a component without Apex code. It handles sharing rules and field-level security. Lightning data service enhances the performance consistency and UI.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What are the component bundles of the Lightning components?",
+        "answer": "Following are the component bundles of the Lightning components:\nController: It handles the client-side events\nDocumentation: This component bundle is used for recording the component\u2019s use\nStyle: It includes component style\nRenderer: It contains a component default rendering behavior\nHelper: General logic can be written in this component bundle used by different controller methods to avoid repetition\n\nWatch this Salesforce Lightning tutorial by Intellipaat.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. How can we use Lightning components with Salesforce1 Mobile App?",
+        "answer": "Lightning Components can be used with the Salesforce1 mobile app by creating a traditional Lightning tab that refers to the component. That tab can be added to the Salesforce1 mobile navigation.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What are the different types of Lightning Record pages, and how are they built?",
+        "answer": "Record page, App page, and Homepage are the different types of Lightning record pages and they can be built using Lightning App Builder.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. What is Lightning Out?",
+        "answer": "Lightning out is used if a component has to be used on the external site. The advantage is that Lightning components can be utilized in a visual force page. It acts as a bridge to surface Lightning components in any remote web container.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. How can we utilize a Lightning component on the VisualForce Page?",
+        "answer": "Using Lightning Out can help embed the Lightning component on the VisualForce page. It can be achieved in three steps:\nThe Lightning components for the javascript library of visual force must be first inserted into the intended visual force page through the tag.\nA Lightning app that is used for the component dependencies is then generated and pointed.\nFinally, a javascript function needs to be written that creates the component over the page through $Lightning.createComponent().",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What are attributes, and what are the required parameters in the attribute definition?",
+        "answer": "Attributes are variables used for storing values. Their definition must include their default, type, name, access, and description values as well as required parameters such as Name and Type for their purpose.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is the difference between a component event and an application event?",
+        "answer": "Component event is used for interaction between the parent and child. The change in the child component can be communicated to the parent component through the component event.\nApplication events are used to send modifications in the component to a wide audience. The components that have registered for this event will get an alert.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Where can we display lightning components?",
+        "answer": "You can display lightning components at the following:\nTool Description\nLightning Experience You can display lightning components by using the App Builder in Lightning Experience.\nSalesforce1 Mobile App You can display the lightning in the Salesforce1 Mobile App. You\u2019ll need to create a custom Lightning tab to reference the component. Then you can add the tab in the Mobile Navigation.\nStandalone Lightning App You can create a standalone Lightning app and include the lightning component in it.\nAdd Apps to the Lightning Experience App Launcher Lightning Components apps are available in the App Launcher.\nAdd Apps to Lightning Experience and Salesforce App Navigation Lightning Components tabs can be added to the apps. These will then be displayed in the app\u2019s navigation bar as items.\nLightning App Builder and Community Builder You can display the Lightning Components in template-based communities by using the Community Builder.\nCheck out our Salesforce Interview Questions guide.\n\nIntermediate Salesforce Lightning Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. Explain Namespace in the Salesforce Lightning components?",
+        "answer": "The Namespace is used to group components together and can be created through an organization. The Lightning components are a part of a namespace. C is the default namespace.\nIf the namespace is created for an organization, then that namespace can be used for the Lightning components.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. Where can the Lightning components be used?",
+        "answer": "Lightning components can be used in the following places:\nDragging and dropping them in the community builder and Lightning App Builder\nAdding it to the Lightning pages\nStarting it as a quick action\nCreating stand-alone applications",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Differentiate between component events and application events in the context of Salesforce Lightning.",
+        "answer": "Component events act as a means of communication between a parent and a child. A change in the child component can be communicated to the parent component using Component Events.\nApplication Events communicate changes in the component to a much bigger audience. All the components that have registered for the event get notified about the change.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. Differentiate between Salesforce Classic and Salesforce Lightning.",
+        "answer": "Salesforce Lightning provides an enhanced user interface.\nYou need to hire a Salesforce Developer to operate Salesforce Classic, while Salesforce Lightning is much easier to work with.\nWith Lightning, you don\u2019t need Visualforce for every task. \nSalesforce Lightning has more advanced security features than Salesforce Classic.\nLightning provides Einstein (Wave) Analytics Reporting to its users. A feature that is missing from Classic.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. What are Component events?",
+        "answer": "Components events are the events that child components dismiss, and parent components handle. Component events are used when a value from the child component needs to be sent to the parent component.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22 What are Application events?",
+        "answer": "The application events can be dismissed and handled by any component. It does not require any type of relationship among the components. These components should be a part of one application.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. What are the different phases in the application events propagation?",
+        "answer": "Capture Phase\nDefault Phase\nBubble Phase",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. What is Lightning App Builder?",
+        "answer": "The Lightning App Builder is a click-and-point tool used for creating Lightning pages for mobile applications and the Salesforce Lightning Experience. The Lightning pages are built through the Lightning components that are configurable, reusable, and compact. The Lightning App Builder can help build a home page, app page, and record page.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. What are bound and unbound expressions?",
+        "answer": "Unbound and bound expressions are used to perform data binding. When a child component is called from the parent component, the value can be sent from the attribute of a parent component to a child component attribute.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What are the different types of attributes that can be used for storing the values?",
+        "answer": "The following attributes are used for storing values:\nBoolean\nInteger\nString\nDatetime\nDate\nDecimal\nMap\nSet",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is the importance of the aura: method tag in the Salesforce Lightning?",
+        "answer": "The aura: method is used for defining the method within the API of the component. This allows a method to be directly called in the client-side controller of a component instead of handling or dismissing an event.\nThe <aura: method> can help simplify the code that the parent component requires to call a method on the child component.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. Explain force: record data.",
+        "answer": "The force: record data is a conventional controller of the Lightning component. Operations like deleting, creating, and editing a record can be accomplished through force: record data. It removes and recognizes the replicate request passing to the server if the same record data is requested.\nGo through our Salesforce Lightning Tutorial and prepare for your next interview.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. Explain Lightning: navigation.",
+        "answer": "Lightning: navigation is used to navigate to a page reference or create a URL from the given page reference. For navigating, the page reference object must be defined. Navigation is possible for the following supported features:\nLightning Component\nRecord Page\nObject Page\nNamed Page\nWeb Page\nKnowledge Article\nRecord Relationship Page\nNavigation Item Page",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. What is FlexiPage?",
+        "answer": "The metadata related to a Lightning page is portrayed by FlexiPage. The Lightning page portrays an adaptive screen that is made up of regions that include the Lightning components. The Lightning page includes 25 components.\nThe Flexi page is stored as an XML file, and deployed through a deployment tool or Salesforce metadata API. The Lightning pages are referred to as Flexipages in the API.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. What is Lightning Locker in Salesforce Lightning?",
+        "answer": "The Lightning Locker service is a robust and powerful security architecture for the Lightning components. It enhances security by isolating Lightning components that belong to one namespace from those in a different namespace. It promotes best practices thus, enhancing the supportability of the code by only allowing access to supported APIs and removing access from non-published framework internals.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. What is the importance of the implements in the Lightning component?",
+        "answer": "Implements are used for referring to the platform interfaces that allow usage of the components in various contexts or grant access to additional context data. A component can use multiple interfaces with the help of implements.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. What is the difference between ui:input and lightning:input?",
+        "answer": "<ui:input> does not contain Lightning Design System styling, while <Lightning:input> contains",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. What is the use of Lightning:recordEditForm?",
+        "answer": "In the Lightning:recordEditForm, the Lightning:inputField is used to create the editable fields. Using the Lightning: output field, the read-only information can be displayed.\nLightning:recordEditForm has the following features:\nIt displays the record edit layout to edit a particular record\nIt displays the record to create the layout to create a particular record\nGet your Salesforce Certification from Intellipaat. Enroll now!\n\nAdvanced Salesforce Lightning Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. What are an action provider and a value provider?",
+        "answer": "Action Provider enables management of actions, events, and handlers related to a component. Value Provider allows usage of component attribute\u2019s values in JavaScript controller and markup controller of the component.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. What are Lightning Web Components(LWC)?",
+        "answer": "Lightning Web Components make creating Lightning components easy. These traditional HTML elements developed using advanced JavaScript can easily fit together on an array of models that make up any Lightning page, with components being located as desired on its surface.\nDevelopment of LWC requires Salesforce Extensions for Visual Studio Code, and salesforce CLI is used for deploying it from the desired organization.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. What is Scratch org?",
+        "answer": "Scratch org is an expandable Salesforce org that is used for the purpose of testing and development. It is a source-driven and disposable deployment of Salesforce code and metadata.\nA scratch org is completely configurable, enabling developers to imitate different Salesforce editions that include different features and preferences. The scratch org configuration file can be shared with other team members to carry out development.\nAdditionally, packages can be installed and synthetic or dummy data can be deployed for testing. While its default duration is for seven days, the Scratch org can be created for 30 days after which it is deactivated.\nAlso, Check out our blog on Record Types in Salesforce!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. What is the use of the meta configuration file in the LWC?",
+        "answer": "The meta configuration file specifies the metadata values to the components. It will result in an error when changes are pushed if there is no configuration file for the component.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. What is the use of Javascript in the LWC?",
+        "answer": "Javascript establishes HTML properties behavior.\nIf a function, class, and variable defined in the module needs to be imported, the import statement has to be used\nJavascript files in the LWCs are the ES6 modules and everything declared in the module is local.\nlwc is the core module in Lightning Web Components. The import statement imports LightningElement from the lwc module.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "40. What is the purpose of the force:appHostable interface in the Salesforce Lightning component?",
+        "answer": "Within Salesforce mobile app or Lightning component, the force:appHostable interface may be utilized as a custom tab.\nExplore your options for a job with Salesforce by reviewing these top Salesforce Admin Interview Questions and Answers!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "41. What is the purpose of the Lightning: action override in the Salesforce Lightning Component?",
+        "answer": "The Lightning: action override allows a component to be implemented as an override for a standard action. It is possible to override the New, Tab, Edit, and View standard actions on most standard and custom components. It has no effect except when used within Lightning Experience, the Salesforce mobile app, and Experience Builder sites.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "42. What are the tools present in Salesforce Lightning?",
+        "answer": "Lightning schema builder: It is a UI tool that is used to create and view fields, objects, and relationships\nLightning Connect: This integration tool makes it simpler for the Force.com app to consume the data from the external source, which compiles to OData spec\nLightning Process Builder: It is a UI tool used for the visualization and creation of automated business processes\nLightning Component Framework: It comprises extensions and components that allow the building of recyclable components, personalization of the Salesforce1 mobile app,  and development of independent apps\nLightning App Builder: It is the latest UI tool that enables the quick building of Lightning apps through components given by the Salesforce platform developers\nCheck out our blog to learn about map class in salesforce!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "43. How do the capture phase and bubble phase propagate?",
+        "answer": "The capture phase propagates from top to bottom while the bubble phase propagates from bottom to top.",
+        "reference": "intellipaat.com"
+    }
+]

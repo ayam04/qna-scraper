@@ -1,0 +1,147 @@
+[
+    {
+        "question": "1. How important is System Design, and what does it entail?",
+        "answer": "System Design, the procedure for developing and integrating a multifaceted software system tailored to the wants of customers and organizations, is a critical endeavor. It entails determining system prerequisites, selecting suitable technologies and blueprints, and creating a system that is trustworthy, cost-efficient, and adaptable. The importance of system design lies in its ability to ensure an easily adjustable, dependable, and reasonably priced output, as well as a perfect match for clients\u2019 and organizations\u2019 requirements.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What fundamental System Design principles are there?",
+        "answer": "Templates for system design are common in Software\u00ad Engineering. These templates typically include\u00ad the following components:\nModel-View-Controller (MVC)\nPublisher-Subscriber\nPipes and Filters\nLayered Architecture\nMicroservices Architecture",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What distinguishes a Microservices design from a Monolithic architecture?",
+        "answer": "A one-size-fits-all strategy is easier to design and implement, wherein the entire program is created as one standalone unit using a Monolithic design. However, a Microservices architecture offers more flexibility, agility, and maintainability as it breaks the application into autonomous services that interact via APIs.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What distinguishes a RESTful API from a SOAP API?",
+        "answer": "Resources that are identifiable by URLs can be accessed and modified using HTTP methods such as GET, POST, PUT, and DELETE when utilizing an architectural design called RESTful API (Representational State Transfer). On the other hand, the SOAP API (Simple Object Access Protocol) uses XML-based messaging to access and modify resources. In contrast to SOAP APIs, RESTful APIs are faster, lighter, and easier to implement.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What does load balancing entail, and why is it crucial for system design?",
+        "answer": "In order to maximize the overall system\u2019s performance and reliability, load balancing introduces stalwart measures to minimize server overloading. By segregating the workload among a multitude of servers, scalability and flexibility are optimized while ensuring no single device is overwhelmed with an excessive number of tasks. Consequently, load balancing enables systems to become more robust against increased stress and accommodate increases in user traffic.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What common methods of Database replication are there?",
+        "answer": "The process of transferring data from one data store to another for backup, disaster recovery, or scaling purposes is known as database replication. Here are a few methods typically employed for database replication:\nMaster-Slave Replication: One data store server serves as the master, where all changes are made. The slave servers then display the modifications. \nMaster-Master Replication: Changes are made on any of the servers, and multiple servers act as both master and slave. The remaining servers are then updated with the updates.\nMulti-Master Replication: This type of replication uses a lot of servers that can act as both masters and slaves, with each server having the ability to create changes that are reflected on other servers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What standard caching techniques are used in System Design?",
+        "answer": "In order to increase functionality, caching is the practice of saving frequently accessed material in a cache. Some of the systems frequently utilized in system design for caching are listed below:\nIn-Memory Caching: Information is kept in memory for quick access to frequently used information.\nDistributed Caching: Scalability and fault tolerance are provided by holding data in a shared cache across numerous servers. \nContent Delivery Networks (CDNs): CDNs store frequently accessed data on servers dispersed throughout the world, providing clients based in various locations with instant access to data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. How do horizontal and vertical scaling differ from one another?",
+        "answer": "To handle increased traffic and demand, a system can be horizontally scaled by adding extra servers. Usually, systems with high traffic and loads adopt this system. To handle increased traffic and demand, however, vertical scaling entails adding more resources, like CPUs and memory, to one server. This technology is typically utilized for applications where high performance and low latency are required.\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. How do Synchronous and Asynchronous communication differ from one another?",
+        "answer": "Synchronous communication involves sending and receiving messages immediately, requiring the sender to patiently wait for a response before proceeding. On the other hand, Asynchronous communication refers to an exchange where senders transmit messages without expecting a prompt reply. When real-time synchronization is dispensable, the latter approach is commonly used.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What distinguishes a Stateful system from a Stateless system?",
+        "answer": "Each request in a stateful system depends on earlier requests, whereas requests in a stateless system are independent of one another. Stateless systems are typically simpler to develop and scale, while stateful systems can be more complicated and demand more management.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What distinguishes a caching server from a CDN?",
+        "answer": "While a CDN stores frequently visited material on numerous servers across the world, a caching server keeps that data in memory to improve performance. While a cache server is used to improve performance for all users, a CDN is primarily used to serve static content, such as images and videos, to faraway users.\n\nIntermediate System Design Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Why is Sharding used in database design, and what does it entail?",
+        "answer": "In order to increase scalability and performance, a database may be \u201csharded,\u201d or divided into a number of smaller databases. In database design, it is used to spread out the data across several servers, speed up queries, and improve fault tolerance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What is a message queue, and why do System designers employ them?",
+        "answer": "A mechanism called a message queue enables two or more programs to exchange messages. Decoupling application components helps systems be more scalable, maintainable, and reliable. Applications can interact asynchronously using message queues, which means that the sender need not wait for the recipient to respond before continuing.\nDo checkout our blog on top features of linux operating system to gain in-depth knowledge about it!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What exactly is a distributed system, and what are some typical difficulties encountered when creating them?",
+        "answer": "A distributed system is a system made up of numerous connected parts that often run on various servers or nodes. Security, fault tolerance, and distributed coordination are issues with distributed systems.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is the purpose of a Content Delivery Network (CDN) in system design?",
+        "answer": "A Content Delivery Network (CDN) is a system used to boost performance for remote users that stores frequently accessed data on servers dispersed throughout the world. In order to increase speed and decrease latency for users in various locations, CDNs are employed in system architecture.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Why is a distributed database utilized in system design, and what is it?",
+        "answer": "A database that is spread across several servers or nodes is referred to as a distributed database. Databases are scaled, performance is enhanced, and fault tolerance and disaster recovery capabilities are increased.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What is DevOps, and how does system design relate to it?",
+        "answer": "To improve software delivery and operations, a set of practices called DevOps brings together development and IT operations. Teams can increase their capacity for software system deployment and maintenance by including DevOps practices into their system architecture.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How does the concept of a container relate to system design?",
+        "answer": "Code, libraries, and dependencies are all contained in a small, standalone executable package known as a container. Application deployment and administration across many settings and platforms are made simpler by the use of containers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Why is Serverless architecture employed in system design, and what does it mean?",
+        "answer": "A serverless architecture is one in which the serverless platform of a cloud provider, such as AWS Lambda or Azure Functions, is used to operate the application logic. Serverless architectures concentrate on creating and deploying code while reducing the complexity of the infrastructure.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What distinguishes a container from a virtual machine?",
+        "answer": "A container is a small, independent executable package that simply contains the application and its dependencies, as opposed to a virtual machine (VM), which is a software simulation of a physical computer with its own operating system, programs, and hardware resources. While containers offer more agility and scalability, virtual machines offer higher isolation and security.\n\nAdvanced System Design Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. What distinguishes an asynchronous system from a synchronous system, and when would you use each?",
+        "answer": "Synchronous systems refer to those where the sender requires the recipient\u2019s response as a prerequisite for the next operation, meaning that they pause at each step until they\u2019ve heard back. Asynchronous systems, on the other hand, do not rely on immediate responses \u2014 they allow the sender to progress to the next step without waiting for a reply. Asynchronous systems are better suited for situations where response time is not of great importance, such as batch processing, while synchronous systems are more apt for real-time systems with strict time frames.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What is the CAP theorem, and how does it apply to the design of systems?",
+        "answer": "The CAP theorem, an essential principle of distributed computing, states that a distributed system is unable to provide all three of the guarantees of consistency, availability, and partition tolerance simultaneously. To ensure a system is designed to meet application needs, it is essential for system architects to understand the trade-offs between these assurances. By utilizing perplexity and burstiness, architects can be presented with a clearer understanding of the trade-off between the three guarantees and can construct a system that is optimized for their specific requirements.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. What is a distributed file system, and why is it critical to the architecture of a system?",
+        "answer": "A distributed file system is a type of file system that enables files to be accessed by various clients and stored on several servers. The ability to scale and store vast volumes of data in fault-tolerant distributed file systems makes them crucial for system design. By enabling data to be accessed from numerous servers at once, they can enhance system performance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. What distinguishes a shared-everything architecture from a shared-nothing architecture?",
+        "answer": "Each node in the system has its own resources and runs independently of the other nodes in a shared-nothing design. All nodes in a shared-everything architecture pool their resources, including memory and storage, into a single pool. Shared-everything designs are generally employed in parallel processing systems, but shared-nothing architectures are more frequently used in distributed systems.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. What are some standard database indexing methods, and how do they affect the efficiency of the system?",
+        "answer": "B-tree indexing, hash indexing, and bitmap indexing are examples of common database indexing methods. Range searches are indexed using a B-tree, equality queries are indexed using a hash, and low-cardinality attributes are indexed using a bitmap. By minimizing the number of disc accesses necessary to retrieve data, indexing can dramatically boost system performance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. How does a Service-Oriented Architecture (SOA) differ from other software architectures, and what does it mean?",
+        "answer": "Service-Oriented Architecture (SOA) is characterized by its ability to create flexible and scalable software components. Through a loose connection between its parts, SOA can withstand more than typical monolithic or microservice architectures. It grants developers a new level of power and control, allowing them to create unique applications in a more efficient manner. At its heart, SOA allows the exchange of data in the form of independent services, giving users the advantage of modifying the arrangement of data as needed. With more efficient and speedy systems in place, SOA stands out as the architecture with higher complexity. Additionally, its burstiness expands the level of control and understanding developers have in creating stand-alone services that can be implemented and accessed by other system components. SOA is a capable and reliable software architecture that gives developers a unique tool to build remarkable applications.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What distinguishes a Push-based message queue system from a pull-based message queue system?",
+        "answer": "In a Push-based message queue system, messages are sent to the recipient by the sender, making it ideal for real-time production systems. Meanwhile, pull-based message queue systems can be used in batch processing scenarios where the recipient actively retrieves messages from the sender. This allows for variations in the complexity and length of sentences, creating a dynamic system of communication.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. What is a Circuit breaker, and how does it help improve system reliability?",
+        "answer": "A Circuit breaker is a pattern that aims to improve system reliability by monitoring the health of a service. When a failure is detected, the breaker trips, preventing any further requests from being sent to the failed system. This technique helps avoid cascading breakdowns and enables graceful degradation in the face of failures. In addition, the usage of perplexity and burstiness in the text allows for a higher level of complexity while also creating variation in sentences, ensuring an optimal amount of complexity and range in the article.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. How do Monorepos and Polyrepos differ from one another, and when would you use each?",
+        "answer": "A polyrepo is an amalgamation of contrasting repositories, accommodating the source code for separate projects- distinct from a monorepo, which comprises a sole repository for all projects. In comparison to larger organizations with interdependent projects leaning towards a monorepo, smaller firms or free-standing projects prefer a polyrepo. The code within every repository in the polyrepo holds its own complexities. However, the high degree of perplexity and burstiness increases the sophistication of the overall collection. Thus, the polyrepo is a compilation of the various and intricate project-specific repositories.",
+        "reference": "intellipaat.com"
+    }
+]

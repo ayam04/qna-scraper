@@ -143,6 +143,7 @@ def get_itp_roles():
         elements = driver.find_elements(By.CSS_SELECTOR, ".category-question-list a")
         for element in elements:
             links.append(element.get_attribute('href'))
+        # print(len(links))
     except Exception as e:
         print(e)
         driver.quit()
@@ -154,8 +155,43 @@ def get_itp_roles():
     driver.quit()
 
 def extract_itp_roles(link):
-    pass
+    filename = link.replace("https://intellipaat.com/blog/interview-question/", "").replace("-interview-questions/", "")
+    try:
+        driver.get(link)
+
+        h3_elements = driver.find_elements(By.TAG_NAME, 'h3')
+
+        extracted_data = []
+        for h3 in h3_elements:
+            question = h3.text
+            answer = []
+            sibling = h3.find_element(By.XPATH, 'following-sibling::*[1]')
+            try:
+                while sibling.tag_name != 'h3':
+                    answer.append(sibling.text)
+                    sibling = sibling.find_element(By.XPATH, 'following-sibling::*[1]')
+                answer_text = "\n".join(answer).replace("Ans:", "").strip()
+                # print(question, answer_text)
+            except Exception as e:
+                break
+            
+            extracted_data.append({
+                "question": question.strip(),
+                "answer": answer_text,
+                "reference": "intellipaat.com"
+            })
+        print(extracted_data)
+        try:
+            os.makedirs("Outputs/Intellipaat", exist_ok=True)
+            with open(f"Outputs/Intellipaat/{filename}.json", "x", encoding="utf-8") as f:
+                json.dump(extracted_data, f, indent=4)
+        except FileExistsError:
+            with open(f"Outputs/Intellipaat/{filename}.json", "w", encoding="utf-8") as f:
+                json.dump(extracted_data, f, indent=4)
+    except Exception as e:
+        print(e)
 
 # get_ib_roles()
-get_jtp_roles()
+# get_jtp_roles()
 get_itp_roles()
+# extract_itp_roles("https://intellipaat.com/blog/interview-question/rest-api-interview-questions/")

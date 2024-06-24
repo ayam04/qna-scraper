@@ -1,0 +1,97 @@
+[
+    {
+        "question": "Watch Video on Data Structure Interview Questions and Answers:",
+        "answer": "Basic C Programming Interview Questions for Freshers",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "1. What are different techniques for making hash function?",
+        "answer": "Techniques for making hash function.\nTruncation Method\nThis is the simplest method for computing address from a key.In this method we take only a part of the key as address.\nMidsquare Method\nIn this method the key is squared and some digits from the middle of this square are taken as address.\nFolding Method\nIn this technique, the key is divided into different part where the length of each part is same as that of the required address, except possibly the last part.\nDivision Method (Modulo-Division)\nIn Modulo-Division method the key is divided by the table size and the remainder is taken as the address of the hash table.\nLet the table size is n then\nH (k) =k mod n",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What are the issues that hamper the efficiency in sorting a file?",
+        "answer": "The issues are:\n Length of time required by the programmer in coding a particular sorting program.\n Amount of machine time necessary for running the particular program.\n The amount of space necessary for the particular program.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What is the use of volatile keyword?",
+        "answer": "The modifier \u2018volatile\u2019 tells the compiler that a variable\u2019s value may be changed in ways not explicitly specified by the program. For example, a global variable\u2019s address may be passed to the operating system\u2019s clock routine and used to hold the system time.\nIn this situation, the contents of the variable are altered without any explicit assignment statements in the program.\nThis is important because most C compilers automatically optimize certain expressions by assuming that a variable\u2019s content is unchanging if it does not occur on the left side of an assignment statement. Thus, it may not be reexamined each time it is referenced. Also, some compilers change the order of evaluation of an expression during the compilation process. The volatile modifier prevents these changes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Write a C program without using semicolon to print \u2018Hello world\u2019",
+        "answer": "void main(){\n    if(printf(\"Hello world\")){\n    }\n}\nGo through this C Programming tutorial, to check more programmes in C.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What are differences between sizeof operator and strlen function?",
+        "answer": "sizeof is keyword of C that can find size of a String constant including null character, but strlen is function which has been defined string.h and can find number of characters in a string excluding null character.\n#include\nvoid main(){\n    int a,b;\n    a=strlen(\"cquestionbank\");\n    b=sizeof(\"cquestionbank\");\n    printf(\"%d  %d\",a,b);\n    getch();\n}\nRead C programming tutorial to learn about various operators in C.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is the difference between",
+        "answer": "sprintf(\u2026) writes data to the character array. The C library function sprintf () is used to store formatted data as a string. You can also say the sprintf () function is used to create strings as output using formatted data. The syntax of the sprintf () function is as follows:\nint sprintf (char *string, const char *form, \u2026 );\nHere, the *string will stand for the name of the array that will store the output obtained by working on the formatted data. The *form parameter will show the format of the output.\nprintf(\u2026) writes data to the standard output device. The printf function is just a useful function from the standard library of functions that are accessible by C programs.\nThe behavior of printf is defined in the ANSI standard. If the compiler that you\u2019re using conforms to this standard then all the features and properties should be available to you.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. When does the compiler not implicitly generate the address of the first element of an array?",
+        "answer": "The compiler does not implicitly generate the address of the first element of an array whenever an array name appears:\n\u2013 as an operand of the sizeof operator\n\u2013 as an operand of & operator\n\u2013 as a string literal initialize for a character array\nLearn about the different storage classes in C and how they affect the lifetime and scope of variables!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. Is using exit() the same as using return?",
+        "answer": "No, the exit() function is used to exit your program and return() controls the operating system.\nThe return statement is used to return from a function and return control to the calling function. If you make a return from the main() function, you are essentially returning control(operating system) to the calling function. In this case, the return statement and exit() function are similar.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What is an lvalue?",
+        "answer": "An lvalue is an expression to which a value can be assigned. The lvalue expression is located on the left side of an assignment statement whereas an rvalue is located on the right side of an assignment statement.\nEach assignment statement must have an lvalue and an rvalue. The lvalue expression must refer a storable variable in memory. It cannot be a constant.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "Watch this C Programming and Data Structure by Intellipaat:",
+        "answer": "",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What is the difference between goto, longjmp() and setjmp()?",
+        "answer": "A goto statement implements a local jump of program execution whereas the longjmp() and setjmp() functions implement a nonlocal or far jump of the program execution.\nGenerally, a jump in any execution should be avoided because it is not considered good programming practice to use such statements as goto and longjmp in your program.\n A goto statement simply bypasses code in your program and jumps to a predefined position. To use the goto statement, you give it a labeled position to jump to. This predefined position must be within the same function. You cannot implement goto between functions.\nHowever, when your program calls setjmp(), the current state of your program is saved in a structure of type jmp_buf. Later, your program can call the longjmp() function to restore the program\u2019s state as it was when you called setjmp().Unlike the goto statement, the longjmp() and setjmp() functions do not need to be implemented in the same function.\nThere is a major drawback of using these functions: your program, when restored to its previously saved state, it will lose its references to any dynamically allocated memory between the longjmp() and the setjmp(). This means you will waste memory for every malloc() or calloc() you have implemented between your longjmp() and setjmp(), and your program will be inefficient.\nIt is highly recommended that you avoid using functions such as longjmp() and setjmp() because they, like the goto statement, are quite often an indication of poor programming practice.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What is XOR linked list?",
+        "answer": "XOR linked list is a Memory Efficient Doubly Linked List. An ordinary Doubly Linked List requires space for two address fields to store the addresses of previous and next nodes. A memory efficient version of Doubly Linked List can be created using only one space for address field with every node. This memory efficient Doubly Linked List is called XOR Linked List or Memory Efficient as the list uses bitwise XOR operation to save space for one address.\nIn the XOR linked list, instead of storing actual memory addresses, each node stores the XOR of addresses of previous and next nodes.\nXOR List Representation:\nLet us call the address variable in XOR representation npx (XOR of next and previous)\nNode A:\nnpx = 0 XOR add(B) // bitwise XOR of zero and address of B\nNode B:\nnpx = add(A) XOR add(C) // bitwise XOR of address of A and address of C\nNode C:\nnpx = add(B) XOR add(D) // bitwise XOR of address of B and address of D\nNode D:\nnpx = add(C) XOR 0 // bitwise XOR of address of C and 0",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. What is \u2018trie\u2019 in data structure?",
+        "answer": "Trie is efficient information retrieval data structure. Using trie, search complexities can be brought to optimal limit (key length). If we store keys in binary search tree, a well balanced BST will need time proportional to M * log N, where M is maximum string length and N is number of keys in tree.\nUsing trie, we can search the key in O(M) time. However, the penalty is on trie storage requirements.\nEach node of trie consists of multiple branches. Each branch represents a possible character of keys.\nWe need to mark the last node of every key as leaf node.\nA trie node field value will be used to distinguish the node as leaf node (there are other uses of the value field).\nA simple structure to represent nodes of English alphabet can be as follows:\nstruct trie_node\n{\n      int value; /* Used to mark leaf nodes */\n      trie_node_t *children[ALPHABET_SIZE];\n};\nBecome Master of C & Data Structure by going through this C programming online course.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What do you understand by splay tree?",
+        "answer": "Splay tree is a self-balancing Binary Search Tree (BST). The main idea of splay tree is to bring the recently accessed item to root of the tree. This makes the recently searched item to be accessible in O (1) time if accessed again. The idea is to use locality of reference (In a typical application: 80% of the access are to 20% of the items).\nImagine a situation, where we have millions or billions of keys and only few of them are accessed frequently, which is very likely in many practical applications.\nAll splay tree operations run in O(log n) time on average, where n is the number of entries in the tree. Any single operation can take Theta(n) time in the worst case.\nLearn about the different data types in C and how to use them!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What is Treap?",
+        "answer": "Treap is a Balanced Binary Search Tree, but not guaranteed to have height as O(Log n). The idea is to use Randomization and Binary Heap property to maintain balance with high probability. The expected time complexity of search, insert and delete is O(Log n).\nEach node of Treap maintains two values.\n Key follows standard BST ordering (left is smaller and right is greater)\n Priority Randomly assigned value that follows Max-Heap property.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. How to implement LRU caching scheme? What data structures should be used?",
+        "answer": "We are given total possible page numbers that can be referred. We are also given cache (or memory) size (Number of page frames that cache can hold at a time). The LRU caching scheme is to remove the least recently used frame when the cache is full and a new page is referenced which is not there in cache.\nWe use two data structures to implement an LRU Cache.\n A Queue: which is implemented using a doubly linked list. The maximum size of the queue will be equal to the total number of frames available (cache size).\nThe most recently used pages will be near front end and least recently pages will be near rear end.\n A Hash: with page number as key and address of the corresponding queue node as value. When a page is referenced, the required page may be in the memory. If it is in the memory, we need to detach the node of the list and bring it to the front of the queue.\nIf the required page is not in the memory, we bring that in memory. In simple words, we add a new node to the front of the queue and update the corresponding node address in the hash. If the queue is full, i.e. all the frames are full, we remove a node from the rear of queue, and add the new node to the front of queue.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Suppose, there are two linked lists: L1 and L2 (of same lengths) that intersect at a particular node N1, which is a common endpoint to all other nodes. What are the possibilities to find N1?",
+        "answer": "Linear solution is possible. Have two pointers say P1 pointing to the first node of L1 and P2 to that of L2. Traverse through both the lists. If P1 reaches L1\u2019s last node, point it to the first node of L2 and continue traversing.\nDo the same thing for P2 when it reaches L2\u2019s last node. (By doing this, we are balancing the difference in the length between the linked lists. The shorter one will get over soon and by redirecting to longer list\u2019s head, it will traverse the extra nodes also). Finally, they will meet at the Intersection node.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. Given two keys K1 & K2, write an algorithm to print all the elements between them with K1<=K2 in a BST.",
+        "answer": "Linear solution is possible without using any extra space.\n Perform an inorder traversal.\n Once you find K1, print it and continue traversal now.\n Print all other traversed elements until you reach K2.",
+        "reference": "intellipaat.com"
+    }
+]

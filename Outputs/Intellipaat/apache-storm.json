@@ -1,0 +1,147 @@
+[
+    {
+        "question": "1. Compare Spark & Storm",
+        "answer": "Let\u2019s compare spark and storm based on different parameters.\n \nCriteria Spark Storm\nData operation Data at rest Data in motion\nParallel computation Task parallel Data parallel\nLatency Few seconds Sub-second\nDeploying the application Using Scala, Java, Python language Using Java API",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Which components are used for stream flow of data?",
+        "answer": "For streaming of data flow, three components are used\nBolt:- Bolts represent the processing logic unit in Storm. One can utilize bolts to do any kind of processing such as filtering, aggregating, joining, interacting with data stores, talking to external systems, etc. Bolts can also emit tuples (data messages) for the subsequent bolts to process. Additionally, bolts are responsible to acknowledge the processing of tuples after they are done processing.\nSpout:- Spouts represent the source of data in Storm. You can write spouts to read data from data sources such as databases, distributed file systems, messaging frameworks, etc. Spouts can broadly be classified into the following \u2013\nReliable \u2013 These spouts have the capability to replay the tuples (a unit of data in the data stream). This helps applications achieve \u2018at least once message processing\u2019 semantic as in case of failures, tuples can be replayed and processed again. Spouts for fetching the data from messaging frameworks are generally reliable as these frameworks provide the mechanism to replay the messages.\nUnreliable \u2013 These spouts don\u2019t have the capability to replay the tuples. Once a tuple is emitted, it cannot be replayed irrespective of whether it was processed successfully or not. This type of spouts follows at most once message processing\u2019 semantic.\nTuple:- The tuple is the main data structure in Storm. A tuple is a named list of values, where each value can be any type. Tuples are dynamically typed \u2014 the types of the fields do not need to be declared. Tuples have helper methods like getInteger and getString to get field values without having to cast the result. Storm needs to know how to serialize all the values in a tuple. By default, Storm knows how to serialize the primitive types, strings, and byte arrays. If you want to use another type, you\u2019ll need to implement and register a serializer for that type.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What are the key benefits of using Storm for Real Time Processing?",
+        "answer": "Easy to operate: Operating a storm is quite easy.\nReal fast: It can process 100 messages per second per node.\nFault-Tolerant: It detects the fault automatically and re-starts the functional attributes.\nReliable: It guarantees that each unit of data will be executed at least once or exactly once.\nScalable: It runs across a cluster of machine\n\nCheck out this video on Apache Storm Tutorial",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Does Apache act as a Proxy server?",
+        "answer": "Yes, It acts as a proxy also by using the mod_proxy module. This module implements a proxy, gateway, or cache for Apache. It implements proxying capability for AJP13 (Apache JServ Protocol version 1.3), FTP, CONNECT (for SSL),HTTP/0.9, HTTP/1.0, and (since Apache 1.3.23) HTTP/1.1. The module can be configured to connect to other proxy modules for these and other protocols.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What is the use of Zookeeper in Storm?",
+        "answer": "Storm uses Zookeeper for coordinating the cluster. Zookeeper is not used for message passing, so the load that Storm places on Zookeeper is quite low. Single node Zookeeper clusters should be sufficient for most cases, but if you want failover or are deploying large Storm clusters you may want larger Zookeeper clusters. Instructions for deploying Zookeeper are here. A few notes about Zookeeper deployment :\nIt\u2019s critical that you run Zookeeper under supervision since Zookeeper is fail-fast and will exit the process if it encounters any error case. See here for more details.\nIt\u2019s critical that you set up a cron to compact Zookeeper\u2019s data and transaction logs. The Zookeeper daemon does not do this on its own, and if you don\u2019t set up a cron, Zookeeper will quickly run out of disk space.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is ZeroMQ?",
+        "answer": "ZeroMQ is \u201ca library which extends the standard socket interfaces with features traditionally provided by specialized messaging middleware products\u201d. Storm relies on ZeroMQ primarily for task-to-task communication in running Storm topologies.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. How many distinct layers are of Storm\u2019s Codebase?",
+        "answer": "There are three distinct layers to Storm\u2019s codebase.\nFirst: Storm was designed from the very beginning to be compatible with multiple languages. Nimbus is a Thrift service and topologies are defined as Thrift structures. The usage of Thrift allows Storm to be used from any language.\nSecond: all of Storm\u2019s interfaces are specified as Java interfaces. So even though there\u2019s a lot of Clojure in Storm\u2019s implementation, all usage must go through the Java API. This means that every feature of Storm is always available via Java.\nThird: Storm\u2019s implementation is largely in Clojure. Line-wise, Storm is about half Java code, half Clojure code. But Clojure is much more expressive, so in reality, the great majority of the implementation logic is in Clojure.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What does it mean for a message to be",
+        "answer": "A tuple coming off a spout can trigger thousands of tuples to be created based on it. Consider, for example,\nthe streaming word count topology:TopologyBuilder builder = new TopologyBuilder();\nbuilder.setSpout(\"sentences\", new KestrelSpout(\"kestrel.backtype.com\",\n22133,\n\"sentence_queue\",\nnew StringScheme()));\nbuilder.setBolt(\"split\", new SplitSentence(), 10)\n.shuffleGrouping(\"sentences\");\nbuilder.setBolt(\"count\", new WordCount(), 20)\n.fieldsGrouping(\"split\", new Fields(\"word\"));\nThis topology reads sentences off a Kestrel queue, splits the sentences into their constituent words, and then emits for each word the number of times it has seen that word before. A tuple coming off the spout triggers many tuples being created based on it: a tuple for each word in the sentence and a tuple for the updated count for each word.\nStorm considers a tuple coming off a spout \u201cfully processed\u201d when the tuple tree has been exhausted and every message in the tree has been processed. A tuple is considered failed when its tree of messages fails to be fully processed within a specified timeout. This timeout can be configured on a topology-specific basis using the Config.TOPOLOGY_MESSAGE_TIMEOUT_SECS configuration and defaults to 30 seconds.\nLearn more about Apache Storm Tutorial in this insightful blog now!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. When do you call the cleanup method?",
+        "answer": "The cleanup method is called when a Bolt is being shut down and should clean up any resources that were opened. There\u2019s no guarantee that this method will be called on the cluster: For instance, if the machine the task is running on blows up, there\u2019s no way to invoke the method.\nThe cleanup method is intended when you run topologies in local mode (where a Storm cluster is simulated in the process), and you want to be able to run and kill many topologies without suffering any resource leaks.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. How can we kill a topology?",
+        "answer": "To kill a topology, simply run:\nstorm kill {stormname}\nGive the same name to storm kill as you used when submitting the topology.\nThe storm won\u2019t kill the topology immediately. Instead, it deactivates all the spouts so that they don\u2019t emit any more tuples, and then Storm waits for Config.TOPOLOGY_MESSAGE_TIMEOUT_SECS seconds before destroying all the workers. This gives the topology enough time to complete any tuples it was processing when it got killed.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What is combinerAggregator?",
+        "answer": "A CombinerAggregator is used to combine a set of tuples into a single field. It has the following signature:\npublic interface CombinerAggregator {\nT init (TridentTuple tuple);\nT combine(T val1, T val2);\nT zero();\n}\nStorm calls the init() method with each tuple, and then repeatedly calls the combine()method until the partition is processed. The values passed into the combine() method are partial aggregations, the result of combining the values returned by calls to init().",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. What are the common configurations in Apache Storm?",
+        "answer": "There are a variety of configurations you can set per topology. A list of all the configurations you can set can be found here. The ones prefixed with \u201cTOPOLOGY\u201d can be overridden on a topology-specific basis (the other ones are cluster configurations and cannot be overridden). Here are some common ones that are set for a topology:\nConfig.TOPOLOGY_WORKERS: This sets the number of worker processes to use to execute the topology. For example, if you set this to 25, there will be 25 Java processes across the cluster executing all the tasks. If you had a combined 150 parallelism across all components in the topology, each worker process will have 6 tasks running within it as threads.\nConfig.TOPOLOGY_ACKER_EXECUTORS: This sets the number of executors that will track tuple trees and detect when a spout tuple has been fully processed By not setting this variable or setting it as null, Storm will set the number of acker executors to be equal to the number of workers configured for this topology. If this variable is set to 0, then Storm will immediately ack tuples as soon as they come off the spout, effectively disabling reliability.\nConfig.TOPOLOGY_MAX_SPOUT_PENDING: This sets the maximum number of spout tuples that can be pending on a single spout task at once (pending means the tuple has not been acked or failed yet). It is highly recommended you set this config to prevent queue explosion.\nConfig.TOPOLOGY_MESSAGE_TIMEOUT_SECS : This is the maximum amount of time a spout tuple has to be fully completed before it is considered failed. This value defaults to 30 seconds, which is sufficient for most topologies.\nConfig.TOPOLOGY_SERIALIZATIONS: You can register more serializers to Storm using this config so that you can use custom types within tuples.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. Is it necessary to kill the topology while updating the running topology?",
+        "answer": "Yes, to update a running topology, the only option currently is to kill the current topology and resubmit a new one. A planned feature is to implement a Storm swap command that swaps a running topology with a new one, ensuring minimal downtime and no chance of both topologies processing tuples at the same time.\nInterested in learning Apache Storm? Click here to learn more in this Apache Storm Training!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. How Storm UI can be used in topology?",
+        "answer": "Storm UI is used in monitoring the topology. The Storm UI provides information about errors happening in tasks and fine-grained stats on the throughput and latency performance of each component of each running topology.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. Why does not Apache include SSL?",
+        "answer": "SSL (Secure Socket Layer) data transport requires encryption, and many governments have restrictions upon the import, export, and use of encryption technology. If Apache included SSL in the base package, its distribution would involve all sorts of legal and bureaucratic issues, and it would no longer be freely available. Also, some of the technology required to talk to current clients using SSL is patented by RSA Data Security, which restricts its use without a license.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Does Apache include any sort of database integration?",
+        "answer": "Apache is a Web (HTTP) server, not an application server. The base package does not include any such functionality. PHP project and the mod_perl project allow you to work with databases from within the Apache environment.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. While installing, why does Apache have three config files \u2013 srm.conf, access.conf and httpd.conf?",
+        "answer": "The first two are remnants from the NCSA times, and generally, you should be fine if you delete the first two, and stick with httpd.conf.\nsrm.conf :- This is the default file for the ResourceConfig directive in httpd.conf. It is processed after httpd.conf but before access.conf.\naccess.conf :- This is the default file for the AccessConfig directive in httpd.conf.It is processed after httpd.conf and srm.conf.\nhttpd.conf :-The httpd.conf file is well-commented and mostly self-explanatory.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How to check for the httpd.conf consistency and any errors in it?",
+        "answer": "We can check syntax for httpd configuration file by using\nfollowing command.\nhttpd \u2013S\nThis command will dump out a description of how Apache parsed the configuration file. Careful examination of the IP addresses and server names may help uncover configuration mistakes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Explain when to use field grouping in Storm? Is there any time-out or limit to known field values?",
+        "answer": "Field grouping in storm uses a mod hash function to decide which task to send a tuple, ensuring which task will be processed in the correct order. For that, you don\u2019t require any cache. So, there is no time-out or limit to known field values.\nThe stream is partitioned by the fields specified in the grouping. For example, if the stream is grouped by the \u201cuser-id\u201d field, tuples with the same \u201cuser-id\u201d will always go to the same task, but tuples with different \u201cuser-id\u201d\u2018s may go to different tasks.\nThese are described in detail on Big data Hadoop and Spark Community.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What is mod_vhost_alias?",
+        "answer": "This module creates dynamically configured virtual hosts, by allowing the IP address and/or the Host: header of the HTTP request to be used as part of the pathname to determine what files to serve. This allows for easy use of a huge number of virtual hosts with similar configurations.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Tell me Is running apache as a root is a security risk?",
+        "answer": "No. the Root process opens port 80, but never listens to it, so no user will actually enter the site with root rights. If you kill the root process, you will see the other roots disappear as well.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What is Multiviews?",
+        "answer": "MultiViews search is enabled by the MultiViews Options. It is the general name given to the Apache server\u2019s ability to provide language-specific document variants in response to a request. This is documented quite thoroughly in the content negotiation description page. In addition, Apache Week carried an article on this subject entitled It then chooses the best match to the client\u2019s requirements, and returns that document.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. Does Apache include a search engine?",
+        "answer": "Yes, Apache contains a Search engine. You can search a report name in Apache by using the \u201cSearch title\u201d.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. Explain how you can streamline log files using Apache storm?",
+        "answer": "To read from the log files, you can configure your spout and emit per line as it read the log. The output then can be assigned to a bolt for analysis.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. Mention how storm application can be beneficial in financial services?",
+        "answer": "In financial services, Storm can be helpful in preventing\nSecurities fraud :\nPerform real-time anomaly detection on known patterns of activities and use learned patterns from prior modeling and simulations.\nCorrelate transaction data with other streams (chat, email, etc.) in a cost-effective parallel processing environment.\nReduce query time from hours to minutes on large volumes of data.\nBuild a single platform for operational applications and analytics that reduces the total cost of ownership (TCO)\nOrder routing: Order routing is the process by which an order goes from the end-user to an exchange. An order may go directly to the exchange from the customer, or it may go first to a broker who then routes the order to the exchange.\nPricing: Pricing is the process whereby a business sets the price at which it will sell its products and services, and maybe part of the business\u2019s marketing plan.\nCompliance Violations: compliance means conforming to a rule, such as a specification, policy, standard, or law. Regulatory compliance describes the goal that organizations aspire to achieve in their efforts to ensure that they are aware of and take steps to comply with relevant laws and regulations. And any disturbance regarding compliance is a violation of compliance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. Can we use Active server pages(ASP) with Apache?",
+        "answer": "Apache Web Server package does not include ASP support.\nHowever, a number of projects provide ASP or ASP-like functionality for Apache. Some of these are:\nApache: ASP:- Apache ASP provides Active Server Pages port to the Apache Web Server with Perl scripting only, and enables developing of dynamic web applications with session management and embedded Perl code. There are also many powerful extensions, including XML taglibs, XSLT rendering, and new events not originally part of the ASP AP.\nmod_mono :- It is an Apache 2.0/2.2/2.4.3 module that provides ASP.NET support for the web\u2019s favorite server, Apache. It is hosted inside Apache. Depending on your configuration, the Apache box could be one or a dozen of separate processes, all of these processes will send their ASP.NET requests to the mod-mono-server process. The mod-mono-server process in turn can host multiple independent applications. It does this by using Application Domains to isolate the applications from each other, while using a single Mono virtual machine.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. Explain what is Toplogy_Message_Timeout_secs in Apache storm?",
+        "answer": "It is the maximum amount of time allotted to the topology to fully process a message released by a spout. If the message is not acknowledged in a given time frame, Apache Storm will fail the message on the spout.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. Mention the difference between Apache Kafka and Apache Storm?",
+        "answer": "Apache Kafka: Apache Kafka is a distributed and robust messaging system that can handle a huge amount of data and allows the passage of messages from one end-point to another. Kafka is designed to allow a single cluster to serve as the central data backbone for a large organization. It can be elastically and transparently expanded without downtime. Data streams are partitioned and spread over a cluster of machines to allow data streams larger than the capability of any single machine and to allow clusters of coordinated consumers.\nWhereas.\nApache Storm: Apache Storm is a real-time message processing system, and you can edit or manipulate data in real-time. Storm pulls the data from Kafka and applies some required manipulation. It makes it easy to reliably process unbounded streams of data, doing real-time processing what Hadoop did for batch processing. A storm is simple, can be used with any programming language, and is a lot of fun to use.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What is ServerType directive in Apache Server?",
+        "answer": "It defines whether Apache should spawn itself as a child process (standalone) or keep everything in a single process (inetd). Keeping it inetd conserves resources.\nThe ServerType directive is included in Apache 1.3 for background compatibility with older UNIX-based version of Apache. By default, Apache is set to a standalone server which means Apache will run as a separate application on the server. The ServerType directive isn\u2019t available in Apache 2.0.",
+        "reference": "intellipaat.com"
+    }
+]

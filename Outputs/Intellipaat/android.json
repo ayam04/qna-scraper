@@ -1,0 +1,187 @@
+[
+    {
+        "question": "1. Explain the characteristics of Android.",
+        "answer": "Criteria Characteristics\nType of operating system Open source\nOS fragmentation Multiple OS versions and interoperability concerns\nCustomization Heightened customization possible",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Why cannot you run the standard Java bytecode on Android?",
+        "answer": "Android uses Dalvik virtual machine (DVM) which requires a special bytecode. First of all, we have to convert Java class files into Dalvik executable files using an Android tool called \u2018dx\u2019. In normal circumstances, developers will not be using this tool directly; build tools will care for the generation of DVM compatible files.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. Can Android applications only be programmed in Java?",
+        "answer": "No, not necessarily. We can program Android apps using the Native Development Kit (NDK) in C/C++. The NDK is a toolset that allows us to implement parts of our app using native code languages such as C and C++. Typically, good use cases for NDK are CPU-intensive applications such as game engines, signal processing, and physics simulation.\nGo through the blog How to Become an Android Developer to get a clear understanding of Android developers!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Where will you declare your activity so the system can access it?",
+        "answer": "Activity is to be declared in the manifest file. For example:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What is a NinePatch (9-patch) image?",
+        "answer": "It is a resizable bitmap resource that can be used for backgrounds or other images on a device. NinePatch class permits drawing a bitmap in nine sections. The 9-patch images have an extension as .9.png. It allows extensions in 9 ways, i.e., 4 corners that are unscaled, 4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is an Activity in Android?",
+        "answer": "An Activity is a pivotal component representing a user interface screen, facilitating user interaction within an application. It manages UI elements, responds to user actions, and collaborates with other components.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Explain the Intent in Android.",
+        "answer": "An Intent acts like a messenger, facilitating communication between various app components. It\u2019s a powerful tool for requesting actions or sharing information across different parts of the app or even between different apps.\nIf you want to know more about the cross-platform mobile technology of Android and IOS, check out this cross-platform mobile technology\nIntermediate Android Development Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is the difference between an implicit intent and an explicit intent?",
+        "answer": "There are two types of intents: implicit intent and explicit intent. Let us see the differences between them.\nImplicit intent: It is when we call system default intent like send e-mail, send SMS, or dial number.\nFor example:\nIntent sendIntent = new Intent();\nsendIntent.setAction(Intent.ACTION_SEND);\nsendIntent.putExtra(Intent.EXTRA_TEXT, textMessage);\nsendIntent.setType(\"text/plain\")\nstartactivity(sendIntent);\nExplicit intent: It is when we call our own application activity. We can also pass the information from one activity to another using explicit intent.\nFor example, from the first activity to the second activity:\nIntent intent = new Intent(first.this, second.class);\nstartactivity(intent);",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. Where can you define the icon for your activity?",
+        "answer": "The icon for an activity is defined in the manifest file.\nSyntax:\n<activity android:icon=\"@drawable/app_icon\" android:name=\".MyTestActivity\"></activity>\nThis means that we have to open AndroidManifest.xml. Right under the root \u2018manifest\u2019 node of the XML, we can see the \u2018application\u2019 node. We have added this attribute to \u2018application\u2019. (The \u2018icon\u2019 in \u2018@drawable/icon\u2019 refers to the file name of the icon.)\nandroid:icon=\"@drawable/icon\"\nGet a detailed understanding of how to build Android game applications!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What is ADB?",
+        "answer": "ADB stands for Android Debug Bridge. It is a command-line tool that is used to communicate with the emulator instance. ADB can control our device over USB from a computer, copy files back and forth, install and uninstall apps, run shell commands, and more.\n\nIt is a client\u2013server program that includes three components:\nA client, which runs on our development machine. We can invoke a client from a shell by issuing an ADB command. Other Android tools such as DDMS also create ADB clients.\nA server, which runs as a background process on our development machine. The server manages communication between the client and the ADB daemon running on an emulator or device.\nA daemon, which runs as a background process on each emulator or device instance.\nIf you want to know more about the framework of Java, check out this Java framework!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What are the different storage methods in Android?",
+        "answer": "Android offers several different options for data persistence. Shared Preferences \u2013 Store private primitive data in key-value pairs. This sometimes gets limited as it offers only key-value pairs. You cannot save your own java types. Internal Storage \u2013 Store private data on the device memory.\nGo through the Java certification course to get a clear understanding of Java!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. What is action in Android?",
+        "answer": "In Android, an action is a description of something that an intent sender desires.\nSyntax:\n<action android:name=\"string\" />\nContained in:\n<intent-filter>\nDescription:\nIt adds an action to an intent filter. An <intent-filter> element must contain one or more <action> elements. If it doesn\u2019t contain any, no Intent objects will get through the filter.\nHave you got more queries? Come to our Community and get them clarified today!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What is the Android Fragment?",
+        "answer": "A Fragment is a versatile building block, resembling a mini-activity within an activity. It offers modular and reusable UI components, contributing to flexible layouts. With their own lifecycle, Fragments enable efficient organization and composition of app interfaces, enhancing overall flexibility and design.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14 . Discuss the differences between Serializable and Parcelable in Android.",
+        "answer": "When it comes to moving objects between app components, Serializable and Parcelable are two options. However, Parcelable is the more efficient choice. While Serializable is a generic and slower method, Parcelable is Android-specific and ensures faster data transfer between components, enhancing overall performance.\n\nAdvanced Android Interview Questions for Experienced",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is an ANR notification in Android?",
+        "answer": "ANR is a short form for \u2018Application Not Responding\u2019. Android systems show this dialog if an application is performing too many tasks on the main thread and has been unresponsive for a long time.\n\nCheck out this What is Android Development video:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Define the three key loops when monitoring an activity.",
+        "answer": "\u2022 Entire lifetime: An activity that happens between onCreate and onDestroy\n\u2022 Visible lifetime: An activity that happens between onStart and onStop\n\u2022 Foreground lifetime: An activity that happens between onResume and onPause",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. How do you find a view element in your program?",
+        "answer": "Findviewbyid is a method that is used to find a view that is identified by the ID attribute from the XML processed inActivity.OnCreate(Bundle).\nSyntax:\n[Android.Runtime.Register(\"findViewById\", \"(I)Landroid/view/View;\", \"GetFindViewById_IHandler\")]\npublic virtual View FindViewById (Int32 id)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. Which dialog boxes can you use in your Android application?",
+        "answer": "AlertDialog: It is an alert dialogue box that supports 0 to 3 buttons and a list of selectable elements.\nProgressDialog: It is an extension to AlertDialog. We can add buttons to it. It shows a progress wheel or a progress bar.\nDatePickerDialog: It is used for selecting a date by the user.\nTimePickerDialog: It is used for selecting time by the user.\nLearn more about Android in this Android Course!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Name the resource that is a compiled visual resource, which can be used as a background, title, or in other parts of the screen.",
+        "answer": "Drawable is the virtual resource that can be used as a background, title, or in other parts of the screen. It is compiled into an android.graphics.drawable subclass. A drawable resource is a general concept for a graphic that can be drawn. The simplest case is a graphical file (bitmap), which would be represented in Android via a BitmapDrawable class.\nDrawable is stored as an individual file in one of the res/drawable folders. The ADT project creation wizard creates these folders by default. You would store bitmaps for different resolutions in the -mdpi, -hdpi, -xhdpi, and -xxhdpi subfolders of res/drawable. If these bitmaps are provided in a different folder, the Android system selects the correct one automatically based on the device configuration.\nDo checkout our blog on top features of linux operating system to gain in-depth knowledge about it!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. How can two Android applications share the same Linux user ID and the VM?",
+        "answer": "The applications must sign in with the same certificate in order to share the same Linux user ID and the VM.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Can you deploy executable JARs on Android? Which packaging is supported by Android?",
+        "answer": "No, the Android platform does not support JAR deployments. Applications are packed into Android Package (.apk) using Android Asset Packaging Tool (AAPT) and then deployed onto the Android platform. Google provides Android Development Tools for Eclipse that can be used to generate the Android Package.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. Is it okay to change the name of an application after its deployment?",
+        "answer": "It is not recommended to change the application name after its deployment because this action may break some functionality. For example, shortcuts will not work if you change the application name.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. How can ANR be prevented?",
+        "answer": "One technique that prevents the Android system from concluding a code that has been unresponsive for a long period of time is to create a child thread. Within the child thread, most of the actual tasks of the codes can be placed so that the main thread runs with minimal periods of unresponsive time.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. How can your application perform actions that are provided by another application, e.g., sending an email?",
+        "answer": "Intents are created to define an action that we want to perform, and they launch the appropriate activity from another application.\nSyntax:\nIntent intent = new Intent(Intent.ACTION_SEND);intent.putExtra(Intent.EXTRA_EMAIL, recipientArray);\n\nstartActivity(intent);",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. How will you pass data to sub-activities?",
+        "answer": "We can use bundles to pass data to sub-activities. There are HashMaps that take trivial data types. These bundles transport information from one activity to another.\nSyntax:\nBundle b=new Bundle();\nb.putString(\u201cEmail\u201d, \u201cabc@xyz.com\u201d);\ni.putExtras(b); //where I is intent",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26.Explain Android's ContentProvider and its use cases.",
+        "answer": "Android\u2019s ContentProvider serves as a key component for managing data access and fostering collaboration between apps. It acts as a vital layer for structured data storage and sharing. ContentProvider use cases encompass exposing data to other apps, implementing access controls, and enabling synchronized data across applications. This versatile component ensures secure and standardized data access within the Android ecosystem, enhancing overall app functionality.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. Describe the Android Architecture Components.",
+        "answer": "The Android Architecture Components are essential libraries that empower developers to create robust and maintainable applications. LiveData for observable data, ViewModel for UI-related data management, Room for efficient database handling, and Navigation for streamlined app navigation are key components. Embracing these tools enhances code quality and scalability in Android app development, fostering a modular and structured approach.\n\nAndroid Interview Questions for Senior Developers",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28.How would you optimize the performance of a complex Android application, especially when dealing with resource-intensive tasks and large datasets?",
+        "answer": "To enhance the performance of a complex Android application handling resource-intensive tasks and large datasets, employ efficient coding practices, implement background threading, utilize caching mechanisms, minimize unnecessary UI updates, and consider pagination or lazy loading for large datasets. Optimize database queries and leverage suitable data structures for an overall boost in performance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. Explain the significance of the Android NDK (Native Development Kit) in the context of high-performance applications. Provide an example of a scenario where utilizing the NDK would be advantageous.",
+        "answer": "The Android NDK (Native Development Kit) significantly boosts application performance by allowing the integration of native code. Its advantage shines in high-performance scenarios like graphics-intensive tasks. Incorporating native code through the NDK ensures optimized execution, contributing to a superior user experience. This strategic use of the NDK enhances overall application performance and responsiveness.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. Discuss your experience in implementing and optimizing background processing in Android applications, considering factors like battery efficiency and system resource management.",
+        "answer": "In my experience optimizing background processing for Android apps, we prioritize efficiency for a balanced approach to functionality, battery life, and system resources. Employing background threading, asynchronous task management, and tools like job scheduling and WorkManager for periodic tasks, we strive to minimize resource-intensive operations. Through careful algorithm optimization and judicious use of system APIs, my focus is on delivering a smooth user experience while conserving battery efficiency and optimizing system resources.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31.As a senior Android developer, how would you approach and contribute to the architectural design of a scalable and maintainable Android application, ensuring code quality and modularization?",
+        "answer": "As a senior Android developer, my strategy for architectural design centers on building a scalable and maintainable application. We prioritize clean coding, modularization, and aligning with architectural patterns like MVVM, or Clean Architecture. By incorporating SOLID principles, dependency injection, and modular design. Our goal is to elevate code quality, simplify maintenance, and foster scalability for sustained development success.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. Describe a situation where you had to handle security considerations in an Android application. What measures did you implement to safeguard user data and prevent vulnerabilities?",
+        "answer": "In a security-focused scenario for an Android app, we implemented measures to protect user data and prevent vulnerabilities. This included secure communication with HTTPS, encryption of sensitive data, robust user authentication, and thorough input validation to mitigate risks like SQL injection or cross-site scripting. Regular security audits, code reviews, and staying current on best practices played key roles in ensuring a resilient and secure Android application.\n\nScenario-based Android Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33.You're tasked with integrating a third-party API into your Android application. Discuss the steps you would take to ensure seamless integration, error handling, and data security.",
+        "answer": "Seamlessly integrating a third-party API into the Android app involves meticulous steps such as reviewing API documentation, implementing authentication mechanisms, and prioritizing encrypted communication (HTTPS) for data security. Achieving smooth integration requires making asynchronous calls, handling errors gracefully, and optimizing performance through techniques like caching. This approach ensures the secure and efficient incorporation of third-party APIs, enhancing the overall functionality of the application.\nIf you want to know more about encryption, check out end-to-end encryption!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34.Imagine you are dealing with a memory leak issue in an Android app. Walk through your process of identifying and resolving the leak, considering tools and techniques available in the Android development environment.",
+        "answer": "In addressing a memory leak issue in the Android app, strategic steps include leveraging profiling tools like Android Studio\u2019s Profiler for analysis. The process involves identifying potential culprits, refactoring code, and utilizing LeakCanary for precise leak detection. Thorough testing and validation ensure successful resolution, enhancing app performance and stability through efficient memory management.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35.Your team is developing a real-time collaboration feature for a messaging app. How would you implement efficient synchronization and update mechanisms to ensure a smooth user experience across multiple devices?",
+        "answer": "Enabling real-time collaboration in a messaging app requires strategic synchronization, efficient updates, and a seamless cross-device user experience. Employ WebSocket for real-time communication, implement data streaming for instant updates, and synchronize data through a robust backend service. This approach enhances collaboration, ensuring users stay seamlessly connected across various devices for an optimal experience.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36.You're working on an Android app that requires offline functionality. Explain your approach to designing and implementing offline data caching and synchronization, considering potential conflicts.",
+        "answer": "Crafting offline functionality for an Android app involves strategic offline data caching and synchronization, addressing potential conflicts. Employ efficient local databases for data caching, implement background synchronization using sync adapters, and resolve conflicts through conflict resolution algorithms. This ensures a seamless offline user experience with synchronized data, fostering reliability and user satisfaction.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37.Your task is to optimize network requests in an Android app to reduce latency and improve overall performance. Outline the strategies you would employ, such as caching, background syncing, and request batching, to achieve these goals.",
+        "answer": "To optimize network requests in the Android app and reduce latency, strategic steps include implementing caching mechanisms, conducting background syncing, and employing request batching. Utilizing caching for locally storing frequently accessed data, initiating background syncing for asynchronous updates, and batching requests to minimize round-trips enhances overall performance, delivering a responsive and efficient user experience.\n\nAndroid Developer Salary Trends\nJob Role  Average Salary in India Average Salary in the USA\nAndroid Developer\n(0-9 years of experience)\nMinimum \u2013  \u20b91.4 LPA Minimum \u2013 $79,146\nAverage \u2013  \u20b95.6 LPA  Average \u2013 $129,227\nHighest \u2013   \u20b911 LPA Highest \u2013 $210,998\n\nAndroid Developer Job Trend\nAccording to the Bureau of Labor Statistics US, the employment of Android Developers is projected to grow by  22% by 2030.\nGlobal Demand: With more than 13,000 open jobs on LinkedIn in the United States and more than 16,000 open jobs on LinkedIn in India, the demand for Android developers is increasing.\nGrowth Projections: The growth suggested by the Bureau of Labor Statistics of 22% in the field of Android Developer might surpass all other occupations\u2019 growth by 8%.\n\nAndroid Developer Roles and Responsibilities",
+        "reference": "intellipaat.com"
+    }
+]

@@ -1,0 +1,527 @@
+[
+    {
+        "question": "Check out this R Programming Interview Questions And Answers Video on YouTube:",
+        "answer": "Basic R Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "1. Compare R & Python",
+        "answer": "R  programming Language Python programming language\nModel Building is similar to Python Model Building is similar to R.\nModel Interpretability is good Model Interpretability is not good\nProduction is not better than Python. Production is good\nR has good community support over Python. Community Support  is not better than R\nData Science Libraries are same as Python. Data Science Libraries are same as R.\nR has good data visualizations libraries and tools Data visualization is not better than R\nR has a steep learning curve. Learning Curve in Python is easier than learning R.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Explain the data import in R language.",
+        "answer": "R provides import of data in the R language. To begin with the R commander GUI, user should type the commands in the command Rcmdr into the console. Data can be imported in R language in 3 ways such as:\nSelect the data set in the dialog box or enter the name of the data set as required.\nData is entered directly using the editor of R Commander via Data->New Data Set. This works good only when the data set is not too large.\nData can also be imported from a URL or from plain text file (ASCII), or from any statistical package or from the clipboard.\nWe can also import data with the help of path by using either single front slash \u201c/\u201d or double backslash \u201c\\\\\u201d",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. Explain how to communicate the outputs of data analysis using R language.",
+        "answer": "Combining the data, code and analysis results in a single document using knitr for Reproducible research done. Helps to verify the findings, add to them and engage in conversations. Reproducible research makes it easy to redo the experiments by inserting new data values and applying it to different various problems.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Difference between library () and require () functions in R language.",
+        "answer": "library() require()\nLibrary () function gives an error message display, if the desired package cannot be loaded. Require () function is used inside function and throws a warning messages whenever a particular package is not Found\nIt loads the packages whether it is already loaded or not, It just checks that it is loaded, or loads it if it isn\u2019t (use in functions that rely on a certain package). The documentation explicitly states that neither function will reload an already loaded package.\nConsider a related program for the above differentiation.\nif(!require(package, character.only=T, quietly=T)) {\n\ninstall.packages (package)\n\nlibrary(package, character.only=T)\n\n}\nFor multiple packages you can use\nfor(package in c('', '')) {\n\nif(!require(package, character.only=T, quietly=T)) {\n\ninstall.packages (package)\n\nlibrary(package, character.only=T)\n\n}\n\n}",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What is R?",
+        "answer": "R is a programming language that is used for developing statistical software and data analysis. It is being increasingly deployed for machine learning applications as well.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. How are commands in R written?",
+        "answer": "By using # at the starting of the line of code like #division commands are written.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What is t-tests() in R?",
+        "answer": "It is used to determine if the means of two groups are equal or not by using the t.test() function.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What are the disadvantages of R Programming?",
+        "answer": "The disadvantages are:-\nLack of standard GUI\n Not good for big data.\n Does not provide spreadsheet view of data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What is the use of with() and by() functions in R?",
+        "answer": "with() function applies an expression to a dataset.\n#with(data,expression)\nBy() function applies a function t each level of a factors.\n#by(data,factorlist,function)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. In R programming, how are missing values represented?",
+        "answer": "In R missing values are represented by NA(Not available) which should be in capital letters. And some values for example the values that are divisible by zero are represented by NAN (Not a number)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What is the use of subset() and sample() functions in R?",
+        "answer": "Subset() is used to select the variables and observations and sample() function is used to generate a random sample of the size n from a dataset.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Explain what is transpose.",
+        "answer": "Transpose is used for reshaping of the data which is used for analysis. Transpose is performed by t(). Here is an example of data in the form of matrix and its transpose:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What are the advantages of R?",
+        "answer": "The advantages are:-\nIt is used for managing and manipulating of data.\nNo license restrictions\nFree and open source software.\nGraphical capabilities of R are good.\nRuns on many Operating system and different hardware and also run on 32 & 64 bit processors etc.\nNow that you are aware of the benefits of R programming, to know more check out R Course.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What is the function used for adding datasets in R?",
+        "answer": "For adding two datasets the rbind() function is used but the column of two datasets must be the same.\n\nSyntax: rbind(x1,x2\u2026\u2026) where x1,x2: vector, matrix, data frames.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. How you can produce co-relations and covariances?",
+        "answer": "Cor-relations are produced by cor() and covariances are produced by cov() function.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. What is difference between matrix and dataframes?",
+        "answer": "Dataframe can contain different types of data but matrices can contain only similar type of data. Here are the different types of data structures in R:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What is the difference between lapply() and sapply()?",
+        "answer": "lapply() is used to show the output in the form of list whereas sapply() is used to show the output in the form of vector or data frame",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. What is the difference between seq(4) and seq_along(4)?",
+        "answer": "Seq(4) means vector from 1 to 4 (c(1,2,3,4)) whereas seq_along(4) means a vector of length(4) or 1(c(1)).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Explain how you can start the R commander GUI.",
+        "answer": "rcmdr command is used to start the R commander GUI.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What is the memory limit of R?",
+        "answer": "In 32 bit system memory limit is 3Gb but most versions limited to 2Gb and in 64 bit system memory limit is 8Tb.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "Check out this Data Science Interview Questions video by Intellipaat:",
+        "answer": "",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. How many data structures R has?",
+        "answer": "There are 5 data structures in R i.e. vector, matrix, array which are of a homogenous type and the other two are list and data frame which are heterogeneous.\n\nLearn more about data structure in the R programming tutorial.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. Explain how data is aggregated in R.",
+        "answer": "There are two methods that is collapsing data by using one or more BY variable and other is aggregate() function in which BY variable should be in list.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. How many sorting algorithms are available?",
+        "answer": "There are 5 types of sorting algorithms are used which are:-\nBubble Sort\nSelection Sort\nMerge Sort\nQuick Sort\nBucket Sort",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. How to create new variables in R programming?",
+        "answer": "For creating new variable assignment operator \u2018<-\u2019 is used\nFor e.g. mydata$sum <- mydata$x1 + mydata$x2",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. What are R packages?",
+        "answer": "Packages are the collections of data, R functions and compiled code in a well-defined format and these packages are stored in the library. One of the strengths of R is the user-written function in R language.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What is the workspace in R?",
+        "answer": "Workspace is the current R working environment which includes any user defined objects like vector, lists etc.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is the function which is used for merging of data frames horizontally in R?",
+        "answer": "Merge()function is used to merge two data frames\nEg. Sum<-merge(data frame1,data frame 2,by=\u2019ID\u2019)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. What is the function which is used for merging data frames vertically in R?",
+        "answer": "rbind() function is used to merge two data frames vertically.\nEg. Sum <- rbind(data frame1,data frame 2)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What is power analysis?",
+        "answer": "It is used for experimental design .It is used to determine the effect of given sample size.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. Which package is used for power analysis in R?",
+        "answer": "Pwr package is used for power analysis in R.\n\nIntermediate R Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. Which method is used for exporting the data in R?",
+        "answer": "There are many ways to export the data into other formats like SPSS, SAS, Stata, Excel Spreadsheet.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. Which packages are used for exporting data?",
+        "answer": "For excel xlsReadWrite package is used and for sas,spss ,stata foreign package is implemented.\nAlso, checkout our blog on Why should you learn R programming in the first place?",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. How impossible values are represented in R?",
+        "answer": "In R NaN (not a number) is used to represent impossible values.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. Which command is used for storing R objects into a file?",
+        "answer": "Save command is used for storing R objects into a file.\nSyntax: >save(z,file=\u201dz.Rdata\u201d)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. Which command is used for restoring an R object from a file?",
+        "answer": "load command is used for storing R objects from a file.\nSyntax: >load(\u201dz.Rdata\u201d)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. What is the use of a coin package in R?",
+        "answer": "Coin package is used to achieve the re randomization or permutation based statistical tests.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. Which function is used for sorting in R?",
+        "answer": "order() function is used to perform the sorting.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. What is the use of tapply()?",
+        "answer": "IOS-6.1.3",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. What happens when the application object does not handle an event?",
+        "answer": "The event will be dispatched to your delegate for processing.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "40. Explain app specific objects which store the app contents.",
+        "answer": "The app specific objects are Data model objects that store the app\u2019s contents.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "41. Explain the purpose of using UIWindow objects?",
+        "answer": "UIWindow object coordinates the one or more views presenting on the screen.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "42. Tell me the super class of all view controller objects.",
+        "answer": "UIView Controller class.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "43. How to create axes in the graph?",
+        "answer": "Using axes() function custom axes are created.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "44. What is the use of abline function?",
+        "answer": "abline() function is to add the reference line to a graph.\nSyntax: abline(h=yvalues, v=xvalues)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "45. Why is the vcd package used?",
+        "answer": "vcd package provides different methods for visualizing multivariate categorical data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "46. What is GGobi?",
+        "answer": "GGobi is an open-source program for data visualization for exploring high dimensional typed data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "47. What are iPlots?",
+        "answer": "It is a package which provide bar plots, mosaic plots, box plots, parallel plots, scatter plots and histograms.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "48. What is the use of a lattice package?",
+        "answer": "The lattice package is to improve on base R graphics by giving better defaults and it has the ability to easily display multivariate relationships.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "49. What is the fitdistr() function?",
+        "answer": "It is used to provide the maximum likelihood fitting of univariate distributions. It is defined under the MASS package.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "50. Which data structures are used to perform statistical analysis and create graphs.",
+        "answer": "Data structures are vectors, arrays, data frames and matrices.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "51. What is the use of sink() function?",
+        "answer": "It defines the direction of output.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "52. Why is the library() function used?",
+        "answer": "This function is used to show the packages which are installed.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "53. Why is the search() function used?",
+        "answer": "By this function we see which packages are currently loaded.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "54. On which type of data binary operators are worked?",
+        "answer": "Binary operators work on matrices, vectors and scalars.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "55. What is the use of the doBY package?",
+        "answer": "It is used to define the desired table using function and model formula.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "56. Which function is used to create a frequency table?",
+        "answer": "Frequency table is created by the table() function.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "57. Define loglm() function.",
+        "answer": "Loglm() function is used to create log-linear models.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "58. What is the use of the corrgram() function?",
+        "answer": "corrgram() function is used to plot correlograms.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "59. How to create scatterplot matrices?",
+        "answer": "Pair() or splom() function is used to create scatterplot matrices.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "60. What is npmc?",
+        "answer": "It is a package which gives nonparametric multiple comparisons.\n\nAdvanced R Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "61. What is the use of diagnostic plots?",
+        "answer": "It is used to check the normality, heteroscedasticity and influential observations.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "62. Define anova() function.",
+        "answer": "anova() is used to compare the nested models.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "63. What is cv.lm() function?",
+        "answer": "It is defined under the DAAG package which is used for k-fold validation.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "64. Define stepAIC() function.",
+        "answer": "It is define under the MASS package which performs stepwise model selection under exact AIC.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "65. Define leaps().",
+        "answer": "It is used to perform the all-subsets regression and it is defined under the leaps package.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "66. Define relaimpo package.",
+        "answer": "It is used to measure the relative importance of each of the predictor in the model.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "67. Why is a car package used?",
+        "answer": "It provide a variety of regression including scatter plots, variable plots and it also enhanced diagnostic.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "68. Define a robust package.",
+        "answer": "It provides a library of robust methods including regression.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "69. What is robustbase?",
+        "answer": "It is a package which provides basic robust statistics including model selection methods.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "70. Define plotmeans().",
+        "answer": "It is defined under the gplots package which includes confidence intervals and it produces a mean plot for single factors.\nAlso, check our blog on R Studio \u2013 The Essential Tool for R Programming!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "71. What is the full form of MANOVA?",
+        "answer": "MANOVA stands for multivariate analysis of variance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "72. What is the use of MANOVA?",
+        "answer": "By using MANOVA we can test more than one dependent variable simultaneously.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "73. Define mshapiro.test( ).",
+        "answer": "It is a function which is defined in the mvnormtest package. It produces the Shapiro-wilk test for multivariate normality.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "74. Define barlett.test().",
+        "answer": "Barlett.test() is used to provide a parametric k-sample test of the equality of variances.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "75. What is fligner.test()?",
+        "answer": "It is a function which provides a non-parametric k sample test of the equality of variances.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "76. Define hovplot().",
+        "answer": "It is defined in the HH package which provides a graphic test of homogeneity of variance based on brown forsyth.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "77. Which variables are represented by lower case letters?",
+        "answer": "Numerical variables are represented by lower case letters.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "78. Which variables are represented by upper case letters?",
+        "answer": "Categorical factors are represented by upper case letters.\nCheck out the blog on why to learn R programming.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "79. What is logistic regression?",
+        "answer": "Logistic regression is used to predict the binary outcome from the given set of continuous predictor variables.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "80. Define Poisson regression.",
+        "answer": "It is used to predict the outcome variable which represents counts from the given set of continuous predictor variable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "81. Define Survival analysis.",
+        "answer": "It includes a number of techniques which are used for modeling the time to an event.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "82. What is the use of the survfit() function?",
+        "answer": "It estimates a survival distribution one or more groups.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "83. Define survdiff().",
+        "answer": "It determines the differences in survival distribution between two or more groups.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "84. What is coxph()?",
+        "answer": "It is a function which is used to model the hazard function on the set of predictor variable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "85. In which package survival analysis is defined?",
+        "answer": "Survival analysis is defined under the survival package.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "86. What is the use of the MASS package?",
+        "answer": "MASS functions include those functions which performs linear and quadratic discriminant function analysis.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "87. Define qda().",
+        "answer": "qda() prints a quadratic discriminant function.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "88. Define lda().",
+        "answer": "lda() is used to print the discriminant functions which is based on centered variable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "89. What is the use of the forecast package?",
+        "answer": "It provides the functions which are used for automatic selection of ARIMA and exponential models.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "90. Define auto.arima().",
+        "answer": "It is used to handle the seasonal as well as non-seasonal ARIMA models.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "91. What is the principal() function?",
+        "answer": "It is defined in the psych package which is used to rotate and extract the principal components.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "92. What is FactoMineR?",
+        "answer": "It is a package which includes quantitative and qualitative variables. It also includes supplementary variables and observations.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "93. What is the full form of CFA?",
+        "answer": "CFA stands for Confirmatory Factor Analysis.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "94. What is the use of boot.sem() function?",
+        "answer": "It is used to bootstrap the structural equation model.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "95. What is the full form of SEM?",
+        "answer": "SEM stands for Structural Equation Modeling.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "96. Which function performs classical multidimensional scaling?",
+        "answer": "cmdscale() function is used to perform classical multidimensional scaling.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "97. Define isoMDS().",
+        "answer": "This function is defined under the MASS package which performs nonmetric multidimensional scaling.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "98. Which function perform individual difference scaling?",
+        "answer": "It is done by indscal() function.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "99. What is the pvclust() function ?",
+        "answer": "It comes under the pvclust package which provides p-values for hierarchical clustering.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "100. Define cluster.stats() ?",
+        "answer": "It is define in fpc package which provide a method for comparing the similarity of two clusters solution using different validation criteria.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "101. What we use party package?",
+        "answer": "It is used to provide a non-parametric regression for ordinal data, nominal, censored and multivariate responses.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "102. Which package provide the bootstrapping?",
+        "answer": "boot package is used which provide bootstrapping.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "103. Define MATLAB package.",
+        "answer": "Matlab package includes those wrapper functions and variable which are used to replicate matlab function calls.",
+        "reference": "intellipaat.com"
+    }
+]

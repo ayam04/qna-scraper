@@ -1,0 +1,82 @@
+[
+    {
+        "question": "1. Compare Kafka and Flume.",
+        "answer": "Criteria Kafka Flume\nData flow Pull Push\nHadoop integration Loose Tight\nFunctionality A Publish\u2013Subscribe model messaging system A system for data collection, aggregation, and movement",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What are the elements of Kafka?",
+        "answer": "The most important elements of Kafka are as follows:\nTopic: It is a bunch of similar kinds of messages.\nProducer: Using this, one can issue communications to the topic.\nConsumer: It endures to a variety of topics and takes data from brokers.\nBroker: This is the place where the issued messages are stored.\nGet a detailed understanding of Kafka from this comprehensive Kafka Tutorial!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What role does ZooKeeper play in a cluster of Kafka?",
+        "answer": "Apache ZooKeeper acts as a distributed, open-source configuration and synchronization service, along with being a naming registry for distributed applications. It keeps track of the status of the Kafka cluster nodes, as well as of Kafka topics, partitions, etc.\nSince the data is divided across collections of nodes within ZooKeeper, it exhibits high availability and consistency. When a node fails, ZooKeeper performs an instant failover migration.\nZooKeeper is used in Kafka for managing service discovery for Kafka brokers, which form the cluster. ZooKeeper communicates with Kafka when a new broker joins, when a broker dies, when a topic gets removed, or when a topic is added so that each node in the cluster knows about these changes. Thus, it provides an in-sync view of the Kafka cluster configuration.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What is Kafka?",
+        "answer": "Kafka is a message divider project coded in Scala. Kafka was originally developed by LinkedIn as an open-source project in early 2011. The purpose of the project was to achieve the best stand for conducting the real-time statistics nourishment.\nLearn \u2018What is Kafka?\u2019 from this insightful blog!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Why do you think the replications to be dangerous in Kafka?",
+        "answer": "Duplication assures that the issued messages available are absorbed in the case of any appliance mistake, plan fault, or recurrent software promotions.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy\n\nAdvanced Kafka Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What major role does a Kafka Producer API play?",
+        "answer": "It is responsible for covering two producers: kafka.producer.SyncProducer and kafka.producer.async.AsyncProducer. Kafka Producer API mainly provides all producer performance to its clients through a single API.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Distinguish between Kafka and Flume?",
+        "answer": "Flume\u2019s major use case is to gulp down data into Hadoop. Flume is incorporated with Hadoop\u2019s monitoring system, file formats, file system, and utilities such as Morphlines. Along with Flume\u2019s design of sinks, sources, and channels, Flume can help one shift data to other systems lithely. However, the main feature of Hadoop is its Hadoop integration. Flume is the best option to use when we have non-relational data sources or a long file to stream into Hadoop.\nOn the other hand, Kafka\u2019s major use case is a distributed publish\u2013subscribe messaging system. It is not developed specifically for Hadoop, and using Kafka to read and write data to Hadoop is considerably trickier than it is with Flume. Kafka can be used when we particularly need a highly reliable and scalable enterprise messaging system to connect multiple systems like Hadoop.\nFind out how Kafka is used to process real-time JSON Data from this informative blog!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. Describe partitioning key.",
+        "answer": "Its role is to specify the target divider of the memo within the producer. Usually, a hash-oriented divider concludes the divider ID according to the given factors. Consumers also use tailored partitions.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. Inside the manufacturer, when does the QueueFullException emerge?",
+        "answer": "QueueFullException naturally happens when the manufacturer tries to propel communications at a speed which a broker can\u2019t grip. Consumers need to insert sufficient brokers to collectively grip the amplified load since the producer doesn\u2019t block.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. Can Kafka be utilized without ZooKeeper?",
+        "answer": "It is impossible to use Kafka without ZooKeeper because it is not feasible to go around ZooKeeper and attach it in a straight line with the server. If ZooKeeper is down for a number of causes, then we will not be able to serve customers\u2019 demands.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. Elaborate the architecture of Kafka.",
+        "answer": "In Kafka, a cluster contains multiple brokers since it is a distributed system. Topic in the system will get divided into multiple partitions, and each broker stores one or more of those partitions so that multiple producers and consumers can publish and retrieve messages at the same time.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. How to start a Kafka server?",
+        "answer": "Given that Kafka exercises ZooKeeper, we can start the ZooKeeper\u2019s server. One can use the convince script packaged with Kafka to get a crude but effective single-node ZooKeeper instance:\nbin/zookeeper-server-start.shconfig/zookeeper.properties\nNow the Kafka server can start:\nbin/Kafka-server-start.shconfig/server.properties",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What are consumers or users?",
+        "answer": "Kafka provides single-consumer abstractions that discover both queuing and publish\u2013subscribe consumer group. Kafka tags itself with a user group, and every communication available on a topic is distributed to one user case within every promising user group. User instances are in the disconnected process. We can determine the messaging model of the consumer based on the consumer groups.\nIf all consumer instances have the same consumer set, then this works like a conventional queue adjusting load over the consumers.\nIf all customer instances have dissimilar consumer groups, then this works like a publish\u2013subscribe system, and all messages are transmitted to all the consumers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Describe an Offset.",
+        "answer": "The messages in partitions will be given a sequential ID known as an offset, and the offset will be used to identify each message in the partition uniquely. With the aid of ZooKeeper, Kafka stores the offsets of messages used for a specific topic and partition by a consumer group.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What do you know about a partition key?",
+        "answer": "A partition key is used to point to the aimed division of communication in Kafka producer. Usually, a hash-oriented divider concludes the division ID with the input, and also people use modified divisions.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "Watch this Kafka Tutorial For Beginners",
+        "answer": "",
+        "reference": "intellipaat.com"
+    }
+]

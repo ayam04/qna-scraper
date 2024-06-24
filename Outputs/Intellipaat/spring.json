@@ -1,0 +1,147 @@
+[
+    {
+        "question": "1. What is Spring?",
+        "answer": "Spring is an open-source development framework for enterprise Java. The core features of the Spring Framework can be used in developing any Java application, but there are extensions for building web applications on top of the Java EE platform. Spring Framework targets to make Java EE development easier to use and promotes good programming practices by enabling a POJO-based programming model.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What are Spring beans?",
+        "answer": "The objects that form the backbone of the users\u2019 application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container. These beans are created with the configuration metadata that the users supply to the container.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. Define AOP in Spring.",
+        "answer": "AOP stands for Aspect-Oriented Programming. It is a programming technique that increases modularity by allowing the separation of cross-cutting concerns, like logging and transaction management, from the application\u2019s business logic. With AOP, aspects are configured in separate files and can add functionality to multiple classes without changing the classes themselves.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What is the Spring Boot Actuator?",
+        "answer": "Spring Boot Actuator is a tool that helps monitor and manage a Spring Boot application. It provides endpoints or web URLs to get information about the app like health, metrics, info, etc. It helps debug issues and understand how the app is running.\nAlso, check our guide on Spring boot interview questions which are specifically developed for boot frameworks.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Explain Dependency Injection (DI) in Spring.",
+        "answer": "Dependency Injection (DI) is a design pattern used in Spring where dependencies like services or repositories are provided to a class instead of the class creating them itself. Spring has a container that creates and wires dependencies and injects them into classes that need them. This makes it easier to manage dependencies between classes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What do you mean by Bean Wiring?",
+        "answer": "Bean wiring refers to how Spring connects or wires together the application\u2019s beans and their dependencies. It involves defining the relationships between the beans in the Spring configuration file. Spring handles the process of satisfying the dependencies of each bean by injecting other required beans into it. This wiring allows the beans to work together seamlessly.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What is a Spring Java-based configuration?",
+        "answer": "Java-based configuration option enables users to write most of their Spring configuration without XML but with the help of a few Java-based annotations.\nExample:\nAnnotation @Configuration indicates that the class can be used by the Spring IoC container as a source of bean definitions. The @Bean annotation tells Spring that a method annotated with @Bean will return an object that should be registered as a bean in the Spring application context.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. Describe the Spring Framework.",
+        "answer": "The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications\u2014on any kind of deployment platform. A key element of Spring is infrastructural support at the application level: Spring focuses on the \u2018plumbing\u2019 of enterprise applications so that teams can focus on the application-level business logic, without having unnecessary ties to specific deployment environments.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What is a Spring IoC container?",
+        "answer": "Spring IoC creates objects, wires them together, configures them, and manages their complete life cycle from creation to destruction. The Spring container uses Dependency Injection (DI) to manage the components that make up an application.\nPrepare yourself for the Java Certification with this comprehensive Java Course!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What is the purpose of the @Autowired annotation?",
+        "answer": "The @Autowired annotation is used in Spring to automatically inject dependencies into a class. When Spring sees the @Autowired annotation on a field, constructor, or method, it will lookup a bean of the required type from the Spring container and inject it. This removes the need to manually lookup dependencies and wire them together.\n\nIntermediate Spring Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What are the types of dependency injections that Spring supports?",
+        "answer": "Spring supports two types of dependency injections:\nSetter Injection:\nSetter-based DI is realized by calling setter methods on the user\u2019s beans after invoking a no-argument constructor or no-argument static factory method to instantiate their bean.\nConstructor Injection:\nConstructor-based DI is realized by invoking a constructor with several arguments, each representing a collaborator.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. What is the difference between BeanFactory and ApplicationContext?",
+        "answer": "BeanFactory is the most basic type of Spring container. It manages the basic lifecycle of beans, like creating, configuring, and destroying them. ApplicationContext includes everything that BeanFactory can do plus some extra features like globalization support, validation, and data binding. It is also capable of application-level functions like resource and event handling.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What is the difference between constructor injunction and setter injection?",
+        "answer": "Constructor injection involves passing dependencies through a class\u2019s constructor, ensuring they are set when an object is created. On the other hand, setter injection involves setting dependencies using setter methods after the object is created. Constructor injection ensures that required dependencies are available from the start, while setter injection allows for flexibility in changing dependencies later on.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What is the difference between Spring and Spring Boot?",
+        "answer": "Spring is a framework for building Java applications. It provides features like dependency injection. Spring Boot makes creating Spring apps easy, and it handles configuration so you don\u2019t have to. Spring Boot also helps you get started quickly and includes useful tools like checking app health and metrics right away, so your app is ready for production use.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is the difference between singleton and prototype scope in Spring?",
+        "answer": "In Spring, the singleton scope creates a single bean instance for the entire application, and the prototype scope creates a new instance every time the bean is requested. Singleton is suitable for stateless beans, while the prototype is useful when you need a fresh instance for each request.\nCheck out this Spring Tutorial video:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Mention the modules of the Spring Framework.",
+        "answer": "The basic modules of the Spring Framework are:\nCore module\nBean module\nContext module\nExpression Language module\nJDBC module\nORM module\nOXM module\nJava Message Service (JMS) module\nTransaction module\nWeb module\nWeb-Servlet module\nWeb-Struts module\nWeb-Portlet module",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What bean scopes does Spring support? Explain them.",
+        "answer": "The Spring Framework supports five scopes, three of which are available only if users use a web-aware ApplicationContext.\nSingleton: This scopes the bean definition to a single instance per Spring IoC container.\nPrototype: This scopes a single bean definition to have any number of object instances.\nRequest: This scopes a bean definition to an HTTP request, only valid in the context of a web-aware Spring ApplicationContext.\nSession: This scopes a bean definition to an HTTP session, only valid in the context of a web-aware Spring ApplicationContext.\nGlobal-session: This scopes a bean definition to a global HTTP session, only valid in the context of a web-aware Spring ApplicationContext.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. Explain autowiring and name the different modes of it.",
+        "answer": "Autowiring in programming automates the process of connecting components in a system. It eliminates the need to manually wire dependencies. The different modes of autowiring include \u201cno autowiring\u201d (default), \u201cbyType\u201d (matching data types), \u201cbyName\u201d (matching bean names), \u201cconstructor\u201d (constructor-based injection), and \u201cautodetect\u201d (combines byType and byName based on the scenario).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. What is the purpose of the @RequestMapping annotation?",
+        "answer": "The @RequestMapping annotation in Spring is used to map web requests to specific controller methods. It defines the URL patterns that trigger these methods, allowing developers to create clean and organized mappings between incoming requests and corresponding handler methods in their Spring MVC applications.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. Explain the purpose of the @Value annotation in Spring.",
+        "answer": "The @Value annotation in Spring is used to inject values from properties files, environment variables, or other sources into Spring Beans. It simplifies configuration by allowing developers to externalize and customize values without modifying code, which promotes flexibility in managing application properties.\n\nAdvanced Spring Interview Questions for Experienced",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Describe the Spring MVC architecture.",
+        "answer": "The Spring MVC architecture is a design pattern for building web applications. It consists of three main components:\nModel, which represents the data and business logic\nView, responsible for displaying information to users\nController, which handles user requests, processes them using the Model, and updates the View\nThis separation of concerns promotes modularity and makes it easier to maintain and scale web applications built with Spring MVC.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. Explain the concept of Inversion of Control (IoC).",
+        "answer": "Inversion of Control (IoC) is a design principle where objects do not create other objects they depend on. Instead, these dependencies are provided to the objects externally by a third party, called the Inversion of Control container. This container manages the lifecycle and configuration of objects. It injects dependencies when an object is initialized.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. How does Spring support RESTful web services?",
+        "answer": "Spring makes it very easy to create RESTful web APIs. It provides annotations to develop the controller layer that handles web requests and responses. Annotations like @RestController and @RequestMapping are used to map URLs to controller methods. @RequestBody annotation allows accessing request body parameters, and @ResponseBody returns data directly in the response body. Overall, Spring handles all the plumbing work so developers can focus on business logic rather than low-level implementation details of REST.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. What is the role of the Hibernate framework in Spring?",
+        "answer": "Hibernate is an Object-Relational Mapping (ORM) framework that allows mapping Java objects to database tables. When used with Spring, Hibernate handles all data access operations with the database. Spring provides Hibernate integration through the Hibernate Template and SessionFactory utilities. It manages Hibernate sessions and transactions behind the scenes. This allows developers to write data access code without dealing with raw JDBC or Hibernate API calls.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. How does Spring support internationalization (i18n)?",
+        "answer": "Spring supports internationalization (i18n) by providing a mechanism to develop applications that can be easily adapted for different languages and regions. It uses a concept called MessageSource, where you store messages in various languages. Developers can then use these messages in the code by referring to keys. This helps in building more inclusive and globally accessible software.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What do you understand by MultipartResolver?",
+        "answer": "In Spring, a MultipartResolver is a component that helps handle file uploads in web applications. It deals with requests that include files, like images or documents. The resolver parses the incoming request, identifies the uploaded files, and provides an easy-to-use interface for developers to work with these files in their Spring application. It simplifies the handling of multiple requests, making it convenient for developers to manage file uploads seamlessly in their web applications.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. Is thread safety guaranteed for singleton beans?",
+        "answer": "Singleton beans in Spring are not thread-safe by default. As they will be shared across the application, concurrent access from multiple threads can cause unexpected behavior if the bean\u2019s state is not synchronized properly. The singleton bean itself is thread-safe, but any mutable state within it may not be. It is the developer\u2019s responsibility to ensure thread safety at the class level if the singleton bean maintains any mutable state. Making the singleton class thread-safe or avoiding mutable states are some ways to achieve thread safety for singleton beans in Spring.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. Explain the bean life cycle in Spring Framework.",
+        "answer": "The following is the sequence of a bean life cycle in Spring:\nInstantiate: First, the Spring container finds the bean\u2019s definition from the XML file and instantiates the bean.\nPopulate Properties: Using the dependency injection, Spring populates all of the properties as specified in the bean definition.\nSet Bean Name: If the bean implements the BeanNameAware interface, then Spring passes the bean\u2019s ID to the setBeanName() method.\nSet Bean Factory: If the bean implements the BeanFactoryAware interface, then Spring passes the bean factory to the setBeanFactory() method.\nPre-initialization: It is also called the post-process of the bean. If there are any BeanPostProcessors associated with the bean, then Spring calls the postProcesserBeforeInitialization() method.\nInitialize Beans: If the bean implements IntializingBean, its afterPropertySet() method is called. If the bean has the init method declaration, the specified initialization method is called.\nPost Initialization: If there are any BeanPostProcessors associated with the bean, their postProcessAfterInitialization() methods will be called.\nReady to Use: Now, the bean is ready to be used by the application.\nDestroy: If the bean implements DisposableBean, it will call the destroy() method.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What are the features of Spring?",
+        "answer": "The features of Spring are mentioned below:\nLightweight: Spring is lightweight when it comes to size and transparency. The basic version of the Spring Framework is around 1 MB. Besides, the processing overhead is also very negligible.\nInversion of Control (IoC): Loose coupling is achieved in Spring using the technique of inversion of control. The objects give their dependencies instead of creating or looking for dependent objects.\nAspect-Oriented Programming (AOP): Spring supports aspect-oriented programming and enables cohesive development by separating the application business logic from system services.\nContainer: Spring contains and manages the life cycle and configuration of application objects.\nMVC Framework: Spring comes with an MVC web application framework built on the core Spring functionality. This framework is highly configurable via strategy interfaces and accommodates multiple view technologies such as JSP, Velocity, Tiles, iText, and POI. However, other frameworks can be easily used instead of Spring MVC Framework.\nJDBC Exception Handling: The JDBC abstraction layer of Spring offers a meaningful exception hierarchy, which simplifies the error-handling strategy.\nIntegration: Spring provides the best integration services with Hibernate, JDO, and iBATIS.\nTransaction Management: Spring Framework provides a generic abstraction layer for transaction management. This allows the developer to add pluggable transaction managers and makes it easy to demarcate transactions without dealing with low-level issues. Spring\u2019s transaction support is not tied to J2EE environments, and it can also be used in container-less environments.",
+        "reference": "intellipaat.com"
+    }
+]

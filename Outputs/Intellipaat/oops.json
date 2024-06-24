@@ -1,0 +1,197 @@
+[
+    {
+        "question": "1. What is object-oriented programming?",
+        "answer": "Object-oriented programming is a type of programming that revolves around objects. It mainly focuses on managing code into objects that contain data and behavior, enabling better formation, modularity, and reusability.\nFor example: Before creating a house we create the blueprint of the house or design in particular. Based on the design we build the house. The blueprint is called class and the finished house is called the object.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Name some widely used OOP languages.",
+        "answer": "Python, Java, C, C++, C#, Ruby, Go, and Dart are some of the languages that use object-oriented programming.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What are the four pillars of OOPs?",
+        "answer": "The four pillars of OOPs are:\nEncapsulation\nAbstraction\nPolymorphism\nInheritance",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Explain inheritance in OOPs.",
+        "answer": "Inheritance in object-oriented programming means that the child class will inherit all the properties of the parent class. The child class will be able to access all the methods and behavior of the parent class.\nFor example:  A child will inherit the house that his father owns.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What is encapsulation?",
+        "answer": "Encapsulation means combining all the methods and behaviors and putting them into a single place called a class. It is like a medicinal capsule that has various medicine powders combined to make one capsule.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is polymorphism?",
+        "answer": "Poly means many, and morph means form. So, polymorphism allows one entity in code, such as a variable, function, or object to take many forms. This allows flexibility and adaptability in the programs.\nFor example: A man can be a father, an employee, a son, or a friend. It means that man has many forms.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What is abstraction?",
+        "answer": "Abstraction means hiding unwanted information from customers and only displaying what they want to see. \nFor example: When you go to an ATM, you are only concerned about withdrawing money, not about how the money is getting withdrawn.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is the difference between class and object?",
+        "answer": "A class is a blueprint of the object. It is just like a map created to build a house. It defines the attributes and behavior of the object that the class will have.\nAn object is an instance of a class. Like the architecture of the house tells you, it is going to have rooms, washrooms, a kitchen, doors, etc. The object will be the finished product of the same. We can create as many houses as we want using the class defined.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What are constructors?",
+        "answer": "A constructor is a special method that gets called whenever the object of the class is created. It has the same name as the class and no return type.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. Explain the concept of method overloading.",
+        "answer": "Method overloading is a concept of polymorphism. In this, the classes will have multiple methods with the same name. They only differ in the number of parameters, the data type of the parameters, or the order of the parameters.\nclass A:\n\n    def sum(a,b):\n        return a + b;\n\n    def sum(a,b,c):\n        return a + b + c\n\nIntermediate OOPs Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What is the difference between method overloading and method overriding?",
+        "answer": "Method overloading is having a way of writing methods in a class that performs similar tasks but the parameters are in different forms, i.e., it has several methods with the same name and return type but different numbers and types of arguments. But method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Explain the concept of abstraction with the help of an example.",
+        "answer": "Abstraction refers to hiding internal details and showing functionality. For example, we have created a shape class using draw() and area() methods. Whether or not this class will be used for drawing circles or rectangles does not matter, users can interact with these methods without knowing anything about how they are implemented for particular shapes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What is the purpose of interfaces in Java?",
+        "answer": "Interfaces define contracts for classes to implement with abstract methods that must be provided by implementing classes. They serve as multiple inheritance mechanisms, support polymorphism, and promote loose coupling.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Differentiate between abstract classes and interfaces in Java.",
+        "answer": "Both abstract classes and interfaces can contain abstract methods, non-abstract methods, as well as variables. A single class may only extend one abstract class, although it would implement many interfaces at once. Constructively, a constructor works on abstract classes rather than interfaces, which have no constructors at all.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is the role of the super keyword?",
+        "answer": "The super keyword in Java is utilized to refer back to the superclass of an existing object. It has a main purpose, which is to use superclass constructors and methods within a subclass. This enables method overriding and access to superclass members.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Explain the concept of method overriding with an example.",
+        "answer": "When a subclass provides an implementation for a method that is already defined in its superclass, it is known as method overriding. Let us assume there exists a super class by the name of Animal with one method called makeSound(). A sub class Dog can provide an alternative sound when making this sound, thus overwriting the earlier implementation of \u201cbark\u201d.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What is the diamond problem in inheritance, and how can it be resolved?",
+        "answer": "The problem of diamond inheritance arises when a child derives from two classes that have some base class in common. When this happens, ambiguity occurs during the process of method resolution. To avoid this problem, Java uses only a single inheritance for classes but permits multiple inheritances through interface implementation.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. What are abstract methods and abstract classes?",
+        "answer": "Abstract methods are those methods declared inside a class without giving a body for them. Abstract classes, on the other hand, are classes that contain at least one abstract method and cannot be instantiated. They lay out plans on how actual subclasses should implement these abstract methods.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Explain the concept of encapsulation with an example.",
+        "answer": "Encapsulation can be understood as the inclusion of methods and variables that operate on them in one object. For instance, a class Car has private attributes such as speed and fuel. These characteristics are modified by accelerate() or refuel() without showing what is inside.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What is the difference between static and non-static methods in Java?",
+        "answer": "Static methods belong to the class itself rather than to instances of the class. They can be called using the class name and are shared among all instances of the class. Non-static methods, on the other hand, belong to individual instances of the class and can access instance variables.\n\nAdvance OOPs Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. What are the different types of polymorphism?",
+        "answer": "Two types of polymorphism are compile-time polymorphism and run time polymorphism.\nCompile-Time Polymorphism: It is also called static polymorphism. The method to be invoked is determined at compile time in this case. Examples include operator overloading and function overloading.\nRuntime Polymorphism: Another name for it is dynamic polymorphism; it happens when the method to be executed is decided at runtime depending on the actual type of an object. This is done by using virtual functions through method overriding, usually using inheritance features.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What are the different types of Inheritance?",
+        "answer": "There are 5 types of inheritance:\nSingle-level Inheritance: It means the child class inherits the functionalities of a single parent class. For example, a child inherits functionalities from his/her mother or father\nMultiple-level Inheritance: It means there is more than one parent class from which the child class inherits the functionalities. For example, a child inherits the functionalities of both mother and father\nMulti-level Inheritance: It means the child class inherits functionalities from a parent class, which in turn is a child class of another parent class. For example, a father inherits functionalities from his father and then the child inherits them from the father\nHierarchical Inheritance: It means that multiple child classes inherit the functionalities of the parent class. In simple terms, there is one parent class and more than one child class. For example, father and uncle both inherit the functionalities of grandfather\nHybrid Inheritance: It is a combination of different inheritances. Consider a family tree and form a relation where the father and uncle inherit the functionalities of the grandfather. Then, you inherit the functionalities of both father and mother.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. What are virtual functions?",
+        "answer": "In object-oriented programming, virtual functions are declared in a base class and then overridden in derived classes to promote polymorphism. They enable specific implementations of methods that are defined in the base class to be provided by the derived class.\nThe implementing code is called at runtime based on the actual object type once a function is declared as virtual. This makes it possible for a particular piece of code to be flexible and extensible.\nFor example, circles and rectangles can calculate area based on their shapes such as with a shape having an area() function that is made virtual. By enabling dynamic dispatch, this mechanism invokes runtime polymorphism thereby improving code reusability and extendibility.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. What are the limitations of inheritance?",
+        "answer": "While promoting code reuse, inheritance may cause tight coupling between classes. Tight coupling occurs when changes in one class require modifications in related classes, thus increasing complexity and reducing flexibility. \nFor example, if you change something like the behavior of a method in the base class, then all known dependent subclasses have to be modified, which leads to interdependencies, making this codebase fragile. Thus, for maintainability and scalability purposes, even though it enhances reuse, inheritance should be used sparingly.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. What are the other programming paradigms besides OOP?",
+        "answer": "There are two programming paradigms other than OOP:\nImperative programming: This paradigm considers the steps involved in changing a program\u2019s state using statements. It consists of various sub-paradigms:\nProcedural Programming Paradigm: Computer programs are composed of sequences of instructions called procedures or routines. These procedures can be invoked to perform specific tasks.\nObject-Oriented Programming (OOP): In OOP, software design is organized around objects that encapsulate data and behavior. It involves ideas like inheritance, encapsulation, and polymorphism.\nParallel Programming Paradigm: This is about running many tasks at the same time to improve performance and efficiency through concurrency.\nDeclarative Programming: Unlike imperative programming, declarative programming focuses on what the program should achieve rather than how it should achieve it. Examples include\nLogical Programming Paradigm: Programs are built on formal logic, where statements represent facts and rules about a problem domain.\nFunctional Programming Paradigm: Computation is modeling, which is the evaluation of mathematical functions by composing or applying them to functional programs.\nDatabase Programming Paradigm: This revolves around managing and querying data stored in databases, often using specialized.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What is the difference between structural programming and object-oriented programming?",
+        "answer": "Structural Programming\nFocus: Major core is programs that are designed around approaches or processes in which statements are executed sequentially.\nData and Functions: Data detached from functions; data are played with through this way of function passing parameters.\nExample: For instance, the input for calculation and display would each require separate functions in a rectangle area program.\nObject-Oriented Programming (OOP)\nFocus: Places emphasis on objects as containers of data and behavior and operating by well-defined interfaces.\nData and Functions: These entities are joined together; object-oriented programming can simply change the method name specifying how to access the data.\nExample: A class called Rectangle has attributes such as length and width, then methods like calculateArea().\nComparison\nData Encapsulation: OOP upholds the bundling of functions with their related data through encapsulation.\nInheritance and Polymorphism: For code reuse purposes, OOP allows inheritance and polymorphism. \nExample: By extending the Rectangle class create a Square class that inherits properties and methods.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is static and dynamic binding?",
+        "answer": "These are the mechanisms in programming languages that determine which implementation of a function or method will be called at runtime.\nStatic Binding\nIt is also called early binding and refers to the case where the compiler decides on the method to invoke during compile time, depending on the reference type.\nIn static binding, the method that should be called will be resolved at compile time.\nFor instance, when you use a reference variable of one Java class, such as a parent class, it actually refers to an object of another Java class, but the method in parent class will still be called.\nDynamic Binding\nAlso referred to as late binding or runtime polymorphism, it exists when the method to invoke is decided at run-time according to its actual object type.\nIn dynamic binding, the method that should be called will be resolved at run-time.\nFor example, if you have used a reference variable of some parent class in Java while referring to an object belonging to its child class, then these references would imply calling for the methods in these child classes only.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. What are the different constructors in C++?",
+        "answer": "C++ constructors are member functions that are used to initialize objects of a class. These constructors have the same name as the class and do not have a return type. There are different kinds of constructors.\nDefault Constructor: It is a constructor that has no arguments. It creates an object with default values or does default initialization. Example: MyClass() {}\nParameterized Constructors: This type of constructor has some parameters that can be used to initialize objects with particular values. For example, MyClass(int x, int y) { \u2026 }\nCopy Constructor: A constructor that makes another object identical to an existing one. Like this: MyClass(const MyClass& other) { \u2026 }\nConstructor Overloading: Many constructors per class have different argument list(s). For instance: MyClass(int x) { \u2026 } and MyClass(int x, int y) { \u2026 }\nDelegate Constructor (C++11 and later): One constructor in a class calls another constructor within the same class. This, for example, is done by using the code snippet below; MyClass(): MyClass(0, 0) { \u2026}\nIn C++, it is essential to use constructors when giving birth to an object; therefore, they can be modified differently for this reason.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What are decorators in OOPs?",
+        "answer": "Decorators are a design pattern in object-oriented programming (OOP) that adds behavior to individual objects without affecting others in the same class dynamically. In Python, they are often used to improve functions or methods by wrapping them with additional functionality. Typically, these wrappers are implemented using functions or classes, meaning that one can execute supplementary acts before or after the original function or method.\ndef uppercase_decorator(func):\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        return result.upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet(name):\n    return f\"Hello, {name}!\"\n\nprint(greet(\"John\"))  # Output: HELLO, JOHN",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. What are access specifiers?",
+        "answer": "In object-oriented programming languages such as C++, Java, and C#, access specifiers (also known as access modifiers) are keywords that determine the visibility and accessibility of class members (attributes and methods) from outside the class.\nThere are three main types of access specifiers:\nPublic: The members that are declared public; because any other class or function can access it from outside the class, it is accessible from anywhere in the program.\nProtected: This member is only accessible within its subclass; for example, when you declare a variable as protected, it means this variable can be accessed by any code within this class hierarchy but not from another package outside this package hierarchy.\nPrivate: These members remain invisible to other classes coming from anywhere else even if that happens to be its descendant class, i.e., private is restricted to 1 particular class.\nclass MyClass:\n    def __init__(self):\n        self.public_var = \"I am public\"\n        self._protected_var = \"I am protected\"\n        self.__private_var = \"I am private\"\n\nobj = MyClass()\nprint(obj.public_var)      # Output: I am public\nprint(obj._protected_var)  # Output: I am protected\nprint(obj.__private_var)  # Error: AttributeError: 'MyClass' object has no attribute '__private_var'\n\nProblem-Solving OOPs Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. Write a Python class named Student with attributes name and age. Create an object of this class and print its attributes.",
+        "answer": "class Student:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nstudent1 = Student(\"Alice\", 20)\nprint(student1.name, student1.age)  # Output: Alice 20",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. Create a base class Animal with a method sound() and a derived class Dog that inherits from Animal and overrides the sound() method to return",
+        "answer": "class Animal:\n    def sound(self):\n        return \"Generic animal sound\"\n\nclass Dog(Animal):\n    def sound(self):\n        return \"Woof!\"\n\ndog = Dog()\nprint(dog.sound())  # Output: Woof!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. Create a class Shape with a method area() and two derived classes Rectangle and Circle that override the area() method to calculate the area of the respective shapes.",
+        "answer": "class Shape:\n    def area(self):\n        return 0\n\nclass Rectangle(Shape):\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n\n    def area(self):\n        return self.length * self.width\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nrectangle = Rectangle(5, 4)\nprint(rectangle.area())  # Output: 20\n\ncircle = Circle(3)\nprint(circle.area())     # Output: 28.26",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. Create a class Account with a private attribute balance. Implement methods of deposit() and withdraw() to modify the balance.",
+        "answer": "class Account:\n    def __init__(self, initial_balance):\n        self.__balance = initial_balance\n\n    def deposit(self, amount):\n        self.__balance += amount\n\n    def withdraw(self, amount):\n        if amount <= self.__balance:\n            self.__balance -= amount\n        else:\n            print('Insufficient funds')\n\naccount = Account(1000)\naccount.deposit(500)\naccount.withdraw(200)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. Create classes Leg and Body. Use composition to create a Human class composed of instances of Leg and Body.",
+        "answer": "class Leg:\ndef kick(self):\nprint(\"Kicking with leg\")\n\nclass Body:\ndef walk(self):\nprint(\"Walking with body\")\n\nclass Human:\n    def __init__(self):\n        self.leg = Leg()\n        self.body = Body()\n\nhuman = Human()\nhuman.leg.kick()  # Output: Kicking with leg\nhuman.body.walk() # Output: Walking with body",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. Create an abstract class Animal with an abstract method speak(). Implement derived classes Dog and Cat that override the speak() method.",
+        "answer": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    @abstractmethod\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Woof!\"\n\nclass Cat(Animal):\n    def speak(self):\n        return \"Meow!\"\n\ndog = Dog()\nprint(dog.speak())  # Output: Woof!\n\ncat = Cat()\nprint(cat.speak())  # Output: Meow!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. Create a class Point with attributes x and y. Implement the __add__() method to add two Point objects.",
+        "answer": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint((p1 + p2).x, (p1 + p2).y)  # Output: 4 6",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. Create a class Math with a static method add() that takes two numbers as arguments and returns their sum.",
+        "answer": "class Math:\n    @staticmethod\n    def add(a, b):\n        return a + b\n\nprint(Math.add(3, 5))  # Output: 8",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. Create a class Date with a class method now() that returns the current date.",
+        "answer": "from datetime import date\n\nclass Date:\n    @classmethod\n    def now(cls):\n        return date.today()\n\nprint(Date.now())  # Output: Current date",
+        "reference": "intellipaat.com"
+    }
+]

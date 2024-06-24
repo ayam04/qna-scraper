@@ -1,0 +1,232 @@
+[
+    {
+        "question": "1. What is jQuery?",
+        "answer": "jQuery is a JavaScript library that simplifies web development. It eases tasks like HTML document traversal, event handling, and animation. With a concise syntax, it enhances the interaction and manipulation of web pages. Developers use jQuery to create dynamic and interactive websites.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What is jQuery used for?",
+        "answer": "jQuery is a very popular JavaScript library. It makes programming JavaScript easier by letting you select elements, handle events, and develop animations. Web developers use JQuery to build interactive websites and web applications. It helps add effects like fading, sliding, and more without writing a lot of code.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What are the advantages of using jQuery?",
+        "answer": "Easy to use and learn\nEasily expandable\nCross-browser support (IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+)\nEasy to use for DOM manipulation and traversal\nLarge pool of built-in methods\nAJAX capabilities\nMethods for changing or applying CSS and creating animations\nEvent detection and handling\nCheck and enroll in this HTML and jQuery course online provided by Intellipaat.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What is the difference between an ID selector and a class selector in jQuery?",
+        "answer": "In jQuery, an ID selector targets a unique element with a specific ID, starting with a hash symbol (#). A class selector, denoted by a dot (.), targets multiple elements with the same class. ID is unique, while class can be shared among elements.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Difference between $(this) and this keyword in jQuery.",
+        "answer": "This could be a tricky question for many jQuery beginners, but indeed, it\u2019s a simple one.\n$(this) returns a jQuery object, on which you can call several jQuery methods, e.g., text() to retrieve text, val() to retrieve value, etc., while this represents the current element, and it\u2019s one of the JavaScript keywords to denote the current DOM element in a context. You cannot call the jQuery method on this until it\u2019s wrapped using the $() function, i.e., $(this).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is the main advantage of loading jQuery library using CDN?",
+        "answer": "Well, apart from many advantages, including reducing server bandwidth and faster downloads, one of the most important is that if a browser has already downloaded the same jQuery version from the same CDN, it won\u2019t download it again. Nowadays, almost all public websites use jQuery for user interaction and animation. There is a high chance that browsers already have the jQuery library downloaded. Curious reader, please see the answer for in-depth analysis.\nCheck out our PHP Interview Questions to ace your next interview!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. How do CSS precedence/cascading rules work?",
+        "answer": "CSS precedence is like a ranking system for styles. Inline styles have the highest priority, followed by internal and external styles. Specificity (ID > class > tag) and order in the stylesheet matter.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is a class? What is an ID?",
+        "answer": "A class is a style (i.e., a group of CSS attributes) that can be applied to one or more HTML elements. This means it can apply to instances of the same element or instances of different elements to which the same style can be attached. Classes are defined in CSS using a period followed by the class name. It is applied to an HTML element via the class attribute and the class name.The following snippet shows a class defined, and then it is applied to an HTML DIV element:\n.test {font-family: Helvetica; font-size: 20; background: black;}\ntest\nAlso, you could define a style for all elements with a defined class. This is demonstrated with the following code that selects all P elements with the column class specified.\np.column {font-color: black;}\nAn ID selector is a name assigned to a specific style. In turn, it can be associated with one HTML element with the assigned ID. Within CSS, ID selectors are defined with the # character followed by the selector name.\nThe following snippet shows the CSS example1 defined followed by the use of an HTML element\u2019s ID attribute, which pairs it with the CSS selector.\n#example1: {background: blue;}",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What is grouping?",
+        "answer": "When more than one selector shares the same declaration, they may be grouped together via a comma-separated list; this allows you to reduce the size of the CSS (every bit and byte is important) and makes it more readable. The following snippet applies the same background to the first three heading elements:\nh1, h2, h3 {background: red;}",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What is HTML?",
+        "answer": "HTML is short for HyperText Markup Language and is the language of the World Wide Web. It is the standard text formatting language used for creating and displaying pages on the Web. HTML documents are made up of two things: the content and the tags that format them for proper display on pages.\nCheck out the Web Development Interview Questions for Freshers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What is semantic HTML?",
+        "answer": "Semantic HTML is a coding style where the tags embody what the text is meant to convey. In semantic HTML, tags like <b></b> for bold and <i></i> for italic should not be used, the reason being that they just represent formatting and provide no indication of meaning or structure. The semantically correct thing to do is to use <strong></strong> and <em></em>. These tags will have the same bold and italic effects while demonstrating meaning and structure (emphasis in this case).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Compare jQuery and AngularJS",
+        "answer": "Criteria jQuery AngularJS\nAvailability of RESTful API No Yes\nSupport for MVC No Yes\nTwo-way data binding No Yes",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What is $() in jQuery library?",
+        "answer": "The $() function is an alias of jQuery() function. At first, it looks weird and makes jQuery code cryptic, but once you get used to it, you will love its brevity. $() function is used to wrap any object into a jQuery object, which then allows you to call various method-defined jQuery objects. You can even pass a selector string to the $()function, and it will return a jQuery object containing an array of all matched DOM elements.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What are the effects methods used in jQuery?",
+        "answer": "The main effects methods used in jQuery are show(), hide(), toggle(), fadeIn(), fadeOut(), fadeToggle(), slideDown(), slideUp(), and slideToggle(). These methods are used to show or hide elements on a webpage with visual effects like fading and sliding. They provide an easy way to create animated transitions between visible and hidden states of elements.\nAlso, check our blog on Top 15 jQuery Project Ideas for Beginners in 2024!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. How do you include jQuery on a web page?",
+        "answer": "To include jQuery on a web page, you need to add the jQuery library file to the page. This is done by adding a <script> tag and referencing the jQuery file location before any other jQuery code. The script tag is usually placed in the <head> section of an HTML page so that jQuery is loaded first before the page contents.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Can you provide an example of basic jQuery syntax?",
+        "answer": "A basic example of jQuery syntax would be selecting an element and performing an action on it. For example, to select the paragraph with id \u201cpara\u201d and change its color to red, the code would be:\n$(\"#para\").css(\"color\",\"red\");\nThis selects the element with id \u201cpara\u201d and uses the .css() method to modify its color style property.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. Explain the concept of selectors in jQuery.",
+        "answer": "Selectors in jQuery allow us to select specific elements on a webpage to perform actions on them. Selectors are used to \u201cquery\u201d the DOM or web page structure. Common selectors include ID (#), class (.), tag name, and attribute selectors. Selectors make it easy to target elements without having to use methods like getElementById. This allows jQuery to manipulate and change elements easily.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How do you hide an element in jQuery?",
+        "answer": "To hide an element in jQuery, we can use the hide() method. This method is used to hide the content of the selected elements. For example, to hide a paragraph with id \u201cpara\u201d, we can use:\n$(\"#para\").hide();\nThis hides the paragraph by setting its display property to none.\n\nIntermediate jQuery Interview Questions and Answers",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. What's the difference between $(document).ready() and $(window).load()?",
+        "answer": "The main difference between $(document).ready() and $(window).load() is the timing of when the code inside their functions runs. The $(document).ready() function runs when the HTML document is fully loaded and processed. The $(window).load() function runs later when all assets like images have been fully loaded. $(document).ready() is faster as it doesn\u2019t wait for images/assets.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. Explain the concept of chaining in jQuery.",
+        "answer": "Chaining in jQuery allows us to link together multiple jQuery methods or actions in a single statement. This is possible because most jQuery methods return the jQuery object itself. For example, we can select an element, add a class, and show it with:\n$(\"#id\").addClass(\"blue\").show();\nChaining helps reduce code and perform multiple operations with a single jQuery selection, making code more compact and readable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. How can you create animations using jQuery?",
+        "answer": "jQuery provides various animation effects and methods to create animations on web pages. Common animation methods include slide, fade, and show/hide with durations. For example, to fade an element slowly, we can use fadeIn(1000), which fades over 1 second (1000ms). We can also create custom animations using animate() method by modifying CSS properties like width, height, and opacity over time.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What is AJAX in jQuery?",
+        "answer": "AJAX stands for Asynchronous JavaScript and XML. It is a technique used in jQuery to request data from a web server asynchronously in the background without interfering with the display or behavior of the existing page. This allows updating parts of a web page dynamically without reloading the entire page. Common AJAX methods in jQuery are load(), get(), post(), etc.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. How do you add or remove classes in jQuery?",
+        "answer": "jQuery provides easy methods to add and remove classes from elements. To add a class, we use the addClass() method and pass the class name. To remove a class, we use the removeClass() method and pass the class name.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. What is event delegation in jQuery?",
+        "answer": "Event delegation in jQuery allows attaching a single event handler to a parent element instead of multiple handlers to children. When a child element event occurs, it bubbles up to the parent and is handled there. This improves performance as fewer handlers are required.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. How do you get and set text content in jQuery?",
+        "answer": "To get or retrieve the text content of an element in jQuery, we use the text() method. To set or update the text content, we use the text() method along with a parameter specifying the new text. For example, to get text from a paragraph, use $(\u201cp\u201d).text(); and to set new text, use $(\u201cp\u201d).text(\u201cHello World\u201d);. This allows for easily working with an element\u2019s text.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. How do you check if an element has a particular class?",
+        "answer": "To check if an element has a particular class in jQuery, we can use the hasClass() method. It accepts a class name as a parameter and returns a boolean true/false. For example, to check if a div has class \u201cactive\u201d, we can use:\nvar hasClass = $(\"div\").hasClass(\"active\");\nThis returns true if the div has the \u201cactive\u201d class, and false otherwise.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is the purpose of \u2018each()\u2019 function in jQuery?",
+        "answer": "The each() function in jQuery is used to iterate over elements in a jQuery collection and perform actions on each element. It allows running the same code for each matched element. For example, we can use each() to add a class to every <p> tag on a page. Inside each(), we have access to the current element using this keyword. This makes it easy to repeat tasks over multiple elements.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. Explain the difference between \u2018prop()\u2019 and \u2018attr()\u2019 in jQuery.",
+        "answer": "The main difference between prop() and attr() is that prop() works for properties and attr() works for attributes. Properties are the internal state of elements, like checked, disabled, etc., while attributes are present in HTML, like id, class, etc.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. How can you create a slide toggle effect in jQuery?",
+        "answer": "To create a slide toggle effect in jQuery, we can use the slideToggle() method. This method toggles the height of the element smoothly from 0 to the current height, or vice versa, with a sliding animation. For example, to toggle the height of a div on a button click:\n$(\"button\").click(function(){\n$(\"div\").slideToggle();\n});\nThis creates a smooth sliding effect to show/hide the div content on each click.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. How can you create a fade effect using jQuery?",
+        "answer": "To create a fade effect in jQuery, we can use fadeIn(), fadeOut(), and fadeToggle() methods. fadeIn() fades in the element by increasing its opacity from 0 to 1. fadeOut() does the reverse by decreasing opacity from 1 to 0. fadeToggle() toggles between these effects on successive clicks. We can also control the fade duration. For example, $(\u201cdiv\u201d).fadeIn(1000) fades in over 1 second.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. What is the difference between \u2018empty()\u2019 and \u2018remove()\u2019 in jQuery?",
+        "answer": "The empty() and remove() methods in jQuery are used to remove elements, but they work in different ways. The empty() method removes all child elements from the set of matched elements. It keeps the elements but removes the content. For example, $(\u201cp\u201d).empty() removes all <p> elements content.\nThe remove() method removes the set of matched elements from the DOM. It removes the element and its data/eventhandlers completely. For example, $(\u201cp\u201d).remove() removes all <p> elements.\nIn short, empty() removes child elements, and remove() removes the element itself.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. How do you handle multiple AJAX requests in jQuery?",
+        "answer": "To handle multiple AJAX requests in jQuery, you can make different requests using the $.ajax() function. Give each request a unique ID or name. In the success callback of each request, check the ID to know which request finished, and do the next steps for that request only.\n\nAdvanced jQuery Interview Questions and Answers",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. What is the purpose of \u2018serialize()\u2019 in jQuery?",
+        "answer": "The serialize() method in jQuery is used to encode a set of form elements into a serialized string that can be submitted to the server. It collects the form data and converts it into a URL-encoded string, like name=value&name=value format. This format is typically used by AJAX requests to submit form data to the server without reloading the page.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. What is event stopPropagation()?",
+        "answer": "The stopPropagation() method in jQuery prevents further propagation of the current event in the bubbling phase. When an event happens on an element, it bubbles up the DOM tree. stopPropagation() stops the bubbling to parent elements. This is useful when an inner element\u2019s click should not trigger the parent\u2019s click handler.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. How do you delay execution in jQuery?",
+        "answer": "To delay the execution of code in jQuery, we can use the setTimeout() function. It allows specifying code to execute after a delay of milliseconds. For example, to fade an element in after 2 seconds, we can use:\nsetTimeout(function(){ $(\"div\").fadeIn(); }, 2000);\nThis delays the fadeIn animation by 2 seconds before executing.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. What is the purpose of \u2018unbind()\u2019 in jQuery?",
+        "answer": "The unbind() method in jQuery is used to remove event handlers that were bound using bind(), live(), or on(). When we no longer need an event handler, we use unbind() to remove it. This avoids multiple handlers getting attached to the same events. For example, unbinding a click handler on an element removes the handler and prevents it from executing on future clicks.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. How do you get the index of an element in a set using jQuery?",
+        "answer": "To get the index of an element within a jQuery selection set, we can use the index() method. It returns the position of the element relative to its siblings. For example, to get the index of a clicked paragraph, we can do:\n$(\"p\").click(function(){\nvar index = $(\"p\").index(this);\nconsole.log(index);\n});",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. What is the role of the \u2018data()\u2019 method in jQuery?",
+        "answer": "The data() method in jQuery allows adding, retrieving, and deleting custom data attached to DOM elements. It is used to store arbitrary data associated with elements without modifying the HTML. This provides a way to include additional information about elements that can be used later.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. How do you handle mouse events like click and double-click in jQuery?",
+        "answer": "jQuery provides .click(), .dblclick(), and other methods to easily handle mouse events. To attach a click handler, use .click(function(){ /* code here / }). For double click, use .dblclick(function(){ / code */ }). The function will execute whenever the event occurs. We can identify the clicked/double-clicked element using this keyword.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "40. What is the difference between \u2018find()\u2019 and \u2018filter()\u2019 in jQuery?",
+        "answer": "The main difference between find() and filter() is that find() searches for descendants of elements in the DOM tree, while filter() filters the current selection set itself. Find() looks inside elements for descendant matches and returns a new set. Filter() looks at each element in the current selection set and returns a new set matching the filter criteria.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "41. What is the purpose of the \u2018serializeArray()\u2019 method in jQuery?",
+        "answer": "The serializeArray() method in jQuery is used to serialize form elements into an array of names and values. It collects the form elements data and generates a JSON array, which can be sent to the server via AJAX. This is useful for sending form data to the server without a page refresh.\nFor example, serializeArray() on a form can stringify the form data into an array like [{\u201cname\u201d:\u201dfield1\u2033,\u201dvalue\u201d:\u201dvalue1\u2033},..] which can then be sent to the server via AJAX.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "42. What is the purpose of the \u2018fadeIn()\u2019 function?",
+        "answer": "The fadeIn() function in jQuery is used to gradually increase the opacity of an element to make it visible with a fading effect. It animates the opacity from 0 to 1 within a given duration to create a smooth fade in transition. This is commonly used to display hidden elements on a page with a nice visual effect.\nFor example, $(\u201cp\u201d).fadeIn(1000) will make the <p> element fade in from invisible to visible over 1 second.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "43. What is the role of the \u2018next()\u2019 method in jQuery?",
+        "answer": "The next() method in jQuery gets the immediately following sibling element of each element in the matched set. It returns a new jQuery object containing the next siblings. This is useful when we need to access or manipulate the element following the current one.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "44. What is the difference between \u2018before()\u2019 and \u2018prepend()\u2019 in jQuery?",
+        "answer": "The main difference between before() and prepend() is their position in inserting content. The before() method inserts content before the selected elements only, while prepend() inserts content as the first child of each element.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "45. What is the purpose of the \u2018mouseleave()\u2019 function in jQuery?",
+        "answer": "The mouseleave() function in jQuery is used to detect when the mouse pointer leaves an element. It attaches an event handler to the element that will run if the mouse leaves the element by moving to an area outside of it. This is useful for things like hiding a tooltip when the mouse exits an element.\nFor example,\n$(\u201cp\u201d).mouseleave(function(){ $(this).hide(); }) would hide any <p> element when the mouse leaves it.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "46. How can you change the HTML content of an element in jQuery?",
+        "answer": "To change HTML content in jQuery, use html(). For example: $(\u201c#element\u201d).html(\u201c<p>New content</p>\u201d);. This method sets the HTML content of an element. It\u2019s an easy way to update what\u2019s inside an element using jQuery.",
+        "reference": "intellipaat.com"
+    }
+]

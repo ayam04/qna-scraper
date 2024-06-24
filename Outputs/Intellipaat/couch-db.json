@@ -1,0 +1,62 @@
+[
+    {
+        "question": "1. Compare CouchDB and MongoDB",
+        "answer": "Criteria CouchDB MongoDB\nInterface REST/HTTP TCP/IP Custom Protocol\nObject Storage Documents in database Database in collections in database\nReplication Master-Master Master-Slave",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What is CouchDB?",
+        "answer": "CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents and query your indexes with your web browser, via HTTP. Index, combine, and transform your documents with JavaScript. CouchDB works well with modern web and mobile apps. You can even serve web apps directly out of CouchDB. And you can distribute your data, or your apps, efficiently using CouchDB\u2019s incremental replication. CouchDB supports master-master setups with automatic conflict detection.\nCouchDB comes with a suite of features, such as on-the-fly document transformation and real-time change notifications, that makes web app development a breeze. It even comes with an easy to use web administration console. You guessed it, served up directly out of CouchDB! We care a lot about distributed scaling. CouchDB is highly available and partition tolerant, but is also eventually consistent. And we care a lot about your data. CouchDB has a fault-tolerant storage engine that puts the safety of your data first.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What Language is CouchDB Written in?",
+        "answer": "Erlang, a concurrent, functional programming language with an emphasis on fault tolerance. Early work on CouchDB was started in C++ but was replaced by Erlang OTP platform. Erlang has so far proven an excellent match for this project.\nCouchDB\u2019s default view server uses Mozilla\u2019s Spidermonkey JavaScript library which is written in C. It also supports easy integration of view servers written in any language.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "Check out this video on CouchBase Tutorial for Beginners",
+        "answer": "",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Why Does CouchDB Not Use Mnesia?",
+        "answer": "Several reasons:\nThe first is a storage limitation of 2 gig per file.\nThe second is that it requires a validation and fixup cycle after a crash or power failure, so even if the size limitation is lifted, the fixup time on large files is prohibitive.\nMnesia replication is suitable for clustering, but not disconnected, distributed edits. Most of the \u201ccool\u201d features of Mnesia aren\u2019t really useful for CouchDB.\nAlso Mnesia isn\u2019t really a general-purpose, large scale database. It works best as a configuration type database, the type where the data isn\u2019t central to the function of the application, but is necessary for the normal operation of it. Think things like network routers, HTTP proxies and LDAP directories, things that need to be updated, configured and reconfigured often, but that configuration data is rarely very large.\nInterested in Database? Here is the Database Training provided by Intellipaat.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. How do I use transactions with CouchDB?",
+        "answer": "CouchDB uses an \u201coptimistic concurrency\u201d model. In the simplest terms, this just means that you send a document version along with your update, and CouchDB rejects the change if the current document version doesn\u2019t match what you\u2019ve sent.It\u2019s deceptively simple, really. You can reframe many normal transaction based scenarios for CouchDB. You do need to sort of throw out your RDBMS domain knowledge when learning CouchDB, though. It\u2019s helpful to approach problems from a higher level, rather than attempting to mold Couch to a SQL based world.Keeping track of inventoryThe problem you outlined is primarily an inventory issue. If you have a document describing an item, and it includes a field for \u201cquantity available\u201d, you can handle concurrency issues like this:\nRetrieve the document, take note of the _rev property that CouchDB sends along\nDecrement the quantity field, if it\u2019s greater than zero\nSend the updated document back, using the _rev property\nIf the _rev matches the currently stored number, be done!\nIf there\u2019s a conflict (when _rev doesn\u2019t match), retrieve the newest document version\nIn this instance, there are two possible failure scenarios to think about. If the most recent document version has a quantity of 0, you handle it just like you would in a RDBMS and alert the user that they can\u2019t actually buy what they wanted to purchase. If the most recent document version has a quantity greater than 0, you simply repeat the operation with the updated data, and start back at the beginning. This forces you to do a bit more work than an RDBMS would, and could get a little annoying if there are frequent, conflicting updates.\nNow, the answer I just gave presupposes that you\u2019re going to do things in CouchDB in much the same way that you would in an RDBMS. I might approach this problem a bit differently:\nI\u2019d start with a \u201cmaster product\u201d document that includes all the descriptor data (name, picture, description, price, etc). Then I\u2019d add an \u201cinventory ticket\u201d document for each specific instance, with fields for product_key and claimed_by. If you\u2019re selling a model of hammer, and have 20 of them to sell, you might have documents with keys like hammer-1, hammer-2, etc, to represent each available hammer.\nThen, I\u2019d create a view that gives me a list of available hammers, with a reduce function that lets me see a \u201ctotal\u201d. These are completely off the cuff, but should give you an idea of what a working view would look like.\nMap\n\nfunction(doc)\n{\nif (doc.type == \u2018inventory_ticket\u2019 &amp;&amp; doc.claimed_by == null ) {\nemit(doc.product_key, { \u2018inventory_ticket\u2019 :doc.id, \u2018_rev\u2019 : doc._rev });\n}\n}\nThis gives me a list of available \u201ctickets\u201d, by product key. I could grab a group of these when someone wants to buy a hammer, then iterate through sending updates (using the id and _rev) until I successfully claim one (previously claimed tickets will result in an update error).\n\nReduce\n\nfunction (keys, values, combine) {\nreturn values.length;\n}\nThis reduce function simply returns the total number of unclaimed inventory_ticket items, so you can tell how many \u201chammers\u201d are available for purchase.\nCaveats\nThis solution represents roughly 3.5 minutes of total thinking for the particular problem you\u2019ve presented. There may be better ways of doing this! That said, it does substantially reduce conflicting updates, and cuts down on the need to respond to a conflict with a new update. Under this model, you won\u2019t have multiple users attempting to change data in primary product entry. At the very worst, you\u2019ll have multiple users attempting to claim a single ticket, and if you\u2019ve grabbed several of those from your view, you simply move on to the next ticket and try again .\nLearn more details about  through online CouchDB course.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. How do you compare MongoDB, CouchDB and CouchBase?",
+        "answer": "MongoDB and CouchDB are document-oriented databases. MongoDB and CouchDB are the most typical representative of the open-source NoSQL database. They have nothing in common other than being stored in the document outside. MongoDB and CouchDB, the data model interface, object storage, and replication methods have many differences.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. How is PouchDB different from CouchDB?",
+        "answer": "PouchDB is also a CouchDB client, and you should be able to switch between a local database or an online CouchDB instance without changing any of your application\u2019s code.\nHowever, there are some minor differences to note:\nView Collation \u2013 CouchDB uses ICU to order keys in a view query; in PouchDB they are ASCII ordered.\nView Offset \u2013 CouchDB returns an offset property in the view results. In PouchDB, offset just mirrors the skip parameter rather than returning a true offset.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. So is CouchDB now going to written in Java?",
+        "answer": "Erlang is a great fit for CouchDB and I have absolutely no plans to move the project off its Erlang base. IBM/Apache\u2019s only concerns are we remove license incompatible 3rd party source code bundled with the project, a fundamental requirement for any Apache project. So some things may have to replaced in the source code (possibly Mozilla Spidermonkey), but the core Erlang code stays.\nAn important goal is to keep interfaces in CouchDB simple enough that creating compatible implementations on other platforms is feasible. CouchDB has already inspired the database projects RDDB and Basura. Like SQL databases, I think CouchDB needs competition and a ecosystem to be viable long term. So Java or C++ versions might be created and I would be delighted to see them, but it likely won\u2019t be me who does it.\nThese are described in more detail on HBase community",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What does IBM\u2019s involvement mean for CouchDB and the community?",
+        "answer": "The main consequences of IBM\u2019s involvement are:\n\u2013 The code is now being apache licensed, instead of GPL.\n\u2013 Damien is going to be contributing much more time!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. Mention the main features of CouchDB?",
+        "answer": "JSON Documents \u2013 Everything stored in CouchDB boils down to a JSON document.\nRESTful Interface \u2013 From creation to replication to data insertion, every management and data task in CouchDB can be done via HTTP.\nN-Master Replication \u2013 You can make use of an unlimited amount of \u2018masters\u2019, making for some very interesting replication topologies.\nBuilt for Offline \u2013 CouchDB can replicate to devices (like Android phones) that can go offline and handle data sync for you when the device is back online.\nReplication Filters \u2013 You can filter precisely the data you wish to replicate to different nodes.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What is the use of CouchDB?",
+        "answer": "CouchDB allows you to write a client side application that talks directly to the Couch without the need for a server side middle layer, significantly reducing development time. With CouchDB, you can easily handle demand by adding more replication nodes with ease. CouchDB allows you to replicate the database to your client and with filters you could even replicate that specific user\u2019s data.\nHaving the database stored locally means your client side application can run with almost no latency. CouchDB will handle the replication to the cloud for you. Your users could access their invoices on their mobile phone and make changes with no noticeable latency, all whilst being offline. When a connection is present and usable, CouchDB will automatically replicate those changes to your cloud CouchDB.\nCouchDB is a database designed to run on the internet of today for today\u2019s desktop-like applications and the connected devices through which we access the internet.",
+        "reference": "intellipaat.com"
+    }
+]

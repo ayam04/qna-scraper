@@ -1,0 +1,187 @@
+[
+    {
+        "question": "1. What is REST API?",
+        "answer": "Representational State Transfer Application Programming Interface, or REST API, is a term that refers to a set of guidelines and practices used to create and put into use networked applications. By specifying a standardized method of accessing and manipulating resources, RESTful APIs facilitate communication across various software systems over the internet.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What is the difference between API and REST API?",
+        "answer": "API refers to a set of rules and tools that enable software programs to communicate and interact with one another. On the other hand, REST API refers to an API that adheres to the REST architectural style\u2019s concepts and limits, utilizing common HTTP methods and resource-based communication.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What do you mean by RESTful web services?",
+        "answer": "RESTful web services, short for Representational State Transfer, are an architectural style used in web development to design networked applications. It relies on HTTP methods like GET, POST, PUT, and DELETE to perform CRUD operations on resources. RESTful services use URLs to uniquely identify resources and employ standard data formats such as JSON or XML for data exchange. The key principles of REST include statelessness, meaning each request from a client must contain all the information required to understand and process it. These services are lightweight, scalable, and widely adopted due to their simplicity, making them a popular choice for building APIs and web applications.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What are the features of RESTful web services?",
+        "answer": "The features of RESTful web services are mentioned below: \nStateless: The server does not store client context between requests.\nUniform Interface: RESTful APIs follow standard rules and conventions.\nResource-Oriented: APIs are centered around resources that are identified by unique URLs.\nRepresentation of Resources: Resources are represented using standard data formats (e.g., JSON, XML).\nStateless Server: The server treats each request independently and does not maintain the client state.\nCaching: APIs can support caching of responses to improve performance.\nLayered System: APIs can be designed as a layered system for the separation of concerns.\nClient-Server Architecture: The client handles the user interface, and the server handles business logic and data storage.\nStateless Communication: Stateless communication implies that each client request has all of the necessary information for the server to process and that the server has no knowledge or recollection of the client\u2019s prior interactions or state between requests.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. What is the definition of messaging in terms of RESTful web services?",
+        "answer": "In the context of RESTful web services, messaging refers to the exchange of information or communication between the client and the server using HTTP messages. These messages are sent as requests and responses; they follow the standard HTTP protocol.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. Explain \u2018Addressing\u2019 in RESTful web services.",
+        "answer": "Addressing in RESTful web services refers to the mechanism by which resources are identified and accessed using URLs (Uniform Resource Locators). URLs play a crucial role in addressing this, as they provide a unique and standardized way to locate and interact with resources in the system.\nThe URL format is mentioned below: \n<protocol>://<application-name>/<type-of-resource>/<id-of-resource>",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Why are REST services easily scalable?",
+        "answer": "REST services are easily scalable due to several inherent characteristics of the RESTful architecture. Here are the key reasons why REST services are scalable:\nStateless Communication: RESTful services follow a stateless communication model, allowing requests to be processed independently and in parallel.\nResource-Oriented Design: REST APIs are centered around resources, allowing individual resources to be scaled independently.\nCacheability: RESTful services support caching, thereby reducing the load on the server by reusing stored responses.\nLoad Balancing: Load balancers distribute incoming requests across multiple servers, thus ensuring an even workload distribution.\nHorizontal Scaling: REST services can be horizontally scaled by adding more servers or instances to handle increased demand.\nCloud Infrastructure: REST services can leverage cloud platforms with auto-scaling capabilities for efficient resource allocation.\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. Differentiate between POST and PUT methods.",
+        "answer": "POST Method\nThis method is used to build new server resources.\nThis method is not idempotent. Hence, multiple identical requests may result in different outcomes.\nThe POST Method is typically used for submitting data to create a new resource.\nIn this method, the server processes the request, creates a new resource, and responds with a representation of the created resource.\nPUT Method\nThis method is used to update or replace an existing resource on the server or to create a resource if one doesn\u2019t exist.\nThis method is idempotent. Hence, sending the same request multiple times will have the same outcome.\nThe PUT method is typically used for updating or replacing an entire resource.\nIn this method, the server replaces or updates the identified resource with the representation provided and responds with a representation of the updated resource.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. Which are the HTTP request methods that are supported by REST?",
+        "answer": "REST is compatible with a number of HTTP request methods, including GET, POST, PUT, DELETE, HEAD, OPTIONS, and others.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What is CRUD?",
+        "answer": "CRUD, an acronym for Create, Read, Update, and Delete, represents the fundamental operations performed on resources in a REST API. It encapsulates the four essential actions necessary for data manipulation. The \u2018Create\u2019 operation involves adding new resources; \u2018Read\u2019 retrieves resources; \u2018Update\u2019 modifies existing resources; and \u2018Delete\u2019 removes resources from the system. REST APIs employ HTTP methods to map these CRUD operations to resources. For instance, \u2018POST\u2019 for Create, \u2018GET\u2019 for Read, \u2018PUT\u2019 for Update, and \u2018DELETE\u2019 for Delete. This standardized approach ensures a consistent and uniform way to interact with resources, promoting simplicity, scalability, and interoperability in RESTful web services.\n\nIntermediate REST API Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What are the main parts of an HTTP response?",
+        "answer": "The main parts of an HTTP response are the HTTP version, Status line, HTTP Response Header, and HTTP Response Body.\nCheck out the Top Web Developer Interview Questions.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. What do you know about JAX-RS?",
+        "answer": "JAX-RS is an abbreviation that stands for Java API for RESTful Web Services. It is a Java-based API that provides recommendations and annotations for developing RESTful web services. The Java EE (Enterprise Edition) platform contains JAX-RS, which is designed to make the creation of RESTful APIs in Java easier.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What are the most common HTTP response status codes that you see while working with REST API?",
+        "answer": "The most common HTTP response status codes are mentioned below: \n200 OK: The 200 OK is a status code that represents a successful request. After the successful processing of such a request, it is utilized for GET, POST, PUT, and DELETE operations.\n201 Created: When a new resource is successfully generated as a result of a POST request, this code is returned. It is often followed by a Location header that contains the URL of the newly generated resource.\n204 No Content: This status code signals the user that the server has successfully processed the request, although no content was returned in the response body. It is often used in DELETE operations.\n400 Bad Request: The 400 Bad Request is a status code that signals the user that the server was unsuccessful in understanding the request. This status code can show up in this instance due to multiple reasons, including incorrect syntax, missing arguments, or invalid data. This is often followed by an error message explaining the problem.\n401 Unauthorized: 401 Unauthorized is a status code that is used to indicate the fact that the particular request needs authentication and that the user has failed to submit valid credentials or that the resource that was requested was not authorized.\n403 Forbidden: 403 Forbidden is a status code that pops up in cases where the server has understood the request, although the user is not allowed to access the resource that has been requested. The status code 403 Forbidden is different from 401 Unauthorized since, in the former, no authentication is required.\n404 Not Found: 404 Not Found is a status code that shows up in instances where the resource that was requested is not to be found on the server. The presence of this status code signifies that the server was unsuccessful in finding a resource that matches the specified URL.\n500 Internal Server Error: The presence of this code indicates that the server has encountered an unexpected error while processing the request. Being a general error response, the status code 500 Internal Server Error does not provide any information about the problem.\n503 Service Unavailable: The presence of the status code 503 Service Unavailable is commonly seen when the server is trying to signal the user that it is unable to process the request for the time being; usually, this happens due to server overload or because the server is undergoing maintenance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. What is a resource?",
+        "answer": "A server-side object with a label serves as a resource in the REST architecture. Resources are accompanied by a list of methods, related data, and relationships to other resources on the server.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is a URI?",
+        "answer": "URI, or Uniform Resource Identifier, is a term used in the computer world. It is used for the names of all the resources that are connected to the World Wide Web.\nCheck out our PHP Interview Questions to ace your next interview!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. What is caching in REST API?",
+        "answer": "To quickly obtain a server answer in the future, the REST API maintains a copy of the response in a specific area of computer memory. This temporary technique is known as \u201ccaching.\u201d",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What\u2019s a real-world example of a REST API?",
+        "answer": "Several examples can be drawn from the real world to talk about REST APIs, some of which have been mentioned below:\nPayment Processing Apps with PayPal API: These apps allow users to conduct secure online transactions. The PayPal API enables developers to manage subscriptions, issue refunds, collect payments, and access transactional information.\nTravel Apps with Google Maps API: These are the applications for travel that offer mapping and navigation functions. Developers can display maps, compute distances, provide directions, look for points of interest, and incorporate Street View photographs by integrating the API.\nSocial Media Apps with Facebook Graph API: Social networking apps that integrate with the Facebook Graph API can link users\u2019 accounts, retrieve profiles, publish updates, and otherwise communicate with the Facebook platform. Developers may access social features like images, news feeds, timelines, friend requests, and Facebook Page data thanks to the API.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. What are the advantages of REST?",
+        "answer": "The advantages of REST are mentioned below: \nSimplicity and ease of understanding.\nScalability and performance due to statelessness\nFlexibility in choosing data formats\nInteroperability with different systems and platforms.\nSupport for caching mechanisms to improve performance\nStateless nature and server independence.\nIntegration with existing web standards and protocols.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. What are the disadvantages of RESTful web services?",
+        "answer": "The disadvantages of RESTful web services are mentioned below: \nLack of standardization in API design and contract\nLimited functionality beyond CRUD operations.\nDevelopers must incorporate security mechanisms to ensure that client requests are self-contained and contain all necessary information for server processing.\nLack of built-in support for complex transaction management.\nRequires careful resource design to maintain scalability.\nInefficiency when dealing with large or hierarchical data structures.\nLack of discoverability without additional documentation or standards.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What is the difference between REST and SOAP?",
+        "answer": "The differences between REST and SOAP are enumerated below:\nREST (Representational State Transfer)\nBased on the principles of the web and utilizes the HTTP protocol.\nLightweight and simple, utilizing JSON or XML for data representation.\nProtocol-independent, although it commonly uses HTTP.\nThere is no standardized service discovery language; it is often documented informally.\nFlexible and scalable, which makes REST suitable for most scenarios.\nSOAP (Simple Object Access Protocol)\nUses XML-based messaging and can work over different protocols.\nStructured and verbose with a well-defined XML message format.\nSOAP is a protocol in itself, which adds a layer of abstraction.\nDescribed using WSDL for service discovery and code generation.\nMore complex and suitable for enterprise-centric environments with strict requirements for security, reliability, and transaction management.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. Mentioned the different types of API architectures.",
+        "answer": "There are six different types of API Architectures, which are mentioned below: \nMonolithic Architecture: The entire application is a single unit; it is simple but hard to scale.\nService-Oriented Architecture (SOA): This application is composed of multiple services communicating over a network.\nMicroservices Architecture: These are small, independent services meant for better scalability and maintainability.\nEvent-Driven Architecture (EDA): These services communicate through events for loose coupling and scalability.\nServerless Architecture: These functions are executed in response to events or API invocations; they are managed by the cloud provider.\nGraphQL Architecture: This query language allows clients to request specific data efficiently.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What is AJAX?",
+        "answer": "AJAX is a web development method that enables data to be transferred asynchronously between a web browser and server without necessitating a complete page reload. It makes it possible for dynamic updates and improves user interaction with websites.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. Which frameworks can JAX-RS implement in the RESTful web?",
+        "answer": "Frameworks that can be used to implement JAX-RS in RESTful web services are Jersey, Apache CXF, RESTEasy, Spring Boot, and Apache TomEE.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. Mention the markup language that can be used in restful web API.",
+        "answer": "The two markup languages that can be used with RESTful web APIs are JSON and XML.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. Why is proper representation of resources necessary?",
+        "answer": "The client can readily grasp the format and identify the resources when they are properly represented and presented.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. Mention the important aspects of RESTful web services implementation.",
+        "answer": "Mentioned below are some important aspects of implementing RESTful web services:\nResource Design: Identify and define the resources that are to be exposed through the API.\nHTTP Status Codes: Return appropriate status codes to communicate the outcome of the requests.\nRequest and Response Formats: Determine standardized formats for data exchange, such as JSON or XML.\nUniform Interface: Follow principles like standard HTTP methods and hypermedia-driven navigation.\nAuthentication and Security: Implement secure authentication and authorization mechanisms.\nError Handling: Provide meaningful error messages and troubleshooting guidance.\nVersioning: Consider strategies to manage API changes and ensure backward compatibility.\nDocumentation: Create comprehensive documentation to guide developers in using the API.\nTesting and Monitoring: Thoroughly test the API and implement monitoring for performance and issues.\nScalability and Performance: Design for scalability and optimize performance factors like caching and data retrieval.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. Mention the different application integration styles.",
+        "answer": "Mentioned below are the various application integration styles:\nPoint-to-Point Integration: Direct connections between applications for data exchange\nPublish-Subscribe (Pub-Sub) Integration: Messaging-based communication through a broker\nService-Oriented Architecture (SOA): Loosely coupled services with well-defined interfaces\nMessage-Oriented Middleware (MOM): Asynchronous messaging between applications\nEnterprise Service Bus (ESB): Centralized infrastructure for integration\nRepresentational State Transfer (REST): API-based communication that uses HTTP methods\nEvent-Driven Architecture (EDA): Communication through events and event processing\nMicroservices Architecture: Small, independent services that communicate via lightweight protocols\n\nAdvanced REST API Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. Can you use GET requests instead of PUT to create a resource?",
+        "answer": "No, a POST request is required to create a resource in a RESTful API. POST inquiries are used to add new resources, whereas GET queries are used to retrieve existing ones.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What is the concept of statelessness in REST?",
+        "answer": "In REST, statelessness refers to the absence of client state storage on the server between requests. Each request must be distinct and self-contained, and it must contain all pertinent information. This improves request processing reliability, scalability, and design simplicity.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. How do you keep REST APIs secure?",
+        "answer": "Mentioned below are some ways to keep REST APIs secure:\nImplement authentication and authorization mechanisms.\nUse HTTPS for secure communication.\nValidate and sanitize user inputs to prevent vulnerabilities.\nApply rate-limiting to protect against abusive requests.\nSet appropriate security headers in API responses.\nEncrypt sensitive data and use strong hashing algorithms for passwords.\nImplement logging and monitoring to detect suspicious activities.\nConduct regular security testing and assessments.\nFollow secure coding practices throughout development.\nStay updated with the latest security practices and patch vulnerabilities promptly.\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. What are Idempotent methods? How is it relevant in the RESTful web services domain?",
+        "answer": "HTTP idempotent techniques can be safely repeated or retried several times without yielding different results. In other words, repeating a request should have the same effect as making it once. For several reasons, idempotent procedures are critical in the design and implementation of RESTful web services. Mentioned below are some key reasons for the same:\nReliability: Idempotent techniques ensure that repeating a request, be it due to network difficulties or client retries, does not result in unwanted side effects or inconsistent server states. This increases the system\u2019s dependability and robustness.\nCaching: HTTP caches idempotent methods by default. Caches can save the response to an idempotent request and serve it to subsequent identical requests, decreasing server load and enhancing performance.\nSafe Repeat: When a request fails or times out, idempotent methods allow clients to repeat it without the fear of creating conflicts or undesired changes. Retrying an idempotent request should have no negative consequences.\nScalability: Idempotent procedures make it easier to create scalable systems. Since the same request can be processed numerous times without affecting the outcome, it is simpler to divide requests across multiple servers or handle concurrent requests.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. How is JAXB related to RESTful web API?",
+        "answer": "The JAXB Java API allows Java objects to be translated into XML representations and vice versa. By transforming XML payloads to Java objects, JAXB can make it simpler for RESTful web APIs to handle XML payloads.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. Can you tell what constitutes the core components of HTTP requests?",
+        "answer": "In REST, any HTTP request has five main components, which are mentioned below:\nMethod/Verb: This section describes the methods that the request action represents. GET, PUT, POST, DELETE, and other methods are examples.\nURI: This portion is used to uniquely identify the server\u2019s resources.\nHTTP Version: This section specifies the version of the HTTP protocol that you are using. HTTP v1.1 is an example.\nRequest Header: This section contains request metadata such as client type, supported content formats, message format, cache settings, and so on.\nRequest Body: This section contains the actual message text that will be sent to the server.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. What is HATEOAS (Hypermedia as the Engine of Application State) in the context of REST API, and why is it considered an important constraint of RESTful architecture?",
+        "answer": "Hypermedia as the Engine of Application State (HATEOAS) is a fundamental constraint in RESTful architecture for APIs. It refers to the principle of including hypermedia links in the API responses to guide clients dynamically through available actions. The API acts as a navigable web of resources interconnected by hyperlinks, allowing clients to discover and interact with resources without prior knowledge of their structure or endpoints. \nThis feature promotes a decoupled and flexible design, thereby enabling the server to evolve independently while maintaining backward compatibility. HATEOAS enhances the scalability, discoverability, and adaptability of REST APIs, making it a crucial element in building truly RESTful systems.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. Explain how you would implement authentication and authorization in a RESTful API for different types of clients (e.g., web browsers, mobile apps, and third-party applications). Discuss the pros and cons of various authentication methods, such as OAuth, API keys, JSON Web Tokens (JWT), and session-based authentication.",
+        "answer": "Implementing authentication and authorization in a RESTful API for various client types involves careful selection of suitable methods to ensure security and flexibility. For web browsers, session-based authentication is commonly used, which relies on cookies to maintain user sessions. While this method is straightforward, it may not be ideal for stateless APIs, and it lacks scalability.\nMobile apps can benefit from OAuth, a widely adopted protocol that provides delegated access to resources without exposing user credentials. OAuth offers granular control over permissions and enhances security, although it requires proper implementation to prevent token leakage or misuse.\nThird-party applications often utilize API keys for authentication. While simple to implement, API keys lack sophistication and may not support fine-grained access control, potentially leading to security issues.\nJSON Web Tokens (JWT) offer a self-contained and stateless approach; they contain user information within the token itself, which reduces server-side state management. JWT\u2019s flexibility allows it to be used across different client types, making it a popular choice. However, proper token management is crucial to prevent token tampering and unauthorized access.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. When designing a RESTful API, what strategies would you use to achieve versioning and handle backward compatibility effectively? Discuss the pros and cons of different versioning approaches, such as URL versioning, custom headers, and media type versioning.",
+        "answer": "When designing a RESTful API, it is crucial to effectively achieve versioning and handle backward compatibility. Three main strategies for versioning are URL versioning, custom headers, and media-type versioning.\nURL versioning involves incorporating the version number in the API endpoint (e.g., /api/v1/resource). This approach is straightforward and cache-friendly; however, it can clutter the URL, and it lacks flexibility if the API evolves significantly.\nCustom headers utilize HTTP headers like \u201cAccept-Version\u201d to specify the desired version. It keeps the URL clean and allows clients to request the version explicitly, although it requires additional header parsing and may not be as intuitive.\nMedia type versioning employs the \u201cAccept\u201d header with custom media types (e.g., application/vnd.company.resource.v1+json). It provides a clear separation of concerns and is flexible for version negotiation, but the implementation can be complex and challenging for clients to understand.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. How can you optimize a RESTful API for performance and scalability, especially in high-traffic scenarios? Discuss techniques such as caching, load balancing, connection pooling, and asynchronous processing to improve API responsiveness and handle large volumes of concurrent requests.",
+        "answer": "Optimizing a RESTful API for performance and scalability, particularly in high-traffic scenarios, involves implementing various techniques to enhance responsiveness and handle concurrent requests efficiently. \nCaching plays a vital role by storing frequently requested data, reducing the need for repeated computations, and minimizing database calls. Load balancing evenly distributes incoming traffic across multiple servers, preventing overloading and ensuring a smooth user experience. Connection pooling optimizes resource usage by reusing established database connections, thus reducing connection creation overhead. \nAsynchronous processing offloads time-consuming tasks to background threads, enabling the API to handle numerous requests simultaneously without blocking the main execution flow. These techniques ensure a robust, scalable, and high-performing REST API that is capable of handling substantial user loads.",
+        "reference": "intellipaat.com"
+    }
+]

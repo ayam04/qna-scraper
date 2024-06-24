@@ -1,0 +1,657 @@
+[
+    {
+        "question": "1. Find the frequency of each letter in the given string.",
+        "answer": "String = \u2018the quick brown fox jumps over the lazy dog.\u2019\nWe have the problem statement wherein we have to find out the frequency of each letter in the given string i.e we have to find out how many times each letter is occuring.\nLet\u2019s define our approach towards the problem statement:\nWe will make use of a dictionary to store the result, why? Because you see we can keep the result in the form of a key-value pair. How? The alphabets out there are our key and the occurrence that we have to find out will be our values.\nWe can make use of a For Loop to traverse through the string and for every loop we will count the number of times the characters are occurring using the count().\nBut before that we also have to do a bit of data cleaning. If you properly observe the string, it has spaces and punctuations in there. So if we don\u2019t remove it, it will eventually be counted and that is something we don\u2019t want. So as to remove the punctuation we will make use of the lambda and the filter() along with the isalpha(), isdigit() and isspace() function.\nNow that we are clear with the approach lets write down the code:\n# The original input string\nOriginalString = \"The quick brown fox jumps over the lazy dog.\"\n\n# Splitting the string and removing spaces and punctuation.\nCleanedString = ''.join(filter(lambda x: x.isalpha() or x.isspace() or x.isdigit(), OriginalString.split()))\n\n# To Bring Consistency in the string, converting everything to lowercase\nCleanedString = CleanedString.lower()\n\n#dictionary comprehension for the frequency count&nbsp;\nresult = {x: CleanedString.count(x) for x in CleanedString}&nbsp;\n\n# Printing the result dictionary\nprint(result)\nOutput:\n{\u2018t\u2019: 2, \u2018h\u2019: 2, \u2018e\u2019: 3, \u2018q\u2019: 1, \u2018u\u2019: 2, \u2018i\u2019: 1, \u2018c\u2019: 1, \u2018k\u2019: 1, \u2018b\u2019: 1, \u2018r\u2019: 2, \u2018o\u2019: 3, \u2018w\u2019: 1, \u2018n\u2019: 1, \u2018f\u2019: 1, \u2018x\u2019: 1, \u2018j\u2019: 1, \u2018m\u2019: 1, \u2018p\u2019: 1, \u2018s\u2019: 1, \u2018v\u2019: 1, \u2018l\u2019: 1, \u2018a\u2019: 1, \u2018z\u2019: 1, \u2018y\u2019: 1}",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. What are loops in Python? How do you write a nested for loop program?",
+        "answer": "In Python programming, a loop is a sequence of instructions that gets executed repeatedly until and unless an exit condition is reached. Let\u2019s take a problem statement to understand the usage. Let\u2019s say I want to print \u201cPython\u201d 5 times. There are multiple ways of approaching the same problem statement. One is, writing the print statement 5 times, as shown below:\n print(&ldquo;Python&rdquo;) print(&ldquo;Python&rdquo;) print(&ldquo;Python&rdquo;) print(&ldquo;Python&rdquo;) print(&ldquo;Python&rdquo;) \nBut now, if I want to print it 100 times or let us say, 1000 times, will I be writing the print statement 1000 times? Though that is possible, it is an inefficient way of approaching a problem statement. Here Loops comes to rescue, which helps us to execute a block of code again and again. There are two types of loops in Python:\nFor Loop: For loop is mostly used in cases where we have range data or problems with sequential traversal, like traversing a list, string or an array. Here is the syntax for For Loop:\n for iterator_var in sequence: statements(s) to be executed \nIf we take up the previous problem statements of printing \u201cPython\u201d, 5 times, but now using a for loop. It will be as shown below:\n for i in range(0,5): print(\"Python\") \nIn the above code, we are using the range function to generate a range of 0 to (n-1) i.e (5-1) = 4. The iterator_var, here referred to as \u2018 i \u2019 will traverse through all the elements in the range (0,1,2,3,4). And for each time the loop runs \u201cPython\u201d will get printed. It can be better understood with the help of a dry run as shown below:\nValue of i Print Python Next value of i from range\n0 Python 1\n1 Python 2\n2 Python 3\n3 Python 4\n4 Python Range ends, Exit Loop\nWhile Loop: While loops are mostly used in such cases, where we want to run a block of code repeatedly until and unless a condition is satisfied.\nHere is the syntax for While Loop:\n Iterator_var = 0 while expression: statement(s) Iterator_var increment \nIf we take up the previous problem statements of printing \u201cPython\u201d, 5 times, but now using a while loop. It will be as shown below:\n count = 0 while (count &amp;amp;lt; 5) print(\"Python\") count = count + 1 \nIn the above code, we are setting a count variable to 0 that will count the number of times Python is getting printed. Then, we have the while loop that checks for the condition if it is true, Python gets printed, and the count gets incremented by 1 every time until and unless exit condition is reached. Here is the dry run given below:\ncount while(count > 5) Print Python count = count + 1\n0 TRUE Python 1\n1 TRUE Python 2\n2 TRUE Python 3\n3 TRUE Python 4\n4 TRUE Python 5\n5 FALSE Exit Condition Reached, Loop Exits\nIn Python, a Loop within another loop is called a Nested Loop. This is applicable for both For Loop and While Loop. Below are the code snippets for Nested For Loop and Nested While Loop: Nested For Loop:\n for iterator_var in sequence: for iterator_var in sequence: statements(s) statements(s) \nNested While Loop:\n while expression: while expression: statement(s) statement(s)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What is the difference between Python Arrays and Lists?",
+        "answer": "Criteria Python Arrays  Python Lists\nDefinition Arrays are data structures that hold fixed-size elements of the same type. Lists are versatile data structures that can hold elements of different types and sizes.\nMutable Arrays are mutable, meaning their elements can be modified once created. Lists are mutable, allowing for modification of elements after creation.\nSize Array size is fixed upon creation and cannot be changed. Lists can dynamically resize to accommodate new elements or remove existing elements.\nHomogeneous Arrays store elements of the same data type, ensuring homogeneity. Lists can store elements of different data types, allowing heterogeneity.\nAccess Elements in an array can be accessed using indexing. Elements in a list can be accessed using indexing.\nOperations Arrays support mathematical and logical operations on their elements efficiently. Lists provide a wide range of built-in methods and operations for manipulation and data handling.\nMemory Arrays consume less memory compared to lists. Lists consume more memory due to their flexibility and dynamic resizing.\nWatch this Video on Python for Data Science Tutorial",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Write a program in Python to find the largest and second-largest element in a list using Python?",
+        "answer": "Here the problem statement says that we have to find out the largest and second largest element from a list containing.\nThe approach towards such a problem statement is simple. We will sort the list in ascending order using the sorted() and then with the help of negative indexing we will be returning the last and the second last element.\n\n \n# Defining a function\ndef LargestAndSecondLargest(Data):\n  # Sorting the list in Ascending Order\n  Data = sorted(Data)\n  # Extracting the last element (Largest Element)\n  largestElement = Data[-1]\n  # Extracting the second last element (Second Largest Element)\n  SecondlargestElement = Data[-2]\n  # Returning the variables containing the elements.\n  return largestElement, SecondlargestElement\n\nData = [20,15,8,12,19]\nLargestAndSecondLargest(Data)\nOutput:\n(78, 10)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Create a Python program that will print the highest sequence of 1s in an array of 0s and 1s?",
+        "answer": "a = [1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1]\n# Variable to Store the count of one\ncountofOne = 0\n# Variable to Store the previous count only if the countofOne is greater than the LastCountofOne\nLastCountofOne = 0\n\n# For Loop to traverse through all the element in the array\nfor i in range(len(a)):\n  # Check if the element is 1\n  if a[i] == 1:\n    # Count increased by 1\n    countofOne += 1\n  else:\n    # Checking if countofOne &amp;gt; LastCountofOne\n    if(LastCountofOne &amp;lt; countofOne):\n      # Swapping the value to LastCountofOne if the above condition is True\n      LastCountofOne = countofOne\n      # Set countofOne to zero as we are interrupted by zero\n      countofOne = 0\n\n# Comparing the last value of countofOne with LastCountofOne\nif(LastCountofOne &amp;gt; countofOne):\n  # Print LastCountofOne\n  print(LastCountofOne)\nelse:\n  # Print countofOne\n  print(countofOne)\nOutput:\n8",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. In the given array, write a list comprehension that will print the sum of even numbers.",
+        "answer": "First of all, we have to understand what an Even Number is. An even number is a number that when divided by 2 leaves a remainder 0 (zero). To return the remainder in a division we make use of the modulus operator(%).\nHere is the approach we are following for the problem statement:\nLooping through all the elements in a list using For Loop\nChecking if the element leaves a remainder zero on division by 2 (x%2 == 0)\nIf the condition seems to be True add it to the Sum counter initialized as zero\nLastly printing the Output as the sum of all even numbers in a list.\nNow that we are clear about our approach to the problem statement. Let\u2019s have a look at the program below:\n# Sample Data in a List\nsample = [1,2,3,4,5,6,7,8,9,10] \n# Defining the variable sum to zero\nSum = 0\n# Looping through elements in the list and checking if it is an even number or not and adding\nSum = sum([x for x in sample if x%2 == 0])\n# Printing the Sum of Even Numbers\nprint(Sum)\nOutput:\n30",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Write a function to output separate lists containing even and odd elements from a given array.",
+        "answer": "Let\u2019s take a look at the program, here our approach is written as follows:\nCheck if the given element is even or odd\nReturn two separate lists with even and odd elements\n# Defining a Function\ndef EvenOdd(Data):\n  # Checking if the number is even\n  print([x for x in Data if x%2 == 0])\n  # Cheking if the number is odd\n  print([x for x in Data if x%2 != 0])\n\n# Sample Data\nData = [1,2,3,4,5,6,7,8,9,10]\n# Function Call\nEvenOdd(Data)\n \nOutput:\n[2, 4, 6, 8, 10]\n[1, 3, 5, 7, 9]\nThe above program will create two separate lists after checking if the elements are even or odd in the given sample, and print both the lists at the end of the execution.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is file handling in Python? What are the various file-handling operations in Python?",
+        "answer": "File handling also known as Python I/O involves working with files on a computer\u2019s file system using Python as a programming language.\nPython File Handling Operations can be categorized into the following categories:\nReading a file\nCreating a file\nWriting in a file\nDeleting a file\nHave a Look at this blog on File Handling in Python",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. Create a Python program to depict the functioning of stacks and queues?",
+        "answer": "# Program to show the implementation of stack\nstack = []\nx = list(range(0,10,3))\nfor i in range(1,6):\n  if i < len(x):\n    stack.append(x[i])\n  else:\n    stack.pop()\n  print(stack)\nOutput:\n[3]\n[3, 6]\n[3, 6, 9]\n[3, 6]\n[3]\n# Program to show the implementation of Queue - FIFO\n#Implementation of Queue - FIFO\nqueue = []\nx = list(range(0,10,3))\nfor i in range(1,6):\n  if i < len(x):\n    queue.append(x[i])\n  else:\n    queue.pop(0)\n  print(queue)\nOutput:\n[3]\n[3, 6]\n[3, 6, 9]\n[6, 9]\n[9]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. Write a Python program to print a list of primes in a given range.",
+        "answer": "In this program where we need to check if the number is a prime number or not, we are making use of a very simple approach. Firstly we need to understand what is a Prime Number? A whole number greater than 1 cannot be exactly divided by any whole number other than itself and 1.\nLet\u2019s formulate the approach:\nCheck if the number is greater or less than 1. If less than one returns that it is not a prime number immediately as the definition says \u201cA Whole number greater than 1\u201d\nIf not less than one, check if the number has some other factors or not. If it has returned that it is not a prime number.\nLastly, if it passes all the tests returns that it is a prime number. \nNow let\u2019s have a look at the program to check if the number is a prime number or not.\n# Defining a Function\ndef isPrime(num):\n  # Checking if num > 1 because there are no prime numbers less than 1\n  if(num > 1):\n    # Looping through the elements in a range of 2,num to find factors\n    for i in range(2,num):\n        # if three is a factor other than 1\n        if(num % i == 0):\n            # Return Fales in Flag i.e not a prime number\n            flag = False\n            # End the Loop\n            break\n    else:\n        # If there is no factor other than 1 return True in Flag\n        flag = True\n  else:\n      # IF the number is less than 1 return False in Flag\n      flag = False\n  # Finally return the Final value of the flag\n  return flag\n\n# Sample input\nnum = 5\n# Check if the flag is True or False\nif (isPrime(num)):\n  # If Flag is True print\n  print(\"It is a Prime Number\")\nelse:\n  # If Flag is False print\n  print(\"It is a not a Prime Number\")",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. What are collections? What is the significance of collections in Python?",
+        "answer": "Collections refer to those data structures or containers that are capable of holding collective data in a single variable. \nLet\u2019s take an example to understand it. Suppose you have lots of books and are trying to build a library. Each book is different, some are about life lessons, some are about stories, and some are about magic, etc. In Python, collections are like those collections of books. They help you organize lots of things (like numbers, words, or other data) in an organized way, just like how you organize your books in your library.\nThere are four different data structures in collections:\nList: List is one of the most versatile data structures in python. Here are the characteristics of a list to be remembered:\nLists are mutable data types i.e once declared, a list can be modified.\nLists can contain heterogeneous elements i.e elements with different data types.\nLists also allow duplicate values.\n# This is an empty list \nMylist = []\n# Let's add some values to it\nMylist = [1,2,\"Intellipaat\", \"Live\", 23.45, True]\n# Printing the list\nprint(Mylist)\nTuple: Tuples are similar to lists, they are usually used to store related data. Here are the characteristics of a list to be remembered:\nTuples are immutable data types, i.e once declared, a tuple can\u2019t be modified.\nTuple can contain heterogeneous elements i.e elements with different data types.\nTuples also allow duplicate values.\nHere is the syntax to define a tuple:\n# This is an empty tuple\nMyTuple = ()\n# Let's add some values to it\nMyTuple = (1,2,\"Intellipaat\", \"Live\", 23.45, True)\n# Printing the tuple\nprint(MyTuple) \nDictionary: Think of them like real-world dictionaries where you look up a word (key) to find its definition (value). Here are the characteristics of a list to be remembered:\nDictionaries are mutable data types i.e once declared, can be modified later.\nDictionaries can contain heterogeneous elements i.e elements with different data types.\nDictionaries store data in the form of Key, Value pairs.\nDictionaries cannot have two elements with the same key.\nHere is the syntax to define a dictionary:\n# This is an empty dictionary\nMyDict = {}\n# Let's add some values to it\nMyDict = {\"Name\": \"Intellipaat\", \"Industry\": \"EdTech\", \"Revenue\": 120}\n# Printing the dictionary\nprint(MyDict) \nSet: Sets are useful for tasks like removing duplicates from a list or performing mathematical set operations like union, intersection, and difference. Here are the characteristics of a list to be remembered:\nSets are unordered, i.e the items in a set do not have a defined order.\nSets are mutable data types i.e once declared, can be modified later.\nHere is the syntax to define a dictionary:\n# This is an empty set\nMySet = {}\n# Let's add some values to it\nMySet = {1,2,\"Intellipaat\", \"Live\", 23.45, True}\n# Printing the set\nprint(MySet)\nThe significance of collections in Python is to handle complex data structures and algorithms efficiently. By choosing the right collection for the task at hand, you can write cleaner, more organized code that is easier to understand and maintain.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Write a program to check even odd numbers using shorthand if else statements.",
+        "answer": "Before directly jumping onto writing the program, lets understand what is the ultimate goal, the ultimate goal of the program should be checking if a number is odd or even. \nLet\u2019s first understand even and odd numbers. When can a number be even? A number is even when it is divided by two and returns a remainder zero. Now we know that the remainder can be determined with the help of the modulus function (%), which returns the remainder of the division. Now, let\u2019s go ahead and write the program.\n# Defining the Function\ndef EvenOdd(n):\n  print(\"Even Number\") if(n%2 == 0) else print(\"Odd Number\")\n\n# Calling the Function:\nEvenOdd(21) # Output: Odd Number\nEvenOdd(12) # Output: Even Number",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. Write a Python program that will reverse a string without using the slicing operation or reverse() function?",
+        "answer": "# Defining the function\ndef reverseString(x):\n  # Declaring an empty String\n  NewString = \"\"\n  # Traversing through individual characters in a string\n  for i in x:\n    # Add the character to the empty string\n    NewString = i + NewString\n  # return the new string\n  return NewString\n\n# Sample String\nstring = \"Intellipaat\"\n# Function Call\nReversedString = reverseString(string)\n# Printing Output\nprint(ReversedString)\nOutput:\ntaapilletnI",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Write a Python program that removes duplicates from a list?",
+        "answer": "Removing duplicates from a list can be done very easily by converting the list into a set and then back to a list. As it is a property of a set that can only contain unique.\n# Sample Data in List\nSample = [1,1,0,0,1,0,2,0,3,2,2,4,4,2,3]\n# Converting the list to set to remove duplicates\nSetSample = set(Sample)\n# Converting the set to a list again\nListSample = list(SetSample)\n# Printing the Output\nprint(ListSample)\nOutput:\n[0, 1, 2, 3, 4]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What is method overriding? Explain with an example in Python?",
+        "answer": "Method overriding is a polymorphism concept where a method overrides its parent class method during inheritance. Let\u2019s take a look at a simple example:\nclass Animals:\n  def species(self, x):\n    self.x = x\n    print(\"species of the animal is : {}\".format(self.x))\n\nclass Snakes(Animals):\n  def species(self):\n    print(\"Species is Reptiles\")\n\n#calling the parent class method\nobj = Animals()\nobj.species(\"Amphibian\")\n\n#calling the class object overrides the parent class method\nobj1 = Snakes()\nobj1.species()\nOutput:\nspecies of the animal is : Amphibian\nSpecies is Reptiles",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. What is String Manipulation, Give a few examples.",
+        "answer": "A string is a collection of letters or characters. String manipulation is the process of modifying the characters of a string. It involves various operations, such as changing the letter cases, slicing, and concatenating two or more strings. In Python, there are several pre-built functions that we can use to modify a string.\nHere are a few examples of string manipulation:\nString Concatenation: It is a method of combining two or more strings together. Let us understand it using a very simple Python program:\nstr1 = \"Hello\" #first string\nstr2 = \"World\" #second string\nresult = str1 + \"  \" + str2 \nprint(result)  #output: Hello World\nIn this code, we have created two variables, str1 and str2 which are storing two strings, \u201cHello\u201d and \u201cWorld\u201d. Then, we have created a third variable in which we are storing the final output. Using the \u201c+\u201d operator, we are concatenating two strings.\nSlice a string: It is a process of extracting substrings from a string. Let us see how we can perform the string slicing.\nstr = \"Intellipaat\"\nsubstring = str[0:7] \nprint(substring)  # Output: Intelli\nIn this code, we have a str variable storing \u201cIntellipaat\u2018. We are extracting a substring from a string using the indexes str[start_index:end_index]. This method allows us to extract a portion of a string by specifying a start index and an end index. In this case, the start index is 0 and the end index is 7 (excluding 7).\nSplit a string: Dividing a string into a list of substrings.\nIn this code, we are splitting the str string into two words:  \u201cHello\u201d & \u201cWorld\u201d. The final output we will get is a list of words.\nstr = \"Hello,World\"\nfruits = str.split(\",\") # Here we have used a split method to split the string into two substrings based on the specified delimiter, which is a comma in this case.\n\nprint(fruits)  \n# Output: [\u2018Hello\u2019, 'World\u2019]\nCase conversion: Using the lower or upper functions, we can change the cases of strings. Here is a very simple python program to convert the case of a string:\nstr = \"Intelli Paat\"\nlowercase_str = str.lower() # This built-in function is going to convert all the string letters to lower case\nuppercase_str = str.upper() # And this one will convert all the string letters to upper case.\nprint(lowercase_str)  # Output: intelli paat\nprint(uppercase_str)  # Output: INTELLI PAAT\nReverse a string: Here is an example of how we can reverse a string. \nIn this code, we are using slicing to reverse a string.\nstr = \"Hello World\"[::-1]\nprint(str)\n\n#Output: dlroW olleH",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What distinguishes lists from tuples?",
+        "answer": "Here are the major differences between List and Tuples: \nLists Tuples\nLists are mutable, i.e., they can be edited Tuples possess immutability, denoting their incapability of being modified like lists.\nLists are usually slower than tuples Tuples are faster than lists\nLists consume a lot of memory Tuples consume less memory comparatively\nLists have a higher likelihood of experiencing unexpected changes, making them less reliable in terms of errors Tuples offer increased reliability due to their resistance to unexpected modifications",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. What is PEP 8?",
+        "answer": "PEP in Python stands for Python Enhancement Proposal. It comprises a collection of guidelines that outline the optimal approach for crafting and structuring Python code to improve readability and clarity of the code.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. What are the key features of Python?",
+        "answer": "The key features of Python are as follows:\nPython is a Free and Open source programming language i.e. Python is available to all for free and anyone as a developer can contribute to the code.\nPython is a high-level programming language that makes it easy for the user to read, understand, and learn the language.\nPython is an object-oriented programming language except having access specifiers. Other than access specifiers (public and private keywords), Python has classes, inheritance, and all other usual OOPs concepts.\nPython has gained a lot of popularity over the years as a result of which it has a large community.\nPython is a portable language i.e. a code written on Mac can also run on Windows.\nPython has the support of a wide range of standard libraries as well as third-party libraries.\nGo through the Data Science with Python Course in Hyderabad to get a clear understanding of Python and become a Python developer today!\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. How is memory managed in Python?",
+        "answer": "Python makes use of automatic memory management through garbage collection.\nThe garbage collector keeps track of objects and frees memory when they are no longer in use.\nPython uses reference counting to manage memory, incrementing and decrementing reference counts as needed.\nA cyclic garbage collector handles objects with circular references.\nPython also provides tools like context managers and the \u201cwith\u201d statement to release resources automatically.\nPython\u2019s memory management simplifies coding by handling memory allocation and deallocation automatically.\nTo become a professional business analyst, check out Intellipaat\u2019s Business Analyst Certification Course in Bangalore taught by industry experts.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. What is PYTHONPATH?",
+        "answer": "PYTHONPATH serves as an environment variable within the Python programming language, empowering users to define supplementary directories for Python to search when seeking modules and packages. This variable serves as a search path and helps Python locate the necessary files to import when executing code. By setting the PYTHONPATH variable, users can extend the default search path and customize the module search behavior according to their needs. This feature enables developers to organize and structure their Python projects efficiently, facilitating easier module importation and enhancing code reusability.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What is the difference between modules and libraries?",
+        "answer": "In Python, modules are like standalone files that house specific code components, such as functions and variables. On the other hand, libraries are essentially vast collections of modules, and they come with pre-built functions and tools tailored for specific tasks or domains. These libraries not only simplify the development process but also enhance Python\u2019s capabilities by providing readily available solutions for various programming challenges.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. What are Python namespaces?",
+        "answer": "A Python namespace ensures that the names assigned to objects within a program are unique and can be used without conflict. In Python, namespaces are implemented as dictionaries where the object\u2019s name serves as the key and the object itself serves as the value.\nLet\u2019s examine some examples of namespaces:\nThe Local Namespace is specific to a function and contains the names defined within that function. It is created temporarily when the function is called and is cleared once the function finishes executing.\nThe Global Namespace includes names from imported modules or packages that are used in the current project. It is created when the package is imported into the script and remains accessible throughout the script\u2019s execution.\nThe Built-in Namespace comprises the built-in functions provided by Python\u2019s core, as well as specific names dedicated to various types of exceptions.\nWant to become a master in Python programming? Check out this Python Training for Data Science and excel in your Python career!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. Explain Inheritance and its types in Python with an example?",
+        "answer": "Python embraces the principles of object-oriented programming and allows classes to acquire the characteristics of another class, a concept known as inheritance. This facilitates code reuse, promoting efficiency. The original class from which properties are inherited is referred to as the superclass or parent class, while the class inheriting those properties is known as the derived or child class. Python supports various types of inheritance, including the following:\n\nMultiple Inheritance: Python supports multiple inheritance, enabling a derived class to inherit attributes and methods from multiple parent classes, facilitating code reuse, and enhancing flexibility.\nMultilevel Inheritance: With multilevel inheritance, a derived class inherits properties and methods from a parent class, which in turn inherits from another parent class, establishing a hierarchical relationship between classes.\nHierarchical Inheritance: In hierarchical inheritance, multiple classes inherit properties and methods from a common superclass, resulting in a tree-like structure where each derived class has its own specialized functionality.\nSingle Inheritance: In Python, single inheritance allows a derived class to inherit properties and methods from a single superclass, promoting code reuse and organizational structure.\nHybrid Inheritance: Hybrid inheritance combines different types of inheritance, such as single, multiple, or multilevel inheritance, to create complex class hierarchies that fulfill specific programming requirements, ensuring maximum code reuse and flexibility.\nKnow the difference between Functional Programming and Object Oriented Programming",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. What is __init__ in Python?",
+        "answer": "In Python classes, the reserved method init serves a similar purpose as constructors in object-oriented programming (OOP) terminology. When a new object is created, the init method is automatically called, initializing the object and allocating memory for it. This method can also be utilized to set initial values for variables.\nBelow is an example:\nclass Human:\n    def __init__(self, age):\n        self.age = age\n    def say(self):\n        print('Hello, my age is', self.age)\nh = Human(22)\nh.say()\nOutput:\nHello, my age is 22",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. Why do we need NumPy in Python?",
+        "answer": "NumPy is a core Python library for efficient numerical computing. It offers high-performance multidimensional array objects and tools for working with these arrays. Leveraging C for speed, it allows for vectorized operations, broadcasting, and direct array arithmetic, which boosts performance and reduces code complexity. Integral to Python\u2019s scientific stack, it enables seamless integration with libraries like Pandas and Matplotlib. NumPy is memory-efficient, and provides extensive mathematical functionality, and its arrays form the basis of most Python-based data science applications. Its indispensability lies in its ability to handle large data sets with speed and precision.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. Is this statement true \u201cPython is a case-sensitive language\u201d?",
+        "answer": "Yes, Python is a case-sensitive language. In Python, it is important to note that \u201cFunction\u201d and \u201cfunction\u201d are distinct entities, similar to how SQL and Pascal handle them differently.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. Difference between loc and iloc?",
+        "answer": "loc and iloc are two functions provided by the Pandas library in Python to access different parts of a DataFrame. They are primarily used for selecting rows and columns.\nAspect loc iloc\nType of Indexing Label-based Integer position-based\nInput Accepts labels of rows and columns. Accepts integer positions for rows and columns\nSlicing End label is inclusive in the range End position is exclusive in the range\nSubsetting Can select rows with a particular label and condition Can select rows by integer locations regardless of the DataFrame index\nMixed Selection Allows using labels for both rows and columns Uses integer positions for both rows and columns\nCallable Supports callable functions Also supports callable functions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. What do you understand by iterators in Python?",
+        "answer": "Python iterators are objects that allow you to access elements of a collection one at a time. They use the __iter__() and __next__() methods to retrieve the next element until there are no more. Iterators are commonly used in for loops and can be created for custom objects. They promote efficient memory usage and enable lazy evaluation of elements. In summary, iterators provide a convenient way to iterate over data structures in a controlled and efficient manner.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. Do we need to declare variables with respective data types in Python?",
+        "answer": "No. Python is a dynamically typed language, i.e., the Python Interpreter automatically identifies the data type of a variable based on the type of value assigned.\nWant to know How to Become a Python Developer? Check out this blog to know the complete process.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. What do you know about Dict and List Comprehension?",
+        "answer": "Python Comprehensions are like decorators that help to build altered and filtered lists, dictionaries, or sets from a given list, dictionary, or a set. Comprehension is a powerful feature in Python that offers a convenient way to create lists, dictionaries, and sets with concise expressions. It eliminates the need for explicit loops, which can help reduce code size and save time during development.\nComprehensions are beneficial in the following scenarios:\nPerforming mathematical operations on the entire list\nPerforming conditional filtering operations on the entire list\nCombining multiple lists into one\nFlattening a multi-dimensional list\nFor example:\nmy_list = [2, 3, 5, 7, 11]\nsquared_list = [x**2 for x in my_list]    # list comprehension\n# output => [4 , 9 , 25 , 49 , 121]\nsquared_dict = {x:x**2 for x in my_list}    # dict comprehension\n# output =>{11: 121, 2: 4 , 3: 9 , 5: 25 , 7: 49}",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. What is the method to write comments in Python?",
+        "answer": "Python comments are statements used by the programmer to increase the readability of the code. With the help of the #, you can define a single comment. Another way of commenting is to use the docstrings (strings enclosed within triple quotes).\nFor example:\n#Comments in Python \nprint(\"Comments in Python \")\nMaster Python by taking up this online Python Course in Bangalore!!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. Is multiple inheritance supported in Python?",
+        "answer": "Yes, unlike Java, Python provides users with a range of support in terms of inheritance and its usage. Multiple inheritance refers to a scenario where a class is instantiated from more than one individual parent class. This provides a lot of functionality and advantages to users.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. What is the difference between range & xrange?",
+        "answer": "Functions in Python, range() and xrange(), are used to iterate inside a for loop for a fixed number of times. Functionality-wise, both these functions are the same. The difference comes when talking about the Python version support for these functions and their return values.\nrange() Method xrange() Method\nIn Python 3, xrange() is not supported; instead, the range() function is used to iterate inside for loops. The xrange() function is used in Python 2 to iterate inside for loops.\nIt returns a list. It returns a generator object as it doesn\u2019t really generate a static list at the runtime.\nIt takes more memory as it keeps the entire list of iterating numbers in memory. It takes less memory as it keeps only one number at a time in memory.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. What do you understand by the word Tkinter?",
+        "answer": "Tkinter is a built-in Python module that is used to create GUI applications and it is Python\u2019s standard toolkit for GUI development. Tkinter comes pre-loaded with Python so there is no separate installation needed. You can start using it by importing it into your script.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. Is Python fully object-oriented?",
+        "answer": "Python follows an object-oriented programming paradigm and has all the basic OOPs concepts, such as inheritance, polymorphism, and more, with the exception of access specifiers. Python doesn\u2019t support strong encapsulation (adding a private keyword before data members). Although, it has a convention that can be used for data hiding, i.e., prefixing a data member with two underscores.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. Differentiate between NumPy and SciPy?",
+        "answer": "NumPy SciPy\nNumPy stands for Numerical Python SciPy stands for Scientific Python\nIt is used for efficient and general numeric computations on numerical data saved in arrays. E.g., sorting, indexing, reshaping, and more This module is a collection of tools in Python used to perform operations such as integration, differentiation, and more\nThere are some linear algebraic functions available in this module, but they are not full-fledged Full-fledged algebraic functions are available in SciPy for algebraic computations",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. Explain all file processing modes supported in Python?",
+        "answer": "Python has various file-processing modes.\nFor opening files, there are three modes:\nread-only mode (r)\nwrite-only mode (w)\nread\u2013write mode (rw)\nFor opening a text file using the above modes, we will have to append \u2018t\u2019 with them as follows:\nread-only mode (rt)\nwrite-only mode (wt)\nread\u2013write mode (rwt)\nSimilarly, a binary file can be opened by appending \u2018b\u2019 with them as follows:\nread-only mode (rb)\nwrite-only mode (wb)\nread\u2013write mode (rwb)\nTo append the content in the files, we can use the append mode (a):\nFor text files, the mode would be \u2018at\u2019\nFor binary files, it would be \u2018ab\u2019",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. What do file-related modules in Python do? Can you name some file-related modules in Python?",
+        "answer": "Python comes with some file-related modules that have functions to manipulate text files and binary files in a file system. These modules can be used to create text or binary files, update content by carrying out operations like copy, delete, and more.\nSome file-related modules are os, os.path, and shutil.os. The os.path module has functions to access the file system, while the shutil.os module can be used to copy or delete files.\nKnow about Python developer roles and responsibilities to begin a career as a Python developer.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "40. Explain the use of the 'with' statement and its syntax?",
+        "answer": "In Python, using the \u2018with\u2019 statement, we can open a file and close it as soon as the block of code, where \u2018with\u2019 is used, exits. In this way, we can opt for not using the close() method.\nwith open(\"filename\", \"mode\") as file_var:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "41. Write a code to display the contents of a file in reverse?",
+        "answer": "To display the contents of a file in reverse, the following code can be used:\nfilename = \"filename.txt\"\nwith open(filename, \"r\") as file:\n    lines = file.readlines()\n\nfor line in reversed(lines):\n    print(line.rstrip())\nNow in these questions lets look at some python interview coding questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "42. Which one of the following statements is not valid?",
+        "answer": "xyz = 1,000,000\nx y z = 1000 2000 3000\nx,y,z = 1000, 2000, 3000\nx_y_z = 1,000,000\nThe second statement is invalid. This is invalid because variable names in Python cannot contain spaces, and multiple variables cannot be assigned in this way without commas to separate them. Additionally, the values to be assigned are not separated by commas, making the statement syntactically incorrect.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "43. Write a command to open the file c:\\hello.txt for writing?",
+        "answer": "Command:\nf= open(\u201chello.txt\u201d, \u201cwt\u201d)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "44. What does len() do?",
+        "answer": "len() is an inbuilt function used to calculate the length of sequences like list, python string, and array.\nmy_list = [1, 2, 3, 4, 5]\nlength = len(my_list)\nprint(length)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "45. What does *args and **kwargs mean in Python?",
+        "answer": ".*args: It is used to pass multiple arguments in a function.\n**kwargs: It is used to pass multiple keyworded arguments in a function in Python.\nWant to know about the real-world uses of Python? Read our detailed blog on Python Project ideas now.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "46. How will you remove duplicate elements from a list?",
+        "answer": "To remove duplicate elements from the list, we use the set() function.\nConsider the below example:\ndemo_list = [5, 4, 4, 6, 8, 12, 12, 1, 5]\nunique_list = list(set(demo_list))\noutput = [1, 5, 6, 8, 12]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "47. How to delete files in Python?",
+        "answer": "You need to import the OS Module and use os.remove() function for deleting a file in Python.\nconsider the code below:\nimport os\nos.remove(\"file_name.txt\")",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "48. How will you read a random line in a file?",
+        "answer": "We can read a random line in a file using the random module.\nFor example:\nimport random\ndef read_random(fname):\nlines = open(fname).read().splitlines()\nreturn random.choice(lines)\nprint(read_random('hello.txt'))",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "49. Write a Python program to count the total number of lines in a text file?",
+        "answer": "Refer to the code below to count the total number of lines in a text file-\ndef file_count(fname):\n    with open(fname) as f:\n        for i, _ in enumerate(f):\n            pass\n    return i + 1\n\nprint(\"Total number of lines in the text file:\",\nfile_count(\"file.txt\"))",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "50. What would be the output if I ran the following code block?",
+        "answer": "list1 = [2, 33, 222, 14, 25]\nprint(list1[-2])\n14\n33\n25\nError\nAns. output:14\nIn Python, negative indexing allows you to access elements from the end of the list. The index -1 represents the last element, -2 represents the second-to-last element, and so on.\nIn the given code, list1[-2] refers to the second-to-last element in the list list1, which is 14. Therefore, the output of the code will be 14.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "51. What is the purpose of \u201cis\u201d, \u201cnot\u201d and \u201cin\u201d operators?",
+        "answer": "Operators are referred to as special functions that take one or more values (operands) and produce a corresponding result.\nis: returns the true value when both the operands are true  (Example: \u201cx\u201d is \u2018x\u2019)\nnot: returns the inverse of the boolean value based upon the operands (example:\u201d1\u201d returns \u201c0\u201d and vice-versa\nin: helps to check if the element is present in a given Sequence or not",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "52. Explain the use of ternary operators in Python?",
+        "answer": "The ternary operator is the operator that is used to show conditional statements in Python. This consists of the boolean true or false values with a statement that has to be checked.\nSyntax:\nx , y=10,20\ncount = x if x < y else y [/code] Explanation: The expression count = x if x < y else y is evaluated as follows:\nIf the condition x < y is true, then the value of x is assigned to count. This means that if the value of x is less than the value of y, the count will be equal to x.\nIf the condition x < y is false, then the value of y is assigned to count. This means that if the value of x is not less than the value of y, the ecount will be equal to y.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "53. What is the process for appending values to a Python array?",
+        "answer": "In Python, adding elements in an array can be easily done with the help of extend(), append(), and insert() functions.\nConsider the following example:\nx=arr.array('d', [11.1 , 2.1 ,3.1] )\nx.append(10.1)\nprint(x)   #[11.1,2.1,3.1,10.1]\nx.extend([8.3,1.3,5.3])\nprint(x)  #[11.1,2.1,3.1,10.1,8.3,1.3,5.3]\nx.insert(2,6.2)\nprint(x)        # [11.1,2.1,6.2,3.1,10.1,8.3,1.3,5.3]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "54. What is the procedure for deleting values from a Python array?",
+        "answer": "Elements can be removed from a Python array by using pop() or remove() methods.\npop(): This function will return the removed element.\nremove(): It will not return the removed element.\nConsider the below example :\nx=arr.array('d', [8.1, 2.4, 6.8, 1.1, 7.7, 1.2, 3.6])\nprint(x.pop())\nprint(x.pop(3))\nx.remove(8.1)\nprint(x)\nOutput:\n3.6\n1.1  # element popped at 3 rd  index\narray('d', [ 2.4, 6.8, 7.7, 1.2])\nAre you interested in learning Python from experts? Enroll in our online Python Course in Chennai today!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "55. Write a code to sort a numerical list in Python?",
+        "answer": "The following code can be used to sort a numerical list in Python:\nnumbers = [\"2\", \"5\", \"7\", \"8\", \"1\"]\nnumbers = [int(i) for i in numbers]\nnumbers.sort()\nprint(numbers)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "56. How will you reverse a list in Python?",
+        "answer": "To reverse a list in Python, you can use the slicing technique. Here\u2019s a brief explanation of the process:\nStart with the original list that you want to reverse.\nUse the slicing syntax [::-1] to create a new list that includes all elements from the original list in reverse order.\nAssign the reversed list to a new variable or overwrite the original list with the reversed version.\noriginal_list = [1, 2, 3, 4, 5]\nreversed_list = original_list[::-1]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "57. How will you remove the last object from a list in Python?",
+        "answer": "my_list = [1, 2, 3, 4, 5]\nmy_list.pop()\nHere, \u22121 represents the last element of the list. Hence, the pop() function removes the last object (obj) from the list.\nGet certified in Python from the top Python Course in Delhi now!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "58. What is the method for generating random numbers in Python?",
+        "answer": "This is achieved by importing the random module. It is the module that is used to generate random numbers.\nSyntax:\nimport random\nrandom.random # returns the  floating point random number between the range of [0,1].",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "59. Explain how to convert a string to all lowercase?",
+        "answer": "To convert a string to all lowercase in Python, you can use the built-in lower() method. The lower() method is available for strings and returns a new string with all characters converted to lowercase.\nFor Example:\ndemo_string='ROSES'\nprint(demo_string.lower())\nLearn the complete Python Training in Hyderabad in 24 hours!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "60. What benefits do NumPy arrays provide compared to (nested) Python lists?",
+        "answer": "Nested Lists:\nPython lists are efficient, general-purpose containers that support efficient operations like insertion, appending, deletion, and concatenation.\nThe limitations of lists are that they don\u2019t support \u201cvectorized\u201d operations like element-wise addition and multiplication, and the fact that they can contain objects of differing types means that Python must store the data type information for every element, and must execute type dispatching code when operating on each element.\nNumpy:\nNumPy is more efficient and more convenient, as you get a lot of vector and matrix operations for free, this helps avoid unnecessary work and complexity of the code. NumPy is also efficiently implemented when compared to nested lists.\nNumPy array is faster and contains a lot of built-in functions, that will help in FFTs, convolutions, fast searching, linear algebra, basic statistics, histograms, etc.\n\nAdvanced Python Interview Questions for Experienced",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "61. What is functional programming? Does Python follow a functional programming style? If yes, list a few methods to implement functionally oriented programming in Python?",
+        "answer": "Functional programming is a coding style where the main source of logic in a program comes from functions.\nIncorporating functional programming in our codes means writing pure functions.\nPure functions are functions that cause little or no changes outside the scope of the function. These changes are referred to as side effects. To reduce side effects, pure functions are used, which makes the code easy-to-follow, test, or debug.\nPython follows a functional programming style. Following are some examples of functional programming in Python.\nfilter(): Filter lets us filter some values based on a conditional logic.\nlist(filter(lambda x:x>6,range(9))) [7, 8]\n\nmap(): Map applies a function to every element in an iterable.\nlist(map(lambda x:x**2,range(5))) [0, 1, 4, 9, 16, 25]\n\nreduce(): Reduce repeatedly reduces a sequence pair-wise until it reaches a single value.\n\nfrom functools import reduce >>> reduce(lambda x,y:x-y,[1,2,3,4,5]) -13",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "62. Explain monkey patching in Python?",
+        "answer": "Monkey patching is the term used to denote modifications that are done to a class or a module during runtime. This can only be done as Python supports changes in the behavior of the program while it is being executed.\nThe following is an example, denoting monkey patching in Python:\n# monkeyy.py\nclass X:\n    def func(self):\n        print(\"func() is being called\")\nThe above module (monkeyy) is used to change the behavior of a function at runtime as shown below:\nimport monkeyy\ndef monkey_f(self):\n    print(\"monkey_f() is being called\")\n# Replacing the address of \"func\" with \"monkey_f\"\nmonkeyy.X.func = monkey_f\n\nobj = monkeyy.X()\n\n# Calling the function \"func\" whose address was replaced with \nthe function \"monkey_f()\"\nobj.func()",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "63. Explain about generators in Python?",
+        "answer": "Generators in Python are special functions that can be used to create iterable objects. Unlike regular functions that return a value and then terminate, generators use the yield keyword to suspend execution temporarily and yield a value one at a time. This makes generators memory efficient, as they don\u2019t generate the entire sequence of values upfront but rather generate values on-demand.\nGenerators are helpful when dealing with large datasets or when the complete sequence of values is not needed at once. They allow us to iterate over a potentially infinite sequence without consuming excessive memory.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "64. Explain the difference between pickling and unpickling?",
+        "answer": "The Pickle module accepts the Python object, and converts it into a string representation and stores it into a file by using the dump function. This process is called pickling. On the other hand, the process of retrieving the original Python objects from the string representation is called unpickling.\nWant to know about the real-world uses of Python? Read our detailed blog on Python Applications now.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "65. What is the difference between %, /, // ?",
+        "answer": "In Python, %, /, and // are arithmetic operators with distinct functions:\nThe \u2018 % \u2019 is the modulo operator, which returns the remainder of a division. For instance, 5 % 2 would return 1.\nThe \u2018 / \u2019 is the division operator that performs floating-point division and returns a float. For example, 5 / 2 would return 2.5.\nThe \u2018 // \u2019 is the floor division operator that performs division but rounds down the result to the nearest whole number. So 5 // 2 would return 2.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "66. What are decorators?",
+        "answer": "In Python, decorators serve as essential functions that enable the addition of functionality to an already existing function without altering its structure. These decorators are denoted by the @decorator_name syntax in Python and are invoked in a bottom-up manner. Below is an example illustrating how decorators work correctly:\ndef decorator_lowercase(function):   # defining a Python decorator\n    def wrapper():\n        result = function()\n        result_lowercase = result.lower()\n        return result_lowercase\n    return wrapper\n@decorator_lowercase ## calling the decorator\ndef intro():                     # Normal function\n    return 'Hello, I AM SAM'\n\nprint(intro())\nOutput: \u2018hello,i am sam\u2019",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "67. What is scope resolution?",
+        "answer": "In Python, a scope defines the region of code where an object remains valid and accessible. Every object in Python operates within its designated scope. Namespaces are used to uniquely identify objects within a program, and each namespace is associated with a specific scope where objects can be used without any prefix. The scope of a variable determines its accessibility and lifespan.\nLet\u2019s explore the different scopes created during code execution:\nLocal scope: This refers to the objects that are defined within the current function and are accessible only within that function.\nGlobal scope: Objects in the global scope are available throughout the execution of the code. \nModule-level scope: This scope encompasses global objects that are associated with the current module in the program. These objects are accessible within the module.\nOutermost scope: This refers to all the built-in names that can be called from anywhere in the program.\nInterested in learning React JS? Click here to learn more about this React JS Certification!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "68. How can you shuffle the elements of a list in Python?",
+        "answer": "This can be easily achieved by using the Shuffle() function from the random library, as shown below:\nfrom random import shuffle\nimport random\n \nmy_list = [1, 2, 3, 4, 5]\nrandom.shuffle(my_list)\nprint(my_list)\nThis code will randomly reorder the elements in my_list.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "69. Describe the split(), sub(), and subn() methods found within Python's 're' module?",
+        "answer": "These methods belong to the Python RegEx or \u2018re\u2019 module and are used to modify strings.\nsplit(): This method is used to split a given string into a list.\nsub(): This method is used to find a substring where a regex pattern matches, and then it replaces the matched substring with a different string.\nsubn(): This method is similar to the sub() method, but it returns the new string, along with the number of replacements.\nLearn more about Python from this Python Training in Pune to get ahead in your career!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "70. What is a map function in Python?",
+        "answer": "The map() function in Python has two parameters, function and iterable. The map() function is a powerful tool that allows you to apply a specified function to every element within an iterable. It takes two arguments: the function you want to apply and the iterable containing the elements you want to process. This function is a versatile way to perform operations on multiple items simultaneously, making your code more efficient and concise\nFor example:\ndef calculateSq(n):\nreturn n*n\nnumbers = (2, 3, 4, 5)\nresult = map( calculateSq, numbers)\nInterested in learning Python? Check out this Python Course in Mumbai!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "71. Why doesn't Python deallocate all memory upon exit?",
+        "answer": "Whenever Python exits, especially those Python modules, which are having circular references to other objects or the objects that are referenced from the global namespaces, the memory is not always de-allocated or freed.\nIt is not possible to de-allocate those portions of memory that are reserved by the C library.\nOn exit, because of having its own efficient clean-up mechanism, Python will try to de-allocate every object.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "72. Can you write an efficient code to count the number of capital letters in a file?",
+        "answer": "The normal solution for this problem statement would be as follows:\nwith open(SOME_LARGE_FILE) as countletter:\ncount = 0\ntext = countletter.read()\nfor character in text:\n    if character.isupper():\n        count += 1\nTo make this code more efficient the whole code block can be converted into a one-line code using the feature called generator expression. With this, the equivalent code line of the above code block would be as follows:\ncount = sum(1 for line in countletter for character in line if character.isupper())",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "73. How does Python Flask handle database requests?",
+        "answer": "Flask supports a database-powered application (RDBS). Such a system requires creating a schema, which needs piping the schema.sql file into the sqlite3 command. Python developers need to install the sqlite3 command to create or initiate the database in Flask.\nFlask allows to request for a database in three ways:\nbefore_request(): They are called before a request and pass no arguments.\nafter_request(): They are called after a request and pass the response that will be sent to the client.\nteardown_request(): They are called in a situation when an exception is raised and responses are not guaranteed. They are called after the response has been constructed. They are not allowed to modify the request, and their values are ignored.\nSign up for the Full Stack Developer Course to begin your career journey today.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "74. What is a docstring in Python?",
+        "answer": "Python lets users include a description (or quick notes) for their methods using documentation strings or docstrings. Docstrings are different from regular comments in Python. Rather than being completely ignored by the Python interpreter, like in the case of comments, these are defined within triple quotes.\nSyntax:\n\"\"\"\nUsing docstring as a comment.\nThis code add two numbers\n\"\"\"\nx=7\ny=9\nz=x+y\nprint(z)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "75. What is regression?",
+        "answer": "Regression is termed as a supervised machine learning algorithm technique, which is used to find the correlation between variables. It helps predict the value of the dependent variable (y) based on the independent variable (x). It is mainly used for prediction, time series modeling, forecasting, and determining the causal-effect relationship between variables.\nScikit library is used in Python to implement the regression and all machine learning algorithms.\nThere are two different types of regression algorithms in machine learning :\nLinear Regression: Used when the variables are continuous and numeric in nature\nLogistic Regression: Used when the variables are continuous and categorical in nature",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "76. What is classification?",
+        "answer": "Classification refers to a predictive modeling process where a class label is predicted for a given example of input data. It helps categorize the provided input into a label that other observations with similar features have. For example, it can be used for classifying a mail whether it is spam or not, or for checking whether users will churn or not based on their behavior.\nThese are some of the classification algorithms used in Machine Learning:\nDecision tree\nRandom forest classifier\nSupport vector machine",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "77. Write a program in Python to execute the Bubble sort algorithm?",
+        "answer": "Check out the code below to execute bubble sort-\ndef bubbleSort(x):\n    n = len(x)\n    # Traverse through all array elements\n    for i in range(n-1):\n        for j in range(0, n-i-1):\n            if x[j] > x[j+1]:\n                x[j], x[j+1] = x[j+1], x[j]\n\n# Driver code to test above\narr = [25, 34, 47, 21, 22, 11, 37]\nbubbleSort(arr)\n\nprint(\"Sorted array is:\")\nfor i in range(len(arr)):\n    print(arr[i])\nOutput:\n11,21,22,25,34,37,47",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "78. Create a Python sorting algorithm for a dataset of numbers?",
+        "answer": "code to sort a list in Python:\nmy_list = [\"8\", \"4\", \"3\", \"6\", \"2\"]\n\nmy_list = [int(i) for i in list]\n\nmy_list.sort()\n\nprint (my_list)\nOutput:\n2,3,4,6,8",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "79. Write a Program to print ASCII Value of a character in Python?",
+        "answer": "Check the below code to print the ASCII value:\nx= 'a'\n\n# print the ASCII value of the assigned character stored in x\n\nprint(\" ASCII value of '\" + x + \"' is\", ord(x))\nOutput: 65",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "80. What is the lambda function in Python?",
+        "answer": "A Python lambda function is an anonymous function (a function that does not have a name). To define anonymous functions, we use the \u2018lambda\u2019 keyword instead of the \u2018def\u2019 keyword, hence the name \u2018lambda function\u2019. Lambda functions can have any number of arguments but only one statement.\nFor example:\nl = lambda x,y : x*y\nprint(a(5, 6))\nOutput:30\nAny more queries? Feel free to share all your doubts with us in our Python Community and get them clarified today!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "81. What does 'self' mean in Python?",
+        "answer": "Self is an object or an instance of a class. This is explicitly included as the first parameter in Python. On the other hand, in Java it is optional. It helps differentiate between the methods and attributes of a class with local variables.\nThe self variable in the init method refers to the newly created object, while in other methods, it refers to the object whose method was called.\nSyntax:\nClass A:\n    def func(self):\n        print(\"Hi\")",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "82. What is the difference between append() and extend() methods?",
+        "answer": "Both append() and extend() methods are used to add elements at the end of a list.\nThe primary differentiation between the append() and extend() methods in Python is that append() is used to add a single element to the end of a list. In contrast, open () is used to append multiple aspects, such as another list or an iterable, to the end of a list.\nFor in-depth knowledge, check out our Python Tutorial and boost your Python skills!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "83. Which one of the following is not the correct syntax for creating a set in Python?",
+        "answer": "set([[1,2],[3,4],[4,5]])\nset([1,2,2,3,4,5])\n{1,2,3,4}\nset((1,2,3,4))\nAns.\nset([[1,2],[3,4],[4,5]])\nExplanation: The argument given for the set must be iterable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "84. What is the difference between / and // operators in Python?",
+        "answer": "/: is a division operator and returns the value of the quotient.\n10/3\n3.33\n//: is known as the floor division operator and is used to return the value of the quotient before the decimal point.\n10//3\n3",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "85. What is Pandas?",
+        "answer": "Pandas is an open-source Python library , which supports data structures for data-based operations associated with data analyzing and data manipulation. Pandas, with its rich sets of features, fits in every role of data operation, whether it be related to implementing different algorithms or solving complex business problems. Pandas helps to deal with a number of files in performing certain operations on the data stored by files.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "86. What are DataFrames?",
+        "answer": "A dataframe refers to a two dimensional mutable data structure or data aligned in a tabular form with labeled axes(rows and column).\nSyntax:\npandas.DataFrame( data, index, columns, dtype)\ndata: It refers to various forms like ndarray, series, map, lists, dict, constants and can take other DataFrame as Input.\nIndex: This argument is optional as the index for row labels will be automatically taken care of by Pandas library.\ncolumns: This argument is optional as the index for column labels will be automatically taken care of by the Pandas library.\ndtype: It refers to the data type of each column.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "87. What is the difference between DataFrames and Series?",
+        "answer": "A Series is a one-dimensional array-like object in pandas that can hold any data type, while a DataFrame is a two-dimensional, table-like structure with potentially heterogeneously-typed columns. You can think of a DataFrame as a collection of Series objects that share the same index.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "88. What is the process for merging DataFrames in Pandas?",
+        "answer": "Different DataFrames can be easily combined with the help of functions listed below:\nAppend(): This function is used for the horizontal stacking of DataFrames.\ndata_frame1.append(data_frame2)\nconcat(): This function is used for vertical stacking and is best suited when the DataFrames to be combined possess the same column and similar fields.\npd.concat([data_frame1, data_frame2])\njoin(): This function is used to extract data from different DataFrames, which have one or more columns in common.\ndata_frame1.join(data_frame2)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "89. How do you split the data in train and test dataset in Python?",
+        "answer": "This can be achieved by using the scikit machine learning  library and importing train_test_split function in Python as shown below:\nfrom sklearn.model_selection import train_test_split\n\n# test size = 30% and train = 70%\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "90. Why is a set known as unordered? Is it mutable or immutable?",
+        "answer": "A set is called \u201cunordered\u201d because the items in a set don\u2019t have a specific order or sequence like a list does. It\u2019s more like a collection of items, and you can\u2019t access them by their position.\nSets in Python are mutable, which means you can add or remove items from a set after it\u2019s created. However, the items within the set (the elements) are themselves immutable, meaning they cannot be changed. You can add or remove elements from a set, but you can\u2019t modify the elements themselves once they\u2019re in the set.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "91. Explain the difference between percentile and quantiles in Python?",
+        "answer": "In Python, percentiles and quantiles are related but different concepts.\nPercentiles divide a dataset into 100 equal parts, allowing you to understand the relative position of a value within the entire dataset. For example, the 25th percentile corresponds to the value below which 25% of the data falls.\nQuantiles, on the other hand, divide the dataset into any number of equal parts, such as quartiles (four parts) or quintiles (five parts). They offer a more flexible way to segment the data for analysis.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "92. What is SVM?",
+        "answer": "Support vector machine (SVM) is a supervised machine learning model that considers the classification algorithms for two-group classification problems. Support vector machine is a representation of the training data as points in space are separated into categories with the help of a Support Vector Machine (SVM) is a supervised machine learning model for classifying data into two groups. It is particularly suitable for binary classification problems. SVM represents the training data as points in space and aims to separate them into distinct categories. The separation is achieved by identifying a clear gap between the data points, and the SVM model strives to maximize the width of this gap.\nWant to become a Machine Learning expert? Enroll in our Machine Learning Certification Today!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "93. Write a program in Python to produce Star triangle?",
+        "answer": "The below code produces a star triangle-\ndef Star_triangle(n):\n    for x in range(n):\n        print(' '*(n-x-1)+'*'*(2*x+1))\n\nStar_triangle(9)\nOutput:\n*\n***\n*****\n*******\n*********\n***********\n*************\n***************\n*****************\nLearn how to calculate the Fibonacci Series in C with this easy-to-follow blog!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "94. Write a program to produce Fibonacci series in Python?",
+        "answer": "The Fibonacci series refers to a series where an element is the sum of two elements prior to it.\nn = int(input(\u201cnumber of terms? \u201c))\nn1, n2 = 0, 1\ncount = 0\nif n <= 0: print(\"Please enter a positive integer\") elseif n == 1: print(\"Fibonacci sequence upto\", n, \":\") print(n1) else: print(\"Fibonacci sequence:\") while count < n: print(n1) nth = n1 + n2 n1 = n2 n2 = nth count += 1 [/code]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "95. Write a program in Python to check if a number is prime?",
+        "answer": "The below code is used to check if a number is prime or not\nnum = 13\n\nif num > 1:\n    for i in range(2, int(num/2)+1):\n        if (num % i) == 0:\n            print(num, \"is not a prime number\")\n            break\n    else:\n        print(num, \"is a prime number\")\nelse:\n    print(num, \"is not a prime number\")\nOutput:\n13 is a prime number\n\nPython OOPs Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "96. What are classes and objects?",
+        "answer": "A class is a blueprint for creating objects. It contains member functions, attributes, etc. that get instantiated when the object is called.\nOn the other hand, an object is nothing but an instance of a class, possessing state, identity, and functionality, and is used to call class members.\nLet\u2019s take a look at a simple example:\nHere, we will create a class named office using Python\nclass Office:\ndef __init__(self): \nprint(\"class is created\")\n\ndef sample(self):\nself.employee = \"ramesh\"\nprint(self.employee)\n\nNow we will create an object for the class Office.\n#Object is created\nobj = Office()\n#using object to call member functions and their attributes\nobj.sample()\nHere the output shows the creation of a class in Python, and using an object to call member functions and their attributes.\nOutput:\nclass is created\nramesh",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "97. What is abstraction?",
+        "answer": "One of the pillars of object-oriented programming is abstraction. Abstraction is a very simple process where only the necessary details are shown and the background computations or processes stay hidden. To simplify, let\u2019s try to understand abstraction with an example:\nLet\u2019s say you visit a motor showroom to buy your new car. The dealer will take you for a quick ride to show you the features of the car.\nThe noticeable thing here is that you will be shown the entire car, but you will not be able to figure out how the actual combustion and other necessary details to move the car are working. And this is exactly how abstraction works: only the necessary details are shown, and internal functionality is hidden from the users.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "98. What are constructors?",
+        "answer": "Constructors are called when an object is created for a class. Constructors are used to instantiate the objects and assign values to them. Let\u2019s take a look at a simple example:\nclass Office:\ndef __init__(self): \nprint(\"class is created\")\n\n#Object is created\nobj = Office()\nAs soon as the object is created, the constructor is called, and the output shows \u201cclass is created.\u201d Similarly, we can use constructors like list(), int() to instantiate and assign values to them.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "99. Write a program to depict inheritance and its types in Python?",
+        "answer": "Let\u2019s take a look at a simple example in Python to understand inheritance and its types:\n#single inheritance\nclass Animals:\ndef House(self):\nprint(\"lives in Jungle\")\n\nclass Snakes(Animals):\ndef eats(self):\nprint(\"eats insects\")\n\nobj = Snakes()\nobj.House()\nobj.eats()\nOutput:\nlives in Jungle\neats insects\n\n#multiple inheritance\nclass Maths:\ndef Marks(self): \nself.maths = 90\n\nclass English:\ndef Marks(self):\nself.english = 85\n\nclass Result(Maths, English):\ndef __init__(self):\nMaths.Marks(self)\nEnglish.Marks(self)\n\n\ndef result(self):\nself.res = (self.maths + self.english) // 2\nprint(\"The result is : {}%\".format(self.res))\n\n\nobj = Result()\nobj.result()\nOutput:\nThe result is : 87%\n#multi-level inheritance\nclass Vehicle:\ndef __init__(self):\nself.Type = \"Commercial\"\nprint(\"Vehicle Type : {}\".format(self.Type))\n\nclass Name(Vehicle):\ndef __init__(self):\nself.Name = \"Ashok Leyland\"\nprint(\"Vehicle Name: \".format(self.Name))\n\nclass Final(Name):\ndef __init__(self):\nName.__init__(self)\nVehicle.__init__(self)\nself.Tyres = 8\nprint(\"Number of tyres is: {}\".format(self.Tyres))\n\n\nobj = Final()\nOutput:\nVehicle Name:\nVehicle Type : Commercial\nNumber of tyres is: 8\n\nPython Pandas Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "100. What are some of the string operations that can be performed using Pandas in Python?",
+        "answer": "There are various operations you can perform using Pandas in Python. Some of the examples are as follows:\nMaking all the strings uppercase\nimport pandas as pd\n\nsample = pd.Series(['Rohit Sharma',\n\n                    'Virat Kohli',\n\n                    'Shubman Gill',\n\n                    'Ravindra Jadeja',\n\n                    'KL Rahul'])\n\n\n\n\n#make all strings to uppercase letters\n\nsample.str.upper()\nOutput:\n0       ROHIT SHARMA\n1        VIRAT KOHLI\n2       SHUBMAN GILL\n3    RAVINDRA JADEJA\n4           KL RAHUL\ndtype: object\nMaking all the strings lowercase\nimport pandas as pd\n\nsample = pd.Series(['Rohit Sharma',\n\n                    'Virat Kohli',\n\n                    'Shubman Gill',\n\n                    'Ravindra Jadeja',\n\n                    'KL Rahul'])\n\n\n\n\n#make all strings to lowercase letters\n\nsample.str.lower()\nOutput:\n0       rohit sharma\n\n1        virat kohli\n\n2       shubman gill\n\n3    ravindra jadeja\n\n4           kl rahul\n\ndtype: object\nCheck whether the string starts with a pattern\nimport pandas as pd\n\nsample = pd.Series(['Rohit Sharma',\n\n                    'Virat Kohli',\n\n                    'Shubman Gill',\n\n                    'Ravindra Jadeja',\n\n                    'KL Rahul'])\n\n\n\n\n#make all strings to uppercase letters\n\nsample.str.startswith('R')\nOutput:\n0     True\n1    False\n2    False\n3     True\n4    False\ndtype: bool\nSplitting the strings\nimport pandas as pd\n\nsample = pd.Series(['Rohit Sharma',\n\n                    'Virat Kohli',\n\n                    'Shubman Gill',\n\n                    'Ravindra Jadeja',\n\n                    'KL Rahul'])\n\n\n\n\n#make all strings to uppercase letters\n\nsample.str.split(\" \")\nOutput:\n0       [Rohit, Sharma]\n1        [Virat, Kohli]\n2       [Shubman, Gill]\n3    [Ravindra, Jadeja]\n4           [KL, Rahul]\ndtype: object\nFinding the string\nimport pandas as pd\n\nsample = pd.Series(['Rohit Sharma',\n\n                    'Virat Kohli',\n\n                    'Shubman Gill',\n\n                    'Ravindra Jadeja',\n\n                    'KL Rahul'])\n\n\n\n\n#make all strings to uppercase letters\n\nsample.str.find(\"R\")\nOutput:\n0    0\n1   -1\n2   -1\n3    0\n4    3\ndtype: int64\nStripping the whitespaces in the string\nimport pandas as pd\n\nsample = pd.Series([' Rohit Sharma ',\n\n                    ' Virat Kohli  ',\n\n                    ' Shubman Gill    ',\n\n                    '   Ravindra Jadeja  ',\n\n                    '     KL Rahul '])\n\n\n\n\n#make all strings to uppercase letters\n\nsample.str.strip()\nOutput:\n0       Rohit Sharma\n1        Virat Kohli\n2       Shubman Gill\n3    Ravindra Jadeja\n4           KL Rahul\ndtype: object\nReplacing a string with another\nimport pandas as pd\n\nsample = pd.Series(['Rohit Sharma',\n\n                    'Virat Kohli',\n\n                    'Shubman Gill',\n\n                    'Ravindra Jadeja',\n\n                    'KL Rahul'])\n\n\n\n\n#make all strings to uppercase letters\n\nsample.str.replace('Shubman Gill', 'Rishabh Pant')\nOutput:\n0       Rohit Sharma\n1        Virat Kohli\n2       Rishabh Pant\n3    Ravindra Jadeja\n4           KL Rahul\ndtype: object",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "101. How can you perform stacking operations on a Pandas DataFrame?",
+        "answer": "Stacking is used to reshape the DataFrames. Let\u2019s take a look at a simple example:\nsample = pd.DataFrame([[65, 158], [92, 183]],\n\n                      index=['Ramesh', 'Suresh'],\n\n                      columns=['weight', 'height'])\n\n\n\n\nsample.stack()\nOutput:\nRamesh  weight     65\nheight    158\nSuresh   weight     92\nheight    183\ndtype: int64",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "102. How do you remove the index from a Pandas DataFrame?",
+        "answer": "To remove the index from a dataframe, we can add a simple line of code as follows:\nimport pandas as pd\n\ndata = pd.DataFrame({\"student_id\": [29, 59, 72, 54],\n\n                       \"Name\": ['sravan', 'jyothika',\n\n                                'harsha', 'ramya'],})\n\n\n\n\ndata.index = data['student_id']\n\ndel data['student_id']\n\n\n\n\ndata\nOutput:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "103. How do you create a dataframe, and what are some of the operations you can perform on Pandas DataFrames?",
+        "answer": "There are several ways to create a dataframe in Python, some of them are as follows:\npd.DataFrame([['Ajay', 23], ['Neelam', 25], ['Anita', 42]], columns=['Name', 'Age'])\nOutput:\n\n2.\nDataFrame({'Name': ['Ajay', 'Neelam', 'Anita'],\n\n              'Age': [23,25,42]})\n\n3.\nDataFrame([{'Name': 'Ajay', 'Age': 23},\n\n{'Name': 'Neelam', 'Age': 25},\n\n{'Name': 'Anita', 'Age': 42}])\n\nSome of the operations that you can perform on the data frames are as follows:\nManipulation\nData imputation\nMerging operations\nMeasures of central tendency\nMeasures of kurtosis\nMeasures of spread\nVisualizations",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "104. How do you create a series in Pandas in different ways?",
+        "answer": "A series in Pandas can be created in the following ways:\nSeries(range(0,100, 10), index=[x for x in range(0,20, 2)])\nOutput:\n0      0\n2     10\n4     20\n6     30\n8     40\n10    50\n12    60\n14    70\n16    80\n18    90\ndtype: int64\nx = [1,2,3,4,5]\ny = ['One', 'Two', 'Three', 'Four', 'Five']\n\npd.Series(y, index = x)\n[code language=\"python\"]\nOutput:\n1      One\n2      Two\n3    Three\n4     Four\n5     Five\ndtype: object\ndictionary = {'One': 1, 'Two': 2, 'Three':3, 'Four':4, 'Five':5}\npd.Series(dictionary)\nOutput:\nOne      1\nTwo      2\nThree    3\nFour     4\nFive     5\ndtype: int64\n\nNumpy Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "105. Create a Numpy array in the shape of 2x3 with random integers in the range 0-100. Reshape the array in the shape 3x2 and print the updated shape of the resultant array?",
+        "answer": "import numpy as np\n\narr1= np.random.randint(0,101, (2,3))\n\nprint(arr1)\n\nnewarr1= arr1.reshape(3,2)\n\nprint(newarr1.shape)\nOutput:\n[[35 61 24]\n[20 38 31]]\n(3, 2)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "106. Create an array that will have days from an entire year in the datetime format using the datetime64 Numpy method?",
+        "answer": "from datetime import datetime\n\nimport random\n\ndarr = np.arange('2024-01-01', '2025-01-01',dtype='datetime64')\n\nprint(darr)\nThe print statement will give us the desired output.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "107. For the given two arrays A and B, find the correlation coefficients?",
+        "answer": "A = np.array([[11,17,42],[21,19,27]])\nB = np.array([[12,44,39],[62,81,10]])\nA = np.array([[11,17,42],[21,19,27]])\n\nB = np.array([[12,44,39],[62,81,10]])\n\ncorr= np.corrcoef(A,B)\n\nprint(corr)\nOutput:\n[[ 1.          0.9106039   0.53232532 -0.90264562]\n[ 0.9106039   1.          0.13487934 -0.99982205]\n[ 0.53232532  0.13487934  1.         -0.11616343]\n[-0.90264562 -0.99982205 -0.11616343  1.        ]]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "108. Given an array A, perform the following operations?",
+        "answer": "A = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15], [16,17,18]])\nHorizontal split\nVertical Split\nRow Split\nColumn Split\nA = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15], [16,17,18]])\nHorizontal split\nha= np.hsplit(A,3)\n\nprint(ha)\nOutput:\n[array([[ 1],\n[ 4],\n[ 7],\n[10],\n[13],\n[16]]), array([[ 2],\n[ 5],\n[ 8],\n[11],\n[14],\n[17]]), array([[ 3],\n[ 6],\n[ 9],\n[12],\n[15],\n[18]])]\nVertical split\nva= np.vsplit(A,6) #or can also do A,3 ; A,2\n\nprint(va)\nOutput:\n[array([[1, 2, 3]]), array([[4, 5, 6]]), array([[7, 8, 9]]), array([[10, 11, 12]]), array([[13, 14, 15]]), array([[16, 17, 18]])]\nRow Split\nra= A[0 , : ]\n\nprint(ra)\nOutput:\n[1 2 3]\nColumn Split\nca= A[: , 0]\n\nprint(ca)\nOutput:\n[ 1  4  7 10 13 16]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "109. For the given two arrays A and B. a = np.array([[2,9],[6,13]]) b = np.array([[1,4],[3,11]]) Perform the following operations: a. Cross product of A and B. b. Dot product of A and B. c. Matrix multiplication of A and B. d. Square root of A and B?",
+        "answer": "a = np.array([[2,9],[6,13]])\n\nb = np.array([[1,4],[3,11]])\nCross Product\ncross=np.cross(a,b)\n\nprint(cross)\nOutput:\n[-1 27]\nDot Product\ndot = np.dot(a,b)\n\nprint(dot)\nOutput:\n[[ 29 107]\n[ 45 167]]\nMatrix multiplication\nm_multi= np.multiply(a,b)\n\nprint(m_multi)\nOutput:\n[[  2  36]\n[ 18 143]]\nSquare root\nsq_a= np.sqrt(a)\n\nprint(sq_a)\nOutput:\n[[1.41421356 3.        ]\n[2.44948974 3.60555128]]\n\nPython Libraries Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "110. What is Matplotlib, and how and why do you use it using Python?",
+        "answer": "Matplotlib is a powerful open-source data visualization library in Python that helps us create static and interactive plots. This library gives us some of the simplest functions to create a plot. Different types of plots are provided, including bar plots, line plots, area plots, box plots, scatter plots, etc.\nLet\u2019s see how to use this library with an example of creating a bar plot.\nStep 1: Matplotlib library in Python needs to be imported before use. We can install this library with the help of pip, which is a package management system.\n\nStep 2: We need to import the library\n\nStep 3: Collect data that you want to visualize. This data can be in the form of a list, tuple, dataframe, etc.\nStep 4: Visualizing the bar plot in the simplest way. We can further customize it to make it look better.\n\nUses of Matplotlib:\nMatplotlib is open-source.\nProvides simple functions to visualize\nSupports different forms of data\nGives high-quality images in different formats.\nCan run on different platforms",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "111. How do you use Scipy, and what are some of the operations you can perform using Python?",
+        "answer": "SciPy in Python refers to Scientific Python. It is an open-source library built on NumPy to perform signal processing, numerical operations, linear algebra, and more. SciPy has more features when it comes to computations compared to NumPy. Some of the sub-packages in SciPy include: scipy.special, scipy.signal, scipy.stats, scipy.linalg etc.\nHow to use SciPy:\nStep1: Install the library\n\nStep 2: Import the library\n\nStep 3: Using the library. We have different sub-packages in SciPy, as mentioned above, so let\u2019s discuss some of them below.\nscipy.special\nContains advanced mathematical functions, like gamma, square root, elliptic functions etc.\nBelow is the code for the gamma function in scipy.special.\n\nscipy.stats\nUsed to provide a wide range of statistical operations to analyze the data.\nBelow is the code to extract 5 random samples from a normal distribution.\n\nscipy.signal\nUsed in signal processing tasks.\nBelow is the code for creating hamming-type windows, which are used for filter design and spectral analysis.\n\nscipy.linalg\nUsed for advanced linear algebra tasks.\nBelow is the code to find the eigenvalues and vectors of a matrix.\n\nAbove are some of the many operations we have in the Scipy library.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "112. Plotly is one of the most popular Python libraries. Give an example using Python?",
+        "answer": "Plotly is a Python library well known for its interactive plots. Just like other libraries, Plotly also provides a large variety of plots. Let\u2019s look at the example below:\nStep 1: Import necessary libraries like graph objects from the Plotly library and Numpy\n\nStep 2: Gather data necessary for plotting the graph.\n\nStep 3: Specify the kind of plot. In our case, it\u2019s the scatter plot.\n\nStep 4: Specify a title and labels for the x and y axis.\n\nStep 5: Combining trace and layout to create a figure.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "113. Which library would you use to perform linear algebra operations using Python?",
+        "answer": "The NumPy library offers a package \u2013 numpy.linalg that can be used to perform linear algebra operations using Python.\nHere is a simple example to show how you can use it:\nimport numpy\na = numpy.array([[1, 2], [2, 6]])\nnumpy.linalg.det(a)\nOutput:\n2.0\n\nPython Interview Questions for Data Science",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "114. Why would you use NumPy arrays instead of lists in Python?",
+        "answer": "NumPy arrays provide users with three main advantages, as shown below:\nNumPy arrays consume a lot less memory, thereby making the code more efficient.\nNumPy arrays execute faster and do not add heavy processing to the runtime.\nNumPy has a highly readable syntax, making it easy and convenient for programmers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "115. How can you use Python libraries for web scraping?",
+        "answer": "Web scraping is a process where we visit a webpage and scrape the desired data from the webpage in a format that can be a .json format and analyze or use it according to our requirements. The Python libraries that prove to be a very good addition to the tally in terms of web scraping are Beautiful Soup, Scrapy, Requests, etc.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "116. How do you identify missing values and deal with missing values in Dataframe?",
+        "answer": "Identification:\nisnull() and isna() functions are used to identify the missing values in your data loaded into dataframe.\nmissing_count=data_frame1.isnull().sum()\nHandling missing Values:\nThere are two ways of handling the missing values :\nReplace the  missing values with 0\ndf[\u2018col_name\u2019].fillna(0)\nReplace the missing values with the mean value of that column\ndf[\u2018col_name\u2019] = df[\u2018col_name\u2019].fillna((df[\u2018col_name\u2019].mean()))\n\nPython Coding Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "117. Create a palindrome checker using Python. Using item assignment to an empty array?",
+        "answer": "string = 'madame'\nres = []\ndef checker(x):\nres = x[::-1]\nif res == x:\nprint('Palindrome')\n\nelse:\nprint(\"not a palindrome\")\n\nchecker(string)\nOutput:\nnot a palindrome",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "118. Write a Python program that will print the length of an array without using the len() function?",
+        "answer": "a = [1,2,3,4,5]\ncount = 0\nfor i in a:\ncount = count + 1\n\nprint(count)\nOutput:\n5",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "119. Write a program to find the greatest of the two numbers?",
+        "answer": "We can get the indices of N maximum values from a NumPy array using the below code:\nimport numpy as np\n\nar = np.array([1, 3, 2, 4, 5, 6])\n\nprint(ar.argsort()[-3:][::-1])",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "120. What is the easiest way to calculate percentiles when using Python?",
+        "answer": "The easiest and the most efficient way you can calculate percentiles in Python is to make use of NumPy arrays and its functions.\nConsider the following example:\nimport numpy as np\na = np.array([1,2,3,4,5,6,7])\np = np.percentile(a, 50) #Returns the 50th percentile, which is also the median\nprint(p)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "121. Write a Python program to check whether a given string is a palindrome or not, without using an iterative method?",
+        "answer": "A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam, nurses run, etc.\nConsider the below code:\ndef fun(string):\ns1 = string\ns = string[::-1]\nif s1 == s:\nreturn True\nelse:\nreturn False\n\nprint(fun(\"madam\"))\n\nPython Technical Interview Questions",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "122. Write a Python program to calculate the sum of a list of numbers?",
+        "answer": "def sum(num):\nif len(num) == 1:\nreturn num[0] # With only one element in the list, the sum result will be equal to the element.\nelse:\nreturn num[0] + sum(num[1:])\n\nprint(sum([2, 4, 5, 6, 7]))",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "123. Write a program to find the greatest of the two numbers?",
+        "answer": "x = 5\ny = 10\nprint(\"x is greater\") if x > y else print('Both are equal') if x == y else print('Y is greater')\nOutput:\nY is greater\n\nx = 15\ny = 5\nprint(\"x is greater\") if x > y else print('Both are equal') if x == y else print('Y is greater')\nOutput:\nx is greater\n\nx = 15\ny = 15\nprint(\"x is greater\") if x > y else print('Both are equal') if x == y else print('Y is greater')\nOutput:\nBoth are equal",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "124. Write a Python program to check if the given input is an Armstrong number or not?",
+        "answer": "def armstrong(num):\nsum = 0\ntemp = num\nwhile temp > 0:\nx = temp % 10\nsum = sum + x**3\ntemp = temp // 10\n\nprint(\"armstrong\") if sum == num else print(\"not an armstrong\")\n\n\narmstrong(153)\nOutput:\nArmstrong",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "125. Create a Python program to depict list comprehension?",
+        "answer": "Here is a simple example of how to create a list using list comprehension.\n[x**2 for x in range(0,100,10)]\nOutput:\n[0, 100, 400, 900, 1600, 2500, 3600, 4900, 6400, 8100]",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "126. Create a Python program that will depict dictionary comprehension in Python?",
+        "answer": "A simple example of how to create a dictionary using dictionary comprehension\n{x: x**2 for x in range(0,100,10)}\nOutput:\n{0: 0,\n10: 100,\n20: 400,\n30: 900,\n40: 1600,\n50: 2500,\n60: 3600,\n70: 4900,\n80: 6400,\n90: 8100}",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "127. Write a Python program to show abstraction in Python?",
+        "answer": "from abc import ABC, abstractmethod\n\nclass A(ABC):\n@abstractmethod\ndef sum(self):\npass\n\n\nclass B(A):\ndef sum(self, a, b):\nself.a = a\nself.b = b\nreturn self.a // self.b\n\nobj = B()\nobj.sum(30,4)\nOutput:\n7.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "128. What is a regular expression, and how do you use it in Python?",
+        "answer": "The concept of regular expressions emerges with the need to optimize searching algorithms for strings. Match patterns called regular expressions are used to find or replace the matching patterns in strings while performing string operations.\nLet\u2019s take a look at a simple example to understand the usage of regular expressions:\nimport re\nstring = \"Intellipaat is a fast growing global Ed-Tech brand\"\nx = re.search('\\s', string) #first white space search\nx.start()\nOutput:\n11",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "129. What are character classes in regular expressions?",
+        "answer": "The following are some of the character classes in regular expressions:\n1. [abc] \u2013 Matching the alphabets i.e a b or c.\n2. [a-z] [A-Z] \u2013 Matching the alphabets both lowercase and uppercase, in the range a to z.\n3. [0-9] \u2013 matching the letters in the range specified.\n4. [a-zA-Z0-9] \u2013 To match any alphanumeric character.\n5. [^abc] \u2013 Match anything but a b or c.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "130. How do you use multi-line comments in Python?",
+        "answer": "To use multi-line comments, we can use a very simple approach shown below:\n\u201c\u201d\u201d\nthis is a\nmulti line\ncomment\n\u201c\u201d\u201d\nprint(\u201cMulti line comment above\u201d)",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "131. What is exception handling? How do you handle exceptions in Python?",
+        "answer": "In programming languages, there are two terminologies, i.e., errors and exceptions. Errors, on the other hand, stop the execution of the program, like syntax errors, name errors, etc., but the exceptions change the normal flow of the program. So it becomes necessary to handle exceptions during the execution of the program, and that is known as exception handling.\nLet\u2019s take a look at a simple example to understand how you can handle exceptions using Python:\nHere in a normal scenario, the program would throw an error, but we can handle the exception using the try-and-catch block.\nx = 5\ny = \"10\"\ntry:\nz = x + int(y)\nprint(z)\nexcept TypeError:\nprint(\"Error: cannot add an int and a str\")\nOutput:\n15",
+        "reference": "intellipaat.com"
+    }
+]

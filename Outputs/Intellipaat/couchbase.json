@@ -1,0 +1,52 @@
+[
+    {
+        "question": "1. Compare Couchbase and MongoDB",
+        "answer": "Criteria Couchbase MongoDB\nScalability Seamless scalability Multi-step scalability\nConsistency High Low\nUptime Always up Needs maintenance",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Is Couchbase an open sourse software?",
+        "answer": "Yes. Couchbase can be recognized as an open source software released under the Apache 2.0 license with an enterprise and community edition. Couchbase is a distributed multiform NoSQL file oriented database software package that is advanced for collective applications and open-source software.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What is Couchbase Server?",
+        "answer": "Couchbase server is an easy, fast, elastic NoSQL database. It is also known as Membase, distributed, multi-model NoSQL file oriented database software package that is advanced for collective applications.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What are the basic features of the Couchbase server?",
+        "answer": "The basic features of the Couchbase Server are\nFast \u2013 Couchbase is known for its quickness. Couchbase server facilitates the lower latency and highest throughput. The performance cost will be low and it is a remarkable sign .\nSimple \u2013 Couchbase server is simple in terms of managing, installing, getting, expanding and using it. In a Couchbase server, it is not necessary to create and manage schemas, as a document database without normalizing and tuning of the database.\nElastic \u2013 The Couchbase server will distribute the data and I/O over virtual machines or commodity servers, thus it can make it easy to relate the optimal quantity of resources to the changing needs of an application. In couchbase server the nodes can be enhanced from 1 to 100 tons in a cluster and also can get reduced to sustain application performance.\nReliable \u2013 Couchbase server is stable and enterprise-ready software, so anyone can rely on mission critical applications.\nFind out all about the Couchbase Server in this insightful Couchbase Tutorial.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Distinguish between CouchDB and Couchbase server.",
+        "answer": "CouchDB: Apache CouchDB is capable of storing the JSON documents and also provides the facility to attach the non-JSON files to those documents.Couchbase server: Couchbase server is capable of storing the credentials and key-values, thus, it will be able to store binary data or any other kind of data and also JSON documents. The couchbase server takes the help of a Memcached binary protocol for key-value functionalities and REST API\u2019s SQL and view queries.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. How many functional blocks have involved in Couchbase server and brief about them?",
+        "answer": "There are two different functional blocks of Couchbase server and are\nData Manager\nCluster Manager\nData Manager : Data Manager is responsible for storing and extracting the data from applications in answer to data processing requirements. Data Manager will disclose 2 \u201cmemcapable\u201d docks to the set of connections. 1 port guides non-vBucket aware client libraries and another one will guide to the vBucket aware client libraries. The most of Data manager code is written in C and C++ programming languages.\nCluster Manager : Cluster manager is made to look after the arrangement plus the performance of all nodes in a couchbase server cluster. The manger\u2019s code will run on each lump in the cluster and selects one node for aggregation. The most of the Cluster Manager code is written in Erlang/OTP.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What is vBucket?",
+        "answer": "Vbucket is one of the ways of logically partitioning data because of this nature, it can distribute all over the nodes in a cluster. Each couchbase kind bucket that gets created in the cluster is automatically split up into a static set of slices, later they map to individual servers. They are used to allocate the information effectively along with throughout a cluster.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What are the 4 subsystems which function on every node?",
+        "answer": "Pulses : Watchdog develops regularly exchange a few words with the presently designated cluster head to offer wellbeing revises.\nProgression Monitor : This is the subsystem to monitor on carrying out of the limited information executive, resuming unsuccessful procedures as needed and contributing condition data to the pulsing piece.\nPattern Manager : It is known that every node in the cluster has a pattern example: vBucket map, an intention map, etc. This subsystem will receive, monitor and process local configuration.\nWorldwide Singleton Supervisor : This is of the subsystems and its task is to select cluster head if the previously voted head dies and monitoring \u201cper-cluster\u201d carries if the neighboring lump is the present chief.\nFor Additional Reading :- A Brief Note On The Distinctions Between Couchbase And MongoDB",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What vBucket Map represents?",
+        "answer": "The vBucket map is responsible for representing the state of a cluster once a currently running rebalance operation completes. The process called Rebalance Orchestrator correlate the target current maps to conclude which movement Tap Streams to create and administer. The operation of Rebalance will get exhaustive when the current and Target vBucket Maps are alike.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. What are the TCP ports used to listen to the requests?",
+        "answer": "The port numbers are configurable. The default ports are as below:\nPort 11210 : It is a port which is openly accessible to clients implementing version 2.0 of the memcapable API. Those are \u201cvBucket aware\u201d clients and are depending on the hashing algorithm to map keys to one of a suitable number of \u201cvBuckets\u201d. The vBuckets later will get mapped to a server, providing a layer of indirection enabling vibrant cluster rebalancing, non-disruptive cluster expansion or contraction, replication and failover.\nPort 11211 : The usual Memcached port number processes requests from, clients guiding version 1.0 of the memcapable API requirement. Those clients will be depending on a consistent hashing algorithm to map keys openly to servers in a variable-length server catalog.",
+        "reference": "intellipaat.com"
+    }
+]

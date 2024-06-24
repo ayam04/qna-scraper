@@ -1,0 +1,97 @@
+[
+    {
+        "question": "1. Compare Sqoop and Flume",
+        "answer": "Criteria Sqoop Flume\nApplication Importing data from RDBMS Moving bulk streaming data into HDFS\nArchitecture Connector  \u2013 connecting to respective data Agent \u2013 fetching of the right data\nLoading of data Event driven Not event driven",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. Name a few import control commands. How can Sqoop handle large objects?",
+        "answer": "Import control commands are used to import RDBMS data\nAppend: Append data to an existing dataset in HDFS. --append\n\nColumns: columns to import from the table. --columns\n<col,col\u2026\u2026> \u2022 Where: where clause to use during import. --\nwhere The common large objects are Blog and Clob.Suppose the object is less than 16 MB, it is stored inline with the rest of the data. If there are big objects, they are temporarily stored in a subdirectory with the name _lob. Those data are then materialized in memory for processing. If we set lob limit as ZERO (0) then it is stored in external memory.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. How can we import data from particular row or column? What is the destination types allowed in Sqoop import command?",
+        "answer": "Sqoop allows to Export and Import the data from the data table based on the where clause. The syntax is\n--columns\n<col1,col2\u2026\u2026> --where\n--query\nExample:\nsqoop import \u2013connect jdbc:mysql://db.one.com/corp --table INTELLIPAAT_EMP --where \u201cstart_date> \u20192016-07-20\u2019 \u201d\nsqoopeval --connect jdbc:mysql://db.test.com/corp --query \u201cSELECT * FROM intellipaat_emp LIMIT 20\u201d\nsqoop import \u2013connect jdbc:mysql://localhost/database --username root --password aaaaa \u2013columns \u201cname,emp_id,jobtitle\u201d\nSqoop supports data imported into following services:\nHDFS\nHive\nHbase\nHcatalog\nAccumulo\nLearn about the complete Hadoop ecosystem of India in this blog post.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Role of JDBC driver in sqoop setup? Is the JDBC driver enough to connect the sqoop to the database?",
+        "answer": "Sqoop needs a connector to connect the different relational databases. Almost all Database vendors make a JDBC connector available specific to that Database, Sqoop needs a JDBC driver of the database for interaction.\nNo, Sqoop needs JDBC and a connector to connect a database.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Using Sqoop command how can we control the number of mappers?.",
+        "answer": "We can control the number of mappers by executing the parameter \u2013num-mapers in sqoop command. The \u2013num-mappers arguments control the number of map tasks, which is the degree of parallelism used. Start with a small number of map tasks, then choose a high number of mappers starting the performance may down on the database side.\nSyntax: -m, \u2013num-mappers",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6.How will you update the rows that are already exported? Write sqoop command to show all the databases in MySQL server.",
+        "answer": "By using the parameter \u2013 update-key we can update existing rows. Comma-separated list of columns is used which uniquely identifies a row. All of these columns are used in the WHERE clause generated UPDATE query. All other table columns will be used in the SET part of the query.\nThe command below is used to show all the databases in MySQL server.\n$ sqoop list \u2013databases \u2013connect jdbc:mysql://database.test.com/\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Define Sqoop metastore? What is the purpose of Sqoop-merge?",
+        "answer": "Sqoop meta store is a tool for using hosts in a shared metadata repository. Multiple users and remote users can define and execute saved jobs defined in metastore. End users configured to connect the metastore in sqoop-site.xml or with the\n\u2013meta-connect argument.\nThe purpose of sqoop-merge is:\nThis tool combines 2 datasets where entries in one dataset overwrite entries of an older dataset preserving only the new version of the records between both the data sets.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. Explain the saved job process in Sqoop.",
+        "answer": "Sqoop allows us to define saved jobs which make this process simple. A saved job records the configuration information required to execute a Sqoop command at a later time. sqoop-job tool describes how to create and work with saved jobs. Job descriptions are saved to a private repository stored in $HOME/.sqoop/.\nWe can configure Sqoop to instead use a shared metastore, which makes saved jobs offered to multiple users across a shared cluster. Starting the metastore is covered by the section on the sqoop-metastore tool.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. How Sqoop word came ? Sqoop is which type of tool and the main use of sqoop?",
+        "answer": "Sqoop word came from SQL+HADOOP=SQOOP. And Sqoop is a data transfer tool.\nThe main use of Sqoop is to import and export the large amount of data from RDBMS to HDFS and vice versa.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. How to enter into Mysql prompt, and explain the command parameter indicates?",
+        "answer": "The command for entering into Mysql prompt is \u201cmysql \u2013u root \u2013p\u201d\n-u indicatesthe user\nRoot indicates username\n-p indicates password.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. I am getting connection failure exception during connecting to Mysql through Sqoop, what is the root cause and fix for this error scenario?",
+        "answer": "This will happen when there is lack of permissions to access our Mysql database over the network. We can try the below command to confirm the connect to Mysql database from aSqoop client machine.\n$ mysql \u2013host=MySqlnode> \u2013database=test \u2013user= \u2013password=\nWe can grant the permissions with below commands.\nmysql> GRANT ALL PRIVILEGES ON *.* TO \u2018%\u2019@\u2019localhost\u2019;\nmysql> GRANT ALL PRIVILEGES ON *.* TO \u2018 \u2019@\u2019localhost\u2019;",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. I am getting java.lang.IllegalArgumentException: during importing tables from oracle database.what might be the root cause and fix for this error scenario?",
+        "answer": "Sqoop commands are case- sensitive of table names and user names.\nBy specifying the above two values in UPPER case, it will resolve the issue.\nIn case, the source table is created under different user namespace,then table name should be like USERNAME.TABLENAME as shown below\nsqoop import\n\u2013connect jdbc:oracle:thin:@intellipaat.testing.com/INTELLIPAAT\n\u2013username SQOOP\n\u2013password sqoop\n\u2013table COMPANY.EMPLOYEES",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. How can you list all the columns of a table using Apache sqoop?",
+        "answer": "There is no straight way to list all the columns of a table in Apache Sqoop like sqoop-list-columns, so first we should retrieve the columns of the particular table and transform to a file containing the column names of particular table.Syntax is:\nSqoop import \u2013m1 \u2013connect \u2018jdbc:sqlserver://servername;database=databasename;\nUsername-DeZyre;password=mypassword\u2019 \u2013query \u201cSELECT column_name,DATA_TYPE FROM INFORMATION_SCHEMA columns WHEREtable_name=\u2019mytableofinterest\u2019 AND $CONDITIONS\u201d \u2013target-dir \u2018mytableofinterest_column_name\u2019.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. How to create a table in Mysql and how to insert the values into the table ?",
+        "answer": "To create a table in mysql using the below command\nmysql> create table tablename( col1 datatype, col2 datatype,\u2026\u2026\u2026\u2026);\nExample \u2013\nmysql> create table INTELLIPAAT(emp_idint,emp_namevarchar(30),emp_salint);\nInsert the values into the table\nmysql> insert into table name(value1,value2,value3,\u2026\u2026\u2026);\nExample-\nmysql> insert into INTELLIPAAT(1234,\u2019aaa\u2019,20000);\nmysql> insert into INTELLIPAAT(1235,\u2019bbb\u2019,10000);\nmysql>   insert into INTELLIPAAT(1236,\u2019ccc\u2019,15000);",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What are the basic commands in Hadoop Sqoop and its uses?",
+        "answer": "The basic commands of HadoopSqoop are\nCodegen, Create-hive-table, Eval, Export, Help, Import, Import-all-tables, List-databases, List-tables,Versions.\nUseof HadoopSqoop basic commands\nCodegen- It helps to generate code to interact with database records.\nCreate-hive-table- It helps to Import a table definition into a hive\nEval- It helps to evaluateSQL statement and display the results\nExport-It helps to export an HDFS directory into a database table\nHelp- It helps to list the available commands\nImport- It helps to import a table from a database to HDFS\nImport-all-tables- It helps to import tables from a database to HDFS\nList-databases- It helps to list available databases on a server\nList-tables-It helps to list tables in a database\nVersion-It helps to display the version information",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Is sqoop same as to distcp in hadoop?",
+        "answer": "No. Because the only distcp import command is same as Sqoop import command and both the commands submit parallel map-only jobs but both command functions are different. Distcp is used to copy any type of files from Local filesystem to HDFS and Sqoop is used for transferring the data records between RDBMS and Hadoop eco-system service.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. For each sqoop copying into HDFS how many MapReduce jobs and tasks will be submitted?",
+        "answer": "There are 4 jobs that will be submitted to each Sqoop copying into HDFS and no reduce tasks are scheduled.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How can Sqoop be used in Java programs?",
+        "answer": "In the Java code Sqoop jar is included in the classpath. The required parameters are created to Sqoop programmatically like for CLI (command line interface). Sqoop.runTool() method also invoked in Java code.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. I am having around 500 tables in a database. I want to import all the tables from the database except the tables named Table 498, Table 323, and Table 199. How can we do this without having to import the tables one by one?",
+        "answer": "This can be proficient using the import-all-tables, import command in Sqoop and by specifying the exclude-tables option with it as follows-\nsqoop import-all-tables\n\u2013connect \u2013username \u2013password \u2013exclude-tables Table498, Table 323, Table 199",
+        "reference": "intellipaat.com"
+    }
+]

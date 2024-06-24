@@ -1,0 +1,147 @@
+[
+    {
+        "question": "1. What is MSBI? What are the tools that MSBI comprises?",
+        "answer": "As per definition, MSBI or Microsoft Business Intelligence is a powerful suite of tools that provide solutions for Business Intelligence and Data Mining Queries. MSBI empowers users to gain access to accurate and up-to-date information for better decision-making at an organizational level. There are three tools that constitute the bulk of MSBI:\nSSIS SSAS SSRS\nSQL Server Integration Services or SSIS is basically leveraged for integrating data from multiple databases together. This tool can deal with huge amounts of data and is therefore used for large transactions. SQL Server Analysis Services or SSAS is mostly used to analyze the performance of SQL Server when it comes to loading balancing, heavy data, and transactions, among other uses. This tool is mostly related to the administration of SQL Server. SQL Server Reporting Services or SSRS pertains to report generation. Being platform-independent, this tool can be used across numerous applications and is therefore quite popular in the market these days.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. How is SSIS related to SQL Server?",
+        "answer": "SQL Server Integration Services is a component of SQL Server in MSBI. This tool can be used to perform numerous data migration and ETL operations.\nThis platform is used for integration and workflow applications. Known for its quick and flexible OLTP and OLAP extensions for data extraction, transformation, and loading (ETL), SSIS can also be used to automate the maintenance of SQL Server databases and multidimensional datasets.\nLearn more about MSBI from this insightful MSBI Tutorial!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. What are the tools associated with SSIS?",
+        "answer": "SSIS tools support both the simplest solutions\u2014in which users perform tasks such as copying data from one location to another\u2014and the enterprise-level solutions, in which users develop a large number of complex packages in a team environment.\n\nBusiness Intelligence Development Studio (BIDS)\nTo design and create new packages and data source objects and views that the packages use\nTo modify the existing packages\nTo debug package functionality\nTo create the deployment bundle that is used for deploying packages\nSQL Server Import and Export Wizard\nThis is the simplest way to create Integration Services packages. These packages can extract data from a variety of data sources, such as Excel spreadsheets, flat files, and relational databases, and load the data into similar data stores.\nSSIS Designer and SSIS Menu\nSSIS Designer shows tabs for each designer and also the tab for the package content. It is a graphical tool for developing packages.\nWhen you open an Integration Services project in BIDS, the SSIS menu is added to the menu bar. When you select the Work Offline option, Integration Services skips the aspect of package validation that makes a connection to data sources and other external components.\nControl Flow Designer and Event Handlers\nThe package control flow can be constructed using Control Flow Designer.\nAn Event Handler is a workflow that runs in response to an event that the run time raises.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. What is a workflow? What do you mean by a control flow and a data flow?",
+        "answer": "A workflow is basically a set of instructions that is shared with the Program Executor as a guideline to execute tasks and containers.\n\nA control flow mostly consists of one or more tasks and containers that execute when a package is run. To define conditions for running tasks in the package control flow, precedence constraints are used that connect the tasks and containers in a package.\n\nThere are three control flow elements that SSIS provides:\nContainers that provide structures in packages\nTasks that provide functionality\nPrecedence constraints that connect the executables in an ordered control flow\nA data flow includes sources and destinations that extract and load data, transformations that modify and extend data, and paths that link sources, transformations, and destinations. The data flow task is executable within SSIS packages that create, order, and run the data flow.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Mention the errors in SSIS and explain how error handling works.",
+        "answer": "There are three types of major errors in the SSIS landscape, namely:\nData connection error: This type of error occurs when the Connection Manager cannot be initialized with the connection string.\nData transformation error: This error occurs while the data is being transformed over a data pipeline.\nExpression evaluation error: This type of error occurs if the run-time evaluated expressions are invalid.\nWhen the column data is transformed, extracted from sources, or loaded into a destination, errors occur.\nProcedure errors are handled in the control flow by the precedence control and by redirecting the execution flow, and data errors are handled in the data flow task by redirecting the data flow using the error output of a component.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. Define environmental variables in SSIS.",
+        "answer": "The configuration of environmental variables sets package properties equal to the value in an environment variable. These are used to configure properties that are dependent on computers that execute packages.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. What are different lookup cache modes available in SSIS?",
+        "answer": "Different lookup cache modes in SSIS are as follows:\nFull cache mode\nPartial cache mode\nNo cache mode",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. Explain the architecture of SSIS.",
+        "answer": "SSIS architecture involves four key parts:\n\nIntegration Services: It monitors running Integration Services packages and accomplishes the storage of packages.\nIntegration Services object model: It contains a managed API for reading Integration Services tools, command-line utilities, and custom applications.\nIntegration Services run time and runtime executables: It keeps the layout of packages, runs the packages, and provides support for logging, breakpoints, configuration, connections, and transactions.\nDataflow Engine: It provides in-memory buffers that move data from source to destination.\nCheck out our blog on SSIS Data Types Cheat Sheet!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. How can we do logging in SSIS?",
+        "answer": "SSIS includes logging features that not only write log entries when run-time events occur but also write custom messages. Integration Services supports a diverse set of log providers and empowers users with the ability to create custom log providers. Integration Services log providers can write log entries into text files, SQL Server Profiler, SQL Server, Windows Event Log, or XML files. The logging configuration provides an in-built feature that can log the details of various events like OnError, Onwarning, etc.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. How do you deploy SSIS packages?",
+        "answer": "The SSIS project, \u2018Build\u2019 offers a deployment manifest file. Users are required to run the manifest file and decide whether to deploy it onto a file system or onto a Microsoft SQL Server database. The SQL Server deployment is fast and is also relatively secure than the file system deployment. Alternatively, this deployment can be done from packages in SSMS from the file system or SQL Server.\n\nIntermediate MSBI Interview Questions and Answers",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. How can we organize SSIS packages on production?",
+        "answer": "There are three ways to do so:\nThrough Manifest:\nCreate a deployment utility by setting its properties as true. It will be formed in the bin folder of the solution.\nOnce the package is built, copy all the files in the utility and use the manifest file to display it on the product.\nUsing the DTExec.exe utility\nBy importing the package directly into the Microsoft database from SQL Server Management Studio (SSMS) by logging into Integration Services.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. Define query parameters in SSRS.",
+        "answer": "Query parameters are revealed in the query of data sources that are to be included in the SQL WHERE clause for accepting parameters. Query parameters begin with the symbol \u2018@\u2019.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. What are variables? Define the variable scope.",
+        "answer": "Variables are used to store values that SSIS packages and their containers, tasks, and event handlers leverage at the run time. Scripts can also use variables. Additionally, precedence constraints that sequence tasks and containers into a workflow use variables when constraint definitions include expressions.\nIntegration Services supports two types of variables: user-defined variables and system variables.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Define SSRS and also talk about the SSRS architecture.",
+        "answer": "One of the server-based software systems, SQL Server Reporting Services (SSRS) generates reports developed by Microsoft. It is used for preparing and delivering a variety of interactive printed reports and is administered through an interface that is web-based. It utilizes a web service interface for supporting and developing customized reporting applications.\n\nThe architecture of SSRS comprises integrated components. This multi-tiered architecture is scalable and modular. A single installation can be used across multiple computers.\nVarious components of SSRS architecture include Report Manager, Report Designer, the browser types supported by Reporting Services, Report Server, Report Server command-line utilities, Report Server Database, Report Services Extensibility, and the data sources that are supported by Reporting Services.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. Explain the Reporting Life Cycle in SSRS.",
+        "answer": "SSRS reporting life cycle includes several aspects:\n\nReport designing: It is done in Visual Studio Report Designer. It generates a class that embodies the report definition.\nReport processing: This brings the report definition from the report data source. It performs all grouping, sorting, and filtering calculations.\nReport rendering: This stage starts by passing the Report Instance to a specific rendering extension that needs to be in HTML or PDF formats. The expressions of items are evaluated in the header and footer sections for every page. Finally, the report is rendered to a specific output document.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. When shall we use a null data-driven subscription?",
+        "answer": "Users should first create a data-driven subscription that uses the Null Delivery Provider. When the Null Delivery Provider is specified as the method of delivery in the subscription, the Report Server targets the Report Server Database as the delivery destination and uses a specialized rendering extension called the null rendering extension. Different from the other delivery extensions, the Null Delivery Provider does not have delivery settings that can be configured through a subscription.\nLearn why MSBI is valued more among all BI tools from this informative MSBI Blog!\nTo understand MSBI in detail, watch this informative MSBI for Beginners video tutorial:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What do you mean by matrix in SSRS? What are sub-reports and how do we create them?",
+        "answer": "A matrix is a data region that is related to a report set. Matrices permit us to create crosstab reports with the report variables showing on rows and columns.\nA sub-report is like any other reports which can be termed in the main report and can be generated through the main report. Parameters can be conceded from the main report to the sub-report, and on basis of that a report can be created.\nGo through this blog to gain an insightful overview of the MSBI Developer!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. Define Report Model Project.",
+        "answer": "Report Model Project is used for ad-hoc reporting. We can create ad-hoc reports with Report Builder. Having a simple view, Report Model Project can be created on BIDS or Report Server.\n\nAre you interested in learning MSBI from experts? Get enrolled in the MSBI Course in Bangalore today!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. What do you mean by Report Server Project?",
+        "answer": "Report Server Project comprises RDL files, and it needs to be deployed on Report Server to view the report files for applications and users. It is a solution where users can design reports. Once the solution is formed, users can start designing reports.\nEnroll in the Power BI course to learn Power BI concepts from experts.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. Define RS.exe Utility.",
+        "answer": "RS.exe utility is used for organizing reports on Report Server. It comes with the Report Server and can be modified accordingly.\n\nAdvanced MSBI Interview Questions and Answers for Experienced",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. What are the three different parts of RDL files?",
+        "answer": "In Visual Studio, RDL files have three parts:\n\nData that covers the dataset on which queries are written\nDesign that creates tables and matrix reports\nThe preview that is used to check the preview after a report is run",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. What are the different data sources used in SSRS?",
+        "answer": "Several data sources are used in SSRS for ingesting data:\nOLEDB\nSQL Server SAP NetWeaver BI\nOracle\nReport Server Model\nSSAS OLEDB\nODBC\nHyperion\nTeradata\nXML\nIntellipaat gives its learners industrial training on SQL Course. Enroll now to get a professional certificate!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. Differentiate between Tabular and Matrix Reports.",
+        "answer": "Tabular Report Matrix Report\nA tabular report is the most basic type of reports.\nA matrix report is a cross-tabulation of four groups of data.\nEach column corresponds to a column selected from the database.\nOne group of data is displayed across the page.\nAnother group of data is displayed down the page.\nThe third group of data is the cross-product.\nThe fourth group is displayed as \u2018filler\u2019 of the cells.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. How to send SSRS Reports from SSIS?",
+        "answer": "In order to do this, users need to create a subscription to the report. This can be done with the Report Manager. The report format and the email address of the recipient can be mentioned at Report Subscription. When a schedule is created for the SSRS report, an SQL Server Agent Job will be created. From SSIS, using sp.start_job, the relevant job name can be passed and, henceforth, the SSRS report subscription can be executed.\nIf you have any doubts or queries related to BI, get them clarified from BI experts on our BI Community!",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. What is SSAS? List out its key features.",
+        "answer": "The middle-tier server for analytical processing, OLAP, and data mining, SSAS manages multidimensional cubes of data and provides access to heaps of information including aggregation of data. Analysis services provide a combined view of data that is used in OLAP or data mining.\nKey features of SSAS are:\nEase of use with a lot of wizards and designers\nFlexible data model creation and management\nScalable architecture to handle OLAP\nIntegration of administration tools, data sources, security, caching, reporting, etc.\nExtensive support for custom applications",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. What is the significance of UDM in SSAS?",
+        "answer": "The Unified Dimensional Model (UDM) acts as a bridge between users and data sources.\nBenefits of UDM in SSAS:\nEnriches the user model\nProvides high-performance queries supporting interactive analysis\nAllows business rules to be captured in the model to provide better analysis",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is the architecture of SSAS?",
+        "answer": "SSAS has a 2-tier architecture. Below are the key features of SSAS architecture:\n\nBoth server and client components supply OLAP and data mining functionalities to BI applications.\nServer components are implemented as individual Microsoft Windows Services.\nClients communicate with Analysis Services using the standard XMLA (XML for Analysis).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. What languages are used in SSAS?",
+        "answer": "There are four languages that are used in SSAS. They are:\nStructured Query Language (SQL)\nMultidimensional Expressions (MDX) for analysis\nData Mining Extensions (DMX) for data mining\nAnalysis Services Scripting Language (ASSL) for managing Analysis Services database objects",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. How are cubes implemented in SSAS?",
+        "answer": "Cubes are multidimensional models that store data and aggregations from one or more sources. They are created using the Cube Wizard. Also, dimensions are built while creating cubes.",
+        "reference": "intellipaat.com"
+    }
+]

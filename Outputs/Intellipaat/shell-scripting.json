@@ -1,0 +1,332 @@
+[
+    {
+        "question": "1. What is a shell script?",
+        "answer": "A file containing a series of commands that are translated and carried out by a shell interpreter is known as a shell script. It enables task automation and command execution on an operating system with a Unix foundation.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "2. How is a shell script written?",
+        "answer": "You must create a plain text file with the extension <file-name>.sh to construct a shell script. The script can be written using any text editor, such as vi, nano, or cat.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "3. Which command is used to execute a shell file?",
+        "answer": "To execute a shell script (a text file containing shell commands), you typically use\n./script.sh extension.\nReplace \u201cscript.sh\u201d with the actual name of your shell script.\nEnsure the script has executable permissions set using the following chmod command if needed:\nchmod +x script.sh\nThis makes the script executable, allowing you to run it using the ./ notation.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "4. Name the most commonly used shells on a typical Linux system.",
+        "answer": "Linux shells primarily fall into two categories: C-shell and Bourne shell. Their derivatives are as follows:\nC-shell: TENEX C-Shell, Z-Shell\nBourne shell: Korn Shell, Bourne-Again Shell, POSIX Shell",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "5. Explain the difference between single quotes (') and double quotes (",
+        "answer": "Here are the major differences between single quotes (\u2018) and double quotes (\u201c) in shell scripting:\nParameter Single Quotes (\u2018) Double Quotes (\u201c)\nVariable Substitution No variable substitution occurs inside single quotes. Variable substitution occurs inside double quotes.\nEscaping Special Characters Special characters within single quotes are treated as literal characters and not escaped. Special characters within double quotes can be escaped using a backslash ().\nCommand Substitution Command substitution is not allowed within single quotes. Command substitution (e.g., $(command)) is supported within double quotes.\nLiteral String Preservation Text enclosed in single quotes is treated as a literal string, preserving spaces and formatting. Text enclosed in double quotes is parsed, allowing variables and special characters to be interpreted.\nNested Quotes Nested single quotes within single quotes are not permitted. Nested double quotes within double quotes are permitted.\nWord Splitting Word splitting does not occur inside single quotes. Word splitting occurs inside double quotes, making it suitable for handling strings with spaces.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "6. What is the purpose of the case statement in shell scripting?",
+        "answer": "The purpose of the case statement in shell scripting is to provide a structured and efficient way to perform conditional branching based on pattern matching. It simplifies decision-making by allowing the script to execute different code blocks for specific pattern matches, enhancing code readability.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "7. Define shell variable.",
+        "answer": "A shell variable forms the core of a shell script or program. The variable enables the shell program to handle and manipulate stored information. It is generally stored as a string variable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "8. What is the difference between $$ and $!?",
+        "answer": "$$ and $! are both special variables in Unix-like operating systems$$ and $!\n$$: It represents the process ID (PID) of the currently executing shell or script.d .when you want to create temporary files with unique names to avoid naming conflicts.\n$!: It represents the PID of the last background process that was executed in the background using the & operator. It tracks background processes",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "9. What is a kernel?",
+        "answer": "The kernel is a fundamental computer program within an operating system, responsible for overseeing and coordinating the operations of the computer and its hardware.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "10. How do you give a variable in a shell script a value?",
+        "answer": "The variable_name=value format is used to assign values to variables in shell scripts. As an illustration, name=\u201dJohn\u201d gives the variable \u201cname\u201d the value \u201cJohn\u201d.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "11. How do you use conditional statements in a shell script?",
+        "answer": "Conditional statements in shell scripting are typically made using the \u201cif\u201d statement. It follows the syntax if [ condition ]; then\u2026 fi. The \u201cif\u201d block commands are executed if the condition is true.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "12. How do you read input from the user in a shell script?",
+        "answer": "In a shell script, the \u201cread\u201d command enables the user to capture input. It facilitates prompting the user for information and storing their response in a variable.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "13. How do you create a loop in a shell script?",
+        "answer": "Shell scripts can use loops such as the \u201cfor\u201d and \u201cwhile\u201d loops. The \u201cfor\u201d loop is used to iterate over a sequence of values, whereas the \u201cwhile\u201d loop is used to repeat commands as long as a certain condition is true.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "14. Mention some limitations of shell scripting.",
+        "answer": "Shell scripting has the following disadvantages:\nErrors are frequent and costly; a single error can alter the command.  \nThe execution speed is slow. \nBugs or inadequacies are in the language\u2019s syntax or implementation.  \nLarge, complex tasks aren\u2019t well suited to it.  \nContrary to other scripting languages, it provides a minimal data structure.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "15. What are is the absolute and relative paths?",
+        "answer": "An absolute path provides the full file or directory location from the root directory, starting with / in Unix or a drive letter in Windows. A relative path specifies a location in relation to the current working directory, making it shorter and context-dependent.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "16. Elucidate the term shebang line.",
+        "answer": "The term shebang line in shell scripting refers to the first line of a script that begins with #! followed by the path to the interpreter, such as /bin/bash. It specifies the interpreter to be used for executing the script. This line is crucial as it instructs the system on how to interpret and run the script, ensuring compatibility and proper execution.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "17. What are the various stages of the Linux process?",
+        "answer": "In Linux, a process goes through several stages during its lifecycle:\nCreation: A process is created when a program is executed.\nReady: The process is ready to run but waiting for CPU time.\nRunning: The process is actively using the CPU.\nBlocked: The process is waiting for a specific event, such as I/O, to complete.\nTerminated: The process has completed its execution or was forcibly terminated.\n\nShell Scripting Programming Interview Questions for Experienced\nHere are a few of the intermediate-level interview questions for shell scripting for learners.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "18. How will you find the total number of shells available in your system?",
+        "answer": "To determine the total number of shells available in a system through shell scripting, you can employ the following command: cat /etc/shells | wc -l. This command reads the /etc/shells file and uses the wc command to count the lines, which correspond to the available shells. Executing this command in your terminal will provide you with the desired information regarding the total number of shells available.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "19. Define control instructions.",
+        "answer": "Control instructions in shell scripting are commands that dictate the flow and logic of a script. They include conditional statements (if-else), loops (for, while), and case statements, enabling precise program control. These instructions facilitate decision-making and repetitive tasks, enhancing script functionality and efficiency. Mastering control instructions is essential for effective shell scripting, empowering users to automate processes and manage data effectively.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "20. What is LILO?",
+        "answer": "LILO (Linux Loader) is a legacy boot loader used in Linux systems. It manages the boot process by loading the Linux kernel into memory during system startup. However, it has been largely replaced by GRUB (GRand Unified Bootloader), which offers more features and flexibility in handling multiple operating systems and file systems.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "21. What do you mean by positional parameters in shell scripting?",
+        "answer": "Positional parameters in shell scripting refer to variables that hold values passed to a script or function as command-line arguments. They are denoted by numbers, with $1 representing the first argument, $2 the second, and so on. These parameters enable dynamic input processing, enhancing script flexibility and functionality. Understanding positional parameters is fundamental for effective shell script development.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "22. How do you read input from a file line by line in a shell script?",
+        "answer": "You can use a while loop with the read command to read input from a file line by line. For example:\nwhile IFS= read -r line; do\n    # Process each line here\ndone < input.txt",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "23. How do you handle errors and exceptions in a shell script?",
+        "answer": "You can use the set -e option at the beginning of the script to exit immediately if any command returns a non-zero status (indicating an error). Additionally, you can use the trap command to catch and handle specific signals or errors within the script.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "24. How do you redirect the output of a command to a file and display it on the terminal simultaneously?",
+        "answer": "You can use the tee command to achieve this. For example:\ncommand | tee output.txt\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "25. How do you compare two strings in a shell script?",
+        "answer": "String comparison can be made using the double square brackets ([[ ]]) and the == operator. For example:\nif [[ $str1 == $str2 ]]; then\n    # Strings are equal\nfi",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "26. How do you schedule a shell script to run at a specific time using Cron?",
+        "answer": "You can schedule a shell script using the crontab command. By editing the crontab file (crontab -e), you can specify the desired time and frequency for the script to run.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "27. What is the difference between $@ and $*?",
+        "answer": "$* treats a group of positional arguments as one complete string, while $@ treats each quoted argument as an individual argument.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "28. How do you handle input validation and error checking in a shell script?",
+        "answer": "You can use conditional statements (if and case) to validate input and check for errors. You can perform error handling and exit the script if necessary by using return codes ($?) and conditional checks.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "29. How do you create and use environment variables in a shell script?",
+        "answer": "By assigning a value to a variable, you can create environment variables. For instance,\nMY_VARIABLE=\"Hello, World!\"\nexport MY_VARIABLE",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "30. How do you count the number of occurrences of a specific word in a file using shell scripting?",
+        "answer": "You can use the grep command with the -c option to count the occurrences of a specific word in a file.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "31. How do you perform arithmetic calculations in shell scripting?",
+        "answer": "Shell scripting supports arithmetic calculations using the expr command or double parentheses (( )) for arithmetic expansion. For example,\nresult=$(expr 2 + 2)\necho $result  # Outputs 4\n\nresult=$((2 + 2))\necho $result  # Outputs 4",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "32. What are CLIand GUI?",
+        "answer": "CLI (Command Line Interface):\nText-based interface.\nEfficient for experienced users and scripting.\nCommon in Unix-like systems.\nRequires knowledge of specific commands.GUI (Graphical User Interface):\nVisual interface with icons and windows.\nUser-friendly and suitable for beginners.\nCommon in Windows, macOS, and desktop applications.\nReduces the need for memorizing commands.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "33. How will you will define whether the given link is hard or soft?",
+        "answer": "In shell scripting, the categorization of a given link as hard or soft typically pertains to determining whether the link is symbolic or represents a physical file or directory. This can be accomplished using the \u2018test\u2019 command with the \u2018-h\u2019 flag, which returns true for symbolic links (soft) and false for actual files or directories (hard). Such distinctions aids in effective file management and scripting logic.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "34. What are the different types of variables in shell scripting?",
+        "answer": "In shell scripting, there are three primary types of variables:\nLocal Variables: These are defined within a script and are only accessible within the script. Example: count=5.\nEnvironment Variables: These are available system-wide and can be accessed by any script or program. Example: PATH=\u201d/usr/bin:/usr/local/bin\u201d\nShell Variables: These are predefined by the shell and hold system information.\nExample:\n$HOME (user's home directory).\nThese variable types serve different purposes and scopes in shell scripting.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "35. What is the significance of $#?",
+        "answer": "The significance of $# in shell scripting is that it represents the number of arguments passed to a script or function. It helps scriptwriters determine the count of positional parameters (arguments) provided when the script is executed. This information can be crucial for creating conditional logic based on the number of arguments or for iterating through and processing them within the script.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "36. Explain Crontab?",
+        "answer": "Crontab is a Unix-based time scheduler for automating repetitive tasks. Users create \u201ccron jobs\u201d by specifying commands and defining when they should run based on a time schedule (minute, hour, day, month, day of the week). It allows users to automate tasks like backups, updates, and scripts at specified intervals. Each user can have their own crontab, and they can edit it using crontab -e. Crontab simplifies system maintenance and task automation on Unix-like systems.\n\nAdvanced Shell Scripting Interview Questions\nHere are some bash shell scripting interview questions for experienced developers:",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "37. Name two files of the crontab command.",
+        "answer": "The two crontab command files are as follows:\ncron. deny: These files determine which user or users should be blocked from using the crontab command.\ncron. allow: These files determine which user or users should be granted permission to use the crontab command.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "38. How do you handle and process command-line options in a shell script?",
+        "answer": "Command-line options can be handled using the getopts command or manually parsing the arguments. The getopts command provides a convenient way to specify and process options and their arguments.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "39. How do you securely handle sensitive information (like passwords) in a shell script?",
+        "answer": "Sensitive information can be stored in environment variables or separate configuration files. You can restrict access to these files using proper file permissions and use tools like OpenSSL to encrypt or decrypt sensitive data.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "40. How do you work with arrays in a shell script?",
+        "answer": "Arrays can be declared and accessed using square brackets and indexes. For example,\nmyarray=(\"apple\" \"banana\" \"cherry\")\necho \"${myarray[0]}\"  # Outputs \"apple\"",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "41. How do you calculate the execution time of a command or script in a shell script?",
+        "answer": "You can use the time command to measure the execution time of a command or script. For example,\ntime ./myscript.sh",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "42. How do you process and manipulate text using regular expressions in a shell script?",
+        "answer": "You can use the grep, sed, or awk commands with regular expressions to process and manipulate text in a shell script. Regular expressions provide powerful pattern-matching capabilities.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "43. What is the alternative to if-else if-else statements in bash?",
+        "answer": "An alternative to an if-else if-else statement is a case statement. Its syntax differs from the switch case. The \u2018case\u2019 block is closed by \u2018esac,\u2019 and no break statement is used.\nSyntax:\ncase  in\nMatch pattern one) commands;\nMatch pattern two) commands;\nesac",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "44. How do you read and parse CSV or delimited files in a shell script?",
+        "answer": "You can use the awk command with the appropriate field separator (-F) to parse CSV or delimited files. Alternatively, the cut or read command can extract specific columns.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "45. How do you handle concurrent processes or parallel execution in a shell script?",
+        "answer": "Concurrent processes or parallel execution can be achieved using tools like xargs, parallel, or background processes, and job control operators (&, wait).",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "46. How do you debug shell scripts effectively?",
+        "answer": "Effective debugging can be done using the set -x option to enable debugging mode, inserting echo statements to print intermediate values, using the trap command to catch and handle signals, and analyzing log files or error output.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "47. Differentiate between the grep and find commands.",
+        "answer": "Parameter grep (Global Regular Expression Print) find\nFunctionality Searches for patterns within the content of files. Searches for files and directories in the file system hierarchy.\nFile Content Focuses on searching within file contents, making it suitable for text-based searches. Concentrates on locating files and directories based on metadata and attributes.\nOutput Displays lines containing matched patterns within files. Prints the paths of files and directories that meet specified criteria.\nUsage grep [options] pattern [file\u2026] is used for text searches. find [path] [expression] is employed for file and directory searches.\nExamples grep -r \u201ckeyword\u201d /path/to/search searches for \u201ckeyword\u201d in files under the specified directory. find /path/to/search -name \u201c*.txt\u201d locates all \u201c.txt\u201d files under the given path.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "48. How do you use pipe commands in shell scripting?",
+        "answer": "To utilize pipe commands in shell scripting, use the \u2018|\u2019 symbol to link multiple commands. This allows the output of one command to serve as the input for the next. For example, \u2018command1 | command2\u2019 directs the output of \u2018command1\u2019 as input to \u2018command2\u2019. This powerful technique streamlines tasks, enhances efficiency, and enables complex data processing in shell scripts, making it a valuable tool for system administrators and developers.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "49. Distinguish between the two most frequently employed shells in the Linux sSystem.",
+        "answer": "There are mainly two kinds of Linux shells: C shell and Bourne shell.\nAspect C Shell (csh) Bourne Shell (sh)\nSyntax More C-like syntax with command history and tab completion Traditional and straightforward syntax\nScripting Language Primarily used for interactive tasks; limited scripting capabilities Designed for scripting with greater versatility\nControl Structures Supports \u2018foreach\u2019 and \u2018while\u2019 loops Offers \u2018if-then-else\u2019 statements and \u2018for\u2019 loops\nJob Control Robust job control for managing processes interactively Supports job control but less interactive",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "50. Differentiate between interactive and non-interactive shells.",
+        "answer": "Parameter Interactive Non-Interactive\nDefinition Involves real-time, two-way communication where the system responds immediately to user input. Operates without real-time interaction, often following predefined instructions or scripts.\nUser Engagement Requires active user participation and responses during the interaction. Requires minimal or no user input once initiated.\nResponse Time Provides immediate responses to user actions, enhancing user engagement and control. Executes predefined tasks without expecting immediate user input, making it more automated.\nExamples Video conferencing, live chat support, video games, and virtual assistants that respond to voice commands. Batch processing, automated data analysis, and scheduled tasks like backups or system maintenance.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "51. What is the purpose of sed command and awk command?",
+        "answer": "Parameter sed (Stream Editor) awk (Text Processing Tool)\nUsage Text manipulation in a linear, non-interactive manner Text processing with pattern scanning and processing\nFunctionality Primarily used for substitution, deletion, insertion, and more based on patterns More versatile, as it can perform complex text processing, including pattern matching, text extraction, and mathematical operations\nVariables Limited variable support for simple tasks Supports variables and arrays for complex data manipulation and storage\nLoops/Conditionals Lacks built-in loops and conditionals Supports loops, conditionals, and control structures for more intricate logic\nExamples sed \u2018s/old/new/g\u2019 file.txt replaces \u2018old\u2019 with \u2018new\u2019 globally in \u2018file.txt\u2019. awk \u2018{ print $2 }\u2019 file.txt prints the second field from each line in \u2018file.txt\u2019.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "52. What is a Hard Link?",
+        "answer": "A hard link in shell scripting is a pointer directly to a file\u2019s inode, there by giving the same file a different name. Hard links, as opposed to symbolic links, which point to filenames, point directly to the data within the file on the disk since they share the same inode. As long as there are still active hard links, deleting a file won\u2019t get rid of its data or inode. Each file\u2019s link count, which indicates the number of hard links connected to it, is displayed by the (ls -l )command. Hard links must be created within the same file system, and any changes made to the file through one hard link are immediately mirrored in all other hard links.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "53. What is Soft Link?",
+        "answer": "A soft link, sometimes referred to as a symbolic link in shell scripting, is a unique form of a file that holds a path to another file or directory. Unlike hard links, symbolic links just provide a reference to the file\u2019s location rather than actually pointing to the inode or file data. The symbolic link breaks if the original file is moved or deleted. Create shortcuts or aliases for files and folders using symbolic links to make it simpler to access them from other locations. They are able to link to files and directories in many file systems.\nUsing the (ln -s )command, one can create a symbolic link by supplying the target file or directory and the desired symbolic link name.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "54. When should shell programming/scripting not be used?",
+        "answer": "Shell programming or scripting should not be used for complex software development tasks or applications that require high performance, extensive graphical interfaces, or intricate data manipulation. It is not suitable for projects demanding real-time processing, complex mathematical calculations, or sophisticated user interactions. Additionally, shell scripts may not be the best choice for large-scale applications with intricate architecture. In such cases, programming languages like Python, Java, C++, or specialized tools and frameworks are more appropriate for achieving better performance, maintainability, and scalability.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "55. What does the .(dot) indicate at the beginning of a file name and how should it be listed?",
+        "answer": "A hidden file is one whose name starts with a . (dot). Every time we attempt to list the files, all files\u2014hidden files excluded\u2014are listed.\nIt will, however, be listed in the directory. Additionally, we must use the ls -a option, like $ ls -a, in order to list the hidden file.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "56. What are the different blocks of a file system? Explain in brief.",
+        "answer": "The file system is divided into several core blocks or components, each of which serves a specific purpose in managing and storing the data efficiently. The files system\u2019s main blocks are shown here:\nBoot Block: The first file system block with the bootstrap code or boot loader that must be installed in order to start your computer.\nSuperblock: A crucial data structure that offers crucial metadata about the file system, such as its type, size, status, list of free and used blocks, and more, including information on each block\u2019s status. For mounting and using the file system, it is essential.\nBlock INODE: Each file or directory is represented by an inode (index node), which also contains metadata about the corresponding file, including permissions, timestamps, file size, and pointers to the data blocks. Inode blocks are collections of inodes. Blocks of data are the actual blocks that hold file data, including directory entries pointing to other files or subdirectories as well as file contents.\nFAT: File Allocation Table: a list that links the names of files to the corresponding inodes or data blocks. File systems like FAT and exFAT frequently use it.\nFDT: File Descriptor Table: a table with entries from the inode table that serve as file descriptors. It assists in managing open files and the data that goes with them.\nNo-cost block list: a list that manages the file system\u2019s free or available blocks, allowing for the effective allocation of blocks for new files and directories.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "57. What is the alternative command available to echo and what does it do?",
+        "answer": "tput is an alternative command to echo.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "58. How many types of control instructions are available in a shell? Explain in brief.",
+        "answer": "In a shell, there are three types of control instructions:\nSequential Control: These instructions are executed one after the other in a sequential manner. They ensure that each command runs only after the previous one completes.\nConditional Control: Conditional instructions, like \u2018if\u2019 statements, enable decision-making in scripts. They execute commands based on specified conditions, allowing for branching and different outcomes.\nLoop Control: Loop instructions, such as \u2018for\u2019 and \u2018while\u2019 loops, repeatedly execute commands until a specified condition is met, providing automation and repetitive task handling.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "59. What is IFS?",
+        "answer": "IFS stands for Internal Field Separator. And it is one of the system variables. By default, its value is space, tab, and a new line. It signifies that in a line where one field or word ends and another begins.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "60. What are the two files of the crontab command?",
+        "answer": "The crontab command in Unix-like operating systems utilizes two files: the system-wide crontab file located at /etc/crontab and user-specific crontab files stored in /var/spool/cron/crontabs directory. The system-wide file is typically used by administrators for tasks that affect the entire system, while users employ their individual crontab files to schedule and manage recurring tasks specific to their accounts.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "61. What is Shebang in a shell script?",
+        "answer": "Shebang is a hash sigh \u2018#\u2019 followed by an exclamation mark \u2018!\u2019 Generally, this can be seen at the beginning or top of the script/program. Usually, a developer uses this to avoid repetitive work. Shebang mainly determines the location of the engine which is to be used in order to execute the script.\nExample: #!/bin/bash\nThe above line also tells which shell to use.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "62. In shell scripting, where you will find the login names of all the users on a system, and how they can be printed at the same time?",
+        "answer": "In shell scripting, you can find the login names of all users on a system by examining the \u201c/etc/passwd\u201d file, which contains user account information. To print all user login names simultaneously, you can use the \u201ccut\u201d command in combination with other commands like \u201cawk\u201d or \u201ccut\u201d to extract the necessary information. For instance, running \u201ccut -d: -f1 /etc/passwd\u201d will display a list of all user login names in the system.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "63. What do you know about the MBR in the shell scripting? How it is useful for the users?",
+        "answer": "In shell scripting, MBR stands for Master Boot Record. It is a small but crucial data structure located in the first sector of a storage device, such as a hard drive. MBR contains information about the disk\u2019s partitioning and the bootloader. It\u2019s useful for users because it enables the system to boot, manage partitions, and load the operating system. Understanding and managing the MBR is essential for tasks like disk maintenance, repair, and dual-boot setups.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "64. What is the difference between process and thread?",
+        "answer": "To put it in simple words, a thread is a small piece of code/instruction that needs to be executed in a process, whereas a process is a collection of one or more thread executions to complete one complete task.\nA process consists of multiple threads that can share resources among them as they belong to the same process. And threads that belong to different processes cannot share their resources.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "65. Without restarting the machine, how can we remove all the running processes?",
+        "answer": "All the running processes in the current shell can be removed using the Linux killall command.",
+        "reference": "intellipaat.com"
+    },
+    {
+        "question": "66. Command to wipe out variables defined.",
+        "answer": "If we consider $ mm = 2018 as a variable defined by the user, then in order to wipe out the variable, the unset command is used.\nSyntax: $ unset mm",
+        "reference": "intellipaat.com"
+    }
+]
