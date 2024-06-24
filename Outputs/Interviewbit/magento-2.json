@@ -1,0 +1,152 @@
+[
+    {
+        "question": "1. Name the design patterns in Magento 2.",
+        "answer": "There are a total of 20 design patterns in Magento. These patterns include: Factory Pattern\nSingleton Pattern\nModel View Controller Pattern\nFront Controller Pattern\nRegistry Pattern\nPrototype Pattern\nIterator Pattern\nObject Pool Pattern\nService Locator Pattern\nLazy Loading Pattern\nObserver Pattern\nModule Pattern\nService Contract\nObject Manager (which consists of 11+ Design Patterns)\nProxy Pattern\nFactory Classes\nDependency Injection\nInjectable Objects\nNon-injectable objects\nActive records Factory Pattern Singleton Pattern Model View Controller Pattern Front Controller Pattern Registry Pattern Prototype Pattern Iterator Pattern Object Pool Pattern Service Locator Pattern Lazy Loading Pattern Observer Pattern Module Pattern Service Contract Object Manager (which consists of 11+ Design Patterns) Proxy Pattern Factory Classes Dependency Injection Injectable Objects Non-injectable objects Active records",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Distinguish between the EAV and flat model.",
+        "answer": "The EAV database model is completely normalized. Each column's value is stored in its data type database, making it more complicated because they must combine 5-6 tables even if only one detail is required. Columns are referred to as characteristics in EAV. Only one table is used in the flat model. It isn't normalized, thus it takes up extra space in the database. It's not ideal for dynamic requirements in which you could need to add extra columns in the future. Its performance is quick because it only requires one query rather than joining 5-6 tables. Columns are referred to as fields in the flat model.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. In Magento 2, how can you make a custom module?",
+        "answer": "Assume the model is called 'hosting.' You must find it in the app/code folder. It should be something like this: app/code/VendorName/moduleName. app/code/VendorName/moduleName For eg, App/code/Interviewvbit/Hosting App/code/Interviewvbit/Hosting To develop a custom module in Magento 2, follow the instructions below. Make a folder for the 'hosting' module.\nMake a file called etc/module.xml.\nMake a file called etc/registration.php.\nActivate the module. Make a folder for the 'hosting' module. Make a file called etc/module.xml. Make a file called etc/registration.php. Activate the module.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What are some of Magento's features?",
+        "answer": "The following are the basic characteristics of Magento. Search Engine Optimized.\nSupport for Google sitemaps.\nCustomers' Accounts.\nOrder management.\nAnalysis and report.\nPayment .\nSite management.\nPromotion and tools for marketing.\nSupport from Community.\nArchitecture which is extremely modular. Search Engine Optimized. Support for Google sitemaps. Customers' Accounts. Order management. Analysis and report. Payment . Site management. Promotion and tools for marketing. Support from Community. Architecture which is extremely modular.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What types of tables will be created when a new EAV module is built?",
+        "answer": "When you construct a new EAV module, six tables will be created. They include: Module_datetime\nModule\nModule_decimal\nModule_int\nModule_text\nModule_varchar Module_datetime Module Module_decimal Module_int Module_text Module_varchar",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What is the technology stack used by Magento?",
+        "answer": "Magento makes use of the MySQL or MariaDB databases, the PHP programming language, and Zend Framework components. PHP 7.0.2 to 7.0.10 is used in Magento 2. However, PHP 7.0.5 is an exception due to a problem with the Magento code compiler in this version.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. How can Magento be made more secure for the client?",
+        "answer": "Any e-commerce website's security is always a priority. Security is also very important in Magento; it is always a top focus. You may strengthen Magento's security by following the steps below: You must develop a strong password and update it regularly.\nAllowing remote access to the Magento content manager is not recommended.\nOn production sites, do not distribute downloadable media.\nInstall a Magento website security extension. This module not only protects your store from prospective hackers but also provides an advanced alarm system that allows you to deal with them quickly. You must develop a strong password and update it regularly. Allowing remote access to the Magento content manager is not recommended. On production sites, do not distribute downloadable media. Install a Magento website security extension. This module not only protects your store from prospective hackers but also provides an advanced alarm system that allows you to deal with them quickly.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. How can you add blogs in Magento?",
+        "answer": "We all know that blogs are important for enhancing a website's search engine rankings. As a result, you should consider adding blogs to your website to improve it and attract more visitors. To add a blog to Magento, you have two options: Use the pre-built Magento blog extension.\nCreate a bespoke blog module on the webshop. Use the pre-built Magento blog extension. Create a bespoke blog module on the webshop. Mageplaza Blog for Magento 2 is an excellent alternative if you want to set up a free readymade blog module.   If you want to make a custom blog, on the other hand, you'll need to design a module, which isn't straightforward.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. Describe the various deploy modes in Magento?",
+        "answer": "Magento 2 has four possible deployment modes. Default mode: You may install Magento 2 apps on a single server using this option. This mode, however, is not suitable for production.\nDeveloper mode: It is used when you want to change or enhance the functionality of the website.\nProduction: When your Magento 2 site is in production, this option is activated.\nMaintenance: When you enable this mode, you will be unable to access the Magento website while it is being updated or reconfigured. Default mode: You may install Magento 2 apps on a single server using this option. This mode, however, is not suitable for production. Default mode Developer mode: It is used when you want to change or enhance the functionality of the website. Developer mode Production: When your Magento 2 site is in production, this option is activated. Production Maintenance: When you enable this mode, you will be unable to access the Magento website while it is being updated or reconfigured. Maintenance",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. How can you improve the performance of Magento 2?",
+        "answer": "We can improve Magento's performance by doing the following: Disable all modules on the website that you don't use.\nDisable Magento's log.\nQuery Caching in MySQL\nOptimize the website's image.\nGzip compression should be enabled.\nMagento Caching should be enabled.\nMake a single file with all of the external CSS/JS.\nMake use of a Content Delivery Network (CDN) (CDN) Disable all modules on the website that you don't use. Disable Magento's log. Query Caching in MySQL Optimize the website's image. Gzip compression should be enabled. Magento Caching should be enabled. Make a single file with all of the external CSS/JS. Make use of a Content Delivery Network (CDN) (CDN) All of the above will increase the speed of your Magento website, making it more responsive and performant. It not only makes your business more easily, but it also helps your clients have a better online shopping experience.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. Explain in brief the EAV model?",
+        "answer": "The EAV model (Entry, Attribute, Value) is also known as object-attribute-value or Open Schema. Magento makes use of a database or catalog management system. EAV is intended for databases in which a high number of attributes are used to identify a single entity, but not all of these attributes are relevant to that entity. When you use this model, only non-empty data values are kept. Although this model allows for more efficient storage, it is more complicated than the flat model since developers must execute many queries to obtain all of the information about a product or item.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What are the limitations of Magento software?",
+        "answer": "Magento is one of the most popular e-commerce platforms available. There's no doubt that the platform is extremely beneficial for e-commerce companies. Its drawback is that it needs an excessive amount of storage and memory. It also necessitates object-oriented programming to avoid becoming a complicated system.  Furthermore, Magento has the potential to slow down and degrade the speed of your website.  After all, these limits aren't a major deal because, in most circumstances, the benefits of building a website on the Magento platform much exceed any possible drawbacks.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What is Model View Controller (MVC) architecture?",
+        "answer": "Model-View-Controller (MVC) is a well-known Magento architecture on the market today. Model, View, and Controller are the three sections. The data and logic for operating an application will be handled by the model. The view is a lot of what you see on the application's interface, and it also lets you display whatever you want. Depending on the user's needs, the Controller will pass or issue commands to the view and model. Convention-based and configuration-based MVC are the two forms of MVC currently available. Magento has been using a configuration-based version up until now. To operate with the website, you'll also need a module configuration file.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. Name the different versions available in Magento.",
+        "answer": "Magento is a platform that offers a wide range of items. They have been divided apart depending on a variety of options: Magento Commerce.\nMagento Order Management.\nMagento Business Intelligence.\nMagento Shipping Magento Social.\nMagento Open Source. Magento Commerce. Magento Order Management. Magento Business Intelligence. Magento Shipping Magento Social. Magento Open Source. Magento 2.4 is the most recent version. It offers new features and enhancements such as the B2B Module, ElasticSearch, Adobe Sensei-powered Product Recommendations, Adobe Stock Integration, and more. This is the most anticipated version of companies up to this point since it provides a slew of new capabilities to e-commerce sites.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. Describe the ORM in Magento",
+        "answer": "Object Relational Mapping (ORM) is a programming approach for converting various data kinds into objects and vice versa. ORM can be divided into two categories: It converts several data types into objects.\nIt converts objects to a variety of data types. It converts several data types into objects. It converts objects to a variety of data types.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What does RMA stand for in Magento 2?",
+        "answer": "RMA is an abbreviation for the word Return Merchandise Authorization, which allows buyers to return, repair, or replace products they have previously purchased in exchange for a refund or credit. Each store's return policy will be different, but each will provide customers with thorough information regarding the valid time and circumstances for returning items. As a result, RMA will follow that policy to help clients complete their requests effectively. Resources and References: Resources and References: Magento 2 Official Documentation\nGet Started\nInterview Preparation\nInterviewBit Blog Magento 2 Official Documentation Magento 2 Official Documentation Get Started Get Started Interview Preparation Interview Preparation InterviewBit Blog InterviewBit Blog",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Explain in brief about virtual type in Magento?",
+        "answer": "On the Magento 2 platform, di.xml allows two sorts of nodes: node type and node virtual type, with the virtual type being regarded as a perfect method rather than a type. Virtual types are similar to types, but they offer more flexibility by allowing you to define a virtual class.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. Which command is used to enable and disable Magento 2 module?",
+        "answer": "For enabling a module: php bin/magento module:enable module_name\nFor disabling a module: php bin/magento module:disable module_name For enabling a module: php bin/magento module:enable module_name php bin/magento module:enable module_name For disabling a module: php bin/magento module:disable module_name php bin/magento module:disable module_name",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. In Magento, what is the difference between Mage::getModel() and Mage::getSingletone()?",
+        "answer": "Magento creates a new object with Mage::getModel().\nMage::getSingletone() checks for the existence of the object first, and if it doesn't, it produces a new one. Magento creates a new object with Mage::getModel(). Mage::getSingletone() checks for the existence of the object first, and if it doesn't, it produces a new one.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. Explain in brief about Codepool in Magento?",
+        "answer": "The concept of a code pool is to pull code in a Magento organized format. It's specified in app/etc/modules/Company Module.xml when you register a new module. Magento has three codePools: core, community, and local, all of which are located in the app/code/ directory.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What are some of the benefits of using Connect Patches in Magento?",
+        "answer": "Connect Patches have the following advantages: Allowing for quick package installation and the overwriting of any existing translations at the same time.\nTo improve security, Magento Connect downloads Magento 2 extensions through HTTP rather than FTP by default.\nAllowing extension developers to create new extensions with a dash character in the name to make it easier for them to do so.\nAnyone attempting to install an extension with insufficient file system access will now be notified by Magento administrators. Allowing for quick package installation and the overwriting of any existing translations at the same time. To improve security, Magento Connect downloads Magento 2 extensions through HTTP rather than FTP by default. Allowing extension developers to create new extensions with a dash character in the name to make it easier for them to do so. Anyone attempting to install an extension with insufficient file system access will now be notified by Magento administrators.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. Is it possible to control all billing information through Magento?",
+        "answer": "You can accomplish the following things with your Magento account as a client: You have the option to change your billing address.\nA credit card can be added.\nYour billing history can be viewed.\nYou can link a PayPal account to your account.\nYou can create a receipt that is ready to print. You have the option to change your billing address. A credit card can be added. Your billing history can be viewed. You can link a PayPal account to your account. You can create a receipt that is ready to print.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. How do I alter the Magento core API settings?",
+        "answer": "To update the Magento core API configuration, follow these instructions. Select System -> Configuration from the Admin menu.\nSelect Magento Core API from the Services menu on the left side of the Configuration Panel.\nExpand the General Settings section by clicking on it.\nType the name of the Default Response Charset you want to use.\nDetermine the Client Session Timeout.\nWhen you're finished, click the Save Config button. Select System -> Configuration from the Admin menu. Select Magento Core API from the Services menu on the left side of the Configuration Panel. Expand the General Settings section by clicking on it. Type the name of the Default Response Charset you want to use. Determine the Client Session Timeout. When you're finished, click the Save Config button.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. Describe how to use Google Checkout in Magento.",
+        "answer": "Magento allows online retailers to integrate with Google Checkout. Google Checkout is a Google-provided online payment service. It functions similarly to PayPal.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What is Magento's compilation feature?",
+        "answer": "To improve performance, we can use the compilation feature to compile all Magento files into a single include path.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What are the different types of handles in Magento?",
+        "answer": "The structure of the visible page is controlled by handles. It determines where each block will be placed on the page. Every page has its handle, and each page request can have many handles.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What does the term \"namespace\" mean in Magento?",
+        "answer": "Magento core modules go in the core/Mage/Catalog namespace, whereas all custom modules go under local/CustomModule. You can have multiple modules with the same name, but they must be in separate namespaces.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. What are the different types of sessions? What are the benefits of using different sessions in Magento?",
+        "answer": "In Magento, there are three distinct sessions: customer session.\ncore session.\ncheckout session. customer session. core session. checkout session. All of these sessions are saved in a single session. We utilize different sessions because there are occasions when we only need to clear a portion of a session's data rather than the entire session's data.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. What are the Magento magic methods?",
+        "answer": "Magento's magic methods are as follows: __get()\n__set()\n__call()\n__tostring()\n__has()\n__isset()\n__construct()\n__uns() __get() __set() __call() __tostring() __has() __isset() __construct() __uns()",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. What are the different Magento product types?",
+        "answer": "Magento Simple Product: It's utilized for a single item that doesn't have any selectable options. For instance, a pen, a copy, and so on.\nMagento Grouped Product: It's used in conjunction with a Magento simple product. Take, for example, a pen and a copy.\nMagento Configurable Product: It's for a single item with a few different options to choose from. Consider a pen that comes in a variety of colors.\nMagento Virtual Product: It is used to represent a non-touchable virtual thing. For instance, reservations, insurance, and so forth.\nMagento Bundle Product: It's a generic term for a collection of simple products. For instance, a laptop has multiple components such as a processor, hard drive, RAM, and so on.\nMagento Downloadable Product: It's a term for internet software. PowerPoint presentations, MP3 files, servers, and so on. Magento Simple Product: It's utilized for a single item that doesn't have any selectable options. For instance, a pen, a copy, and so on. Magento Simple Product Magento Grouped Product: It's used in conjunction with a Magento simple product. Take, for example, a pen and a copy. Magento Grouped Product: Magento Configurable Product: It's for a single item with a few different options to choose from. Consider a pen that comes in a variety of colors. Magento Configurable Product Magento Virtual Product: It is used to represent a non-touchable virtual thing. For instance, reservations, insurance, and so forth. Magento Virtual Product Magento Bundle Product: It's a generic term for a collection of simple products. For instance, a laptop has multiple components such as a processor, hard drive, RAM, and so on. Magento Bundle Product Magento Downloadable Product: It's a term for internet software. PowerPoint presentations, MP3 files, servers, and so on. Magento Downloadable Product",
+        "reference": "interviewbit.com"
+    }
+]

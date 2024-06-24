@@ -1,0 +1,177 @@
+[
+    {
+        "question": "1. How do you access history of requests in Postman?",
+        "answer": "The request history can be accessed in the History tab provided on the Postman application. If we sign into the Postman account, then the history will be synced across the devices where you are logged in. When you click on any of the requests present in the History tab, the view opens the request that we have saved while we were working on it earlier.\nHistory also consists of the collection runs that were executed as summarized versions. They are not logged in History as single requests.\nClick on \u201cView More option (\u2026)\u201d on the request, we will see options to save, document, monitor, delete or mock the request.\nMultiple requests can be selected by using Command or Control button and then clicking on the request. When you click on any of the requests present in the History tab, the view opens the request that we have saved while we were working on it earlier. History also consists of the collection runs that were executed as summarized versions. They are not logged in History as single requests. Click on \u201cView More option (\u2026)\u201d on the request, we will see options to save, document, monitor, delete or mock the request. Multiple requests can be selected by using Command or Control button and then clicking on the request. The following image shows the page that shows when you click on View More Option upon a request present in the History tab:   Image Source: Postman Learning Documentation",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What is digest auth in Postman?",
+        "answer": "Digest Authorization is one of the authorization techniques provided by Postman. In this technique, the client first sends the request to the API and get responses from the server including a number which is usable only once, a realm value and 401 unauthorized response. We will be then sent back an encrypted data array having both username and password along with the data received from the server earlier. The server uses this data to generate an encrypted data string and compares this with what was sent for authenticating the request. We can do this by selecting the Authorization tab, then selecting \u201cDigest Auth\u201d from the drop-down list. Postman window presents the fields for both stages of the authentication request. The fields required for the second stage of the request are auto-filled based on the data received from the server. For more information, you can refer here. here  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What is a collection in Postman?",
+        "answer": "A collection in Postman helps to group similar requests. It helps in systematically arranging the requests into folders.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. Why do we use Postman?",
+        "answer": "We use Postman for the below reasons: Firstly, Postman is free software that is useful for API testing.\nIt can send HTTP requests of various types (such as GET, POST, PUT, PATCH, etc) and gives the ability to save environments for future use.\nIt helps in managing the end-to-end lifecycle of the API - starting from design to mocking to testing and finally maintaining the APIs.\nIt provides Runtime Service that helps in managing API collections, environments, work-spaces, and different examples.\nIt can be used to easily integrate with CI/CD tools such as Jenkins.\nHas extensive support from the community and provides extensive documentation. Firstly, Postman is free software that is useful for API testing. It can send HTTP requests of various types (such as GET, POST, PUT, PATCH, etc) and gives the ability to save environments for future use. It helps in managing the end-to-end lifecycle of the API - starting from design to mocking to testing and finally maintaining the APIs. It provides Runtime Service that helps in managing API collections, environments, work-spaces, and different examples. It can be used to easily integrate with CI/CD tools such as Jenkins. Has extensive support from the community and provides extensive documentation.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. How will you log variable values in Postman?",
+        "answer": "We can log the variable values in Postman in the console by using the command:\nconsole.log(pm.variables.get(\"variable_name\"));  console.log(pm.variables.get(\"variable_name\"));",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. How do you access postman variables?",
+        "answer": "It can be accessed by using the variable name as:{{variable_name}} {{variable_name}}",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What are the various authorization methods provided by Postman?",
+        "answer": "Postman provides the below API request Authorization Options: API Key\nBearer Token\nBasic auth\nDigest auth\nOauth 1.0\nOauth 2.0\nHawk Authentication\nAWS Signature\nNTLM Authentication API Key Bearer Token Basic auth Digest auth Oauth 1.0 Oauth 2.0 Hawk Authentication AWS Signature NTLM Authentication",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What are the different types of API requests supported in Postman?",
+        "answer": "Postman supports the following type of requests: GET\nPOST\nPUT\nPATCH\nDELETE\nCOPY\nHEAD\nOPTIONS\nLINK\nUNLINK\nPURGE\nLOCK\nUNLOCK\nPROPFIND\nVIEW GET POST PUT PATCH DELETE COPY HEAD OPTIONS LINK UNLINK PURGE LOCK UNLOCK PROPFIND VIEW",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. How are Query Params different from Path Variables?",
+        "answer": "Path Variables are used for identifying specific resources and Query Parameters are used for sorting or filtering the resources.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is Basic Auth in Postman?",
+        "answer": "Basic Auth in Postman is a type of authorization technique provided in Postman for HTTP user agents like web browsers. It provides fields to enter username and password which when entered gets associated with the request. username password  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What is Postman?",
+        "answer": "Postman is a free, HTTP Client based software application primarily used to perform API testing. It supports testing of HTTP requests by utilizing GUI (Graphical User Interface) which can be executed and the responses can be validated. It also helps in collaborating among the team members for the development of API by providing a platform to design, develop, test, and document APIs.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What encoding is accepted by Postman in authorization credentials?",
+        "answer": "Postman accepts authorization credentials in Base64 encoding format only. It is provided in Postman by default. If we do not want to use an inbuilt encoding system, we can refer to third-party websites for converting the credentials in base64 format.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. Can we have the same names for global variables in postman?",
+        "answer": "The scope of global variables is limited to the workspace and is global. Due to this, variables having global scope cannot have the same names. We can have the same names for local variables but they need to be part of different variables.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. What do you know about postman monitor?",
+        "answer": "Monitoring is a method of staying in sync with the health and performance of the APIs. Postman provides inbuilt monitoring services that help us be in sync with the API development and performance. The monitors provided by Postman are mainly based on the working of collection runners. They run every request in the collection and analyze the values mentioned in the test scripts. Monitors use the test scripts for validating and monitoring the responses. The reports generated are shared with the developers over emails or alerts in slack, hipchat, etc based on our configuration settings.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. What is a binary form in POST methods?",
+        "answer": "The binary form is designed to help send data in a format that is not possible to be entered manually. These options are used while sending large files like images, CSV files, etc in the POST request. Binary representation is the easiest representation for sending complex data with the request.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. What are the limitations of Postman?",
+        "answer": "Postman is not suitable for processing 1000+ API requests.\nIf the project is very large, managing the collections and requests become cumbersome.\nIt is not suitable if we want to manage the workspace in the form of code as there would be a lot of code duplication for dynamic API requests. Postman is not suitable for processing 1000+ API requests. If the project is very large, managing the collections and requests become cumbersome. It is not suitable if we want to manage the workspace in the form of code as there would be a lot of code duplication for dynamic API requests.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. How can you save the responses of API to a file in Postman?",
+        "answer": "We can do this in two ways: Click on the Download button in the response section.\nClick on the arrow beside send button - There will be an option to send and download. Clicking on it will prompt Postman to ask the location of saving the response post successful execution of the request. Click on the Download button in the response section. Click on the arrow beside send button - There will be an option to send and download. Clicking on it will prompt Postman to ask the location of saving the response post successful execution of the request.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. What is the significance of 301 status code?",
+        "answer": "301 status code represents permanent redirect from one website page to another. It tells the search engine that the old page is outdated and the engine has to index the new page URL.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. Does Postman provide a feature to log requests and responses?",
+        "answer": "Postman does allow viewing of requests and response parameters in the software application itself. But it is important to see how the request was sent upon applying the pre-request scripts. In such cases, Postman has an additional tool called \u201cPostman Console\u201d which is used for viewing every request and response detail. We can also log the details in the console by using console.log statements in the scripts.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Why is Base64 encoding primarily used in Postman?",
+        "answer": "Base64 encoding is primarily used because it does the task of data transmission in a textual format that is easier to be sent in the requests in HTML form statistics format. Another reason why we use this is that using identical 64 characters for encoding is heavily reliable in any language we use.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What is the purpose of the 304 status code?",
+        "answer": "304 status code stands for NOT MODIFIED. This is used for diminishing the bandwidth of the network in cases of restricted GET requests. In such cases, the response body should be empty or blank and the headers should have a date, location, signature etc.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. Is it preferable to save our work on Postman Cloud?",
+        "answer": "When working on enterprise-level applications for organizations, it is not preferred to store our work on the Postman cloud because of the required privacy and security. In the Postman cloud, there are chances of security breaches by a skilled hacker.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What are the various variable scopes provided by Postman?",
+        "answer": "Postman has the following variable scopes: Global Variables: Global variables allow data access between different collections, requests, and scripts. They are available throughout the workspace.\nEnvironment Variables: These allow us to tailor the requests about different development environments - such as local testing, stage testing, or prod testing.\nLocal Variables: These are temporary variables that are accessible only within the scope of requests scripts. They are either scoped to a single request or single collection, depending on the requirements. These variables are not available after the completion of the script execution.\nCollection Variables: These variables are scoped to be available for all the requests present in a collection. They are independent of the environment.\nData Variables: These variables come from external JSON or CSV files for defining the datasets required to run the collection in Collection Runner or Newman. Global Variables: Global variables allow data access between different collections, requests, and scripts. They are available throughout the workspace. Global Variables: Environment Variables: These allow us to tailor the requests about different development environments - such as local testing, stage testing, or prod testing. Environment Variables: Local Variables: These are temporary variables that are accessible only within the scope of requests scripts. They are either scoped to a single request or single collection, depending on the requirements. These variables are not available after the completion of the script execution. Local Variables: Collection Variables: These variables are scoped to be available for all the requests present in a collection. They are independent of the environment. Collection Variables: Data Variables: These variables come from external JSON or CSV files for defining the datasets required to run the collection in Collection Runner or Newman. Data Variables:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. Is it possible to reuse the authentication token for multiple requests?",
+        "answer": "Yes, it is possible. It can be achieved by creating a collection and adding all the requests having the same authentication token to that collection and then assigning the auth token to the collection. This can be applied to the individual requests by selecting the \u201cInherit auth from parent\u201d option in the Authorization tab.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. How do you write test cases for basic authentication in Postman?",
+        "answer": "Basic Authentication is one of the authentication techniques provided in Postman that ensures that we can set the username and password along with the API requests. We can do this by first setting the credentials of the API by: Navigating to the Authorization tab.\nFrom the dropdown, select Basic Auth.\nAdd the username and password to the API in the input fields given. Navigating to the Authorization tab. From the dropdown, select Basic Auth. Add the username and password to the API in the input fields given.   The test cases can be written as follows: pm.test(\"Is the Request Authenticated?\", function () {\n       var jsonData = pm.response.json();\n       //if authenticated then assert to true\n       pm.expect(jsonData.authenticated).to.eql(true);\n  });\n  pm.test(\"Is the Content-Type present?\", function () {\n       pm.response.to.have.header(\"Content-Type\");\n  });\n  pm.test(\"Is it a successful POST Request?\", function () {\n       pm.response.to.have.status(200);\n  }); pm.test(\"Is the Request Authenticated?\", function () {\n       var jsonData = pm.response.json();\n       //if authenticated then assert to true\n       pm.expect(jsonData.authenticated).to.eql(true);\n  });\n  pm.test(\"Is the Content-Type present?\", function () {\n       pm.response.to.have.header(\"Content-Type\");\n  });\n  pm.test(\"Is it a successful POST Request?\", function () {\n       pm.response.to.have.status(200);\n  });",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. How do you set the same headers for all requests in a Postman Collection?",
+        "answer": "Postman collections allow using pre-request scripts at the individual request level and the collection level. We can add any script that applies to all requests in the collection in the pre-request scripts. We can do it by following the below steps: Right-click on the collection, navigate to the pre-request tab.\nAdd the below lines of code in the script to add a request header for all the requests present in the collection. Right-click on the collection, navigate to the pre-request tab. Add the below lines of code in the script to add a request header for all the requests present in the collection. pm.request.headers.add({\n    key: 'TestHeader',\n    value: 'testValue'\n}); pm.request.headers.add({\n    key: 'TestHeader',\n    value: 'testValue'\n}); Click on Update for saving the script.\nExecute the request in the collection and check if the headers are added to the request in the Postman console. Click on Update for saving the script. Execute the request in the collection and check if the headers are added to the request in the Postman console. Header from Pre-Request Script:  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. What are workspaces in Postman? What are their uses?",
+        "answer": "Workspaces are the areas/space given by Postman for team collaboration to work on a specific or set of collections. It provides a way to logically separate requests or collections that are personal to the developer or the team so that the maintenance of requests is made easy. There are two types of workspaces in Postman: Personal Workspace:\nThese workspaces are useful when we are working simultaneously on multiple projects and we require logical separation between the requests to handle the requests better.\nTeam Workspace:\nThese are created for team collaboration so that more than one person can be part of testing requests.\nWe can invite new users for collaborating on our collections by sharing the email id of the users. Once the invite is accepted, the new users can start contributing to the workspace by adding or modifying the requests. Personal Workspace:\nThese workspaces are useful when we are working simultaneously on multiple projects and we require logical separation between the requests to handle the requests better. Personal Workspace: These workspaces are useful when we are working simultaneously on multiple projects and we require logical separation between the requests to handle the requests better. These workspaces are useful when we are working simultaneously on multiple projects and we require logical separation between the requests to handle the requests better. Team Workspace:\nThese are created for team collaboration so that more than one person can be part of testing requests.\nWe can invite new users for collaborating on our collections by sharing the email id of the users. Once the invite is accepted, the new users can start contributing to the workspace by adding or modifying the requests. Team Workspace: These are created for team collaboration so that more than one person can be part of testing requests.\nWe can invite new users for collaborating on our collections by sharing the email id of the users. Once the invite is accepted, the new users can start contributing to the workspace by adding or modifying the requests. These are created for team collaboration so that more than one person can be part of testing requests. We can invite new users for collaborating on our collections by sharing the email id of the users. Once the invite is accepted, the new users can start contributing to the workspace by adding or modifying the requests. We can create a new workspace by clicking on the Workspace icon and then clicking on \u201cCreate New\u201d.   We can select our workspace to be personal or team workspace by configuring the properties in the create window.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. How will you stop the execution of upcoming requests or execution of the collections?",
+        "answer": "We can use the below code to stop the execution of the next request: pm.setNextRequest(null); pm.setNextRequest(null);",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What do you understand by the pre-request script?",
+        "answer": "Pre-request scripts are those scripts that are used for executing Javascript code before a request is run. It is used for performing pre-processing tasks like setting variables, parameters, headers, body data, etc.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. How can we use Custom Javascript libraries in our scripts with an example?",
+        "answer": "Postman provides a lot of built-in tools and libraries that we can use to add in our pre-request or post-request scripts or test cases. Let us take the example of using the moment.js library. It provides a lot of useful functions to format data around time. Consider that we have a POST request that needs to specify the created date to the user which expects the format \u201cDD/MM/YYYY\u201d. We can use the moment library to perform this using a single line of code. In our pre-request script, we need to add the below lines of code to get the correctly formatted data and then store that in an environment variable: var moment = require('moment');\npm.environment.set('createdDate',moment().format('DD/MM/YYYY')); var moment = require('moment');\npm.environment.set('createdDate',moment().format('DD/MM/YYYY')); There are a lot of other useful libraries like crypto.js that are useful for converting text to encrypted values which can further be used anywhere in the request body.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. If we have a global and a local variable of the same name, which one will be given the most preference in Postman?",
+        "answer": "In such cases, the higher precedence is given to the local variable by overwriting the value of the global variable.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. Does Postman allow flexibility to make use of the command-line?",
+        "answer": "Postman provides a command-line tool called Newman using which we can run any Postman collection. It is a NodeJS based package that requires a node environment for executing collections using Newman Collection Runner. It has full parity with Postman\u2019s Collection Runner i.e it provides support for running assertions, pre-request scripts, or other request scripts linked with the requests that belong to the collection. We can use Newman by following the below steps: Install Node\nInstall Newman package using npm command as: npm install -g newman\nTo run the collection, first export the environment to JSON format in Postman. Then run the below command for running the collection in Newman: Install Node Install Newman package using npm command as: npm install -g newman npm install -g newman To run the collection, first export the environment to JSON format in Postman. Then run the below command for running the collection in Newman: newman run {{path to collection json}} -e {{path to environment json}} newman run {{path to collection json}} -e {{path to environment json}}",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. How will you generate random numbers of a given range in Postman?",
+        "answer": "Suppose you want to generate numbers between the range 1 to N, then it can be done in the pre-request script as follows: pm.globals.set('randomNumber', Math.floor(Math.random() * N)); pm.globals.set('randomNumber', Math.floor(Math.random() * N)); We can then use this variable in the URL as:{{randomNumber}} {{randomNumber}}",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. What do you understand by Scratch Pad?",
+        "answer": "Scratch Pad is a space provided by Postman that helps us to work without being connected to Postman servers. It provides the flexibility of utilizing some of the features of postman offline. The features include- collection creation, creating requests and the ability to send requests. These are stored locally and once logged in, the work is saved into the workspace.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. How do you get the cURL command based on the details of REST API obtained from Postman?",
+        "answer": "We can obtain the cURL command equivalent by following the below steps: Click on the Code icon as shown below: Click on the Code icon as shown below:   You will get the cURL command of the REST API request sent as shown in the screenshot below: You will get the cURL command of the REST API request sent as shown in the screenshot below:   We can also get the command for the request in different languages like C#, Javascript, NodeJs, PHP, etc by selecting the option that we require from the drop-down as shown in the image below: We can also get the command for the request in different languages like C#, Javascript, NodeJs, PHP, etc by selecting the option that we require from the drop-down as shown in the image below:   Conclusion Postman has become the most popular and beloved tool for API testing. Hence, hands-on experience with the Postman tool has become very important for any backend developer. Recommended Resources: Recommended Resources: API Testing\nREST API\nSoftware Testing\nWeb Services\nJMeter API Testing API Testing REST API REST API Software Testing Software Testing Web Services Web Services JMeter JMeter",
+        "reference": "interviewbit.com"
+    }
+]

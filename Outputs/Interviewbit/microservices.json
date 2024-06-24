@@ -1,0 +1,172 @@
+[
+    {
+        "question": "1. Name some famous companies that use Microservice architecture.",
+        "answer": "Microservices architecture has replaced monolithic architecture for most large-scale websites like: Twitter \nNetflix \nAmazon, etc. Twitter Netflix Amazon, etc.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Explain CDC.",
+        "answer": "As the name implies, CDC (Consumer-Driven Contract) basically ensures service communication compatibility by establishing an agreement between consumers and service providers regarding the format of the data exchanged between them. An agreement like this is called a contract. Basically, it is a pattern used to develop Microservices so that they can be efficiently used by external systems.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What issues are generally solved by spring clouds?",
+        "answer": "The following problems can be solved with spring cloud: Complicated issues caused by distributed systems: This includes network issues, latency problems, bandwidth problems, and security issues. \nService Discovery issues: Service discovery allows processes and services to communicate and locate each other within a cluster. \nRedundancy issues: Distributed systems can often have redundancy issues. \nLoad balancing issues: Optimize the distribution of workloads among multiple computing resources, including computer clusters, central processing units, and network links. \nReduces performance issues: Reduces performance issues caused by various operational overheads. Complicated issues caused by distributed systems: This includes network issues, latency problems, bandwidth problems, and security issues. Complicated issues caused by distributed systems: Service Discovery issues: Service discovery allows processes and services to communicate and locate each other within a cluster. Service Discovery issues: Redundancy issues: Distributed systems can often have redundancy issues. Redundancy issues: Load balancing issues: Optimize the distribution of workloads among multiple computing resources, including computer clusters, central processing units, and network links. Load balancing issues: Reduces performance issues: Reduces performance issues caused by various operational overheads. Reduces performance issues:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. Write main components of Microservices.",
+        "answer": "Some of the main components of microservices include: Containers, Clustering, and Orchestration \nIaC [Infrastructure as Code Conception] \nCloud Infrastructure \nAPI Gateway \nEnterprise Service Bus \nService Delivery Containers, Clustering, and Orchestration IaC [Infrastructure as Code Conception] Cloud Infrastructure API Gateway Enterprise Service Bus Service Delivery",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What are the benefits and drawbacks of Microservices?",
+        "answer": "Benefits: Benefits: Self-contained, and independent deployment module. \nIndependently managed services.   \nIn order to improve performance, the demand service can be deployed on multiple servers.   \nIt is easier to test and has fewer dependencies.  \nA greater degree of scalability and agility.   \nSimplicity in debugging & maintenance.  \nBetter communication between developers and business users.   \nDevelopment teams of a smaller size. Self-contained, and independent deployment module. Independently managed services. In order to improve performance, the demand service can be deployed on multiple servers. It is easier to test and has fewer dependencies. A greater degree of scalability and agility. Simplicity in debugging & maintenance. Better communication between developers and business users. Development teams of a smaller size. Drawbacks: Drawbacks: Due to the complexity of the architecture, testing and monitoring are more difficult.  \nLacks the proper corporate culture for it to work.   \nPre-planning is essential.  \nComplex development.  \nRequires a cultural shift.  \nExpensive compared to monoliths.   \nSecurity implications. \nMaintaining the network is more difficult. Due to the complexity of the architecture, testing and monitoring are more difficult. Lacks the proper corporate culture for it to work. Pre-planning is essential. Complex development. Requires a cultural shift. Expensive compared to monoliths. Security implications. Maintaining the network is more difficult.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. Name three common tools mostly used for microservices.",
+        "answer": "Three common tools used for microservices include: Wiremock \nDocker \nHystrix Wiremock Docker Hystrix",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. Explain the working of Microservice Architecture.",
+        "answer": "Microservice architectures consist of the following components:   Clients: Different users send requests from various devices. \nIdentity Provider: Validate a user's or client's identity and issue security tokens. \nAPI Gateway: Handles the requests from clients. \nStatic Content: Contains all of the system's content. \nManagement: Services are balanced on nodes and failures are identified. \nService Discovery: A guide to discovering the routes of communication between microservices. \nContent Delivery Network: Includes distributed network of proxy servers and their data centers. \nRemote Service: Provides remote access to data or information that resides on networked computers and devices. Clients: Different users send requests from various devices. Clients Identity Provider: Validate a user's or client's identity and issue security tokens. Identity Provider API Gateway: Handles the requests from clients. API Gateway: Static Content: Contains all of the system's content. Static Content: Management: Services are balanced on nodes and failures are identified. Management: Service Discovery: A guide to discovering the routes of communication between microservices. Service Discovery: Content Delivery Network: Includes distributed network of proxy servers and their data centers. Content Delivery Network: Remote Service: Provides remote access to data or information that resides on networked computers and devices. Remote Service:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. Write difference between Monolithic, SOA and Microservices Architecture.",
+        "answer": "  Monolithic Architecture: It is \"like a big container\" where all the software components of an application are bundled together tightly.  It is usually built as one large system and is one code-base. \nSOA (Service-Oriented Architecture): It is a group of services interacting or communicating with each other. Depending on the nature of the communication, it can be simple data exchange or it could involve several services coordinating some activity.   \nMicroservice Architecture: It involves structuring an application in the form of a cluster of small, autonomous services modeled around a business domain. The functional modules can be deployed independently, are scalable, are aimed at achieving specific business goals, and communicate with each other over standard protocols. Monolithic Architecture: It is \"like a big container\" where all the software components of an application are bundled together tightly.  It is usually built as one large system and is one code-base. Monolithic Architecture SOA (Service-Oriented Architecture): It is a group of services interacting or communicating with each other. Depending on the nature of the communication, it can be simple data exchange or it could involve several services coordinating some activity. SOA (Service-Oriented Architecture) Microservice Architecture: It involves structuring an application in the form of a cluster of small, autonomous services modeled around a business domain. The functional modules can be deployed independently, are scalable, are aimed at achieving specific business goals, and communicate with each other over standard protocols. Microservice Architecture",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. Explain spring cloud and spring boot.",
+        "answer": "Spring Cloud: In Microservices, the Spring cloud is a system that integrates with external systems. This is a short-lived framework designed to build applications quickly. It contributes significantly to microservice architecture due to its association with finite amounts of data processing. Some of the features of spring cloud are shown below: Spring Cloud   Spring Boot: Spring Boot is an open-sourced, Java-based framework that provides its developers with a platform on which they can create stand-alone, production-grade Spring applications. In addition to reducing development time and increasing productivity, it is easily understood. Spring Boot:  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is the role of actuator in spring boot?",
+        "answer": "A spring boot actuator is a project that provides restful web services to access the current state of an application that is running in production. In addition, you can monitor and manage application usage in a production environment without having to code or configure any of the applications.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. Explain how you can override the default properties of Spring boot projects.",
+        "answer": "By specifying properties in the application.properties file, it is possible to override the default properties of a spring boot project.  \n\nExample: \nIn Spring MVC applications, you need to specify a suffix and prefix. You can do this by adding the properties listed below in the application.properties file.   Example:  For suffix \u2013 spring.mvc.view.suffix: .jsp \nFor prefix \u2013 spring.mvc.view.prefix: /WEB-INF/ For suffix \u2013 spring.mvc.view.suffix: .jsp For prefix \u2013 spring.mvc.view.prefix: /WEB-INF/",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. Write main features of Microservices.",
+        "answer": "Some of the main features of Microservices include:   Decoupling: Within a system, services are largely decoupled. The application as a whole can therefore be easily constructed, altered, and scalable\nComponentization: Microservices are viewed as independent components that can easily be exchanged or upgraded\nBusiness Capabilities: Microservices are relatively simple and only focus on one service\nTeam autonomy: Each developer works independently of each other, allowing for a faster project timeline\nContinuous Delivery: Enables frequent software releases through systematic automation of software development, testing, and approval\nResponsibility: Microservices are not focused on applications as projects. Rather, they see applications as products they are responsible for\nDecentralized Governance: Choosing the right tool according to the job is the goal. Developers can choose the best tools to solve their problems\nAgility: Microservices facilitate agile development. It is possible to create new features quickly and discard them again at any time. Decoupling: Within a system, services are largely decoupled. The application as a whole can therefore be easily constructed, altered, and scalable Decoupling Componentization: Microservices are viewed as independent components that can easily be exchanged or upgraded Componentization Business Capabilities: Microservices are relatively simple and only focus on one service Business Capabilities Team autonomy: Each developer works independently of each other, allowing for a faster project timeline Team autonomy Continuous Delivery: Enables frequent software releases through systematic automation of software development, testing, and approval Continuous Delivery Responsibility: Microservices are not focused on applications as projects. Rather, they see applications as products they are responsible for Responsibility: Decentralized Governance: Choosing the right tool according to the job is the goal. Developers can choose the best tools to solve their problems Decentralized Governance: Agility: Microservices facilitate agile development. It is possible to create new features quickly and discard them again at any time. Agility:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What do you mean by Cohesion and Coupling?",
+        "answer": "Coupling: It is defined as a relationship between software modules A and B, and how much one module depends or interacts with another one. Couplings fall into three major categories. Modules can be highly coupled (highly dependent), loosely coupled, and uncoupled from each other. The best kind of coupling is loose coupling, which is achieved through interfaces. \n\nCohesion: It is defined as a relationship between two or more parts/elements of a module that serves the same purpose. Generally, a module with high cohesion can perform a specific function efficiently without needing communication with any other modules. High cohesion enhances the functionality of the module. Coupling   Cohesion  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. What do you mean by Bounded Context?",
+        "answer": "A Bounded Context is a central pattern in DDD (Domain-Driven Design), which deals with collaboration across large models and teams. DDD breaks large models down into multiple contexts to make them more manageable. Additionally, it explains their relationship explicitly. The concept promotes an object-oriented approach to developing services bound to a data model and is also responsible for ensuring the integrity and mutability of said data model.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. Write the fundamental characteristics of Microservice Design.",
+        "answer": "Based on Business Capabilities: Services are divided and organized around business capabilities. \nProducts not projects: A product should belong to the team that handles it.  \nEssential messaging frameworks: Rely on functional messaging frameworks: Eliminate centralized service buses by embracing the concept of decentralization.  \nDecentralized Governance: The development teams are accountable for all aspects of the software they produce.  \nDecentralized data management: Microservices allow each service to manage its data separately.  \nAutomated infrastructure: These systems are complete and can be deployed independently.   \nDesign for failure: Increase the tolerance for failure of services by focusing on continuous monitoring of the applications. Based on Business Capabilities: Services are divided and organized around business capabilities. Based on Business Capabilities Products not projects: A product should belong to the team that handles it. Products not projects: Essential messaging frameworks: Rely on functional messaging frameworks: Eliminate centralized service buses by embracing the concept of decentralization. Essential messaging frameworks: Decentralized Governance: The development teams are accountable for all aspects of the software they produce. Decentralized Governance: Decentralized data management: Microservices allow each service to manage its data separately. Decentralized data management: Automated infrastructure: These systems are complete and can be deployed independently. Automated infrastructure: Design for failure: Increase the tolerance for failure of services by focusing on continuous monitoring of the applications. Design for failure:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. What are the challenges that one has to face while using Microservices?",
+        "answer": "The challenges that one has to face while using microservices can be both functional and technical as given below: \n\nFunctional Challenges:   Functional Challenges: Require heavy infrastructure setup. \nNeed Heavy investment. \nRequire excessive planning to handle or manage operations overhead. Require heavy infrastructure setup. Need Heavy investment. Require excessive planning to handle or manage operations overhead. Technical Challenges: Technical Challenges: Microservices are always interdependent. Therefore, they must communicate with each other.   \nIt is a heavily involved model because it is a distributed system.   \nYou need to be prepared for operations overhead if you are using Microservice architecture.   \nTo support heterogeneously distributed microservices, you need skilled professionals.    \nIt is difficult to automate because of the number of smaller components. For that reason, each component must be built, deployed, and monitored separately.   \nIt is difficult to manage configurations across different environments for all components. \nChallenges associated with deployment, debugging, and testing. Microservices are always interdependent. Therefore, they must communicate with each other. It is a heavily involved model because it is a distributed system. You need to be prepared for operations overhead if you are using Microservice architecture. To support heterogeneously distributed microservices, you need skilled professionals. It is difficult to automate because of the number of smaller components. For that reason, each component must be built, deployed, and monitored separately. It is difficult to manage configurations across different environments for all components. Challenges associated with deployment, debugging, and testing.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. Explain PACT in microservices.",
+        "answer": "PACT is defined as an open-source tool that allows service providers and consumers to test interactions in isolation against contracts that have been made to increase the reliability of microservice integration. It also offers support for numerous languages, such as Ruby, Java, Scala, .NET, JavaScript, Swift/Objective-C.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. Explain how independent microservices communicate with each other.",
+        "answer": "Communication between microservices can take place through: HTTP/REST with JSON or binary protocol for request-response \nWebsockets for streaming.  \nA broker or server program that uses advanced routing algorithms. HTTP/REST with JSON or binary protocol for request-response Websockets for streaming. A broker or server program that uses advanced routing algorithms. RabbitMQ, Nats, Kafka, etc., can be used as message brokers; each is built to handle a particular message semantic. You can also use Backend as a Service like Space Cloud to automate your entire backend.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "19. What do you mean by client certificates?",
+        "answer": "The client certificate is a type of digital certificate that generally allows client systems to authenticate their requests to remote servers. In many mutual authentication designs, it plays a key role in providing strong assurance of the requestor's identity.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. Explain the term Eureka in Microservices.",
+        "answer": "Eureka Server, also referred to as Netflix Service Discovery Server, is an application that keeps track of all client-service applications. As every Microservice registers to Eureka Server, Eureka Server knows all the client applications running on the different ports and IP addresses. It generally uses Spring Cloud and is not heavy on the application development process.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What do you mean by Semantic Monitoring?",
+        "answer": "The semantic monitoring method, also called synthetic monitoring, uses automated tests and monitoring of the application to identify errors in business processes. This technology provides a deeper look into the transaction performance, service availability, and overall application performance to identify performance issues of microservices, catch bugs in transactions and provide an overall higher level of performance.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Explain continuous monitoring.",
+        "answer": "Continuous monitoring involves identifying compliance and risk issues in a company's financial and operational environment. It consists of people, processes, and working systems that support efficient and effective operations.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What do you mean by Domain driven design?",
+        "answer": "DDD (Domain-Driven-Design) is basically an architectural style that is based on Object-Oriented Analysis Design approaches and principles. In this approach, the business domain is modeled carefully in software, without regard to how the system actually works. By interconnecting related components of the software system into a continuously evolving system, it facilitates the development of complex systems. There are three fundamental principles underlying it as shown below: Concentrate on the core domain and domain logic. \nAnalyze domain models to find complex designs. \nEngage in regular collaboration with the domain experts to improve the application model and address emerging domain issues. Concentrate on the core domain and domain logic. Analyze domain models to find complex designs. Engage in regular collaboration with the domain experts to improve the application model and address emerging domain issues.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. Explain OAuth.",
+        "answer": "Generally speaking, OAuth (Open Authorization Protocol) enables users to authenticate themselves with third-party service providers. With this protocol, you can access client applications on HTTP for third-party providers such as GitHub, Facebook, etc. Using it, you can also share resources on one site with another site without requiring their credentials.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What do you mean by Distributed Transaction?",
+        "answer": "Distributed transactions are an outdated approach in today's microservice architecture that leaves the developer with severe scalability issues. Transactions are distributed to several services that are called to complete the transaction in sequence. With so many moving parts, it is very complex and prone to failure.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. Explain Idempotence and its usage.",
+        "answer": "The term 'idempotence' refers to the repeated performance of a task despite the same outcome.  In other words, it is a situation in which a task is performed repeatedly with the end result remaining the same. \n \nUsage: When the remote service or data source receives instructions more than once, Idempotence ensures that it will process each request once.   Usage:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What do you mean by end-to-end microservices testing?",
+        "answer": "Usually, end-to-end (E2E) microservice testing is an uncoordinated, high-cost technique that is used to ensure that all components work together for a complete user journey. Usually, it is done through the user interface, mimicking how it appears to the user. It also ensures all processes in the workflow are working properly.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. Explain the way to implement service discovery in microservices architecture.",
+        "answer": "There are many ways to set up service discovery, but Netflix's Eureka is the most efficient. This is a hassle-free procedure that doesn't add much weight to the application. It also supports a wide range of web applications. A number of annotations are provided by Spring Cloud to make its use as simple as possible and to hide complex concepts.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. Explain the importance of reports and dashboards in microservices.",
+        "answer": "Monitoring a system usually involves the use of reports and dashboards. Using reports and dashboards for microservices can help you: Determine which microservices support which resources.   \nDetermine which services are impacted whenever changes are made or occur to components. \nMake documentation easy to access whenever needed.   \nReview deployed component versions.  \nDetermine the level of maturity and compliance from the components. Determine which microservices support which resources. Determine which services are impacted whenever changes are made or occur to components. Make documentation easy to access whenever needed. Review deployed component versions. Determine the level of maturity and compliance from the components.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What are Reactive Extensions in Microservices?",
+        "answer": "A reactive extension, also known as Rx, is basically a design approach that calls multiple services and then generates a single response by combining the results. The calls can either be blocking or not blocking, synchronous or asynchronous. A popular tool in distributed systems, Rx works exactly opposite to legacy flows.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. Explain type of tests mostly used in Microservices.",
+        "answer": "As there are multiple microservices working together, microservice testing becomes quite complex when working with microservices. Consequently, tests are categorized according to their level:   Botton-level tests: The bottom-level tests are those that deal with technology, such as unit tests and performance tests. This is a completely automated process.  \nMiddle-level tests: In the middle, we have exploratory tests such as stress tests and usability tests.   \nTop-level tests: In the top-level testing, we have a limited number of acceptance tests. The acceptance tests help stakeholders understand and verify the software features. Botton-level tests:  Middle-level tests:  Top-level tests:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What do you mean by Mike Cohn\u2019s Test Pyramid?",
+        "answer": "Mike Cohn's Test Pyramid explains the different types of automated tests needed for software development. The test pyramid is basically used to maximize automation at all levels of testing, including unit testing, service level testing, UI testing, etc. The pyramid also states that unit tests are faster and more isolated, while UI tests, which are at the top, are more time-consuming and are centered around integration.   In accordance with the pyramid, the number of tests should be highest at the first layer. At the service layer, fewer tests should be performed than at the unit test level, but greater than that at the end-to-end level.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. Explain Container in Microservices.",
+        "answer": "Containers are useful technologies for allocating and sharing resources. It is considered the most effective and easiest method for managing microservice-based applications to develop and deploy them individually. Using Docker, you may also encapsulate a microservice along with its dependencies in a container image, which can then be used to roll on-demand instances of the microservice without any additional work.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. What is the main role of docker in microservices?",
+        "answer": "Docker generally provides a container environment, in which any application can be hosted. This is accomplished by tightly packaging both the application and the dependencies required to support it. These packaged products are referred to as Containers, and since Docker is used to doing that, they are called Docker containers. Docker, in essence, allows you to containerize your microservices and manage these microservices more easily. Docker Conclusion: Microservices architecture is a method of developing a large-scale application as a collection of small autonomous services developed for a business domain. Since its debut in 2011, microservices have become a popular technology, especially among organizations building forward-thinking applications. This list of Microservices interview questions was carefully constructed to assist the development community in their interviews. Hope these Microservices Architect Interview Questions would be helpful for your interview.",
+        "reference": "interviewbit.com"
+    }
+]

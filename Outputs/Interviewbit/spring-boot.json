@@ -1,0 +1,172 @@
+[
+    {
+        "question": "1. What are the advantages of using Spring Boot?",
+        "answer": "The advantages of Spring Boot are listed below: Easy to understand and develop spring applications.\nSpring Boot is nothing but an existing framework with the addition of an embedded HTTP server and annotation configuration which makes it easier to understand and faster the process of development.\nIncreases productivity and reduces development time.\nMinimum configuration.\nWe don\u2019t need to write any XML configuration, only a few annotations are required to do the configuration. Easy to understand and develop spring applications. Spring Boot is nothing but an existing framework with the addition of an embedded HTTP server and annotation configuration which makes it easier to understand and faster the process of development. Increases productivity and reduces development time. Minimum configuration. We don\u2019t need to write any XML configuration, only a few annotations are required to do the configuration.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What are the Spring Boot key components?",
+        "answer": "Below are the four key components of spring-boot: Spring Boot auto-configuration.\nSpring Boot CLI.\nSpring Boot starter POMs.\nSpring Boot Actuators. Spring Boot auto-configuration. Spring Boot CLI. Spring Boot starter POMs. Spring Boot Actuators.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Why Spring Boot over Spring?",
+        "answer": "Below are some key points which spring boot offers but spring doesn\u2019t: Starter POM.\nVersion Management.\nAuto Configuration.\nComponent Scanning.\nEmbedded server.\nInMemory DB.\nActuators Starter POM. Version Management. Auto Configuration. Component Scanning. Embedded server. InMemory DB. Actuators Spring Boot simplifies the spring feature for the user: Spring vs Spring Boot  Spring vs Spring Boot",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What is the starter dependency of the Spring boot module?",
+        "answer": "Spring boot provides numbers of starter dependency, here are the most commonly used - Data JPA starter.\nTest Starter.\nSecurity starter.\nWeb starter.\nMail starter.\nThymeleaf starter. Data JPA starter. Test Starter. Security starter. Web starter. Mail starter. Thymeleaf starter.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. How does Spring Boot works?",
+        "answer": "Spring Boot automatically configures your application based on the dependencies you have added to the project by using annotation. The entry point of the spring boot application is the class that contains @SpringBootApplication annotation and the main method. Spring Boot automatically scans all the components included in the project by using @ComponentScan annotation.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What does the @SpringBootApplication annotation do internally?",
+        "answer": "The @SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration, and @ComponentScan with their default attributes. Spring Boot enables the developer to use a single annotation instead of using multiple. But, as we know, Spring provided loosely coupled features that we can use for each annotation as per our project needs.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What is the purpose of using @ComponentScan in the class files?",
+        "answer": "Spring Boot application scans all the beans and package declarations when the application initializes. You need to add the @ComponentScan annotation for your class file to scan your components added to your project.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. How does a spring boot application get started?",
+        "answer": "Just like any other Java program, a Spring Boot application must have a main method. This method serves as an entry point, which invokes the SpringApplication#run method to bootstrap the application. @SpringBootApplication \npublic class MyApplication { \n   \n       public static void main(String[] args) {    \n    \n             SpringApplication.run(MyApplication.class);        \n               // other statements     \n       } \n} @SpringBootApplication \npublic class MyApplication { \n   \n       public static void main(String[] args) {    \n    \n             SpringApplication.run(MyApplication.class);        \n               // other statements     \n       } \n} @SpringBootApplication public class MyApplication class MyApplication public static void main(String[] args) public static void main (String[] args) // other statements",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. What are the most common Spring Boot CLI commands?",
+        "answer": "-run, -test, -grap, -jar, -war, -install, -uninstall, --init, -shell, -help. To check the description, run spring --help from the terminal. Spring Boot CLI Commands  Spring Boot CLI Commands",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is Spring Boot CLI and what are its benefits?",
+        "answer": "Spring Boot CLI is a command-line interface that allows you to create a spring-based java application using Groovy. Example: You don\u2019t need to create getter and setter method or access modifier, return statement. If you use the JDBC template, it automatically loads for you.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What is Spring Initializer?",
+        "answer": "Spring Initializer is a web application that helps you to create an initial spring boot project structure and provides a maven or gradle file to build your code. It solves the problem of setting up a framework when you are starting a project from scratch.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What are starter dependencies?",
+        "answer": "Spring boot starter is a maven template that contains a collection of all the relevant transitive dependencies that are needed to start a particular functionality.\nLike we need to import spring-boot-starter-web dependency for creating a web application.  <dependency>\n<groupId> org.springframework.boot</groupId>\n<artifactId> spring-boot-starter-web </artifactId>\n</dependency> <dependency>\n<groupId> org.springframework.boot</groupId>\n<artifactId> spring-boot-starter-web </artifactId>\n</dependency>",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. What is the difference between @RestController and @Controller in Spring Boot?",
+        "answer": "@Controller Map of the model object to view or template and make it human readable but @RestController simply returns the object and object data is directly written in HTTP response as JSON or XML.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What is an IOC container?",
+        "answer": "IoC Container is a framework for implementing automatic dependency injection. It manages object creation and its life-time and also injects dependencies into the class.  Important Resources Important Resources Java Spring Boot Free Course with Certificate\nSpring vs Spring Boot\nDifference Between Spring MVC and Spring Boot\nSpring Interview Questions\nSpring Security Interview Questions Java Spring Boot Free Course with Certificate Java Spring Boot Free Course with Certificate Spring vs Spring Boot Spring vs Spring Boot Difference Between Spring MVC and Spring Boot Difference Between Spring MVC and Spring Boot Spring Interview Questions Spring Interview Questions Spring Security Interview Questions Spring Security Interview Questions",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Describe the flow of HTTPS requests through the Spring Boot application?",
+        "answer": "On a high-level spring boot application follow the MVC pattern which is depicted in the below flow diagram. Spring Boot Flow Architecture  Spring Boot Flow Architecture",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What is the difference between RequestMapping and GetMapping?",
+        "answer": "RequestMapping can be used with GET, POST, PUT, and many other request methods using the method attribute on the annotation. Whereas getMapping is only an extension of RequestMapping which helps you to improve on clarity on request.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What is the use of Profiles in spring boot?",
+        "answer": "While developing the application we deal with multiple environments such as dev, QA, Prod, and each environment requires a different configuration. For eg., we might be using an embedded H2 database for dev but for prod, we might have proprietary Oracle or DB2. Even if DBMS is the same across the environment, the URLs will be different. To make this easy and clean, Spring has the provision of Profiles to keep the separate configuration of environments.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What is Spring Actuator? What are its advantages?",
+        "answer": "An actuator is an additional feature of Spring that helps you to monitor and manage your application when you push it to production. These actuators include auditing, health, CPU usage, HTTP hits, and metric gathering, and many more that are automatically applied to your application.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. How to enable Actuator in Spring boot application?",
+        "answer": "To enable the spring actuator feature, we need to add the dependency of \u201cspring-boot-starter-actuator\u201d in pom.xml. <dependency>\n<groupId> org.springframework.boot</groupId>\n<artifactId> spring-boot-starter-actuator </artifactId>\n</dependency> <dependency>\n<groupId> org.springframework.boot</groupId>\n<artifactId> spring-boot-starter-actuator </artifactId>\n</dependency>",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What are the actuator-provided endpoints used for monitoring the Spring boot application?",
+        "answer": "Actuators provide below pre-defined endpoints to monitor our application - Health\nInfo\nBeans\nMappings\nConfigprops\nHttptrace\nHeapdump\nThreaddump\nShutdown Health Info Beans Mappings Configprops Httptrace Heapdump Threaddump Shutdown",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. How to get the list of all the beans in your Spring boot application?",
+        "answer": "Spring Boot actuator \u201c/Beans\u201d is used to get the list of all the spring beans in your application.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. How to check the environment properties in your Spring boot application?",
+        "answer": "Spring Boot actuator \u201c/env\u201d returns the list of all the environment properties of running the spring boot application.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. How to enable debugging log in the spring boot application?",
+        "answer": "Debugging logs can be enabled in three ways - We can start the application with --debug switch.\nWe can set the logging.level.root=debug property in application.property file.\nWe can set the logging level of the root logger to debug in the supplied logging configuration file. We can start the application with --debug switch. We can set the logging.level.root=debug property in application.property file. We can set the logging level of the root logger to debug in the supplied logging configuration file.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. Where do we define properties in the Spring Boot application?",
+        "answer": "You can define both application and Spring boot-related properties into a file called application.properties. You can create this file manually or use Spring Initializer to create this file. You don\u2019t need to do any special configuration to instruct Spring Boot to load this file, If it exists in classpath then spring boot automatically loads it and configure itself and the application code accordingly.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What is dependency Injection?",
+        "answer": "The process of injecting dependent bean objects into target bean objects is called dependency injection. Setter Injection: The IOC container will inject the dependent bean object into the target bean object by calling the setter method.\nConstructor Injection: The IOC container will inject the dependent bean object into the target bean object by calling the target bean constructor.\nField Injection: The IOC container will inject the dependent bean object into the target bean object by Reflection API. Setter Injection: The IOC container will inject the dependent bean object into the target bean object by calling the setter method. Constructor Injection: The IOC container will inject the dependent bean object into the target bean object by calling the target bean constructor. Field Injection: The IOC container will inject the dependent bean object into the target bean object by Reflection API.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. Explain @RestController annotation in Spring boot?",
+        "answer": "It is a combination of @Controller and @ResponseBody, used for creating a restful controller. It converts the response to JSON or XML. It ensures that data returned by each method will be written straight into the response body instead of returning a template.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. How to disable a specific auto-configuration class?",
+        "answer": "You can use exclude attribute of @EnableAutoConfiguration if you want auto-configuration not to apply to any specific class. //use of exclude\n@EnableAutoConfiguration(exclude={className}) //use of exclude\n@EnableAutoConfiguration(exclude={className}) //use of exclude @EnableAutoConfiguration(exclude={className})",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. Can we disable the default web server in the Spring boot application?",
+        "answer": "Yes, we can use application.properties to configure the web application type i.e spring.main.web-application-type=none. application.properties spring.main.web-application-type=none.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. Can we override or replace the Embedded tomcat server in Spring Boot?",
+        "answer": "Yes, we can replace the Embedded Tomcat server with any server by using the Starter dependency in the pom.xml file. Like you can use spring-boot-starter-jetty as a dependency for using a jetty server in your project. pom.xml",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. What is the default port of tomcat in spring boot?",
+        "answer": "The default port of the tomcat server-id 8080. It can be changed by adding sever.port properties in the application.property file. sever.port application.property",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "19. Is it possible to change the port of the embedded Tomcat server in Spring Boot?",
+        "answer": "Yes, it is possible. By using the server.port in the application.properties. server.port application.properties",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "20. Can we create a non-web application in Spring Boot?",
+        "answer": "Yes, we can create a non-web application by removing the web dependencies from the classpath along with changing the way Spring Boot creates the application context.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "21. What is Spring Boot dependency management?",
+        "answer": "Spring Boot dependency management is used to manage dependencies and configuration automatically without you specifying the version for any of that dependencies.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "22. What Are the Basic Annotations that Spring Boot Offers?",
+        "answer": "The primary annotations that Spring Boot offers reside in its org.springframework.boot.autoconfigure and its sub-packages. Here are a couple of basic ones: org.springframework.boot.autoconfigure @EnableAutoConfiguration \u2013 to make Spring Boot look for auto-configuration beans on its classpath and automatically apply them. @SpringBootApplication \u2013 used to denote the main class of a Boot Application. This annotation combines @Configuration, @EnableAutoConfiguration, and @ComponentScan annotations with their default attributes.",
+        "reference": "interviewbit.com"
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "question": "1. How would you define Power BI as an effective solution?",
+        "answer": "Power BI is a strong business analytical tool that creates useful insights and reports by collating data from unrelated sources. This data can be extracted from any source like Microsoft Excel or hybrid data warehouses. Power BI drives an extreme level of utility and purpose using interactive graphical interface and visualizations. You can create reports using the Excel BI toolkit and share them on-cloud with your colleagues.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Power BI can connect to which data sources?",
+        "answer": "The data source is the point from which the data has been retrieved. It can be anything like files in various formats (.xlsx, .csv, .pbix, .xml, .txt etc), databases (SQL database, SQL Data Warehouse, Spark on Azure HDInsight), or form content packets like Google Analytics or Twilio.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What are the available formats?",
+        "answer": "Power BI is available in various formats: Power BI desktop: For the desktop version\nPower BI mobile app: For using the visualizations on mobile OS and share it\nPower BI services: For online SaaS Power BI desktop: For the desktop version Power BI mobile app: For using the visualizations on mobile OS and share it Power BI services: For online SaaS",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What are the available views?",
+        "answer": "In power BI, you have various kinds of views viz: Data View: Curating, exploring, and viewing data tables in the data set. Unlike, Power Query editor, with data view, you are looking at the data after it has been fed to the model.\nModel View: This view shows you all the tables along with their complex relationships. With this, you can break these complex models into simplified diagrams or set properties for them at once.\nReport View: The report view displays the tables in an interactive format to simplify data analysis. You can create n number of reports, provide visualizations, merge them, or apply any such functionality. Data View: Curating, exploring, and viewing data tables in the data set. Unlike, Power Query editor, with data view, you are looking at the data after it has been fed to the model. Data View: Model View: This view shows you all the tables along with their complex relationships. With this, you can break these complex models into simplified diagrams or set properties for them at once. Model View: Report View: The report view displays the tables in an interactive format to simplify data analysis. You can create n number of reports, provide visualizations, merge them, or apply any such functionality. Report View:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. Where is the data stored in Power BI?",
+        "answer": "Primarily, Power BI has two sources to store data: Azure Blob Storage: When users upload the data, it gets stored here.\nAzure SQL Database: All the metadata and system artifacts are stored here. Azure Blob Storage:  Azure SQL Database: They are stored as either fact tables or dimensional tables.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What is a Power BI desktop?",
+        "answer": "To access the Power BI features, visualize data, or model them to create reports, you can simply download a desktop version of Power BI. With the desktop version, you can extract data from various data sources, transform them, create visuals or reports, and share them using Power BI services.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What are the different connectivity modes in Power BI?",
+        "answer": "The three major connectivity modes in Power BI are: Direct Query: The method allows direct connection to the Power BI model. The data doesn\u2019t get stored in Power BI. Interestingly, Power BI will only store the metadata of the data tables involved and not the actual data. The supported sources of data query are: Direct Query: Amazon Redshift\nAzure HDInsight Spark (Beta)\nAzure SQL Database\nAzure SQL Data Warehouse\nIBM Netezza (Beta)\nImpala (version 2.x)\nOracle Database (version 12 and above)\nSAP Business Warehouse (Beta)\nSAP HANA\nSnowflake\nSpark (Beta) (version 0.9 and above)\nSQL Server\nTeradata Database Amazon Redshift Azure HDInsight Spark (Beta) Azure SQL Database Azure SQL Data Warehouse IBM Netezza (Beta) Impala (version 2.x) Oracle Database (version 12 and above) SAP Business Warehouse (Beta) SAP HANA Snowflake Spark (Beta) (version 0.9 and above) SQL Server Teradata Database Live Connection: Live connection is analogous to the direct query method as it doesn\u2019t store any data in Power BI either. But opposed to the direct query method, it is a direct connection to the analysis services model. Also, the supported data sources with live connection method are limited: Live Connection: SQL Server Analysis Services (SSAS) Tabular\nSQL Server Analysis Services (SSAS) Multi-Dimensional\nPower BI Service SQL Server Analysis Services (SSAS) Tabular SQL Server Analysis Services (SSAS) Multi-Dimensional Power BI Service Import Data (Scheduled Refresh): By choosing this method, you upload the data into Power BI. Uploading data on Power BI means consuming the memory space of your Power BI desktop. If it is on the website, it consumes the space of the Power BI cloud machine. Even though it is the fastest method, the maximum size of the file to be uploaded cannot exceed 1 GB until and unless you have Power BI premium (then you have 50 GB at the expense). Import Data (Scheduled Refresh): But which model to choose when depends on your use and purpose.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What are the various refresh options available?",
+        "answer": "Four main refresh options are available in Power BI: Package/OneDrive refresh: This synchronizes Power BI desktop or Excel file between the Power BI service and OneDrive\nData/Model refresh: This means scheduling the data import from all the sources based on either refresh schedule or on-demand. \nTile refresh: Refresh the tiles\u2019 cache on the dashboard every time the data changes.\nVisual container refresh: Update the reports\u2019 visuals and visual container once the data changes. Package/OneDrive refresh: This synchronizes Power BI desktop or Excel file between the Power BI service and OneDrive Package/OneDrive refresh: Data/Model refresh: This means scheduling the data import from all the sources based on either refresh schedule or on-demand. Data/Model refresh: Tile refresh: Refresh the tiles\u2019 cache on the dashboard every time the data changes. Tile refresh: Visual container refresh: Update the reports\u2019 visuals and visual container once the data changes. Visual container refresh:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. What are the major components of Power BI?",
+        "answer": "Power BI is an amalgamation of these major components: Components of Power BI  Components of Power BI Power Query (for data mash-up and transformation): You can use this to extract data from various databases (like SQL Server, MySql, and many others ) and to delete a chunk of data from various sources.\nPower Pivot (for tabular data modeling): It is a data modeling engine that uses a functional language called Data Analysis Expression (DAX) to perform the calculations. Also, creates a relationship between various tables to be viewed as pivot tables.\nPower View (for viewing data visualizations): The view provides an interactive display of various data sources to extract metadata for proper data analysis.\nPower BI Desktop (a companion development tool): Power Desktop is an aggregated tool of Power Query, Power View, and Power Pivot. Create advanced queries, models, and reports using the desktop tool.\nPower BI Mobile (for Android, iOS, Windows phones): It gives an interactive display of the dashboards from the site onto these OS, effortlessly.\nPower Map (3D geo-spatial data visualization).\nPower Q&A (for natural language Q&A). Power Query (for data mash-up and transformation): You can use this to extract data from various databases (like SQL Server, MySql, and many others ) and to delete a chunk of data from various sources. Power Pivot (for tabular data modeling): It is a data modeling engine that uses a functional language called Data Analysis Expression (DAX) to perform the calculations. Also, creates a relationship between various tables to be viewed as pivot tables. Power View (for viewing data visualizations): The view provides an interactive display of various data sources to extract metadata for proper data analysis. Power BI Desktop (a companion development tool): Power Desktop is an aggregated tool of Power Query, Power View, and Power Pivot. Create advanced queries, models, and reports using the desktop tool. Power BI Mobile (for Android, iOS, Windows phones): It gives an interactive display of the dashboards from the site onto these OS, effortlessly. Power Map (3D geo-spatial data visualization). Power Q&A (for natural language Q&A).",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. What is a dashboard?",
+        "answer": "The dashboard is like a single-page canvas on which you have various elements to create and visualize reports created by analyzing data. It comprises only the most important data from the reports to create a story. The visual elements present on the dashboard are called Tiles. You can pin these tiles from the reports to the dashboard. Clicking any element on the dashboard takes you to the report of a particular data set. Power BI Dashboard  Power BI Dashboard",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What are the building blocks of Power BI?",
+        "answer": "The major building blocks of Power BI are: Datasets: Dataset is a collection of data gathered from various sources like SQL Server, Azure, Text, Oracle, XML, JSON, and many more. With the GetData feature in Power BI, we can easily fetch data from any data source.\nVisualizations: Visualization is the visual aesthetic representation of data in the form of maps, charts, or tables.\nReports: Reports are a structured representation of datasets that consists of multiple pages. Reports help to extract important information and insights from datasets to take major business decisions.\nDashboards: A dashboard is a single-page representation of reports made of various datasets. Each element is termed a tile. \nTiles: Tiles are single-block containing visualizations of a report. Tiles help to differentiate each report. Datasets: Dataset is a collection of data gathered from various sources like SQL Server, Azure, Text, Oracle, XML, JSON, and many more. With the GetData feature in Power BI, we can easily fetch data from any data source. Datasets: Visualizations: Visualization is the visual aesthetic representation of data in the form of maps, charts, or tables. Visualizations: Reports: Reports are a structured representation of datasets that consists of multiple pages. Reports help to extract important information and insights from datasets to take major business decisions. Reports: Dashboards: A dashboard is a single-page representation of reports made of various datasets. Each element is termed a tile. \nTiles: Tiles are single-block containing visualizations of a report. Tiles help to differentiate each report. Dashboards: ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What are content packs in Power BI?",
+        "answer": "Content packs are packages comprising different Power BI objects such as reports, dashboards, datasets, etc. The two types of content packs are: Service provider content packs: Service providers such as Google Analytics, Salesforce, etc. provide pre-built content packages User-created content packs: Users can create their content packages and share them within the organization.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What are the various Power BI versions?",
+        "answer": "The three major versions of Power BI are as follows: Power BI Desktop: The free interactive tool that connects multiple data sources, transforms data, and creates visualized reports.\nPower BI Premium: The premium version is used for larger organizations with a dedicated storage capacity for each user. With premium, data sets up to 50GB storage capacity can be hosted along with 100TB storage on the cloud as a whole. It costs $4995 per month.\nPower BI Pro:  With the pro version, you get full access to the Power BI dashboard, creation of reports, along with unlimited sharing and viewing of reports. You also have a storage limit of 10GB per user. Power BI Desktop: The free interactive tool that connects multiple data sources, transforms data, and creates visualized reports. Power BI Desktop: Power BI Premium: The premium version is used for larger organizations with a dedicated storage capacity for each user. With premium, data sets up to 50GB storage capacity can be hosted along with 100TB storage on the cloud as a whole. It costs $4995 per month. Power BI Premium: Power BI Pro:  With the pro version, you get full access to the Power BI dashboard, creation of reports, along with unlimited sharing and viewing of reports. You also have a storage limit of 10GB per user. Power BI Pro:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What is DAX?",
+        "answer": "Data Analysis Expression (DAX) is a library of formulas used for calculations and data analysis. This library comprises functions, constants, and operators to perform calculations and give results. DAX lets you use the data sets to their full potential and provide insightful reports. DAX is a functional language containing conditional statements, nested functions, value references, and much more. The formulas are either numeric (integers, decimals, etc.) or non-numeric (string, binary). A DAX formula always starts with an equal sign. DAX  DAX A: Name of the project\nB: Start of the DAX formula\nC: DAX function (to add)\nD: Parentheses defining arguments\nE:  Name of the table\nF: Name of the field\nG: Operator      ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What are the purpose and benefits of using the DAX function?",
+        "answer": "DAX is much more than Power BI. If you learn DAX as a functional language, you become better as a data professional. DAX is based on different nested filters which magnificently improves the performance of data merging, modeling, and filtering tables.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What is Power Pivot?",
+        "answer": "Power Pivot enables you to import millions of rows from heterogeneous sources of data into a single excel sheet. It lets us create relationships between the various tables, create columns, calculate using formulas, and create PivotCharts and PivotTables. At a time there can be only one active relationship between the tables which is represented by a continuous line.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What is Power Query?",
+        "answer": "Power query is a function that filters transforms, and combines the data extracted from various sources. It helps to import data from databases, files, etc and append data",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. Difference between Power BI and Tableau?",
+        "answer": "The major differences between Power BI and Tableau are: While Power BI uses DAX for calculating columns of a table, Tableau uses MDX (Multidimensional Expressions).\nTableau is more efficient as it can handle a large chunk of data while Power BI can handle only a limited amount. \nTableau is more challenging to use than Power BI. While Power BI uses DAX for calculating columns of a table, Tableau uses MDX (Multidimensional Expressions). Tableau is more efficient as it can handle a large chunk of data while Power BI can handle only a limited amount. Tableau is more challenging to use than Power BI.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is GetData in Power BI?",
+        "answer": "GetData offers data connectivity to various data sources. Connect data files on your local system. The supported data sources are: File: Excel, Text/CSV, XML, PDF, JSON, Folder, SharePoint.\nDatabase: SQL Server database, Access database, Oracle database, SAP HANA database, IBM, MySQL, Teradata, Impala, Amazon Redshift, Google BigQuery, etc.\nPower BI: Power BI datasets, Power BI dataflows.\nAzure: Azure SQL, Azure SQL Data Warehouse, Azure Analysis Services, Azure Data Lake, Azure Cosmos DB, etc.\nOnline Services: Salesforce, Azure DevOps, Google Analytics, Adobe Analytics, Dynamics 365, Facebook, GitHub, etc.\nOthers: Python script, R script, Web, Spark, Hadoop File (HDFS), ODBC, OLE DB, Active Directory, etc. File: Excel, Text/CSV, XML, PDF, JSON, Folder, SharePoint. Database: SQL Server database, Access database, Oracle database, SAP HANA database, IBM, MySQL, Teradata, Impala, Amazon Redshift, Google BigQuery, etc. Power BI: Power BI datasets, Power BI dataflows. Azure: Azure SQL, Azure SQL Data Warehouse, Azure Analysis Services, Azure Data Lake, Azure Cosmos DB, etc. Online Services: Salesforce, Azure DevOps, Google Analytics, Adobe Analytics, Dynamics 365, Facebook, GitHub, etc. Others: Python script, R script, Web, Spark, Hadoop File (HDFS), ODBC, OLE DB, Active Directory, etc.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What are filters in Power BI?",
+        "answer": "Filters sort data based on the condition applied to it. Filters enable us to select particular fields and extract information in a page/visualization/report level. For example, filters can provide sales reports from the year 2019 for the Indian region.  Power BI can make changes based on the filters and create graphs or visuals accordingly. Types of filters are: Page-level filters: These are applied on a particular page from various pages available within a report.\nVisualization-level filters: These are applied to both data and calculation conditions for particular visualizations.\nReport-level filters: These are applied to the entire report. Page-level filters: These are applied on a particular page from various pages available within a report. Page-level filters: Visualization-level filters: These are applied to both data and calculation conditions for particular visualizations. Visualization-level filters: Report-level filters: These are applied to the entire report. Report-level filters:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. What are the various type of users who can use Power BI?",
+        "answer": "Anyone and everyone can use PowerBI to their advantage. But even then a specific set of users are more likely to use it viz: Business Users: Business users are the ones who constantly keep an eye on the reports to make important business decisions based on the insights.\nBusiness Analysts: Analysts are the ones who create dashboards, reports, and visual representations of data to study the dataset properly. Studying data needs an analytical eye to capture important trends within the reports.\nDevelopers: Developers are involved while creating custom visuals to create Power BI, integrating Power BI with other applications, etc. \nProfessionals: They use Power BI to check the data scalability, security, and availability of data. Business Users: Business users are the ones who constantly keep an eye on the reports to make important business decisions based on the insights. Business Users: Business Analysts: Analysts are the ones who create dashboards, reports, and visual representations of data to study the dataset properly. Studying data needs an analytical eye to capture important trends within the reports. Business Analysts: Developers: Developers are involved while creating custom visuals to create Power BI, integrating Power BI with other applications, etc. \nProfessionals: They use Power BI to check the data scalability, security, and availability of data. Developers:  Recommended Resources Recommended Resources Power BI Projects Power BI Projects Power BI Resume Power BI Resume Power BI vs Tableau Power BI vs Tableau Free Data Science course Free Data Science course",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What are the types of visualizations in Power BI?",
+        "answer": "Visualization is a graphical representation of data. We can use visualizations to create reports and dashboards. The kinds of visualizations available in Power BI are Bar charts, Column charts, Line chart, Area chart, Stacked area chart, Ribbon chart, Waterfall chart, Scatter chart, Pie chart, Donut chart, Treemap chart, Map, Funnel chart, Gauge chart, Cards, KPI, Slicer, Table, Matrix, R script visual, Python visual, etc.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What do we understand by Power BI services?",
+        "answer": "Power BI provides services for its cloud-based business analytics. With these services, you can view and share reports via the Power BI website. Power BI is a web-based service for sharing reports. Power BI service can be best referred to as PowerBI.com, PowerBI workspace, PowerBI site, or PowerBI portal.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What is the comprehensive working system of Power BI?",
+        "answer": "Power BI\u2019s working system mainly comprises three steps: Data Integration: The first step is to extract and integrate the data from heterogeneous data sources. After integration, the data is converted into a standard format and stored in a common area called the staging area.\nData Processing: Once the data is assembled and integrated, it requires some cleaning up. Raw data is not so useful therefore, a few transformation and cleaning operations are performed on the data to remove redundant values, etc. After the data is transformed, it is stored in data warehouses.\nData Presentation: Now that the data is transformed and cleaned, it is visually presented on the Power BI desktop as reports, dashboards, or scorecards. These reports can be shared via mobile apps or web to various business users. Data Integration: The first step is to extract and integrate the data from heterogeneous data sources. After integration, the data is converted into a standard format and stored in a common area called the staging area. Data Integration: Data Processing: Once the data is assembled and integrated, it requires some cleaning up. Raw data is not so useful therefore, a few transformation and cleaning operations are performed on the data to remove redundant values, etc. After the data is transformed, it is stored in data warehouses. Data Processing: Data Presentation: Now that the data is transformed and cleaned, it is visually presented on the Power BI desktop as reports, dashboards, or scorecards. These reports can be shared via mobile apps or web to various business users. Data Presentation:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What are custom visuals in Power BI?",
+        "answer": "Using Power BI visualizations, you can apply customized visualizations like charts, KPIs, etc. from the rich library of PowerBI\u2019s custom visuals. It refrains the developers from creating it from scratch using JQuery or Javascript SDK. Once the custom visual is ready, it is tested thoroughly. Post testing, they are packaged in .pbiviz file format and shared within the organization. Types of visuals available in Power BI are: Custom visual files.\nOrganizational files.\nMarketplace files. Custom visual files. Organizational files. Marketplace files.",
+        "reference": "interviewbit.com"
+    }
+]

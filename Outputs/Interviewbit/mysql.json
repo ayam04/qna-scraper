@@ -1,0 +1,162 @@
+[
+    {
+        "question": "1. What are the String Data Types in MySQL?",
+        "answer": "Type Name Meaning\nCHAR fixed-length nonbinary(character) string\nVARCHAR variable-length nonbinary string\nBINARY fixed-length binary string\nVARBINARY variable-length binary string\nTINYBLOB Very small BLOB(binary large object)\nBLOB Small BLOB\nMEDIUMBLOB Medium-sized BLOB\nLONGBLOB Large BLOB\nTINYTEXT A very small nonbinary string\nTEXT Small nonbinary string\nMEDIUMTEXT Medium-sized nonbinary string\nLONGTEXT Large nonbinary string\nENUM An enumeration; each column value is assigned, one enumeration member\nSET A set; each column value is assigned zero or more set members\nNULL NULL in SQL is the term used to represent a missing value. A NULL value in a table is a value in a field that appears to be blank. This value is different than a zero value or a field that contains spaces. Type Name Meaning\nCHAR fixed-length nonbinary(character) string\nVARCHAR variable-length nonbinary string\nBINARY fixed-length binary string\nVARBINARY variable-length binary string\nTINYBLOB Very small BLOB(binary large object)\nBLOB Small BLOB\nMEDIUMBLOB Medium-sized BLOB\nLONGBLOB Large BLOB\nTINYTEXT A very small nonbinary string\nTEXT Small nonbinary string\nMEDIUMTEXT Medium-sized nonbinary string\nLONGTEXT Large nonbinary string\nENUM An enumeration; each column value is assigned, one enumeration member\nSET A set; each column value is assigned zero or more set members\nNULL NULL in SQL is the term used to represent a missing value. A NULL value in a table is a value in a field that appears to be blank. This value is different than a zero value or a field that contains spaces. Type Name Meaning Type Name Meaning Type Name Meaning CHAR fixed-length nonbinary(character) string\nVARCHAR variable-length nonbinary string\nBINARY fixed-length binary string\nVARBINARY variable-length binary string\nTINYBLOB Very small BLOB(binary large object)\nBLOB Small BLOB\nMEDIUMBLOB Medium-sized BLOB\nLONGBLOB Large BLOB\nTINYTEXT A very small nonbinary string\nTEXT Small nonbinary string\nMEDIUMTEXT Medium-sized nonbinary string\nLONGTEXT Large nonbinary string\nENUM An enumeration; each column value is assigned, one enumeration member\nSET A set; each column value is assigned zero or more set members\nNULL NULL in SQL is the term used to represent a missing value. A NULL value in a table is a value in a field that appears to be blank. This value is different than a zero value or a field that contains spaces. CHAR fixed-length nonbinary(character) string CHAR fixed-length nonbinary(character) string VARCHAR variable-length nonbinary string VARCHAR variable-length nonbinary string BINARY fixed-length binary string BINARY fixed-length binary string VARBINARY variable-length binary string VARBINARY variable-length binary string TINYBLOB Very small BLOB(binary large object) TINYBLOB Very small BLOB(binary large object) BLOB Small BLOB BLOB Small BLOB MEDIUMBLOB Medium-sized BLOB MEDIUMBLOB Medium-sized BLOB LONGBLOB Large BLOB LONGBLOB Large BLOB TINYTEXT A very small nonbinary string TINYTEXT A very small nonbinary string TEXT Small nonbinary string TEXT Small nonbinary string MEDIUMTEXT Medium-sized nonbinary string MEDIUMTEXT Medium-sized nonbinary string LONGTEXT Large nonbinary string LONGTEXT Large nonbinary string ENUM An enumeration; each column value is assigned, one enumeration member ENUM An enumeration; each column value is assigned, one enumeration member SET A set; each column value is assigned zero or more set members SET A set; each column value is assigned zero or more set members NULL NULL in SQL is the term used to represent a missing value. A NULL value in a table is a value in a field that appears to be blank. This value is different than a zero value or a field that contains spaces. NULL NULL in SQL is the term used to represent a missing value. A NULL value in a table is a value in a field that appears to be blank. This value is different than a zero value or a field that contains spaces.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. How to add users in MySQL?",
+        "answer": "You can add a User by using the CREATE command and specifying the necessary credentials. For example: CREATE USER \u2018testuser\u2019 IDENTIFIED BY \u2018sample password\u2019; CREATE USER \u2018testuser\u2019 IDENTIFIED BY \u2018sample password\u2019; ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What is BLOB in MySQL?",
+        "answer": "BLOB is an acronym that stands for a binary large object. It is used to hold a variable amount of data.\nThere are four types of BLOB:  TINYBLOB\nBLOB\nMEDIUMBLOB\nLONGBLOB TINYBLOB BLOB MEDIUMBLOB LONGBLOB A BLOB can hold a very large amount of data. For example - documents, images, and even videos. You could store your complete novel as a file in a BLOB if needed.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What are the Temporal Data Types in MySQL?",
+        "answer": "Type Name Meaning\nDATE A date value, in ' CCYY-MM-DD ' Format\nTIME A Time value, in ' hh : mm :ss ' format\nDATETIME Date and time value, in ' CCYY-MM-DD hh : mm :ss ' format\nTIMESTAMP A timestamp value, in ' CCYY-MM-DD hh : mm :ss ' format\nYEAR A year value, in CCYY or YY format Type Name Meaning\nDATE A date value, in ' CCYY-MM-DD ' Format\nTIME A Time value, in ' hh : mm :ss ' format\nDATETIME Date and time value, in ' CCYY-MM-DD hh : mm :ss ' format\nTIMESTAMP A timestamp value, in ' CCYY-MM-DD hh : mm :ss ' format\nYEAR A year value, in CCYY or YY format Type Name Meaning Type Name Meaning Type Name Meaning DATE A date value, in ' CCYY-MM-DD ' Format\nTIME A Time value, in ' hh : mm :ss ' format\nDATETIME Date and time value, in ' CCYY-MM-DD hh : mm :ss ' format\nTIMESTAMP A timestamp value, in ' CCYY-MM-DD hh : mm :ss ' format\nYEAR A year value, in CCYY or YY format DATE A date value, in ' CCYY-MM-DD ' Format DATE A date value, in ' CCYY-MM-DD ' Format TIME A Time value, in ' hh : mm :ss ' format TIME A Time value, in ' hh : mm :ss ' format DATETIME Date and time value, in ' CCYY-MM-DD hh : mm :ss ' format DATETIME Date and time value, in ' CCYY-MM-DD hh : mm :ss ' format TIMESTAMP A timestamp value, in ' CCYY-MM-DD hh : mm :ss ' format TIMESTAMP A timestamp value, in ' CCYY-MM-DD hh : mm :ss ' format YEAR A year value, in CCYY or YY format YEAR A year value, in CCYY or YY format Example: To select the records with an Order Date of \"2018-11-11\" from a table: SELECT * FROM Orders WHERE OrderDate='2018-11-11' SELECT * FROM Orders WHERE OrderDate='2018-11-11'",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What is MySQL?",
+        "answer": "MySQL is a database management system for web servers. It can grow with the website as it is highly scalable. Most of the websites today are powered by MySQL.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What are the Numeric Data Types in MySQL?",
+        "answer": "MySQL has numeric data types for integer, fixed-point, floating-point, and bit values, as shown in the table below. Numeric types can be signed or unsigned, except BIT. A special attribute enables the automatic generation of sequential integer or floating-point column values, which is useful for applications that require a series of unique identification numbers. Type Name Meaning\nTINYINT Very Small Integer\nSMALLINT Small Integer\nMEDIUMINT Medium-sized Integer\nINT Standard Integer\nBIGINT Large Integer\nDECIMAL Fixed-point number\nFLOAT Single-precision floating-point number\nDOUBLE Double-precision floating-point number\nBIT Bit-field Type Name Meaning\nTINYINT Very Small Integer\nSMALLINT Small Integer\nMEDIUMINT Medium-sized Integer\nINT Standard Integer\nBIGINT Large Integer\nDECIMAL Fixed-point number\nFLOAT Single-precision floating-point number\nDOUBLE Double-precision floating-point number\nBIT Bit-field Type Name Meaning Type Name Meaning Type Name Meaning TINYINT Very Small Integer\nSMALLINT Small Integer\nMEDIUMINT Medium-sized Integer\nINT Standard Integer\nBIGINT Large Integer\nDECIMAL Fixed-point number\nFLOAT Single-precision floating-point number\nDOUBLE Double-precision floating-point number\nBIT Bit-field TINYINT Very Small Integer TINYINT Very Small Integer SMALLINT Small Integer SMALLINT Small Integer MEDIUMINT Medium-sized Integer MEDIUMINT Medium-sized Integer INT Standard Integer INT Standard Integer BIGINT Large Integer BIGINT Large Integer DECIMAL Fixed-point number DECIMAL Fixed-point number FLOAT Single-precision floating-point number FLOAT Single-precision floating-point number DOUBLE Double-precision floating-point number DOUBLE Double-precision floating-point number BIT Bit-field BIT Bit-field",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. How do you view a database in MySQL?",
+        "answer": "One can view all the databases on the MySQL server host using the following command: mysql> SHOW DATABASES; mysql> SHOW DATABASES;",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. How to Delete Data From a MySQL Table?",
+        "answer": "In MySQL, the DELETE statement is used to delete records from a table: DELETE FROM table_name\nWHERE column_name = value_name DELETE FROM table_name\nWHERE column_name = value_name",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. How to create an Index in MySQL?",
+        "answer": "In MySQL, there are different index types, such as a regular INDEX, a PRIMARY KEY, or a FULLTEXT index. You can achieve fast searches with the help of an index. Indexes speed up performance by either ordering the data on disk so it's quicker to find your result or, telling the SQL engine where to go to find your data. Example: Adding indexes to the history table: ALTER TABLE history ADD INDEX(author(10));\nALTER TABLE history ADD INDEX(title(10));\nALTER TABLE history ADD INDEX(category(5));\nALTER TABLE history ADD INDEX(year);\nDESCRIBE history; ALTER TABLE history ADD INDEX(author(10));\nALTER TABLE history ADD INDEX(title(10));\nALTER TABLE history ADD INDEX(category(5));\nALTER TABLE history ADD INDEX(year);\nDESCRIBE history;",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. How do you remove a column from a database?",
+        "answer": "You can remove a column by using the DROP keyword: ALTER TABLE classics DROP pages; ALTER TABLE classics DROP pages;",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. How do you Insert Data Into MySQL?",
+        "answer": "The INSERT INTO statement is used to add new records to a MySQL table: INSERT INTO table_name (column1, column2, column3,...)\nVALUES (value1, value2, value3,...) INSERT INTO table_name (column1, column2, column3,...)\nVALUES (value1, value2, value3,...) If we want to add values for all the columns of the table, we do not need to specify the column names in the SQL query. However, the order of the values should be in the same order as the columns in the table. The INSERT INTO syntax would be as follows: INSERT INTO table_name\nVALUES (value1, value2, value3, ...); INSERT INTO table_name\nVALUES (value1, value2, value3, ...);",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. How do you create a table using MySQL?",
+        "answer": "Use the following to create a table using MySQL: CREATE TABLE history (\nauthor VARCHAR(128),\ntitle VARCHAR(128),\ntype VARCHAR(16),\nyear CHAR(4)) ENGINE InnoDB; CREATE TABLE history (\nauthor VARCHAR(128),\ntitle VARCHAR(128),\ntype VARCHAR(16),\nyear CHAR(4)) ENGINE InnoDB;",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. How do you create a database in MySQL?",
+        "answer": "Use the following command to create a new database called \u2018books\u2019: CREATE DATABASE books; CREATE DATABASE books;",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. What are some of the common MySQL commands?",
+        "answer": "Command Action\nALTER To alter a database or table\nBACKUP To back-up a table\n\\c To cancel Input\nCREATE To create a database\nDELETE To delete a row from a table\nDESCRIBE To describe a table's columns\nDROP To delete a database or table\nEXIT(ctrl+c) To exit\nGRANT To change user privileges\nHELP (\\h, \\?) Display help\nINSERT Insert data\nLOCK Lock table(s)\nQUIT(\\q) Same as EXIT\nRENAME Rename a Table\nSHOW List details about an object\nSOURCE Execute a file\nSTATUS (\\s) Display the current status\nTRUNCATE Empty a table\nUNLOCK Unlock table(s)\nUPDATE Update an existing record\nUSE Use a database Command Action\nALTER To alter a database or table\nBACKUP To back-up a table\n\\c To cancel Input\nCREATE To create a database\nDELETE To delete a row from a table\nDESCRIBE To describe a table's columns\nDROP To delete a database or table\nEXIT(ctrl+c) To exit\nGRANT To change user privileges\nHELP (\\h, \\?) Display help\nINSERT Insert data\nLOCK Lock table(s)\nQUIT(\\q) Same as EXIT\nRENAME Rename a Table\nSHOW List details about an object\nSOURCE Execute a file\nSTATUS (\\s) Display the current status\nTRUNCATE Empty a table\nUNLOCK Unlock table(s)\nUPDATE Update an existing record\nUSE Use a database Command Action Command Action Command Action ALTER To alter a database or table\nBACKUP To back-up a table\n\\c To cancel Input\nCREATE To create a database\nDELETE To delete a row from a table\nDESCRIBE To describe a table's columns\nDROP To delete a database or table\nEXIT(ctrl+c) To exit\nGRANT To change user privileges\nHELP (\\h, \\?) Display help\nINSERT Insert data\nLOCK Lock table(s)\nQUIT(\\q) Same as EXIT\nRENAME Rename a Table\nSHOW List details about an object\nSOURCE Execute a file\nSTATUS (\\s) Display the current status\nTRUNCATE Empty a table\nUNLOCK Unlock table(s)\nUPDATE Update an existing record\nUSE Use a database ALTER To alter a database or table ALTER To alter a database or table BACKUP To back-up a table BACKUP To back-up a table \\c To cancel Input \\c To cancel Input CREATE To create a database CREATE To create a database DELETE To delete a row from a table DELETE To delete a row from a table DESCRIBE To describe a table's columns DESCRIBE To describe a table's columns DROP To delete a database or table DROP To delete a database or table EXIT(ctrl+c) To exit EXIT(ctrl+c) To exit GRANT To change user privileges GRANT To change user privileges HELP (\\h, \\?) Display help HELP (\\h, \\?) Display help INSERT Insert data INSERT Insert data LOCK Lock table(s) LOCK Lock table(s) QUIT(\\q) Same as EXIT QUIT(\\q) Same as EXIT RENAME Rename a Table RENAME Rename a Table SHOW List details about an object SHOW List details about an object SOURCE Execute a file SOURCE Execute a file STATUS (\\s) Display the current status STATUS (\\s) Display the current status TRUNCATE Empty a table TRUNCATE Empty a table UNLOCK Unlock table(s) UNLOCK Unlock table(s) UPDATE Update an existing record UPDATE Update an existing record USE Use a database USE Use a database",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. What are MySQL Database Queries?",
+        "answer": "A query is a specific request or a question. One can query a database for specific information and have a record returned.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. How can you interact with MySQL?",
+        "answer": "There are three main ways you can interact with MySQL: using a command line\nvia a web interface\nthrough a programming language using a command line via a web interface through a programming language",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. What does a MySQL database contain?",
+        "answer": "A MySQL database contains one or more tables, each of which contains records or rows. Within these rows are various columns or fields that contain the data itself.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. What does SQL in MySQL stand for?",
+        "answer": "The SQL in MySQL stands for Structured Query Language. This language is also used in other databases such as Oracle and Microsoft SQL Server.  One can use commands such as the following to send requests from a database: SELECT title FROM publications WHERE author = ' J. K. Rowling\u2019; SELECT title FROM publications WHERE author = ' J. K. Rowling\u2019; Note that SQL is not case sensitive. However, it is a good practice to write the SQL keywords in CAPS and other names and variables in a small case. Note that SQL is not case sensitive. However, it is a good practice to write the SQL keywords in CAPS and other names and variables in a small case. You can check out this SQL Tutorial to learn more about SQL. SQL Tutorial SQL Tutorial",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "19. What do you mean by \u2018databases\u2019?",
+        "answer": "A database is a structured collection of data stored in a computer system and organized in a way to be quickly searched. With databases, information can be rapidly retrieved.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "20. What are some of the advantages of using MySQL?",
+        "answer": "Flexibility: MySQL runs on all operating systems\nPower: MySQL focuses on performance\nEnterprise-Level SQL Features: MySQL had for some time been lacking in advanced features such as subqueries, views, and stored procedures.\nFull-Text Indexing and Searching\nQuery Caching: This helps enhance the speed of MySQL greatly\nReplication: One MySQL server can be duplicated on another, providing numerous advantages\nConfiguration and Security Flexibility: MySQL runs on all operating systems Flexibility: Power: MySQL focuses on performance Power: Enterprise-Level SQL Features: MySQL had for some time been lacking in advanced features such as subqueries, views, and stored procedures. Enterprise-Level SQL Features: views views Full-Text Indexing and Searching Full-Text Indexing and Searching Query Caching: This helps enhance the speed of MySQL greatly Query Caching: Replication: One MySQL server can be duplicated on another, providing numerous advantages Replication: Configuration and Security Configuration and Security",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. What are the types of relationships used in MySQL?",
+        "answer": "There are three categories of relationships in MySQL: One-to-One: Usually, when two items have a one-to-one relationship, you just include them as columns in the same table.\nOne-to-Many: One-to-many (or many-to-one) relationships occur when one row in one table is linked to many rows in another table.\nMany-to-Many: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of the other tables One-to-One: Usually, when two items have a one-to-one relationship, you just include them as columns in the same table. One-to-One One-to-Many: One-to-many (or many-to-one) relationships occur when one row in one table is linked to many rows in another table. One-to-Many Many-to-Many: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of the other tables Many-to-Many",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What are the MySQL clients and utilities?",
+        "answer": "Several MySQL programs are available to help you communicate with the server. For administrative tasks, some of the most important ones are listed here: \u2022 mysql\u2014An interactive program that enables you to send SQL statements to the server and to view the results. You can also use mysql to execute batch scripts (text files containing SQL statements). mysql \u2022 mysqladmin\u2014An administrative program for performing tasks such as shutting down the server, checking its configuration, or monitoring its status if it appears not to be functioning properly. mysqladmin \u2022 mysqldump\u2014A tool for backing up your databases or copying databases to another server. mysqldump \u2022 mysqlcheck and myisamchk\u2014Programs that help you perform table checking, analysis, and optimization, as well as repairs if tables become damaged. mysqlcheck works with MyISAM tables and to some extent with tables for other storage engines. myisamchk is for use only with MyISAM tables. mysqlcheck and myisamchk",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What is the MySQL server?",
+        "answer": "The server, mysqld, is the hub of a MySQL installation; it performs all manipulation of databases and tables.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. How many Triggers are possible in MySQL?",
+        "answer": "There are six Triggers allowed to use in the MySQL database: Before Insert\nAfter Insert\nBefore Update\nAfter Update\nBefore Delete\nAfter Delete Before Insert After Insert Before Update After Update Before Delete After Delete",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What are MySQL Triggers?",
+        "answer": "A trigger is a task that executes in response to some predefined database event, such as after a new row is added to a particular table. Specifically, this event involves inserting, modifying, or deleting table data, and the task can occur either prior to or immediately following any such event. \nTriggers have many purposes, including:  Audit Trails\nValidation\nReferential integrity enforcement Audit Trails Validation Referential integrity enforcement",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. How do you create and execute views in MySQL?",
+        "answer": "Creating a view is accomplished with the CREATE VIEW statement. As an example: CREATE\n   [OR REPLACE]\n   [ALGORITHM = {MERGE | TEMPTABLE | UNDEFINED }]\n   [DEFINER = { user | CURRENT_USER }]\n   [SQL SECURITY { DEFINER | INVOKER }]\n   VIEW view_name [(column_list)]\n   AS select_statement\n   [WITH [CASCADED | LOCAL] CHECK OPTION] CREATE\n   [OR REPLACE]\n   [ALGORITHM = {MERGE | TEMPTABLE | UNDEFINED }]\n   [DEFINER = { user | CURRENT_USER }]\n   [SQL SECURITY { DEFINER | INVOKER }]\n   VIEW view_name [(column_list)]\n   AS select_statement\n   [WITH [CASCADED | LOCAL] CHECK OPTION]",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What are MySQL \u201cViews\u201d?",
+        "answer": "In MySQL, a view consists of a set of rows that is returned if a particular query is executed. This is also known as a \u2018virtual table\u2019. Views make it easy to retrieve the way of making the query available via an alias. \nThe advantages of views are:  Simplicity\nSecurity\nMaintainability Simplicity Security Maintainability",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. What are Transaction Storage Engines in MySQL?",
+        "answer": "To be able to use MySQL\u2019s transaction facility, you have to be using MySQL\u2019s InnoDB storage engine (which is the default from version 5.5 onward). If you are not sure which version of MySQL your code will be running on, rather than assuming InnoDB is the default engine you can force its use when creating a table, as follows.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What is Sharding in SQL?",
+        "answer": "The process of breaking up large tables into smaller chunks (called shards) that are spread across multiple servers is called Sharding. \nThe advantage of Sharding is that since the sharded database is generally much smaller than the original; queries, maintenance, and all other tasks are much faster. ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What is Scaling in MySQL?",
+        "answer": "In MySQL, scaling capacity is actually the ability to handle the load, and it\u2019s useful to think of load from several different angles such as: Quantity of data\nNumber of users\nUser activity\nSize of related datasets Quantity of data Number of users User activity Size of related datasets",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. Can you explain the logical architecture of MySQL?",
+        "answer": "The top layer contains the services most network-based client/server tools or servers need such as connection handling, authentication, security, and so forth.\nThe second layer contains much of MySQL\u2019s brains. This has the code for query parsing, analysis, optimization, caching, and all the built-in functions.  The third layer contains the storage engines that are responsible for storing and retrieving the data stored in MySQL.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. Conclusion",
+        "answer": "Several free or low-cost database management systems are available from which to choose, such as MySQL, PostgreSQL, or SQLite. When you compare MySQL with other database systems, think about what\u2019s most important to you. Performance, features (such as SQL conformance or extensions), support, licensing conditions, and price all are factors to take into account. MySQL is one of the best RDBMS being used for developing various web-based software applications. MySQL is offered under two different editions: the open-source MySQL Community Server and the proprietary Enterprise Server.\nGiven these considerations, MySQL has many attractive qualities:  Speed\nEase of use\nQuery language support\nCapability\nConnectivity and security\nPortability\nAvailability and cost\nOpen distribution and source code Speed Ease of use Query language support Capability Connectivity and security Portability Availability and cost Open distribution and source code Few MySQL References: Few MySQL References: https://www.mysql.com\nhttps://learning.oreilly.com/library/view/learning-mysql/0596008643/ https://www.mysql.com https://www.mysql.com https://learning.oreilly.com/library/view/learning-mysql/0596008643/ https://learning.oreilly.com/library/view/learning-mysql/0596008643/ Recommended Resources Recommended Resources Database Testing Interview Questions\nTechnical Interview Questions\nPostgreSQL vs MySQL\nSQL Vs MySQL\nMongoDB vs MySQL Database Testing Interview Questions Database Testing Interview Questions Technical Interview Questions Technical Interview Questions PostgreSQL vs MySQL PostgreSQL vs MySQL SQL Vs MySQL SQL Vs MySQL MongoDB vs MySQL MongoDB vs MySQL",
+        "reference": "interviewbit.com"
+    }
+]

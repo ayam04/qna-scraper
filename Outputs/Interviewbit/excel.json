@@ -1,0 +1,207 @@
+[
+    {
+        "question": "1. What is the ribbon in excel?",
+        "answer": "The term \"ribbon\" refers to the region at the top of the application that houses the MS Excel toolbars and menu items. With CTRL+F1, the ribbon can be displayed or hidden. The toolbars and menus have been replaced by the ribbon, which runs across the application's top. The top of the ribbons has a number of tabs, and each tab has its own set of commands. It has numerous tabs, including File, Home, View, Insert, and others. The ribbon can be altered to fit your requirements. Right-click on the Ribbon and choose \"Customise the Ribbon\" from the menu that appears. The following window appears as shown below. Each of these options is available for you to select or deselect.   Source: SpreadsheetWeb",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. What are wildcards in Excel?",
+        "answer": "Excel has three wildcards: three wildcards Asterisk(*): It represents zero or more characters. Ex*, for instance, might stand for Excel, Extra, Expertise, etc.\nQuestion mark(?): It represents a single character. R?in, for instance, might be either Rain or Ruin.\nTilde(~): A literal asterisk (*), a literal question mark (? ), or a literal tilde (~) can be created by adding a tilde (~) before a wildcard character to negate its effect. Asterisk(*): It represents zero or more characters. Ex*, for instance, might stand for Excel, Extra, Expertise, etc. Asterisk(*): Question mark(?): It represents a single character. R?in, for instance, might be either Rain or Ruin. Question mark(?): Tilde(~): A literal asterisk (*), a literal question mark (? ), or a literal tilde (~) can be created by adding a tilde (~) before a wildcard character to negate its effect. Tilde(~):",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Explain data validation in excel.",
+        "answer": "The types of values that a person may enter into a specific cell or a range of cells are limited by data validation. Choose the \"Data Validation\" option under \"Data Tools\" on the Data tab. Choose the data validation type you want to use. For example, a 'Name' column has data validation applied to it so that it will only take text entries. It will throw an error if you enter anything other than text.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. A student table is provided below. The following criteria should be used to write a function that adds pass/fail to the results column.The student will pass if their grade is greater than 60 and their attendance is higher than 75%.",
+        "answer": "To fill in the results column, use the IF() function and a check with an AND condition.   Source: Simplilearn",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. Explain the difference between SUBSTITUTE and REPLACE in excel.",
+        "answer": "A string can have one or more instances of any old text substituted with fresh text using the SUBSTITUTE function. A string can have one or more instances of any old text substituted with fresh text using the SUBSTITUTE function. Syntax: Syntax: SUBSTITUTE(text, prevText, newText, instanceNumber) SUBSTITUTE(text, prevText, newText, instanceNumber) Example: Example: Let text at A1 be happy77 SUBSTITUTE(A1,\u201d7\u2033,\u201d8\u2033,1) =>happy87 SUBSTITUTE(A1,\u201d7\u2033,\u201d8\u2033,2) =>happy88 The REPLACE function changes any portion of the old text string with new text. The REPLACE function changes any portion of the old text string with new text. Syntax: Syntax: REPLACE(oldText, startNumber, NumberCharacters, newText) REPLACE(oldText, startNumber, NumberCharacters, newText) Example: Example: Let text at A1 be happy77 REPLACE(A1,6,1,\u201d00\u2033) =>happy007",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. Which two macro languages are there in Microsoft Excel?",
+        "answer": "VBA and XLM (Visual Basic Applications). XLM was utilized in Excel's past editions. VBA was first used in Excel 5 and is now primarily used. VBA XLM",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What is a macro in excel?",
+        "answer": "Users can automate straightforward, repetitive chores and instructions using macros. For instance, rather than having to manually calculate sales, profits, losses, etc. every day, you could develop a macro that automatically calculates them at the end of the day and use it going ahead. Macros can be recorded and played at a later time or written down for use. Either go to the Developer tab and select Record Macro or go to the View tab to access it.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What is a pivot table?",
+        "answer": "One of Excel's most effective tools, a pivot table is always helpful when examining data. Excel pivot tables let you easily count, compare patterns, and confirm data trends while also analyzing large amounts of data. A pivot table summarises your data. The information is presented as a chart. You can report on and investigate patterns using a pivot table and the data you've already given it. When working with large datasets, pivot tables are useful. To process data and information in our Excel spreadsheets, pivot tables are versatile and useful reports. The following are some of the features of Excel pivot tables: Allow the precise facts you need to evaluate to be displayed\nProvide several vantage points to view the data\nAllow you to concentrate on crucial details\nData comparison is quite useful.\nPivot tables may recognize a variety of patterns, connections, data trends, etc.\nThey can produce data instantly.\nReliable reports\nAct as the foundation for pivot charts Allow the precise facts you need to evaluate to be displayed Provide several vantage points to view the data Allow you to concentrate on crucial details Data comparison is quite useful. Pivot tables may recognize a variety of patterns, connections, data trends, etc. They can produce data instantly. Reliable reports Act as the foundation for pivot charts   Source: Excelcampus",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. How do you create a pivot table?",
+        "answer": "It's not as difficult as it first appears to make a pivot table. To get the most out of this process, it is necessary to be aware of all its specifics. Make the data ready\nPut your information in the excel sheet.\nTo construct a pivot table, highlight your cells.\nIn \"Row Labels\" or \"Column Labels,\" drag and drop a field.\nDrag a field into the \"Values\" section.\nAdjust your calculations. Make the data ready Put your information in the excel sheet. To construct a pivot table, highlight your cells. In \"Row Labels\" or \"Column Labels,\" drag and drop a field. Drag a field into the \"Values\" section. Adjust your calculations.   While creating a pivot table, keep these in mind: Each of the columns' first-row headings should be distinctive.\nThere should only be one type of data in each column.\nRows can only include information for a single recording.\nno empty rows\nColumns shouldn't be left entirely empty. Each of the columns' first-row headings should be distinctive. There should only be one type of data in each column. Rows can only include information for a single recording. no empty rows Columns shouldn't be left entirely empty.   The data needed to create the pivot table must be kept apart from the other data in the sheet. The data needed to create the pivot table must be kept apart from the other data in the sheet. Select the table, then click on the Insert tab to create a pivot table. Then choose the Pivot Table command, and the following window will appear: Click OK after specifying the location where the table will be created. You will observe that a blank pivot table has been created once this is complete. Moreover, the PivotTables Fields window, which aids with pivot table configuration, will open.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. Differentiate between Pivot charts and standard charts.",
+        "answer": "The following are a few differences between Pivot charts and standard charts: The row/column format: A Pivot Chart's row/column orientation cannot be changed using the Select Data Source dialog box, in contrast to a normal chart. Instead, you can achieve the same result by pivoting the Row and Column labels of the corresponding PivotTable.\nChart type: A Pivot Chart can be changed into any form of a chart, with the exception of a xy (scatter), stock, or bubble chart.\nSource of data: Pivot Charts are based on the data source of the related Pivot Table, whereas standard charts are tied directly to worksheet cells. In contrast to a standard chart, the Pivot Chart's Choose Data Source dialog box does not allow you to alter the chart's data range.\nFormatting The majority of formatting, including newly added chart elements, structure, and style, is kept when you reload a Pivot Chart. Trendlines, data labels, error bars, and other modifications to data sets, however, are not kept. After being applied, standard charts retain their formatting. Although you can't directly modify the data labels in a Pivot Chart, you may still do it by increasing the text's font size. The row/column format: A Pivot Chart's row/column orientation cannot be changed using the Select Data Source dialog box, in contrast to a normal chart. Instead, you can achieve the same result by pivoting the Row and Column labels of the corresponding PivotTable. Chart type: A Pivot Chart can be changed into any form of a chart, with the exception of a xy (scatter), stock, or bubble chart. Source of data: Pivot Charts are based on the data source of the related Pivot Table, whereas standard charts are tied directly to worksheet cells. In contrast to a standard chart, the Pivot Chart's Choose Data Source dialog box does not allow you to alter the chart's data range. Formatting The majority of formatting, including newly added chart elements, structure, and style, is kept when you reload a Pivot Chart. Trendlines, data labels, error bars, and other modifications to data sets, however, are not kept. After being applied, standard charts retain their formatting. Although you can't directly modify the data labels in a Pivot Chart, you may still do it by increasing the text's font size.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. How does a slicer work in Excel?",
+        "answer": "Excel uses slicers to easily filter Pivot Tables. Even more, you can link numerous slicers to numerous pivot tables. Do the following to add a slicer to the pivot tables: Choose any cell in the pivot table by clicking it.\nSelect Analyze, then Filter, then Insert Slicer. Choose any cell in the pivot table by clicking it. Select Analyze, then Filter, then Insert Slicer.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What are the steps to split a column into two or more columns?",
+        "answer": "The following are the steps to split a column into two or more: Choose the cell you would like to split. Then, click on Text to Columns under the Data tab.\nDecide on a delimiter.\nChoose the location where you wish to display the split after selecting the column data format. Choose the cell you would like to split. Then, click on Text to Columns under the Data tab. Decide on a delimiter. Choose the location where you wish to display the split after selecting the column data format.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What is a cell address?",
+        "answer": "On a worksheet, a specific cell is identified by its cell address. It is determined by the appropriate column letter and the corresponding row number. The highlighted cell's address is D3 because, as shown, it is in row 3 and column 'D'.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. Differentiate between the terms \"absolute cell referencing\" and \"relative cell referencing\" in Microsoft Excel.",
+        "answer": "Instead of using values while generating a formula, we use cell references. In this method, as we alter the values of the cells, the formula's outcome also alters. References come in two varieties: Relative Reference: Relative references indicate the precise location of the cell, and it is the row and column in which the cell that has a value or a formula is situated. If we try taking that same cell to relocate it to another cell, worth the redundancy, it will refer to the new cells according to where they are located. As a result, we can claim that Excel predetermines relative references. Example: See the illustration below, where there is a formula written in C9 and copied to C10. As you can see, C10, as opposed to A9 and B9, displays the total of A10 and B10. Relative Reference: Relative references indicate the precise location of the cell, and it is the row and column in which the cell that has a value or a formula is situated. If we try taking that same cell to relocate it to another cell, worth the redundancy, it will refer to the new cells according to where they are located. As a result, we can claim that Excel predetermines relative references. Example: See the illustration below, where there is a formula written in C9 and copied to C10. As you can see, C10, as opposed to A9 and B9, displays the total of A10 and B10. Relative Reference:   Absolute Reference: An exact address is represented by the absolute reference. In other words, it constantly refers to the same cell, making it impossible to change them during copying. Absolute references are crucial since they are fixed, which is excellent when using Excel functions or formulae. Example: The $ symbol must come before the column and row numbers if you want to use absolute referencing. The row and column addresses do not change when absolute cell references are used; they stay the same. Look at the illustration in the following image: Absolute Reference: An exact address is represented by the absolute reference. In other words, it constantly refers to the same cell, making it impossible to change them during copying. Absolute references are crucial since they are fixed, which is excellent when using Excel functions or formulae. Example: The $ symbol must come before the column and row numbers if you want to use absolute referencing. The row and column addresses do not change when absolute cell references are used; they stay the same. Look at the illustration in the following image: Absolute Reference:   Image Source: Edureka",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. What do you understand by \u201cfreeze panes\u201d in MS excel?",
+        "answer": "With freeze panes, any row or column can be locked. Even if we vertically or horizontally scroll the sheet, the locked row or column will still be visible on the screen. Observe the instructions below to freeze panes in Excel. Choose the Rows and Columns you want to Freeze first.\nThen choose Freeze Pane from the View tab.\nNow, you have the following three options to pick and choose which rows and columns to freeze. Choose the Rows and Columns you want to Freeze first. Then choose Freeze Pane from the View tab. Now, you have the following three options to pick and choose which rows and columns to freeze.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. How can one restrict copying a cell from a worksheet?",
+        "answer": "To restrict someone from copying a cell from our worksheet, we need to follow the steps given below: Select the data you wish to safeguard first.\nPress Ctrl, Shift, and F. It then shows the Format Cells tab. Select the Protection tab. Click OK after selecting Locked.\nThen, click Protect Sheet from the Review menu. To secure the sheet, enter the password. Select the data you wish to safeguard first. Press Ctrl, Shift, and F. It then shows the Format Cells tab. Select the Protection tab. Click OK after selecting Locked. Then, click Protect Sheet from the Review menu. To secure the sheet, enter the password.   Gif Source: WPS Academy",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. Differentiate a formula from a function in excel.",
+        "answer": "Formula:\nThe user types in the formula, which looks like an Excel equation. Based on the user's preference, it might be any kind of calculation. It takes longer to manually type a formula each time you need to make a computation. \nExample: B1 + B2 + B3\nFunction:\nAn Excel function is a built-in computation that has been predefined. Using functions makes conducting computations quicker and more comfortable.\nExample: SUM(B1 : B3) Formula:\nThe user types in the formula, which looks like an Excel equation. Based on the user's preference, it might be any kind of calculation. It takes longer to manually type a formula each time you need to make a computation. \nExample: B1 + B2 + B3 Formula: The user types in the formula, which looks like an Excel equation. Based on the user's preference, it might be any kind of calculation. It takes longer to manually type a formula each time you need to make a computation. \nExample: B1 + B2 + B3 The user types in the formula, which looks like an Excel equation. Based on the user's preference, it might be any kind of calculation. It takes longer to manually type a formula each time you need to make a computation. Example: B1 + B2 + B3 Function:\nAn Excel function is a built-in computation that has been predefined. Using functions makes conducting computations quicker and more comfortable.\nExample: SUM(B1 : B3) Function: An Excel function is a built-in computation that has been predefined. Using functions makes conducting computations quicker and more comfortable.\nExample: SUM(B1 : B3) An Excel function is a built-in computation that has been predefined. Using functions makes conducting computations quicker and more comfortable. Example: SUM(B1 : B3)",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. Discuss how Excel evaluates formulas in terms of the order of operations.",
+        "answer": "PEDMAS is the term used to describe the Excel operation order. The precedence list for an Excel operation is displayed below. Parentheses\nExponentiation\nDivision/Multiplication\nAddition\nSubtraction Parentheses Exponentiation Division/Multiplication Addition Subtraction As can be seen above, the exponentiation process is performed after the data in the parenthesis is processed. Following that, either the division or multiplication procedures may be performed. The outcome is then added and finally subtracted, to provide the result.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "19. Write the differences between COUNT, COUNTA and COUNTBLANK.",
+        "answer": "COUNT: The number of cells with simply numerical values is counted. Blank cells, special characters, and cells with string values will not be included in the calculation.\nCOUNTA: The number of cells with any kind of content is counted. Numeric data, special characters, and string values contained in cells will all be counted. A blank cell will not be taken into account, though.\nCOUNTBLANK: It solely counts the number of blank cells, as the name would imply. Content-containing cells will not be taken into account. COUNT: The number of cells with simply numerical values is counted. Blank cells, special characters, and cells with string values will not be included in the calculation. COUNT: COUNTA: The number of cells with any kind of content is counted. Numeric data, special characters, and string values contained in cells will all be counted. A blank cell will not be taken into account, though. COUNTA: COUNTBLANK: It solely counts the number of blank cells, as the name would imply. Content-containing cells will not be taken into account. COUNTBLANK:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "20. How can we combine text strings from several cells into one cell?",
+        "answer": "Use the CONCATENATE command to combine text strings that are contained in numerous cells into one cell. Up to 30 text pieces can be joined using the Excel CONCATENATE function, which returns the result as text. CONCATENATE The Excel Concatenate function has the following syntax: CONCATENATE (text1, text2, ..) CONCATENATE (text1, text2, ..) The following formula can be used to CONCATENATE the values of two cells, A2 and B2: CONCATENATE (A2, B2). There will not be any delimiters used when combining the values. Use a space (\" \") to demarcate the values: CONCATENATE(A3, \" \", B3).",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "21. How would you add comments to your cells?",
+        "answer": "You must right-click a cell and select add comment from the cell menu to add a comment to it. Write your comment in the space provided for comments. There is a comment associated with that specific cell if there is a red triangle in the upper right corner of the cell. Right-click the cell and choose \"Delete Comment\" from the cell menu to get rid of a comment.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "22. What are spreadsheets?",
+        "answer": "Spreadsheets are software programs that facilitate effective data organization, calculation, and sorting. A spreadsheet consists of rows and columns spread throughout. The total number of rows and columns on an MS excel worksheet is 1,048,576 rows by 16,384 columns. There is a worksheet (labeled \"Sheet1\") as shown below, and we also notice a \"+\" sign somewhere at the bottom, which indicates we can create a new sheet. We can add, rename, remove, hide, show, and perform other actions on sheets. Worksheets are added by default as Sheet1, Sheet2, etc. Such sheets are simple to rename as necessary.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "23. What is VLOOKUP in excel? How does the VLOOKUP function work?",
+        "answer": "Excel's VLOOKUP (which stands for Vertical Lookup) function is used to find and produce data from a specific set. To make use of this functionality, we need to arrange the data vertically because V is for Vertical in VLOOKUP. Whenever we need to find a certain amount of data from a vast amount of data, VLOOKUP is tremendously helpful. The VLOOKUP function in Excel has a lookup value and starts searching in the left-hand column. VLOOKUP will move right, or into the search value row if the value of that search appears first. It keeps on until the specified column number is returned. This function compares estimated and true search values. Nonetheless, the default match is approximate. Here, lookup_value: The value that you wish to check for is known as the lookup value.\ntable_index: The set of data to be taken from is the table index.\ncol_index_num: col index num specifies the column you wish to extract the value from.\nrange_lookup: Logical value, i.e., TRUE or FALSE, is the range lookup (TRUE finds the closest match; FALSE will check for an exact match) lookup_value: The value that you wish to check for is known as the lookup value. lookup_value: table_index: The set of data to be taken from is the table index. table_index: col_index_num: col index num specifies the column you wish to extract the value from. col_index_num: range_lookup: Logical value, i.e., TRUE or FALSE, is the range lookup (TRUE finds the closest match; FALSE will check for an exact match) range_lookup:  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "24. Can VLOOKUP be used on many tables?",
+        "answer": "Indeed, you can use VLOOKUP for several tables. If you have two search tables, create named fields for each of them and use the IF function to choose from each table in accordance with a predetermined set of criteria.   Source: Excel Tip",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "25. How is VLOOKUP different from LOOKUP?",
+        "answer": "The user can use VLOOKUP to search for a value in a table's leftmost column. The value is then returned in a left-to-right way. On the other hand, the user can search for data in a row or column using the LOOKUP function. It shows up the value in a different row or column.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "26. Discuss the functionality of IF() in Excel.",
+        "answer": "The IF() function in Excel does a logical test. If the test results in true, it returns a value; if the test results in false, it returns a different value. Whether the condition holds for the full chosen range determines what value is returned.   Source: My Online Training Hub",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "27. Discuss the functionality of SUMIF() in Excel.",
+        "answer": "Cell values described by a particular condition or set of criteria are added by the SUMIF() function. Syntax: =SUMIF(range, criteria, [sum_range]) Syntax:   Source: Excel Practice Online Note: Note: range (necessary): the set of cells you want to subject to criterion. Each range must include only numbers, names, arrays, or references containing numbers. Values that are blank or text are ignored. Dates in the typical Excel format could be found in the selected range.\ncriteria (necessary): A number, expression, cell reference, text, or function that specifies which cells will be added can all be used as criteria\nsum_range   (optional): the actual cells to add if you wish to add cells that are not listed in the range argument. The cells that are given in the range parameter are added by Excel if the sum_range argument is not present (those cells to which the criteria are imposed). range (necessary): the set of cells you want to subject to criterion. Each range must include only numbers, names, arrays, or references containing numbers. Values that are blank or text are ignored. Dates in the typical Excel format could be found in the selected range. criteria (necessary): A number, expression, cell reference, text, or function that specifies which cells will be added can all be used as criteria sum_range   (optional): the actual cells to add if you wish to add cells that are not listed in the range argument. The cells that are given in the range parameter are added by Excel if the sum_range argument is not present (those cells to which the criteria are imposed).",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "28. How do you create a dropdown list in excel?",
+        "answer": "The 'Data Validation' option found in the Data tab can accomplish this. Select the cells in which the drop-down lists are to be added.\nSelect Data, then click on Data Validation.\nSelect List from the menu under Allow.\nGive the input for the items (separated by a comma) in your dropdown list in the Source tab. Select the cells in which the drop-down lists are to be added. Select Data, then click on Data Validation. Select List from the menu under Allow. Give the input for the items (separated by a comma) in your dropdown list in the Source tab. The dropdown list is ready.   Source: Trump Excel",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "29. Highlight the cells with total sales > $5000 using the sales information below.",
+        "answer": "Cells that meet the criterion are highlighted in this case using conditional formatting. Choose \"Conditional Formatting\" from the home tab, then \"Greater Than option\" under the Highlight Cells Rules section. Choose the color for the highlighted cells and specify the criterion.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "30. How do you identify repeated values in a column?",
+        "answer": "You may utilize conditional formatting or the COUNTIF() function to identify duplicate values in a column. Conditional Formatting: Choose \"Highlight Cells Rules\" under Conditional Formatting after first selecting the Home tab. Next, select \"Duplicate Values.\"\nCOUNTIF(): To determine whether the values in a given column are repeated, you can implement a COUNTIF() method. Conditional Formatting: Choose \"Highlight Cells Rules\" under Conditional Formatting after first selecting the Home tab. Next, select \"Duplicate Values.\" Conditional Formatting: COUNTIF(): To determine whether the values in a given column are repeated, you can implement a COUNTIF() method. COUNTIF():  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "31. How can duplicate values be eliminated from a cell range?",
+        "answer": "You may eliminate duplicate values by choosing the 'Remove Duplicates' option from the Data Tools menu on the Data tab.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. Can many tables be used to build pivot tables?",
+        "answer": "Absolutely, more than one basis table can be used to build pivot tables. Follow these instructions to do this: To launch the Pivot Table Wizard, press Alt+D followed by P.\nWhen you click Next after selecting the Multiple consolidation ranges option, another dialog box will appear.\nChoose the option \"I will create the page fields\" and then click \"Next\".\nThe relevant ranges must all be added in the following window. To launch the Pivot Table Wizard, press Alt+D followed by P. When you click Next after selecting the Multiple consolidation ranges option, another dialog box will appear. Choose the option \"I will create the page fields\" and then click \"Next\". The relevant ranges must all be added in the following window.   Once that is finished, select the region where you wish to construct the table by clicking Next and then clicking Finish.\nYou will observe that the pivot table was produced by combining the two tables. Once that is finished, select the region where you wish to construct the table by clicking Next and then clicking Finish. You will observe that the pivot table was produced by combining the two tables.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Can you use tables from separate worksheets to create a pivot table?",
+        "answer": "You can also build a pivot table for tables from different sheets if both sheets are from the same worksheet. Use the same procedures as in Q31 to construct a pivot table from two separate sheets. After you define the tables, navigate to the appropriate sheet and choose the tables you want to combine.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Without installing Microsoft Office, how can I produce an Excel (.XLS and .XLSX) file in C#?",
+        "answer": "ExcelLibrary can be used to create Excel files in C# without the need to install Microsoft Office. It is an open-source, cost-free, and basic library on Google Code. It is a PHP ExcelWriter port. It includes a DataSetHelper that makes using DataSets and DataTables easier. ExcelLibrary supports the older Excel format (.xls files), and support for the more recent 2007/2010 formats will be added. The alternative is EPPlus. It has NPOI and is compatible with Excel 2007/2010 format files (.xlsx files). Pivot Tables are also supported by EPPlus.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. How can you prevent Excel from turning specific text values into dates automatically?",
+        "answer": "That is a common problem encountered by Excel users. But, you can include a '=' before the double quotes to prevent Excel from turning certain text values into dates automatically. The data must be text due to this operation. Example: =\u201d2022-11-27\u2033.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. Is it possible to crack the password for an Excel VBA project?",
+        "answer": "Indeed, using a spreadsheet in the.xls format, we can decrypt the password for an Excel VBA project. Due to the secure nature of.xlsx files, this won't function with them. Using a hex editor, change the password entry in the file. Create a fresh .xls file.\nSet a simple password, such as \"abcd,\" in the VBA section.\nSave the document, then exit\nVerify the file size.\nUse a hex editor to view the file.\nStart copying the lines with the ensuing keys: CMG=\u2026., DPB=\u2026, GC=\u2026\nNow that we don't know the VBA password for the excel file, we need to back up that data.\nUsing the hex editor, launch the file\nPut the lines you just copied from the dummy file in there.\nSave the excel document, then quit.\nOpen the excel document where the VBA code has to be checked. The password is abcd. Create a fresh .xls file. Set a simple password, such as \"abcd,\" in the VBA section. Save the document, then exit Verify the file size. Use a hex editor to view the file. Start copying the lines with the ensuing keys: CMG=\u2026., DPB=\u2026, GC=\u2026 Now that we don't know the VBA password for the excel file, we need to back up that data. Using the hex editor, launch the file Put the lines you just copied from the dummy file in there. Save the excel document, then quit. Open the excel document where the VBA code has to be checked. The password is abcd.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What do you understand by What If analysis?",
+        "answer": "What-if analysis is a technique for changing one or more cellular formulas to examine how the changes affect the worksheet results. Three different What-if approaches for analysis are available in Excel: Scenarios, Goal Seek, and Data Tables. Data tables and scenarios offer a selection of inputs for potential results. While several variables can work with scenarios, a limit of 32 input values is allowed.  Data tables only work with one or two variables, but they can all take on a variety of different values. Unlike Scenarios and Data Tables, Goal Seek takes outputs and determines prospective inputs to the same.   Source: Wmfexcel",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. How can I disable Pivot Tables' automatic sorting?",
+        "answer": "The data that is available in the Pivot Tables are automatically sorted by Excel. If you do not want Excel to do this action, select More Sort Options from the drop-down option for the Row Labels or Column Labels. The Sort dialog box appears as it opens. Deselect the option for Automatic Sort by selecting More Options.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What distinguishes a function from a subroutine in VBA?",
+        "answer": "Function Subroutine\nA function's responsibility is to give the result of the task it performs. Subroutines, on the other hand, don't return the result of the task they are carrying out.\nA variable calls them. They can be recalled in many ways and at any point in the program.\nFunctions are used in spreadsheets in the same way that formulas are. Spreadsheets do not directly use subroutines as formulas.\nRepetitive tasks are performed by functions, which then return a value. Before retrieving the subroutine's output, users must enter a value in the targeted cell. Function Subroutine\nA function's responsibility is to give the result of the task it performs. Subroutines, on the other hand, don't return the result of the task they are carrying out.\nA variable calls them. They can be recalled in many ways and at any point in the program.\nFunctions are used in spreadsheets in the same way that formulas are. Spreadsheets do not directly use subroutines as formulas.\nRepetitive tasks are performed by functions, which then return a value. Before retrieving the subroutine's output, users must enter a value in the targeted cell. Function Subroutine Function Subroutine Function Subroutine A function's responsibility is to give the result of the task it performs. Subroutines, on the other hand, don't return the result of the task they are carrying out.\nA variable calls them. They can be recalled in many ways and at any point in the program.\nFunctions are used in spreadsheets in the same way that formulas are. Spreadsheets do not directly use subroutines as formulas.\nRepetitive tasks are performed by functions, which then return a value. Before retrieving the subroutine's output, users must enter a value in the targeted cell. A function's responsibility is to give the result of the task it performs. Subroutines, on the other hand, don't return the result of the task they are carrying out. A function's responsibility is to give the result of the task it performs. Subroutines, on the other hand, don't return the result of the task they are carrying out. A variable calls them. They can be recalled in many ways and at any point in the program. A variable calls them. They can be recalled in many ways and at any point in the program. Functions are used in spreadsheets in the same way that formulas are. Spreadsheets do not directly use subroutines as formulas. Functions are used in spreadsheets in the same way that formulas are. Spreadsheets do not directly use subroutines as formulas. Repetitive tasks are performed by functions, which then return a value. Before retrieving the subroutine's output, users must enter a value in the targeted cell. Repetitive tasks are performed by functions, which then return a value. Before retrieving the subroutine's output, users must enter a value in the targeted cell.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. How would you debug a VBA code?",
+        "answer": "The F8 key can be used to debug a VBA program line by line. Also, you have the option of setting a breakpoint to stop the execution anywhere. When you press F8, the code will begin to be executed from the beginning and continue until the conclusion, executing the following line each time. The highlighted line and the yellow arrow indicate the current point of execution.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. Provide an illustration of the approximate match.",
+        "answer": "When there are no exact matches for the provided lookup_value, VLOOKUP will fetch values to get an approximate match. Set the range_lookup value to TRUE for a rough match. Keep in mind that for VLOOKUP to do an approximate match, the table must be ordered in ascending order. In this case, VLOOKUP basically starts by searching for a roughly matching value to the specified lookup value before stopping at the value that is the next largest. It then enters that row to return the value from the designated column. Example:   Choose the target cell, then enter \"=\".\nDeploy VLOOKUP.\nAdd the lookup value to the list of parameters.\nUse TRUE as the range lookup value.\nThe function will be =VLOOKUP (55, A12: C15, 3, TRUE) Choose the target cell, then enter \"=\". Deploy VLOOKUP. Add the lookup value to the list of parameters. Use TRUE as the range lookup value. The function will be =VLOOKUP (55, A12: C15, 3, TRUE) The lookup value is 55 and the next largest value near the lookup value that is present in the first column is 40. Hence, the output is \u2018Second Class\u2019.",
+        "reference": "interviewbit.com"
+    }
+]

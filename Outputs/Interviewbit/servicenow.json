@@ -1,0 +1,227 @@
+[
+    {
+        "question": "1. What is the purpose of the setWorkflow(e) function?",
+        "answer": "The setWorkflow(e) is useful in enabling or disabling the execution of business rules that are subsequent actions triggered. If you set the parameter \u201ce\u201d value to false, an insert/update operation will not be audited. When the parameter \u201ce\u201d value is set to true for a GlideRecord operation, then only auditing will be done. Parameter \u201ce\u201d represents a boolean variable that will enable business rules if the value is true(default), and will disable them if the value is false. setWorkflow(e)",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Explain the types of reports available in ServiceNow.",
+        "answer": "Bar reports: They allow you for comparing scores over data dimensions.\nPie and Donut reports: It helps to visualize the relationship between parts and the entire data set using various shapes like pies.\nTime Series reports: It helps to visualize data over time. You can make use of MetricBase data in time series reports, along with your instance data and imported data sources.\nMultidimensional reports: It helps to visualize data across dimensions in a table or graph.\nScores: It helps to visualize single data points either as a single value or across ranges.\nStatistical reports: It helps to visualize data with statistical values like means and medians.\nOther reports contain calendars, lists, and maps. Bar reports: They allow you for comparing scores over data dimensions. Bar reports: Pie and Donut reports: It helps to visualize the relationship between parts and the entire data set using various shapes like pies. Pie and Donut reports: Time Series reports: It helps to visualize data over time. You can make use of MetricBase data in time series reports, along with your instance data and imported data sources. Time Series reports: Multidimensional reports: It helps to visualize data across dimensions in a table or graph. Multidimensional reports: Scores: It helps to visualize single data points either as a single value or across ranges. Scores: Statistical reports: It helps to visualize data with statistical values like means and medians. Statistical reports: Other reports contain calendars, lists, and maps.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. What is a foreign record insert?",
+        "answer": "When an import does a modification to a table that is not the target table for that particular import, then a foreign record insert happens. This occurs when you try to update a reference field on a table.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. How to set the invalid queries into empty result sets in ServiceNow?",
+        "answer": "By default, queries having invalid field names executes but invalid condition will be ignored. You can enable the glide.invalid_query.returns_no_rows property for more strict query control. It will produce an empty result set for invalid queries. glide.invalid_query.returns_no_rows property",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. List out the order of processing for Record ACL rules in the ServiceNow platform.",
+        "answer": "Processing order for Record ACL rules is given below: Matching the object against ACL rules related to the field.\nMatching the object against ACL rules related to the table.\nBoth field and table ACL rules must be passed by the user to gain access to a record object. Matching the object against ACL rules related to the field. Matching the object against ACL rules related to the table. Both field and table ACL rules must be passed by the user to gain access to a record object.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. How to restrict users from uploading an attachment in ServiceNow?",
+        "answer": "Following is the stepwise process for restricting users to upload an attachment: Go to System Properties -> Security.\nUnder the Attachment limits and behavior section, search for a role list that can produce attachments: property(glide.attachment.role).\nMention one or more roles(separated by commas).\nOnly roles listed under this property will be allowed to upload attachments to a record. If no roles are mentioned, then all roles are permitted to upload attachments to ServiceNow forms.\nClick on Save. Go to System Properties -> Security. Under the Attachment limits and behavior section, search for a role list that can produce attachments: property(glide.attachment.role). Mention one or more roles(separated by commas). Only roles listed under this property will be allowed to upload attachments to a record. If no roles are mentioned, then all roles are permitted to upload attachments to ServiceNow forms. Click on Save.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. What is the scope of cascade variable checkbox in order guide in ServiceNow?",
+        "answer": "It is a checkbox for selecting whether the used variables should cascade, which transmits their values to the items ordered. Variable data entered in the order guide will not be passed on to ordered items if we clear this checkbox.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. Explain Change Management in ServiceNow.",
+        "answer": "The Change Management application in ServiceNow gives an organized approach for controlling the life cycle of entire changes. It also provides useful changes to be made with minimum interference to IT services. Conclusion: We believe that you found this particular article very useful and insightful for your ServiceNow interview preparations. Get yourself prepared for every question thoroughly as it is going to enhance your understanding of the subject. Apart, you can also take inspiration from these questions, so as to get an idea of what type of questions are being asked in the ServiceNow interview and how your responses should be presented to the interviewer. The ServiceNow interview will normally have a variety set of questions, and the above questions on ServiceNow will definitely touch every such aspect. In order to get a better hold on this subject, please leverage your time to learn deeper about the core ServiceNow concepts.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. Differentiate between next() and _next() method in ServiceNow.",
+        "answer": "The \nn\ne\nx\nt\n(\n)\n method is used for moving into the next record in GlideRecord. \n_\nn\ne\nx\nt\n(\n)\n is quite similar to \nn\ne\nx\nt\n(\n)\n, the difference is it is used when you query the table that has next as a column name. n\ne\nx\nt\n(\n) n\ne\nx\nt\n(\n) n\ne\nx\nt\n(\n) n e x t ( )  _\nn\ne\nx\nt\n(\n) _\nn\ne\nx\nt\n(\n) _\nn\ne\nx\nt\n(\n) _ n e x t ( )  n\ne\nx\nt\n(\n) n\ne\nx\nt\n(\n) n\ne\nx\nt\n(\n) n e x t ( ) ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is a business rule?",
+        "answer": "The business rule is server-side scripting, which gets executed when you try to insert, delete, update, display or query a record. The main use of creating a business rule is that you can decide when and on what action it will execute. The business rule can be applied to the following states: \nd\ni\ns\np\nl\na\ny\n, \nb\ne\nf\no\nr\ne\nor \na\nf\nt\ne\nr\n. d\ni\ns\np\nl\na\ny d\ni\ns\np\nl\na\ny d\ni\ns\np\nl\na\ny d i s p l a y  b\ne\nf\no\nr\ne b\ne\nf\no\nr\ne b\ne\nf\no\nr\ne b e f o r e  a\nf\nt\ne\nr a\nf\nt\ne\nr a\nf\nt\ne\nr a f t e r ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. Write the full form of CMDB and explain what is it?",
+        "answer": "CMDB stands for Configuration Management Database. CMDB is a repository that can be used as a data warehouse for IT installations. It will hold the data associated with IT assets collections and details about relationships between assets. Configuration Management Database",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. Explain the steps for enabling or disabling an application in ServiceNow.",
+        "answer": "Use the below-given steps to enable or disable an application in ServiceNow: Go to the \u201cApplication Menus\u201d module.\nOpen the required application that has to be enabled or disabled.\nYou can set the active value as \u201ctrue\u201d to enable the application. To disable the application set the active value as \u201cfalse\u201d. Go to the \u201cApplication Menus\u201d module. Open the required application that has to be enabled or disabled. You can set the active value as \u201ctrue\u201d to enable the application. To disable the application set the active value as \u201cfalse\u201d.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. Explain record matching and data lookup features in ServiceNow.",
+        "answer": "The data lookup and record matching features allow you for setting up the field value based on a particular condition instead of scriptwriting. For example, on incident forms, the priority lookup rules automatically sample data. Now, set the priority of an incident based on the urgency values and the incident impact. Data lookup rules allow you to specify the fields and conditions where you wish data lookup to happen.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. What is meant by Coalesce in ServiceNow?",
+        "answer": "The field property that is used in transform map field mapping is known as Coalesce. Coalescing on a field allows you to use that field as a unique key. The existing record will get updated with the imported information if a match with the coalesce field is found. If you can\u2019t find a match, then insertion of a new record into the database will take place.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. What is meant by impersonating a user? How it is useful?",
+        "answer": "Impersonating a user means providing the administrator access to what the actual user would have access to. This will have the same modules as well as menus. ServiceNow records all activities of an administrator when the user is impersonating another user. This feature of ServiceNow is very helpful in testing. For example, if you want to test that whether a user is able to access the change form or not. You are allowed to impersonate that user and can perform testing without any need of logging out from your session and again logging in with that user credentials.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. What is dictionary override in ServiceNow?",
+        "answer": "Dictionary overrides allow for overriding various field properties in an extended table. Consider an example of a changing table that is extended from the task table. There is a status field in the task table which is set as read-only. If you use this field in change form, it will be in read-only mode. By using the dictionary override, we can alter this to non-read only.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. What is a data policy?",
+        "answer": "Data policies are helpful to enforce data consistency by setting read-only and mandatory states. They can be quite relatable to UI policies, but the difference is UI policies are applied only to the data provided on forms using standard browsers. Also, it can apply rules to each data entered, like data entered through import sets, web services, email, or mobile UI. For example, if a mandatory field in the entered record is empty then it is possible to prevent the insertion of that record into the table by using data policy.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. What are UI policies in ServiceNow?",
+        "answer": "UI policies are considered as an alternative for client scripts. You can set a field as mandatory, which is read-only, and visible on a form by using UI policies. It can be used to dynamically change a field on a form.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "19. What is a transform map in ServiceNow?",
+        "answer": "A transform map in ServiceNow is a field map set that controls the relationship between the import set table\u2019s displayed fields and the target table\u2019s existing fields, like \nI\nn\nc\ni\nd\ne\nn\nt\n[\ni\nn\nc\ni\nd\ne\nn\nt\n]\n or \nU\ns\ne\nr\n[\ns\ny\ns\n_\ns\ne\nr\n]\n.\nAfter transform map creation, you can reuse this to map data from one more import set to the same table.\nA transform map allows an administrator to define final destinations for data imported on tables. This will make it easier to specify linkage between the import set table\u2019s source fields and the target table\u2019s destination fields.\nYou can use transform mapping to dynamically map source fields and destination fields. A transform map in ServiceNow is a field map set that controls the relationship between the import set table\u2019s displayed fields and the target table\u2019s existing fields, like \nI\nn\nc\ni\nd\ne\nn\nt\n[\ni\nn\nc\ni\nd\ne\nn\nt\n]\n or \nU\ns\ne\nr\n[\ns\ny\ns\n_\ns\ne\nr\n]\n. I\nn\nc\ni\nd\ne\nn\nt\n[\ni\nn\nc\ni\nd\ne\nn\nt\n] I\nn\nc\ni\nd\ne\nn\nt\n[\ni\nn\nc\ni\nd\ne\nn\nt\n] I\nn\nc\ni\nd\ne\nn\nt\n[\ni\nn\nc\ni\nd\ne\nn\nt\n] I n c i d e n t\n[\ni\nn\nc\ni\nd\ne\nn\nt\n] t [\ni\nn\nc\ni\nd\ne\nn\nt\n] [ i n c i d e n t ]  U\ns\ne\nr\n[\ns\ny\ns\n_\ns\ne\nr\n] U\ns\ne\nr\n[\ns\ny\ns\n_\ns\ne\nr\n] U\ns\ne\nr\n[\ns\ny\ns\n_\ns\ne\nr\n] U s e r\n[\ns\ny\ns\n_\ns\ne\nr\n] r [\ns\ny\ns\n_\ns\ne\nr\n] [ s y s _ s e r ]  After transform map creation, you can reuse this to map data from one more import set to the same table. A transform map allows an administrator to define final destinations for data imported on tables. This will make it easier to specify linkage between the import set table\u2019s source fields and the target table\u2019s destination fields. You can use transform mapping to dynamically map source fields and destination fields.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "20. What is domain separation in ServiceNow?",
+        "answer": "Domain separation is a useful method for separating data into logically defined domains. Also, it can be used to separate administration. For example, consider a client who has two businesses and has a single ServiceNow instance for both businesses. He doesn\u2019t want users from one business to view other business data. In this case, we can use domain separation for isolating the records from both businesses.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "21. What is ServiceNow?",
+        "answer": "ServiceNow is a cloud-based ITSM (IT Service Management) tool that offers a single record system for business management, operations, and IT services. All features related to the organization\u2019s IT services reside within the ServiceNow ecosystem. You can obtain a complete view of the resources and services. This permits you to control the allocation of resources in a better way and helps to efficiently design the process flow. ServiceNow provides services such as HR, security, business applications, customer service, and IT(Information Technology) service delivery. It is considered an integrated cloud solution where we can get all of these services in a single place.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "22. What is import set in ServiceNow?",
+        "answer": "The import set tool is utilized for importing data from multiple sets of data sources and then map that data into ServiceNow tables through transform maps. It behaves as a staging table for imported records.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "23. What is HTML sanitizer in ServiceNow?",
+        "answer": "The HTML Sanitizer is useful in cleaning up HTML markup in HTML fields automatically. Also, it will eliminate unwanted code and protect against security threats like cross-site script attacks. Starting from the Eureka release, the HTML sanitizer is active for all instances.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "24. What are the gauges in ServiceNow?",
+        "answer": "A gauge can be seen on the homepage of ServiceNow and can contain up-to-date information about the record\u2019s current status that is present on ServiceNow tables. A gauge is based on a report and it can be placed on a homepage or a content page.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "25. What are the metrics in ServiceNow?",
+        "answer": "Metrics are used for recording and measuring the workflow of individual records. By using metrics, customers are able to arm their process by giving tangible figures for measuring. For example, how much time it takes before a ticket is reassigned or changes its state.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "26. What are the different types of searches that are available in ServiceNow?",
+        "answer": "Below given list of searches are helpful in ServiceNow to find the information: Lists: Used to obtain records in a list.\nKnowledge base: Used to find knowledge-based articles.\nGlobal text search: Used to find records in different tables from a search field.\nNavigation filter: Used to filter the application navigator items.\nSearch screens: Use a form as an interface for searching table records. These custom modules can be created by administrators. Lists: Used to obtain records in a list. Lists: Knowledge base: Used to find knowledge-based articles. Knowledge base: Global text search: Used to find records in different tables from a search field. Global text search: Navigation filter: Used to filter the application navigator items. Navigation filter: Search screens: Use a form as an interface for searching table records. These custom modules can be created by administrators. Search screens:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "27. What do you mean by a record producer in ServiceNow?",
+        "answer": "catalog item that permits users in the creation of task-based records by using Service Catalog is known as a record producer. For example, you can consider the creation of a problem record or a change record by using a record producer. It will give you an alternative method for the creation of records via Service Catalog.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "28. What is a BSM Map?",
+        "answer": "BSM map stands for Business Service Management map. Configuration Items(CI) are graphically displayed by using a BSM map. These items are used to provide support for a business service and indicates the Configuration Items related status.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "29. What is ACL in ServiceNow?",
+        "answer": "ACL(Access Control List) in ServiceNow defines what can be accessed by data users and in what way they can access the same. ACL rules require users to fulfill individual requirements to obtain access to particular data. Access Control List",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "30. What is an inactivity monitor?",
+        "answer": "An inactivity monitor is used in event triggering for a task record if the task was kept in an inactive state for a certain period. If the task remains in an inactive state, the inactivity monitor repeats at regular intervals.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "31. What is a scorecard?",
+        "answer": "A scorecard is used for measuring employee performance or a business process. It provides a representation of progress across time in the visualized format. It belongs to an indicator. The initial step is defining the indicators that you wish to measure. You can enhance scorecards by adding aggregates, targets, breakdowns(scores per group), and time series.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. ServiceNow Interview Preparation",
+        "answer": "Following are some of the tips that you can keep in mind while preparing for the ServiceNow Interview: Be clear & confident: Whatever response you provide during the interview, let it be clear by all means. Also, present your knowledge with a lot of confidence, so that you can impress the interviewer with your positive attitude.\nBe honest about your knowledge: During the interview, present your responses honestly with respect to whatever knowledge you possess or while explaining the points that are mentioned on your resume. If you don\u2019t know any particular concept, admit it honestly or mention that you haven\u2019t worked on such a concept earlier. But you can mention positively that, you would love to work on any particular concept which you don\u2019t know or haven\u2019t worked on.\nTry to give the answers with details: The interviewer might ask some one-liner questions. But you have to make sure that you make him understand that you have deep knowledge about a particular aspect that he seeks answers for. The interviewer should gauge you as you have very vast knowledge about a lot of the topics. But don\u2019t be much descriptive also, keeping the time limit in your mind.\nTalk about your multi-skills: Present about your other valuable knowledge/skills that you have acquired in the past in addition to ServiceNow. This ensures the interviewer that you are an apt candidate to finalize as multi-skills will give you an edge over other candidates.\nBe enthusiastic: During the interview, you always have to show energy. The interviewer should think that you are having a lot of energy and enthusiasm to take up any kind of work. You have to be positive all throughout the interview process.\nGive some live examples: While giving the responses try to answer with some live examples. This shows the interviewer that you have depth-knowledge about a particular concept. Be clear & confident: Whatever response you provide during the interview, let it be clear by all means. Also, present your knowledge with a lot of confidence, so that you can impress the interviewer with your positive attitude. Be clear & confident: Be honest about your knowledge: During the interview, present your responses honestly with respect to whatever knowledge you possess or while explaining the points that are mentioned on your resume. If you don\u2019t know any particular concept, admit it honestly or mention that you haven\u2019t worked on such a concept earlier. But you can mention positively that, you would love to work on any particular concept which you don\u2019t know or haven\u2019t worked on. Be honest about your knowledge: Try to give the answers with details: The interviewer might ask some one-liner questions. But you have to make sure that you make him understand that you have deep knowledge about a particular aspect that he seeks answers for. The interviewer should gauge you as you have very vast knowledge about a lot of the topics. But don\u2019t be much descriptive also, keeping the time limit in your mind. Try to give the answers with details: Talk about your multi-skills: Present about your other valuable knowledge/skills that you have acquired in the past in addition to ServiceNow. This ensures the interviewer that you are an apt candidate to finalize as multi-skills will give you an edge over other candidates. Talk about your multi-skills: Be enthusiastic: During the interview, you always have to show energy. The interviewer should think that you are having a lot of energy and enthusiasm to take up any kind of work. You have to be positive all throughout the interview process. Be enthusiastic: Give some live examples: While giving the responses try to answer with some live examples. This shows the interviewer that you have depth-knowledge about a particular concept. Give some live examples:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. Does ServiceNow need coding?",
+        "answer": "In both front-end and back-end, coding is involved, and you will make solid use of ServiceNow\u2019s proprietary JS libraries for database transactions usually prefixed with \u201cGlide\u201d. GlideRecord object can form DB queries, GlideDateTime provides access to Java time classes & methods, etc. AngularJS is also important if you plan on using Service Portal. So first learn basic front-end programming (JavaScript, HTML, and CSS). Once you are comfortable with those areas, move on to JS libraries that ServiceNow uses (Angular, Jelly, and jQuery). That\u2019s all you actually require to program in ServiceNow.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. How to crack ServiceNow Interview?",
+        "answer": "Following are some of the valuable ways that you can utilize to prepare for a ServiceNow interview:- Use your network: You can Reach out to any person in your alumni network and check if they can offer you insight into ServiceNow and provide inputs about the interview process.\nDo your research: Perform some research on ServiceNow, such as their work culture, ongoing projects, company goals, etc.\nPractice makes a man perfect: The job positions are very competitive to get, so doing your research and preparing for behavioral-type questions is imperative. Use your network: You can Reach out to any person in your alumni network and check if they can offer you insight into ServiceNow and provide inputs about the interview process. Use your network: Do your research: Perform some research on ServiceNow, such as their work culture, ongoing projects, company goals, etc. Do your research: Practice makes a man perfect: The job positions are very competitive to get, so doing your research and preparing for behavioral-type questions is imperative. Practice makes a man perfect:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. How do you get hired in ServiceNow?",
+        "answer": "Following are some of the valuable ways through which you can get hired at ServiceNow - hired at ServiceNow ServiceNow hires candidates who are extremely creative and are passionate about creating software products that will change the pattern of how usually the organizations work.\nThey hire candidates who have exceptional problem-solving & communication skills and also they should possess strong knowledge about ServiceNow platform.\nAdditionally, ServiceNow wants to hire resources who can work well inside a team while also having the initiative to tackle challenges independently. ServiceNow hires candidates who are extremely creative and are passionate about creating software products that will change the pattern of how usually the organizations work. They hire candidates who have exceptional problem-solving & communication skills and also they should possess strong knowledge about ServiceNow platform. Additionally, ServiceNow wants to hire resources who can work well inside a team while also having the initiative to tackle challenges independently.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. How many rounds of interview are there in ServiceNow?",
+        "answer": "Based on the interview experience of previously appeared candidates, usually, the interview process at ServiceNow constitutes 5 rounds for experienced: 1 Online Test, 2 Technical, 1 Managerial. For freshers, the interview rounds may vary and can conclude in 2-3 rounds.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What is ServiceNow used for?",
+        "answer": "ServiceNow is used for the following - ServiceNow is essentially a cloud-based workflow automation tool that enables businesses to improve their operational efficiencies by streamlining and automating routine work activities.\nIt uses the machine learning aspect to leverage data and workflows, thereby help businesses become faster & scalable.\nIt delivers all the information to the technician to fix and repair issues while eliminating the dependency on spreadsheets and emails. ServiceNow is essentially a cloud-based workflow automation tool that enables businesses to improve their operational efficiencies by streamlining and automating routine work activities. It uses the machine learning aspect to leverage data and workflows, thereby help businesses become faster & scalable. It delivers all the information to the technician to fix and repair issues while eliminating the dependency on spreadsheets and emails.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. Why is ServiceNow so popular?",
+        "answer": "ServiceNow is a powerful product and is being respected because it has the capability to manage everything as a Service. The best part of ServiceNow is, under one platform you can manage the entire workflow that offers different kinds of support and enables the enterprises to define services, provides an instinctual service experience, deliver service, assures service availability and analyzes critical service metrics, process delivery and management, real-time communication, customer interaction, collaboration and resource sharing, testing, quality assurance and more.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. Are ServiceNow developers in demand?",
+        "answer": "There is a great scope for ServiceNow developers in India and globally, as the technology is expected to grow continuously for many more years, and also its scope is vast in diverse fields of business. ServiceNow tool has been implemented by many of the companies from almost all the domains, that provide continued service and support for various industries like Automobile, IT, Health, Insurance, Media and Entertainment, etc. Few of the IT companies were using an obsolete ITSM system in the past. With the ServiceNow platform available, now the IT companies are able to work more effectively with all the departments on a single tool which helps them to save a large amount of time and money. According to the survey conducted by the U.S. Bureau of Labor Statistics, the employment for software developers is set to grow by 21% from 2018 to 2028, which is much faster growth than the average occupation. This rapid growth may be due to the increased rate of demand for software applications across almost all industries. software developers",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. Does ServiceNow pay well?",
+        "answer": "According to the data provided on the Ambitionbox website, the average salary of a ServiceNow Software Engineer in India is \u20b9 17.5 Lakhs per annum for employees with experience ranging between 1 to 7 years. For Software Engineers inside the ServiceNow company, usually, the salary ranges between \u20b911 Lakhs to \u20b926 Lakhs (Salary estimates are as of 11th Aug, 2021).",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. What are the skills a ServiceNow developer should possess?",
+        "answer": "The most important skills a ServiceNow developer should possess include the following: Extensive knowledge of JavaScript\nFamiliarity with UI, HTML, SQL, and CSS\nKnowledge of XML & structural programming concepts\nHeavy Experience in using the ServiceNow platform\nKnowledge of ITIL processes\nAdvanced problem-solving ability\nExcellent communication and presentation skills\nOrganization and time management skills Extensive knowledge of JavaScript Familiarity with UI, HTML, SQL, and CSS Knowledge of XML & structural programming concepts Heavy Experience in using the ServiceNow platform Knowledge of ITIL processes Advanced problem-solving ability Excellent communication and presentation skills Organization and time management skills",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What does a ServiceNow Developer do?",
+        "answer": "The followings are - A ServiceNow developer is mainly accountable for managing the ServiceNow platform of an organisation, wherein he essentially supports various IT service management activities and thereby helping in automating the business processes.\nThe ServiceNow developer role will include the designing, configuring, developing, baseline and troubleshooting implementation, and custom applications to enrich the ServiceNow platform.\nA ServiceNow developer should also help in managing the platform inorder to ensure the stability and implement the architectural changes whenever necessary. A ServiceNow developer is mainly accountable for managing the ServiceNow platform of an organisation, wherein he essentially supports various IT service management activities and thereby helping in automating the business processes. The ServiceNow developer role will include the designing, configuring, developing, baseline and troubleshooting implementation, and custom applications to enrich the ServiceNow platform. A ServiceNow developer should also help in managing the platform inorder to ensure the stability and implement the architectural changes whenever necessary.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What certifications are offered by ServiceNow?",
+        "answer": "The different certifications offered by ServiceNow are: Certified Systems Administrator: This certification will provide you the basics of ServiceNow and test whether or not you can manage, configure and implement the platform.\nCertified Application Developer: This particular certification will test your ability to design and manage applications.\nCertified Implementation Specialist: This specific certification tests your skills to implement ServiceNow and it also covers a different set of topics, including service mapping, service management, financial management, vulnerability response, security, HR, and customer service management. Certified Systems Administrator: This certification will provide you the basics of ServiceNow and test whether or not you can manage, configure and implement the platform. Certified Systems Administrator: Certified Application Developer: This particular certification will test your ability to design and manage applications. Certified Application Developer: Certified Implementation Specialist: This specific certification tests your skills to implement ServiceNow and it also covers a different set of topics, including service mapping, service management, financial management, vulnerability response, security, HR, and customer service management. Certified Implementation Specialist:",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What are the roles & responsibilities of a ServiceNow developer?",
+        "answer": "Following are some of the major roles and responsibilities of a ServiceNow developer: Identifying the deficiencies and provide the best solutions.\nCollaborating with other administrators to develop solutions and also helping in change management.\nUsing languages and third-party controls such as C#, .Net, and AJAX.\nManaging the tool configuration to ensure reliable production.\nCustom applications to facilitate the use of new applications and customizations.\nAvoiding any disruptions by implementing the new changes with the least disruption to operations.\nProviding the expertise for all technical issues related to development.\nUnderstanding the bigger picture by using large-scale thinking when working on projects. Identifying the deficiencies and provide the best solutions. Collaborating with other administrators to develop solutions and also helping in change management. Using languages and third-party controls such as C#, .Net, and AJAX. Managing the tool configuration to ensure reliable production. Custom applications to facilitate the use of new applications and customizations. Avoiding any disruptions by implementing the new changes with the least disruption to operations. Providing the expertise for all technical issues related to development. Understanding the bigger picture by using large-scale thinking when working on projects.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What are the job profiles that a ServiceNow developer can look for?",
+        "answer": "As a ServiceNow developer, you can opt to work in any of the following roles: Functional consultant\nAdministrator\nProcess architect\nSoftware Developer\nTechnical consultant\nBusiness or process analyst\nPlatform owner\nTechnical lead\nImplementation specialist Functional consultant Administrator Process architect Software Developer Technical consultant Business or process analyst Platform owner Technical lead Implementation specialist",
+        "reference": "interviewbit.com"
+    }
+]

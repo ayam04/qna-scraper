@@ -1,0 +1,162 @@
+[
+    {
+        "question": "1. What are Different Kernels in SVM?",
+        "answer": "There are six types of kernels in SVM: Linear kernel - used when data is linearly separable. \nPolynomial kernel - When you have discrete data that has no natural notion of smoothness.\nRadial basis kernel - Create a decision boundary able to do a much better job of separating two classes than the linear kernel.\nSigmoid kernel - used as an activation function for neural networks. Linear kernel - used when data is linearly separable. Polynomial kernel - When you have discrete data that has no natural notion of smoothness. Radial basis kernel - Create a decision boundary able to do a much better job of separating two classes than the linear kernel. Sigmoid kernel - used as an activation function for neural networks.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Why was Machine Learning Introduced?",
+        "answer": "The simplest answer is to make our lives easier. In the early days of \u201cintelligent\u201d applications, many systems used hardcoded rules of \u201cif\u201d and \u201celse\u201d decisions to process data or adjust the user input. Think of a spam filter whose job is to move the appropriate incoming email messages to a spam folder. But with the machine learning algorithms, we are given ample information for the data to learn and identify the patterns from the data. Unlike the normal problems we don\u2019t need to write the new rules for each problem in machine learning, we just need to use the same workflow but with a different dataset. Let\u2019s talk about Alan Turing, in his 1950 paper, \u201cComputing Machinery and Intelligence\u201d, Alan asked, \u201cCan machines think?\u201d Full paper here here The paper describes the \u201cImitation Game\u201d, which includes three participants - Human acting as a judge,\nAnother human, and\nA computer is an attempt to convince the judge that it is human. Human acting as a judge, Another human, and A computer is an attempt to convince the judge that it is human. The judge asks the other two participants to talk. While they respond the judge needs to decide which response came from the computer. If the judge could not tell the difference the computer won the game. The test continues today as an annual competition in artificial intelligence. The aim is simple enough: convince the judge that they are chatting to a human instead of a computer chatbot program.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. Explain the Difference Between Classification and Regression?",
+        "answer": "Classification is used to produce discrete results, classification is used to classify data into some specific categories.\nFor example, classifying emails into spam and non-spam categories.  Whereas, regression deals with continuous data.\nFor example, predicting stock prices at a certain point in time.  Classification is used to predict the output into a group of classes. \nFor example, Is it Hot or Cold tomorrow?  Whereas, regression is used to predict the relationship that data represents. \nFor example, What is the temperature tomorrow? ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What is Bias in Machine Learning?",
+        "answer": "Bias in data tells us there is inconsistency in data. The inconsistency may occur for several reasons which are not mutually exclusive. For example, a tech giant like Amazon to speed the hiring process they build one engine where they are going to give 100 resumes, it will spit out the top five, and hire those. When the company realized the software was not producing gender-neutral results it was tweaked to remove this bias.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What is Cross-Validation?",
+        "answer": "Cross-validation is a method of splitting all your data into three parts: training, testing, and validation data. Data is split into k subsets, and the model has trained on k-1of those datasets. The last subset is held for testing. This is done for each of the subsets. This is k-fold cross-validation. Finally, the scores from all the k-folds are averaged to produce the final score. Cross-validation  Cross-validation",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What are Support Vectors in SVM?",
+        "answer": "A Support Vector Machine (SVM) is an algorithm that tries to fit a line (or plane or hyperplane) between the different classes that maximizes the distance from the line to the points of the classes. In this way, it tries to find a robust separation between the classes. The Support Vectors are the points of the edge of the dividing hyperplane as in the below figure. Support Vector Machine (SVM)  Support Vector Machine (SVM)",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. Explain SVM Algorithm in Detail",
+        "answer": "A Support Vector Machine (SVM) is a very powerful and versatile supervised machine learning model, capable of performing linear or non-linear classification, regression, and even outlier detection. Suppose we have given some data points that each belong to one of two classes, and the goal is to separate two classes based on a set of examples. In SVM, a data point is viewed as a p-dimensional vector (a list of p numbers), and we wanted to know whether we can separate such points with a (p-1)-dimensional hyperplane. This is called a linear classifier. There are many hyperplanes that classify the data. To choose the best hyperplane that represents the largest separation or margin between the two classes. \nIf such a hyperplane exists, it is known as a maximum-margin hyperplane and the linear classifier it defines is known as a maximum margin classifier. The best hyperplane that divides the data in H3  We have data (x1, y1), ..., (xn, yn), and different features (xii, ..., xip), and yiis either 1 or -1. The equation of the hyperplane H3 is the set of points satisfying: w. x-b = 0 Where w is the normal vector of the hyperplane. The parameter b||w||determines the offset of the hyperplane from the original along the normal vector w So for each i, either xiis in the hyperplane of 1 or -1. Basically, xisatisfies: w . xi - b = 1  or   w. xi - b = -1 Support Vector Machine (SVM)  Support Vector Machine (SVM)",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. What is PCA? When do you use it?",
+        "answer": "Principal component analysis (PCA) is most commonly used for dimension reduction. In this case, PCA measures the variation in each variable (or column in the table). If there is little variation, it throws the variable out, as illustrated in the figure below: Principal component analysis (PCA)  Principal component analysis (PCA) Thus making the dataset easier to visualize. PCA is used in finance, neuroscience, and pharmacology. It is very useful as a preprocessing step, especially when there are linear correlations between features.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. What is \u2018Naive\u2019 in a Naive Bayes?",
+        "answer": "The Naive Bayes method is a supervised learning algorithm, it is naive since it makes assumptions by applying Bayes\u2019 theorem that all attributes are independent of each other. Bayes\u2019 theorem states the following relationship, given class variable y and dependent vector x1  through xn: P(yi | x1,..., xn) =P(yi)P(x1,..., xn | yi)(P(x1,..., xn) Using the naive conditional independence assumption that each xiis independent: for all I this relationship is simplified to: P(xi | yi, x1, ..., xi-1, xi+1, ...., xn) = P(xi | yi) Since, P(x1,..., xn) is a constant given the input, we can use the following classification rule: P(yi | x1, ..., xn) = P(y) ni=1P(xi | yi)P(x1,...,xn) and we can also use Maximum A Posteriori (MAP) estimation to estimate P(yi)and P(yi | xi) the former is then the relative frequency of class yin the training set. P(yi | x1,..., xn)  P(yi) ni=1P(xi | yi) y = arg max P(yi)ni=1P(xi | yi) The different naive Bayes classifiers mainly differ by the assumptions they make regarding the distribution of P(yi | xi): can be Bernoulli, binomial, Gaussian, and so on.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is Unsupervised Learning?",
+        "answer": "Unsupervised learning is also a type of machine learning algorithm used to find patterns on the set of data given. In this, we don\u2019t have any dependent variable or label to predict. Unsupervised Learning Algorithms: Clustering, \nAnomaly Detection, \nNeural Networks and Latent Variable Models. Clustering, Anomaly Detection, Neural Networks and Latent Variable Models. Example: Example: In the same example, a T-shirt clustering will categorize as \u201ccollar style and V neck style\u201d, \u201ccrew neck style\u201d and \u201csleeve types\u201d.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What is Supervised Learning?",
+        "answer": "Supervised learning is a machine learning algorithm of inferring a function from labeled training data. The training data consists of a set of training examples. Example: 01 Example: 01 Knowing the height and weight identifying the gender of the person. Below are the popular supervised learning algorithms. Support Vector Machines\nRegression\nNaive Bayes\nDecision Trees\nK-nearest Neighbour Algorithm and Neural Networks. Support Vector Machines Regression Naive Bayes Decision Trees K-nearest Neighbour Algorithm and Neural Networks. Example: 02 Example: 02 If you build a T-shirt classifier, the labels will be \u201cthis is an S, this is an M and this is L\u201d, based on showing the classifier examples of S, M, and L.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. What are Different Types of Machine Learning algorithms?",
+        "answer": "There are various types of machine learning algorithms. Here is the list of them in a broad category based on: Whether they are trained with human supervision (Supervised, unsupervised, reinforcement learning)\nThe criteria in the below diagram are not exclusive, we can combine them any way we like. Whether they are trained with human supervision (Supervised, unsupervised, reinforcement learning) The criteria in the below diagram are not exclusive, we can combine them any way we like. Types of Machine Learning algorithms  Types of Machine Learning algorithms",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "1. What is F1 score? How would you use it?",
+        "answer": "Let\u2019s have a look at this table before directly jumping into the F1 score. Prediction Predicted Yes Predicted No\nActual Yes True Positive (TP) False Negative (FN)\nActual No False Positive (FP) True Negative (TN) Prediction Predicted Yes Predicted No\nActual Yes True Positive (TP) False Negative (FN)\nActual No False Positive (FP) True Negative (TN) Prediction Predicted Yes Predicted No Prediction Predicted Yes Predicted No Prediction Predicted Yes Predicted No Actual Yes True Positive (TP) False Negative (FN)\nActual No False Positive (FP) True Negative (TN) Actual Yes True Positive (TP) False Negative (FN) Actual Yes True Positive (TP) False Negative (FN) Actual No False Positive (FP) True Negative (TN) Actual No False Positive (FP) True Negative (TN) In binary classification we consider the F1 score to be a measure of the model\u2019s accuracy. The F1 score is a weighted average of precision and recall scores. F1 = 2TP/2TP + FP + FN We see scores for F1 between 0 and 1, where 0 is the worst score and 1 is the best score. \nThe F1 score is typically used in information retrieval to see how well a model retrieves relevant results and our model is performing.  ",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "2. Define Precision and Recall?",
+        "answer": "Precision and recall are ways of monitoring the power of machine learning implementation. But they often used at the same time. Precision answers the question, \u201cOut of the items that the classifier predicted to be relevant, how many are truly relevant?\u201d Whereas, recall answers the question, \u201cOut of all the items that are truly relevant, how many are found by the classifier? In general, the meaning of precision is the fact of being exact and accurate. So the same will go in our machine learning model as well. If you have a set of items that your model needs to predict to be relevant. How many items are truly relevant? The below figure shows the Venn diagram that precision and recall. Precision and recall  Precision and recall Mathematically, precision and recall can be defined as the following: precision = # happy correct answers/# total items returned by ranker recall = # happy correct answers/# total relevant answers",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "3. How to Tackle Overfitting and Underfitting?",
+        "answer": "Overfitting means the model fitted to training data too well, in this case, we need to resample the data and estimate the model accuracy using techniques like k-fold cross-validation. data too well Whereas for the Underfitting case we are not able to understand or capture the patterns from the data, in this case, we need to change the algorithms, or we need to feed more data points to the model. not able to understand",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "4. What is a Neural Network?",
+        "answer": "It is a simplified model of the human brain. Much like the brain, it has neurons that activate when encountering something similar. The different neurons are connected via connections that help information flow from one neuron to another.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "5. What are Loss Function and Cost Functions? Explain the key Difference Between them?",
+        "answer": "When calculating loss we consider only a single data point, then we use the term loss function. Whereas, when calculating the sum of error for multiple data then we use the cost function. There is no major difference. In other words, the loss function is to capture the difference between the actual and predicted values for a single record whereas cost functions aggregate the difference for the entire training dataset. The Most commonly used loss functions are Mean-squared error and Hinge loss. Mean-Squared Error(MSE): In simple words, we can say how our model predicted values against the actual values. MSE = \u221a(predicted value - actual value)2 Hinge loss: It is used to train the machine learning classifier, which is L(y) = max(0,1- yy) Where y = -1 or 1 indicating two classes and y represents the output form of the classifier. The most common cost function represents the total cost as the sum of the fixed costs and the variable costs in the equation y = mx + b",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "6. What is Ensemble learning?",
+        "answer": "Ensemble learning is a method that combines multiple machine learning models to create more powerful models. There are many reasons for a model to be different. Few reasons are: Different Population\nDifferent Hypothesis\nDifferent modeling techniques Different Population Different Hypothesis Different modeling techniques When working with the model\u2019s training and testing data, we will experience an error. This error might be bias, variance, and irreducible error. Now the model should always have a balance between bias and variance, which we call a bias-variance trade-off. This ensemble learning is a way to perform this trade-off. There are many ensemble techniques available but when aggregating multiple models there are two general methods: Bagging, a native method: take the training set and generate new training sets off of it.\nBoosting, a more elegant method: similar to bagging, boosting is used to optimize the best weighting scheme for a training set. Bagging, a native method: take the training set and generate new training sets off of it. Boosting, a more elegant method: similar to bagging, boosting is used to optimize the best weighting scheme for a training set.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "7. How do you make sure which Machine Learning Algorithm to use?",
+        "answer": "It completely depends on the dataset we have. If the data is discrete we use SVM. If the dataset is continuous we use linear regression. So there is no specific way that lets us know which ML algorithm to use, it all depends on the exploratory data analysis (EDA). EDA is like \u201cinterviewing\u201d the dataset; As part of our interview we do the following: Classify our variables as continuous, categorical, and so forth. \nSummarize our variables using descriptive statistics. \nVisualize our variables using charts. Classify our variables as continuous, categorical, and so forth. Summarize our variables using descriptive statistics. Visualize our variables using charts. Based on the above observations select one best-fit algorithm for a particular dataset.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "8. How to Handle Outlier Values?",
+        "answer": "An Outlier is an observation in the dataset that is far away from other observations in the dataset. Tools used to discover outliers are Box plot\nZ-score\nScatter plot, etc. Box plot Z-score Scatter plot, etc. Typically, we need to follow three simple strategies to handle outliers: We can drop them. \nWe can mark them as outliers and include them as a feature. \nLikewise, we can transform the feature to reduce the effect of the outlier. We can drop them. We can mark them as outliers and include them as a feature. Likewise, we can transform the feature to reduce the effect of the outlier.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "9. What is a Random Forest? How does it work?",
+        "answer": "Random forest is a versatile machine learning method capable of performing both regression and classification tasks. Like bagging and boosting, random forest works by combining a set of other tree models. Random forest builds a tree from a random sample of the columns in the test data. Here\u2019s are the steps how a random forest creates the trees: Take a sample size from the training data.\nBegin with a single node.\nRun the following algorithm, from the start node:\nIf the number of observations is less than node size then stop.\nSelect random variables.\nFind the variable that does the \u201cbest\u201d job of splitting the observations.\nSplit the observations into two nodes.\nCall step `a` on each of these nodes. Take a sample size from the training data. Begin with a single node. Run the following algorithm, from the start node:\nIf the number of observations is less than node size then stop.\nSelect random variables.\nFind the variable that does the \u201cbest\u201d job of splitting the observations.\nSplit the observations into two nodes.\nCall step `a` on each of these nodes. If the number of observations is less than node size then stop.\nSelect random variables.\nFind the variable that does the \u201cbest\u201d job of splitting the observations.\nSplit the observations into two nodes.\nCall step `a` on each of these nodes. If the number of observations is less than node size then stop. Select random variables. Find the variable that does the \u201cbest\u201d job of splitting the observations. Split the observations into two nodes. Call step `a` on each of these nodes.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "10. What is Collaborative Filtering? And Content-Based Filtering?",
+        "answer": "Collaborative filtering is a proven technique for personalized content recommendations. Collaborative filtering is a type of recommendation system that predicts new content by matching the interests of the individual user with the preferences of many users. Content-based recommender systems are focused only on the preferences of the user. New recommendations are made to the user from similar content according to the user\u2019s previous choices. Collaborative Filtering and Content-Based Filtering  Collaborative Filtering and Content-Based Filtering",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "11. What is Clustering?",
+        "answer": "Clustering is the process of grouping a set of objects into a number of groups. Objects should be similar to one another within the same cluster and dissimilar to those in other clusters. A few types of clustering are: Hierarchical clustering\nK means clustering\nDensity-based clustering\nFuzzy clustering, etc. Hierarchical clustering K means clustering Density-based clustering Fuzzy clustering, etc.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "12. How can you select K for K-means Clustering?",
+        "answer": "There are two kinds of methods that include direct methods and statistical testing methods: Direct methods: It contains elbow and silhouette \nStatistical testing methods: It has gap statistics. Direct methods: It contains elbow and silhouette Statistical testing methods: It has gap statistics. The silhouette is the most frequently used while determining the optimal value of k.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "13. What are Recommender Systems?",
+        "answer": "A recommendation engine is a system used to predict users\u2019 interests and recommend products that are quite likely interesting for them. Data required for recommender systems stems from explicit user ratings after watching a film or listening to a song, from implicit search engine queries and purchase histories, or from other knowledge about the users/items themselves.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "14. How do check the Normality of a dataset?",
+        "answer": "Visually, we can use plots. A few of the normality checks are as follows: Shapiro-Wilk Test\nAnderson-Darling Test\nMartinez-Iglewicz Test\nKolmogorov-Smirnov Test\nD\u2019Agostino Skewness Test Shapiro-Wilk Test Anderson-Darling Test Martinez-Iglewicz Test Kolmogorov-Smirnov Test D\u2019Agostino Skewness Test",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "15. Can logistic regression use for more than 2 classes?",
+        "answer": "No, by default logistic regression is a binary classifier, so it cannot be applied to more than 2 classes. However, it can be extended for solving multi-class classification problems (multinomial logistic regression) (multinomial logistic regression)",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "16. Explain Correlation and Covariance?",
+        "answer": "Correlation is used for measuring and also for estimating the quantitative relationship between two variables.  Correlation measures how strongly two variables are related. Examples like, income and expenditure, demand and supply, etc. Covariance is a simple way to measure the correlation between two variables. The problem with covariance is that they are hard to compare without normalization.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "17. What is P-value?",
+        "answer": "P-values are used to make a decision about a hypothesis test. P-value is the minimum significant level at which you can reject the null hypothesis. The lower the p-value, the more likely you reject the null hypothesis.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "18. What are Parametric and Non-Parametric Models?",
+        "answer": "Parametric models will have limited parameters and to predict new data, you only need to know the parameter of the model. Non-Parametric models have no limits in taking a number of parameters, allowing for more flexibility and to predict new data. You need to know the state of the data and model parameters.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "19. What is Reinforcement Learning?",
+        "answer": "Reinforcement learning is different from the other types of learning like supervised and unsupervised. In reinforcement learning, we are given neither data nor labels. Our learning is based on the rewards given to the agent by the environment.",
+        "reference": "interviewbit.com"
+    },
+    {
+        "question": "20. Difference Between Sigmoid and Softmax functions?",
+        "answer": "The sigmoid function is used for binary classification. The probabilities sum needs to be 1. Whereas, Softmax function is used for multi-classification. The probabilities sum will be 1. Conclusion The above-listed questions are the basics of machine learning. Machine learning is advancing so fast hence new concepts will emerge. So to get up to date with that join communities, attend conferences, read research papers. By doing so you can crack any ML interview. Additional Resources Practice Coding\nBest Machine Learning Courses\nBest Data Science Courses\nFree Deep Learning Course with Certification\nPython Interview Questions\nAI MCQs\nMachine Learning Engineer: Career Guide\nDeep Learning Interview\nMachine Learning Engineer Salary\nMachine Learning Vs Data Science\nMachine Learning Vs Deep Learning\nDifference Between Artificial Intelligence and Machine Learning Practice Coding Practice Coding Best Machine Learning Courses Best Machine Learning Courses Best Data Science Courses Best Data Science Courses Free Deep Learning Course with Certification Free Deep Learning Course with Certification Python Interview Questions Python Interview Questions AI MCQs AI MCQs Machine Learning Engineer: Career Guide Machine Learning Engineer: Career Guide Deep Learning Interview Deep Learning Interview Machine Learning Engineer Salary Machine Learning Engineer Salary Machine Learning Vs Data Science Machine Learning Vs Data Science Machine Learning Vs Deep Learning Machine Learning Vs Deep Learning Difference Between Artificial Intelligence and Machine Learning Difference Between Artificial Intelligence and Machine Learning",
+        "reference": "interviewbit.com"
+    }
+]
