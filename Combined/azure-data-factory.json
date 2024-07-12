@@ -1,0 +1,788 @@
+[
+    {
+        "question": "1. Why do we need Azure Data Factory?",
+        "answer": "The amount of data generated these days is huge, and this data comes from different sources. When we move this particular data to the cloud, a few things need to be taken care of.\nData can be in any form, as it comes from different sources. These sources will transfer or channel the data in different ways. They will be in different formats. When we bring this data to the cloud or particular storage, we need to make sure it is well managed, i.e., you need to transform the data and delete unnecessary parts. As far as moving the data is concerned, we need to make sure that data is picked from different sources, brought to one common place, and stored. If required, we should transform it into something more meaningful.\nThis can be done by a traditional data warehouse, but there are certain disadvantages. Sometimes we are forced to go ahead and have custom applications that deal with all these processes individually, which is time-consuming, and integrating all these sources is a huge pain. We need to figure out a way to automate this process or create proper workflows.\nData Factory helps to orchestrate this complete process in a more manageable or organizable manner.\nAspiring to become a data analytics professional? Enroll in Data Analytics Courses in Bangalore and learn from the best.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "2. What is Azure Data Factory?",
+        "answer": "It is a cloud-based integration service that allows the creation of data-driven workflows in the cloud for orchestrating and automating data movement and transformation.\nUsing Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that ingest data from disparate data stores.\nIt can process and transform data using computer services such as HDInsight, Hadoop, Spark, Azure Data Lake Analytics, and Azure Machine Learning.\nWant to learn big data? Enroll in this Big Data Hadoop Course in Bangalore taught by industry experts.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "3. What is the integration runtime?",
+        "answer": "The integration runtime is the compute infrastructure Azure Data Factory uses to provide the following data integration capabilities across various network environments.\nThree Types of Integration Runtimes:\nAzure Integration Runtime: Azure integration runtime (IR) can copy data between cloud data stores and dispatch the activity to a variety of computing services, such as Azure HDInsight or SQL Server, where the transformation takes place.\nSelf-Hosted Integration Runtime: A self-hosted integration runtime is software with essentially the same code as Azure integration runtime. But you install it on an on-premise machine or a virtual machine in a virtual network. A self-hosted IR can run copy activities between a public cloud data store and a data store on a private network. It can also dispatch transformation activities against compute resources on a private network. We use self-hosted IR because the Data Factory will not be able to directly access primitive data sources because they sit behind a firewall. It is sometimes possible to establish a direct connection between Azure and on-premises data sources by configuring the Azure Firewall in a specific way. If we do that, we don’t need to use a self-hosted IR.\nAzure-SSIS Integration Runtime: With SSIS integration runtime, you can natively execute SSIS packages in a managed environment. So when we lift and shift the SSIS packages to the Data Factory, we use Azure SSIS IR.\nLearn more about the concept by reading the blog post regarding SSIS by Intellipaat.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "4. What is the limit on the number of integration runtimes?",
+        "answer": "There is no hard limit on the number of integration runtime instances you can have in a data factory. There is, however, a limit on the number of VM cores that the integration runtime can use per subscription for SSIS package execution.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "5. What are the top-level concepts of Azure Data Factory?",
+        "answer": "Pipeline: It acts as a carrier in which various processes take place. An individual process is an activity.\nActivities: Activities represent the processing steps in a pipeline. A pipeline can have one or multiple activities. It can be anything, i.e., a process like querying a data set or moving the dataset from one source to another.\nDatasets: In simple words, it is a data structure that holds our data.\nLinked Services: These store information that is very important when connecting to an external source.\nFor example, consider an SQL Server. You need a connection string that you can connect to an external device. You need to mention the source and destination of your data.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "6. How can I schedule a pipeline?",
+        "answer": "You can use the scheduler trigger or time window trigger to schedule a pipeline.\nThe trigger uses a wall-clock calendar schedule, which can schedule pipelines periodically or in calendar-based recurrent patterns (for example, on Mondays at 6:00 PM and Thursdays at 9:00 PM).",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "7. Can I pass parameters to a pipeline run?",
+        "answer": "Yes, parameters are a first-class, top-level concept in Data Factory.\nYou can define parameters at the pipeline level and pass arguments as you execute the pipeline run-on-demand or by using a trigger.\nAre you looking to learn about Azure? Check out our blog on Azure Tutorial!",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "8. Can I define default values for the pipeline parameters?",
+        "answer": "You can define default values for the parameters in the pipelines.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "9. Can an activity’s output property be consumed in another activity?",
+        "answer": "An activity output can be consumed in a subsequent activity with the @activity construct.\nAlso, check out the differences between a data lake and a data warehouse.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "10. How do I handle null values in an activity output?",
+        "answer": "You can use the @coalesce construct in the expressions to handle the null values.\nCheck out Intellipaat’s Azure Training and get a head start in your career now!",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "11. Which Data Factory version do I use to create data flows?",
+        "answer": "Use the Data Factory version 2 to create data flows.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "12. What are datasets in Azure Data Factory?",
+        "answer": "Datasets are defined as named views of data that simply point to or reference the data to be used in activities as inputs or outputs.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "13.How are pipelines monitored in Azure Data Factory?",
+        "answer": "Azure Data Factory uses user experience to monitor pipelines in the “Monitor and Manage” tile in the data factory blade of the Azure portal.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "14. What are the three types of integration runtime?",
+        "answer": "The three types of integration runtime are:\nAzure Integration Runtime\nSelf-Hosted Integration Runtime\nAzure-SQL Server Integration Services",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "15. What are the types of data integration design patterns?",
+        "answer": "There are 4 types of common data integration, namely:\nBroadcast\nBi-directional syncs\nCorrelation\nAggregation\nPrepare for the Azure Interview and crack like a pro with these Azure Interview Questions.\n\nIntermediate Azure Data Factory Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "16. What is the difference between Azure Data Lake and Azure Data Warehouse?",
+        "answer": "The data warehouse is a traditional way of storing data that is still widely used. The data lake is complementary to a data warehouse, i.e., if you have your data in a data lake that can be stored in the data warehouse, you have to follow specific rules.\nDATA LAKE DATA WAREHOUSE\nComplementary to the data warehouse Maybe sourced to the data lake\nData is either detailed or raw. It can be in any particular form. You need to take the data and put it in your data lake. Data is filtered, summarized, and refined.\nSchema on read (not structured, you can define your schema in n number of ways) Schema on write (data is written in structured form or a particular schema)\nOne language to process data of any format(USQL) It uses SQL.\nPreparing for the Azure Certification exam? Join our Azure Training in Bangalore!",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "17. What is blob storage in Azure?",
+        "answer": "Azure Blob Storage is a service for storing large amounts of unstructured object data, such as text or binary data. You can use Blob Storage to expose data publicly to the world or to store application data privately. Common uses of Blob Storage are as follows:\nServing images or documents directly to a browser\nStoring files for distributed access\nStreaming video and audio\nStoring data for backup and restore disaster recovery, and archiving\nStoring data for analysis by an on-premises or Azure-hosted service",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "18. What is the difference between Azure Data Lake store and Blob storage?",
+        "answer": "Azure Data Lake Storage Gen1 Azure Blob Storage\nPurpose Optimized storage for big data analytics workloads General-purpose object store for a wide variety of storage scenarios, including big data analytics\nStructure Hierarchical file system Object store with a flat namespace\nKey Concepts Data Lake Storage Gen1 account contains folders, which in turn contain data stored as files Storage account has containers, which in turn has data in the form of blobs\nUse Cases Batch, interactive, streaming analytics, and machine learning data such as log files, IoT data, clickstreams, and large datasets Any type of text or binary data, such as application back end, backup data, media storage for streaming, and general-purpose data. Additionally, full support for analytics workloads: batch, interactive, streaming analytics, and machine learning data such as log files, IoT data, clickstreams, and large datasets\nServer-Side API WebHDFS-compatible REST API Azure Blob Storage REST API\nData Operations – Authentication Based on Azure Active Directory Identities Based on shared secrets – Account Access Keys and Shared Access Signature Keys.\n\nTo learn more about big data, check out this Big Data Course offered by Intellipaat.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "19. What are the steps for creating ETL process in Azure Data Factory?",
+        "answer": "While we are trying to extract some data from the Azure SQL Server database, if something has to be processed, it will be processed and stored in the Data Lake Storage.\nSteps for Creating ETL\nCreate a linked service for the source data store, which is SQL Server Database\nAssume that we have a cars dataset\nCreate a linked service for the destination data store, which is Azure Data Lake Storage (ADLS)\nCreate a dataset for data saving\nCreate the pipeline and add copy activity\nSchedule the pipeline by adding a trigger",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "20. What is the difference between HDInsight and Azure Data Lake Analytics?",
+        "answer": "HDInsight Azure Data Lake Analytics\nIf we want to process a data set, first of all, we have to configure the cluster with predefined nodes, and then we use a language like Pig or Hive for processing the data. It is all about passing queries written for processing data. Azure Data Lake Analytics will create the necessary compute nodes per our instructions on demand and process the data set.\nSince we configure the cluster with HDInsight, we can create it as we want and control it as we want. All Hadoop subprojects, such as Spark and Kafka, can be used without limitations. With Azure Data Lake Analytics, it does not give much flexibility in terms of the provision in the cluster, but Microsoft Azure takes care of it. We don’t need to worry about cluster creation. The assignment of nodes will be done based on the instructions we pass. In addition, we can make use of U-SQL taking advantage of .Net for processing data.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "21. Can an activity in a pipeline consume arguments that are passed to a pipeline run?",
+        "answer": "In a pipeline, an activity can indeed consume arguments that are passed to a pipeline run. Arguments serve as input values that can be provided when triggering or scheduling a pipeline run. These arguments can be used by activities within the pipeline to customize their behavior or perform specific tasks based on the provided values. This flexibility allows for dynamic and parameterized execution of pipeline activities, enhancing the versatility and adaptability of the pipeline workflow.\nEach activity within the pipeline can consume the parameter value that’s passed to the pipeline and run with the @parameter construct.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "22. What has changed from private preview to limited public preview in regard to data flows?",
+        "answer": "You will no longer have to bring your own Azure Databricks clusters.\nData Factory will manage cluster creation and teardown.\nBlob datasets and Azure Data Lake Storage Gen2 datasets are separated into delimited text and Apache Parquet datasets.\nYou can still use Data Lake Storage Gen2 and Blob Storage to store those files. Use the appropriate linked service for those storage engines.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "23. How do I access data using the other 80 dataset types in Data Factory?",
+        "answer": "The mapping data flow feature currently allows Azure SQL Database, Azure SQL Data Warehouse, delimited text files from Azure Blob Storage or Azure Data Lake Storage Gen2, and Parquet files from Blob Storage or Data Lake Storage Gen2 natively for source and sink.\nUse the copy activity to stage data from any of the other connectors, and then execute a Data Flow activity to transform the data after it’s been staged. For example, your pipeline will first copy into Blob Storage, and then a Data Flow activity will use a dataset in the source to transform that data.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "24. What is the Get Metadata activity in ADF?",
+        "answer": "The Get Metadata activity is utilized for getting the metadata of any data in the Synapse pipeline or ADF. To perform validation or consumption, we can utilize the output from the Get Metadata activity in conditional expressions. It takes a dataset as input and returns metadata information as output. The maximum size of the returned metadata is 4 MB.\nPreparing for job interviews? Have a look at our blog on Azure Databricks Interview Questions to excel in your career!",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "25. List any 5 types of data sources that Azure Data Factory supports.",
+        "answer": "Azure supports the following data sources:\nAzure Blob Storage: Azure Blob is a cloud storage solution to store large-scale unstructured data.\nAzure SQL Database: It is a managed, secured, intelligent service that uses the SQL Server Database engine in ADF. \nAzure Data Lake Storage: It is a service that can store data of any size, shape, and speed and perform all kinds of processing and analytics across platforms and languages.\nAzure Cosmos DB: It is a service that works entirely on NoSQL and relational databases for modern app development.\nAzure Table Storage: It is a service used for storing structured NoSQL data; it provides a key/attribute with no schema design.\nCheck out this video on Azure Interview Questions And Answers by Intellipaat:",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "26. How can one set up data sources and destinations in Azure Data Factory?",
+        "answer": "To connect with a data source or destination, one needs to set up a linked service. A linked service is a configuration containing the connection information required to connect to a data source or destination. The following steps show how to set linked services:\nNavigate to your Azure Data Factory Instance in Azure Portal.\nSelect “Author and Monitor” to open UI.\nFrom the left-hand menu, select connections and create a new linked service.\nChoose the type of data source you want to connect with: Azure Blob Storage, Azure SQL Database, Amazon S3, etc.\nConfigure and test the connection",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "27. How can one set up a linked service?",
+        "answer": "To set up a linked service, follow the steps below:\nClick “Author & Monitor” tab in the ADF portal\nNext, click the “Author” button to launch ADF authoring interface.\nClick the “Linked Services” tab to create a new linked service.\nSelect the type of service corresponding to the data source or destination one wants to connect with.\nMention the connection information, such as server name, database name, and credentials.\nTest the connection service to ensure the working.\nSave the linked service.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "28. What is a Synapse workspace, and where is it required?",
+        "answer": "Azure Synapse  Analytics workspace was previously called Azure SQL Data Warehouse. It is a service that manages and integrates enterprise data warehousing, big data analytics, and data integration capabilities into a single platform. It supports role-based access control (RBAC) encryption and auditing capabilities to ensure data protection and compliance with regulatory requirements.\nUse cases:\nCollaboration on analytical projects by data engineers, data scientists, and business analysts, leveraging the capabilities for data querying, analysis, and visualization.\nIt is used in analyzing and visualizing the data, creating reports and dashboards, and gaining insights into business performance and trends, supporting business intelligence and reporting needs.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "29. What is the general connector error in Azure Data Factory? Mention the causes of the errors.",
+        "answer": "The general connector errors are:\n1. UserErrorOdbcInvalidQueryString\nCause: when the user commits a wrong or invalid query for fetching the data/schemas.\n2. FailedToResolveParametersInExploratoryController\nCause: This error arises due to the limitation of supporting the linked service, which provides a reference to another linked service with parameters for test connections or preview data.\n\nAdvanced Azure Data Factory Interview Questions for Experienced",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "30. Explain the two levels of security in ADLS Gen2.",
+        "answer": "The two levels of security applicable to ADLS Gen2 were also in effect for ADLS Gen1. Even though this is not new, it is worth calling out the two levels of security because it’s a fundamental piece to getting started with the data lake, and it is confusing for many people to start.\nRole-Based Access Control (RBAC): RBAC includes built-in Azure roles such as reader, contributor, owner, or custom roles. Typically, RBAC is assigned for two reasons. One is to specify who can manage the service itself (i.e., update settings and properties for the storage account). Another reason is to permit the use of built-in data explorer tools, which require reader permissions.\nAccess Control Lists (ACLs): Access control lists specify exactly which data objects a user may read, write, or execute (execute is required to browse the directory structure). ACLs are POSIX-compliant, thus familiar to those with a Unix or Linux background.\nPOSIX does not operate on a security inheritance model, which means that access ACLs are specified for every object. The concept of default ACLs is critical for new files within a directory to obtain the correct security settings, but it should not be thought of as an inheritance. Because of the overhead assigning ACLs to every object, and because there is a limit of 32 ACLs for every object, it is extremely important to manage data-level security in ADLS Gen1 or Gen2 via Azure Active Directory groups.\nAre you looking to crack DP-200? Check out our blog on DP-200 certification to crack the exam on the first attempt!",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "31. How is the performance of pipelines optimized in Azure Data Factory?",
+        "answer": "Optimizing the performance of Azure Data Factory pipelines involves strategically enhancing data movement, transformation, and overall pipeline execution. Some ways to optimize performance are:\nChoosing the appropriate integration runtime for data movement activities based on the location of the destination and data source, integration runtimes help optimize performance by providing compute resources closer to the data.\nUsage of parallel activities such as breaking data into smaller chunks and executing them in parallel activities such as pipelines or within data flow activities.\nWhile mapping data flows, minimize the unwanted transformations and data shuffling by reducing the data flow magic.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "32. What are triggers in ADF, and how can they be used to automate pipeline expressions? What is their significance in pipeline development?",
+        "answer": "In ADF, triggers are components that enable the automated execution of pipeline activities based on predefined conditions or schedules. In orchestrating the data workflows, triggers have played a crucial role, along with automating data integration and transformation tasks within ADF.\nSignificance of triggers in pipeline development:\nAutomation: Trigger enables automated execution of the pipeline, eradicating manual intrusion and scheduling of tasks.\nScheduling: Scheduling triggers help users define recurring schedules for pipeline execution, ensuring that the tasks are performed and integrated at regular intervals.\nEvent-Driven Architecture: Event triggers enable event-driven architecture in ADF, where pipelines are triggered in response to specific data events or business events.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "33. How many types of datasets are supported in ADF?",
+        "answer": "The datasets supported in ADF are as follows:\nCSV\nExcel\nBinary\nAvro\nJSON\nORC\nXML\nParquet",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "34. What are the prerequisites for Data Factory SSIS execution?",
+        "answer": "The prerequisites include an Azure SQL managed instance or an Azure SQL Database for hosting the SSIS IR and SSISDB catalog.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "35. What are the differences between the transformation procedures called mapping data flows and wrangling data flow in ADF?",
+        "answer": "The mapping data flow is the process of graphically designing and transforming the data. This allows the user to design data transformation logic in the graphical user interface without the need for a professional programmer, which eventually makes it cost-effective.\nOn the contrary, in the wrangling data flow activity, the method of data preparation is without the use of a program. In Spark, the data manipulation capabilities of Power Query M are provided to the user, as Power Query Online has a compatible nature.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "36.What is an ARM template? Where are they used?",
+        "answer": "ARM stands for Azure Resource Manager Template. In ADF, this template allows the user to create and deploy an Azure infrastructure not only on virtual machines but on infrastructure, storage systems, or other resources.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "37. Mention a few functionalities of the ARM template in ADF.",
+        "answer": "The ARM template consists of a few functions that can be used in deployment to a resource group subscription or management group, such as \nCIDR\nArray functions\nComparison functions\nResource functions\nDeployment value functions\nSubscription scope function\nLogical function",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "38.What are the functions in ARM with respect to CIDR and Comparison functions?",
+        "answer": "A few functionalities of ARM are as follows:\nCIDR: It consists of functions of the sys namespace such as\nparseCidr\ncidrSubnet\ncidrHost\nComparison Functions: In ARM, this feature helps in comparing templates such as:\ncoalesce\nequals\nless\nlessOrEquals\ngreater\ngreaterOrEquals",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "39. What is a Bicep in ADF?",
+        "answer": "Bicep is a domain-specific language that utilizes declarative syntax to deploy Azure resources. A Bicep file consists of the infrastructure to be deployed in Azure. The file gets used throughout the development lifecycle to repeatedly deploy the infrastructure.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "40. What is ETL in ADF?",
+        "answer": "ETL stands for Extract, Transform, and Load process. It is a data pipeline used for the collection of data from various resources. The data is then transformed according to the business rules. After transforming the data, it is then loaded into the destination data store.\nThe data transformation happens based on filtering, sorting, aggregating, joining and cleaning data, and duplicating and validating data.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "41. What is a V2 data factory?",
+        "answer": "V2 in ADF is Azure Data Factory version 2, which allows one to create and schedule pipelines, which are data-driven workflows that can ingest data from disparate data stores.\nIt processes or transforms data by using compute services such as Azure HDInsight Hadoop, Spark, and Azure Data Lake Analytics.\nIt publishes output data to data stores such as Azure SQL Data Warehouse for BI applications to consume.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "42. What are the three most important tasks that you can complete with ADF?",
+        "answer": "The three most important tasks that you can complete with ADF are moving data, transferring data, and exercising control.\nIn the movement of data, the operations facilitate the flow of data from one data store to another using the data factory’s copy activity.\nData transformation activities are the modification of data activities that modify the loaded data as the data moves towards the final destination stage. Some examples are stored procedures, U-SQL, and Azure functions.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "43. How is Azure Data Factory different from Data Bricks?",
+        "answer": "Azure Data Factory mainly excels in ETL workflows, i.e., (Extract Transform Load) which smoothens the data movement and data transformation. Data Bricks, which is mainly built on Apache Spark, is mainly focused on advanced analytics, which involves data processing on a large scale.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "44. What do you mean by Azure SSIS integration runtime?",
+        "answer": "The cluster or group of virtual machines that are hosted in Azure and are more dedicated to running the SSIS packages in the data factory are termed the Azure SSIS integration runtime (IR). The size of the nodes can be configured to scale up, while the number of nodes on the virtual machine’s cluster can be configured to scale out.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "45. What is Data Flow Debug?",
+        "answer": "Data Flow Debug is an excellent feature provided by Azure Data Factory to the developers, within which developers are facilitated to simultaneously observe and analyze the transformations made in the data during the building phase, including the designing and debugging phases. This helps the user get real-time feedback on the data shape at each phase of execution and the data flow within the pipelines.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "46. How are email notifications sent on a Pipeline Failure?",
+        "answer": "There are multiple options to send an email notification to the developer in case of a Pipeline Failure:\nLogical Application with Web/Webhook Activity: An application can be configured that, upon receiving an HTTP request, can quickly notify the required set of people about the failure.\nAlerts and Metrics Options: These options can be set up in the pipeline itself, where a number of options are available to email in case failure activity is detected.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "47. What do you mean by an Azure SQL database?",
+        "answer": "Azure SQL database is also an integral part of the Azure family, which extends as a fully managed, secured, and intelligent product that uses an SQL Server Database Engine to store the data within the Azure Cloud.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "48. What do you understand from a data flow map?",
+        "answer": "A data flow map is also called a data flow diagram (DFD), which depicts the flow of data inside a system or organization. It depicts the movement of data from one process to another process or entity, highlighting the source’s destination and the transformations of data during the process. Data flows come in handy in system analysis and design to visualize and understand the data flow.",
+        "reference": "intellipaat.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "1. What is Azure Data Factory?",
+        "answer": "In today's world, there is an abundance of data coming from a wide range of different sources; collectively, this information forms a gigantic mountain of data. Before we can upload this information to the cloud, there are a few things that need to be taken care of first. As a result of the fact that data can come from a broad number of locations, each of which may employ relatively different protocols for transporting or channelling the information, the data itself can take on a large variety of shapes and sizes. Once this information has been uploaded to the cloud or some other specific storage, it is absolutely necessary for us to manage it in the appropriate manner. That is, you will need to make some adjustments to the statistics and get rid of any unnecessary details. Concerning the transfer of data, it is important for us to collect data from a variety of sources, combine it in a single area for storage, and, if required, change it into a more helpful form. A traditional data warehouse is also capable of achieving this goal, albeit with a few significant limitations. When it comes to integrating all of these sources, there are times when we have no choice but to go ahead and construct bespoke programs that handle each of these procedures on an individual basis. This is not only a time-consuming process but also a significant source of frustration. We need to either find means to automate this process or come up with more effective workflows. data warehouse data warehouse This entire process may be carried out in a manner that is more streamlined, organized, and controllable with the assistance of Data Factory. Data Factory",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "2. In the pipeline, can I set default values for the parameters?",
+        "answer": "Parameters in pipelines can have default values defined.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "3. What is the anticipated length of time needed for the integration?",
+        "answer": "The integration runtime of Azure Data Factory is the underlying computational architecture that enables the following data integration functionalities across a range of network topologies. These features can be accessed through the Azure portal. Integration runtimes can be broken down into one of three categories: The Azure Integration Run Time makes it very easy to copy data from one cloud data store to another cloud data storage. The transformations can be handled by any one of a number of various computing services, such as Azure HDInsight or SQL Server.\nYou have the option of employing a piece of software known as Self Hosted Integration Run Time rather than making use of Microsoft's Azure Integration Run Time. However, you must first install it on a host computer, either at your business or on a virtual server located in the cloud. Data can be replicated between an on-premises repository and a cloud-based repository using a self-hosted information repository. It is also able to delegate transformation jobs to several machines that are connected to an intranet. Because all of the on-primitive data sources are protected by a firewall, the Data factory won't be able to access any of them; therefore, we have no choice except to use Self-Hosted IR. If we configure the Azure firewall in a certain way, we can circumvent the need for a self-hosted IR in certain circumstances. This will enable a direct connection to be made between Azure and the data sources that are located on-premises.\nYou will have the ability to natively execute SSIS packages in a managed environment if you use the Azure SSIS Integration Run Time. After that, the Azure SSIS Integration Run Time is utilized to transport the SSIS packages to the data factory. The Azure Integration Run Time makes it very easy to copy data from one cloud data store to another cloud data storage. The transformations can be handled by any one of a number of various computing services, such as Azure HDInsight or SQL Server. You have the option of employing a piece of software known as Self Hosted Integration Run Time rather than making use of Microsoft's Azure Integration Run Time. However, you must first install it on a host computer, either at your business or on a virtual server located in the cloud. Data can be replicated between an on-premises repository and a cloud-based repository using a self-hosted information repository. It is also able to delegate transformation jobs to several machines that are connected to an intranet. Because all of the on-primitive data sources are protected by a firewall, the Data factory won't be able to access any of them; therefore, we have no choice except to use Self-Hosted IR. If we configure the Azure firewall in a certain way, we can circumvent the need for a self-hosted IR in certain circumstances. This will enable a direct connection to be made between Azure and the data sources that are located on-premises. You will have the ability to natively execute SSIS packages in a managed environment if you use the Azure SSIS Integration Run Time. After that, the Azure SSIS Integration Run Time is utilized to transport the SSIS packages to the data factory.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "4. How many times may an integration be run through its iterations?",
+        "answer": "There are no limits placed in any way on the amount of integration runtime instances that can exist within a data factory. However, there is a limit on the number of virtual machine cores that can be utilized by the integration runtime for the execution of SSIS packages for each subscription.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "5. Where can I obtain additional information on the blob storage offered by Azure?",
+        "answer": "With the use of a service known as Blob Storage, vast amounts of data belonging to Azure Objects, such as text or binary data, can be saved. Using Blob Storage, you have the option of retaining the confidentiality of the data associated with your application or making it accessible to the general public. The following are some examples of typical applications of Blob Storage: Providing files to a user's browser in an unmediated fashion.\npreservation of data with the goal of enhancing accessibility from a remote location.\nStreaming live audio and video content\nExamples of data archiving and backup that can be used in the event of a catastrophe.\nPutting away information so that it can be used at a later time by a service that is hosted either locally or on Microsoft Azure. Providing files to a user's browser in an unmediated fashion. preservation of data with the goal of enhancing accessibility from a remote location. Streaming live audio and video content Examples of data archiving and backup that can be used in the event of a catastrophe. Putting away information so that it can be used at a later time by a service that is hosted either locally or on Microsoft Azure.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "6. Is there a cap on the number of cycles that can be invested in the integration process?",
+        "answer": "In no way is this the case; an Azure data factory can support an unlimited number of integration runtime occurrences simultaneously. However, there is a maximum number of VM cores that can be used by the integration runtime while executing SSIS packages, and this limitation varies depending on the type of subscription. It is essential that you have a solid grasp of these ideas before you start your journey toward earning a certification in Microsoft Azure.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "7. How does the Data Factory's integration runtime actually function?",
+        "answer": "Integration Runtime, a safe computing platform, makes it feasible for Data Factory to offer data integration capabilities that are portable across various network configurations. This is made possible by the use of Integration Runtime. Because of its proximity to the data centre, the work will almost certainly be performed there. If you want to Learn Azure Step by Step, you must be familiar with terminologies like this and other key aspects of Azure.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "8. Provide information regarding the steps required to create an ETL procedure in Azure Data Factory.",
+        "answer": "Any data that requires processing in order to be accessed from an Azure SQL server database is first subjected to the processing step, and then the data is saved to the Data Lake Store. The following are the steps that must be taken to construct ETL: To get started, you will need to create a Linked Service for the SQL Server Database that will be used as the source database.\nLet's imagine for a moment that we are analyzing data from a car database.\nConstruct a Linked Service with the Azure Data Lake Store as its destination at this point.\nThe next thing you need to do is create a dataset in the Data Storage app.\nMake the necessary preparations for the system and include a phase for copying.\nFollowing that, a trigger ought to be included in the pipeline's timetable. To get started, you will need to create a Linked Service for the SQL Server Database that will be used as the source database. Let's imagine for a moment that we are analyzing data from a car database. Construct a Linked Service with the Azure Data Lake Store as its destination at this point. The next thing you need to do is create a dataset in the Data Storage app. Make the necessary preparations for the system and include a phase for copying. Following that, a trigger ought to be included in the pipeline's timetable.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "9. What are the three different types of triggers that are available for use with Azure Data Factory?",
+        "answer": "Utilizing the Schedule trigger helps ensure that the ADF pipeline is executed in accordance with a predetermined timetable.\nWith the assistance of the Tumbling window trigger, the ADF pipeline can be triggered to execute at predetermined time intervals. The current status of the pipeline has been maintained.\nThe Event-based trigger is activated whenever there is a triggering event that is associated with the blob in some way. The addition of a blob to your Azure storage account or its deletion are two instances of actions that fall within this category. Utilizing the Schedule trigger helps ensure that the ADF pipeline is executed in accordance with a predetermined timetable. With the assistance of the Tumbling window trigger, the ADF pipeline can be triggered to execute at predetermined time intervals. The current status of the pipeline has been maintained. The Event-based trigger is activated whenever there is a triggering event that is associated with the blob in some way. The addition of a blob to your Azure storage account or its deletion are two instances of actions that fall within this category.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "10. Where can I locate the step-by-step instructions for creating Azure Functions?",
+        "answer": "With Azure Functions, building cloud-based applications requires only a few lines of code rather than the traditional tens or hundreds of lines. Because of this functionality, we are able to choose the programming language that best suits our needs. Because the only cost is the time the code is actually executed, pricing is determined on a per-user basis. It is compatible with a wide variety of programming languages, including F#, C#, Node.js, Java, Python, and PHP, among others. Additionally, the system enables continuous integration and deployment of updates. The development of serverless applications is made possible through the use of Azure Functions apps. By enrolling in Azure Training in Hyderabad, you will have the opportunity to learn everything there is to know about the creation of Azure Functions.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "11. How do I access data by using the other 80 dataset types in Data Factory?",
+        "answer": "Existing options for sinks and sources for Mapping Data Flow include the Azure SQL Data Warehouse and the Azure SQL Database, as well as specified text files from Azure Blob storage or Azure Data Lake Storage Gen2 and Parquet files from either Blob storage or Data Lake Storage Gen2.\nYou will need to make use of the Copy activity to retrieve information from one of the auxiliary connectors so that you may make reference to it. After the data has been staged, you will need to carry out an activity known as a Data Flow if you wish to effectively convert the data. Existing options for sinks and sources for Mapping Data Flow include the Azure SQL Data Warehouse and the Azure SQL Database, as well as specified text files from Azure Blob storage or Azure Data Lake Storage Gen2 and Parquet files from either Blob storage or Data Lake Storage Gen2. You will need to make use of the Copy activity to retrieve information from one of the auxiliary connectors so that you may make reference to it. After the data has been staged, you will need to carry out an activity known as a Data Flow if you wish to effectively convert the data.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "12. What prerequisites does Data Factory SSIS execution require?",
+        "answer": "Either an Azure SQL Managed Instance or an Azure SQL Database must be used as the hosting location for your SSIS IR and SSISDB catalogue.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "13. What are \"Datasets\" in the ADF framework?",
+        "answer": "The pipeline activities will make use of the inputs and outputs that are contained in the dataset, which contains those activities. A connected data store can be any kind of file, folder, document, or anything else imaginable; datasets frequently represent the organization of information within such a store. An Azure blob dataset, for example, details the blob storage folder and container from which a particular pipeline activity must read data to continue processing. This information is used to determine where the data will be read from.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "14. What is the purpose of ADF Service?",
+        "answer": "ADF's primary purpose is to handle data replication across local and remote, relational and non-relational data sources. In addition, ADF may replicate data between these different types of sources. Additionally, the ADF Service can be used to modify the incoming data to cater to the requirements of a particular organization. Ingestion of data can be accomplished using ADF Service either as an ETL or an ELT tool. This makes it a vital component of the vast majority of Big Data solutions. Sign up for Azure Training in Hyderabad to gain an in-depth understanding of the several advantages offered by ADF Service.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "15. State the difference between the transformation procedures known as Mapping data flow and Wrangling data flow when it comes to Data Factory?",
+        "answer": "The process of graphically designing and transforming data is referred to as mapping data flow. This application allows you to design data transformation logic in a graphical interface without the need to engage a professional programmer, which is a significant benefit. In addition to this, it is executed as an activity within the ADF pipeline on a scaled-out Spark cluster that is fully managed by the ADF.\nOn the other hand, a non-programmatic method of data preparation is referred to as \"wrangling data flow activity,\" which is the phrase that is used. Users of spark get access to all of the data manipulation capabilities of Power Query M since spark is compatible with Power Query Online. This gives users more control over the data. The process of graphically designing and transforming data is referred to as mapping data flow. This application allows you to design data transformation logic in a graphical interface without the need to engage a professional programmer, which is a significant benefit. In addition to this, it is executed as an activity within the ADF pipeline on a scaled-out Spark cluster that is fully managed by the ADF. mapping data flow On the other hand, a non-programmatic method of data preparation is referred to as \"wrangling data flow activity,\" which is the phrase that is used. Users of spark get access to all of the data manipulation capabilities of Power Query M since spark is compatible with Power Query Online. This gives users more control over the data. wrangling data flow activity",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "16. What is Azure Databricks?",
+        "answer": "Azure Databricks is an analytics platform that is built on Apache Spark and has been fine-tuned for Azure. It is fast, simple, and can be used in collaboration with others. Apache Spark was conceived and developed in collaboration with its creators. Azure Databricks is a service that combines the most beneficial aspects of Databricks and Azure to enable rapid deployment. This service is designed to assist customers in accelerating innovation. The enjoyable activities and engaging environment both contribute to making collaboration between data engineers, data scientists, and business analysts easier to do. Azure Databricks Azure Databricks",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "17. What is Azure SQL Data Warehouse?",
+        "answer": "It is a vast storehouse of knowledge that may be mined for useful insights and utilized to guide management decisions. Using this strategy, the data from numerous different databases that are either located in different physical places or are spread across a network can be aggregated into a single repository. It is possible to construct an Azure SQL Data Warehouse by merging data from multiple sources. This can be done for a variety of reasons, including the fact that it will make it easier to conduct analyses, generate reports, and make decisions. Because it is a business tool that operates in the cloud and allows parallel processing, it enables you to quickly analyze even the most complex queries on the most extensive data sets. In addition to that, it can be used as a workable alternative for Big Data theories.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "18. What is Azure Data Lake ?",
+        "answer": "The enhanced productivity and reduced complexity of data storage that Azure Data Lake offers are all benefits that can accrue to data analysts, software engineers, and data scientists. It is a cutting-edge method that enables you to carry out tasks like these in a wide variety of programming languages and environments. The problems that are normally involved with archiving information are eliminated as a result. Additionally, it makes it simple to perform batch, interactive, and streaming analytics. The Azure Data Lake from Microsoft provides capabilities that assist businesses in satisfying their growing requirements and overcoming challenges relating to productivity and scalability.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "19. Determine the data sources utilized by the Azure Data Factory",
+        "answer": "The original or final storage location for information that will be processed or utilized in some manner is referred to as the data source. The format of the data could be anything from binary to text to a file containing comma-separated values to a file containing JSON, and so on and so forth. It's possible that this is an actual database, but it might also be an image, video, or audio file. One example of a data source is a database. Some examples of databases include MySQL, Azure SQL Database, PostgreSQL, and others. Azure Data Lake Storage and Azure Blob Storage are also examples of data sources.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "20. The Auto Resolve Integration Runtime provides users with several benefits; nonetheless, the question remains: why should you use it?",
+        "answer": "AutoResolveIntegration: The runtime environment will make every effort to carry out the tasks in the same physical place as the source of the sink data, or one that is as close as it can get. Productivity may also increase using the same.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "21. What are some of the advantages of carrying out a lookup in the Azure Data Factory?",
+        "answer": "Within the ADF pipeline, the Lookup activity is utilized rather frequently for configuration lookup. It includes the data set in its initial form. In addition to this, the output of the activity can be used to retrieve the data from the dataset that served as the source. In most cases, the outcomes of a lookup operation are sent back down the pipeline to be used as input for later phases. To provide a more detailed explanation, the lookup activity in the ADF pipeline is responsible for retrieving data. You may only utilize it in a manner that is appropriate for the process you are going through. You have the option of retrieving just the first row, or you may select to obtain all of the rows in the dataset depending on the query.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "22. Please provide a more in-depth explanation of what Data Factory Integration Runtime entails.",
+        "answer": "The Integration Runtime (IR) is the underlying computing environment that is used when working with Azure Data Factory pipelines. In essence, it links the activities that individuals participate in with the services that they require to participate in those activities. It offers the computing environment in which the activity is either directly run or dispatched, and as a result, it is referenced by the service or activity that is associated with it. This indicates that the task can be finished regardless of where the closest data storage or computing service is located in the world. The following configurations are available for Data Factory and its integration runtimes, as shown in the accompanying diagram:   There are three separate integration runtimes available with Azure Data Factory. These runtimes each have their own set of benefits and downsides, which are determined by the user's level of experience with data integration and the desired network setup.  You can use Azure Integration Runtime to transport information across different cloud storage services and to trigger activities in other platforms such as SQL Server, Azure HDInsight, and other similar services.\nThe Self-Hosted Integration Runtime is where the action takes place whenever there is a need for data to be replicated between the cloud and private networks. Both the Azure Integration Runtime and the self-hosted integration runtime are the same pieces of software; however, the Azure Integration Runtime is designed to run locally on your computer, whilst the self-hosted integration runtime is designed to run in the cloud.\nExecution of SSIS packages is made possible by the Azure SSIS Integration Runtime, which offers a managed environment in which to do so. As a result, the lifting and moving of SSIS packages to the data factory is accomplished through the utilization of the Azure SSIS Integration Runtime. You can use Azure Integration Runtime to transport information across different cloud storage services and to trigger activities in other platforms such as SQL Server, Azure HDInsight, and other similar services. The Self-Hosted Integration Runtime is where the action takes place whenever there is a need for data to be replicated between the cloud and private networks. Both the Azure Integration Runtime and the self-hosted integration runtime are the same pieces of software; however, the Azure Integration Runtime is designed to run locally on your computer, whilst the self-hosted integration runtime is designed to run in the cloud. Execution of SSIS packages is made possible by the Azure SSIS Integration Runtime, which offers a managed environment in which to do so. As a result, the lifting and moving of SSIS packages to the data factory is accomplished through the utilization of the Azure SSIS Integration Runtime. ",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "23. What is meant to be referred to when people use the phrase \"breakpoint\" in conjunction with the ADF pipeline?",
+        "answer": "The commencement of the testing step of the pipeline is indicated by the placement of a debugging breakpoint. Before committing to a particular action, you can make use of breakpoints to check and make sure that the pipeline is operating as it should. Take the following example into consideration to get a better understanding of the concept: you have three activities in your pipeline, but you only want to debug through the second one. In order to be successful in this endeavour, a breakpoint needs to be established for the second task. By simply clicking the circle located at the very top of the activity, you will be able to add a breakpoint.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "24. What is the connected service offered by the Azure Data Factory, and how does it operate?",
+        "answer": "In Azure Data Factory, the connection method that is utilized to join an external source is referred to as a \"connected service,\" and the phrase is used interchangeably. It not only serves as the connection string, but it also saves the user validation data. The connected service can be implemented in two different ways, which are as follows: ARM approach.\nAzure Portal. ARM approach. Azure Portal.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "25. What sorts of variables are supported by Azure Data Factory and how many different kinds are there?",
+        "answer": "Variables are included in the ADF pipeline so that values can be temporarily stored in them. Their application is almost entirely equivalent to that of variables in programming languages. There are two types of operations that are used to assign and change the values of variables. These are set variables and add variables. The Azure data factory makes use of two different categories of variables: In Azure, the pipeline's constants are referred to as system variables. Pipeline ID, Pipeline Name, Trigger Name, etc. are all instances.\nThe user is responsible for declaring user variables, which are then utilized by the logic of the pipeline. In Azure, the pipeline's constants are referred to as system variables. Pipeline ID, Pipeline Name, Trigger Name, etc. are all instances. The user is responsible for declaring user variables, which are then utilized by the logic of the pipeline.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "1. In the context of Azure Data Factory, what does the term \"variables\" mean?",
+        "answer": "The variables that are used in the Azure Data Factory pipeline serve this storing function. Variables can be accessed within the pipeline in the same way that they can be used in any programming language because they are likewise available there. Changing or setting the values of variables can be accomplished through the use of the Set Variable and Add Variable actions, respectively. A data factory typically has both continuous and discrete variables in its database. These Azure Pipeline system variables are grouped together under the heading of System variables. The name, ID, and name of any Triggers that are used in Pipelines, etc. These are the things that you need in order to access the system information that might be relevant to the use case that you are working on.\nThe user variable is the second kind of variable, and it is the sort of variable that is defined explicitly in your code and is driven by the pipeline logic. These Azure Pipeline system variables are grouped together under the heading of System variables. The name, ID, and name of any Triggers that are used in Pipelines, etc. These are the things that you need in order to access the system information that might be relevant to the use case that you are working on. The user variable is the second kind of variable, and it is the sort of variable that is defined explicitly in your code and is driven by the pipeline logic.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "2. What is a \"data flow map\"?",
+        "answer": "Visual data transformations are referred to as mapping data flows when working in Azure Data Factory. Because of data flows, data engineers can construct logic for altering data without having to write any code at all. After the data flows have been generated, they are then implemented as activities inside of the scaled-out Apache Spark clusters that are contained within Azure Data Factory pipelines. The scheduling, control flow, and monitoring elements that are currently available in Azure Data Factory can be utilized to operationalize data flow operations. The method of data flow mapping is highly immersive visually and does away with the necessity for any form of scripting. The execution clusters in which the data flows are carried out are managed by the ADF, which enables the data to be processed in a manner that is massively parallel. Azure Data Factory is responsible for all of the coding tasks, including the interpretation of code, the optimization of pathways, and the execution of data flow operations.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "3. In the context of the Azure Data Factory, just what does it mean when it's referred to as \"copy activity\"?",
+        "answer": "The copy operation is one of the most extensively used and generally popular operations in the Azure data factory. The procedure that is known as \"lift and shift\" is useful in situations in which it is necessary to copy information from one database to another. You can make modifications to the data as you copy it. For instance, before you transmit it to your target data source, you can decide to lower the number of columns in the source txt/csv file from 12 to 7. You can change it in such a way that the target database receives only the required number of columns after the transfer.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "4. Could you explain to me how I should go about planning a pipeline?",
+        "answer": "You can set up a pipeline's schedule by utilizing either the time window trigger or the scheduler trigger. Pipelines can be programmed to run on a timed basis on a periodic basis or in cyclical patterns according to the wall-clock calendar schedule of the trigger (for example, on Mondays at 6:00 PM and Thursdays at 9:00 PM). There are now three different kinds of triggers that can be utilized with the service, and they are as follows: A state-preserving periodic trigger, the tumbling window trigger is used in this game.\nA time-based trigger that triggers a specified pipeline at a time that has been predetermined is referred to as a Schedule Trigger.\nOne category of triggers is known as \"event-based,\" which indicates that they respond in some way to any occurrence that takes place, such as when a file is copied into a blob. Pipelines and triggers are mapped to one another in a way that is many-to-many (except for the tumbling window trigger). It is conceivable for a single trigger to launch many pipelines, or it is possible for numerous triggers to initiate a single pipeline. Both scenarios are viable. A state-preserving periodic trigger, the tumbling window trigger is used in this game. A time-based trigger that triggers a specified pipeline at a time that has been predetermined is referred to as a Schedule Trigger. One category of triggers is known as \"event-based,\" which indicates that they respond in some way to any occurrence that takes place, such as when a file is copied into a blob. Pipelines and triggers are mapped to one another in a way that is many-to-many (except for the tumbling window trigger). It is conceivable for a single trigger to launch many pipelines, or it is possible for numerous triggers to initiate a single pipeline. Both scenarios are viable.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "5. In which situations does Azure Data Factory seem the best option?",
+        "answer": "The utilization of the Data Factory is essential at this time. When dealing with massive amounts of data, it is likely required to implement a cloud-based integration solution such as ADF. This is because a data warehouse needs to be created.\nNot everyone in the team is a coder, and some members may discover that graphical interfaces make it simpler to analyze and manipulate data.\nWhen raw business data is located in many places, both on-premises and in the cloud, we need a unified analytics solution such as ADF to analyze it all in one place.\nWe would like to minimize the management of our infrastructure to a minimum by making use of methods that are widely utilized for the transportation of data and the processing of it. Because of this, going with a managed solution such as ADF is the choice that makes the most sense. When dealing with massive amounts of data, it is likely required to implement a cloud-based integration solution such as ADF. This is because a data warehouse needs to be created. Not everyone in the team is a coder, and some members may discover that graphical interfaces make it simpler to analyze and manipulate data. When raw business data is located in many places, both on-premises and in the cloud, we need a unified analytics solution such as ADF to analyze it all in one place. We would like to minimize the management of our infrastructure to a minimum by making use of methods that are widely utilized for the transportation of data and the processing of it. Because of this, going with a managed solution such as ADF is the choice that makes the most sense.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "6. Do you have any tips on how to access the information you require by taking advantage of the other ninety dataset types that are accessible in the Data Factory?",
+        "answer": "Data can originate from a wide variety of Azure services, including Azure SQL Database, Azure Synapse Analytics, delimited text files stored in an Azure storage account or Azure Data Lake Storage Gen2, and Parquet files stored in blob storage or Data Lake Storage Gen2. Source and sink data can be combined. In order to transform data coming from external connectors, first stage the data using the Copy action, and then perform an activity in the Data Flow category.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "7. Can the value of a new column in an ADF table be determined by using an existing mapping column?",
+        "answer": "The logic that we specify can be used to generate a new column, and this is done by deriving transformations within the mapping data flow. When developing a derived column, we have the option of creating a brand-new one from scratch or making changes to an existing one. You can recognise the new column by giving it a name in the textbox labelled Column. If you choose a different column from the menu, the one you currently have selected will be removed from your schema. Select the textbox that corresponds to the derived column, and then press the Enter key on your keyboard to get started crafting an expression for it. You can either manually enter your reasoning or make use of the expression builder to construct it.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "8. Where can I find more information on the benefits of using lookup operations in the Azure Data Factory?",
+        "answer": "In the ADF pipeline, the Lookup activity is typically utilized for configuration lookup most of the time due to the ready availability of the source dataset. In addition to this, the output of the activity can be used to retrieve the data from the dataset that served as the source. In most cases, the outcomes of a lookup operation are sent back down the pipeline to be used as input for later phases. In order to retrieve data, the ADF pipeline makes heavy use of lookup operations. You may only utilize it in a manner that is appropriate for the process you are going through. You have the option of retrieving either the first row or all of the rows, depending on the dataset or query you choose.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "9. Please provide any more information that you have on the Azure Data Factory Get Metadata operation.",
+        "answer": "The Get Metadata operation can be used to access the metadata associated with any piece of data that is contained within an Azure Data Factory or a Synapse pipeline. We can use the results from the Get Metadata activity in conditional expressions to validate or utilize the metadata in subsequent actions. This can be done by using the Get Metadata activity. It takes a dataset as an input and then generates descriptive data based on that dataset as an output. The supported connectors and the metadata that may be retrieved for each one are outlined in the table that can be found below. It is possible to accept metadata returns that are up to 4 MB in size.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "10. Where did you experience the most difficulty while attempting to migrate data from on-premises to the Azure cloud via Data Factory?",
+        "answer": "Within the context of our ongoing transition from on-premises to cloud storage, the problems of throughput and speed have emerged as important obstacles. When we attempt to replicate the data from on-premises using the Copy activity, we do not achieve the throughput that we require. The configuration variables that are available for a copy activity make it possible to fine-tune the process and achieve the desired results. If we load data from servers located on-premises, we should first compress it using the available compression option before writing it to cloud storage, where the compression will afterwards be erased.\nAfter the compression has been activated, ii) it is imperative that all of our data be quickly sent to the staging area. Before being stored in the target cloud storage buckets, the data that was transferred might be uncompressed for convenience.\nCopying Proportion, The use of parallelism is yet another alternative that offers the potential to make the process of transfer more seamless. This accomplishes the same thing as employing a number of different threads to process the data and can speed up the rate at which data is copied.\nBecause there is no one size those fits all, we will need to try out a variety of different values, such as 8, 16, and 32, to see which one functions the most effective.\nIt may be possible to hasten the duplication process by increasing the Data Integration Unit, which is roughly comparable to the number of central processing units. If we load data from servers located on-premises, we should first compress it using the available compression option before writing it to cloud storage, where the compression will afterwards be erased. After the compression has been activated, ii) it is imperative that all of our data be quickly sent to the staging area. Before being stored in the target cloud storage buckets, the data that was transferred might be uncompressed for convenience. Copying Proportion, The use of parallelism is yet another alternative that offers the potential to make the process of transfer more seamless. This accomplishes the same thing as employing a number of different threads to process the data and can speed up the rate at which data is copied. Because there is no one size those fits all, we will need to try out a variety of different values, such as 8, 16, and 32, to see which one functions the most effective. It may be possible to hasten the duplication process by increasing the Data Integration Unit, which is roughly comparable to the number of central processing units.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "11. Do I have the ability to copy information simultaneously from many Excel sheets?",
+        "answer": "When using an Excel connector within a data factory, it is necessary to specify the sheet name from which the data is going to be loaded. This method is unobtrusive when dealing with data from just one or a few sheets, but when dealing with data from tens of sheets or more, it can become tiresome because the sheet name needs to be updated in the code each time. By utilizing a data factory binary data format connector and directing it to the Excel file, we can avoid having to manually insert the sheet names into the spreadsheet. Using the copy action, you will be able to simultaneously copy the information that is located on each of the sheets that are contained within the file.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "12. Nesting of loops within loops in Azure Data Factory: yes or no?",
+        "answer": "Nesting loops are not directly supported by any of the activities that use the for each or till looping structures in the data factory. On the other hand, we have the option of utilizing an execute pipeline activity that incorporates a for each/until loop activity. By carrying out the aforementioned steps, we will be able to successfully implement nested looping by having one loop activity call another loop activity.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "13. Are there any particular limitations placed on ADF members?",
+        "answer": "Azure Data Factory provides superior tools for transmitting and manipulating data, and these tools can be found in its feature set. However, you should be aware that there are certain limitations as well. Because the data factory does not allow the use of nested looping activities, any pipeline that has such a structure will require a workaround in order to function properly. Here is where we classify everything that has a looping structure: actions involving the conditions if, for, and till respectively.\nThe lookup activity is capable of retrieving a maximum of 5000 rows in a single operation at its maximum capacity. To reiterate, in order to implement this kind of pipeline design, we are going to need to use some additional loop activity in conjunction with SQL with the limit.\nIt is not possible for a pipeline to have more than forty activities in total, and this number includes any inner activities as well as any containers. To find a solution to this problem, pipelines ought to be modularized with regard to the number of datasets, activities, and so on. Because the data factory does not allow the use of nested looping activities, any pipeline that has such a structure will require a workaround in order to function properly. Here is where we classify everything that has a looping structure: actions involving the conditions if, for, and till respectively. The lookup activity is capable of retrieving a maximum of 5000 rows in a single operation at its maximum capacity. To reiterate, in order to implement this kind of pipeline design, we are going to need to use some additional loop activity in conjunction with SQL with the limit. It is not possible for a pipeline to have more than forty activities in total, and this number includes any inner activities as well as any containers. To find a solution to this problem, pipelines ought to be modularized with regard to the number of datasets, activities, and so on.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "14. What is Data Flow Debug?",
+        "answer": "It is possible to do data flow troubleshooting in Azure Data Factory and Synapse Analytics while simultaneously monitoring the real-time transformation of the data shape. The versatility of the debug session is beneficial to both the Data Flow design sessions as well as the pipeline debug execution. Conclusion This article was created to aid you in getting ready for an interview with Azure Data Factory. It is a service that helps in the creation, storage, and management of data that is stored on the cloud. It functions similarly to a database, but much more quickly, and it can store significantly more information. Use it to organize and keep track of enormous data sets, such as photo albums or video collections, with its built-in organization and tracking features. You will need to have at least a fundamental familiarity with the Azure Data Factory before you can begin to make preparations for the interview. To get started, you have to become familiar with its inner workings. Second, you'll require experience in environmental construction. The final step entails the development and dissemination of your apps. Interview Resources Interview Resources https://www.interviewbit.com/blog/azure-architecture/\nhttps://www.interviewbit.com/azure-databricks-interview-questions/\nhttps://www.interviewbit.com/blog/data-warehouse-architecture/\nhttps://www.interviewbit.com/data-warehouse-interview-questions/\nhttps://www.interviewbit.com/power-apps-interview-questions/\nhttps://www.interviewbit.com/data-engineer-interview-questions/\nhttps://www.interviewbit.com/ssis-interview-questions/\nhttps://www.interviewbit.com/optum-interview-questions/\nhttps://www.interviewbit.com/blog/aws-vs-azure/ https://www.interviewbit.com/blog/azure-architecture/ https://www.interviewbit.com/blog/azure-architecture/ https://www.interviewbit.com/azure-databricks-interview-questions/ https://www.interviewbit.com/azure-databricks-interview-questions/ https://www.interviewbit.com/blog/data-warehouse-architecture/ https://www.interviewbit.com/blog/data-warehouse-architecture/ https://www.interviewbit.com/data-warehouse-interview-questions/ https://www.interviewbit.com/data-warehouse-interview-questions/ https://www.interviewbit.com/power-apps-interview-questions/ https://www.interviewbit.com/power-apps-interview-questions/ https://www.interviewbit.com/data-engineer-interview-questions/ https://www.interviewbit.com/data-engineer-interview-questions/ https://www.interviewbit.com/ssis-interview-questions/ https://www.interviewbit.com/ssis-interview-questions/ https://www.interviewbit.com/optum-interview-questions/ https://www.interviewbit.com/optum-interview-questions/ https://www.interviewbit.com/blog/aws-vs-azure/ https://www.interviewbit.com/blog/aws-vs-azure/",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "15. Is it possible to use ADF to implement CI/CD, which stands for continuous integration and delivery?",
+        "answer": "The Data Factory provides full support for CI and CD for your data pipelines by utilizing Azure DevOps and GitHub. As a consequence of this, you are able to construct and roll out new versions of your ETL procedures in stages before delivering the completed product. After the raw data has been converted into a form that a firm can utilize, it should be imported into an Azure Data Warehouse, Azure SQL Azure Data Lake, Azure Cosmos DB, or another analytics engine that your organization's BI tools can reference. This step should take place as soon as possible.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "16. Which components of Data Factory's building blocks are considered to be the most useful ones?",
+        "answer": "Each activity inside the pipeline has the ability to use the @parameter construct in order to make use of the parameter value that has been provided to the pipeline.\nBy making use of the @coalesce construct within the expressions, we are able to deal with null values in a pleasant manner.\nThe @activity construct makes it possible to make use of the results obtained from one activity in another. Each activity inside the pipeline has the ability to use the @parameter construct in order to make use of the parameter value that has been provided to the pipeline. By making use of the @coalesce construct within the expressions, we are able to deal with null values in a pleasant manner. The @activity construct makes it possible to make use of the results obtained from one activity in another.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "17. Do you have any prior experience with the Execute Notebook activity in Data Factory? Does anybody have any idea how to configure the settings for a laptop task?",
+        "answer": "Through the use of the execute notebook activity, we can communicate with our data bricks cluster from within a notebook. We are able to send parameters to an activity within a notebook by utilizing the baseParameters attribute of that activity. In the event that the parameters are not explicitly defined or specified in the activity, the notebook's default settings are utilized.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "18. Is it possible to communicate with a pipeline run by passing information along in the form of parameters?",
+        "answer": "In Data Factory, a parameter is handled just like any other fully-fledged top-level notion would be. The defining of parameters at the pipeline level enables the passage of arguments during on-demand or triggered execution of the pipeline.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "19. Which activity should be performed if the goal is to make use of the results that were acquired by performing a query?",
+        "answer": "A lookup operation can be used to acquire the result of a query or a stored process. The end result might be a single value or an array of attributes that can be utilized in a ForEach activity or some other control flow or transformation function. Either way, it could be a single value.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "20. How many individual steps are there in an ETL procedure?",
+        "answer": "The ETL (Extract, Transform, Load) technique consists of carrying out these four stages in the correct order. Establishing a link to the data source (or sources) is the initial stage. After that, collecting the information and transferring it to either a local database or a crowdsourcing database is the next step in the process.\nMaking use of computational services includes activities such as transforming data by utilizing HDInsight, Hadoop, Spark, and similar tools.\nSend information to an Azure service, such as a data lake, a data warehouse, a database, Cosmos DB, or a SQL database. This step can also be accomplished by using the Publish API.\nTo facilitate pipeline monitoring, Azure Data Factory makes use of Azure Monitor, API, PowerShell, Azure Monitor logs, and health panels on the Azure site. Establishing a link to the data source (or sources) is the initial stage. After that, collecting the information and transferring it to either a local database or a crowdsourcing database is the next step in the process. Making use of computational services includes activities such as transforming data by utilizing HDInsight, Hadoop, Spark, and similar tools. Send information to an Azure service, such as a data lake, a data warehouse, a database, Cosmos DB, or a SQL database. This step can also be accomplished by using the Publish API. To facilitate pipeline monitoring, Azure Data Factory makes use of Azure Monitor, API, PowerShell, Azure Monitor logs, and health panels on the Azure site.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "21. How well does Data Factory support the Hadoop and Spark computing environments when it comes to carrying out transform operations?",
+        "answer": "The following types of computer environments are able to carry out transformation operations with the assistance of a Data Factory: The On-Demand Computing Environment provided by I ADF is a solution that is ready to use and includes full management. A cluster is created for the computation to carry out the transformation, and this cluster is afterwards removed once the transformation has been carried out.\nBring Your Own Equipment: If you already possess the computer gear and software required to deliver services on-premises, you can use ADF to manage your computing environment in this situation. The On-Demand Computing Environment provided by I ADF is a solution that is ready to use and includes full management. A cluster is created for the computation to carry out the transformation, and this cluster is afterwards removed once the transformation has been carried out. Bring Your Own Equipment: If you already possess the computer gear and software required to deliver services on-premises, you can use ADF to manage your computing environment in this situation.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "22. How about discussing the three most important tasks that you can complete with Microsoft Azure Data Factory?",
+        "answer": "As was discussed in the previous section's third question, Data Factory makes it easier to carry out three processes: moving data, transforming data, and exercising control. The operations known as data movement do precisely what their name suggests, which is to say that they facilitate the flow of data from one point to another. For example, information can be moved from one data store to another using Data Factory's Copy Activity. Other data stores may also be used.\n\"Data transformation activities\" are any operations that modify data as it is being loaded into its final destination system. Stored Procedures, U-SQL, Azure Functions, and so on are just a few examples.\nControl (flow) activities, as their name suggests, are designed to help regulate the speed of any process that is going through a pipeline. For example, selecting the Wait action will result in the pipeline pausing for the amount of time that was specified. The operations known as data movement do precisely what their name suggests, which is to say that they facilitate the flow of data from one point to another. For example, information can be moved from one data store to another using Data Factory's Copy Activity. Other data stores may also be used. \"Data transformation activities\" are any operations that modify data as it is being loaded into its final destination system. Stored Procedures, U-SQL, Azure Functions, and so on are just a few examples. Control (flow) activities, as their name suggests, are designed to help regulate the speed of any process that is going through a pipeline. For example, selecting the Wait action will result in the pipeline pausing for the amount of time that was specified.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "23. What is meant by the term \"ARM Templates\" when referring to Azure Data Factory? Where do we plan to use them?",
+        "answer": "An ARM template is a file that uses JavaScript Object Notation (JSON), and it is where all of the definitions for the data factory pipeline operations, associated services, and datasets are stored. Code that is analogous to the one used in our pipeline will be incorporated into the template. Once we have determined that the code for our pipeline is operating as it should, we will be able to use ARM templates to migrate it to higher environments, such as Production or Staging, from the Development setting.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "24. Is there a limit to the number of Integration Runtimes that may be built or is it unlimited?",
+        "answer": "The default maximum for anything that may be contained within a Data Factory is 5000, and this includes a pipeline, data set, trigger, connected service, Private Endpoint, and integration runtime. You can file a request to increase this amount through the online help desk if you find that you require more.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "25. What are the prerequisites that need to be met before an SSIS package can be executed in Data Factory?",
+        "answer": "Setting up an SSIS integration runtime and an SSISDB catalogue in an Azure SQL server database or an Azure SQL-managed instance is required before an SSIS package can be executed. This can be done in either of these locations.",
+        "reference": "interviewbit.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "1) What is Azure Data Factory? / What do you understand by Azure Data Factory?",
+        "answer": "Azure Data Factory is a cloud-based, fully managed, data-integration ETL service that automates the movement and transformation of data. It facilitates users to create data-driven workflows in the cloud and automates data movement and transformation. Azure Data Factory is also called ADF and facilitates users to create and schedule the data-driven workflows (called pipelines) that can retrieve data from disparate data stores and process and transform the data by using computing services such as HDInsight Hadoop, Spark, Azure Data Lake Analytics, and Azure Machine Learning.\nIt is called Data Factory because it works like a factory that runs equipment to transform raw materials into finished goods. In the same way, Azure Data Factory uses services to collect raw data and transform it into ready-to-use information.\nWe can create data-driven workflows to move data between on-premises and cloud data stores using Azure Data Factory. It also facilitates us to process and transform data with Data Flows. We can execute our data processing either on an Azure-based cloud service or in our own self-hosted compute environments, such as SSIS, SQL Server, or Oracle.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "2) What is the requirement of Azure Data Factory? What is the purpose of the ADF Service?",
+        "answer": "ADF Service or Azure Data Factory is mainly used to automate retrieving and copying data between relational and non-relational data sources hosted on the cloud or a local datacenter.\nWe can understand it well by the following scenario:\nNowadays, we have to deal with huge amounts of data, and we know that this data comes from different sources. Suppose we have to move this particular data to the cloud, so we have to follow certain things to move this data.\nThe data we get from different sources can be in a different formats. These different sources will transfer or channel the data in different ways. When we bring this data to the cloud or particular local storage, we must ensure that this data is well managed. So, we have to transform the data and delete unnecessary parts.\nWe can do this task in a traditional data warehouse, but there are certain disadvantages. Sometimes, we have to use some custom applications to deal with all these processes individually, which is time-consuming, and integrating all these sources is a tedious job. We figure out a way to automate this process or create proper workflows to deal with all these problems. That's why Azure Data Factory is required. It automates the complete process into a more manageable or organizable manner. Azure Data Factory provides amazing tools such as the ELT tool for data ingestion in most Big Data solutions.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "3) What are the different components used in Azure Data Factory?",
+        "answer": "Azure Data Factory consists of several numbers of components. Some components are as follows:\nADVERTISEMENT\nPipeline: The pipeline is the logical container of the activities.\nActivity: It specifies the execution step in the Data Factory pipeline, which is mainly used for data ingestion and transformation.\nDataset: A dataset specifies the pointer to the data used in the pipeline activities.\nMapping Data Flow: It specifies the data transformation UI logic.\nLinked Service: It specifies the descriptive connection string for the data sources used in the pipeline activities.\nTrigger: It specifies the time when the pipeline will be executed.\nControl flow: It is used to control the execution flow of the pipeline activities.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "4) What do you understand by the integration runtime?",
+        "answer": "The integration runtime is the compute infrastructure used by Azure Data Factory to provide some data integration capabilities across various network environments.\nFollowing are the three types of integration runtimes:\nAzure Integration Runtime: The Azure Integration Runtime is used to copy data between cloud data stores. It can dispatch the activity to different types of compute services such as Azure HDinsight or SQL server where the transformation takes place.\nSelf Hosted Integration Runtime: The Self Hosted Integration Runtime is the software with the same code as Azure Integration Runtime. But the difference is that it is installed on an on-premise machine or a virtual machine in a virtual network. It can run the copy activities between a public cloud and a private network data store. It can also dispatch transformation activities against compute resources in a private network. The main reason for using the Self Hosted Integration Runtime is that the Data factory cannot directly access on-primitive data sources as they sit behind a firewall.\nAzure SSIS Integration Runtime: We can natively execute the SSIS packages in a managed environment by using Azure SSIS Integration Runtime. So, it is mainly used when we have to lift and shift the SSIS packages to the data factory.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "5) What is the limit on the number of integration runtimes in Azure Data Factory?",
+        "answer": "There is no limit on the number of integration runtime instances for Azure Data Factory. But there is a limit on the number of VM cores that the integration runtime can use per subscription for SSIS package execution.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "6) What are the key differences between Azure Data Lake and Azure Data Warehouse?",
+        "answer": "Azure Data Lake and Azure Data Warehouse are widely used to store big data, but they are not synonymous, and we can't use them interchangeably. Azure Data Lake is a huge pool of raw data. On the other hand, Azure Data Warehouse is a repository for structured, processed, and filtered data already processed for a specific purpose.\nFollowing is a list of key differences between Azure Data Lake and Azure Data Warehouse:\nAzure Data Lake Azure Data Warehouse\nAzure Data Lake has a raw data structure. Raw data means data that has not yet been processed for a specific purpose. Azure Data Warehouse has a processed data structure. The processed data means the data that a larger audience can easily understand.\nIt is primarily used to store raw and unprocessed data. It is primarily used to store only processed data, saving storage space by not maintaining data that may never be used.\nAzure Data Lake is complementary to Azure Data Warehouse. In other words, we can say that if you have your data at a data lake, it can be stored in the data warehouse as well, but you must have to follow certain rules. Azure Data Warehouse is a traditional way of storing data. It is one of the most widely used storage for big data.\nThe purpose of data storing in the Azure Data Lake is not yet determined. The purpose of data storing in the Azure Data Warehouse is worthy because it is currently in use.\nData scientists mainly use it because data is huge and unprocessed. Business professionals mainly use it because data is processed and can be easily understood by a larger audience.\nThe data in Azure Data Lake is highly accessible and quick to update. The data in Azure Data Warehouse is more complicated and costly to make changes.\nIt uses one language to process data of any format. It uses SQL because data is already processed.\nAzure Data Lake requires a much larger storage capacity than data warehouses. It usually requires a smaller storage capacity.\nIt is ideal for machine learning. It is ideal for a specific purpose within the organization.\nIn Azure Data Lake, the schema is defined when the data is stored successfully. In Azure Data Warehouse, the schema is defined before storing the data.\nIt follows the ELT (Extract, Load, and Transform) process. It follows ETL (Extract, Transform, and Load) process.\nIt stores unprocessed data, so sometimes it gets data swamps without appropriate data quality. It doesn't store any garbage data, so storage space is not wasted on data that may never be used.\nIt is the best platform for doing in-depth analysis. It is the best platform for operational users.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "7) What is Blob Storage in Azure? What are its important features?",
+        "answer": "In Microsoft Azure, Blob Storage is one of the most fundamental components. It is mainly used to store large volumes of unstructured data such as text or binary data. Enterprises also use it to render data to outsiders or save app data confidentially. Blob Storage is used to expose data publicly to the world. It is most commonly used for streaming audios or videos, storing data for backup, disaster recovery, analysis, etc. It can also be used to create Data Lakes to perform analytics.\nFollowing is a list of some primary applications of blob storage:\nIt stores files to provide easy distributed access to data.\nIt can also be used to store data for reinstating data recovery, archiving, and backup.\nIt can store audio and video.\nIt can be used to browse documents and images directly.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "8) What is the key difference between the Dataset and Linked Service in Azure Data Factory?",
+        "answer": "Dataset specifies a reference to the data store described by the linked service. When we put data to the dataset from a SQL Server instance, the dataset indicates the table's name that contains the target data or the query that returns data from different tables.\nLinked service specifies a description of the connection string used to connect to the data stores. For example, when we put data in a linked service from a SQL Server instance, the linked service contains the name for the SQL Server instance and the credentials used to connect to that instance.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "9) What are the key differences between Data Lake Storage and Blob Storage?",
+        "answer": "Following is the list of key differences between Data Lake Storage and Blob Storage:\nAzure Data Lake Storage Azure Blob Storage\nThe main purpose of Azure Data Lake Storage is to provide optimized storage for big data analytics workloads. So, we can say that it is an optimized storage solution for big data analytics workloads. The Azure Blob Storage is a general-purpose object storage system for a wide variety of storage scenarios and big data analytics.\nThe structure of Azure Data Lake Storage follows the hierarchical file system. The structure of Azure Blob Storage follows an object store with a flat namespace.\nAzure Data Lake Storage contains folders in which the data is stored as files. Azure Blob Storage facilitates us to create a storage account with containers in which the data is stored.\nIt is mainly used to store batch, interactive, streaming analytics, and machine learning data such as log files, IoT data, clickstreams, large datasets, etc. It can be used to store any text or binary data, such as application back end, backup data, media storage for streaming, and general-purpose data. It also provides full support for analytics workloads; batch, interactive, streaming analytics, and machine learning data such as log files, IoT data, clickstreams, large datasets, etc.\nIt uses WebHDFS-compatible REST API as the Server-side API. It uses Azure Blob Storage REST API as the Server-side API.\nIts data operations and authentication is based on Azure Active Directory Identities. Its data operations and authentication is based on shared secrets, Account Access Keys, and Shared Access Signature Keys.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "10) How many types of triggers are supported by Azure Data Factory?",
+        "answer": "Following are the three types of triggers that Azure Data Factory supports:\nTumbling Window Trigger: The Tumbling Window Trigger executes the Azure Data Factory pipelines over cyclic intervals. It is also used to maintain the state of the pipeline.\nEvent-based Trigger: The Event-based Trigger creates a response to any event related to blob storage. These can be created when you add or delete blob storage.\nSchedule Trigger: The Schedule Trigger executes the Azure Data Factory pipelines that follow the wall clock timetable.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "11) What steps are used to create an ETL process in Azure Data Factory?",
+        "answer": "When we process a dataset to retrieve some data form the Azure SQL server database, the processed data is stored in the Data Lake Store.\nFollowing are the steps we have to follow to create an ETL process:\nFirst, we have to create a service for a linked data store, an SQL Server Database.\nSuppose that we have a car dataset.\nWe can create a linked service for the destination data store for this car's dataset, which is Azure Data Lake.\nNow, we have to create a data set for Data Saving.\nAfter that, create a Pipeline and Copy Activity.\nIn the last step, insert a trigger and schedule your pipeline.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "12) How can you schedule a pipeline?",
+        "answer": "There are two ways to schedule a pipeline:\nWe can use the scheduler trigger or time window trigger to schedule a pipeline.\nA trigger uses a wall-clock calendar schedule to schedule pipelines periodically or in calendar-based recurrent patterns (For example, on Mondays at 6:00 PM and Thursdays at 9:00 PM).",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "13) What are the key differences between Azure HDInsight and Azure Data Lake Analytics?",
+        "answer": "Following is the list of key differences between Azure HDInsight and Azure Data Lake Analytics:\nAzure HDInsight Azure Data Lake Analytics\nAzure HDInsight is a Platform as a service Azure Data Lake Analytics is Software as a service.\nIf you want to process the data in Azure HDInsight, you must configure the cluster with predefined nodes. You can also process the data by using languages like pig or hive. In Azure Data Lake Analytics, we have to pass the queries written for data processing. The Azure Data Lake Analytics further creates compute nodes to process the data set.\nSince the clusters are configured with Azure HDInsight, so we create and control them as we want. It also facilitates users to use Spark and Kafka without restrictions. Azure Data Lake Analytics does not provide so much flexibility in configuration and customization, but Azure manages it automatically for its users. Additionally, it also facilitates users to use USQL taking advantage of dotnet for processing data.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "14) What are the top-level concepts of Azure Data Factory?",
+        "answer": "Following is a list of four basic top-level concepts of Azure Data Factory:\nPipeline: Pipeline is one of the most important top-level concepts of Azure Data Factory. It acts as a carrier in which many processes occur where activity is an individual process.\nActivities: The activities concepts specify the steps of processes in the pipeline. A pipeline can have one or multiple activities. An activity can be anything. For example, a process like querying a data set or moving the dataset from one source to another.\nDatasets: Datasets specify the sources of data. In other words, we can say that a dataset is a data structure that holds our data.\nLinked Services: Linked services are the store information that is very important while connecting to the resources or other services. For example, you must need a connection string connected to an external device if you have an SQL server. Here, you have to mention the source and the destination of your data.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "15) What are the different rich cross-platform SDKs for advanced users in Azure Data Factory?",
+        "answer": "The Azure Data Factory V2 provides a rich set of SDKs that we can use to write, manage, and monitor pipelines by using our favorite IDE. Some popular cross-platform SDKs for advanced users in Azure Data Factory are as follows:\nPython SDK\nC# SDK\nPowerShell CLI\nUsers can also use the documented REST APIs to interface with Azure Data Factory V2.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "16) How can you pass parameters to a pipeline run in Azure Data Factory?",
+        "answer": "In Azure Data Factory, parameters are the first-class, top-level concepts. We can pass parameters to a pipeline run by defining the pipeline level parameters and passing arguments while executing the pipeline run on-demand or by using a trigger.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "17) What are the key differences between the Mapping data flow and Wrangling data flow transformation activities in Azure Data Factory?",
+        "answer": "In Azure Data Factory, the main difference between the Mapping data flow and the Wrangling data flow transformation activities is as follows:\n\nThe Mapping data flow activity is a visually designed data transformation activity that facilitates users to design graphical data transformation logic. It doesn't need the users to be expert developers. It is executed as an activity within the ADF pipeline on an ADF fully managed scaled-out Spark cluster.\nOn the other hand, the Wrangling data flow activity is a code-free data preparation activity. It is integrated with Power Query Online to make the Power Query M functions available for data wrangling using spark execution.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "18) Is it possible to define default values for the pipeline parameters?",
+        "answer": "Yes, we can easily define default values for the parameters in the pipelines.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "19) How can you access the data using the other 80 Dataset types in Azure Data Factory?",
+        "answer": "Azure Data Factory provides a mapping data flow feature that allows Azure SQL database, Data Warehouse, Delimited text files from Azure Blob Storage, or Azure Data Lake storage to generate tools natively for source and sink. We can use copy activity to state data from any other connectors and then execute the data flow activity to transform data.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "20) Can an activity in a pipeline consume arguments that are passed to a pipeline run?",
+        "answer": "Every activity within the pipeline can consume the parameter value passed to the pipeline and run with the @parameter construct.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "21) What do we need to execute an SSIS package in Azure Data Factory?",
+        "answer": "We have to create an SSIS IR, and an SSISDB catalog hosted in Azure SQL Database or Azure SQL Managed Instance to execute an SSIS package in Azure Data Factory.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "22) Can the output property of activity be consumed in another activity?",
+        "answer": "The output property of an activity can be consumed in a subsequent activity with the @activity construct.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "23) What types of compute environments are supported by Azure Data Factory to execute the transform activities?",
+        "answer": "Following are the two types of compute environments supported by Azure Data Factory to execute the transform activities:\nOn-demand compute environment: The on-demand compute environment is a fully managed to compute environment provided by Azure Data Factory. In this compute environment type, a cluster is created to execute the transform activity and removed automatically when the activity is completed.\nSelf-created environment: In this compute environment type; we have to create and manage the compute environment ourselves with the help of Azure Data Factory.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "24) How can you handle the null values in an activity output in Azure Data Factory?",
+        "answer": "We can handle the null values gracefully in an activity output in Azure Data Factory by using the @coalesce construct in the expressions.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "25) Is the knowledge of coding required for Azure Data Factory?",
+        "answer": "No, it is not necessary to have a good knowledge of coding for Azure Data Factory. Azure Data Factory provides 90+ built-in connectors to transform the data using mapping data flow activities without the knowledge of programming skills or spark cluster knowledge. It also facilitates us to create workflows very quickly.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "26) Which Azure Data Factory version is used to create data flows?",
+        "answer": "We can use the Azure Data Factory V2 version to create data flows.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "27) What are the two levels of security in Azure Data Lake Storage Gen2 (ADLS Gen2)?",
+        "answer": "Azure Data Lake Storage Gen2 provides an access control model that supports two levels of security, both Azure role-based access control (Azure RBAC) and POSIX-like access control lists (ACLs).\nAzure Role-Based Access Control (RBAC): Azure Role-Based Access Control consists of built-in Azure roles such as reader, contributor, owner, or custom roles. Generally, RBAC is assigned for two reasons. The first reason is to specify who can manage the service (i.e., update settings and properties for the storage account). And the second reason is to permit the use of built-in data explorer tools, which require reader permissions.\nAzure Access Control Lists (ACLs): The Azure Access Control Lists specify which data objects a user may read, write, or execute. ACLs are POSIX-compliant, so it is familiar to those who know Unix or Linux.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "28) Is Azure Data Factory an ETL tool?",
+        "answer": "Yes, Azure Data Factory is one of the best tools available in the market for ETL processes. ETL process stands for Extract, Transform and Load. It is a data integration process that combines data from multiple sources into a single, consistent data store and loads it into a data warehouse or other target system. Azure Data Factory is the best tool because it simplifies the entire data migration process without writing any complex algorithms.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "29) What do you understand by Azure Table Storage?",
+        "answer": "The Azure Table Storage is a service that facilitates users to store structured data in the cloud and provides a Keystore with schemas designed. It is very quick and effective storage for modern-day applications.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "30) How can we monitor the execution of a pipeline executed under the Debug mode?",
+        "answer": "We can check the output tab of the pipeline under the Azure Data Factory Monitor window to monitor the execution of a pipeline that is executed under the Debug mode.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "31) What are the steps involved in the ETL process?",
+        "answer": "The ETL process stands for Extract, Transform, and Load. There are mainly four steps involved in the ETL process:\nConnect and Collect: It is used to help in moving the data on-premises and cloud source data stores.\nTransform: It facilitates users to collect the data using compute services such as HDInsight Hadoop, Spark, etc.\nPublish: It is used to help load the data into Azure data warehouse, Azure SQL database, Azure Cosmos DB, etc.\nMonitor: It is mainly used to support the pipeline monitoring via Azure Monitor, API and PowerShell, Log Analytics, and health panels on the Azure Portal.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "32) Which integration runtime should we use to copy data from an on-premises SQL Server instance using Azure Data Factory?",
+        "answer": "To copy data from an on-premises SQL Server instance using Azure Data Factory, we must have installed the self-hosted integration runtime on the on-premises machine where the SQL Server Instance is hosted.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    },
+    {
+        "question": "33) What changes can we see regarding data flows from private preview to limited public preview?",
+        "answer": "Following is a list of some important changes we can see regarding data flows from private preview to limited public preview:\nWe don't need to bring our own Azure Databricks Clusters.\nWe can still use the Data Lake Storage Gen 2 and Blob Storage to store those files.\nAzure Data Factory will manage the cluster creation and tear-down process.\nBlob data sets and Azure Data Lake Storage Gen 2 are separated into delimited text and Apache Parquet datasets.\nWe can use the appropriate linked services for those storage engines.",
+        "reference": "javatpoint.com",
+        "role": "azure-data-factory"
+    }
+]

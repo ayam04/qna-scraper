@@ -1,0 +1,392 @@
+[
+    {
+        "question": "1. What is the time parameter in JCL? Explain what does TIME=1440 mean?",
+        "answer": "JCL TIME is an optional Keyword parameter that specifies how long a job may use the processor. In simple words, TIME specifies the max CPU usage time that can be used for the job's execution. It is possible to code the TIME parameter at the Job and Step levels as well. Once the specified execution time is reached, the system will stop the JOB execution automatically. Thus, the TIME parameter will inform OS of the maximum CPU utilization time, and once the specified time has been consumed by the job, OS will cancel the job automatically. Additional options for TIME Parameter Additional options for TIME Parameter TIME=1440 TIME=1440 It indicates that the job or step has no time limit and can be executed indefinitely. TIME=MAXIMUM TIME=MAXIMUM This means the job or step can use the most CPU time possible.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "2. Explain different types of Job control statements or JCL statements.",
+        "answer": "For each job that you submit, you need to specify where the input should be found, how it should be processed, and what should be done with the output. The information is conveyed to MVS (Multiple Virtual Storage) through a set of statements called job control statements in JCL. MVS can glean a great deal of information from JCL's extensive set of job control statements. A very small set of these control statements can, however, be used to run most jobs. In time, you may discover that you only need to know the details of a few of the control statements as you become familiar with the jobs you typically run. Types of Job Control Statements Types of Job Control Statements Job control statements can be classified into the following three types: JOB Statement: It is the first of three control statements in JCL, which tells the mainframe OS (Operating System) about the job identity. Besides Job name and accounting data, there are other parameters in the JOB statement such as class, msgclass, and msglevel. These parameters facilitate the OS in allocating the appropriate scheduler. Also, it is useful for monitoring CPU utilization and sending notifications to the user. JOB Statement: It is the first of three control statements in JCL, which tells the mainframe OS (Operating System) about the job identity. Besides Job name and accounting data, there are other parameters in the JOB statement such as class, msgclass, and msglevel. These parameters facilitate the OS in allocating the appropriate scheduler. Also, it is useful for monitoring CPU utilization and sending notifications to the user. JOB Statement: Syntax: Syntax: //Job-name JOB Positional-param, Keyword-param //Job-name JOB Positional-param, Keyword-param Here, Job-name specifies a name for the job and appears after \"//\". It can have a length of 1-8 alphanumeric characters.\nThe keyword 'JOB' identifies it as a JOB statement.\nPositional-param means positional parameters and keyword-param means keyword parameter. Job-name specifies a name for the job and appears after \"//\". It can have a length of 1-8 alphanumeric characters. The keyword 'JOB' identifies it as a JOB statement. Positional-param means positional parameters and keyword-param means keyword parameter. Example: Example: //JOB011 JOB (456),'INTERVIEWBIT', \n//    CLASS=A //JOB011 JOB (456),'INTERVIEWBIT', \n//    CLASS=A EXEC Statement: It stands for EXECUTION. The EXEC statement specifies a program/job-step, as well as utilities and procedures to be executed. There can be 255 steps in a JCL, which means it can have 255 'EXEC' statements. EXEC Statement: It stands for EXECUTION. The EXEC statement specifies a program/job-step, as well as utilities and procedures to be executed. There can be 255 steps in a JCL, which means it can have 255 'EXEC' statements. EXEC Statement: Syntax: Syntax: //Step-name EXEC Positional-param, Keyword-param //Step-name EXEC Positional-param, Keyword-param Here, Step-name specifies a name for the job step and appears just after “//”.\nThe keyword 'EXEC' identifies it as an EXECUTION statement.\nPositional-param means positional parameters and keyword-param means keyword parameter. Step-name specifies a name for the job step and appears just after “//”. The keyword 'EXEC' identifies it as an EXECUTION statement. Positional-param means positional parameters and keyword-param means keyword parameter. Example: Example: //STEP01 EXEC PGM=INTERVIEWBIT //STEP01 EXEC PGM=INTERVIEWBIT DD Statement: DD stands for Data Definition and helps in specifying the data sets used by a program or procedure. For each job step, the required input and output resources must be described in a DD statement. DD statements are required for every data set used or created in a job step. Up to 3273 DD statements are allowed in a step. DD Statement: DD stands for Data Definition and helps in specifying the data sets used by a program or procedure. For each job step, the required input and output resources must be described in a DD statement. DD statements are required for every data set used or created in a job step. Up to 3273 DD statements are allowed in a step. DD Statement: Syntax: Syntax: //DD-name DD Parameters //DD-name DD Parameters Here, DD-name specifies a name for DD-statement and appears just after “//”.\nThe keyword 'DD' identifies it as a DD statement.\nParameters represent different types of parameters for DD statements. DD-name specifies a name for DD-statement and appears just after “//”. The keyword 'DD' identifies it as a DD statement. Parameters represent different types of parameters for DD statements. Example: Example: //STEPLIB   DD  DSN=hlq.xxxxxxxx.CDBALOAD,DISP=SHR //STEPLIB   DD  DSN=hlq.xxxxxxxx.CDBALOAD,DISP=SHR",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "3. State the difference between positional parameter and keyword parameter in JCL.",
+        "answer": "Positional Parameters: Positional parameters are those that follow a fixed position in terms of the order in a statement JCL. Their order in the JCL statement is always fixed therefore they should be specified in the specified order. Changing the position of the positional parameters will result in an error in the JCL.  \nExamples: ACCT (Accounting Information), PGM (Programmer Name), etc. \nKeyword Parameters: There is no need for a fixed position for these parameters. It doesn't matter in what order you code the keyword parameters; you won't get any errors.  \nExamples: TIME, REGION, MSGLEVEL, CLASS, etc. Positional Parameters: Positional parameters are those that follow a fixed position in terms of the order in a statement JCL. Their order in the JCL statement is always fixed therefore they should be specified in the specified order. Changing the position of the positional parameters will result in an error in the JCL.  \nExamples: ACCT (Accounting Information), PGM (Programmer Name), etc. Positional Parameters:  Examples Examples : Keyword Parameters: There is no need for a fixed position for these parameters. It doesn't matter in what order you code the keyword parameters; you won't get any errors.  \nExamples: TIME, REGION, MSGLEVEL, CLASS, etc. Keyword Parameters:  Examples Examples :",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "4. What are different parameters for DD (Data Definition) statement?",
+        "answer": "Some of the parameters for the DD statement are listed below. Based on your needs, you can select one or more parameters separated by commas. 1. DSN Parameter: It is used to specify the name of a newly created or existing dataset. There can be a total of 44 characters in the DSN value. The sub-names can be 1 to 8 characters in length, separated by periods. 1. DSN Parameter: Syntax: Syntax: DSN=Physical Dataset Name DSN=Physical Dataset Name Here, The keyword DSN specifies DSN parameter.\nPhysical dataset name refers to the name of the newly created or existing dataset. The keyword DSN specifies DSN parameter. Physical dataset name refers to the name of the newly created or existing dataset. 2. DISP Parameter: \"DISP\" stands for Disposition, a keyword parameter used in JCL to describe a data set's status to OS. Essentially, it indicates how the OS should handle the dataset after JOB/STEP termination. It contains three sub-parameters: status, normal and abnormal termination activities of the JOB. 2. DISP Parameter: Syntax: Syntax: DISP=({status},{normal Disposition},{abnormal Disposition}) DISP=({status},{normal Disposition},{abnormal Disposition}) Here, The keyword DISP specifies the Disposition parameter.\nStatus can be NEW (specifies that the dataset is new), OLD (specifies that the dataset exists when the step begins.), MOD (extends the dataset if the dataset already exists or creates a new one if it is not existing.), or SHR (specifies that the dataset can be shared (read access) with other jobs).\nThe normal disposition specifies what is to be done with a dataset after a normal termination. It takes one of the values CATLG, UNCATLG, PASS, KEEP, or DELETE.\nThe abnoram disposition specifies what is to be done with a dataset after a normal termination. It takes one of the values CATLG, UNCATLG, KEEP, DELETE. The keyword DISP specifies the Disposition parameter. Status can be NEW (specifies that the dataset is new), OLD (specifies that the dataset exists when the step begins.), MOD (extends the dataset if the dataset already exists or creates a new one if it is not existing.), or SHR (specifies that the dataset can be shared (read access) with other jobs). The normal disposition specifies what is to be done with a dataset after a normal termination. It takes one of the values CATLG, UNCATLG, PASS, KEEP, or DELETE. The abnoram disposition specifies what is to be done with a dataset after a normal termination. It takes one of the values CATLG, UNCATLG, KEEP, DELETE. 3. DCB Parameter: DCB (Data control block) parameter provides information about the physical characteristics of a dataset. For newly created datasets, this parameter is required. 3. DCB Parameter: Syntax: Syntax: DCB=<List of parameters> DCB=<List of parameters> Here, The keyword DCB specifies the data control block parameter.\nList of parameters can be RECFM (specifies record format of the dataset), LRECL (defines the length of logical records), BLKSIZE (defines the size of a block of record), DSORG (specifies the organization of the data set as physical sequential (PS), partitioned (PO), or direct (DA)). The keyword DCB specifies the data control block parameter. List of parameters can be RECFM (specifies record format of the dataset), LRECL (defines the length of logical records), BLKSIZE (defines the size of a block of record), DSORG (specifies the organization of the data set as physical sequential (PS), partitioned (PO), or direct (DA)). 4. SPACE Parameter: The SPACE parameter indicates how much space is required to store a dataset on a Direct Access Storage Disk. 4. SPACE Parameter: Syntax: Syntax: SPACE=(Unit of Space,(Primary,Secondary,Directory),RLSE,CONTIG,ROUND) SPACE=(Unit of Space,(Primary,Secondary,Directory),RLSE,CONTIG,ROUND) Here, The keyword DCB specifies the data control block parameter.\nThe unit of space is specified in Tracks (TRK), Cylinders (CYL), block length (BLKLGTH), record length (RECLGTH).\nPrimary specifies the amount of primary space required in terms of the space unit (tracks/cylinders/number of data blocks)\nSecondary specifies the secondary quantity of units if the primary is exceeded but allocated only when the dataset expands.\nThe directory specifies the number of directory blocks to be allocated.\nRLSE specifies releasing the unused space requested.\nCONTIG specifies to allocate contiguous primary space.\nROUND specifies allocation by block length rounded to integral cylinders. The keyword DCB specifies the data control block parameter. The unit of space is specified in Tracks (TRK), Cylinders (CYL), block length (BLKLGTH), record length (RECLGTH). Primary specifies the amount of primary space required in terms of the space unit (tracks/cylinders/number of data blocks) Secondary specifies the secondary quantity of units if the primary is exceeded but allocated only when the dataset expands. The directory specifies the number of directory blocks to be allocated. RLSE specifies releasing the unused space requested. CONTIG specifies to allocate contiguous primary space. ROUND specifies allocation by block length rounded to integral cylinders. 5. SYSOUT Parameter: We have discussed so far the parameters of DD statements that correspond to data stored in datasets. According to the class specified, SYSOUT directs the data to the output device. 5. SYSOUT Parameter: Syntax: Syntax: SYSOUT=class SYSOUT=class",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "5. Explain some of the commonly used parameters in the EXEC statement.",
+        "answer": "EXEC stands for EXECUTION. The EXEC statement specifies a program/job step, as well as utilities and procedures to be executed. Syntax: Syntax: //Step-name EXEC Positional-param, Keyword-param //Step-name EXEC Positional-param, Keyword-param Some of the commonly used positional and keyword parameters in EXEC statement include: PGM: It specifies the name of the program that will be executed in the job step.\nPROC: It specifies the name of the procedure that will be executed in the job step.\nACCT: It specifies the accounting details of the job step.\nADDRSPC: For job steps, it specifies whether real or virtual storage is needed for execution.\nCOND: It specifies conditions for executing subsequent job steps if the previous job step fails abnormally.\nPARM: It provides parameterized data to the job steps.\nREGION: It specifies how much space or region size should be allocated for a specific job/job step.\nTIME: It describes the time limit of a job or job step. PGM: It specifies the name of the program that will be executed in the job step. PGM: PROC: It specifies the name of the procedure that will be executed in the job step. PROC: ACCT: It specifies the accounting details of the job step. ACCT: ADDRSPC: For job steps, it specifies whether real or virtual storage is needed for execution. ADDRSPC: COND: It specifies conditions for executing subsequent job steps if the previous job step fails abnormally. COND: PARM: It provides parameterized data to the job steps. PARM: REGION: It specifies how much space or region size should be allocated for a specific job/job step. REGION: TIME: It describes the time limit of a job or job step. TIME:",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "6. State difference between JOBLIB and the STEPLIB statements.",
+        "answer": "The mainframe OS has to search for and locate the program you specify in a JCL statement in order to run it. In order to locate programs, a private library must be searched before the system program library. If you wish to run a program residing in a private program library, you must either specify the JOBLIB DD (Data definition) statement or the STEPLIB DD (Data Definition) statement to enable OS to locate the program successfully. Both JOBLIB and STEPLIB are DD (Data definition) statements. Although JOBLIB DD and STEPLIB DD specify a private library as the location of a specified program, each will behave differently for OS search. 1. JOBLIB Statement: Every step of the JOB is searched in the private libraries according to JOBLIB DD. The location of the program to be executed in JCL is referenced by it. This statement follows the JOB statement, but before the EXEC statement. It is only applicable to procedures and programs running in-stream. 1. JOBLIB Statement: Syntax: Syntax: //JOBLIB DD DSN=dsnname //JOBLIB DD DSN=dsnname Here, The keyword JOBLIB specifies the JOBLIB statement.\nDD specifies the Data definition statement.\nDSN specifies the location of the program/job to be executed. The keyword JOBLIB specifies the JOBLIB statement. DD specifies the Data definition statement. DSN specifies the location of the program/job to be executed. 2. STEPLIB statement: The only single step of the JOB is searched in the private libraries according to STEPLIB. The location of the program to be executed within a Job Step is referenced by it. This statement follows the EXEC statement, but before the DD statement of the job step. 2. STEPLIB statement: Syntax: Syntax //STEPLIB DD DSN=dsnname //STEPLIB DD DSN=dsnname Here, The keyword STEPLIB specifies the STEPLIB statement.\nDD specifies the Data definition statement.\nDSN specifies the location of the step to be executed. The keyword STEPLIB specifies the STEPLIB statement. DD specifies the Data definition statement. DSN specifies the location of the step to be executed.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "7. Explain what you mean by Generation data group (GDG).",
+        "answer": "Generation Data Group (GDG) is an important concept in JCL. GDG consists of groups of related data sets arranged chronologically. Each of these related sets shares a unique name. A generation number and a version number are added to the end of the name of each data set within a group to make it unique. Generation Data Group Syntax: Syntax: ABC.PQR.XYZ.GnnnnVmm ABC.PQR.XYZ.GnnnnVmm Here, the GDG base is ABC.PRQ.XYZ. G represents the Generation number (Value range 0000 – 9999), and V represents the Version number (Value range 00 – 99). Example: Example: MYLIB.URMI.SAMPLE.G0001V00 MYLIB.URMI.SAMPLE.G0001V00 MYLIB.URMI.SAMPLE.G0002V00, and so on. MYLIB.URMI.SAMPLE.G0002V00, and so on. Here, the GDG base is MYLIB.URMI.SAMPLE.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "8. What are symbolic parameters and why is it required?",
+        "answer": "In general, any parameter that varies with every execution of a program should be considered a symbolic parameter. By using symbolic parameters, the procedure becomes more flexible. The procedure will not have to be altered each and every time a small and recurring change is made at a particular place. In symbolic parameters, an ampersand (&) precedes the string of 1 to 7 alphameric characters. It is mandatory to put an alphabetic character after &. JCL statements do not permit symbolic parameters to appear in the name or operation fields; they may only appear in the operand field. On a PROC or EXEC statement, if more than one symbolic parameter is assigned, only the first is used.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "9. What is a temporary dataset in JCL? How to create a temporary dataset?",
+        "answer": "Temporary datasets are datasets (file holding one or more records) that are only needed for the duration of the job and are deleted when the job is completed. They need storage only for the job duration and once the job is completed, they are deleted. These datasets typically are represented as DSN=&&name or simply without specifying a DSN. By using them, we can forward the output of one step to another step in the same job.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "10. What are the benefits of using JCL?",
+        "answer": "JCL offers the following advantages: You can delete and create lots of data sets, VSAM (Virtual Storage Access Method) Clusters, and GDGs (Generation Data Groups) using JCL.\nComparing files with different PDS (Partitioned Data Set) members can be done with it.\nUsing it, you can merge and sort various data files.\nMoreover, it is capable of executing and compiling batch-based programs (scheduled programs that are assigned through JCL to run on a computer without further user interaction) too.\nJCL is easy to modify and therefore it is easy for beginners to learn.\nIn addition, it provides a number of utilities such as IEDCOPY, IDCAMS, etc., which help in executing tasks in an easier and more convenient manner. You can delete and create lots of data sets, VSAM (Virtual Storage Access Method) Clusters, and GDGs (Generation Data Groups) using JCL. Comparing files with different PDS (Partitioned Data Set) members can be done with it. Using it, you can merge and sort various data files. Moreover, it is capable of executing and compiling batch-based programs (scheduled programs that are assigned through JCL to run on a computer without further user interaction) too. JCL is easy to modify and therefore it is easy for beginners to learn. In addition, it provides a number of utilities such as IEDCOPY, IDCAMS, etc., which help in executing tasks in an easier and more convenient manner.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "11. Explain Msglevel parameter and its significance.",
+        "answer": "With the Msglevel parameter, you can control or set the listing of the Job output for each specific job. It controls the way allocation messages, and termination messages will appear in job output (SYSOUT). Msglevel can be used to inform JCL about the messages we wish to print. Syntax: Syntax: MSGLEVEL=([statements][messages]) MSGLEVEL=([statements][messages]) Here, Statements can be numbered 0, 1, or 2. (0 to print Job-related statements, 1 to print all JCL statements along with procedures, and 2 to print only input JCL statements)\nMessages can be numbered 0 or 1. (0 to not show any message except return code i.e., allocation and termination, and 1 to show all messages, i.e., whether it is an allocation or termination, all details will be visible in the spool). Statements can be numbered 0, 1, or 2. (0 to print Job-related statements, 1 to print all JCL statements along with procedures, and 2 to print only input JCL statements) Messages can be numbered 0 or 1. (0 to not show any message except return code i.e., allocation and termination, and 1 to show all messages, i.e., whether it is an allocation or termination, all details will be visible in the spool).",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "12. How can we convert a FB (Fixed block) file to VB (Variable block) file using a sort program?",
+        "answer": "By using the FTOV option in SORT, you can convert a FB file to a VB file. Input records of fixed length are converted to output records of variable length using this parameter. VB files should have 4 extra bytes for RDW (Record Descriptor Word). Accordingly, the length of the record in the VB file is the RDW (4 bytes) + the actual length of the record. Example: Example: SORT parameters: \nSORT FIELDS=COPY                 \nOUTFIL FNAMES=SORTOUT1,FTOV SORT parameters: \nSORT FIELDS=COPY                 \nOUTFIL FNAMES=SORTOUT1,FTOV Here, SORTOUT1 is the VB output file. If you input an 80-byte FB file, then the output will be an 84-byte VB file (4 bytes for RDW).",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "13. Name different JCL statements that are not permitted in the procedures.",
+        "answer": "The following JCL statements are not permitted in the procedure: JOB, Delimiter(/*), or Null statements\nJOBLIB or JOBCAT DD statements\nDD * or DATA statements\nAny JES2 or JES3 control statements JOB, Delimiter(/*), or Null statements JOBLIB or JOBCAT DD statements DD * or DATA statements Any JES2 or JES3 control statements",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "14. What are the hierarchy levels in JCL?",
+        "answer": "Every statement of JCL consists of the hierarchy levels: Identifier field\nName field\nOperation field\nParameter field (POSITIONAL, KEYWORD)\nComment field (if any) Identifier field Name field Operation field Parameter field (POSITIONAL, KEYWORD) Comment field (if any)   Example: Example: //STEP1 EXEC PGM=MYPROGRAM,TIME=1440   \n//* JCL Statement Structure //STEP1 EXEC PGM=MYPROGRAM,TIME=1440   \n//* JCL Statement Structure Here, // is the identifier of the JCL statement.\nSTEP1 is the name assigned to the job step.\nEXEC is a keyword used to indicate that it is an EXEC statement.\nPGM is a positional parameter and specifies the name of the program to be executed\nTIME is the keyword parameter that specifies the maximum amount of processor time the step can use.\n//* is the identifier of the comment field and ‘JCL statement structure’ is the comment. // is the identifier of the JCL statement. STEP1 is the name assigned to the job step. EXEC is a keyword used to indicate that it is an EXEC statement. PGM is a positional parameter and specifies the name of the program to be executed TIME is the keyword parameter that specifies the maximum amount of processor time the step can use. //* is the identifier of the comment field and ‘JCL statement structure’ is the comment.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "15. What is the meaning of DISP=OLD and DISP=SHR?",
+        "answer": "DISP=OLD -> This refers to a dataset that has already been created. DISP=OLD -> DISP=SHR -> It means that more than one user may share data. However, it is a read-only file. DISP=SHR ->",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "1. What are different ways in which data can be passed to a COBOL program from JCL?",
+        "answer": "The following methods can be used to pass data from JCL to COBOL: SYSIN DD statement: Data can either be provided directly in SYSIN or as a file. If we want to read that in COBOL, we use the ACCEPT keystroke.\nPARM parameter: On the JCL EXEC statement, we use PARM='Parameter value' to pass input from JCL to the program. In COBOL, this can be done in the Linkage section. SYSIN DD statement: Data can either be provided directly in SYSIN or as a file. If we want to read that in COBOL, we use the ACCEPT keystroke. SYSIN DD statement: PARM parameter: On the JCL EXEC statement, we use PARM='Parameter value' to pass input from JCL to the program. In COBOL, this can be done in the Linkage section. PARM parameter:",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "2. What do you mean by “Cond=even” and “Cond=only”?",
+        "answer": "CODE-EVEN: By coding COND=EVEN, the current job step is executed regardless of whether the previous steps have terminated abnormally. In the case of other RC conditions  (return code conditions) being coded alongside COND=EVEN, the job step will execute if none of the RC conditions is true. CODE-EVEN: CODE-ONLY: By coding COND=ONLY, the current job step will only be executed when one of the previous steps terminates abnormally. In the case of other RC conditions being coded alongside COND=ONLY, the job step will execute when none of the RC conditions is true and any previous job steps are abnormally failed. CODE-ONLY:",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "3. Explain utilities in JCL.",
+        "answer": "JCL utilities are pre-written programs that are widely used by system programmers and application developers to meet day-to-day requirements, organize and maintain data. Reorganizing, modifying, or comparing data at the record or data set level is done with them. Here are a few of them, along with their functionality: IDCAMS: Although IDCAMS provides other functions, it is primarily used for defining and managing VSAM data sets and integrated catalog facilities catalogs.\nIEBCOPY: This program copies one or more members of an existing dataset onto a new or existing PDS dataset. It also compresses PDS, loads PDS to TAPE, and unloads from TAPE onto DISK.\nIEBGENER: Often used for copying or printing sequential data sets, it is also a tool for copying TAPE files to DISK and vice versa.\nIEBUPDTE: This utility can create new members within a partitioned data set, or update records within an existing member. This is mostly used to create or maintain assembler macro libraries and JCL procedure libraries.\nIEHMOVE: It is typically used to move datasets between volumes. IDCAMS: Although IDCAMS provides other functions, it is primarily used for defining and managing VSAM data sets and integrated catalog facilities catalogs. IDCAMS: IEBCOPY: This program copies one or more members of an existing dataset onto a new or existing PDS dataset. It also compresses PDS, loads PDS to TAPE, and unloads from TAPE onto DISK. IEBCOPY: IEBGENER: Often used for copying or printing sequential data sets, it is also a tool for copying TAPE files to DISK and vice versa. IEBGENER: IEBUPDTE: This utility can create new members within a partitioned data set, or update records within an existing member. This is mostly used to create or maintain assembler macro libraries and JCL procedure libraries. IEBUPDTE: IEHMOVE: It is typically used to move datasets between volumes. IEHMOVE:",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "4. Explain the usage of coding class parameters in JCL.",
+        "answer": "In JCL, the CLASS is a keyword parameter that is used to classify the jobs that run in a particular OS installation. CLASS informs the operating system about the nature of the job that is being submitted. It prevents contention between jobs that use the same resource. A parameter like this aids in balancing the load of all the jobs running in an environment. It can also be used to prioritize the execution of jobs. Syntax: Syntax: CLASS= JOB-CLASS CLASS= JOB-CLASS Below are the possible values for the JOB-CLASS: Any character from A to Z\nAny number from 0 to 9 Any character from A to Z Any number from 0 to 9 Example: //JCL1234 JOB ‘max021’,’Ashish’CLASS=A //JCL1234 JOB ‘max021’,’Ashish’CLASS=A",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "5. What do you mean by PROC? State difference between an instream and a catalogued Proc.",
+        "answer": "PROC represents Procedure. A JCL Procedure is a collection of statements within a JCL that perform a particular function. The JCL Procedures work the same way as language compilers and linkage editors across multiple JCL's. The EXEC statement may be used directly to code the procedure instead of the PROC keyword. Syntax: Syntax: //Step-name EXEC PROC=Procedurename\nOr \n//Step-name EXEC Procedurename //Step-name EXEC PROC=Procedurename\nOr \n//Step-name EXEC Procedurename Here, Step-name specifies the assigned name to step.\nEXEC specifies the type of JCL statement.\nPROC specifies Procedure name. Step-name specifies the assigned name to step. EXEC specifies the type of JCL statement. PROC specifies Procedure name. Example 1: Example 1: //STEP05  EXEC PROC=MTHPROC\n Or \n//STEP05  EXEC MTHPROC //STEP05  EXEC PROC=MTHPROC\n Or \n//STEP05  EXEC MTHPROC Use of PROC Use of PROC It eliminates repetitive coding.\nCode errors are eliminated.\nEliminates redundancy. It eliminates repetitive coding. Code errors are eliminated. Eliminates redundancy. Types of procedures Types of procedures In-Stream Procedures: In-stream procedures are those written within the same JCL. Ideally, it should begin with a PROC statement and end with a PEND statement.\nCataloged Procedures: A cataloged procedure is one that is separated from the JCL and coded in a different data store. In-Stream Procedures: In-stream procedures are those written within the same JCL. Ideally, it should begin with a PROC statement and end with a PEND statement. In-Stream Procedures: Cataloged Procedures: A cataloged procedure is one that is separated from the JCL and coded in a different data store. Cataloged Procedures:",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "6. Can you code instream data in PROC.",
+        "answer": "No, it is not possible to use instream data inside a PROC. This is a rule. It is usually better to code a few dummy statements inside the PROC and override the DD statements from the JCL before executing it.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "7. What do you mean by abends in JCL? Write different JCL abend codes.",
+        "answer": "Using the SUBMIT command, the operating system will be informed about the work to be done in JCL. An abend occurs when a program terminates abnormally during a step. Some of the JCL Abend codes are listed below: S0C4: Storage violation error due to a subscript that is out of range.\nS0C5: This is caused by an invalid address specification, i.e., the address points to a control word, instruction, or data that cannot be cached.\nS0C7: Bad data causes this error, known as a Data Exception. Whenever we're converting an alphanumeric field to a numeric computational field, we encounter this problem.\nS222: This error occurs when the operator cancels a job because the program requests an unavailable resource.\nS237: This error occurs when the end of the volume is reached.\nS322: This error occurs when CPU time allocated to a job, job step, or procedure has exceeded the limit, i.e., Timeout error.\nS522: This error occurs if the waiting state exceeds the installation-defined time limit.\nSB37: This error occurs when there is insufficient disk space (End of volume with no further volume specified).\nSD37: This error occurs when there is insufficient disk space (the secondary allocation has not been specified).\nSE37: This error occurs when there is insufficient disk space (max. 16 extents are currently allocated). S0C4: Storage violation error due to a subscript that is out of range. S0C4: S0C5: This is caused by an invalid address specification, i.e., the address points to a control word, instruction, or data that cannot be cached. S0C5: S0C7: Bad data causes this error, known as a Data Exception. Whenever we're converting an alphanumeric field to a numeric computational field, we encounter this problem. S0C7: S222: This error occurs when the operator cancels a job because the program requests an unavailable resource. S222: S237: This error occurs when the end of the volume is reached. S237: S322: This error occurs when CPU time allocated to a job, job step, or procedure has exceeded the limit, i.e., Timeout error. S322: S522: This error occurs if the waiting state exceeds the installation-defined time limit. S522: SB37: This error occurs when there is insufficient disk space (End of volume with no further volume specified). SB37: SD37: This error occurs when there is insufficient disk space (the secondary allocation has not been specified). SD37: SE37: This error occurs when there is insufficient disk space (max. 16 extents are currently allocated). SE37:",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "8. Explain NOTCAT 2- GS.",
+        "answer": "Basically, NOTCAT 2-GS is an MVS (Multiple Virtual Storage) message indicating the existence of duplicate catalog data. This would happen, for instance, if we already had a dataset with DSN = 'xxxx.yyyy' and wanted to create a new one with disp new, catlg. In this case, we can correct the situation by deleting the first data set and cataloguing the new data set on the volume where it resides.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "9. What is the usage of the Include statement in JCL?",
+        "answer": "INCLUDE statements can be used to identify and include a set of JCL statements coded within a member of a PDS (Partitioned data set) into a JCL stream. For example, some of the common files used in many JCLs can be coded as DD statements within an INCLUDE member and used within the JCL. Syntax: Syntax: //name INCLUDE MEMBER=member-name //name INCLUDE MEMBER=member-name An INCLUDE statement cannot contain a dummy DD statement, a data card specification, or JOB, PROC statements. Within an INCLUDE member, an INCLUDE statement may be coded, and nesting may go up to 15 levels.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "10. What happens when COND is coded in JOB statement and EXEC statement?",
+        "answer": "In JCL, a COND parameter can be incorporated into the JOB statement or EXEC statement. This parameter can be used to skip steps based on return codes from previous steps. Here, we are testing the return code from the previous job steps. In the event that the test is deemed to be true, the current job step execution is bypassed. Bypassing a job step is not an abnormal termination, but simply an omission. COND is coded in JOB statement: Every step of the job is tested when COND is coded into a JOB statement. At any given job step, if the condition is true, it is bypassed along with the subsequent steps.\nCOND is coded in EXEC statement: In case COND is coded in the EXEC statement of a job step and finds to be true, only that job step will be skipped, and execution will continue from the next job step. COND is coded in JOB statement: Every step of the job is tested when COND is coded into a JOB statement. At any given job step, if the condition is true, it is bypassed along with the subsequent steps. COND is coded in JOB statement: COND is coded in EXEC statement: In case COND is coded in the EXEC statement of a job step and finds to be true, only that job step will be skipped, and execution will continue from the next job step. COND is coded in EXEC statement: Example: Example: //MATEKSD JOB MSGLEVEL=(1,1),NOTIFY=&SYSUID, COND=(0,NE)\n//STEP01   EXEC PGM=CONDPGM1\n//STEP02   EXEC PGM=CONDPGM2,COND=(0,EQ)\n//STEP03   EXEC PGM=CONDPGM3,COND=(4,EQ) //MATEKSD JOB MSGLEVEL=(1,1),NOTIFY=&SYSUID, COND=(0,NE)\n//STEP01   EXEC PGM=CONDPGM1\n//STEP02   EXEC PGM=CONDPGM2,COND=(0,EQ)\n//STEP03   EXEC PGM=CONDPGM3,COND=(4,EQ) Explanation of COND=(0 NE) Explanation of COND=(0 NE) As you can see, the COND parameter is set to (0,NE) at the JOB level. In particular, it will check if the return code 0 does not equal the return code of any of the steps in JCL? If this is true, then the job should be terminated. As a result, if any of the steps (such as STEP01, STEP02, or STEP03) returns a non-zero return code, this condition will be true and the job will be terminated.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "11. Explain DISP=(NEW,PASS,DELETE)?",
+        "answer": "We use DISP=(NEW, PASS, DELETE) to create temporary data sets. DISP NEW allocates space and creates a new data set. Once the current step has been successfully completed, DISP PASS passes the data set to the next step. Once the step abends, DISP DELETE removes the available data set so that only non-abended data sets remain.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "12. What is the significance of using the \"//\" symbol in JCL?",
+        "answer": "It is an important symbol used in JCL statements since every JCL statement must begin with it. JCL statements must satisfy this rule in order to execute properly. Otherwise, the JCL statement will fail. During JCL execution, the system checks for the symbol (//) at the beginning of each statement. This prevents runtime exceptions. Example: Example: //STEP010 EXEC PGM=MYCOBOL,PARAM=CUST1000 //STEP010 EXEC PGM=MYCOBOL,PARAM=CUST1000 Here, // is the identifier of the JCL statement.\nSTEP010 is the name assigned to the job step.\nPGM specifies program name.\nPARAM passes input data to the program. // is the identifier of the JCL statement. STEP010 is the name assigned to the job step. PGM specifies program name. PARAM passes input data to the program.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "13. What do you mean by Condition checking in JCL?",
+        "answer": "Yes, condition checking is possible in JCL, both at the job level and at the step level. Obviously, this is done using the COND keyword along with a return code and operand that are defined in JCL. The concept of conditional checking is similar to the concept of (if else) in many programming languages (such as C, C++, Java, etc.). Syntax: Syntax: COND=(RC,OP) \nCOND=(RC,OP,STEPNAME) \nCOND=EVEN \nCOND=ONLY COND=(RC,OP) \nCOND=(RC,OP,STEPNAME) \nCOND=EVEN \nCOND=ONLY Here, RC stands for Return code, OP for Operator, and STEPNAME for Step name. RC can be assigned any value from 0 to 4095, but in most cases, it will be assigned a value from 0 to 16 as follows: RC can be assigned any value from 0 to 4095, but in most cases, it will be assigned a value from 0 to 16 as follows: 0 (Successful execution of a program i.e., Normal execution). 4 (Successful execution of a program with some warning). 8 (Error) 12 (Severe Error) 16 (Fatal Error) ‘OP’ can be any one of the following: ‘OP’ can be any one of the following: EQ (Equal to) NE (Not Equal to) LT (Less than) LE (Less than or Equal to) GT (Greater than) GE (Greater than or Equal to)",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "1. Explain how you will check the syntax of JCL without running it.",
+        "answer": "JCL syntax can be checked without running it by putting TYPERUN=SCAN on a job card or using JSCAN. The TYPRUN command is used to request special job processing, such as checking or scanning a job for syntax errors. SCAN checks the syntax errors without actually executing the job. Otherwise, JSCAN can also check a JCL's syntax without running it.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "2. Does JCL support Automatic start? If yes, then explain how.",
+        "answer": "It is possible to restart JCL automatically through a predefined keyword parameter, such as RD (Restart definition) keyword. However, this usually results in irregular program termination. RD (\"restart definition\") triggers the start of the job at the checkpoint automatically. At various points of the job, checkpoints act as markers for the execution of the job. RD begins by looking for the last successful checkpoint and starts from there.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "3. How do you explain the term job time-out and what can you do to overcome it?",
+        "answer": "When a program takes longer than the specified time limit for the particular selected class, a job timeout occurs. It is usually referred to as an \"S322 abend.\" In this situation, the program does not complete due to circling errors. The TIME parameter can be coded as TIME = 1440 if the information being handled in the program is really huge and needs more time to complete the job.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "4. What does DISP=(NEW,CATLG,KEEP) mean?",
+        "answer": "DISP NEW creates a new dataset and allocates new memory. DISP CATLG is capable of cataloging the data set when the step is complete. DISP DELETE deletes the dataset if the step abends/fails.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "5. What does DISP=(NEW,CATLG,KEEP) for a DSN mean?",
+        "answer": "DISP NEW creates a new dataset and allocates new memory. DISP CATLG is capable of cataloging the data set when the step is complete. A cataloged dataset can be referenced by name without the user having to specify where it is located. DISP KEEP retains the dataset. If the step abends, the catalog is not retained. The three operations are reliable and ensure the data set is handled correctly every time.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "6. If you have seven jobs to do, but you want to hold one at the same time, how can I accomplish this?",
+        "answer": "Holding a job among the available ones is just a matter of following a set of predefined rules. As per JCL's predefined job rules, each job has a keyword. If TYPRUN is specified on the job statement, a job can be held for later execution. The TYPRUN holds a job with its variable name set to HOLD. Syntax: Syntax: TYPRUN=HOLD TYPRUN=HOLD Example: If you want to hold the job you want Example: //JTP JOB (P007),'Aayush' TYPRUN=HOLD //JTP JOB (P007),'Aayush' TYPRUN=HOLD",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "7. What is the best way to check if a file is empty in JCL?",
+        "answer": "JCL allows you to identify one empty file, but you need to make sure that it is an input for IDCAMS. IDCAMS (Integrated Data Cluster Access Method Services) is a utility used for creating, modifying and deleting VSAM (Virtual Storage Access Method) datasets. When the file is input into IDCAMS, an error is thrown (return code 4 i.e., RC=4) if it's empty. Conclusion Getting your feet wet with the JCL Interview Questions is necessary if you are looking for a job related to JCL. In preparation for your interview, our team has compiled a list of relevant JCL interview questions and answers. These JCL Interview Questions are intended to help you become acquainted with the type of questions that might be asked during an interview. This will come in handy for future projects and interviews. As an additional piece of advice, review past assignments you have done on the topic so that you are confident in your ability to speak about them. The interviewer expects you to answer basic questions if you are fresher, so you'll need to strengthen your basic concepts. Try to stay confident throughout the interview.",
+        "reference": "interviewbit.com",
+        "role": "jcl"
+    },
+    {
+        "question": "1) What is JCL?",
+        "answer": "JCL stands for Job Control Language. JCL is a scripting language used on IBM mainframe operating system to instruct the system for the batch job. It is a set of statements that you code to tell the operating system about the task you want to perform. Sometimes this set of statements is quite large, but most jobs can be run using a minimal subset.\n\nJCL statements tell OS where to find the required input, how to process that input, and what to do with the resulting output.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "2) How does JCL act on a COBOL code?",
+        "answer": "There are a particular set of divisions that deals with JCL.\nIdentification Division\nAct as introductory part to JCL. It introduces program name, author, date, etc. no interacting code to JCL.\nEnvironment Division\nEnvironment division allows JCL to interact with OS. OS sends a request for Files under file operation.\nData Division\nIt works with the accessed file according to operations to READ or to PRINT files (with the help of OS).\nProcedure Division\nIt contains various actions taken on files, e.g., to close files that are being used.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "3) What is condition checking in JCL? Is this possible?",
+        "answer": "JCL supports condition checking. Condition checking is possible at both the job level and the code level. It is done through the COND keyword with a return code and operand as predefined in JCL. So it is feasible in JCL.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "4) Does JCL support automatic restart?",
+        "answer": "It is possible to have an automatic restart in JCL through the help of some predefined keyword parameter. The RDkeyword is one of those keywords that are used to restart. It generally succeeds in an irregular termination of the program. Against the locale of the automatic restart, we need to consider the importance of checkpoints, which are used to define the job execution at various points in the program concerned.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "5) Explain the JOB statement in JCL?",
+        "answer": "JOB statement gives the job identity to the Operating System (OS) in the spool and the scheduler. It is the first control statement in a JCL. The available parameters in the JOB statement help the OS in allocating the right scheduler. It is also useful for analyzing the required CPU time and issuing notifications to the user.\nSyntax\nThe basic syntax of a JCL JOB statement is below.\n//Job-name JOB Positional-param, Keyword-param",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "6) Explain the JCL EXEC statement?",
+        "answer": "A JCL can be made of many job steps, and a job step can execute a program directly, or it can call a procedure. Thus, JCL can execute one or more programs (job steps).\nThe statement, which contains the job step program information, is called the EXEC statement.\nThe motive of the EXEC statement is to provide the required information. This information is forwarded to the program that executes in the job step.\nSyntax\nThe basic syntax of a JCL EXEC statement is as follows.\n//Step-name EXEC Positional-param, Keyword-param",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "7) What is the significance of ADDRSPC parameter in the EXEC statement?",
+        "answer": "The ADDRSPC parameter is used to specify the storage required by the system.\nSome important points about ADDRSPC parameter are as follows.\nADVERTISEMENT\nADVERTISEMENT\nIt is an optional parameter.\nThe storage can be virtual or central.\nThe REGION parameter requests the storage for an individual step.\nADDRSPC prevents paging.\nADDRSPC=VIRT is used for paging.\nOnce ADDRSPC is set to REAL(ADDRSPC=REAL), the step would be locked into real storage, when executed.\nIts effect is adverse to the performance of the system.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "8) How does the JCL specify the JOB to OS?",
+        "answer": "JCL specify the job to the Operating System through the JCL groups. These groups are defined according to the work they produce. The steps for determining the job are as follows.\nIdentify the job.\nExecute the program named by the user.\nSeveral DD's that define the files being utilized.\nPrevious work should be closed operation, exit operation.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "9) Explain DD statement in JCL?",
+        "answer": "Datasets are mainframe files that contain the records organized in a specific format. These files are stored on the Direct Access Storage Device (DASD) or Tapes of the mainframe and are basic data storage areas. If these data are required to be manipulated in a batch program, then the physical dataset name along with the file format is coded in a JCL.\nDD statement's help gives the dataset definition that is used in JCL. The required input and output resources for a job step needs to be described within a DD statement. These resources must be specified with information such as the dataset organization, storage requirements, and record length.\nSyntax\n\nThe basic syntax for JCL DD is as follows.\n//DD-name DD Parameters",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "10) How do you check the syntax of a JCL without running it?",
+        "answer": "We can check the syntax of JCL without running it by writing TYPERUN=SCAN on the JOB card or using JSCAN.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "11) What are some JCL statements that are not allowed in procedures?",
+        "answer": "Some JCL statement that is not allowed in the procedure is as follows.\nJOB, Delimiter(/*), or Null statements\nJOBLIB or JOBCAT DD statements\nDD * or DATA statements\nAny JES2 or JES3 control statements",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "12) Why include statement is used in a JCL?",
+        "answer": "It is used as an alternative for STEPLIB. When we specify the dataset name in include statement, it will search in all the datasets defined in the included dataset.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "13) Differentiate between the JOBLIB and the STEPLIB statements?",
+        "answer": "The comparison between JOBLIB and STEPLIB are as:\nJOBLIB STEPLIB\nJOBLIB statement is used to identify the location of the program to be executed in a JCL. A STEPLIB statement is used to identify the location of the program to be executed within a JOB step.\nIt is specified after the JOB statement and before the EXEC statement. It is specified after the EXEC statement and before the DD statement of the job step.\nIt cannot be placed in a cataloged procedure It can be placed in a cataloged procedure\nIt's syntax is\n //JOBLIB DD DSN=dsnname,DISP=SHR\nIt's syntax is\n //STEPLIB DD DSN=dsnname,DISP=SHR",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "14) What is the use of symbol // in JCL?",
+        "answer": "It's an important symbol used in JCL statements. Each JCL statement must begin with this symbol. It is a predefined rule that is used to execute the JCL statements; otherwise, the JCL statement throws an error.\nThe JCL execution system first checks for the symbol (//) at the beginning of JCL statements. It avoids runtime exceptions.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "15) Explain the hierarchy levels in JCL?",
+        "answer": "The level is the steps that describe the JCL statements according to their actions.\nEvery statement of JCL consist of the following keywords:\nNAME\nFIELDS\nOPERATIONS\nOPERANDS\nPARAMETERS\nPOSITIONAL\nKEYWORD\nCOMMENTS IF ANY",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "",
+        "answer": "The key differences between Addressing mode and Run mode are as follows.\nAddressing mode or Access Mode Run Mode or Residency Mode\nAMODE(24) indicates 24-bit addressing in the memory below the line. RMODE(24) indicates that the program needs to be loaded into the memory below the line.\nAMODE(31) indicates 31-bit addressing in the memory above and below the line. RMODE(31) specifies the program need to be loaded into the memory either above or below the line.\nAMODE=ANY, it specifies either 24-bit or 31-bit addressing methods. RMODE=ANY, it specifies the program to load either in 24-bit or 31-bit memory.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "17) Which utility is used to run a COBOL-DB2 Program?",
+        "answer": "The IKJEFT01 utility is used to run a COBOL-DB2 program.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "18) Which statement is used to identify the private libraries in JOB?",
+        "answer": "A JCLLIB statement is used to define the private libraries used in the job. It can be used with both cataloged and instream procedures.\nSyntax\nThe basic syntax of a JCL JCLLIB statement is as follows.\n//name JCLLIB ORDER=(library1, library2....)",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "19) What are the Utility programs in JCL?",
+        "answer": "Utility programs are pre-written programs. These programs are widely used in mainframes by system programmers and application developers to achieve general requirements, maintaining and organizing data. Some of them are listed below.\nIEHMOVE\nIEHPROGM\nIEHCOMPR\nIEBCOPY\nIEFBR14\nIEBEDIT\nIDCAMS",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "20) Explain DFSORT utility?",
+        "answer": "DFSORT is a powerful IBM utility. It is used to copy, sort, and merge datasets. The SORTIN and SORTINnn DD statements are used to specify input datasets. The SORTOUT and OUTFIL statements are used to determine output data.\nDFSORT is purely mainframe related utility program which is used to process or manipulate sequential files with the help of JCL.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "21) What is DISP=(NEW,PASS,DELETE)?",
+        "answer": "To create temporary data sets we use disp = (new,pass,delete). New creates a new data set and pass it for the next step. On successful execution, it passes the data set and deletes dataset from the system.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "22) How can a FB file convert to VB file using SORT program?",
+        "answer": "A FB file can be converted to VB file by FTOV option in SORT program.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "23) How to run COBOL program using JCL?",
+        "answer": "The program needs to be compiled, and a load module is created with all the sub-programs for the execution of the COBOL program in the batch mood. The JCL uses the load module instead of the actual program at the time of execution. The load libraries are patched and given to the JCL at the time of execution using JCLLIB or STEPLIB.\nBelow I am mentioning a JCL example in which the program MYPROG is executed using the input file MYDATA.URMI.INPUT. This program will produce two output files written to the spool.\n//COBBSTEP JOB CLASS=6,NOTIFY=&SYSUID  \n//  \n//STEP10 EXEC PGM=MYPROG,PARM=ACCT5000  \n//STEPLIB DD DSN=MYDATA.URMI.LOADLIB,DISP=SHR  \n//INPUT1 DD DSN=MYDATA.URMI.INPUT,DISP=SHR  \n//OUT1 DD SYSOUT=*  \n//OUT2 DD SYSOUT=*  \n//SYSIN DD *  \n//CUST1 1000  \n//CUST2 1001  \n/*",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "24) What is a Generation Data Group (GDG)?",
+        "answer": "Generation Data Group is a group of sequential or functionally related datasets. They are handled periodically by adding a new generation, discarding the oldest generation, and sometimes retaining previous generations.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "25) How do you create a temporary dataset? Where will you use them?",
+        "answer": "Temporary datasets can be created either by specifying the temporary file indicator as in DSN=&&TEMP or by not specifying any DSNAME. We use them to forward the output of one step to another step in the same job. The dataset will not be reserved once the job is completed.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "26) What is NOTCAT 2 - GS?",
+        "answer": "NOTCAT 2-GS is an MVS message that shows a duplicate catalog entry exists. E.g., if we already have a dataset with dsn = 'xxxx.yyyy' and we want to create one with disp new, catlg, we would get this error.\nWhen the program opens and write, it will go through, and at the end of the step, the system would try to put it in the system catalog. At this point, as we have an entry which already exists, the catlg would fail and give this message.\nWe can fix the problem by deleting the first data set and going to the volume where the new dataset exists and cataloging it.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "27) What are the JCL procedures?",
+        "answer": "The JCL Procedures are a collection of statements inside a JCL. These statements are grouped to perform a particular function. A fixed part of the JCL is coded in a procedure, and the variable part of the Job is coded within the JCL.\nWe can use a procedure to achieve parallel execution of a program with the help of multiple input files. A JCL can be created for each input file, and a single procedure can be called simultaneously by passing the input file name as a symbolic parameter.\nSyntax\nThe basic syntax of a JCL procedure definition\n//*  \n//Step-name EXEC procedure name   \nThe content of the procedures holds by the JCL for an instream procedure.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "28) How do you submit a job for execution?",
+        "answer": "On Mainframes, when we want to perform any task, we have to write a Job and forward it to the Mainframe Computer for processing. This is known as submitting a job.\nThere are many ways in which you can submit a JOB from your CICS application program. We can do this by using CICS Spool Interface commands and write your JCL directly to JES Spool.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "29) How to submit a JCL from CICS?",
+        "answer": "CICS provides a programming interface to JES (Job entry subsystem) of MVS. The JES interface allows CICS applications to create and retrieve spool files. To use the JES interface, you should have the DHFSIT SPOOL parameter set to YES (DFHSIT SPOOL=YES) in CICS installation.\nCICS provides the 4 SPOOL interface commands that are used in a job submission. They are as follows.\nSPOOLOPEN (INPUT|OUTPUT)\nSPOOLREAD\nSPOOLWRITE\nSPOOLCLOSE\nAll-access to a JES spool file must be completed in one task in a CICS program. It should be noted that any job that processes the data sets for more than 1000 records for I/O is likely to have a performance effect on the rest of CICS.",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    },
+    {
+        "question": "30) Suppose I have seven jobs to do, but I want to hold one than how can I do this?",
+        "answer": "It's a simple process to hold one job among available jobs. There is a predefined set of rules for that. According to JCL's predefined rules for jobs, there is a keyword in each job. We can hold a job for later execution and specify TYPRUN on the job statement. The TYPRUN is used to hold a job with its variable name to HOLD.\nSyntax:\nTYPRUN=HOLD  \nExample:\nFor the job you want to hold\n//JTP JOB (P007),'HIMANSHU' TYPRUN=HOLD,",
+        "reference": "javatpoint.com",
+        "role": "jcl"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "question": "1) What is a debugger?",
+        "answer": "A debugger is a computer program used to identify and remove errors from other programs.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "2) What is (JBD) Java debugger?",
+        "answer": "(JDB) Java debugger is a command line Java debugging tool used to debug Java programs without the requirement of inserting specific debugging instructions into the code.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "3) What are the advantages of Java Debugger?",
+        "answer": "These are some advantages of Java Debugger: -\nADVERTISEMENT\nIt is a lightweight debugging tool.\nIt is free to use and available for all type of operating systems.\nThe execution of Java debugging tool is very fast.\nIt provides support for multithreaded programs and remote applications.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "4) What are some frequently generate bugs?",
+        "answer": "These are some commonly generate bugs: -\nSyntactical or Compilation errors - These errors are generally generated due to some typing mistakes.\nRun-time errors - These errors are generated at execution time generally due to exceptions.\nThreading errors - These errors are difficult to replicate and track down.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "5) What are the various types of Java Debugger?",
+        "answer": "Several types of Java Debuggers are: -\nStand-alone debuggers such as JLike and JProbe.\nCommand-line debugger such as Sun JDB.\nIDEs contain their own debuggers such as Borland JBuilder and IBM VisualAge for Java.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "6) What are the different approaches of debugging?",
+        "answer": "Various types of approaches used for debugging are: -\nOptimized code debugging\nUsing comments\nBasic Java bytecode (by using System.out.println() )\nRemote Debugging\nDebugging on demand\n7) How to connect JDB with JVM?\nThere are various ways to connect JDB with JVM, but the simplest one is to provide the following command at the runtime of your main class: -\n>jdb MainClass  \nHere, MainClass represents the name of your class.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "7) How to connect JDB with JVM?",
+        "answer": "There are various ways to connect JDB with JVM, but the simplest one is to provide the following command at the runtime of your main class: -\n>jdb MainClass  \nHere, MainClass represents the name of your class.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "8) What is the role of the interpreter in debugging the Java program?",
+        "answer": "Java debugger interacts with the Java runtime interpreter to interrupt the normal flow of the program. Thus, Java interpreter provides support to the debugger.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "9) What is the syntax used to invoke the debugger?",
+        "answer": "The following syntax is required to invoke debugger: -\njdb [options] [classname] [arguments]",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "10) How can we debug an applet?",
+        "answer": "To debug an applet, we have to execute the debugger within applet viewer by the help of the following command: -\n>appletviewer -debug URL",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "11) How to list out all the available JDB commands with their specifications?",
+        "answer": "To list out all the available JDB commands with their specifications, you need to initialize JDB and type help command on the console.\nAfter the execution of help command, the following list will be generated on your console: -",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "12) How can we start the execution of the main class?",
+        "answer": "To start the execution of the main class, you need to execute the below command: -\n>run [class [args]]   \nIt is optional to mention the name of specific class and argument.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "13) Which command is used to complete the remaining execution?",
+        "answer": "Use the following command to complete the partial execution of the program.\n>cont",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "14) What is the difference between print and dump command?",
+        "answer": "The print command is used to display the value of expressions whereas dump command is used to display the information of objects.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "15) What is the purpose of breakpoints in Java Debugger?",
+        "answer": "Breakpoints are used in debugging to pause or stop the execution of a program at a specific line of code and test whether the program is functioning correctly or not.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "16) What is the syntax used to set a breakpoint?",
+        "answer": "A breakpoint can be set either on the basis of method name or the specific number of the line.\nTo set a breakpoint on the method, the following syntax is used: -\nstop in Classname.MethodName  \nTo set a breakpoint on the specific line, the following syntax is used: -\nstop at Classname: LineNumber",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "17) How can we set a breakpoint in an applet?",
+        "answer": "Let suppose there is an applet named as Javatpoint having a method scrollDown(). To set a breakpoint on scrollDown() method, you need to follow the below command: -\n>stop in Javatpoint.scrollDown",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "18) What is stepping in Java Debugger?",
+        "answer": "In JDB, Stepping is a procedure to execute the code line by line. Thus, through this approach, each line of the code can be properly examined.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "19) What are the various techniques of stepping?",
+        "answer": "These are the following techniques of stepping: -\nStep Over\nStep Into\nStep Return",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    },
+    {
+        "question": "20) Can we handle exceptions through JDB?",
+        "answer": "Yes, Java debugger is capable of handling runtime exceptions. To handle these exceptions it provides catch command.",
+        "reference": "javatpoint.com",
+        "role": "jdb"
+    }
+]

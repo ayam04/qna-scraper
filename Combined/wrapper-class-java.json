@@ -1,0 +1,224 @@
+[
+    {
+        "question": "What do Java Wrapper classes do?",
+        "answer": "Java wrapper classes are classes that offer objects to represent primitive data types and enclose them.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The eight primitive data types in Java are byte, short, int, long, float, double, char, and boolean.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "Why do we need Wrapper classes?",
+        "answer": "Wrapper classes are needed to treat primitive data types as objects, enabling the use of additional methods, null values, and compatibility with collections.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "What is autoboxing?",
+        "answer": "Autoboxing is the automatic conversion of a primitive data type to its corresponding Wrapper class object.\nint primitiveInt = 10;  \nInteger wrapperInt = primitiveInt; // Autoboxing",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "What is unboxing?",
+        "answer": "Unboxing is the automatic conversion of a Wrapper class object to its corresponding primitive data type.\nInteger wrapperInt = 10;  \nint primitiveInt = wrapperInt; // Unboxing",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The valueOf() method is used to create a Wrapper class object from a string representation of a primitive value.\nInteger wrapperInt = Integer.valueOf(\"123\");",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The == operator compares object references, while the equals() method compares the actual content of the objects.\nInteger a = new Integer(5);  \nInteger b = new Integer(5);  \nSystem.out.println(a == b);      // false (different references)  \nSystem.out.println(a.equals(b)); // true (same content)",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "Can you explain the significance of the hashCode() method in Wrapper classes?",
+        "answer": "The hashCode() method returns the hash code value for the object, which is crucial for hashing-based data structures like HashMap.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How can you convert a Wrapper object to a primitive data type?",
+        "answer": "We can use the xxxValue() methods, where \"xxx\" is the primitive data type name.\nADVERTISEMENT\nInteger wrapperInt = 42;  \nint primitiveInt = wrapperInt.intValue();",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The parseInt() method is used to convert a String to an int primitive.\nString numStr = \"123\";  \nint num = Integer.parseInt(numStr);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The compareTo() method is used to compare two Wrapper objects and returns a negative, zero, or positive value based on their order.\nInteger a = 10;  \nInteger b = 5;  \nSystem.out.println(a.compareTo(b)); // 1 (a > b)",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How do you check if a given string is a valid representation of a particular primitive type?",
+        "answer": "We can use the valueOf() method within a try-catch block to handle exceptions.\nString numStr = \"abc\";  \ntry {  \n    int num = Integer.valueOf(numStr);  \n} catch (NumberFormatException e) {  \n    System.out.println(\"Invalid number format\");  \n}",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The Boolean class wraps a boolean value and provides utility methods for working with boolean data.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The hashCode() and equals() methods in the Boolean class work similarly to their counterparts in other Wrapper classes.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How can you convert a boolean primitive to a Boolean object?",
+        "answer": "We can use the valueOf() method.\nboolean primitiveBool = true;  \nBoolean wrapperBool = Boolean.valueOf(primitiveBool);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The toString() method returns a string representation of the object, which is useful for printing or logging.\nInteger num = 42;  \nSystem.out.println(num.toString()); // \"42\"",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The valueOf() method in the Character class is used to create a Character object from a char primitive.\nchar charValue = 'A';  \nCharacter charWrapper = Character.valueOf(charValue);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "Can you use Wrapper classes in a generic class or method?",
+        "answer": "Yes, Wrapper classes can be used in generic classes or methods to represent primitive data types.\nclass MyGenericClass<T> {  \n    private T value;  \n    public void setValue(T value) {  \n        this.value = value;  \n    }  \n    public T getValue() {  \n        return value;  \n    }  \n}  \nMyGenericClass<Integer> myInt = new MyGenericClass<>();  \nmyInt.setValue(42);  \nSystem.out.println(myInt.getValue()); // 42",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The doubleValue() method in the Number class is used to convert the object's value to a double primitive.\nInteger num = 42;  \ndouble doubleValue = num.doubleValue();",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How can you convert a Wrapper object to a String?",
+        "answer": "We can use the toString() method or simply concatenate it with an empty string.\nInteger num = 42;  \nString numStr = num.toString();  \n// or  \nString numStr2 = num + \"\";",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The toBinaryString() method converts an int to a binary string representation.\nint num = 42;  \nString binaryStr = Integer.toBinaryString(num);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "What is the purpose of the MAX_VALUE and MIN_VALUE constants in Wrapper classes?",
+        "answer": "These constants represent the maximum and minimum values of the primitive data types.\nSystem.out.println(Integer.MAX_VALUE); // 2147483647  \nSystem.out.println(Integer.MIN_VALUE); // -2147483648",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The parseXxx() methods (e.g., parseInt(), parseDouble()) are used to convert a String to the corresponding primitive type.\nString numStr = \"42\";  \nint num = Integer.parseInt(numStr);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How can you create a BigInteger object from a String?",
+        "answer": "We can use the BigInteger class constructor.\nString bigNumStr = \"12345678901234567890\";  \nBigInteger bigNum = new BigInteger(bigNumStr);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The intValueExact() method in the BigDecimal class returns the exact integer value, throwing an ArithmeticException if the value is not an exact integer.\nBigDecimal bigDecimal = new BigDecimal(\"42.0\");  \nint intValue = bigDecimal.intValueExact();",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The valueOf() method in the BigDecimal class is used to create a BigDecimal object from a double primitive.\ndouble doubleValue = 42.5;  \nBigDecimal bigDecimal = BigDecimal.valueOf(doubleValue);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The setScale() method sets the scale of the BigDecimal object, adjusting its precision.\nBigDecimal bigDecimal = new BigDecimal(\"42.12345\");  \nBigDecimal scaledDecimal = bigDecimal.setScale(2, RoundingMode.HALF_UP);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "Can you use Wrapper classes in a switch statement?",
+        "answer": "Starting from Java 7, you can use String and Wrapper class objects in a switch statement.\nInteger num = 42;  \nswitch (num) {  \n    case 42:  \n        System.out.println(\"The answer to everything.\");  \n        break;  \n    default:  \n        System.out.println(\"Not 42.\");  \n}",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The compare() method in the Comparator interface is used to compare two Wrapper objects.\nComparator<Integer> comparator = Integer::compare;  \nint result = comparator.compare(5, 10);",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How can you convert a LocalDate object to a Date object using Wrapper classes?",
+        "answer": "We can use the Date.from() method and convert a LocalDate object to a Date object.\nLocalDate localDate = LocalDate.now();  \nDate date = Date.from(localDate.atStartOfDay(ZoneId.systemDefault())",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The intValue() method in the Double class is used to convert the object's value to an int primitive.\nDouble doubleWrapper = 42.5;  \nint intValue = doubleWrapper.intValue();",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "How can you compare two Double objects for equalit,y considering the potential precision issues?",
+        "answer": "We should use the compareTo() method or compare the difference with a small epsilon value.\nDouble a = 0.1 + 0.2;  \nDouble b = 0.3;  \nif (a.compareTo(b) == 0) {  \n    System.out.println(\"Equal\");  \n} else {  \n    System.out.println(\"Not Equal\");  \n}",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The shortValue() method in the Short class is used to convert the object's value to a short primitive.\nShort shortWrapper = 42;  \nshort shortValue = shortWrapper.shortValue();",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The floatValue() method in the Float class is used to convert the object's value to a float primitive.\nFloat floatWrapper = 42.5f;  \nfloat floatValue = floatWrapper.floatValue();",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "Why do Java primitive data types need to be wrapped in classes?",
+        "answer": "Java Wrapper classes provide a way to treat primitive data types as objects. In certain scenarios, such as when working with collections or requiring additional methods, using objects becomes essential. Wrapper classes also allow null values, which can be useful when dealing with scenarios where the absence of a value needs representation.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The == operator compares object references, checking if they refer to the same memory location. On the other hand, the equals() method compares the actual content of the objects. For Wrapper classes, the equals() method is often overridden to provide content-based comparison. Example:\nInteger a = new Integer(5);  \nInteger b = new Integer(5);  \nSystem.out.println(a == b);      // false (different references)  \nSystem.out.println(a.equals(b)); // true (same content)",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    },
+    {
+        "question": "",
+        "answer": "The hashCode() method in Wrapper classes returns the hash code value for the object. This hash code is crucial for hashing-based data structures like HashMap. It helps in the efficient storage and retrieval of objects in collections.",
+        "reference": "javatpoint.com",
+        "role": "wrapper-class-java"
+    }
+]

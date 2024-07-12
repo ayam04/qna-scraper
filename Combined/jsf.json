@@ -1,0 +1,356 @@
+[
+    {
+        "question": "1) What is JSF (JavaServer Faces)?",
+        "answer": "It is a server-side component-based user interface framework. It is used to develop web applications. It provides a well-defined programming model and consists of rich API and tag libraries. The latest version JSF 2 uses Facelets as its default templating system.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "2) What are the benefits of JSF (JavaServer Faces)?",
+        "answer": "It provides a clean and clear separation between behavior and presentation of the web application. You can write business logic and user interface separately.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "3) What are the features of JSF (JavaServer Faces)?",
+        "answer": "The latest version of JSF 2.2 provides the following features.\nADVERTISEMENT\nComponent-Based Framework\nImplements Facelets Technology\nIntegration with Expression Language\nSupport HTML5\nEase and Rapid Web Development.\nSupport Internationalization\nBean Annotations\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "",
+        "answer": "For using JSF in a computer, the platform needs to have JDK 1.5 or above.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "5) What is the life cycle of JSF (JavaServer Faces)?",
+        "answer": "JavaServer Faces application framework manages lifecycle phases automatically for simple applications and also allows you to manage that manually. The lifecycle of a JavaServer Faces application begins when the client makes an HTTP request for a page and ends when the server responds with the page.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "6) How does the execution phase work in JSF (JavaServer Faces) life cycle?",
+        "answer": "In the execute phase, when the first request is made, the application view is built or restored. For other subsequent requests other actions are performed like request parameter values are applied, conversions and validations are performed for component values, managed beans are updated with component values, and application logic is invoked.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "7) How does render phase work in JSF (JavaServer Faces) life cycle?",
+        "answer": "In this phase, the requested view is rendered as a response to the client browser. View rendering is a process in which output is generated as HTML or XHTML. So, the user can see it on the browser.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "8) What is managed bean in JSF (JavaServer Faces)?",
+        "answer": "It is a pure Java class which contains a set of properties and the set of the getter, setter methods.\nFollowing are the common functions that managed bean methods perform:\nValidating a component's data\nHandling an event fired by a component\nPerforming processing to determine the next page to which the application must navigate\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "9) How to configure managed bean in the XML file?",
+        "answer": "In this case, we configure bean-name, bean-class, and bean-scope in the XML file to make it accessible in the project. This is an older approach to configure bean into an XML file.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "10) What are the available scopes for the managed bean?",
+        "answer": "You can use following scopes for a bean class:\nApplication (@ApplicationScoped): Application scope persists across interaction of all the users with the web application.\nSession (@SessionScoped): Session scope persists across multiple HTTP requests in a web application.\nView (@ViewScoped): View scope persists during the interaction of the user with a single page (view) of a web application.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "11) What is eager managed bean?",
+        "answer": "The Managed bean is lazy by default. It means the bean is instantiated only when a request is made from the application.\n\nYou can force a bean to be instantiated and placed in the application scope as soon as the application is started.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "12) What are User Interface Components in JSF (JavaServer Faces)?",
+        "answer": "JavaServer Faces HTML tag library represents HTML form components and other basic HTML elements, which are used to display or accept data from the user. A JSF form sends this data to the server after submitting the form.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "13) What are the MVC design modules?",
+        "answer": "Model\nView\nController",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "",
+        "answer": "Templates\nParameters\nCustom\nRemove",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "",
+        "answer": "Display DataTable\nAdd data\nEdit data\nDelete data\nUsing the data model",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "16) What does AJAX stand for?",
+        "answer": "AJAX stands for Asynchronous JavaScript and XML.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "",
+        "answer": "Disabled\nEvent\nExecute\nImmediate\nListener\nOnerror\nOnevent\nRender",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "",
+        "answer": "ActionListener\nApplicationEvents\nValueChangeListener",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "19) What are the requirements for using integrated JSF using JDBC?",
+        "answer": "PostgreSQLJDBC4 Driver\nPostgreSQL 9.1",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "20) What is the use of Controller module?",
+        "answer": "It handles the processing of an application.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "21) What is the use of the View module?",
+        "answer": "The module shows the user interface.\n22) What is h:inpuText tag in JSF (JavaServer Faces)?\nThe JSF <h: inputText> tag is used to render an input field on the web page.\nIt is used within a <h: form> tag to declare input field that allows the user to input data.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "22) What is h:inpuText tag in JSF (JavaServer Faces)?",
+        "answer": "The JSF <h: inputText> tag is used to render an input field on the web page.\nIt is used within a <h: form> tag to declare input field that allows the user to input data.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "23) What is h:outputText tag in JSF (JavaServer Faces)?",
+        "answer": "The JSF <h:outputText> is used to render a plain text. If the \"styleClass\", \"style\", \"dir\" or \"lang\" attributes are present, render a \"span\" element. If the \"styleClass\" attribute is present, render its value as the value of the \"class\" attribute.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "24) What is h:form tag in JSF (JavaServer Faces)?",
+        "answer": "The <h:form> tag represents an input form. It includes child components that can contain data which is either presented to the user or submitted with the form. It can also include HTML markup to lay out the components on the page.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "25) What is h:commandButton tag in JSF (JavaServer Faces)?",
+        "answer": "The <h:commandButton>tag creates a submit button and used to submit an application form.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "26) What is h:inputTextarea tag in JSF (JavaServer Faces)?",
+        "answer": "The <h:inputTextarea>tag renders an HTML \"textarea\" element. It allows a user to enter multiline string.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "27) What is h:commandLink tag in JSF (JavaServer Faces)?",
+        "answer": "JSF renders it as an HTML \"a\" anchor element that acts as a form submit button when clicked. So, you can create an anchor tag by using this tag. An h:commandLink tag must include a nested h:outputText tag, which represents the text that the user clicks to generate the event. It's also required to be placed inside a <h:form> tag.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "28) What is h:inputSecret tag in JSF (JavaServer Faces)?",
+        "answer": "It is a standard password field which accepts one line of text with no spaces and displays it as a set of asterisks as it is entered. In other words, we say, it is used to create an HTML password field which allows a user to input a string without the actual string appearing in the field.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "29) What is h:inputHidden tag in JSF (JavaServer Faces)?",
+        "answer": "It renders an HTML \"input\" element of type hidden. It does not appear on the web page, so you can pass hidden information while submitting the form.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "30) What is h:inputFile tag in JSF (JavaServer Faces)?",
+        "answer": "JSF renders it as an HTML element of type file. It is used to get the file as input. In HTML form, it allows a user to upload a file.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "31) What is h:graphicImage tag in JSF (JavaServer Faces)?",
+        "answer": "JSF renders an HTML element \"img\" tag. This tag is used to render an image on the web page.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "32) What is h:message tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to display a single message for a particular component. You can display your custom message by passing the id of that component into the for the attribute.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "33) What is h:messages tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to displays all messages that were stored in the faces context during the course of the JSF lifecycle.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "34) What is h:dataTable tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to create a data table that can be updated dynamically.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "35) What are the available validation tags in JSF (JavaServer Faces)?",
+        "answer": "JavaServer Faces technology provides a set of standard classes and associated tags that you can use to validate elements data. A table which contains the validation tags is given.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "36) What is f:validateBean tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to register a bean validator to the component. For validating the bean model, you must set the context parameter in the web deployment descriptor file web.xml.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "37) What is f:validateDoubleRange tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to check that the value of an input field is within a specific range or not. The value must be a float or double type.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "38) What is f:validateLength tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to check whether the length of a component's value is within a specific range or not. The value must be a java.lang.String.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "39) What is f:validateLongRange tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to check whether the local value of a component is within a specific range or not. The value must be any numeric type or String that can be converted to a long.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "40) What is f:validateRegex tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to check whether the local value of a component is a match against a regular expression from the java.util.regex package or not.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "41) What is f:validateRequired tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to ensure that the local value is not empty on an EditableValueHolder component.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "42) How to validate managed bean in JSF (JavaServer Faces)?",
+        "answer": "JSF provides validation constraints for bean model in the form of annotations. You can place those annotations on a field, method, or class of a JavaBeans component, such as a managed bean.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "43) What are the standard converters in JSF (JavaServer Faces)?",
+        "answer": "The JavaServer Faces provides a set of Converters. You can use that to convert component data. The purpose of conversion is to take the String-based data from the Servlet API and convert it to strongly typed Java objects.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "44) What is f:converter tag in JSF (JavaServer Faces)?",
+        "answer": "It is a core converter tag. It is used to add an arbitrary converter to the parent component.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "45) What is f:convertDateTime tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to convert user input into the specified date. You can convert a component's data to a java.util.Date by nesting the convertDateTime tag inside the component tag. The convertDateTime tag has several attributes that allow you to specify the format and type of the data.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "46) What is f:convertNumber tag in JSF (JavaServer Faces)?",
+        "answer": "It is used to convert component (user input) data into a Java Number type. You can convert a component's data to a java.lang.Number by nesting the convertNumber tag inside the component tag. The convertNumber tag has several attributes that allow you to specify the format and type of the data.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "47) How to refer bean method in JSF (JavaServer Faces)?",
+        "answer": "We refer a managed bean method that performs navigation processing for the component and returns a logical outcome String.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "48) What is Facelets?",
+        "answer": "It is a lightweight page declaration language which is used to build JavaServer Faces views using HTML style.\nFor more information: Click here.",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "49) What are the advantages of Facelets?",
+        "answer": "1) It supports code reusability through templating and composite components.\n2) It provides functional extensibility of components and other server-side objects through customization\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "50) What is the lifecycle of Facelets application in JSF (JavaServer Faces)?",
+        "answer": "The JavaServer Faces specification defines the lifecycle of a JavaServer Faces application. The following steps describe that process to a Facelets-based application.\n1) Lifecycle starts when a client makes a new request for a web page which is created using Facelets. JSF creates a new component tree or javax.faces.component.UIViewRoot and placed into the FacesContext.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "51) How to create a Fecelet view?",
+        "answer": "Facelets views are XHTML pages. You can create a web page or view, by adding components to the page, wire the components to backing bean values and properties, and register converters, validators, or listeners on the components.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "52) How to map Faces Servlet instance in JSF (JavaServer Faces) application?",
+        "answer": "The configuration of a JavaServer Faces application is done by mapping the Faces Servlet in the web deployment descriptor file a web.xml.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "53) What are the Facelets Templates?",
+        "answer": "It is a tool which provides the facility to implement the user interface. Templating is a useful Facelets feature that allows you to create a page that will act as the base for the other pages in an application. By using templates, you can reuse code and avoid recreating similar pages again and again.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "54) How to create Facelets Templates?",
+        "answer": "Templating is a useful Facelets feature that allows you to create a page that will act as the base for the other pages in an application.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "55) What are the Facelets Composite Components?",
+        "answer": "JSF provides the concept of composite components with Facelets. The Composite component is a special type of template that acts as a component in your application.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "56) What are web resources in JSF (JavaServer Faces)?",
+        "answer": "JSF web resources are the resources which are required for proper rendering in the web application. It includes images, script files, and any user-created component libraries.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "57) How to access CSS (Cascading Style Sheets) File in JSF (JavaServer Faces) application?",
+        "answer": "The <h:outputStylesheet> tag is used to access CSS (Cascading Style Sheets) resource in the web application. You must create a subdirectory inside the resources folder.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "58) How to access JS (JavaScript) File in JSF (JavaServer Faces) application?",
+        "answer": "The <h:outputScript> tag is used to access JavaScript file in the web application. You must create a subdirectory inside the resources folder.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    },
+    {
+        "question": "59) How to relocate web resources in JSF (JavaServer Faces) application?",
+        "answer": "JSF provides a facility to place your resources at any section of your web page and render it to another section. You can relocate your resource by specifying the target attribute.\nFor more information: Click here",
+        "reference": "javatpoint.com",
+        "role": "jsf"
+    }
+]

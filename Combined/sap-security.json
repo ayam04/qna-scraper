@@ -1,0 +1,218 @@
+[
+    {
+        "question": "1. How will you create a user group in SAP?",
+        "answer": "The following steps explain how to create a user group in SAP: STEP1: In SAP Easy Access Menu, enter the SUGR T-code and execute it. SUGR is the SAP T-code for maintaining user groups.\nSTEP2: You will see a new screen. Fill in the text box with the name of the new user group. \nSTEP3: Then click on the Create button.\nSTEP4: Add a description and click Save.\nSTEP5: A new user group will be created in SAP. STEP1: In SAP Easy Access Menu, enter the SUGR T-code and execute it. SUGR is the SAP T-code for maintaining user groups. STEP1 STEP2: You will see a new screen. Fill in the text box with the name of the new user group. STEP2 STEP3: Then click on the Create button. STEP3 STEP4: Add a description and click Save. STEP4 STEP5: A new user group will be created in SAP. STEP5",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "2. What are different SAP Security T-codes?",
+        "answer": "In SAP, a transaction code (T Code) is basically a four-digit shortcut key that can be used to access a specific function or any running program in the SAP application. Using a transaction code, you can access desired functions directly within the SAP system. In the SAP system, there are more than 10,000 T-codes used for configuration, end-user activities, implementation, reporting, updating, security, etc. Below is a list of some SAP Security T-codes: SAP T-code Description\nPFUD Compare the User Master in Dialog.\nSCC8 The exchange of data occurs at the operating system level.\nPFCG Role maintenance with the profile generator.\nSE43 Display and maintain the Area Menus.\nST01 System Trace.\nSU01 User creation and maintenance.\nSU02 Maintain authorization profile.\nSU03 Maintain authorization.\nSU3 Sets the address and default parameters.\nSU10 Maintenance for mass users.\nSU25 For filling of customer table USOBT_C and USOBX_C with SAP default values.\nSUIM User information system.\nSM01 To lock the transaction from execution.\nSM12 Display and Delete Locks.\nSM20 View Security Audit log.\nEWZ5 Lock users.\nRZ10 Profile configuration.\nRZ11 Maintain the profile parameters. SAP T-code Description\nPFUD Compare the User Master in Dialog.\nSCC8 The exchange of data occurs at the operating system level.\nPFCG Role maintenance with the profile generator.\nSE43 Display and maintain the Area Menus.\nST01 System Trace.\nSU01 User creation and maintenance.\nSU02 Maintain authorization profile.\nSU03 Maintain authorization.\nSU3 Sets the address and default parameters.\nSU10 Maintenance for mass users.\nSU25 For filling of customer table USOBT_C and USOBX_C with SAP default values.\nSUIM User information system.\nSM01 To lock the transaction from execution.\nSM12 Display and Delete Locks.\nSM20 View Security Audit log.\nEWZ5 Lock users.\nRZ10 Profile configuration.\nRZ11 Maintain the profile parameters. SAP T-code Description SAP T-code Description SAP T-code Description PFUD Compare the User Master in Dialog.\nSCC8 The exchange of data occurs at the operating system level.\nPFCG Role maintenance with the profile generator.\nSE43 Display and maintain the Area Menus.\nST01 System Trace.\nSU01 User creation and maintenance.\nSU02 Maintain authorization profile.\nSU03 Maintain authorization.\nSU3 Sets the address and default parameters.\nSU10 Maintenance for mass users.\nSU25 For filling of customer table USOBT_C and USOBX_C with SAP default values.\nSUIM User information system.\nSM01 To lock the transaction from execution.\nSM12 Display and Delete Locks.\nSM20 View Security Audit log.\nEWZ5 Lock users.\nRZ10 Profile configuration.\nRZ11 Maintain the profile parameters. PFUD Compare the User Master in Dialog. PFUD Compare the User Master in Dialog. SCC8 The exchange of data occurs at the operating system level. SCC8 The exchange of data occurs at the operating system level. PFCG Role maintenance with the profile generator. PFCG Role maintenance with the profile generator. SE43 Display and maintain the Area Menus. SE43 Display and maintain the Area Menus. ST01 System Trace. ST01 System Trace. SU01 User creation and maintenance. SU01 User creation and maintenance. SU02 Maintain authorization profile. SU02 Maintain authorization profile. SU03 Maintain authorization. SU03 Maintain authorization. SU3 Sets the address and default parameters. SU3 Sets the address and default parameters. SU10 Maintenance for mass users. SU10 Maintenance for mass users. SU25 For filling of customer table USOBT_C and USOBX_C with SAP default values. SU25 For filling of customer table USOBT_C and USOBX_C with SAP default values. SUIM User information system. SUIM User information system. SM01 To lock the transaction from execution. SM01 To lock the transaction from execution. SM12 Display and Delete Locks. SM12 Display and Delete Locks. SM20 View Security Audit log. SM20 View Security Audit log. EWZ5 Lock users. EWZ5 Lock users. RZ10 Profile configuration. RZ10 Profile configuration. RZ11 Maintain the profile parameters. RZ11 Maintain the profile parameters.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "3. Describe the different types of SAP System users.",
+        "answer": "In SAP systems, when an administrator creates a new user ID, he has to specify the type of user this user ID should be assigned to. Users in a system can be categorized according to their purposes. This allows different security policies to be specified for different types of users. A security policy may, for example, specify that a human user (end-user) who executes tasks interactively needs to change their passwords regularly, whereas this requirement does not apply to users who are running jobs in the background. Following are some types of users in SAP: types of users in SAP   System user: Users with this user type can perform certain system activities such as background processing, ALE (Application Link Enabling), workflows, etc. The system user does not allow interactive access to the system. When a user has the service user type, the system won't check for expired/initial passwords, only a user administrator can change the password, and multiple logins are allowed.\nDialogue user: Dialogue users represent human users, also called end-users. This user type is needed for individual, interactive sessions in the SAP system. When a user has dialogue user type, the system checks their expiring or initial password, enables them to change their passwords, and checks for multiple logins.\nService user: Service user types generally represent a larger user community and allow. This user type facilitates guest access, or the ability to connect to remote systems with certain rights. When a user has the service user type, the system won't check for expired/initial passwords, only a user administrator can change the password, and multiple logins are allowed.\nCommunication user: It enables dialogue-free interaction or communication between systems. Dialogue logon cannot be done with this type of user.\nReference user: Rather than assigning roles individually to each user, a reference user is created to hold a selection of roles that are to be assigned to a larger group of users. If you need to create a large number of users in your SAP system with the same authorization assigned, you can use this method. System user: Users with this user type can perform certain system activities such as background processing, ALE (Application Link Enabling), workflows, etc. The system user does not allow interactive access to the system. When a user has the service user type, the system won't check for expired/initial passwords, only a user administrator can change the password, and multiple logins are allowed. System user: Dialogue user: Dialogue users represent human users, also called end-users. This user type is needed for individual, interactive sessions in the SAP system. When a user has dialogue user type, the system checks their expiring or initial password, enables them to change their passwords, and checks for multiple logins. Dialogue user: Service user: Service user types generally represent a larger user community and allow. This user type facilitates guest access, or the ability to connect to remote systems with certain rights. When a user has the service user type, the system won't check for expired/initial passwords, only a user administrator can change the password, and multiple logins are allowed. Service user: Communication user: It enables dialogue-free interaction or communication between systems. Dialogue logon cannot be done with this type of user. Communication user: Reference user: Rather than assigning roles individually to each user, a reference user is created to hold a selection of roles that are to be assigned to a larger group of users. If you need to create a large number of users in your SAP system with the same authorization assigned, you can use this method. Reference user:",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "4. How many types of users are there for background jobs? Is there a way to troubleshoot problems that a background user faces?",
+        "answer": "The user types for background jobs are as follows: System user: Users with this user type can perform certain system activities such as background processing,  ALE (Application Link Enabling), workflows, etc. \nCommunication user: It enables dialog-free interaction or communication between systems. Dialog logon cannot be done with this type of user. System user: Users with this user type can perform certain system activities such as background processing,  ALE (Application Link Enabling), workflows, etc. System user: Communication user: It enables dialog-free interaction or communication between systems. Dialog logon cannot be done with this type of user. Communication user: We can schedule background jobs using the SM36 T-code, view and monitor background jobs running in the system using SM37 T-code, and troubleshoot problems for background users using ST01 T-code.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "5. How will you check table logs and what T-codes will you use?",
+        "answer": "The first thing we need to do is make sure that logging is enabled or not for this table, and we can check this by using the T-code SE13. Then, if the table loggings are enabled, we can view the history of the table (table logs) by using T-code SCU3.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "6. Explain the concept of SAP Roles and Authorization.",
+        "answer": "In SAP, roles and authorization are the mechanisms that allow users to execute transactions (execute programs) in a secure way. Each role in SAP requires authorization in order to execute a function. There are several different types of standard roles in SAP for different modules and scenarios. In addition, user-defined roles can be created based on the project scenario. The SAP system grants access to users based on roles stored in their user master. PFCG is the T-code for maintaining roles and authorization data.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "7. Write different types of roles in SAP security.",
+        "answer": "In SAP, there are several types of roles as follows: Single Role: Single roles typically contain all authorization objects as well as field values (both organizational and non-organizational) required to execute the transactions that the role contains. The term \"Single Role\" is commonly used to refer to a job/position-based role design. In such cases, the single role includes all authorizations required for a user's position or job.\nDerived Role: Roles can also be derived from single roles. In derived roles, there is a parent or master role and more child roles that differ only in their organizational values from each other. \nComposite Role: You can group multiple single roles together to make a composite role. By assigning only the composite role, you can indirectly assign multiple single roles to a user. Single Role: Single roles typically contain all authorization objects as well as field values (both organizational and non-organizational) required to execute the transactions that the role contains. The term \"Single Role\" is commonly used to refer to a job/position-based role design. In such cases, the single role includes all authorizations required for a user's position or job. Single Role: Derived Role: Roles can also be derived from single roles. In derived roles, there is a parent or master role and more child roles that differ only in their organizational values from each other. Derived Role: Composite Role: You can group multiple single roles together to make a composite role. By assigning only the composite role, you can indirectly assign multiple single roles to a user. Composite Role:",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "8. Is there a way to add a missing authorization?",
+        "answer": "SU53 is the best T-code to find the authorizations that are missing. There may be times that this T-code is required for SAP GUI troubleshooting. We can then insert those missing authorizations with the T-code PFCG. PFCG is the T-code for maintaining roles and authorization data.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "9. What is SOD (Segregation of Duties) in SAP Security?",
+        "answer": "Segregation of Duties (SOD) refers to segregating duties or roles between different users. SOD involves separating individuals who handle different steps of business transactions in order to reduce fraud and errors.  The SAP SOD is an essential internal control system meant to minimize the risk of errors and irregularities, identify problems and ensure the onset of remedial action. All of this can be achieved by making sure that no single person controls all phases of the transaction. Example: Let's say that the process of disbursing the money is preceded by a series of steps. As a first step, a business manager generally drafts a purchase order (PO) that outlines how a vendor will be paid for the product or service. That vendor must be approved by the purchasing department before payment can be made. A senior manager will usually approve the purchase order. An invoice for products and services must then be issued by the vendor. Prior to signing a check, a person from the accounts payable department needs to approve the invoice. The following diagram illustrates the basic procurement process. Example:   In the diagram, there are four people with different responsibilities. In this workflow, all four people act as checks on each other. Imagine if one person could carry out all four steps of this process, then he or she would be capable of requesting a purchase, approving it and signing the check. It has unfortunately been observed that employees can misuse this concentration of authority to commit fraud. This emphasizes the importance of segregating duties.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "10. Write different layers of security in SAP.",
+        "answer": "Different layers of security in SAP are as follows: Authentication: It verifies the user and only authorized users should be permitted access to the SAP system.\nAuthorization: The SAP system can authorize users only to access SAP based on the roles and profiles they have been assigned.\nIntegrity: It is vital to ensure the integrity (validity, accuracy, and consistency) of data at all times. \nPrivacy: It keeps data safe from unauthorized access.\nObligation: Securing the company's liability and legal obligations towards stakeholders and shareholders, as well as validating them. Authentication: It verifies the user and only authorized users should be permitted access to the SAP system. Authentication: Authorization: The SAP system can authorize users only to access SAP based on the roles and profiles they have been assigned. Authorization: Integrity: It is vital to ensure the integrity (validity, accuracy, and consistency) of data at all times. Integrity: Privacy: It keeps data safe from unauthorized access. Privacy: Obligation: Securing the company's liability and legal obligations towards stakeholders and shareholders, as well as validating them. Obligation:",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "11. Explain the use of role templates.",
+        "answer": "As part of SAP AIF (Application Interface Framework), predefined template roles are available. These role templates can be used to define or customize roles based on specific requirements. Each role template comes with a set of authorizations that typical SAP AIF users would require. You can change a role template in three ways: Use them as they are delivered in SAP\nModify them according to your needs using the PFCG T-code\nBuild them from scratch Use them as they are delivered in SAP Modify them according to your needs using the PFCG T-code Build them from scratch Below are some examples of role templates offered by SAP AIF 4.0: SAP_AIF_ADMIN: AIF Administrator\nSAP_AIF_ALL: AIF All Authorizations\nSAP_AIF_ARCHITECT: AIF Architect\nSAP_AIF_AUDITOR: AIF Auditor\nSAP_AIF_POWER_USER: AIF Power User\nSAP_AIF_USER: AIF Business User SAP_AIF_ADMIN: AIF Administrator SAP_AIF_ALL: AIF All Authorizations SAP_AIF_ARCHITECT: AIF Architect SAP_AIF_AUDITOR: AIF Auditor SAP_AIF_POWER_USER: AIF Power User SAP_AIF_USER: AIF Business User",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "12. State difference between role and profile.",
+        "answer": "A role is essentially a combination of transactions and authorizations stored in a profile. Profiles associated with a role can vary in number depending on the number of transactions and authorizations that are contained within the role. As soon as you generate a role, it automatically creates a profile.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "13. Mention what is the maximum number of profiles in a role and a maximum number of objects in a role?",
+        "answer": "A role can have a maximum of 312 profiles and 170 objects.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "14. Which reports or programs are useful for regenerating SAP_All profiles?",
+        "answer": "Report RSUSR406 or T-code SU21 can be used to manually regenerate the SAP_ALL profile. In this case, the SAP_ALL profile is only generated in the client where the report is executed. You can also generate SAP_ALL profiles using the report AGR_REGENERATE_SAP_ALL. In this case, the SAP_ALL profile is generated in all the clients.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "15. Can you explain what a ‘user compare’ does in SAP security?",
+        "answer": "In cases where a role is used to generate authorization profiles, the generated profile is not entered into the user master record until the user master record is compared. It can be automated by scheduling the report FCG_TIME_DEPENDENCY every day.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "1. What is Profile Version?",
+        "answer": "Profiles contain a set of rights and restrictions associated with a specific user or group.  User profiles specify what actions (like viewing, creating, and editing) a user is allowed to perform on various resources, like sourcing documents or master data. Changing and saving a profile does not overwrite the old status in the database. Instead, a new version is created with the updated values. SAP assigns a unique number to each profile version. Create a new profile, for example, and it will have a version number of 1. After that, additional profiles will have sequential version numbers.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "2. What does User buffer mean? Which parameter controls the number of entries in the user buffer?",
+        "answer": "An SAP system automatically creates a user buffer when a user signs on. This buffer includes all authorizations for that user. Each user has their own buffer, which they can display using the T-code SU56. The tool is only for monitoring purposes, and no further action can be taken. The following profile parameter controls the number of entries in the user buffer: “Auth/auth_number_in_userbuffer”. “Auth/auth_number_in_userbuffer”",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "3. Which T-codes can be used to display user buffers, and delete old security audit logs?",
+        "answer": "T-code used to display user buffers, and delete old security audit logs are as follows: SM18: Delete old security audit logs/ Reorganize Security audit log in SAP.\nSU56: Monitor the number of objects buffered from individual user authorization roles and profiles. SM18: Delete old security audit logs/ Reorganize Security audit log in SAP. SM18 SU56: Monitor the number of objects buffered from individual user authorization roles and profiles. SU56",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "4. What is the procedure for deleting multiple roles from the QA (Quality Assurance), DEV (Development), and Production systems?",
+        "answer": "In order to delete multiple roles from QA, DEV, and Production systems, you must follow the steps below: Put the roles to be removed in a transport (in development).\nDelete the roles.\nPush the transport to the QA and production departments. Put the roles to be removed in a transport (in development). Delete the roles. Push the transport to the QA and production departments.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "5. What are the main tabs available in PFCG (Perfectly Functionally Co-coordinating Group)?",
+        "answer": "In the PFCG, there are many important and essential tabs, including the following: Description: Used to describe changes made, such as those made to roles, authorization objects, or other T-codes (addition or removal).\nMenu: Design user menus such as adding T-codes.\nAuthorization: Used for maintaining authorization profiles and authorization data.\nUser: Used to adjust user master records and assign users to the role. Description: Used to describe changes made, such as those made to roles, authorization objects, or other T-codes (addition or removal). Description Menu: Design user menus such as adding T-codes. Menu Authorization: Used for maintaining authorization profiles and authorization data. Authorization User: Used to adjust user master records and assign users to the role. User",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "6. Describe the steps one needs to take before running the Run system trace.",
+        "answer": "There are a few things that need to be done before one wants to execute the Run system trace. If one is going to trace the CPIC or the user ID prior to executing the Run system then one has to make sure that the said ID is given to someone that is either SAP_new or SAP_all. This has to be done because it ensures that one is able to execute the work without any kind of checking failure by authorization.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "7. In which table are illegal passwords stored?",
+        "answer": "The USR40 table is a standard authentication and SSO (Single Sign-On) Transparent Table in SAP Basis, which stores data about illegal passwords. It is used to gather illegal passwords and store them in various arrangements and patterns of words that can be implemented at the moment of creating the passwords.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "8. Explain PFCG_Time_Dependency.",
+        "answer": "The PFCG_TIME_DEPENDENCY report is an Executable ABAP (Advanced Business Application Programming) Report within your SAP system. PFCG_TIME_DEPENDENCY is a report used for comparing user masters. In addition, it deletes or removes expired profiles from the user master record. This report can also be directly executed using the PFUD T-code.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "9. Apparently, someone deleted users from our system, and I would like to know who did so. Is there a table where this is recorded or logged?",
+        "answer": "This information can be obtained by debugging the system or by using the RSUSR100 report. This report can be used to determine all changes made to the user (user change history).",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "10. Which authorization objects are needed to create and maintain user records?",
+        "answer": "In order to create and maintain a user record, you need the following authorization objects: S_USER_GRP: Assign user groups.\nS_USER_PRO: Assign authorization profile.\nS_USER_AUT: Create and maintain authorizations. S_USER_GRP: Assign user groups. S_USER_GRP S_USER_PRO: Assign authorization profile. S_USER_PRO S_USER_AUT: Create and maintain authorizations. S_USER_AUT:",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "11. Would it be possible to mass delete roles without deleting the new roles in SAP?",
+        "answer": "SAP provides a report i.e., (AGR_DELETE_ALL_ACTIVITY_GROUPS), which you can copy, then remove the system type check, and then execute/run. For mass deletion of roles without deleting the new roles in SAP, simply enter the roles that you wish to delete in a transport (a package used for transferring data between SAP installations), run/execute the delete program or either delete manually, then release the transport and finally import the roles into all client systems. As soon as your transport, the role is deleted from all client systems. It is necessary to tweak/debug & replace the code in AGR_DELETE_ALL_ACTIVITY_GROUPS to ensure it is deleting only SAP delivered roles. Getting past that little bit makes it work well.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "12. What are the values for user lock?",
+        "answer": "To determine whether the user is locked or not, we use the USR02 table. Below is a table showing the 6 types of user lock values: User Status Reason\n0 Not locked.\n16 Mystery values.\n32 Locked by CUA central administrator (User Admin).\n64 Locked by System Administrator.\n128 Locked after too many failed logon or incorrect logon attempts.\n192 A combination of both is locked by the system administrator and locked after too many failed logins (192 = 64+128). User Status Reason\n0 Not locked.\n16 Mystery values.\n32 Locked by CUA central administrator (User Admin).\n64 Locked by System Administrator.\n128 Locked after too many failed logon or incorrect logon attempts.\n192 A combination of both is locked by the system administrator and locked after too many failed logins (192 = 64+128). User Status Reason User Status Reason User Status Reason 0 Not locked.\n16 Mystery values.\n32 Locked by CUA central administrator (User Admin).\n64 Locked by System Administrator.\n128 Locked after too many failed logon or incorrect logon attempts.\n192 A combination of both is locked by the system administrator and locked after too many failed logins (192 = 64+128). 0 Not locked. 0 Not locked. 16 Mystery values. 16 Mystery values. 32 Locked by CUA central administrator (User Admin). 32 Locked by CUA central administrator (User Admin). 64 Locked by System Administrator. 64 Locked by System Administrator. 128 Locked after too many failed logon or incorrect logon attempts. 128 Locked after too many failed logon or incorrect logon attempts. 192 A combination of both is locked by the system administrator and locked after too many failed logins (192 = 64+128). 192 A combination of both is locked by the system administrator and locked after too many failed logins (192 = 64+128). Conclusion: The SAP Security solution allows you to monitor and regulate access to your company's systems and data both internally and externally. Globally, leading multinational businesses rely on SAP solutions to manage their operations and workflow. Consequently, SAP Security is one of the most rewarding careers in the technology world today, and SAP Security developers are in high demand. Therefore, you have an excellent chance of moving ahead as an SAP Security developer. Are you ready to ace your SAP Security interview? Useful Resources: Useful Resources: SAP ABAP Interview Questions\nSAP HANA Interview Questions SAP ABAP Interview Questions SAP ABAP Interview Questions SAP HANA Interview Questions SAP HANA Interview Questions",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "13. Differentiate between USOBT_C and USOBX_C.",
+        "answer": "USOBX_C and USOBT_C are customer-specific tables, and the C in their names indicates that these tables contain customer-specific values that are maintained/changed using the T-code SU24.  Differences between USOBT_C and USOBX_C are as follows: USOBX_C USOBT_C\nThis table specifies which authorization checks are to be performed and which are not, i.e., whether the field “check indicator” is set to \"check\" or to \"Do not check\". USOBT_C contains authorization objects whose Proposal value is Yes in SU24.\nThis table also defines the authorization checks that are maintained in the profile generator. It contains authorization values for the authorization objects that are defined to be maintained in the profile generator. USOBX_C USOBT_C\nThis table specifies which authorization checks are to be performed and which are not, i.e., whether the field “check indicator” is set to \"check\" or to \"Do not check\". USOBT_C contains authorization objects whose Proposal value is Yes in SU24.\nThis table also defines the authorization checks that are maintained in the profile generator. It contains authorization values for the authorization objects that are defined to be maintained in the profile generator. USOBX_C USOBT_C USOBX_C USOBT_C USOBX_C USOBT_C This table specifies which authorization checks are to be performed and which are not, i.e., whether the field “check indicator” is set to \"check\" or to \"Do not check\". USOBT_C contains authorization objects whose Proposal value is Yes in SU24.\nThis table also defines the authorization checks that are maintained in the profile generator. It contains authorization values for the authorization objects that are defined to be maintained in the profile generator. This table specifies which authorization checks are to be performed and which are not, i.e., whether the field “check indicator” is set to \"check\" or to \"Do not check\". USOBT_C contains authorization objects whose Proposal value is Yes in SU24. This table specifies which authorization checks are to be performed and which are not, i.e., whether the field “check indicator” is set to \"check\" or to \"Do not check\". USOBT_C contains authorization objects whose Proposal value is Yes in SU24. This table also defines the authorization checks that are maintained in the profile generator. It contains authorization values for the authorization objects that are defined to be maintained in the profile generator. This table also defines the authorization checks that are maintained in the profile generator. It contains authorization values for the authorization objects that are defined to be maintained in the profile generator.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "14. Explain authorization class and authorization object.",
+        "answer": "Authorization Object: An authorization object is a group of authorization fields that regulates a particular activity. While authorization relates to a particular action or activity, the authorization field relates to security administrators for configuring or defining specific parameters/values in that particular action. \nAuthorization Class: Authorization classes, on the other hand, are groups of Authorization objects. These classes can contain one or more authorization objects. Authorization Object: An authorization object is a group of authorization fields that regulates a particular activity. While authorization relates to a particular action or activity, the authorization field relates to security administrators for configuring or defining specific parameters/values in that particular action. Authorization Object: Authorization Class: Authorization classes, on the other hand, are groups of Authorization objects. These classes can contain one or more authorization objects. Authorization Class",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "15. What t-code is used to maintain Authorization Object and profile?",
+        "answer": "T-code used to maintain Authorization Object and profile are as follows: SU21: This is used to maintain authorization objects in SAP.\nSU02: This is used to maintain authorization profiles in SAP. SU21: This is used to maintain authorization objects in SAP. SU21 SU02: This is used to maintain authorization profiles in SAP. SU02",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "1. What is SAP security role?",
+        "answer": "Security roles are defined based on the positions/jobs of users. A role is essentially a combination of transactions and authorizations stored in a profile.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "2. Is SAP security easy to learn?",
+        "answer": "Learning something won't be difficult as long as we're interested in it. By acquiring SAP security skills, you gain exposure to all business functions that involve SAP security configuration. It only takes a positive attitude, a proactive approach, and an analytical mind to learn it.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "3. What is SAP Basis and Security?",
+        "answer": "SAP Basis is System Administrator and SAP security is User administration. SAP Basis handles System Administration (system installation, system performance, OS/SB administration etc.). SAP Security handles User administration (granting access to a limited set of data that users can access within the SAP system).",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "4. What is SAP security and GRC?",
+        "answer": "SAP GRC generally stands for Systems Applications and Products in Data Processing Governance, Risk, and Compliance. It is a powerful SAP security tool that allows companies to ensure that their data is secured and authorized.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "5. Is SAP security a good career?",
+        "answer": "Leading multinational corporations around the world use SAP solutions to manage their operations and workflow. Therefore, SAP Security is among the most rewarding careers today, and SAP Security developers are in high demand. SAP security is undoubtedly one of the best long-term career options to choose if you are not afraid of challenges.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    },
+    {
+        "question": "6. What is the salary of an SAP Security Analyst in India?",
+        "answer": "Depending on the level of experience and skills, the average salary for an SAP Security Analyst ranges between ₹ 4 LPA - ₹ 15 LPA.",
+        "reference": "interviewbit.com",
+        "role": "sap-security"
+    }
+]

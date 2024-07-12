@@ -1,0 +1,44 @@
+[
+    {
+        "question": "1. Why should one utilize a Database Management System (DBMS)? Explain its advantages.",
+        "answer": "A Database Management System (DBMS) provides several advantages for efficient data management. Firstly, it ensures data security through authentication, access control, and encryption, safeguarding sensitive information.\nSecondly, DBMS enables faster data access by implementing indexing structures and optimized retrieval methods.\nThirdly, it offers a user-friendly interface, simplifying data management processes for users with varying technical expertise. Moreover, a DBMS ensures data consistency and integrity through defined constraints and supports concurrent access, facilitating collaboration.\nAdditionally, it provides data backup and recovery mechanisms to prevent data loss. Overall, a DBMS enhances data management, security, accessibility, and integrity, promoting effective decision-making and operational efficiency.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    },
+    {
+        "question": "2. What is the difference between UNION and UNION ALL?",
+        "answer": "The UNION and UNION ALL operators in SQL serve to merge result sets of SELECT statements. UNION eliminates duplicate rows, while UNION ALL includes all rows without removing duplicates.\nThe SELECT statements involved must have matching column numbers and data types. UNION performs a sorting operation to remove duplicates, impacting performance, whereas UNION ALL simply concatenates rows. The column names in the result set are taken from the first SELECT statement. It is important to choose the appropriate operator based on whether duplicates should be retained or not.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    },
+    {
+        "question": "3. Differentiate between getch() and getche()?",
+        "answer": "The getch() and getche() functions in programming languages such as C serve to read single characters from the keyboard. The getch() function reads a character without displaying it, while getche() immediately displays the entered character on the screen.\nBoth functions do not wait for the enter key to be pressed and return the ASCII value of the entered key. getch() allows the program to continue execution after the key is pressed, while getche() displays the character and then proceeds. Programmers can choose the appropriate function based on whether immediate display is required or not.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    },
+    {
+        "question": "4. To connect the C program and the operating system, what structure is used?",
+        "answer": "In order to establish a connection between a C program and the operating system, the file structure is utilized. This crucial structure is defined by the “stdio.h” header file in C programming. This header file encompasses functions and data types that facilitate interaction with files within the operating system.\nThe file structure acts as a conduit, providing information about the currently open file, including its size, position, and memory location. It serves as an intermediary, enabling the program to seamlessly perform file operations.\nTo begin working with a file, the program must open it using functions like fopen(). By specifying the desired file name and the intended mode of access (such as read, write, or append), the program conveys to the operating system which file it wishes to engage with.\nOnce the file is successfully opened, the program gains access to a range of functions such as fread(), fwrite(), fprintf(), fscanf(), and fclose(). These functions empower the program to read from or write to the file as needed.\nBy harnessing the file structure and the functions provided by the “stdio.h” header file, a C program can effectively communicate with the operating system and proficiently perform file-related operations.\nIt is important to note that the above explanation is an original composition, free from plagiarism.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    },
+    {
+        "question": "5. Why are Java Strings immutable in nature?",
+        "answer": "Java Strings are immutable due to various reasons in the Java language. Firstly, immutability ensures security, as sensitive information like passwords and encryption keys cannot be modified.\nSecondly, immutability facilitates synchronization and concurrency by eliminating the need for thread synchronization. Immutable strings can be safely shared among multiple threads.\nThirdly, immutability enables caching, where strings are stored in a pool and shared among different references, reducing memory consumption and improving performance. Additionally, immutability allows efficient hashing and lookup, making strings suitable as keys in hash-based data structures.\nLastly, during class loading, string literals are resolved at compile-time and stored in the constant pool, allowing different classes to share the same string instance.\nOverall, the immutability of Java Strings ensures consistency, optimizes performance, and contributes to the stability and security of Java applications.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    },
+    {
+        "question": "6. What are the disadvantages of using an array to implement Queue?",
+        "answer": "When implementing a Queue using an array, there are a couple of notable disadvantages to consider.\nFirstly, one disadvantage is memory wastage. In a Queue, elements are inserted at the rear and removed from the front. As elements are dequeued and removed from the front of the array, empty spaces are created. However, these empty spaces cannot be efficiently reused to store new elements because arrays have a fixed size.\nThe structure of an array prevents inserting elements at any position other than the rear. Consequently, the memory allocated for the array’s elements cannot be utilized effectively, leading to memory wastage.\nSecondly, the fixed size of the array can pose challenges. When initializing the array, it is difficult to determine the exact size required to accommodate the maximum number of elements the Queue might hold. If the Queue exceeds the initial size of the array, it becomes necessary to extend the size dynamically.\nUnfortunately, extending the size of an array is a cumbersome process that involves creating a new, larger array and copying all the existing elements into it. This operation can be time-consuming, especially when dealing with a large number of elements.\nTo address these limitations, other data structures, such as linked lists, are often used to implement Queues. Linked lists provide dynamic memory allocation, allowing for flexible size and efficient memory usage. Elements can be easily added or removed at any position in a linked list without the need for resizing or copying data.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    },
+    {
+        "question": "7. What is the difference between new() and malloc()?",
+        "answer": "The difference between new() and malloc() lies in their behavior and usage. The new() operator, primarily used in languages like C++, allocates memory and invokes the constructor of the object being created.\nIn contrast, malloc() is a function in the C standard library that solely allocates memory without any constructor invocation. Additionally, new() returns the exact data type, while malloc() returns a void pointer that requires explicit type-casting. The choice between new() and malloc() depends on the programming language and the need for constructor invocation and type safety in memory allocation.",
+        "reference": "intellipaat.com",
+        "role": "capgemini"
+    }
+]

@@ -1,0 +1,596 @@
+[
+    {
+        "question": "1. What are the characteristics of iOS?",
+        "answer": "Criteria Result\nType of operating system Apple proprietary based on Macintosh OS X\nOS fragmentation Tightly integrated with Apple devices\nSecurity Heightened security guaranteed",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "2. Which JSON framework is supported by iOS (iPhone OS)?",
+        "answer": "SBJson framework is supported by iOS. It is a JSON parser and generator for Objective-C (Objective-C is the primary programming language we use when writing software for OS X and iOS. It is a superset of the C programming language and provides object-oriented capabilities and a dynamic runtime).\nSBJson provides flexible APIs and additional control that makes JSON handling easy.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "3. Unnamed categories – what are they?",
+        "answer": "The category without a name is no longer favored since the extension of @protocol to support @optional methods. We use the @interface Foo() class extension to declare additional private API, known as the system programming interface (SPI), which is utilized for implementing the internal workings of the class. This declaration is typically placed at the beginning of the .m file. All methods and properties declared within the class extension must be implemented in the @implementation, similar to the methods and properties found in the public @interface. Class extensions also provide the ability to change a publicly read-only @property to read-write before using @synthesize on the accessors. Example:\nFoo.h\n@interface Foo:NSObject\n@property(readonly, copy) NSString *bar;\n-(void) publicSaucing;\n@end\nFoo.m\n@interface Foo()\n@property(readwrite, copy) NSString *bar;\n- (void) superSecretInternalSaucing;\n@end\n@implementation Foo\n@synthesize bar;\n.... must implement the two methods or compiler will warn ....\n@end\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "4. Give the name of the framework that is employed to create the iOS application's user interface.",
+        "answer": "The UIKit framework facilitates the development of the application’s user interface. It enables event handling, drawing models, windows, views, and controls specifically designed for touch-screen interfaces.\nThe UIKit framework (UIKit.framework) plays a crucial role in constructing and managing iOS apps. This framework offers the following key components:\nWindow and view architecture for managing the app’s user interface\nInfrastructure for handling events and responding to user input\nAn application paradigm to control the primary run loop and communicate with the system\nIn addition to these core app behaviors, UIKit supports various features, including:\nA view controller model that encapsulates the user interface’s contents\nSupport for handling touch and motion-based events\nIncorporation of a document model with iCloud integration\nGraphics and windowing support, including external display compatibility\nManagement of the app’s foreground and background execution\nPrinting capabilities\nCustomization options for the appearance of standard UIKit controls\nSupport for displaying text and web content\nCut, copy, and paste functionality\nAnimation of user-interface content\nUsing framework APIs and URL protocols, integration with other applications on the system\nAccessibility features for users with disabilities\nSupport for the Apple Push Notification service\nScheduling and delivery of local notifications\nPDF Creation\nAbility to use custom input views mimicking the system keyboard\nCreation of custom text views that interact with the system keyboard\nContent sharing through Email, Twitter, Facebook, and other services",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "5. Which is the application thread from where UIKit classes should be used?",
+        "answer": "Unless it’s stated, use UIKit classes only from your application’s main thread or main dispatch queue. This restriction applies in particular to classes derived from UIResponder or that require modifying the user interface of your app in some way.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "6. What is the difference between Synchronous & Asynchronous tasks?",
+        "answer": "Synchronous can also be defined as In order. When you perform the synchronous operation, all that follows must wait for the operation to complete before proceeding.\nIn contrast, “asynchronous” can also be defined as “out of order.” When you do something asynchronously, you can run the following code right away, and the asynchronous process will happen someday. It could be run on a separate thread from the rest of the code. It could easily be rescheduled on the same thread at a later date, and you can notify you when it is done.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "7. How can you respond to state transitions on your app?",
+        "answer": "State transitions can be responded to state changes in an appropriate way by calling corresponding methods on the app’s delegate object.\nFor example:\napplicationDidBecomeActive( ) method: To prepare to run as the foreground app\napplicationDidEnterBackground( ) method: To execute some code when the app is running in the background that may be suspended at any time\napplicationWillEnterForeground( ) method: To execute some code when the app is moving out of the background\napplicationWillTerminate( ) method: Called when the app is being terminated",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "8. What is Operator Overloading?",
+        "answer": "The process of adding new operators and changing existing ones to do various things is known as operator overloading.\n+, *, and / symbols are known as operators.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "9. What is TVMLKit?",
+        "answer": "TVMLKit serves as a bridge between TVML, JavaScript, and your native tvOS software. You can test TVMLKit JS and TVML files from inside your tvOS app using the TVMLKit framework. The JavaScript environment can be used to build TVML objects, styles, views, and view controllers.\nCheck out our iOS Developers Interview Questions to ace your next interview!",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "10. What is iOS?",
+        "answer": "iOS stands for “iPhone Operating System,” which is used in the devices that Apple manufactures, whether they be iPhones or iPads. It is considered to be the second-most popular operating system in the world.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "11. Mention a few key features of the iOS platform.",
+        "answer": "The key features of the iOS platform are the following: \nMultitasking capabilities\niCloud is used to store data on the cloud that can be accessed by any other Apple device where your ID is logged in.\niOS is a closed system, which means the source code of Apple’s apps isn’t available to developers.\nSeamless integration with other Apple devices.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "12. What are property observers?",
+        "answer": "As the name suggests, the Property Observer observes and responds to the change in property value. So wherever a value of the property is set, the property observer gets called.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "13. What are UI Elements in iOS?",
+        "answer": "The visual elements that we can see in our applications are known as UI elements. Some of these components, such as buttons and text fields, respond to user interactions, while others, such as images and labels, provide information.\n\niOS Interview Questions for Experienced",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "14. What is Swift and what is Objective-C?",
+        "answer": "Swift is a modern programming language created by Apple for iOS, OS X, watchOS, and tvOS apps that combines the best of C and Objective-C but without the C compatibility issues. Swift follows secure programming patterns while also incorporating modern features to make programming simpler, more versatile, and enjoyable. Swift is welcoming to novice programmers and feels familiar with Objective-C developers.\nThe primary programming language for writing applications for OS X and iOS is Objective-C. It’s an object-oriented programming language with a dynamic runtime that’s a superset of the C programming language. Objective-C takes C’s syntax, primitive types, and flow control statements and adds class and process definition syntax.\nDiscover how to protect your devices from Bluetooth Hacking!",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "15. What is an NSError in Swift?",
+        "answer": "The NSError class is a Cocoa class. The knowledge about an error condition is encapsulated in an extendable, object-oriented manner by an NSError object. It includes a predefined error domain, a domain-specific error code, and a user details dictionary with application-specific data.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "16. What are the features added in iOS 16?",
+        "answer": "The following features are added to iOS 16:\nLock Screen: Customize your Lock Screen by incorporating your preferred photos, applying filters, and altering the font style of the date and time. Stay updated on information from your favorite apps and receive real-time updates effortlessly with Widgets and Live Activities. Access notifications at the bottom of the Lock Screen and explore various viewing options. Furthermore, you have the option to create multiple Lock Screens and switch between them.\nFocus: Match how you want to use your iPhone in the moment by linking a Focus to your Lock Screen. Hide distracting content by expanding your Focus filters across Apple apps like Calendar and Messages, as well as third-party apps.\niCloud Shared Photo Library: (iOS 16.1) Share a library of photos and videos with up to five other family members using an iCloud Shared Photo Library. Family members can contribute photos to the Shared Library from their Personal Library, directly from Camera, or when they are in close proximity to other members of the Shared Library.\nFreeform: The new productivity app, Freeform (iOS 16.2), empowers you to bring your ideas to life on a flexible canvas. With Freeform, you can freely brainstorm on boards without the need to be concerned about layouts or page sizes. Additionally, you can witness real-time contributions and edits from collaborators as they add content to the boards.\nMessages: You can actively edit or unsent a message immediately after sending it, or mark a message as unread for later reference. Collaborate directly within Messages on shared notes, reminders, and other files. Engage in chat conversations with friends using SharePlay while simultaneously watching the newest episode of your favorite show or listening to a new song.\nMail: You can actively edit or unsent a message immediately after sending it, or mark a message as unread for later reference. Collaborate directly within Messages on shared notes, reminders, and other files. Engage in chat conversations with friends using SharePlay while simultaneously watching the newest episode of your favorite show or listening to a new song.\nMaps: You can add multiple stops along your driving route, replenish your transit cards, and view the total cost of your trip, all in one place.\nSafari: In Safari, you can actively utilize Tab Groups, send messages, and initiate FaceTime calls.\nVisual Look-Up: Remove the background from a photo or image to separate the subject, and then transfer the subject to a new document.\nPrivacy and Security: Review and reset the access you have granted others, reset system privacy permissions for apps, and restrict the use of Messages and FaceTime to the device on hand by using Safety Check. Unlock the Hidden and Recently Deleted albums in the Photos app using your iPhone authentication method.\nAccessibility: In the final few feet toward a destination, actively utilize Door Detection to locate the door, determine its distance, and acquire the skill to open it. Enable real-time conversion of audio into text to facilitate easier understanding of conversations and media. Employ the assistive capabilities on your iPhone to manage your Apple Watch and other functions.\nPhotos: You can copy the edits made to one photo and paste them onto another photo or multiple photos. You can swiftly clean up your library by using duplicate detection, alphabetically sort people in your People album, undo and redo edits, and enjoy additional features.\nWeather: Obtain additional information regarding forecast conditions such as air quality, humidity, and UV index. Access hourly forecasts for the upcoming 10 days, receive notifications regarding severe weather alerts issued by the government, and avail of other features.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "17. What is the difference between KVC and KVO?",
+        "answer": "KVC (Key-Value Coding) is a method for accessing an object’s properties using strings at runtime rather than needing to know the property names statically at development time.\nKVO (Key-Value Observing) allows a controller or class to monitor changes in a property value. In KVO, an object may request to be informed of any adjustments to a particular property, and the observer is automatically notified if that property’s value changes.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "18. Explain the different types of iOS Application States.",
+        "answer": "You will experience a few app states while using the application. There are five states in the ios application as follows.\nNot Running\nThe application is in the Not running state if the app is not launched yet or if the application is not visible on the screen, or if there is the possibility that the application is terminated by the user or by OS.\nInactive\nAn inactive state occurs when the application is not receiving events, but the app is running in the background. An app transitions to a different state. when the user locks the screen or the system prompts the user to respond to some event, such as a phone call or SMS message, is the only time it stays inactive.\nActive\nIn an ios application, Active State is the main executive state. In this state, the app runs in the foreground, and the UI is accessible.\nBackground\nBefore being suspended, most of all apps enter this state.  If an app requests extra execution time, then that will remain in this state for some more time. Also, an application launched directly in the background enters this background state instead of the inactive state\nSuspended\nIn a suspended state, the application does not execute any code. The system purges suspended apps without notice to make more space for the foreground app when a low-memory condition occurs.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "19. What is the difference between retain and assign?",
+        "answer": "Assign creates a reference from one object to another without increasing the source’s retain count.\nif (_variable != object)\n{    \n [_variable release];  \n  _variable = nil;  \n  _variable = object;\n }\nRetain creates a reference from one object to another and increases the retain count of the source object.\nif (_variable != object)\n{\n  [_variable release];\n    _variable = nil;  \n_variable = [object retain];  \n}",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "20. What is Dynamic Dispatch?",
+        "answer": "At runtime, Dynamic Dispatch determines which implementation of a polymorphic procedure, such as a method or a function, to call. This means that when we want to call our methods, such as object methods, we must use this syntax. Swift, on the other hand, does not use dynamic dispatch by default.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "21. Do private methods exist in Objective-C?",
+        "answer": "Yes, Objective-C does contain private methods. Private methods are methods that are only accessible within the class they are defined in, and are not visible to other classes or objects. They can be used to encapsulate implementation details and prevent them from being accessed or modified by external code.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "22. What is GCD?",
+        "answer": "The GCD stands for Grand Central Dispatch. It is a low-level API that allows you to manage multiple concurrent operations. It will assist you in increasing the responsiveness of your app by deferring computationally intensive tasks to the context. It’s a simpler concurrency model than locks and threads to deal with.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "23. What are some iOS implementation options for persistence and storage?",
+        "answer": "Persistence involves storing data on the disk in a way that allows retrieval without modification when the app is reopened. There are various methods available for data storage, ranging from simple to complex:\nStoring data using data structures like arrays, dictionaries, sets, and other similar structures is an excellent option for intermediate storage.\nNSUserDefaults and Keychains serve as straightforward key-value stores. However, NSUserDefaults is considered insecure, while Keychains provides secure storage.\nNSFileManager enables the storage and retrieval of data (serialized or not) to and from a disk through file or disk storage.\nRelational databases, such as SQLite, offer a robust solution for implementing complex querying mechanisms.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "24. Define SOLID Principles in iOS Development",
+        "answer": "The SOLID principles empower developers to create maintainable and scalable software applications by following a set of design principles. In the context of iOS development, these principles enable the creation of clean and robust code. Let’s explore each SOLID principle briefly:\nAccording to the Single Responsibility Principle (SRP), each class or module ought to have a single goal or duty. This principle encourages modularity and enhances code comprehension, testing, and maintenance.\nSoftware entities should, according to the Open/Closed Principle (OCP), be open for expansion but closed for modification. It advocates designing code in a way that allows new functionality to be added without altering existing code. This principle promotes code reuse, and scalability, and minimizes the risk of introducing bugs.\nThe Liskov Substitution Principle (LSP) emphasizes that subtypes must be capable of substituting their base types without disrupting the program’s correctness. Simply put, it should be possible to substitute an object belonging to a superclass with an object belonging to one of its subclasses without creating problems or deviating from expected behavior. This principle ensures well-designed inheritance hierarchies that adhere to the “is-a” relationship.\nThe Interface Segregation Principle (ISP) asserts that clients should not be compelled to depend on interfaces they don’t use. It recommends designing interfaces tailored to the specific needs of clients, preventing the implementation of unnecessary methods. By keeping interfaces focused and concise, this principle encourages loose coupling and eases maintenance.\nAccording to the Dependency Inversion Principle (DIP), high-level modules should depend on abstractions rather than low-level modules. This principle highlights the usage of abstractions (interfaces or protocols) to decouple higher-level and lower-level modules. It promotes dependency injection and inversion of control and facilitates testing and flexibility in code design.\nBy adhering to the SOLID principles in iOS development, developers can create code that is more readable, understandable, and maintainable. This approach fosters the development of modular, flexible, and extensible applications, mitigating the risk of bugs and facilitating collaboration among team members.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "25. Explain the term ARC.",
+        "answer": "ARC stands for Automatic Reference Counting. It is used to manage the app’s memory usage by initializing and de-initializing memory usage.\nCheck out this video on iOS Development Tutorial:",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "26. Which programming languages are used for iOS development?",
+        "answer": "The following languages are used in iOS development : \nSwift\nObjective-C.\nC++\n.NET\nC\nHTML5\nJavascript",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "27. What are the advantages of the Realm framework?",
+        "answer": "To handle all of the work, only a small amount of code is needed.\nAvailable in both Object C and Swift.\nSQLite and Core Data have slower performance.\nDatabase files can be shared easily between iOS and Android devices.\nThere is no fee, no charge.\nThere is no limit to the data amount that can be stored.\nRegardless of huge data sets or massive storage, consistent speed and consistency",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "28. What options are there for the UIView element layout specification?",
+        "answer": "Here are some common ways to specify the layout of elements in a UIView:\nBy employing InterfaceBuilder, we have the capability to integrate a XIB file into our project, organize its elements, and subsequently load the XIB within our application code, either automatically based on naming conventions or manually.\nWith InterfaceBuilder, we can also design a storyboard for our application.\nWe can write our own code to employ NSLayoutConstraints, which enables us to arrange elements in a view using Auto Layout.\nBy creating CGRects that describe the precise coordinates for each element, we can pass them to the UIView’s (id)initWithFrame:(CGRect)frame method.\nTo learn more about the layout of elements, check out this iOS Tutorial!",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "29. What is SpriteKit and what is SceneKit?",
+        "answer": "SpriteKit is a platform for creating animated 2D objects quickly and easily.\nSceneKit is a platform for 3D graphics rendering that was inherited from OS X.\nSpriteKit, SceneKit, and Metal are expected to boost a new generation of mobile games that push the boundaries of what the powerful GPUs in iOS devices can do.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "30. Explain a singleton class.",
+        "answer": "When only one instance of a class is created in the application, that class is called a singleton class. See below:\n@interface SomeManager : NSObject\n+ (id)singleton;\n@end\n@implementation SomeManager\n+ (id)singleton {\nstatic id sharedMyManager = nil;\n@synchronized([MyObject class]){\nif (sharedMyManager == nil) {\nsharedMyManager = [[self alloc] init];\n}\n}\nreturn sharedMyManager;\n}\n@end\n//using block\n+ (id) singleton {\nstatic SomeManager *sharedMyManager = nil;\nstatic dispatch_once_t  onceToken;\ndispatch_once(&onceToken, ^{\nsharedMyManager = [[self alloc] init];\n});\nreturn sharedMyManager;\n}",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "31. Differentiate between UIView’s frame and UIView’s bound?",
+        "answer": "A UIView’s frame is a rectangle with a scale (width, height) and position (x,y) relative to the super view it is located within.\nA UIView’s bounds are a rectangle with a size (width, height) and position (x,y) relative to its own coordinate system (0,0).",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "32. What is method swizzling?",
+        "answer": "Method swizzling is a technique in iOS development that allows you to change the implementation of a method at runtime. It involves swapping the implementation of one method with another, typically within a class or its subclasses.\nWith method swizzling, you can modify the behavior of existing methods without directly modifying their original implementation. This technique is often used to add functionality, override behavior, or intercept method calls in iOS applications.\nHere’s how method swizzling works:\nIdentify the target methods: First, you need to identify the methods you want to swizzle, typically by their selectors (method names).\nCreate new methods: Next, you create new methods that will serve as the replacement or swizzled implementation of the original methods. These new methods will contain the desired modifications or additions to the original behavior.\nSwizzle the methods: The actual swizzling process involves exchanging the implementations of the original method and the swizzled method. This is typically done using runtime functions or libraries like Objective-C runtime or Swift runtime.\nInvoke the swizzled methods: Once the swizzling is performed when the original method is called, it will actually execute the swizzled method instead of its original implementation. This allows you to customize the behavior of the method without modifying its original code.\nMethod swizzling can be a powerful technique, but it should be used with caution. It can introduce complexity and make code harder to understand and debug. It’s important to ensure proper handling of concurrency and to document the swizzling changes thoroughly to maintain code clarity and avoid unexpected behavior.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "33. How to Prioritize Usability in Design?",
+        "answer": "To prioritize usability, the design process has broken down into 4 steps:\nConsider the user’s perspective when designing the user experience.\nUsers, not demographics, are what you should focus on.\nConsider all of the scenarios in which an app might be useful when promoting it.\nEven after the app has been released, continue to improve its functionality.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "34. Explain iBeacons?",
+        "answer": "Apple’s introduction of Bluetooth low-energy (BLE) wireless technology, iBeacon, is a new way for iPhones and other iOS users to receive location-based information and services.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "35. What options are available for networking and HTTP on iOS?",
+        "answer": "URLSession: iOS provides the native networking library, which actively supports HTTP and HTTPS protocols, and offers a range of features, including background downloads, authentication, and session management.\nAlamofire: This popular third-party networking library for iOS, which surpasses URLSession in terms of convenience and intuitiveness, actively supports HTTP and HTTPS protocols. Additionally, it offers a range of features, including request and response serialization, error handling, and progress tracking.\nAFNetworking: This is another popular third-party networking library for iOS that provides similar features to Alamofire. It has been around for longer than Alamofire and has a larger community of users, but it may be less actively maintained than Alamofire.\nNSURLSessionWebSocketTask: AFNetworking is a widely used third-party networking library that provides an Objective-C-based API for network operations. It offers features such as request serialization, response validation, reachability monitoring, and SSL pinning. AFNetworking simplifies networking tasks and provides a robust and flexible networking solution.\nURLSessionWebSocketDelegate: This is a delegate protocol that allows you to handle WebSocket events such as connection opening, message reception, and error handling.\nURLSessionStreamTask: This is a native API for creating and managing bi-directional streaming connections over HTTP/2. It was introduced in iOS 9 and allows for efficient, low-latency communication between a client and server.\nThese are just a few of the options available for networking and HTTP on iOS. Depending on your specific needs, there may be other libraries or APIs that are better suited to your application.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "36. How can you prevent the iOS 16 app's streaming video media from being captured by QuickTime Player on Yosemite during screen recording?",
+        "answer": "There exist several methods to mitigate the risk of QuickTime Player capturing streaming video media from the iOS 16 application during screen recording on the Yosemite operating system.\nUtilize a third-party screen recorder: Choose from various third-party screen recorders that allow you to record the screen of your iOS device. These recorders typically offer encryption for the video stream, effectively preventing QuickTime Player from capturing it.\nEmploy a VPN: Please ensure that all data transmitted from your device, including the video stream originating from the iOS application, is securely encrypted by employing a Virtual Private Network (VPN). When a VPN connection is established, QuickTime Player will be rendered incapable of capturing the video stream. \nDisable screen recording: Navigate to *Settings > General > Restrictions > Allow* on your iOS device and disable the *Screen Recording* feature. By doing so, QuickTime Player will be unable to record the screen of your device.\nNote: If you are utilizing an iOS device operating on iOS 15 or an older iteration, the option to disable screen recording is unavailable. Consequently, you must depend on either a third-party screen recorder or a VPN service to impede QuickTime Player from capturing the video stream.\nConsider the following third-party screen recorders:\nOBS Studio: OBS Studio is a powerful, free, and open-source screen recorder available for Windows, macOS, and Linux. It can record the screen of any device effectively.\nScreenFlow: ScreenFlow is a macOS-compatible screen recorder that is both user-friendly and requires a monetary investment. Its purpose is to facilitate the effortless recording of the screen on your iOS device.\nCamtasia: Camtasia is a robust screen recording software that is available for purchase on both Windows and macOS platforms. It provides comprehensive screen recording features that cater to various devices.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "37. Describe managed object context and its function.",
+        "answer": "A managed object context (represented by an instance of NSManagedObjectContext) is a temporary ‘scratchpad’ or ‘single object space’ in an application for a (presumably) related collection of objects. These objects collectively represent an internally consistent view of one or more persistent stores.\nA single-managed object instance exists in one and only one context, but multiple copies of an object can exist in different contexts.\nThe key functions of the managed object context include the following:\nLife-cycle management: Here, the context provides validation, inverse relationship handling, and undo/redo.\nNotifications: These refer to context posts’ notifications at various points that can be optionally monitored elsewhere in our application.\nConcurrency: Here, the Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts.\n\nAdvanced iOS Senior Developer Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "38. Why is the design pattern very important?",
+        "answer": "Design patterns are important in software design because design patterns are reusable solutions to many common problems. They’re models for writing code that’s simple to comprehend and reuse. The most popular design trends in Cocoa are as follows:\nCreational: Singleton.\nStructural: Decorator, Adapter, Facade.\nBehavioral: Observer and, Memento",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "39. What is Concurrency?",
+        "answer": "Concurrency is a fancy term for “running several tasks at the same time.” On iOS devices, concurrency is commonly used to allow you to run tasks such as downloading or processing data in the background while keeping your user interface sensitive.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "40. Mention various ways to achieve concurrency in iOS?",
+        "answer": "Mainly, there are 3 ways to achieve concurrency in iOS. There are:\nGrand Central Dispatch\nOperationQueue\nThreads\n\niOS Developer Interview Questions for 6 Years Experience",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "41. What is meant by deadlock?",
+        "answer": "A deadlock is a situation that occurs when at least two threads are locked on a different resource, and both are waiting for the other resource to finish its job. And no one is able to unlock the resource it is guarding.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "42. Explain the lazy property in Swift?",
+        "answer": "A lazy stored property is one that does not determine its initial value until it is used for the first time. The lazy modifier is written before the declaration of a lazy stored property.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "43. What is the abbreviation of ARC?",
+        "answer": "ARC stands for Automatic Reference Counting.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "44. What is the difference between strong, weak, read-only, and copy?",
+        "answer": "Strong: Through the life of the object, the reference count will be increased, and the reference will be maintained\nWeak: It can be said as a non-strong reference, which means it refers to the fact that we are referring to an object but not adding to its reference count. It’s often used to establish a parent-child relationship. The parent has a strong connection with the infant, but the child has only a small connection with the parent.\nRead-only: Initially, The property will be set, and it can’t be changed.\nCopy: It means that when an object is created, we copy its value. Also prevents its value from changing.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "45. Explain QOS?",
+        "answer": "QoS stands for the quality of service. It is a class that organizes the work that NSOperation, NSOperationQueue, NSThread artifacts, dispatch queues, and threads do (POSIX threads). By assigning a QoS, you’re telling the system how important it is, and the system prioritizes and schedules it accordingly.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "46. What is the use of deinit in swift?",
+        "answer": "Deinitialization in Swift is the method of deallocating or cleaning up unused class instance objects in order to free up memory space used by machine resources for better memory management. Until a class instance is deallocated, the deinitialization process is usually named.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "47. What is the difference between atomic- and non-atomic properties? Which is the default for synthesized properties? When would you use one over the other?",
+        "answer": "Properties specified as atomic are guaranteed to always return a fully initialized object. This also happens to be the default state for synthesized properties. While it is a good practice to specify atomic properties to remove the potential for confusion, if we leave it off, the properties will still be atomic. This guarantee of atomic properties comes at the cost of performance. However, if we have a property for which we know that retrieving an uninitialized value is not a risk (e.g., if all access to the property is already synchronized via other means), then setting it to non-atomic can boost the performance.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "48. Does Objective-C contain private methods?",
+        "answer": "No, there is nothing called a private method in Object-C programming. If a method is defined in .m only, then it becomes protected; if it is defined in .h, it is public.\nIf we really want a private method, then we need to add a local category/unnamed category/class extension in the class and add the method in the category and define it in class.m.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "49. What is a plist?",
+        "answer": "Property list or plist refers to a list that organizes data into named values and lists of values using several object types. These types provide us the means to produce data that is meaningfully structured, transportable, storable, and accessible but still as efficient as possible. Property lists are frequently used by applications running on both Mac OS X and iOS. The property-list programming interfaces for Cocoa and Core Foundation allow us to convert hierarchically structured combinations of these basic types of objects to and from standard XML. We can save the XML data to the disk and later use it to reconstruct the original objects.\nThe user defaults system, which we programmatically access through the NSUserDefaults class, uses property lists to store objects representing user preferences. This limitation would seem to exclude many kinds of objects, such as NSColor and NSFont objects, from the user defaults system. However, if objects conform to the NSCoding protocol, they can be archived into NSData objects, which are property-list-compatible objects.\nClick here to learn more about iOS in the iOS Development Training!",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "50. Explain MVC.",
+        "answer": "MVC is the acronym for “Model-View-Controller.” MVC is a design pattern for web applications that consists of three interconnected components.\nModel – A model is where the data is stored.\nView – The classes in view are reusable as they don’t have any domain-specific logic.  Controller –  with delegation patterns, the controller act as a communication between the model and the view.\nThe MVC model, also known as the “pattern,” is widely used in the development of modern user interfaces.\n\niOS Interview Questions for Senior Developer with 10 Years Experience",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "51. What is the purpose of reuseIdentifier? What is the benefit of setting it into a non-nil value?",
+        "answer": "The reuseIdentifier is used to group together similar rows in a UITableView, i.e., the rows that differ only in their content, otherwise having similar layouts. A UITableView will normally allocate just enough UITableViewCell objects to display the content visible in the table.\nIf reuseIdentifier is set to a non-nil value, then the UITableView will first attempt to reuse an already allocated UITableViewCell with the same reuseIdentifier when the table view is scrolled. If reuseIdentifier has not been set, then the UITableView will be forced to allocate new UITableViewCell objects for each new item that scrolls into view, potentially leading to laggy animations.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "52. What are Swift’s advantages?",
+        "answer": "The main advantages of Swift are mentioned below:\nEasy to read\nEasy to maintain\nExtremely fast\nDynamic libraries\nSafe programming language\nEfficient memory management\nConcise code",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "53. What is the difference between an ‘App ID’ and a ‘Bundle ID’? What is each used for?",
+        "answer": "An App ID is a two-part string used to identify one or more apps from a single development team. The string consists of a Team ID and a Bundle ID search strings, with a period (.) separating the two.\nThe Team ID is supplied by Apple and is unique to a specific development team, while a Bundle ID is supplied by the developer to match either the Bundle ID of a single app or a set of Bundle IDs of a group of apps.\nSince most users consider the App ID as a string, they think it is interchangeable with the Bundle ID. Once the App ID is created in the Member Center, we can only use the App ID prefix that matches the Bundle ID of the application bundle.\nThe Bundle ID uniquely defines each app. It is specified in Xcode. A single Xcode project can have multiple targets and, therefore, outputs multiple apps. A common use case: an app having both lite/free and pro/full versions or branded multiple ways.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "54. What is an abstract class in Cocoa?",
+        "answer": "Cocoa doesn’t provide anything called abstract. It can create a class abstract that gets checked only at the runtime while it is not checked at the compile time.\n@interface AbstractClass : NSObject\n@end\n@implementation AbstractClass\n+ (id)alloc{\nif (self == [AbstractClass class]) {\nNSLog(@\"Abstract Class can’t be used\");\n}\nreturn [super alloc];\n@end",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "55. What is the difference between Cocoa and Cocoa Touch?",
+        "answer": "Cocoa Touch is the result of combining the Foundation and AppKit frameworks, while Cocoa is the result of combining the Foundation and UIKit frameworks. To build API stacks, Cocoa and Cocoa Touch sit on top of other application sets. Media, Core Services, and CoreOS are the other layers.\n\nApplication Framework For\n1. Cocoa is the application framework for Mac OS X.\n2. Cocoa Touch is the application framework for iPhone and iPod Touch.\nFrameworks\n1. Cocoa: Foundation and AppKit.\n2. Cocoa Touch: Foundation and UIKit\nAbsence of certain classes\nCocoa has NSHost and Cocoa Touch doesn’t\nAPI\nCocoa: All the classes used in Cocoa have the NS prefix Ex: NSTextField\nCocoa Touch: classes used in Cocoa have the UI prefix Ex: UITextField\nMVC patterns\nCocoa: Cocoa has multiple alternative design patterns – in addition to MVC\nCocoa Touch: The iPhone SDK has a reinforced MVC system, which performs better than the default MVC in Cocoa",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "56. Describe the NSURLConnection class. Describe its categories and use scenarios.",
+        "answer": "There are two ways of using the NSURLConnection class. One is asynchronous, and the other is synchronous.\nAn asynchronous connection will create a new thread and perform its download process on the new thread. A synchronous connection will block the calling thread while downloading the content and doing it’s communicating.\nMany developers think that a synchronous connection blocks only the main thread, which is not true. A synchronous connection will always block the thread from which it is fired. If we fire a synchronous connection from the main thread, the main thread will be blocked. However, if we fire a synchronous connection from a thread other than the main thread, it will be like an asynchronous connection and won’t block our main thread.\nIn fact, the only difference between synchronous and asynchronous connections is that at runtime, a thread will be created for the asynchronous connection, while it won’t do the same for a synchronous connection.\nIn order to create an asynchronous connection, we need to:\nHave our URL in an instance of NSString\nConvert our string to an instance of NSURL\nPlace our URL in a URL Request of type NSURLRequest or, in the case of mutable URLs, in an instance of NSMutableURLRequest\nCreate an instance of NSURLConnection and pass the URL request to it\nIf you have any doubts or queries related to iOS, get them clarified by iOS experts on our iOS Community",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "57. Explain Swift’s pattern matching techniques",
+        "answer": "Tuple patterns: Values of corresponding tuple forms are matched using tuple patterns.\nType-casting patterns: You can cast or mix styles using type-casting patterns.\nWildcard patterns: Every kind and kind of value is matched by wildcard patterns, which disregard them.\nOptional patterns: To align optional values, optional patterns are used.\nEnumeration case patterns: The cases of existing enumeration forms are matched by enumeration case patterns.\nExpression patterns: You may use expression patterns to compare a given value to a given expression.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "58. What is the relation between iVar and @property?",
+        "answer": "iVar is an instance variable. It cannot be accessed unless we create accessors, which are generated by @property. iVar and its counterpart @property can be of different names.\n@interface Box : NSObject{\nNSString *boxName;\n}\n@property (strong) NSString *boxDescription;//this will become another ivar\n-(void)aMethod;\n@end\n@implementation Box\n@synthesize boxDescription=boxName;//now boxDescription is accessor for name\n-(void)aMethod {\nNSLog(@\"name=%@\", boxName);\nNSLog(@\"boxDescription=%@\",self.boxDescription);\nNSLog(@\"boxDescription=%@\",boxDescription); //throw an error\n}\n@end",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "59. What is a Guard statement?",
+        "answer": "If one or more requirements aren’t met, a guard statement is used to pass program control out of a domain. The advantages of guard statement are as follows:\nIt is another way to safely unwrap optionals\nIt provides an early exit\nIt avoids pyramids of doom\nThe guard statement is written as:\nguard condition else {\n   statements\n}",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "60. How is memory management handled on iOS?",
+        "answer": "Memory management is crucial in any application, especially important in iOS applications due to memory and other limitations. ARC, MRC, reference forms, and value types are all included. Every iOS developer should be aware of this! Memory leaks and system crashes are all too common in iOS apps due to poor memory management.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "61. What are raw strings?",
+        "answer": "Raw String in Switf 5 gives us the ability to specify a custom delimiter #.\nFor example, when we write \\n, it should act as an escape sequence, but it will be treated as a backslash, then an ‘n.’\nlet regularString = \"\\\\Hello \\\\World\"\nlet rawString = #\"\\Hello \\World\"#",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "62. What do you mean by TDD?",
+        "answer": "TDD stands for Test-Driven Development. With the help of this feature, a developer who is creating a feature can plan for the feature, build it, and then test it before it goes to production.\n\nSalary Trends in iOS\n\nIn the past few years, the demand for iOS developers has been increasing, both in India and abroad. The average salary in India as per payscale has been noted to be ₹5.9 LPA, and in the USA, according to clouddev the average for an iOS developer is $125K, ranging from $105K to $143K.",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "INDIA",
+        "answer": "Role Salary\nJr. Mobile Engineer (0-2 years)  4 LPA- 7 LPA\nSr. Mobile Engineer (2-4 years) 7 LPA – 23 LPA\nLead Mobile Engineer (4-7 years) 17 LPA – 72 LPA",
+        "reference": "intellipaat.com",
+        "role": "ios"
+    },
+    {
+        "question": "1. Write the difference between assign and retain keywords.",
+        "answer": "Assign: With Assign, a reference is created from one object to another without increasing the source's retain count (a number that keeps track of how many objects are “holding onto\" another object). It does not copy or retain the value but assigns it directly to the instance variable. Assign: With Assign, a reference is created from one object to another without increasing the source's retain count (a number that keeps track of how many objects are “holding onto\" another object). It does not copy or retain the value but assigns it directly to the instance variable. Assign: Example: Example: if (object != object) \n{  \n[object release];  \nobject = nil;  \nobject = object;  \n} if (object != object) \n{  \n[object release];  \nobject = nil;  \nobject = object;  \n} Here, Assign will generate a setter that assigns the value to the instance variable directly, rather than copying or retaining it. Retain: Using this method, you create a reference from one object to another and increase the retain count of the source object. Retain: Using this method, you create a reference from one object to another and increase the retain count of the source object. Retain: Example: Example: if (object != object) \n{   \n[object release]; \nobject = nil;   \nobject = [object retain];   \n} if (object != object) \n{   \n[object release]; \nobject = nil;   \nobject = [object retain];   \n} A retain message prevents an object from being deallocated until you are done using it.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "2. What do you mean by the SpriteKit and SceneKit framework in the context of game development?",
+        "answer": "SpriteKit: This framework is designed to make it easier and faster for game developers to create animated 2D assets/objects in casual games. With it, you can draw shapes, particles, text, images, and videos in two dimensions. SpriteKit: SceneKit: It is an iOS framework inherited from OS X, which helps to create 3D graphics. With SceneKit, you can build 3D animated scenes and effects for your iOS games and apps. SceneKit:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "3. State the difference between App ID and Bundle ID?",
+        "answer": "Bundle ID: They are the unique identifiers of applications in Apple's ecosystem. In other words, no two applications can have the same identifier. The bundling ID is used for both OS X and iOS apps and can be used to recognize app updates. \nExample:\nIf our organization’s domain is scaler.com and we create an app named Edge, you could assign the string com.scaler.edge as our app’s bundle ID.\nApp ID: This string uniquely identifies one or more apps from the same development team. There are two components to the string, the Team ID and the Bundle ID, separated by a period (.). Apple supplies a Team ID to identify a specific development team, whereas developers supply Bundle IDs to identify a single app or a collection of apps.  \nExample:\nABCDE12345.com.scaler.edge\nIn the above example, ABCDE12345 is the Team ID and com.scaler.edge is the Bundle ID. Bundle ID: They are the unique identifiers of applications in Apple's ecosystem. In other words, no two applications can have the same identifier. The bundling ID is used for both OS X and iOS apps and can be used to recognize app updates. \nExample:\nIf our organization’s domain is scaler.com and we create an app named Edge, you could assign the string com.scaler.edge as our app’s bundle ID. Bundle ID: Example:\nIf our organization’s domain is scaler.com and we create an app named Edge, you could assign the string com.scaler.edge as our app’s bundle ID. Example:\nIf our organization’s domain is scaler.com and we create an app named Edge, you could assign the string com.scaler.edge as our app’s bundle ID. Example:  com.scaler.edge App ID: This string uniquely identifies one or more apps from the same development team. There are two components to the string, the Team ID and the Bundle ID, separated by a period (.). Apple supplies a Team ID to identify a specific development team, whereas developers supply Bundle IDs to identify a single app or a collection of apps.  \nExample:\nABCDE12345.com.scaler.edge\nIn the above example, ABCDE12345 is the Team ID and com.scaler.edge is the Bundle ID. App ID: Example:\nABCDE12345.com.scaler.edge\nIn the above example, ABCDE12345 is the Team ID and com.scaler.edge is the Bundle ID. Example:\nABCDE12345.com.scaler.edge\nIn the above example, ABCDE12345 is the Team ID and com.scaler.edge is the Bundle ID. Example:  ABCDE12345.com.scaler.edge  ABCDE12345 com.scaler.edge",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "4. Write different ways to achieve concurrency in iOS?",
+        "answer": "Concurrency means \"running multiple tasks simultaneously\". Concurrency allows iOS devices to handle background tasks (such as downloading or processing data) while maintaining a responsive user interface. In iOS, you can manage concurrent tasks using Grand Central Dispatch (or GCD), and Operations (formally known as NSOperation). In order to achieve concurrency, iOS provides three ways as follows: Dispatch queues: They are used to manage tasks in first-in-first-out (FIFO) order and execute tasks sequentially or concurrently. This is an easy way to handle asynchronous (not occurring at the same time) and concurrent tasks in your application.\nThreads: An independent sequence of instructions can be executed separately from other code within a program. Through threads, one can execute multiple code paths simultaneously in a single application. Having a thread is especially useful when you need to perform a lengthy task without affecting the execution of the rest of the program.\nOperation Queues: Operation queue objects are invoked in accordance with their priority and readiness. Essentially, operation queues are high-level abstractions of queueing models, built on top of GCD (Grand Central Dispatch). It is possible, therefore, to execute tasks concurrently, just like GCD, but in an object-oriented manner. Dispatch queues: They are used to manage tasks in first-in-first-out (FIFO) order and execute tasks sequentially or concurrently. This is an easy way to handle asynchronous (not occurring at the same time) and concurrent tasks in your application. Dispatch queues: Threads: An independent sequence of instructions can be executed separately from other code within a program. Through threads, one can execute multiple code paths simultaneously in a single application. Having a thread is especially useful when you need to perform a lengthy task without affecting the execution of the rest of the program. Threads: Operation Queues: Operation queue objects are invoked in accordance with their priority and readiness. Essentially, operation queues are high-level abstractions of queueing models, built on top of GCD (Grand Central Dispatch). It is possible, therefore, to execute tasks concurrently, just like GCD, but in an object-oriented manner. Operation Queues:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "5. What is the framework that is utilized to build an application's interface for iOS?",
+        "answer": "Contrary to the Foundation framework that defines classes, protocols, and functions for both iOS and OS X development, UIKit is specifically designed for iOS development. In iOS, the user interface and graphical infrastructure of the application are developed using UIKit. It includes: Event handling (handle different gestures like input gestures, button-tap gestures, multi-touch gestures, etc.)\nApp structure (Manages the interaction between the system and user)\nUser Interface (Provides user interactions, the ability to share text and content, select images, edit videos, print files, etc.)\nGraphic, Drawing, and Printing Event handling (handle different gestures like input gestures, button-tap gestures, multi-touch gestures, etc.) App structure (Manages the interaction between the system and user) User Interface (Provides user interactions, the ability to share text and content, select images, edit videos, print files, etc.) Graphic, Drawing, and Printing",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "6. Which programming languages are used for iOS development?",
+        "answer": "iOS development is done using the following programming languages: HTML5\n.NET\nC\nC++\nSwift\nJavascript\nObjective-C. HTML5 .NET C C++ Swift Javascript Objective-C.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "7. State the difference between Cocoa and Cocoa Touch.",
+        "answer": "Cocoa and Cocoa Touch are two of Apple's widely used application frameworks used for building applications. However, they differ in the following ways: Cocoa Cocoa Touch\nIt is an application framework for building applications that run on Mac OS X.  It is the application framework for building applications that run on devices like iPhones and iPad. \nFrameworks such as Foundation and AppKit are incorporated into Cocoa.   Cocoa Touch is a combination of Frameworks such as Foundation and UIKit are incorporated into Cocoa Touch. \nCocoa classes use the NS (used for all classes and constants in the cocoa framework) prefix (like NSTextField, NSWindow).  Cocoa Touch classes, on the other hand, use the UI (used for all classes and constants in the cocoa touch framework) prefix (like UITextField and UIWindow). Cocoa Cocoa Touch\nIt is an application framework for building applications that run on Mac OS X.  It is the application framework for building applications that run on devices like iPhones and iPad. \nFrameworks such as Foundation and AppKit are incorporated into Cocoa.   Cocoa Touch is a combination of Frameworks such as Foundation and UIKit are incorporated into Cocoa Touch. \nCocoa classes use the NS (used for all classes and constants in the cocoa framework) prefix (like NSTextField, NSWindow).  Cocoa Touch classes, on the other hand, use the UI (used for all classes and constants in the cocoa touch framework) prefix (like UITextField and UIWindow). Cocoa Cocoa Touch Cocoa Cocoa Touch Cocoa Cocoa Touch It is an application framework for building applications that run on Mac OS X.  It is the application framework for building applications that run on devices like iPhones and iPad. \nFrameworks such as Foundation and AppKit are incorporated into Cocoa.   Cocoa Touch is a combination of Frameworks such as Foundation and UIKit are incorporated into Cocoa Touch. \nCocoa classes use the NS (used for all classes and constants in the cocoa framework) prefix (like NSTextField, NSWindow).  Cocoa Touch classes, on the other hand, use the UI (used for all classes and constants in the cocoa touch framework) prefix (like UITextField and UIWindow). It is an application framework for building applications that run on Mac OS X.  It is the application framework for building applications that run on devices like iPhones and iPad. It is an application framework for building applications that run on Mac OS X. It is the application framework for building applications that run on devices like iPhones and iPad. Frameworks such as Foundation and AppKit are incorporated into Cocoa.   Cocoa Touch is a combination of Frameworks such as Foundation and UIKit are incorporated into Cocoa Touch. Frameworks such as Foundation and AppKit are incorporated into Cocoa. Cocoa Touch is a combination of Frameworks such as Foundation and UIKit are incorporated into Cocoa Touch. Cocoa classes use the NS (used for all classes and constants in the cocoa framework) prefix (like NSTextField, NSWindow).  Cocoa Touch classes, on the other hand, use the UI (used for all classes and constants in the cocoa touch framework) prefix (like UITextField and UIWindow). Cocoa classes use the NS (used for all classes and constants in the cocoa framework) prefix (like NSTextField, NSWindow). Cocoa Touch classes, on the other hand, use the UI (used for all classes and constants in the cocoa touch framework) prefix (like UITextField and UIWindow).",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "8. What is ARC (Automatic Reference Counting)?",
+        "answer": "In the Swift programming language, automatic reference counting (ARC) is used to manage apps' memory usage. It initializes and deinitializes system resources, thereby releasing memory reserved by a class instance when it no longer needs it. ARC keeps track of how many properties, constants, and variables currently refer to each class instance. When there is at least one active reference to an instance, ARC will not deallocate that instance. The use of ARC concepts is an essential part of iOS development. Functions of ARC - Functions of ARC - ARC creates a new class instance using init() and allocates a chunk of memory to store the information.\nMemory stores information about the instance type and its values.\nAs soon as the class instance is no longer required, ARC automatically frees memory by calling deinit().\nBy tracking current referring classes' properties, constants, and variables, ARC ensures that deinit() is only applied to those instances that are unused. ARC creates a new class instance using init() and allocates a chunk of memory to store the information. Memory stores information about the instance type and its values. As soon as the class instance is no longer required, ARC automatically frees memory by calling deinit(). By tracking current referring classes' properties, constants, and variables, ARC ensures that deinit() is only applied to those instances that are unused.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "9. Explain what is GCD (Grand Central Dispatch) in iOS.",
+        "answer": "Grand Central Dispatch (GCD) is a low-level API that enables users to run concurrent tasks (occurring simultaneously) by managing threads in the background. Grand Central Dispatch is Apple's solution to build concurrency and parallelism into iOS applications, so multiple background tasks can be run concurrently in the background without affecting the main thread. It was introduced in iOS 4 to avoid the tedious process of serial execution of tasks.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "10. What do you mean by deep linking in iOS?",
+        "answer": "Deep links are links that send users directly to an app directly instead of a website or store using URI (Uniform resource locator) or universal links. The URL scheme is a well-known method of having deep links, but Universal Links are Apple's new approach to connecting your web page and your app under the same link. Deep linking involves not only creating a clickable link that opens up your app, but also a smart one that navigates to the resource you desire. Users are directed straight to in-app locations using these links, which saves them the time and effort of finding those pages themselves thus improving their user experience tremendously. Explanation: If you use the URL fb://, you may open the Facebook app. However, if you use fb://profile/33138223345, you will open Wikipedia's profile in the Facebook app. Explanation:  ",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "11. State the difference between Android and iOS.",
+        "answer": "Android: It is the mobile operating system for Android devices offered by Google LLC (limited liability company) and is focused on touchscreen mobile devices like smartphones and tablets. Several programming languages were used in its development, including C, Java, C++, and others. Android: iOS: It is the operating system for Apple devices offered by Apple incorporation and it is considered the second most popular mobile operating system globally after Android. It is primarily designed for Apple mobile devices like the iPhone, iPod Touch, etc. Several programming languages were used in its development, including Objective-C, Swift, C++, and others. iOS: Difference between iOS and Android - Difference between iOS and Android Android iOS\nIt is the mobile operating system for Android devices offered by Google LLC (limited liability company).  It is the operating system for Apple devices offered by Apple incorporation.\nIt is specially designed for smartphones, tablets.  It is specially designed for Apple iPhones, iPods, and iPads. \nIt is mainly written in C, C++, Java and other languages.  It is mainly written in C, C++, Objective-C, Swift, and other languages.  \nOn Android devices, Google Chrome is the default internet browser. However, any other browser can be installed.   Safari is the default Internet browser on iOS devices. However, any other browser can be installed. \nThe Android software is available for many manufacturers including Samsung, LG, etc., which could cause some quality issues in cheaper phones.  Apple has strict quality control over iOS and there are no quality problems.  \nContrary to this, the performance of Android devices may deteriorate over time.  iOS devices run at a consistent speed over time. \nIn contrast, Android devices have open-source code, meaning that owners can alter their phones and tablets operating systems at their discretion. If owners tinker (change/modify) with their devices too much, they could weaken their devices' security. iOS is a closed system. The source code of Apple's apps isn't available for developers, and iPhone and iPad owners can't modify the code on their devices. This makes iOS-powered devices harder to hack. Android iOS\nIt is the mobile operating system for Android devices offered by Google LLC (limited liability company).  It is the operating system for Apple devices offered by Apple incorporation.\nIt is specially designed for smartphones, tablets.  It is specially designed for Apple iPhones, iPods, and iPads. \nIt is mainly written in C, C++, Java and other languages.  It is mainly written in C, C++, Objective-C, Swift, and other languages.  \nOn Android devices, Google Chrome is the default internet browser. However, any other browser can be installed.   Safari is the default Internet browser on iOS devices. However, any other browser can be installed. \nThe Android software is available for many manufacturers including Samsung, LG, etc., which could cause some quality issues in cheaper phones.  Apple has strict quality control over iOS and there are no quality problems.  \nContrary to this, the performance of Android devices may deteriorate over time.  iOS devices run at a consistent speed over time. \nIn contrast, Android devices have open-source code, meaning that owners can alter their phones and tablets operating systems at their discretion. If owners tinker (change/modify) with their devices too much, they could weaken their devices' security. iOS is a closed system. The source code of Apple's apps isn't available for developers, and iPhone and iPad owners can't modify the code on their devices. This makes iOS-powered devices harder to hack. Android iOS Android iOS Android iOS It is the mobile operating system for Android devices offered by Google LLC (limited liability company).  It is the operating system for Apple devices offered by Apple incorporation.\nIt is specially designed for smartphones, tablets.  It is specially designed for Apple iPhones, iPods, and iPads. \nIt is mainly written in C, C++, Java and other languages.  It is mainly written in C, C++, Objective-C, Swift, and other languages.  \nOn Android devices, Google Chrome is the default internet browser. However, any other browser can be installed.   Safari is the default Internet browser on iOS devices. However, any other browser can be installed. \nThe Android software is available for many manufacturers including Samsung, LG, etc., which could cause some quality issues in cheaper phones.  Apple has strict quality control over iOS and there are no quality problems.  \nContrary to this, the performance of Android devices may deteriorate over time.  iOS devices run at a consistent speed over time. \nIn contrast, Android devices have open-source code, meaning that owners can alter their phones and tablets operating systems at their discretion. If owners tinker (change/modify) with their devices too much, they could weaken their devices' security. iOS is a closed system. The source code of Apple's apps isn't available for developers, and iPhone and iPad owners can't modify the code on their devices. This makes iOS-powered devices harder to hack. It is the mobile operating system for Android devices offered by Google LLC (limited liability company).  It is the operating system for Apple devices offered by Apple incorporation. It is the mobile operating system for Android devices offered by Google LLC (limited liability company). It is the operating system for Apple devices offered by Apple incorporation. It is specially designed for smartphones, tablets.  It is specially designed for Apple iPhones, iPods, and iPads. It is specially designed for smartphones, tablets. It is specially designed for Apple iPhones, iPods, and iPads. It is mainly written in C, C++, Java and other languages.  It is mainly written in C, C++, Objective-C, Swift, and other languages. It is mainly written in C, C++, Java and other languages. It is mainly written in C, C++, Objective-C, Swift, and other languages. On Android devices, Google Chrome is the default internet browser. However, any other browser can be installed.   Safari is the default Internet browser on iOS devices. However, any other browser can be installed. On Android devices, Google Chrome is the default internet browser. However, any other browser can be installed. Safari is the default Internet browser on iOS devices. However, any other browser can be installed. The Android software is available for many manufacturers including Samsung, LG, etc., which could cause some quality issues in cheaper phones.  Apple has strict quality control over iOS and there are no quality problems. The Android software is available for many manufacturers including Samsung, LG, etc., which could cause some quality issues in cheaper phones. Apple has strict quality control over iOS and there are no quality problems. Contrary to this, the performance of Android devices may deteriorate over time.  iOS devices run at a consistent speed over time. Contrary to this, the performance of Android devices may deteriorate over time. iOS devices run at a consistent speed over time. In contrast, Android devices have open-source code, meaning that owners can alter their phones and tablets operating systems at their discretion. If owners tinker (change/modify) with their devices too much, they could weaken their devices' security. iOS is a closed system. The source code of Apple's apps isn't available for developers, and iPhone and iPad owners can't modify the code on their devices. This makes iOS-powered devices harder to hack. In contrast, Android devices have open-source code, meaning that owners can alter their phones and tablets operating systems at their discretion. If owners tinker (change/modify) with their devices too much, they could weaken their devices' security. iOS is a closed system. The source code of Apple's apps isn't available for developers, and iPhone and iPad owners can't modify the code on their devices. This makes iOS-powered devices harder to hack.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "12. What is an iOS developer and what are his responsibilities?",
+        "answer": "An iOS developer is a programmer or software engineer who designs and develops applications that run Apple's iOS on iOS devices. Ideally, the iOS developer should be skilled in two programming languages i.e., Objective-C and Swift. Main Responsibilities of an iOS Developer Main Responsibilities of an iOS Developer Clean, efficient coding for iOS applications.\nEnsure clean and secure codes by performing troubleshooting and bug fixes for applications.\nThe development and deployment of advanced app features as well as the maintenance and improvement of existing features.\nDevelop innovative solutions to meet the business needs of customers.\nAssisting with all aspects of application development, including design, testing, release, and support.\nExploring, evaluating, and implementing new technologies continuously to maximize development efficiency. Clean, efficient coding for iOS applications. Ensure clean and secure codes by performing troubleshooting and bug fixes for applications. The development and deployment of advanced app features as well as the maintenance and improvement of existing features. Develop innovative solutions to meet the business needs of customers. Assisting with all aspects of application development, including design, testing, release, and support. Exploring, evaluating, and implementing new technologies continuously to maximize development efficiency.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "13. What are different types of iOS Application States?",
+        "answer": "During the course of its execution, an iOS application goes through a series of states. Each of these states is referred to as an application's lifecycle state. Below are the five possible states for an iOS app:   Not running: In the Not Running state, an application has either not been launched or has been closed/shut down by the system.\nInactive: A brief state of inactivity occurs while the app is leaving or entering its active state. Despite running in the foreground, it isn't yet ready to accept user input or events. This means that the application remains inactive at this time.\nActive: The Active state indicates that the app is running in the foreground and receiving events. This is usually the normal mode for foreground apps and the User Interface is accessible.\nBackground: During this state, the application's user interface is hidden, but it continues to run in the background of the iOS system. Applications usually pass through this state prior to being suspended.\nSuspended: In this case, the application is in the background but is not running code. However, it stays in my memory. Under low memory conditions, the system can delete apps in the suspended state without warning. Not running: In the Not Running state, an application has either not been launched or has been closed/shut down by the system. Not running: Inactive: A brief state of inactivity occurs while the app is leaving or entering its active state. Despite running in the foreground, it isn't yet ready to accept user input or events. This means that the application remains inactive at this time. Inactive: Active: The Active state indicates that the app is running in the foreground and receiving events. This is usually the normal mode for foreground apps and the User Interface is accessible. Active: Background: During this state, the application's user interface is hidden, but it continues to run in the background of the iOS system. Applications usually pass through this state prior to being suspended. Background: Suspended: In this case, the application is in the background but is not running code. However, it stays in my memory. Under low memory conditions, the system can delete apps in the suspended state without warning. Suspended:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "14. Can you explain the difference between atomic and nonatomic properties? What is the default for synthesized properties?",
+        "answer": "Atomic Property: It is the default property and ensures a valid value will be returned from the getter or set by the setter. This ensures that only one thread can access the getter/setter of a given property at a time and that all other threads must wait until the first thread releases the getter/setter. Despite being thread-safe, it is not fast, since it ensures that the process is completely completed. Atomic Property: Non-Atomic Property: With non-atomic properties, multiple threads can access the getter/setter method of a given property at the same time, so the potential for inconsistency between values exists. They come with enhanced access, but no guarantee of the return value. Non-Atomic Property:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "15. What do you mean by property in iOS?",
+        "answer": "Properties are basically values that are associated with a class, struct, or enum.  They can be thought of as \"sub-variables,\" i.e., parts of another object. Example: Example: struct Icecream  \n{ \n    var flavor: String = \"\"\n} \nvar choco = Icecream() \nchoco.flavor = \"Chocolate Icecream\" struct Icecream  \n{ \n    var flavor: String = \"\"\n} \nvar choco = Icecream() \nchoco.flavor = \"Chocolate Icecream\" In the above code, we created a structure called Icecream. One of its properties is called flavor, a String whose initial value is empty. Classification of Properties Classification of Properties Stored Properties: This type of property can be used to store constant or variable values as instances and is usually provided by classes and structures. Stored Properties: This type of property can be used to store constant or variable values as instances and is usually provided by classes and structures. Stored Properties: Example: Example: class Programmer {\n    var progName: String\n    let progLanguage: String\n    var totalExperience = 0\n    var secondLanguage: String?\n} class Programmer {\n    var progName: String\n    let progLanguage: String\n    var totalExperience = 0\n    var secondLanguage: String?\n} Above, the Programmer class defines four stored properties: progName, progLanguage, totalExperience, and secondLanguage. These are all stored properties since they can contain values that are part of the instance of the class. The above example shows properties with and without default values, as well as an optional one. Computed properties: These properties can be used to calculate values instead of storing them and are usually provided by classes, enumerations, and structures. Computed properties: These properties can be used to calculate values instead of storing them and are usually provided by classes, enumerations, and structures. Computed properties: Example: Example: struct Angle {\n    var degrees: Double = 0\n\n    var rads: Double {\n        get {\n            return degrees * .pi / 180\n        }\n        set(newRads) {\n            degrees = newRads * 180 / .pi\n        }\n    }\n} struct Angle {\n    var degrees: Double = 0\n\n    var rads: Double {\n        get {\n            return degrees * .pi / 180\n        }\n        set(newRads) {\n            degrees = newRads * 180 / .pi\n        }\n    }\n} As mentioned above, the angle structure has a stored property called degrees for storing angles in degrees. Moreover, angles can also be expressed in radians, so the Angle structure contains a Rads property, which is a computed property.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "16. Explain the Architecture of iOS.",
+        "answer": "iOS operates in a Layered structure. iOS Architecture is comprised of four layers, each of which offers a programming framework for creating applications that operate on top of the hardware. Communication will be enhanced by the layers between the Application Layer and the Hardware Layer. A lower-level layer provides the services that all applications require, while an upper-level layer (or high-level layer) provides graphics and interface-related services.   Core OS ( or Application) Layer: Core OS Layer sits directly on top of the device hardware and is the bottom layer of the iPhone OS stack. In addition to basic operating system services, such as memory management, handling of file systems, and threads, this layer provides low-level networking, access to external accessories, etc.\nService Layer: Its purpose is to design the services that upper layers or users demand. Among its other essential features are block objects, Grand Central Dispatch, in-app purchases, and iCloud storage. The service layer has been strengthened by the addition of ARC Automatic Reference Counting.\nMedia Layer: It handles media like video, audio, graphics, etc. The media layer will allow us to use all graphics, video, and audio technology of the system.\nCocoa Touch Layer: It is also known as the application layer. This is the place where frameworks are created when applications are built. In addition, it functions as the interface for iOS users to work with the operating system. This includes touch and motion capabilities. Core OS ( or Application) Layer: Core OS Layer sits directly on top of the device hardware and is the bottom layer of the iPhone OS stack. In addition to basic operating system services, such as memory management, handling of file systems, and threads, this layer provides low-level networking, access to external accessories, etc. Core OS ( or Application) Layer: Service Layer: Its purpose is to design the services that upper layers or users demand. Among its other essential features are block objects, Grand Central Dispatch, in-app purchases, and iCloud storage. The service layer has been strengthened by the addition of ARC Automatic Reference Counting. Service Layer: Media Layer: It handles media like video, audio, graphics, etc. The media layer will allow us to use all graphics, video, and audio technology of the system. Media Layer: Cocoa Touch Layer: It is also known as the application layer. This is the place where frameworks are created when applications are built. In addition, it functions as the interface for iOS users to work with the operating system. This includes touch and motion capabilities. Cocoa Touch Layer:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "1. Explain Objective-C in OS.",
+        "answer": "Since the 1990s, Objective-C has been used by Apple as an object-oriented programming language. This language combines the advantages of two earlier languages - C and Smalltalk. As a superset of C, it provides object-oriented functionality and a dynamic runtime environment.   Features: Features: In Objective C, meta classes are automatically created and managed during runtime.\nDynamic typing and static typing are both supported.\nIt is easy to understand. In Objective C, meta classes are automatically created and managed during runtime. Dynamic typing and static typing are both supported. It is easy to understand.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "2. Name the most important data types in Objective-C?",
+        "answer": "Following are data types that the developers mostly use in Objective – C: BOOL: Represents a Boolean value that is either true or false. Both the _Bool or BOOL keywords is valid.\nExample:\n_Bool flag = 0;\nBOOL secondflag = 1;\nNSInteger: Represents an Integer.\nExample:\ntypedef long NSInteger;\ntypedef int NSInteger;\nNSUInteger: Represents an unsigned integer.\nExample:\ntypedef unsigned long NSUInteger; \ntypedef unsigned int NSUInteger;\nNSString: Represents a string.\nExample:\nNSString *greeting = @\"Hello\"; BOOL: Represents a Boolean value that is either true or false. Both the _Bool or BOOL keywords is valid.\nExample:\n_Bool flag = 0;\nBOOL secondflag = 1; BOOL: Example:\n_Bool flag = 0;\nBOOL secondflag = 1; Example:\n_Bool flag = 0;\nBOOL secondflag = 1; Example: Example:   NSInteger: Represents an Integer.\nExample:\ntypedef long NSInteger;\ntypedef int NSInteger; NSInteger: Example:\ntypedef long NSInteger;\ntypedef int NSInteger; Example:\ntypedef long NSInteger;\ntypedef int NSInteger; Example: Example:   NSUInteger: Represents an unsigned integer.\nExample:\ntypedef unsigned long NSUInteger; \ntypedef unsigned int NSUInteger; NSUInteger: Example:\ntypedef unsigned long NSUInteger; \ntypedef unsigned int NSUInteger; Example:\ntypedef unsigned long NSUInteger; \ntypedef unsigned int NSUInteger; Example: Example:   NSString: Represents a string.\nExample:\nNSString *greeting = @\"Hello\"; NSString: Example:\nNSString *greeting = @\"Hello\"; Example:\nNSString *greeting = @\"Hello\"; Example: Example: ",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "3. Explain Swift in iOS?",
+        "answer": "Swift is the fastest-growing programming language today, created by Apple. With a significant advantage pool over the well-known Objective-C, Swift holds a leading position in iOS development. It's an entirely new language created specifically to develop software for Apple's operating systems. Since Swift implements all the features of other modern languages, you can find type inference, optional, generics, and such higher-order functions. It is compatible with macOS, iOS, watchOS, and tvOS.  ",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "4. What are the important features of Swift?",
+        "answer": "Swift programming language is being designed so that developers can write correct programs and maintain them easily. It offers the following features: Safety: Swift is an efficient way to write programs. Checking code before it is used in production is very important. Apple Swift removes any unsafe code before it is used in production.\nSimple syntax: Swift's syntax is simple and easy-to-use, just as developers would expect it. The syntax features of Swift enable you to write more expressive code.\nReadability: Swift has a simple syntax, which is easier to read and write. It is easier for developers to write Swift code since it is more similar to plain English, enabling them to spend less time looking for problematic code.\nMultiplatform support: Swift is fully compatible with iOS, macOS, tvOS, watchOS, Linux, and many other platforms. This means you are able to develop software that is compatible with all operating systems.\nOpen-source: Swift is developed at swift.org, an open-source framework. For Swift to become a defining programming language, the technology had to be open to all. Swift supports all Apple platforms and makes programming easier, faster, and safer.\nCompatible with Objective C: Swift has full compatibility with Objective-C. Swift enables programmers to import frameworks from Objective-C using the Swift syntax. Programmers can utilize Objective-C libraries and classes inside Swift code. Safety: Swift is an efficient way to write programs. Checking code before it is used in production is very important. Apple Swift removes any unsafe code before it is used in production. Safety: Simple syntax: Swift's syntax is simple and easy-to-use, just as developers would expect it. The syntax features of Swift enable you to write more expressive code. Simple syntax: Readability: Swift has a simple syntax, which is easier to read and write. It is easier for developers to write Swift code since it is more similar to plain English, enabling them to spend less time looking for problematic code. Readability: Multiplatform support: Swift is fully compatible with iOS, macOS, tvOS, watchOS, Linux, and many other platforms. This means you are able to develop software that is compatible with all operating systems. Multiplatform support Open-source: Swift is developed at swift.org, an open-source framework. For Swift to become a defining programming language, the technology had to be open to all. Swift supports all Apple platforms and makes programming easier, faster, and safer. Open-source: Compatible with Objective C: Swift has full compatibility with Objective-C. Swift enables programmers to import frameworks from Objective-C using the Swift syntax. Programmers can utilize Objective-C libraries and classes inside Swift code. Compatible with Objective C:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "5. Explain NSError in Swift.",
+        "answer": "Information about an error condition is encapsulated within an NSError object in an extendable and object-oriented manner. An NSError object is comprised of three basic attributes: a predefined error domain (represented as a string), a domain-specific error code, and a user info dictionary containing application-specific information. Example: The examples below show how to create custom errors. Example: NSString *domain = @\"com.MyCompany.MyApplication.ErrorDomain\"; NSString *desc = NSLocalizedString(@\"Unable to complete the process\", @\"\"); NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : desc }; NSError *error = [NSError errorWithDomain:domain code:-101 userInfo:userInfo];",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "6. What is Enum or Enumerations in Swift?",
+        "answer": "The term enumeration refers to a user-defined data type consisting of a set of related values that allows you to work with those values in your code in a type-safe manner. An enumerated data type is defined by the keyword enum. Syntax: Syntax: enum enum_name  \n{    \n// enumeration values are described here \n} enum enum_name  \n{    \n// enumeration values are described here \n} Example: Example: enum MonthsofaYear \n{    \ncase January \ncase Februrary \n… \ncase December \n} enum MonthsofaYear \n{    \ncase January \ncase Februrary \n… \ncase December \n} Values defined in an enumeration MonthsofaYear such as January, February, and so on until December are its enumeration cases. New enumeration cases can be introduced using the case keyword. You can put multiple cases on a single line, separated by commas as follows: enum MonthsofaYear\n{\n   case January, February,....,December\n} enum MonthsofaYear\n{\n   case January, February,....,December\n}",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "7. What do you mean by lazy property in iOS?",
+        "answer": "Lazy properties are properties whose initial value isn't computed until the first time they are used. Including the lazy modifier/keyword before the declaration of a stored property indicates it is lazy. This lets you delay the initialization of stored properties. This could be a great way to streamline your code and reduce unnecessary work. When a code is expensive and unlikely to be called consistently, a lazy variable can be a great solution. Example: Example: class Person { \nvar name: String\nlazy var personalizdgreeting : String = {  \n      return “HelloScala \\(self.name)!”  \n}() \ninit(name: String) { \n           self.name = name \n            } \n} class Person { \nvar name: String\nlazy var personalizdgreeting : String = {  \n      return “HelloScala \\(self.name)!”  \n}() \ninit(name: String) { \n           self.name = name \n            } \n} As shown above, we aren't sure what value personalizedgreeting should have. To know the correct greeting for this person, we need to wait until this object is initialized.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "8. What are generics in swift and write its usage?",
+        "answer": "A major feature of Swift is generics, and much of the Swift standard library is written in generic code. Swift's 'Array' and 'Dictionary' types, for example, constitute generic collections. Generic code allows you to create flexible, reusable functions and types that work with any data type. You can create code that does not get too specific about underlying data types, resulting in cleaner code. Example: Example: func Swapping(x: inout Int, y: inout Int)  \n{    \n    let temp = x \n    x = y \n    y = temp \n} \nvar num1 = 10 \nvar num2 = 50 \nprint(\"Before Swapping: \\(num1) and \\(num2)\") \nSwapping(x: &num1, y: &num2) \nprint(\"After Swapping: \\(num1) and \\(num2)\") func Swapping(x: inout Int, y: inout Int)  \n{    \n    let temp = x \n    x = y \n    y = temp \n} \nvar num1 = 10 \nvar num2 = 50 \nprint(\"Before Swapping: \\(num1) and \\(num2)\") \nSwapping(x: &num1, y: &num2) \nprint(\"After Swapping: \\(num1) and \\(num2)\") Output: Output: Before Swapping: 10 and 50 \nAfter Swapping: 50 and 10 Before Swapping: 10 and 50 \nAfter Swapping: 50 and 10 In the above example, we have defined a function called Swapping() to swap integers. It takes two parameters x and y of int type. As seen in the output, the values of x and y are exchanged after the swapping.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "9. Explain dictionary in Swift.",
+        "answer": "Swift programming defines a dictionary as an unordered collection of items. It stores items in key-value pairs. A dictionary uses a unique identifier called a key to store an associated value which can later be referenced and retrieved through the same key. Syntax: Syntax: var Dict_name = [KeyType: ValueType]() var Dict_name = [KeyType: ValueType]() Example: Example: var examresult= [\"Rahul\": \"79\", \"Aditya\": \"86\", \"Aditi\": \"67\"] \nprint(examresult) var examresult= [\"Rahul\": \"79\", \"Aditya\": \"86\", \"Aditi\": \"67\"] \nprint(examresult) Output: Output: [\"Rahul\": \"79\", \"Aditya\": \"86\", \"Aditi\": \"67\"] [\"Rahul\": \"79\", \"Aditya\": \"86\", \"Aditi\": \"67\"] In the above example, we have created a dictionary named examresult. Here, Keys are \"Rahul\", \"Aditya\", \"Aditi\"\nValues are \"79\", \"86\", \"67\" Keys are \"Rahul\", \"Aditya\", \"Aditi\" Keys Values are \"79\", \"86\", \"67\" Values",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "10. Why design patterns are important? Name some of the popular design patterns used in iOS?",
+        "answer": "A design pattern is a solution to a specific problem you might encounter while designing an app's architecture. They are templates designed to make coding easier and more reusable for you. Following are some of the design patterns that can be used in iOS: MVC (Model-View-Controller): MVC is a design pattern for developing web applications in which three components are connected i.e., view, controller, and model. Views can be conceived as the user interface shown to the end-user at a certain point in time. The model represents the data to be shown on the view. The controller acts as a link between view and model. There is always a relationship between these three components. MVC (Model-View-Controller):   MVVM (Model-View-View Model): Unlike MVM, there is a special layer in MVVM called the View Model between the View and the Model. Using a view model, model information can be transformed into values that can be displayed on the view. There is a binding link between the view and View model that allows the view model to share updates with the view. MVVM (   Facade: The facade design pattern provides a simplified (but limited) interface to a complex set of classes, libraries or frameworks. As opposed to providing the user with a set of classes and their APIs, you instead provide a simple, unified API. While Facade helps to reduce overall application complexity, it also helps to move unwanted dependencies to a single location. Facade:  ",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "11. What is the JSON framework supported by iOS?",
+        "answer": "iOS supports the SBJson framework as the JSON framework. Humans and computers alike can easily read and write this lightweight data exchange formatter. JSON handling is simplified with SBJson's flexible APIs and additional control.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "12. Explain iBeacons in iOS.",
+        "answer": "iBeacon, Apple's new low-energy Bluetooth wireless technology, allows iPhone and other iOS users to receive location-based information and services on smartphones. IBeacons are small, wireless transmitters that transmit signals to nearby smart devices via Bluetooth low energy technology.  ",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "13. State the difference between KVC and KVO in Swift.",
+        "answer": "KVC (Key-Value Coding): It enables object properties to be accessed at runtime using strings rather than knowing the property names statically during development. KVC (Key-Value Coding): KVO (Key-Value Observing): In Objective-C and Swift, KVO is one of the methods for observing program state changes.  If an object has instance variables, KVO enables other objects to observe the changes to those variables. KVO (Key-Value Observing):",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "14. Explain TDD (Test-Driven Development).",
+        "answer": "Software developers can use testing-driven development (TDD) in the development of software. In TDD, developers plan the features of the software that they want to create and then write test cases for each feature before implementing it. Through test-driven development, we can gain insight into both the quality of the implementation (does it work) and the quality of the design (is it well structured).   At first, the test case will fail because the code is not yet implemented, and this is usually referred to as the red phase. After that, code is written to ensure that the test case passes and does not break any components or current test cases, which is called the green phase. The developer should then refactor the implementation of the code by cleaning and maintaining the codebase, as well as optimizing the efficiency. This process should then be repeated every time a new test case is added.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "15. Explain the function of the completion handler.",
+        "answer": "Completion handlers are basically just functions passed as parameters to other functions. They are used to dealing with the response of asynchronous tasks since we do not know when they will end. Completion handlers inform an application when an operation, such as an API call, has been completed. The program is informed that the next step needs to be executed. Example: Example: Let's create a simple class called CompletionHandler that has one method called count that counts from 0 to 50. Once it reaches 25 (a random value), it will make a network request to https://scaler.com. Once the request has been completed, we will print Received response. class CompletionHandler {\n    func count() {\n        for i in 0...50 {\n            if i == 25 {\n                if let url = URL(string: \"https://scaler.com\") {\n                    URLSession.shared.dataTask(with: url) { (data, response, error) in\n                        print(\"Received response\")\n                    }.resume()\n                }\n            }     \n            print(\"I = \", i)\n        }\n    }\n}\nlet newInstance = CompletionHandler()\nnewInstance.count() class CompletionHandler {\n    func count() {\n        for i in 0...50 {\n            if i == 25 {\n                if let url = URL(string: \"https://scaler.com\") {\n                    URLSession.shared.dataTask(with: url) { (data, response, error) in\n                        print(\"Received response\")\n                    }.resume()\n                }\n            }     \n            print(\"I = \", i)\n        }\n    }\n}\nlet newInstance = CompletionHandler()\nnewInstance.count() You will see all the numbers printed out in the console as soon as the code runs, but the Received response will be printed only after all those other numbers have been printed.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "16. State the difference between strong, weak, read only and copy.",
+        "answer": "The difference between strong, weak, read-only and copy is as follows: Strong: This property maintains a reference to property throughout the lifetime of an object. When you declare strong, you intend to \"own\" the object you are referencing. Data you assign to this property will not be destroyed as long as you or any other object references it strongly.\nWeak: It means that the object should be kept in memory as long as someone points to it strongly, and you don't need control over its lifetime.\nRead-only: An object's property can be defined initially, but it cannot be altered or modified.\nCopy: This attribute is an alternative to strong. In place of taking ownership of a current object, it creates a copy of whatever you assign to the property, then takes ownership of that copy. Strong: This property maintains a reference to property throughout the lifetime of an object. When you declare strong, you intend to \"own\" the object you are referencing. Data you assign to this property will not be destroyed as long as you or any other object references it strongly. Strong: Weak: It means that the object should be kept in memory as long as someone points to it strongly, and you don't need control over its lifetime. Weak: Read-only: An object's property can be defined initially, but it cannot be altered or modified. Read-only: Copy: This attribute is an alternative to strong. In place of taking ownership of a current object, it creates a copy of whatever you assign to the property, then takes ownership of that copy. Copy:",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "17. What do you mean by dynamic dispatch?",
+        "answer": "In simple terms, dynamic dispatch means that the program decides at runtime which implementation of a particular method or function it needs to invoke. In the case where a subclass overrides a method of its superclass, dynamic dispatch determines whether to invoke the subclass implementation of the method or the parents.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "18. Explain the @dynamic and @synthesize commands in Objective-C.",
+        "answer": "@synthesize: This command generates getter and setter methods within the property and works in conjunction with the @dynamic command. By default, @synthesize creates a variable with the same name as the target of set/get as shown in the below example.\nExample1:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton;\nIt is also possible to specify a member variable as its set / get target as shown below:\nExample2:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton= _homeButton;\nHere, the set / get method points to the member variable _homeButton.\n@dynamic: This tells the compiler that the getter and setter methods are not implemented within the class itself, but elsewhere (like the superclass or that they will be available at runtime). \nExample:\n@property (nonatomic, retain) IBOutlet NSButton *someButton;\n...\n@dynamic someButton; @synthesize: This command generates getter and setter methods within the property and works in conjunction with the @dynamic command. By default, @synthesize creates a variable with the same name as the target of set/get as shown in the below example.\nExample1:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton;\nIt is also possible to specify a member variable as its set / get target as shown below:\nExample2:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton= _homeButton;\nHere, the set / get method points to the member variable _homeButton. @synthesize: Example1:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton;\nIt is also possible to specify a member variable as its set / get target as shown below:\nExample2:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton= _homeButton;\nHere, the set / get method points to the member variable _homeButton. Example1:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton;\nIt is also possible to specify a member variable as its set / get target as shown below: Example1:     Example2:\n@property (nonatomic, retain) NSButton *someButton;\n...\n@synthesize someButton= _homeButton;\nHere, the set / get method points to the member variable _homeButton. Example2:     @dynamic: This tells the compiler that the getter and setter methods are not implemented within the class itself, but elsewhere (like the superclass or that they will be available at runtime). \nExample:\n@property (nonatomic, retain) IBOutlet NSButton *someButton;\n...\n@dynamic someButton; @dynamic: Example:\n@property (nonatomic, retain) IBOutlet NSButton *someButton;\n...\n@dynamic someButton; Example:\n@property (nonatomic, retain) IBOutlet NSButton *someButton;\n...\n@dynamic someButton; Example:   ",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "19. How can you implement storage and persistence in iOS?",
+        "answer": "Persistence means storing data on the disk so that it can be retrieved without being altered the next time the app is opened. From simple to complex, there are the following methods for storing data: Data structures such as arrays, dictionaries, sets, and other data structures are perfect for storing data intermediately.\nNSUserDefaults and Keychains are both simple key-value stores. NSUserDefaults is insecure, whereas Keychains is secure.\nA file or disk storage is a way to store data (serialized or not) to or from a disk using NSFileManager.\nRelational databases, such as SQLite, are good for implementing complex querying mechanisms. Data structures such as arrays, dictionaries, sets, and other data structures are perfect for storing data intermediately. NSUserDefaults and Keychains are both simple key-value stores. NSUserDefaults is insecure, whereas Keychains is secure. A file or disk storage is a way to store data (serialized or not) to or from a disk using NSFileManager. Relational databases, such as SQLite, are good for implementing complex querying mechanisms.",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    },
+    {
+        "question": "20. What are synchronous and asynchronous tasks in iOS? In what way can you execute asynchronous tasks in iOS?",
+        "answer": "Apple's iOS supports both synchronous and asynchronous tasks. In synchronous operations, tasks are performed one at a time. Therefore, other tasks must wait until the previous task is completed before continuing. Asynchronous tasks run simultaneously in the background. If background tasks are completed, you will be notified. Asynchronous programming allows you to process multiple requests at the same time, so you can accomplish more tasks in a shorter amount of time.   The figure clearly indicates that synchronous tasks take more time to complete, i.e. 45 seconds since each task is performed one at a time. Asynchronous tasks, on the other hand, take less time to complete i.e. 20 seconds as they run simultaneously. Async work can be handled using third-party libraries. A few notable examples are Promises (PromiseKit), RxSwift, and ReactiveCocoa. Conclusion Multibillions of Apple devices are in use worldwide. The number of iOS users worldwide has been rising steadily, which bodes well for iOS app developers. If you are seeking to make a career in iOS application development, then InterviewBit is the ideal platform to start with. In this article, we have put together 35+ of the most commonly asked iOS interview questions to help you succeed at your iOS job interview. iOS developers also need to stay apprised of changes in the iOS community. Make sure you read Apple developer news, listen to podcasts and read blogs as well. This is likely not to be a question in an interview, but it makes you stand out. career in iOS application development Hopefully, these answers will be helpful in better understanding iOS basics, Swift, and advanced topics. Anyone looking to succeed in an iOS interview would benefit from knowing the answers to these Swift and iOS developer interview questions. Good luck with your interview! Useful Resources: Useful Resources: Android\nOperating System\nReact Native\nMobile Testing\nSwift\nIonic\nApple Software Engineer Salaries in India Android Android Operating System Operating System React Native React Native Mobile Testing Mobile Testing Swift Swift Ionic Ionic Apple Software Engineer Salaries in India Apple Software Engineer Salaries in India",
+        "reference": "interviewbit.com",
+        "role": "ios"
+    }
+]

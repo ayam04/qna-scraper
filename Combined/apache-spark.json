@@ -1,0 +1,578 @@
+[
+    {
+        "question": "1. What is Apache Spark?",
+        "answer": "Spark is a fast, easy-to-use, and flexible data processing framework. It is an open-source analytics engine that was developed by using Scala, Python, Java, and R. It has an advanced execution engine supporting acyclic data flow and in-memory computing. It uses in-memory caching and optimized execution of queries for faster query analytics of data of any size. Apache Spark can run standalone, on Hadoop, or in the cloud and is capable of accessing diverse data sources including HDFS, HBase, and Cassandra, among others.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "2. Explain the key features of Spark.",
+        "answer": "Apache Spark allows integrating with Hadoop.\nIt has an interactive language shell, Scala (the language in which Spark is written).\nSpark consists of RDDs (Resilient Distributed Datasets), which can be cached across the computing nodes in a cluster.\nApache Spark supports multiple analytic tools that are used for interactive query analysis, real-time analysis, and graph processing\nApache Spark supports stream processing in real-time. \nSpark helps in achieving a very high processing speed of data, which it achieves by reducing the read or write operations to disk. \nApache Spark codes can be reused for data streaming, running ad-hoc queries, batch processing, etc. \nSpark is considered a better cost-efficient solution when compared to Hadoop. \nLearn more key features of Apache Spark in this Apache Spark Tutorial!",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "3. What is MapReduce?",
+        "answer": "It is a software framework and programming model which is used for processing huge datasets. MapReduce is basically split into two parts, Map and Reduce. Map handles data splitting and data mapping, meanwhile, Reduce handles shuffle and reduction in data.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "4. Compare MapReduce with Spark.",
+        "answer": "Criteria MapReduce Spark\nProcessing speed Good Excellent (up to 100 times faster)\nData caching Hard disk In-memory\nPerforming iterative jobs Average Excellent\nDependency on Hadoop Yes No\nMachine Learning applications Average Excellent\nBecome an expert in handling large datasets with Spark by taking on these Apache Spark project ideas",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "5. Define RDD.",
+        "answer": "RDD is the acronym for Resilient Distribution Datasets—a fault-tolerant collection of operational elements that run in parallel. The partitioned data in an RDD is immutable and distributed. There are primarily two types of RDDs:\nRDD in Spark\nParallelized collections: The existing RDDs running in parallel with one another\nHadoop datasets: Those performing a function on each file record in HDFS or any other storage system",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "6. What does a Spark Engine do?",
+        "answer": "A Spark engine is responsible for scheduling, distributing, and monitoring the data application across the cluster. Spark Engine is used to run mappings in Hadoop clusters. It is suitable for wide-ranging circumstances. It includes SQL batch and ETL jobs in Spark, streaming data from sensors, IoT, ML, etc. \nRead on Spark Engine and more in this Apache Spark Community!\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "7. Define Partitions.",
+        "answer": "As the name suggests, a partition is a smaller and logical division of data similar to a ‘split’ in MapReduce. Partitioning is the process of deriving logical units of data to speed up data processing. Everything in Spark is a partitioned RDD.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "8. What operations does an RDD support?",
+        "answer": "Transformations: Transformations produce a new RDD from an existing RDD, every time we apply a transformation to the RDD. Always it takes an RDD as input and ejects one or more RDD as output.\nActions: Actions are used when we wish to use the actual RDD instead of working with a new RDD after we apply transformations. Actions eject out non-RDD values unlike transformations, which only eject RDD values.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "9. What do you understand about Transformations in Spark?",
+        "answer": "Transformations are functions applied to RDDs, resulting in another RDD. It does not execute until an action occurs. Functions such as map() and filer() are examples of transformations, where the map() function iterates over every line in the RDD and splits into a new RDD. The filter() function creates a new RDD by selecting elements from the current RDD that passes the function argument.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "10. Define Actions in Spark.",
+        "answer": "Actions are operations in Spark; they help in working with the actual data set. They help in transferring data from executor to driver. In Spark, an action helps in bringing back data from an RDD to the local machine. They are RDD operations giving non-RDD values, which is unlike transformations operations, which only eject RDD as output. The reduce() function is an action that is implemented again and again until only one value is left. The take() action takes all the values from an RDD to the local node.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "Check out this insightful video on Spark Tutorial for Beginners:",
+        "answer": "",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "11. Define the functions of Spark Core.",
+        "answer": "Serving as the base engine, Spark Core performs various important functions like memory management, basic I/O functionalities, monitoring jobs, providing fault-tolerance, job scheduling, interaction with storage systems, distributed task dispatching, and many more. Spark Core is the base of all projects. The above-mentioned functions are Spark Core’s primary functions. \nLearn more about Spark from this Spark Training in New York to get ahead in your career!\n\nIntermediate Interview Questions for experienced",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "12. What is RDD Lineage?",
+        "answer": "Spark does not support data replication in memory and thus, if any data is lost, it is rebuilt using RDD lineage.\n\nRDD lineage is a process that reconstructs lost data partitions. The best thing about this is that RDDs always remember how to build from other datasets.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "13. What is Spark Driver?",
+        "answer": "Spark Driver is the program that runs on the master node of a machine and declares transformations and actions on data RDDs. In simple terms, a driver in Spark creates SparkContext, connected to a given Spark Master. It also delivers RDD graphs to Master, where the standalone Cluster Manager runs.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "14. What is Hive on Spark?",
+        "answer": "Hive contains significant support for Apache Spark, wherein Hive execution is configured to Spark:\nhive> set spark.home=/location/to/sparkHome;\nhive> set hive.execution.engine=spark;\nHive supports Spark on YARN mode by default.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "15. Name the commonly used Spark Ecosystems.",
+        "answer": "Spark SQL (Shark) for developers\nSpark Streaming for processing live data streams\nGraphX for generating and computing graphs\nMLlib (Machine Learning Algorithms)\nSparkR to promote R Programming in the Spark engine",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "16. Define Spark Streaming.",
+        "answer": "Spark supports stream processing—an extension to the Spark API allowing stream processing of live data streams.\n\nData from different sources like Kafka, Flume, Kinesis is processed and then pushed to file systems, live dashboards, and databases. It is similar to batch processing in terms of the input data which is here divided into streams like batches in batch processing.\nLearn in detail about the Top Four Apache Spark Use Cases including Spark Streaming!",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "17. What is GraphX?",
+        "answer": "Spark uses GraphX for graph processing to build and transform interactive graphs. The GraphX component enables programmers to reason about structured data at scale.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "18. What does MLlib do?",
+        "answer": "MLlib is a scalable Machine Learning library provided by Spark. It aims at making Machine Learning easy and scalable with common learning algorithms and use cases like clustering, regression filtering, dimensional reduction, and the like.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "19. What is Spark SQL?",
+        "answer": "Spark SQL, better known as Shark, is a novel module introduced in Spark to perform structured data processing. Through this module, Spark executes relational SQL queries on data. The core of this component supports an altogether different RDD called SchemaRDD, composed of row objects and schema objects defining the data type of each column in a row. It is similar to a table in relational databases.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "20. What is a Parquet file?",
+        "answer": "Parquet is a columnar format file supported by many other data processing systems. Spark SQL performs both read and write operations with the Parquet file and considers it to be one of the best Big Data Analytics formats so far.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "21. What file systems does Apache Spark support?",
+        "answer": "Apache Spark is a powerful distributed data processing engine that processes data coming from multiple data sources. The file systems that Apache Spark supports are:\nHadoop Distributed File System (HDFS)\nLocal file system\nAmazon S3\nHBase\nCassandra, etc.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "22. What is Directed Acyclic Graph in Spark?",
+        "answer": "Directed Acyclic Graph or DAG is an arrangement of edges and vertices. As the name implies the graph is not cyclic. In this graph, the vertices represent RDDs, and the edges represent the operations applied to RDDs. This graph is unidirectional, which means it has only one flow. DAG is a scheduling layer that implements stage-oriented scheduling and converts a plan for logical execution to a physical execution plan.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "23.What are deploy modes in Apache Spark?",
+        "answer": "There are only two deploy modes in Apache Spark, client mode and cluster mode. The behavior of Apache Spark jobs depends on the driver component. If the driver component of Apache Spark will run on the machine from which the job is submitted, then it is the client mode. If the driver component of Apache Spark will run on Spark clusters and not on the local machine from which the job is submitted, then it is the cluster mode.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "24. Roles of receivers in Apache Spark Streaming?",
+        "answer": "Within Apache Spark Streaming Receivers are special objects whose only goal is to consume data from different data sources and then move it to Spark. You can create receiver objects by streaming contexts as long-running tasks on various executors. There are two types of receivers. They are Reliable receivers: This receiver acknowledges data sources when data is received and replicated successfully in Apache Spark Storage. Unreliable receiver: These receivers do not acknowledge data sources even when they receive or replicate in Apache Spark Storage.\n\nAdvanced Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "25. What is YARN?",
+        "answer": "Similar to Hadoop, YARN is one of the key features in Spark, providing a central and resource management platform to deliver scalable operations across the cluster. Running Spark on YARN needs a binary distribution of Spark that is built on YARN support.\n\nEnroll in Intellipaat’s Spark Course in London today to get a clear understanding of Spark!",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "26. List the functions of Spark SQL.",
+        "answer": "Spark SQL is capable of:\nLoading data from a variety of structured sources\nQuerying data using SQL statements, both inside a Spark program and from external tools that connect to Spark SQL through standard database connectors (JDBC/ODBC), e.g., using Business Intelligence tools like Tableau\nProviding rich integration between SQL and the regular Python/Java/Scala code, including the ability to join RDDs and SQL tables, expose custom functions in SQL, and more.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "27. What are the benefits of Spark over MapReduce?",
+        "answer": "Due to the availability of in-memory processing, Spark implements data processing 10–100x faster than Hadoop MapReduce. MapReduce, on the other hand, makes use of persistence storage for any of the data processing tasks.\nUnlike Hadoop, Spark provides in-built libraries to perform multiple tasks using batch processing, steaming, Machine Learning, and interactive SQL queries. However, Hadoop only supports batch processing.\nHadoop is highly disk-dependent, whereas Spark promotes caching and in-memory data storage.\nSpark is capable of performing computations multiple times on the same dataset, which is called iterative computation. Whereas, there is no iterative computing implemented by Hadoop.\nFor more insights, read on Spark vs MapReduce!",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "28. Is there any benefit of learning MapReduce?",
+        "answer": "Yes, MapReduce is a paradigm used by many Big Data tools, including Apache Spark. It becomes extremely relevant to use MapReduce when data grows bigger and bigger. Most tools like Pig and Hive convert their queries into MapReduce phases to optimize them better.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "29. What is a Spark Executor?",
+        "answer": "When SparkContext connects to Cluster Manager, it acquires an executor on the nodes in the cluster. Executors are Spark processes that run computations and store data on worker nodes. The final tasks by SparkContext are transferred to executors for their execution.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "30. Name the types of Cluster Managers in Spark.",
+        "answer": "The Spark framework supports three major types of Cluster Managers.\nStandalone: A basic Cluster Manager to set up a cluster\nApache Mesos: A generalized/commonly-used Cluster Manager, running Hadoop MapReduce and other applications\nYARN: A Cluster Manager responsible for resource management in Hadoop",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "31. What do you understand by a Worker node?",
+        "answer": "A worker node refers to any node that can run the application code in a cluster.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "32. What is PageRank?",
+        "answer": "A unique feature and algorithm in GraphX, PageRank is the measure of each vertex in a graph. For instance, an edge from u to v represents an endorsement of v‘s importance w.r.t. u. In simple terms, if a user on Instagram is followed massively, he/she will be ranked high on that platform.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "33. Do you need to install Spark on all the nodes of the YARN cluster while running Spark on YARN?",
+        "answer": "No, because Spark runs on top of YARN.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "34. Illustrate some demerits of using Spark.",
+        "answer": "Since Spark utilizes more storage space when compared to Hadoop and MapReduce, there might arise certain problems. Developers need to be careful while running their applications of Spark. To resolve the issue, they can think of distributing the workload over multiple clusters, instead of running everything on a single node.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "35. How to create an RDD?",
+        "answer": "Spark provides two methods to create an RDD:\nBy parallelizing a collection in the driver program. This makes use of SparkContext’s ‘parallelize’ method val\nIntellipaatData = Array(2,4,6,8,10)\nval distIntellipaatData = sc.parallelize(IntellipaatData)\nBy loading an external dataset from external storage like HDFS, the shared file system",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "36. What are Spark DataFrames?",
+        "answer": "When a dataset is organized into SQL-like columns, it is known as a DataFrame.\n\nThis is, in concept, equivalent to a data table in a relational database or a literal ‘DataFrame’ in R or Python. The only difference is the fact that Spark DataFrames are optimized for Big Data.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "37. What are Spark Datasets?",
+        "answer": "Datasets are data structures in Spark (added since Spark 1.6) that provide the JVM object benefits of RDDs (the ability to manipulate data with lambda functions), alongside a Spark SQL-optimized execution engine.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "38. Which languages can Spark be integrated with?",
+        "answer": "Spark can be integrated with the following languages:\nPython, using the Spark Python API\nR, using the R on Spark API\nJava, using the Spark Java API\nScala, using the Spark Scala API",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "39. What do you mean by in-memory processing?",
+        "answer": "In-memory processing refers to the instant access of data from physical memory whenever the operation is called for.\n\nThis methodology significantly reduces the delay caused by the transfer of data. Spark uses this method to access large chunks of data for querying or processing.",
+        "reference": "intellipaat.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "1) What is Apache Spark?",
+        "answer": "Apache Spark is an open-source, easy to use, flexible, big data framework or unified analytics engine used for large-scale data processing. It is a cluster computing framework for real-time processing. Apache Spark can be set upon Hadoop, standalone, or in the cloud and capable of assessing diverse data sources, including HDFS, Cassandra, and others. Apache Spark provides an interface for entire programming clusters with implicit data parallelism and fault tolerance.\nApache Spark is one of the most successful projects in the Apache Software Foundation. It is evolved as the market leader for Big Data processing. Nowadays, many organizations run Spark on clusters with thousands of nodes. Some big companies which have adopted Apache Spark are Amazon, eBay, Yahoo etc.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "2) What type of big data problems Apache Spark can solve?",
+        "answer": "As we know that Apache Spark is an open-source big data framework. It provides an expressive APIs to facilitate big data professionals to execute streaming and batching efficiently. It is designed for fast computation and also provides a faster and more general data processing platform engine.\nApache Spark was developed at UC Berkeley in 2009 as an Apache project called \"lighting fast cluster computing\". It can distribute data in a file system across the cluster and processes that data in parallel.\nUsing Spark, we can write an application in Java, Python, Scala or R language.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "3) What was the need for Apache Spark?",
+        "answer": "Many general-purpose cluster computing tools in the market, such as Hadoop MapReduce, Apache Storm, Apache Impala, Apache Giraph and many more. But each one has some limitations in its functionalities.\nWe can see the limitations as:\nADVERTISEMENT\nHadoop MapReduce can only allow for batch processing.\nIf we talk about stream processing, then only Apache Storm / S4 can perform it.\nIf we need interactive processing, then only Apache Impala / Apache Tezcan perform it.\nIf we need to perform graph processing, then only Neo4j / Apache Giraph can do it.\nHere, we can see that no single engine can perform all the tasks together. So, there was a requirement of a powerful engine that can process the data in real-time (streaming) and batch mode and respond to sub-second and perform in-memory processing.\nThis is how Apache Spark comes into existence. It is a powerful open-source engine that offers interactive processing, real-time stream processing, graph processing, in-memory processing and batch processing. It provides a very fast speed, ease of use, and a standard interface simultaneously.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "4) Which limitations of MapReduce Apache Spark can remove?",
+        "answer": "Apache Spark was developed to overcome the limitations of the MapReduce cluster computing paradigm. Apache Spark saves things in memory, whereas MapReduce keeps shuffling things in and out of disk.\nFollowing is a list of few things which are better in Apache Spark:\nApache Spark keeps the cache data in memory, which is beneficial in iterative algorithms and can easily be used in machine learning.\nApache Spark is easy to use as it knows how to operate on data. It supports SQL queries, streaming data as well as graph data processing.\nSpark doesn't need Hadoop to run. It can run on its own using other storages like Cassandra, S3, from which Spark can read and write.\nApache Spark's speed is very high as it can run programs up to 100 times faster in-memory or ten times faster on disk than MapReduce.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "5) Which languages Apache Spark supports? / Which are the languages supported by Apache Spark?",
+        "answer": "Apache Spark is written in Scala language. It provides an API in Scala, Python, Java, and R languages to interact with Spark.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "6) What is the key difference between Apache Spark and MapReduce?",
+        "answer": "Following is the list of main differences between Apache Spark and MapReduce:\nComparison Parameter Apache Spark MapReduce\nData processing: Apache Spark can process data in batches as well as in real-time. MapReduce can process data in batches only.\nSpeed: The processing speed of Apache Spark is extremely high. It runs almost 100 times faster than Hadoop MapReduce. Hadoop MapReduce is slower than Apache Spark in the case of large scale data processing.\nData Storage: Apache Spark stores data in the RAM, i.e., in-memory. It is easier to retrieve it, and that's why it is best to use in Artificial Intelligence. Hadoop MapReduce stores data in HDFS. So, it takes a long time to retrieve the data from there.\nCaching: Apache Spark provides caching and in-memory data storage. Hadoop MapReduce is highly disk-dependent.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "7) What are the most important categories of the Apache Spark that comprise its ecosystem?",
+        "answer": "Following are the three important categories in Apache Spark that comprise its ecosystem:\nCore Components: Apache Spark supports five main core components. These are Spark Core, Spark SQL, Spark Streaming, Spark MLlib, and GraphX.\nCluster Management: Apache Spark can be in the following three environments. These are the Standalone cluster, Apache Mesos, and YARN.\nLanguage support: We can integrate Apache Spark with some different languages to make applications and perform analytics. These languages are Java, Python, Scala, and R.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "8) What is the difference between Apache Spark and Hadoop?",
+        "answer": "The key differences between Apache Spark and Hadoop are specified below:\nApache Spark is designed to efficiently handle real-time data, whereas Hadoop is designed to efficiently handle batch processing.\nApache Spark is a low latency computing and can process data interactively, whereas Hadoop is a high latency computing framework, which does not have an interactive mode.\nLet's compare Hadoop and Spark-based on the following aspects:\nFeature Criteria Apache Spark Hadoop\nSpeed: Apache Spark is 100 times faster than Hadoop. It is also very fast but not as much as Apache Spark.\nProcessing: It is used for Real-time & Batch processing. This is used for Batch processing only.\nLearning Difficulty: It is easy to learn because of high-level modules. It is tough to learn.\nInteractivity: It has interactive modes. It doesn't have interactive modes except for Pig & Hive.\nRecovery: Allows recovery of partitions Fault-tolerant",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "9) What are some key features of Apache Spark?",
+        "answer": "Following is the list of some key features of Apache Spark:\nPolyglot: Spark provides high-level APIs in Java, Scala, Python and R. We can write Spark code in any of these four languages. It provides a shell in Scala and Python. The Scala shell can be accessed through ./bin/spark-shell and Python shell through ./bin/pyspark from the installed directory.\nSpeed: Apache Spark provides an amazing speed upto 100 times faster than Hadoop MapReduce for large-scale data processing. We get this speed in Spark through controlled partitioning.\nMultiple Formats: Apache Spark supports multiple data sources like Parquet, JSON, Hive and Cassandra. These data sources can be more than just simple pipes that convert data, pull it into Spark, and provide a pluggable mechanism to access structured data though Spark SQL.\nEvaluation is lazy: Apache Spark doesn't evaluate itself until it is necessary. That's why it attains an amazing speed. Spark adds them to a DAG of computation for transformations, and they are executed only when the driver requests some data.\nReal-Time Computation: The computation in Apache Spark is done in real-time and has less latency because of its in-memory computation. Spark provides massive scalability, and the Spark team has documented users of the system running production clusters with thousands of nodes and supports several computational models.\n\nHadoop Integration: Apache Spark is smoothly compatible with Hadoop. This is great for all the Big Data engineers who work with Hadoop. Spark is a potential replacement for the MapReduce functions of Hadoop, while Spark can run on top of an existing Hadoop cluster using YARN for resource scheduling.\nMachine Learning: The MLlib of Apache Spark is used as a component of machine learning, which is very useful for big data processing. Using this, you don't need to use multiple tools, one for processing and one for machine learning. Apache Spark is great for data engineers and data scientists because it is a powerful, unified engine that is both fast and easy to use.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "10) What are the different cluster managers available in Apache Spark?",
+        "answer": "There are mainly four types of cluster managers available in Apache Spark:\nStandalone Mode: The Apache Spark Standalone Mode cluster is a by default cluster where submitted applications will run in FIFO order. Each application will try to use all available nodes. You can launch a standalone cluster manually by starting a master and workers by hand or using our provided launch scripts. It is also possible to run these daemons on a single machine for testing.\nApache Mesos: Apache Mesos is an open-source project to manage computer clusters and run Hadoop applications. The advantages of deploying Spark with Mesos include dynamic partitioning between Spark and other frameworks and scalable partitioning between multiple instances of Spark.\nHadoop YARN: Apache YARN is the cluster resource manager of Hadoop 2. We can run Spark on YARN as well.\n\nKubernetes: Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "11) What is the benefit of learning MapReduce if Spark is better than MapReduce?",
+        "answer": "Apache Spark is indeed better than MapReduce, but we should learn MapReduce first because MapReduce is a paradigm that is used by many big data tools, including Spark as well. When the data grows extremely bigger, then it is great to use MapReduce. Most tools like Pig and Hive convert their queries into MapReduce phases to optimize them better.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "12) What do you understand by the term Sparse Vector in Spark?",
+        "answer": "In Apache Spark, the sparse vector is a vector that has two parallel arrays, one for indices, and one for values. This is used for storing non-zero entities to save space.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "13) Explain the architecture of Apache Spark and how it runs applications?",
+        "answer": "The Apache Spark applications run as independent processes coordinated by the SparkSession object in the driver program.\n\nFirst, the resource manager or cluster manager assigns tasks to the worker nodes with one task per partition. Iterative algorithms then apply operations repeatedly to the data so they can benefit from caching datasets across iterations. A task applies its unit of work to the dataset in its partition and outputs a new partition dataset. Finally, the results are sent back to the driver application or can be saved to the disk.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "14) What is RDD in Spark?",
+        "answer": "RDD in Apache Spark stands for Resilient Distributed Datasets. It is a fundamental data structure of Spark that acts as an immutable distributed collection of objects. Each dataset in RDD is divided into logical partitions, which are computed on different cluster nodes. RDDs can contain any Python, Java, or Scala objects, including user-defined classes.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "15) What is Dstream in Apache Spark?",
+        "answer": "Dstream stands for Discretized Stream. It is a sequence of Resilient Distributed Database (RDD) representing a continuous stream of data. There are several ways to create Dstream from various sources like HDFS, Apache Flume, Apache Kafka, etc.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "16) What do you understand by YARN?",
+        "answer": "Just like in Hadoop, YARN is one of the key features in Apache Spark, which is used to provide a central and resource management platform to deliver scalable operations across the cluster. Spark can run on YARN, as the same way Hadoop Map Reduce can run on YARN.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "17) Is it necessary to install Spark on all nodes of the YARN cluster?",
+        "answer": "No. It doesn't seem necessary to install Spark on all YARN cluster nodes because Spark runs on top of the YARN. Apache Spark runs independently from its installation. Spark provides some options to use YARN when dispatching jobs to the cluster, rather than its built-in manager or Mesos. Besides this, there are also some configurations to run YARN, such as master, deploy-mode, driver-memory, executor-memory, executor-cores, and queue.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "18) What are the different data sources available in SparkSQL?",
+        "answer": "There are the following three data sources available in SparkSQL:\nJSON Datasets\nHive tables\nParquet file",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "19) Which are some important internal daemons used in Apache Spark?",
+        "answer": "Following are the important internal daemons used in Spark:\nBlockmanager\nMemestore\nDAGscheduler\nDriver\nWorker\nExecutor\nTasks etc.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "20) What is the method to create a Data frame in Apache Spark?",
+        "answer": "In Apache Spark, we can create a data frame using Tables in Hive and Structured data files.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "21) What do you understand by accumulators in Apache Spark?",
+        "answer": "Accumulators are the write-only variables that are initialized once and sent to the workers. Then, these workers update based on the logic written, which will send back to the driver.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "22) What is the default level of parallelism in Apache Spark?",
+        "answer": "If it is not specified, then the number of partitions is called the default level of parallelism in Apache Spark.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "23) Which companies are using Spark streaming services?",
+        "answer": "The three most famous companies using Spark Streaming services are:\nUber\nNetflix\nPinterest",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "24) Is it possible to use Spark to access and analyze data stored in Cassandra databases?",
+        "answer": "Yes, it is possible to use Spark to access and analyze Cassandra databases' data by using Cassandra Connector.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "25) Can we run Apache Spark on Apache Mesos?",
+        "answer": "Yes, we can run Apache Spark on the hardware clusters managed by Mesos.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "26) What do you understand by Spark SQL?",
+        "answer": "Spark SQL is a module for structured data processing, which provides the advantage of SQL queries running on that database.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "27) How can you connect Spark to Apache Mesos?",
+        "answer": "Follow the steps given below to connect Spark to Apache Mesos:\nConfigure the spark driver program to connect to Mesos.\nSet a path location for the Spark binary package that it can be accessible by Mesos.\nInstall Apache Spark in the same location as that of Apache Mesos and configure the property 'spark.mesos.executor.home' to point to the location where it is installed.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "28) What is the best way to minimize data transfers when working with Spark?",
+        "answer": "To write a fast and reliable Spark program, we have to minimize data transfers and avoid shuffling. There are various ways to minimize data transfers while working with Apache Spark. These are:\nUsing Broadcast Variable- Broadcast variables enhance the efficiency of joins between small and large RDDs.\nUsing Accumulators- Accumulators are used to updating the values of variables in parallel while executing.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "29) What do you understand by lazy evaluation in Apache Spark?",
+        "answer": "As the name specifies, lazy evaluation in Apache Spark means that the execution will not start until an action is triggered. In Spark, the lazy evaluation comes into action when Spark transformations occur. Transformations are lazy. When a transformation such as a map() is called on an RDD, it is not performed instantly. Transformations in Spark are not evaluated until you perform an action, which aids in optimizing the overall data processing workflow, known as lazy evaluation. So we can say that in lazy evaluation, data is not loaded until it is necessary.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "30) What do you understand by Spark Driver?",
+        "answer": "Spark Driver is the program that runs on the master node of the machine and is used to declare transformations and actions on data RDDs.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "31) What is the Parquet file in Apache Spark?",
+        "answer": "Parquet is a column format file supported by many data processing systems. Spark SQL facilitates us to perform both read and write operations with the Parquet file.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "32) What is the way to store the data in Apache Spark?",
+        "answer": "Apache Spark is an open-source analytics and processing engine for large-scale data processing, but it does not have any storage engine. It can retrieve data from another storage engine like HDFS, S3.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "33) How is it possible to implement machine learning in Apache Spark?",
+        "answer": "Apache Spark itself provides a versatile machine learning library called MLif. By using this library, we can implement machine learning in Spark.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "34) What are some disadvantages or demerits of using Apache Spark?",
+        "answer": "Following is the list of some disadvantages or demerits of using Apache Spark:\nApache Spark requires more storage space than Hadoop and MapReduce, so that it may create some problems.\nApache Spark consumes a huge amount of data as compared to Hadoop.\nApache Spark requires more attentiveness because developers need to be careful while running their applications in Spark.\nSpark runs on multiple clusters on different nodes instead of running everything on a single node. So, the work is distributed over multiple clusters.\nThe \"in-memory\" capability of Apache Spark makes it a more costly way for processing big data.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "35) What is the use of File system API in Apache Spark?",
+        "answer": "File system API is used to read data from various storage devices such as HDFS, S3 or Local Files.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "36) What are the tasks of a Spark Engine?",
+        "answer": "The main task of a Spark Engine is handling the process of scheduling, distributing and monitoring the data application across the clusters.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "37) What is the use of Apache SparkContext?",
+        "answer": "The SparkContent is the entry point to Apache Spark. SparkContext facilitates users to create RDDs, which provide various ways of churning data.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "38) Is it possible to do real-time processing with SparkSQL?",
+        "answer": "In SparkSQL, real-time data processing is not possible directly. We can register the existing RDD as a SQL table and trigger the SQL queries on priority.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "39) What is the use of Akka in Apache Spark?",
+        "answer": "Akka is used for scheduling in Apache Spark. Spark also uses Akka for messaging between the workers and masters.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "40) What do you understand by Spark map() Transformation?",
+        "answer": "Spark map() is a transformation operation used to apply the Transformation on every element of RDD, DataFrame, and Dataset and finally returns a new RDD/Dataset, respectively.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "41) What is the advantage of using the Parquet file?",
+        "answer": "In Apache Spark, the Parquet file is used to perform both read and write operations. Following is the list of some advantages of having a Parquet file:\nParquet file facilitates users to fetch specific columns for access.\nIt consumes less space.\nIt follows the type-specific encoding.\nIt supports limited I/O operations.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "42) What is the difference between persist() and cache() functions in Apache Spark?",
+        "answer": "In Apache Spark, the persist() function is used to allow the user to specify the storage level, whereas the cache() function uses the default storage level.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "43) Which Spark libraries allow reliable file sharing at memory speed across different cluster frameworks?",
+        "answer": "Tachyon is the Apache Spark library's name, which is used for reliable file sharing at memory speed across various cluster frameworks.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "44) What is shuffling in Apache Spark? When does it occur?",
+        "answer": "In Apache Spark, shuffling is the process of redistributing data across partitions that may lead to data movement across the executors. The implementation of shuffle operation is entirely different in Spark as compared to Hadoop.\nShuffling has two important compression parameters:\nshuffle.compress: It is used to check whether the engine would compress shuffle outputs or not.\nshuffle.spill.compress: It is used to decide whether to compress intermediate shuffle spill files or not.\nShuffling comes in the scene when we join two tables or perform byKey operations such as GroupByKey or ReduceByKey.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "45) What are the file formats supported by Apache Spark?",
+        "answer": "Apache Spark supports the file format such as json, tsv, snappy, orc, rc, etc.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "46) What are Actions in Apache Spark?",
+        "answer": "In Apache Spark, the action is used to bring back the RDD data to the local machine. Its execution is the result of all previously created transformations.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "47) What is Yarn in Apache Spark?",
+        "answer": "Yarn is one of the most important features of Apache Spark. Apache Spark is an in-memory distributed data processing engine, and YARN is a cluster management technology that is used to run Spark. Yarn makes you able to dynamically share and centrally configure the same pool of cluster resources between all frameworks that run on Yarn. When Spark runs on Yarn, it makes the binary distribution as it is built on Yarn support.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "48) In which type of machine learning techniques, Apache Spark is the best fit?",
+        "answer": "Apache Spark is the best fit for simple machine learning algorithms like clustering, regression, and classification, etc.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "49) What is the use of checkpoints in Apache Spark?",
+        "answer": "In Apache Spark, checkpoints are used to allow the program to run all around the clock. It also helps to make it resilient towards failure irrespective of application logic.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "50) What is the lineage in Spark?",
+        "answer": "In Apache Spark, when a transformation (map or filter etc.) is called, it is not executed by Spark immediately; instead, a lineage is created for each transformation. This lineage is used to keep track of what all transformations have to be applied on that RDD. It also traces the location from where it has to read the data.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "51) What do you understand by a lineage graph in Spark?",
+        "answer": "In Apache Spark, the lineage graph is a dependencies graph between existing RDD and new RDD. It specifies that all the dependencies between the RDD are recorded in a graph rather than the original data.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "52) How can you trigger automatic clean-ups in Spark to handle accumulated metadata?",
+        "answer": "You can trigger the clean-ups by setting the parameter ' Spark.cleaner.ttl' or dividing the long-running jobs into different batches and writing the intermediary results to the disk.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "53) Is it possible to launch Spark jobs inside Hadoop MapReduce?",
+        "answer": "Yes, you can run all kinds of spark jobs inside MapReduce without the need to obtain the admin rights of that application.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "54) What is the use of BlinkDB in Spark?",
+        "answer": "BlinkDB is a query engine tool used to execute SQL queries on massive volumes of data and renders query results in the meaningful error bars.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "55) Can Spark handle monitoring and logging in Standalone mode?",
+        "answer": "Yes. Because of having a web-based user interface, Spark can handle monitoring and logging in standalone mode.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    },
+    {
+        "question": "56) How SparkSQL is different from SQL and HQL?",
+        "answer": "SparkSQL is a unique component on the Apache Spark core engine that supports SQL and HQL without changing any syntax. HQL stands for Hive Query Language. You can also join the SQL table and HQL table.",
+        "reference": "javatpoint.com",
+        "role": "apache-spark"
+    }
+]

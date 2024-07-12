@@ -1,0 +1,722 @@
+[
+    {
+        "question": "1. What is an API?",
+        "answer": "An API acts as an intermediary between different software systems, enabling them to communicate and share data. These are a collection of functions that are executable by other functions of the software application.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "2. What are web services?",
+        "answer": "Web services are a type of API specifically designed to communicate over the web. They utilize standard web protocols like HTTPS and are accessible over the internet, enabling interoperability between various systems and platforms.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "3. What are the main differences between an API and a Web Service?",
+        "answer": "APIs are a broader concept defining how different software components interact, while web services are a type of API specifically designed for web-based communication using protocols like HTTP.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "4. What is API Testing?",
+        "answer": "API testing involves verifying the functionality, reliability, performance, and security of APIs. It focuses on testing the individual parts of the software that interact with other software components, ensuring they work as expected.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "5. What are the types of APIs you have worked with?",
+        "answer": "APIs come in various types, including RESTful APIs, SOAP APIs, GraphQL APIs, and more. Each type has its protocols, standards, and usage scenarios, and experience with these demonstrates familiarity with diverse API ecosystems.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "6. What are the limits of API usage?",
+        "answer": "API usage can be restricted by factors like rate limiting (a maximum number of requests allowed within a certain time frame), access permissions (user-based or role-based), data usage limits, and server load capacities.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "7. Differences between REST and SOAP APIs.",
+        "answer": "REST APIs (Representational State Transfer) use simpler and more lightweight protocols like HTTP, making them more flexible and scalable. SOAP APIs (Simple Object Access Protocol) are more rigid, relying on XML for communication and demanding more bandwidth and overhead.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "8. What are the main components you consider when testing an API?",
+        "answer": "Testing an API involves examining various elements, such as endpoint functionality, request methods, parameters, response codes, data formats (like JSON or XML), error handling, and security measures.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "9. Name some common protocols used in API testing.",
+        "answer": "Commonly used protocols in API testing include HTTPS, REST, SOAP, GraphQL, and TCP/IP, each catering to different types of API communication needs.\nEnroll in Intellipaat’s Testing Training (ETL, Selenium, Software and Hadoop) Combo Course.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "10. Common HTTP methods used in API testing.",
+        "answer": "API testing frequently involves utilizing HTTP methods like GET (retrieve data), POST (submit data), PUT (update data), DELETE (remove data), PATCH (partially update), OPTIONS (retrieve supported operations), and HEAD (retrieve headers only).\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "11. How do we validate API responses?",
+        "answer": "API response validation includes checking response codes (like 200 for success), ensuring data accuracy against expected results, validating schema compliance, inspecting headers, and monitoring response times.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "12. Which tool is used for API testing?",
+        "answer": "Various tools facilitate API testing, such as Postman, SoapUI, RestAssured, Insomnia, and others, providing interfaces to create, automate, and analyze API tests.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "13. Advantages of API testing",
+        "answer": "API testing accelerates testing cycles, detects issues early, allows for the reuse of test cases, simplifies integration testing, and enhances overall test coverage, ensuring robust software functionality.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "14. Disadvantages of API testing",
+        "answer": "Challenges in API testing include complexity in testing specific functionalities, reliance on accurate documentation, difficulties in testing UI-related aspects, and initial setup time for test automation.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "15. What is an API endpoint?",
+        "answer": "An API endpoint refers to a specific URL or URI (Uniform Resource Identifier) where an API can be accessed. Each endpoint represents a unique interaction point in the API.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "16. What is an API testing framework?",
+        "answer": "An API testing framework provides a structured approach and tools for designing, implementing, and executing API tests, streamlining the testing process for better efficiency and repeatability.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "17. What is the use of authentication in API testing?",
+        "answer": "Authentication in API testing ensures that only authorized users or systems have access to the API, maintaining security and preventing unauthorized usage or data breaches.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "18. Common authentication methods used in API testing",
+        "answer": "Authentication methods in API testing commonly include OAuth, Basic Authentication, API keys, token-based authentication, and JWT (JSON Web Tokens), each offering various levels of security and access control.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "19. What is the API documentation?",
+        "answer": "API documentation is a detailed guide that outlines how to use an API. It includes information on endpoints, parameters, request/response formats, authentication methods, and usage examples, aiding developers in effectively utilizing the API.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "20. Which is the most used template for API documentation?",
+        "answer": "The OpenAPI Specification (formerly known as Swagger) is widely adopted as a standard template for API documentation. It provides a structured format for describing RESTful APIs, making them easily understandable and accessible for developers.\nCheck out the blog on Test Data Management.\n\nIntermediate API Testing Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "21. What are the differences between API testing and unit testing?",
+        "answer": "API testing focuses on testing APIs as a whole, verifying functionality, performance, security, and integration. Whereas, unit testing specifically targets individual components or units of code. Unit tests examine the functionality of small parts of the code in isolation to ensure they work as expected.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "22. Explain the significance of the HTTP status code in API testing.",
+        "answer": "The significance of HTTP status codes in API testing is that they indicate the outcome of a request made to an API. They range from 1xx to 5xx, with each code representing a specific response. For instance, a 200 status code signifies success, 404 indicates a not-found error, and 500 denotes an internal server error. Understanding these codes helps testers identify issues and understand the state of the API.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "23. What are the different types of error responses in API testing?",
+        "answer": "API testing encounters various error responses such as Bad Request, Not Found, Forbidden, Unauthorized, Bad Gateway, Gateway Timeout, Too Many Requests, etc. These responses signify issues on either the client or server side, helping testers diagnose and rectify problems efficiently.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "24. Write about parameterization in API testing.",
+        "answer": "Parameterization involves using different sets of inputs in API tests to validate the behavior of an API with varying data. It allows testing multiple scenarios by substituting parameters, ensuring comprehensive test coverage and validation of different data combinations.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "25. Difference between stateful and stateless API.",
+        "answer": "Stateful APIs maintain the state or context of previous interactions, relying on stored information from previous requests. On the other hand, stateless APIs treat each request as an independent transaction, not storing any client state between requests.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "26. How do you test authentication and authorization in APIs?",
+        "answer": "Testing authentication involves verifying that valid credentials grant access to protected API resources. Authorization testing ensures that authenticated users have appropriate permissions to access specific functionalities or resources within the API.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "27. What is mocking in API, and what’s its benefit?",
+        "answer": "Mocking in API testing involves simulating parts of the API that aren’t easily accessible or controllable during testing, like external services or complex dependencies. \nThe benefit of mocking an API is that it provides controlled responses, allowing testers to isolate and test specific functionalities without relying on external factors, leading to faster, more reliable tests.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "28. How do you unit test asynchronous APIs?",
+        "answer": "Testing asynchronous APIs involves techniques like using callbacks, promises, or async/await functions to handle and verify asynchronous behaviors.\nUnit tests for asynchronous APIs focus on validating the correct execution flow, handling errors, and ensuring expected outcomes for asynchronous operations.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "29. What are the best approaches to testing asynchronous API calls?",
+        "answer": "Effective testing of asynchronous APIs involves strategies like using timeouts, employing callbacks or promises for assertions, using stubs or mocks to control asynchronous behavior, and verifying correct error handling and async data processing.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "30. What is API security testing?",
+        "answer": "API security testing involves evaluating the security aspects of APIs to identify potential vulnerabilities and threats. It includes testing for authorization flaws, authentication issues, data exposure risks, injection attacks, and other security concerns that could compromise the integrity and confidentiality of data exchanged through APIs.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "31. How do you ensure the security of APIs in your tests?",
+        "answer": "Ensuring API security in tests involves several steps:\nIdentifying potential vulnerabilities through comprehensive testing\nEnsuring secure development practices in the API codebase\nEmploying specialized tools to detect security flaws and vulnerabilities\nTesting user access control and ensuring only authorized access to resources\nSimulating attacks to assess the API’s resilience against real-world threats",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "32. Does the API tester need coding knowledge to perform API testing?",
+        "answer": "No, knowing the coding language isn’t always mandatory for API testing, but it’s quite beneficial. \nUnderstanding programming languages (like JavaScript, Python, etc.) can help in scripting tests, creating automated test suites, and handling complex scenarios efficiently. It allows testers to manipulate requests, validate responses, and automate repetitive tasks effectively.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "33. How is automation testing done for asynchronous systems?",
+        "answer": "Automation testing for asynchronous systems involves:\nUsing specialized testing frameworks and libraries that support asynchronous operations\nEmploying callbacks, promises, or async/await functions to handle asynchronous behavior\nImplementing timeouts and handling asynchronous data flows to ensure the expected outcomes\nCreating test cases that cater to the specific behavior of asynchronous operations",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "34. Why is API testing considered the most suitable form for automation testing?",
+        "answer": "API testing is highly suitable for automation due to several factors:\nAPIs offer a defined interface and standardized protocols, making automation easier.\nAPIs have consistent behavior, allowing for the creation of reliable and repeatable test cases.\nAPI testing is less dependent on UI changes, making tests more stable and easier to maintain.\nAutomation in API testing accelerates the testing process, ensuring faster feedback loops and quicker identification of issues.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "35. What is latency in API testing?",
+        "answer": "Latency in API testing refers to the delay or time taken for a request to be sent from the client to the server and for the corresponding response to be received. It measures the time interval between the initiation of the request and the receipt of the response, impacting the performance and responsiveness of the API. \n\nAdvanced API Testing Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "36. Explain the concept of fuzz testing in API security and how it contributes to identifying security vulnerabilities in APIs.",
+        "answer": "Fuzz testing involves systematically injecting an API with invalid, unexpected, or random data to identify potential vulnerabilities. By intentionally providing inputs that deviate from the expected, fuzz testing aims to expose weaknesses in input validation, error handling, or boundary conditions. \nThis method helps discover security loopholes such as buffer overflows or injection attacks, enhancing the API’s robustness against malicious exploits.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "37. What is API contract testing, and why is it important?",
+        "answer": "API contract testing is a validation process ensuring that an API complies with its predefined contract or specifications, typically established through documentation or contracts like OpenAPI (formerly Swagger). \nThe importance of API contract testing lies in guaranteeing that the API functions as intended, enabling seamless integration between different services or clients. By verifying endpoints, data formats, and responses against the contract, this testing ensures consistency and reduces the risk of integration failures.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "38. How do you manage versioning challenges in APIs?",
+        "answer": "For managing versioning challenges, some strategies involve using semantic versioning (Major.Minor.Patch), clearly documenting changes and deprecations, employing URL or header-based versioning, and providing backward compatibility for a certain transition period. This ensures existing users can smoothly migrate to newer versions while minimizing disruptions.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "39. What are some techniques for handling API timeouts in tests?",
+        "answer": "To manage timeouts effectively during testing, there are various techniques, including:\nSetting appropriate timeout thresholds based on expected response times\nImplementing retries with increasing intervals to handle transient failures\nUtilizing circuit breakers to prevent overwhelming the API\nSimulating diverse network conditions to ensure robustness under varying circumstances",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "40. Explain HATEOAS in RESTful APIs and its impact.",
+        "answer": "Hypermedia as the Engine of Application State (HATEOAS) is a constraint in REST architecture that allows clients to interact with the API entirely through hypermedia links within the responses. \nThis enables clients to dynamically navigate the API’s functionalities by following hyperlinks provided in each response, reducing the dependency on fixed, out-of-band information and enhancing the discoverability and flexibility of the API.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "41. What are the strategies for API testing in microservices?",
+        "answer": "The strategies for API testing in microservices involve individual microservice testing in isolation, contract testing to ensure compatibility between services, chaos engineering to test resilience against failures, security testing at each service boundary, and end-to-end testing to validate the entire microservice architecture.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "42. What is API performance testing?",
+        "answer": "API performance testing is the evaluation of an API’s responsiveness, scalability, and reliability under various load conditions. Performance testing involves measuring response times, throughput, concurrent user handling, and resource utilization to ensure the API meets defined performance benchmarks.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "43. How do you measure the performance of APIs in your tests?",
+        "answer": "For measuring API performance in tests, several metrics such as average response time, throughput (requests per second), error rates, latency distribution (percentiles), and resource consumption (CPU, memory) are essential. \nMonitoring tools like JMeter, Gatling, or New Relic assist in capturing and analyzing these metrics during performance testing.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "44. How do you manually test WebSocket APIs?",
+        "answer": "Manually testing WebSocket APIs involves using WebSocket clients, browser extensions, or specialized tools to send and receive messages, validate message formats, simulate different scenarios, and observe how the API responds to various inputs, ensuring its functionality and responsiveness.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "45. How do you use JSON schema validation for API design?",
+        "answer": "JSON schema defines the structure, data types, and constraints of JSON payloads exchanged through APIs. Integrating JSON schema validation in API design ensures that the transmitted data adheres to the defined schema, reducing errors, enhancing interoperability, and facilitating consistent data validation across different services or clients interacting with the API.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "46. What are the different HTTP return codes? Explain 3 codes that you use frequently.",
+        "answer": "HTTP return codes convey the status of an HTTP request. Some of the common codes include:\n200 (OK): Successful request\n404 (Not Found): Resource not found\n500 (Internal Server Error): Server-side error",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "47. What does 1xx,2xx,3xx,4xx,5xx mean as an error code?",
+        "answer": "HTTP error code ranges:\n1xx- Informational\n2xx- Success\n3xx- Redirection\n4xx- Client error\n5xx- Server error",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "48. Is it possible to hack the API while testing?",
+        "answer": "Yes, testing can inadvertently expose vulnerabilities if not conducted responsibly. Using malicious inputs or manipulating requests during testing might uncover security flaws. It is crucial to test within controlled environments, implement proper authorization, and use sanitized test data to avoid security breaches.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "49. What is API performance testing?",
+        "answer": "API performance testing involves assessing an API’s speed, scalability, and stability under varying load conditions to ensure it meets performance criteria and user expectations, thereby optimizing the user experience.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "50. How do you load test and tune performance on API?",
+        "answer": "Load testing simulates real-world scenarios by subjecting the API to high traffic volumes to evaluate its behavior under stress. Performance tuning involves optimizing resources, code, and configurations based on load test results to improve the API’s performance and scalability.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "51. How can API virtualization help in testing?",
+        "answer": "API virtualization in testing creates a simulated environment where APIs, especially those under development or not readily available, can be tested independently. \nVirtualization allows testing to proceed without dependencies on actual services, facilitating early development and testing stages.",
+        "reference": "intellipaat.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "1. What do you understand by Throughput in Performance testing?",
+        "answer": "Throughput refers to the number of transactions per second that an application can handle under the influence of lot of users (load). The API needs to ensure that required throughput is met before it is deployed on production. We can identify this by performing the Load Testing of the APIs. We can do this by identifying multiple transactions of different priorities and check how many requests are successfully passed in acceptable time governed by the SLAs (Service Level Agreements) defined by us.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "2. What needs to be verified in API testing?",
+        "answer": "In API Testing, we send a request to the API and then we analyze the responses based on the following parameters: Data accuracy of the actual response with the expected response.\nHTTP status codes of the resultant API.\nResponse time of the API.\nError codes if the APIs are expected to throw an error.\nAuthorization Details\nTest non-functional specifications of the applications like security, performance, availability etc. Data accuracy of the actual response with the expected response. HTTP status codes of the resultant API. Response time of the API. Error codes if the APIs are expected to throw an error. Authorization Details Test non-functional specifications of the applications like security, performance, availability etc.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "3. What is API?",
+        "answer": "API stands for Application Programming Interface that is useful for communication between different software systems. It facilitates data exchange between systems located in different remote places. They are nothing but a collection of functions that are executable by other functions of the software application.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "4. How do APIs work?",
+        "answer": "The general workflow of API is that it takes a request, processes it which might involve data validation, database interaction, data processing, and then the resultant of this is sent back to the source. APIs provide an abstraction to the internal business logic as they are not exposed to the world.   Examples of APIs: Amazon API, Google Map API, Twitter API, etc.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "5. What are the different types of API testing?",
+        "answer": "There are various types of API testing, they are: Functional Testing\nUnit Testing\nLoad Testing\nSecurity Testing\nUI Testing\nInteroperability and WS compliance Testing\nPenetration Testing (Pen Test)\nFuzz Testing. Functional Testing Unit Testing Load Testing Security Testing UI Testing Interoperability and WS compliance Testing Penetration Testing (Pen Test) Fuzz Testing.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "6. What protocols can be tested using API Testing?",
+        "answer": "API testing can be used for testing the following protocols: HTTP\nREST\nSOAP\nJMS\nUDDI HTTP REST SOAP JMS UDDI",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "7. What are the most commonly used tools for API testing?",
+        "answer": "The most popularly used tool in the market is PostMan. This tool helps to create manual and automated test cases for testing the APIs in a well-designed manner. Apart from this, there are different tools like JMeter, Parasoft SOAtest, SoapUI, Apigee, API fortress, JUnit, etc.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "8. What are the differences between API Testing and Unit Testing?",
+        "answer": "API testing UNIT testing\nThis testing is owned by the Quality Analyst team. This testing is owned by the developers working on the corresponding modules.\nThis belongs to the category of black box testing. This belongs to white box testing.\nFull system functionality is considered in API testing as the API would be used by external developers. As the name indicates, this testing verifies whether the unit of code works as expected or not in isolation.\nIn this testing, the testers do not have access to the internal source code and it focuses only on the functionality of the API. The developers who work on developing unit test cases have access to the source code as they need to ensure the modules developed are passed before delivery. API testing UNIT testing\nThis testing is owned by the Quality Analyst team. This testing is owned by the developers working on the corresponding modules.\nThis belongs to the category of black box testing. This belongs to white box testing.\nFull system functionality is considered in API testing as the API would be used by external developers. As the name indicates, this testing verifies whether the unit of code works as expected or not in isolation.\nIn this testing, the testers do not have access to the internal source code and it focuses only on the functionality of the API. The developers who work on developing unit test cases have access to the source code as they need to ensure the modules developed are passed before delivery. API testing UNIT testing API testing UNIT testing API testing UNIT testing This testing is owned by the Quality Analyst team. This testing is owned by the developers working on the corresponding modules.\nThis belongs to the category of black box testing. This belongs to white box testing.\nFull system functionality is considered in API testing as the API would be used by external developers. As the name indicates, this testing verifies whether the unit of code works as expected or not in isolation.\nIn this testing, the testers do not have access to the internal source code and it focuses only on the functionality of the API. The developers who work on developing unit test cases have access to the source code as they need to ensure the modules developed are passed before delivery. This testing is owned by the Quality Analyst team. This testing is owned by the developers working on the corresponding modules. This testing is owned by the Quality Analyst team. This testing is owned by the developers working on the corresponding modules. This belongs to the category of black box testing. This belongs to white box testing. This belongs to the category of black box testing. This belongs to white box testing. Full system functionality is considered in API testing as the API would be used by external developers. As the name indicates, this testing verifies whether the unit of code works as expected or not in isolation. Full system functionality is considered in API testing as the API would be used by external developers. As the name indicates, this testing verifies whether the unit of code works as expected or not in isolation. In this testing, the testers do not have access to the internal source code and it focuses only on the functionality of the API. The developers who work on developing unit test cases have access to the source code as they need to ensure the modules developed are passed before delivery. In this testing, the testers do not have access to the internal source code and it focuses only on the functionality of the API. The developers who work on developing unit test cases have access to the source code as they need to ensure the modules developed are passed before delivery.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "9. What are the advantages of API Testing?",
+        "answer": "There are various advantages of API testing. Some of the most significant advantages are as follows: Core Functionality Testing: This kind of testing provides access to the entire system without the need for a user interface. The functionalities of the application would be evaluated end-to-end without the need for GUI (Graphical User Interface) which helps in detecting issues that can prove to be bigger at the time of GUI testing.\nTime and Cost Effectiveness: This is usually less time-consuming when compared to GUI testing. It also requires less code for testing the functionalities thereby making it easier to set up and get faster access to test coverage. It also results in effective cost savings for the project.\nLanguage-Independent: The data transfer between the test platform to the applications is done utilizing XML or JSON and is completely independent of the languages used in developing the systems. The test automation suite can be developed in any language.\nEase of Integration with GUI: API testing provides highly flexible test suites that help in easier integration with the GUI tests. For instance, before the GUI test cases are initiated, employing API test cases, we can create sample users that can act as an initial base for the GUI tests. Core Functionality Testing: This kind of testing provides access to the entire system without the need for a user interface. The functionalities of the application would be evaluated end-to-end without the need for GUI (Graphical User Interface) which helps in detecting issues that can prove to be bigger at the time of GUI testing. Core Functionality Testing: Time and Cost Effectiveness: This is usually less time-consuming when compared to GUI testing. It also requires less code for testing the functionalities thereby making it easier to set up and get faster access to test coverage. It also results in effective cost savings for the project. Time and Cost Effectiveness: Language-Independent: The data transfer between the test platform to the applications is done utilizing XML or JSON and is completely independent of the languages used in developing the systems. The test automation suite can be developed in any language. Language-Independent: Ease of Integration with GUI: API testing provides highly flexible test suites that help in easier integration with the GUI tests. For instance, before the GUI test cases are initiated, employing API test cases, we can create sample users that can act as an initial base for the GUI tests. Ease of Integration with GUI:  ",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "10. What is the approach followed in API Testing?",
+        "answer": "We follow the below approaches in API Testing: Firstly, write required test cases for testing the APIs by making use of different testing techniques like equivalence class, boundary value analysis etc that helps to verify the functionalities.\nClearly define the scope and functionality of the APIs.\nDefine the different input parameters that you want to test the API with.\nVerify the test cases by passing the input parameters.\nCompare the results of the different test cases based on their expected behavior.\nAlso subject the API to different conditions depending on the description of the functionality. Firstly, write required test cases for testing the APIs by making use of different testing techniques like equivalence class, boundary value analysis etc that helps to verify the functionalities. Clearly define the scope and functionality of the APIs. Define the different input parameters that you want to test the API with. Verify the test cases by passing the input parameters. Compare the results of the different test cases based on their expected behavior. Also subject the API to different conditions depending on the description of the functionality.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "11. What is API testing ?",
+        "answer": "API testing is a category of software integration testing that deals with the testing of Application Programming Interfaces (APIs) directly. It deals with checking if the APIs developed work as expected in terms of reliability, functionality, security, and performance of the business logic covered by the applications.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "12. What are the best practices that need to be followed for writing test cases?",
+        "answer": "We need to write test cases that correspond with the perspective of end-users.\nSteps defined in the test cases needs to be simple so that anyone can replicate the steps.\nEnsure that the test cases are reusable.\nDefine and set the priority of test cases.\nProvide a valid description, test input parameters, test data, expected outcome after running the test cases so that we can compare the actual outcomes of the test cases with the expected ones.\nMake sure to develop test cases that cover negative test scenarios too.\nNaming conventions need to be properly followed while developing test cases.\nReview them regularly and update them as and when the functionality gets updated. We need to write test cases that correspond with the perspective of end-users. Steps defined in the test cases needs to be simple so that anyone can replicate the steps. Ensure that the test cases are reusable. Define and set the priority of test cases. Provide a valid description, test input parameters, test data, expected outcome after running the test cases so that we can compare the actual outcomes of the test cases with the expected ones. Make sure to develop test cases that cover negative test scenarios too. Naming conventions need to be properly followed while developing test cases. Review them regularly and update them as and when the functionality gets updated.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "13. What do you understand by Black Box Testing?",
+        "answer": "Black Box Testing is one of the methods in software testing where the testers evaluate the software functionality without the knowledge of the internal source code. This ideology can be applied in every branch of testing such as unit testing, integration testing, system testing and acceptance testing.  ",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "14. Define Test Data.",
+        "answer": "Test data is the input data used by the testers to execute their test cases. This data can be prepared either manually or by making use of tools. For instance, to test the login functionality of an application, testers would need input data such as username and password which constitutes the test data.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "15. Define test coverage.",
+        "answer": "Test coverage is a measure that signifies the amount of testing performed by making use of our test cases. It can be either functional testing or non-functional testing of the application. This provides a fair idea about what the testers need to cover in their test cases.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "16. Does the API tester need to have coding knowledge to perform API testing?",
+        "answer": "API testing covers manual and automated testing. Manual testing does not require a tester to know to code. We just need API request details, headers, payload, credentials and know how to use the tools required to test the system. But in the case of automated testing, a tester needs to know how to code to automate test cases and develop a sophisticated optimised test suite.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "17. What is the process of API Specification Review?",
+        "answer": "API Specification Review is the first and foremost step of documentation of the API testing needs and requirements. It should clearly state the purpose of the API, the application workflow and its features along with all other required details which could possibly help to plan the API testing process smoothly.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "18. What is Latency in API testing?",
+        "answer": "Latency refers to the response time or the delay taken by the request to reach the server. We need to ensure that the latency involved in reaching the server is minimum as higher the latency, greater is the impact in the application’s speed and performance.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "1. What is the importance of caching mechanism?",
+        "answer": "Caching mechanism is the practice of storing data temporarily to retrieve data for repeated requests. This increases the performance of the system by obtaining the data from the cached copy instead of hitting the database and getting the original data.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "2. How do you document an API functionality? What are the tools available for achieving the same?",
+        "answer": "API documentation represents any description of the functionality of the API. Since this documentation will be used by external developers, we need to follow some best practices. They are: Plan what needs to be shown in your documentation.\nDo not exclude any fundamental sections of the API functionality.\nUse simple words by avoiding technical jargon.\nInclude various interactive examples and resources to understand the API functionality clearly.\nConsistently maintain the documentation as and when the functionality gets updated. Plan what needs to be shown in your documentation. Do not exclude any fundamental sections of the API functionality. Use simple words by avoiding technical jargon. Include various interactive examples and resources to understand the API functionality clearly. Consistently maintain the documentation as and when the functionality gets updated. Some of the popular tools used for achieving API documentation are: JavaDoc\nDoxygen\nOpenAPI\nRedoc\nSwagger UI JavaDoc Doxygen OpenAPI Redoc Swagger UI",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "3. What is the most important difference between API testing and UI testing?",
+        "answer": "UI testing represents testing by using Graphical User Interface. The main area of focus in this is to test the look and feel of the software application by focusing on how the application is feasible for the end-users, do the functionalities of all the items shown on the UI screen - images, fonts, buttons, layouts etc are appearing properly as expected.\nOn the other hand, API testing ensures the testing of communication of data between various software systems. It mostly falls under the validation of back-end functionality. ",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "4. What are the major blockers or challenges faced while performing API testing?",
+        "answer": "Some of the challenges faced while doing API testing are: Proper Parameter Selection\nProper Parameter Combination\nKnowing which API needs to be called in what sequence\nProper knowledge of output verification\nKnowing what are the proper input values that needs to be provided to the API inputs. Proper Parameter Selection Proper Parameter Combination Knowing which API needs to be called in what sequence Proper knowledge of output verification Knowing what are the proper input values that needs to be provided to the API inputs.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "5. What are the principles that need to be followed while performing API Testing?",
+        "answer": "There are 7 principles in API testing design. They are: Optimal Testing: Since it is not possible to test anything exhaustively, there needs to be at least some optimal amount of testing depending on the risk assessment performed on the application.\nDefect Clustering: This represents the clustering of modules containing most defects. As a general rule, almost 80% of the defects are found in 20% of the application modules. These risky modules can be identified by following this approach.\nHowever this principle has a problem. We might have to perform API testing repeatedly on the application which might be obstructive to finding new bugs.\nPesticide Paradox: This paradox states that if the testers use the same test cases repeatedly, then they would not be capable of finding new bugs over a period of time. Hence, the testers need to be fully equipped by reviewing and revising the test cases regularly. New test cases are more effective in finding new bugs. However, no amount of testing can ensure that the product is 100% bug-free.\nPresence of defects: Another principle of testing is that the aim of testing should be the presence of bugs and not the absence of defects. The goal of testing is to reduce the probability of finding undiscovered bugs. In case 0 defects are found, yet we cannot fully claim that our software is 100% bug-free.\nError absence fallacy: There can be an increased possibility of software being unusable even if it is 99% bug-free which can be wrong. The main focus of software testing is to ensure that the software addresses the business requirements correctly. This principle states that even if we identify and fix the defects if the software does not fulfil the business requirements, then the system is unusable.\nEarly Testing: This principle states that it is easier to fix bugs early in the software development lifecycle. Hence, it is recommended to start testing the application as early as possible.\nContext Dependent Testing: The way we test an application depending on the type of the system. We use different techniques, methodologies and test cases to test the applications depending on the type. For example, the way we test e-commerce applications is different from the way we test online streaming applications. Optimal Testing: Since it is not possible to test anything exhaustively, there needs to be at least some optimal amount of testing depending on the risk assessment performed on the application. Optimal Testing: Defect Clustering: This represents the clustering of modules containing most defects. As a general rule, almost 80% of the defects are found in 20% of the application modules. These risky modules can be identified by following this approach.\nHowever this principle has a problem. We might have to perform API testing repeatedly on the application which might be obstructive to finding new bugs. Defect Clustering: However this principle has a problem. We might have to perform API testing repeatedly on the application which might be obstructive to finding new bugs. However this principle has a problem. We might have to perform API testing repeatedly on the application which might be obstructive to finding new bugs. Pesticide Paradox: This paradox states that if the testers use the same test cases repeatedly, then they would not be capable of finding new bugs over a period of time. Hence, the testers need to be fully equipped by reviewing and revising the test cases regularly. New test cases are more effective in finding new bugs. However, no amount of testing can ensure that the product is 100% bug-free. Pesticide Paradox: Presence of defects: Another principle of testing is that the aim of testing should be the presence of bugs and not the absence of defects. The goal of testing is to reduce the probability of finding undiscovered bugs. In case 0 defects are found, yet we cannot fully claim that our software is 100% bug-free. Presence of defects: Error absence fallacy: There can be an increased possibility of software being unusable even if it is 99% bug-free which can be wrong. The main focus of software testing is to ensure that the software addresses the business requirements correctly. This principle states that even if we identify and fix the defects if the software does not fulfil the business requirements, then the system is unusable. Error absence fallacy: Early Testing: This principle states that it is easier to fix bugs early in the software development lifecycle. Hence, it is recommended to start testing the application as early as possible. Early Testing: Context Dependent Testing: The way we test an application depending on the type of the system. We use different techniques, methodologies and test cases to test the applications depending on the type. For example, the way we test e-commerce applications is different from the way we test online streaming applications. Context Dependent Testing:",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "6. What are the different bugs that can be found in API testing?",
+        "answer": "We can find the below bugs at the time of API testing: Duplicate or missing API functionality\nFailure to handle negative test cases\nFailure to handle a sudden spike in load or stress\nReliability of the application behavior\nFailure to handle requests securely\nUnused flags\nUnimplemented errors\nPoor Performance\nIssues in Multi-threading\nImproper error responses\nImproper status codes Duplicate or missing API functionality Failure to handle negative test cases Failure to handle a sudden spike in load or stress Reliability of the application behavior Failure to handle requests securely Unused flags Unimplemented errors Poor Performance Issues in Multi-threading Improper error responses Improper status codes",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "7. Define Test API.",
+        "answer": "Test API refers to a set of APIs or library utilities that helps developers to create automated test cases for testing .NET or WIN 32 systems. It has a set of basic data building blocks, data types, data structures etc.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "8. What is Payload?",
+        "answer": "Payload is the most common term used in the case of REST APIs. It refers to the actual data sent to the server in the API request in different formats like JSON, XML etc.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "9. What is Run Scope?",
+        "answer": "Run Scope is an API testing tool that is typically a web application supporting an easier user interface platform to test back-end services. For more information, visit here. here",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "10. Why is automated API testing useful?",
+        "answer": "Automated testing is useful in the long run as it helps to maximize the test coverage of the applications in a shorter period of time meaning it helps to test large test sets very easily and quickly. It enables parallel execution and helps to reduce human-generated errors in testing. It saves the time required to test applications thereby saving the overall cost.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "11. What do you understand by Input injection?",
+        "answer": "Input injection is the act of simulating inputs for testing APIs. It can be simulated in different ways: Direct Method Invocation\nAccessibility interface invocation\nLow-level input simulation\nDevice driver simulation\nRobot Simulation. Direct Method Invocation Accessibility interface invocation Low-level input simulation Device driver simulation Robot Simulation.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "12. What do you understand by the test environment for API?",
+        "answer": "The test environment is an environment that helps test the APIs developed by providing a feature to send requests and get the responses from the server. It is similar to the production environment where the Quality Analyst has enough data to perform their functionality testing. In a test environment, we can have a test database, a localized gateway, a server and a load balancer.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "13. Is it possible to hack API while testing?",
+        "answer": "Yes, it is possible. This is because we are sending requests over the internet which mostly follows HTTP protocol. This protocol is text-based and is easier to read. Hence, it is required to perform security testing of the APIs to ensure safer systems.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "14. How should we test the API security?",
+        "answer": "To test the security of the API during API testing, we need to validate 2 things: Authentication: Whether the identity of the end-user is correct.\nAuthorization: Whether the user is allowed to access the resource. Authentication: Whether the identity of the end-user is correct. Authentication Authorization: Whether the user is allowed to access the resource. Authorization We can also validate whether the TLS or the SSL certificate used over the HTTPS protocol is valid or not.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "15. What do you understand by Big Bang Approach in testing?",
+        "answer": "The big bang approach is the approach of combining all modules at once and then performing verification of the functionality after the individual modules are tested. It belongs to the category of integration testing of the applications.",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "16. How do you perform API Load Testing?",
+        "answer": "Load Testing is a category of Performance Testing that is used for checking an application’s capability to perform under various user loads.\nThis is done for identifying bottlenecks in performance before the application becomes live.\nIt is done by simulating many users hitting the API at the same time or in other words, artificial traffic is simulated to identify if the application is capable of handling the load by maintaining consistency in the response times and not impacting the functionality.\nOne such tool to perform Load Testing is JMeter. It provides flexibility to create a test plan, define the thread groups and record test scripts to simulate artificial load to the API. It finally provides a feature to visualize the result of load testing done. For more information about using JMeter, you can refer here. Load Testing is a category of Performance Testing that is used for checking an application’s capability to perform under various user loads. This is done for identifying bottlenecks in performance before the application becomes live. It is done by simulating many users hitting the API at the same time or in other words, artificial traffic is simulated to identify if the application is capable of handling the load by maintaining consistency in the response times and not impacting the functionality. One such tool to perform Load Testing is JMeter. It provides flexibility to create a test plan, define the thread groups and record test scripts to simulate artificial load to the API. It finally provides a feature to visualize the result of load testing done. For more information about using JMeter, you can refer here. here Useful Interview Resources: Automation Testing\nManual Testing\nJMeter\nWeb Services\nWeb API\nREST API\nRobot Framework\nDatabase Testing\nUFT/QTP Automation Testing Automation Testing Manual Testing Manual Testing JMeter JMeter Web Services Web Services Web API Web API REST API REST API Robot Framework Robot Framework Database Testing Database Testing UFT/QTP UFT/QTP",
+        "reference": "interviewbit.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "1) What is API?",
+        "answer": "API (Application Programming Interface) helps in communication and data exchange between two software systems. API act as an interface between two applications and allows the two software systems communicate with one another. API is a collection of functions which can be executed by another software program.\nAPI works as; it takes a request from the source, takes that request to the database, fetches the request data from the database and returns a response to the source. API takes the requests from the user and gives the response without exposing the internal details. API acts as Abstraction.\nExample: Amazon API, Google Map API",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "2) What is API testing?",
+        "answer": "API testing is a type of software testing that involves testing APIs directly. API is a part of integration testing to check whether the API meets expectations in terms of functionality, reliability, performance, and security of applications. Multiple API system can performed API testing. In API testing, our primary focus is on Business Logic Layer of the software architecture.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "3) What are the types of API testing?",
+        "answer": "API testing involves the following types of testing:\nADVERTISEMENT\nUnit Testing\nFunctional Testing\nLoad Testing\nRuntime/Error Detection\nSecurity Testing\nUI Testing\nInteroperability and WS compliance Testing\nPenetration Testing\nFuzz Testing",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "4) What are the protocols used in API Testing?",
+        "answer": "Protocols used in API testing are:\nHTTP\nREST\nSOAP\nJMS\nUDDI",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "5) What are the tools used for API Testing?",
+        "answer": "Tools used for API testing are:\nParasoft SOAtest\nPostMan\nAlertSite API monitoring",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "6) What is API test environment?",
+        "answer": "For API the test environment is a quite complex method where the configuration of server and database is done as per the requirement of the software application. API testing does not involve graphical user interface (GUI).\nAPI is checked for its proper functioning after installation.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "7) What is API framework?",
+        "answer": "API framework is described by the config. File which consist of the list of all APIs that are required to be activated and are activated for any particular program run. This is essential as every test run does not require all APIs.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "8) What are the limits of API usage?",
+        "answer": "Many APIs have certain limit set up by the provider. Hence, try to estimate our usage and understand how that will impact the overall cost of the offering.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "9) What are the advantages of API testing?",
+        "answer": "Advantages of API testing are:\nTest for core functionality: API testing provides access to the application without the user interface. The core functionality of the application will be tested before the GUI tests. This will help to detect the minor issue which can become bigger during the GUI testing.\nTime effective: API testing is less time consuming than GUI testing. Particularly, API test requires less code so it can provide better and faster test coverage compare to GUI test automation. This will reduce the cost for the testing project.\nLanguage Independent: In API testing data is exchange using XML or JSON. These transfer mode are completely language-independent, which allows users to select any code language when adopting automation test service for the project.\nEasy Integration with GUI: API tests provide highly integrable tests which is useful to perform functional GUI tests after GUI tests. Simple integration would allow new user accounts to be created within the application before GUI started.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "10) What are the principles of an API test design?",
+        "answer": "Here, are the seven principles of API test design.\nExhaustive Testing: Exhaustive testing is not possible. Instead we need optimal amount of testing which is based on the risk assessment of the application.\nDefect Clustering: Defect Clustering states that a small number of modules contain the most of the defect detected. Approximately 80% of the defect found in 20% of the modules. By experience we can identify such risky modules. But this approach has its own problems. If the same tests are repeated over and over again, eventually the same test case will no longer find new bugs.\nPesticide Paradox: Testers cannot depend on existing technique. They must have to look continually to improve the existing method to make testing more effective. But even all these hard work in testing we can never claim our product is bug free. To overcome this, test cases need to be regularly reviewed and revised add new and different test cases to help find more defects.\nTesting shows presence of defects: Testing principle states that- testing talks about the presence of defects not about the absence of defect. Software testing reduces the probability of undiscovered defects remaining in the software but even if no defects found, it is not a proof of correctness.\nBut if we work hard, taking all precautions and make our software products 99% bug free. The software does not meet the needs and requirements of the client.\nAbsence of error -fallacy: This can be possible the software which is 99% bug free is still unusable. The case can be if the system is tested for the wrong requirement. Software testing is not finding the defects but also to check that software addresses the business needs. The absence of error is fallacy i.e. finding and fixing defects does not help if the system build is unusable and doesn't fulfill the user's needs and requirements.\nEarly Testing: Testing should start as soon as possible in the software development lifecycle. So that defects in the requirement or design phase captured in the early stages. It is cheaper to fix defect in the early stages of testing. We should start finding the bug at the moment the requirements are defined.\nTesting is context dependent: Testing is context dependent that we test an e-commerce site will be different from the way we test the commercial. All the developed software's are not identical. We will use different methodology; techniques and type of testing depend on the application type.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "11) What is API framework?",
+        "answer": "A framework or software framework is a platform for developing software applications. API framework is a foundation on which software developer can build applications for a specific platform.\nExample: A framework can include predefined classes and functions that can be used to process input, manage hardware devices and interact with system software.\nFramework is similar to an Application Programming Interface, technically framework includes API. Framework serves foundation for programming while API provides access to the elements supported by the framework. Framework also includes code libraries, compiler and other programs used in the software development process.\nAPI framework is defined by configuration file which consists the list of all APIs that is required to be activated and activated for a particular program run.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "12) What are the common tests that performed on API?",
+        "answer": "Here, are the common tests that performed on API are as:\nResponse of the API should be verified based on the request. We will verify that the return value is based on request.\nWhen API is updating any data structure we should verify the system is authenticating the outcome.\nWe will verify whether the API is trigger other event or request another API.\nWe will verify the behavior of the API when no value is return.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "13) What exactly needs to verify in API testing?",
+        "answer": "In API testing, we send a request to API with the known data and then analysis the response.\nWe will verify the accuracy of the data.\nWill see the HTTP status code.\nWe will see the response time.\nError codes in case API returns any errors.\nAuthorization would be check.\nNon-Functional testing such as performance testing, security testing.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "14) What are the differences between API and Web Services?",
+        "answer": "Sr. No. API Web Services\n1. API may or may not need network for its operations. Web Services always need network for its operation.\n2. API can be communicated through SOAP, REST, XML-RPC and CURL calls as well.\nAPI can also be exposed in number of ways like JAR, DLL, XML over HTTP, JSON over HTTP etc. Web service can be communicated through SOAP, REST, AND RPC.\n3. API can perform all the operations which web service can't perform. Web service can't perform all the operations like API.\n4. All APIs are not web service. All web services are API",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "15) What is API documentation?",
+        "answer": "A good documentation is must for any foundation. API documentation serves as quick reference for accessing library or working within a program.\nWhen we use any such documents, it must consists of proper plan, content source, proper layout, information related to each function etc.\n\nThere are various documentation tools like Doxygen and JavaDoc. Here, are the functions which are documented which revolve around the parameters like:\nFunction description\nType and syntax of error message that may occure\nSyntax, elements and sequence needed for each parameter\nLinks regarding functions",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "16) What is the most used template for API documentation?",
+        "answer": "Here, are the various documentation template that make the whole process simple and easy. They are:\nSwagger\nMiredot\nSlate\nFlatDoc\nAPI blueprint\nRestDoc\nWeb service API specification",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "17) What are the types of bug that can be found during API testing?",
+        "answer": "API testing helps us to find many types of bugs which are:\nStress\nSecurity\nDuplicate or missing functionality\nReliability\nUnused flags\nPerformance\nIncompatible error handling\nMulti-threaded issue\nImproper errors",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "18) What are the difference between API testing and UI testing?",
+        "answer": "UI (User Interface) testing means the testing of the graphical user interface. The focus of UI testing is on the look and feel of the application. In user interface testing the main focus is on how users can interact with app elements such as images, fonts, layout etc. are checked.\nAPI testing allows the communication between two software systems. API testing works on backend also known as backend testing.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "19) What is SOAP?",
+        "answer": "SOAP (Simple Object Access Control) . It is an XML based protocol that helps in exchanging information among computers.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "20) What is REST API?",
+        "answer": "REST API is a set of function helps the developers performing requests when the response is receiving. Through HTTP protocol interaction is made in REST API.\nREST is defined as Representational state transfer. It is an effective standard for API creation.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "21) What are the differences between SOAP and REST API?",
+        "answer": "Sr. No. SOAP API REST API\n1. SOAP stands as Simple Object Access Protocol. REST stands as Representational State Transfer.\n2. SOAP is a protocol. REST is an architectural pattern.\n3. SOAP can work with XML format. In SOAP all the data passed in XML format. REST permit different data format such as Plain text, HTML, XML, JSON etc. But the most preferred format for transferring data is in JSON.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "22) What are the major challenges faced during API testing?",
+        "answer": "The major challenges faced during the API testing are:\nParameter Selection\nParameter Combination\nCall sequencing\nOutput verification and validation\nA major challenge is providing input values which are very difficult because GUI is not available.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "23) What are the difference between API Testing and Unit Testing?",
+        "answer": "Difference between API testing and Unit testing are:\nSr. No. API Testing UNIT Testing\n1. API testing is a form of black box testing. Unit testing is a form of white box testing.\n2. API testing is performed after the project completion during the test. Unit testing is performed when the project is created.\n3. In API testing there is a wide scope of testing. In Unit testing there is a limited scope of testing we can test only the basic functionality.\n4. API testing is done by the testers. The whole purpose of API testing is end to end testing of the functionality. Unit testing is done by the developer. In unit testing every functionality is separately tested.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "24) What is a RESTFUL web services?",
+        "answer": "There are two kinds of web services\nSOAP Web Services\nRESTFUL Web Services\n1. SOAP (Simple Object Access Protocol) - SOAP is a XML based method which is used in Web Services.\n2. RESTFUL Web Services - To implement the concept of REST architecture HTTP method is used. RESTFUL Web Services defines URI (Uniform Resource Identifier), and also provides resource representation like JSON and a set of HTTP method.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "25) What is Resource in REST?",
+        "answer": "REST architecture treats any content as resource, which can be text files, HTML pages, images, videos or dynamic business information. REST server gives the functionality to access the resources and modifies them. We can identify the each resources by URIs/ global IDs.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "26) What is the way to represent the resource in REST?",
+        "answer": "REST uses different representation to define the resources like text, JSON and XML. The most popular representation of resources is JSON and XML.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "27) What protocol is used by the RESTFUL Web Services?",
+        "answer": "RESTFUL Web Services uses the HTTP protocol. They use the HTTP protocol as a medium of communication between the client and the server.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "28) What are the characteristics of REST?",
+        "answer": "Here, are the two characteristics of REST.\nREST is stateless. With the use of the REST API the server has no status, we can restart the server between two calls, inspite of all the data is transferred to the server.\nWeb Services uses POST method to perform operations, while REST uses GET method to access the resources.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "29) What is messaging in RESTFUL Web Services?",
+        "answer": "RESTFUL Web Services use the HTTP protocol as a communication tool between the client and the server. This is the technique when the client sends a message in the form of HTTP request the server send back the HTTP reply which is called Messaging. This message consists message data and Meta data i.e. information on the message itself.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "30) What are the components of an HTTP request?",
+        "answer": "An HTTP request have five components. These are:\nAction showing HTTP method like GET, PUT, POST, DELETE.\nUniform Resource Identifier (URI): URI is the identifier for the resource on the server.\nHTTP version: Indicate the HTTP version like- HTTP V1.1.\nRequest Header: Request Header carries metadata for the HTTP request message. Metadata could be a client type, format supported by the client, format of a message body, cache setting etc.\nRequest Body: Resource body indicates message content or resource representation.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "31) What is the HTTP protocol supported by REST?",
+        "answer": "GET: GET is used to request data from the specified resource.\nGET request can be cached and bookmark. It remains in the browser history and has length restriction. When dealing with sensitive data GET requests should not be used.\nPOST: POST is used to send data to server for creation or updating the resources.\nPOST requests are never cached or bookmark.\nPUT: PUT replaces the current representation of the target resource with the request payload.\nDELETE: DELETE removes the specified resource.\nOPTIONS: OPTION is used to describe the communication option for the target resources.\nHEAD: HEAD asks for response which is identical to GET requests, but without the response body.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "32) Can we use GET request instead of PUT to create a resource?",
+        "answer": "PUT or POST method is used create a resource. GET is only used to request the resources.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "33) What is URI? What is the purpose of web-based service and what is it's format?",
+        "answer": "URI stands for Uniform Resource Identifier. It is a string of characters designed for unambiguous identification of resources and extensibility by the URI scheme. The purpose of URI is to locate the resource on the server hosting of the web service.\nA URIs format is <protocol>://<service-name>/<Resource Type>/<ResourceID>",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "34) What are SOAP Web Services?",
+        "answer": "SOAP (Simple Object Access Protocol) is defined as the XML based protocol. SOAP is also known for developing and designing web services and also enable the communication between the applications developed on different platform by using different programming languages on the internet. SOAP is platform and language independent.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    },
+    {
+        "question": "35) When we can use SOAP API?",
+        "answer": "We can use SOAP API to perform the operation on records like create, retrieve, update or delete. We can use API to manage password, perform searches etc.",
+        "reference": "javatpoint.com",
+        "role": "api-testing"
+    }
+]

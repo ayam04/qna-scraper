@@ -1,0 +1,194 @@
+[
+    {
+        "question": "1) What are the eight primitive data types in Java?",
+        "answer": "Java has eight built-in primitive data types:\nbyte\nshort\nint\nlong\nfloat\ndouble\nchar\nboolean",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "",
+        "answer": "Primitive data types hold the actual values, whereas reference data types hold references or memory addresses of objects. Primitive data types are used to store simple values, and they are stored directly in memory, making them more efficient in terms of memory consumption and performance. Reference data types, on the other hand, point to objects stored in the memory heap.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "3) What is autoboxing in Java?",
+        "answer": "Autoboxing is the automatic conversion of a primitive data type into its corresponding wrapper class object. For example, when you assign an int primitive value to an Integer object, autoboxing automatically converts the int to an Integer.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "4) What is the default value of the boolean data type in Java?",
+        "answer": "The default value of the boolean data type is false.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "5) How are floating-point numbers handled in Java?",
+        "answer": "Java has two primitive data types to handle floating-point numbers: float and double. float is a 32-bit single-precision type, while double is a 64-bit double-precision type. By default, floating-point literals are treated as double unless explicitly specified as float using the f or F suffix.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "",
+        "answer": "The char data type represents a single 16-bit Unicode character. It can hold any Unicode character, including letters, digits, symbols, and even emojis. Characters are enclosed in single quotes, e.g., 'A' or 'x'.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "7) What is the difference between double and BigDecimal for precise decimal calculations?",
+        "answer": "double is a floating-point type, which means it is subject to precision errors in decimal calculations. On the other hand, BigDecimal is a class that provides arbitrary precision decimal arithmetic. It is more suitable for financial and precise calculations where accuracy is crucial.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "8) What are the wrapper classes in Java?",
+        "answer": "Wrapper classes are classes that represent primitive data types as objects. They provide utility methods and are useful when working with collections that require objects instead of primitives. For example, Integer is the wrapper class for int, Double for double, and so on.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "9) How can you convert a String to an int in Java?",
+        "answer": "You can convert a String to an int using the Integer.parseInt() method. For example:\nADVERTISEMENT\nString numberString = \"42\";  \nint number = Integer.parseInt(numberString);",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "10) How does Java handle character encoding?",
+        "answer": "Java uses Unicode for character representation, which allows it to handle characters from various writing systems and languages. Java strings are internally stored in Unicode, making internationalization and localization easier.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "equals() when comparing String objects?",
+        "answer": "In Java, == compares the memory addresses of objects, while .equals() compares the actual contents of the String objects. For String comparison, it is generally recommended to use .equals().",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "",
+        "answer": "StringBuilder is a mutable class that represents a sequence of characters and is used to efficiently build strings by appending or inserting characters. It is preferred over String for concatenation because String objects are immutable, and concatenating multiple String objects creates unnecessary intermediate objects, leading to performance issues.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "13) What is the instanceof operator used for?",
+        "answer": "The instanceof operator is used to check if an object is an instance of a particular class or implements a specific interface. It returns true if the object is an instance of the specified type; otherwise, it returns false.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "14) How can you convert a primitive data type to its corresponding wrapper class object?",
+        "answer": "You can use the wrapper class constructors or static valueOf() methods to convert primitive data types to their corresponding wrapper class objects. For example:\nint num = 42;  \nInteger numObject = Integer.valueOf(num);",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "15) What are the default values of the wrapper classes?",
+        "answer": "The default values of the wrapper classes are as follows:\nnull for Integer, Double, Boolean, etc.\n0 for numeric wrappers like Byte, Short, Integer, Long, Float, and Double.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "16) What is the purpose of the transient keyword in Java?",
+        "answer": "The transient keyword is used to indicate that a variable should not be serialized during object serialization. When an object is serialized, transient variables are skipped, and their values are not included in the resulting byte stream.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "",
+        "answer": "The volatile keyword is used to indicate that a variable's value may be modified by multiple threads. It ensures that any read or write to the variable occurs directly from and to the main memory, preventing thread-local caching of the variable.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "18) What are the limitations of using enum data types in Java?",
+        "answer": "Java enums are powerful and flexible, but they have some limitations. For example, enums cannot be extended from other classes, and they cannot be instantiated using new ones. Additionally, an enum cannot extend other classes, but it can implement interfaces.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "19) How can you perform bitwise operations in Java?",
+        "answer": "Java provides bitwise operators such as & (AND), | (OR), ^ (XOR), ~ (NOT), << (left shift), and >> (right shift) to perform bitwise operations on integer types.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "20) What is the difference between break and continue statements in loops?",
+        "answer": "The break statement is used to exit a loop prematurely, while the continue statement is used to skip the current iteration and continue with the next iteration of the loop.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "21) What is the size of the int data type in Java?",
+        "answer": "The int data type in Java is a 32-bit signed integer, capable of holding values from approximately -2.1 billion to 2.1 billion.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "22) Explain the long data type and how to denote a long literal?",
+        "answer": "The long data type in Java is a 64-bit signed integer, used for larger numerical values. A long literal is denoted by appending an 'L' or 'l' to the value, e.g., long num = 123456789L;",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "23) What is the range of the char data type in Java?",
+        "answer": "The char data type in Java is a 16-bit Unicode character, capable of representing any Unicode character, including non-Latin characters and emojis.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "24) What is the difference between float and double data types?",
+        "answer": "float is a 32-bit single-precision floating-point data type, while double is a 64-bit double-precision floating-point data type. double provides higher precision compared to float, but float consumes less memory.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "25) How can you convert a double to a float in Java?",
+        "answer": "You can use explicit casting to convert a double to a float, but be aware that it may result in a loss of precision. For example:\ndouble num = 3.14159;  \nfloat floatValue = (float) num;",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "26) What are the eight primitive data types in Java and their default values?",
+        "answer": "byte: 0\nshort: 0\nint: 0\nlong: 0L\nfloat: 0.0f\ndouble: 0.0\nchar: '\\u0000' (null character)\nboolean: false",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "27) What is the purpose of the boolean data type in Java?",
+        "answer": "The boolean data type is used to represent a binary value, i.e., true or false. It is commonly used in conditional expressions and control flow statements.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "",
+        "answer": "int is a primitive data type, while Integer is a wrapper class for the int data type. Integer provides utility methods and allows int to be used in collections that require objects.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "29) What is the default value of a reference variable in Java?",
+        "answer": "The default value of a reference variable (e.g., objects, arrays) is null. It means the variable does not point to any object in memory.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "30) How can you convert a String to a primitive data type like int or double?",
+        "answer": "You can use wrapper class methods like Integer.parseInt(String) or Double.parseDouble(String) to convert a String to the corresponding primitive data type. For example:\nString numberString = \"42\";  \nint number = Integer.parseInt(numberString);",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "31) What is the difference between local variables and instance variables?",
+        "answer": "Local variables are declared within a method or a block and have no default values. They must be initialized before use. Instance variables are declared within a class but outside methods and are automatically initialized to their default values.",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    },
+    {
+        "question": "32) How can you declare and initialize a constant in Java?",
+        "answer": "In Java, constants are typically declared using the final keyword and are assigned their values at the time of declaration. For example:\nfinal int MAX_VALUE = 100;",
+        "reference": "javatpoint.com",
+        "role": "data-types-in-java"
+    }
+]

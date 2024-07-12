@@ -1,0 +1,512 @@
+[
+    {
+        "question": "1. What are Connectors in Mule?",
+        "answer": "Connectors in Mule are Mule’s abstraction for sending and receiving data and interacting with various APIs. There are generally 2 forms of connectors in Mule: Transport: This is the most common form of connector used in Mule. Like HTTP, transports provide an adaptation layer for a protocol. These are the sources and sinks for data - to get data into and out of flows.\nCloud connectors: These are typically used to interact with an API. Usually, cloud connectors don’t give endpoints. Instead, they have message processors that map to the operations provided in the API. The operations of an API are combined by these cloud connectors. The effect of this is that the initial friction for a developer is greatly reduced. Transport: This is the most common form of connector used in Mule. Like HTTP, transports provide an adaptation layer for a protocol. These are the sources and sinks for data - to get data into and out of flows. Transport: Cloud connectors: These are typically used to interact with an API. Usually, cloud connectors don’t give endpoints. Instead, they have message processors that map to the operations provided in the API. The operations of an API are combined by these cloud connectors. The effect of this is that the initial friction for a developer is greatly reduced. Cloud connectors:",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "2. What are the different tools and services offered by Mulesoft?",
+        "answer": "MuleSoft helps in the task of data integration diligently and efficiently. The tools and services offered by MuleSoft include: API Designer: API Designer is a web-based tool that contains a console and a scripting notebook for JavaScript.\nAPI Manager: API Manager is a management tool that allows organizations in managing users, traffic, and service level agreements.\nAnypoint Studio: Anypoint Studio is a graphical design environment to build and edit APIs and integrations.\nAPI Portal: This is a portal that offers developers different kinds of documents, tutorials, and code snippets related to APIs.\nAPI Analytics: API Analytics is an analytics tool that allows a user to track the specifications of an API. This also includes its performance, usage, and reliability. Additionally, it offers a dashboard and charts. API Designer: API Designer is a web-based tool that contains a console and a scripting notebook for JavaScript. API Designer: API Manager: API Manager is a management tool that allows organizations in managing users, traffic, and service level agreements. API Manager: Anypoint Studio: Anypoint Studio is a graphical design environment to build and edit APIs and integrations. Anypoint Studio: API Portal: This is a portal that offers developers different kinds of documents, tutorials, and code snippets related to APIs. API Portal: API Analytics: API Analytics is an analytics tool that allows a user to track the specifications of an API. This also includes its performance, usage, and reliability. Additionally, it offers a dashboard and charts. API Analytics:",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "3. What is Mule ESB?",
+        "answer": "Mule ESB stands for Mule Enterprise Service Bus. Mule ESB makes it easy for the development teams to flexibly connect, access, and exchange data easily. This means that even though the application is running into different VMs, the interactions between them are easy. Mule Enterprise Service Bus Following are some of the features of Mule ESB: Message Transformation Service\nSet of Service Container\nWeb Service Security\nMessage Routing Service\nSimple drag-and-drop graphical design\nCentralized monitoring and administration Message Transformation Service Set of Service Container Web Service Security Message Routing Service Simple drag-and-drop graphical design Centralized monitoring and administration",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "4. What are Batch Jobs in Mule ESB?",
+        "answer": "In Mule ESB, a batch job is an element in a mule that splits large messages into records. These records are then processed asynchronously in a batch job. Within an application, one can initiate a Batch Job scope, which splits messages into individual records, performs actions upon each record, and then reports on the results and potentially pushes the processed output to other systems or queues. With this, we can handle large quantities of incoming data from an API into a legacy system. We can also synchronize data sets between business applications.  ",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "5. What are the different types of variables in MuleSoft?",
+        "answer": "The different types of variables in MuleSoft are as follows: Flow Variable: This is used to either set or remove variables that are tied to a particular message in the current flow.\nSyntax: #[flowVars.Code]\nRecord Variable: This is used for the batch processing flows. Unlike any other variable, these are special variable sets that are used only inside a Batch Job.\nSyntax: #[recordVars.Code]\nSession Variable: This is used to either set or remove variables tied to a particular message for the entire lifecycle. \nSyntax: #[sessionVars.Code] Flow Variable: This is used to either set or remove variables that are tied to a particular message in the current flow.\nSyntax: #[flowVars.Code] Flow Variable:  Syntax: Syntax: Record Variable: This is used for the batch processing flows. Unlike any other variable, these are special variable sets that are used only inside a Batch Job.\nSyntax: #[recordVars.Code] Record Variable:  Syntax: Syntax: Session Variable: This is used to either set or remove variables tied to a particular message for the entire lifecycle. \nSyntax: #[sessionVars.Code] Session Variable:  Syntax: Syntax:",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "6. What are the different types of messages in MuleSoft?",
+        "answer": "Echo and Log message - These are used to log messages and move them from inbound to outbound routers. Inbound Routers means a single event is received via an endpoint and the router controls how and if this event gets routed into the system. Outbound routers mean once a message has been processed by a component an outbound router can be used to determine which components get the result event.\nBridge Message - This is a passed message from inbound to outbound routers.\nBuild Message - These are messages created from fixed or dynamic values. Echo and Log message - These are used to log messages and move them from inbound to outbound routers. Inbound Routers means a single event is received via an endpoint and the router controls how and if this event gets routed into the system. Outbound routers mean once a message has been processed by a component an outbound router can be used to determine which components get the result event. Echo and Log message Bridge Message - This is a passed message from inbound to outbound routers. Bridge Message Build Message - These are messages created from fixed or dynamic values. Build Message",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "7. What are the different Primitives used in Mediation?",
+        "answer": "Mediation is used for personalizing interactions between distributed applications and service components. The following are the different Primitives used in Mediation: Message Filter\nType Filter\nEndpoint Lookup\nService Invoke\nFan-out\nFan-in\nXSLT\nBO Map\nMessage Element Setter\nDB lookup\nData Handler\nCustom Mediation\nHeader Setters\nMessage Logger\nEven Emitter\nStop\nFail\nSub Flow Message Filter Type Filter Endpoint Lookup Service Invoke Fan-out Fan-in XSLT BO Map Message Element Setter DB lookup Data Handler Custom Mediation Header Setters Message Logger Even Emitter Stop Fail Sub Flow",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "8. What is a shared resource in Mule?",
+        "answer": "In Mule, shared resources are common resources that are exposed to all applications deployed under the same domain. Sharing resources allows different development teams to work in parallel. For instance: Connector configurations could be made a reusable resource. These could be shared among all applications deployed. For instance These shared resources should be defined in the Mule Domain Project. These should then be referred to each of the projects that are meant to use the elements in it.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "9. What are the Models?",
+        "answer": "In Mulesoft studio, the grouping of services (application objects and their attributes) created are called Models. Through this, a user can start and stop the services inside a given model.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "10. What is Mule?",
+        "answer": "Mule is an open-source enterprise integration platform that helps tackle the problems in developing integration applications. Some of the problems that are tackled by Mule include Error handling, Monitoring, Lifecycle and management, Data format, etc. Thus, with these problems gone, Mule helps focus on the application’s core requirements like scalability and efficiency.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "11. What is a runtime manager in Mule?",
+        "answer": "In Mule, a runtime manager is used for deploying and managing Mule applications. This is done on the Mule runtime engine where Mule runtime is running. We can deploy or pause the mule application by using runtime manager. We can also change the runtime version of the application at a given time. The worker size can be increased or decreased as well.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "12. What is Worker in MuleSoft?",
+        "answer": "In Mulesoft, Worker is a dedicated instance of Mule hosted on AWS that is used to run the integration applications. Following are some of the features of workers: Capacity: For the purpose of data processing, every worker has a given amount of capacity.\nIsolation: Isolation means that every worker runs in a separate container from every other application.\nManageability: Manageability means that the deployment and management of each worker are done independently.\nLocality: In this feature, every worker runs and is located on a specific worker cloud. Capacity: For the purpose of data processing, every worker has a given amount of capacity. Capacity: Isolation: Isolation means that every worker runs in a separate container from every other application. Isolation: Manageability: Manageability means that the deployment and management of each worker are done independently. Manageability: Locality: In this feature, every worker runs and is located on a specific worker cloud. Locality:",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "13. What is Mule Runtime?",
+        "answer": "A runtime engine that is used to host and run Mule applications, is called a Mule runtime. This is similar to an application server. Mule runtimes can be provisioned either on the premises or also on the cloud. A single Mule runtime can host several Mule applications. Here is the figure representing Mule runtime.  ",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "14. How is Reliability achieved in MuleSoft?",
+        "answer": "Reliability in Mule means Zero message loss. To make this happen, applications must be designed in a way to capture the state of a running process/instance, which can be picked up by another running node in the cluster. Reliable messaging is given by built-in support of transactions in transport, if the application uses a transactional transport such as Java Message Service (JMS), Virtual Machine (VM), Database (DB), etc. A reliable messaging pattern is essential when dealing with non-transactional endpoints.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "15. How can we improve the performance of the Mule Application in MuleSoft?",
+        "answer": "The following are some ways to improve the performance of the Mule Application in MuleSoft: Put the data validation at the start of the flow.\nUse Streaming to process data.\nSave the results of the application and reuse them later.\nProcess data asynchronously wherever is possible. Put the data validation at the start of the flow. Use Streaming to process data. Save the results of the application and reuse them later. Process data asynchronously wherever is possible.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "16. How can Code in MuleSoft be optimized for memory efficiency?",
+        "answer": "The code in MuleSoft be optimized for memory efficiency in the following ways: One should not save the payload into the flow variable. This is because it is a more memory consuming element.\nThe unnecessary part of the document should not be loaded while processing.\nFor highly concurrent scenarios, one should use better database polling.\nUse Dataweave for transformations. One should not save the payload into the flow variable. This is because it is a more memory consuming element. The unnecessary part of the document should not be loaded while processing. For highly concurrent scenarios, one should use better database polling. Use Dataweave for transformations.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "17. What are Flow Processing Strategies and what are the different types of it?",
+        "answer": "How Mule implements message processing for a given flow is determined by a Flow Processing Strategy. All Mule flows have an implicit processing strategy which Mule applies automatically: either synchronous or queued-asynchronous. Each of these processing strategies is optimal for certain flows. The different types of Flow Processing Strategies are: Synchronous Flow Processing Strategy.\nAsynchronous Flow Processing Strategy.\nQueued Flow Processing Strategy.\nQueued Asynchronous Flow Processing Strategy.\nCustom Processing Strategy.\nThread Per Processing Strategy.\nNon-blocking Flow Processing Strategy. Synchronous Flow Processing Strategy. Asynchronous Flow Processing Strategy. Queued Flow Processing Strategy. Queued Asynchronous Flow Processing Strategy. Custom Processing Strategy. Thread Per Processing Strategy. Non-blocking Flow Processing Strategy.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "1. What is the Mule Data Integrator?",
+        "answer": "Data Integrator is a data visualization mapping tool launched by Mule. It has support for Java objects, flat files, and XML Mapping. The Mule Data Integrator tool provides drag and drop features to make the coding process easier, as it could be a challenging task for a developer to code complex mapping functionalities. This process of mapping gets support from eclipse to run the Data Integrator, which is part of the top layer applications in Mule Architecture. Data integration solves the problem of moving, transforming, and consolidating information from various parts of the enterprise. This enables it to undergo cleansing, standardizing, de-duplication, manipulation, and synchronization between sources.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "2. What is Subflow in mule?",
+        "answer": "Using the flow-reference element of Mule, we can call a subflow. When the sublow is called using a flow-reference element by the main flow, the entire message structure (attachments, payload, properties, etc.) is passed along with the context (transactions, session, etc.) Similarly, the entire message along with the context is returned to the main calling flow after the processing of the message is done in the subflow. Following are some features of Subflow: Subflows are very useful when you want to add re-usable logic, as you can call sub-flows multiple times.\nReferring subflows gives better performance than referring a flow.\nSubflows don’t have event sources. Subflows are very useful when you want to add re-usable logic, as you can call sub-flows multiple times. Referring subflows gives better performance than referring a flow. Subflows don’t have event sources.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "3. What is the difference between Flow and Subflow in mule?",
+        "answer": "Flow Subflow\nA private flow has its own strategy for exception handling. It also does not have a source defined.  1. Although a sublow processes messages synchronously, it gets the strategy of processing and of exception handling from the calling flow. \nFlows can have sources (such as HTTP Listener to receive a request) that trigger the flow execution. 2. Subflows don’t have event sources. For example, you can’t place an HTTP Listener in subflow.\nReferring flows gives a performance not as good as compared to subflows. 3. Referring subflows gives better performance\nEach flow can have its own error handling. 4. Subflows don’t have an error handling. It inherits the error handling strategy from parent flow. Flow Subflow\nA private flow has its own strategy for exception handling. It also does not have a source defined.  1. Although a sublow processes messages synchronously, it gets the strategy of processing and of exception handling from the calling flow. \nFlows can have sources (such as HTTP Listener to receive a request) that trigger the flow execution. 2. Subflows don’t have event sources. For example, you can’t place an HTTP Listener in subflow.\nReferring flows gives a performance not as good as compared to subflows. 3. Referring subflows gives better performance\nEach flow can have its own error handling. 4. Subflows don’t have an error handling. It inherits the error handling strategy from parent flow. Flow Subflow Flow Subflow Flow Subflow A private flow has its own strategy for exception handling. It also does not have a source defined.  1. Although a sublow processes messages synchronously, it gets the strategy of processing and of exception handling from the calling flow. \nFlows can have sources (such as HTTP Listener to receive a request) that trigger the flow execution. 2. Subflows don’t have event sources. For example, you can’t place an HTTP Listener in subflow.\nReferring flows gives a performance not as good as compared to subflows. 3. Referring subflows gives better performance\nEach flow can have its own error handling. 4. Subflows don’t have an error handling. It inherits the error handling strategy from parent flow. A private flow has its own strategy for exception handling. It also does not have a source defined.  1. Although a sublow processes messages synchronously, it gets the strategy of processing and of exception handling from the calling flow. A private flow has its own strategy for exception handling. It also does not have a source defined. 1. Although a sublow processes messages synchronously, it gets the strategy of processing and of exception handling from the calling flow. Flows can have sources (such as HTTP Listener to receive a request) that trigger the flow execution. 2. Subflows don’t have event sources. For example, you can’t place an HTTP Listener in subflow. Flows can have sources (such as HTTP Listener to receive a request) that trigger the flow execution. 2. Subflows don’t have event sources. For example, you can’t place an HTTP Listener in subflow. Referring flows gives a performance not as good as compared to subflows. 3. Referring subflows gives better performance Referring flows gives a performance not as good as compared to subflows. 3. Referring subflows gives better performance Each flow can have its own error handling. 4. Subflows don’t have an error handling. It inherits the error handling strategy from parent flow. Each flow can have its own error handling. 4. Subflows don’t have an error handling. It inherits the error handling strategy from parent flow.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "4. What is a Mule transformer?",
+        "answer": "A Mule transformer is used to strictly enforce the types of data it receives and its outputs. One configuration can be used to relax this - An exception won’t be reported for bad input, but the original message will be returned without enforcing the expected result type by the transformer. Thus, this option should be used sparingly. A depiction of a Mule transformer is shown in the flowchart below. Mule has multiple transformers and each project you do might potentially have one transformer. There are different ways in which a transformer can alter a message: Payload type transformation - In this, the message payload data type is transformed from one binary form to another. As an example, a java.util.Map can be transformed into a javax.jms.MapMessage.\nPayload format transformation - In this, the message payload data format is transformed from one form to another. As an example, a byte array that has an XML document instance is transformed into a byte array that has a plain-text instance for logging.\nProperties transformation - In this, the properties of the message are changed. This could be done by either adding, modifying or removing existing properties. As an example, a message that requires a given property to be set prior to being sent to a JMS destination. Payload type transformation - In this, the message payload data type is transformed from one binary form to another. As an example, a java.util.Map can be transformed into a javax.jms.MapMessage. Payload format transformation - In this, the message payload data format is transformed from one form to another. As an example, a byte array that has an XML document instance is transformed into a byte array that has a plain-text instance for logging. Properties transformation - In this, the properties of the message are changed. This could be done by either adding, modifying or removing existing properties. As an example, a message that requires a given property to be set prior to being sent to a JMS destination. Usually, transformers come in pairs. In these pairs, the second transformer cannot perform what the first one performs. As an example, the payload format transformations such as compression and decompression, are handled by 2 different transformers. One of these transformers is able to reverse the action of the other one. This is what is called a round-trip transformer. The original message should be restituted by making a message go through a transformer and its round-trip.  ",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "5. What are some of the advantages of Mulesoft?",
+        "answer": "Mulesoft as an integration platform offers many advantages. Following are some of them: It is lightweight yet highly scalable. With Mulesoft, we can connect a large number of applications. For the communication to stay uninterrupted and consistent between the applications, ESB helps. Even though the protocols used for Virtual Machine are the same, building and maintaining communication between applications is allowed.\nMulesoft can combine and connect over a large range of application network\nIt has integration support for connecting various parts of the network.\nThe components within the application are reusable. We can use pre-existing parts without having to write specific codes.\nAs this is a vendor-neutral solution, many vendors can be integrated. Also, by minimizing the restrictions on vendors, the vendor dependencies are removed.\nFor higher business support, it has great adaptability to change. It is lightweight yet highly scalable. With Mulesoft, we can connect a large number of applications. For the communication to stay uninterrupted and consistent between the applications, ESB helps. Even though the protocols used for Virtual Machine are the same, building and maintaining communication between applications is allowed. Mulesoft can combine and connect over a large range of application network It has integration support for connecting various parts of the network. The components within the application are reusable. We can use pre-existing parts without having to write specific codes. As this is a vendor-neutral solution, many vendors can be integrated. Also, by minimizing the restrictions on vendors, the vendor dependencies are removed. For higher business support, it has great adaptability to change.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "6. What are the available resources used for modularizing configuration in Mule?",
+        "answer": "The resources used for modularizing configuration in Mule are as follows: Independent Configuration: To load a number of independent configuration files one after the other, a mule instance is used.\nInherited Configuration: One Configuration inherits a Configuration from another different configuration. This is like the name ‘inheritance’ suggests - a parent-child relationship between the 2 configurations. This ensures that no configuration file will be omitted booting of the application takes place. This is the guarantee that this dependency provides. Independent Configuration: To load a number of independent configuration files one after the other, a mule instance is used. Independent Configuration: Inherited Configuration: One Configuration inherits a Configuration from another different configuration. This is like the name ‘inheritance’ suggests - a parent-child relationship between the 2 configurations. This ensures that no configuration file will be omitted booting of the application takes place. This is the guarantee that this dependency provides. Inherited Configuration: The following is an example: <model name=”myConfig”><model name=”myConfig” inherit=”true”> <model name=”myConfig”><model name=”myConfig” inherit=”true”> Imported Configuration: This also supports spring configuration. This enables us to easily use the spring config file to Mule configuration files. If we need to extend instance.xml then the spring context file will be imported: Imported Configuration: This also supports spring configuration. This enables us to easily use the spring config file to Mule configuration files. If we need to extend instance.xml then the spring context file will be imported: Imported Configuration: <spring:beans>,<spring:import resources=”instance-beans.xml”/></spring:beans> <spring:beans>,<spring:import resources=”instance-beans.xml”/></spring:beans> Heterogeneous configuration: In this type of configuration, we can utilize many types of files as the term ‘heterogeneous’ signifies. By using the Groovy script method and Spring XML Configuration builders, we can create the instances. Heterogeneous configuration: In this type of configuration, we can utilize many types of files as the term ‘heterogeneous’ signifies. By using the Groovy script method and Spring XML Configuration builders, we can create the instances. Heterogeneous configuration:",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "7. How are the messages in Mule composed?",
+        "answer": "There are four different parts of the composed message in Mule. These are as follows: Payload - This is the main context of data carried by a given message.\nProperties - Similar to the SOAP message, this contains meta-information or header\nMultiple Name Attachments - This is used to provide support for multi-part messages.\nAn exceptional payload - to hold errors that occur during the processing of the event. Payload - This is the main context of data carried by a given message. Payload Properties - Similar to the SOAP message, this contains meta-information or header Properties Multiple Name Attachments - This is used to provide support for multi-part messages. Multiple Name Attachments An exceptional payload - to hold errors that occur during the processing of the event. An exceptional payload    ",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "8. What are the configuration patterns provided by MuleSoft?",
+        "answer": "Configuration patterns have been designed for ease of use. The four configuration patterns that exist today make things that people do all the time simple, understandable, and fast to create. Mulesoft provides the following configuration patterns: Bridge\nValidator\nWS proxy\nSimple service pattern\nHTTP proxy Bridge Validator WS proxy Simple service pattern HTTP proxy",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "9. What is the use of Filter in Mule?",
+        "answer": "To make smart decisions on the request and response environment or message delivery, filters are used. These are the most powerful capabilities given to the routers. In order to decide what to do with the messages in the transit stage, filters give sight to the router. Some filters go through a thorough analysis of the given message to obtain the actual value of the desired output. The expression ‘filter’ returns either true or false. If the expression returns true for a value or index in the array, the value gets captured in the output array. If it returns false for a value or index in the array, that item gets filtered out of the output. If there are no matches, the output array will be empty.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "10. What do you mean by Flow in Mule?",
+        "answer": "‘Flow’ is when we combine together multiple individual processors in order to handle a receipt, its processing and eventual routing of a message. We can connect several flows together to build one whole application. This application can then be deployed on Mule, on-premise, or another app server, or also on the cloud. Simply put, the sequences of the message processors are called flows. A message entering a flow can pass through a large variety of processors. In the figure shown below, after receiving the message through a request-response inbound endpoint, Mule then transforms the content into a new format. The business logic is then processed in a component before returning a response through the message source.  ",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "11. What do you mean by SOAP and what are some of the advantages of it?",
+        "answer": "SOAP stands for Simple Object Access Protocol. It is used to exchange structured information in the implementation of web services in computer networks. The following are the advantages of SOAP: For a web service to talk with the client applications, SOAP is one of the best mediums that is developed\nIt is a light-weight protocol. This allows applications to pass messages and data back and forth between disparate systems easily.\nIt can be used for the interchange of data between various applications.\nThe SOAP protocol can work with any programming language-based applications on Windows and Linux platforms.\nWeb services built on the SOAP protocol do not require customization to work on the World Wide Web (WWW). For a web service to talk with the client applications, SOAP is one of the best mediums that is developed It is a light-weight protocol. This allows applications to pass messages and data back and forth between disparate systems easily. It can be used for the interchange of data between various applications. The SOAP protocol can work with any programming language-based applications on Windows and Linux platforms. Web services built on the SOAP protocol do not require customization to work on the World Wide Web (WWW).",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "12. What are the parameters to configure a scheduler?",
+        "answer": "The Scheduler component in Mule helps us to trigger a flow when a time-based condition is met. The parameters related to configuring a scheduler are as follows: Frequency: The Scheduler uses frequency to trigger flows.\nStart Delay: This signifies the time to wait before triggering a flow.\nTime Unit: This is the time unit for frequency and for Start Delay. Frequency: The Scheduler uses frequency to trigger flows. Frequency: Start Delay: This signifies the time to wait before triggering a flow. Start Delay: Time Unit: This is the time unit for frequency and for Start Delay. Time Unit: For example in some use cases where you need to do a specific task at a particular period of time or repeatedly at a fixed interval, your integration flow can be scheduled via Scheduler.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "13. What do you mean by Correlation Context?",
+        "answer": "Correlation Context is when the mediation primitive needs to pass the value from the request flow to the response flow. Here, the correlation context plays the role of passing the value. Conclusion Connected experiences are at the core of Mulesoft applications. Integrating data to deliver a single view of the customer, automating business processes, and building connected experiences are all made easy through Mulesoft. Each unified part becomes a building block that is reusable through using this modern approach which is API-led. The results of these are agility and scale. References and Resources References and Resources Mule in Action, Second Edition (O’Reilly) - By John D'Emic, David Dossot, John D'Emic, and Victor Romero\nHands-On Microservices - Monitoring and Testing (Packt Publishing) - By Dinesh Rajput\nAPI Recipes with Mulesoft(r) Anypoint Platform - by Whishworks\nSalesforce Lightning Interview Questions\nTechnical Interview Questions Mule in Action, Second Edition (O’Reilly) - By John D'Emic, David Dossot, John D'Emic, and Victor Romero Hands-On Microservices - Monitoring and Testing (Packt Publishing) - By Dinesh Rajput API Recipes with Mulesoft(r) Anypoint Platform - by Whishworks Salesforce Lightning Interview Questions Salesforce Lightning Interview Questions Technical Interview Questions Technical Interview Questions",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "1. Is MuleSoft hard to learn?",
+        "answer": "Mule supports multiple scripts. If one has a basic understanding of OOPS, Java, Python, Ruby, or Groovy, then one can learn Mule ESB. There are multiple resources online to help you learn these.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "2. Why is MuleSoft famous?",
+        "answer": "Mulesoft makes it easy to build connected experiences and unifies data to present a single view to the customer. Each integration done this way can also become a building block that is reusable. By using Mulesoft, time for development is saved. Also, the production environments become easier to use.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "3. Is MuleSoft a good career?",
+        "answer": "The demand for a career in Mulesoft is steadily growing. Anypoint by Mulesoft, being a top integration platform has become the choice for a number of developers for their careers.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "4. Does MuleSoft require coding?",
+        "answer": "In Mule applications, DataWeave is a functional language used to perform data transformations. For this purpose, coding is required. However, the requirement for coding is not much in this case.",
+        "reference": "interviewbit.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "1) What do you understand by Mule? / What is MuleSoft?",
+        "answer": "Mule or MuleSoft is an integration platform that helps to connect devices, applications, and data. It is also used to connect enterprise and SaaS applications in the cloud and on-premise. Mule also helps to tackle the problems in developing integration applications, delivering a single view of the customer, automating business processes, and building connected experiences.\nMule or Mulesoft's platform is called Anypoint Platform. This platform consists of several tools for developing, managing, and testing application programming interfaces (APIs), which support such connections. MuleSoft's Anypoint Platform is the world's leading integration platform for Service-oriented architecture (SOA) and Software as a Service (SaaS).",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "2) What are some problems that Mule or Mmulesoft tackles?",
+        "answer": "Following is a list of some problems that Mule or Mulesoft tackles:\nADVERTISEMENT\nError handling\nMonitoring\nLifecycle and management\nData format, etc.\nAfter solving these problems, Mule focuses on the application's core requirements, such as scalability and efficiency.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "3) Who is known as the father of Mulesoft?",
+        "answer": "MuleSoft was founded by Ross Mason in 2006, so he is known as the father of Mulesoft.\nAccording to the company's website, the name MuleSoft comes from the ability of this platform to eliminate the hard work (\"donkey work\") and provide a simpler solution. The company chose this name because it reflects its platform's hybrid capabilities and also because mules are a hybrid combination of donkeys and horses.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "4) What are the different types of variables used in MuleSoft?",
+        "answer": "Following is the list of different types of variables in MuleSoft:\nFlow Variable: The Flow Variable is used to either set or remove the variables tied to a particular message in the current flow.\nRecord Variable: The Record Variable is used for batch processing flows.\nSession Variable: The Session Variable is used to either set or remove the variables tied to a particular message for the complete lifecycle.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "5) What is Mule ESB? What are some of the key features of Mule ESB?",
+        "answer": "Mule ESB is an acronym that stands for Mule Enterprise Service Bus. It is an architecture developed for programmers to make it easy for the development teams to connect, access, and exchange data easily. It provides a facility that even though the application is running into different VMs, their interactions are easy. Mule ESB facilitates developers to integrate a range of applications together using the bus-like infrastructure. It can also be easily integrated with HTTP, web service, JMS, etc.\nFollowing is a list of some of the important features of Mule ESB:\nMessage Transformation Service\nSet of Service Container\nWeb Service Security\nMessage Routing Service\nSimple drag-and-drop graphical design\nCentralized monitoring and administration",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "6) What do you understand by fan-in and fan-out?",
+        "answer": "In Mulesoft, fan-in and fan-out both are used in a combination. Fan-in is used to help in making a decision to continue flow execution, and it is always used with the combination of fan-out. On the other hand, fan-out is primitive and mainly used to input messages through the output terminal once or twice, and it can also be used with the combination of fan-in.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "7) What are the different tools and services Mulesoft provides?",
+        "answer": "MuleSoft is used to make data integration efficiently and diligently. It also provides a lot of tools and services. Following is the list of main tools and services offered by MuleSoft:\nAPI Designer: MuleSoft provides API Designer, a web-based tool containing a console and a scripting notebook for JavaScript.\nAPI Manager: MuleSoft offers API Manager, which is a management tool that allows organizations in managing users, traffic, and service level agreements.\nAnypoint Studio: MuleSoft offers Anypoint Studio, a graphical design environment used to build and edit APIs and integrations.\nAPI Portal: MuleSoft provides an API Portal, a portal that offers developers different kinds of documents, tutorials, and code snippets related to APIs.\nAPI Analytics: MuleSoft offers API Analytics, an analytics tool that facilitates users to track the specifications of an API. This also includes its performance, usage, and reliability. Additionally, it offers a dashboard and charts.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "8) What are the different types of messages used in MuleSoft?",
+        "answer": "Following are the various types of messages used in MuleSoft:\nEcho and log message\nBridge message\nBuild message",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "9) What are the different types of primitives used in Mediation?",
+        "answer": "Following is the list of different types of primitives in Mediation:\nType Filter\nMessage Filter\nEndpoint Lookup\nService Invoke\nFan-in\nFan-out\nXSLT\nBO Map\nMessage Element Setter\nDB lookup\nData Handler\nCustom Mediation\nHeader Setters\nMessage Logger\nEven Emitter\nStop\nFail\nSub Flow",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "10) What are the most prominent features of Mule ESB?",
+        "answer": "Following is a list of the most prominent features of Mule ESB:\nMule ESB is easy to use and provides a drag and drop graphical design.\nMule ESB also provides SLA (Service Level Agreement) monitoring and API management facility.\nIt is highly scalable.\nIt facilitates developers to deploy in the one-click cloud or on-premise deployments.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "11) What are the different types of messages in MuleSoft?",
+        "answer": "Following is the list of different types of messages in MuleSoft:\nEcho and Log message: The Echo and Log messages are used for logging and moving them from inbound to outbound routers. A single event is received via an endpoint in the inbound routers, and the router controls how this event gets routed into the system. Once a message has been processed by a component in outbound routers, it will determine which components get the result event.\nBridge Message: The Bridge Messages are the passed messages from inbound to outbound routers.\nBuild Message: The Build Messages are the messages created from fixed or dynamic values.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "12) What are the basic principles of ESB Integration?",
+        "answer": "The basic principles of ESB integration are:\nTransportation: Transportation is used to negotiate between different formats like JDBC, HTTP, JMS, etc.\nTransformation: Transformation is used to deal with data transportation between data formats required by the ESP connector.\nNon-functional consistency: Non-functional consistency is used to provide how monitoring and security policies should be applied and consistent.\nMediation: Mediation provides different interfaces to enable different channels to the same component implementation and support various service versions for backward compatibility.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "13) How can we develop and consume SOAP services in Mule?",
+        "answer": "We can similarly create the SOAP services as we create a Mule project by using RAML. The only difference between them is that the Concert WSDL is imported instead of RAML, and SOAP services are consumed using Web Service consumer or Mule flow CXF components.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "14) What is the full form of SDO?",
+        "answer": "SDO is an acronym that stands for Service Data Object.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "15) What is the difference between Callout and Service Invoke in Mulesoft?",
+        "answer": "Differences between Callout and Service Invoke in Mulesoft:\n\nCallout: The callout is used to receive the messages and call the requested services and operations. For every connected target operation, there is a callout node in the median flow. In the case of a successful call, the callout response node in the response flow receives a response message. If the call is unsuccessful, the callout is set to retry service invocations according to the type of fault received.\nService Invoke: The Service Invoke is used to make a service request. It would either be a request or a response to a mediation flow. The service can be a request/response or a one-way. A series of service invocations are performed after permitting the multiple instances of a service to invoke primitives in a flow.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "16) What do you understand by MEL or Mule Expression Language?",
+        "answer": "MEL is an acronym that stands for Mule Expression Language. It is a lightweight mule-specific language that can be used to access and evaluate data in the payload.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "17) What are the different types of Exception Handling in Mulesoft?",
+        "answer": "Following are the different types of Exception Handling in Mulesoft:\nDefault exception handling.\nRollback exception handling.\nChoice exception handling.\nGlobal exception handling.\nCatch exception handling.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "18) What are the different types of endpoints in Mule ESB?",
+        "answer": "Following is a list of different types of endpoints in Mule:\nJMS\nHTTP\nSMTP\nIMAP\nAJAX",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "19) What are the key advantages of using Mulesoft ESB?",
+        "answer": "Following is the list of the key advantages of using Mule ESB:\nMule ESB provides several connectivity options using SaaS-based applications.\nIt offers a high level of operational controlling facility from the portal based on the web.\nIt also provides API and analytics management.\nMule ESB is incorporated with several bug fixing and automated testing facilities.\nMule ESB offers EDI (Electronic Data Interchange) and B2B (Business to Business) integration.\nIt provides a batch integration feature using real-time integration methods.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "20) What are the various types of endpoints in Mulesoft ESB?",
+        "answer": "Following are the different types of Endpoints used in Mulesoft ESB:\nHTTP\nSMTP\nJMS\nIMAP\nAJAX",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "21) What are the Batch Jobs in Mulesoft ESB?",
+        "answer": "In Mule ESB, Batch Jobs are the elements that can split large messages into records. These records are then processed asynchronously in a Batch Job.\nWhen a Batch Job scope is initiated within an application, it splits messages into individual records. It performs actions upon each record, and then reports on the results are pushed the processed output to other systems or queues. Using this, we can handle a huge quantity of incoming data from an API into a legacy system. We can also synchronize data sets between business applications.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "22) What do you understand by the transient context in Mulesoft?",
+        "answer": "In Mulesoft, transient context is used to pass the values within the existing flow, and it may either request flow or the responding flow.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "23) What is the difference between ESB and JMS?",
+        "answer": "ESB provides the middleware and interfaces services that facilitate the business enterprises to connect their applications without writing any code. On the other hand, JMS provides the communication facility and messaging capability between the modules of an application.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "24) What is the Mule Transformer or Mulesoft Transformer?",
+        "answer": "Mule Transformer or Mulesoft Transformer is an event instance used to refer to a library, org.mule.api.MuleEvent. This is used to carry the messages with the event. The main aim of the Mule transformer is to create a chain of transformers.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "25) What are the Models in Mulesoft studio?",
+        "answer": "In Mulesoft studio, the grouping of services, i.e., application objects and their created attributes, are called Models. Models enable a user to start and stop the services inside a given model.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "26) What is API in Mulesoft, and what are its main features?",
+        "answer": "In Mulesoft, API is an acronym that stands for Application Programming Interface. It is a software interface that allows two applications to interact with each other without any user interference.\nAPI is used to enable products or services to communicate with other products and services without knowing how they are implemented.\nFollowing is the list of some essential features of API:\nAPI is efficient enough to allow two applications to interact with each other without any user interference.\nIt provides wide reachability.\nIt is customizable.\nIt provides the facility of personalization.\nIt provides data ownership.\nIt can easily be integrated with GUI.\nIt is time-effective.\nIt is language-independent.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "27) What parameters are used in configuring a scheduler in Mulesoft?",
+        "answer": "Following is a list of related parameters which are used to configure a scheduler:\nFrequency: Frequency is used by the scheduler for triggering flows.\nStart Delay: Start Delay is the waiting time used before triggering any flow.\nTime Unit: It is used to specify the time unit for frequency and start delay.\nimplementation=\"org.mule.components.simple.BridgeComponent\">  \n className=\"org.mule.providers.file.filters.FilenameWildcardFilter\"/>",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "28) What is the payload in Mulesoft?",
+        "answer": "In Mulesoft, the payload is a Mule runtime variable used to store objects or arrays. It helps developers to access payload under different forms.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "29) What are the various parts of composing a message in Mulesoft?",
+        "answer": "Following are the different parts of composing a message in Mulesoft:\nProperties: Properties are used to store the header or meta-information similar to the SOAP (Simple Object Access Protocol) message.\nPayload: Payload is the main data context carried by a particular message.\nMultiple name attachments: Multiple name attachments are used to support multiple messages or payloads during event processing.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "30) What is Mule Data Integrator?",
+        "answer": "A Mule Data Integrator is a tool used to map data by visualizing it. It also provides a drag and drops feature interface, which facilitates developers to code easily.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "31) What do you understand by a shared resource in Mulesoft?",
+        "answer": "In Mulesoft, a shared resource is a common resource that is exposed to all applications deployed under the same domain. The biggest advantage of using the shared resource is that it allows different development teams to work parallel.\nFor example, Connector configurations can be used as a reusable resource, sharing them among all applications deployed.\nThe shared resources should be defined in the Mulesoft Domain Project and referred to each of the projects eligible to use the elements within it.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "32) What are the different types of flow processing strategies in Mulesoft?",
+        "answer": "Following are the different six types of strategy Mulesoft has for flow processing:\nA queued asynchronous flow processing.\nCustom flow processing.\nTread per processing.\nQueued flow processing.\nNon-blocking flow processing.\nSynchronous flow processing.\nAsynchronous flow processing.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "33) What are Connectors in Mulesoft?",
+        "answer": "In Mulesoft, connectors are Mule's abstraction used for sending and receiving data and interacting with various APIs. There are generally two types of connectors in Mule:\nTransport: Transport is the most common form of connector used in Mule. Like HTTP, transport is used to provide an adaptation layer for a protocol.\nCloud connectors: Cloud connectors are generally used to interact with an API. They don't give endpoints. Instead, they have message processors that map to the operations provided in the API. These cloud connectors combine the operations of an API.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "34) What are the different types of ESPs used in the market?",
+        "answer": "Following are the different types of ESPs used in the market:\nMule ESB\nJBoss fuse ESB\nTalend",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "35) What are the Workers in Mulesoft?",
+        "answer": "In Mulesoft, Workers are the dedicated instance of Mule hosted on AWS. They are used to run the integration applications.\nFollowing is the list of some important features of the workers:\nCapacity: It is used for data processing. Every worker has a certain amount of capacity.\nIsolation: Isolation means that every worker runs in a separate container from every other application.\nManageability: It specifies that the deployment and management of each worker are done independently.\nLocality: This feature specifies that every worker that runs is located on a specific worker cloud.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "36) What does the model layer of Mulesoft represent?",
+        "answer": "The model layer is the first logical layer of Mulesoft. It is used to represent the runtime environment that hosts services and describe the behavior of Mule when processing requests that are handled by services. It provides services with default values to simplify configuration.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "37) What is a runtime manager in Mulesoft?",
+        "answer": "In Mulesoft, the runtime manager is used to deploy and manage Mule applications. This is done on the Mule runtime engine where Mule is running. We can change the runtime version of the application at a given time and also deploy or pause the mule application by using runtime manager. We can also increase or decrease the worker size as well.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "38) What is a connector in MuleSoft?",
+        "answer": "In Mulesoft, a connector is used to control the particularly used protocols, and it can be configured with parameters specific to that protocol. The connector also holds state context, which we can share with any entity in charge of actual communications.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "39) What are the ways to improve the performance of the Mule Application in MuleSoft?",
+        "answer": "Following are some ways that can be used to improve the performance of the Mule Application in MuleSoft:\nBy putting the data validation at the start of the flow.\nUse the streaming to process data.\nSave the results of the application and reuse them later.\nProcess data asynchronously wherever is possible.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "40) What is the use of Outbound Endpoint in MuleSoft?",
+        "answer": "The Outbound Endpoint in MuleSoft is used to perform the following things:\nSend SOAP messages\nWrite to file streams\nSend email messages",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "41) What is the concept of Correlation Context?",
+        "answer": "The Correlation Context is a primitive used to pass values from request flow to response flow.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "42) What do you understand by Endpoints in Mule?",
+        "answer": "In Mule, Endpoints are used to specify a particular usage of a protocol. It is used for polling, reading from, or writing to a destination.\nIt is also used to control what underlying entities would be used with a dependent connector.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "43) How can we achieve reliability in Mulesoft?",
+        "answer": "In Mulesoft, reliability means zero message loss. So, if you want to achieve reliability, then your application must be designed to capture the state of a running process/instance, which another running node in the cluster can pick up.\nReliable messaging is achieved by the built-in support of transactions in transport if the application uses a transactional transport such as Java Message Service (JMS), Virtual Machine (VM), Database (DB), etc. A reliable messaging pattern is mandatory if we are dealing with non-transactional endpoints.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "44) What is a component in Mule?",
+        "answer": "Components are used to perform an important role in Mulesoft services. Every service in Mulesoft consists of core components and core and inbound and outbound routers. Components are also used to implement behavior in service. They can be very simple, like logging messages or invoking other services.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "45) What do you understand by Flow and Subflow in Mule?",
+        "answer": "Flow: In Mule, flow occurs when we combine multiple individual processors to handle a receipt, processing, and the eventual routing of a message. We can connect several flows to build one complete application. Then, we can deploy this application on Mule, on-premise, another app server, or on the cloud. A message entering a flow can pass through a large variety of processors. After receiving the message through a request-response inbound endpoint, Mule transforms the content into a new format. The business logic is then processed in a component before returning a response through the message source.\nSubflow: We can call the subflow by using the flow-reference element of Mule. When the subflow is called using a flow-reference element by the main flow, the entire message structure, i.e., attachments, payload, properties, etc., are passed along with the context. Subflows are very useful when adding re-usable logic, as we can call sub-flows multiple times. It can also enhance performance in comparison to flow.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "46) What is the full form of TSD in Mule?",
+        "answer": "TSD is an acronym that stands for Transport Service Descriptor. It is a connector used for technical configuration. It is used to define classes name used for message receivers, dispatchers, and requesters. Its default value may be changed according to the behavior of transport.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "47) What are the main differences between Flow and Subflow in Mule?",
+        "answer": "Following is a list of main differences between Flow and Subflow in Mule?\nFlow Subflow\nA flow follows its strategy for exception handling, and it also does not have a source defined. A subflow is used to process messages synchronously, and it follows the strategy of processing and exception handling from the calling flow.\nFlows can have sources such as HTTP Listener that can impact the flow execution. Subflows don't support event sources. For example, you can't place an HTTP Listener in the subflow.\nEach flow can have its error handling. Subflow doesn't support error handling, and it inherits the error handling strategy from parent flow.\nThe performance of referring flows is not as good as compared to subflow. Referring subflow gives better performance as compared to flow.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "48) What are the main characteristics of the global endpoint?",
+        "answer": "Following is the list of main characteristics of global endpoint:\nThe global endpoint can be used in different places of configuration files.\nIt is not typified or outbound routing.\nIt must apply the global service name so that it can reference the endpoint.\nIt also helps to clarify the usage of a particular destination.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "49) Which are the supported languages by Mulesoft?",
+        "answer": "Following are the main supported languages of Mulesoft:\n\nPython\nRuby\nGroovy\nJavaScript",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "50) What are the different types of configuration builders in Mulesoft?",
+        "answer": "There are mainly two types of configuration builders in Mulesoft:\nSpring-driven builder\nScript builder",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    },
+    {
+        "question": "51) What is a multicasting router in Mule?",
+        "answer": "In Mulesoft, multicasting routers send messages to more than one endpoint over different transports, and it also facilitates users to move the same messages across different endpoints.",
+        "reference": "javatpoint.com",
+        "role": "mulesoft"
+    }
+]

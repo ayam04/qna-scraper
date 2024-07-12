@@ -1,0 +1,416 @@
+[
+    {
+        "question": "1. What is Bubbling and Capturing?",
+        "answer": "When an event occurs on the DOM, it does not take place completely on one element. The event bubbles up or goes to its parent, grandparents, and grandparent's parent until it reaches the window in the Bubbling Phase, whereas the event starts out from window down to the element that prompted the event or the event target in the Capturing Phase. There are three stages of event propagation: Capturing Phase - the event begins with the window and progresses through each element until it reaches the target element.\nTarget Phase - The event has arrived at the target element.\nBubbling Phase - The event bubbles up from the target element and then up every element until it reaches the window. Capturing Phase - the event begins with the window and progresses through each element until it reaches the target element. Capturing Phase Target Phase - The event has arrived at the target element. Target Phase Bubbling Phase - The event bubbles up from the target element and then up every element until it reaches the window. Bubbling Phase",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "2. What is the difference between for..of and for..in?",
+        "answer": "for in: runs over an object's enumerable property names.\nfor of: (new in ES6) takes an object-specific iterator and loops through the data it generates. for in: runs over an object's enumerable property names. for in for of: (new in ES6) takes an object-specific iterator and loops through the data it generates. for of Both the for..of and for..in commands iterate over lists, but the results they return are different: for..in returns a list of keys on the object being iterated, whereas for..of returns a list of values of the object's numeric attributes. for..of for..in for..in for..of let arr = [3, 4, 5];\n\nfor (let i in arr) {\n   console.log(i); // \"0\", \"1\", \"2\",\n}\n\nfor (let i of arr) {\n   console.log(i); // \"3\", \"4\", \"5\"\n} let arr = [3, 4, 5];\n\nfor (let i in arr) {\n   console.log(i); // \"0\", \"1\", \"2\",\n}\n\nfor (let i of arr) {\n   console.log(i); // \"3\", \"4\", \"5\"\n} let 3 4 5 for let in console // \"0\", \"1\", \"2\", for let of console // \"3\", \"4\", \"5\"",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "3. What is the reason behind adding Symbol to ES6?",
+        "answer": "Symbols are a new type of object that can be used as distinct property names in objects. Using Symbols instead of strings allows separate modules to create properties that are not mutually exclusive. Symbols can also be kept private, preventing anyone who does not have direct access to the Symbol from accessing its properties. Symbols are a brand-new kind of primitive. Symbols, like numbers, strings, and booleans, have a function that can be used to produce them. Symbols, unlike the other primitives, do not have a literal syntax (similar to how strings have \") and can only be created using the Symbol constructor: let symbol = Symbol(); let symbol = Symbol(); let Symbol In truth, Symbols are only a little different means of attaching properties to an object; the well-known Symbols could easily be provided as standard methods, just like Object.prototype.has Own Property which appears in anything that inherits from Object.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "4. What is Babel?",
+        "answer": "Babel is an open-source JavaScript transpiler that converts ECMAScript 2015+ (ES6+) code into a backwards compatible version of JavaScript that can be run by previous JavaScript engines. Babel is a popular tool for exploiting the JavaScript programming language's latest capabilities. Babel plugins are used to convert syntax that isn't widely supported into a version that is backwards compatible. Arrow functions, for example, which are defined in ES6, are translated to ordinary function declarations. It's also possible to translate non-standard JavaScript syntax, such as JSX. Babel may automatically inject core-js polyfills for support capabilities that aren't available in JavaScript environments. Static methods like Array.from and built-ins like Promise, for example, are only accessible in ES6+, but they can be utilised in previous contexts by using core-js.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "5. Name some array methods that were introduced in ES6.",
+        "answer": "Methods Description\nArray.from() It will convert iterable values and array-like values into arrays.\nArray.of() It will create a new array instance from a variable number of arguments no matter what the number or the type of arguments are.\nArray.prototype.copyWithin() It will copy the portion of an array to a different place within the same array.\nArray.prototype.find() It will find an element in an array, based on certain parameters that are passed into this method.\nArray.prototype.findIndex() It will return the index of the first element of the given array that fulfills the given condition.\nArray.prototype.entries() It will return an array iterator object that can be used while looping through the keys and values of arrays.\nArray.prototype.keys() It will return an array iterator object as well as the keys of the array.\nArray.prototype.values() It will provide the value of each key.\nArray.prototype.fill() It will fill the specific array elements with a static value. Methods Description\nArray.from() It will convert iterable values and array-like values into arrays.\nArray.of() It will create a new array instance from a variable number of arguments no matter what the number or the type of arguments are.\nArray.prototype.copyWithin() It will copy the portion of an array to a different place within the same array.\nArray.prototype.find() It will find an element in an array, based on certain parameters that are passed into this method.\nArray.prototype.findIndex() It will return the index of the first element of the given array that fulfills the given condition.\nArray.prototype.entries() It will return an array iterator object that can be used while looping through the keys and values of arrays.\nArray.prototype.keys() It will return an array iterator object as well as the keys of the array.\nArray.prototype.values() It will provide the value of each key.\nArray.prototype.fill() It will fill the specific array elements with a static value. Methods Description Methods Description Methods Description Array.from() It will convert iterable values and array-like values into arrays.\nArray.of() It will create a new array instance from a variable number of arguments no matter what the number or the type of arguments are.\nArray.prototype.copyWithin() It will copy the portion of an array to a different place within the same array.\nArray.prototype.find() It will find an element in an array, based on certain parameters that are passed into this method.\nArray.prototype.findIndex() It will return the index of the first element of the given array that fulfills the given condition.\nArray.prototype.entries() It will return an array iterator object that can be used while looping through the keys and values of arrays.\nArray.prototype.keys() It will return an array iterator object as well as the keys of the array.\nArray.prototype.values() It will provide the value of each key.\nArray.prototype.fill() It will fill the specific array elements with a static value. Array.from() It will convert iterable values and array-like values into arrays. Array.from() It will convert iterable values and array-like values into arrays. Array.of() It will create a new array instance from a variable number of arguments no matter what the number or the type of arguments are. Array.of() It will create a new array instance from a variable number of arguments no matter what the number or the type of arguments are. Array.prototype.copyWithin() It will copy the portion of an array to a different place within the same array. Array.prototype.copyWithin() It will copy the portion of an array to a different place within the same array. Array.prototype.find() It will find an element in an array, based on certain parameters that are passed into this method. Array.prototype.find() It will find an element in an array, based on certain parameters that are passed into this method. Array.prototype.findIndex() It will return the index of the first element of the given array that fulfills the given condition. Array.prototype.findIndex() It will return the index of the first element of the given array that fulfills the given condition. Array.prototype.entries() It will return an array iterator object that can be used while looping through the keys and values of arrays. Array.prototype.entries() It will return an array iterator object that can be used while looping through the keys and values of arrays. Array.prototype.keys() It will return an array iterator object as well as the keys of the array. Array.prototype.keys() It will return an array iterator object as well as the keys of the array. Array.prototype.values() It will provide the value of each key. Array.prototype.values() It will provide the value of each key. Array.prototype.fill() It will fill the specific array elements with a static value. Array.prototype.fill() It will fill the specific array elements with a static value.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "6. Name some string functions introduced in ES6.",
+        "answer": "Methods Description\nstartsWith It determines if a string begins with the characters of a given string.\nendsWith It determines if a string ends with the characters of a given string.\nincludes It will return true if the given argument is present in the string.\nrepeat It creates and returns a new string which contains the given number of copies of the string on which this method was called, concatenated together. Methods Description\nstartsWith It determines if a string begins with the characters of a given string.\nendsWith It determines if a string ends with the characters of a given string.\nincludes It will return true if the given argument is present in the string.\nrepeat It creates and returns a new string which contains the given number of copies of the string on which this method was called, concatenated together. Methods Description Methods Description Methods Description startsWith It determines if a string begins with the characters of a given string.\nendsWith It determines if a string ends with the characters of a given string.\nincludes It will return true if the given argument is present in the string.\nrepeat It creates and returns a new string which contains the given number of copies of the string on which this method was called, concatenated together. startsWith It determines if a string begins with the characters of a given string. startsWith It determines if a string begins with the characters of a given string. endsWith It determines if a string ends with the characters of a given string. endsWith It determines if a string ends with the characters of a given string. includes It will return true if the given argument is present in the string. includes It will return true if the given argument is present in the string. repeat It creates and returns a new string which contains the given number of copies of the string on which this method was called, concatenated together. repeat It creates and returns a new string which contains the given number of copies of the string on which this method was called, concatenated together.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "7. Compare the ES5 and ES6 codes for object initialization and parsing returned objects.",
+        "answer": "Object initialization: Variables with the same name are frequently used to create object properties. Consider the following scenario: Object initialization: // ES5 code\nvar\n  x = 1, y = 2, z = 3;\n  ob = {\n    x : a,\n    y : b,\n    z : z\n  };\n\n// ob.x = 1, ob.y = 2, ob.z = 3 // ES5 code\nvar\n  x = 1, y = 2, z = 3;\n  ob = {\n    x : a,\n    y : b,\n    z : z\n  };\n\n// ob.x = 1, ob.y = 2, ob.z = 3 // ES5 code var 1 2 3 x y z // ob.x = 1, ob.y = 2, ob.z = 3 In ES6, there's no need for tedious repetition! // ES6 code\nconst\n  x = 1, y = 2, z = 3;\n  ob = {\n    x\n    y\n    z\n  };\n\n// ob.x = 1, ob.y = 2, ob.z = 3 // ES6 code\nconst\n  x = 1, y = 2, z = 3;\n  ob = {\n    x\n    y\n    z\n  };\n\n// ob.x = 1, ob.y = 2, ob.z = 3 // ES6 code const 1 2 3 // ob.x = 1, ob.y = 2, ob.z = 3 Parsing returned objects: Only one value can be returned by a function, but that value could be an object with hundreds of properties and/or methods. In ES5, you must first get the returned object and then extract values from it. Consider the following scenario: Parsing returned objects // ES5 code\nvar\n  ob = getObject(),\n  a = ob.a,\n  b = ob.b,\n  c = ob.c; // ES5 code\nvar\n  ob = getObject(),\n  a = ob.a,\n  b = ob.b,\n  c = ob.c; // ES5 code var This is made easier by ES6 destructuring, which eliminates the need to keep the object as a variable: // ES6 code\nconst { a , b , c } = getObject(); // ES6 code\nconst { a , b , c } = getObject(); // ES6 code const",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "8. How do you use Destructuring Assignment to swap variables?",
+        "answer": "var a = 1, b = 2;\n\n[a, b] = [b, a];\nconsole.log(a); // 2\nconsole.log(b); // 1 var a = 1, b = 2;\n\n[a, b] = [b, a];\nconsole.log(a); // 2\nconsole.log(b); // 1 var 1 2 console // 2 console // 1",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "9. What is the result of the spread operator array shown below?",
+        "answer": "[...'apple'] [...'apple'] 'apple' Output: ['a', 'p', 'p', 'l', 'e'] Output: Explanation: A string is an iterable type, and in an array, the spread operator transfers each character of an iterable to one element. As a result, each character in a string becomes an Array element. Explanation:",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "10. Which keyword can be used to deploy inheritance in ES6?",
+        "answer": "The extend keyword is used to implement inheritance in the ES6 language. There was no idea of classes in prior versions of Javascript, but with the release of ES6, Pure Object Oriented elements were added to the language. class Classroom {\n    constructor(students) {\n        this.students = students;\n    }\n    room() {\n        console.log('This class has  ' + this.students + ' students');\n    }\n}\n \nclass sectionA extends Classroom {\n    constructor(students) {\n        super(students);\n    }\n    sec() {\n        console.log('section A');\n    }\n}\n  \nlet secA = new sectionA(40);\n \nsecA.room();\nsecA.sec(); class Classroom {\n    constructor(students) {\n        this.students = students;\n    }\n    room() {\n        console.log('This class has  ' + this.students + ' students');\n    }\n}\n \nclass sectionA extends Classroom {\n    constructor(students) {\n        super(students);\n    }\n    sec() {\n        console.log('section A');\n    }\n}\n  \nlet secA = new sectionA(40);\n \nsecA.room();\nsecA.sec(); class Classroom class Classroom constructor(students) constructor students this room() room  console 'This class has  ' this ' students' class sectionA extends Classroom class sectionA extends Classroom constructor(students) constructor students super sec() sec  console 'section A' let new 40",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "11. Explain the Rest parameter in ES6.",
+        "answer": "It's a new feature in ES6 that enhances the ability to manage arguments. Indefinite arguments can be represented as an array using rest parameters. We can invoke a function with any number of parameters by utilizing the rest parameter. function display(...args) {  \n    let ans = 0;  \n    for (let i of args) {  \n        ans *= i;  \n    }  \n    console.log(\"Product = \"+ans);  \n  }  \n    \n  display(4, 2, 3); function display(...args) {  \n    let ans = 0;  \n    for (let i of args) {  \n        ans *= i;  \n    }  \n    console.log(\"Product = \"+ans);  \n  }  \n    \n  display(4, 2, 3); function display(...args) function display ...args let 0 for let of console \"Product = \" 4 2 3 Output: Output: Product = 24 Product = 24 24",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "12. What are the object oriented features supported in ES6.",
+        "answer": "The object-oriented features supported in ES6 are: Classes: We can create classes in ES6. The class function essentially builds a template from which we may later create objects. When a new instance of the class is created, the constructor method is invoked.\nMethods: Static methods can also be found in classes. A static method, unlike an object, is a function that is bound to the class. A static method can't be called from a class instance.\nLet's take a look at getters and setters for a moment. Encapsulation is a fundamental notion in OOP. Data (object properties) should not be directly accessed or updated from outside the object, which is a crucial aspect of encapsulation. A getter (access) or a setter (modify) are particular methods we define in our class to access or edit a property.\nInheritance: It is also possible for classes to inherit from one another. The parent is the class that is being inherited from, and the child is the class that is inheriting from the parent. Classes: We can create classes in ES6. The class function essentially builds a template from which we may later create objects. When a new instance of the class is created, the constructor method is invoked. Classes Methods: Static methods can also be found in classes. A static method, unlike an object, is a function that is bound to the class. A static method can't be called from a class instance.\nLet's take a look at getters and setters for a moment. Encapsulation is a fundamental notion in OOP. Data (object properties) should not be directly accessed or updated from outside the object, which is a crucial aspect of encapsulation. A getter (access) or a setter (modify) are particular methods we define in our class to access or edit a property. Methods  Encapsulation Inheritance: It is also possible for classes to inherit from one another. The parent is the class that is being inherited from, and the child is the class that is inheriting from the parent. Inheritance ",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "13. Give a thorough comparison between ES5 and ES6.",
+        "answer": "ES5 ES6\nES5 is the fifth edition of the ECMAScript which was introduced in 2009. ES6 is the sixth edition of the ECMAScript which was introduced in 2015.\nPrimitive data types that are string, boolean, number, null, and undefined are supported by ES5. There are a few additions to the JavaScript data types in ES6.  For supporting unique values, a new primitive data type 'symbol' was introduced.\nIn ES5, we could define the variables by using the var keyword only. In ES6, in addition to var, there are two new methods to define variables: let and const.\nBoth function and return keywords are used in order to define a function in ES5. An arrow function is a newly added feature in ES6 in which we don't require the function keyword in order to define the function.\nIn ES5, a for loop is used to iterate over elements. ES6 introduced the idea of for...of loop in order to iterate over the values of the iterable objects. ES5 ES6\nES5 is the fifth edition of the ECMAScript which was introduced in 2009. ES6 is the sixth edition of the ECMAScript which was introduced in 2015.\nPrimitive data types that are string, boolean, number, null, and undefined are supported by ES5. There are a few additions to the JavaScript data types in ES6.  For supporting unique values, a new primitive data type 'symbol' was introduced.\nIn ES5, we could define the variables by using the var keyword only. In ES6, in addition to var, there are two new methods to define variables: let and const.\nBoth function and return keywords are used in order to define a function in ES5. An arrow function is a newly added feature in ES6 in which we don't require the function keyword in order to define the function.\nIn ES5, a for loop is used to iterate over elements. ES6 introduced the idea of for...of loop in order to iterate over the values of the iterable objects. ES5 ES6 ES5 ES6 ES5 ES6 ES5 is the fifth edition of the ECMAScript which was introduced in 2009. ES6 is the sixth edition of the ECMAScript which was introduced in 2015.\nPrimitive data types that are string, boolean, number, null, and undefined are supported by ES5. There are a few additions to the JavaScript data types in ES6.  For supporting unique values, a new primitive data type 'symbol' was introduced.\nIn ES5, we could define the variables by using the var keyword only. In ES6, in addition to var, there are two new methods to define variables: let and const.\nBoth function and return keywords are used in order to define a function in ES5. An arrow function is a newly added feature in ES6 in which we don't require the function keyword in order to define the function.\nIn ES5, a for loop is used to iterate over elements. ES6 introduced the idea of for...of loop in order to iterate over the values of the iterable objects. ES5 is the fifth edition of the ECMAScript which was introduced in 2009. ES6 is the sixth edition of the ECMAScript which was introduced in 2015. ES5 is the fifth edition of the ECMAScript which was introduced in 2009. ES6 is the sixth edition of the ECMAScript which was introduced in 2015. Primitive data types that are string, boolean, number, null, and undefined are supported by ES5. There are a few additions to the JavaScript data types in ES6.  For supporting unique values, a new primitive data type 'symbol' was introduced. Primitive data types that are string, boolean, number, null, and undefined are supported by ES5. string, boolean, number, null, undefined There are a few additions to the JavaScript data types in ES6.  For supporting unique values, a new primitive data type 'symbol' was introduced. 'symbol' In ES5, we could define the variables by using the var keyword only. In ES6, in addition to var, there are two new methods to define variables: let and const. In ES5, we could define the variables by using the var keyword only. var In ES6, in addition to var, there are two new methods to define variables: let and const. let const Both function and return keywords are used in order to define a function in ES5. An arrow function is a newly added feature in ES6 in which we don't require the function keyword in order to define the function. Both function and return keywords are used in order to define a function in ES5. function return An arrow function is a newly added feature in ES6 in which we don't require the function keyword in order to define the function. function In ES5, a for loop is used to iterate over elements. ES6 introduced the idea of for...of loop in order to iterate over the values of the iterable objects. In ES5, a for loop is used to iterate over elements. for ES6 introduced the idea of for...of loop in order to iterate over the values of the iterable objects. for...of",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "14. What is the difference between let and const? What distinguishes both from var?",
+        "answer": "When declaring any variable in JavaScript, we used the var keyword. Var is a function scoped keyword. Within a function, we can access the variable. When we need to create a new scope, we wrap the code in a function. Both let and const have block scope. If you use these keywords to declare a variable, it will only exist within the innermost block that surrounds them. If you declare a variable with let inside a block (for example, if a condition or a for-loop), it can only be accessed within that block. The variables declared with the let keyword are mutable, which means that their values can be changed. It's akin to the var keyword, but with the added benefit of block scoping. The variables declared with the const keyword are block-scoped and immutable. When variables are declared with the const keyword, their value cannot be modified or reassigned.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "15. Discuss the arrow function.",
+        "answer": "In ES6, arrow functions are introduced. The shorthand syntax for writing ES6 functions is arrow functions. The arrow function's definition consists of parameters, followed by an arrow (=>), and the function's body. The 'fat arrow' function is another name for the Arrow function. We won't be able to employ them as constructors. const function_name = (arg_1, arg_2, arg_3, ...) => {  \n    //body of the function  \n} const function_name = (arg_1, arg_2, arg_3, ...) => {  \n    //body of the function  \n} const (arg_1, arg_2, arg_3, ...) => arg_1, arg_2, arg_3, ... //body of the function Few things to note: It reduces the size of the code.\nFor a single-line function, the return statement is optional.\nBind the context lexically.\nFor a single-line statement, functional braces are not required.\nDoesn’t work with new It reduces the size of the code. For a single-line function, the return statement is optional. Bind the context lexically. For a single-line statement, functional braces are not required. Doesn’t work with new new new",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "16. When should one not use arrow functions?",
+        "answer": "One should not use arrow functions in the following cases: Function Hoisting, Named Functions: Function Hoisting, Named Functions: Function Hoisting, Named Functions: As arrow functions are anonymous, we cannot use them when we want function hoisting or when we want to use named functions. Object methods: Object methods: Object methods: var a = {\n  b: 7,\n  func: () => {\n    this.b--;\n  }\n} var a = {\n  b: 7,\n  func: () => {\n    this.b--;\n  }\n} var b 7 func () => this The value of b does not drop when you call a.func. It's because this isn't bound to anything and will inherit the value from its parent scope. Callback functions with dynamic context: Callback functions with dynamic context: Callback functions with dynamic context: var btn = document.getElementById('clickMe');\nbtn.addEventListener('click', () => {\n  this.classList.toggle('on');\n}); var btn = document.getElementById('clickMe');\nbtn.addEventListener('click', () => {\n  this.classList.toggle('on');\n}); var document 'clickMe' 'click' () => this 'on' We'd get a TypeError if we clicked the button. This is due to the fact that this is not bound to the button, but rather to its parent scope. this/arguments: this/arguments: this/arguments: Since arrow functions don’t have this/arguments of their own and they depend on their outer context, we cannot use them in cases where we need to use this/arguments in a function.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "17. What is the generator function?",
+        "answer": "This is a newly introduced feature in ES6. The Generator function returns an object after generating several values over time. We can iterate over this object and extract values from the function one by one. A generator function returns an iterable object when called. In ES6, we use the * sign for a generator function along with the new ‘yield' keyword. function *Numbers() {\n    let num = 1;\n    while(true) {\n        yield num++;\n    }\n}\n  \nvar gen = Numbers();\n \n// Loop to print the first\n// 5 Generated numbers\nfor (var i = 0; i < 5; i++) {\n \n    // Generate the next number\n    document.write(gen.next().value);\n \n    // New Line\n    document.write(\"<br>\");\n} function *Numbers() {\n    let num = 1;\n    while(true) {\n        yield num++;\n    }\n}\n  \nvar gen = Numbers();\n \n// Loop to print the first\n// 5 Generated numbers\nfor (var i = 0; i < 5; i++) {\n \n    // Generate the next number\n    document.write(gen.next().value);\n \n    // New Line\n    document.write(\"<br>\");\n} function *Numbers() function Numbers  let 1 while true yield var // Loop to print the first // 5 Generated numbers for var 0 5 // Generate the next number document // New Line document \"<br>\" Output: Output: 1\n2\n3\n4\n5 1\n2\n3\n4\n5 1 2 3 4 5 The yielded value becomes the next value in the sequence each time yield is invoked. Also, generators compute their output values on demand, allowing them to efficiently represent expensive to compute sequences or even infinite sequences.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "18. What is the “spread” operator in ES6?",
+        "answer": "The list of parameters is obtained using the spread operator. Three dots (...) are used to represent it. The spread operator divides an iterable (such as an array or a string) into individual elements. It's mostly used in JavaScript to make shallow copies of JS. It improves the readability of your code by making it more concise. The spread operator can be used to join two arrays together or to concatenate them. let arr1 = [4, 5, 6];  \n    \nlet arr2 = [1, 2, 3, ...arr1, 7, 8, 9, 10];  \n    \nconsole.log(arr2); let arr1 = [4, 5, 6];  \n    \nlet arr2 = [1, 2, 3, ...arr1, 7, 8, 9, 10];  \n    \nconsole.log(arr2); let 4 5 6 let 1 2 3 7 8 9 10 console Output: Output: [ 1 2 3 4 5 6 7 8 9 10 ] [ 1 2 3 4 5 6 7 8 9 10 ] 1 2 3 4 5 6 7 8 9 10",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "19. Explain Destructuring in ES6.",
+        "answer": "Destructuring was introduced in ES6 as a way to extract data from arrays and objects into a single variable. It is possible to extract smaller fragments from objects and arrays using this method. The following is an example. let greeting =['Good','Morning'];  \nlet [g1, g2] = greeting;  \nconsole.log (g1, g2); let greeting =['Good','Morning'];  \nlet [g1, g2] = greeting;  \nconsole.log (g1, g2); let 'Good' 'Morning' let console Output: Output: Good Morning Good Morning",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "20. What are Promises in ES6?",
+        "answer": "Asynchronous programming is a concept found in JavaScript. The processes are run separately from the main thread in asynchronous programming. Promises are the most convenient approach to deal with asynchronous programming in ES6. Depending on the outcome of the procedure, a promise can be refused or resolved. Callbacks were used to cope with asynchronous programming before promises were introduced in ES6. However, it caused the problem of callback hell, which was addressed with the introduction of promises. (A callback is a function that is performed after another function has completed. When working with events in JavaScript, callback is very useful. As an argument to another function, we pass a function into another function. When we use callbacks in our web applications, it's common for them to get nested. Excessive callback usage clogs up your web application and leads to callback hell.)",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "21. Mention some popular features of ES6.",
+        "answer": "Some of the common ES6 features are: Supports constants/immutable variables.\nBlock scope support for all variables, constants and functions.\nIntroduction to arrow functions\nHandling extended parameter\nDefault parameters\nExtended and template literals\nDe-structuring assignment\nPromises\nClasses\nModules\nCollections\nSupports Map/Set & Weak-map/Weak-Set\nLocalization, meta-programming, internationalization Supports constants/immutable variables. Block scope support for all variables, constants and functions. Introduction to arrow functions Handling extended parameter Default parameters Extended and template literals De-structuring assignment Promises Classes Modules Collections Supports Map/Set & Weak-map/Weak-Set Localization, meta-programming, internationalization",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "22. Discuss the template literals in ES6.",
+        "answer": "Template literals are a brand-new feature in ES6. It makes producing multiline strings and performing string interpolation simple. Template literals, also known as string literals, allow for embedded expressions. Template literals were referred to as template strings prior to ES6. The backtick (``) character is used to enclose template literals. The dollar sign and curly brackets (${expression}) are used to denote placeholders in template literals. If we need to use an expression within the backticks, we can put it in the (${expression}) variable. let s1 = \"Good\";  \n  \nlet s2 = \"Day\";  \n   \nlet s = `${s1} ${s2}`;  \nconsole.log(s); let s1 = \"Good\";  \n  \nlet s2 = \"Day\";  \n   \nlet s = `${s1} ${s2}`;  \nconsole.log(s); let \"Good\" let \"Day\" let `${s1} ${s2}` ${s1} ${s2} console Output: Output: Good Day Good Day",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "23. Why should one use ES6 classes?",
+        "answer": "Developers have discovered that ES6 classes are really handy. The following are some of the most common applications of ES6 classes: The syntax of ES6 classes is simpler and less prone to errors.\nWhen it comes to building up inheritance hierarchies, ES6 is the ideal option because it combines new and old syntax, reducing errors and simplifying the process.\nES6 classes prevent developers from making mistakes when using a new operator. If this proves to be an invalid object for the constructor, classes eliminate this issue by having the constructor throw an exception.\nClasses can also be used to call a method from the prototype's version. With the new ES6 syntax, this version is significantly easier to use than previous versions. The syntax of ES6 classes is simpler and less prone to errors. When it comes to building up inheritance hierarchies, ES6 is the ideal option because it combines new and old syntax, reducing errors and simplifying the process. ES6 classes prevent developers from making mistakes when using a new operator. If this proves to be an invalid object for the constructor, classes eliminate this issue by having the constructor throw an exception. Classes can also be used to call a method from the prototype's version. With the new ES6 syntax, this version is significantly easier to use than previous versions.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "24. How can you create a class in ES6?",
+        "answer": "The keyword class is used to create a class in ES6. We can use class expressions or class declarations to include classes in our code. Only functions and constructors are allowed in a class definition. These components are collectively referred to as the class's data members. Constructors in classes are responsible for allocating memory to the class's objects. A class's functions are in charge of performing actions on the objects. Syntax: In ES5 Syntax: In ES5 var varName = new className {    \n} var varName = new className {    \n} var new Syntax: In ES6 (Using class keyword) Syntax: In ES6 (Using class keyword) class className{    \n} class className{    \n} class className class className",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "25. What is a class expression?",
+        "answer": "In ES6, one way to define a class is to use the Class expression. Class expressions, like function expressions, can be named or unnamed. If the class is named, the name is unique to the class body. Prototype-based inheritance is used in JavaScript classes. var Product = class {\n    constructor (num1, num2) {\n    this.num1 = num1;\n    this.num2 = num2;\n    }\n    multiplication() {\n    return this.num1 * this.num2;\n    }\n}\nconsole.log(new Product(5,8).multiplication());\n// expected output: 40 var Product = class {\n    constructor (num1, num2) {\n    this.num1 = num1;\n    this.num2 = num2;\n    }\n    multiplication() {\n    return this.num1 * this.num2;\n    }\n}\nconsole.log(new Product(5,8).multiplication());\n// expected output: 40 var class class constructor num1, num2 this this multiplication() multiplication  return this this console new 5 8 // expected output: 40 The syntax of a class expression is similar to that of a class statement (declaration). Class expressions, on the other hand, allow you to omit the class name (“binding identifier”), which is not possible with class statements. Additionally, unlike class declarations, class expressions allow you to redefine/re-declare classes without causing any type errors. It is not required to use the constructor property. The type of classes created with this keyword will always be \"function.\"",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "26. What do you understand about default parameters?",
+        "answer": "If no value or undefined is passed, we can use the default parameters to set default values for named parameters. var display = (x , y = 2) => {  \n    console.log(x + \" \" + y);  \n}  \ndisplay(1); var display = (x , y = 2) => {  \n    console.log(x + \" \" + y);  \n}  \ndisplay(1); var (x , y = 2) => x , y = 2 2 console \" \" 1 Output: Output: 1 2 1 2 1 2",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "27. What do you understand about IIFE (Immediately Invoked Function Expressions)?",
+        "answer": "IIFE is a JavaScript function that starts running as soon as it is defined. The Self-Executing Anonymous Function is another name for it. It is divided into two major sections, which are as follows: The first part is a lexical scope (static scope) anonymous function that is enclosed by the Grouping operator ().\nThe IIFE, which is used by JavaScript, is created in the second part. The function will be directly interpreted by the engine. The first part is a lexical scope (static scope) anonymous function that is enclosed by the Grouping operator (). The IIFE, which is used by JavaScript, is created in the second part. The function will be directly interpreted by the engine. (func_()    \n{    \n   console.log(\"Good Day\");     \n})(); (func_()    \n{    \n   console.log(\"Good Day\");     \n})(); func_() func_  console \"Good Day\" Output: Output: Good Day Good Day",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "28. What are the states of Promises in ES6?",
+        "answer": "Promises mainly possess three states as follows: Pending: This refers to the initial state of every promise. It indicates that the result has not yet been computed.\nFulfilled: It refers to the completion of a task.\nRejected: It indicates the failure that arises during computation. Pending: This refers to the initial state of every promise. It indicates that the result has not yet been computed. Pending: Fulfilled: It refers to the completion of a task. Fulfilled: Rejected: It indicates the failure that arises during computation. Rejected: The promise will be immutable once it has been fulfilled or rejected. A rejected function and a resolve function are the two arguments passed into the Promise() constructor. It returns either the first or second parameter, depending on the asynchronous operation.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "29. What is Export Default and Named Export in ES6?",
+        "answer": "With the help of the import statement, the export statement comes into picture when one needs to export functions, objects, and variables to other JavaScript modules. There are two methods for exporting: Named Export: Named exports are useful when one has to export multiple values. The name of the imported module must match that of the exported module. Named Export: Named exports are useful when one has to export multiple values. The name of the imported module must match that of the exported module. Named Export: Example: Example: //file rectangle.js\nfunction perimeter(x, y) {\n  return 2 * (x + y);\n}\nfunction area(x, y) {\n  return x * y;\n}\nexport { perimeter, area };\n  \n   \n//while importing the functions in test.js\nimport { perimeter, area } from './rectangle;\nconsole.log(perimeter(4, 6)) //20\nconsole.log(area(4, 6)) //24 //file rectangle.js\nfunction perimeter(x, y) {\n  return 2 * (x + y);\n}\nfunction area(x, y) {\n  return x * y;\n}\nexport { perimeter, area };\n  \n   \n//while importing the functions in test.js\nimport { perimeter, area } from './rectangle;\nconsole.log(perimeter(4, 6)) //20\nconsole.log(area(4, 6)) //24 //file rectangle.js function perimeter(x, y) function perimeter x, y return 2 function area(x, y) function area x, y return export //while importing the functions in test.js import from './rectangle;\nconsole.log(perimeter(4, 6)) //20\nconsole.log(area(4, 6)) //24 Output: Output: 20\n24 20\n24 20 24 Default Export: There is only one default export per module when it comes to default exports. A function, a class, an object, or anything else can be used as a default export. In default export, the naming of imports is fully autonomous, and we can choose any name we like. Default Export: There is only one default export per module when it comes to default exports. A function, a class, an object, or anything else can be used as a default export. In default export, the naming of imports is fully autonomous, and we can choose any name we like. Default Export: Example: Example: // file module.js\nvar a = 6; \nexport default a;\n  \n// test.js\n// while importing a in test.js\nimport b from './module'; \nconsole.log(b);        \n// output will be 6 // file module.js\nvar a = 6; \nexport default a;\n  \n// test.js\n// while importing a in test.js\nimport b from './module'; \nconsole.log(b);        \n// output will be 6 // file module.js var 6 export default // test.js // while importing a in test.js import from './module' console // output will be 6 Output: Output: 6 6 6 Using Named and Default Exports at the same time: In the same file, you can utilise both Named and Default exports. It means they'll both be imported into the same document. Using Named and Default Exports at the same time: In the same file, you can utilise both Named and Default exports. It means they'll both be imported into the same document. Using Named and Default Exports at the same time //index.js\nvar a = 3;\nconst b = 8;\nfunction show() {\n   return \"This is a default export.\"\n}\nfunction product(a , b) {\n  return a * b;\n}\nexport { show as default, a, b, product }; //index.js\nvar a = 3;\nconst b = 8;\nfunction show() {\n   return \"This is a default export.\"\n}\nfunction product(a , b) {\n  return a * b;\n}\nexport { show as default, a, b, product }; //index.js var 3 const 8 function show() function show  return \"This is a default export.\" function product(a , b) function product a , b return export as default //test.js file\nimport any_other_name, { a, b, product} from './index.js';\nconsole.log(any_other_name()); //This is a default export.\nconsole.log(a); //3 //test.js file\nimport any_other_name, { a, b, product} from './index.js';\nconsole.log(any_other_name()); //This is a default export.\nconsole.log(a); //3 //test.js file import from './index.js' console //This is a default export. console //3 Output: Output: This is a default export.\n3 This is a default export.\n3 default export 3",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "1. What is the Prototype Design Pattern?",
+        "answer": "The Prototype Pattern creates new objects, but instead of returning uninitialized objects, it returns objects with values copied from a prototype - or sample - object. The Properties pattern is another name for the Prototype pattern. The initialization of business objects with values that match the database's default settings is an example of where the Prototype pattern comes in handy. The default values from the prototype object are replicated into a newly generated business object. The Prototype pattern is rarely used in traditional languages, but JavaScript, as a prototypal language, employs it in the creation of new objects and prototypes.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "2. What is a WeakMap in ES6? How is it different from a Map?",
+        "answer": "The WeakMap is a collection of key/value pairs, just like the Map. The keys of WeakMap, on the other hand, must be objects, whereas the values can be anything. The object references in the keys are held weakly, which means that if there is no other reference to the object, it will be eligible for garbage collection. WeakMap, but not Map, permits the garbage collector to complete its duty. The array of keys would preserve references to key objects in manually constructed maps, prohibiting them from being garbage collected. References to key objects in native WeakMaps are held \"weakly,\" which means they do not hinder garbage collection if there is no other reference to the object. The Map API and the WeakMap API are the same. WeakMap keys, on the other hand, are not enumerable, unlike Map objects. There are also no methods that return a list of keys. If they were, the list would be non-deterministic because it would be dependent on the state of garbage collection. A Map should be used if we need a list of keys.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "3. What is the advantage of using the arrow syntax for a constructor method?",
+        "answer": "The main benefit of utilising an arrow function as a method within a constructor is that the value of this is set at the moment of function generation and cannot be changed later. As a result, whenever the constructor is used to create a new object, this refers to that object. this this this this const Shape = function(shapeName) {\n  this.shapeName = shapeName;\n  this.showName1 = function() { console.log(this.shapeName); };\n  this.showName2 = () => { console.log(this.shapeName); };\n};\n\nconst circle = new Shape('Circle');\nconst square = new Shape('Square');\n\ncircle.showName1(); // Circle\ncircle.showName2(); // Square\n\n// The regular function can have its 'this' value changed, but the arrow function cannot\ncircle.showName1.call(square); // Square (because \"this\" is now the square object)\ncircle.showName2.call(square); // Circle\n\ncircle.showName1.apply(square); // Square (because 'this' is now the square object)\ncircle.showName2.apply(square); // Circle\n\ncircle.showName1.bind(square)(); // Square (because 'this' is now the square object)\ncircle.showName2.bind(square)(); // Circle\n\nvar showNameFromPic1 = circle.showName1;\nsayNameFromPic1(); // undefined (because 'this' is now the pic object)\n\nvar showNameFromPic2 = circle.showName2;\nshowNameFromPic2(); // Circle const Shape = function(shapeName) {\n  this.shapeName = shapeName;\n  this.showName1 = function() { console.log(this.shapeName); };\n  this.showName2 = () => { console.log(this.shapeName); };\n};\n\nconst circle = new Shape('Circle');\nconst square = new Shape('Square');\n\ncircle.showName1(); // Circle\ncircle.showName2(); // Square\n\n// The regular function can have its 'this' value changed, but the arrow function cannot\ncircle.showName1.call(square); // Square (because \"this\" is now the square object)\ncircle.showName2.call(square); // Circle\n\ncircle.showName1.apply(square); // Square (because 'this' is now the square object)\ncircle.showName2.apply(square); // Circle\n\ncircle.showName1.bind(square)(); // Square (because 'this' is now the square object)\ncircle.showName2.bind(square)(); // Circle\n\nvar showNameFromPic1 = circle.showName1;\nsayNameFromPic1(); // undefined (because 'this' is now the pic object)\n\nvar showNameFromPic2 = circle.showName2;\nshowNameFromPic2(); // Circle const function(shapeName) function shapeName this this function() function  console this this () => console this const new 'Circle' const new 'Square' // Circle // Square // The regular function can have its 'this' value changed, but the arrow function cannot // Square (because \"this\" is now the square object) // Circle // Square (because 'this' is now the square object) // Circle // Square (because 'this' is now the square object) // Circle var // undefined (because 'this' is now the pic object) var // Circle The major point here is that for a normal function, this can be modified, but for an arrow function, the context is always the same. You won't have to worry about the context changing if you pass your arrow function around to other areas of your application. this this",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "4. What is a Temporal Dead Zone?",
+        "answer": "Variable Hoisting does not apply to let bindings in ES6, so let declarations do not rise to the top of the current execution context. A ReferenceError is thrown if the variable in the block is referenced before it is initialized (unlike a variable declared with var, which will just possess the undefined value). From the beginning of the block until the initialization is performed, the variable is in a \"temporal dead zone.\" console.log(a); // undefined\nconsole.log(b); // causes ReferenceError: aLet is not defined\nvar a = 1;\nlet b = 2; console.log(a); // undefined\nconsole.log(b); // causes ReferenceError: aLet is not defined\nvar a = 1;\nlet b = 2; console // undefined console // causes ReferenceError: aLet is not defined var 1 let 2",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "5. What is the difference between Set and WeakSet in ES6?",
+        "answer": "Set: By using the Set() class, users can define an array-like heterogeneous iterable object, which will consist of distinct values. The elements should not just be distinct by values but also by types. i.e. \"2\" and 2 will be considered as different. Set var set1= new Set([0, 1, 2]);\n\nset1.add(3); // 0, 1, 2, 3\nset1.add(2); // 0, 1, 2, 3\nset1.add({x:1, y:2}); // 0, 1, 2, {x:1, y:2}\nset1.add(\"Good\"); // 0, 1, 2, {x:1, y:2}, 'Good'\n \nset1.has(\"Hello\"); // false\nset1.has(\"Good\");  // true\nset1.delete(\"Good\"); // 'Good' deleted\nset1.has(\"Good\"); // false\n \nset1.size; // 4\nset1.clear(); // Set Cleared var set1= new Set([0, 1, 2]);\n\nset1.add(3); // 0, 1, 2, 3\nset1.add(2); // 0, 1, 2, 3\nset1.add({x:1, y:2}); // 0, 1, 2, {x:1, y:2}\nset1.add(\"Good\"); // 0, 1, 2, {x:1, y:2}, 'Good'\n \nset1.has(\"Hello\"); // false\nset1.has(\"Good\");  // true\nset1.delete(\"Good\"); // 'Good' deleted\nset1.has(\"Good\"); // false\n \nset1.size; // 4\nset1.clear(); // Set Cleared var new Set 0 1 2 3 // 0, 1, 2, 3 2 // 0, 1, 2, 3 x 1 y 2 // 0, 1, 2, {x:1, y:2} \"Good\" // 0, 1, 2, {x:1, y:2}, 'Good' \"Hello\" // false \"Good\" // true \"Good\" // 'Good' deleted \"Good\" // false // 4 // Set Cleared WeakSet(): A WeakSet() is a collection that is similar to a Set because it retains unique values; but it can only hold Objects. If an object in your WeakSet has no other reference variables left, it will be removed automatically. WeakSet() var weakSet1 = new WeakSet([{x:1}]);\nvar ob1 = {o:1};\nvar ob2 = {o:2};\n\nweakSet1.has(ob1); //false\nweakSet1.add(ob1); \nweakSet1.add(ob2); \nweakSet1.has(ob2); // true\ndelete ob1; // you can't delete objects in this way. Use scope to execute this.\nmyWeakSet.has(ob1); // false, because you deleted ob1, so WeakSet releases it automatically\nmyWeakSet.delete(ob2); // ob2 deleted from the set\nmyWeakSet.add(1); // ERROR, no primitive value var weakSet1 = new WeakSet([{x:1}]);\nvar ob1 = {o:1};\nvar ob2 = {o:2};\n\nweakSet1.has(ob1); //false\nweakSet1.add(ob1); \nweakSet1.add(ob2); \nweakSet1.has(ob2); // true\ndelete ob1; // you can't delete objects in this way. Use scope to execute this.\nmyWeakSet.has(ob1); // false, because you deleted ob1, so WeakSet releases it automatically\nmyWeakSet.delete(ob2); // ob2 deleted from the set\nmyWeakSet.add(1); // ERROR, no primitive value var new WeakSet x 1 var o 1 var o 2 //false // true delete // you can't delete objects in this way. Use scope to execute this. // false, because you deleted ob1, so WeakSet releases it automatically // ob2 deleted from the set 1 // ERROR, no primitive value Set WeakSet\nA set can contain all types of values. A weakSet can only contain objects.\nUse .size to find the number of elements. Use .length to find the number of elements.\n.forEach() is available for iteration. .forEach() is not available for iteration.\nNothing is auto-destroyed. An element object will be auto released to the garbage collector if it has no other reference left. Set WeakSet\nA set can contain all types of values. A weakSet can only contain objects.\nUse .size to find the number of elements. Use .length to find the number of elements.\n.forEach() is available for iteration. .forEach() is not available for iteration.\nNothing is auto-destroyed. An element object will be auto released to the garbage collector if it has no other reference left. Set WeakSet Set WeakSet Set WeakSet A set can contain all types of values. A weakSet can only contain objects.\nUse .size to find the number of elements. Use .length to find the number of elements.\n.forEach() is available for iteration. .forEach() is not available for iteration.\nNothing is auto-destroyed. An element object will be auto released to the garbage collector if it has no other reference left. A set can contain all types of values. A weakSet can only contain objects. A set can contain all types of values. A weakSet can only contain objects. Use .size to find the number of elements. Use .length to find the number of elements. Use .size to find the number of elements. Use .length to find the number of elements. .forEach() is available for iteration. .forEach() is not available for iteration. .forEach() is available for iteration. .forEach() is not available for iteration. Nothing is auto-destroyed. An element object will be auto released to the garbage collector if it has no other reference left. Nothing is auto-destroyed. An element object will be auto released to the garbage collector if it has no other reference left.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "6. What are Proxy in ES6?",
+        "answer": "The proxy objects are used to customize behaviour for basic operations like property lookup, assignment, enumeration, function invocation, etc. For basic actions, the Proxy object is used to create custom behaviour (e.g. property lookup, assignment, enumeration, function invocation, etc). We need to define three crucial terms: handler —  a placeholder object that holds the trap(s)\ntraps — the method(s) that let you access a property.\ntarget — the virtualized object by the proxy handler —  a placeholder object that holds the trap(s) handler traps — the method(s) that let you access a property. traps target — the virtualized object by the proxy target Example: Example: const handle = {\n  get: function(ob, prp) {\n    return prp in ob ?\n      ob[prp] :\n      37;\n  }\n};\n\nconst x = new Proxy({}, handle);\nx.a = 2;\nx.b = undefined;\n\nconsole.log(x.a, x.b); \n//  2, undefined\n\nconsole.log('c' in x, x.c); \n//  false, 37 const handle = {\n  get: function(ob, prp) {\n    return prp in ob ?\n      ob[prp] :\n      37;\n  }\n};\n\nconst x = new Proxy({}, handle);\nx.a = 2;\nx.b = undefined;\n\nconsole.log(x.a, x.b); \n//  2, undefined\n\nconsole.log('c' in x, x.c); \n//  false, 37 const get function(ob, prp) function ob, prp return in 37 const new Proxy 2 undefined console //  2, undefined console 'c' in //  false, 37 Proxies have a wide range of real-world applications. validation\ncorrection in value\nextensions for property lookup\nproperty accesses are being tracked\nreferences that can be revoked\nimplementation of the DOM in javascript validation correction in value extensions for property lookup property accesses are being tracked references that can be revoked implementation of the DOM in javascript",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "7. What is the difference between const and Object.freeze().",
+        "answer": "Const is a property that applies to bindings (\"variables\"). It creates an immutable binding, which means you can't change its value. Const const a = {\n    b: \"apple\"\n};\nlet c = {\n    d: \"mango\"\n};\na = c; // ERROR \"a\" is read-only const a = {\n    b: \"apple\"\n};\nlet c = {\n    d: \"mango\"\n};\na = c; // ERROR \"a\" is read-only const b \"apple\" let d \"mango\" // ERROR \"a\" is read-only Object.freeze() is a function that works with values, primarily object values. It makes an object immutable, meaning that its properties cannot be changed. Object.freeze() freeze() returns the same object that was supplied to it as a parameter. It does not make a frozen copy. If the parameter to this method is not an object (a primitive) in ES5, a TypeError will occur. A non-object argument in ES6 will be treated as if it were a frozen regular object and will be returned. freeze() let a = {\n    b: \"apple\"\n};\nlet c = {\n    d: \"mango\"\n};\nObject.freeze(a);\na.b = \"kiwi\"; //TypeError: Cannot assign to read only property 'name' of object\nconsole.log(a); let a = {\n    b: \"apple\"\n};\nlet c = {\n    d: \"mango\"\n};\nObject.freeze(a);\na.b = \"kiwi\"; //TypeError: Cannot assign to read only property 'name' of object\nconsole.log(a); let b \"apple\" let d \"mango\" Object \"kiwi\" //TypeError: Cannot assign to read only property 'name' of object console",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "8. Why does the following not work as an IIFE (Immediately Invoked Function Expressions) ? What needs to be modified in order for it to be classified as an IIFE?",
+        "answer": "function f(){ }(); function f(){ }(); function f() function f  The JavaScript parser interprets the function f(){ }(); as function f(){ } and (); where the former is a function declaration while the latter (a pair of brackets) is an attempt to execute a function without specifying a name, resulting in Uncaught SyntaxError: Unexpected token ). (function f(){ })() and (function f(){ }()) are two ways to fix it that involve adding more brackets. These functions are not available in the global scope, and you can even omit their names if you don't need to refer to them within the body. You can also use the void operator: void function f(){ }(); .However, there is a drawback in this strategy. Because the evaluation of a given expression is always undefined, you can't use your IIFE function if it returns anything. Consider the following scenario: // Don't add JS syntax to this code block to prevent Prettier from formatting it.\nconst f = void\nfunction b() {\n    return 'f';\n}();\n\nconsole.log(f); // undefined // Don't add JS syntax to this code block to prevent Prettier from formatting it.\nconst f = void\nfunction b() {\n    return 'f';\n}();\n\nconsole.log(f); // undefined // Don't add JS syntax to this code block to prevent Prettier from formatting it. const void function b() function b  return 'f' console // undefined",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "9. Explain Internationalization and Localization.",
+        "answer": "These are JavaScript standard APIs that assist with operations such as collation, number formatting, currency formatting, and date and time formatting. Collation: It is a method for searching and sorting strings within a collection. It has a locale argument and is Unicode-aware.\nNumber Formatting: Localized separators and digit grouping can be used to format numbers. Style formatting, numeral system, percent, and precision are among the other items.\nCurrency formatting: Currency symbols, localized separators, and digit grouping are the most common ways to format numbers.\nDate and time formatting: Localized separators and ordering are used for formatting. The format can be short or long, and other characteristics such as location and time zone can be included. Collation: It is a method for searching and sorting strings within a collection. It has a locale argument and is Unicode-aware. Collation Number Formatting: Localized separators and digit grouping can be used to format numbers. Style formatting, numeral system, percent, and precision are among the other items. Number Formatting Currency formatting: Currency symbols, localized separators, and digit grouping are the most common ways to format numbers. Currency formatting Date and time formatting: Localized separators and ordering are used for formatting. The format can be short or long, and other characteristics such as location and time zone can be included. Date and time formatting",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "10. What is Webpack?",
+        "answer": "Webpack is a tool for bundling javascript files for usage in browsers. Webpack analyses the application and generates the bundles by creating a dependency graph that maps each module of the project required. It enables you to execute the environment that was hosted by Babel. A web pack has the advantage of combining numerous modules and packs into a single JavaScript file. It includes a dev server, which aids with code updates and asset management. Write your code: folder_name/index.js import bar from './func.js';\nfunc(); import bar from './func.js';\nfunc(); import from './func.js' folder_name/func.js export default function func() {\n  // body of the function\n} export default function func() {\n  // body of the function\n} export default function func() function func  // body of the function Bundle it: Either provide with custom webpack.config.js or without config: const path = require('path');\n\nmodule.exports = {\n  entry: './folder_name/index.js',\n  output: {\n    path: path.resolve(__dirname, 'dict'),\n    filename: 'bundle.js',\n  },\n}; const path = require('path');\n\nmodule.exports = {\n  entry: './folder_name/index.js',\n  output: {\n    path: path.resolve(__dirname, 'dict'),\n    filename: 'bundle.js',\n  },\n}; const require 'path' module entry './folder_name/index.js' output path 'dict' filename 'bundle.js' page.html <!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\" />\n    ...\n  </head>\n  <body>\n    ...\n    <script src=\"dict/bundle.js\"></script>\n  </body>\n</html> <!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\" />\n    ...\n  </head>\n  <body>\n    ...\n    <script src=\"dict/bundle.js\"></script>\n  </body>\n</html> <html>\n  <head>\n    <meta charset=\"utf-8\" />\n    ...\n  </head>\n  <body>\n    ...\n    <script src=\"dict/bundle.js\"></script>\n  </body>\n</html> <html> html <head> head <meta charset=\"utf-8\" /> meta charset \"utf-8\" </head> head <body> body <script src=\"dict/bundle.js\"> script src \"dict/bundle.js\" </script> script </body> body </html> html You, then, need to run the webpack on the command-line in order to create bundle.js.",
+        "reference": "interviewbit.com",
+        "role": "es6"
+    },
+    {
+        "question": "1) What is ES6 or ECMAScript 2015?",
+        "answer": "ES6 was released in June 2015, which is stated as the sixth edition of the language. Initially, it was named ES6 and later renamed to ECMAScript 2015. This edition includes several new features that are modules, iterators, class, arrow functions, for...of loop, promises, and many more. Brendan Eich developed it.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "It is the specification that is defined in the ECMA-262 standard to create a general-purpose scripting language.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "3) What are the new features introduced in ES6?",
+        "answer": "The new features that are introduced in ES6 are listed as follows:\nADVERTISEMENT\nLet and const keywords.\nDefault Parameters.\nArrow functions.\nTemplate Literals.\nObject Literals.\nRest and spread operators.\nDestructuring assignment.\nModules, Classes, Generators, and iterators.\nPromises, and many more.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "let: The variables declared using let keyword will be mutable, i.e., the values of the variable can be changed. It is similar to var keyword except that it provides block scoping.\nconst: The variables declared using the const keyword are immutable and block-scoped. The value of the variables cannot be changed or re-assigned if they are declared by using the const keyword.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "5) What is the arrow function, and how to create it?",
+        "answer": "Arrow functions are introduced in ES6. Arrow functions are the shorthand notation to write ES6 functions. The definition of the arrow function consists of parameters, followed by an arrow (=>) and the body of the function.\nAn Arrow function is also called as 'fat arrow' function. We cannot use them as constructors.\nSyntax\nconst functionName = (arg1, arg2, ...) => {  \n    //body of the function  \n}",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "Arrow function provides us a more accurate way of writing the functions in JavaScript. They allow us to write smaller function syntax.\nThe context within the arrow functions is lexically or statically scoped. Arrow functions do not include any prototype property, and cannot be used with the new keyword.\nYou can learn more about arrow functions by clicking on this link ES6 Arrow Function.\nExample\nvar myfun = () => {    \n    console.log(\"It is an Arrow Function\");       \n   };  \n   myfun();  \nOutput\nIt is an Arrow Function\nAdvantages of Arrow Function\nThe advantages of the arrow function are listed below:\nIt reduces code size.\nThe return statement is optional for a single line function.\nLexically bind the context.\nFunctional braces are optional for a single-line statement.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "The spread operator is represented by three dots (...) to obtain the list of parameters. It allows the expansion of an iterable such as array or string in places where more than zero arguments are expected.\nThe spread operator syntax is similar to the rest operator, but functionality is entirely opposite to it. It is also used to combine or to perform the concatenation between arrays. Let's understand it by an example.\nExample\nlet num1 = [40,50,60];  \n  let num2 = [10,20,30,...num1,70,80,90,100];  \n  console.log(num2);  \nOutput\n[\n  10, 20, 30, 40,  50,\n  60, 70, 80, 90, 100\n]",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "It is introduced in ES6 that improves the ability to handle the parameters. With rest parameters, it is possible to represent indefinite parameters as an array. By using the rest parameter, we can call a function with any number of arguments.\nExample\nfunction show(...args) {  \n    let sum = 0;  \n    for (let i of args) {  \n        sum += i;  \n    }  \n    console.log(\"Sum = \"+sum);  \n  }  \n      show(10, 20, 30);  \n\nOutput\nSum = 60",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "9) What are the template literals in ES6?",
+        "answer": "Template literals are a new feature introduced in ES6. It provides an easy way of creating multiline strings and perform string interpolation.\nTemplate literals allow embedded expressions and also called as string literals.\nPrior to ES6, template literals were referred to as template strings. Template literals are enclosed by the backtick (` `) character. Placeholders in template literals are represented by the dollar sign and the curly braces (${expression}). If we require to use an expression within the backticks, then we can place that expression in the (${expression}).\nTo learn more about template literals in ES6, follow this link ES6 Template Literals.\nExample\nlet str1 = \"Hello\";  \n  let str2 = \"World\";  \n   let str = `${str1} ${str2}`;  \nconsole.log(str);  \n\nOutput\nHello World",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "Destructuring is introduced in ECMAScript 2015 or ES6 to extract data from objects and arrays into separate variables. It allows us to extract smaller fragments from objects and arrays.\nTo learn more about array destructuring in ES6, follow this link ES6 Array Destructuring.\nTo learn more about object destructuring in ES6, follow this link ES6 Object Destructuring.\nExample\nlet fullname =['Alan','Rickman'];  \nlet [fname,lname] = fullname;  \nconsole.log (fname,lname);  \nOutput\nAlan Rickman",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "11) How to create a class in ES6?",
+        "answer": "This keyword is used for creating the class. We can include the classes in our code either by using class expression or by class declaration. A class definition can only include functions and constructors. These components are together called as data members of the class.\nConstructors in classes allocate the memory to the objects of the class. Functions in a class are responsible for performing the actions to the objects.\nTo learn more about classes in ES6, follow this link ES6 Classes.\nLet us see the syntax for creating classes.\nSyntax: In ES5\nvar var_name = new class_name {    \n}  \nSyntax: In ES6 (Using class keyword)\nclass class_name{    \n}",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "12) What do you understand by Generator function?",
+        "answer": "A generator provides us a new way to work with iterators and functions. The generator is a special kind of function that may be paused in the middle either one or many times and can be resumed later. The declaration function* (function keyword followed by an asterisk) is used to define a generator function.\nWhen the generator gets called, it does not run its code. Instead, it returns a special object, which is called a Generator object to manage the execution. Let us see an example of generators in ES6.\nTo learn more about Generators in ES6, follow this link ES6 Generators.\nExample\nfunction* gen()    \n{    \nyield 100;    \nyield;    \nyield 200;    \n}    \n// Calling the Generator Function    \nvar mygen = gen();    \nconsole.log(mygen.next().value);    \nconsole.log(mygen.next().value);    \nconsole.log(mygen.next().value);    \nOutput\n100\nundefined\n200",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "13) What are the default parameters?",
+        "answer": "By using the default parameters, we can initialize named parameters with default values if there is no value or undefined is passed.\nExample\nvar show = (a, b=200) => {  \n    console.log(a + \" \" + b);  \n}  \nshow(100);  \nOutput\n100 200",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "14) What do you mean by IIFE (Immediately invoked function expressions)?",
+        "answer": "IIFE is a function in JavaScript that runs as soon as it is defined. It is also called as the Self-Executing Anonymous Function. It includes two major parts that are as follows:\nThe first part is an anonymous function that has a lexical scope (static scope), which is enclosed within the Grouping operator ().\nThe second part creates the IIFE by which the JavaScript engine will interpret the function directly.\nYou can learn more about arrow functions by clicking on this link ES6 IIFE.\nExample\n(function()    \n {    \n console.log(\"Hello World\");     \n})();    \nOutput\nHello World",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "It is similar to for loop that iterates through the properties of an object. It is useful when we require to visit the properties or keys of the object.\nExample\nfunction Mobile(model_no){    \n    this.Model = model_no;    \n    this.Color = 'White';    \n    this.RAM = '4GB';    \n    }    \n    var Samsung = new Mobile(\"Galaxy\");    \n    for(var props in Samsung)    \n    {    \n    console.log(props+ \" : \" +Samsung[props]);    \n    }    \nOutput\nModel: Galaxy\nColor:  White\nRAM: 4GB",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "This loop is used for iterating the iterables (arrays, string, etc.).\nExample\nvar fruits = ['Apple', 'Banana', 'Mango', 'Orange'];    \nfor(let value of fruits)    \n{    \n  console.log(value);     \n}    \nOutput\nApple\nBanana\nMango\nOrange",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "A set is a data structure that allows us to create a collection of unique values. It is a collection of values that are similar to arrays, but it does not include any duplicates. It supports both object references and primitive values.\nTo learn more about Sets in ES6, follow this link ES6 Sets.\nExample\nlet colors = new Set(['Green', 'Red', 'Orange', 'Yellow', 'Red']);    \nconsole.log(colors);    \nOutput\nSet { 'Green', 'Red', 'Orange', 'Yellow' }",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "Prior to ES6, when we require the mapping of keys and values, we often use an object. Map object is a new collection type, which is introduced in ES6. It holds the key-value pairs in which any type of values can be used as either keys or values.\nA map object always remembers the actual insertion order of the keys. Maps are ordered, so they traverse the elements in their insertion order.\nTo learn more about Map in ES6, follow this link ES6 Maps.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "19) What do you understand by Weakset?",
+        "answer": "Using weakset, it is possible to store weakly held objects in a collection. As similar to set, weakset cannot store duplicate values. Weakset cannot be iterated.\nWeakset only includes add(value), delete(value) and has(value) methods of the set object.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "20) What do you understand by Weakmap?",
+        "answer": "Weak maps are almost similar to maps, but the keys in weak maps must be objects. It stores each element as a key-value pair where keys are weakly referenced. Here, the keys are objects, and the values are arbitrary.\nA weak map object iterates the element in their insertion order. It only includes delete(key), get(key), has(key) and set(key, value) method.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "ES6 promises are the easiest way to work with asynchronous programming in JavaScript. Asynchronous programming includes running of processes individually from the main thread, and it notifies the main thread when it gets complete.\nPrior to ES6, there is the use of Callbacks for performing asynchronous programming. Promises are used to overcome the problem of Callback hell.\nTo learn more about promises, follow this link: ES6 Promises.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "22) What are the states of promises in ES6?",
+        "answer": "Promises have mainly three states that are as follows:\nPending: It is the initial state of every promise. It represents that the result has not been computed yet.\nFulfilled: It represents the completion of an operation.\nRejected: It represents the failure that occurs during computation.\nOnce the promise is fulfilled or rejected, then it will be immutable. The Promise() constructor takes two arguments that are rejected function and a resolve function. Based on the asynchronous operation, it returns either the first argument or the second argument.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "23) What do you understand by Callback and Callback hell in JavaScript?",
+        "answer": "Callback: It is used to handle the execution of function after the completion of the execution of another function. A callback would be helpful in working with events. In the callback, a function can be passed as an argument to another function. It is a great way when we are dealing with basic cases such as minimal asynchronous operations.\nCallback hell: When we develop a web application that includes a lot of code, then working with callback is messy. This excessive Callback nesting is often referred to as Callback hell.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "ES5 and ES6 are similar in their nature, but there are some differences between them. The comparison between ES5 and ES6 are tabulated as follows:\nBased on ES5 ES6\nDefinition ES5 is the fifth edition of the ECMAScript (a trademarked scripting language specification defined by ECMA International) ES6 is the sixth edition of the ECMAScript (a trademarked scripting language specification defined by ECMA International).\nRelease It was introduced in 2009. It was introduced in 2015.\nData-types ES5 supports primitive data types that are string, boolean, number, null, and undefined. In ES6, there are some additions to JavaScript data types. It introduced a new primitive data type 'symbol' for supporting unique values.\nDefining Variables In ES5, we could only define the variables by using the var keyword. In ES6, there are two new ways to define variables that are let and const.\nPerformance As ES5 is prior to ES6, there is a non-presence of some features, so it has a lower performance than ES6. Because of new features and the shorthand storage implementation ES6 has a higher performance than ES5.\nSupport A wide range of communities supports it. It also has a lot of community support, but it is lesser than ES5.\nObject Manipulation ES5 is time-consuming than ES6. Due to destructuring and speed operators, object manipulation can be processed more smoothly in ES6.\nArrow Functions In ES5, both function and return keywords are used to define a function. An arrow function is a new feature introduced in ES6 by which we don't require the function keyword to define the function.\nLoops In ES5, there is a use of for loop to iterate over elements. ES6 introduced the concept of for...of loop to perform an iteration over the values of the iterable objects.\nTo learn more about the difference between ES5 and ES6, follow this link: ES5 v/s ES6",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "Modules are the piece of JavaScript code written in a file. By using Modules, it is easy to maintain the code, debug the code, and reuse the code. Each module is a piece of code that gets executed once it is loaded.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "26) What do you understand by the term Hoisting in JavaScript?",
+        "answer": "It is a JavaScript's default behavior, which is used to move all the declarations at the top of the scope before the execution of code. It can be applied to functions as well as on variables. It allows the JavaScript to use the component before its declaration. It does not apply to scripts that run in strict mode.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "27) List the new Array methods introduced in ES6?",
+        "answer": "There are many array methods available in ES6, which are listed below:\nArray.of()\nArray.from()\nArray.prototype.copyWithin()\nArray.prototype.find()\nArray.prototype.findIndex()\nArray.prototype.entries()\nArray.prototype.keys()\nArray.prototype.values()\nArray.prototype.fill()\nTo learn more about the above array methods, follow this link: ES6 Array methods.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "28) What are the new String methods introduced in ES6?",
+        "answer": "There are four string methods introduced in ES6 that are listed as follows:\nstring.startsWith()\nstring.endsWith()\nstring.includes()\nstring.repeat()\nTo learn more about the strings, follow this link: ES6 Strings.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "Babel is one of the popular transpilers of JavaScript. It is mainly used for converting the ES6 plus code into the backward-compatible version of JavaScript that can be run by previous JavaScript engines.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    },
+    {
+        "question": "",
+        "answer": "It is an open-source JavaScript module bundler that takes modules with dependencies. It allows us to run an environment that hosts Babel.",
+        "reference": "javatpoint.com",
+        "role": "es6"
+    }
+]

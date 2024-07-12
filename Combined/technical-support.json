@@ -1,0 +1,758 @@
+[
+    {
+        "question": "1. What is an operating system?",
+        "answer": "An operating system (OS) is the fundamental software that controls all of the hardware resources of a computer, and gives programs a place to run. \nImportant features are:\nResource management: It assigns memory, CPU time, and storage capacity to individual apps.\nInterface: It is the component that connects the user and the operating system.\nDevice driver: It functions as communication between different hardware elements, such as keyboards and printers, and operating systems.\nSecurity: It offers features like permission limits and user accounts for security.\nFile management: It arranges and oversees the storage device’s files and folders.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "2. What is an IP address, and how is it structured?",
+        "answer": "An Internet Protocol (IP) address is a name given to each device in numerical form that is connected to a network that uses the Internet for transferring data. The main purpose of the IP address is to identify the network interface and the location of the device in the network. The structure of an IP address is shown in 192.168.1.2 format. It consists of four element numbers that are separated by dots.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "3. What is the purpose of DNS, and how does it work?",
+        "answer": "The Domain Name System (DNS) is a decentralized naming system for computers. It acts like a translator as it converts human-readable domain names like www.xyz.com into some IP address, like 192.168.1.2 that computers use to connect with websites.\n\nWorking of DNS:\nYou enter a domain name in your browser.\nYour local DNS resolver asks for the IP address from the DNS server.\nIf the DNS server can’t find the IP address associated with the domain name, it will send the same request to a different server.\nOnce the DNS server provides the IP address, your browser connects to the website through the internet protocol.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "4. What is the difference between HTTP and HTTPS?",
+        "answer": "Hypertext Transfer Protocol (HTTP) is a protocol that is used when we have to transmit and receive data on the Web. It can be considered an insecure connection as it is unencrypted. \nHypertext Transfer Protocol Secure (HTTPS) is an advanced version of HTTP as an extra layer of protection that is added using SSL/TLS protocols. It is considered a secure connection as it is encrypted and ensures that the data transmission between clients and servers is protected.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "5. How do you troubleshoot a computer that won't boot?",
+        "answer": "Following are the steps you can follow to troubleshoot a computer that won’t boot:\nBy checking the power connections\nMake sure all the hardware devices are connected properly to the motherboard\nBy running diagnostic tests and verifying the BIOS setting",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "6. What is BIOS?",
+        "answer": "The Basic Input Output System (BIOS) is intended to serve as a translator and interpreter between your computer’s hardware and the operating system. When the system starts, BIOS performs a POST (Power-on Self-test) to ensure hardware compatibility, initializes hardware devices, including memory and hard drives, and finally locates the boot loader to kick-start your operating system.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "7. What is cache memory, and how does it improve computer performance?",
+        "answer": "The cache memory is a small yet exceedingly fast storage component that is integrated with the processor of your computer. With this approach, the CPU can always get what it wants instantly, rather than waiting for the memory operation. With the cache memory, you won’t have to spend time searching for already existing things; it saves you a lot of time on computing.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "8. What is BOOT.INI, and what is its role in the Windows operating system?",
+        "answer": "BOOT.INI, which belonged to pre-Vista Windows versions, was a text document that provided the graphic interface of a setup menu. It had a boot menu that served multiple OS options and configured the boot loader program. The original BOOT.INI was replaced by Boot Configuration Data (BCD) in Windows Vista for security enhancement, more ability as well as compatibility with advanced versions of Windows.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "9. What are some of the ports available on a computer?",
+        "answer": "Follow are the different ports in a computer system:\n\nEssential Ports:\nUSB (Universal Serial Bus)\nHDMI (High-Definition Multimedia Interface)\nDisplayPort\nNetwork and Communication Ports:\nEthernet Port\nWireless Networking Card (Built-in or via USB)\nLess Common Ports (depending on the computer)\nVGA (Video Graphics Array)\nDVI (Digital Video Interface)\nSD Card Reader\nHeadphone Jack\nMicrophone Jack",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "10. What are the essential components required to establish a basic home network?",
+        "answer": "The following are the essential components required to establish a basic home network:\nRouter/Hub\nLAN cards\nLAN cables",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "11. How do you check a slow internet connection?",
+        "answer": "Following are the steps you can take to diagnose a slow internet connection:\nCheck the cables and links \nRestart networking devices \nTest internet speed using online speed checkers \nAnalyze network traffic using network monitoring tools \nCheck for routing updates on modems and routers",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "12. What are the steps you will take to check for software updates on a Windows operating system?",
+        "answer": "Given below are the steps you can follow:\nFirst, go to the Start menu and click on Settings.\n\nIn Settings, you will find the Update & Security option. Click on the Windows Update option.\n\nClick on the Check for updates option to search for available updates.\n\nIf updates are found, click on the Download and Install button to install them.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "13. Briefly explain the difference between RAM and ROM.",
+        "answer": "RAM (Random Access Memory):\nVolatile memory – loses data when the computer turns off\nUsed for storing temporary data programs\nMore RAM generally leads to faster performance.\nIssues: Insufficient RAM can cause slowdowns, freezing, or program crashes\nROM (Read-Only Memory):\nNon-volatile memory – Data persists even when the computer is off\nStores essential startup instructions (BIOS) and device firmware\nNot meant for user data or programs\nIssues: Faulty ROM can lead to boot problems or system instability (rare)",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "14. What are the key differences between Windows and macOS operating systems?",
+        "answer": "Here’s a breakdown of key differences between Windows and macOS:\nAspects Windows macOS\nInterface Windows offers a more tailored interface, whether it is through diverse layouts or customizable options. macOS is interface-oriented to be faster and more efficient.\nSoftware Availability Windows is much more focused on open-source software. macOS targets Apple’s programs and the combination of Apple’s other gadgets\nSecurity Windows is less secure because of its compatibility with all the free-licensed programs. macOS is more secure.\nCost Windows typically comes pre-installed on a wider range of computers. macOS is exclusive to Apple devices.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "15. Explain the difference between a wired and a wireless network connection.",
+        "answer": "Wired Network:\nConnects cables to the router/modem using Ethernet\nMaintains steady and consistent connection speeds\nHas no possibility of interference or signal fluctuations\nShort cable – reduces the flexibility of the device to place it where needed\nWireless Network:\nIt uses radio waves for communication between the router/modem.\nIt allows a variety of devices to move around within the network range.\nConnection speed can be affected by distance, interference, and network congestion as well.\nSecurity vulnerabilities are more likely to be exploited in wireless connections compared to wired connections.\n\nTechnical Support Interview Questions for Intermediate",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "16. What are the components of a typical desktop computer system (hardware)?",
+        "answer": "A typical desktop computer consists of the following key components:\n\nCentral Processing Unit (CPU): The CPU is considered the brain of the computer because it sends all the important instructions to every other component in the machine.\nRandom Access Memory (RAM): It is the temporary memory that stores data while programs run.\nStorage Device (Hard Disk Drive): All the information available on the computer is stored on the storage device. It stores the data permanently.\nMotherboard: The motherboard is responsible for communicating information to every part of the system. It connects all other components to ensure that the data is communicated between them.\nVideo Card: The video card is responsible for displaying high-quality graphics or visuals as an output on the screen.\nPower Supply Unit (PSU): It provides the power supply to the system, and sometimes when power is not available, it provides power backup as well.\nInput Devices: It is the medium through which a user gives commands to the CPU. It can be done with a keyboard, mouse, etc.\nOutput Device: It is the medium through which the system gives a response to the received input. It can be a monitor, printer, etc.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "17. Briefly describe the components of a central processing unit (CPU) and their functions. (Understanding CPU architecture and functionality)",
+        "answer": "The central processing unit (CPU), often called the brain of the computer, is made up of several key components, each playing a crucial role in processing the information:\n\nControl Unit (CU): The CU gets commands from memory, decodes them, and points at the other CPU components to achieve those commands in a way to actualize them.\nArithmetic Logic Unit (ALU): The ALU is responsible for the whole completion of the arithmetic as well as logical operations that the computer needs. It is where operators perform operations, like addition, subtraction, and comparisons.\nRegisters: These memories are high-speed storage compartments that store the data and instructions that the arithmetic and logic bytes are processing. They help you have easy access to critical matters during the execution phase.\nCache: The cache, working as a superfast memory buffer between CPU and main memory (RAM), multiplies the speed of access to data needed immediately. It stores common data, which is used by the CPU, and also the instruction; hence, the CPU can fetch greater amounts of data in less time from these memories instead of RAMs.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "18. What is the difference between a program and an application? (Basic software terminology)",
+        "answer": "Below, we have provided the difference between a program and an application:\nFeature Program Application (App)\nDefinition It is a set of commands that is used by a computer to complete a task in particular. It is a program that is specifically created for a task, and it usually has a user interface for interacting with it.\nScope It can be used alone or be a part of an application. Mostly used alone, but sometimes used with large software\nFocus Underlying code or logic User-friendly interface for specific tasks\nExamples Mathematical formulas, algorithms Web browser, game, calculator app\nRelationship All programs are not applications. All applications are programs.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "19. Explain the difference between a compiler and an interpreter in software development. (Understanding programming language concepts)",
+        "answer": "In the table given below, we have provided the difference between a compiler and an interpreter:\nAspects Compiler Interpreter\nFunction Translates complete program code into machine code before execution It executes the code line by line. \nOutput Create a single executable file (machine code) No individual output file is generated.\nSpeed Due to pre-translation, it makes programs run faster.  Due to on-the-fly translation, programs run slower.\nEfficiency Compiled code is optimized for the target machine’s architecture. May require more resources for runtime translation.\nError Detection Not only Identifies errors but also rectifies them until they get fixed It Identifies errors only during the execution\nDebugging Debugging is complex. Debugging is easy.\nPortability Portability is restricted due to varying architectures. More portable as it relies on a runtime interpreter present on the target system.\nExamples C, C++, Java Python, JavaScript, Ruby",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "20. What is the difference between a public IP address and a private IP address? (Intermediate networking concepts)",
+        "answer": "We have two main types of IP addresses: public IP and private IP. Below is a table outlining their key differences:\nAspects Public IP Address Private IP Address\nDefinition A public IP address is the unique IP address that is assigned by the internet service provider to your network router. A private IP address is one that is assigned to your devices within your private network (like your home or office).\nScope Global Local\nAccess Accessible from the internet Not directly accessible from the internet\nControl Assigned by your internet service provider Assigned by your router\nUse Case Connect to the internet Connect devices on your network",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "21. What is the difference between open-source and closed-source software? (Understanding software licensing models)",
+        "answer": "Below is the difference between open-source and closed-source software:\nFeature Open-Source Software Closed-Source Software\nSource Code It is free for everyone and can be easily accessed. It is not available for everyone. The source code is protected by the developer.\nDevelopment It is developed by a community. It is developed by a single company or organization.\nCost Often free or offered at a lower cost It is paid software and requires a license fee.\nCustomization It is highly customizable. Customization is limited as it is controlled by the developer.\nSecurity It is less secure as it can be accessed by anyone. It is considered to be more secure.\nExamples Linux operating system, LibreOffice suite Microsoft Office suite, Adobe Photoshop, macOS",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "22. Briefly explain the concept of virtual machines and their advantages. (Understanding virtualization technology)",
+        "answer": "Virtualization technology, based on the virtual machines (VMs) concept, allows a single physical computer to emulate several independent computing environments. Such VMs emulate full-size physical computers with their own virtual processors, memory, storage, and operating systems as part of the software rather than hardware.\nSome of the advantages of virtual machines are mentioned below:\nResource Optimization: Virtual machines help enhance the effective use of resources. \nIsolation and Security: In each VM, there is the element of isolation, and that is the reason it can be said to be a sandboxing space for running operating systems (OS). This type of isolation serves its conflict prevention purposes between applications and contributes to system protection by mitigating the impacts of either malware or errors within a single VM.\nFlexibility and Scalability: VMs enable multi-purpose opportunities across different functionalities. Hardware virtualization can be leveraged by developers to create specific tests for each project, and IT professionals can run and manage multiple applications executed across VMs for greater scalability and fault tolerance.\nSimplified Disaster Recovery: In the case of a system malfunction, VMs can easily be recovered from the backups, thus facilitating data recovery and minimizing downtime.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "23. Why is data backup important, and what are some common backup methods? (Data backup and recovery best practices)",
+        "answer": "Data backup is an essential measure that you have to take in order to keep your precious information safe from unintentional incidents. Try and imagine what would happen if you lost all your pictures, documents, or work files for some reason like a hard disk crash, an accidental deletion, or if you were attacked by malware viruses. Data backup will guarantee a copy of your most significant files, so you will not miss any of them in case it happens.\nHere’s why data backup is so important:\nData Loss Prevention: Hardware failure, malfunctions of software, or simple human error can all bring about the loss of data. Backups do the same job, ensuring you don’t regret data deletion.\nDisaster Recovery: Adverse events such as fire, water damage, or burglary can immediately destroy not only a computer but also the information in it. \nPeace of Mind: You don’t have to worry about your data being safe when you know it is secure. \nNow, let’s explore some common backup methods:\nExternal hard drives are the best practice that will enable offline backups to be very low-cost. \nCloud storage can provide backup facilities that are both remote and accessible.\nNetwork Attached Storage (NAS) devices provide an economical and safe option for businesses with huge data sets or users dealing with volumes of extensive data.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "24. A user's external hard drive is not recognized by their computer. What are some possible causes and troubleshooting steps? (Troubleshooting external storage device issues)",
+        "answer": "Some of the possible reasons for the external driver not being recognized by the computer are:\nCheck the connection: Check whether the hard drive cable is connected properly. Try at different ports, if possible.\nRestart your computer: The best solution for any problem is to restart the computer.\nExplore Settings: Try to find the “Disks” or “Storage” section in the settings to see if your external drive shows up there.\nDriver Issue: If you are still not able to see the hard drive, there might be an issue with the hard drive.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "25. How would you fix the issue if the audio on your computer stopped working or if there was no sound coming from it? (Audio Troubleshooting skills)",
+        "answer": "Following are the steps you can follow to fix the audio issue on your computer:\nCheck whether the volume button is not on mute\nMake sure all the connections are working perfectly\nEnsure that the speakers have power\nRestart the computer if you are still having problems\nStill facing issues, you can search for sound drivers in the settings, and check their working status",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "26. What is the ‘Blue Screen of Death,’ and how would you fix it? (System Troubleshooting skills)",
+        "answer": "The Blue Screen of Death (BSOD) is a situation when your system starts showing a blue background with the instruction on the screen, “Your PC ran into a problem.” It is done by the system to protect it from a bigger problem. It can occur due to faulty hardware or outdated software. It can be easily fixed in most of the cases.\n\nBelow are the steps to fix this issue:\nThe simplest way to fix this issue is by restarting the computer.\nCheck for system and software updates and fix them.\nRun an antivirus program, as this issue can occur due to malware\nUninstall recently installed software\nIf still facing the issue, reinstall Windows.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "27. Briefly describe the boot process of a computer. (Understanding system startup procedures)",
+        "answer": "The boot process of a computer system consists of the following steps:\nPower On Self-Test (POST): When we turn on the computer system, the first process that takes place is Power On Self-Test. It is the self-check process in which the system verifies that all the essential hardware is functioning properly. \nBIOS/UEFI: In the next step, BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) comes into play to locate the operating system.\nLoading the Operating System: Once BIOS/UEFI finds the OS files, it loads them into memory.\nDesktop and Applications: In the end, the operating system loads the GUI (graphical user interface) that allows the user to launch applications.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "28. What is the difference between a router and a modem? (Understanding network hardware components)",
+        "answer": "Below are some of the common differences between a router and a modem:\nAspects Router Modem\nFunction A router manages data flow within a private network. A modem connects that private network to the internet service provider.\nConnectivity It can connect multiple devices. It is connected only to an Internet provider through a cable or phone line.\nSignal Processing It distributes the internet signals to different IP addresses or devices. It converts wave signals to transmission data for the device.\nSecurity Features It includes firewalls for protection. Lacks security features\nAdditional Features Parental controls, Quest network options, bandwidth management, etc. May have basic status lights for connection information.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "29. A user's computer is infected with malware. What steps would you take to identify and remove the malware? (Malware identification and removal procedures)",
+        "answer": "Following is the step-by-step approach to identifying and removing malware:\nIsolating the Threat: I will ask the user to disconnect the computer from any network connections to avoid spreading malware infections to other devices.\nSystem Scan: Then, I will run the in-built updated antivirus to find the malicious software.\nSafe Mode Scan: If the initial scan fails, I will take an advanced step by rebooting the system in Safe Mode and scanning again. \nManual Removal: After identifying the malicious files, I manually remove the infected files. \nSystem Cleanup:  I will clean all the temporary files using the trusted system cleanup tool.\nSoftware Update: I will make sure that the operating system is up-to-date. I also update all the applications to their latest versions.\nPassword Reset: I will advise the user to change his/her important passwords (email, online accounts) available in the system as a precaution.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "30. What are the possible causes and troubleshooting steps you will take if a user is facing an online video streaming buffer issue? (Troubleshooting video streaming issues)",
+        "answer": "Some of the potential causes of video buffering are:\nA slow internet connection can be one of the most common reasons.\nIf you are connected to too many devices using the internet simultaneously, it can buffer your video.\nThere might be an issue with your Wi-Fi connection or signal strength.\nSometimes watching videos at peak hours with high-traffic or busy servers can be a reason.\nUsing outdated software\nSome of the common troubleshooting steps are:\nSpeed Test: Check the speed of the internet by running a speed test. If it is slow, contact the service provider.\nNetwork Check: Reduce the number of applications running in the background. \nWired Connection: Always try to connect your device with a wired connection like a LAN cable.\nRestart App/Device: Restart your router or modem; it can also fix the issue.\nSoftware Updates:  Keep your application updated, as using outdated apps can also create buffering.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "31. What are some general steps you could take to diagnose and resolve the issue of a slow-running computer? (Basic troubleshooting techniques for system performance)",
+        "answer": "Here are some general steps to diagnose a slow computer:\nIdentify Resource Usage: Observe if the CPU, memory, and disk usage are spiked high in the correct order. Overloading can cause the system to slow with time.\nClose Unnecessary Programs: If you have too many programs running in the background on your computer, close all the programs and browser tabs.\nCheck for Malware: Next, run a thorough scan with an antivirus or antimalware program to identify and eliminate malware.\nDisable Startup Programs: Disable all unnecessary programs and features that are auto-started during the system start-up.\nDisk Cleanup: Delete all the temporary files that accumulate with time and occupy space on the storage device with the help of a disk cleanup application.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "32. A user reports an error message",
+        "answer": "Here’s how I would troubleshoot a “404 Not Found” error:\n\nGather Information: Inquire the user by asking them for the exact link they were trying to access. \nCheck for Typos: Make sure that the spelling of the URL is correct, there are no excess characters and all the required characters are there. \nVerify the Link: Verify the URL on the site map or by locating the page in the website search function.\nClear Cache: Teach the user to clean the browser cache and cookies.\nContact Website Owner: If the page doesn’t load after the above command, advise the user to inform or contact the website owner about the broken link.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "33. Describe the function of a firewall in network security. (Basics of network security)",
+        "answer": "A firewall is computer security software or system that monitors and manages the data that goes in and out of the network, complying with established security rules.\n\nThe main functions of a firewall in network security are\nTraffic Filtering: The firewall examines every data packet in detail to allow only the safe ones that adhere to the security guidelines to pass through it. Thus, the security component of the network will be kept away from illegal intrusions.\nAccess Control: Network administrators can manage these firewall security rules within the firewall. With these adjustments, it will allow only authorized networks and block all unauthorized networks.\nThreat Protection: Firewalls can be considered one of the most critical control barriers against a myriad of cyberattacks. They provide an effective defense mechanism by stopping malicious activities from entering through unauthorized browser intrusions.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "34. What is a VPN, and how does it enhance online privacy and security? (Understanding privacy and security concepts)",
+        "answer": "A Virtual Private Network (VPN) creates a secure channel for your internet traffic instead of an unsecured one. It sends your data to the VPN service provider‘s remote server, which encrypts it and passes it through. This offers several advantages for online privacy and security: \n\nEnhanced Privacy: A VPN works by scrambling your data, which makes it unintelligible to anyone who might be spying on you when you are connected to a public Wi-Fi network. This minimizes the risk of revealing passwords, financial data, or browsing activity, which can be valuable information for criminals.\nMasked Location: A VPN hides your real IP address by substituting it with the IP address of the VPN server, hence, suggesting that you are connecting from there. It effectively hides your browsing history, making online tracking impossible, and unblocks websites or contents restricted for specific regions.\nIncreased Security: This encryption will add to the security that the VPN offers by making sure that your network traffic is shielded. This thwarts the actions of hackers and malicious actors who would otherwise attempt to steal your information or impose on your online activities.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "35. Explain the concept of data encryption and its importance in cybersecurity. (Understanding the concept of data encryption)",
+        "answer": "In simple terms, data encryption is the process of converting simple readable data into unreadable data by using a specific algorithm. It is done to protect the data from unauthorized access. \nImportance of encryption in cybersecurity:\nConfidentiality: By using an encryption algorithm, only the users who have access will be able to access information, ensuring the security of sensitive data.\nData Integrity: Encryption protects data from being modified during transmission or storage.\nCompliance: Encryption is one of the security control mechanisms applied to meet data privacy regulations.\n\nTechnical Support Interview Questions for Experienced",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "36. How would you troubleshoot an issue related to email sending and receiving? (Basic email troubleshooting)",
+        "answer": "First, check whether the internet connection is stable or not.\nEnsure that the username and password of the email account are entered correctly. \nDo a quick scan of your email client or webmail for error codes or alert notifications.\nCheck whether sufficient storage is available to store email data to prevent the risk of emails getting deleted.\nTry to send a test mail from a different device using the same email client to check the source of the problem.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "37. What is the basic information you need to gather from a user who is having trouble installing a new software program? (Understanding software installation processes and potential problems)",
+        "answer": "Following is some of the information needed to effectively assist with software installation issues:\nOperating System: Check the operating system of the user, as different OSs have different installation processes.\nSoftware Name: Ask for the software name and its version to help the user get the correct installation guide. \nError Messages: Receiving an error message during installation is also a clue about the problem, which may help the user figure out the issue.\nDownloaded Source: Knowing the download source of the software can help detect possible malware problems.\nPrevious Attempts: Knowing the past installation issues and the probable troubleshooting steps can be fruitful.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "38. What are some initial troubleshooting steps you could recommend to the user whose printer is not functioning properly? (Basic printer troubleshooting)",
+        "answer": "Here are some initial troubleshooting steps for a non-functioning printer:\nPower and Connection: The first step is to check for power and other connections and whether they are connected properly. \nCheck Paper and Ink: Check that the paper tray is loaded with sufficient numbers of papers. Also, check the ink slot for the availability of ink or toner.\nPrint Test Page: Run a test print to check out the printer first.\nUpdate Drivers: Check whether the drivers are updated; if not, update them for the official website.\nReinstall Drivers: Reinstall the drivers for smooth working, as sometimes malfunctioning drivers get fixed when they are reinstalled.\nRestart Devices: If nothing works, power off and unplug the printer and computer.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "39. What are some possible causes and troubleshooting steps you will take when a user’s phone is not charging? (Basic mobile device troubleshooting)",
+        "answer": "Check for physical damage or dirt with the charging cable and adapter to see the possibility of a charger malfunctioning. \nClear the phone’s charging port with a soft brush or compressed air, which eliminates debris or lint.\nTry to charge a different device with the same charger to check the working status of the charger. \nRestart the phone if some software issue is affecting the charging procedure.\nIf the phone fails to charge using the wall outlet, try using a different power source.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "40. How would you guide a user through troubleshooting steps who is facing an internet connection issue? (Basic internet connectivity troubleshooting)",
+        "answer": "Follow the steps given below to guide a user who is facing internet connectivity issues:\n\nVerify Connection: First, verify the connection, whether it is wired or wireless. It will help you provide instructions accordingly.\nRestart Devices: In most cases, problems get resolved only after restarting the devices. Ask the user to restart the router or system.\nCheck Connections: Make sure that all the connections are plugged in properly.\nSignal Strength: If the user is using a wireless connection, ask them to check their signal strength.\nContact Service Provider: Still facing the issue, contact the internet service provider.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "41. What are some potential causes and troubleshooting steps you will take when a user's web browser is constantly crashing? (Intermediate browser troubleshooting)",
+        "answer": "Some of the potential causes of browsers crashing constantly are: \nThe browser used by the user might be outdated. \nConflicting extensions can also be the reason.\nThe corrupted cache stored might be broken.\nToo many tabs open simultaneously or working on heavy websites that use more memory.\nThere might be a possibility of Malware Infection.\nSome of the common troubleshooting steps you can follow are:\nAlways keep your browser up-to-date and keep checking for new updates\nTry to disable all the extensions, and then restart your browser again\nClear all your cache and cookies, and check again\nOne of the best solutions is to restart your computer and start your browser again\nRun the in-built anti-malware scan to check for any possibility of malicious interference.\nCheck your browser settings and go with the default settings",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "42. A user's computer is overheating. What are some possible causes and troubleshooting steps? (Troubleshooting computer overheating issues)",
+        "answer": "Some of the possible causes of computers getting overheated are:\n\nDust accumulation can be one of the reasons for the overheating of the computer\nSometimes faulty cooling fan can also create overheating\nRunning too many applications at a time creates overheating problems\nComputer systems require proper ventilation, poor ventilation can create overheating\nSome of the possible troubleshooting steps to check for computer overheating are:\nCleaning and Ventilation: Switch off and remove the power plug. Carefully clear all the dust accumulated in the vents. Make sure that you have good ventilation around the computer that will help pass the air.\nFan Functionality Check: Check whether the fan is working properly; if not, then change the malfunctioning fan.\nTemperature Monitoring: With the help of software, try to monitor the temperature of the system by measuring the CPU and GPU heat. \nThermal Paste Replacement (Advanced): You may be able to improve the corresponding heat transfer by replacing the thermal paste. But please always seek the guidance of an expert when you don’t know how to replace it.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "43. How would you handle a customer who is frustrated or upset with a technical issue? (Customer service skills and de-escalation techniques)",
+        "answer": "Firstly, don’t panic and keep calm while dealing with these situations.\nTry to listen to the customer’s concerns carefully and start working on the problem.\nCollect all the information related to the problem and divide the problem into small tasks.\nStart solving the issues one by one and keep updating the customer about the issue.\nIf required, get help from your senior member and try to fix the problem.\nIf the problem is resolved, apologize to the customer and assure them of regular updates.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "44. What is the difference between TCP and UDP protocols? When would you use each one? (Understanding network communication protocols)",
+        "answer": "Transmission Control Protocol (TCP) is a connection-oriented protocol used to transfer data securely by creating a virtual connection. On the other hand, User Datagram Protocol (UDP) is a connectionless protocol that is used to share data more quickly. Below, we have provided the difference between TCP and UDP in tabular form.\n\nFeature TCP (Transmission Control Protocol) UDP (User Datagram Protocol)\nConnection Type Connection-oriented Connectionless\nAnalogy More reliable for data delivery More focus on speed\nError Correction Yes, it assures data delivery No, data delivery is not guaranteed\nOrdering Follow the sequence of the order Transfer data without any sequence\nSpeed Slower compared to UDP Faster compared to TCP\nApplications File transfer (FTP), web browsing (HTTP), email (SMTP) Streaming media (video/audio), online gaming, DNS lookups",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "45. As an IT support employee you have to troubleshoot an IT issue related to a company network that is running slow. What are the procedures which will help you detect the problem you are explaining. (Troubleshooting network performance issues)",
+        "answer": "Slow internet connection inhibits the working process, Here are some things you can do to fix sluggishness:\nGather Intel: Collect reports from users on the slowness it provides, duration of the issue, which apps were affected, possible patterns. Use network monitoring tools to access the data.\nCheck the Basics: Check how much of your internet access you have subscribed and how much you actually use. Get aware of peak and sub-peak moments and possible reason. Verify the programs and software involved for infection from malware.\nTargeted Investigation: Use tools for network to find packets of high traffics. Create a comprehensive scan of the performance of your networking equipment for symptoms of overloading. Check how strong Wi-Fi signals are and the range of the coverage.\nPrioritize Solutions: Consider upgrading of the internet plan; use technology that allowed for trafiic shaping to give priority to important applications\nAction Plan: Try network configuration or hardware upgrade such as flow optimisation or resolving bottleneck issues, as examples.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "46. What are the steps you should take to secure a home network? (Understanding network security best practices)",
+        "answer": "Following are the steps you should take to secure your home network to protect your devices and data:\nStrong Passwords and Encryption: It is always recommended creating a password that is very hard to crack as well as unique. Use WPA2 encryption on your Wi-Fi network.\nNetwork Access Control: You should try to make a separate network for the guest users and limit the MAC addresses on your network.\nSoftware Updates and Security Measures: You should always keep your system software updated so that it will help you protect from the latest malware. You must enable your firewall and antivirus software.\nBe Wary of Phishing Attacks: You should ignore and avoid the suspicious link like push mail or do not need to use the links through the messages also.\nPhysical Security: Place your router where it is physically safe to avoid physical tempering.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "47. What are some advantages and disadvantages of using cloud storage solutions? (Understanding cloud computing concepts)",
+        "answer": "Besides other features like scalability without limits, there is always a drawback, such as the online storage system. Here’s a breakdown of the key advantages and disadvantages to consider:\n\nAdvantages of using cloud storage:\nAccessibility: Whether you work remotely or use multiple devices, you get access to your data as long as there is the internet.\nScalability: Having a flexible storage space will make a difference; no more storage device management is required.\nCost-Effectiveness: It is more cost-efficient to use cloud storage instead of buying and keeping physical storage equipment. \nDisaster Recovery: Cloud storage helps create insurance so that in case your local storage is damaged due to hardware failures or some other hazard, you can safely keep your data away.\nCollaboration: It became so easy to send files and folders to others, whether team members or friends.\nDisadvantages of using cloud storage:\nSecurity Concerns: Data kept in the cloud depends on security steps taken by the provider. \nPotential Costs: This choice may seem budget-friendly at first glance, but if you store a huge amount of data and frequently transfer the files, the cheap option could expand into a pricey option over time.\nVendor Lock-in: Shifting from one current cloud storage provider to another can actually be exhaustive since gathering and moving large amounts of data can be time-consuming.\nLimited Control: Giving up some control of data is a necessary price one has to pay when using cloud storage.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "48. A user's database is corrupt, and they need to recover lost data. What are some recovery options you could suggest? (Data recovery techniques)",
+        "answer": "Follow the given steps to recover lost data when your database gets corrupted.\nBackup is Your Best Friend: Make sure that there is a recent database backup. Simply restore it in the early stages to reach the fastest recovery process with little data loss.\nBuilt-in Repair Tools: With no backups at hand, see if the database software provides repair options. \nData Recovery Software: If the built-in tools fail, try data recovery software. However, many of those specialized software might be hard to use.\nProfessional Help: Apart from that, always develop a list of backups, and if all else is not working, try the pro data recovery services on critical info. \nStop Using the Database: Immediately ask the user to stop using the database so that there will be no more data loss and corruption.",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "49. Explain the concept of subnetting and its role in network management. (Understanding advanced network configuration concepts)",
+        "answer": "Dividing the Network: From a single large network, subnetting divides it into small subnetworks with their unique address range.\nEfficient use of IP Addresses: Subnetting allows efficient use of IP addresses and prevents everyone in a big network from having the same key. \nSecurity Enhancement: Subnetting separates out networks using boundaries. This action actually separates traffic, problems, and any other threats within a subnetwork\nImproved Performance: Subnetting achieves this by splitting the network into smaller segments, thus leading to uncongested online traffic.\nScalability: The subnetting enables network expansion. There is no need to start from scratch with the creation of new subnets within the nested existing infrastructure system",
+        "reference": "intellipaat.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "1. In device management, what does a '?' symbol mean?",
+        "answer": "This '?' symbol indicates that the device is not correctly installed. In the instance of brand new plug-in cards, this is a problem.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "2. List the advantages of updating the BIOS.",
+        "answer": "The following are some of the advantages to upgrading your BIOS:   Hardware updates: New BIOS upgrades will help the motherboard to properly recognize new hardware such as processors, RAM, and other components. If your processor has been updated, but the BIOS does not detect it, a BIOS flash may be the solution.\nUpdated BIOS security: The new BIOS updates include security enhancements that assist your BIOS to withstand manipulation and raise awareness of malware in the boot region (if your motherboard supports boot sector scanning).\nIncreased stability: As flaws and other issues with motherboards are found, the manufacturer will offer BIOS updates to fix them. This might have an immediate impact on data transfer and processing performance. Hardware updates: New BIOS upgrades will help the motherboard to properly recognize new hardware such as processors, RAM, and other components. If your processor has been updated, but the BIOS does not detect it, a BIOS flash may be the solution. Hardware updates: Updated BIOS security: The new BIOS updates include security enhancements that assist your BIOS to withstand manipulation and raise awareness of malware in the boot region (if your motherboard supports boot sector scanning). Updated BIOS security: Increased stability: As flaws and other issues with motherboards are found, the manufacturer will offer BIOS updates to fix them. This might have an immediate impact on data transfer and processing performance. Increased stability:",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "3. What is a stack, and can ROM be used as one?",
+        "answer": "The content of the program counter and general-purpose registers are saved in the stack, which is a piece of RAM. Because ROM cannot be written on, it cannot be used as a stack.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "4. What is cache memory? What is the benefit of having additional cache memory in a processor?",
+        "answer": "The memory space between the processor and the RAM is known as cache memory. The system's speed will grow as the cache memory is increased.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "5. What is overclocking? What are the benefits of overclocking?",
+        "answer": "Overclocking: It is a method of forcing a computer component to operate at a faster clock rate. Overclocking: It is a method of forcing a computer component to operate at a faster clock rate. Overclocking:   Overclocking has the following benefits:\nImproves the performance of the CPU.\nIt is cost-effective.\nAllows PC games and applications to run more quickly. Overclocking has the following benefits:\nImproves the performance of the CPU.\nIt is cost-effective.\nAllows PC games and applications to run more quickly. Improves the performance of the CPU.\nIt is cost-effective.\nAllows PC games and applications to run more quickly. Improves the performance of the CPU. It is cost-effective. Allows PC games and applications to run more quickly.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "6. What exactly is a chipset? What's the difference between a processor and a motherboard?",
+        "answer": "A chipset is one of the computer's processing units. It's a collection of integrated circuits that regulate the flow of data between all the other components and the processor. It is a collection of microchips that work together to accomplish one or more functions. All other components, including the CPU, memory, and sockets for external connectors and drives, are connected to the motherboard. A motherboard's chipset is a built-in feature. A processor, on the other hand, is a major integrated circuit block that performs functions in response to instructions from a software program. It is based on the system's logic, arithmetic, and input/output.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "7. What is a heat sink, and how does it help the system?",
+        "answer": "A heat sink component is used to reduce the temperature of a gadget. It's on the microprocessor, and if it's not working properly, the system will shut down on its own.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "8. What is a jumper, and why do you require one?",
+        "answer": "An electric circuit is closed by a jumper, which is a metal bridge. A jumper is a plastic plug that is inserted between two projecting pins. It's used to alter the board's settings.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "9. What exactly is the Windows Recovery Environment (WRE)? How do you gain access to it?",
+        "answer": "Windows RE (Windows Recovery Environment) is a recovery environment. It's used to fix the most common causes of operating system failure. The Windows Recovery Environment (Windows RE) is centred on the Windows Pre-installation Environment (Windows PE) (Windows PE). Additional drivers, languages, Windows PE Optional Components, as well as other Troubleshooting and diagnostic tools, can all be simply added. Windows RE comes preinstalled in Windows 8.1, Windows 10, and Windows Server 2012 R2 installs by default. Using either of the following steps, we may simply access the Windows RE features from the Boot Options menu: Select Start, Power, Shift, and Restart, then press down the Shift key.\nChoose Start, Settings, Update and Security, Recovery from the Start menu. Now, select Restart from the \"Advanced startup\" menu.\nTo accomplish this, open a command prompt and type shutdown /r /o. Select Start, Power, Shift, and Restart, then press down the Shift key. Choose Start, Settings, Update and Security, Recovery from the Start menu. Now, select Restart from the \"Advanced startup\" menu. To accomplish this, open a command prompt and type shutdown /r /o. shutdown /r /o",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "10. If your computer's audio isn't working or there's no sound coming from it, how would you solve this problem?",
+        "answer": "To resolve the issue of \"audio not working or no audio from your computer,\" we must follow the instructions outlined below: Examine the connections between the cables.\nMake sure the speakers have power.\nMake sure the volume is turned up.\nSearch for device drivers. Examine the connections between the cables. Make sure the speakers have power. Make sure the volume is turned up. Search for device drivers.  ",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "11. What does SATA stand for in full? What is the purpose of it?",
+        "answer": "Serial Advanced Technology Attachment is the full name for SATA. This is a high-speed computer bus interface that transfers data between the central circuit board of a computer and storage devices such as hard disc drives and optical discs. SATA was created to replace the PATA (Parallel Advanced Technology Attachment) interface, which had been in use for a long time. Serial Advanced Technology Attachment",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "12. Assume you need to view a file on a shared disc but are unable to do so for some reason. What would you do if you were in this situation?",
+        "answer": "I'll start by seeing if the machine that's sharing the drive is turned on. If that's the case, I'll examine the other files which I have authority to access to determine if the problem is widespread. I'll also double-check that I have the proper permissions to view that file. If everything is in order, but I still can't access that file, I'll double-check that the programs are up to the task of copying that file to our local drive. I'll also double-check that the file isn't already in use by someone else.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "13. What issues could arise if you are unable to see the display?",
+        "answer": "When you can not see the display, you may encounter the following issues: Concerns about power.\nProblems with the heat sink.\nProblems with the CPU fan.\nIncorrect Jumper settings. Concerns about power. Problems with the heat sink. Problems with the CPU fan. Incorrect Jumper settings.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "14. In the context of the network, what is a Gateway?",
+        "answer": "  A gateway is indeed a hardware device that functions as a gate across networks, such as a firewall, server, or router. It enables data or traffic to travel between networks. A gateway is a node that sits at the network's edge and protects the rest of the network's nodes. Before entering or leaving the network, all data must pass through the gateway node. A gateway can also convert data from the outside network into something like a protocol or format that all internal network devices can comprehend.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "15. What are the benefits and drawbacks of employing imaging software?",
+        "answer": "The following are some of the benefits and drawbacks of utilizing imaging software: The Benefits of Imaging Software: The Benefits of Imaging Software: Using Imaging Software, we can exactly replicate data from one hard disc to another.\nIt is used to transmit complex drive pictures to one or more computers across the network at the same time.\nIf the utility recognizes particular file system partitions, it can resize them for a variety of file systems. Using Imaging Software, we can exactly replicate data from one hard disc to another. It is used to transmit complex drive pictures to one or more computers across the network at the same time. If the utility recognizes particular file system partitions, it can resize them for a variety of file systems. The Drawbacks of Imaging Software: The Drawbacks of Imaging Software: It has a poor understanding of file systems, culminating in block-by-block copying of the source hard disc into the image. This is why it takes so long.\nFor large discs, it is slow and requires a long time to finish the operation.\nIt allows for some mistake recovery or detection during the image development and distribution process.\nIt is pricey. The most advanced imaging software is both commercial and costly. It has a poor understanding of file systems, culminating in block-by-block copying of the source hard disc into the image. This is why it takes so long. For large discs, it is slow and requires a long time to finish the operation. It allows for some mistake recovery or detection during the image development and distribution process. It is pricey. The most advanced imaging software is both commercial and costly.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "16. What is Ghost Imaging? What is it used for?",
+        "answer": "Ghost imaging is a software-driven backup technique that copies complex disc contents to another server in the form of a compressed file or a series of files known as an image. It can also restore a ghost image to its original state if necessary. It's frequently used while reinstalling an operating system. Cloning is another term for ghost imaging. The following are some of the applications of ghost imaging: It's utilised to make it possible to clone a system onto another or to swiftly recover a system.\nIt's frequently used to quickly set up groups of Tablets, Notebooks, or Servers. It's also utilised to move files from one computer or disc to another. It's utilised to make it possible to clone a system onto another or to swiftly recover a system. It's frequently used to quickly set up groups of Tablets, Notebooks, or Servers. It's also utilised to move files from one computer or disc to another.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "17. What is the ‘Blue Screen of Death’ and how would you fix it?",
+        "answer": "The BSoD (Blue Screen of Death, Black screen in Windows 11) is usually caused by incorrectly installed software, hardware, or settings; thus, it can easily be fixed. However, in certain circumstances, the BSoD arises due to a corrupt operating system or hardware inside the computer, requiring you to reinstall your operating system or bring your computer to a tech department for repair. BSoD (Blue Screen of Death, Black screen in Windows 11)   Here are some troubleshooting tips for BSoD: Uninstall incompatible software.\nRun a virus scan.\nRun a memory checker.\nCheck for hard drive errors.\nRemove non-essential peripherals.\nReplace defective or incompatible expansion cards.\nRun SetupDiag after a failed Windows update.\nTry running the Deployment Image Servicing and Management (DISM) service (fixing the ‘critical process died’ error).\nCleaning setup files. Uninstall incompatible software. Run a virus scan. Run a memory checker. Check for hard drive errors. Remove non-essential peripherals. Replace defective or incompatible expansion cards. Run SetupDiag after a failed Windows update. Try running the Deployment Image Servicing and Management (DISM) service (fixing the ‘critical process died’ error). Cleaning setup files.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "18. How well do you understand disc partitioning? What is the maximum number of partitions a hard drive can have?",
+        "answer": "A disc partition is a storage partition that separates the hard drive into tiny storage areas. It is used to efficiently and effectively arrange the data. Users should keep their apps and operating system data on one partition while their data is on another. It's vital because if you have a problem with Windows, you can quickly format the partition and reinstall the OS without affecting the data partition. We can partition the hard disc into up to four primary partitions, with three primary partitions and one extended partition. We can build a larger number of logical partitions in the expanded partition.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "19. What do the various lights on the modem mean?",
+        "answer": "The power lights on the modem indicate whether the power is on or off. The next light is the link light, which indicates whether the modem is receiving broadband from the ISP. Data light is used to check if the internet is operating. The connectivity indicator indicates whether the modem is connected to the computer.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "20. What exactly do you mean by BOOT.INI? What are the many sections inside it?",
+        "answer": "The boot choices for Microsoft Windows NT, 2000, and XP are included in the BOOT.INI file, which is a Microsoft initialization file. It is always found in the root directory of the primary hard disc, i.e, the C drive. BOOT.INI is divided into two sections: BOOT.INI is divided into two sections: The boot loader section, including option settings, pertains to all system boot entries, such as default, timeout, and so on.\nThe section about operating systems is as follows: It has one or more boot entries for each bootable program or operating system installed on the computer. The boot loader section, including option settings, pertains to all system boot entries, such as default, timeout, and so on. The section about operating systems is as follows: It has one or more boot entries for each bootable program or operating system installed on the computer.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "1. Is it possible to change the BOOT.INI file manually?",
+        "answer": "Yes, it is possible. However, before manually altering the BOOT.INI, make a backup in case something goes wrong. Go over to the control panel and from there to the System option to edit the file. In the properties window, select the advanced tab. There is a startup and recovery option there; go to its Settings. To edit BOOT.INI, select the edit option. Remove the 3GB switch and replace it with a PAE switch on servers with more than 4GB of installed physical memory for launching the file. The file should be saved and then closed. Quit the Control Panel by clicking OK twice.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "2. If you get a message that says \"invalid drive configuration\" when you boot up your computer, what do you believe is the source of this problem?",
+        "answer": "This issue could be caused by either of the following circumstances: The System Unit's hard-disk cable is not connected to the Controller.\nThe hard disc drive has stopped working.\nThere is no partitioning on the hard disc drive. The System Unit's hard-disk cable is not connected to the Controller. The hard disc drive has stopped working. There is no partitioning on the hard disc drive.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "3. My printer outputs faded text, low-quality photos, and smudges. So, what should I do now?",
+        "answer": "First, double-check that the print driver's media and paper selections are correct. Then, double-check that the paper you're printing on matches the kind you choose in the print driver. If everything appears to be in order, try manually adjusting and setting the fuser. Adjusting the fuse should be done with caution because it gets hot. Print a few blank sheets of paper to remove Smudge marks. If this does not cure the problem, maybe the issue is caused by the hardware or supplies.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "4. I'm using Windows 10 and I'm getting a blank screen with the cursor visible. This occurs every time I log in and every time I update. So, what can I do now?",
+        "answer": "If the issue persists before logging in, try the instructions below: To access the project menu, hold down the Windows key and press P. It's natural, however, that you won't be able to see anything.\nPress Enter after pressing the up and down arrows several times.\nYou should be able to see your screen if it works; if not, retry this step a few more times.\nIf you're logging in with a password-protected account, press CTRL or space to input the password and push enter. You may need to go through a couple of trials before you finish. To access the project menu, hold down the Windows key and press P. It's natural, however, that you won't be able to see anything. Press Enter after pressing the up and down arrows several times. You should be able to see your screen if it works; if not, retry this step a few more times. If you're logging in with a password-protected account, press CTRL or space to input the password and push enter. You may need to go through a couple of trials before you finish. If the above method does not work, follow the steps below to uninstall the graphic card driver. Press alt+ctrl+del to open the Task Manager.\nGo to the file folder and then start a new task.\nEnter the command devmgmt.msc.\nGo to safe mode if you can't open the task manager.\nHold down the Windows key and also the X key, then select Device Manager.\nLocate the graphic card, right-click it, and select Delete/Disable Driver Software from the menu. Press alt+ctrl+del to open the Task Manager. Go to the file folder and then start a new task. Enter the command devmgmt.msc. Go to safe mode if you can't open the task manager. Hold down the Windows key and also the X key, then select Device Manager. Locate the graphic card, right-click it, and select Delete/Disable Driver Software from the menu.   The dark screen should disappear after restarting your computer. The dark screen should disappear after restarting your computer. There are a few more steps you can take. In the device manager, you can turn off the onboard graphics. You can deactivate the dual monitor plus CPU Graphics Multi-Monitor in the BIOS. You could also try updating your BIOS or uninstalling the programs that are causing the issue. You could instead use HDMI rather than DVI to connect your display. Numerous different procedures can assist you in resolving the blank screen problem.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "5. Your customer complains about his desktop PC running too slow. How would you attempt to fix it?",
+        "answer": "Apart from the obvious solutions such as adding more RAM, expanding hard disc space, and installing an SSD, the following are some other options for fixing a slow computer. Open task manager and look at which apps are consuming the most CPU resources. If you can, turn off those programs or uninstall them if they're no longer useful.\nUninstall any programs that you don't use or just use sometimes.\nAny app can store temporary files in the Temp folder. Apps should normally clean up after themselves by deleting any temporary files they produce. They may, however, fail to do so if they run into unforeseen setup issues or if your computer dies for some other reason while they are executing. Click on the \"Windows\" folder under My Computer. Delete all files in the \"Temp\" folder by opening it.\nRight-click on your hard drive in My Computer. Select the Tools to tab from the Properties menu. Select Defragment Now or Optimise from the menu. Open task manager and look at which apps are consuming the most CPU resources. If you can, turn off those programs or uninstall them if they're no longer useful. Uninstall any programs that you don't use or just use sometimes. Any app can store temporary files in the Temp folder. Apps should normally clean up after themselves by deleting any temporary files they produce. They may, however, fail to do so if they run into unforeseen setup issues or if your computer dies for some other reason while they are executing. Click on the \"Windows\" folder under My Computer. Delete all files in the \"Temp\" folder by opening it. Right-click on your hard drive in My Computer. Select the Tools to tab from the Properties menu. Select Defragment Now or Optimise from the menu.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "6. If you turn on a computer and see the error message \"C:system32config File Missing Or Corrupt,\" it means the boot process has stopped. What is the cause of this? How would you fix this?",
+        "answer": "This error is known to happen in the event of the following factors: The Windows registry has been corrupted: The Windows registry can be corrupted for a variety of causes, including virus attacks, power outages, disc write problems, and human errors while manually changing the registry. Fixing “\\WINDOWS\\SYSTEM32\\CONFIG\\SYSTEM is missing or corrupt” on Windows: Method 1: Restore corrupted registry with Easy Recovery Essentials Method 1: Restore corrupted registry with Easy Recovery Essentials The built-in Automated Repair feature in Easy Recovery Essentials can naturally fix a variety of issues like these. EasyRE is currently compatible with Windows XP, Vista, 7, and 8, and can be downloaded and obtained on any computer system. Burn the bootable ISO image with extreme caution, as creating a bootable CD might be challenging! You can also generate a bootable EasyRE recovery USB stick or disc.\nBoot up your device with the Easy Recovery Essentials CD or USB previously made.\nWhen EasyRE is up and running, select \"Automated Repair\" and click Continue.\nAfter EasyRE has completed scanning your computer's discs, go to the list and choose the drive letter for your existing Windows installation, then click the Automated Repair option to begin the repair procedure.\nEasy Recovery Essentials will start scanning the selected drive for errors. EasyRE will automatically search the disc, partitions, bootsector, filesystem, bootloader, and registry for errors and try to fix them. Because\nEasyRE's repair is automated, no human intervention is required.\nAfter the process is finished, EasyRE will report its findings. Select the Restart option to reboot your computer and test the modifications.\nAs your computer begins to load, the error \"WINDOWSSYSTEM32CONFIGSYSTEM is missing or corrupt\" must be rectified. Burn the bootable ISO image with extreme caution, as creating a bootable CD might be challenging! You can also generate a bootable EasyRE recovery USB stick or disc. Boot up your device with the Easy Recovery Essentials CD or USB previously made. When EasyRE is up and running, select \"Automated Repair\" and click Continue. After EasyRE has completed scanning your computer's discs, go to the list and choose the drive letter for your existing Windows installation, then click the Automated Repair option to begin the repair procedure. Easy Recovery Essentials will start scanning the selected drive for errors. EasyRE will automatically search the disc, partitions, bootsector, filesystem, bootloader, and registry for errors and try to fix them. Because EasyRE's repair is automated, no human intervention is required. After the process is finished, EasyRE will report its findings. Select the Restart option to reboot your computer and test the modifications. As your computer begins to load, the error \"WINDOWSSYSTEM32CONFIGSYSTEM is missing or corrupt\" must be rectified. Method 2: Reboot your device into “Last Known Good Configuration” Method 2: Reboot your device into “Last Known Good Configuration” When a machine is restarted into the \"Last Known Good Configuration\" state, it uses a version of the Windows registry that was saved from the last time it booted correctly. All registry-related boot issues should be resolved if the last registry backup is accessible and in good form. The following are the processes for returning a PC to its previous state: Start the computer again.\nBefore proceeding, wait for the BIOS to complete POST (the screen with the manufacturer's logo and/or system details).\nContinue pressing F8 until you see a range of boot options.\nFrom the drop-down box, choose \"Last Known Good Configuration (Advanced).\"\nAfter pressing Enter, wait for the machine to boot up. Start the computer again. Before proceeding, wait for the BIOS to complete POST (the screen with the manufacturer's logo and/or system details). Continue pressing F8 until you see a range of boot options. From the drop-down box, choose \"Last Known Good Configuration (Advanced).\" After pressing Enter, wait for the machine to boot up.   Method 3: Check the disk file system with the CHKDSK utility Method 3: Check the disk file system with the CHKDSK utility Because a malfunctioning registry is typically the origin of the problem, checking and repairing the Windows file system with CHKDSK could be a viable alternative. Follow these instructions to run CHKDSK from the Windows XP Recovery Console: In the drive, insert the Windows XP installation CD.\nRestart the computer and choose the CD drive as the first boot option.\nPress any key to boot from the CD.\nTo open Repair Console, click R once the Windows Options menu displays.\nFill in the Administrator password.\nWhen the Command Prompt displays, type the following command: chkdsk C: /r\nPress the Enter key.\nUnplug the CD and press the exit key.\nPress the Enter key.\nRestart your computer. In the drive, insert the Windows XP installation CD. Restart the computer and choose the CD drive as the first boot option. Press any key to boot from the CD. To open Repair Console, click R once the Windows Options menu displays. Fill in the Administrator password. When the Command Prompt displays, type the following command: chkdsk C: /r chkdsk C: /r Press the Enter key. Unplug the CD and press the exit key. Press the Enter key. Restart your computer. Method 4: Manually restore the registry Method 4: Manually restore the registry The defective registry can also be fixed by replacing it with a fresh copy created while Windows was being installed on the hard drive. This step will restore the system to a state that may differ significantly from its present state; nevertheless, user data will still be accessible. This technique should be avoided if the system has an OEM-installed operating system because the system registry hive upon OEM installations generates passwords and user accounts that did not even exist previously. To begin, create a backup of all existing registry files, which can be restored if anything goes wrong. The current registry is then deleted and replaced with a fresh one from the C:WindowsRepair folder. After the boot procedure is complete, you have the option of backing up all user data and reinstalling Windows from scratch or specifically restoring the system registry to a more current version supported by System Restore. C:WindowsRepair",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "7. A customer complains about his missing DVD drive on Windows from the list of devices on My Computer. What solution would you suggest?",
+        "answer": "The following are the list of methods to fix this issue: Drivers must be installed again: By heading to Start, Control Panel, System and Security, System, and then Device Manager, you can replace the drivers for the CD/DVD drive. Expand CD/DVD-ROM Drives, now right-click the device and select Uninstall from the drop-down menu. When you restart your computer, Windows should recognise the disc and reinstall the drivers automatically. If your hardware does not appear in Device Manager, you may have a hardware issue, such as a defective connection or a dead hard drive. If your computer is old, this is a good alternative to consider.\nExamine the BIOS settings: If you were recently in the BIOS, double-check that the drive wasn't accidentally disabled. This is extremely uncommon, although it can happen in rare circumstances. This is particularly true if you entrusted your computer to others for repairs or other services. Make sure the CD/DVD ROM drive is at least listed as an option on the Boot options page.\nUpper/ Lower Filters Problem: If your Windows XP or Windows Vista system is unable to identify the CD/DVD drive, you may be experiencing a common issue that will not appear on any computer that has received the most recent Windows updates. To fix the problem with Windows XP and Vista, you must update two registry entries. You have the option of downloading the repair from Microsoft or doing it manually. You have to delete the upper filters and the lower filters and restart your device. Drivers must be installed again: By heading to Start, Control Panel, System and Security, System, and then Device Manager, you can replace the drivers for the CD/DVD drive. Expand CD/DVD-ROM Drives, now right-click the device and select Uninstall from the drop-down menu. When you restart your computer, Windows should recognise the disc and reinstall the drivers automatically. If your hardware does not appear in Device Manager, you may have a hardware issue, such as a defective connection or a dead hard drive. If your computer is old, this is a good alternative to consider. Drivers must be installed again: Examine the BIOS settings: If you were recently in the BIOS, double-check that the drive wasn't accidentally disabled. This is extremely uncommon, although it can happen in rare circumstances. This is particularly true if you entrusted your computer to others for repairs or other services. Make sure the CD/DVD ROM drive is at least listed as an option on the Boot options page. Examine the BIOS settings: Upper/ Lower Filters Problem: If your Windows XP or Windows Vista system is unable to identify the CD/DVD drive, you may be experiencing a common issue that will not appear on any computer that has received the most recent Windows updates. To fix the problem with Windows XP and Vista, you must update two registry entries. You have the option of downloading the repair from Microsoft or doing it manually. You have to delete the upper filters and the lower filters and restart your device. Upper/ Lower Filters Problem:   Run the Troubleshooter for Hardware and Devices: If you're having trouble with Windows 7, try running the Hardware and Devices Troubleshooter. This will instantly diagnose the issue and attempt to fix it. This will most likely only work if the CD/DVD drive is visible in the BIOS and Device Manager, but not elsewhere in Windows. You have a hardware or connection issue if you don't see it in those two areas. By heading to Start, Control Panel, and then typing troubleshooter into the search box, you can start the troubleshooter. Select Troubleshooting from the drop-down menu. Finally, click Configure a device under Hardware and Sound. When you click Next, Windows will automatically detect and attempt to resolve any issues.\nRegistry edit: If none of the above methods works, you might attempt editing a registry key that has been removed or corrupted.\nDrive letter: You should also double-check that the drive does have a drive letter assigned to this and that the letter hasn't already been occupied by another device. To see whether the drive letter is leading the drive to show up now, read my earlier post on how to alter drive letters in Windows.\nSystem Restore: If you're still having problems and your drive was showing up before but is now missing, you can try doing a system restore to a time since it was working properly. A new software package can sometimes corrupt your system, causing it to stop recognising your CD/DVD drive. Run the Troubleshooter for Hardware and Devices: If you're having trouble with Windows 7, try running the Hardware and Devices Troubleshooter. This will instantly diagnose the issue and attempt to fix it. This will most likely only work if the CD/DVD drive is visible in the BIOS and Device Manager, but not elsewhere in Windows. You have a hardware or connection issue if you don't see it in those two areas. By heading to Start, Control Panel, and then typing troubleshooter into the search box, you can start the troubleshooter. Select Troubleshooting from the drop-down menu. Finally, click Configure a device under Hardware and Sound. When you click Next, Windows will automatically detect and attempt to resolve any issues. Run the Troubleshooter for Hardware and Devices: Registry edit: If none of the above methods works, you might attempt editing a registry key that has been removed or corrupted. Registry edit: Drive letter: You should also double-check that the drive does have a drive letter assigned to this and that the letter hasn't already been occupied by another device. To see whether the drive letter is leading the drive to show up now, read my earlier post on how to alter drive letters in Windows. Drive letter: System Restore: If you're still having problems and your drive was showing up before but is now missing, you can try doing a system restore to a time since it was working properly. A new software package can sometimes corrupt your system, causing it to stop recognising your CD/DVD drive. System Restore:",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "8. Your customer complains about the USB not recognized issue. How would you fix it?",
+        "answer": "Here are some of the most effective alternatives for you to consider: Restart: A simple reboot will sometimes fix an unrecognised USB device. Restart your computer after plugging out your USB device and waiting a few minutes. Connect your USB device once more.\nAttempt to use a different computer: Attempt to connect your USB device to a different device. If it doesn't function on the second PC, maybe your gadget is to blame. Perhaps you'll need to have it repaired or purchase a new one.\nRemove any other USB devices: Too many USB devices within the same machine may cause a conflict, causing certain devices to cease working. You should disconnect all other USB devices and test the device you wish to use.\nChange the USB Root Hub's Power Management option.\nPress the Windows symbol key and R simultaneously on your keyboard. Press Enter after typing devmgmt.msc.\nExpand Universal Serial Bus controllers by clicking the down arrow. Right-click the USB Root Hub and choose Properties from the drop-down menu.\nUncheck the Allow the computer to turn off this device to save the power box on the Power Management tab. Click the OK button. Restart: A simple reboot will sometimes fix an unrecognised USB device. Restart your computer after plugging out your USB device and waiting a few minutes. Connect your USB device once more. Attempt to use a different computer: Attempt to connect your USB device to a different device. If it doesn't function on the second PC, maybe your gadget is to blame. Perhaps you'll need to have it repaired or purchase a new one. Remove any other USB devices: Too many USB devices within the same machine may cause a conflict, causing certain devices to cease working. You should disconnect all other USB devices and test the device you wish to use. Change the USB Root Hub's Power Management option.\nPress the Windows symbol key and R simultaneously on your keyboard. Press Enter after typing devmgmt.msc.\nExpand Universal Serial Bus controllers by clicking the down arrow. Right-click the USB Root Hub and choose Properties from the drop-down menu.\nUncheck the Allow the computer to turn off this device to save the power box on the Power Management tab. Click the OK button. Press the Windows symbol key and R simultaneously on your keyboard. Press Enter after typing devmgmt.msc.\nExpand Universal Serial Bus controllers by clicking the down arrow. Right-click the USB Root Hub and choose Properties from the drop-down menu.\nUncheck the Allow the computer to turn off this device to save the power box on the Power Management tab. Click the OK button. Press the Windows symbol key and R simultaneously on your keyboard. Press Enter after typing devmgmt.msc. Expand Universal Serial Bus controllers by clicking the down arrow. Right-click the USB Root Hub and choose Properties from the drop-down menu. Uncheck the Allow the computer to turn off this device to save the power box on the Power Management tab. Click the OK button.   If you have multiple USB Root Hubs, you will need to repeat this procedure. After each performance, keep in mind to click OK. After you've made your changes, plug your USB device back in to test if your computer recognises it. If your USB device still doesn’t switch on after that, click the Allow the computer to turn off this device to preserve the power box. The USB port driver should be updated: If the preceding approaches fail to resolve your issue, you're probably using the incorrect USB driver. You can upgrade your USB port driver in one of two ways: manually or automatically.\nManual driver update – One can manually update your USB port driver by visiting your PC's manufacturer's website and searching for the most up-to-date correct driver. Make sure you select the only driver that works with your Windows version.\nAutomatic driver update - If you don't have the time, patience, or computer skills to manually update your drivers, Driver Easy can do it for you. Driver Easy will automatically detect your system and locate the appropriate drivers. You don't have to know what operating system your computer uses, you don't have to worry about downloading and installing the wrong driver, and you don't have to bother about making a mistake when installing:\nGet Driver Easy and install it.\nLaunch Driver Easy and select Scan Now. After that, Driver Easy will check your computer for any problematic drivers.\nTo automatically download and install the proper version of any flagged drivers, click the Update button next to that driver, or click Update All to instantly download and install the proper version of all missing or out-of-date drivers on your system.\nMake a power supply adjustment.\nControl Panel > Hardware and Sound > Power Options is the approach to take.\nClick on Choose what the power button does.\nChange any settings that are presently unavailable by clicking Change.\nUncheck the box for Turn on fast startup and then click Save changes.\nRestart your device and connect to the USB device to test whether it works. The USB port driver should be updated: If the preceding approaches fail to resolve your issue, you're probably using the incorrect USB driver. You can upgrade your USB port driver in one of two ways: manually or automatically.\nManual driver update – One can manually update your USB port driver by visiting your PC's manufacturer's website and searching for the most up-to-date correct driver. Make sure you select the only driver that works with your Windows version.\nAutomatic driver update - If you don't have the time, patience, or computer skills to manually update your drivers, Driver Easy can do it for you. Driver Easy will automatically detect your system and locate the appropriate drivers. You don't have to know what operating system your computer uses, you don't have to worry about downloading and installing the wrong driver, and you don't have to bother about making a mistake when installing:\nGet Driver Easy and install it.\nLaunch Driver Easy and select Scan Now. After that, Driver Easy will check your computer for any problematic drivers.\nTo automatically download and install the proper version of any flagged drivers, click the Update button next to that driver, or click Update All to instantly download and install the proper version of all missing or out-of-date drivers on your system. Manual driver update – One can manually update your USB port driver by visiting your PC's manufacturer's website and searching for the most up-to-date correct driver. Make sure you select the only driver that works with your Windows version.\nAutomatic driver update - If you don't have the time, patience, or computer skills to manually update your drivers, Driver Easy can do it for you. Driver Easy will automatically detect your system and locate the appropriate drivers. You don't have to know what operating system your computer uses, you don't have to worry about downloading and installing the wrong driver, and you don't have to bother about making a mistake when installing:\nGet Driver Easy and install it.\nLaunch Driver Easy and select Scan Now. After that, Driver Easy will check your computer for any problematic drivers.\nTo automatically download and install the proper version of any flagged drivers, click the Update button next to that driver, or click Update All to instantly download and install the proper version of all missing or out-of-date drivers on your system. Manual driver update – One can manually update your USB port driver by visiting your PC's manufacturer's website and searching for the most up-to-date correct driver. Make sure you select the only driver that works with your Windows version. Automatic driver update - If you don't have the time, patience, or computer skills to manually update your drivers, Driver Easy can do it for you. Driver Easy will automatically detect your system and locate the appropriate drivers. You don't have to know what operating system your computer uses, you don't have to worry about downloading and installing the wrong driver, and you don't have to bother about making a mistake when installing:\nGet Driver Easy and install it.\nLaunch Driver Easy and select Scan Now. After that, Driver Easy will check your computer for any problematic drivers.\nTo automatically download and install the proper version of any flagged drivers, click the Update button next to that driver, or click Update All to instantly download and install the proper version of all missing or out-of-date drivers on your system. Get Driver Easy and install it.\nLaunch Driver Easy and select Scan Now. After that, Driver Easy will check your computer for any problematic drivers.\nTo automatically download and install the proper version of any flagged drivers, click the Update button next to that driver, or click Update All to instantly download and install the proper version of all missing or out-of-date drivers on your system. Get Driver Easy and install it. Launch Driver Easy and select Scan Now. After that, Driver Easy will check your computer for any problematic drivers. To automatically download and install the proper version of any flagged drivers, click the Update button next to that driver, or click Update All to instantly download and install the proper version of all missing or out-of-date drivers on your system. Make a power supply adjustment.\nControl Panel > Hardware and Sound > Power Options is the approach to take.\nClick on Choose what the power button does.\nChange any settings that are presently unavailable by clicking Change.\nUncheck the box for Turn on fast startup and then click Save changes.\nRestart your device and connect to the USB device to test whether it works. Control Panel > Hardware and Sound > Power Options is the approach to take.\nClick on Choose what the power button does.\nChange any settings that are presently unavailable by clicking Change.\nUncheck the box for Turn on fast startup and then click Save changes.\nRestart your device and connect to the USB device to test whether it works. Control Panel > Hardware and Sound > Power Options is the approach to take. Click on Choose what the power button does. Change any settings that are presently unavailable by clicking Change. Uncheck the box for Turn on fast startup and then click Save changes. Restart your device and connect to the USB device to test whether it works. If your USB device still doesn't work after this adjustment, return to the previous configuration and proceed to the next step. Modify the USB selective suspend settings as necessary.\nSelect Power Options from the Control Panel.\nChange the plan's settings by clicking Change plan settings.\nClick Advanced power parameters can be changed.\nUSB settings and USB selective suspend settings should be expanded.\nBoth the On battery and Plugged settings should be disabled.]\nApply and then OK. Modify the USB selective suspend settings as necessary.\nSelect Power Options from the Control Panel.\nChange the plan's settings by clicking Change plan settings.\nClick Advanced power parameters can be changed.\nUSB settings and USB selective suspend settings should be expanded.\nBoth the On battery and Plugged settings should be disabled.]\nApply and then OK. Select Power Options from the Control Panel.\nChange the plan's settings by clicking Change plan settings.\nClick Advanced power parameters can be changed.\nUSB settings and USB selective suspend settings should be expanded.\nBoth the On battery and Plugged settings should be disabled.]\nApply and then OK. Select Power Options from the Control Panel. Change the plan's settings by clicking Change plan settings. Click Advanced power parameters can be changed. USB settings and USB selective suspend settings should be expanded. Both the On battery and Plugged settings should be disabled.] Apply and then OK.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "9. What would you do if your machine was constantly booting into Safe Mode? There are no warnings or errors.",
+        "answer": "After you've figured out your previous issues and rectified them, your computer should start up normally. It is possible, though, that your computer will become locked in Safe Mode. If your computer keeps rebooting in this manner and you want to exit Safe Mode, you'll need to make adjustments to get it back to normal. To begin, double-check the System Configuration tool. You can also perform the following actions: Open the Command Prompt by pressing Windows + R.\nTo open the menu, type \"msconfig\" and press Enter.\nSelect the \"Boot\" tab from the drop-down menu. Open the Command Prompt by pressing Windows + R. To open the menu, type \"msconfig\" and press Enter. Select the \"Boot\" tab from the drop-down menu.   If the \"Safe boot\" box is checked, uncheck it.\nTurn on your PC. If the \"Safe boot\" box is checked, uncheck it. Turn on your PC. If the box isn't checked, you'll have to go back to the original menu. Though you're using Windows 7 or earlier, hit the F8 key as if you're attempting to enter Safe Mode. Once the Advanced Boot Options menu appears, select the \"Start Windows Normally\" option with your arrow keys. In Windows 8 and 10, go to the Shutdown option  and do the aforementioned: While clicking \"Restart,\" hold down the Shift key and select the Troubleshoot page.\nSelect Advanced Options and afterwards Startup Settings from the drop-down menu.\nStart your computer again. While clicking \"Restart,\" hold down the Shift key and select the Troubleshoot page. Select Advanced Options and afterwards Startup Settings from the drop-down menu. Start your computer again. Although Windows will not start normally, it will display the Startup Settings page, where you can select the \"back to your operating system\" option. From there, your operating system will load normally.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "10. After you install Norton device security for Windows, you are not able to connect to the Internet again. How will you fix it?",
+        "answer": "An issue with internet access can occur for a variety of reasons. It could be due to a temporary issue with your service provider or a firewall-related issue with your machine. We need to figure out what's causing this issue before we can repair it. TURN OFF YOUR FIREWALL TEMPORARILY AND INSPECT THE CONNECTION. Open the Norton Device Security app on your computer.\nIf you get the My Norton window, click Open next to Device Security.\nSelect Settings options.\nClick Firewall in the Settings window.\nClick the slider next to Smart Firewall on the General Settings page to turn it off.\nClick Apply, then Permanently from the drop-down selection in the Protection Alert dialogue box.\nClick the OK button.\nAccess the internet to see if you can connect to the Internet.\nTurn on Smart Firewall after repeating steps 1–4.\nBefore proceeding, make certain that Smart Firewall is turned on. Open the Norton Device Security app on your computer. If you get the My Norton window, click Open next to Device Security. Select Settings options. Click Firewall in the Settings window. Click the slider next to Smart Firewall on the General Settings page to turn it off. Click Apply, then Permanently from the drop-down selection in the Protection Alert dialogue box. Click the OK button. Access the internet to see if you can connect to the Internet. Turn on Smart Firewall after repeating steps 1–4. Before proceeding, make certain that Smart Firewall is turned on. Select one of the following options based on whether you can access the websites after turning off the firewall: Only after I disable the firewall can I visit the websites. If you can access the Internet after disabling the firewall, the firewall rules must be reset.\nActivate Norton.\nIf you get the My Norton window, click Open next to Device Security.\nSelect Settings from the drop-down menu.\nClick Firewall in the Settings window.\nClick Reset next to Firewall Reset on the General Settings tab.\nClick Yes in the confirmation window.\nAfter that, click Apply and then Close.\nEven after disabling the firewall, I am unable to visit the Norton website. Uninstall and reinstall your Norton software if you still can't access the Internet after disabling the firewall. Only after I disable the firewall can I visit the websites. If you can access the Internet after disabling the firewall, the firewall rules must be reset.\nActivate Norton.\nIf you get the My Norton window, click Open next to Device Security.\nSelect Settings from the drop-down menu.\nClick Firewall in the Settings window.\nClick Reset next to Firewall Reset on the General Settings tab.\nClick Yes in the confirmation window.\nAfter that, click Apply and then Close. Activate Norton.\nIf you get the My Norton window, click Open next to Device Security.\nSelect Settings from the drop-down menu.\nClick Firewall in the Settings window.\nClick Reset next to Firewall Reset on the General Settings tab.\nClick Yes in the confirmation window.\nAfter that, click Apply and then Close. Activate Norton. If you get the My Norton window, click Open next to Device Security. Select Settings from the drop-down menu. Click Firewall in the Settings window. Click Reset next to Firewall Reset on the General Settings tab. Click Yes in the confirmation window. After that, click Apply and then Close. Even after disabling the firewall, I am unable to visit the Norton website. Uninstall and reinstall your Norton software if you still can't access the Internet after disabling the firewall.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "11. In Windows 10, network computers are not visible in Explorer. How would you go about resolving this?",
+        "answer": "Because the problem of not seeing all network machines in Windows 10 can occur for several reasons, I'll go over all of the possible solutions in this context. Method 1: Configure the most recent version of Windows 10. Method 1: Configure the most recent version of Windows 10. In Windows 10 versions 1709, 1803 & 1809, the issue \"Network does not show machines\" occurs. The issue has been resolved in the most recent Windows 10 versions. So, before trying the procedures below, upgrade your system to the most recent version of Windows 10 (1909). Method 2: Using the IP Address to directly access the shares. Method 2: Using the IP Address to directly access the shares. The next step is to type \"\\\\\" and the static IP address of the computer hosting the shared folder in the explorer's address bar to resolve the issue(s). After you've accessed the shares, right-click on the shared folder and select Map a Network Drive to make it easier to access the folders at any time. Method 3: Make the necessary changes to the Network Discovery settings. Method 3: Make the necessary changes to the Network Discovery settings. Modifying the network discovery settings and the \"Function Discovery\" services as below is the next step in viewing the other machines in your network: STEP 1: ENABLE NETWORK DISCOVERY.\nSTEP 2: AUTOMATICALLY RUN THE REQUIRED SERVICES.\nSet the 'Startup type' of the following four services in the Windows Services panel as follows: STEP 1: ENABLE NETWORK DISCOVERY. STEP 2: AUTOMATICALLY RUN THE REQUIRED SERVICES. Set the 'Startup type' of the following four services in the Windows Services panel as follows:   Function Discovery Provider Host (fdPHost) -> Automatic\nFunction Discovery Resource Publication (FDResPub) -> Automatic Delayed Start\nSSDP Discovery > Manual -> Manual\nUPnP Device Host > Manual -> Manual    Method 4: Restart the Service of Function Discovery Resource Publication (FDResPub). Method 4: Restart the Service of Function Discovery Resource Publication (FDResPub). Restarting the FDResPub service is another way to fix the \"Windows 10 not seeing network computers\" problem. To do so, right-click on the Function Discovery Resource Publication service and select Restart from the menu that appears. Restarting the FDResPub service is another way to fix the \"Windows 10 not seeing network computers\" problem. To do so, right-click on the Function Discovery Resource Publication service and select Restart from the menu that appears. Method 5: Remove the Function Discovery Resource Publication service's trigger. Method 5: Remove the Function Discovery Resource Publication service's trigger. Type the following command in Command Prompt as Administrator: sc triggerinfo FDResPub delete\nCheck to see whether you can see the network computers after restarting your computer. Type the following command in Command Prompt as Administrator: sc triggerinfo FDResPub delete sc triggerinfo FDResPub delete Check to see whether you can see the network computers after restarting your computer. Note: Type the following command to restore the removed trigger: sc triggerinfo FDResPub start/strcustom/fbcfac3f-8460-419f-8e48-1f0b49cdb85e/PROFILE_CHANGED_TO_PRIVATE Note: Type the following command to restore the removed trigger: sc triggerinfo FDResPub start/strcustom/fbcfac3f-8460-419f-8e48-1f0b49cdb85e/PROFILE_CHANGED_TO_PRIVATE sc triggerinfo FDResPub start/strcustom/fbcfac3f-8460-419f-8e48-1f0b49cdb85e/PROFILE_CHANGED_TO_PRIVATE Method 6: Enable support for SMB 1.0/CIFS file sharing. Method 6: Enable support for SMB 1.0/CIFS file sharing. If you still can't find the other computers on your network after using the aforementioned techniques, go ahead and enable the 'SMB 1.0/CIFS File Sharing Support' function. If you still can't find the other computers on your network after using the aforementioned techniques, go ahead and enable the 'SMB 1.0/CIFS File Sharing Support' function. Note: Because SMB v1 isn't secure, Microsoft suggests mapping network drives rather than enabling it. Note: Because SMB v1 isn't secure, Microsoft suggests mapping network drives rather than enabling it. Note: Method 7: In Windows 10 Pro, enable Remote Desktop. Method 7: In Windows 10 Pro, enable Remote Desktop. This method is only applicable to Windows 10 Professional Editions. In Windows Explorer, right-click on the This PC icon and choose Properties.\nOn the left, select Remote Settings. In Windows Explorer, right-click on the This PC icon and choose Properties. On the left, select Remote Settings. Note: In the most recent Windows 10 versions, select Remote Desktop from the left pane and then turn on the Remote Desktop switch on the right. Finally, press the Confirm button. Note: In the most recent Windows 10 versions, select Remote Desktop from the left pane and then turn on the Remote Desktop switch on the right. Finally, press the Confirm button. Note Choose Allow remote connections to this computer on the Remote tab, then Apply & OK.\nRestart your computer. Choose Allow remote connections to this computer on the Remote tab, then Apply & OK. Restart your computer.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "1. What skills are needed for technical support?",
+        "answer": "Technical support engineers are often required to have at least an associate's degree in computer science or a related subject. There are various abilities required to be a good technical support engineer. One crucial feature is solid communication skills, which allow the tech support engineer to engage with clients in normal, layman language while remaining coherent and comprehensible, as well as being kind and patient. They should be efficient, problem-solving experts, and naturally creative. Because the job has no set hours, the tech support engineer must be flexible with their work schedules because a problem with a client's device might occur at any moment. They must have managerial and organisational abilities to accomplish projects properly. They must have not only good technical skills, but also be conversant with a variety of hardware, software applications, and operating systems.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "2. How to prepare for a technical support interview?",
+        "answer": "A technical support job combines computer knowledge, know-how, and customer service skills into one position. Its goal is to assist consumers with computer-related concerns. Some employers prefer candidates with a formal degree, such as a bachelor's or equivalent, while others seek candidates with a basic understanding of computers and the capacity to learn on the job. If you're interviewing for a technical support position, you may expect to be asked a variety of troubleshooting questions. There will be hardware and software-related questions. You'll be asked how you'll figure out what's wrong and how you'll fix it. The interviewers will be searching for good interpersonal and communication skills in addition to a thorough understanding of computers. The questions and best possible answers to the most often requested technical support interview questions are listed above.",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "3. What made you get into technical support?",
+        "answer": "This question can assist the interviewer in gaining a better grasp of the applicant's motivations. What the interviewer is looking  for in a response: The candidate is enthusiastic about providing technical support.\nThe candidate comes out as authentic and honest.\nThe candidate is aware of the larger goal of technical support. The candidate is enthusiastic about providing technical support. The candidate comes out as authentic and honest. The candidate is aware of the larger goal of technical support. An example of a response: An example of a response: \"I chose to work in technical support because I've always been fascinated by technology and enjoy interacting with people. I want to put my technical expertise to work directly in solving problems for clients. I want to be the person who makes people's lives easier and more fun when they have a problem.\" \"I chose to work in technical support because I've always been fascinated by technology and enjoy interacting with people. I want to put my technical expertise to work directly in solving problems for clients. I want to be the person who makes people's lives easier and more fun when they have a problem.\" Additional Interview Resources Networking Interview Questions\nWeb Services Interview Questions\nTechnical Interview Questions\nDXC Interview Questions Networking Interview Questions Networking Interview Questions Web Services Interview Questions Web Services Interview Questions Technical Interview Questions Technical Interview Questions DXC Interview Questions DXC Interview Questions",
+        "reference": "interviewbit.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "1) What do you think about the role of a technical support engineer?",
+        "answer": "The job role of a technical support engineer is to maintain and monitor the computers and the networks of an organization or provide online support for the organization's clients.\nA technical support engineer is responsible for doing the following tasks:\nADVERTISEMENT\nADVERTISEMENT\nInstall and configure the OS, hardware, software, and other online applications.\nMaintain and monitor computers and networks.\nLog in to customer's and employee's queries.\nAnalyze and discover underlying issues.\nFind and resolve the issues related to both hardware and software.\nTesting new technologies and evaluate them.\nPerform safety checks, etc.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "2) Why are you interested in Technical Support?",
+        "answer": "The interviewer asks this question to check your passion for the job. Your answer must be sincere and honest, and you have a great understanding of this job profile and its purpose.\nADVERTISEMENT\nA Sample Answer: Sir, I have always been fascinated by technology, and I enjoy working with people. It's my hobby to solve the customers' issues, and I enjoy troubleshooting other's issues.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "3) What are some of the latest computer processors?",
+        "answer": "Following is a list of some latest computer processors:\nIntel Core i9\nIntel Core i7\nIntel Core i5\nIntel Core i3\nAMD Ryzen 9\nAMD Ryzen Threadripper\nAMD Ryzen 7 etc.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "4) What is Windows Recovery Environment? How can you access it?",
+        "answer": "Windows Recovery Environment or Windows RE is a recovery environment. It is used to repair common causes of unbootable operating systems. Windows Recovery Environment (Windows RE) is based on Windows Pre-installation Environment (Windows PE). You can easily customize it with additional drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. By default, Windows RE is preloaded into the Windows 8.1, Windows 10, and Windows Server 2012 R2 installations.\nWe can easily access the Windows RE features through the Boot Options menu by using any of the following steps:\nSelect Start, Power, and then press and hold the Shift key and click the Restart\nSelect Start, Settings, Update and Security, Recovery. Now, go under the \"Advanced startup\" and click Restart now\nOpen the command prompt and run the Shutdown /r /o command to achieve this.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "5) What does the sign question mark '?' indicates in the device manager?",
+        "answer": "When the sign question mark \"?\" appears in the device manager, it indicates that it is not properly installed. We can see this problem mainly in brand new plug-in cards.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "6) What is your way to troubleshoot an issue?",
+        "answer": "The interviewer asks this question to check your approach towards identifying a problem and finding its solution. It also shows your attitude towards problem-solving. Remember that the first thing in troubleshooting is to get all the facts first.\nADVERTISEMENT\nADVERTISEMENT\nWhile answering this question, you must focus on the following things:\nYour aim should be to satisfy the customer's needs as quickly as possible.\nYour focus should be to minimize the downtime of your client. So, if you find multiple issues, there will be multiple fixes that might be unrelated. It would help if you always remembered that time management very critical in technical support.\nYou can answer this question in the following way:\nA Sample Answer: Sir, the first thing I do is listen to my client carefully to identify the problem. Then, I go through all the necessary steps for rectifying that problem. Now, I create a detailed and accurate troubleshooting plan that must be extensive and adaptable for the client.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "7) How would you deal with a customer who complains about a brand new printer and system for not getting a good print copy?",
+        "answer": "If you have any technical support experience, you may have faced this type of problem. You can cope up with the client in the following way:\nA Sample Answer: Sir, I will first ask the customer whether he has properly connected his system with the printer. Then, I would ask him to check the Device Driver. In most cases, if you install an incorrect Device Driver, the print copy would not be clear. If this not solves the client's issue, I would diagnose some other cases or transfer this case further to my seniors.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "8) How do you keep yourself updated with the current technology?",
+        "answer": "The interviewer asks this question to check your interest in the latest trends and technologies. You can answer this question in the following way:\nSir, I follow some technology tabloids regularly and also keep me connected with social networking sites. On these platforms, I can see the technological advancement news easily. I also keep surfing the latest technology on the internet.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "9) What do you understand by Ping?",
+        "answer": "Ping is used to checking the connectivity with the IP address. It is a computer network administration software utility that is used to test the reach of a host on an Internet Protocol network. It is available for virtually all operating systems with networking capability, including most embedded network administration software.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "10) What is an IP Address? What is its usage?",
+        "answer": "An IP address is a unique numerical address identifier of every device connected to a computer network. An IP address looks like this: 216.27.61.141. It gives a unique identity to a network.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "11) How can you detect a computer's IP address?",
+        "answer": "We can easily detect a computer's IP Address by following the steps given below:\nGo to Start > Run > Type in CMD in the Run Dialogue Box and click OK.\nType in IPCONFIG in the Command Prompt screen that pops up, and then click the \"Enter\" button.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "12) Which are the essential things in identifying the problems and solving them in tech support?",
+        "answer": "Manuals, Knowledge, team members, and experience are some crucial things that would be helpful to troubleshoot the problem and solving them.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "13) What is a Data Cable? Why is it used?",
+        "answer": "A Data Cable is a thin plastic band-like cable used to connect the Data-Devices such as Hard-disk drives (HDD), Floppy Disk Drives, CD/DVD-ROM drives with the motherboard. Data Cables are mainly used for data transfer.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "14) What is a Microprocessor? What is its use?",
+        "answer": "A microprocessor is a program-controlled device used to retrieve the data instructions from memory and decodes them. After solving the instructions, it executes them for further process.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "15) What is the disadvantage of microprocessors?",
+        "answer": "The most significant disadvantage of a microprocessor is the limitation on the size of the data. It also does not support floating-point operations.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "16) Why 8085 microprocessor is called an 8-bit processor?",
+        "answer": "8085 microprocessor is called an 8-bit processor because it has an 8 bit ALU (Arithmetic Logic Unit).",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "17) What do lights indicate on a Modem / LAN Card?",
+        "answer": "Generally, there are 04 lights on a Modem / LAN Card that indicates the following thing:\n\nPower Light: The power light is used to show if the device (Modem) is getting Power Supply or not.\nLink Light: The link light is used to indicate if the device is getting broadband/internet signals properly from the ISP.\nData Light: The data light is used to indicate whether the internet is working or not.\nConnectivity Light: The connectivity light indicates that the Modem is connected to a PC or not.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "18) What is an average call period while dealing with the customers?",
+        "answer": "Generally, the expected period of an average call would be around 2-3 minutes. Sometimes, it would be less or more depending on the complexity of the problem.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "19) What are the different hardware components of a desktop computer or laptop?",
+        "answer": "The interviewer asks this question to test your basic knowledge of computers. Main hardware components for desktop and laptop computers are the motherboard, processor, RAM, monitor, mouse, soundcard, keyboard, graphics, hard disk drive, power supply, floppy disk drive, etc.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "20) What do you understand by stack? Can we use ROM as a stack?",
+        "answer": "Stack is a part of RAM used to save the content of the program counter and general-purpose registers. We cannot use ROM as a stack because it is not possible to write on ROM.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "21) What do you understand by Hard-Disk Partitions?",
+        "answer": "Hard-Disk Partition is a type of partition used to divide a Hard-disk drive into smaller segments as required by the user. It is done for better management of the space in it.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "22) What is the use of Latch?",
+        "answer": "Latch is a temporary storage device controlled by a timing signal. It can only store 0 or 1. It is a D-type flip-flop storage device.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "23) What do you understand by DHCP?",
+        "answer": "DHCP is an acronym that stands for Dynamic Host Configuration Protocol. It is a network protocol that is used to enable the server to assign an IP address to a computer automatically.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "24) What do you understand by the OSI model?",
+        "answer": "OSI is an acronym that stands for Open System Interconnection. The OSI model is a conceptual model or a standard description, or a reference model that characterizes a telecommunication or computing system's communication functions. It specifies how a message should be conveyed between any two points within a telecommunication network. The OSI model comprises several layers, and each layer provides services to its above layer. This model was developed by ISO 'International Organization of Standardization' in the year 1984.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "",
+        "answer": "The OSI model's architecture consists of the seven layers that work collaboratively to transmit the data from one person to another across the globe.\n\nFollowing is the list of all seven layers of the OSI model:\nPhysical Layer: The physical layer is the lowest layer of the OSI reference model. It is responsible for the actual physical connection between the devices. This layer contains information in the form of bits and transmits individual bits from one node to the next. After receiving the data, this layer gets a signal received, converts it into 0s and 1s, and sends them to the Data Link layer.\nData Link Layer: The data link layer is used to transmit messages form node to node. This layer ensures that the data transfer is error-free from one node to another over the physical layer. The Data Link Layer is divided into two sub-layers: Logical Link Control (LLC) and Media Access Control (MAC).\nNetwork Layer: The network layer is responsible for transmitting data from one host to the other located in different networks. It is also used for packet routing.\nTransport Layer: The transport layer is used to make communication between the application layer and network layer. The data in the transport layer is called Segments. It ensures the End to End Delivery of the complete message and provides an acknowledgment of the successful data transmission, and re-transmits the data if an error is found.\nSession Layer: The Session layer is used for connection establishment, maintenance of sessions, and authentication. It is also responsible for ensuring security.\nPresentation Layer: The Presentation layer is responsible for extracting the data from the application layer and manipulating it as per the required format to transmit over the network. The main functions of the presentation layer are translation, encryption/ decryption, and compression. It is also called the translation layer.\nApplication Layer: The Application layer is the topmost layer of the OSI Reference Model. The network applications implement it. These applications produce the data, which has to be transferred over the network. This layer also acts as a window for the application services to access the web and display the received information to the user. That's why this layer is called the desktop layer.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "26) What do you understand by TCP/IP? What does it do?",
+        "answer": "TCP/IP stands for Transmission Control Protocol or Internet protocol. It is a suite of communication protocols used to interconnect network devices on the internet. We can say that it is used to connect hosts on the internet by transferring data over the network. It can also be used as a communications protocol in a private computer network, an intranet, or an extranet.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "27) How would you resolve this issue if audio is not working or there is no sound from your computer?",
+        "answer": "We should follow the steps given below to resolve the \"audio is not working or there is no sound from your computer\" issue:\nCheck for cable connections\nCheck for power to the speakers\nCheck for volume control\nCheck for device drivers",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "28) What are the usages of RJ45 and RJ11 connectors?",
+        "answer": "The RJ45 connectors are used for LAN/internet connections, while RJ11 connectors are used for Table cable connections.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "29) What do you understand by Cache memory? What is the advantage of a processor having more cache memory?",
+        "answer": "Cache memory is a high-speed memory type that acts as a buffer between RAM and the CPU. The cache memory holds the requested data and instructions to make it immediately available to the CPU when required. It is also used to reduce the average time to access data from the Main memory. When the cache memory increases, the speed of the system will also increase. So, if a processor has more cache memory, it will be faster.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "30) What is the full form of SATA? What is its usage?",
+        "answer": "The full form of SATA is Serial Advanced Technology Attachment. It is a high-speed computer bus interface used for transferring data between a computer's central circuit board and storage devices such as hard disk drives and optical drives. SATA was designed to replace the long-standing PATA (Parallel Advanced Technology Attachment) interface.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "31) What do you understand by Jumper, and why is it required?",
+        "answer": "In electronics (particularly in computers), a jumper is a short length of conductor used to close, open or bypass part of an electronic circuit. It is generally used to close the electric circuit and change the board's parameters. It is also used to set up or configure printed circuit boards, such as computers' motherboards.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "32) What is the difference between SDK and an API?",
+        "answer": "Following is the list of key differences between SDK and an API:\nSDK API\nSDK stands for Software Development Kit. API stands for Application Programming Interface.\nSDK is a software development kit that offers tools, code samples, libraries, processes, guides or relevant documents for creating software applications on specific platforms. The API is an interface used to allow the software to interact with each other.\nAn SDK is a complete workshop that can allow us to create beyond the scope of API. An API can translate and transfer two different instruction sets for mutual understanding.\nAn SDK is almost the origin point of nearly every program that we use. The API comes in many sizes and shapes. Sometimes, it is required even to copy paste.\nSometimes, SDK contains API. API is used for different functions in the World Wide Web. The Web API facilitates interaction between disparate systems, especially for specific cases.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "33) What are the different types of DRAM, and what is its usage?",
+        "answer": "DRAM is a specific type of RAM. DRAM stands for Dynamic Random-Access Memory. It is a type of semiconductor memory that is typically used for the data or program code needed by a computer processor to function. DRAM is a common type of random access memory (RAM) used in personal computers, workstations, and servers. The different types of DRAM are SRAM, VRAM, SGRAM, DDR-SDRAM, etc.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "How would you handle this situation?",
+        "answer": "The interviewer asks this question to see your approach to solve this problem. See a sample answer:\nA Sample Answer: Sir, I will first check if the system that is sharing the drive is turned on or not. If it is, I will check the other files that I have permission to access to see if the issue is with all the files. I will also check if I have the correct permissions to access that particular file. If everything is okay and yet I am not able to access that file, then I will make sure that the programs are working fine to copy that file on our local drive.\nI will also ensure that the file is not currently being used by someone else.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "35) What might be the problems when you don't see the display?",
+        "answer": "There may be the following problems when you don't see the display:\nPower related issues\nHeat sink related issues\nCPU fan-related issues\nImproper Jumper settings",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "36) What is a heat sink, and what is its usage in the system?",
+        "answer": "A heat sink is a component used to lower the temperature of a device. It is used on the microprocessor, and if it is not functioning well, then the computer may shut down automatically.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "37) What do you understand by overclocking? What are the advantages of overclocking?",
+        "answer": "Overclocking is a process where the computer component is forced to run at a higher clock rate.\nFollowing are the main advantages of overclocking:\nIt increases the CPU's performance.\nIt saves the cost.\nIt makes PC games and applications run faster.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "38) What do you understand by chipset? How is it different from processor and Motherboard?",
+        "answer": "Chipset is one of the processing devices in a computer. It is a set of integrated circuits designed to control how information travels between the processor and other components. This is a set of microchips to work as a unit to perform one or more related functions. Chipset is a built-in feature of Motherboard. Let's see how it is different from processor and Motherboard:\nProcessor: A processor is the central integrated circuit block used to do functions according to a computer program's instruction. It is based on the logical, arithmetical, and input/output of the system.\nMotherboard: The Motherboard contains all other components such as CPU, Memory, and socket for external connectors and drives.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "39) What is the packaging of a Microprocessor? What are the different ways of packaging available?",
+        "answer": "Packaging is the process of connecting a microprocessor with the Motherboard of a computer. Following are the different types of microprocessor packaging available:\nPGA\nSPGA\nSECC\nLGA",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "40) What are the advantages and disadvantages of using Imaging Software?",
+        "answer": "followings are the advantages and disadvantages of using Imaging Software:\nAdvantages of using Imaging Software\nWe can create precisely duplicate content from one hard disk to another by using Imaging Software.\nIt can be used to simultaneously deliver complex drive images to one or many systems over the network.\nIf the utility knows individual partitions of file systems, you can use it to resize them for many file systems.\nDisadvantages of using Imaging software\nIt has limited intimate knowledge of file systems, resulting in the copying of source hard disk into image block by block. That's why it takes a long time.\nIt is slow and takes a lot of time to complete the work for large disks.\nIt provides a bit of recovery from errors or its detection during the image generation and deployment.\nIt is costly. The best imaging software is commercial and expensive.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "41) What do you understand by Ghost Imaging? Why is it used?",
+        "answer": "Ghost imaging is a backup process driven by software to copy the complex disk contents to another server in a compressed file or a set of files referred to as an image. When required, it can also change a ghost image back to its original form. It is often used during the reinstallation of an operating system. Ghost imaging is also known as cloning.\nGhost imaging is used for the following purposes:\nIt is used to allow a system to be cloned onto others or quickly restore a system.\nIt is often used for setting up blocks of Tablets, Notebooks, or Servers quickly. It is also used to enable the transfer from one PC or disk to another.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "42) What do you know about Disk Partition? How many partitions can a hard drive have?",
+        "answer": "A disk partition divides the hard drive into specific small spaces for storage. It is used to organize the data efficiently and effectively. The computer users should store applications and OS data on one partition and the user data on another. It is necessary because if you find any issue with Windows, you can easily format the partition with OS entirely and then reinstalled without any effect on the data partition.\n\nWe can make up to four primary partitions of the hard disk, such as three primary partitions and one extended partition. In the extended partition, we can create a more extensive amount of logical partition.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    },
+    {
+        "question": "INI? What are the different sections in it?",
+        "answer": "The BOOT.INI is a Microsoft initialization file that contains the boot options for Microsoft Windows NT, 2000, and XP. It is always located at the primary hard drive's root directory, i.e., the C drive.\nThere are two sections in BOOT.INI:\nThe boot loader section with option settings applies to all boot entries for the system that includes default, timeout, etc.\nThe section with operating systems: It contains boot entries, one or more, for each bootable program or OS that is installed on the computer.",
+        "reference": "javatpoint.com",
+        "role": "technical-support"
+    }
+]

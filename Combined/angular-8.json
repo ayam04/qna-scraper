@@ -1,0 +1,326 @@
+[
+    {
+        "question": "1. List some of the features of Angular 8 which differentiate it from the previous versions of Angular.",
+        "answer": "Some of the striking features of Angular 8 which differentiates it from the previous versions of Angular are as follows:- Angular 8 supports dynamic imports for lazy routes.\nAngular 8 provides the feature of differential loading for all applicable codes.\nIt also supports features like Web Workers, Bazel, and TypeScript 3.4\nThere is Opt-In usage sharing in Angular 8.\nThere are many NgUpgrade improvements in Angular 8. Angular 8 supports dynamic imports for lazy routes. Angular 8 provides the feature of differential loading for all applicable codes. It also supports features like Web Workers, Bazel, and TypeScript 3.4 There is Opt-In usage sharing in Angular 8. There are many NgUpgrade improvements in Angular 8.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "2. How can we load and run an Angular Application?",
+        "answer": "We can use the command ng serve to run and load an Angular Application.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "3. How can we check the type of value assigned to a given variable in Angular 8?",
+        "answer": "In Angular 8, the type of checks can be used to check the type of value assigned to a given variable. Moreover, we can also test the value assigned to an object by using a type of checks in version 8 of Angular.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "4. Why are template-driven forms used in Angular 8?",
+        "answer": "Angular 8 Template-driven forms are to add simple forms to applications where scalability is not an issue. They are very easy to use but not as scalable as Reactive forms.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "5. Why are reactive forms used in Angular 8?",
+        "answer": "Reactive forms have a lot of important features, for instance, they are robust, scalable, testable, reusable, etcetera. That is why they are used in applications made using Angular 8, where forms are an essential component of the application.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "6. Describe the importance of WildCard Route in Angular 8.",
+        "answer": "Angular 8 WildCard Route does the extremely important job of matching URLs as instructions to get a client-generated view. It sets a route when the URL which is requested does not match any router paths. In a nutshell, the WildCard Router sets or defines the routes of the pages in Angular 8. Angular 8 WildCard Route",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "7. What is CodeLyzer in Angular 8?",
+        "answer": "Codelyzer is an open-source tool that has its foundations on the top of the TSLint. It verifies whether or not the Angular TypeScript 3.4 projects are following the set of linting rules so that the quality and correctness of the programs are not compromised. Codelyzer TSLint Angular TypeScript 3.4",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "8. What is the use of Bazel in Angular 8?",
+        "answer": "Bazel is a build system in Angular 8 available for a short period.\nIt provides a platform to make back-end and front-end services with the same tool.\nIt allows us to build CLI (Command Line Interface) applications quickly and easily.\nThe entirety of the Angular 8 framework is built on Bazel and it allows us to divide an application into various build units which are defined at the NgModule level.\nIt supports customization and also facilitates us to draw graphs. We can use these graphs to easily identify the essential information. Bazel is a build system in Angular 8 available for a short period. It provides a platform to make back-end and front-end services with the same tool. It allows us to build CLI (Command Line Interface) applications quickly and easily. The entirety of the Angular 8 framework is built on Bazel and it allows us to divide an application into various build units which are defined at the NgModule level. It supports customization and also facilitates us to draw graphs. We can use these graphs to easily identify the essential information. Bazel In Angular 8  Bazel In Angular 8",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "9. What do you understand about Ivy in Angular 8?",
+        "answer": "The Rendering Engine of Angular 8 Ivy.  Ivy was released in Angular 8 as an Opt-in and was also opted as the code name for Angular’s next-generation rendering pipeline and compilation. Angular 8 Ivy Rendering Pipeline  Rendering Pipeline",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "1. Explain Lazy Loading in Angular with appropriate syntax.",
+        "answer": "Lazy loading is a feature of Angular which helps in bringing down the size of large files. This is accomplished by lazily loading the files that are to be used again and again. Angular 8 provides support for dynamic imports in our router configuration. In other words, we use the import statement for lazy loading of the module and this will be understood by the webpack, IDEs (Integrated Development Environments), etc. Syntax Syntax {path: 'user', loadChildren: () =>\nimport('./users/user.module').then(my => my.UserModule)}; {path: 'user', loadChildren: () =>\nimport('./users/user.module').then(my => my.UserModule)}; Explanation Explanation In the above code snippet, the loadChildren expects a function that uses the dynamic import syntax to import the lazy loaded module only when it is needed. As is evident from the above code snippet, the dynamic import is based on promises and gives us access to the module, where the module’s class can be called.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "2. Why do applications compiled with AOT (Ahead of compilation) launch faster?",
+        "answer": "Some of the reasons as to why applications compiled with AOT launch faster are as follows - Application components that are compiled with AOT execute immediately, without the client-side compilation.\nTemplates here are embedded as code within their components. Therefore, there is no client-side request for template files, making it fast.\nThe compiler does not entertain the unused Angular directives and therefore, gives a fast response. Application components that are compiled with AOT execute immediately, without the client-side compilation. Templates here are embedded as code within their components. Therefore, there is no client-side request for template files, making it fast. The compiler does not entertain the unused Angular directives and therefore, gives a fast response. Conclusion As is evident from the above set of questions, Angular has a plethora of features that it has to offer to developers. This is the reason why Angular has been growing very rapidly and being used in the software industry. Therefore, any budding developer of today, who is familiar with Angular, has a good chance of cracking technical interviews of various companies. In this article, we aimed at listing the famous interview questions on Angular 8 which we think are important and we hope we are successful in our endeavor! Additional Resource Practice Coding\nAngular Vs React\nDifference Between Angular and AngularJS Practice Coding Practice Coding Angular Vs React Angular Vs React Difference Between Angular and AngularJS Difference Between Angular and AngularJS",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "3. Explain Event Binding with an appropriate example.",
+        "answer": "Event binding is a technique that is used in Angular 8 to handle the events raised from the Document Object Model (DOM), for instance, button clicks, mouse hovers, mouse moves, etc. When the DOM event happens, the specified method in the component is immediately called. An example of event binding is given below - <button (click)=\"raiseVolume()\"></button> <button (click)=\"raiseVolume()\"></button> In this example, the raiseVolume() method from the component will be called when the button is clicked.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "4. What do you understand about NgModules in Angular 8?",
+        "answer": "The NgModules in Angular 8 varies from other JavaScript modules. All Angular applications have at least one module known as the AppModule. The NgModule gives us a bootstrap mechanism to launch different applications easily. A few of the striking features of Angular 8 modules are as follows: The own functionality of the NgModule can be exported and can also be utilized by other NgModules.\nAngular 8 NgModule can import functionalities from other NgModules. The own functionality of the NgModule can be exported and can also be utilized by other NgModules. Angular 8 NgModule can import functionalities from other NgModules.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "5. Justify the need for Angular 8 components.",
+        "answer": "In Angular, there is a list of classes with decorators known as components that usually mark their own types. They provide metadata to help Angular do a lot of things. Every application in Angular 8 has at least one component known as the root component, which is mostly used to connect page hierarchy with page DOM.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "6. What is String Interpolation in Angular 8? Explain with an example.",
+        "answer": "String Interpolation is a one-way Data Binding Technique. It can be used to extract the output data from a TypeScript code to the HTML template view layer. String Interpolation displays the data from the component to the view layer in the form of curly braces. String interpolation technique adds the value of property to the component. An example of String Interpolation is shown below - {{data}} {{data}}",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "7. Explain the concept of Data Binding.",
+        "answer": "Data Binding can be best described as a technique that is used to link the application’s data to the view layer. It makes communication between the DOM (Document Object Model) and the TypeScript code of our component. In other words, data binding is a communication between the typescript code of our component and our template, which is visible to the user. Data Binding allows us to define interactive applications easily and efficiently without worrying about pushing and pulling data. There are two types of data binding - There are two types of data binding - One-way data-binding: One-way data binding is used to bind the data from the component to the view (Document Object Model) or vice versa. One way data binding is a unidirectional data binding method, that is, we can either bind the data from the component to the view or bind the data from the view to the component.\nTwo-way data binding: Two-way data binding in Angular version 8 helps the users to exchange data from the component to the view and from the view to the component. Bi-directional communication is established in this method. One-way data-binding: One-way data binding is used to bind the data from the component to the view (Document Object Model) or vice versa. One way data binding is a unidirectional data binding method, that is, we can either bind the data from the component to the view or bind the data from the view to the component. One-way data-binding: Two-way data binding: Two-way data binding in Angular version 8 helps the users to exchange data from the component to the view and from the view to the component. Bi-directional communication is established in this method. Two-way data binding:",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "8. Write the syntax for ngIf Directive. Why is it used?",
+        "answer": "The syntax of the ngIf Directive is given below <p *ngIf=\"condition\">    \n    condition is true and ngIf is true.    \n</p>    \n<p *ngIf=\"!condition\">    \n    condition is false and ngIf is false.    \n</p> <p *ngIf=\"condition\">    \n    condition is true and ngIf is true.    \n</p>    \n<p *ngIf=\"!condition\">    \n    condition is false and ngIf is false.    \n</p> The usage of ngIf is described below - It is a structural directive present in Angular Version 8 whose usage revolves around adding or removing HTML elements based on the expression statement. The functioning of this nglf directive is observed as follows: When the expression is true, the element is added and when the expression is false, the element is removed using this directive.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "9. What is the usage of NgUpgrade in Angular 8?",
+        "answer": "NgUpgrade is one of the upgrade libraries of Angular version 8 which is mostly used to integrate both Angular and AngularJS components in an application. It also helps us in bridging the gap between the Dependency Injection Systems in both AngularJS and Angular.",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "10. How can we create an application in Angular version 8?",
+        "answer": "We can create an Angular 8 application using the following command ng new applicationName ng new applicationName To install the Angular CL, we can use the following command npm install -g @angular/CLI npm install -g @angular/CLI",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "11. List a few key parts of the Angular 8 architecture",
+        "answer": "A few key parts of the Angular 8 architecture are as follows - Angular 8 Architecture  Angular 8 Architecture Angular 8 MetaData - Metadata in Angular version 8 is used to decorate a class for the configuration of the expected behavior of the class.\nAngular 8 DataBinding - Data Binding is used to bind the data from the component to the template.\nAngular 8 Components - Angular Components are building blocks of all Angular applications. Every angular application is made up of one or more Angular Components. It is basically a plain JavaScript or Typescript class along with an HTML template and an associated name.\nAngular 8 Modules - It is a collection of related features. Angular 8 Module groups multiple components and services under a single context.\nAngular 8 Services - Services are nothing but plain and simple Typescript or JavaScript classes that provide very specific functionalities. They help us do a single task in the best possible way so that code reusability is achieved. Rather than writing a functionality inside a component, separating it into a service makes it reusable in other components as well.\nAngular 8 Templates - Angular 8 template is a superset of HTML (HyperText Markup Language). It includes all the features of HTML and gives us additional features to bind the component data into the HTML and to dynamically generate the HTML DOM elements. Angular 8 MetaData - Metadata in Angular version 8 is used to decorate a class for the configuration of the expected behavior of the class. Angular 8 MetaData - Angular 8 DataBinding - Data Binding is used to bind the data from the component to the template. Angular 8 DataBinding - Angular 8 Components - Angular Components are building blocks of all Angular applications. Every angular application is made up of one or more Angular Components. It is basically a plain JavaScript or Typescript class along with an HTML template and an associated name. Angular 8 Components - Angular 8 Modules - It is a collection of related features. Angular 8 Module groups multiple components and services under a single context. Angular 8 Modules - Angular 8 Services - Services are nothing but plain and simple Typescript or JavaScript classes that provide very specific functionalities. They help us do a single task in the best possible way so that code reusability is achieved. Rather than writing a functionality inside a component, separating it into a service makes it reusable in other components as well. Angular 8 Services - Angular 8 Templates - Angular 8 template is a superset of HTML (HyperText Markup Language). It includes all the features of HTML and gives us additional features to bind the component data into the HTML and to dynamically generate the HTML DOM elements. Angular 8 Templates -",
+        "reference": "interviewbit.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "1) What is Angular 8?",
+        "answer": "Angular 8 is a client-side TypeScript based framework used to create dynamic web applications. It is very similar to its previous versions except having some extensive features. It was developed by the same team that develops AngularJS and is a complete rewrite of its first version. Now, this is led and maintained by the Angular Team at Google and also by a community of individuals and corporations.\nRead more information here: https://www.javatpoint.com/angular-8",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "2) When was Angular 8 released, and how was it different from Angular 7?",
+        "answer": "Angular 8 was released on May 28, 2019, worldwide. It has a lot of similarity to its previous versions, such as Angular 7, except having some extensive features.\nThe most distinguish features of Angular 8 are:\nADVERTISEMENT\nAngular 8 provides differential loading for all application code.\nDynamic imports for lazy routes\nWeb workers\nIt provides support for TypeScript 3.4\nIt provides Angular Ivy as an opt-in preview which has some other advantages:\nGenerated code that is easier to read and debug at runtime\nFaster re-build time\nImproved payload size\nImproved template type checking\nBackward compatibility",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "3) Can we upgrade the older version of Angular that we have installed on our system to the Angular 8 version? If yes, then how?",
+        "answer": "Yes. If you want to upgrade your Angular CLI or any older version of Angular to Angular version 8, you can easily do it. Follow the steps given below:\nFirst, check the older version of Angular that you are using. Run the ng --version command on the Node.js command prompt.\nNow, you have to uninstall the older version of Angular by using the following command.\nnpm uninstall -g angular-cli // For Windows Open Powershell on Administrator Mode    \nsudo npm uninstall -g angular-cli // For Mac   \nNow, verify and clear the cache by using the following commands.\nnpm cache verify   \nnpm cache clean    \nNow, install the latest Angular CLI (Angular 8) by using the following command.\nnpm install -g @angular/cli@latest   \nYou can now verify that you are using the correct version by using the following command.\nng --version  \nRead more detail here: https://www.javatpoint.com/how-to-upgrade-angular-older-versions-to-angular-8",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "4) Why is Angular so popular in Modern Application Development?",
+        "answer": "Nowadays, Angular is a very popular framework and platform which had made robust web applications development very easy. There are many reasons behind its popularity: it unites the declarative templates, dependency injection, the end to end tooling, and integrates the top perform to resolve developers' development challenges. Angular 8 facilitates developers to develop applications that could be live on the web and mobile, respectively.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "5) What are the most prominent features of Angular 8?",
+        "answer": "Angular 8 is a very popular Typescript development framework used to develop Web Applications. Following is the list of most prominent features of Angular 8 that makes this framework powerful.\nAngular 8 support Cross-Platform Features\nADVERTISEMENT\nThe Angular 8 platform can be used to develop Progressive Web Apps. By using Angular 8, you can develop an extremely fast website that can provide app-like experiences with zero-step installation and high-quality performance.\nWith Angular 8, you can create native mobile apps by using strategies like Ionic, Cordova, or NativeScript.\nWith Angular 8, by using native OS APIs, the developers can create Desktop-Installed apps for Windows, Mac, and Linux.\nBetter Speed & Performance\nAngular 8 supports code generation facility that covert the templates into highly optimized code for JavaScript virtual machines. That's why Angular 8 is super fast.\nAngular 8 apps and websites are SEO friendly.\nAngular 8 uses a new Component Router to provide a code-splitting facility that makes apps load faster.\nHigh Productivity\nAngular 8 provides easy and powerful template syntax to create UI views.\nIt provides Angular CLI, which is a command-line tool. This tool is used to start building fast, add components and tests, and then instantly deploy it.\nAngular's IDEs make development easy and help you to find errors instantly. You can also see the other feedback in editors and IDEs.\nProvide Full Development Support\nAngular 8 supports animation. The developers can create high-performance animations with intuitive API and a very little code of Angular.\nThe angular framework helps to create accessible applications with ARIA-enabled mechanism and developer guides.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "6) What is the latest released version of Angular?",
+        "answer": "Angular 10 is the latest released version of Angular, released on June 24, 2020.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "7) What are the most significant differences between Angular 7 and Angular 8?",
+        "answer": "Following is the list of most important differences between Angular 7 and Angular 8:\nAngular 7 Angular 8\nAngular 7 is slightly difficult to use because it was expanded to the entire platform, including Core framework, Angular Material, CLI, etc. Angular 8 is comparatively smaller, faster, and easier to use. It has made Angular developer's life easier by providing a lot of advanced features.\nAngular 7 has some features such as Angular Material, CLI prompts, Drag, and Virtual and Drop & Component Dev Kit (CDK), Virtual scrolling, Application performance, Bundle budget, Angular compiler, Angular elements, NativeScript, Better error handling, etc. Angular 8 has some advanced level unique features such as Ivy rendering Engine, Bazel support, Differential Loading, API builders, Support for $location, Router backward compatibility, Opt-In Usage sharing, web- workers, etc. along with updated angular core framework, Angular Material, and the Command Line Interface of Angular 7.\nThe most significant changes in Angular 7 were Component Dev Kit (CKD), Material design library, and virtual scrolling. The most significant changes in Angular 8 were the Core framework, Angular, material library, and CLI.\nTill the Angular 7 version, Angular was supported by all types of Node.js version. Angular 8 supports the Node.js version 12 or later.\nAngular 7 supports a lower version of the typescript language. Angular 8 supports the updated Typescript t version 3.4.x\nThe Angular 7 command-line interface (CLI) prompts supported the older version of CLI v7.0.2. Angular 8 provided the stable CLI Builder API to developers who want to customize the Angular CLI by adding or modifying commands.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "8) What do you know by Bazel in Angular 8?",
+        "answer": "Bazel is a new feature of Angular 8. It is a new build system available for a short period and provides a platform to make your back-end and front-end with a similar tool.\nFollowing is the list of main features of Bazel:\nBazel is an internal build tool that is used to customize the application.\nBazel is used to test the action and performance of multiple machines.\nBazel facilitates you to construct a graph through which you can identify the useful information.\nBazel also supports customization.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "9) What is the use of the Wildcard route in Angular 8?",
+        "answer": "In Angular 8, the Wildcard route is used to define the route of pages. You can make specific changes/updates while defining the route using Wildcard.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "10) What are the differences between promises and observables in Angular 8?",
+        "answer": "Following is the list of differences between promises and observables in Angular 8:\nPromises Observables\nPromises can deal with a single asynchronous event at a time. The observables can handle a sequence of asynchronous events over a period of time.\nPromises are always asynchronous. Observables are both synchronous as well as asynchronous.\nPromises generally provide only a single value. Observables can emit multiple values.\nPromises are not lazy. They can execute immediately after creation. Observables are very lazy. They can't be executed until you subscribe to them using the subscribe() method.\nPromises are not cancellable. Observables have subscriptions that can be canceled using the unsubscribe() method. After that, they stop the listener from receiving further values.\nPromises don't provide any operations. Observables provide the map for forEach, filter, reduce, retry, and retryWhen operators.\nPromises push errors to the child promises. Observables deliver errors to subscribers.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "11) What is the usage of Codelyzer?",
+        "answer": "Codelyzer is an open-source tool in Angular 8 that sits on top of TSLint. It is used to check whether Angular TypeScript projects follow a set of rules or not. It also checks the errors in codes, not following pre-defined rules. It contains more than 50 rules for checking if an Angular application follows best practices. It runs on the tslint.json file and checks only the static code in Angular 8.\nCodelyzer is by default inbuilt with the projects set up with the Angular command-line interface (CLI).",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "12) How Angular 8 has enhanced the performance over its previous versions?",
+        "answer": "Angular 8 consists of advanced level features such as differential loading, CLI workflow improvements, Dynamic imports for lazy routes, Ivy rendering engine, Bazel, etc. which ensure systematic workflow and performance improvements.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "13) What do you mean by Ivy in Angular 8?",
+        "answer": "Ivy is the code name for next-generation compilation and Rendering pipeline or Rendering Engine. It was released in Angular 8 as Opt-in. At the release of Angular 9, Ivy was intended to be the by default rendering engine instead of the older compiler and runtime, known as View Engine.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "14) What is the usage of Wildcard Route in Angular 8?",
+        "answer": "In Angular 8, the Wildcard Router is used to set a route when the requested URL doesn't match any router paths. After using the Wildcard Router, the set route matches to every URL as an instruction to get a clear client-generated view. This Wildcard route always comes last as it needs to perform its task at the end only. So, the Wildcard Router is mainly used to define the route of the pages in Angular 8.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "15) How do you check what version of Angular CLI you are using?",
+        "answer": "Use the ng -version command to check your current version of Angular CLI.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "16) Which command do you use to run and load the Angular App?",
+        "answer": "Use the ng serve command to run and load the Angular App.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "17) Which command is used to install the latest version of Angular CLI?",
+        "answer": "The following command is used to install the latest version of Angular CLI:\nnpm install -g @angular/cli@latest",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "18) What do you mean by typeofchecks in Angular 8?",
+        "answer": "In Angular 8, the typeofchecks is used to check the type of value assigned to the variable. It is used same we used in JavaScript. In Angular version 8, you can also check the value assigned to the object by using typeofchecks.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "19) What are the most important parts of the Angular 8 Architecture?",
+        "answer": "The architecture of an Angular 8 application follows some fundamental concepts. The basic building blocks are NgModules that are used to provide compilation context for components and collect related code into functional sets. A set of NgModules are used to define an Angular app.\nFollowing is the list of most important parts of the Angular 8 architecture:\nModules\nComponents\nTemplates\nMetaData\nData-Binding\nDirectives\nServices\nDependency Injection\nRead more information about Angular 8 Architecture https://www.javatpoint.com/angular-8-architecture",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "20) What is the requirement and usage of Angular 8 components?",
+        "answer": "The Angular 8 components are the list of classes with decorators that mainly mark their own types and provide metadata that guide Angular to do things.\nEvery Angular application always has at least one component known as a root component that connects a page hierarchy with page DOM. Each component defines a class that contains application data and logic and is associated with an HTML template that defines a view to be displayed in a target environment.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "21) What is the usage of NgUpgrade in Angular 8?",
+        "answer": "The NgModules in Angular 8 is used for the following things:\nThe NgModule is a class marked by the @NgModule decorator where the @NgModule decorator is used to take a metadata object that describes how to compile a component's template and how to create an injector at runtime.\nThe NgModules is used to configure the injector and the compiler and also help to organize the related things together.\nThe NgModule is used to identify the module's own components, directives, and pipes. It can also make some of them public, through the exports property, to facilitate external components to use them.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "22) What is the usage of NgUpgrade in Angular 8?",
+        "answer": "The NgUpgrade is an Angular 8 library mainly used to integrate both AngularJS and Angular components in the application. The NgUpgrade library is also used to bridge the gap between the Dependency Injection Systems in both AngularJS and Angular.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "23) What is the usage of Angular 8 ngFor Directive?",
+        "answer": "The Angular 8 ngFor directive is used to repeat a portion of the HTML template once per each item from an iterable list (Collection). The ngFor is an Angular structural directive and is similar to ngRepeat in AngularJS. Some local variables like Index, First, Last, odd, and even are exported by ngFor directive.\nSyntax for ngFor Directive\n<li *ngFor=\"let item of items;\"> .... </li>   \nRead more information about ngFor directive: https://www.javatpoint.com/angular-8-ngfor-directive",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "24) What is the usage of Angular 8 ngIf Directive?",
+        "answer": "The Angular 8 ngIf directive is a structural directive that is used to add or remove HTML elements according to the expression. The expression must return a Boolean value true or false. You can see the functioning of nglf directive clearly. If the expression is false, then the element is removed. Otherwise, the element is inserted. It is similar to the ng-if directive of AngularJS.\nSyntax for ngIf Directive\n<p *ngIf=\"condition\">    \n    condition is true and ngIf is true.    \n</p>    \n<p *ngIf=\"!condition\">    \n    condition is false and ngIf is false.    \n</p>    \nRead more information about ngIf directive: https://www.javatpoint.com/angular-8-ngif-directive",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "25) What is data binding in Angular 8?",
+        "answer": "Data Binding is one of the key concepts of Angular 8. It is the most eminent technique which is used to link your data to the view layer. It is used to make a communication between the DOM and the TypeScript code of your component. In simple words, you can say that data binding is a communication between the typescript code of your component and your template, which the user sees. It makes it easy to define interactive applications without worrying about pushing and pulling data.\nThere are two types of data binding i.e., one-way data binding, two-way data binding.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "26) What is String Interpolation in Angular 8, and why is it used?",
+        "answer": "String Interpolation is a one-way data-binding technique in Angular 8. It is used to extract the output data from a TypeScript code to the HTML template view layer. It shows the data from the component to view layer in the form of curly braces. This interpolation technique adds the value of property to the component.\nString Interpolation Example:\n{{data}}  \nRead more information about Angular 8 String Interpolation: https://www.javatpoint.com/string-interpolation-in-angular-8",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "27) What is the Purpose of Event Binding in Angular 8?",
+        "answer": "Event binding is a technique in Angular 8 used to handle the events raised from the DOM like button click, mouse move etc. When the DOM event happens (eg. click, change, keyup, keydown), it calls the specified method in the component.\nSee an example of event binding. In this example, the playMusic() method from the component will be called when you will click the button:\nFor example:\n<button (click)=\"playMusic()\"></button>    \nRead more information about Angular 8 Event Binding: https://www.javatpoint.com/event-binding-in-angular-8",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "28) How can you create an app in Angular 8?",
+        "answer": "You can easily create an Angular 8 web app using Angular CLI. Type the following command to create the Angular 8 web app.\nSyntax:\nng new angular_app_name   \nExample:\nng new myapp   \nThe above command will create an Angular 8 app with the name \"myapp.\" Then, the Angular CLI will automatically install the required NPM modules. Before this, you must ensure that you have Node.js, Angular 8, and installed Angular CLI using the following command:\nnpm install -g @angular/cli  \nYou can also manually create an app folder and install ng dependencies.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "29) What is the main purpose of Angular 8 forms?",
+        "answer": "The main purpose of Angular 8 forms is to handle the user's input. You can also use these Angular forms in your application to enable users to log in, update profiles, enter information, or perform many other data-entry tasks.\nThere are two approaches to handle the user's input through forms in Angular 8:\nReactive forms\nTemplate-driven forms\nBoth approaches are used to collect user input events from the view, validate the user input, create a form model and data model to update, and provide a way to track changes.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "30) What is the use of reactive forms in Angular 8?",
+        "answer": "Reactive forms use a model-driven approach to handle form inputs where values constantly change over time. It uses an explicit and immutable approach to manage the state of a form at a specific time. Every time the changes occur to the form state, it returns a new state. The reactive forms are used mainly for the following features:\nReactive forms are more robust than template-driven forms.\nReactive forms are more scalable, reusable, and testable.\nReactive forms are preferred to use when the forms are a key part of the application, or the application is already built using reactive patterns. In both cases, reactive forms are best to use.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "31) What are the benefits of using Template-driven forms in Angular 8?",
+        "answer": "Following are the benefits of using Template-driven forms:\nYou should use Template-driven forms if you want to add a simple form to your application because template-driven forms use two-way data binding to update the data model in the component. By using this, you can see the changes instantly as you make changes in the template and vice versa.\nTemplate-driven forms are easy to use in the application, but they are not as scalable as Reactive forms, so they are preferred to use in test applications for learning purposes.\nTemplate-driven forms are mainly used if your application requires a very basic form and logic. It can easily be managed in a template.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "32) What is the difference between reactive forms and Template-driven forms in Angular 8?",
+        "answer": "Both Reactive forms and Template-driven forms are used to manage and process data differently. Each form offers different advantages. Here, we have compared both forms to see the differences:\nReactive Forms Template-driven forms\nReactive forms are more robust, so they are best to use. Template-driven forms are best if you want to add a simple form to your application. For example email list signup form.\nReactive forms are more scalable, reusable, and testable, so they are preferred to use in professional websites for the industry. Template-driven forms are easy to use in the application, but they are not as scalable as Reactive forms, so they are preferred to use in test applications for learning purposes.\nReactive forms are most preferred to use if forms are a key part of your application, or your application is already built using reactive patterns. In both cases, reactive forms are best to use. Template-driven forms are mainly used if your application requires a very basic form and logic. It can easily be managed in a template.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "33) What do you mean by Angular Universal?",
+        "answer": "Angular Universal is a technology that is used to render Angular applications on the server. This process is called SSR (server-side rendering). A simple Angular application is executed on the browser as all the Angular applications are single-page applications, so the rendering always occurs on the browser. This process of rendering single-page applications is called the client-side rendering process (CSR). On the other hand, the Angular Universal is executed on the server, generating static application pages that later get bootstrapped on the client. That's why Angular Universal application generally renders more quickly, giving users a chance to view the application layout before it becomes fully interactive.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    },
+    {
+        "question": "34) What is AOT in Angular 8?",
+        "answer": "In Angular 8, AOT stands for Ahead-of-Time compiler. It pre-compiles the application components and their templates during the build process.\nThere are several reasons why apps compiled with AOT launch faster:\nThe application components that are compiled with AOT execute immediately, without client-side compilation.\nHere, templates are embedded as code within their components, so there is no client-side request for template files. That's why it is fast.\nThe compiler doesn't entertain the unused Angular directives. It's also a reason for its fast response.",
+        "reference": "javatpoint.com",
+        "role": "angular-8"
+    }
+]

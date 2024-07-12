@@ -1,0 +1,182 @@
+[
+    {
+        "question": "1. Compare Solr & ElasticSearch",
+        "answer": "Criteria Solr ElasticSearch\nData varieties JSON, XML, CSV JSON\nData deduplication Supported Not supported\nUpdates Through configuration changes Through custom work",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "2. What is Apache Solr?",
+        "answer": "Apache Solr is a standalone full-text search platform to perform searches on multiple websites and index documents using XML and HTTP. Built on a Java Library called Lucence, Solr supports a rich schema specification for a wide range and offers flexibility in dealing with different document fields. It also consists of an extensive search plugin API for developing custom search behavior.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "3. What file contains configuration for data directory?",
+        "answer": "Solrconfig.xml file contains configuration for data directory.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "4. What file contains definition of the field types and fields of documents?",
+        "answer": "schema.xml file contains definitions of the field types and fields of documents.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "5. What are the features of Apache Solr?",
+        "answer": "Allows Scalable, high-performance indexing Near real-time indexing.\nStandards-based open interfaces like XML, JSON, and HTTP.\nFlexible and adaptable faceting.\nAdvanced and Accurate full-text search.\nLinearly scalable, auto index replication, auto-failover, and recovery.\nAllows concurrent searching and updating.\nComprehensive HTML administration interfaces.\nProvides cross-platform solutions that are index-compatible.\nTo know more about how Apache Solr works perfectly with Hadoop read this blog.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "6. What is Apache Lucene?",
+        "answer": "Supported by Apache Software Foundation, Apache Lucene is a free, open-source, high-performance text search engine library written in Java by Doug Cutting. Lucence facilitates full-featured searching, highlighting, indexing and spellchecking of documents in various formats like MS Office docs, HTML, PDF, text docs and others.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "Check out this video on Apache Solr Tutorial",
+        "answer": "",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "7. What is request handler?",
+        "answer": "When a user runs a search in Solr, the search query is processed by a request handler. SolrRequestHandler is a Solr Plugin, which illustrates the logic to be executed for any request.Solrconfig.xml file comprises several handlers (containing a number of instances of the same SolrRequestHandler class having different configurations).",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "8. What are the advantages and disadvantages of Standard Query Parser?",
+        "answer": "Also known as Lucence Parser, the Solr standard query parser enables users to specify precise queries through a robust syntax. However, the parser’s syntax is vulnerable to many syntax errors unlike other error-free query parsers like DisMax parser.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "9. What all information is specified in field type?",
+        "answer": "A field type includes four types of information:\nName of the field type.\nField attributes.\nAn implementation class name.\nIf the field type is Text Field, a description of the field analysis for the field type.\nGo through Apache Solr Tutorial to learn more about Apache Solr.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "10. Explain Faceting in Solr.?",
+        "answer": "As the name suggests, Faceting is the arrangement and categorization of all search results based on their index terms. The process of faceting makes the searching task smoother as users can look for the exact results.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "11. Define Dynamic Fields?",
+        "answer": "Dynamic Fields are a useful feature if users by any chance forget to define one or more fields. They allow excellent flexibility to index fields that have not been explicitly defined in the schema.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "12. What is Field Analyzer?",
+        "answer": "Working with textual data in Solr, Field Analyzer reviews and checks the filed text and generates a token stream. The pre-process of analyzing input text is performed at the time of searching or indexing and at query time. Most Solr applications use Custom Analyzers defined by users. Remember, each Analyzer has only one Tokenizer.\nGet a clear understanding of  Solr Analyzer through this Big Data Hadoop and Spark community.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "13. What is the use of tokenizer?",
+        "answer": "It is used to split a stream of text into a series of tokens, where each token is a subsequence of characters in the text. The token produced is then passed through Token Filters that can add, remove or update the tokens. Later, that field is indexed by the resulting token stream.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "14. What is phonetic filter?",
+        "answer": "The phonetic filter creates tokens using one of the phonetic encoding algorithms in the org.apache.commons.codec.language package.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "15. What is SolrCloud?",
+        "answer": "Apache Solr facilitates fault-tolerant, high-scalable searching capabilities that enable users to set up a highly-available cluster of Solr servers. These capabilities are well-revered as SolrCloud.\n\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "16. What is copying field?",
+        "answer": "It is used to describe how to populate fields with data copied from another field.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "17. What is Highlighting?",
+        "answer": "Highlighting refers to the fragmentation of documents matching the user’s query included in the query response. These fragments are then highlighted and placed in a special section, which is used by clients and users to present the snippets. Solr consists of a number of highlighting utilities having control over different fields. The highlighting utilities can be called by Request Handlers and reused with standard query parsers.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "18. Name different types of highlighters?",
+        "answer": "There are 3 highlighters in Solr:\nStandard Highlighter: provides precise matches even for advanced queryparsers.\nFastVector Highlighter: Though less advanced than Standard Highlighter, it works better for more languages and supports Unicode breakiterators.\nPostings Highlighter: Much more precise, efficient and compact than the above vector one but inappropriate for a more number of query terms.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "19. What is the use of stats.field?",
+        "answer": "It is used to generate statistics over the results of arbitrary numeric functions.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "20. What command is used to see how to use the bin/Solr script?",
+        "answer": "Execute $ bin/Solr –helpto see how to use the bin/Solr script.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "21. Which syntax is used to stop Solr?",
+        "answer": "$ bin/solr stop -p 8983 is used to stop Solr.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "22. Which command is used to start Solr in foreground?",
+        "answer": "$ bin/solr start –f is used to start Solr in foreground.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "23. What syntax is used to check whether Solr is currently running or not?",
+        "answer": "$ bin/solr status is used to check Solr running status.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "24. Give the syntax to start the server.",
+        "answer": "$ bin/solr start is used to start the server.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "25. How to shut down Apache Solr?",
+        "answer": "Solr is shut down from the same terminal where it was launched. Click Ctrl+C to shut it down.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "26. What data is specified by Schema?",
+        "answer": "Schema declares –\nhow to index and search each field.\nwhat kinds of fields are available.\nwhat fields are required?\nwhat field should be used as the unique/primary key",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "27. Name the basic Field types in Solr?",
+        "answer": "date.\nlong\ndouble\ntext\nfloat\nBecome Master of Apache Solr by going through this online Solr Training.",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "28. How to install Solr?",
+        "answer": "The three steps of Installation are:\nServer-related files, e.g. Tomcat or start.jar (Jetty).\nSolr webapp as a .war.\nSolr Home which comprises the data directory and configuration files",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    },
+    {
+        "question": "29. What are the important configuration files of Solr?",
+        "answer": "Solr supports two important configuration files\nsolrconfig.xml.\nschema.xml",
+        "reference": "intellipaat.com",
+        "role": "apache-solr"
+    }
+]

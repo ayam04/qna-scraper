@@ -1,0 +1,752 @@
+[
+    {
+        "question": "1. What is object-oriented programming?",
+        "answer": "Object-oriented programming is a type of programming that revolves around objects. It mainly focuses on managing code into objects that contain data and behavior, enabling better formation, modularity, and reusability.\nFor example: Before creating a house we create the blueprint of the house or design in particular. Based on the design we build the house. The blueprint is called class and the finished house is called the object.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "2. Name some widely used OOP languages.",
+        "answer": "Python, Java, C, C++, C#, Ruby, Go, and Dart are some of the languages that use object-oriented programming.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "3. What are the four pillars of OOPs?",
+        "answer": "The four pillars of OOPs are:\nEncapsulation\nAbstraction\nPolymorphism\nInheritance",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "4. Explain inheritance in OOPs.",
+        "answer": "Inheritance in object-oriented programming means that the child class will inherit all the properties of the parent class. The child class will be able to access all the methods and behavior of the parent class.\nFor example:  A child will inherit the house that his father owns.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "5. What is encapsulation?",
+        "answer": "Encapsulation means combining all the methods and behaviors and putting them into a single place called a class. It is like a medicinal capsule that has various medicine powders combined to make one capsule.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "6. What is polymorphism?",
+        "answer": "Poly means many, and morph means form. So, polymorphism allows one entity in code, such as a variable, function, or object to take many forms. This allows flexibility and adaptability in the programs.\nFor example: A man can be a father, an employee, a son, or a friend. It means that man has many forms.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "7. What is abstraction?",
+        "answer": "Abstraction means hiding unwanted information from customers and only displaying what they want to see. \nFor example: When you go to an ATM, you are only concerned about withdrawing money, not about how the money is getting withdrawn.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "8. What is the difference between class and object?",
+        "answer": "A class is a blueprint of the object. It is just like a map created to build a house. It defines the attributes and behavior of the object that the class will have.\nAn object is an instance of a class. Like the architecture of the house tells you, it is going to have rooms, washrooms, a kitchen, doors, etc. The object will be the finished product of the same. We can create as many houses as we want using the class defined.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "9. What are constructors?",
+        "answer": "A constructor is a special method that gets called whenever the object of the class is created. It has the same name as the class and no return type.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "10. Explain the concept of method overloading.",
+        "answer": "Method overloading is a concept of polymorphism. In this, the classes will have multiple methods with the same name. They only differ in the number of parameters, the data type of the parameters, or the order of the parameters.\nclass A:\n\n    def sum(a,b):\n        return a + b;\n\n    def sum(a,b,c):\n        return a + b + c\n\nIntermediate OOPs Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "11. What is the difference between method overloading and method overriding?",
+        "answer": "Method overloading is having a way of writing methods in a class that performs similar tasks but the parameters are in different forms, i.e., it has several methods with the same name and return type but different numbers and types of arguments. But method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "12. Explain the concept of abstraction with the help of an example.",
+        "answer": "Abstraction refers to hiding internal details and showing functionality. For example, we have created a shape class using draw() and area() methods. Whether or not this class will be used for drawing circles or rectangles does not matter, users can interact with these methods without knowing anything about how they are implemented for particular shapes.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "13. What is the purpose of interfaces in Java?",
+        "answer": "Interfaces define contracts for classes to implement with abstract methods that must be provided by implementing classes. They serve as multiple inheritance mechanisms, support polymorphism, and promote loose coupling.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "14. Differentiate between abstract classes and interfaces in Java.",
+        "answer": "Both abstract classes and interfaces can contain abstract methods, non-abstract methods, as well as variables. A single class may only extend one abstract class, although it would implement many interfaces at once. Constructively, a constructor works on abstract classes rather than interfaces, which have no constructors at all.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "15. What is the role of the super keyword?",
+        "answer": "The super keyword in Java is utilized to refer back to the superclass of an existing object. It has a main purpose, which is to use superclass constructors and methods within a subclass. This enables method overriding and access to superclass members.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "16. Explain the concept of method overriding with an example.",
+        "answer": "When a subclass provides an implementation for a method that is already defined in its superclass, it is known as method overriding. Let us assume there exists a super class by the name of Animal with one method called makeSound(). A sub class Dog can provide an alternative sound when making this sound, thus overwriting the earlier implementation of “bark”.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "17. What is the diamond problem in inheritance, and how can it be resolved?",
+        "answer": "The problem of diamond inheritance arises when a child derives from two classes that have some base class in common. When this happens, ambiguity occurs during the process of method resolution. To avoid this problem, Java uses only a single inheritance for classes but permits multiple inheritances through interface implementation.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "18. What are abstract methods and abstract classes?",
+        "answer": "Abstract methods are those methods declared inside a class without giving a body for them. Abstract classes, on the other hand, are classes that contain at least one abstract method and cannot be instantiated. They lay out plans on how actual subclasses should implement these abstract methods.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "19. Explain the concept of encapsulation with an example.",
+        "answer": "Encapsulation can be understood as the inclusion of methods and variables that operate on them in one object. For instance, a class Car has private attributes such as speed and fuel. These characteristics are modified by accelerate() or refuel() without showing what is inside.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "20. What is the difference between static and non-static methods in Java?",
+        "answer": "Static methods belong to the class itself rather than to instances of the class. They can be called using the class name and are shared among all instances of the class. Non-static methods, on the other hand, belong to individual instances of the class and can access instance variables.\n\nAdvance OOPs Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "21. What are the different types of polymorphism?",
+        "answer": "Two types of polymorphism are compile-time polymorphism and run time polymorphism.\nCompile-Time Polymorphism: It is also called static polymorphism. The method to be invoked is determined at compile time in this case. Examples include operator overloading and function overloading.\nRuntime Polymorphism: Another name for it is dynamic polymorphism; it happens when the method to be executed is decided at runtime depending on the actual type of an object. This is done by using virtual functions through method overriding, usually using inheritance features.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "22. What are the different types of Inheritance?",
+        "answer": "There are 5 types of inheritance:\nSingle-level Inheritance: It means the child class inherits the functionalities of a single parent class. For example, a child inherits functionalities from his/her mother or father\nMultiple-level Inheritance: It means there is more than one parent class from which the child class inherits the functionalities. For example, a child inherits the functionalities of both mother and father\nMulti-level Inheritance: It means the child class inherits functionalities from a parent class, which in turn is a child class of another parent class. For example, a father inherits functionalities from his father and then the child inherits them from the father\nHierarchical Inheritance: It means that multiple child classes inherit the functionalities of the parent class. In simple terms, there is one parent class and more than one child class. For example, father and uncle both inherit the functionalities of grandfather\nHybrid Inheritance: It is a combination of different inheritances. Consider a family tree and form a relation where the father and uncle inherit the functionalities of the grandfather. Then, you inherit the functionalities of both father and mother.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "23. What are virtual functions?",
+        "answer": "In object-oriented programming, virtual functions are declared in a base class and then overridden in derived classes to promote polymorphism. They enable specific implementations of methods that are defined in the base class to be provided by the derived class.\nThe implementing code is called at runtime based on the actual object type once a function is declared as virtual. This makes it possible for a particular piece of code to be flexible and extensible.\nFor example, circles and rectangles can calculate area based on their shapes such as with a shape having an area() function that is made virtual. By enabling dynamic dispatch, this mechanism invokes runtime polymorphism thereby improving code reusability and extendibility.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "24. What are the limitations of inheritance?",
+        "answer": "While promoting code reuse, inheritance may cause tight coupling between classes. Tight coupling occurs when changes in one class require modifications in related classes, thus increasing complexity and reducing flexibility. \nFor example, if you change something like the behavior of a method in the base class, then all known dependent subclasses have to be modified, which leads to interdependencies, making this codebase fragile. Thus, for maintainability and scalability purposes, even though it enhances reuse, inheritance should be used sparingly.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "25. What are the other programming paradigms besides OOP?",
+        "answer": "There are two programming paradigms other than OOP:\nImperative programming: This paradigm considers the steps involved in changing a program’s state using statements. It consists of various sub-paradigms:\nProcedural Programming Paradigm: Computer programs are composed of sequences of instructions called procedures or routines. These procedures can be invoked to perform specific tasks.\nObject-Oriented Programming (OOP): In OOP, software design is organized around objects that encapsulate data and behavior. It involves ideas like inheritance, encapsulation, and polymorphism.\nParallel Programming Paradigm: This is about running many tasks at the same time to improve performance and efficiency through concurrency.\nDeclarative Programming: Unlike imperative programming, declarative programming focuses on what the program should achieve rather than how it should achieve it. Examples include\nLogical Programming Paradigm: Programs are built on formal logic, where statements represent facts and rules about a problem domain.\nFunctional Programming Paradigm: Computation is modeling, which is the evaluation of mathematical functions by composing or applying them to functional programs.\nDatabase Programming Paradigm: This revolves around managing and querying data stored in databases, often using specialized.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "26. What is the difference between structural programming and object-oriented programming?",
+        "answer": "Structural Programming\nFocus: Major core is programs that are designed around approaches or processes in which statements are executed sequentially.\nData and Functions: Data detached from functions; data are played with through this way of function passing parameters.\nExample: For instance, the input for calculation and display would each require separate functions in a rectangle area program.\nObject-Oriented Programming (OOP)\nFocus: Places emphasis on objects as containers of data and behavior and operating by well-defined interfaces.\nData and Functions: These entities are joined together; object-oriented programming can simply change the method name specifying how to access the data.\nExample: A class called Rectangle has attributes such as length and width, then methods like calculateArea().\nComparison\nData Encapsulation: OOP upholds the bundling of functions with their related data through encapsulation.\nInheritance and Polymorphism: For code reuse purposes, OOP allows inheritance and polymorphism. \nExample: By extending the Rectangle class create a Square class that inherits properties and methods.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "27. What is static and dynamic binding?",
+        "answer": "These are the mechanisms in programming languages that determine which implementation of a function or method will be called at runtime.\nStatic Binding\nIt is also called early binding and refers to the case where the compiler decides on the method to invoke during compile time, depending on the reference type.\nIn static binding, the method that should be called will be resolved at compile time.\nFor instance, when you use a reference variable of one Java class, such as a parent class, it actually refers to an object of another Java class, but the method in parent class will still be called.\nDynamic Binding\nAlso referred to as late binding or runtime polymorphism, it exists when the method to invoke is decided at run-time according to its actual object type.\nIn dynamic binding, the method that should be called will be resolved at run-time.\nFor example, if you have used a reference variable of some parent class in Java while referring to an object belonging to its child class, then these references would imply calling for the methods in these child classes only.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "28. What are the different constructors in C++?",
+        "answer": "C++ constructors are member functions that are used to initialize objects of a class. These constructors have the same name as the class and do not have a return type. There are different kinds of constructors.\nDefault Constructor: It is a constructor that has no arguments. It creates an object with default values or does default initialization. Example: MyClass() {}\nParameterized Constructors: This type of constructor has some parameters that can be used to initialize objects with particular values. For example, MyClass(int x, int y) { … }\nCopy Constructor: A constructor that makes another object identical to an existing one. Like this: MyClass(const MyClass& other) { … }\nConstructor Overloading: Many constructors per class have different argument list(s). For instance: MyClass(int x) { … } and MyClass(int x, int y) { … }\nDelegate Constructor (C++11 and later): One constructor in a class calls another constructor within the same class. This, for example, is done by using the code snippet below; MyClass(): MyClass(0, 0) { …}\nIn C++, it is essential to use constructors when giving birth to an object; therefore, they can be modified differently for this reason.",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "29. What are decorators in OOPs?",
+        "answer": "Decorators are a design pattern in object-oriented programming (OOP) that adds behavior to individual objects without affecting others in the same class dynamically. In Python, they are often used to improve functions or methods by wrapping them with additional functionality. Typically, these wrappers are implemented using functions or classes, meaning that one can execute supplementary acts before or after the original function or method.\ndef uppercase_decorator(func):\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        return result.upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet(name):\n    return f\"Hello, {name}!\"\n\nprint(greet(\"John\"))  # Output: HELLO, JOHN",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "30. What are access specifiers?",
+        "answer": "In object-oriented programming languages such as C++, Java, and C#, access specifiers (also known as access modifiers) are keywords that determine the visibility and accessibility of class members (attributes and methods) from outside the class.\nThere are three main types of access specifiers:\nPublic: The members that are declared public; because any other class or function can access it from outside the class, it is accessible from anywhere in the program.\nProtected: This member is only accessible within its subclass; for example, when you declare a variable as protected, it means this variable can be accessed by any code within this class hierarchy but not from another package outside this package hierarchy.\nPrivate: These members remain invisible to other classes coming from anywhere else even if that happens to be its descendant class, i.e., private is restricted to 1 particular class.\nclass MyClass:\n    def __init__(self):\n        self.public_var = \"I am public\"\n        self._protected_var = \"I am protected\"\n        self.__private_var = \"I am private\"\n\nobj = MyClass()\nprint(obj.public_var)      # Output: I am public\nprint(obj._protected_var)  # Output: I am protected\nprint(obj.__private_var)  # Error: AttributeError: 'MyClass' object has no attribute '__private_var'\n\nProblem-Solving OOPs Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "31. Write a Python class named Student with attributes name and age. Create an object of this class and print its attributes.",
+        "answer": "class Student:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nstudent1 = Student(\"Alice\", 20)\nprint(student1.name, student1.age)  # Output: Alice 20",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "32. Create a base class Animal with a method sound() and a derived class Dog that inherits from Animal and overrides the sound() method to return",
+        "answer": "class Animal:\n    def sound(self):\n        return \"Generic animal sound\"\n\nclass Dog(Animal):\n    def sound(self):\n        return \"Woof!\"\n\ndog = Dog()\nprint(dog.sound())  # Output: Woof!",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "33. Create a class Shape with a method area() and two derived classes Rectangle and Circle that override the area() method to calculate the area of the respective shapes.",
+        "answer": "class Shape:\n    def area(self):\n        return 0\n\nclass Rectangle(Shape):\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n\n    def area(self):\n        return self.length * self.width\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nrectangle = Rectangle(5, 4)\nprint(rectangle.area())  # Output: 20\n\ncircle = Circle(3)\nprint(circle.area())     # Output: 28.26",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "34. Create a class Account with a private attribute balance. Implement methods of deposit() and withdraw() to modify the balance.",
+        "answer": "class Account:\n    def __init__(self, initial_balance):\n        self.__balance = initial_balance\n\n    def deposit(self, amount):\n        self.__balance += amount\n\n    def withdraw(self, amount):\n        if amount <= self.__balance:\n            self.__balance -= amount\n        else:\n            print('Insufficient funds')\n\naccount = Account(1000)\naccount.deposit(500)\naccount.withdraw(200)",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "35. Create classes Leg and Body. Use composition to create a Human class composed of instances of Leg and Body.",
+        "answer": "class Leg:\ndef kick(self):\nprint(\"Kicking with leg\")\n\nclass Body:\ndef walk(self):\nprint(\"Walking with body\")\n\nclass Human:\n    def __init__(self):\n        self.leg = Leg()\n        self.body = Body()\n\nhuman = Human()\nhuman.leg.kick()  # Output: Kicking with leg\nhuman.body.walk() # Output: Walking with body",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "36. Create an abstract class Animal with an abstract method speak(). Implement derived classes Dog and Cat that override the speak() method.",
+        "answer": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    @abstractmethod\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Woof!\"\n\nclass Cat(Animal):\n    def speak(self):\n        return \"Meow!\"\n\ndog = Dog()\nprint(dog.speak())  # Output: Woof!\n\ncat = Cat()\nprint(cat.speak())  # Output: Meow!",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "37. Create a class Point with attributes x and y. Implement the __add__() method to add two Point objects.",
+        "answer": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(1, 2)\np2 = Point(3, 4)\nprint((p1 + p2).x, (p1 + p2).y)  # Output: 4 6",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "38. Create a class Math with a static method add() that takes two numbers as arguments and returns their sum.",
+        "answer": "class Math:\n    @staticmethod\n    def add(a, b):\n        return a + b\n\nprint(Math.add(3, 5))  # Output: 8",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "39. Create a class Date with a class method now() that returns the current date.",
+        "answer": "from datetime import date\n\nclass Date:\n    @classmethod\n    def now(cls):\n        return date.today()\n\nprint(Date.now())  # Output: Current date",
+        "reference": "intellipaat.com",
+        "role": "oops"
+    },
+    {
+        "question": "1. What is the need for OOPs?",
+        "answer": "There are many reasons why OOPs is mostly preferred, but the most important among them are: OOPs helps users to understand the software easily, although they don’t know the actual implementation.\nWith OOPs, the readability, understandability, and maintainability of the code increase multifold.\nEven very big software can be easily written and managed easily using OOPs. OOPs helps users to understand the software easily, although they don’t know the actual implementation. With OOPs, the readability, understandability, and maintainability of the code increase multifold. Even very big software can be easily written and managed easily using OOPs.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "2. What are some major Object Oriented Programming languages?",
+        "answer": "The programming languages that use and follow the Object-Oriented Programming paradigm or OOPs, are known as Object-Oriented Programming languages. Some of the major Object-Oriented Programming languages include: Java\nC++\nJavascript\nPython\nPHP Java Java Java C++ C++ C++ Javascript Javascript Javascript Python Python Python PHP PHP PHP And many more.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "3. What are some other programming paradigms other than OOPs?",
+        "answer": "Programming paradigms refers to the method of classification of programming languages based on their features. There are mainly two types of Programming Paradigms: Imperative Programming Paradigm\nDeclarative Programming Paradigm Imperative Programming Paradigm Declarative Programming Paradigm Now, these paradigms can be further classified based:\n\n1. Imperative Programming Paradigm: Imperative programming focuses on HOW to execute program logic and defines control flow as statements that change a program state. This can be further classified as:\na) Procedural Programming Paradigm: Procedural programming specifies the steps a program must take to reach the desired state, usually read in order from top to bottom.\nb) Object-Oriented Programming or OOP: Object-oriented programming (OOP) organizes programs as objects, that contain some data and have some behavior.\nc) Parallel Programming: Parallel programming paradigm breaks a task into subtasks and focuses on executing them simultaneously at the same time.\n\n2. Declarative Programming Paradigm: Declarative programming focuses on WHAT to execute and defines program logic, but not a detailed control flow. Declarative paradigm can be further classified into:\na) Logical Programming Paradigm: Logical programming paradigm is based on formal logic, which refers to a set of sentences expressing facts and rules about how to solve a problem\nb) Functional Programming Paradigm: Functional programming is a programming paradigm where programs are constructed by applying and composing functions.\nc) Database Programming Paradigm: Database programming model is used to manage data and information structured as fields, records, and files.   1. Imperative Programming Paradigm  Procedural Programming Paradigm:  Object-Oriented Programming or OOP  Parallel Programming   2. Declarative Programming Paradigm  Logical Programming Paradigm  Functional Programming Paradigm  Database Programming Paradigm  ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "4. What is meant by Structured Programming?",
+        "answer": "Structured Programming refers to the method of programming which consists of a completely structured control flow. Here structure refers to a block, which contains a set of rules, and has a definitive control flow, such as (if/then/else), (while and for), block structures, and subroutines. Structured Programming Nearly all programming paradigms include Structured programming, including the OOPs model.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "5. What are the main features of OOPs?",
+        "answer": "OOPs or Object Oriented Programming mainly comprises of the below four features, and make sure you don't miss any of these: Inheritance\nEncapsulation\nPolymorphism\nData Abstraction Inheritance Encapsulation Polymorphism Data Abstraction   ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "6. What are some advantages of using OOPs?",
+        "answer": "OOPs is very helpful in solving very complex level of problems.\nHighly complex programs can be created, handled, and maintained easily using object-oriented programming.\nOOPs, promote code reuse, thereby reducing redundancy.\nOOPs also helps to hide the unnecessary details with the help of Data Abstraction.\nOOPs, are based on a bottom-up approach, unlike the Structural programming paradigm, which uses a top-down approach.\nPolymorphism offers a lot of flexibility in OOPs. OOPs is very helpful in solving very complex level of problems. Highly complex programs can be created, handled, and maintained easily using object-oriented programming. OOPs, promote code reuse, thereby reducing redundancy. OOPs also helps to hide the unnecessary details with the help of Data Abstraction. OOPs, are based on a bottom-up approach, unlike the Structural programming paradigm, which uses a top-down approach. Polymorphism offers a lot of flexibility in OOPs.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "7. Why is OOPs so popular?",
+        "answer": "OOPs programming paradigm is considered as a better style of programming. Not only it helps in writing a complex piece of code easily, but it also allows users to handle and maintain them easily as well. Not only that, the main pillar of OOPs - Data Abstraction, Encapsulation, Inheritance, and Polymorphism, makes it easy for programmers to solve complex scenarios. As a result of these, OOPs is so popular.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "8. What is meant by the term OOPs?",
+        "answer": "OOPs refers to Object-Oriented Programming. It is the programming paradigm that is defined using objects. Objects can be considered as real-world instances of entities like class, that have some characteristics and behaviors.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "1. What are access specifiers and what is their significance?",
+        "answer": "Access specifiers, as the name suggests, are a special type of keywords, which are used to control or specify the accessibility of entities like classes, methods, etc. Some of the access specifiers or access modifiers include “private”, “public”, etc. These access specifiers also play a very vital role in achieving Encapsulation - one of the major features of OOPs.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "2. Are there any limitations of Inheritance?",
+        "answer": "Yes, with more powers comes more complications. Inheritance is a very powerful feature in OOPs, but it has some limitations too. Inheritance needs more time to process, as it needs to navigate through multiple classes for its implementation. Also, the classes involved in Inheritance - the base class and the child class, are very tightly coupled together. So if one needs to make some changes, they might need to do nested changes in both classes. Inheritance might be complex for implementation, as well. So if not correctly implemented, this might lead to unexpected errors or incorrect outputs.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "3. What are the various types of inheritance?",
+        "answer": "The various types of inheritance include: Single inheritance\nMultiple inheritances\nMulti-level inheritance\nHierarchical inheritance\nHybrid inheritance Single inheritance Multiple inheritances Multi-level inheritance Hierarchical inheritance Hybrid inheritance  ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "4. What is a subclass?",
+        "answer": "The subclass is a part of Inheritance. The subclass is an entity, which inherits from another class. It is also known as the child class.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "5. Define a superclass?",
+        "answer": "Superclass is also a part of Inheritance. The superclass is an entity, which allows subclasses or child classes to inherit from itself.  ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "6. What is an interface?",
+        "answer": "An interface refers to a special type of class, which contains methods, but not their definition. Only the declaration of methods is allowed inside an interface. To use an interface, you cannot create objects. Instead, you need to implement that interface and define the methods for their implementation.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "7. What is meant by static polymorphism?",
+        "answer": "Static Polymorphism is commonly known as the Compile time polymorphism. Static polymorphism is the feature by which an object is linked with the respective function or operator based on the values during the compile time. Static or Compile time Polymorphism can be achieved through Method overloading or operator overloading.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "8. What is meant by dynamic polymorphism?",
+        "answer": "Dynamic Polymorphism or Runtime polymorphism refers to the type of Polymorphism in OOPs, by which the actual implementation of the function is decided during the runtime or execution. The dynamic or runtime polymorphism can be achieved with the help of method overriding.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "9. What is the difference between overloading and overriding?",
+        "answer": "Overloading is a compile-time polymorphism feature in which an entity has multiple implementations with the same name. For example, Method overloading and Operator overloading. Whereas Overriding is a runtime polymorphism feature in which an entity has the same name, but its implementation changes during execution. For example, Method overriding.\nImage  Image",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "10. How is data abstraction accomplished?",
+        "answer": "Data abstraction is accomplished with the help of abstract methods or abstract classes.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "11. What is an abstract class?",
+        "answer": "An abstract class is a special class containing abstract methods. The significance of abstract class is that the abstract methods inside it are not implemented and only declared. So as a result, when a subclass inherits the abstract class and needs to use its abstract methods, they need to define and implement them.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "12. How is an abstract class different from an interface?",
+        "answer": "Interface and abstract classes both are special types of classes that contain only the methods declaration and not their implementation. But the interface is entirely different from an abstract class. The main difference between the two is that when an interface is implemented, the subclass must define all its methods and provide its implementation. Whereas in object-oriented programming, when a subclass inherits from an abstract class with abstract methods, the subclass is generally required to provide concrete implementations for all of those abstract methods in the abstract class unless the subclass itself is declared as abstract. Also, an abstract class can contain abstract methods as well as non-abstract methods.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "13. Explain Inheritance with an example?",
+        "answer": "Inheritance is one of the major features of object-oriented programming, by which an entity inherits some characteristics and behaviors of some other entity and makes them their own. Inheritance helps to improve and facilitate code reuse. Let me explain to you with a common example. Let's take three different vehicles - a car, truck, or bus. These three are entirely different from one another with their own specific characteristics and behavior. But. in all three, you will find some common elements, like steering wheel, accelerator, clutch, brakes, etc. Though these elements are used in different vehicles, still they have their own features which are common among all vehicles. This is achieved with inheritance. The car, the truck, and the bus have all inherited the features like steering wheel, accelerator, clutch, brakes, etc, and used them as their own. Due to this, they did not have to create these components from scratch, thereby facilitating code reuse.  ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "14. What is an exception?",
+        "answer": "An exception can be considered as a special event, which is raised during the execution of a program at runtime, that brings the execution to a halt. The reason for the exception is mainly due to a position in the program, where the user wants to do something for which the program is not specified, like undesirable input.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "15. What is meant by exception handling?",
+        "answer": "No one wants its software to fail or crash. Exceptions are the major reason for software failure. The exceptions can be handled in the program beforehand and prevent the execution from stopping. This is known as exception handling.\nSo exception handling is the mechanism for identifying the undesirable states that the program can reach and specifying the desirable outcomes of such states.\nTry-catch is the most common method used for handling exceptions in the program.  ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "16. What is meant by Garbage Collection in OOPs world?",
+        "answer": "Object-oriented programming revolves around entities like objects. Each object consumes memory and there can be multiple objects of a class. So if these objects and their memories are not handled properly, then it might lead to certain memory-related errors and the system might fail. Garbage collection refers to this mechanism of handling the memory in the program. Through garbage collection, the unwanted memory is freed up by removing the objects that are no longer needed.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "17. Can we run a Java application without implementing the OOPs concept?",
+        "answer": "No. Java applications are based on Object-oriented programming models or OOPs concept, and hence they cannot be implemented without it. However, on the other hand, C++ can be implemented without OOPs, as it also supports the C-like structural programming model.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "18. What is Compile time Polymorphism and how is it different from Runtime Polymorphism?",
+        "answer": "  Compile Time Polymorphism: Compile time polymorphism, also known as Static Polymorphism, refers to the type of Polymorphism that happens at compile time. What it means is that the compiler decides what shape or value has to be taken by the entity in the picture. Compile Time Polymorphism: Example: // In this program, we will see how multiple functions are created with the same name, \n// but the compiler decides which function to call easily at the compile time itself.\nclass CompileTimePolymorphism{\n   // 1st method with name add\n   public int add(int x, int y){ \n   return x+y;\n   }\n   // 2nd method with name add\n   public int add(int x, int y, int z){\n   return x+y+z;\n   }\n   // 3rd method with name add\n   public int add(double x, int y){ \n   return (int)x+y;\n   }\n   // 4th method with name add\n   public int add(int x, double y){ \n   return x+(int)y;\n   }\n}\nclass Test{\n   public static void main(String[] args){\n   CompileTimePolymorphism demo=new CompileTimePolymorphism();\n   // In the below statement, the Compiler looks at the argument types and decides to call method 1\n   System.out.println(demo.add(2,3));\n   // Similarly, in the below statement, the compiler calls method 2\n   System.out.println(demo.add(2,3,4));\n   // Similarly, in the below statement, the compiler calls method 4\n   System.out.println(demo.add(2,3.4));\n   // Similarly, in the below statement, the compiler calls method 3\n   System.out.println(demo.add(2.5,3)); \n   }\n} // In this program, we will see how multiple functions are created with the same name, \n// but the compiler decides which function to call easily at the compile time itself.\nclass CompileTimePolymorphism{\n   // 1st method with name add\n   public int add(int x, int y){ \n   return x+y;\n   }\n   // 2nd method with name add\n   public int add(int x, int y, int z){\n   return x+y+z;\n   }\n   // 3rd method with name add\n   public int add(double x, int y){ \n   return (int)x+y;\n   }\n   // 4th method with name add\n   public int add(int x, double y){ \n   return x+(int)y;\n   }\n}\nclass Test{\n   public static void main(String[] args){\n   CompileTimePolymorphism demo=new CompileTimePolymorphism();\n   // In the below statement, the Compiler looks at the argument types and decides to call method 1\n   System.out.println(demo.add(2,3));\n   // Similarly, in the below statement, the compiler calls method 2\n   System.out.println(demo.add(2,3,4));\n   // Similarly, in the below statement, the compiler calls method 4\n   System.out.println(demo.add(2,3.4));\n   // Similarly, in the below statement, the compiler calls method 3\n   System.out.println(demo.add(2.5,3)); \n   }\n} // In this program, we will see how multiple functions are created with the same name, // but the compiler decides which function to call easily at the compile time itself. class CompileTimePolymorphism class CompileTimePolymorphism // 1st method with name add public int add(int x, int y) public int add (int x, int y) int int return // 2nd method with name add public int add(int x, int y, int z) public int add (int x, int y, int z) int int int return // 3rd method with name add public int add(double x, int y) public int add (double x, int y) double int return int // 4th method with name add public int add(int x, double y) public int add (int x, double y) int double return int class Test class Test public static void main(String[] args) public static void main (String[] args) new // In the below statement, the Compiler looks at the argument types and decides to call method 1 2 3 // Similarly, in the below statement, the compiler calls method 2 2 3 4 // Similarly, in the below statement, the compiler calls method 4 2 3.4 // Similarly, in the below statement, the compiler calls method 3 2.5 3 In the above example, there are four versions of add methods. The first method takes two parameters while the second one takes three. For the third and fourth methods, there is a change of order of parameters. The compiler looks at the method signature and decides which method to invoke for a particular method call at compile time.\n\nRuntime Polymorphism: Runtime polymorphism, also known as Dynamic Polymorphism, refers to the type of Polymorphism that happens at the run time. What it means is it can't be decided by the compiler. Therefore what shape or value has to be taken depends upon the execution. Hence the name Runtime Polymorphism.   Runtime Polymorphism: Example: class AnyVehicle{\n   public void move(){\n   System.out.println(“Any vehicle should move!!”);\n   }\n}\nclass Bike extends AnyVehicle{\n   public void move(){\n   System.out.println(“Bike can move too!!”);\n   }\n}\nclass Test{\n   public static void main(String[] args){\n   AnyVehicle vehicle = new Bike();\n   // In the above statement, as you can see, the object vehicle is of type AnyVehicle\n   // But the output of the below statement will be “Bike can move too!!”, \n   // because the actual implementation of object ‘vehicle’ is decided during runtime vehicle.move();\n   vehicle = new AnyVehicle();\n   // Now, the output of the below statement will be “Any vehicle should move!!”, \n   vehicle.move();\n   }\n} class AnyVehicle{\n   public void move(){\n   System.out.println(“Any vehicle should move!!”);\n   }\n}\nclass Bike extends AnyVehicle{\n   public void move(){\n   System.out.println(“Bike can move too!!”);\n   }\n}\nclass Test{\n   public static void main(String[] args){\n   AnyVehicle vehicle = new Bike();\n   // In the above statement, as you can see, the object vehicle is of type AnyVehicle\n   // But the output of the below statement will be “Bike can move too!!”, \n   // because the actual implementation of object ‘vehicle’ is decided during runtime vehicle.move();\n   vehicle = new AnyVehicle();\n   // Now, the output of the below statement will be “Any vehicle should move!!”, \n   vehicle.move();\n   }\n} class AnyVehicle class AnyVehicle public void move() public void move () class Bike extends AnyVehicle class Bike extends AnyVehicle public void move() public void move () class Test class Test public static void main(String[] args) public static void main (String[] args) new // In the above statement, as you can see, the object vehicle is of type AnyVehicle // But the output of the below statement will be “Bike can move too!!”, // because the actual implementation of object ‘vehicle’ is decided during runtime vehicle.move(); new // Now, the output of the below statement will be “Any vehicle should move!!”, As the method to call is determined at runtime, as shown in the above code, this is called runtime polymorphism.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "19. What is a class?",
+        "answer": "A class can be understood as a template or a blueprint, which contains some values, known as member data or member, and some set of rules, known as behaviors or functions. So when an object is created, it automatically takes the data and functions that are defined in the class.\nTherefore the class is basically a template or blueprint for objects. Also one can create as many objects as they want based on a class.  For example, first, a car’s template is created. Then multiple units of car are created based on that template.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "20. What is an object?",
+        "answer": "An object refers to the instance of the class, which contains the instance of the members and behaviors defined in the class template. In the real world, an object is an actual entity to which a user interacts, whereas class is just the blueprint for that object. So the objects consume space and have some characteristic behavior.\nFor example, a specific car. ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "21. What is encapsulation?",
+        "answer": "  One can visualize Encapsulation as the method of putting everything that is required to do the job, inside a capsule and presenting that capsule to the user. What it means is that by Encapsulation, all the necessary data and methods are bind together and all the unnecessary details are hidden to the normal user. So Encapsulation is the process of binding data members and methods of a program together to do a specific job, without revealing unnecessary details.\n\nEncapsulation can also be defined in two different ways:\n\n1) Data hiding: Encapsulation is the process of hiding unwanted information, such as restricting access to any member of an object.\n\n2) Data binding: Encapsulation is the process of binding the data members and the methods together as a whole, as a class.     Data hiding:   Data binding:",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "22. What is Polymorphism?",
+        "answer": "Polymorphism is composed of two words - “poly” which means “many”, and “morph” which means “shapes”. Therefore Polymorphism refers to something that has many shapes.   In OOPs, Polymorphism refers to the process by which some code, data, method, or object behaves differently under different circumstances or contexts. Compile-time polymorphism and Run time polymorphism are the two types of polymorphisms in OOPs languages.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "23. How does C++ support Polymorphism?",
+        "answer": "C++ is an Object-oriented programming language and it supports Polymorphism as well: Compile Time Polymorphism: C++ supports compile-time polymorphism with the help of features like templates, function overloading, and default arguments.\nRuntime Polymorphism: C++ supports Runtime polymorphism with the help of features like virtual functions. Virtual functions take the shape of the functions based on the type of object in reference and are resolved at runtime. Compile Time Polymorphism: C++ supports compile-time polymorphism with the help of features like templates, function overloading, and default arguments. Compile Time Polymorphism Runtime Polymorphism: C++ supports Runtime polymorphism with the help of features like virtual functions. Virtual functions take the shape of the functions based on the type of object in reference and are resolved at runtime. Runtime Polymorphism:",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "24. What is meant by Inheritance?",
+        "answer": "The term “inheritance” means “receiving some quality or behavior from a parent to an offspring.” In object-oriented programming, inheritance is the mechanism by which an object or class (referred to as a child) is created using the definition of another object or class (referred to as a parent). Inheritance not only helps to keep the implementation simpler but also helps to facilitate code reuse.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "25. What is Abstraction?",
+        "answer": "If you are a user, and you have a problem statement, you don't want to know how the components of the software work, or how it's made. You only want to know how the software solves your problem. Abstraction is the method of hiding unnecessary details from the necessary ones. It is one of the main features of OOPs. \nFor example, consider a car. You only need to know how to run a car, and not how the wires are connected inside it. This is obtained using Abstraction. ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "26. How much memory does a class occupy?",
+        "answer": "Classes do not consume any memory. They are just a blueprint based on which objects are created. Now when objects are created, they actually initialize the class members and methods and therefore consume memory.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "27. Is it always necessary to create objects from class?",
+        "answer": "No. An object is necessary to be created if the base class has non-static methods. But if the class has static methods, then objects don’t need to be created. You can call the class method directly in this case, using the class name.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "28. What is a constructor?",
+        "answer": "Constructors are special methods whose name is the same as the class name. The constructors serve the special purpose of initializing the objects.\nFor example, suppose there is a class with the name “MyClass”, then when you instantiate this class, you pass the syntax:\nMyClass myClassObject = new MyClass();   MyClass myClassObject = new MyClass(); Now here, the method called after “new” keyword - MyClass(), is the constructor of this class. This will help to instantiate the member data and methods and assign them to the object myClassObject.  ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "29. What are the various types of constructors in C++?",
+        "answer": "The most common classification of constructors includes: Default constructor: The default constructor is the constructor which doesn’t take any argument. It has no parameters. Default constructor: class ABC\n{\n   int x;\n      \n   ABC()\n   {\n       x = 0;\n   }\n} class ABC\n{\n   int x;\n      \n   ABC()\n   {\n       x = 0;\n   }\n} class ABC\n{ class ABC int 0 Parameterized constructor: The constructors that take some arguments are known as parameterized constructors. Parameterized constructor: class ABC\n{\n   int x;\n      \n   ABC(int y)\n   {\n       x = y;\n   }\n} class ABC\n{\n   int x;\n      \n   ABC(int y)\n   {\n       x = y;\n   }\n} class ABC\n{ class ABC int int Copy constructor: A copy constructor is a member function that initializes an object using another object of the same class. Copy constructor: class ABC\n{\n   int x;\n      \n   ABC(int y)\n   {\n       x = y;\n   }\n   // Copy constructor\n   ABC(ABC abc)\n   {\n       x = abc.x;\n   }\n} class ABC\n{\n   int x;\n      \n   ABC(int y)\n   {\n       x = y;\n   }\n   // Copy constructor\n   ABC(ABC abc)\n   {\n       x = abc.x;\n   }\n} class ABC\n{ class ABC int int // Copy constructor",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "30. What is a copy constructor?",
+        "answer": "Copy Constructor is a type of constructor, whose purpose is to copy an object to another. What it means is that a copy constructor will clone an object and its values, into another object, is provided that both the objects are of the same class.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "31. What is a destructor?",
+        "answer": "Contrary to constructors, which initialize objects and specify space for them, Destructors are also special methods. But destructors free up the resources and memory occupied by an object. Destructors are automatically called when an object is being destroyed.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "32. Are class and structure the same? If not, what's the difference between a class and a structure?",
+        "answer": "No, class and structure are not the same. Though they appear to be similar, they have differences that make them apart. For example, the structure is saved in the stack memory, whereas the class is saved in the heap memory. Also, Data Abstraction cannot be achieved with the help of structure, but with class, Abstraction is majorly used.",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "1. What is the output of the below code?",
+        "answer": "#include<iostream> \n \nusing namespace std; \nclass BaseClass1 { \npublic: \n    BaseClass1() \n    { cout << \" BaseClass1 constructor called\" << endl;  } \n}; \n \nclass BaseClass2 { \npublic: \n    BaseClass2() \n    { cout << \"BaseClass2 constructor called\" << endl;  } \n}; \n \nclass DerivedClass: public BaseClass1, public BaseClass2 { \n  public: \n   DerivedClass() \n    {  cout << \"DerivedClass constructor called\" << endl;  } \n}; \n \nint main() \n{ \n  DerivedClass derived_class; \n  return 0; \n} #include<iostream> \n \nusing namespace std; \nclass BaseClass1 { \npublic: \n    BaseClass1() \n    { cout << \" BaseClass1 constructor called\" << endl;  } \n}; \n \nclass BaseClass2 { \npublic: \n    BaseClass2() \n    { cout << \"BaseClass2 constructor called\" << endl;  } \n}; \n \nclass DerivedClass: public BaseClass1, public BaseClass2 { \n  public: \n   DerivedClass() \n    {  cout << \"DerivedClass constructor called\" << endl;  } \n}; \n \nint main() \n{ \n  DerivedClass derived_class; \n  return 0; \n} #include<iostream> include <iostream> using namespace std class BaseClass1 { class BaseClass1 public cout \" BaseClass1 constructor called\" endl class BaseClass2 { class BaseClass2 public cout \"BaseClass2 constructor called\" endl class DerivedClass: class DerivedClass public public public cout \"DerivedClass constructor called\" endl int main() int main () return 0 Output: Output: BaseClass1 constructor called\nBaseClass2 constructor called\nDerivedClass constructor called BaseClass1 constructor called\nBaseClass2 constructor called\nDerivedClass constructor called Reason:\nThe above program demonstrates Multiple inheritances. So when the Derived class’s constructor is called, it automatically calls the Base class's constructors from left to right order of inheritance. Reason: ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "2. What will be the output of the below code?",
+        "answer": "class Scaler\n{\n   static int i;\n\n   static\n   {\n       System.out.println(“a”);\n\n       i = 100;\n   }\n}\n\npublic class StaticBlock\n{\n   static\n   {\n       System.out.println(“b”);\n   }\n\n   public static void main(String[] args)\n   {\n       System.out.println(“c”);\n\n       System.out.println(Scaler.i);\n   }\n} class Scaler\n{\n   static int i;\n\n   static\n   {\n       System.out.println(“a”);\n\n       i = 100;\n   }\n}\n\npublic class StaticBlock\n{\n   static\n   {\n       System.out.println(“b”);\n   }\n\n   public static void main(String[] args)\n   {\n       System.out.println(“c”);\n\n       System.out.println(Scaler.i);\n   }\n} class Scaler class Scaler static int static 100 public class StaticBlock class StaticBlock static public static void main(String[] args) public static void main (String[] args) Output: Output: b\nc\na\n100 b\nc\na\n100 100 Reason:\nFirstly the static block inside the main-method calling class will be implemented. Hence ‘b’ will be printed first. Then the main method is called, and now the sequence is kept as expected. Reason: ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "3. Predict the output?",
+        "answer": "#include<iostream> \nusing namespace std; \n\nclass ClassA {  \npublic: \n   ClassA(int ii = 0) : i(ii) {} \n   void show() { cout << \"i = \" << i << endl;} \nprivate: \n   int i; \n}; \n\nclass ClassB { \npublic: \n   ClassB(int xx) : x(xx) {} \n   operator ClassA() const { return ClassA(x); } \nprivate: \n   int x; \n}; \n\nvoid g(ClassA a) \n{  a.show(); } \n\nint main() { \n ClassB b(10); \n g(b); \n g(20); \n getchar(); \n return 0; \n} #include<iostream> \nusing namespace std; \n\nclass ClassA {  \npublic: \n   ClassA(int ii = 0) : i(ii) {} \n   void show() { cout << \"i = \" << i << endl;} \nprivate: \n   int i; \n}; \n\nclass ClassB { \npublic: \n   ClassB(int xx) : x(xx) {} \n   operator ClassA() const { return ClassA(x); } \nprivate: \n   int x; \n}; \n\nvoid g(ClassA a) \n{  a.show(); } \n\nint main() { \n ClassB b(10); \n g(b); \n g(20); \n getchar(); \n return 0; \n} #include<iostream> include <iostream> using namespace std class ClassA { class ClassA public int 0 void show() void show () cout \"i = \" endl private int class ClassB { class ClassB public int operator ClassA() const operator ClassA () const return private int void g(ClassA a) void g (ClassA a) int main() int main () ClassB b(10) b (10) 10 20 return 0 Output: Output: i = 10\ni = 20 i = 10\ni = 20 10 20 Reason:\nClassA contains a conversion constructor. Due to this, the objects of ClassA can have integer values. So the statement g(20) works. Also, ClassB has a conversion operator overloaded. So the statement g(b) also works. Reason: ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "4. What will be the output in below code?",
+        "answer": "public class Demo{ \n   public static void main(String[] arr){ \n         System.out.println(“Main1”);\n   } \n   public static void main(String arr){  \n         System.out.println(“Main2”);\n   } \n} public class Demo{ \n   public static void main(String[] arr){ \n         System.out.println(“Main1”);\n   } \n   public static void main(String arr){  \n         System.out.println(“Main2”);\n   } \n} public class Demo class Demo public static void main(String[] arr) public static void main (String[] arr) public static void main(String arr) public static void main (String arr) Output: Output: Main1 Main1 Reason:\nHere the main() method is overloaded. But JVM only understands the main method which has a String[] argument in its definition. Hence Main1 is printed and the overloaded main method is ignored. Reason: ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "5. Predict the output?",
+        "answer": "#include<iostream> \nusing namespace std; \n \nclass BaseClass{ \n   int arr[10];      \n}; \n \nclass DerivedBaseClass1: public BaseClass { }; \n \nclass DerivedBaseClass2: public BaseClass { }; \n \nclass DerivedClass: public DerivedBaseClass1, public DerivedBaseClass2{}; \n \nint main(void) \n{  \n cout<<sizeof(DerivedClass);\n return 0; \n} #include<iostream> \nusing namespace std; \n \nclass BaseClass{ \n   int arr[10];      \n}; \n \nclass DerivedBaseClass1: public BaseClass { }; \n \nclass DerivedBaseClass2: public BaseClass { }; \n \nclass DerivedClass: public DerivedBaseClass1, public DerivedBaseClass2{}; \n \nint main(void) \n{  \n cout<<sizeof(DerivedClass);\n return 0; \n} #include<iostream> include <iostream> using namespace class BaseClass{ class BaseClass int 10 class DerivedBaseClass1: class DerivedBaseClass1 public class DerivedBaseClass2: class DerivedBaseClass2 public class DerivedClass: class DerivedClass public public int main(void) int main (void) void sizeof sizeof return 0 Output: Output: If the size of the integer is 4 bytes, then the output will be 80. If the size of the integer is 4 bytes, then the output will be 80. 4 80. Reason: \nSince DerivedBaseClass1 and DerivedBaseClass2 both inherit from class BaseClass, DerivedClass contains two copies of BaseClass. Hence it results in wastage of space and a large size output. It can be reduced with the help of a virtual base class. Reason: ",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "6. What is the output of the below program?",
+        "answer": "#include<iostream> \n \nusing namespace std; \nclass A { \npublic: \n  void print() \n  { cout <<\" Inside A::\"; } \n}; \n \nclass B : public A { \npublic: \n  void print() \n  { cout <<\" Inside B\"; } \n}; \n \nclass C: public B { \n}; \n \nint main(void) \n{ \n C c; \n \n c.print(); \n return 0; \n} #include<iostream> \n \nusing namespace std; \nclass A { \npublic: \n  void print() \n  { cout <<\" Inside A::\"; } \n}; \n \nclass B : public A { \npublic: \n  void print() \n  { cout <<\" Inside B\"; } \n}; \n \nclass C: public B { \n}; \n \nint main(void) \n{ \n C c; \n \n c.print(); \n return 0; \n} #include<iostream> include <iostream> using namespace class A { class A public void print() void print () \" Inside A::\" class B : class B public public void print() void print () \" Inside B\" class C: class C public int main(void) int main (void) void print return 0 Output: Output: Inside B Inside B Reason:\nThe above program implements a Multi-level hierarchy. So the program is linearly searched up until a matching function is found. Here, it is present in both classes A and B. So class B’s print() method is called. Reason:  Useful Resource Useful Resource Features of OOPS Features of OOPS",
+        "reference": "interviewbit.com",
+        "role": "oops"
+    },
+    {
+        "question": "1) What do you understand by OOP?",
+        "answer": "OOP stands for object-oriented programming. It is a programming paradigm that revolves around the object rather than function and procedure. In other words, it is an approach for developing applications that emphasize on objects. An object is a real word entity that contains data and code. It allows binding data and code together.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "",
+        "answer": "There are various OOP languages but the most widely used are:\nADVERTISEMENT\nPython\nJava\nGo\nDart\nC++\nC#\nRuby",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "3) What is the purpose of using OOPs concepts?",
+        "answer": "The aim of OOP is to implement real-world entities like inheritance, hiding, polymorphism in programming. The main purpose of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "4) What are the four main features of OOPs?",
+        "answer": "The OOP has the following four features:\nInheritance\nEncapsulation\nPolymorphism\nData Abstraction",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "5) Why OOP is so popular?",
+        "answer": "OOPs, programming paradigm is considered as a better style of programming. Not only it helps in writing a complex piece of code easily, but it also allows users to handle and maintain them easily as well. Not only that, the main pillar of OOPs - Data Abstraction, Encapsulation, Inheritance, and Polymorphism, makes it easy for programmers to solve complex scenarios. As a result of these, OOPs is so popular.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "6) What are the advantages and disadvantages of OOP?",
+        "answer": "Advantages of OOP\nIt follows a bottom-up approach.\nIt models the real word well.\nIt allows us the reusability of code.\nAvoids unnecessary data exposure to the user by using the abstraction.\nOOP forces the designers to have a long and extensive design phase that results in better design and fewer flaws.\nDecompose a complex problem into smaller chunks.\nProgrammer are able to reach their goals faster.\nMinimizes the complexity.\nEasy redesign and extension of code that does not affect the other functionality.\nDisadvantages of OOP\nProper planning is required.\nProgram design is tricky.\nProgrammer should be well skilled.\nClasses tend to be overly generalized.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "7) What are the limitations of OOPs?",
+        "answer": "Requires intensive testing processes.\nSolving problems takes more time as compared to Procedure Oriented Programming.\nThe size of the programs created using this approach may become larger than the programs written using the procedure-oriented programming approach.\nSoftware developed using this approach requires a substantial amount of pre-work and planning.\nOOP code is difficult to understand if you do not have the corresponding class documentation.\nIn certain scenarios, these programs can consume a large amount of memory.\nNot suitable for small problems.\nTakes more time to solve problems.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "8) What are the differences between object-oriented programming and structural programming?",
+        "answer": "Object-oriented Programming Structural Programming\nIt follows a bottom-up approach. It follows a top-down approach.\nIt provides data hiding. Data hiding is not allowed.\nIt is used to solve complex problems. It is used to solve moderate problems.\nIt allows reusability of code that reduces redundancy of code. Reusability of code is not allowed.\nIt is based on objects rather than functions and procedures. It provides a logical structure to a program in which the program is divided into functions.\nIt provides more security as it has a data hiding feature. It provides less security as it does not support the data hiding feature.\nMore abstraction more flexibility. Less abstraction less flexibility.\nIt focuses on data. It focuses on the process or logical structure.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "9) What do you understand by pure object-oriented language? Why Java is not a pure object-oriented programming language?",
+        "answer": "The programming language is called pure object-oriented language that treats everything inside the program as an object. The primitive types are not supported by the pure OOPs language. There are some other features that must satisfy by a pure object-oriented language:\nEncapsulation\nInheritance\nPolymorphism\nAbstraction\nAll predefined types are objects\nAll user-defined types are objects\nAll operations performed on objects must be only through methods exposed to the objects.\nJava is not a pure object-oriented programming language because pre-defined data types in Java are not treated as objects. Hence, it is not an object-oriented language.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "",
+        "answer": "Class: A class is a blueprint or template of an object. It is a user-defined data type. Inside a class, we define variables, constants, member functions, and other functionality. It does not consume memory at run time. Note that classes are not considered as a data structure. It is a logical entity. It is the best example of data binding.\nObject: An object is a real-world entity that has attributes, behavior, and properties. It is referred to as an instance of the class. It contains member functions, variables that we have defined in the class. It occupies space in the memory. Different objects have different states or attributes, and behaviors.\nThe following figure best illustrates the class and object.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "11) What are the differences between class and object?",
+        "answer": "Class Object\nIt is a logical entity. It is a real-world entity.\nIt is conceptual. It is real.\nIt binds data and methods together into a single unit. It is just like a variable of a class.\nIt does not occupy space in the memory. It occupies space in the memory.\nIt is a data type that represents the blueprint of an object. It is an instance of the class.\nIt is declared once. Multiple objects can be declared as and when required.\nIt uses the keyword class when declared. It uses the new keyword to create an object.\nA class can exist without any object. Objects cannot exist without a class.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "12) What are the key differences between class and structure?",
+        "answer": "Class Structure\nClass is a group of common objects that shares common properties. The structure is a collection of different data types.\nIt deals with data members and member functions. It deals with data members only.\nIt supports inheritance. It does not support inheritance.\nMember variables cannot be initialized directly. Member variables can be initialized directly.\nIt is of type reference. It is of a type value.\nIt's members are private by default. It's members are public by default.\nThe keyword class defines a class. The keyword struct defines a structure.\nAn instance of a class is an object. An instance of a structure is a structure variable.\nUseful while dealing with the complex data structure. Useful while dealing with the small data structure.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "13) What is the concept of access specifiers when should we use these?",
+        "answer": "In OOPs language, access specifiers are reserved keyword that is used to set the accessibility of the classes, methods and other members of the class. It is also known as access modifiers. It includes public, private, and protected. There is some other access specifier that is language-specific. Such as Java has another access specifier default. These access specifiers play a vital role in achieving one of the major functions of OOP, i.e. encapsulation. The following table depicts the accessibility.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "14) What are the manipulators in OOP and how it works?",
+        "answer": "Manipulators are helping functions. It is used to manipulate or modify the input or output stream. The modification is possible by using the insertion (<<) and extraction (>>) operators. Note that the modification of input or output stream does not mean to change the values of variables. There are two types of manipulators with arguments or without arguments.\nThe example of manipulators that do not have arguments is endl, ws, flush, etc. Manipulators with arguments are setw(val), setfill(c), setbase(val), setiosflags(flag). Some other manipulators are showpos, fixed, scientific, hex, dec, oct, etc.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "15) What are the rules for creating a constructor?",
+        "answer": "It cannot have a return type.\nIt must have the same name as the Class name.\nIt cannot be marked as static.\nIt cannot be marked as abstract.\nIt cannot be overridden.\nIt cannot be final.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "16) What are the differences between the constructor and the method in Java?",
+        "answer": "Constructor Method\nConstructor has the same name as the class name. The method name and class name are not the same.\nIt is a special type of method that is used to initialize an object of its class. It is a set of instructions that can be invoked at any point in a program.\nIt creates an instance of a class. It is used to execute Java code.\nIt is invoked implicitly when we create an object of the class. It gets executed when we explicitly called it.\nIt cannot be inherited by the subclass. It can be inherited by the subclass.\nIt does not have any return type. It must have a return type.\nIt cannot be overridden in Java. It can be overridden in Java.\nIt cannot be declared as static. It can be declared as static.\nJava compiler automatically provides a default constructor. Java compiler does not provide any method by default.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "17) How does procedural programming be different from OOP differ?",
+        "answer": "Procedural Oriented Programming Object-Oriented Programming\nIt is based on functions. It is based on real-world objects.\nIt follows a top-down approach. It follows a bottom-up approach.\nIt is less secure because there is no proper way to hide data. It provides more security.\nData is visible to the whole program. It encapsulates the data.\nReuse of code is not allowed. The code can be reused.\nModification and extension of code are not easy. We can easily modify and extend code.\nExamples of POP are C, VB, FORTRAN, Pascal, etc. Examples of OOPs are C++, Java, C#, .NET, etc.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "18) What are the differences between error and exception?",
+        "answer": "Basis of Comparison Exception Error\nRecoverable/ Irrecoverable Exception can be recovered by using the try-catch block. An error cannot be recovered.\nType It can be classified into two categories i.e. checked and unchecked. All errors in Java are unchecked.\nOccurrence It occurs at compile time or run time. It occurs at run time.\nPackage It belongs to java.lang.Exception package. It belongs to java.lang.Error package.\nKnown or unknown Only checked exceptions are known to the compiler. Errors will not be known to the compiler.\nCauses It is mainly caused by the application itself. It is mostly caused by the environment in which the application is running.\nExample Checked Exceptions: SQLException, IOException\nUnchecked Exceptions: ArrayIndexOutOfBoundException, NullPointerException, ArithmaticException Java.lang.StackOverFlow, java.lang.OutOfMemoryError",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "19) What are the characteristics of an abstract class?",
+        "answer": "An abstract class is a class that is declared as abstract. It cannot be instantiated and is always used as a base class. The characteristics of an abstract class are as follows:\nInstantiation of an abstract class is not allowed. It must be inherited.\nAn abstract class can have both abstract and non-abstract methods.\nAn abstract class must have at least one abstract method.\nYou must declare at least one abstract method in the abstract class.\nIt is always public.\nIt is declared using the abstract\nThe purpose of an abstract class is to provide a common definition of the base class that multiple derived classes can share.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "20) Is it possible for a class to inherit the constructor of its base class?",
+        "answer": "No, a class cannot inherit the constructor of its base class.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "21) Identify which OOPs concept should be used in the following scenario?",
+        "answer": "A group of 5 friends, one boy never gives any contribution when the group goes for the outing. Suddenly a beautiful girl joins the same group. The boy who never contributes is now spending a lot of money for the group.\n\nRuntime Polymorphism",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "22) What is composition?",
+        "answer": "Composition is one of the vital concepts in OOP. It describes a class that references one or more objects of other classes in instance variables. It allows us to model a has-a association between objects. We can find such relationships in the real world. For example, a car has an engine. the following figure depicts the same\n\n\nThe main benefits of composition are:\nReuse existing code\nDesign clean APIs\nChange the implementation of a class used in a composition without adapting any external clients.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "23) What are the differences between copy constructor and assignment operator?",
+        "answer": "The copy constructor and the assignment operator (=) both are used to initialize one object using another object. The main difference between the two is that the copy constructor allocates separate memory to both objects i.e. existing object and newly created object while the assignment operator does not allocate new memory for the newly created object. It uses the reference variable that points to the previous memory block (where an old object is located).\nSyntax of Copy Constructor\nclass_name (const class_name &obj)  \n{  \n//body  \n}  \nSyntax of Assignment Operator\nclass_name obj1, obj2;  \nobj1=obj2;  \n\nCopy Constructor Assignment Operator\nIt is an overloaded constructor. It is an operator.\nIt creates a new object as a copy of an existing object. It assigns the value of one object to another object both of which already exist.\nThe copy constructor is used when a new object is created with some existing object. It is used when we want to assign an existing object to a new object.\nBoth the objects use separate memory locations. Both objects share the same memory but use the two different reference variables that point to the same location.\nIf no copy constructor is defined in the class, the compiler provides one. If the assignment operator is not overloaded then the bitwise copy will be made.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "24) What is the difference between Composition and Inheritance?",
+        "answer": "Inheritance means an object inheriting reusable properties of the base class. Compositions mean that an object holds other objects. In Inheritance, there is only one object in memory (derived object) whereas, in Composition, the parent object holds references of all composed objects. From a design perspective, inheritance is \"is a\" relationship among objects whereas Composition is \"has a\" relationship among objects.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "25) What is constructor chaining?",
+        "answer": "In OOPs, constructor chaining is a sequence of invoking constructors (of the same class) upon initializing an object. It is used when we want to invoke a number of constructors, one after another by using only an instance. In other words, if a class has more than one constructor (overloaded) and one of them tries to invoke another constructor, this process is known as constructor chaining. In C++, it is known as constructor delegation and it is present from C++ 11.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "26) What are the limitations of inheritance?",
+        "answer": "The main disadvantage of using inheritance is two classes get tightly coupled. That means one cannot be used independently of the other. If a method or aggregate is deleted in the Super Class, we have to refactor using that method in SubClass.\nInherited functions work slower compared to normal functions.\nNeed careful implementation otherwise leads to improper solutions.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "27) What are the differences between Inheritance and Polymorphism?",
+        "answer": "Inheritance Polymorphism\nInheritance is one in which a derived class inherits the already existing class's features. Polymorphism is one that you can define in different forms.\nIt refers to using the structure and behavior of a superclass in a subclass. It refers to changing the behavior of a superclass in the subclass.\nIt is required in order to achieve polymorphism. In order to achieve polymorphism, inherence is not required.\nIt is applied to classes. It is applied to functions and methods.\nIt can be single, hybrid, multiple, hierarchical, multipath, and multilevel inheritance. There are two types of polymorphism compile time and run time.\nIt supports code reusability and reduces lines of code. It allows the object to decide which form of the function to be invoked at run-time (overriding) and compile-time (overloading).",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "28) What is Coupling in OOP and why it is helpful?",
+        "answer": "In programming, separation of concerns is known as coupling. It means that an object cannot directly change or modify the state or behavior of other objects. It defines how closely two objects are connected together. There are two types of coupling, loose coupling, and tight coupling.\nObjects that are independent of one another and do not directly modify the state of other objects is called loosely coupled. Loose coupling makes the code more flexible, changeable, and easier to work with.\nObjects that depend on other objects and can modify the states of other objects are called tightly coupled. It creates conditions where modifying the code of one object also requires changing the code of other objects. The reuse of code is difficult in tight coupling because we cannot separate the code.\nSince using loose coupling is always a good habit.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "",
+        "answer": "Scope Resolution Operator (::)\nTernary Operator (? :)\nMember Access or Dot Operator (.)\nPointer to Member Operator (.*)\nsizeof operator",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "30) What is the difference between new and override?",
+        "answer": "The new modifier instructs the compiler to use the new implementation instead of the base class function. Whereas, Override modifier helps to override the base class function.\nvirtual: indicates that a method may be overridden by an inheritor\noverride: Overrides the functionality of a virtual method in a base class, providing different functionality.\nnew: Hides the original method (which doesn't have to be virtual), providing different functionality. This should only be used where it is absolutely necessary.\nWhen you hide a method, you can still access the original method by upcasting to the base class. This is useful in some scenarios, but dangerous.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "31) Explain overloading and overriding with example?",
+        "answer": "Overloading\nOverloading is a concept in OOP when two or more methods in a class with the same name but the method signature is different. It is also known as compile-time polymorphism. For example, in the following code snippet, the method add() is an overloaded method.\npublic class Sum  \n{  \nint a, b, c;  \npublic int add();  \n{  \nc=a+b;  \nreturn c;  \n}  \nadd(int a, int b);  \n{  \n//logic  \n}  \nadd(int a, int b, int c);  \n{  \n//logic  \n}  \nadd(double a, double b, double c);  \n{  \n//logic  \n}  \n//statements  \n}  \n\n\nOverriding\nIf a method with the same method signature is presented in both child and parent class is known as method overriding. The methods must have the same number of parameters and the same type of parameter. It overrides the value of the parent class method. It is also known as runtime polymorphism. For example, consider the following program.\nclass Dog  \n{  \npublic void bark()  \n{  \nSystem.out.println(\"woof \");  \n}  \n}  \nclass Hound extends Dog  \n{  \npublic void sniff()  \n{  \nSystem.out.println(\"sniff \");  \n}  \n//overrides the method bark() of the Dog class  \npublic void bark()  \n{  \nSystem.out.println(\"bowl\");  \n}  \n}  \npublic class OverridingExample  \n{  \npublic static void main(String args[])  \n{  \nDog dog = new Hound();  \n//invokes the bark() method of the Hound class  \ndog.bark();  \n}  \n}",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "32) What is Cohesion in OOP?",
+        "answer": "In OOP, cohesion refers to the degree to which the elements inside a module belong together. It measures the strength of the relationship between the module and data. In short, cohesion represents the clarity of the responsibilities of a module. It is often contrasted with coupling.\nIt focuses on a how single module or class is intended. Higher the cohesiveness of the module or class, better is the object-oriented design.\n\nThere are two types of cohesion, i.e. High and Low.\nHigh cohesion is associated with several required qualities of software including robustness, reliability, and understandability.\nLow cohesion is associated with unwanted qualities such as being difficult to maintain, test, reuse, or even understand.\nHigh cohesion often associates with loose coupling and vice versa.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "33) Give a real-world example of polymorphism?",
+        "answer": "The general meaning of Polymorphism is one that has different forms. The best real-world example of polymorphism is a person that plays different roles at different palaces or situations.\nAt home a person can play the role of father, husband, and son.\nAt the office the same person plays the role of boss or employee.\nIn public transport, he plays the role of passenger.\nIn the hospital, he can play the role of doctor or patient.\nAt the shop, he plays the role of customer.\n\nHence, the same person possesses different behavior in different situations. It is called polymorphism.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "34) What is the difference between a base class and a superclass?",
+        "answer": "The base class is the root class- the most generalized class. At the same time, the superclass is the immediate parent class from which the other class inherits.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "35) What is data abstraction and how can we achieve data abstraction?",
+        "answer": "It is one of the most important features of OOP. It allows us to show only essential data or information to the user and hides the implementation details from the user. A real-world example of abstraction is driving a car. When we drive a car, we do not need to know how the engine works (implementation) we only know how ECG works.\nThere are two ways to achieve data abstraction\nAbstract class\nAbstract method",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "36) What are the levels of data abstraction?",
+        "answer": "There are three levels of data abstraction:\nPhysical Level: It is the lowest level of data abstraction. It shows how the data is actually stored in memory.\nLogical Level: It includes the information that is actually stored in the database in the form of tables. It also stores the relationship among the data entities in relatively simple structures. At this level, the information available to the user at the view level is unknown.\nView Level: It is the highest level of data abstraction. The actual database is visible to the user. It exists to ease the availability of the database by an individual user.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "37) What are the types of variables in OOP?",
+        "answer": "There are three types of variables:\n\nInstance Variable: It is an object-level variable. It should be declared inside a class but must be outside a method, block, and constructor. It is created when an object is created by using the new keyword. It can be accessed directly by calling the variable name inside the class.\nStatic Variable: It is a class-level variable. It is declared with keyword static inside a class but must be outside of the method, block, and constructor. It stores in static memory. Its visibility is the same as the instance variable. The default value of a static variable is the same as the instance variable. It can be accessed by calling the class_name.variable_name.\nLocal Variable: It is a method-level variable. It can be declared in method, constructor, or block. Note that the use of an access modifier is not allowed with local variables. It is visible only to the method, block, and constructor in which it is declared. Internally, it is implemented at the stack level. It must be declared and initialized before use.\nAnother type of variable is used in object-oriented programming is the reference variable.\nReference Variable: It is a variable that points to an object of the class. It points to the location of the object that is stored in the memory.",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "38) Is it possible to overload a constructor?",
+        "answer": "Yes, the constructors can be overloaded by changing the number of arguments accepted by the constructor or by changing the data type of the parameters. For example:\npublic class Demo  \n{  \nDemo()  \n{  \n//logic  \n}  \nDemo(String str) //overloaded constructor   \n{  \n//logic  \n}  \nDemo(double d) //overloaded constructor  \n{  \n//logic  \n}  \n//statements  \n}",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "39) Can we overload the main() method in Java also give an example?",
+        "answer": "Yes, we can also overload the main() method in Java. Any number of main() methods can be defined in the class, but the method signature must be different. Consider the following code.\nclass OverloadMain    \n{    \npublic static void main(int a)  //overloaded main method    \n{    \nSystem.out.println(a);    \n}    \npublic static void main(String args[])    \n{       \nSystem.out.println(\"main method invoked\");    \nmain(6);    \n}    \n}",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    },
+    {
+        "question": "40) Consider the following scenario:",
+        "answer": "If a class Demo has a static block and a main() method. A print statement is presented in both. The question is which one will first execute, static block or the main() method, and why?\nJVM first executes the static block on a priority basis. It means JVM first goes to static block even before it looks for the main() method in the program. After that main() method will be executed.\nclass Demo    \n{    \nstatic                  //static block    \n{    \nSystem.out.println(\"Static block\");    \n}    \npublic static void main(String args[])  //static method    \n{    \nSystem.out.println(\"Static method\");    \n}    \n}",
+        "reference": "javatpoint.com",
+        "role": "oops"
+    }
+]

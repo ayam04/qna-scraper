@@ -1,0 +1,482 @@
+[
+    {
+        "question": "1. What do you mean by User mode and Privileged mode?",
+        "answer": "User Mode: User mode is generally used to view the configurations of the routers. It allows us to view basic system information, check router status, connect to remote devices, etc. User mode is mostly used to perform regular tasks on the router when we are using a Cisco router. \n\nPrivileged Mode: Privileged mode is generally used to view all the configurations on the router. It allows you to change configurations that are less important. Privileged mode is mostly used to perform high-level tasks on the routers such as making configurations and debugging. User Mode:   Privileged Mode:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "2. What do you mean by Windows in terms of networking?",
+        "answer": "In terms of networking, the window is the number of segments that are allowed to be transferred from the source to the destination before any acknowledgment is sent.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "3. What is the function of an LLC sublayer?",
+        "answer": "LLC (Logical Link Control) is basically the upper sublayer of the data link layer and acts as an interface between the network layer and MAC sublayer of the data link layer of the OSI model. This sublayer provides the logic for data link as it controls the synchronization, flow control, multiplexing, and also error checking functions of the data link layer. It simply provides optional services to an application developer. LLC (Logical Link Control)",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "4. Explain network latency.",
+        "answer": "Network latency basically represents the delay in communication over a network. It simply refers to the performance of one device when it communicates with another. It is the time taken for some data to go from the source to its destination across the network. Network latency can be affected by bandwidth speed, cabling, network card performance, and congestion.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "5. Name different memories that are used in CISCO routers.",
+        "answer": "Different memories that are used in CISCO router include: NVRAM (Non-volatile RAM): It is used to store startup configuration files. It also retains its content even after a device is restarted or powered down.  \nDRAM (Dynamic Random-Access Memory): It is used to store configuration files that are being executed. It loses its content when a device is restarted.  \nROM (Read Only Memory): It is used to store a bootstrap program that initializes a boot process. It also runs and maintains instructions for POST diagnostics. \nFlash Memory: It is used to store CISCO IOS. It can also be used to store other files such as backup configuration files. NVRAM (Non-volatile RAM): It is used to store startup configuration files. It also retains its content even after a device is restarted or powered down. NVRAM (Non-volatile RAM): DRAM (Dynamic Random-Access Memory): It is used to store configuration files that are being executed. It loses its content when a device is restarted. DRAM (Dynamic Random-Access Memory): ROM (Read Only Memory): It is used to store a bootstrap program that initializes a boot process. It also runs and maintains instructions for POST diagnostics. ROM (Read Only Memory): Flash Memory: It is used to store CISCO IOS. It can also be used to store other files such as backup configuration files. Flash Memory:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "6. What do you mean by data packets?",
+        "answer": "Data packet is a unit of data that is made into a single package for transmission over a network. They are also referred to as a network layer package and are also used by IP protocol as they contain the IP information which is attached to each packet. They contain much essential information like email messages, website data, and VoIP (Voice-over-IP) calls. Each data packet has a unique numeric identification number that defines the packet number and order.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "7. What do you mean by routers? Write its major functions.",
+        "answer": "Router is a networking device that is used to forward data packets along with a network from source to destination. The devices are specially designed to receive, analyze, and forward data packets between computer networks. It examines a destination IP address of a data packet and uses its headers and routing table to determine the best way or route for transferring the packets. There are some popular companies that develop routers like HP, Juniper, Nortel, Cisco, etc. \n\nFunctions of Routers:   Functions of Routers: Send and receive data on computer networks. \nUsed to create local networks of devices \nHelps to connect multiple devices to the Internet. \nAllows users to configure the port as per their requirements in the network. \nFilter unwanted interference, and carry out the process of data encapsulation and decapsulation. \nUsed to segment network traffic. \nPrevent network bottlenecks simply by isolating portions of a network. \nReduce excessive traffic. Send and receive data on computer networks. Used to create local networks of devices Helps to connect multiple devices to the Internet. Allows users to configure the port as per their requirements in the network. Filter unwanted interference, and carry out the process of data encapsulation and decapsulation. Used to segment network traffic. Prevent network bottlenecks simply by isolating portions of a network. Reduce excessive traffic.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "8. Name types of routes that are available in routers.",
+        "answer": "Types of routes available in routers include:   Static Route: This route is also known as a non-adaptive route. It is either directly configured on an active interface of the router or manually added to the routing table by an administrator.\n\nDefault Route:  In this, the router is configured to send all packets towards a single router, and it does not matter whether or not it belongs to a specific network. It is especially used when networks deal with a single exit point. \n \nDynamic Route: This route is also known as the adaptive route. It makes automatic adjustments of the routes as per the current state of the route in the routing table and also uses routing protocols to find network destinations. Static Route:   Default Route:   Dynamic Route:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "9. What do you mean by Switching?",
+        "answer": "Switching is a process in computer networks that enable us to interconnect links to form a larger network. It works at the DLL frame and uses hardware address or mac address of devices on LAN (Local Area Network) to segment a network.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "10. Name two ports of Switches.",
+        "answer": "The two ports of switches include: \n\nAccess Port: It connects network hosts to a single VLAN and only carries the traffic of one VLAN. In this, traffic is sent and received in native format without any VLAN tagging.  Access ports are basically used to connect switch ports with computers with a minimum of 10 Mbps speed. \n\nTrunk Port: It generally connects to another switch and is able to interact with several other VLANs. By default, it is a member of all VLANs in the VLAN database. The trunk port is basically used for multiple connections between the switch to switch and switch to routers.   Access Port:   Trunk Port:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "11. Name different IPX access list.",
+        "answer": "There are basically two different IPX access lists as given below: \n\nStandard: Used to filter the source or destination IP address. \n\nExtended: Uses source and destination IP addresses, protocol, socket, and port when fileting a network.   Standard:   Extended:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "12. What is the main objective of Data Link Layer and Transport Layer?",
+        "answer": "Data Link Layer: It is the 2nd layer of the OSI model which is generally responsible for transferring the datagram across an individual link. It is considered one of the most complicated layers and also has complex functionalities and liabilities. It also ensures that the appropriate physical protocol is assigned to the data. Data Link Layer:   Transport Layer: It is the 4th layer of the OSI model which is responsible for providing transparent transfer of data among end-users, thus providing reliable data transfer services to the top layers. Its main objective is to deliver the entire message from source to destination. Transport Layer:  ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "13. What do you mean by 100BaseFX?",
+        "answer": "100BaseFX is basically an Ethernet media standard for Ethernet over fiber optic cables, rather than twisted-pair cables. It is a version of Fast Ethernet that makes use of fiber optic cables as the main transmission medium. Here, 100 refers to 100Mbps data speed that means it carries data traffic at 100 Mbps in LAN.  ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "14. Name the LAN Switching method that is mostly used in CISCO Catalyst 5000?",
+        "answer": "Store and forward switching method is mostly used by CISCO Catalyst 5000 because it stores the entire frame to its buffers and executes a CRC check before deciding whether to forward that data frame or not.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "15. Explain Routing.",
+        "answer": "Routing is basically a process of establishing the routes that data packets take on their way to the destination. It is a process of selecting a path across one or more networks to move a data packet from source to destination. Routing is generally performed in many types of networks such as circuit-switched networks, computer networks, etc. It is considered as one of the most essential features in a network and is done by a device called routers.   In the above diagram, the data packet moves from Computer A to Computer B. There are two paths available: \n\n1st- Network 1, 3, and 5 \n2nd- Network 2 and 4 \n\nIt depends upon network routers to make a choice whether to pass through 1st or 2nd. The 1st one is a long path but might be faster at forwarding packets whereas the 2nd one is a shorter path. These are the kinds of choices that routers have to make constantly.     ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "16. Write difference between tracert and traceroute.",
+        "answer": "Tracert: It is a Command Prompt command that is used to show various details about the path that a packet takes from the source computer to the specified destination computer. It only uses ICMP (Internet Control Message Protocol) echo requests. It can be used on a PC. This command is generally used in Windows NT-based OS. \n\nTraceroute: As the name suggests, it is a command that is used to trace the records of the path that a packet takes from the source computer to the specified destination computer. It uses UDP (User Datagram Protocol) echo requests. Traceroute command can be used on a router or switch. This command is generally used in UNIX OS. Tracert:   Traceroute:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "17. Explain HDLC.",
+        "answer": "HDLC (High-Level Data Link Control) is a group of communication protocols that usually provides reliable delivery of data frames over communication or network link.  It is a proprietary protocol for CISCO and is the default encapsulation operated within CISCO routers. It also ensures the error-free transmission of data and can provide both connection-oriented and connectionless services. HDLC (High-Level Data Link Control)",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "18. What do you mean by DLCI?",
+        "answer": "DLCI (Data Link Connection Identifier) is basically a frame relay 10-bit-wide link-local virtual circuit normally assigned by frame relay service to uniquely identify each virtual circuit that is present on the network. It simply identifies which logical circuit the data travels over. DLCI (Data Link Connection Identifier)",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "19. Name router command that is used to display RAM content and NVRAM Content.",
+        "answer": "The router command that is used to display RAM content is “Show run/show running-config\", and the router command that is used to display NVRAM content is “Show start/show start-config\".",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "20. What do you mean by Frame relay?",
+        "answer": "Frame relay is basically a packet switching technology typically used to transfer data between geographically separated LANs or across WANs. It simply provides connection-oriented communication by developing and maintaining virtual circuits. It is cost-effective technology and is generally used to join two or more routers with a single interface. It works on the data link layer and physical layer of the OSI model.  ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "21. What are three possible ways of data transmission in CCNA?",
+        "answer": "Three possible ways of data transmission in CCNA include: \n\nSimplex: The Communication is unidirectional in Simplex mode, as on a single-direction road. Just one of the two devices on a connection can communicate, the other can just get. The simplex mode can utilize the whole limit of the channel to send information one way.   Simplex:   Half Duplex: Each station can transmit and receive in Half-duplex mode, however not simultaneously. At the point when one device is sending, the other can just receive, and the other way around. The half-duplex mode is utilized in situations where there is no requirement for communication both ways simultaneously. The whole limit of the channel can be used for every direction. Half Duplex:   Full Duplex: Both stations can send and receive all the while in full-duplex mode. Signals that are going in one direction share the capacity of the connection with signals going another way IN this type of mode. This sharing can happen in two ways: Full Duplex: Either the connection should contain two truly separate transmission ways, one for sending and the other for receiving. \nThe capacity is split between signals going in two ways. Either the connection should contain two truly separate transmission ways, one for sending and the other for receiving. The capacity is split between signals going in two ways. Full-duplex mode is utilized when communication both ways are required constantly. The limit or capacity of the channel, anyway, should be split between the two directions.  ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "22. What do you mean by MTU?",
+        "answer": "MTU (Maximum Transmission Unit) is considered the largest size frame or packet that a network-connected device will accept.  Its default size is 1500 bytes which is the largest Ethernet standard unit. TCP (Transmission Control Protocol) generally uses MTU to determine the maximum size of each packet in any transmission. MTU (Maximum Transmission Unit)",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "23. What are different types of cables used in routing?",
+        "answer": "There are basically three different types of cables used in routing: \n\nStraight Cable: These cables are used to connect different group devices. It is especially used in LAN to connect different devices such as computers to a network hub like a router, PC and switch, router and switch, etc. Its ultimate goal is to connect a host to the client.  \n\nCross Cable: These cables are used to connect the same group of devices. It is considered one of the most commonly used cable formats for network cables. It is especially used when two similar devices need to be connected. Cross cables are also known as cross-wired cables. \n\nRollover Cable: These cables are used to connect the console port of the computer. This cable is specially designed flat to help distinguish it from other types of cables. It generally allows programmers to connect to network devices and can also manipulate the programming whenever needed. Rollover cables are also known as Yost cable, Cisco cable, or a Console cable.   Straight Cable:   Cross Cable:   Rollover Cable:",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "1. What do you mean by route poisoning?",
+        "answer": "Route poisoning refers to a method that prevents certain networks from sending data packets to path destinations that have already become invalid. This method is being employed by distance vector routing protocols like RIPv2 whenever they see any invalid route to prevent routing loops. It is generally used to overcome large routing loops and informs all the connected routers in a network about the path that is invalid by saying that it has a hop count that exceeds the maximum allowable.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "2. What do you mean by EIGRP? Mention some metrics of EIGRP Protocol.",
+        "answer": "EIGRP (Enhanced Interior Gateway Routing Protocol) is referred to as Cisco's IGP (Interior Gateway Protocol) that is used on a computer network especially for automating routing decisions and configurations. This protocol is suited for different topologies and media. It is mostly used on a router to share routes with other routers within the same autonomous system.  \n\nEIGRP Protocol generally includes the following metrics: EIGRP (Enhanced Interior Gateway Routing Protocol)   Bandwidth \nLoad \nDelay \nReliability \nMTU \nMaximum Transmission Unit Bandwidth Load Delay Reliability MTU Maximum Transmission Unit",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "3. What is CDP? Write its functions.",
+        "answer": "CDP (Cisco Discovery Protocol) is a Layer 2, media-independent, and network-independent protocol that runs on all the Cisco devices that helps us to discover Cisco devices on the network. This protocol works on the basis of MAC address. It also facilitates the management of Cisco devices by discovering these devices, identifying how to configure them, and allowing systems to learn about each other using different network-layer protocols. Some of its functions include: CDP (Cisco Discovery Protocol) Collects information about directly connected neighboring devices.  \nFind adjacent Cisco devices. \nFind out port numbers, IP addresses, router models, switch models, interface details, iOS details, device ID-hostname. \nSimplifies the process of keeping an up-to-date inventory of Cisco network devices. \nShare information about other directly connected Cisco equipment like OS version, IP addresses. Collects information about directly connected neighboring devices. Find adjacent Cisco devices. Find out port numbers, IP addresses, router models, switch models, interface details, iOS details, device ID-hostname. Simplifies the process of keeping an up-to-date inventory of Cisco network devices. Share information about other directly connected Cisco equipment like OS version, IP addresses.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "4. What do you mean by VLAN? Write its main objective.",
+        "answer": "VLAN (Virtual Local Area Network) is basically a logical group of workstations, services, or network devices that communicate with one another on a separate physical LAN. It improves the network performance or applies some additional security features. It also allows several networks to work virtually as if they were a LAN sharing a single broadcast domain. VLAN (Virtual Local Area Network)  ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "5. What are the benefits of using VLAN?",
+        "answer": "There are several advantages of using VLAN: Removes latency and traffic load on the network \nSaves network resources and increases network efficiency \nReduces IT cost and the incidence of collisions \nImprove network security and performance \nEnsure network flexibility and provide easier management \nMake it easier to relocate a network or a network device \nIncrease the number of broadcast domains while decreasing the size of broadcast domains. \nEstablish broadcast domains in switched networks. Removes latency and traffic load on the network Saves network resources and increases network efficiency Reduces IT cost and the incidence of collisions Improve network security and performance Ensure network flexibility and provide easier management Make it easier to relocate a network or a network device Increase the number of broadcast domains while decreasing the size of broadcast domains. Establish broadcast domains in switched networks.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "6. What do you mean by a broadcast domain and a collision domain?",
+        "answer": "Broadcast Domain: As the name suggests, a Broadcast domain is a logical set of reachable computer systems without having a router. In this type of domain, traffic flows all over the network. In this scenario, when a device sends a broadcast message, then all the other devices present in its broadcast domain have to pay attention to it.  \n\nCollision Domain: As the name suggests, a Collision domain is a part of a network where packet collisions can take place when being sent on a shared medium or through repeaters. In this scenario, when a device sends a message to a network, then all other devices present in its collision domain have to pay attention to it, whether or not it was destined for them. Broadcast Domain:   Collision Domain:  ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "7. Explain BootP.",
+        "answer": "BootP (Bootstrap Protocol or Boot Program) is defined as a computer networking protocol that is being used by a client for obtaining an IP address of a server PC. In a network, BootP is generally used for booting diskless workstations. These diskless workstations use BootP to get their own IP address as well as the server’s IP address.  It was originally designed to replace RARP (Reverse Address Resolution Protocol), also known as RFC 903. BootP (Bootstrap Protocol or Boot Program)",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "8. Write difference between static and dynamic IP addressing.",
+        "answer": "Static IP address: Static IP address, as the name suggests, is simply an IP address that doesn’t change. It remains the same until the device is decommissioned or the network architecture is changed. Static IP address:   Dynamic IP address: Dynamic IP address, as the name suggests, is simply an IP address that changes over time. It is mostly used because IPv4 does not provide enough static IP addresses to go around. Dynamic IP address:   Static vs Dynamic IP address: Static vs Dynamic IP address: Static IP address Dynamic IP address\nThis IP address is generally provided by ISP (Internet Service Provider). This IP address is generally provided by DHCP (Dynamic Host Configuration Protocol).\nThe address does not change whenever a device is assigned a static IP address by the network administrator.  The address changes over time whenever a device is assigned a dynamic IP address.\nIt is less secure and more difficult to designate as compared to dynamic IP addresses. It is more secure and easy to designate as compared to static IP addresses.\nIt is more appropriate for a business. It is more appropriate for a home network. \nThese are costlier to deploy and more difficult to manage as compared to dynamic IP addresses. These are cheaper to deploy and easier to manage as compared to static IP addresses.\nIt is more suitable for dedicated services like mail, VPN and FTP servers, etc. It is more suitable for a large network that requires internet access to all devices.\nIt is mostly used where computational data is less confidential. It is mostly used where data is more confidential and requires higher security. Static IP address Dynamic IP address\nThis IP address is generally provided by ISP (Internet Service Provider). This IP address is generally provided by DHCP (Dynamic Host Configuration Protocol).\nThe address does not change whenever a device is assigned a static IP address by the network administrator.  The address changes over time whenever a device is assigned a dynamic IP address.\nIt is less secure and more difficult to designate as compared to dynamic IP addresses. It is more secure and easy to designate as compared to static IP addresses.\nIt is more appropriate for a business. It is more appropriate for a home network. \nThese are costlier to deploy and more difficult to manage as compared to dynamic IP addresses. These are cheaper to deploy and easier to manage as compared to static IP addresses.\nIt is more suitable for dedicated services like mail, VPN and FTP servers, etc. It is more suitable for a large network that requires internet access to all devices.\nIt is mostly used where computational data is less confidential. It is mostly used where data is more confidential and requires higher security. Static IP address Dynamic IP address Static IP address Dynamic IP address Static IP address Dynamic IP address This IP address is generally provided by ISP (Internet Service Provider). This IP address is generally provided by DHCP (Dynamic Host Configuration Protocol).\nThe address does not change whenever a device is assigned a static IP address by the network administrator.  The address changes over time whenever a device is assigned a dynamic IP address.\nIt is less secure and more difficult to designate as compared to dynamic IP addresses. It is more secure and easy to designate as compared to static IP addresses.\nIt is more appropriate for a business. It is more appropriate for a home network. \nThese are costlier to deploy and more difficult to manage as compared to dynamic IP addresses. These are cheaper to deploy and easier to manage as compared to static IP addresses.\nIt is more suitable for dedicated services like mail, VPN and FTP servers, etc. It is more suitable for a large network that requires internet access to all devices.\nIt is mostly used where computational data is less confidential. It is mostly used where data is more confidential and requires higher security. This IP address is generally provided by ISP (Internet Service Provider). This IP address is generally provided by DHCP (Dynamic Host Configuration Protocol). This IP address is generally provided by ISP (Internet Service Provider). This IP address is generally provided by DHCP (Dynamic Host Configuration Protocol). The address does not change whenever a device is assigned a static IP address by the network administrator.  The address changes over time whenever a device is assigned a dynamic IP address. The address does not change whenever a device is assigned a static IP address by the network administrator. The address changes over time whenever a device is assigned a dynamic IP address. It is less secure and more difficult to designate as compared to dynamic IP addresses. It is more secure and easy to designate as compared to static IP addresses. It is less secure and more difficult to designate as compared to dynamic IP addresses. It is more secure and easy to designate as compared to static IP addresses. It is more appropriate for a business. It is more appropriate for a home network. It is more appropriate for a business. It is more appropriate for a home network. These are costlier to deploy and more difficult to manage as compared to dynamic IP addresses. These are cheaper to deploy and easier to manage as compared to static IP addresses. These are costlier to deploy and more difficult to manage as compared to dynamic IP addresses. These are cheaper to deploy and easier to manage as compared to static IP addresses. It is more suitable for dedicated services like mail, VPN and FTP servers, etc. It is more suitable for a large network that requires internet access to all devices. It is more suitable for dedicated services like mail, VPN and FTP servers, etc. It is more suitable for a large network that requires internet access to all devices. It is mostly used where computational data is less confidential. It is mostly used where data is more confidential and requires higher security. It is mostly used where computational data is less confidential. It is mostly used where data is more confidential and requires higher security.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "9. What is network congestion? When network congestion happens?",
+        "answer": "Network congestion is a situation that occurs when a network node is overloaded with data or traffic and can cause a common problem for admins. It usually occurs when the network is carrying or exchanging more data than the network devices like routers and switches can accommodate. It is a result of an internet route becoming too full when many users try using the same bandwidth. This condition is true in big networks that do not resort to network segmentation.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "10. What are two types of networks in CCNA?",
+        "answer": "Two types of networks in CCNA includes: \n\nServer-based network: Client-Server networks can also be referred to as Server-Based networks. A server is a node that provides services to clients. In this, a Centralized server is used to store the data because its management is centralized.\n\nPeer-to-Peer network: A peer-to-peer network is also known as a computer-to-computer network or P2P. Peers are nodes or computer systems that are connected to one another. Every node in this kind of network is connected to another node.   Server-based network   Peer-to-Peer network",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "11. What are types of passwords that can be used in CISCO routers?",
+        "answer": "Different types of passwords that can be used in CISCO routers include: Enabled: This is a global command that disables privileged execution mode. The password is not encrypted. To change it, one can use  \"enable password password\"\nEnable Secret: In place of an enable password, this secret password is used.  To change it, one can use \"enable secret password\".\nAUX (Auxiliary): Passwords for auxiliary ports can be set using an auxiliary password. Through a modem, a router can be accessed via this port.\nConsole: Console port passwords are set using the console password.\nVTY (Virtual Terminal): For Telnet sessions into the router, you will need the virtual terminal password. Passwords can be changed at any time. You can set it up when you configure the router from the console. Enabled: This is a global command that disables privileged execution mode. The password is not encrypted. To change it, one can use  \"enable password password\" Enabled: Enable Secret: In place of an enable password, this secret password is used.  To change it, one can use \"enable secret password\". Enable Secret: AUX (Auxiliary): Passwords for auxiliary ports can be set using an auxiliary password. Through a modem, a router can be accessed via this port. AUX (Auxiliary): Console: Console port passwords are set using the console password. Console: VTY (Virtual Terminal): For Telnet sessions into the router, you will need the virtual terminal password. Passwords can be changed at any time. You can set it up when you configure the router from the console. VTY (Virtual Terminal):",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "12. Write difference between public IP and private IP.",
+        "answer": "Public IP Private IP\nIt is used on public networks. It is mostly used within a private network or LAN to connect securely with other devices within the same network. \nIt is usually assigned by a Service provider or IANA.  It is usually assigned by a LAN administrator. \nIt is generally used to communicate outside the network.  It is generally used to communicate within the same network.\nIt can be known by searching “what is my IP” on google.  It can be known by typing “ipconfig” on the command prompt. \nIts scope is global.   Its scope is local to the present network.\nThese come with a cost and are controlled by ISP.   These are free of cost and are used to load network OS.\nIt is routable and therefore, communication among different users is possible. It is not routable and therefore, communication among different users is not possible.\nIt can be any number not included in the reserved private IP address range.\nExample: 202.60.23.1 Address ranges to be used by private networks are: \nClass A: 10.0.0.0 - 10.255.255.255\nClass B: 172.16.0.0 - 172.31.255.255\nClass C: 192.168.0.0 - 192.168.255.255\nExample: 192.168.0.3 Public IP Private IP\nIt is used on public networks. It is mostly used within a private network or LAN to connect securely with other devices within the same network. \nIt is usually assigned by a Service provider or IANA.  It is usually assigned by a LAN administrator. \nIt is generally used to communicate outside the network.  It is generally used to communicate within the same network.\nIt can be known by searching “what is my IP” on google.  It can be known by typing “ipconfig” on the command prompt. \nIts scope is global.   Its scope is local to the present network.\nThese come with a cost and are controlled by ISP.   These are free of cost and are used to load network OS.\nIt is routable and therefore, communication among different users is possible. It is not routable and therefore, communication among different users is not possible.\nIt can be any number not included in the reserved private IP address range.\nExample: 202.60.23.1 Address ranges to be used by private networks are: \nClass A: 10.0.0.0 - 10.255.255.255\nClass B: 172.16.0.0 - 172.31.255.255\nClass C: 192.168.0.0 - 192.168.255.255\nExample: 192.168.0.3 Public IP Private IP Public IP Private IP Public IP Private IP It is used on public networks. It is mostly used within a private network or LAN to connect securely with other devices within the same network. \nIt is usually assigned by a Service provider or IANA.  It is usually assigned by a LAN administrator. \nIt is generally used to communicate outside the network.  It is generally used to communicate within the same network.\nIt can be known by searching “what is my IP” on google.  It can be known by typing “ipconfig” on the command prompt. \nIts scope is global.   Its scope is local to the present network.\nThese come with a cost and are controlled by ISP.   These are free of cost and are used to load network OS.\nIt is routable and therefore, communication among different users is possible. It is not routable and therefore, communication among different users is not possible.\nIt can be any number not included in the reserved private IP address range.\nExample: 202.60.23.1 Address ranges to be used by private networks are: \nClass A: 10.0.0.0 - 10.255.255.255\nClass B: 172.16.0.0 - 172.31.255.255\nClass C: 192.168.0.0 - 192.168.255.255\nExample: 192.168.0.3 It is used on public networks. It is mostly used within a private network or LAN to connect securely with other devices within the same network. It is used on public networks. It is mostly used within a private network or LAN to connect securely with other devices within the same network. It is usually assigned by a Service provider or IANA.  It is usually assigned by a LAN administrator. It is usually assigned by a Service provider or IANA. It is usually assigned by a LAN administrator. It is generally used to communicate outside the network.  It is generally used to communicate within the same network. It is generally used to communicate outside the network. It is generally used to communicate within the same network. It can be known by searching “what is my IP” on google.  It can be known by typing “ipconfig” on the command prompt. It can be known by searching “what is my IP” on google. It can be known by typing “ipconfig” on the command prompt. Its scope is global.   Its scope is local to the present network. Its scope is global. Its scope is local to the present network. These come with a cost and are controlled by ISP.   These are free of cost and are used to load network OS. These come with a cost and are controlled by ISP. These are free of cost and are used to load network OS. It is routable and therefore, communication among different users is possible. It is not routable and therefore, communication among different users is not possible. It is routable and therefore, communication among different users is possible. It is not routable and therefore, communication among different users is not possible. It can be any number not included in the reserved private IP address range.\nExample: 202.60.23.1 Address ranges to be used by private networks are: \nClass A: 10.0.0.0 - 10.255.255.255\nClass B: 172.16.0.0 - 172.31.255.255\nClass C: 192.168.0.0 - 192.168.255.255\nExample: 192.168.0.3 It can be any number not included in the reserved private IP address range.\nExample: 202.60.23.1  Address ranges to be used by private networks are: \nClass A: 10.0.0.0 - 10.255.255.255\nClass B: 172.16.0.0 - 172.31.255.255\nClass C: 192.168.0.0 - 192.168.255.255\nExample: 192.168.0.3    ",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "13. Write the main function of the application layer in networking?",
+        "answer": "The application layer is the topmost layer in the OSI model that is used by end-user software such as web browsers and email clients. It is considered as the layer through which users interact. It usually consists of some protocols that are more focused on process-to-process communication across an IP Network. Some of its functions include: Manage data exchange in a peer-to-peer or a client-server networking model.  \nProvide firm communication interface and end-user services. \nEnables users to access the network. \nProvide the basis for email forwarding and storage facilities. \nAllows access to global information about different services. Manage data exchange in a peer-to-peer or a client-server networking model. Provide firm communication interface and end-user services. Enables users to access the network. Provide the basis for email forwarding and storage facilities. Allows access to global information about different services.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "14. Explain PoE.",
+        "answer": "PoE (Power on Ethernet) generally refers to a technology that allows electric power to be carried over the Ethernet cable that carries data. It passes the electric power supply to the network through the cable rather than the power cords and minimizes the number of wires required to install the network. PoE (Power on Ethernet)",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "15. What do you mean by OSPF?",
+        "answer": "OSPF (Open Shortest Path First) is basically a popular link-state routing protocol for IP networks that are used to connect to a large number of networks without any limitation on the number of hops. It determines the best route for delivering the data packets within an IP network.  It has been implemented by a wide range of network vendors such as Cisco. It works on Dijkstra Algorithm. OSPF (Open Shortest Path First) Firstly, a shortest-path tree is constructed. \nSecondly, the routing table is populated with the resulting best paths. Firstly, a shortest-path tree is constructed. Secondly, the routing table is populated with the resulting best paths.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "16. Write difference between RIP and IGRP.",
+        "answer": "RIP (Routing Information Protocol) IGRP (Interior Gateway Routing Protocol) \nIt is a distance vector-based routing protocol.  It is a distance vector-based interior gateway routing protocol.\nIt is used to calculate the metric in terms of Hop count.  It is used to calculate the metric in terms of bandwidth, load, and delay.\nIt is an industry-standard dynamic protocol and is mainly used for smaller-sized organizations. It is a Cisco standard dynamic protocol and is mainly used for medium to large-sized organizations.\nIt is denoted by ‘R’ in the routing table and supports 15 routers max. It is denoted by ‘I’ in the routing tables and supports 255 routers max.\nWe cannot create a separate administrative boundary in the network in the RIP routing protocol. Using autonomous System numbers, we can create a separate administrative boundary in the network in the IGRP routing protocol. RIP (Routing Information Protocol) IGRP (Interior Gateway Routing Protocol) \nIt is a distance vector-based routing protocol.  It is a distance vector-based interior gateway routing protocol.\nIt is used to calculate the metric in terms of Hop count.  It is used to calculate the metric in terms of bandwidth, load, and delay.\nIt is an industry-standard dynamic protocol and is mainly used for smaller-sized organizations. It is a Cisco standard dynamic protocol and is mainly used for medium to large-sized organizations.\nIt is denoted by ‘R’ in the routing table and supports 15 routers max. It is denoted by ‘I’ in the routing tables and supports 255 routers max.\nWe cannot create a separate administrative boundary in the network in the RIP routing protocol. Using autonomous System numbers, we can create a separate administrative boundary in the network in the IGRP routing protocol. RIP (Routing Information Protocol) IGRP (Interior Gateway Routing Protocol) RIP (Routing Information Protocol) IGRP (Interior Gateway Routing Protocol) RIP (Routing Information Protocol) IGRP (Interior Gateway Routing Protocol) It is a distance vector-based routing protocol.  It is a distance vector-based interior gateway routing protocol.\nIt is used to calculate the metric in terms of Hop count.  It is used to calculate the metric in terms of bandwidth, load, and delay.\nIt is an industry-standard dynamic protocol and is mainly used for smaller-sized organizations. It is a Cisco standard dynamic protocol and is mainly used for medium to large-sized organizations.\nIt is denoted by ‘R’ in the routing table and supports 15 routers max. It is denoted by ‘I’ in the routing tables and supports 255 routers max.\nWe cannot create a separate administrative boundary in the network in the RIP routing protocol. Using autonomous System numbers, we can create a separate administrative boundary in the network in the IGRP routing protocol. It is a distance vector-based routing protocol.  It is a distance vector-based interior gateway routing protocol. It is a distance vector-based routing protocol. It is a distance vector-based interior gateway routing protocol. It is used to calculate the metric in terms of Hop count.  It is used to calculate the metric in terms of bandwidth, load, and delay. It is used to calculate the metric in terms of Hop count. It is used to calculate the metric in terms of bandwidth, load, and delay. It is an industry-standard dynamic protocol and is mainly used for smaller-sized organizations. It is a Cisco standard dynamic protocol and is mainly used for medium to large-sized organizations. It is an industry-standard dynamic protocol and is mainly used for smaller-sized organizations. It is a Cisco standard dynamic protocol and is mainly used for medium to large-sized organizations. It is denoted by ‘R’ in the routing table and supports 15 routers max. It is denoted by ‘I’ in the routing tables and supports 255 routers max. It is denoted by ‘R’ in the routing table and supports 15 routers max. It is denoted by ‘I’ in the routing tables and supports 255 routers max. We cannot create a separate administrative boundary in the network in the RIP routing protocol. Using autonomous System numbers, we can create a separate administrative boundary in the network in the IGRP routing protocol. We cannot create a separate administrative boundary in the network in the RIP routing protocol. Using autonomous System numbers, we can create a separate administrative boundary in the network in the IGRP routing protocol. Conclusion: Conclusion: CCNA is a stepping stone for getting quality jobs and career growth. It helps to get into the networking domain, especially if one wants to work with CISCO products. Before you start your career as a professional CCNA expert, you will definitely get help from these CCNA interview questions and answers. It enhances your knowledge to a great level and helps you crack a CCNA interview successfully at a fresher and experienced level.",
+        "reference": "interviewbit.com",
+        "role": "ccna"
+    },
+    {
+        "question": "1) What is the difference between switch and hub?",
+        "answer": "Basis of Comparison Hub Switch\nDescription Hub is a networking device that connects the multiple devices to a single network. A switch is a control unit that turns the flow of electricity on or off in a circuit.\nLayer Hubs are used at the physical layer. Switches are used at the data link layer.\nTransmission type Transmission type can be unicast, broadcast or multicast. Initially, the transmission type is broadcast and then is unicast.\nPorts Hub has 4/12 ports. The switch has 24/48 ports.\nTransmission mode Half duplex Half/Full duplex.\nCollisions Collisions occur commonly in a Hub. No collisions occur in a full duplex switch.\nAddress used for data transmission Hub uses MAC address for data transmission. The switch uses a MAC address for data transmission.\nData transmission form Electrical signal is a data transmission form of a hub. A Frame is a data transmission form of a switch.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "2) What is the difference between Switch and Router?",
+        "answer": "Basis of Comparison Router Switch\nDescription It is a layer 3 device that connects the two different networks and identifies the network devices based on their IP addresses. It is a layer 2 device and determines the network devices based on their MAC addresses.\nMode of transmission Router transmits the data in the form of packets. Switch transmits the data in the form of frames.\nAddress used It uses an IP address for the data transmission. It uses a MAC address to transmit the data.\nLayer of OSI model It uses Layer 3 OSI model and layer is the network layer. It uses layer 2 OSI model and layer is the data link layer.\nTable It uses a routing table for routes to move to the destination IP. It uses a Content address memory table for MAC addresses.\nNetwork used It is used for WAN and LAN networks. It is used only for LAN networks.\nMode of transmission Router is used in a full-duplex mode. A switch is used in half as well as in a full-duplex mode.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "3) What are the advantages of using Switches?",
+        "answer": "Advantages of using Switches:\nADVERTISEMENT\nSwitches are used to receive a signal and create a frame out of the bits from that signal. The signals enable you to get access and read the destination address and after reading that it forward that frame to appropriate frame. So, switches are the significant part of the transmission.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "4) What is Routing?",
+        "answer": "Routing is a process of finding a path to transfer data from source to destination.\nRouting can be performed in a variety of networks such as circuit switched networks and computer networks.\nIn packet switching networks, routing makes a decision that directs the packets from source to the destination.\nRouting makes use of a routing table, which maintains the routes of various destinations.\nTypes of routing:\nStatic routing: Static routing is a routing technique where an administrator manually adds the routes in a routing table. Static routes are used when the route selections are limited. Static routes can also be used in those situations where the devices are fewer and no need to change in the route configuration in future.\nDynamic routing: Dynamic routing is a routing technique where protocols automatically update the information of a routing table.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "5) What are Routers?",
+        "answer": "The devices known as Routers do the process of routing. Routers are the network layer devices.\nThe router is a networking device which is used to transfer the data across the networks, and that can be wired or wireless.\nRouters use headers and routing table to determine the best route for forwarding the packets.\nRouter analyzes the data which is being sent over the network, changes how it is packaged and send it over the network.\nExamples of routers are:\nBrouter: Brouter stands for \"Bridge Router\". It serves both as a router and bridge.\nCore router: Core router is a router in the computer network that routes the data within a network, but not between the networks.\nEdge router: An edge router is a router that resides at the boundary of a network.\nVirtual router: A virtual router is a software-based router. The virtual router performs the packet routing functionality through a software application. A Virtual Router Redundancy protocol implements the virtual router to increase the reliability of the network.\nWireless router: A wireless router is a router that connects the local networks with another local network.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "6) What is the advantage of VLAN?",
+        "answer": "VLAN is a custom network which is created from one or more existing LAN's. VLAN facilitates you to create a collision domain by groups other than just physical location while in conventional LAN domains are always tied to physical location.\n\nAdvantage of VLAN:\nBroadcast control: A VLAN (Virtual Area Network) removes the physical layer and, it logically separates the networks within networks creating a smaller broadcast domain. It reduces the size of the broadcast domain, therefore, improving the efficiency of the network.\nSimplified administration: When a computer is moved to another location, but it stays on the same VLAN without any hardware configuration.\nSecurity:\nLAN segmentation: Virtual Area Networks are used to logically separate layer 2 switch networks. Users on different VLAN cannot communicate with each other. Therefore, it's a great way of segmentation and provides security.\nDynamic VLANs: The Dynamic VLAN's are created using the software. The VLAN Management Policy Server (VMPS) is an administrator that dynamically allocates the switch ports based on the information available such as the MAC addresses of the device.\nProtocol-based VLANs: The switch that depends on the protocol based VLANs, then the traffic will be segregated by a particular protocol.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "7) What is HDLC?",
+        "answer": "HDLC stands for High-Level Data Link Control protocol. It is the property protocol of Cisco which is the default encapsulation operated with Cisco routers.\nHDLC adds the information in a data frame that allows the devices to control the data flow.\nHDLC is a bit-oriented protocol that supports both half and full duplex communication.\nHDLC offers flexibility, adaptability, reliability, and efficiency of operation for synchronous data communication.\nIt supports both point-to-point and point-to-multipoint communication.\nIt supports synchronous as well as asynchronous communication.\nIt provides full data transparency, i.e., the output delivered has the same bit sequence as the input without any restriction.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "8) What are the advantages of LAN switching?",
+        "answer": "LAN switching: LAN switching enables the multiple users to communicate with each other directly. LAN switching provides the collision-free network and high-speed networking.\n\nFollowing are the main advantages of LAN switching:\nIncreased network scalability: LAN switching can handle the increasing amount of work. Therefore, we can say that when the business grows, the network can expand easily.\nImproved bandwidth performance: We require higher bandwidth performance when users operate multimedia applications or some database interactions.\nMultiple simultaneous connections: LAN switching allows multiple simultaneous connections, i.e., it can transfer the multiple data at the same time. This cannot be possible in the case of a hub-based network.\nReduced congestion and transmission delay: LAN switching improves the performance of a network as a segmented network consists of fewer hosts per subnetwork and thus, minimizing the local traffic.\nNo single point of failure: LAN switching provides the proper network designing. Therefore, there are fewer chances of network failure.\nAllows full duplex data transmission: LAN switching allows full duplex data transmission, i.e., the data can be transferred in a bidirectional line at the same time.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "9) What is DLCI?",
+        "answer": "DLCI stands for Data Link Connection Identifiers. These are normally assigned by a frame relay service provider to identify each virtual circuit that exists on the network uniquely.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "10) What are the different types of networks?",
+        "answer": "These are the two major types of networks:\n1. Peer-to-Peer Network:\n\nIn a peer-to-peer network, 'peers' are the computers which are connected to each other through an internet connection.\nThe computer systems on the network without the need for any computer server.\nTherefore, the computer in P2P is a \"computer server\" as well as a \"client\".\nRequirements for a computer to have a peer-to-peer network are the internet connection and P2P software.\nSome of the common P2P software peers include Kazaa, Limewire, BearShare, Morpheus, and Acquisition.\nOnce we are connected to the P2P network, then we able to search the files on other people's computer.\nTypes of a peer-to-peer network:\nPure P2P: In P2P, peers act as a client and server. There is no central server and central router present in the pure P2P.\nHybrid P2P: Hybrid P2P has a central server that stores the information and responds to the request for that information. Peers are used for hosting the information as a central server does not store the files. Nasper is an example of Hybrid P2P.\nMixed P2P: Mixed P2P is a combination of pure P2P and Hybrid P2P.\n2. Server-based Network\n\n\nIn a server-based network, server act as a base for the network known as a central server.\nThe central server handles multiple tasks such as authenticating users, storing files, managing printers, and running applications such as database and email programs.\nIn case of a server-based network, security is centralized in the system which allows the user to have one login id and password to log on to any computer system.\nServer-based networks are more complex and costly and often requires full- time services for administration.\nIn server-based networks, the majority of traffic occurs between the servers.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "11) What is the difference between private IP and public IP?",
+        "answer": "Following are the differences between public IP address and private IP address:\nBasis of Comparison Public IP address Private IP address\nDefinition It is used for the identification of a home network to the outside world. It is used for the identification of a network device within the home network.\nUniqueness Public IP address is unique throughout the network. Private IP address can be the same of two different networks assigned to different computers.\nExample 202.60.23.1 192.168.0.3\nUsage It is used over the internet or other WAN. This type of address can be used on a local area network or for the computers that are not connected to the internet.\nCommunication Public IP address is routable. Therefore, communication among different users is possible. Private IP address is not routable. Thus, communication among different users is not possible.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "12) What is the difference among straight cable, cross cable and rollover cable?",
+        "answer": "Straight cable:\nStraight cable is used to connect different group devices. For example Switch- Router.\nStraight cable is a kind of twisted pair cable used in a local area network to connect a computer to a network hub such as a router.\nStraight cables are used for linking different devices.\nIt is an 8 wired patch cable.\nIt is also used for connecting PC to the switch or router to a hub.\nThe main purpose of a straight cable is to connect a host to the client.\nCross cable:\nCross cable is used to connect the same group devices. For example Switch-Switch.\nCross cable is a cable used to interconnect two computers by reversing their respective pin contacts.\nCross cable is a cross-wired cable used to connect the two computers or hosts directly.\nCross cable is used when two similar devices are to be connected.\nCross cable crisscross each other, and this makes the communication of two devices at the same time.\nRollover cable:\nRollover cable is used to connect the console port to the computer.\nRollover cable is used to connect the computer's terminal to the network's router console port.\nRollover cable is referred to as a Cisco console cable, and it is flat and light blue in color.\nAnother name of a rollover cable is Yost cable.\nRollover cable is identified by comparing the end of the cable with another cable as rollover cables are beside each other.\nRollover cable allows the programmer to connect to the network device and can manipulate the programming whenever required.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "13) What is the difference between tracert and traceroute?",
+        "answer": "Differences between tracert and traceroute\nBasis of Comparison tracert traceroute\nDescription The tracert command is a command prompt command used to show the route that the packet takes to move from the source to the destination whatever we specify. The traceroute command is a command used to show the route from your computer to the destination that you specify.\nDevice used The tracert command is used on pc. The traceroute command is used on a router or switch.\nOperating system The tracert command is used in Windows NT based OS. The traceroute command is used in UNIX OS.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "",
+        "answer": "Unicast:\n\nIt specifies one to one communication.\nIt is a communication technique in which data communication takes place between two devices present in the network.\nConsider an example of browsing the internet. When we sent a request for some page to the web server, then the request directly goes to the web server to locate the address of a requested page. Therefore, this is one to one communication between client and server.\nDownloading the files from the FTP server is also the best example of unicast communication.\nMulticast:\n\nIt specifies one to group communication.\nIt is a communication technique in which data communication takes place between a group of devices.\nMulticast uses IGMP(Internet Group Management Protocol) protocol to identify the group.\nConsider an example of video conferencing. If any user in a particular group can initiate the call and the people belongs to this group can participate in this call.\nSending e-mail to a particular mailing group can also be considered as the example of multicast communication.\nBroadcast:\n\nIt specifies one to all communication.\nIt is a communication technique in which data communication takes place among all the devices available in the network.\nBroadcasting can be achieved in two ways:\nBy using a high-level standard, i.e., Message passing interface. It is an interface used for exchanging the messages between multiple computers.\nBy using a low-level standard, i.e., broadcasting through an ethernet.\nNetwork is not secure in broadcasting as it can lead to a data loss if intruders attack the network.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "15) What is the difference between cross cable and straight cable?",
+        "answer": "Cross cables are used to connect the same group devices while straight cables are used to connect different group devices.\nFor example: If you want to connect one PC to another PC, you have to use cross cable while, to connect one switch to a router, you have to use a straight cable.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "16) What is the difference between static IP addressing and dynamic IP addressing?",
+        "answer": "Following are the differences between static IP addressing and dynamic IP addressing:\nBasis of Comparison Static IP address Dynamic IP address\nDescription Static IP address is a fixed number assigned to the computer. The dynamic IP address is a temporary number assigned to the computer.\nProvided By Static IP address is provided by ISP(Internet Service Provider). The dynamic IP address is provided by DHCP(Dynamic Host Configuration Protocol).\nChange requirement It is static means that IP address does not change. It is non-static means that IP address changes whenever the user connects to a network.\nSecurity It is not secure as IP address is constant. It is secure because each time IP address changes.\nCost It is costlier than Dynamic IP address. It is cheaper than the Static IP address.\nDevice tracking Static IP address is trackable as IP address is constant. The dynamic IP address is untraceable as IP address is always changing.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "17) What is the difference between CSMA/CD and CSMA/CA?",
+        "answer": "CSMA/CD stands for Carrier Sense Multiple Access with Collision Detection. It is a media access control method used in local area networking using early Ethernet technology to overcome the occurred collision.\nCSMA/CA stands for Carrier Sense Multiple Access with Collision Avoidance. It is used in the wireless network to avoid the collision.\nFollowing are the differences between CSMA/CD and CSMA/CA:\nCSMA/CD CSMA/CA\nFull form of CSMA/CD is carrier sense multiple access with collision detection. Full form of CSMA/CA is carrier sense multiple access with carrier avoidance.\nCSMA/CD detects the collision, and once the collision is detected, then it stops continuing the data transmission. CSMA/CA does not deal with the recovery of the collision.\nWired installation is used in a CSMA/CD to detect the collision. Wireless installation is used in a CSMA/CA as it avoids the collision. Therefore, it does not need a wired network.\nAn 802.3 Ethernet network uses CSMA/CD. An 802.11 ethernet network uses CSMA/CA.\nCSMA/CD takes effect after the occurrence of a collision. CSMA/CA takes effect before the occurrence of a collision.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "18) What is the purpose of Data Link Layer?",
+        "answer": "The main purpose of the data link layer is to check that whether messages are sent to the right devices. Another function of the data link layer is framing.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "19) What is VLAN?",
+        "answer": "VLAN stands for Virtual Local Area Network.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "20) What is the subnet? Why is it used?",
+        "answer": "Subnets are used in IP network to break up the larger network into the smaller network. It is used to optimize the performance of the network because it reduces traffic by breaking the larger network into smaller networks. It is also used to identify and isolate network's problem and simplify them.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "21) What is the difference between communication and transmission?",
+        "answer": "Communication is a process of sending and receiving data from an externally connected data cable whereas transmission is a process of transmitting data from source to destination.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "22) What is Topology in CCNA?",
+        "answer": "Topology is an arrangement of various elements (links, nodes, etc.) of a computer network in a specific order. These are the different types of topology used in CCNA:\nBus:\n\nBus topology is a network topology in which all the nodes are connected to a single cable known as a central cable or bus.\nIt acts as a shared communication medium, i.e., if any device wants to send the data to other devices, then it will send the data over the bus which in turn sends the data to all the attached devices.\nBus topology is useful for a small number of devices. As if the bus is damaged then the whole network fails.\nStar:\n\nStar topology is a network topology in which all the nodes are connected to a single device known as a central device.\nStar topology requires more cable compared to other topologies. Therefore, it is more robust as a failure in one cable will only disconnect a specific computer connected to this cable.\nIf the central device is damaged, then the whole network fails.\nStar topology is very easy to install, manage and troubleshoot.\nStar topology is commonly used in office and home networks.\nRing:\n\nRing topology is a network topology in which nodes are exactly connected to two or more nodes and thus, forming a single continuous path for the transmission.\nIt does not need any central server to control the connectivity among the nodes.\nIf the single node is damaged, then the whole network fails.\nRing topology is very rarely used as it is expensive, difficult to install and manage.\nExamples of Ring topology are SONET network, SDH network, etc.\nMesh:\n\nMesh topology is a network topology in which all the nodes are individually connected to other nodes.\nIt does not need any central switch or hub to control the connectivity among the nodes.\nMesh topology is categorized into two parts:\nFully connected mesh topology: In this topology, all the nodes are connected to each other.\nPartially connected mesh topology: In this topology, all the nodes are not connected to each other.\nIt is a robust as a failure in one cable will only disconnect the specified computer connected to this cable.\nMesh topology is rarely used as installation and configuration are difficult when connectivity gets more.\nCabling cost is high as it requires bulk wiring.\nTree:\n\nTree topology is a combination of star and bus topology. It is also known as the expanded star topology.\nIn tree topology, all the star networks are connected to a single bus.\nEthernet protocol is used in this topology.\nIn this, the whole network is divided into segments known as star networks which can be easily maintained. If one segment is damaged, but there is no effect on other segments.\nTree topology depends on the \"main bus,\" and if it breaks, then the whole network gets damaged.\nHybrid:\nA hybrid topology is a combination of different topologies to form a resulting topology.\nIf star topology is connected with another star topology, then it remains star topology. If star topology is connected with different topology, then it becomes a Hybrid topology.\nIt provides flexibility as it can be implemented in a different network environment.\nThe weakness of a topology is ignored, and only strength will be taken into consideration.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "23) What is the passive topology in CCNA?",
+        "answer": "When the topology enables the computers on the network only to listen and receive the signals, it is known as passive topology because they don't amplify the signals anyway.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "24) What is RAID in CCNA?",
+        "answer": "",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "",
+        "answer": "RAID stands for Redundant Array of Independent Disks. RAID is a method which is used to standardize and categorize fault-tolerant disk systems. RAID levels provide various facilities like performance, cost, reliability, etc. These three are the mostly used RAID levels:\nLevel 0: (Striping)\nLevel 1: (Mirroring)\nLevel 5: (Striping and Parity)",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "25) What is the point-to-point protocol in CCNA?",
+        "answer": "The point-to-point protocol is an industry standard suite of protocols which uses the point-to-point link to transport multiprotocol datagram. The point-to-point protocol is a WAN protocol used at layer 2 to encapsulate the frames for the data transmission over the physical layer.\nFollowing are the features that point-to-point protocol provides:\nLink quality management: It is a technique to monitor the quality of a link. If it finds any error in a link, then the link is shut down.\nThe point-to-point protocol also provides authentication.\nIt provides some essential features such as authentication, error detection, link quality monitoring, load balancing, compression, etc.\nComponents of a point-to-point protocol are:\nEncapsulation: Point-to-point protocol encapsulates the network packets in its frames using HDLC protocol. This makes the PPP layer three layer independent.\nLink Control Protocol: Link Control Protocol is used for establishing, configuring and testing the data link over internet connections.\nNetwork Control Protocol: Point-to-point protocol is used in a data link layer in the OSI reference model. The data comes from the upper layer, i.e., transport layer or network layer is fully compatible with PPP due to the presence of a Network control protocol.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "26) What are the possible ways of data transmission in CCNA?",
+        "answer": "Simplex, half-duplex and full-duplex are the communication channels used to convey the information. Either the communication channel can be a physical medium or logical medium.\nThese are the three possible ways of data transmission:\n\nSimplex\n\nThe simplex communication channel sends the data only in one direction.\nExample of the simplex communication channel is a radio station. The radio station transmits the signal while the other receives the signal.\nIn simplex mode, entire bandwidth can be utilized for the data transmission as a flow of data is in one direction.\nHalf-duplex\n\nThe half-duplex communication channel sends the information in both the directions but not at the same time.\nPerformance of half-duplex is better than the simplex communication channel as the data flows in both the directions.\nExample of the half-duplex communication channel is \"walkie-talkie\". In \"walkie-talkie\", both the transmitter and receiver can communicate with each other on the same channel.\nIn half-duplex mode, entire bandwidth can be used by the transmitter when the message is sent over the communication channel.\nFull-duplex\n\nThe full-duplex communication channel can send the information in both the directions at the same time.\nPerformance of full-duplex is better than the half-duplex communication channel as the data flows in both the direction at the same time.\nExample of a full-duplex communication channel is \"telephone\". In the case of telephone, one can speak and hear at the same time. Therefore, this channel increases the efficiency of communication.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "27) What are the protocol data units (PDU) in CCNA?",
+        "answer": "Protocol data units (PDU) are the minimum possible units used at different layers of the OSI model to transport data.\nLayers PDU\nTransport Segments\nNetwork Packets/Datagrams\nData-link Frames\nPhysical Bits",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "28) What is the difference between RIP and IGRP?",
+        "answer": "Following are the differences between RIP and IGRP:\nBasis of Comparison RIP IGRP\nFull form RIP stands for routing information protocol. IGRP stands for interior gateway routing protocol.\nDescription RIP is a distance vector-based routing protocol. IGRP is a distance vector based interior gateway routing protocol.\nDetermination of route RIP depends on the number of hops to determine the best route to the network. IGRP considers many factors before decides the best route to take, i.e., bandwidth, reliability, MTU and hops count.\nStandard RIP is a industry standard dynamic protocol. IGRP is a Cisco standard dynamic protocol.\nOrganization used RIP is mainly used for smaller sized organizations. IGRP is mainly used for medium to large-sized organizations.\nMaximum routers It supports maximum 15 routers. It supports a maximum 255 routers.\nSymbol used RIP is denoted by 'R' in the routing table. IGRP is denoted by 'I' in the routing table.\nAdministrative distance The administrative distance of RIP is 120. The administrative distance of IGRP is 100.\nAlgorithm RIP works on Bellman ford Algorithm. IGRP works on Bellman ford Algorithm.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "29) What are the different memories used in a CISCO router?",
+        "answer": "Three types of memories are used in a CISCO router:\nNVRAM\nNVRAM stands for Non-volatile random access memory.\nIt is used to store the startup configuration file.\nNVRAM retains the configuration file even if the router shut down.\nDRAM\nDRAM stands for dynamic random access memory.\nIt stores the configuration file that is being executed.\nDRAM is used by the processor to access the data directly rather than accessing it from scratch.\nDRAM is located near the processor that provides the faster access to the data than the storage media such as hard disk.\nSimple design, low cost, and high speed are the main features of DRAM memory.\nDRAM is a volatile memory.\nFlash Memory\nIt is used to store the system IOS.\nFlash memory is used to store the ios images.\nFlash memory is erasable and reprogrammable ROM.\nThe capacity of the flash memory is large enough to accommodate many different IOS versions.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "30) What is the difference between full-duplex and half-duplex?",
+        "answer": "Following are the differences between half-duplex and full-duplex\nBasis of Comparison Half-duplex Full-duplex\nDirection of communication Communication is bi-directional but not at the same time. Communication is bi-directional and done at the same time.\nSend/receive A sender can send as well as receive the data but not at the same time. A sender can send as well as receive the data simultaneously.\nPerformance Performance of half-duplex mode is not as good as a full-duplex mode. Performance of full-duplex mode is better than the half-duplex mode.\nExample Example of half-duplex is a walkie-talkie. Example of full-duplex is a telephone.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "31) What is BootP?",
+        "answer": "BootP is a short form of Boot Program. It is a protocol that is used to boot diskless workstation connected to the network. BootP is also used by diskless workstations to determine its IP address and also the IP addresses of server PC.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "32) What is a Frame Relay?",
+        "answer": "Frame Relay is used to provide connection-oriented communication by creating and maintaining virtual circuits. It is a WAN protocol that is operated at the Data Link and physical layer to sustain high-performance rating.\nHow frame relay works.\nFrame relay multiplexes the traffic coming from different connections over a shared physical medium using special purpose hardware components such as routers, bridges, switch that packages the data into a frame relay messages. It reduces the network latency, i.e., the number of delays. It also supports the variable sized packet for the efficient utilization of network bandwidth.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "33) What is Latency?",
+        "answer": "Latency is the amount of time delay. It is measured as the time difference between at the point of time when a network receives the data, and the time it is sent by another network.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "34) What is the MAC address?",
+        "answer": "MAC address stands for Media Access Control address. This is an address of a device which is identified as the Media Access Control Layer in the network architecture. The MAC address is unique and usually stored in ROM.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "35) What is the difference between ARP and RARP?",
+        "answer": "ARP stands for Address Resolution Protocol. ARP is a protocol that is used to map an IP address to a physical machine address.\nRAPR stands for Reverse Address Resolution Protocol. RARP is a protocol that is used to map a MAC address to IP address.\nFollowing are the differences between ARP and RARP:\nBasis of Comparison ARP RARP\nFull form Full form of ARP is address resolution protocol. Full form of RARP is reverse address resolution protocol.\nDescription ARP contains the logical address, and it retrieves the physical address of the receiver. RARP includes the physical address and retrieves the logical address of a computer from the server.\nMapping ARP is used to map 32-bit logical address to 48-bit physical address. RARP is used to map 48-bit physical address to 32-bit logical address.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "36) What is the size of an IP address?",
+        "answer": "The size for IPv4 is 32 bits and 128 bits for IPv6.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "37) What is Ping? What is the usage of Ping?",
+        "answer": "PING stands for Packet Internet Groper. It is a computer network tool which is used to test whether a particular host is reachable across an IP address or not.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "38) What is the checksum?",
+        "answer": "The checksum is a simple error detection scheme in which each transmitted message is accompanied by a numerical value based on the number of set bits in the message.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "39) What are the different types of the password used in securing a Cisco router?",
+        "answer": "There are five types of passwords can be set on a Cisco router:\nConsol\nAux\nVTY\nEnable Password\nEnable Secret",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    },
+    {
+        "question": "40) What is the usage of Service Password Encryption?",
+        "answer": "Service Password Encryption command is used to encrypt all passwords on your router to hide from your running config.",
+        "reference": "javatpoint.com",
+        "role": "ccna"
+    }
+]

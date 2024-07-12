@@ -1,0 +1,272 @@
+[
+    {
+        "question": "1. Define class in CPP.",
+        "answer": "A class is a blueprint or a template for creating objects in object-oriented programming (OOP). It defines a new data type with its own characteristics and behaviors. It is like a user-defined data type that encapsulates data (attributes) and methods (functions) that operate on that data. The class acts as a blueprint for creating instances of objects, which are specific instances of the class. It defines what data each object will hold and what operations can be performed on those objects.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "2. Describe what an 'object' is.",
+        "answer": "It is a fundamental concept in object-oriented programming. It is an instance of a class, created based on the blueprint provided by the class. In simpler terms, an object is a real-world entity that has a state (attributes/data) and behavior (methods/functions).\nThe state is represented by the object’s attributes, which are variables that hold specific values for the object. The behavior is determined by the methods associated with the object, which define what operations can be performed on the object’s data. Objects provide a way to model and represent real-world entities and their interactions within a program.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "3. What qualities does OOP (object-oriented programming) possess?",
+        "answer": "Object-oriented programming (OOP) possesses several qualities that make it a powerful and widely used programming paradigm:\nEncapsulation: The concept of encapsulation allows bundling data (attributes) and the functions (methods) that operate on that data within a single unit called a class. This enables data hiding, where the internal implementation details are hidden from outside access and only the necessary interface is exposed to interact with the object.\nAbstraction: Abstraction is the process of representing the essential features of an object without including unnecessary details. It allows developers to create simplified models of real-world entities by focusing only on relevant attributes and behaviors. Abstraction helps manage complexity and makes it easier to work with complex systems.\nInheritance: Inheritance allows a class (subclass/derived class) to inherit the properties and behaviors of another class (superclass/base class). This promotes code reusability and hierarchical organization of classes, as subclasses can extend and specialize the functionalities of the superclass. It allows developers to build relationships between classes based on similarities and hierarchies.\nPolymorphism: It refers to the ability of objects of different classes to be treated as objects of a common superclass. It allows multiple classes to provide a common interface through inheritance, enabling objects of different classes to be used interchangeably. Polymorphism helps in achieving flexibility and extensibility in code design.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "4. Define abstraction.",
+        "answer": "Abstraction is a key concept in object-oriented programming. It refers to the process of simplifying complex systems by representing only essential features and hiding unnecessary details. In other words, abstraction allows us to focus on the relevant aspects of an object while ignoring the implementation complexities. It enables developers to create a clear and concise model of real-world entities in their programs.\nFor example, consider a car. When designing a car class, we don’t need to know the intricate details of how the engine works internally. Instead, we abstract the car as an object with attributes like color, model, and methods like start(), stop(), and accelerate(). By doing this, we hide the complexity of the engine’s internal workings and focus on the car’s essential characteristics and behaviors.\nAbstraction is achieved in OOP through the use of classes and interfaces. Classes define the attributes and methods of an object, while interfaces provide a blueprint for the methods that must be implemented by the classes that implement the interface. By abstracting the implementation details, OOP promotes modular design, code reusability, and easier maintenance.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "5. What do C++ comments mean?",
+        "answer": "In C++, comments are used to include explanatory notes or remarks within the source code. Comments are ignored by the compiler and have no impact on execution of the program. They serve as documentation for the code, making it easier for other developers (or even the original author) to understand the code’s purpose and functionality. There are two types of comments in C++:\nSingle-line comments: These comments start with “//” (double forward slash) and continue until the end of the line. Anything written after “//” on the same line is considered a comment.\nMulti-line comments: These comments are enclosed between “/” and “/”. They can span across multiple lines.\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "6. What distinguishes variable declaration from variable definition?",
+        "answer": "In C++, the declaration and definition of a variable are two distinct concepts:\nDeclaration: A variable declaration introduces the existence of a variable to the compiler. It tells the compiler about the variable’s name and data type but does not allocate memory for the variable. A variable can be declared multiple times in different parts of the program, but it should be defined exactly once. The declaration is usually done in header files or using the “extern” keyword.\nextern int age; // Variable declaration\nDefinition: A variable definition, on the other hand, not only declares the variable but also allocates memory for it. It associates the variable name with a specific memory location where the data will be stored. A variable must be defined exactly once in a program (unless it’s declared as “extern” and defined in another translation unit).\nint age = 30; // Variable definition",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "7. What is the difference between a global and local variable's scope?",
+        "answer": "Global Variable Scope: A global variable is defined outside of any function or class, making it accessible throughout the entire program. It has global scope, meaning it can be accessed from any part of the code, including functions, classes, or blocks, without any restrictions.\n#include <iostream>\nint globalVar = 10; // Global variable\nint main() {\n    std::cout << globalVar; // Accessing the global variable inside the main function\n    return 0;\n}\nLocal Variable Scope: A local variable is defined inside a function or a block and can only be accessed within that specific scope. Once the execution flow exits that scope, the local variable is no longer accessible.\n#include <iostream>\nint globalVar = 10; // Global variable\nint main() {\n    int localVar = 20; // Local variable inside the main function\n    std::cout << localVar; // Output: 20 (Value of the local variable)\n    std::cout << ::globalVar; // Output: 10 (Value of the global variable using scope resolution)\n    return 0;\n}",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "8. How can you access the global variable if it shares the same name with a local variable?",
+        "answer": "If a local variable shares the same name as a global variable, the local variable takes precedence within its scope. To access the global variable in such a situation, you can use the scope resolution operator “::” to specify the global namespace explicitly.\n#include <iostream>\n\nint globalVar = 10; // Global variable\nint main() {\n    int localVar = 20; // Local variable inside the main function\n    std::cout << localVar; // Output: 20 (Value of the local variable)\n    std::cout << ::globalVar; // Output: 10 (Value of the global variable using scope resolution)\n    return 0;\n}",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "9. What are the many types of inheritance?",
+        "answer": "In object-oriented programming, inheritance is a mechanism that allows a class to inherit properties and behaviors from another class. There are several types of inheritance:\nSingle Inheritance: A class inherits from only one base class. For example:\nclass Animal {\n  // ...\n};\nclass Dog : public Animal {\n  // ...\n};\nMultiple Inheritance: A class can inherit from multiple base classes. For example:\nclass Shape {\n  // ...\n};\nclass Color {\n  // ...\n};\nclass ColoredShape : public Shape, public Color {\n  // ...\n};\nHierarchical Inheritance: Multiple classes inherit from the same base class. For example:\nclass Shape {\n  // ...\n};\nclass Circle : public Shape {\n  // ...\n};\nclass Square : public Shape {\n  // ...\n};\nHybrid (or Virtual) Inheritance: A combination of multiple and multilevel inheritance. For example:\nclass A {\n  // ...\n};\nclass B : public A {\n  // ...\n};\nclass C : public A {\n  // ...\n};\nclass D : public B, public C {\n  // ...\n};",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "10. How does multiple inheritance work?",
+        "answer": "Multiple inheritance is a form of inheritance that enables a class to inherit from multiple base classes. When a class is derived from multiple base classes, it inherits all the properties and behaviors from those base classes. This means that the derived class has access to the members of all the base classes.\nFor example:\nclass Base1 {\npublic:\n    void functionBase1() {\n        // ...\n    }\n};\nclass Base2 {\npublic:\n    void functionBase2() {\n        // ...\n    }\n};\nclass Derived : public Base1, public Base2 {\npublic:\n    void functionDerived() {\n        // ...\n    }\n};\n\nint main() {\n    Derived obj;\n    obj.functionBase1(); // Accessing function from Base1\n    obj.functionBase2(); // Accessing function from Base2\n    obj.functionDerived(); // Accessing function from Derived\n    return 0;\n}\n\nIntermediate Level C++ Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "11. What are the different C++ data types and variables?",
+        "answer": "C++ supports various data types that represent different types of data. Some of the fundamental data types include:\nIntegers: Used to represent whole numbers (positive and negative) without a fractional part, examples include int, long, short, etc.\nFloating-Point Numbers: Used to represent numbers with a fractional part, examples include float, double, etc.\nCharacters: Used to represent individual characters. The char data type is used for this purpose.\nBoolean: Represents true or false values.\nPointers: Used to store memory addresses. For example, int* represents a pointer to an integer.\nArrays: Used to store collections of elements of the same data type. For example, int arr[5] represents an array of 5 integers.\nStrings: C++ supports strings as a sequence of characters. The std::string class is commonly used for string operations.\nClasses and Objects: C++ is an object-oriented programming language, so developers can define their own custom data types using classes and create instances of those data types as objects.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "12. Please explain what 'constructor' and 'destructor' mean.",
+        "answer": "Constructor: A constructor is a special member function in a class that is automatically called when an object of that class is created. Its primary purpose is to initialize the object’s data members or perform any setup operations that are required before the object can be used. Constructors have the same name as that of the class and do not have a return type.\nDestructor: A destructor is a type of member function in classes that is automatically invoked when the scope of an object ends. Its main purpose is to release any resources acquired by the object during its lifetime, such as memory, files, or network connections. Destructors are denoted by a tilde (~) followed by the class name and have no parameters or return type.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "13. How many layers are there in Computer software?",
+        "answer": "Following are the four layers in Computer software:\nMachine Language.\nAssembly Language.\nProcedure-Oriented.\nObject-Oriented Programming.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "14. What is Dynamic Binding?",
+        "answer": "Dynamic binding is also called late binding, which refers to the linking of a procedure call to the code that is executed at run time.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "15. What is Message passing?",
+        "answer": "In the context of object-oriented programming, message passing is associated with invoking methods on objects. When an object receives a message (method call), it processes the message by executing the corresponding method associated with that message. Message passing is a fundamental concept in many programming languages that support object-oriented principles.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "16. Why do we use iostream at the beginning of every program?",
+        "answer": "By including the iostream header at the beginning of every C++ program, you ensure that the necessary I/O functionalities are available throughout the program. It allows you to use cout to print messages to the console and cin to read input from the user.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "17. What does contain in it?",
+        "answer": "In C++ programming, the “<stdio.h>” header file is inherited from the C programming language and stands for “standard input-output header.” It contains declarations and definitions of essential functions used for input and output operations, such as “printf,” “scanf,” and “getchar.” \nThese functions facilitate interaction with the user and the console, allowing data to be displayed and read. Including “<stdio.h>” in a C++ program enables the usage of these standard I/O functions, making it a vital component for handling input and output operations effectively and efficiently in C++ programs.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "18. Why is used in C++ programs?",
+        "answer": "The header file <string.h> is used in C++ programs to provide access to a set of functions for handling string manipulations and operations. It contains function prototypes that facilitate tasks like string copying, concatenation, comparison, and searching, among others. These functions play a vital role in C++ programming, as strings are a fundamental data type used to represent and manipulate text-based data.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "19. Why are namespaces used?",
+        "answer": "Namespaces are used in C++ to organize code into logical groups and prevent naming conflicts between different libraries, classes, or functions. They provide a way to avoid ambiguity when multiple entities have the same name by creating a unique scope for each entity.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "20. What are member functions?",
+        "answer": "Member functions in a C++ program are functions defined within a class, serving as the behavior or actions that objects of that class can perform. They are an integral part of object-oriented programming (OOP) and encapsulate the functionality specific to the class, providing a way for objects to interact with the data members.\nMember functions are declared inside the class definition and can access the class’s private and protected data members. They play a crucial role in achieving data abstraction and modularity, allowing the objects to manipulate their own data while maintaining encapsulation and data integrity within the class hierarchy.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "21. Describe Arrays.",
+        "answer": "In C++, an array is a type of data structure that is used to store similar types of data elements. Until CPP20, an array used to store a fixed-size sequential collection of elements of the same type. To work with dynamic-size collections of elements, C++ offers alternatives such as “std::vector” from the Standard Template Library (STL). \nVectors provide dynamic resizing capabilities, allowing elements to be added or removed dynamically at runtime, unlike traditional arrays. Using vectors is recommended when the size of the collection needs to be changed dynamically during the program’s execution.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "22. What are pointers?",
+        "answer": "Pointers are fundamental data types in C++ that store the memory addresses of other variables. They enable direct manipulation of memory, providing significant flexibility and efficiency in programming. \nBy accessing and modifying data at specific memory locations, pointers facilitate dynamic memory allocation and enable efficient handling of large datasets. However, improper use of pointers can lead to memory leaks and segmentation faults, making them both powerful and potentially risky. \nUnderstanding pointers is crucial for advanced C++ programming, allowing developers to create complex data structures, optimize memory usage, and implement low-level operations, making it an essential concept for every C++ programmer to grasp.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "23. Explain the Reference variable.",
+        "answer": "Reference variable provides a different name (alias) for an already defined variable.\nSyntax: data_type& reference_variable = existing_variable;\nKey points about reference variables:\nInitialization is Required: A reference variable must be initialized with an existing variable during declaration. Once initialized, it acts as an alias for the original variable.\nNo Separate Memory: Unlike pointers, reference variables do not create a new memory location. They simply provide another name for the same memory location as the original variable.\nNo Null Reference: Unlike pointers, reference variables cannot be null. They must always refer to a valid object.\nNo Reassignment: Once a reference variable is initialized with a variable, it cannot be changed to refer to a different variable. It remains bound to the original variable throughout its lifetime.\nNo Size Overhead: References do not consume extra memory. They are implemented by the compiler as direct memory addresses.\nUseful for Function Parameters: References are commonly used as function parameters to achieve call-by-reference behavior, allowing functions to modify the original variables passed to them.\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "24. Functions malloc() and calloc() are used for?",
+        "answer": "malloc() and calloc() functions are used to allocate memory dynamically at run time, and similarly function free() is used to free dynamically allocated memory.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "25. What is Operator overloading?",
+        "answer": "Operator overloading in C++ allows you to define new behaviors for existing operators when they are used with user-defined data types, such as classes and structures. By overloading operators, you can make objects of your classes behave like built-in data types and perform custom operations when the standard operators are used on them.\nFor example, when you add two integers using the “+” operator, the operation performs addition. However, by overloading the “+” operator for your custom class, you can define how the addition should be performed for objects of that class.\nOperator overloading is achieved by defining special member functions for the class, known as operator functions. These functions have the keyword “operator” followed by the operator symbol they are overloading. For binary operators (operators that take two operands), the operator function usually takes one parameter (the right-hand operand) explicitly, while the left-hand operand is implicitly the object on which the operator is called.\nHere’s an example of operator overloading for a custom Complex class to perform addition and output:\n#include \nclass Complex {\nprivate:\n    double real;\n    double imag;\n\npublic:\n    Complex(double r, double i) : real(r), imag(i) {}\n\n    // Overloading the \"+\" operator for Complex objects\n    Complex operator+(const Complex&amp; other) const {\n        return Complex(real + other.real, imag + other.imag);\n    }\n\n    // Overloading the \"&amp;lt;&amp;lt;\" operator for Complex objects (output stream)\n    friend std::ostream&amp; operator&amp;lt;&amp;lt;(std::ostream&amp; os, const Complex&amp; obj) {\n        os &amp;lt;&amp;lt; obj.real &amp;lt;&amp;lt; \" + \" &amp;lt;&amp;lt; obj.imag &amp;lt;&amp;lt; \"i\";\n        return os;\n    }\n};\n\nint main() {\n    Complex c1(2.0, 3.5);\n    Complex c2(1.5, 4.2);\n\n    Complex sum = c1 + c2; // Using the overloaded \"+\" operator\n\n    std::cout &amp;lt;&amp;lt; \"c1: \" &amp;lt;&amp;lt; c1 &amp;lt;&amp;lt; std::endl;\n    std::cout &amp;lt;&amp;lt; \"c2: \" &amp;lt;&amp;lt; c2 &amp;lt;&amp;lt; std::endl;\n    std::cout &amp;lt;&amp;lt; \"Sum: \" &amp;lt;&amp;lt; sum &amp;lt;&amp;lt; std::endl;\n\n    return 0;\n}\nIn this example, we overload the “+” operator for the Complex class to perform the addition of two Complex objects. The operator+ function takes another Complex object as a parameter and returns a new Complex object representing the sum.\nAdditionally, we overload the “<<” operator to customize the output format when printing Complex objects. The overloaded “<<” operator function is declared as a friend function, so it can access the private members of the Complex class.\nOperator overloading allows you to make your classes more intuitive and convenient to use, as well as to provide consistency with the built-in data types and expressions. However, it should be used judiciously to maintain code readability and avoid confusing or unexpected behaviors.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "26. What is Function prototyping?",
+        "answer": "Function prototyping is the declaration of a function’s signature or interface before its actual definition. It tells the compiler about the existence of a function, its name, return type, and the number and types of its parameters. Function prototyping is essential in C and C++ programming languages to enable the compiler to perform type-checking and generate correct function calls.\nThe function prototype typically appears at the beginning of the source code or in a header file before the main program or any code that calls the function. It consists of the function’s name, return type, and a list of parameter types. The actual function definition, which contains the implementation of the function, may appear later in the code.\nThe syntax for function prototyping is as follows:\nreturn_type function_name(parameter1_type parameter1_name, parameter2_type parameter2_name, ...);",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "27. What do you mean by Call by Reference?",
+        "answer": "In a Call by reference is a method of passing function arguments to a function in a programming language. When a function is called with arguments passed by reference, the memory address of the actual variable is passed to the function instead of the value itself. This means that any changes made to the parameter inside the function will directly affect the original variable in the calling code.\nIn call by reference, the function parameter is declared as a reference to the data type of the variable it will receive. In some languages, call by reference is explicitly denoted using special syntax (e.g., using an ampersand “&” in C++), while in other languages, it is the default behavior for all function arguments.\nLet’s see an example of call by reference in C++:\n#include <iostream>\n\nvoid incrementByReference(int& num) {\n    num++; // This will directly modify the original variable in the calling code\n}\n\nint main() {\n    int num = 10;\n    std::cout << \"Before: \" << num << std::endl; // Output: \"Before: 10\"\n    incrementByReference(num);\n    std::cout << \"After: \" << num << std::endl; // Output: \"After: 11\"\n    return 0;\n}\nIn this example, the incrementByReference() function takes an integer parameter, num, by reference. When the function is called with the variable num from the main() function, any changes made to num inside the incrementByReference() function will directly affect the original variable in the main() function.\nCall by reference is particularly useful when we want to modify the original variable inside the function and reflect the changes outside the function. It also saves memory as it avoids creating a copy of the variable during the function call, which is helpful when working with large data structures. However, it requires careful usage, as changes made to the parameter inside the function can have unexpected side effects on the calling code.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "28. What do mean by Call by value mean?",
+        "answer": "In C++, “call by value” is a parameter passing mechanism where a copy of the actual argument’s value is passed to the function’s formal parameter. This means any modifications made to the formal parameter inside the function do not affect the original argument’s value outside the function. It ensures data encapsulation and prevents unintended changes to the original data. However, it may involve additional memory usage due to copying large objects. Call by value is the default parameter passing method in C++, providing a secure and isolated environment for function execution without altering the caller’s data.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "29. What is an inline function?",
+        "answer": "Inline function is a concept that is commonly used with classes. If the function is inline, then the compiler places a copy of the code of that function at each point where the function is called at compile time.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "30. What is a default argument?",
+        "answer": "A default argument is a parameter value assigned by the function definition if no corresponding argument is provided by the caller during function invocation. It allows a function to be called with fewer arguments, providing a default value for any missing ones.\n This feature enhances code flexibility and reusability, as functions can cater to various scenarios without explicitly passing all parameters. To use default arguments, they are specified in the function prototype and defined in the function implementation. By understanding and utilizing default arguments, C++ developers can design more versatile functions and streamline their code effectively.\n\nAdvanced Level C++ Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "31. What is meant by the const keyword?",
+        "answer": "The “const” keyword in programming languages like C++ and others signifies a constant, immutable value that cannot be altered after initialization. When applied to a variable, it ensures that the variable’s value remains constant throughout its lifetime. Attempting to modify a “const” variable will result in a compilation error. \nThis keyword ensures data integrity and readability and prevents unintended modifications, making it valuable in scenarios where a variable should not be changed once assigned. Using “const” also aids in code optimization and allows the compiler to make certain performance enhancements.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "32. How can a member function be defined?",
+        "answer": "A member function can be defined in two places:\nOutside the class definition.\nInside the class definition.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "33. What does getdata() and putdata() mean?",
+        "answer": "getdata() and putdata() are commonly used function names in programming, especially in the context of input and output operations. These functions are typically used to read data from the user or an input source (like a file) and display or write data to an output destination (like the console or a file).\ngetdata(): The getdata() function is used to read data from an input source and store it in variables or data structures. It can take user input from the keyboard, read data from a file, or fetch data from any other input stream. The purpose of getdata() is to populate the program’s data structures with the required information to perform further operations.\nputdata(): The putdata() function is used to display or write data to an output destination. It can output data to the console, write data to a file, or send data to any other output stream. The purpose of putdata() is to present the data to the user or save it for further use or analysis.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "34. How is memory allocated to objects?",
+        "answer": "Memory is allocated to objects when they are declared not when the class is specified. Memory is allocated only once when they are defined as a part of a class specification.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "35. What are static data members?",
+        "answer": "A data member can be declared static. A static member is initialized to zero when the first object of its class is created. No other initialization is permitted. One copy of that member is created for the entire class and is shared by all objects of that class. It is only visible within the class.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "36. What are static member functions?",
+        "answer": "The static member functions are similar to static data variables. The static member functions have the following properties:\nA static member function can only access other static members.\nA static member function can be called using the class name.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "37. What do you mean by constructors in C++?",
+        "answer": "Constructor is a special member function. Constructor creates an object and initializes it. Constructor is special because its name is the same as the class name. It is invoked whenever an object of its class is created.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "38. What do you mean by parameterized constructors?",
+        "answer": "Constructors which can take arguments are called parameterized constructors.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "39. How can we initialize values as arguments to the constructor function when an object is declared?",
+        "answer": "We can initialize values as arguments to the constructor function when an object is declared in two ways:\nBy calling the constructor explicitly.\nBy calling the constructor implicitly.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "40. What do you mean by copy constructor?",
+        "answer": "A copy constructor is used to declare and initialize an object from another object. Copy constructor takes a reference to an object of the same class as itself as an argument.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "41. Can a copy constructor accept an object of the same class as a parameter, instead of a reference to the object?",
+        "answer": "Yes, a copy constructor in C++ can accept an object of the same class as a parameter, instead of a reference to the object. However, it is recommended to use a reference parameter to avoid infinite recursion. \nWhen using an object parameter, the copy constructor creates a temporary copy of the passed object, leading to a recursive call of the copy constructor, resulting in stack overflow. By using a reference parameter, we ensure that the copy constructor works efficiently, avoids recursion issues, and maintains a proper and safe copy of the object without causing potential runtime errors.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "42. What are Virtual Destructors?",
+        "answer": "Virtual destructors are a feature in C++ used to ensure proper destruction of objects in a class hierarchy when dealing with polymorphic behavior. When a class is designed to be inherited from and used polymorphically (i.e., through pointers or references to a base class), it is crucial to define a virtual destructor in the base class.\nThe need for virtual destructors arises due to the way C++ handles object destruction. When an object is deleted, C++ invokes the destructor for that object to release any resources held by the object. However, when a derived class object is deleted through a base class pointer and the destructor is not virtual, the behavior is not as expected.\nLet’s consider a scenario with a base class Shape and a derived class Circle:\nclass Shape {\npublic:\n    Shape() {\n        // Constructor\n    }\n    ~Shape() {\n        // Non-virtual destructor\n    }\n};\n\nclass Circle : public Shape {\npublic:\n    Circle() {\n        // Constructor\n    }\n    ~Circle() {\n        // Destructor\n    }\n};\n\nNow, let's look at the following code:\n\nint main() {\n    Shape* shape = new Circle();\n    delete shape; // Problematic deletion\n    return 0;\n}\nIn this case, when delete shape is executed, only the destructor of the Shape class is called. This is because the pointer shape is of type Shape*, and the Shape class destructor is non-virtual. As a result, the destructor for the Circle class is not called, and any resources held by the Circle object will not be properly released, leading to potential memory leaks or other issues.\nTo fix this problem, the destructor in the base class should be declared as virtual:\nclass Shape {\npublic:\n    Shape() {\n        // Constructor\n    }\n    virtual ~Shape() {\n        // Virtual destructor\n    }\n};\nWith a virtual destructor, when the delete operator is called on a base class pointer pointing to a derived class object, the appropriate destructor for the derived class will be called first. Then, the base class destructor will be called automatically. This ensures that all destructors in the class hierarchy are executed properly, allowing for proper cleanup and preventing memory leaks.\nTo summarize, when using inheritance and polymorphism in C++, always declare the base class destructor as virtual if you intend to create objects of derived classes and delete them through a base class pointer. This will ensure that the destructors of derived classes are correctly called during object deletion and prevent potential memory-related issues.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "43. How can I handle a constructor that fails?",
+        "answer": "Handling a constructor that fails requires the use of exceptions. When a constructor encounters an error during object initialization, it should throw an exception using the throw keyword. This allows the program to transfer control to an appropriate exception handler. \nUtilize the try-catch block to catch the exception and handle the failure gracefully. Inside the catch block, implement error-handling mechanisms, such as displaying an error message, logging, or taking corrective actions. Properly handling constructor failures ensures robustness and maintains the integrity of the program, preventing unexpected crashes or undefined behavior.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "44. What is Stack unwinding?",
+        "answer": "When an exception occurs, all the local objects created during execution are destroyed in reverse order; this mechanism is called stack unwinding. During stack unwinding, destructors for all these local objects are called, and then the catch block is executed.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    },
+    {
+        "question": "45. Can we explicitly call a destructor on a local variable?",
+        "answer": "No, in C++, we cannot explicitly call a destructor on a local variable. The destructor is automatically invoked when the scope of the local variable ends or when the variable goes out of scope. \nAttempting to call the destructor explicitly would lead to a compilation error. C++ ensures automatic memory management by automatically invoking the destructor when objects are no longer in use, which helps prevent memory leaks and ensures proper resource deallocation. Instead, developers can focus on proper object instantiation and let C++ handle the destruction process efficiently, adhering to the language’s design principles and best practices.",
+        "reference": "intellipaat.com",
+        "role": "c-plus-plus"
+    }
+]

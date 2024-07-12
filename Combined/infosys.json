@@ -1,0 +1,44 @@
+[
+    {
+        "question": "1. What are the four main OOP concepts in Java, and how do they work?",
+        "answer": "Object-oriented programming (OOP) is a programming paradigm that emphasizes the use of objects and classes. In Java, there are four major OOP concepts: data encapsulation, data abstraction, inheritance, and polymorphism.\nEncapsulation: Bundles data and methods into a single unit (class), hiding internal details.\nInheritance: Allows a class to inherit properties and behaviors from another class, fostering code reusability.\nPolymorphism: Enables objects of different classes to be treated as objects of a common superclass, facilitating flexibility in method implementation.\nAbstraction: Focuses on essential details while hiding unnecessary complexities, simplifying the design and implementation of classes.",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    },
+    {
+        "question": "2. Is it possible to implement multiple inheritance in Java, and if so, how?",
+        "answer": "Java does not support multiple inheritance directly, but it can be achieved with the help of an interface. Multiple interfaces can be implemented into a program, allowing the functionality of multiple inheritances to be achieved.",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    },
+    {
+        "question": "3. What is the difference between Method Overloading and Method Overriding in Java?",
+        "answer": "Method overloading occurs when methods have the same name but differ either in the number of arguments or in the type of arguments. It is done during compile time, so it is known as compile-time polymorphism.\nMethod overriding, on the other hand, is the ability to define subclass and superclass methods with the same name as well as the same method signatures, with the subclass method overriding the superclass method. It is performed during runtime, so it is known as run-time polymorphism.",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    },
+    {
+        "question": "4. How do Classes and Interfaces differ in Java?",
+        "answer": "Classes are blueprints for creating objects with the same configuration for properties and methods. They can have both abstract and concrete methods. Interfaces, on the other hand, are collections of properties and methods that describe an object but do not provide implementation or initialization for them. They can only have abstract methods, but from Java 8 onwards, they support static as well as default methods.\nClasses do not support multiple inheritance, whereas multiple inheritance is supported in interfaces. A class can be inherited from another class using the `extends` keyword, while an interface cannot inherit a class but can inherit another interface. Members of a class can have all types of access specifiers, while members of an interface are public by default but can have other access specifiers as well.",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    },
+    {
+        "question": "5. What are DDL and DML commands in SQL, and how do they differ?",
+        "answer": "SQL is a language used for managing relational databases. DDL (Data Definition Language) commands are used to define database schema and constraints, while DML (Data Manipulation Language) commands are used to manipulate the data within the database.\nDDL statements do not use a `WHERE` clause, while DML statements use a `WHERE` clause to specify the records to be affected. DDL statements include `CREATE`, `ALTER`, `DROP`, `TRUNCATE`, `COMMENT`, and `RENAME`, while DML statements include `INSERT`, `UPDATE`, and `DELETE`. DML commands are classified as procedural and non-procedural, while DDL commands do not have further classification.",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    },
+    {
+        "question": "6. What is the difference between the `TRUNCATE` and `DELETE` commands in SQL?",
+        "answer": "Aspect TRUNCATE DELETE\nPurpose Removes all rows from a table quickly. Deletes specific rows based on conditions.\nTransaction Not logged individually (faster). Logged individually (slower).\nRollback Cannot be rolled back (no recovery). Can be rolled back (recovery possible).\nWHERE Clause Cannot use a WHERE clause. Uses WHERE clause to specify conditions.\nPerformance Faster for large-scale operations. Slower for large-scale operations.\nAlso, check out our HCL Interview questions guide, the questions that are mostly asked in HCL during different interview rounds.",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    },
+    {
+        "question": "7. What is the purpose of indexing in SQL, and why is it useful?",
+        "answer": "An index in SQL is a quick lookup table that helps find records that are frequently searched by a user. It is useful for establishing a connection between relational tables, searching large tables, and fast retrieval of data from a database. An index is fast, small, and optimized for quick look-ups, which can significantly improve the performance of SQL queries.\nGet 100% Hike!\nMaster Most in Demand Skills Now!\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "infosys"
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "question": "1) What is PouchDB?",
+        "answer": "PouchDB is an open-source \"in-browser\" database API written in JavaScript. It is modeled after CouchDB(a NoSQL database that powers npm). It facilitates you to build applications that work offline and online by using this API. PouchDB uses WebSQL and IndexedDB internally to store the data.\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "2) How does PouchDB work?",
+        "answer": "PouchDB stores data locally using WebSQL and IndexedDB in the browser, when the application is offline. When the application back online, the data is synchronized with CouchDB and compatible servers.\nPouchDB facilitates you to communicate both local and remote databases seamlessly without facing any difference.",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "3) What are the most important features of PouchDB?",
+        "answer": "The most important features of PouchDB are given below:\nCross Browser: PouchDB is cross-browser. The API provided by PouchDB works the same in every environment, so, a PouchDB application can be run in various browsers.\nLight Weight: PouchDB is a very light-weight API, it is also included easily just using a script tag.\nEasy to Learn: PouchDB is very easy to learn if you have a prior knowledge of any programming language.\nOpen Source: PouchDB is an Open Source Application which is available on GitHub.",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "4) Which are the browsers that support PouchDB?",
+        "answer": "Following are the main browsers that support PouchDB:\nADVERTISEMENT\nFirefox 29+ (Including Firefox OS and Firefox for Android)\nChrome 30+\nSafari 5+\nInternet Explorer 10+\nOpera 21+\nAndroid 4.0+\niOS 7.1+\nWindows Phone 8+",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "5) What are the advantages of using PouchDB?",
+        "answer": "Advantages of using PouchDB:\nPouchDB is extremely fast because it resides within the browser and you don't have any need to perform queries over the network. That's why it is fast.\nThe data with any of the supported server can be synchronized and by doing so we can run apps both online and offline.",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "6) How to install PouchDB on your system?",
+        "answer": "There are several ways to install PouchDB on your system but by using Node.js and npm is the easiest and efficient way to install PouchDB.\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "7) How to create a database in PouchDB?",
+        "answer": "A database is created very easily in PouchDB by using constructor.\nSyntax:\nnew PouchDB(Database_name)  \nYou have to install Node.js and a PouchDB package is required using the require() method to create a database.\nExample:\n//Requiring the package  \nvar PouchDB = require('PouchDB');  \n//Creating the database object  \nvar db = new PouchDB('my_database');  \nconsole.log (\"Database created Successfully.\");  \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "info() method in PouchDB?",
+        "answer": "The db.info() method is used to get the information about the database. This method also accepts a callback function.\ndb.info([callback])   \nSee the given example for retrieving data from the database using the info() method. Here the database name is my_database.\nExample:\n//Requiring the package  \nvar PouchDB = require('PouchDB');  \n//Creating the database object  \nvar db = new PouchDB('my_database');  \n//Database information  \ndb.info(function(err, info) {  \n if (err) {  \n   return console.log(err);  \n } else {  \n   console.log(info);  \n }  \n});  \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "9) How to delete a database created in PouchDB?",
+        "answer": "The db.destroy() method is used to destroy a database in PouchDB.",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "js to delete a database?",
+        "answer": "Following is the syntax of using the db.destroy() method. It also accepts a callback function.\nSyntax:\ndb.destroy()   \nSee the following example how to use db.destroy() method.\nExample:\n//Requiring the package  \nvar PouchDB = require('PouchDB');  \n//Creating the database object  \nvar db = new PouchDB('my_database');  \n//deleting database  \ndb.destroy(function (err, response) {  \n if (err) {  \n   return console.log(err);  \n } else {  \n   console.log (\"Database Deleted\");  \n }  \n});  \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "11) How to delete a remote database that is stored on a remotely server CouchDB?",
+        "answer": "Provide the path of the remotely database CouchDB in PouchDB constructor to delete a database that is stored on a remotely server CouchDB.\nFor example:\n//Requiring the package  \nvar PouchDB = require('pouchdb');  \n//Creating the database object  \nvar db = new PouchDB('http://localhost:5984/my_database');  \n//deleting database  \ndb.destroy(function (err, response) {  \n if (err) {  \n   return console.log(err);  \n } else {  \n   console.log(\"Database Deleted\");  \n }  \n});  \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "put() method in PouchDB?",
+        "answer": "The db.put() method is used to create documents in PouchDB databases.\nSyntax:\ndb.put(document, callback)  \nThis method also supports callback function.\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "13) How can you fetch the created document in PouchDB database?",
+        "answer": "The db.get() method is used to retrieve the documents created in PouchDB database. This method accepts the document id and an optional callback function.\nSyntax:\ndb.get(document, callback)  \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "14) How can you update an existing document in PouchDB database?",
+        "answer": "Every time you create a document, a new field _rev is get generated. It is called revision marker. The _rev's value is a unique random number, which is changed every time we make changes to the document.\nThe db.put() method is used along with _rev value to update a document.\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "15) How can you delete a document in PouchDB?",
+        "answer": "The db.remove() method is used to delete the document created in PouchDB database. In this method, id and _rev are to be passed to delete an existing document as shown in the following code. This method accepts an optional callback function. The complete document can also be passed instead of id and _rev.\nSyntax:\ndb.remove( docId, docRev, [callback] )  \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "16) What is Batch? How to create a batch in PouchDB?",
+        "answer": "Batch is an array of documents in PouchDB. When you use this method to create documents, it creates unique ids for all the documents in bulk if you not specifies the _id values.\nAll the documents you have created in PouchDB can be stored in an array and can be passed as a parameter in this method. This method also accepts callback functions as a parameter.\nSyntax:\ndb.bulkDocs(docs, [options], [callback])   \nTo know how to create a batch, see the following link:\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "17) How to fetch the created batch in PouchDB database?",
+        "answer": "The allDocs() method is used to featch the multiple/bulk documents from the database. This method also accepts an optional callback function.\nSyntax:\ndb.allDocs()   \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "18) How to update an already created Batch in PouchDB database?",
+        "answer": "The bulkDocs() method is used to update an array of documents in PouchDB. To update a value of batch, you have to know the _id, _rev and the values that you want to update.\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "19) How would you delete a batch in PouchDB?",
+        "answer": "The bulkDocs() method is used also for deleting an array of documents. To delete a batch, you have to know the _id and _rev values of the documents.\nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "20) What is an attachment in PouchDB?",
+        "answer": "In PouchDB, an attachment is a binary object that can be attached to a document.",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "21) How can you add an attachent to a document in PouchDB?",
+        "answer": "The putAttachment() method is used to add an attachment to a document in PouchDB. You have to pass the document id, attachment id, MIME type along with the attachment. This method also accepts an optional callback function.\nSyntax:\ndb.putAttachment( docId, attachmentId, attachment, type, [callback] );   \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    },
+    {
+        "question": "22) How can you retrieve a PouchDB added attachment?",
+        "answer": "The getAttachment() method is used to retrieve an attachment from the PouchDB document. This method always returns blob or buffer objects. You have to pass the document id and attachment id to use this method. This method also accepts an optional callback function.\nSyntax:\ndb.getAttachment( docId, attachmentId, [callback] );   \nFor more information: Click Here",
+        "reference": "javatpoint.com",
+        "role": "pouchdb"
+    }
+]

@@ -1,0 +1,512 @@
+[
+    {
+        "question": "1. Mention Oracle DBA characteristics.",
+        "answer": "Main storage structures – Logical and physical\nArchitecture – Grid architecture\nACID compliance – Fully compliant\nData stored as – Data blocks, extents, segments, and tablespaces",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "2. What is Oracle?",
+        "answer": "Oracle is a database server that manages data in a structured way. It allows users to store and retrieve related data in a multi-user environment so that the users can concurrently access the same data. All this is accomplished while delivering high performance. A database server also prevents unauthorized access and provides efficient solutions for failure recovery. A standby database is a database replica created by taking a backup of a primary database.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "3. What is an Oracle Database?",
+        "answer": "Oracle provides software to create and manage the Oracle Database. The database consists of physical and logical structures in which system, user, and control information are stored. The software that manages the database is called the Oracle Database Server. The software that runs Oracle and the physical database is collectively called the Oracle Database system.\nA database buffer cache stores the data in memory for quicker access. The redo logs track and store all the changes made to the database. A Data Guard ensures data protection and high availability of data, and a control file records the physical structure of the database.\nLearn more about Oracle DBA from this Oracle DBA Tutorial!",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "4. What is an Oracle index?",
+        "answer": "An index is an optional structure associated with a table to have direct access to rows that can be created to increase the performance of data retrieval. An index can be created on one or more columns of a table.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "5. Why is the index used?",
+        "answer": "Indexes are used for easy access to data. In addition, it is used to increase the performance of retrieval data. It helps to find the required data quickly without actually searching each row.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "6. Who is responsible for updating the indexes?",
+        "answer": "Oracle is capable of maintaining and using indexes. It automatically distributes the data into relevant indexes when any change is made in the table data.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "7. What are the various databases available in the market?",
+        "answer": "There are many databases available in the market. The commonly used databases are Oracle,\nIBM db2, Microsoft SQL Server, Microsoft Access, MySQL and SQLite, PostgreSQL, MariaDB.\nIntellipaat gives its learners industrial training in SQL Courses. Enroll now to get a professional certificate!",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "8. What are the physical components of the Oracle Database?",
+        "answer": "Five physical components are there in Oracle Database:\nData files\nControl files\nRedo log files\nPassword files\nParameter files\nHere is the Database Training Course provided by Intellipaat to get you professionally certified.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "9. What are the roles of DBA?",
+        "answer": "A DBA has the authority to create new users, remove the existing users, or modify any of the environment variables or privileges assigned to other users.\nManage database storage\nAdminister users and security\nManage schema objects\nMonitor and manage database performance\nPerform backup and recovery\nSchedule and automate jobs\nWant to become a certified Oracle DBA Course? Enroll now!",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "10. What are the different Oracle Database objects?",
+        "answer": "Tables\nViews\nIndexes\nSynonyms\nSequences\nTablespaces",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "11. What is a synonym in Oracle terminology?",
+        "answer": "A synonym is an identifier that can be used to reference another database object in a SQL statement. A table, view, and sequence are the types of database objects that can be created for a synonym.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "12. Explain the types of synonyms.",
+        "answer": "There are two types of synonyms: public and private.\nA public synonym isn’t part of any schema. A public synonym is one that can be used by any database user.\nA private synonym does belong to a specific schema. In other words, when only the owner can access it, it is called a private synonym.\nIf you want to become a professional MS SQL Server DBA expert. Learn and master this technology by enrolling in Intellipaat’s MS SQL Server DBA Course in Hyderabad.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "13. What are the types of backups in Oracle?",
+        "answer": "The main four types of backups in Oracle are:\n(ⅰ) COLD Backup\n(ⅱ) HOT Backup\n(ⅲ) Import – Export Backup\n(ⅳ) RMAN Backup",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "14. What are hot backup and cold backup?",
+        "answer": "Hot backup is also recognized as an online backup because the backup happens while the database is active and running. When the backup can only happen while the database is in shutdown mode, it is called cold backup, which can also be identified as an offline backup.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "15. What is the password file and why it is needed?",
+        "answer": "Database users’ passwords are stored in the database’s data dictionary. When a user attempts to log into the database, the user’s usernames and passwords are compared to the values contained in the database. The user is given database access only if the username and password match.  The data dictionary is stored in the database and can be accessed as long as the database is available. The dictionary also contains the passwords for the administrators.\nThe data dictionary would be unavailable until the database is locked. Since starting up a down database is one of the administrator’s jobs, there needs to be a way for them to log in even if the database is locked. Password file helps in this situation. A password file is an operating system file that is held on a separate disc from the database. It stores the username and password for users with SYSDBA or SYSOPER privileges. When the database is down,  administrators with certain privileges are authenticated using the password files.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "16. What are Data Files?",
+        "answer": "Data files store and organize various types of information, including text, numbers, images, and more, within a computer system. Software applications and systems rely on these files to access and manage data effectively.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "17. How do you switch from an init.ora file to a spfile?",
+        "answer": "To switch from an init.ora file to a spfile, we should create spfile from pfile command then shutdown instance and startup once again",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "18. What are the different types of SQL statements?",
+        "answer": "The five types of SQL statements are as follows:\nData Definition Language (DDL)\nData Manipulation Language (DML)\nTransactional Control Language (TCL)\nSession Control Language (SCL)\nSystem Control Language (SysCL)",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "19. What is Data Normalization?",
+        "answer": "Data normalization is a process in database design that involves organizing and structuring data to minimize redundancy and dependency issues. It follows a set of rules and guidelines to ensure data integrity and improve database efficiency. The main objective of data normalization is to eliminate data duplication and anomalies by breaking down data into smaller, more manageable tables and establishing relationships between them.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "20. What is a Control File?",
+        "answer": "A binary file that records the physical structure of the database and is required to start and run the database.\nA control file contains information such as:\nData file\nDatabase name\nRedo file name\nLocations of associated data files and redo files.\nTimestamp of database creation.\nCurrent log sequence number\nCheckpoint information",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "21. How will you recover a lost control file?",
+        "answer": "The steps to recover a lost control file:\nStart the database in NOMOUNT mode.\nCreate the control file from the control file backup with the CREATE CONTROLFILE statement and place it in the correct location.\nMount the database.\nRecover the database.\nOpen the database.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "22. What do you mean by redo logo files?",
+        "answer": "The redo log’s main purpose is to keep track of all data changes. If a failure stops personalized data from being permanently written to data files, corrections may be made from the redo log, ensuring that the work is never wasted.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "23. Define Parameter Files.",
+        "answer": "A parameter file is a text file that includes a list of initialization parameters as well as their values. Initialization parameters are defined in a parameter file that is exclusive to your installation.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "24. What do you mean by Recovery Catalog?",
+        "answer": "The recovery catalog is a database scheme containing the metadata RMAN manages for data restoration and recovery processes. The metadata used by RMAN for reinstallation and healing process is stored in a recovery catalog. The RMAN metadata will be in the recovery catalog even if the target control file and all backups are lost.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "25. Define System Tablespace and its significance.",
+        "answer": "When the database is created, the system tablespace is formed. Since this tablespace contains all of the data dictionary tables, it is used to create a number of database objects. For the database to run efficiently, the system tablespace must remain online.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "26. How to find the database version?",
+        "answer": "To determine the version of an Oracle database, you can follow these steps:\nConnect to the Oracle database using a tool such as SQL*Plus.\nOnce connected, enter the following query: “SELECT * FROM V$VERSION.”\nExecute the query to retrieve the version information of the database.\nThe result will display details about the database version, including the Oracle release number and additional version-specific information.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "27. What is a Sequence?",
+        "answer": "For numerical columns in database tables, a sequence produces a serial list of unique numbers. We may use the sequence on columns for data where we want to insert data systematically.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "28. What is the definition of the table in Oracle?",
+        "answer": "In a database, the table is the first physical object. Oracle divides data into rows and columns using tables in a database. In a database, the table is the first physical object.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "29. What do you mean by a view in SQL terminology?",
+        "answer": "A query is added to any view in order to define specific rows and columns of the table. The view is a type of virtual table. Read-only and read-write views are available types of views.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "30. Explain the advantages of using view?",
+        "answer": "The advantages of using a view in the table are\nIt is a subset of the data in a table.\nIt stores complex queries.\nIt can simplify multiple tables into one.\nIt occupies very little space.\nIt presents the data from different perspectives.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "31. In Oracle terminology, what do you mean by tablespace?",
+        "answer": "A tablespace is a logical storage unit that groups similar logical structures. It is the logical structure that will organize all of the database’s objects.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "32. How long does it take for the SYSTEM tablespace to be created?",
+        "answer": "Every database in Oracle has a tablespace called SYSTEM, which is generated automatically when the database is created. It also includes a data dictionary table for the entire set of data.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "33. What is the relationship between tablespace and data files?",
+        "answer": "Each database has one or more tablespaces, each of which is divided into one or more data files.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "34. How do we use the materialized view?",
+        "answer": "Materialized views are items that contain condensed sets of data from base tables that have been summarized, clustered, or aggregated. They are commonly used in data centers and decision-making systems.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "35. What is the purpose of the SELECT statement?",
+        "answer": "The SELECT statement is used to retrieve a collection of unique values from a database table based on the conditions defined in a SQL query.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "36. How can you compare a part of the name rather than the entire name?",
+        "answer": "To compare different parts, we use the LIKE operator, which functions as a database’s regex engine.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "37. What is the keyword to get distinct records from a table?",
+        "answer": "The user will use SELECT DISTINCT to select distinct values from a database table.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "38. In order to get sorted records from a table, what is the keyword?",
+        "answer": "The keyword “ORDER BY” is used to sort the data. It returns the sorted results to your program.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "39. In order to get total records from a table, what is the keyword?",
+        "answer": "The COUNT keyword is used to find the total number of records in a table.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "40. What is the definition of GROUP BY?",
+        "answer": "The keyword GROUP BY is an aggregate function like SUM, MULTIPLE, and so on, and without it, the sum for each individual group value cannot be determined.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "41. What are the methods for shutting down an Oracle Database?",
+        "answer": "Oracle has several modes for shutting down the database:\nNormal Mode:\nIn normal mode, the database is shut down by default. It can be used when no other clause is provided. The database waits for all currently linked users to detach from it before shutting it down, and no new connections are permitted once the statement is released. The command line is as follows:\nSHUTDOWN NORMAL\nTransactional Mode:\nTransactional mode helps shut down the database while allowing it to complete the active transactions. In this process, no new connections are allowed, and this mode waits for all transactions to finish before shutting down the database. Use this command line to shut down the database:\nSHUTDOWN TRANSACTIONAL\nImmediate Mode:\nWhen you know a power outage is at the door, you can use immediate mode. All sessions will be disconnected, all running transactions will be rolled back, the database will not wait for existing database users to disconnect before proceeding, and the database will be shut down. No instance recovery is needed during this next startup.\nIssue the command SHUTDOWN with an IMMEDIATE clause to shut down a database immediately.\nSHUTDOWN IMMEDIATE\nAbort Mode:\nWhen you want to shut down the database immediately within seconds without any active transactions, you can use the abort method. Hereafter, the statement has been released, and no new connections or transactions are permitted to be initiated. The Oracle Database automatically terminates all current client SQL statements and does not wait for existing database users to disconnect. Transactions that have not been committed will not be rolled back. All linked users are automatically disconnected from the database.\nUse the command SHUTDOWN with the ABORT clause:\nSHUTDOWN ABORT\n\nIntermediate Oracle DBA Interview Questions for Experienced Professionals",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "42. What are the benefits of ORDBMS?",
+        "answer": "In ORDBMS, the objects can be stored as they are. The language of the DBMS can be integrated with an object-oriented programming language. The language may even be exactly the same as that used in the application, which does not force the programmer to have two representations of his objects.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "43. What are the common Oracle DBA tasks?",
+        "answer": "As an Oracle DBA, we have to carry out the following tasks:\nInstalling Oracle software\nCreating Oracle databases\nPerforming upgrades of the database and software to new release levels\nStarting up and shutting down the database\nManaging the database’s storage structures\nManaging users and security\nManaging schema objects, such as tables, indexes, and views\nMaking database backups and performing recovery when necessary\nProactively monitoring the database’s health and taking preventive or corrective actions as required\nMonitoring and tuning performance\nIn a small-to-midsize database environment, a single DBA might be the sole person performing all these tasks. In large enterprise environments, the whole job is often divided among several DBAs, titled Database Security Administrator or Database Tuning Expert, each with his/her area of specialization.\nGet ready for the industry with an Oracle DBA Certification now!",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "44. List out the tools for administering the database.",
+        "answer": "Following are some of the products, tools, and utilities we use to achieve our goals as database administrators:\nOracle Universal Installer (OUI): The Oracle Universal Installer installs the Oracle software and options. It can automatically launch the Database Configuration Assistant to install a database.\nDatabase Configuration Assistant (DBCA): The Database Configuration Assistant creates a database from the templates that are supplied by Oracle, or we can create our own templates. In this case, it enables us to copy a preconfigured seed database, thus saving the time and effort of customizing and generating a database from scratch.\nDatabase Upgrade Assistant: This tool guides us through the upgrading of our existing database to a new Oracle release.\nOracle Net Manager: This tool guides us through our Oracle network configuration.\nOracle Enterprise Manager: The primary tool for managing our database is Oracle Enterprise Manager, a web-based interface. Once we install the Oracle software, create or upgrade a database, and configure the network, we can use Oracle Enterprise Manager as the single interface for managing our database. In addition, Oracle Enterprise Manager also provides an interface for performance advisors and an interface for Oracle utilities such as SQL*Loader and Recovery Manager.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "45. Differentiate between a cluster and a grid.",
+        "answer": "Clustering is one technology used to create grid infrastructure. Simple clusters have static resources for specific applications owned by specific owners.\nGrids, consisting of multiple clusters, are dynamic resource pools shareable among many applications and users. A grid does not assume that all servers are running the same set of applications. Applications can be scheduled and migrated across servers in the grid. Grids share resources with and among independent system owners.\n \n\nAt its highest level, the idea of grid computing is computing as a utility. In other words, we need not care where our data resides or which computer processes our request. We should be able to request information or computation and have it delivered as per our requirements. This is analogous to the way electric utilities work; without knowing where the generator is or how the electric grid is wired, we ask for electricity, and we get it. The goal is to make computing a utility, a commodity, and ubiquitous. Hence, it is called a grid. This perspective of utility computing is, of course, a ‘client-side’ view.\nFrom the ‘server-side’ (or behind the scenes), the grid is about resource allocation, information sharing, and high availability. Resource allocation ensures that all those who request resources get what they need and that those resources are not standing idle while requests go unserviced. Information sharing makes sure that the information that users and applications need is available as and when it is requested for. High-availability features guarantee that all the data and computations are always available as a utility.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "46. Explain the architecture of the Oracle Grid.",
+        "answer": "The Oracle Grid architecture pools large numbers of servers, storage, and networks into a flexible, on-demand computing resource for enterprise computing needs. The grid computing infrastructure continually analyzes the demand for resources and adjusts the supply accordingly.\n\nFor example, we can run different applications on a grid of several linked database servers. When reports are due at the end of the month, a database administrator can automatically provision more servers for that application to handle the increased demand.\nGrid computing uses sophisticated workload management that makes it possible for applications to share resources across many servers. Data processing capacity can be added or removed on demand, and resources within a location can be dynamically provisioned. Web services can quickly integrate applications to create new business processes.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "47. What are the tools you can use to start up an Oracle Database?",
+        "answer": "You can start up a database using three tools:\nSQL *Plus: To startup an Oracle Database instance, you can use the SQL *Plus startup command.\nOracle Enterprise Manager: It is a system management tool. You can startup the Oracle Database with Oracle Enterprise Manager. It provides an integrated solution for managing your heterogeneous environment. Even if the database is stopped, you can still log in to OEM. It will present you with the Startup button by detecting the status of the down database.\nRecovery Manager: RMAN is also known as the RMAN repository connected with the TARGET keyword, which is also a database on which RMAN performs backup and recovery operations in the control file of the database.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "48. What would you specify in the script while creating a database with the SQL script?",
+        "answer": "An SQL script can also be used to build a database. The following will be included in the script:\nThe database’s name\nThe SYS user’s password\nThe device user’s password\nAt least three redo log classes are available online. In my view, each redo log group should have at least two members.\nThe database’s character set and national character set\nSYSTEM and SYSAUX tablespace locations and sizes: These tablespaces will be used to store device information.\nAs the database’s default tablespace, we will define a normal tablespace.\nThen specify a temporary tablespace to use as the database’s default temporary tablespace.\nNow we will build an undo tablespace.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "49. Can you find out the indexes for a table in Oracle ?",
+        "answer": "This is the basic syntax that is used to find out the indexes for a table in Oracle.\nSELECT owner, index_name,\ntablespace_name, status\nSet pages\nBreak on table_name on index_name\ncolumn table_name\ncolumn index_name\ncolumn column_name\nselect table_name, index_name, column_name\nfrom dba_ind_columns\nwhere table_owner\norder by table_name, index_name\ncolumn_position",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "50. What is SQL*plus? What can be done with it?",
+        "answer": "SQL* Plus is a component of Oracle Database. It is basically a command-line tool that allows you to submit SQL queries to the server interactively.\nWe can view the results by running a SELECT query.\nWith SQL*Plus, we can startup and shut down an Oracle Database.\nSubmit PL/SQL blocks for execution to the Oracle Server.\nExecution of SQL*Plus script file can be done\nCreate, modify, or drop database objects (tables, indexes, and users) using DDL statements and any other SQL statements that Oracle supports.\nWe can write the output to a file.\nExecute stored procedures and functions in a database",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "51. Can you explain each digit in the Oracle database version?",
+        "answer": "This first digit indicates the major database version and it describes the nature of release. Oracle releases a new release every four years on average.\nFor example, Oracle 9i (internet), Oracle 10g (grid), Oracle 11g (grid), and Oracle 12c (cloud)\nThe second digit represents the software’s maintenance release number. Oracle releases the major update as maintenance release 1 and then follows up with a second maintenance release later in the software’s lifecycle. With maintenance releases, new features are introduced to database software.\nFor example, Oracle 12c release 1 and Oracle 12c release 2\nFusion Middleware Number is the third digit. This will be 0 for database software.\nThis fourth digit is called component-specific release number, and a component release level is identified by the fourth digit. Depending on component patch sets or temporary releases, different components can have different numbers in this role.\nExample:  12.1.0.1; 12.1.0.2; 12.2.1.1\nA platform-specific release is identified by the fifth digit. This is usually a patch kit. This number will be the same across all affected platforms when different platforms need the same patch package.\nExample: GA release (initial release-no patch): 12.2.0.1.0",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "52. What kind of information can be given while creating a sequence?",
+        "answer": "The syntax for creating a sequence is as follows:\nCREATE SEQUENCE schema_name. sequence_name\n[INCREMENT BY interval]\n[START WITH first_number]\n[MAXVALUE max_value | NOMAXVALUE]\n[MINVALUE min_value | NOMINVALUE]\n[CYCLE | NOCYCLE ]\n[CACHE cache_size | NOCACHE]\n[ORDER |NOORDER];\nWhile creating a sequence, use the CREATE SEQUENCE command and add a sequence_name that should be unique. The next increment is used to show how much the sequence will increment at each move.\nThen using START WITH, we start the sequence either in ascending or descending.\nMAXVALUE and NOMAXVALUE are maximum limits. With MAXVALUE, we can provide the maximum sequence value, whereas NOMAXVALUE is fixed: 10^27 for an ascending sequence or -1 for a descending sequence.\nMINVALUE is used to specify the minimum value of the sequence. NOMINVALUE is fixed. For an ascending sequence, it indicates a minimum value of 1, and for a descending sequence, it indicates -10^26.\nTo allow the sequence to generate values after it reaches the limit, use CYCLE, which is the minimum value for a descending sequence and MAXVALUE for an ascending sequence. NOCYCLE is the default behavior, and it is used to stop generating the next value when the sequence reaches the limit.\nORDER ensures that Oracle generates sequence numbers in the order they are requested. If you don’t want Oracle to generate sequence numbers in the order of your requests, use NOORDER. This is a default setting.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "53. Explain how the database writer process (DBWn) works.",
+        "answer": "Multiple database context processes are possible. In the operating system, they are referred to as DBWn. This method is in charge of storing “dirty” buffers on the disc. When a server process has to update a data block, it first reads it from the disc into the buffer cache. If it isn’t already there, it updates the cache copy. So, a “dirty” block refers to a modified database block in the buffer cache.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "54. What are the instance parameters that are used for configuring the shared server architecture?",
+        "answer": "DISPATCHERS: In the shared server architecture, configures dispatcher processes.\nMAX _DISPATCHERS: The maximum number of dispatcher processes that can run at the same time is defined.\nSHARED_SERVERS: There will be a minimum of shared server processes on the server. This number of shared servers is determined during the initialization process.\nMAX_SHARED_SERVERS: The maximum number of shared server processes that can run at the same time is determined by this parameter.\nSHARED_SERVER SESSIONS: This is the only required parameter for using shared servers, and it defines the maximum number of concurrent sessions that can be used for shared server connections.\nCIRCUITS: The maximum number of virtual circuits that can exist in the system is determined by this parameter.",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "55. How to know when operations happened on a table?",
+        "answer": "In the database, FLASHBACK_TRANSACTION_QUERY shows all information about flashback transaction queries.\nSELECT *\nFROM flashback_transaction_query\nWHERE TABLE_NAME\nAND table_owner\nand operation\norder by start_timestamp desc",
+        "reference": "intellipaat.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "1. What constitutes an Oracle Instance?",
+        "answer": "The SGA is a distributed memory that several programs can use. This section contains data that the instance needs to function.\nSystem Global Area (SGA), a distributed memory space on RAM, and applications running make up an instance.\nThe running processes are OS processes, and every program in the instance has a specific role to play.\nWhen an instance is \"started,\" it creates the GAS and runs processes.\nThe processes are destroyed and the common memory space is returned to the operating system when the instance status is \"shut off.\" The SGA is a distributed memory that several programs can use. This section contains data that the instance needs to function. System Global Area (SGA), a distributed memory space on RAM, and applications running make up an instance. The running processes are OS processes, and every program in the instance has a specific role to play. When an instance is \"started,\" it creates the GAS and runs processes. The processes are destroyed and the common memory space is returned to the operating system when the instance status is \"shut off.\"",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "2. What is a trace file, and how does one make one?",
+        "answer": "A trace file can be created for each server and backend process. When a process or user process detects an operational fault, it spills data about the bugs to its trace. This information can be used to fine-tune the database.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "3. What are the advantages of ORDBMS?",
+        "answer": "The items themselves can be saved in the database. The DBMS language can be used with an OOPs language. The language used in the program may even be the same, removing the need for the developer to have two versions of his objects.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "4. What occurs when we run an SQL statement in Oracle?",
+        "answer": "At the very beginning, it validates the syntax and semantics in the cache of the library before creating a blueprint. Data will be automatically returned to the client if it is already present in the buffer. If the data is not present in the database, it will go to the data files and store it in the database buffer cache, then transmit it to the server, which will then deliver it to the user.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "5. What is the distinction between a database and an instance?",
+        "answer": "The physical files that hold the data and information that compose up a database are referred to as database files. The control files, data files, and redo log files are among them. Whereas, The storage that is distributed and accessible by all threads and background processes is referred to as an instance.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "6. What are Oracle's disk components?",
+        "answer": "Redo Log Files.\nParameter files.\nControl files.\nData files.\nPassword files. Redo Log Files. Parameter files. Control files. Data files. Password files.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "7. In a company, how does an Oracle DBA position vary from an Oracle Developer role? Is there any resemblance between these as well?",
+        "answer": "The Oracle developer is mostly in charge of creating backend applications. The model data in accordance with business rules. They generate tables, indexes, and other types of restrictions. They are required to be familiar with SQL and PL/SQL. These languages are used to create processes. Oracle developers, on the other hand, are not required to manage the database software. But, an Oracle DBA's primary responsibility is to administer the database, which covers areas such as doing maintenance to keep the databases operational, taking backups, maintaining privacy standards, and so on. DBAs are not typically tasked with writing code. DBAs, like developers, are expected to have a strong understanding of SQL and PL/SQL, as they are also essential for database administration. DBAs may be allocated development responsibilities or, at the very least, support developers when needed, depending on the company's structure.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "8. Why Are Bind Variables Important?",
+        "answer": "Bind variables are crucial because most database suppliers provide an execution plan cache, which stores recently processed SQL statements and planning processes for again use.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "9. What is the definition of normalization? What do the various types of normalization entail?",
+        "answer": "It is the process of structuring a relational database's fields and tables to reduce complexity and dependence. It guarantees that our data is consistent by saving the memory. First normal form - Only single (atomic) valued attributes or columns should be used. A column's values must all belong to a certain domain.\nSecond normal form - It must be written in First Normal. It should also not be partially dependent.\nThird normal form - It's in the shape of the Second Normal. It also lacks transitive dependencies.\nBoyce and Codd Normal Form - Boyce and Codd is a more advanced variation of the Third Normal Form. This form is used to deal with anomalies that aren't addressed by 3NF. BCNF refers to a 3NF table that does not contain several identical candidate keys. First normal form - Only single (atomic) valued attributes or columns should be used. A column's values must all belong to a certain domain. First normal form Second normal form - It must be written in First Normal. It should also not be partially dependent. Second normal form Third normal form - It's in the shape of the Second Normal. It also lacks transitive dependencies. Third normal form Boyce and Codd Normal Form - Boyce and Codd is a more advanced variation of the Third Normal Form. This form is used to deal with anomalies that aren't addressed by 3NF. BCNF refers to a 3NF table that does not contain several identical candidate keys. Boyce and Codd Normal Form",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "10. What are the elements of a logical data model, and how do they vary from a physical data model?",
+        "answer": "The following are the elements of a logical data model: Entity - An entity is a type of object that we utilize to store data. It comes with its own table.\nAttribute - This reflects the information about the entity we're looking at. It is recorded as a table column with a particular data type connected to it.\nRecord - A record is a group of all the features associated with an object for a single condition, expressed in a table as a row.\nDomain - A domain is the collection of all possibilities for a certain property.\nRelationship - A relationship between two entities is represented by this object. Entity - An entity is a type of object that we utilize to store data. It comes with its own table. Attribute - This reflects the information about the entity we're looking at. It is recorded as a table column with a particular data type connected to it. Record - A record is a group of all the features associated with an object for a single condition, expressed in a table as a row. Domain - A domain is the collection of all possibilities for a certain property. Relationship - A relationship between two entities is represented by this object.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "11. What is the Oracle Grid Architecture?",
+        "answer": "Oracle's grid design combines a huge database server, memory, and connections to create a customized, as per requirement computing resource for business computing demands. The grid computing architecture constantly evaluates the consumption of resources and changes supply accordingly. You might, for example, run several programs on a grid of numerous connected database servers. If monthly reports are pending, the database administrator might automatically supply a dedicated server to that program to manage the growing demands. Grid computing employs advanced workload management, enabling programs to work cooperatively across several servers. As per requirement data processing ability may be added or deleted, and resources within a region can be provided flexibly. Web services enable the rapid integration of apps to establish a business.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "12. What are the different types of Oracle database shutdown modes?",
+        "answer": "Normal: New connections are not permitted in this option, and the database is terminated when all sessions quit.\nImmediate: New connections are not permitted, and all ongoing operations are returned.\nTransactional: New connections are not permitted, and Oracle will hold until all current processes have been finished.\nAbort: This occurs instantly, although the database is not completely shut down. When the database is restarted, it will have to conduct a quick restoration. We can't utilize this in everyday situations. Normal: New connections are not permitted in this option, and the database is terminated when all sessions quit. Immediate: New connections are not permitted, and all ongoing operations are returned. Transactional: New connections are not permitted, and Oracle will hold until all current processes have been finished. Abort: This occurs instantly, although the database is not completely shut down. When the database is restarted, it will have to conduct a quick restoration. We can't utilize this in everyday situations.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "13. What is the distinction between a data block, an extent, and a segment?",
+        "answer": "A data block is a database object's basic logical storage unit. As objects expand in size, they require extra storage in the form of continuous data blocks.\nExtents are collections of consecutive data chunks.\nWhen all of an object's extents are gathered together, the segment is considered. A data block is a database object's basic logical storage unit. As objects expand in size, they require extra storage in the form of continuous data blocks. Extents are collections of consecutive data chunks. When all of an object's extents are gathered together, the segment is considered.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "1. What Is The Distinction Between Raid 5 And Raid 10? Which Is the Better Option for Oracle?",
+        "answer": "Striping with an additional drive for parity is what RAID 5 is all about. If we damage a disk, we may rebuild it from the parity disk.\nRAID 10 mirror pairs of drives before striping over those mirrors.\nRAID 5 was developed at a time when drives were costly. Its goal was to deliver RAID on a budget. If a disk stops working, the IO module will function VERY slowly while it is being rebuilt. Furthermore, with all of the increased weight of the rebuild, your likelihood of failure increases considerably during this period. RAID 5 is sluggish for everything except reading even when it is running properly. Given that, plus the fact that databases (particularly Oracle's redo logs) continue to suffer write activity at all times, we should avoid RAID5 in all but the odd database that has primarily read activity. Redo logs should not be placed on RAID5.\nRAID10 is just all-around awesome. If you lose a single disk in a set of ten, for example, you might lose any of the remaining eight disks and be OK. Furthermore, because you're only creating a mirror duplicate, rebuilding has no influence on productivity. Finally, RAID10 performs admirably in all sorts of databases. Striping with an additional drive for parity is what RAID 5 is all about. If we damage a disk, we may rebuild it from the parity disk. RAID 10 mirror pairs of drives before striping over those mirrors. RAID 5 was developed at a time when drives were costly. Its goal was to deliver RAID on a budget. If a disk stops working, the IO module will function VERY slowly while it is being rebuilt. Furthermore, with all of the increased weight of the rebuild, your likelihood of failure increases considerably during this period. RAID 5 is sluggish for everything except reading even when it is running properly. Given that, plus the fact that databases (particularly Oracle's redo logs) continue to suffer write activity at all times, we should avoid RAID5 in all but the odd database that has primarily read activity. Redo logs should not be placed on RAID5. RAID10 is just all-around awesome. If you lose a single disk in a set of ten, for example, you might lose any of the remaining eight disks and be OK. Furthermore, because you're only creating a mirror duplicate, rebuilding has no influence on productivity. Finally, RAID10 performs admirably in all sorts of databases.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "2. Why does LGWR writes come before DBWR writes?",
+        "answer": "Transaction recordkeeping is more significant than transaction processing in general. Assume we have repeated entries on disk and a power interruption occurs.  The transactions can then be recovered by retrieving the redo logs on the disc. This method makes redo logs persistent first, and then temporary blocks are sent to storage.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "3. What are SNIPPED sessions in a database?",
+        "answer": "Connections that surpass the given time are noted as clipped. When the client exceeds the normal time limit, the Oracle-level operations are removed, but the OS-level processes remain.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "4. What is a scope parameter?",
+        "answer": "There are various parameters that may be changed flexibly while using spfile. That is the most significant advantage of spfile over pfile. Every value that you change when the database is operating can have one of three scope values: spfile, memory, or sometimes both. S cope of the Spfile will alter after the next reboot, storage range will change instantly but rollback after the reboot, and both will alter quickly.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "5. Distinguish between the delete and truncate commands.",
+        "answer": "Truncate command Delete command\nTruncate is a DDL command Delete is a DML command\nThe TRUNCATE command locks the whole table for the deletion of all specified entries the DELETE command is carried out with the assistance of a row lock. When the instruction is executed, every row in the tablespace is marked for elimination.\nThe TRUNCATE command locks the whole table for the deletion of all specified entries whereas, By using the truncate command we can delete all of the rows in a table  the DELETE command is in charge of eliminating only a single row at a time, rather than removing all of the rows in the table at once. When a row is deleted, its record in the transaction log is logged.\nThe TRUNCATE TABLE function aids in the removal of all information by making the memory pages free that are used to store the table data. Only the page unassigning is noted in the binary log after completion. Buttons are not triggered since no changes are going to place. TRUNCATE is a Definition Data Language command, therefore it does not affect data instead, it modifies the design and description of the table The DELETE is activated when both NSTEAD OF and AFTER are activated for the DELETE commands in the event of the DELETE command (if present). The DELETE command is a part of DML commands which helps to delete the data present in a row(row-wise). Truncate command Delete command\nTruncate is a DDL command Delete is a DML command\nThe TRUNCATE command locks the whole table for the deletion of all specified entries the DELETE command is carried out with the assistance of a row lock. When the instruction is executed, every row in the tablespace is marked for elimination.\nThe TRUNCATE command locks the whole table for the deletion of all specified entries whereas, By using the truncate command we can delete all of the rows in a table  the DELETE command is in charge of eliminating only a single row at a time, rather than removing all of the rows in the table at once. When a row is deleted, its record in the transaction log is logged.\nThe TRUNCATE TABLE function aids in the removal of all information by making the memory pages free that are used to store the table data. Only the page unassigning is noted in the binary log after completion. Buttons are not triggered since no changes are going to place. TRUNCATE is a Definition Data Language command, therefore it does not affect data instead, it modifies the design and description of the table The DELETE is activated when both NSTEAD OF and AFTER are activated for the DELETE commands in the event of the DELETE command (if present). The DELETE command is a part of DML commands which helps to delete the data present in a row(row-wise). Truncate command Delete command Truncate command Delete command Truncate command Delete command Truncate is a DDL command Delete is a DML command\nThe TRUNCATE command locks the whole table for the deletion of all specified entries the DELETE command is carried out with the assistance of a row lock. When the instruction is executed, every row in the tablespace is marked for elimination.\nThe TRUNCATE command locks the whole table for the deletion of all specified entries whereas, By using the truncate command we can delete all of the rows in a table  the DELETE command is in charge of eliminating only a single row at a time, rather than removing all of the rows in the table at once. When a row is deleted, its record in the transaction log is logged.\nThe TRUNCATE TABLE function aids in the removal of all information by making the memory pages free that are used to store the table data. Only the page unassigning is noted in the binary log after completion. Buttons are not triggered since no changes are going to place. TRUNCATE is a Definition Data Language command, therefore it does not affect data instead, it modifies the design and description of the table The DELETE is activated when both NSTEAD OF and AFTER are activated for the DELETE commands in the event of the DELETE command (if present). The DELETE command is a part of DML commands which helps to delete the data present in a row(row-wise). Truncate is a DDL command Delete is a DML command Truncate is a DDL command Delete is a DML command The TRUNCATE command locks the whole table for the deletion of all specified entries the DELETE command is carried out with the assistance of a row lock. When the instruction is executed, every row in the tablespace is marked for elimination. The TRUNCATE command locks the whole table for the deletion of all specified entries the DELETE command is carried out with the assistance of a row lock. When the instruction is executed, every row in the tablespace is marked for elimination. The TRUNCATE command locks the whole table for the deletion of all specified entries whereas, By using the truncate command we can delete all of the rows in a table  the DELETE command is in charge of eliminating only a single row at a time, rather than removing all of the rows in the table at once. When a row is deleted, its record in the transaction log is logged. The TRUNCATE command locks the whole table for the deletion of all specified entries whereas, By using the truncate command we can delete all of the rows in a table the DELETE command is in charge of eliminating only a single row at a time, rather than removing all of the rows in the table at once. When a row is deleted, its record in the transaction log is logged. The TRUNCATE TABLE function aids in the removal of all information by making the memory pages free that are used to store the table data. Only the page unassigning is noted in the binary log after completion. Buttons are not triggered since no changes are going to place. TRUNCATE is a Definition Data Language command, therefore it does not affect data instead, it modifies the design and description of the table The DELETE is activated when both NSTEAD OF and AFTER are activated for the DELETE commands in the event of the DELETE command (if present). The DELETE command is a part of DML commands which helps to delete the data present in a row(row-wise). The TRUNCATE TABLE function aids in the removal of all information by making the memory pages free that are used to store the table data. Only the page unassigning is noted in the binary log after completion. Buttons are not triggered since no changes are going to place. TRUNCATE is a Definition Data Language command, therefore it does not affect data instead, it modifies the design and description of the table The DELETE is activated when both NSTEAD OF and AFTER are activated for the DELETE commands in the event of the DELETE command (if present). The DELETE command is a part of DML commands which helps to delete the data present in a row(row-wise).",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "6. What exactly do you mean by \"recovery catalog\"?",
+        "answer": "RMAN uses a database structure called a recovery catalog to hold information from Oracle databases. The catalog is usually kept in a separate database. A recovery catalog adds repetition to the RMAN library contained within every destination database's control file. It acts as a backup metadata store. Even if the destination control file and all duplicates are deleted, the RMAN information remains in the recovery catalog. A recovery catalog adds repetition to the RMAN library contained within every destination database's control file. It acts as a backup metadata store. Even if the destination control file and all duplicates are deleted, the RMAN information remains.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "7. Explain what exactly the deadlock is?",
+        "answer": "Deadlock occurs when two operations are trying to change rows of a table that are restricted by the other operation. This is frequently caused by failure to issue adequate row lock requests. This condition can be caused by a poorly designed UI application, and the server's productivity will suffer as a result. When a commit/rollback action is conducted, or either of these programs is stopped outside, these restrictions will be freed immediately.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "8. What does the ANALYZE command do?",
+        "answer": "It is used to get statistics on the optimizer's objects and record these in the database.\nIt is used to remove information from the database about the information used by the database.\nIt is used to ensure that the object's structure is correct.\nIt is used to get the table or cluster's imported and linked rows. It is used to get statistics on the optimizer's objects and record these in the database. It is used to remove information from the database about the information used by the database. It is used to ensure that the object's structure is correct. It is used to get the table or cluster's imported and linked rows.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "9. What are the procedures to change the archiving mode of a database from NO ARCHIVELOG to ARCHIVELOG?",
+        "answer": "The database instance should be shut down.\nMake a backup of the database.\nPerform any actions that are particular to your operating system.\nStart a new instance and load the database, but don't open it yet.\nChange the archiving mode of the database. The database instance should be shut down. Make a backup of the database. Perform any actions that are particular to your operating system. Start a new instance and load the database, but don't open it yet. Change the archiving mode of the database.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "10. What does Oracle Home Inventory entail?",
+        "answer": "Any specified object in a database that would be used to keep or dataset is referred to as a database object. Views, clusters, tables, sequences, indexes, and synonyms have come under database objects.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "11. What exactly is a control file?",
+        "answer": "It's a two-part file that contains data in the database's physical form.\nYou can remove the probability of crashing with the assistance of the control file.\nIt contains information about the database name, checkpoint, duration, and the presence of multiple log files.\nThe CONTROL FILE argument, which stores information about the control file, makes it simple to locate it.\nTo avoid the problem related to a corrupted file, it is preferable to make numerous copies of the control file. It's a two-part file that contains data in the database's physical form. You can remove the probability of crashing with the assistance of the control file. It contains information about the database name, checkpoint, duration, and the presence of multiple log files. The CONTROL FILE argument, which stores information about the control file, makes it simple to locate it. To avoid the problem related to a corrupted file, it is preferable to make numerous copies of the control file.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "12. What is the difference between a cluster and a grid?",
+        "answer": "Grid architecture can be built by using the famous technology known as clustering. The cluster provides static resources dedicated to certain applications and owners. Grids, which can be made up of numerous clusters, are resource provisioning pools that can be used by a wide range of applications and users. A grid does not presume that all of its servers are performing the same set of apps. Applications can be planned and transferred among grid servers.\nGrid computing is, at its most basic level, processing as a service. If we talk in simple terms, it doesn't matter where your data is stored or your request is handled by which machine. You must be able to fetch data or computations and have them provided anytime and as much as you desire. This is similar to how power systems function in that you don't know where the generator is or how the grid is wired, all you have to do is ask for power and it will be provided. The objective is to turn computers into a utility, a commodity, and something that everyone has access to. As a result, the moniker 'The Grid' was coined. This is, of course, a \"client-side\" approach to utility computing.\nThe grid is all about the distribution of the resources, data exchange, and reliability from the \"server-side\" or the backend. Resource allocation guarantees that people who require or seek resources receive them and that assets are not unused while demands go unmet. Information sharing ensures that users and applications have access to the information they require, and when they require it. High availability characteristics ensure that all data and computations are always available, similar to how a utility provider ensures that electricity is always available. Grid architecture can be built by using the famous technology known as clustering. The cluster provides static resources dedicated to certain applications and owners. Grids, which can be made up of numerous clusters, are resource provisioning pools that can be used by a wide range of applications and users. A grid does not presume that all of its servers are performing the same set of apps. Applications can be planned and transferred among grid servers. Grid computing is, at its most basic level, processing as a service. If we talk in simple terms, it doesn't matter where your data is stored or your request is handled by which machine. You must be able to fetch data or computations and have them provided anytime and as much as you desire. This is similar to how power systems function in that you don't know where the generator is or how the grid is wired, all you have to do is ask for power and it will be provided. The objective is to turn computers into a utility, a commodity, and something that everyone has access to. As a result, the moniker 'The Grid' was coined. This is, of course, a \"client-side\" approach to utility computing. The grid is all about the distribution of the resources, data exchange, and reliability from the \"server-side\" or the backend. Resource allocation guarantees that people who require or seek resources receive them and that assets are not unused while demands go unmet. Information sharing ensures that users and applications have access to the information they require, and when they require it. High availability characteristics ensure that all data and computations are always available, similar to how a utility provider ensures that electricity is always available.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "13. What is the purpose of a password file, and why is it required?",
+        "answer": "The credentials of the database users are saved in the database's data dictionary. When the user tries to request access to the database, it compares the user's account and passcode to the data contained in the database. Once The user is only allowed database access if the account and passcode match. We can access the data dictionary as long as the database is open.  This dictionary also contains the credentials for admins. You can't access the dictionary once the database is shut down. Because starting up a closed database is one of the executive's jobs, there has to be a means for admins to login into the database even when the server is down. A password file is a distinct OS file that is kept on a disc and is not connected to the server. It stores the login details for SYSDBA and SYSOPER clients. While the database is offline, the password file is used to verify admins with those rights.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "1. How to become an oracle dba?",
+        "answer": "People with straight software engineering experience are more likely to transition into this type of administrative function. Very strong knowledge is essential for this, as this type of position is not cracked by everyone. You must understand and have absolute trust in SQL and PL/SQL, which is standard program code accessible for Oracle databases. Moreover, the applicant must understand how the table was constructed within the system, the definition of tablespace, how to recreate and address certain extremely crucial query tuning issues, correct indexing, and how to preserve the required consistency for a whole database. As a database administrator license is generally granted depending on any edition, the applicant should always update himself with any latest iteration of the database released by Oracle. Conclusion One of the most prominent database management systems is Oracle Database. Oracle is one of the top critical databases in the industry, used by the majority of organizations. As a result, being one of the administrators in that Oracle database is always a professional achievement for that individual. There is nothing to question that a person with Oracle certification would never be unemployed in today's market. Interview Resources https://www.interviewbit.com/technical-interview-questions/\nhttps://www.interviewbit.com/coding-interview-questions/\nhttps://www.interviewbit.com/blog/ https://www.interviewbit.com/technical-interview-questions/ https://www.interviewbit.com/technical-interview-questions/ https://www.interviewbit.com/coding-interview-questions/ https://www.interviewbit.com/coding-interview-questions/ https://www.interviewbit.com/blog/ https://www.interviewbit.com/blog/",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "2. How much does a Database Administrator (DBA) Oracle in India make?",
+        "answer": "Without even a formal qualification, an Oracle database administrator can earn any income. A student with a valid Oracle credential is not guaranteed a high package compensation. There are different sorts of packages in the contemporary business, one is provided directly by Oracle, while the other is provided by IT organizations that require this type of administrative assistance for their own platform. Pay often ranges from $90000 to $180000, depending on the variety of certifications supplied by the oracle. Oracle qualifications for professionals, masters, and specialists will be developed for various types of pay in their future positions. However, a candidate should be more worried about the variety of updates and being recognized in advanced training. Based on that salary will be very attractive.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "3. Is Oracle DBA a good career?",
+        "answer": "Database administration, particularly in Oracle databases, is really a major and critical component of the work. According to today's market boom, the administrative position in the database, especially in Oracle, has already climbed 11%, which is much greater than that of other accessible occupations. The professional applicant is never able to consider their profession since they are so eager to state that they can simply claim their industry worth from IT Companies.  Mostly all IT businesses place a high value on those individuals who can keep their own systems running well.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    },
+    {
+        "question": "4. What is the role of DBA in Oracle?",
+        "answer": "Oracle software installation\nOracle database creation\nUpgrading the software and database to the current version levels\nTurn off and on the database\nHandling the storage architecture of the database\nUser management and protection\nTaking care of schema objects like tables, indexes, and views\nIt helps to backup data and, if necessary, execute database restoration\nAnalyzing the database's quality on a regular basis and taking preventative or remedial action when needed\nPerformance tracking and tweaking\nYou could be the only individual doing these duties in a small to medium database environment. The position is frequently shared among numerous DBAs in big business systems, each with their particular area of expertise, such as database security analyst or database performance specialist. Oracle software installation Oracle database creation Upgrading the software and database to the current version levels Turn off and on the database Handling the storage architecture of the database User management and protection Taking care of schema objects like tables, indexes, and views It helps to backup data and, if necessary, execute database restoration Analyzing the database's quality on a regular basis and taking preventative or remedial action when needed Performance tracking and tweaking You could be the only individual doing these duties in a small to medium database environment. The position is frequently shared among numerous DBAs in big business systems, each with their particular area of expertise, such as database security analyst or database performance specialist.",
+        "reference": "interviewbit.com",
+        "role": "oracle-dba"
+    }
+]

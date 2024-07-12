@@ -1,0 +1,902 @@
+[
+    {
+        "question": "Check this video on Splunk software engineer interview questions and answers:",
+        "answer": "Basic Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "1. Compare Splunk with Spark.",
+        "answer": "Criteria Splunk Spark\nDeployment area Collecting large amounts of machine-generated data Iterative applications and in-memory processing\nNature of tool Proprietary Open-source\nWorking mode Streaming mode Both streaming and batch modes",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "2. What is Splunk?",
+        "answer": "Splunk is ‘Google’ for our machine-generated data. It’s a software/engine that can be used for searching, visualizing, monitoring, reporting, etc. of our enterprise data. Splunk takes valuable machine data and turns it into powerful operational intelligence by providing real-time insights into our data through charts, alerts, reports, etc.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "3. What are the common port numbers used by Splunk?",
+        "answer": "Below are the common port numbers used by Splunk. However, we can change them if required.\nService Port Number Used\nSplunk Web port 8000\nSplunk Management port 8089\nSplunk Indexing port 9997\nSplunk Index Replication port 8080\nSplunk Network port 514 (Used to get data from the Network port, i.e., UDP data)\nKV Store 8191",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "4. What are the components of Splunk? Explain Splunk architecture.",
+        "answer": "This is one of the most frequently asked Splunk interview questions. Below are the components of Splunk:\nSearch Head: Provides the GUI for searching\nIndexer: Indexes the machine data\nForwarder: Forwards logs to the Indexer.\nDeployment Server: Manages Splunk components in a distributed environment.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "5. Which is the latest Splunk version in use?",
+        "answer": "Splunk 8.2.1 (as of June 21, 2021)",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "6. What is a Splunk indexer? What are the stages of Splunk indexing?",
+        "answer": "A Splunk indexer is the Splunk Enterprise component that creates and manages indexes. The primary functions of an indexer are mentioned below:\nIndexing incoming data\nSearching the indexed data\nPicture\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "7. What is a Splunk forwarder? What are the types of Splunk forwarders?",
+        "answer": "There are two types of Splunk forwarders, which are mentioned below:\nUniversal Forwarder (UF): the Splunk agent installed on a non-Splunk system to gather data locally; it can’t parse or index data.\nHeavyweight Forwarder (HWF): A full instance of Splunk with advanced functionalities.\nIt generally works as a remote collector, intermediate forwarder, and possible data filter, and since it parses data, it is not recommended for production systems.\nEnroll in our Splunk Course in London to get a clear understanding of Splunk!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "8. Can you name a few most important configuration files in Splunk?",
+        "answer": "props.conf\nindexes.conf\ninputs.conf\ntransforms.conf\nserver.conf",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "9. What are the types of Splunk Licenses?",
+        "answer": "Enterprise license\nFree license\nForwarder license\nBeta license\nLicenses for search heads (for distributed search)\nLicenses for cluster members (for index replication)",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "10. What is the Splunk app?",
+        "answer": "The Splunk app is a container or directory of configurations, searches, dashboards, etc. in Splunk.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "11. Where is the Splunk default configuration stored?",
+        "answer": "$splunkhome/etc/system/default",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "12. What are the features not available in Splunk Free?",
+        "answer": "Splunk Free does not include below features:\nAuthentication and scheduled searches/alerting\nDistributed search\nForwarding in TCP/HTTP (to non-Splunk)\nDeployment management",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "13. What happens if the license master is unreachable?",
+        "answer": "If the license master is not available, the license slave will start a 24-hour timer, after which the search will be blocked on the license slave (though indexing continues). However, users will not be able to search for data in that slave until it can reach the license master again.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "14. What is a summary index in Splunk?",
+        "answer": "A summary index is the default Splunk index (the index that Splunk Enterprise uses if we do not indicate another one).\nIf we plan to run a variety of summary index reports, we may need to create additional summary indexes.\nLearn more about Splunk from this Splunk Training in New York to get ahead in your career!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "15. What is Splunk DB Connect?",
+        "answer": "Splunk DB Connect is a generic SQL database plugin for Splunk that allows us to easily integrate database information with Splunk queries and reports.\n\nIntermediate Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "16. Can you write down a general regular expression for extracting the IP address from logs?",
+        "answer": "There are multiple ways in which we can extract the IP address from logs. Below are a few examples:\nBy using a regular expression:\nrex field=_raw  \"(?<ip_address>d+.d+.d+.d+)\"\nOR\nrex field=_raw  \"(?<ip_address>([0-9]{1,3}[.]){3}[0-9]{1,3})\"",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "17. Explain Stats vs Transaction commands.",
+        "answer": "This is another frequently asked interview question on Splunk that will test the developer’s or engineer’s knowledge. The transaction command is most useful in the following two specific cases:\nWhen the unique ID (from one or more fields) alone is not sufficient to discriminate between two transactions. This is the case when the identifier is reused, for example, in web sessions identified by a cookie or client IP. In this case, the time span or pauses are also used to segment the data into transactions.\nWhen an identifier is reused, say, in DHCP logs, a particular message identifies the beginning or end of a transaction.\nWhen it is desirable to see the raw text of events combined rather than an analysis of the constituent fields of the events.\nIn other cases, it’s usually better to use stats.\nAs the performance of the stats command is higher, it can be used, especially in a distributed search environment.\nIf there is a unique ID, the stats command can be used\nAre you looking to become a Splunk SIEM expert? Go through Intellipaat’s Splunk SIEM Security Training Course Online!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "18. How do I troubleshoot Splunk performance issues?",
+        "answer": "The answer to this question would be very wide, but, mostly, an interviewer would be looking for the following keywords:\nCheck splunkd.log for errors\nCheck server performance issues, i.e., CPU, memory usage, disk I/O, etc.\nInstall the SOS (Splunk on Splunk) app and check for warnings and errors in its dashboard\nCheck the number of saved searches currently running and their consumption of system resources\nInstall and enable Firebug, which is a Firefox extension. Log into Splunk (using Firefox) and open Firebug’s panels. Then, switch to the ‘Net’ panel, which we will have to enable. The Net panel will show us the HTTP requests and responses, along with the time spent on each. This will give us a lot of information quickly, such as which requests are hanging Splunk, which requests are blameless, etc.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "19. What are buckets? Explain the Splunk bucket lifecycle.",
+        "answer": "Splunk places indexed data in directories, which are called ‘buckets.’ It is physically a directory containing events from a certain period.\nA bucket moves through several stages as it ages. Below are the various stages it goes through:\nHot: A hot bucket contains newly indexed data. It is open for writing. There can be one or more hot buckets for each index.\nWarm: A warm bucket consists of data rolled out from a hot bucket. There are many warm buckets.\nCold: A cold bucket has data that is rolled out from a warm bucket. There are many cold buckets.\nFrozen: A frozen bucket is comprised of data rolled out from a cold bucket. The indexer deletes frozen data by default, but we can archive it. Archived data can later be thawed (data in a frozen bucket is not searchable).\nBy default, the buckets are located in the following location:\n$SPLUNK_HOME/var/lib/splunk/defaultdb/db\nWe should see the hot-db there and any warm buckets we have. By default, Splunk sets the bucket size to 10 GB for 64-bit systems and 750 MB for 32-bit systems.\nInterested in learning Splunk? Enroll in Intellipaat’s Splunk Training today!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "20. What is the difference between stats and eventstats commands?",
+        "answer": "The stats command generates summary statistics of all the existing fields in the search results and saves them as values in new fields.\nEventstats is similar to the stats command, except that the aggregation results are added inline to each event and only if the aggregation is pertinent to that event. The eventstats command computes requested statistics, much like how stats do, but aggregates them to the original raw data.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "21. Who are the top direct competitors to Splunk?",
+        "answer": "Logstash, Loggly, LogLogic, Sumo Logic, etc. are some of the top direct competitors to Splunk.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "22. What do Splunk licenses specify?",
+        "answer": "Splunk licenses specify how much data we can index per calendar day.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "23. How does Splunk determine 1 day, from a licensing perspective?",
+        "answer": "In terms of licensing, for Splunk, one day is from midnight to midnight on the clock of the license master.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "24. How are forwarder licenses purchased?",
+        "answer": "They are included in Splunk. Therefore, there is no need to purchase them separately.\nInterested in learning Splunk? Go for the online instructor-led Splunk Training in Toronto!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "25. What is the command for restarting Splunk web server?",
+        "answer": "This is another frequently asked Splunk commands interview question. Get a thorough idea of commands We can restart the Splunk web server by using the following command:\nsplunk start splunkweb",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "26. What is the command for restarting the Splunk Daemon?",
+        "answer": "Splunk Deamon can be restarted with the below command:\nsplunk start splunkd",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "27. What is the command used to check the running Splunk processes on Unix/Linux?",
+        "answer": "If we want to check the running Splunk Enterprise processes on Unix/Linux, we can make use of the following command:\nps aux | grep splunk",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "28. What is the command used for enabling Splunk to boot start?",
+        "answer": "To boot start Splunk, we have to use the following command:\n$SPLUNK_HOME/bin/splunk enable boot-start",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "29. How to disable Splunk boot-start?",
+        "answer": "In order to disable Splunk boot-start, we can use the following:\n$SPLUNK_HOME/bin/splunk disable boot-start\nLearn the complete concepts of Splunk from Intellipaat’s Splunk Training in Hyderabad in just 26 hours!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "30. What is a source type in Splunk?",
+        "answer": "The source type is Splunk way of identifying data.\n\nAdvanced Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "31. How to reset the Splunk admin password?",
+        "answer": "Resetting the Splunk admin password depends on the version of Splunk. If we are using Splunk 7.1 and above, then we have to follow the below steps:\nFirst, we have to stop our Splunk Enterprise\nNow, we need to find the ‘passwd’ file and rename it to ‘passwd.bk’\nThen, we have to create a file named ‘user-seed.conf’ in the below directory:\n$SPLUNK_HOME/etc/system/local/\nIn the file, we will have to use the following command (here, in place of ‘NEW_PASSWORD’, we will add our own new password):\n[user_info]\n\nPASSWORD = NEW_PASSWORD\nAfter that, we can just restart the Splunk Enterprise and use the new password to log in\nNow, if we are using versions prior to 7.1, we will follow the below steps:\nFirst, stop the Splunk Enterprise\nFind the passwd file and rename it to ‘passw.bk.’\nStart Splunk Enterprise and log in using the default credentials of admin/changeme.\nHere, when asked to enter a new password for our admin account, we will follow the instructions\nNote: In case we have created other users earlier and know their login details, copy and paste their credentials from the passwd.bk file into the passwd file and restart Splunk.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "32. How to disable the Splunk launch message?",
+        "answer": "Set value OFFENSIVE=Less in splunk_launch.conf\nLearn more from Intellipaat’s insightful Splunk Tutorial!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "33. How to clear the Splunk search history?",
+        "answer": "We can clear the Splunk search history by deleting the following file from the Splunk server:\n$splunk_home/var/log/splunk/searches.log",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "34. What is Btool? How will you troubleshoot Splunk configuration files?",
+        "answer": "Splunk Btool is a command-line tool that helps us troubleshoot configuration file issues or just see what values are being used by our Splunk Enterprise installation in the existing environment.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "35. What is the difference between the Splunk app and Splunk add-ons?",
+        "answer": "In fact, both contain preconfigured configuration, reports, etc., but the Splunk add-on does not have a visual app. On the other hand, a Splunk app has a preconfigured visual app.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "36. What is the ‘.conf’ file’s precedence in Splunk?",
+        "answer": "File precedence is as follows:\nSystem local directory — highest priority\nApp local directories\nApp default directories\nSystem default directory — lowest priority",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "37. What is a fishbucket? What is a fishbucket index?",
+        "answer": "Fishbucket is a directory or index at the default location:\n/opt/splunk/var/lib/splunk\nIt contains seek pointers and CRCs for the files we are indexing, so ‘splunkd’ can tell us if it has read them already. We can access it through the GUI by searching for:\nindex=_thefishbucket\nAre you interested in learning about Splunk from experts? Intellipaat’s Splunk Course in Bangalore is the right choice!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "38. How do I exclude some events from being indexed by Splunk?",
+        "answer": "This can be done by defining a regex to match the necessary event(s) and sending everything else to NullQueue. Here is a basic example that will drop everything except events that contain the string login:\nIn props.conf:\n<code>[source::/var/log/foo]\n\n# Transforms must be applied in this order\n\n# to make sure events are dropped on the\n\n# floor prior to making their way to the\n\n# index processor\n\nTRANSFORMS-set= setnull,setparsing\n\n</code>\nIn transforms.conf:\n[setnull] REGEX = . DEST_KEY = queue FORMAT = nullQueue\n\n[setparsing]\n\nREGEX = login\n\nDEST_KEY = queue\n\nFORMAT = indexQueue",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "39. How can I understand when Splunk has finished indexing a log file?",
+        "answer": "We can figure this out:\nBy watching data from Splunk’s metrics log in real-time:\nindex=\"_internal\" source=\"*metrics.log\" group=\"per_sourcetype_thruput\" series=\"<your_sourcetype_here>\" |eval MB=kb/1024 | chart sum(MB)\nBy watching everything split by source type:\nindex=\"_internal\" source=\"*metrics.log\" group=\"per_sourcetype_thruput\" | eval MB=kb/1024 | chart sum(MB) avg(eps) over series\nIf we are having trouble with data input and we want a way to troubleshoot it, particularly if our whitelist/blacklist rules are not working the way we expected, we will go to the following URL:\nhttps://yoursplunkhost:8089/services/admin/inputstatus\nFor more on these, visit our Splunk Community!",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "40. How to set the default search time in Splunk 6?",
+        "answer": "To do this in Splunk Enterprise 6.0, we have to use ‘ui-prefs.conf’. If we set the value in the following, all our users would see it as the default setting:\n$SPLUNK_HOME/etc/system/local\nFor example, if our\n$SPLUNK_HOME/etc/system/local/ui-prefs.conf file\nincludes:\n[search]\ndispatch.earliest_time = @d\ndispatch.latest_time = now\nThe default time range that all users will see in the search app will be today.\nThe configuration file reference for ui-prefs.conf is here:\nhttp://docs.splunk.com/Documentation/Splunk/latest/Admin/Ui-prefsconf",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "41. What is a dispatch directory?",
+        "answer": "$SPLUNK_HOME/var/run/splunk/dispatch\ncontains a directory for each search that is running or has completed. For example, a directory named 1434308943.358 will contain a CSV file of its search results, a search.log with details about the search execution, and other stuff. Using the defaults (which we can override in limits.conf), these directories will be deleted 10 minutes after the search completes—unless the user saves the search results, in which case the results will be deleted after 7 days.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "42. What is the difference between search head pooling and search head clustering?",
+        "answer": "Both are features provided by Splunk for the high availability of Splunk search head in case any search head goes down. However, the search head cluster feature has only recently been introduced, while the search head pooling feature will be removed in the next few versions.\nThe search head cluster is managed by a captain, and the captain controls its slaves. The search head cluster is more reliable and efficient than the search head pooling.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "43. If I want to add folder access logs from a windows machine to Splunk, how do I do it?",
+        "answer": "Below are the steps to add folder access logs to Splunk:\nEnable Object Access Audit through group policy on the Windows machine on which the folder is located\nEnable auditing on a specific folder for which we want to monitor logs\nInstall the Splunk universal forwarder on the Windows machine.\nConfigure the universal forwarder to send security logs to the Splunk indexer.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "44. How would you handle/troubleshoot a Splunk license violation warning?",
+        "answer": "A license violation warning implies that Splunk has indexed more data than our purchased license quota. We have to identify which index/source type has received more data recently than the usual daily data volume. We can check the Splunk license master pool-wise available quota and identify the pool in which the violation has occurred. Once we identify the pool that is receiving more data, we have to identify the top source type that is receiving more data than usual. Once the source type is also identified, we find the source machine that is sending the huge number of logs and, in turn, the root cause for the same, and troubleshoot it accordingly.\nFind out how Splunk’s machine learning can transform your business operations, and help you make better, data-driven decisions.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "45. What is MapReduce algorithm?",
+        "answer": "MapReduce algorithm is the secret behind Splunk’s faster data searching. It’s an algorithm typically used for batch-based large-scale parallelization. It’s inspired by functional programming’s map() and reduce() functions.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "46. How does Splunk avoid the duplicate indexing of logs?",
+        "answer": "At the indexer, Splunk keeps track of the indexed events in a directory called Fishbucket with the following default location:\n/opt/splunk/var/lib/splunk\nIt contains seek pointers and CRCs for the files we are indexing, so splunkd can tell us if it has read them already.\nSee more at:\nhttp://www.learnsplunk.com/splunk-indexer-configuration.html#sthash.t1ixi19P.dpuf.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "47. What is the difference between the Splunk SDK and the Splunk Framework?",
+        "answer": "Splunk SDKs are designed to allow us to develop applications from scratch; they do not require Splunk Web or any components from the Splunk App Framework. These are separately licensed from Splunk, and they do not alter the Splunk software.\nSplunk App Framework resides within the Splunk web server and permits us to customize the Splunk Web UI that comes with the product and develop Splunk apps using the Splunk web server. It is an important part of the features and functionalities of Splunk, which does not license users to modify anything in Splunk.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "48. For what purpose inputlookup and outputlookup are used in Splunk Search?",
+        "answer": "The inputlookup command is used to search the contents of a Splunk lookup table. The lookup table can be a CSV lookup or a KV store lookup. The inputlookup command is considered an event-generating command. An event-generating command generates events or reports from one or more indexes without transforming them. There are numerous commands that come under event-generating commands, including metadata, loadjob, inputcsv, etc. The inputlookup command is event-generating.\nSyntax:\ninputlookup [append=] [start=] [max=] [ | ] [WHERE ]\nNow coming to the outputlookup command, it writes the search results to a static lookup table, or KV store collection, that we specify. The outputlookup command is not being used with external lookups.\nSyntax:\noutputlookup [append=<bool>] [create_empty=<bool>] [max=<int>] [key_field=<field_name>] [createinapp=<bool>] [override_if_empty=<bool>] (<filename> | <tablename>)\n\nSplunk Admin Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "49. Explain how Splunk works.",
+        "answer": "We can divide the working of Splunk into three main parts:\nForwarder: You can see it as a dumb agent whose main task is to collect the data from various sources like remote machines and transfer it to the indexer.\nIndexer: The indexer processes the data in real time and stores and indexes it on the localhost or cloud server.\nSearch Head: It allows the end-user to interact with the data and perform various operations like searching, analyzing, and visualizing the information.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "50. How to add the colors in Splunk UI based on the field names?",
+        "answer": "Splunk UI has a number of features that allow the administrator to make the reports more presentable. One such feature that proves to be very useful for presenting distinguished results is the custom colors. For example, if the sales of a product drop below a threshold value, then as an administrator you can set the chart to display the values in red color.\nThe administrator can also change chart colors in the Splunk Web UI by editing the panels from the panel settings mentioned above the dashboard. Moreover, you can write the codes and use hexadecimal values to choose a color from the palette.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "51. How the Data Ages in Splunk?",
+        "answer": "The data that is entering an indexer gets sorted into directories, which are also known as buckets. Over a period of time, these buckets roll over different stages, from hot to warm, cold to frozen, and finally thawed. The indexer goes through a pipeline where event processing takes place. It occurs in two stages: parsing breaks them into individual events, while indexing takes these events into the pipeline for processing.\n\nThis is what happens to the data at each stage of the indexing pipeline:\nAs soon as the data center the pipeline, it goes to the hot bucket. There can be multiple hot buckets at any point in time, which you can both search and write to.\nIf any problem like the Splunk getting restarted or the hot bucket has reached a certain threshold value/size, then a new bucket will be created in its place and the existing ones roll to become a warm bucket. These warm buckets are searchable, but you cannot write anything in them.\nFurther, if the indexer reaches its maximum capacity, the warm bucket will be rolled to become a cold one. Splunk will automatically execute the process by selecting the oldest warm bucket from the pipeline. However, it doesn’t rename the bucket. All the above buckets will be stored in the default location ‘$SPLUNK_HOME/var/lib/splunk/defaultdb/db/*’.\nAfter a certain period of time, the cold bucket rolls to become the frozen bucket. These buckets don’t have the same location as the previous buckets and are non-searchable. These buckets can either be archived or deleted based on the priorities.\nYou can’t do anything if the bucket is deleted, but you can retrieve the frozen bucket if it’s being archived. The process of retrieving an archived bucket is known as thawing. Once a bucket is thawed it becomes searchable and stores into a new location\n‘$SPLUNK_HOME/var/lib/splunk/defaultdb/thaweddb/’",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "52. What are pivots and data models in Splunk?",
+        "answer": "Data models in Splunk are used when you have to process huge amounts of unstructured data and create a hierarchical model without executing complex search queries on the data. Data models are widely used for creating sales reports, adding access levels, and creating a structure of authentication for various applications.\nPivots, on the other hand, give you the flexibility to create multiple views and see the results as per the requirements. With pivots, even the managers of stakeholders from non-technical backgrounds can create views and get more details about their departments.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "53. Explain workflow actions.",
+        "answer": "This topic will be present in any set of Splunk interview questions and answers. Workflow actions in Splunk are referred to as highly configurable, knowledge objects that enable you to interact with web resources and other fields. Splunk workflow actions can be used to create HTML links and use them to search field values, put HTTP post requests for specific URLs, and run secondary searches for selected events.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "54. How many types of dashboards are available in Splunk?",
+        "answer": "There are three types of dashboards available in Splunk:\nReal-time dashboards\nDynamic form-based dashboards\nDashboards for scheduled reports",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "55. What are the types of alerts available in Splunk?",
+        "answer": "Alerts are the actions generated by a saved search result after a certain period of time. Once an alert has occurred, subsequent actions like sending an email or a message will also be triggered. There are two types of alters available in Splunk, which are mentioned below:\nTypes of alters available in Splunk:\nReal-Time Alerts: We can divide the real-time alerts into two parts: pre-result and rolling-window alerts. The pre-result alert gets triggered with every search, while rolling-window alerts are triggered when a specific criterion is met by the search.\nScheduled Alerts: As the name suggests, scheduled alerts can be initialized to trigger multiple alerts based on the set criteria.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "56. Define the terms ‘search factor’ and ‘replication factor.’",
+        "answer": "Search factor: The search factor (SF) decides the number of searchable copies an indexer cluster can maintain of the data/bucket. For example, the search factor value of 3 shows that the cluster can maintain up to 3 copies of each bucket.\nReplication factor: The replication factor (RF) determines the number of users that can receive copies of your data/buckets. However, the search factor should not be greater than the replication factor.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "57. How to stop/start the Splunk service?",
+        "answer": "The command for starting Splunk service:\n./splunk start\nThe command for stopping Splunk service:\n./splunk stop",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "58. What is the use of a ‘time zone’ property in Splunk?",
+        "answer": "Time Zone is an important property that helps you search for the events in case any fraud or security issue occurs. The default time zone will be taken from the browser settings or the machine you are using. Apart from event searching, it is also used in data pouring from multiple sources and aligns them based on different time zones.",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "59. What are the important Search commands in Splunk?",
+        "answer": "Below are some of the important search commands in Splunk:\nErex\nAbstract\nTyper\nRename\nAnomalies\nFill down\nAccum\nAdd totals",
+        "reference": "intellipaat.com",
+        "role": "splunk"
+    },
+    {
+        "question": "1. What is Splunk used for?",
+        "answer": "In general, machine data is difficult to understand and has an unstructured format (not arranged as per pre-defined data model), making it unsuitable for analysis and visualization of data. Splunk is the perfect tool for tackling such problems. Splunk is used to analyze machine data for several reasons:   Provides business insights: The Splunk platform analyzes machine data for patterns and trends, providing operational insights that assist businesses in making smarter decisions for the profitability of the organization.\nEnhances operational visibility: Splunk obtains a comprehensive view of overall operations based on machine data and then aggregates it across the entire infrastructure.\nEnsures proactive monitoring: Splunk employs a real-time analysis of machine data to discover system errors and vulnerabilities (external/internal breaches and intrusions).\nSearch and Investigation: Splunk uses machine data to pinpoint and fix problems by correlating events across numerous data sources and detecting patterns in large datasets. Provides business insights: The Splunk platform analyzes machine data for patterns and trends, providing operational insights that assist businesses in making smarter decisions for the profitability of the organization. Provides business insights: Enhances operational visibility: Splunk obtains a comprehensive view of overall operations based on machine data and then aggregates it across the entire infrastructure. Enhances operational visibility: Ensures proactive monitoring: Splunk employs a real-time analysis of machine data to discover system errors and vulnerabilities (external/internal breaches and intrusions). Ensures proactive monitoring: Search and Investigation: Splunk uses machine data to pinpoint and fix problems by correlating events across numerous data sources and detecting patterns in large datasets. Search and Investigation:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "2. Can you explain how Splunk works?",
+        "answer": "In order to use Splunk in your infrastructure, you must understand how Splunk performs on the internal level. In general, Splunk processes data in three stages: three stages   Data Input Stage: This stage involves Splunk consuming raw data not from a single, but from many sources, breaking it up into 64K blocks, and annotating each block with metadata keys. A metadata key includes the hostname, source, and source type of the data.\nData Storage Stage: In this stage, two different phases are performed, Parsing and Indexing.\nIn the Parsing phase, Splunk analyzes the data, transforms it, and extracts only the relevant information. This is also called \"event processing,\" since it breaks down the data sets into different events.\nDuring the indexing phase, Splunk software writes the parsed events into the index queue. One of the main benefits of using this is to make sure the data is easily accessible for anyone during the search.\nData Searching Stage: This stage usually controls how the index data is accessed, viewed, and used by the user. Reports, event types, dashboards, visualization, alerts, and other knowledge objects can be created based on the user's reporting requirements. Data Input Stage: This stage involves Splunk consuming raw data not from a single, but from many sources, breaking it up into 64K blocks, and annotating each block with metadata keys. A metadata key includes the hostname, source, and source type of the data. Data Input Stage: Data Storage Stage: In this stage, two different phases are performed, Parsing and Indexing.\nIn the Parsing phase, Splunk analyzes the data, transforms it, and extracts only the relevant information. This is also called \"event processing,\" since it breaks down the data sets into different events.\nDuring the indexing phase, Splunk software writes the parsed events into the index queue. One of the main benefits of using this is to make sure the data is easily accessible for anyone during the search. Data Storage Stage: In the Parsing phase, Splunk analyzes the data, transforms it, and extracts only the relevant information. This is also called \"event processing,\" since it breaks down the data sets into different events.\nDuring the indexing phase, Splunk software writes the parsed events into the index queue. One of the main benefits of using this is to make sure the data is easily accessible for anyone during the search. In the Parsing phase, Splunk analyzes the data, transforms it, and extracts only the relevant information. This is also called \"event processing,\" since it breaks down the data sets into different events. During the indexing phase, Splunk software writes the parsed events into the index queue. One of the main benefits of using this is to make sure the data is easily accessible for anyone during the search. Data Searching Stage: This stage usually controls how the index data is accessed, viewed, and used by the user. Reports, event types, dashboards, visualization, alerts, and other knowledge objects can be created based on the user's reporting requirements. Data Searching Stage:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "3. What are the main components of Splunk Architecture?",
+        "answer": "As shown below, Splunk Architecture is composed of three main components:   Splunk Forwarder: These are components that you use to collect machine data/logs. This is responsible for gathering and forwarding real-time data with less processing power to Indexer.  Splunk forwarder performs cleansing of data depending on the type of forwarder used (Universal or Heavy forwarder).\nSplunk Indexer: The indexer allows you to index i.e., transform raw data into events and then store the results data coming from the forwarder. Incoming data is processed by the indexer in real-time. Forwarder transforms data into events and stores them in indexes to enable search operations to be performed efficiently.\nSearch Head: This component is used to interact with Splunk. It lets users perform various operations like performing queries, analysis, etc., on stored data through a graphical user interface. Users can perform searches, analyze data, and report results. Splunk Forwarder: These are components that you use to collect machine data/logs. This is responsible for gathering and forwarding real-time data with less processing power to Indexer.  Splunk forwarder performs cleansing of data depending on the type of forwarder used (Universal or Heavy forwarder). Splunk Forwarder: Splunk Indexer: The indexer allows you to index i.e., transform raw data into events and then store the results data coming from the forwarder. Incoming data is processed by the indexer in real-time. Forwarder transforms data into events and stores them in indexes to enable search operations to be performed efficiently. Splunk Indexer: Search Head: This component is used to interact with Splunk. It lets users perform various operations like performing queries, analysis, etc., on stored data through a graphical user interface. Users can perform searches, analyze data, and report results. Search Head:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "4. Write different types of Splunk forwarder.",
+        "answer": "A forwarder is a Splunk instance or agent you deploy on IT systems, which collects machine logs and sends them to the indexer. You can choose between two types of forwarders: Universal Forwarder: A universal forwarder is ideal for sending raw data collected at the source to an indexer without any prior processing. Basically, it's a component that performs minimal processing before forwarding incoming data streams to an indexer. Although it is faster, it also results in a lot of unnecessary information being forwarded to the indexer, which will result in higher performance overhead for the indexer.\nHeavy Forwarder: You can eliminate half of your problems using a heavy forwarder since one level of data processing happens at the source before forwarding the data to the indexer. Parsing and indexing take place on the source machine and only data events that are parsed are sent to the indexer. Universal Forwarder: A universal forwarder is ideal for sending raw data collected at the source to an indexer without any prior processing. Basically, it's a component that performs minimal processing before forwarding incoming data streams to an indexer. Although it is faster, it also results in a lot of unnecessary information being forwarded to the indexer, which will result in higher performance overhead for the indexer. Universal Forwarder: Heavy Forwarder: You can eliminate half of your problems using a heavy forwarder since one level of data processing happens at the source before forwarding the data to the indexer. Parsing and indexing take place on the source machine and only data events that are parsed are sent to the indexer. Heavy Forwarder:  ",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "5. What are the advantages of getting data into a Splunk instance through Forwarders?",
+        "answer": "Data entering into Splunk instances via forwarders has many advantages including bandwidth throttling, a TCP connection, and an encrypted SSL connection between the forwarder and indexer. By default, data forwarded to the indexers are also load-balanced, and if one indexer goes down for any reason, that data can always be routed to another indexer instance in a very short amount of time. Furthermore, the forwarder stores the data events locally before forwarding them, creating a temporary backup of the data.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "6. What do you mean by Splunk Dashboards and write its type?",
+        "answer": "In a dashboard, tables, charts, event lists, etc., are used to represent data visualizations, and they do so by using panels. Dashboard panels present or display chart data, table data, or summarized data visually in a pleasing manner. On the same dashboard, we can add multiple panels, and therefore multiple reports and charts. Splunk is a popular data platform with lots of customization options and dashboard options. There are three kinds of the dashboard you can create with Splunk: Dynamic form-based dashboards: They allow Splunk users to change the dashboard data based on values entered in input fields without leaving the page. A dashboard can be customized by adding input fields (such as time, radio buttons, text boxes, checkboxes, dropdowns, and so on) that change the data, depending on the selection made. Dashboards of this type are useful for troubleshooting issues and analyzing data.\nStatic Real-time Dashboards: They are often displayed on a large screen for constant viewing. It also provides alerts and indicators to prompt quick responses from relevant personnel.\nScheduled Dashboards: These dashboards can be downloaded as PDF files and shared with team members at predetermined intervals. There are times when active live dashboards can only be viewed by certain viewers/users only. Dynamic form-based dashboards: They allow Splunk users to change the dashboard data based on values entered in input fields without leaving the page. A dashboard can be customized by adding input fields (such as time, radio buttons, text boxes, checkboxes, dropdowns, and so on) that change the data, depending on the selection made. Dashboards of this type are useful for troubleshooting issues and analyzing data. Dynamic form-based dashboards Static Real-time Dashboards: They are often displayed on a large screen for constant viewing. It also provides alerts and indicators to prompt quick responses from relevant personnel. Static Real-time Dashboards: Scheduled Dashboards: These dashboards can be downloaded as PDF files and shared with team members at predetermined intervals. There are times when active live dashboards can only be viewed by certain viewers/users only. Scheduled Dashboards Some of the Splunk dashboard examples include security analytics dashboard, patient treatment flow dashboard, eCommerce website monitoring dashboard, exercise tracking dashboard, runner data dashboard, etc.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "7. Explain Splunk Query.",
+        "answer": "Splunk queries allow specific operations to be run on machine-generated data. Splunk queries communicate with a database or source of data by using SPL (Search Processing Language). This language contains many functions, arguments, commands, etc., that can be used to extract desired information from machine-generated data. This makes it possible for users to analyze their data by running queries. Similar to SQL, it allows users to update, query, and change data in databases. It is primarily used to analyze log files and extract reference information from machine-generated data. In particular, it is beneficial to companies that have a variety of data sources and need to process and analyze them simultaneously in order to produce real-time results.  ",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "8. What are different types of Splunk License?",
+        "answer": "A license is required for each Splunk instance. With Splunk, you receive a license that specifies which features you can use and how much data can be indexed. Various Splunk License types include: The Splunk Enterprise license: Among all Splunk license types, Enterprise licenses are the most popular. These licenses give users access to all the features of Splunk Enterprise within a specified limit of indexed data or vCPU usage per day. These licenses include enterprise features such as authentication and distributed search. Several types of Splunk Enterprise licenses are available, including the Splunk for Industrial IoT license and Splunk Enterprise Trial license.\nThe Free license: Under the Free license, Splunk Enterprise is completely free to use with limited functionality. Some features are not available under this license, such as authentication. Only a limited amount of data can be indexed.\nThe Forwarder license: A Forwarder license enables unlimited forwarding of data, as well as a subset of the Splunk Enterprise features that are required for authentication, configuration management, and sending data.\nThe Beta license: Each Splunk beta release requires a separate beta license, which cannot be used with other Splunk releases. With a beta license, Splunk Enterprise features are enabled for a specific beta release period. The Splunk Enterprise license: Among all Splunk license types, Enterprise licenses are the most popular. These licenses give users access to all the features of Splunk Enterprise within a specified limit of indexed data or vCPU usage per day. These licenses include enterprise features such as authentication and distributed search. Several types of Splunk Enterprise licenses are available, including the Splunk for Industrial IoT license and Splunk Enterprise Trial license. The Splunk Enterprise license: The Free license: Under the Free license, Splunk Enterprise is completely free to use with limited functionality. Some features are not available under this license, such as authentication. Only a limited amount of data can be indexed. The Free license: The Forwarder license: A Forwarder license enables unlimited forwarding of data, as well as a subset of the Splunk Enterprise features that are required for authentication, configuration management, and sending data. The Forwarder license: The Beta license: Each Splunk beta release requires a separate beta license, which cannot be used with other Splunk releases. With a beta license, Splunk Enterprise features are enabled for a specific beta release period. The Beta license:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "9. What is the importance of License Master in Splunk? If the License Master is not reachable, what will happen?",
+        "answer": "It is the responsibility of the license master in Splunk to ensure that the limited amount of data is indexed. Since each Splunk license is based on the amount of data that is coming into the platform in 24 hours, it is essential to keep the environment within the limits of its purchased volume. Whenever the license master becomes unavailable, it is simply impossible to search the data. Therefore, only searching remains halted while the indexing of data continues. Data entering the Indexer won't be impacted. Your Splunk deployment will continue to receive data, and the Indexers will continue to index the data as usual. However, upon exceeding the indexing volume, you will receive a warning message on top of your Search head or web interface so that you can either reduce your data intake or purchase a larger capacity license.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "10. Explain License violation. How will you handle or troubleshoot a license violation warning?",
+        "answer": "License violations occur after a series of license warnings, and license warnings occur when your daily indexing volume exceeds the license's limit. Getting multiple license warnings and exceeding the maximum warning limit for your license will result in a license violation. With a Splunk commercial license, users can receive five warnings within a 30-day period before Indexer stops triggering search results and reports. Users of the free version, however, will only receive three warnings.   Avoid License Warning: Avoid License Warning: Monitor your license usage over time and ensure that you have enough license volume to meet your daily needs.\nViewing the license usage report in the license master can help troubleshoot index volume.\nIn the monitoring console, set up an alert to track daily license usage. Monitor your license usage over time and ensure that you have enough license volume to meet your daily needs. Viewing the license usage report in the license master can help troubleshoot index volume. In the monitoring console, set up an alert to track daily license usage. Troubleshoot License Violation Warning: Troubleshoot License Violation Warning: Determine which index/source type recently received more data than usual.\nSplunk Master license pool-wise quotas can be checked to identify the pool for which the violation occurred.\nOnce we know which pool is receiving more data, then we need to determine which source type is likely to be receiving more than normal data.\nHaving identified the source type, the next step is to find out which machine is sending so many logs and the reason behind it.\nWe can then troubleshoot the problem accordingly. Determine which index/source type recently received more data than usual. Splunk Master license pool-wise quotas can be checked to identify the pool for which the violation occurred. Once we know which pool is receiving more data, then we need to determine which source type is likely to be receiving more than normal data. Having identified the source type, the next step is to find out which machine is sending so many logs and the reason behind it. We can then troubleshoot the problem accordingly.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "11. Write down some common Splunk ports.",
+        "answer": "The following are common ports used by Splunk: Web Port: 8000 \nManagement Port: 8089 \nNetwork port: 514 \nIndex Replication Port: 8080 \nIndexing Port: 9997 \nKV store: 8191 Web Port: 8000 Management Port: 8089 Network port: 514 Index Replication Port: 8080 Indexing Port: 9997 KV store: 8191",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "12. Explain Splunk Database (DB) Connect.",
+        "answer": "Splunk Database (DB) Connect is a general-purpose SQL (Structured Query Language) database extension/plugin for Splunk that permits easy integration between database information and Splunk queries/reports. Splunk DB Connect is effectively used to combine structured data from databases with unstructured machine data, and Splunk Enterprise can then be used to uncover insights from the combined data. Some of the benefits of using Splunk Database Connect connect are as follows: benefits By using Splunk DB Connect, you are adding new data inputs for Splunk Enterprise, i.e., adding additional sources of data to Splunk Enterprise. Splunk DB Connect lets you import your database tables, rows, and columns directly into Splunk Enterprise, which then indexes them. Once that relational data is within Splunk Enterprise, you can analyze and visualize it the same way you would any other Splunk Enterprise data.\nIn addition, Splunk DB Connect enables you to write your Splunk Enterprise data back to your relational databases.\nWith DB Connect, you can reference fields from an external database that match fields in your event data, using the Database Lookup feature. This way, you can enrich your event data with more meaningful information. By using Splunk DB Connect, you are adding new data inputs for Splunk Enterprise, i.e., adding additional sources of data to Splunk Enterprise. Splunk DB Connect lets you import your database tables, rows, and columns directly into Splunk Enterprise, which then indexes them. Once that relational data is within Splunk Enterprise, you can analyze and visualize it the same way you would any other Splunk Enterprise data. In addition, Splunk DB Connect enables you to write your Splunk Enterprise data back to your relational databases. With DB Connect, you can reference fields from an external database that match fields in your event data, using the Database Lookup feature. This way, you can enrich your event data with more meaningful information.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "13. What are different versions of the Splunk product?",
+        "answer": "Splunk products come in three different versions as follows: three Splunk Enterprise: A number of IT companies use Splunk Enterprise. This software analyzes data from diverse websites, applications, devices, sensors, etc. Data from your IT or business infrastructure can be searched, analyzed, and visualized using this program.\nSplunk Cloud: It is basically a SaaS (Software as a Service) offering many of the same features as enterprise versions, including APIs, SDKs, etc. User logins, lost passwords, failed login attempts, and server restarts can all be tracked and sorted.\nSplunk Light: This is a free version of Splunk which allows you to view, search, and edit your log data. This version has fewer capabilities and features than other versions. Splunk Enterprise: A number of IT companies use Splunk Enterprise. This software analyzes data from diverse websites, applications, devices, sensors, etc. Data from your IT or business infrastructure can be searched, analyzed, and visualized using this program. Splunk Enterprise: Splunk Cloud: It is basically a SaaS (Software as a Service) offering many of the same features as enterprise versions, including APIs, SDKs, etc. User logins, lost passwords, failed login attempts, and server restarts can all be tracked and sorted. Splunk Cloud: Splunk Light: This is a free version of Splunk which allows you to view, search, and edit your log data. This version has fewer capabilities and features than other versions. Splunk Light:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "14. Name some of the features that are not available in the Splunk free version.",
+        "answer": "The free version of Splunk lacks the following features: Distributed searching\nForwarding of data through HTTP or TCP (to non-Splunk)\nAgile reporting and statistics based on a real-time architecture\nScheduled searches/alerts and authentication\nManaging deployments. Distributed searching Forwarding of data through HTTP or TCP (to non-Splunk) Agile reporting and statistics based on a real-time architecture Scheduled searches/alerts and authentication Managing deployments.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "15. Explain Splunk alerts and write about different options available while setting up alerts.",
+        "answer": "Splunk alerts are actions that get triggered when a specific criterion is met; these conditions are defined by the user. You can use Splunk Alerts to be notified whenever anything goes awry with your system. For instance, the user can set up Alerts so that an email notification will be sent to the admin when three unsuccessful login attempts are made within 24 hours. The following options are available when setting up alerts: A webhook can be created to send messages to Hipchat or Github. With this email, you can send a message to a group of machines along with a subject, priority, and message body.\nResults can be attached as .csv files, pdf files, or inline with the message body to ensure the recipient understands what alerts have been fired, at what conditions, and what actions have been taken.\nYou can also create tickets and control alerts based on conditions such as an IP address or machine name. As an example, if a virus outbreak occurs, you do not want every alert to be triggered as it will create a lot of tickets in your system, which will be overwhelming. Such alerts can be controlled from the alert window. A webhook can be created to send messages to Hipchat or Github. With this email, you can send a message to a group of machines along with a subject, priority, and message body. Results can be attached as .csv files, pdf files, or inline with the message body to ensure the recipient understands what alerts have been fired, at what conditions, and what actions have been taken. You can also create tickets and control alerts based on conditions such as an IP address or machine name. As an example, if a virus outbreak occurs, you do not want every alert to be triggered as it will create a lot of tickets in your system, which will be overwhelming. Such alerts can be controlled from the alert window.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "16. What do you mean by Summary Index in Splunk?",
+        "answer": "Summary indexes store analyses, reports, and summaries computed by Splunk. This is an inexpensive and fast way to run a query for a long period of time. Essentially, it is the default index that Splunk Enterprise uses if there isn't another one specified by the user. Among the key features of the Summary Index is that you can retain the analytics and reports even after the data has gotten older.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "17. What is the way to exclude certain events from being indexed by Splunk?",
+        "answer": "In the case where you do not wish to index all of your events in Splunk, what can you do to prevent the entry of those events into Splunk? Debug messages are a good example of this in your application development cycle. Such debug messages can be excluded by putting them in the null queue. This is achieved by specifying a regex that matches the necessary events and sending the rest to the NULL queue. Null queues are defined at the forwarder level in transforms.conf. Below is an example that drops all events except those containing the debug message. In props.conf In props.conf [source::/var/log/foo]  \n#By applying transforms in this order   \n#events will be dropped to the floor   \n#before being routed to the index processor  \nTRANSFORMS-set = setnull, setparsing [source::/var/log/foo]  \n#By applying transforms in this order   \n#events will be dropped to the floor   \n#before being routed to the index processor  \nTRANSFORMS-set = setnull, setparsing In transforms.conf In transforms.conf [setnull]  \nREGEX = .  \nDEST_KEY = queue  \nFORMAT = nullQueue  \n[setparsing]  \nREGEX = debugmessage  \nDEST_KEY = queue  \nFORMAT = indexQueue [setnull]  \nREGEX = .  \nDEST_KEY = queue  \nFORMAT = nullQueue  \n[setparsing]  \nREGEX = debugmessage  \nDEST_KEY = queue  \nFORMAT = indexQueue",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "18. Write the commands used to start/stop the Splunk service.",
+        "answer": "The following commands can be used to start and stop Splunk services: Start Splunk service ./splunk start\nStop Splunk service ./splunk stop\nRestart Splunk service ./splunk restart Start Splunk service ./splunk start ./splunk start Stop Splunk service ./splunk stop ./splunk stop Restart Splunk service ./splunk restart splunk restart",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "19. What is the importance of time zone property in Splunk?",
+        "answer": "A time zone is a crucial factor to consider when searching for events from a fraud or security perspective. This is because Splunk uses the time zone defined by your browser. Your browser then picks up the time zone associated with the machine/computer system you're working on. So, you will not be able to find your desired event if you search for it in the wrong time zone. The timezone is picked up by Splunk when data is entered, and it is particularly important when you are searching and comparing data from different sources. You can, for instance, look for events coming in at 4:00 PM IST, for your London data centre, or for your Singapore data centre, etc. The timezone property is therefore vital when correlating such events.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "20. State difference between Splunk app and add-on.",
+        "answer": "Generally, Splunk applications and add-ons are separate entities, but both have the same extension, i.e., SPL files. Splunk Apps: A Splunk app extends Splunk functionality with its own inbuilt user interface. Each of these apps are separate and serves a specific purpose. Each Splunk app consists of a collection of Splunk knowledge objects (lookups, tags, saved searches, event types, etc). They can also make use of other Splunk apps or add-ons. Multiple apps can be run simultaneously in Splunk. Several apps offer the option of restricting or limiting the amount of information a user can access. By controlling access levels, the user has access to only the information that is necessary for him and not the rest. You can open apps from the Splunk Enterprise homepage or through the App menu or in the Apps section of the Settings page. \nExample: Splunk Enterprise Security App, etc.\nSplunk Add-on: These are types of applications that are built on top of the Splunk platform that add features and functionality to other apps, such as allowing users to import data, map data, save searches, macros. Add-ons typically do not run as standalone apps, rather they are reusable components that support other apps in different scenarios. Most of the time, it is used as a framework, where a team leverages its functionality to some extent and creates something new on top of it. As a rule, they do not have navigable user interfaces. You cannot open an Add-on from the Splunk Enterprise homepage or app menu. \nExamples: Splunk Add-on for Checkpoint OPSEC LEA, Splunk Add-on for EMC VNX or the Splunk Common Information Model Add-on. Splunk Apps: A Splunk app extends Splunk functionality with its own inbuilt user interface. Each of these apps are separate and serves a specific purpose. Each Splunk app consists of a collection of Splunk knowledge objects (lookups, tags, saved searches, event types, etc). They can also make use of other Splunk apps or add-ons. Multiple apps can be run simultaneously in Splunk. Several apps offer the option of restricting or limiting the amount of information a user can access. By controlling access levels, the user has access to only the information that is necessary for him and not the rest. You can open apps from the Splunk Enterprise homepage or through the App menu or in the Apps section of the Settings page. \nExample: Splunk Enterprise Security App, etc. Splunk Apps:  Example Example Splunk Add-on: These are types of applications that are built on top of the Splunk platform that add features and functionality to other apps, such as allowing users to import data, map data, save searches, macros. Add-ons typically do not run as standalone apps, rather they are reusable components that support other apps in different scenarios. Most of the time, it is used as a framework, where a team leverages its functionality to some extent and creates something new on top of it. As a rule, they do not have navigable user interfaces. You cannot open an Add-on from the Splunk Enterprise homepage or app menu. \nExamples: Splunk Add-on for Checkpoint OPSEC LEA, Splunk Add-on for EMC VNX or the Splunk Common Information Model Add-on. Splunk Add-on  Examples: Examples:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "21. Mention some important configuration files in Slunk.",
+        "answer": "Configuration files that are of the utmost importance in Splunk are: Props.conf: It configures indexing properties, such as timezone offset, pattern collision priority, custom source type rules, etc.\nIndexes.conf: It configures and manages index settings.\nInputs.conf: It is used to set up data inputs.\nTransforms.conf: It can be used to configure regex transformations to be performed on data inputs.\nServer.conf: There are a variety of settings available for configuring the overall state of the Splunk Enterprise instance. Props.conf: It configures indexing properties, such as timezone offset, pattern collision priority, custom source type rules, etc. Props.conf: Indexes.conf: It configures and manages index settings. Indexes.conf: Inputs.conf: It is used to set up data inputs. Inputs.conf: Transforms.conf: It can be used to configure regex transformations to be performed on data inputs. Transforms.conf: Server.conf: There are a variety of settings available for configuring the overall state of the Splunk Enterprise instance. Server.conf:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "1. State difference between Search head pooling and Search head clustering.",
+        "answer": "Splunk Enterprise instances, also called search heads, distribute search requests to other instances called search peers, that performs the actual data searching and indexing. Results are merged and returned to the user by the search head. You can implement Distributed Search using Search head pooling or Search head clustering in your Splunk deployment. search heads search peers   Search head pooling: Pooling refers to sharing resources in this context. It uses shared storage for configuring multiple search heads to share user data and configuration. Quite simply, it allows you to have multiple search heads so they share user data and configuration. Multiplying search heads facilitate horizontal scaling when a lot of users are searching the same data.\nSearch head clustering: In Splunk Enterprise, a search head cluster is a collection of search heads that are used as a centralized resource for searching. All members of the cluster can access and run the same searches, dashboards, and search results. Search head pooling: Pooling refers to sharing resources in this context. It uses shared storage for configuring multiple search heads to share user data and configuration. Quite simply, it allows you to have multiple search heads so they share user data and configuration. Multiplying search heads facilitate horizontal scaling when a lot of users are searching the same data. Search head pooling: Search head clustering: In Splunk Enterprise, a search head cluster is a collection of search heads that are used as a centralized resource for searching. All members of the cluster can access and run the same searches, dashboards, and search results. Search head clustering:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "2. Name the commands used to enable and disable Splunk boot start.",
+        "answer": "In order to enable Splunk boot-start, we need to use the following command: $SPLUNK_HOME/bin/splunk enable boot-start $SPLUNK_HOME/bin/splunk enable boot-start In order to disable Splunk boot-start, we need to use the following command: $SPLUNK_HOME/bin/splunk disable boot-start $SPLUNK_HOME/bin/splunk disable boot-start Conclusion Are you looking for a new job or trying to build a career in Splunk? There is no doubt that implementing Splunk will transform your business and catapult it to new heights. Therefore, prepare yourself for the most intense job interview because the competition is fierce. Splunk consultants, Splunk developers, Splunk engineers, Splunk specialists, Information security analysts, etc., are in demand. A Splunk career requires knowledge of architectural and configuration points, Splunk files, indexers, forwarders, and others. Hopefully, these Splunk interview questions will assist you in getting into the flow and preparing for your interview. Useful Resources: Useful Resources: IoT Interview Questions\nIoT Applications\nDevOps Interview Questions\nDevOps Engineer\nTop Data Analytics Tools\nTop Big Data Technologies\nData Analyst Interview Questions\nTechnical Interview Questions\nCoding Interview Questions IoT Interview Questions IoT Interview Questions IoT Applications IoT Applications DevOps Interview Questions DevOps Interview Questions DevOps Engineer DevOps Engineer Top Data Analytics Tools Top Data Analytics Tools Top Big Data Technologies Top Big Data Technologies Data Analyst Interview Questions Data Analyst Interview Questions Technical Interview Questions Technical Interview Questions Coding Interview Questions Coding Interview Questions",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "3. Name the commands used to restart Splunk Web Server and Splunk Daemon.",
+        "answer": "In order to restart the Splunk Web Server, we need to use the following command: splunk start splunkweb. splunk start splunkweb In order to restart the Splunk Daemon, we need to use the following command: splunk start splunkd. splunk start splunkd",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "4. Explain how Splunk avoids duplicate indexing of logs.",
+        "answer": "Essentially, Splunk Fishbucket is a subdirectory within Splunk that is used to monitor and track the extent to which the content of a file has been indexed within Splunk. The default location of the fish bucket subdirectory is: /opt/splunk/var/lib/splunk /opt/splunk/var/lib/splunk It generally includes seeking pointers and CRCs (cyclic redundancy checks) for the files we are indexing so that Splunk knows whether it has already read them.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "5. How to reset Splunk Admin (Administrator) password?",
+        "answer": "Depending on your Splunk version, you can reset the Admin password.   In case you have Splunk 7.1 and higher version, then you need to follow these steps: Splunk Enterprise must be stopped first.\nFind and rename ‘passwd’ file to ‘passwd.bk’.\nIn the below directory, create a file named 'user-seed.conf': Splunk Enterprise must be stopped first. Find and rename ‘passwd’ file to ‘passwd.bk’. In the below directory, create a file named 'user-seed.conf': $SPLUNK_HOME/etc/system/local/ $SPLUNK_HOME/etc/system/local/ Enter the following command in the file. 'NEW_PASSWORD' will be replaced by our own new password here. Enter the following command in the file. 'NEW_PASSWORD' will be replaced by our own new password here. [user_info] \nPASSWORD = NEW_PASSWORD [user_info] \nPASSWORD = NEW_PASSWORD Restart Splunk Enterprise and log in with the new password again. Restart Splunk Enterprise and log in with the new password again. If you're using a version prior to 7.1, you need to follow these steps: Splunk Enterprise must be stopped first.\nFind and rename ‘passwd’ file to ‘passwd.bk’.\nUse the default credentials of admin/changeme to log in to Splunk Enterprise.\nIf you're asked to change your admin username and password, just follow the instructions. Splunk Enterprise must be stopped first. Find and rename ‘passwd’ file to ‘passwd.bk’. Use the default credentials of admin/changeme to log in to Splunk Enterprise. If you're asked to change your admin username and password, just follow the instructions.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "6. What is the best way to clear Splunk's search history?",
+        "answer": "The following file on the Splunk server needs to be deleted in order to clear Splunk search history: $splunk_home/var/log/splunk/searches.log. $splunk_home/var/log/splunk/searches.log",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "7. Explain how will you set default search time in Splunk 6.",
+        "answer": "Using 'ui-prefs.conf' in Splunk 6, we can specify the default search time. If we set the value as follows, all users would see it as the default setting: $SPLUNK_HOME/etc/system/local $SPLUNK_HOME/etc/system/local For example, if our $SPLUNK_HOME/etc/system/local/ui-prefs.conf file Includes $SPLUNK_HOME/etc/system/local/ui-prefs.conf file [search] \ndispatch.earliest_time = @d \ndispatch.latest_time = now [search] \ndispatch.earliest_time = @d \ndispatch.latest_time = now The default time range that will appear to all users in the search app is today.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "8. What do you mean by buckets? Explain Splunk bucket lifecycle?",
+        "answer": "A bucket is a directory in which Splunk stores index data. Each bucket contains data events in a particular time frame. As data ages, buckets move through different stages as given below:   Hot bucket: Newly indexed data is present in a hot bucket. Every index contains one or more hot buckets, and every index is open for writing.\nWarm bucket: This bucket contains data that has been rolled or pulled out of the hot bucket. The warm buckets are numerous.\nCold bucket: This bucket contains data that has been rolled or pulled out of the warm bucket. The cold buckets are numerous.\nFrozen bucket: This bucket contains data that has been rolled or pulled out of the cold bucket. By default, the indexer removes frozen data, but we can archive it. Hot bucket: Newly indexed data is present in a hot bucket. Every index contains one or more hot buckets, and every index is open for writing. Hot bucket: Warm bucket: This bucket contains data that has been rolled or pulled out of the hot bucket. The warm buckets are numerous. Warm bucket: Cold bucket: This bucket contains data that has been rolled or pulled out of the warm bucket. The cold buckets are numerous. Cold bucket: Frozen bucket: This bucket contains data that has been rolled or pulled out of the cold bucket. By default, the indexer removes frozen data, but we can archive it. Frozen bucket Buckets are by default located in:$SPLUNK_HOME/var/lib/splunk/defaultdb/db. $SPLUNK_HOME/var/lib/splunk/defaultdb/db",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "9. Explain what is a fish bucket and fish bucket index.",
+        "answer": "Essentially, Splunk Fishbucket is a subdirectory within Splunk that is used to monitor and track the extent to which the content of a file has been indexed within Splunk. For this feature, there are two types of contents: seek pointers and CRCs (cyclic redundancy checks). The default location of the fish bucket subdirectory is: /opt/splunk/var/lib/splunk. /opt/splunk/var/lib/splunk You can find it through the GUI (Graphical User Interface) by searching for: index=_thefishbucket. index=_thefishbucket",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "10. What do you mean by SF (Search Factor) and RF (Replication Factor)?",
+        "answer": "SF (Search Factor) & RF (Replication Factor) are terms associated with Clustering techniques i.e., Search head clustering & Indexer clustering. Search Factor: It is only associated with indexer clustering. It determines how many searchable copies of data the indexing cluster maintains. By default, the value of the search factor is 2.\nReplication Factor: It is associated with both Search head clustering & Indexer clustering. In the case of the indexer cluster, replication factor determines the number of copies of the data that an indexer cluster maintains, while in the case of the search head cluster, replication factor determines the minimum number of copies of the search artefacts that a search head cluster maintains. For the replication factor, the default value is 3. Search Factor: It is only associated with indexer clustering. It determines how many searchable copies of data the indexing cluster maintains. By default, the value of the search factor is 2. Search Factor: Replication Factor: It is associated with both Search head clustering & Indexer clustering. In the case of the indexer cluster, replication factor determines the number of copies of the data that an indexer cluster maintains, while in the case of the search head cluster, replication factor determines the minimum number of copies of the search artefacts that a search head cluster maintains. For the replication factor, the default value is 3. Replication Factor:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "11. What are Splunk commands and list out some of the basic Splunk commands?",
+        "answer": "Many Splunk commands are available, including those related to searching, correlation, data or indexing, and identifying specific fields. Following are some of the basic Splunk commands:   Accum: Maintains a running total of a numeric field.\nBucketdir: Replaces a field value with a higher-level grouping, just like replacing filenames with directories.\nChart: Provides results in a tabular format for charting.\nTimechart: Creates a time series chart and the corresponding statistics table.\nRare: Displays the values that are least common in a field.\nCluster: Groups/clusters similar events together.\nDelta: Calculates the difference between two search results.\nEval: Calculates the expression and stores the result in a field.\nGauge: Converts the output result into a format compatible with gauge chart types.\nK-means: Perform K-means clustering for selected fields.\nTop: Shows/displays the most common values of a field that are mostly used. Accum: Maintains a running total of a numeric field. Accum: Bucketdir: Replaces a field value with a higher-level grouping, just like replacing filenames with directories. Bucketdir: Chart: Provides results in a tabular format for charting. Chart: Timechart: Creates a time series chart and the corresponding statistics table. Timechart: Rare: Displays the values that are least common in a field. Rare: Cluster: Groups/clusters similar events together. Cluster: Delta: Calculates the difference between two search results. Delta: Eval: Calculates the expression and stores the result in a field. Eval: Gauge: Converts the output result into a format compatible with gauge chart types. Gauge: K-means: Perform K-means clustering for selected fields. K-means: Top: Shows/displays the most common values of a field that are mostly used. Top:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "12. Explain what is Dispatch Directory.",
+        "answer": "A directory is included in the Dispatch Directory for each search that is running or has been completed. The Dispatch Directory is configured as follows: $SPLUNK_HOME/var/run/splunk/dispatch $SPLUNK_HOME/var/run/splunk/dispatch Take the example of a directory named 14333208943.348. This directory includes a CSV file of all search results, a search.log containing details/information about the search execution, as well as other pertinent information. You can delete this directory within 10 minutes after the search is completed using the default configuration. Search results are deleted after seven days if you have saved them.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "13. State difference between ELK and Splunk.",
+        "answer": "IT Operations professionals are familiar with Splunk and ELK (ElasticSearch, LogStash, and Kibana), two of the most widely used tools in the area of Operational Data Analytics. ELK vs Splunk - ELK vs Splunk   ELK  Splunk \nELK is a powerful open-source enterprise platform that combines ElasticSearch, LogStash, and Kibana for searching, visualizing, monitoring, and analyzing machine data.  The Splunk product is a closed-source tool for searching, visualizing, monitoring, and analyzing machine data. \nThe elasticsearch tool integrates with Logstash and Kibana to operate similarly to Splunk. Additionally, it can also be integrated with many other tools, such as Datadog, Amazon, Couchbase, Elasticsearch Services, and Contentful, etc.   Additionally, Splunk integrates with several other tools, including Google Anthos, OverOps, Wazuh, PagerDuty, Amazon Guard Duty, etc. \nSome of the largest companies worldwide use ElasticStack to store, analyze, search and visualize data, including Uber, Stack Overflow, Udemy, Shopify, Instacart, and Slank, etc. In contrast, Splunk is used by a range of companies, including Starbucks, Craftbase, Intuit, SendGrid, Yelp, Rent the Runway, and Blend.  \nWizards and features are not pre-loaded in Elasticsearch. Even so, it doesn't have an interactive user interface, so users must install a plugin or use Kibana with it.   It comes preloaded with wizards and features that are easy and reliable to use. They allow managers to manage resources efficiently.   \nThe ELK stack includes Kibana for visualization. Additionally, Kibana offers the same visualization features as Splunk Web UI, such as line charts, tables, etc., that can be presented on a dashboard. Splunk Web UI comes with flexible controls that you can use to edit, add, and remove components to your dashboard. XML (Extensible Markup Language) can even be used to customize the application and visualization components on mobile devices. ELK  Splunk \nELK is a powerful open-source enterprise platform that combines ElasticSearch, LogStash, and Kibana for searching, visualizing, monitoring, and analyzing machine data.  The Splunk product is a closed-source tool for searching, visualizing, monitoring, and analyzing machine data. \nThe elasticsearch tool integrates with Logstash and Kibana to operate similarly to Splunk. Additionally, it can also be integrated with many other tools, such as Datadog, Amazon, Couchbase, Elasticsearch Services, and Contentful, etc.   Additionally, Splunk integrates with several other tools, including Google Anthos, OverOps, Wazuh, PagerDuty, Amazon Guard Duty, etc. \nSome of the largest companies worldwide use ElasticStack to store, analyze, search and visualize data, including Uber, Stack Overflow, Udemy, Shopify, Instacart, and Slank, etc. In contrast, Splunk is used by a range of companies, including Starbucks, Craftbase, Intuit, SendGrid, Yelp, Rent the Runway, and Blend.  \nWizards and features are not pre-loaded in Elasticsearch. Even so, it doesn't have an interactive user interface, so users must install a plugin or use Kibana with it.   It comes preloaded with wizards and features that are easy and reliable to use. They allow managers to manage resources efficiently.   \nThe ELK stack includes Kibana for visualization. Additionally, Kibana offers the same visualization features as Splunk Web UI, such as line charts, tables, etc., that can be presented on a dashboard. Splunk Web UI comes with flexible controls that you can use to edit, add, and remove components to your dashboard. XML (Extensible Markup Language) can even be used to customize the application and visualization components on mobile devices. ELK  Splunk ELK  Splunk ELK Splunk ELK is a powerful open-source enterprise platform that combines ElasticSearch, LogStash, and Kibana for searching, visualizing, monitoring, and analyzing machine data.  The Splunk product is a closed-source tool for searching, visualizing, monitoring, and analyzing machine data. \nThe elasticsearch tool integrates with Logstash and Kibana to operate similarly to Splunk. Additionally, it can also be integrated with many other tools, such as Datadog, Amazon, Couchbase, Elasticsearch Services, and Contentful, etc.   Additionally, Splunk integrates with several other tools, including Google Anthos, OverOps, Wazuh, PagerDuty, Amazon Guard Duty, etc. \nSome of the largest companies worldwide use ElasticStack to store, analyze, search and visualize data, including Uber, Stack Overflow, Udemy, Shopify, Instacart, and Slank, etc. In contrast, Splunk is used by a range of companies, including Starbucks, Craftbase, Intuit, SendGrid, Yelp, Rent the Runway, and Blend.  \nWizards and features are not pre-loaded in Elasticsearch. Even so, it doesn't have an interactive user interface, so users must install a plugin or use Kibana with it.   It comes preloaded with wizards and features that are easy and reliable to use. They allow managers to manage resources efficiently.   \nThe ELK stack includes Kibana for visualization. Additionally, Kibana offers the same visualization features as Splunk Web UI, such as line charts, tables, etc., that can be presented on a dashboard. Splunk Web UI comes with flexible controls that you can use to edit, add, and remove components to your dashboard. XML (Extensible Markup Language) can even be used to customize the application and visualization components on mobile devices. ELK is a powerful open-source enterprise platform that combines ElasticSearch, LogStash, and Kibana for searching, visualizing, monitoring, and analyzing machine data.  The Splunk product is a closed-source tool for searching, visualizing, monitoring, and analyzing machine data. ELK is a powerful open-source enterprise platform that combines ElasticSearch, LogStash, and Kibana for searching, visualizing, monitoring, and analyzing machine data. The Splunk product is a closed-source tool for searching, visualizing, monitoring, and analyzing machine data. The elasticsearch tool integrates with Logstash and Kibana to operate similarly to Splunk. Additionally, it can also be integrated with many other tools, such as Datadog, Amazon, Couchbase, Elasticsearch Services, and Contentful, etc.   Additionally, Splunk integrates with several other tools, including Google Anthos, OverOps, Wazuh, PagerDuty, Amazon Guard Duty, etc. The elasticsearch tool integrates with Logstash and Kibana to operate similarly to Splunk. Additionally, it can also be integrated with many other tools, such as Datadog, Amazon, Couchbase, Elasticsearch Services, and Contentful, etc. Additionally, Splunk integrates with several other tools, including Google Anthos, OverOps, Wazuh, PagerDuty, Amazon Guard Duty, etc. Some of the largest companies worldwide use ElasticStack to store, analyze, search and visualize data, including Uber, Stack Overflow, Udemy, Shopify, Instacart, and Slank, etc. In contrast, Splunk is used by a range of companies, including Starbucks, Craftbase, Intuit, SendGrid, Yelp, Rent the Runway, and Blend. Some of the largest companies worldwide use ElasticStack to store, analyze, search and visualize data, including Uber, Stack Overflow, Udemy, Shopify, Instacart, and Slank, etc. In contrast, Splunk is used by a range of companies, including Starbucks, Craftbase, Intuit, SendGrid, Yelp, Rent the Runway, and Blend. Wizards and features are not pre-loaded in Elasticsearch. Even so, it doesn't have an interactive user interface, so users must install a plugin or use Kibana with it.   It comes preloaded with wizards and features that are easy and reliable to use. They allow managers to manage resources efficiently. Wizards and features are not pre-loaded in Elasticsearch. Even so, it doesn't have an interactive user interface, so users must install a plugin or use Kibana with it. It comes preloaded with wizards and features that are easy and reliable to use. They allow managers to manage resources efficiently. The ELK stack includes Kibana for visualization. Additionally, Kibana offers the same visualization features as Splunk Web UI, such as line charts, tables, etc., that can be presented on a dashboard. Splunk Web UI comes with flexible controls that you can use to edit, add, and remove components to your dashboard. XML (Extensible Markup Language) can even be used to customize the application and visualization components on mobile devices. The ELK stack includes Kibana for visualization. Additionally, Kibana offers the same visualization features as Splunk Web UI, such as line charts, tables, etc., that can be presented on a dashboard. Splunk Web UI comes with flexible controls that you can use to edit, add, and remove components to your dashboard. XML (Extensible Markup Language) can even be used to customize the application and visualization components on mobile devices.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "14. What do you mean by File precedence in Splunk?",
+        "answer": "A developer, administrator, and architect all have to consider file precedence when troubleshooting Splunk. All Splunk configurations are saved in plain text .conf files. Almost every aspect of Splunk's behaviour is determined by configuration files. There can be multiple copies of the same configuration file in a Splunk platform deployment. In most cases, these file copies are layered in directories that might affect users, applications, or the overall system. If you want to modify configuration files, you must know how the Splunk software evaluates those files and which ones have precedence when the Splunk software runs or is restarted. Splunk software considers the context of each configuration file when determining the order of directories to prioritize configuration files. Configuration files can either be operated in a global context or in the context of the current application/user. Directory priority descends as follows when the file context is global: Directory priority descends as follows when the file context is global: System local directory -- highest priority  ->\nApplication local directories  ->\nApplication default directories  ->\nSystem default directory -- lowest priority System local directory -- highest priority  -> Application local directories  -> Application default directories  -> System default directory -- lowest priority Directory priority descends from user to application to system when file context is current application/user: Directory priority descends from user to application to system when file context is current application/user: User directories for the current user -- highest priority   ->\nApplication directories for the currently running application (local, followed by default)  ->\nApplication directories for all the other applications (local, followed by default) -- for exported settings only ->\nSystem directories (local, followed by default) -- lowest priority User directories for the current user -- highest priority   -> Application directories for the currently running application (local, followed by default)  -> Application directories for all the other applications (local, followed by default) -- for exported settings only -> System directories (local, followed by default) -- lowest priority",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "15. Explain what is Splunk Btool.",
+        "answer": "The btool command-line tool can be used to figure out what settings are set on a Splunk Enterprise instance, as well as to see where those settings are configured. Using the Btool command, we can troubleshoot configuration file issues. Conf files, also called Splunk software configuration files, are loaded and merged together to create a functional set of configurations that can be used by Splunk software when executing tasks. Conf files can be placed/found in many different folders under the Splunk installation. Using the on-disk conf files, Btool simulates the merging process and creates a report displaying the merged settings.",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "16. What do you mean by the Lookup command? State difference between Inputlookup and Outputlookup commands.",
+        "answer": "Splunk lookup commands can be used to retrieve specific fields from an external file (e.g., Python script, CSV file, etc.) to get the value of an event. Inputlookup: Inputlookup can be used to search the contents of a lookup table (CSV lookup or a KV store lookup). It is used to take input. This command, for instance, could take the product price or product name as input and match it with an internal field like the product ID.\nOutputlookup: Conversely, the outputlookup command outputs search results to a specified lookup table, i.e., it places a search result into a specific lookup table. Inputlookup: Inputlookup can be used to search the contents of a lookup table (CSV lookup or a KV store lookup). It is used to take input. This command, for instance, could take the product price or product name as input and match it with an internal field like the product ID. Inputlookup: Outputlookup: Conversely, the outputlookup command outputs search results to a specified lookup table, i.e., it places a search result into a specific lookup table. Outputlookup:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "17. Name the commands included in the \"filtering results” category.",
+        "answer": "Below are the commands included in the \"filtering results\" category: Search: This command retrieves events from indexes or filters the results of the previous search command. Events can be retrieved from your indexes by using keywords, wildcards, quoted phrases, and key/value expressions.\nSort: The search results are sorted based on the fields that are specified. The results can be sorted in reverse, ascending, or descending order. When sorting, the results can also be limited.\nWhere: The 'where' command, however, filters search results using 'eval' expressions. When the 'search' command is used, it retains only those search results for which an evaluation was successful, while the 'where' command enables a deeper investigation of those search results. By using a 'search' command, one can determine the number of active nodes, but the 'where' command will provide a matching condition of an active node that is running a specific application.\nRex: You can extract specific fields or data from your events using the 'rex' command. For instance, when you want to determine specific fields in an email id, like scaler@interviewbit.co, you can use the 'rex' command. This will distinguish scaler as the user ID, interviewbit.co as the domain, and interviewbit as the company. Rex allows you to slice, split, and break down your events however you like. Search: This command retrieves events from indexes or filters the results of the previous search command. Events can be retrieved from your indexes by using keywords, wildcards, quoted phrases, and key/value expressions. Search: Sort: The search results are sorted based on the fields that are specified. The results can be sorted in reverse, ascending, or descending order. When sorting, the results can also be limited. Sort: Where: The 'where' command, however, filters search results using 'eval' expressions. When the 'search' command is used, it retains only those search results for which an evaluation was successful, while the 'where' command enables a deeper investigation of those search results. By using a 'search' command, one can determine the number of active nodes, but the 'where' command will provide a matching condition of an active node that is running a specific application. Where: Rex: You can extract specific fields or data from your events using the 'rex' command. For instance, when you want to determine specific fields in an email id, like scaler@interviewbit.co, you can use the 'rex' command. This will distinguish scaler as the user ID, interviewbit.co as the domain, and interviewbit as the company. Rex allows you to slice, split, and break down your events however you like. Rex:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "18. State difference between stats vs eventstats command.",
+        "answer": "Stats: The Stats command in Splunk calculates statistics for every field present in your events (search results) and stores these values in newly created fields.\nEventstats: Similar to the stats command, this calculates a statistical result. While the Eventstats command is similar to the Stats command, it adds the aggregate results inline to each event (if only the aggregate is relevant to that event). Stats: The Stats command in Splunk calculates statistics for every field present in your events (search results) and stores these values in newly created fields. Stats: Eventstats: Similar to the stats command, this calculates a statistical result. While the Eventstats command is similar to the Stats command, it adds the aggregate results inline to each event (if only the aggregate is relevant to that event). Eventstats:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "19. Name a few important Splunk search commands",
+        "answer": "Splunk provides the following search commands: Abstract: It provides a brief summary of the text of the search results. It replaces the original text with the summary.\nAddtotals: It sums up all the numerical fields for each result.  You can see the results under the Statistics tab. Rather than calculating every numeric field, you can specify a list of fields whose sum you want to compute.\nAccum: It calculates a running total of a numeric field. This accumulated sum can be returned to the same field, or to a new field specified by you.\nFilldown: It will generally replace NULL values with the last non-NULL value for the field or set of fields. Filldown will be applied to all fields if there is no list of fields given.\nTyper: It basically calculates the eventtype field for search results matching a specific/known event type.\nRename: It renames the specified field. Multiple fields can be specified using wildcards.\nAnomalies: It computes the \"unexpectedness\" score for a given event. The anomalies command can be used to identify events or field values that are unusual or unexpected. Abstract: It provides a brief summary of the text of the search results. It replaces the original text with the summary. Abstract: Addtotals: It sums up all the numerical fields for each result.  You can see the results under the Statistics tab. Rather than calculating every numeric field, you can specify a list of fields whose sum you want to compute. Addtotals: Accum: It calculates a running total of a numeric field. This accumulated sum can be returned to the same field, or to a new field specified by you. Accum: Filldown: It will generally replace NULL values with the last non-NULL value for the field or set of fields. Filldown will be applied to all fields if there is no list of fields given. Filldown: Typer: It basically calculates the eventtype field for search results matching a specific/known event type. Typer: Rename: It renames the specified field. Multiple fields can be specified using wildcards. Rename: Anomalies: It computes the \"unexpectedness\" score for a given event. The anomalies command can be used to identify events or field values that are unusual or unexpected. Anomalies:",
+        "reference": "interviewbit.com",
+        "role": "splunk"
+    },
+    {
+        "question": "1) What is Splunk?",
+        "answer": "Splunk is a software technology and platform used for searching, visualizing, and monitoring machine-generated big data. It facilitates users to analyze machine-generated data (that can be generated form hardware devices, networks, servers, IoT devices, etc.). That's why it is called \"Google\" for machine-generated data.\nSplunk receives valuable machine data and processes and analyzes machine data and converts it into powerful operational intelligence by offering real-time insights into the data through accurate visualizations, charts, alerts, reports, etc. It is mainly used for searching, visualizing, monitoring, and reporting enterprise data. Splunk can monitor different types of log files and store data in Indexers.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "2) Why is Splunk used for analyzing machine data?",
+        "answer": "Splunk is used for analyzing machine data because of the following reasons:\nADVERTISEMENT\nSplunk provides business insights: Splunk receives valuable machine data. After processing, it understands the patterns hidden within the data and turns them into real-time business insights useful for making informed business decisions.\nIt offers proactive monitoring: Splunk uses machine data to monitor systems in real-time to identify system issues and vulnerabilities. These vulnerabilities may be external or internal breaches and attacks.\nIt provides operational visibility: Splunk provides operational visibility by leveraging machine data to get end-to-end visibility into company operations and then breaks it down across the infrastructure.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "3) What is the Splunk Indexer? What are the stages of Splunk Indexing?",
+        "answer": "Splunk Indexer is a Splunk Enterprise component used to create and manage indexes. The primary functions of an indexer are:\nIndexing incoming data\nSearching the indexed data\nPicture",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "4) What are the different components of Splunk architecture?",
+        "answer": "The Splunk architecture is made of the following components:\nSearch Head: It is used to provide the GUI for searching.\nIndexer: It is used to index the machine data.\nForwarder: It is used to forward logs to the Indexer.\nDeployment server: It manages the Splunk components in a distributed environment and distributes configuration apps.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "5) What are the different types of Splunk Licenses?",
+        "answer": "Following is a list of the different types of Splunk Licenses:\nFree license\nBeta license\nEnterprise license\nForwarder license\nLicenses for search heads (for distributed search)\nLicenses for cluster members (for index replication)",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "6) What is a Splunk Forwarder? What are the different types of Splunk Forwarders?",
+        "answer": "Splunk Forwarder or Splunk Universal Forwarder is a free, dedicated version of Splunk Enterprise that contains only the essential components required to forward data. It is designed to run on production servers, having minimal CPU and memory usage. It is used to gather data from various inputs and forward the data to Splunk indexers. After that, the data would be available for searching.\nThere are mainly two types of Splunk Forwarders:\nUniversal Forwarder (UF): It is used to gather data locally. It can't parse or index data.\nHeavyweight Forwarder (HWF): It has advanced functionalities and generally works as a remote collector, intermediate forwarder, and possible data filter. It can parse data so; it is not recommended for production systems.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "7) What are the most important configuration files in Splunk?",
+        "answer": "Following is the list of most important configuration files in Splunk:\nprops.conf\nindexes.conf\ninputs.conf\ntransforms.conf\nserver.conf",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "8) What are the common port numbers used by Splunk?",
+        "answer": "Following is the list of the common port numbers used by Splunk:\nSplunk Web Port: 8000\nSplunk Management Port: 8089\nSplunk Index Replication Port: 8080\nSplunk Network port: 514 (Used to get data from the Network port, i.e., UDP data)\nSplunk Indexing Port: 9997\nKV store: 8191",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "9) What do you understand by Splunk App?",
+        "answer": "In Splunk, the Splunk app is a container or directory of configurations, searches, dashboards, etc.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "10) What are the features not available in Splunk Free?",
+        "answer": "Following is a list of features that are not available in the Splunk Free version:\nAuthentication and scheduled searches/alerting\nDeployment management\nDistributed search\nForwarding in TCP/HTTP (to non-Splunk)",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "11) What are the different types of Splunk dashboards available in Splunk?",
+        "answer": "Following are the three different types of Splunk dashboards available in Splunk:\nReal-time dashboards\nDynamic form-based dashboards\nDashboards for scheduled reports",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "12) What will happen if the License Master is unreachable in Splunk?",
+        "answer": "In Splunk, if the license master is not available or unreachable, the license slave will start a 24-hour timer, after which the search will be blocked on the license slave (though indexing continues). After that, the users will not be able to search for data in that slave until it can reach the license master again.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "13) What are the different types of search modes supported in Splunk?",
+        "answer": "Splunk supports the following three types of dashboards:\nFast mode\nSmart mode\nVerbose mode",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "14) Where is the Splunk Default Configuration stored?",
+        "answer": "The Splunk Default Configuration is stored at $splunkhome/etc/system/default",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "15) What are the advantages of feeding data into a Splunk instance through Splunk Forwarders?",
+        "answer": "The biggest advantages of feeding data into a Splunk instance through Splunk Forwarders are that you can get the three significant benefits:\nTCP connection\nBandwidth throttling\nAn encrypted SSL connection to transfer data from a Forwarder to an Indexer.\nSplunk's architecture is made so that the data forwarded to the Indexer is load-balanced by default. In this case, if one Indexer goes down for some reason, the data can quickly re-route itself via another Indexer instance. Another advantage is that the Splunk Forwarders cache the events locally before forwarding them, creating a temporary backup of the data.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "16) What is a license violation in Splunk?",
+        "answer": "In Splunk, a license violation is a warning error when the data limit is exceeded. This warning error persists for 14 days. If you have a commercial license, you may see 5 warnings within a 1-month rolling window before which your Indexer search results and reports stop triggering. If you have a free Splunk version, you will see 3 license violation warnings.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "17) What is the use of Splunk DB Connect?",
+        "answer": "Splunk DB Connect is a generic SQL database plugin specially designed for Splunk. It facilitates users to integrate database information with Splunk queries and seamlessly get reports.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "18) Why is license master important in Splunk?",
+        "answer": "The license master is important in Splunk because it ensures that the right amount of data gets indexed. It also ensures that the environment remains within the limits of the purchased volume. The Splunk license depends on the data volume, which comes to the platform within a 24-hour window.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "19) What is the \"Summary Index\" in Splunk? What is its advantage?",
+        "answer": "In Splunk, the Summary Index specifies a default Splunk index used to store data retrieved from scheduled searches over time. Splunk Enterprise uses the Summary Index by default if a user does not specify or indicate another.\n\nThe biggest advantage of the Summary Index is that it facilitates users to retain the analytics and reports even after the data has aged.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "20) What is the main function of the Splunk Indexer?",
+        "answer": "As the name specifies, the Splunk Indexer is used to create and manage indexes.\nThere are the two main functions of the Splunk Indexer:\nIt is used to index raw data into an index.\nIt is used to search and manage the indexed data.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "21) What does the Splunk License specify?",
+        "answer": "The Splunk license specifies how much data we can index per calendar day (within 24 hours).",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "22) How does the Splunk License determine 1 day?",
+        "answer": "The Splunk License determines 1 day from midnight to midnight on the clock of the license master.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "23) What is the difference between Splunk with Spark?",
+        "answer": "Following is a list of key differences between Splunk with Spark:\nCriteria Splunk Spark\nDeployment area Splunk is used for collecting large amounts of machine-generated data. Spark is used for iterative applications and in-memory processing.\nNature of tool It is proprietary software. It is not open-sourced. It is open-source software.\nWorking mode It works on streaming mode. It works on both streaming and batch modes.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "24) What are the disadvantages of using the Splunk tool?",
+        "answer": "Following is a list of some disadvantages of using the Splunk tool:\nSplunk is not open-source software. You have to pay a specific price if you want a complete Splunk IT Solutions so, it may prove expensive for large data volumes.\nSplunk dashboards are functional but not as effective as some other monitoring tools.\nSplunk has a multi-tier architecture, and its learning curve is stiff. So, you need to invest a lot of time to learn this tool. You must need Splunk training to use it effectively.\nIn Splunk, searches are difficult to understand especially regular expressions and search syntax.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "25) What are the advantages of using forwarders to get data into a Splunk instance?",
+        "answer": "Some key advantages of getting data into Splunk via forwarders are:\nTCP connection\nBandwidth throttling\nA secure SSL connection for transferring important data from a forwarder to an indexer.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "26) What are some important Splunk search commands used in the Splunk tool?",
+        "answer": "Following is a list of some important Splunk search commands used in the Splunk tool:\nAbstract\nAddtotals\nAccum\nAnomalies\nErex\nFilldown\nRename\nTyper etc.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "27) What is the use of Transaction and Stats commands in Splunk?",
+        "answer": "In Splunk, transaction, and stats, both commands are used for different purposes. The transaction command is mostly used in two specific cases:\nThe transaction command is used when the unique ID (from one or more fields) alone is not sufficient to discriminate between two transactions. In this case, we have to reuse the identifier. When we have to reuse the identifier, for example, in DHCP logs, a particular message is used to identify the beginning or end of a transaction. For example, web sessions are identified by a cookie/client IP. In this case, the time or pauses are also used to segment the data into transactions.\nIt is also used when we want to see the raw text of events combined rather than an analysis of the constituent fields of the events.\nIn other cases, it is preferred to use stats commands. The performance of the stats command is higher, so it is best suited for distributed search environment. We can also use the stats command in the case of a unique ID.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "28) What are some important configuration files used in Splunk?",
+        "answer": "Some important and most commonly used Splunk configuration files are:\nInputs file\nTransforms file\nServer file\nIndexes file\nProps file",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "",
+        "answer": "In Splunk, buckets are the directories used to store the indexed data. It is a physical directory that chronicles the events of a specific period. A bucket undergoes the following stages of transformation over time.\nHot Bucket: A hot bucket stores the newly indexed data. It is open for writing and new additions. An index can have one or more hot buckets.\nWarm Bucket: A warm bucket is used to store the data rolled out from a hot bucket.\nCold Bucket: The cold bucket is used to store the data rolled out from a warm bucket.\nFrozen Bucket: A frozen bucket stores the data rolled out from a cold bucket. By default, the Splunk Indexer deletes the frozen data. However, Splunk provides an option to archive it. One thing you must remember is that frozen data is not searchable.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "30) What is the difference between Index time and Search time?",
+        "answer": "In Splunk, the index time is a period when the data is consumed and the point when it is written to disk. On the other hand, search time occurs when the search is run as events are composed by the search.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "31) What is the difference between stats and eventstats commands?",
+        "answer": "Stats Command: The stats command generates summary statistics of all the existing fields in the search results. After generating summary statistics, it saves them as values in new fields.\nEventstats: Eventstats is similar to the stats command, but it aggregates results and adds inline to each event if the aggregation is pertinent to that event. The eventstats command computes the requested statistics, like the stats command does, but aggregates them to the original raw data.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "32) How can you reset the Splunk administrator password?",
+        "answer": "We can reset the administrator password by performing the following steps:\nFirst, login into the server on which you have installed the Splunk tool.\nNow, rename the password file and then again start the Splunk tool.\nIn this step, you can sign into the server by using the username of either the administrator or admin with a password 'change me' option.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "33) What are the top direct competitors of Splunk tool?",
+        "answer": "The top direct competitors of Splunk tool are Logstash, Loggly, LogLogic, Sumo Logic, etc.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "34) How can you troubleshoot Splunk performance issues?",
+        "answer": "You should perform the following steps to troubleshoot the Splunk performance issues:\nFirst, check the splunkd.log to find if there is any error.\nThen, check the server performance issues (CPU/memory usage, disk i/o, etc.)\nAfter that, check the number of saved searches running in the background and their system resources consumption.\nInstall the SOS (Splunk on Splunk) app and check if the dashboard shows any warning or errors.\nNow, install a Firefox extension called Firebug and enable it in your system.\nNow, log into Splunk using Firefox, open the Firebug's panels, and go to the 'Net' panel to enable it. The Net panel displays the HTTP requests and responses and the time spent in each. Here, you will see which requests are slowing down Splunk and affecting the overall performance.\nBy following the above steps, you can troubleshoot the Splunk performance issues and enhance the performance.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "35) Which command is used to restart the Splunk web server?",
+        "answer": "You should use the following command to restart the Splunk web server:\nsplunk start splunkweb",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "36) Which command is used to restart the Splunk Daemon?",
+        "answer": "Use the following command to restart the Splunk Daemon:\nsplunk start splunkd",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "37) What is Sourcetype in Splunk?",
+        "answer": "In Splunk, Sourcetype specifies a default field used to identify the data structure of an incoming event. We have to set Sourcetype at the forwarder level for indexer extraction to identify the different data formats easily. It also determines how Splunk Enterprise formats the data during the indexing process. For this, we have to assign the Sourcetype to your data correctly. If you provide accurate timestamps and event breaks to the indexed data, you can make the data searching even easier.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "38) What is the usage of Splunk Alert? What are the types of options you get while setting up Splunk Alerts?",
+        "answer": "Splunk Alerts are used to notify users of any erroneous condition in their systems. For example, you can set up Splunk Alerts to get an email notification if there are more than three failed login attempts within 24 hours.\nFollowing are the different types of options we get while setting up Splunk Alerts:\nIt facilitates us to create a webhook that can be used to write HipChat or GitHub.\nWe can write an email to a group of machines containing our subject, priorities, and the body of our email.\nIt also facilitates us to add results in CSV or pdf formats or inline with the body of the message. It helps the recipient understand the location and conditions of the alert.\nIt can also be used to create tickets and throttle alerts based on specific conditions such as the machine name or IP address.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "39) What do you understand by Btool in Splunk?",
+        "answer": "In Splunk, Btool is a command-line tool used for troubleshooting configuration file issues. It is also used to check what values are being used by a user's Splunk Enterprise installation in the existing environment.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "40) What are some use cases of knowledge objects in Splunk?",
+        "answer": "Following is a list of some use cases of knowledge objects in Splunk:\nPhysical Security: In Splunk, we can use knowledge objects to deal with physical vulnerabilities. If your organization works in physical security, you can use knowledge objects to leverage data containing information about earthquakes, volcanoes, flooding, etc., to get valuable information.\nNetwork Security: Knowledge objects provide lookups that can be used to increase security in your systems by blocking specific IPs from getting into your network.\nApplication Monitoring: Knowledge objects facilitate us to monitor our applications in real-time. We can also configure alerts to notify us when our application crashes or any downtime occurs.\nEmployee Management: It can also monitor the activity of people who are serving their notice period. By using this, we can create a list of those people and create a rule preventing them from misusing any sensitive data of the organization.\nMake Searching of Data Easy: Knowledge objects facilitate us to tag information, create event types, create search constraints at the beginning, and shorten them so that they are easy to remember, correlate, and understand rather than write long searches queries.\nThese are some of the operations we can do using knowledge objects.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "41) What command is used to check the running Splunk processes on Unix/Linux?",
+        "answer": "We can use the following command to check the running Splunk Enterprise processes on Unix/Linux:\nps aux | grep splunk",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "42) What is the difference between Splunk App and Add-on?",
+        "answer": "Splunk Apps specify a complete collection of reports, dashboards, alerts, field extractions, and lookups. On the other hand, the Splunk Add-ons only contains built-in configurations. It does not have dashboards or reports.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "43) What do you understand by Fishbucket? What is the index for it?",
+        "answer": "Fishbucket is an index directory residing at the default location, that is:\n/opt/splunk/var/lib/splunk   \nFishbucket consists of seeking pointers and CRCs for the indexed files. If you want to access the Fishbucket, you should use the GUI for searching:\nindex=_thefishbucket",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "44) What are the commands used to stop and start Splunk services?",
+        "answer": "Following are the commands used to stop and start Splunk services:\nUse the following command to start the Splunk service :\nADVERTISEMENT\n./splunk start  \nUse the following command to stop Splunk service:\n./splunk stop",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "45) Which command is used to clear the Splunk search history?",
+        "answer": "The following command is used to clear the Splunk search history from the Splunk server:\n$splunk_home/var/log/splunk/searches.log",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "46) What is the precedence of the configuration files in Splunk?",
+        "answer": "Following is the precedence of configuration files in Splunk:\nSystem Local Directory (highest priority)\nApp Local Directories\nApp Default Directories\nSystem Default Directory (lowest priority)",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "47) What do you understand by deployer in Splunk?",
+        "answer": "Deployer is a Splunk enterprise instant used to deploy apps to the cluster head. It provides a facility to configure information for app and users.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "48) What is the use of stat command?",
+        "answer": "The stat command is used to arrange report data in tabular format.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "49) How does Splunk avoid duplicate indexing of logs?",
+        "answer": "The Splunk Indexer keeps track of all the indexed events in a directory. For example, the Fishbuckets directory consists of seek pointers and CRCs for all the files we currently index.\nSo, if it finds any seek pointer or CRC that has been already read, it will point it out.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    },
+    {
+        "question": "50) What is the use of the input lookup command?",
+        "answer": "The input lookup command returns the lookup table in the search result.",
+        "reference": "javatpoint.com",
+        "role": "splunk"
+    }
+]

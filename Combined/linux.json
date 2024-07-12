@@ -1,0 +1,686 @@
+[
+    {
+        "question": "1. Name the file that is used to automatically mount file systems.",
+        "answer": "File that is used to automatically mount file systems is a Fstab file.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "2. What is BASH?",
+        "answer": "BASH (Bourne Again Shell) is basically a command language interpreter. It was written by Brian Fox for GNU OS and can be used in place of Bourne Shell. It is similar to Bourne Shell but includes some additional features such as command-line editing that make it easier and more convenient to use. It is the default user shell on most Linux installations. It is basically an interpreted and non-compiled process that can also run in the terminal window. It is also capable of reading commands from shell scripts.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "3. What is Kernel? Explain its functions.",
+        "answer": "A kernel is considered the main component of Linux OS. It is simply a resource manager that acts as a bridge between hardware and software. Its main role is to manage hardware resources for users and is generally used to provide an interface for user-level interaction. A kernel is the first program that is loaded whenever a computer system starts. It is also referred to as low-level system software.   Its other main functions include: Memory Management\nProcess Management\nDevice Management\nStorage Management\nManage access, and use of various peripherals that are connected to the computer. Memory Management Process Management Device Management Storage Management Manage access, and use of various peripherals that are connected to the computer.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "4. What are two types of Linux User Mode?",
+        "answer": "There are two types of Linux user mode as given below: Command Line \nGUI Command Line GUI",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "5. What is LILO?",
+        "answer": "LILO (Linux Loader) is basically a bootloader for Linux that is used to load Linux into memory and start the OS. It is also known as a boot manager that facilitates a dual boot of a computer. It can function as either a master boot program or secondary boot program and performs various functions such as locating kernel, identifying other supporting programs, loading memory, and starting the kernel. If you want to use Linux OS, then you need to install a special bootloader i.e., LILO for it as it allows fast boot of Linux OS.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "6. What is swap space?",
+        "answer": "Swap space, as the name suggests, is basically a space on a hard disk that is used when the amount of physical memory or RAM is full. It is considered a substitute for physical memory. Its main function is to substitute disk space for RAM memory when real RAM does not have enough space to hold all programs that are executing, and more space is required. In simple words, it can be used as an extension of RAM by Linux.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "7. What do you mean by a Process States in Linux?",
+        "answer": "Linux Process is a type of process that can be in a number of different states. The process enters these states from start till end. Process states in Linux are as follows:   New/Ready: In this state, a new process is created and is ready to run.\nRunning: In this state, the process is being executed.\nBlocked/Wait: In this state, the process is waiting for input from the user and if doesn't have resources to run such as memory, file locks, input, then it can remain in a waiting or blocked state.\nTerminated/Completed: In this state, the process has completed the execution or terminated by the OS.\nZombie: In this state, the process is terminated but information regarding the process still exists and is available in the process table. New/Ready: In this state, a new process is created and is ready to run. New/Ready: Running: In this state, the process is being executed. Running: Blocked/Wait: In this state, the process is waiting for input from the user and if doesn't have resources to run such as memory, file locks, input, then it can remain in a waiting or blocked state. Blocked/Wait: Terminated/Completed: In this state, the process has completed the execution or terminated by the OS. Terminated/Completed: Zombie: In this state, the process is terminated but information regarding the process still exists and is available in the process table. Zombie:",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "8. What is Linux Shell? What types of Shells are there in Linux?",
+        "answer": "Linux shell is a user interface present between user and kernel. It is used for executing commands and communication with Linux OS. Linux shell is basically a program used by users for executing commands. It accepts human-readable commands as input and converts them into kernel understandable language.   Different types of shells are commonly used on typical Linux system as listed below: CSH (C Shell)\nKSH (Korn Shell)\nBASH (Bourne Again Shell)\nTCSH\nZSH\nBourne Shell CSH (C Shell) KSH (Korn Shell) BASH (Bourne Again Shell) TCSH ZSH Bourne Shell",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "9. Name different types of modes used in VI editor.",
+        "answer": "VI editor (Visual Editor) is basically a default text editor that usually comes with most of the Linux OS. There are basically three types of modes used in VI editor as given below:   Command Mode/Regular Mode: It is the default mode for the vi editors. It is generally used to type commands that usually perform particular or specific vi functions. To enter this mode from another mode (Insert mode), one must press [esc]. In simple words, it lets you view the content.  \nInsertion Mode/Edit Mode: This mode allows you to do text editing, or type text into a file. To enter this mode from another mode (command mode), one must press [esc]. In simple words, it lets you delete or insert text or content. \nEx Mode/Replacement Mode: This mode is generally used to save the files and execution of the commands. It basically executes files with different parameters. To enter this mode, one must press [:]. In simple words, it lets you overwrite content or text. Command Mode/Regular Mode: It is the default mode for the vi editors. It is generally used to type commands that usually perform particular or specific vi functions. To enter this mode from another mode (Insert mode), one must press [esc]. In simple words, it lets you view the content. Command Mode/Regular Mode: Insertion Mode/Edit Mode: This mode allows you to do text editing, or type text into a file. To enter this mode from another mode (command mode), one must press [esc]. In simple words, it lets you delete or insert text or content. Insertion Mode/Edit Mode: Ex Mode/Replacement Mode: This mode is generally used to save the files and execution of the commands. It basically executes files with different parameters. To enter this mode, one must press [:]. In simple words, it lets you overwrite content or text. Ex Mode/Replacement Mode:",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "10. What is a maximum length for a filename under Linux?",
+        "answer": "The maximum length for a filename under Linux is 255 bytes.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "11. Name the Linux that is specially designed by Sun micro system.",
+        "answer": "Linux that is specially designed by Sun micro system is Solaris.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "12. Under the Linux system, what is the typical size for swap partitions?",
+        "answer": "The typical size for a swap partition under a Linux system should be twice the amount of physical memory or RAM available on the system.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "13. What are file permissions in Linux? Name different types of file systems in Linux.",
+        "answer": "There are three owners in the Linux System i.e., user, group, and others. These owners have three types of permissions defined as listed below: Read (r): It allows the user to open and read the file or list the directory. \nWrite (w): It allows the user to open and modify the file. One can also add new files to the directory. \nExecute (x): It allows the user to execute or run the file.  One can also lookup a specific file within a directory. Read (r): It allows the user to open and read the file or list the directory. Read (r): Write (w): It allows the user to open and modify the file. One can also add new files to the directory. Write (w): Execute (x): It allows the user to execute or run the file.  One can also lookup a specific file within a directory. Execute (x):",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "14. What are basic elements or components of Linux?",
+        "answer": "Linux generally consists of five basic elements or components as given below:   Kernel: It is considered a core or main part of Linux and is generally responsible for all major activities of OS such as process management, device management, etc.  \nSystem Library: These are special functions or programs with the help of which application programs or system utilities can access features of the kernel without any requirement of code. It is simply used to implement the functionality of the OS. \nSystem Utility: These are utility programs that are responsible to perform specialized and individual-level tasks. They are considered more liable and allow users to manage the computer.  \nHardware: It is physical hardware that includes items such as a mouse, keyboard, display, CPU, etc. \nShell: It is an environment in which we can run our commands, shell scripts, and programs. It is an interface between user and kernel that hides all complexities of functions of the kernel from the user. It is used to execute commands. Kernel: It is considered a core or main part of Linux and is generally responsible for all major activities of OS such as process management, device management, etc. Kernel: System Library: These are special functions or programs with the help of which application programs or system utilities can access features of the kernel without any requirement of code. It is simply used to implement the functionality of the OS. System Library: System Utility: These are utility programs that are responsible to perform specialized and individual-level tasks. They are considered more liable and allow users to manage the computer. System Utility: Hardware: It is physical hardware that includes items such as a mouse, keyboard, display, CPU, etc. Hardware: Shell: It is an environment in which we can run our commands, shell scripts, and programs. It is an interface between user and kernel that hides all complexities of functions of the kernel from the user. It is used to execute commands. Shell:",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "15. What is LVM and why is it required?",
+        "answer": "LVM (Logical Volume Management) is basically a tool that provides logical volume management for the Linux kernel. It is being introduced simply to make physical storage device management easier. It also includes allocating disks, striping, mirroring, resizing logical volumes. Its main advantages are increased abstraction, flexibility, and control. It simply allows for flexible disk space management. It is especially required to resize the size of the file system online. In Linux, the size of the LVM partition can be extended using “lvextend” command and can be reduced using “lvreduce” commands, respectively.  ",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "16. What is a “/proc” file system?",
+        "answer": "Proc file system is a pseudo or virtual file system that provides an interface to the kernel data structure. It generally includes useful information about processes that are running currently. It can also be used to change some kernel parameters at runtime or during execution. It is also regarded as a control and information center for the kernel. All files under this directory are named virtual files.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "17. What do you mean by the daemons?",
+        "answer": "Daemons also referred to as the background process, is a long-running Linux program that runs in the background. They do not have any controlling terminal, therefore, they run in the background. These are the processes that are generally started when the system is bootstrapped and terminate or end only when the system is shut down. It is simply the way of extending the functionality of the base OS. It provides and offers several functions that are not available in OS. Its main purpose is to handle periodic requests and then forward the requests to the appropriate programs for execution.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "18. Name daemon that controls the print spooling process.",
+        "answer": "The daemon that controls that print spooling process is the Line printing daemon.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "19. What is a Zombie Process?",
+        "answer": "Zombie Process, also referred to as a defunct or dead process in Linux, is a process that has finished the execution, but its entry remains in the process table. It usually happens due to a lack of correspondence between parent and child processes. This process occurs for the child process because the parent process needs to read the status of the child process. Once it is completed using the wait system call, this process is removed from the process table.  ",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "20. What is the difference between cron and anacron?",
+        "answer": "Cron: It is a program in Linux that is used to execute tasks at a scheduled time. It works effectively on machines that run continuously. \n\nAnacron: It is a program in Linux that is used to execute tasks at certain intervals. It works effectively on machines that are powered off in a day or week. Cron:   Anacron: Cron Anacron \nIt is a daemon. It is not a daemon. \nIt can be scheduled by any normal user.  It can only be used by super users.\nIt is considered ideal for servers.  It is considered ideal for desktops and laptops.\nIt expects the system to run 24*7 It does not expect the system to run 24*7\nIts minimum granularity is in minutes.  Its minimum granularity is only in days\nIt is used to execute scheduled commands. It is used to execute commands periodically. Cron Anacron \nIt is a daemon. It is not a daemon. \nIt can be scheduled by any normal user.  It can only be used by super users.\nIt is considered ideal for servers.  It is considered ideal for desktops and laptops.\nIt expects the system to run 24*7 It does not expect the system to run 24*7\nIts minimum granularity is in minutes.  Its minimum granularity is only in days\nIt is used to execute scheduled commands. It is used to execute commands periodically. Cron Anacron Cron Anacron Cron Anacron It is a daemon. It is not a daemon. \nIt can be scheduled by any normal user.  It can only be used by super users.\nIt is considered ideal for servers.  It is considered ideal for desktops and laptops.\nIt expects the system to run 24*7 It does not expect the system to run 24*7\nIts minimum granularity is in minutes.  Its minimum granularity is only in days\nIt is used to execute scheduled commands. It is used to execute commands periodically. It is a daemon. It is not a daemon. It is a daemon. It is not a daemon. It can be scheduled by any normal user.  It can only be used by super users. It can be scheduled by any normal user. It can only be used by super users. It is considered ideal for servers.  It is considered ideal for desktops and laptops. It is considered ideal for servers. It is considered ideal for desktops and laptops. It expects the system to run 24*7 It does not expect the system to run 24*7 It expects the system to run 24*7 It does not expect the system to run 24*7 Its minimum granularity is in minutes.  Its minimum granularity is only in days Its minimum granularity is in minutes. Its minimum granularity is only in days It is used to execute scheduled commands. It is used to execute commands periodically. It is used to execute scheduled commands. It is used to execute commands periodically.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "21. What is load average in Linux?",
+        "answer": "Load average, as the name suggests, is the average system load on Linux servers being calculated over a given period of time. The load average of Linux servers can be found using “top” and “uptime” commands. It is simply used to keep track of system resources. It is represented by a decimal number starting at 0.00.  It tells you the load that the system has been under.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "22. What do you mean by Shell Script?",
+        "answer": "Shell Script, as name suggests, is a script especially written for shell. Here, script means programming language that is being used to control applications. It simply allows the execution of different commands that are entered in the shell.  It generally helps you to create complex programs containing conditional statements, loops, and functions. It is very easy to debug, can simplify everyday automation processes, and is much quicker as compared to writing big programs.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "23. What is INODE and Process Id?",
+        "answer": "INODE: It is a unique name given to each file by OS. Each inode has a unique inode number within a file system. It stores various information about files in Linux such as ownership, file size, file type, access mode, number of links, etc.  \n\nProcess Id (Identifier): It is a unique Id given to each process. It is simply used to uniquely identify an active process throughout the system until the process terminates. INODE:   Process Id (Identifier):",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "24. Name the first process that is started by the kernel in Linux and what is its process id?",
+        "answer": "The first process started by the kernel in Linux is “init” and its process id is 1.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "25. What is CLI and GUI?",
+        "answer": "CLI (Command Line Interface): It is basically a command-line program that usually accepts text as input to execute or run functions of the operating system. It allows users to type declarative commands simply to give instructions to the computer to perform or execute operations. It usually requires less memory to use as compared to other interfaces as well as it does not require Windows and a low-resolution monitor can be used. It usually provides greater flexibility of use and can also be used to perform things easily that are most difficult to do with GUI.  \n\nGUI (Graphical User Interface): It is basically a human-computer interface that allows users to interact with electronic devices through graphical icons and visual indicators. The use of these graphical elements or icons makes it easier for users to interact with the system. It is visually intuitive and allows higher productivity. It is usually a combination of graphical and textual interaction that uses menus, buttons, message boxes, etc. CLI (Command Line Interface):   GUI (Graphical User Interface):",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "1. What are the advantages of using NIC teaming?",
+        "answer": "NIC (Network Interface Card) teaming has several advantages as given below: Load Balancing  \nFailover  \nIncreases uptime Load Balancing Failover Increases uptime",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "2. What do you mean by Network bonding?",
+        "answer": "Network Bonding, also known as NIC Teaming, is a type of bonding that is used to connect multiple network interfaces into a single interface. It usually improves performance and redundancy simply by increasing network throughput and bandwidth.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "3. What are different network bonding modes used in Linux?",
+        "answer": "Different network bonding modes used in Linux are listed below: Mode-0 (balance-rr): It is the default mode and is based on round-robin policy. It offers features like fault tolerance and load balancing. \nMode-1 (active-backup): It is based on an active-backup policy. In this, only one node responds or works at the time of failure of other nodes. \nMode-2 (balance-xor): It sets an XOR (exclusive-or) mode for providing load balancing and fault tolerance.  \nMode-3 (broadcast): It is based on broadcast policy. It sets a broadcast mode for providing fault tolerance and can be used only for specific purposes.  \nMode-4 (802.3ad): It is based on IEEE 802.3ad standard also known as Dynamic Link Aggregation mode. It sets an IEEE 802.3ad dynamic link aggregation mode and creates aggregation groups that share the same speed and duplex settings. \nMode-5 (balance-tlb): It is also known as Adaptive TLB (Transmit Load Balancing). It sets TLB mode for fault tolerance and load balancing. In this mode, traffic will be loaded based on each slave of the network.  \nMode-6 (balance-alb): It is also known as Adaptive Load Balancing. It sets ALB mode for fault tolerance and load balancing. It doesn’t need any special switch support. Mode-0 (balance-rr): It is the default mode and is based on round-robin policy. It offers features like fault tolerance and load balancing. Mode-0 (balance-rr): Mode-1 (active-backup): It is based on an active-backup policy. In this, only one node responds or works at the time of failure of other nodes. Mode-1 (active-backup): Mode-2 (balance-xor): It sets an XOR (exclusive-or) mode for providing load balancing and fault tolerance. Mode-2 (balance-xor): Mode-3 (broadcast): It is based on broadcast policy. It sets a broadcast mode for providing fault tolerance and can be used only for specific purposes. Mode-3 (broadcast): Mode-4 (802.3ad): It is based on IEEE 802.3ad standard also known as Dynamic Link Aggregation mode. It sets an IEEE 802.3ad dynamic link aggregation mode and creates aggregation groups that share the same speed and duplex settings. Mode-4 (802.3ad): Mode-5 (balance-tlb): It is also known as Adaptive TLB (Transmit Load Balancing). It sets TLB mode for fault tolerance and load balancing. In this mode, traffic will be loaded based on each slave of the network. Mode-5 (balance-tlb): Mode-6 (balance-alb): It is also known as Adaptive Load Balancing. It sets ALB mode for fault tolerance and load balancing. It doesn’t need any special switch support. Mode-6 (balance-alb):",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "4. Name default ports used for DNS, SMTP, FTP, SSH, DHCP and squid.",
+        "answer": "Default ports used for various services are as follows: Service  Port \nDNS 53\nSMTP 25\nFTP 20 (Data transfer), 21 (Connection established)\nSSH 22\nDHCP 67/UDP (dhcp server), 68/UDP (dhcp client) \nsquid 3128 Service  Port \nDNS 53\nSMTP 25\nFTP 20 (Data transfer), 21 (Connection established)\nSSH 22\nDHCP 67/UDP (dhcp server), 68/UDP (dhcp client) \nsquid 3128 Service  Port Service  Port Service Port DNS 53\nSMTP 25\nFTP 20 (Data transfer), 21 (Connection established)\nSSH 22\nDHCP 67/UDP (dhcp server), 68/UDP (dhcp client) \nsquid 3128 DNS 53 DNS 53 SMTP 25 SMTP 25 FTP 20 (Data transfer), 21 (Connection established) FTP 20 (Data transfer), 21 (Connection established) SSH 22 SSH 22 DHCP 67/UDP (dhcp server), 68/UDP (dhcp client) DHCP 67/UDP (dhcp server), 68/UDP (dhcp client) squid 3128 squid 3128",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "5. What is SSH? How we can connect to a remote server via SSH.",
+        "answer": "SSH (Secure Shell), as the name suggests, is basically a protocol that is being used to securely connect to remote servers or systems and enables two systems to communicate. It is considered the most common way to have access to remote Linux servers. It generally transmits data over encrypted channels therefore security is considered at a high level. To connect to a remote server via SSH, you need to own a domain name and IP address.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "6. Write the difference between Soft and Hard links?",
+        "answer": "Hard Links: It is a special kind of file that points to the same underlying inode as another file. It can be referred to as an additional name for an existing file on Linux OS. Total number of hard links for a file can be displayed using the “ls -l” command. Such links cannot be used across file systems. Hard links can be created using the following command: \n$ ln [original filename] [link name] \n\nSoft Links: It is also termed a symbolic Link. Soft links are kinds of files that usually point to another file. It does not include any amount of data in the target file and simply points to another entry anywhere in the file system. Such links can be used across file systems. Soft links can be created using the following command: \n$ ln -s [original filename] [link name] Hard Links:    Soft Links:    Hard Links  Soft Links\nIt is considered a mirror copy of the original file. It is considered a symbolic link to the original file.\nIt usually shares the same inode number. It usually shares different inode numbers.\nIt contains the original contents of the files. It does not contain the actual contents but contains the location of the original file.\nAny changes made to the original file will directly reflect other files.  Any changes or modifications made to the soft link will directly reflect the original file and its hard links. \nIt cannot be used for linking directories. It can be used for linking directories.\nSuch links are faster as compared to soft links. Such links are slower as compared to hard links. Hard Links  Soft Links\nIt is considered a mirror copy of the original file. It is considered a symbolic link to the original file.\nIt usually shares the same inode number. It usually shares different inode numbers.\nIt contains the original contents of the files. It does not contain the actual contents but contains the location of the original file.\nAny changes made to the original file will directly reflect other files.  Any changes or modifications made to the soft link will directly reflect the original file and its hard links. \nIt cannot be used for linking directories. It can be used for linking directories.\nSuch links are faster as compared to soft links. Such links are slower as compared to hard links. Hard Links  Soft Links Hard Links  Soft Links Hard Links Soft Links It is considered a mirror copy of the original file. It is considered a symbolic link to the original file.\nIt usually shares the same inode number. It usually shares different inode numbers.\nIt contains the original contents of the files. It does not contain the actual contents but contains the location of the original file.\nAny changes made to the original file will directly reflect other files.  Any changes or modifications made to the soft link will directly reflect the original file and its hard links. \nIt cannot be used for linking directories. It can be used for linking directories.\nSuch links are faster as compared to soft links. Such links are slower as compared to hard links. It is considered a mirror copy of the original file. It is considered a symbolic link to the original file. It is considered a mirror copy of the original file. It is considered a symbolic link to the original file. It usually shares the same inode number. It usually shares different inode numbers. It usually shares the same inode number. It usually shares different inode numbers. It contains the original contents of the files. It does not contain the actual contents but contains the location of the original file. It contains the original contents of the files. It does not contain the actual contents but contains the location of the original file. Any changes made to the original file will directly reflect other files.  Any changes or modifications made to the soft link will directly reflect the original file and its hard links. Any changes made to the original file will directly reflect other files. Any changes or modifications made to the soft link will directly reflect the original file and its hard links. It cannot be used for linking directories. It can be used for linking directories. It cannot be used for linking directories. It can be used for linking directories. Such links are faster as compared to soft links. Such links are slower as compared to hard links. Such links are faster as compared to soft links. Such links are slower as compared to hard links.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "7. Name three standard streams in Linux.",
+        "answer": "Standard streams are basically I/O (Input and Output) communication channels between a program and its environment in Linux. Input and output in the Linux environment are distributed across three standard streams. Three standard streams in Linux are as follows:   Standard Input (stdin)\nStandard Output (stdout)\nStandard Error (stderr) Standard Input (stdin) Standard Output (stdout) Standard Error (stderr)",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "8. Why /etc/resolv.conf and /etc/hosts files are used?",
+        "answer": "/etc/resolv.conf: It is used to configure DNS name servers as it contains the details of the nameserver i.e., details of your DNS server. The DNS server is then used to resolve the hostname of the IP address. \n\n/etc/hosts: It is used to map or translate any hostname or domain name to its relevant IP address. /etc/resolv.conf:   /etc/hosts:",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "1. What is the function of grep command?",
+        "answer": "Grep (Global regular expression print) is a command that is used to the global search for a string of characters in a specified file. The text search pattern is generally known as a regular expression. It simply makes use of pattern-based searching.  \n\nSyntax: grep [options] pattern [files] \nExample: $ grep -c \"linux\" interview.txt   \n\nThe above command will usually print the total count of the word “Linux” in the file “interview.txt”.   Syntax:  Example:  ",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "2. What is netstat command?",
+        "answer": "netstat (Network statics) command is generally a networking tool being used for troubleshooting and configuration and used to display all network connections on a system. It simply provides a way to check whether various aspects of TCP/IP are working and what connections are present.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "3. What is the ping command?",
+        "answer": "Linux ping (Packet Internet Groper) command is a command that is used to check connection status between source and destination. In simple words, this command is used to check whether a network is available and if the host is reachable. It can also be used to troubleshoot different connectivity issues, verify connectivity at an IP -level to a second TCP/IP device, and name resolution. One can use this command to test both the computer name and IP address of the computer.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "4. Which command is used to check the default run level?",
+        "answer": "The command used to check the default run level is “/etc/inittab”.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "5. Which command is used to check the size of file or directory?",
+        "answer": "The command used to check the size of the file or directory is “du”. Here “du” stands for disk usage that is used to check information of disk usage of files and directories on a machine. It is also used to display files and directory sizes in a recursive manner. \n\nExample:  \n$ du -sh /var/log/*\n1.8M /var/log/anaconda\n384K /var/log/audit\n4.0K /var/log/boot.log\n0 /var/log/chrony\n4.0K /var/log/cron\n4.0K /var/log/maillog\n64K /var/log/messages   Example:        ",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "6. Which command is used to count the number of characters in a file?",
+        "answer": "The command that is used to count the number of characters in a file in Linux is “wc”. Here “wc” stands for word count. It is used to count the number of lines, words, and characters in a text file.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "7. Explain working of env command.",
+        "answer": "“env” command is basically a shell command that is used to print a list of current environmental variables. Here, “env” stands for the environment. It can also run another process in another environment without any modification of the current environment. It allows you to run programs in a modified environment. It is generally used by shell scripts to launch the correct interpreter. It can also be useful for checking if wrong environment variables prevent the application from starting during troubleshooting.  \n\nExample: \n\n$env\nPHYTHON_PIP_VERSION=9.0L1\nHOME=/root\nDB_NAME=test\nPATH=/usr/local/bin:/usr/local/sbin\nLAND=C.UTF=8\nPYTHON_VERSION=3.4.6\nPWD=/\nDB_URI=mongodb://database:27017/test   Example:          ",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "8. What is the pwd command?",
+        "answer": "“pwd” command is basically a command that is used to print the complete path of the current working directory starting from the root (/). Here, “pwd” stands for Print Working Directory. It is considered one of the most basic and most used commands in Linux. This command is usually a built-in shell command and is also available in different shells such as bash, ksh, zsh, bourne shell, etc.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "9. Name the command that is used to check all the listening ports and services of your machine.",
+        "answer": "# netstat -ntlp",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "10. Which command is used to check the memory status?",
+        "answer": "The command used mostly to check memory status in Linux is “free”. Other commands that can be used are given below: “cat” command: It can be used to show or display Linux memory information. (cat/proc/meminfo)\n“vmstat” command: It can be used to report statistics of virtual memory. \n“top” command: It can be used to check the usage of memory. \n“htop” command: It can be used to find the memory load of each process. “cat” command: It can be used to show or display Linux memory information. (cat/proc/meminfo) “cat” command: “vmstat” command: It can be used to report statistics of virtual memory. “vmstat” command: “top” command: It can be used to check the usage of memory. “top” command: “htop” command: It can be used to find the memory load of each process. “htop” command:",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "11. What is pipe?",
+        "answer": "In Linux, a pipe is basically a form of redirection that is used to send the output of one command to another command for further processing. It simply takes the output from one command and uses it as an input for another. It provides asynchronous execution of commands with help of buffered I/O routines.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "12. What are Linux directory commands?",
+        "answer": "There are basically five Linux directory commands that are used to work with files and directories as given below: pwd: It stands for “print working directory”. This command is generally used to display the path of the present or current working directory. \nSyntax: $ pwd \ncd: It stands for “change directory”. This command is generally used to change the present working directory to the directory that we want to work on. \nSyntax: $ cd <path to new directory> \nIs: It stands for “list”. This command is generally used to show the full list of content of files and directories in the present working directory. \nSyntax: $ ls \nmkdir: It stands for “make directory”. This command generally allows users to create directories in Linux.  \nSyntax: $ mkdir <name (and path if required) of new directory> \nrmdir: It stands for “remove directory”. This command is used to remove/delete each directory that is specified on the command line. \nSyntax: $ rmdir <name (and path if required) of directory> pwd: It stands for “print working directory”. This command is generally used to display the path of the present or current working directory. \nSyntax: $ pwd pwd:  Syntax: Syntax: cd: It stands for “change directory”. This command is generally used to change the present working directory to the directory that we want to work on. \nSyntax: $ cd <path to new directory> cd:  Syntax: Syntax: Is: It stands for “list”. This command is generally used to show the full list of content of files and directories in the present working directory. \nSyntax: $ ls Is:  Syntax: Syntax: mkdir: It stands for “make directory”. This command generally allows users to create directories in Linux.  \nSyntax: $ mkdir <name (and path if required) of new directory> mkdir:  Syntax: Syntax: rmdir: It stands for “remove directory”. This command is used to remove/delete each directory that is specified on the command line. \nSyntax: $ rmdir <name (and path if required) of directory> rmdir:  Syntax: Syntax:",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "13. What do you mean by unmask?",
+        "answer": "Umask, also known as user file-creation mask, is a Linux command that allows you to set up default permissions for new files and folders that you create. In Linux OS, umask command is used to set default file and folder permission. It is also used by other commands in Linux like mkdir, tee, touch, etc. that create files and directories. \n\nSyntax: umask [-p] [-S] [mask]   umask [-p] [-S] [mask] Where,  \n[mask]: It represents the permission masks that you are applying. \n[-S]: It displays the current mask as a symbolic value. \n[-p]: It displays the current mask along with umask command thus allowing it to be copied and pasted as a future input.   ",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "14. Name the command used to review boot messages.",
+        "answer": "The command that is used to review boot messages is the “dmesg” command.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "1. Write difference between Linux and Unix.",
+        "answer": "Linux: It is an open-source and free-to-use Operating system that was first developed in 1991 by Linus Torvalds. It is specially designed to offer free and low-cost OS for personal computer users. It has very low hardware requirements and facilitates powerful support for networking. Different versions of Linux are known as variants. \nExample: Red Hat, Android, etc. \n\nUnix: It is a closed source OS derived from the original AT&T Unix and was first developed in the 1960s. It is not open source and is not free to use. It is generally capable of handling activities from multiple users at the same time. Furthermore, it is specially designed to be more portable, multi-user, and multitasking in a time-sharing configuration. Different versions of Unix are known as distros. \nExample: HP-UX, Solaris, etc. Linux:  Example:   Unix:  Example:   Linux Unix\nIt is mostly used for computer software and hardware, tablet PCS, mainframes, etc.  It is mostly used on web servers, workstations, mainframes, and PCs but Intel, HP, etc.\nIt can be used by everyone as it is freely available.  It can be used only by its copywriters who have access to it.\nIt is considered just the kernel.  It is considered a complete package of OS.\nIt supports more file systems than Unix and its file support system includes Ext2, Ext3, Xfs, FAT, etc.  It supports a lesser file system as compared to Linux and its file support system includes gpfs, hfs, jfs, etc.\nIts source code is available to the general public.  Its source code is not available to the general public. \nIt is freely distributed and is free of cost. It is not freely distributed and comes with a customized cost.\nIt is portable and can be executed on different hard drives. It is non-portable.\nIts installation does not require any specific hardware components.  Its installations require specific hardware components.\nIt is more compatible and flexible with different hardware systems available.  It is less compatible and flexible with different hardware systems as compared to Linux.\nIts default shell is BASH.  Its default shell is Bourne Shell. Linux Unix\nIt is mostly used for computer software and hardware, tablet PCS, mainframes, etc.  It is mostly used on web servers, workstations, mainframes, and PCs but Intel, HP, etc.\nIt can be used by everyone as it is freely available.  It can be used only by its copywriters who have access to it.\nIt is considered just the kernel.  It is considered a complete package of OS.\nIt supports more file systems than Unix and its file support system includes Ext2, Ext3, Xfs, FAT, etc.  It supports a lesser file system as compared to Linux and its file support system includes gpfs, hfs, jfs, etc.\nIts source code is available to the general public.  Its source code is not available to the general public. \nIt is freely distributed and is free of cost. It is not freely distributed and comes with a customized cost.\nIt is portable and can be executed on different hard drives. It is non-portable.\nIts installation does not require any specific hardware components.  Its installations require specific hardware components.\nIt is more compatible and flexible with different hardware systems available.  It is less compatible and flexible with different hardware systems as compared to Linux.\nIts default shell is BASH.  Its default shell is Bourne Shell. Linux Unix Linux Unix Linux Unix It is mostly used for computer software and hardware, tablet PCS, mainframes, etc.  It is mostly used on web servers, workstations, mainframes, and PCs but Intel, HP, etc.\nIt can be used by everyone as it is freely available.  It can be used only by its copywriters who have access to it.\nIt is considered just the kernel.  It is considered a complete package of OS.\nIt supports more file systems than Unix and its file support system includes Ext2, Ext3, Xfs, FAT, etc.  It supports a lesser file system as compared to Linux and its file support system includes gpfs, hfs, jfs, etc.\nIts source code is available to the general public.  Its source code is not available to the general public. \nIt is freely distributed and is free of cost. It is not freely distributed and comes with a customized cost.\nIt is portable and can be executed on different hard drives. It is non-portable.\nIts installation does not require any specific hardware components.  Its installations require specific hardware components.\nIt is more compatible and flexible with different hardware systems available.  It is less compatible and flexible with different hardware systems as compared to Linux.\nIts default shell is BASH.  Its default shell is Bourne Shell. It is mostly used for computer software and hardware, tablet PCS, mainframes, etc.  It is mostly used on web servers, workstations, mainframes, and PCs but Intel, HP, etc. It is mostly used for computer software and hardware, tablet PCS, mainframes, etc. It is mostly used on web servers, workstations, mainframes, and PCs but Intel, HP, etc. It can be used by everyone as it is freely available.  It can be used only by its copywriters who have access to it. It can be used by everyone as it is freely available. It can be used only by its copywriters who have access to it. It is considered just the kernel.  It is considered a complete package of OS. It is considered just the kernel. It is considered a complete package of OS. It supports more file systems than Unix and its file support system includes Ext2, Ext3, Xfs, FAT, etc.  It supports a lesser file system as compared to Linux and its file support system includes gpfs, hfs, jfs, etc. It supports more file systems than Unix and its file support system includes Ext2, Ext3, Xfs, FAT, etc. It supports a lesser file system as compared to Linux and its file support system includes gpfs, hfs, jfs, etc. Its source code is available to the general public.  Its source code is not available to the general public. Its source code is available to the general public. Its source code is not available to the general public. It is freely distributed and is free of cost. It is not freely distributed and comes with a customized cost. It is freely distributed and is free of cost. It is not freely distributed and comes with a customized cost. It is portable and can be executed on different hard drives. It is non-portable. It is portable and can be executed on different hard drives. It is non-portable. Its installation does not require any specific hardware components.  Its installations require specific hardware components. Its installation does not require any specific hardware components. Its installations require specific hardware components. It is more compatible and flexible with different hardware systems available.  It is less compatible and flexible with different hardware systems as compared to Linux. It is more compatible and flexible with different hardware systems available. It is less compatible and flexible with different hardware systems as compared to Linux. Its default shell is BASH.  Its default shell is Bourne Shell. Its default shell is BASH. Its default shell is Bourne Shell.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "2. What is the difference between BASH and DOS?",
+        "answer": "BASH (Bourne Again Shell): It is basically a powerful command shell and scripting language that is being developed from the Bourne shell used on UNIX systems. It runs on multiple OS and new features are added regularly. It can read and execute commands from a file known as a shell script. \n\nDOS (Disk Operating System): It is basically an OS that runs from a hard disk drive. It was the first OS system used by IBM-compatible computers. It basically provides a command-line in which users are allowed to give instructions in the form of commands. BASH (Bourne Again Shell)   DOS (Disk Operating System) BASH  DOS \nIn BASH, commands are case-sensitive.  In DOS, commands are not case-sensitive.\nIn this, / character are directory separator and \\ acts as an escape character.  In this, \\ is a directory separator and / acts as a command argument delimiter.\nIt can take input with its built-in “read” command.  It cannot take input during run time and one can only pass “/argument” during execution from the command line. BASH  DOS \nIn BASH, commands are case-sensitive.  In DOS, commands are not case-sensitive.\nIn this, / character are directory separator and \\ acts as an escape character.  In this, \\ is a directory separator and / acts as a command argument delimiter.\nIt can take input with its built-in “read” command.  It cannot take input during run time and one can only pass “/argument” during execution from the command line. BASH  DOS BASH  DOS BASH DOS In BASH, commands are case-sensitive.  In DOS, commands are not case-sensitive.\nIn this, / character are directory separator and \\ acts as an escape character.  In this, \\ is a directory separator and / acts as a command argument delimiter.\nIt can take input with its built-in “read” command.  It cannot take input during run time and one can only pass “/argument” during execution from the command line. In BASH, commands are case-sensitive.  In DOS, commands are not case-sensitive. In BASH, commands are case-sensitive. In DOS, commands are not case-sensitive. In this, / character are directory separator and \\ acts as an escape character.  In this, \\ is a directory separator and / acts as a command argument delimiter. In this, / character are directory separator and \\ acts as an escape character. In this, \\ is a directory separator and / acts as a command argument delimiter. It can take input with its built-in “read” command.  It cannot take input during run time and one can only pass “/argument” during execution from the command line. It can take input with its built-in “read” command. It cannot take input during run time and one can only pass “/argument” during execution from the command line.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "3. What is samba? Why is it required?",
+        "answer": "Samba is basically an open-source software suite. It runs a number of different Operating systems such as OpenVMS, IBM , etc. It is generally used to connect Linux machines to Microsoft network resources simply by providing Microsoft SMB support. It provides more secure, stable, fast file and print services for every client or user using SMB (Server Message Block) or CIFS (Central Server Message Block) protocol.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "1. Conclusion",
+        "answer": "Linux, like windows, iOS, and Mac, is an operating system that helps one to use or utilize old and outdated computer systems such as Firewall, router, backup server, etc. It makes computer systems more secure than Windows and does not require any use of Anti-Virus Programs. It is becoming increasingly popular as the OS for servers because it comes with the capabilities to heavily encrypt and protect all of a computer's data. The above given are all important questions along with answers related to Linux that were recently asked in Interviews. It will give you a better understanding of all the important topics related to Linux and will help you to crack the interviews.",
+        "reference": "interviewbit.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Linux is a UNIX based operating system. Linus Torvalds first introduced it. It is an open source operating system that was designed to provide free and a low-cost operating system for the computer users.\nLinux is an open-source Unix-like computer OS that directly manages the resources and hardware of a system, like storage, memory, and CPU, and handles the communication between hardware and software. First, it was published on 5 October 1991 by Linus Torvalds for systems and is considered faster and more secure than Windows. It's freely distributable and is basically established around Linux Kernel. Additionally, it can be installed in notebooks, computers, laptops, mobiles, etc. Linux operating system flavors include Gentoo, SUSE Linux, Debian, Ubuntu, etc.\nSome important aspects of the Linux operating system include:\n\nADVERTISEMENT\nAdaptable and robust: Linux can work for prolonged times without crushing and is very much resistant to security threats.\nOpen-source and free: it is easily and freely available to everyone.\nMore secure: Linux is more secure because it offers security with authentication features, such as file system access control, security auditing, and password authentication.\nMultiprogramming system: Multiple functions or an application can simultaneously run.\nApplication support: Linux includes its software repository, which is a storage location or place from where software can be redeemed so that users can get applications.\nGraphical user interface: Linux offers an interface for users to collaborate with the system and permits to use of graphical user interface applications, like Firefox, VLC, etc.\nCustomized keywords: There are several different languages used across the world. Hence, Linux supports multiple language keyboard installation.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "2) What is the difference between UNIX and Linux?",
+        "answer": "UNIX was originally started as a propriety operating system for Bell Laboratories, which later release their commercial version while Linux is a free, open source and a non-propriety operating system for the mass uses.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Linux Kernel is low-level system software. It is used to manage the hardware resources for the users. It provides an interface for user-level interaction.\nLinux kernel is the primary component of the Linux operating system. Simply, it is a resource manager that works as a bridge between software and hardware. Its primary role is to handle hardware resources and is generally used to offer an interface for interaction. A Linux kernel is the initial program that's loaded whenever a system starts. Also, it is called low-level system software.\nIts primary functions are as follows:\nStorage management\nDevice management\nProcess management\nMemory management\nAccess management and use of several peripherals linked to the computer.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "4) Is it legal to edit Linux Kernel?",
+        "answer": "Yes. You can edit Linux Kernel because it is released under General Public License (GPL) and anyone can edit it. It comes under the category of free and open source software.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "5) What is LILO?",
+        "answer": "LILO is a boot loader for Linux. It is used to load the Linux operating system into the main memory to begin its operations. It is a bootloader that is used for loading Linux into memory and dawning the OS. Also, it is called a boat manager that offers a dual-boot of a system. It can work as either a secondary boot program or a master boot program that implements several functions, such as starting the kernel, loading memory, recognizing other supporting programs, and locating the kernel. We need to install a unique bootloader, i.e., LILO, if we wish to use Linux operating system because it permits Linux OS boot.\nADVERTISEMENT",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "6) What is the advantage of open source?",
+        "answer": "Open source facilitates you to distribute your software, including source codes freely to anyone who is interested. So, you can add features and even debug and correct errors of the source code.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "7) What are the basic components of Linux?",
+        "answer": "Just like other operating systems, Linux has all components like kernel, shells, GUIs, system utilities and application programs. Generally, Linux is composed of five components or elements, which are listed and explained as follows:\n\nKernel: It is the main or core Linux part and is generally liable for every major activity of the operating system, such as device management, process management, etc.\nSystem library: System libraries are unique programs or functions with which system utilities or application programs can access kernel features without code requirements. It is used for implementing the functionality of the operating system.\nSystem utility: System utilities are utility programs that are liable to perform individual-level and specialized tasks. These are considered more responsible and permit users to handle the system.\nHardware: It's physical hardware that contains items like a CPU, display, keyboard, mouse, etc.\nShell: It's an environment where we can execute our commands, programs, and shell scripts. It's an interface between the kernel and the user that hides every complexity of the kernel functions from the user.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "8) What is the advantage of Linux?",
+        "answer": "Every aspect comes with additional features, and it provides a free downloading facility for all codes.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Linux Shell is called the user interface available between the kernel and the user. It is used to execute communication and commands with Linux operating system. Linux shell takes human-readable commands as input and transforms them into a language that is kernel understandable.\nDifferent shell types are used on classic Linux systems, as mentioned below:\nBourns Shell\nZSH\nTCSH\nBourns Again Shell or BASH\nKorn Shell or KSH\nC Shell or CSH",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Solaris is the Linux of Sun Microsystems.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "LILO is the Linux loader.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "Later you wish to rename that file, what command is designed for it?",
+        "answer": "The 'mv' command is used to rename a file.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "The commands which are built in the shells are called as the internal commands.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Process Id: It's a unique Id provided to all processes. It is used to identify a running process uniquely throughout the computer until the process ends.\nINODE: It's a unique name provided to all files by the operating system. All inodes have a unique inode number in a file system. INODE stores many details about files, including the number of links, access mode, file type, file size, ownership, etc.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "Which command is used?",
+        "answer": "The 'at' command is used for the same.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Some of the Linux commands are:\nCentOS\nUbuntu\nRedhat\nDebian\nFedora",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "17) What is Swap Space?",
+        "answer": "Swap space is used to specify a space which is used by Linux to hold some concurrent running program temporarily. It is used when RAM does not have enough space to hold all programs that are executing.\n\nAs its name implies, swap space is a space on the hard disk used when the RAM or physical memory amount is full. It's a replacement for physical memory. Its primary function is to replace disk space for memory when actual RAM doesn't have sufficient space to hold every program that is running, and more space is needed. In other words, it can be used as a RAM extension by Linux.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "18) What is BASH?",
+        "answer": "BASH is a short form of Bourne Again SHell. It was a replacement to the original Bourne shell, written by Steve Bourne.\nIt is generally a command language interpreter. BASH was written for GNU OS by Brian Fox and can replace Bourne Shell. It is the same as Bourne Shell but contains some extra features like a command-line amendment that make it more convenient and easier to use. It's the default user shell on almost every Linux installation. Basically, it is a non-compiled and interpreted process that can also execute in the terminal window. Also, it is able to read commands in shell scripts.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "19) What is the basic difference between BASH and DOS?",
+        "answer": "BASH commands are case sensitive while DOS commands are not case sensitive.\nDOS follows a convention in naming files. In DOS, 8 character file name is followed by a dot and 3 characters for the extension. BASH doesn't follow such convention.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "20) What is a root account?",
+        "answer": "The root account is like a system administrator account. It provides you full control of the system. You can create and maintain user accounts, assign different permission for each account, etc.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "21) What is GUI and CLI?",
+        "answer": "GUI: GUI stands for Graphical User Interface. It is a human-computer interface that permits users to collaborate with electronic devices through visual indicators and graphical icons. The use of these graphical icons or elements makes it convenient for the user to collaborate with the system. It's visually intuitive and permits higher productivity. It uses the images and the icons which are clicked by the users to communicate with the system. It is more attractive and user-friendly because of the use of the images and icons.\nCLI: CLI stands for Command Line Interface. It is a command-line program that takes text as input to run the tasks of the OS. It permits users to enter declarative commands to give instructions to the system to perform operations. It needs less memory than other interfaces, and it doesn't need Windows because a low-resolution monitor can also be used. It is an interface that allows users to type declarative commands to instruct the computer to perform operations.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "22) Which popular office suite is available free for both Microsoft and Linux?",
+        "answer": "Open Office Suite is available free for both Microsoft and Linux. You can install it on both of them.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "23) Suppose your company is recently switched from Microsoft to Linux and you have some MS Word document to save and work in Linux, what will you do?",
+        "answer": "Install Open Office Suite on Linux. It facilitates you to work with Microsoft documents.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "24) What is SMTP?",
+        "answer": "SMTP stands for Simple Mail Transfer Protocol. It is an internet standard for mail transmission.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "25) What is Samba? Why is it used?",
+        "answer": "Samba service is used to connect Linux machines to Microsoft network resources by providing Microsoft SMB support.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "26) What are the basic commands for user management?",
+        "answer": "last,\nchage,\nchsh,\nlsof,\nchown,\nchmod,\nuseradd,\nuserdel,\nnewusers etc.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "27) What is the maximum length for a filename in Linux?",
+        "answer": "255 characters.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "28) Is Linux Operating system virus free?",
+        "answer": "No, there is no operating system till date that is virus free, but Linux is known to have less number of viruses.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "29) Which partition stores the system configuration files in Linux system?",
+        "answer": "/stc partition.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "30) Which command is used to uncompress gzip files?",
+        "answer": "gunzip command is used to uncompress gzip files.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "31) Why do developers use MD5 options on passwords?",
+        "answer": "MD5 is an encryption method, so it is used to encrypt the passwords before saving.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "32) What is a virtual desktop?",
+        "answer": "The virtual desktop is used as an alternative to minimizing and maximizing different windows on the current desktop. Virtual desktop facilitates you to open one or more programs on a clean slate rather than minimizing or restoring all the needed programs.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "33) What is the difference between soft and hard mounting points?",
+        "answer": "In the soft mount, if the client fails to connect the server, it gives an error report and closes the connection whereas in the hard mount, if the client fails to access the server, the connection hangs; and once the system is up, it again accesses the server.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "34) Does the Alt+Ctrl+Del key combination work in Linux?",
+        "answer": "Yes, it works like windows.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "35) What are the file permissions in Linux?",
+        "answer": "There are 3 types of permissions in Linux OS that are given below:\nRead: User can read the file and list the directory.\nWrite: User can write new files in the directory.\nExecute: User can access and run the file in a directory.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "36) What are the modes used in VI editor?",
+        "answer": "Visual Editor or VI editor is a default text editor that comes with almost every Linux operating system. There are three different types of modes utilized in the VI editor, as mentioned below:\nRegular Mode or Command Mode: For the VI editor, it's the default mode. It's used for typing commands that perform specific or particular vi functions. To input this mode from other modes, one must click [esc]. It lets us see the content.\nEdit Mode or Insertion Mode: It permits us to type text in a file or perform text editing. To input this mode from other modes, one must click [esc]. It lets us insert or delete content or text.\nReplacement Mode or Ex Mode: It is used to store the files and implementation of the commands. It runs files with distinct parameters. To input this mode, one must click [:]. It lets us overwrite text or content.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "37) How to exit from vi editors?",
+        "answer": "The following commands are used to exit from vi editors.\n:wq saves the current work and exits the VI.\n:q! exits the VI without saving current work.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "38) How to delete information from a file in vi?",
+        "answer": "The following commands are used to delete information from vi editors.\nx deletes a current character.\ndd deletes the current line.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "39) How to create a new file or modify an existing file in vi?",
+        "answer": "vi filename",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "40) What are the Linux user mode types?",
+        "answer": "Two Linux user modes are available, which are as follows:\nGUI\nCommand Line",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "41) What are the Process States?",
+        "answer": "Linux process is a kind of process that can be in several distinct states. The process comes in these states from start to end. In Linux, the process states are mentioned below:\n\nNew/Ready: A new process is made and is ready to execute.\nRunning: The process is being run.\nBlocked/Wait: The process waits for input through the user, and if it does not have resources to execute, such as input, file locks, and memory, it can remain in a blocked or waiting state.\nCompleted/Terminated: The process has been terminated by the operating system or finished the execution.\nZombie: The process is aborted, but information related to the process is still available and is available within the process table.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "42) What is the typical swap partition size in the Linux System?",
+        "answer": "It should be double the amount of RAM or physical memory available in the system.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "43) What is the name of the file that's used to mount file systems automatically?",
+        "answer": "The fstab file is the file that's used to mount file systems automatically.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "44) What do you mean by LVM, and why it's important?",
+        "answer": "Logical Volume Management, or LVM, is a tool that offers the management of logical volume for the Linux kernel. It's simply being introduced to enable physical storage device management convenient. Also, it features allocating disks, resizing, mirroring, and striping logical volumes.\nIts primary benefits are enhanced abstraction, control, and flexibility. It permits extensible disk space management. It is needed to online resize the file system. The LVM partition size can be increased with the \"lvextend\" command and decreased with the \"lvreduce\" command in Linux.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "A proc file system is a virtual or pseudo file system that offers an interface to the data structure of the kernel. Generally, it contains useful details about processes that are currently running. Also, it can be used to modify a few kernel parameters during execution or runtime.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "46) What are the daemons?",
+        "answer": "Daemons are also called the background process. They are a long-running program of Linux that executes in the background. They don't have any controlling terminal; hence they execute in the background. Daemons are the process starts when the computer is bootstrapped and ends or terminates only when the computer is shut down. It's simply the form of increasing the base OS functionality. It provides many functions that aren't available in OS.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "47) What is the name of the daemon that can control the print spooling process?",
+        "answer": "The line printing daemon can control the print spooling process.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "48) What do you mean by a Zombie Process?",
+        "answer": "In Linux, a Zombie Process is also known as a dead or defunct process. It is a process that has completed the execution, but its access remains inside the process table. Usually, it happens because of insufficient correspondence between child and parent processes. This process appears for the child process due to the parent process requires reading the child process's status. This process is deleted from the process table once it is finished with the wait system call.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "49) What is the difference between an anacron and a cron?",
+        "answer": "Anacron: In Linux, anacron is a program used to run tasks at some intervals. It works on machines effectively that are powered off in a week or day.\nCron: In Linux, cron is a program used to run tasks at an expected time. It works on machines effectively that continuously run.\nAnacron Cron\nIt's not a daemon. It's a daemon.\nOnly it can be utilized by super users. It can be expected by normal users.\nIt's ideal for laptops and desktops. It's ideal for servers.\nIt doesn't suppose the system to execute 24*7. It supposes the system to run 24*7.\nThe minimum granularity of an anacron is in days only. The minimum granularity of a cron is in minutes.\nIt periodically executes commands. It executes scheduled commands.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "50) What do you mean by load average under Linux?",
+        "answer": "As its name implies, load average is the system average loaded on Linux servers being measured over a given time. The Linux server's load average can be detected using \"uptime\" and \"top\" commands. Also, it is used to record the system resources.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "51) What is the Shell Script?",
+        "answer": "As its name implies, Shell Script is a script mainly written for the shell. The script describes the programming language being used to manage applications. It permits the execution of distinct commands entered inside the shell. Generally, it helps us to make complex programs, including functions, loops, and conditional statements.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "52) What is the name of the first process initiated by the kernel, and what is the process id of it in Linux?",
+        "answer": "\"init\" is the first process initiated by the kernel, and 1 is the process id of it.\nLinux Networking",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "conf files in Linux?",
+        "answer": "/etc/hosts: This file translates or maps any domain name or hostname to its corresponding IP address.\n/etc/resolv.conf: This file configures DNS name servers because it includes the information of the name server, i.e., information of our DNS server. Then, the DNS server resolves the IP address hostname.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "54) What is Network bonding in Linux?",
+        "answer": "Network bonding is also called NIC teaming. It is a kind of bonding that connects two or more network interfaces to a single interface. Usually, it improves redundancy and performance generally by increasing network bandwidth and throughput.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "55) What are the types of network bonding?",
+        "answer": "There are several network bonding modes which are mentioned as follows:\nMode-0 (balance-rr): Mode-0 is the default mode, and it works according to the round-robin policy. It provides features like load balancing and fault tolerance.\nMode-1 (active-backup): It works according to the active-backup policy. Only a single node works or responds during the failure of another node.\nMode-2 (balance-xor): This mode sets an exclusive-or (XOR) mode for offering fault tolerance and load balancing.\nMode-3 (broadcast): It works according to the broadcast policy. This mode configures a broadcast mode for offering fault tolerance and can be only used for specific goals.\nMode-4 (802.3ad): It is also called Dynamic Link Aggregation mode. It works according to the IEEE 802.3ad standard. It configures an IEEE 802.3ad dynamic link aggregation mode and makes aggregation groups that distribute similar duplex and speed settings.\nMode-5 (balance-tlb): It is also called Adaptive Transmit Load Balancing (TLB). It configures TLB mode for load balancing and fault tolerance.\nMode-6 (balance-alb): It is also called Adaptive Load Balancing. It configures ALB mode for load balancing and fault tolerance. It does not need unique switch support.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "55) What are the default ports for squid, DHCP, SSH, FTP, SMTP, and DNS?",
+        "answer": "Default ports for several services are below:\nServers Default Ports\nsquid 3128\nDHCP 68/UDP (dhcp client), 68/UDP (dhcp server)\nSSH 22\nFTP 21 (Connection established), 22 (Data transfer)\nSMTP 25\nDNS 53",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "56) What is the difference between Hard and Soft links?",
+        "answer": "Soft Links: Soft links are also known as a symbolic link. These are files that generally point to other files. It doesn't include data within the target file and points to other entries anywhere inside the file system. We can use the below command to create the soft links:\n$ ln -s [original filename] [link name]  \nHard Links: Hard links are special files that point to a similar underlying inode. It can be known as an extra name for an old file in Linux OS. We can use the below command to create the hard links:\n$ ln [original filename] [link name]  \nSoft Link Hard Link\nIt's a symbolic link to the actual file. It uses a mirror copy of the actual file.\nUsually, it shares distinct inode numbers. Usually, it shares similar inode numbers.\nIt doesn't include the original contents but includes the original file location. It includes the original contents.\nAny modifications or changes made to this link will reflect the actual file and its hard links directly. Any modifications made to the actual file will reflect other files directly.\nIt links directories. It can't link directories.\nThey are slower than hard links. They are faster than soft links.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "57) What are the three standard streams under Linux?",
+        "answer": "In Linux, standard streams are I/O communication channels among a program and its environment. In the Linux environment, input and output are distributed around three standard streams, which are mentioned below:\nstdin (Standard Input)\nstdout (Standard Output)\nstderr (Standard Error)\nLinux Commands",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Network statics or netstat command is a networking tool for configuration and troubleshooting. It shows every network connection on the system. It offers a way to inspect whether several TCP/IP aspects are running and what connections are available.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "Packet Internet Groper aur ping command checks the connection status between the destination and source. In other words, this command checks whether a network is present and if the host is attainable. We can use the ping command to check both the IP address and name of the system.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "The \"/etc/inittab\" command is used to see the default run level.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "The \"du\" command is used to see the size of the directory or file. The disk usage or du command checks disk usage information of directories and files on a system. Also, it is used to show directory and file sizes in a recursive manner.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    },
+    {
+        "question": "",
+        "answer": "The \"wc\" command is used to calculate the characters in a file. The word count or wc command is used for counting the number of characters, words, and lines in any text file.",
+        "reference": "javatpoint.com",
+        "role": "linux"
+    }
+]

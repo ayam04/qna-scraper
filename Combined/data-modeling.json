@@ -1,0 +1,218 @@
+[
+    {
+        "question": "1) What do you understand by a data model?",
+        "answer": "A data model is a set of different data elements. It specifies how they are related to each other and the real-world entity properties. Data models consist of entities. Here, entities are the objects and concepts whose data we want to track. These entities are stored in a table found in a database. For example, if a table consists of customers, products, manufacturers, buyers, and sellers, they are called potential entities. Each entity has attributes-details that the users want to track. For example, a customer's name is an attribute.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "2) What is data modeling?",
+        "answer": "Data modeling is creating data models to store in a database. It is a conceptual representation of data objects, the association between different data objects, and the rules. It also represents how the data flows. In other words, data modeling is creating a simplified diagram that contains data elements in the form of texts and symbols.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "3) What are the different types of data models?",
+        "answer": "There are mainly three types of data models:\nADVERTISEMENT\nPhysical data model: The physical data model describes how the system will be implemented using a specific DBMS system. Generally, this model is created by DBA and developers and used to demonstrate the actual implementation of the database. This framework or schema specifies how data is physically stored in the database.\nLogical data models: The logical data models define how the system should be implemented regardless of the DBMS. Data architects and business analysts typically create this model to develop a technical map of rules and data structures. It specifies the logical representation of data to exist apart from the physical storage.\nConceptual data model: The conceptual data model mainly focuses on the high-level user's view of the data. Generally, this model is created by business stakeholders and data architects to organize, scope, and define business concepts and rules. In other words, this model defines what the system should contain.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "4) What do you understand by the fact and fact table in data modeling?",
+        "answer": "In data modeling, the fact is used to represent quantitative data. For example, the net amount which is due is a fact. On the other hand, a fact table contains numerical data and foreign keys from dimensional tables.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "5) What is a Table?",
+        "answer": "A table is a structure used to store data in the form of rows and columns. Columns are also known as fields and are used to show data in vertical alignment. Rows are also called records or tuples and represent data's horizontal alignment.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "6) What are the several design schema used in data modeling?",
+        "answer": "There are mainly two different types of data modeling schemes used in data modeling:\nStar Schema: The star schema is the simplest style of data mart schema. This approach is most widely used to develop data warehouses and dimensional data marts. This schema contains one or more fact tables that reference any number of dimension tables.\nSnowflake Schema: In computing, the snowflake schema is a logical arrangement of tables in a multidimensional database so that the entity-relationship diagram resembles a snowflake shape. The snowflake schema is represented by centralized fact tables connected to multiple dimensions. Snowflaking is used to normalize the dimension tables in a star schema.\nNote: The star schema is an important case of the snowflake schema and is used more effectively for handling simpler queries.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "7) What do you understand by database normalization?",
+        "answer": "Database normalization is the process of structuring and designing the database to reduce data redundancy without losing integrity. It usually works on a relational database according to so-called normal forms. The main motive of database normalization is to reduce data redundancy and improve data integrity. Edgar F. Codd first proposed the process of database normalization as part of his relational model.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "8) What is the main usage of database normalization?",
+        "answer": "Following are the main motives of database normalization:\nDatabase normalization is used to remove useless or redundant data.\nIt is also capable of reducing data complexity.\nIt ensures the relationships between the tables and the data residing in the tables.\nIt ensures data dependencies and also ensures that the data is stored logically.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "9) What is denormalization in a database? / What do you understand by Data Denormalization? What are its advantages and disadvantages?",
+        "answer": "Data Denormalization is a technique used on a previously-normalized database to increase performance. In this technique, redundant data is added to an already normalized database that enhances the read performance by sacrificing write performance.\nIn the denormalization database optimization technique, we add redundant data to one or more tables. This can help us avoid costly joins in a relational database. In other words, we can say that denormalization is the process of improving the read performance of a database by sacrificing some write performance, by adding redundant copies of data, or by grouping it.\nAdvantages of Denormalization:\nThe biggest advantage of denormalization is that it retrieves data faster because we have to do fewer joins.\nQueries used to retrieve data are generally simple and, therefore, have fewer chances of having bugs.\nIt is easy to handle since we need to look at fewer tables.\nDisadvantages of Denormalization:\nThe biggest disadvantage of denormalization is that its updates and inserts are more expensive.\nIts updates and insert code are hard to write.\nData may be inconsistent and may require more storage.\nNote: We must remember that denormalization does not mean not doing normalization. It is an optimization technique applied after doing normalization.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "10) When should we use denormalization?",
+        "answer": "Following are some situations when we have to use denormalization:\nDenormalization is used when we have to maintain the history, and there is a lot of involvement of the table while retrieving data. It is also used to construct a data warehouse.\nIt is used to improve query performance. Sometimes we have to use queries that may require multiple tables to access data we frequently need.\nIt is used to compute commonly-needed values upfront. Sometimes we require some values ready-computed, so we don't have to generate them in real-time.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "11) What do you understand by dimension and attribute?",
+        "answer": "Dimensions are used to represent qualitative data. For example, product, class, plan, etc., are dimensions. On the other hand, an attribute is a value that a dimension contains. A dimension table has textual or descriptive attributes. For example, the product category and product name are two attributes of the product dimension table.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "12) What do you understand by data sparsity?",
+        "answer": "Data sparsity is a term used to specify the phenomenon of not observing enough data in a dataset. It specifies how much data you have for the entity/ dimension of the model.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "13) What is the primary key? / What is a primary key constraint?",
+        "answer": "The primary key or primary key constraint is a column or group that unequally identifies every row in the table. The primary key constraint is imposed on the column data to avoid null and duplicate values. The primary key value must not be null. Every table must contain one primary key.\nPrimary Key = Must be Unique & Not Null.   \nFor example, Social security number, bank account number, bank routing number, phone number, Aadhar number, etc.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "14) What is a foreign key? / What is a foreign key constraint?",
+        "answer": "A foreign key is a group of attributes used to link parent and child tables. The parent table has a primary key, and a foreign key constraint is imposed on a column in the child table. The foreign key column value in the child table will always refer to primary key values in the parent table.\nIt means that the value of the foreign key column available in the child table refers to the primary key's value in the parent table.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "15) What is a composite primary key? / What is a composite primary key constraint?",
+        "answer": "Composite primary key or composite primary key constraint specifies a case when more than one column is a part of the primary key. This is called a composite primary key constraint.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "16) What is a composite foreign key? / What is a composite foreign key constraint?",
+        "answer": "Composite foreign key or composite foreign key constraint specifies a case when a group of columns is available in a foreign key. This is called a composite foreign key constraint.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "17) What do you understand by data mart?",
+        "answer": "A data mart is a condensed version of a data warehouse. This is designed to use by a specific department, unit, or set of users in an organization. For example, marketing, sales, HR, finance, etc.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "18) What do you understand by surrogate key? What are the benefits of using the surrogate key?",
+        "answer": "A surrogate key is a unique key in the database used for an entity in the client's business or an object within the database. This is used when we cannot use natural keys to create a unique primary table key. In this case, the data modeler or architect decides to use surrogate or helping keys for a table in the LDM. That's why surrogate keys are also known as helping keys. A surrogate key is a substitute for natural keys.\nFollowing are some benefits of using surrogate keys:\nSurrogate keys are useful for creating SQL queries, uniquely identifying a record and good performance.\nSurrogate keys consist of numeric data types that provide excellent performance during data processing and business queries.\nSurrogate keys do not change while the row exists.\nNatural keys can be changed in the source. For example, migration to a new system, making them useless in the data warehouse. That's why surrogate keys are used.\nIf we use surrogate keys and share them across tables, we can automate the code, making the ETL process simpler.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "19) What are the different types of normalization used in Data Modeling?",
+        "answer": "In Data Modeling, the following five types of normalization are generally used:\nFirst normal form\nSecond normal form\nThird normal forms\nBoyce-Codd's fourth normal forms\nFifth normal forms",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "20) What are the important types of relationships in a data model?",
+        "answer": "There are three types of relationships in a data model:\nIdentifying Relationship\nNon-Identifying Relationship\nSelf-Recursive Relationship",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "21) What is forward data engineering?",
+        "answer": "Forward data engineering or forward engineering is used to automatically generate or translate a logical model into a physical model.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "22) What do you understand by discrete and continuous data?",
+        "answer": "Discreet data is a type of data that is finite or defined. It doesn't change. For example, gender, telephone numbers, identity number. On the other hand, continuous data is a type of data that changes in a continuous and ordered manner. For example, age, time, etc.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "23) What do you understand by an identifying relationship in DBMS?",
+        "answer": "In DBMS, an identifying relationship is a relationship between two entities in which an instance of a child entity is identified through its association with a parent entity. The identifying relationship specifies that the child entity is dependent on the parent entity for its identity and cannot exist without it. Generally, parent and child tables are present in a data model and are connected by a relationship line.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "24) What is the full form of PDaP?",
+        "answer": "In DBMS, PDaP stands for Praedico Data Platform. It is a data cube for storing data as a summary. The data in PDaP is stored so that the users can report it with ease. The biggest advantage of PDaP is that it acts as a data cube for storing data as a summary and helps users analyze data quickly.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "25) What do you mean by a non-identifying relationship?",
+        "answer": "A non-identifying relationship is a relationship between two entities in which an instance of the child entity is not identified through its association with a parent entity. In this case, the child entity is not dependent on the parent entity and can exist without it. This relationship is drawn by dotted lines by connecting these two tables.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "26) What is Business Intelligence, and what is its usage?",
+        "answer": "Business Intelligence or BI is a set of technology-driven processes, architectures, and technologies that convert raw data into meaningful information that can be beneficial and profitable for business. It is a suite of software and services that transforms data into actionable intelligence and knowledge. The biggest advantage of Business Intelligence is that it helps executives, managers, and workers to make smart business actions by using informed business decisions.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "27) What is metadata? What are its different types?",
+        "answer": "Metadata is data that provides information about other data. It gives information about other data but not the content of the data, for example, the text of a message or the image itself.\nIt describes the data about data and shows what type of data is stored in the database system.\nDescriptive metadata: The descriptive metadata provides descriptive information about a resource. It is mainly used for discovery and identification. The main elements of descriptive metadata are title, abstract, author, keywords, etc. Following is a list of several distinct types of metadata:\nAdministrative metadata: Administrative metadata is used to provide information to manage a resource, like a resource type, permissions, and when and how it was created.\nStructural metadata: The structural metadata specifies data containers and indicates how compound objects are put together. It also describes the types, versions, relationships, and other characteristics of digital materials. For example, how pages are ordered to form chapters.\nReference metadata: The reference metadata provides information about the contents and quality of statistical data.\nStatistical metadata: Statistical metadata describes processes that collect, process, or produce statistical data. It is also called process data.\nLegal metadata: The legal metadata provides information about the creator, copyright holder, and public licensing.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "28) What is Microsoft Sequence Clustering algorithm?",
+        "answer": "Microsoft Sequence Clustering algorithm is a unique algorithm used to combine sequence analysis with clustering. This algorithm collects similar paths or paths related to each other and sequences of data having events. After collecting the most common sequences, this algorithm performs clustering to find similar sequences.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "29) What is an analysis service in Data Modeling?",
+        "answer": "Analysis service is a product of Microsoft Azure used in Data Modeling. It is a fully managed platform as a service (PaaS) that provides enterprise-grade data models in the cloud. It provides a combined view of the data used in data mining or OLAP. The analysis services use an advanced mashup and modeling features to combine data from multiple data sources, define metrics, and secure data in a single, trusted tabular semantic data model. The biggest advantage of using an analysis service is that it provides users with an easier and faster way to perform ad hoc data analysis using Power BI and Excel tools.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "30) What is data mart? What are the key features of a data mart?",
+        "answer": "A data mart is a subset of a data warehouse. It mainly focuses on a specific part of the business, department, or subject area. It provides specific data to a defined group of users within an organization. It is the best solution for a specific business area as it facilitates the users to quickly access important data without wasting time searching through the entire data warehouse. Every big organization has a data mart for a specific department in the business, such as finance, sales, marketing, etc.\nKey features of a data mart:\nA data mart mainly focuses on a specific subject matter or area of the business unit.\nIt is a subset of a data warehouse and works as a mini-data warehouse that holds aggregated data.\nIn a data mart, data is limited in scope.\nIt generally uses a star schema or similar structure to hold data. That's why it is faster to retrieve data from it.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "31) What do you understand by the time series algorithm?",
+        "answer": "Time Series algorithm is a tool of Microsoft that provides an optimized set of multiple algorithms for forecasting continuous values, such as product sales over time. Time series algorithm is better than other Microsoft algorithms such as decision trees because other Microsoft algorithms, like decision trees, require additional columns of new information as input to predict a trend. In contrast, the time series model does not need these input types. The time series model can predict trends based only on the original dataset used to create the model. It also facilitates us to add new data to the model when we make a prediction and automatically add the new data in the trend analysis.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "32) What is a data warehouse, and what is data warehousing?",
+        "answer": "A data warehouse is a repository of electronically stored data of an organization extracted from operational systems and made available for ad-hoc queries and scheduled reporting. It is a data management system designed to enable and support business intelligence activities, such as analytics.\nThe main purpose of a data warehouse is to perform queries and analyze the data. It contains a large amount of historical data usually derived from various sources such as application log files and transaction applications. It centralizes and consolidates a large amount of data from multiple sources. Its analytical capabilities allow an organization to derive valuable business insights from their data and help in decision-making. It contains valuable data that data scientists and business analysts can use to improve and enhance the business. Because of these capabilities, a data warehouse is called a \"single source of truth\" for an organization.\nData warehousing is a process for collecting and managing data derived from various sources such as application log files and transaction applications.\nData warehousing is mainly used in the BI system built for data analysis and reporting. In this process, data warehousing collects and analyses data from multiple sources, allowing an organization to derive valuable business insights from their data and help in decision-making. This is very useful for data scientists and business analysts to improve and enhance businesses.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "33) What are the key features of a data warehouse?",
+        "answer": "Following are the key features of a data warehouse:\nA data warehouse is developed by collecting and combining data from multiple heterogeneous sources, such as flat files and relational databases, making it the best thing for data analysis.\nA data warehouse is subject-oriented. It provides data for a specific subject instead of the whole ongoing operations of an organization. For example, it provides data about product information, sales data, customer and supplier details, etc.\nIt is time-variant. It provides information from a specific historical point of time to categorize the data with a particular time frame.\nA data warehouse is separate from an operational database. It is non-volatile. The previous data is not omitted whenever we add the new data to it. If you make any regular changes in the operational database, it is not seen in the data warehouse.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "",
+        "answer": "Bitmap Indexing is a special type of database indexing that uses bitmaps (bit arrays). This is used to answer queries by executing bitwise operations. This technique is mainly used for huge databases when the column is of low cardinality, and these columns are most frequently used in the query.\nRequirement of Bitmap Indexing:\nLet's see an example to understand clearly the requirement of Bitmap Indexing. Suppose there is a company with an employee table with entries like EmpNo, EmpName, Job, New_Emp, and salary. In this company, the employees are hired once in the year, so it is obvious that the table will be updated very less and will remain static most of the time, but the columns will be frequently used in queries to retrieve data like, No. of female employees in the company, etc. In this case, we need a file organization method that must be extremely fast to give quick results. But any of the traditional file organization methods are not that fast. We go for a better method of storing and retrieving data called Bitmap Indexing.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "35) What is the key difference between a Data Mart and a Data Warehouse?",
+        "answer": "As we know, both Data Mart and Data Warehouse are used to store the data. The main difference between Data Mart and Data Warehouse is that Data Warehouse is the type of database which is data-oriented. On the other hand, Data Mart is the type of database that is project-oriented. Let's see the key differences between a Data Mart and a Data Warehouse in the following table:\nData Mart Data Warehouse\nA data mart is a subset of a data warehouse. It is small in size. A Data Warehouse is a superset of a Data Mart. It is huge in size.\nData marts are used to provide specific data access to users. So, it is easy for users to fetch data quickly. Data Warehouse is very big in size, so it may be complicated and time-consuming to retrieve specific data from here.\nGenerally, a Data Mart is less than 100 GB. A Data Warehouse is usually larger than 100 GB and often a terabyte or more.\nIt mainly focuses on a single subject area of business. A Data Warehouse is spread very wide and ranges across multiple areas and multiple areas of businesses.\nData Mart follows the bottom-up model. Data Warehouse follows a top-down model.\nIn Data Mart, the data comes from one data source. In Data Warehouse, data comes from more than one heterogeneous data source.\nA Data Mart is used to make tactical decisions for business growth. A Data Warehouse helps business owners to take strategic decisions.\nA Data Mart is limited in scope. A Data Warehouse is large in scope.\nData Mart is a decentralized system. Data Warehouse is a centralized system.\nIn Data Mart, denormalization takes place at a very high level. In Data Warehouse, denormalization takes place very lightly.\nAn organization can easily build a Data Mart. It isn't easy to build a Data Warehouse.\nData Mart mainly uses Star schema and snowflake schema. Fact constellation schema is generally used in Data Warehouse.\nData Mart is project-oriented. Data Warehouse is data-oriented.\nData Mart is not flexible. Data Warehouse is flexible.\nA Data Mart has a short life span than Data Warehouse. The life span of a Data Warehouse is long.\nIn Data Mart, data is stored in summarized form, so it requires less space than Data Warehouse. In Data Warehouse, data is stored in detailed form. That's why it requires a huge space.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    },
+    {
+        "question": "36) What is Junk Dimension in Data Warehousing?",
+        "answer": "In Data Warehousing, Junk Dimension is a dimension table that consists of attributes that do not belong in the fact table or any of the existing dimension tables. It combines two or more related cardinalities into one dimension. These attributes may usually be text or various flags, for example, non-generic comments or just simple yes/no or true/false indicators. It is either Boolean or flag values. By combining these indicator fields into a single dimension, we only need to build a single dimension table and the number of fields in the fact table. It also decreases the size of the fact table.",
+        "reference": "javatpoint.com",
+        "role": "data-modeling"
+    }
+]

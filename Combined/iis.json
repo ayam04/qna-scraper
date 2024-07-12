@@ -1,0 +1,230 @@
+[
+    {
+        "question": "NET?",
+        "answer": "IIS is an acronym that stands for Internet Information Server. It is one of the most popular web servers developed by Microsoft and is used to host and provide Internet-based services to ASP.NET and ASP web applications.\nIIS is mainly used to respond to the requests that come from users. When a user sends a request to the server, IIS takes that request from the user, processes it, and sends the response back to the user. IIS consists of its own ASP.NET process engine to handle the ASP.NET request. We can configure an ASP.NET application according to the version of IIS the application is running on.\nIIS is the most used HTTP server in the world, which runs on Windows.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "2) What are the most important features of an Internet Information Server?",
+        "answer": "Following is the list of the most important features of the Internet Information Server:\nADVERTISEMENT\nIIS or Internet Information Server consists of programs for building and administering web applications and search engines.\nIt supports writing web-based applications that access databases such as SQL Server.\nIt also facilitates developers to make their computers work as a web server and provides the functionality to develop and deploy ASP.NET web applications on the server.\nUsing IIS, we can also set security for a particular website for specific users and computers to protect it from unauthorized access by denying it.\nIIS provides a redesigned WWW architecture that facilitates users to achieve better performance, reliability, scalability, and security for websites.\nIIS can increase the availability of websites and applications for an organization by lowering system administration and the cost of deployment.\nThe later versions of IIS as IIS 7.5 support HTTP, HTTPS, FTP, FTPS, SMTP, and NNTP.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "3) What is the process for hosting a website on IIS?",
+        "answer": "There are two ways to host a website on IIS:\nBy using folder web sharing.\nBy creating a virtual directory.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "4) What are the key functionalities of IIS?",
+        "answer": "The Visual studio application consists of its own ASP.NET engine that can easily run ASP.NET web applications. We have to click on the Run button to start the application. But, this is only in the case of the local environment. If we host it on the webserver from where all users can access the sites, then we need IIS.\nIIS has a redesigned WWW architecture that provides better performance, reliability, scalability, and security for our websites. IIS can support the following Protocols HTTP/HTTPS, FTP, FTPS, SMTP Etc. The websites hosted on the IIS get the request from the clients. When the client sends the request, it first hits the IIS Server, and then the server passes it to the ASP.NET worker process to execute the request. After that, the response is passed to the client via IIS itself.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "5) Which are the most important protocols that IIS supports?",
+        "answer": "The most important protocols that IIS supports are HTTP, HTTPS, FTP, FTPS, SMTP, NNTP, etc.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "6) What do you understand by Kernel Mode and User Mode in IIS?",
+        "answer": "The Kernel Mode and User Mode are the two main layers of IIS architecture.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "5?",
+        "answer": "The two newest features added in IIS 8.5 are enhanced logging capabilities and dynamic site activation.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "8) What do you understand by virtual directory in IIS?",
+        "answer": "In IIS, the virtual directory is the name of a directory that is mapped to a physical directory in a local server.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "9) What are the different IIS versions available in different operating systems?",
+        "answer": "IIS is the most used HTTP server in the world that runs on Windows. Following is a list of different IIS versions available in different Windows operating systems:\nWindows Server 2008, Windows Vista: Home Premium/ Ultimate run IIS 7.0\nWindows Server 2003 runs IIS 6.0\nWindows XP Professional runs IIS 5.1",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "10) What is the use of Application Pool in IIS?",
+        "answer": "The main purpose behind using the Application Pool in IIS is to separate applications from each other and simplify the management. The Application Pool defines a group of settings for the worker processes that maintain request processing for all the applications in a pool.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "exe?",
+        "answer": "The two main components of SVCHost.exe are WWW Publishing Service (W3SVC) and Windows Activation Process (WAP).",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "12) What is a web farm in IIS? What are its advantages?",
+        "answer": "In IIS, a web farm is a process of hosting web applications on multiple web servers using a load balancer. It is a group of two or more web servers/nodes that host multiple instances of an app. It provides a load balancer method to avoid the high load on a single server and distributes the traffic to a different server on the same web application. When a user sends a request to a web farm, the load balancer distributes the requests to the web farm's nodes to prevent the high load on a single server.\n\nA web farm provides the following advantages:\nAvailability & Reliability: A web farm is a group of two or more nodes that host multiple instances of an app. When one or more nodes fail, the load balancer can route the users' requests to other functioning nodes to continue the request processing. This is how it provides great availability and reliability.\nHigh performance: In a web farm, there are multiple nodes to process more requests than a single server. The load balancer balances the workload by distributing requests to the nodes. It provides high performance.\nScalability: It can increase or decrease the number of active nodes according to the workload required capacity. There are several web farm platform technologies, such as Azure App Service, that can automatically add or remove nodes at the system administrator's request or automatically without human intervention.\nMaintainability: It makes the system management easy as a web farm's nodes can rely on shared services. For example, the nodes of a web farm can rely upon a single database server and a common network location for static resources.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "13) What steps are used to install and configure an IIS web farm?",
+        "answer": "We should follow the following steps to install and configure an IIS web farm:\nFirst of all, we have to install the IIS web farm infrastructure.\nAfter that, configure the IIS web farm servers.\nWe have to configure IIS web farm load balancing in the third step.\nAfter configuring the IIS web farm load balancing, we must configure the SSL central certificate store.\nIn the last step, configure the application deployment.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "14) What do you understand about a web garden in IIS?",
+        "answer": "A web garden is a configuration in which an IIS application pool is set up to run within multiple worker processes on a single server. An application pool can be configured for multiple websites hosted in IIS. When we implement a web garden, it divides the website's processing among several worker processes.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "15) What are the advantages of using web gardens in IIS?",
+        "answer": "Following is the list of key advantages of using web garden in IIS:\nA web garden offers applications that are not CPU-bound.\nIt provides applications that make long-running database requests, such as high computational database transactions.\nIt provides more concurrent synchronization operations per CPU by increasing the Maximum Worker Process property value.\nIt provides great application availability by sharing requests between multiple worker processes.\nIt uses processor affinity, where an application can be swapped out according to its preferences and tag setting.\nIt consumes a very less physical space while configuration.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "16) What are the key differences between a web farm and a web garden?",
+        "answer": "A web farm is a web hosting system which consists of multiple web servers for multiple clients. This is mainly used to prevent traffic and allow smooth availability of resources to all the clients. So we can say a web farm is used while hosting a single web application on multiple web servers to distribute the load among them. On the other hand, a web garden is a hosting web system where an application pool is configured while specifying the number of worker processes. It is mainly used for hosting multiple processes on a single web server. Let's see the key differences between a web farm and a web garden in the following table:\nWeb Farm Web Garden\nWeb form provides the ability to run across multiple servers. Web garden has a single server on which we can run multiple numbers of processes.\nIt is used to provide physical scalability to web applications. It is used to provide logical scalability to web applications.\nIt includes multiple computers to run multiple processes. It includes multiple processes to run on a single server.\nIt is preferred because it improves performance. It is preferred because it requires less amount of physical space.\nIt uses a load balancer to group together multiple web servers. It requires aMachine.Configfile to group together multiple web servers.\nIt provides high availability as compared to a web garden. It provides better application availability as compared to a web form.\nWe can achieve it by using a load balancer with virtual IP. We can achieve it by enabling multiple worker processes for a single application pool.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "17) What is the DefaultAppPool in IIS?",
+        "answer": "DefaultAppPool is a folder created when we install the Internet Information Service on our computer. It is not a virus or malware. It is the name of the default application pool in IIS. The Internet Information Service or IIS is the webserver software included with Windows. It is not installed by default.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "18) Is it safe to delete IIS AppPool DefaultAppPool?",
+        "answer": "When we install the IIS service on our computer, it creates DefaultAppPool automatically. It is not malware or a virus, so we don't need to delete it. It is not safe to delete this folder because IIS may not work properly when it doesn't exist. We should just leave it alone and don't use it. We should also ensure that nothing is using it.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "19) What is the application pool in IIS?",
+        "answer": "In IIS, an application pool specifies a group of one or more worker processes configured with common settings that serve requests to one or more applications assigned to that application pool. An application pool is mainly used to separate sets of IIS worker processes that share the same configuration and application boundaries. It is done to achieve better security, reliability, scalability, availability and performance and keep running without impacting each other. The worker process serves as the process boundary that separates each application pool. When one worker process or an application faces any issue or recycles, other applications or worker processes aren't affected. A single application pool can have multiple worker processes.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "20) What are the log files in IIS? / What do you understand by IIS logs?",
+        "answer": "Log files or IIS logs record data from Internet Information Services, web pages, and apps. While IIS itself ensures the scalability and flexibility of the web resources, the log files are used to record different actions on a server and specific statistics about the websites, such as the date, time, user data, site visits, IPs, queries, and volume of transmitted data.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "5?",
+        "answer": "Following is the list of key additional or enhanced security features introduced in IIS 7.5:\nIP security\nURL authorization\nClient certificate mapping\nRequest filtering etc.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "22) What is the default identity of an application pool?",
+        "answer": "The default identity of an application pool is Network Services.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "0 modular architecture?",
+        "answer": "The IIS 7.0 modular architecture has the following modules:\nContent module\nCompression module\nCaching module\nSecurity module\nLogging and diagnostic module etc.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "24) What do you understand by identities of an application pool?",
+        "answer": "When we run our site on our own server or in the cloud, we must ensure the security feature as a top priority list. IIS provides this security feature in the name of application pool identity. Application pool identity is a security feature of IIS. Microsoft introduced this feature in Service Pack 2 (SP2) of Windows Server 2008 and Windows Vista. An application pool identity facilitates us to run an application pool under a unique account without having to create and manage the domain or local accounts.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "25) What are ISAPI and ISAPI extensions in IIS?",
+        "answer": "ISAPI is an open and faster specification introduced by Microsoft Inc. It is faster and more flexible than CGI for extending IIS. It is a powerful application as ASP pages are processed through an ISAPI extension called ASP.dll. ISAPI extensions are the applications that run on IIS and have access to all of the functionality provided by IIS. Clients can access ISAPI extensions similarly as they access a static HTML file or dynamic ASP file.\nWe can develop two types of applications, i.e. extensions and filters using ISAPI. When requested, an ISAPI extension runs the same way as any other static HTML file or dynamic ASP file.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "26) How can we enable ISAPI in IIS?",
+        "answer": "We can enable the ISAPI in IIS by following the steps given below:\nFirst, go to the Web Server (IIS) pane.\nAfter that, scroll to the Role Services section and click the Add Role Services.\nAfter going to the \"Select Role Services\" page of the Add Role Services Wizard, select the ISAPI Filters and click \"Next\".\nNow, you will go to the Confirm Installation Selections page.\nClick Install and the ISAPI will be enabled.\nNow, you will be redirected to the Results page.\nClick \"Close\".",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "27) What is the default user name of an anonymous login in IIS?",
+        "answer": "The default user name of an anonymous login in IIS is \"IUSR_MachineName\".",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "28) Why do we use app pool recycling in IIS?",
+        "answer": "App pool recycling is used in IIS to free up the consumed memory by the applications in an app pool.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "29) Why do we need to debug IIS remotely?",
+        "answer": "Following are the reasons that we need to debug IIS remotely:\nIf we don't have installed IIS on our development server.\nIf the development server and the Build/Released/Hosting server are different.\nIf we have multiple users and they want to debug simultaneously.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "30) Which tool is used for debugging IIS remotely?",
+        "answer": "We can use the tool named mavsmon.exe process to debug IIS remotely. It was first introduced to MS Visual Studio 2005. The location of this tool is: Install path\\Microsoft Visual Studio 8\\Common7\\IDE\\Remote Debugger\\x86.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "31) What are the different security settings available in IIS?",
+        "answer": "Following is the list of most common different security settings available in IIS:\nBasic Authentication\nDigest Authentication\nPassport Authentication\nIntegrated Windows Authentication\nAnonymous",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "32) What are the main functionalities of ISAPI filters in IIS?",
+        "answer": "In IIS, the ISAPI filters are mainly used to modify and enhance the functionalities of IIS. These are also used to filter the requests to find one to process, authenticate, and apply the input or output data encryption.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "33) What is the use of enabling pinging properties for the application pool in IIS?",
+        "answer": "IIS has to monitor the health of a worker process periodically. It checks whether a worker process is idle or not, whether all worker processes are running properly, and whether it is the time to recycle. By enabling pinging properties, the activation process monitors worker process performance, health, idle time etc. By default, it sets to 30s.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "34) What is the role of a protocol listener in IIS?",
+        "answer": "In IIS, the protocol listener is mainly used to do the following things:\nIt is used to receive protocol-specific requests from the client.\nIt sends the requests to the client for processing.\nIt also sends the responses back to the requestors.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "SYS in IIS?",
+        "answer": "The HTTP.SYS is a protocol listener that is mainly used to receive client requests, send them to IIS for processing, and finally send back the client's responses. HTTP.SYS is the subsection of the Kernel Mode and is the core component to receive and serve HTTP requests and pass them off to the worker processes.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "exe?",
+        "answer": "The main components for SVCHost.exe are as follows:\nWWW Publishing Service (W3SVC): It is the mediator of HTTP.SYS.\nWindows Activation Process (WAP): Windows Activation Process or WAP is used to maintain the worker processes.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "37) What is the role of IIS Metabase in IIS?",
+        "answer": "The IIS Metabase is mainly used to maintain the settings and configuration data in IIS.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    },
+    {
+        "question": "38) What are the different subsections of User mode in IIS?",
+        "answer": "In IIS, the different subsections of User mode are Web Admin Service, Virtual Directory, and Application Pool.",
+        "reference": "javatpoint.com",
+        "role": "iis"
+    }
+]

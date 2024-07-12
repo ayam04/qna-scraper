@@ -1,0 +1,320 @@
+[
+    {
+        "question": "1) What is Angular? / What do you know about Angular?",
+        "answer": "Angular is one of the most popular JavaScript frameworks developed and maintained by Google. It is an open-source front-end web framework based on TypeScript. It is most suited for developing enterprise web applications because its code is reusable and maintainable.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "2) What are some powerful features integrated into Angular?",
+        "answer": "Angular integrates some powerful features like declarative templates, end to end tooling, dependency injection and various other best practices that smoothens the development path.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "3) What is the main purpose of Angular?",
+        "answer": "The main purpose of using Angular is to create fast, dynamic and scalable web applications. We can create these applications very easily with Angular using components and directives.\nAngular was started as a SPA (Single-Page-Application) framework, and now it supports dynamic content based on different users through dependency injection. It provides a platform for easy development of web-based applications and empowers the front end developers in curating cross-platform applications. YouTubeTV is the most popular example that uses Angular.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "4) What is the difference between AngularJS and Angular?",
+        "answer": "Let's compare the features of AngularJS and Angular in a tabular form:\nA list of differences between AngularJS and Angular-\nFeature AngularJS Angular\nVersion AngularJS was the very first version initially released in 2010. It was a browser-side JavaScript used within HTML code and created a revolution in web application development. It is popularly known as AngularJS. The later Angular versions were a complete rewrite of AngularJS. For example, Angular 2 was initially released in 2016. There is nothing common between Angular2 and AngularJS except the core developer's team. After that, Angular 6, Angular 7, Angular 8, Angular 9, and Angular 10 were released that are very similar to each other. These later versions are known as Angular.\nArchitecture AngularJS supports the MVC design model. Angular uses components and directives.\nSupported Language The recommended and supported language of AngularJS is JavaScript. The recommended and supported language of Angular is TypeScript.\nExpression Syntax In AngularJS, a specific ng directive is required for the image/property and an event. Angular uses () for event binding and [] for property binding.\nMobile Support AngularJS doesn't provide any mobile support. Angular provides mobile support.\nDependency Injection There is no concept of Dependency Injection in AngularJS. Angular supports hierarchical Dependency Injection with uni-directional tree-based change detection.\nRouting In AngularJS, $routeprovider.when() is used for routing configs. In Angular, @RouteConfig{(?)} is used for the routing config.\nStructure It is the first and basic version, so it is very easy to manage. It has a very simplified structure that makes the development and maintenance of large applications very easy.\nSpeed It is slower because of its limited features. It is faster than AngularJS because of its upgraded features.\nSupport It doesn't provide support or new updates anymore. It provides active support, and frequent new updates are made.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "5) What are the biggest advantages of using Angular?",
+        "answer": "Following is the list of the biggest advantages of using the Angular framework:\nADVERTISEMENT\nAngular supports two-way data-binding.\nIt follows MVC pattern architecture.\nIt supports static templates and Angular template.\nIt facilitates you to add a custom directive.\nIt also supports RESTfull services.\nValidations are supported in Angular.\nAngular provides client and server communication.\nIt provides support for dependency injection.\nIt provides powerful features like Event Handlers, Animation, etc.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "6) What do you understand by Angular expressions? How are Angular expressions different from JavaScript expressions?",
+        "answer": "Angular expressions are code snippets that are used to bind application data to HTML. Angular resolves the expressions, and the result is returned to where the expression is written. Angular expressions are usually written in double braces: {{ expression }} similar to JavaScript.\nSyntax:\n{{ expression }}\nFollowing is a list of some differences between Angular expressions and JavaScript expressions:\n1. The most crucial difference between Angular expressions and JavaScript expressions is that the Angular expressions allow us to write JavaScript in HTML. On the other hand, the JavaScript expressions don't allow.\n2. The Angular expressions are evaluated against a local scope object. On the other hand, the JavaScript expressions are evaluated against the global window object. We can understand it better with an example. Suppose we have a component named test:\nimport { Component, OnInit } from '@angular/core';  \n@Component({  \nselector: 'app-test',  \ntemplate: `  \n<h4>{{message}}</h4>,  \nstyleUrls: ['./test.component.css']  \n})  \nexport class TestComponent implements OnInit {  \nmessage:string = ?Hello world?;  \nconstructor() { }  \nngOnInit() {  \n}  \n}  \nIn the above example, we can see that the Angular expression is used to display the message property. In the present template, we are using Angular expressions, so we cannot access a property outside its local scope (in this case, TestComponent). This proves that Angular expressions are always evaluated based on the scope object rather than the global object.\n3. The Angular expressions can handle null and undefined, whereas JavaScript expressions cannot.\nSee the following JavaScript example:\n<!DOCTYPE html>  \n<html lang=\"en\">  \n<head>  \n    <meta charset=\"UTF-8\">  \n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  \n    <title>JavaScript Test</title>  \n</head>  \n<body>  \n    <div id=\"foo\"><div>  \n</body>  \n<script>  \n    'use strict';  \n    let bar = {};  \n    document.getElementById('foo').innerHTML = bar.x;  \n</script>  \n</html>  \nAfter running the above code, you see undefined displayed on the screen. Although it's not ideal to leave any property undefined, the user does not need to see this.\nNow see the following Angular example:\nimport { Component, OnInit } from '@angular/core';  \n@Component({  \n  selector: 'app-new',  \n  template: `  \n      <h4>{{message}}</h4>       `,  \n  styleUrls: ['./new.component.css']  \n})  \nexport class NewComponent implements OnInit {  \n  message:object = {};  \n  constructor() { }  \n  ngOnInit() {  \n  }  \n}  \nIn the above example, you will not see undefined being displayed on the screen.\n4. In Angular expressions, we cannot use loops, conditionals, and exceptions. The difference which makes Angular expressions quite beneficial is the use of pipes. Angular uses pipes (known as filters in AngularJS) to format data before displaying it.\nSee this example:\nimport { Component, OnInit } from '@angular/core';  \n      @Component({  \n        selector: 'app-new',  \n        template: `  \n            <h4>{{message | lowercase}}</h4>,  \n        styleUrls: ['./new.component.css']  \n      })  \n      export class NewComponent implements OnInit {  \n        message:string = \"HELLO JAVATPOINT\";  \n        constructor() { }  \n        ngOnInit() {  \n        }  \n      }   \nIn the above example, we have used a predefined pipe called lowercase, which transforms all the letters in lowercase. If you run the above example, you will see the output displayed as \"hello javatpoint\".\n\nOn the other hand, JavaScript does not have the concept of pipes.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "7) What are templates in Angular?",
+        "answer": "In Angular, templates contain Angular-specific elements and attributes. These are written with HTML and combined with information coming from the model and controller, which are further rendered to provide the user's dynamic view.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "8) What is the difference between an Annotation and a Decorator in Angular?",
+        "answer": "In Angular, annotations are the \"only\" metadata set of the class using the Reflect Metadata library. They are used to create an \"annotation\" array. On the other hand, decorators are the design patterns used for separating decoration or modification of a class without actually altering the original source code.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "9) Why was Angular introduced as a client-side framework?",
+        "answer": "Before the introduction of Angular, web developers used VanillaJS and jQuery to develop dynamic websites. Later, when the websites became more complex with added features and functionality, it was hard for them to maintain the code. Along with this, there were no provisions of data handling facilities across the views by jQuery. The need for a client-side framework like Angular was obvious that can make life easier for the developers by handling separation of concerns and dividing code into smaller bits of information (components).\nClient-side frameworks like Angular facilitate developers to develop advanced web applications like Single-Page-Application. These applications can also be developed using VanillaJS, but the development process becomes slower by doing so.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "10) How does an Angular application work?",
+        "answer": "Every Angular app contains a file named angular.json. This file contains all the configurations of the app. While building the app, the builder looks at this file to find the application's entry point. See the structure of the angular.json file:\n\"build\": {  \n  \"builder\": \"@angular-devkit/build-angular:browser\",  \n  \"options\": {  \n    \"outputPath\": \"dist/angular-starter\",  \n    \"index\": \"src/index.html\",  \n    \"main\": \"src/main.ts\",  \n    \"polyfills\": \"src/polyfills.ts\",  \n    \"tsConfig\": \"tsconfig.app.json\",  \n    \"aot\": false,  \n    \"assets\": [  \n      \"src/favicon.ico\",  \n      \"src/assets\"  \n    ],  \n    \"styles\": [  \n      \"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css\",  \n      \"src/style.css\"  \n    ]  \n  }  \n}  \n\nWhen the application enters the build section, the options object's main property defines the entry point of the application. The application's entry point is main.ts, which creates a browser environment for the application to run and calls a function called bootstrapModule, which bootstraps the application.\nThese two steps are performed in the following order inside the main.ts file:\nimport { platformBrowserDynamic } from '@angular/platform-browser-dynamic';  \nplatformBrowserDynamic().bootstrapModule(AppModule)   \nIn the above line of code, AppModule is getting bootstrapped.\nThe AppModule is declared in the app.module.ts file. This module contains declarations of all the components.\nBelow is an example of app.module.ts file:\nimport { BrowserModule } from '@angular/platform-browser';  \n     import { NgModule } from '@angular/core';  \n     import { AppComponent } from './app.component';  \n     @NgModule({  \n       declarations: [  \n         AppComponent  \n       ],  \n       imports: [  \n         BrowserModule  \n       ],  \n       providers: [],  \n       entryComponents: [],  \n       bootstrap: [AppComponent]  \n     })  \n     export class AppModule { }  \nIn the above file, you can see that AppComponent is getting bootstrapped. It is defined in app.component.ts file. This file interacts with the webpage and serves data to it.\nBelow is an example of app.component.ts file:\nimport { Component } from '@angular/core';  \n      @Component({  \n        selector: 'app-root',  \n        templateUrl: './app.component.html',  \n        styleUrls: ['./app.component.css']  \n      })  \n      export class AppComponent {  \n        title = 'angular';  \n      }  \nEach component is declared with three properties:\nSelector - It is used to access the component.\nTemplate/TemplateURL - It contains HTML of the component.\nStylesURL - It contains component-specific stylesheets.\nNow, Angular calls the index.html file. This file consequently calls the root component that is app-root. The root component is defined in app.component.ts.\nSee how the index.html file looks like:\n<!doctype html>  \n  <html lang=\"en\">  \n  <head>  \n    <meta charset=\"utf-8\">  \n    <title>Angular</title>  \n    <base href=\"/\">  \n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">  \n  </head>  \n  <body>  \n    <app-root></app-root>  \n  </body>  \n  </html>  \nThe HTML template of the root component is displayed inside the <app-root> tags.This is the way how every angular application works.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "11) Why is Angular preferred over other frameworks? / What are some advantages of Angular over other frameworks?",
+        "answer": "Due to the following features, Angular is preferred over other frameworks:\nExtraordinary Built-in Features: Angular provides several out of the box built-in features like routing, state management, RxJS library, Dependency Injection, HTTP services, etc. That's why the developers do not need to look for the above-stated features separately.\nDeclarative UI: Angular has declarative UI. It uses HTML to render the UI of an application as it is a declarative language. It is much easier to use than JavaScript.\nLong-term Google Support: Angular is developed and maintained by Google. Google has a long term plan to stick with Angular and provide support.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "",
+        "answer": "When the Angular components are created, they enter their lifecycle and remain when they are destroyed. Angular Lifecycle hooks are used to check the phases and trigger changes at specific phases during the entire duration.\n\nngOnChanges( ): This method is called when one or more input properties of the component are changed. The hook receives a SimpleChanges object containing the previous and current values of the property.\nngOnInit( ): This is the second lifecycle hook. It is called once, after the ngOnChanges hook. It is used to initialize the component and sets the input properties of the component.\nngDoCheck( ): This hook is called after ngOnChanges and ngOnInit and is used to detect and act on changes that Angular cannot detect. In this hook, we can implement our change detection algorithm.\nngAfterContentInit( ): This hook is called after the first ngDoCheck hook. This hook responds after the content gets projected inside the component.\nngAfterContentChecked( ): This hook is called after ngAfterContentInit and every subsequent ngDoCheck. It responds after the projected content is checked.\nngAfterViewInit( ): This hook is called after a component's view or initializing a child component's view.\nngAfterViewChecked( ): This hook is called after ngAfterViewInit. It responds after the component's view or when the child component's view is checked.\nngOnDestroy( ): This hook is called just before Angular destroys the component. This is used to clean up the code and detach event handlers.\nIn the above hooks we have described, the ngOnInit hook is the most often used hook. Let's see how to use the ngOnInit hook. If you have to process a lot of data during component creation, it's better to do it inside the ngOnInit hook rather than the constructor:\nSee the example:\nimport { Component, OnInit } from '@angular/core';  \n@Component({  \n  selector: 'app-test',  \n  templateUrl: './test.component.html',  \n  styleUrls: ['./test.component.css']  \n})  \nexport class TestComponent implements OnInit {  \n  constructor() { }  \n  ngOnInit() {  \n    this.processData();  \n  }  \n  processData(){  \n    // Do something..  \n  }  \n}  \nIn the above code, you can see that we have imported OnInit, but we have used the ngOnInit function. This is how we can use the rest of the hooks as well.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "13) What is AOT in Angular?",
+        "answer": "In Angular, AOT stands for Ahead-Of-Time compiler. It is used to convert your Angular HTML and TypeScript code into efficient JavaScript code during the build phase before the browser downloads and runs that code. By compiling the application during the build process provides a faster rendering in the browser.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "14) What is the reason for using the AOT compiler in Angular?",
+        "answer": "An Angular application is made of several components and their HTML templates. Because of these Angular components and templates, the browsers are not able to understand them directly. So, Angular applications require a compilation process before they run in a browser. That's why AOT compilers are required.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "15) What are the biggest advantages of AOT in Angular?",
+        "answer": "Following are the advantages of using the AOT compiler in Angular:\nThe rendering is faster: When we use the AOT compiler, the browser gets a pre-compiled version of the application to download. Here, the browser loads executable code to render the application immediately, without waiting to compile the app first.\nThe Angular framework's download size is smaller: AOT facilitates you not to download the Angular compiler if the app is already compiled. The compiler is roughly half of Angular itself, so omitting it dramatically reduces the application payload.\nFewer asynchronous requests: The compiler is used to inline external HTML templates and CSS style sheets within the application JavaScript so, it eliminates separate AJAX requests for those source files.\nDetect template errors earlier: While using the AOT compiler, developers can easily detect and report template binding errors during the build step before users can see them.\nBetter security: AOT provides better security because it compiles HTML templates and components into JavaScript files before they are served to the client. Because there are no templates to read and no risky client-side HTML or JavaScript evaluation, so the chances for injection attacks are very rare.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "16) What is JIT in Angular?",
+        "answer": "In Angular, JIT stands for Just-in-Time compiler. The JIT compiler provides a dynamic translation or run-time compilation, which provides a way of executing computer code that involves compilation during the execution of a program at run time rather than before execution.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "17) What is the main difference between JIT and AOT in Angular?",
+        "answer": "Following are the main differences between JIT and AOT compiler in Angular:\nJust-in-Time (JIT) compiler compiles our app in the browser at run-time while Ahead-of-Time (AOT) compiler is used to compile your app at build time on the server.\nThe JIT compilation runs by default when you run the ng build (build only), or ng serve (build and serve locally) CLI commands. This is used for development. On the other hand, we have to include the --aot option with the ng build or ng serve command for AOT compilation.\nJIT and AOT are both two ways used to compile code in an Angular project. JIT compiler is used in development mode while AOT is used for production mode.\nJIT is easy to use. We can easily implement features and debug in JIT mode because here we have a map file while AOT does not. On the other hand, the biggest advantage of using AOT for production is that it reduces the bundle size for faster rendering.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "18) What is the concept of scope hierarchy in Angular?",
+        "answer": "Angular provides the $scope objects into a hierarchy that is typically used by views. This is called the scope hierarchy in Angular. It has a root scope that can further contain one or several scopes called child scopes.\nIn a scope hierarchy, each view has its own $scope. Hence, the variables set by a view's view controller will remain hidden to other view controllers.\nFollowing is the typical representation of a Scope Hierarchy:\nRoot $scope  \n$scope for Controller 1  \n$scope for Controller 2  \n...  \n..  \n.  \n$scope for Controller n",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "",
+        "answer": "Following are the main building blocks of an Angular application. You can see them in the following picture:",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "20) What is the difference between Observables and Promises in Angular?",
+        "answer": "In Angular, as soon as we make a promise, the execution takes place, but this is not the case with observables because they are lazy. It means nothing happens until a subscription is made.\nPromise Observable\nIt emits a single value. It emits multiple values over a period of time.\nNot Lazy Lazy. An observable is not called until we subscribe to the observable.\nWe can not cancel\nit. We can cancel it by using the unsubscribe() method.\nObservable provides operators like map, forEach, filter, reduce, retry, retryWhen etc.\nLet's understand it by an example:\nconst observable = rxjs.Observable.create(observer => {  \n        console.log('This is what inside an observable');  \n        observer.next('Hello JavaTpoint');  \n        observer.complete();  \n      });  \n      console.log('Before subscribing an Observable');  \n      observable.subscribe((message)=> console.log(message));   \nWhen you run the above Observable, you can see the following messages displayed in the following order:\n\nBefore subscribing an Observable  \nThis is what inside an observable  \nHello JavaTpoint  \nHere, you can see that observables are lazy. Observable runs only when someone subscribes to them. That's why the message \"Before subscribing an Observable\" is displayed ahead of the message inside the observable.\nNow see the example of a Promise:\nconst promise = new Promise((resolve, reject) => {  \n        console.log('This is what written inside promise');  \n        resolve('Hello JavaTpoint');  \n      });  \n      console.log('Before calling then method on Promise');  \n      greetingPoster.then(message => console.log(message));   \nWhen you run the above Promise, you will see the messages displayed in the following order:\nThis is what written inside Promise  \nBefore calling then method on Promise  \nHello JavaTpoint  \nHere, you can see that the message inside Promise is displayed first. This means that the Promise runs first, and then the method is called.\nThe next difference between them is that Promises are always asynchronous; even when the Promise is immediately resolved. On the other hand, an Observable can be both synchronous and asynchronous.\nIn the case of the above example, observable is synchronous. Let's see the case where an observable can be asynchronous:\nconst observable = rxjs.Observable.create(observer => {  \n  setTimeout(()=>{  \n      observer.next('Hello JavaTpoint');  \n      observer.complete();  \n  },3000)  \n});  \nconsole.log('Before calling subscribe on an Observable');  \nobservable.subscribe((data)=> console.log(data));  \nconsole.log('After calling subscribe on an Observable');   \nWhen you run the above observable, you will see the messages in the following order:\nBefore calling subscribe on an Observable  \nAfter calling subscribe on an Observable  \nHello JavaTpoint",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "22) What are directives in Angular?",
+        "answer": "A directive is a class in Angular that is declared with a @Directive decorator. Every directive has its own behavior, and you can import them into various components of an application.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "23) What were the main reasons behind introducing client-side frameworks like Angular?",
+        "answer": "Before Angular was introduced, the web developers used VanillaJS and jQuery to develop dynamic websites, but the biggest drawback of these technologies is that as the logic of the website grew, the code became more and more complex to maintain. For websites and applications that use complex logic, developers had to put in extra effort to maintain the separation of concerns for the app. Also, jQuery did not provide facilities for data handling across views.\nThe client-side frameworks like Angular were introduced to overcome the above problems. It provides developers many benefits over VanilaJS and jQuery by providing a new feature called components for handling separation of concerns and dividing code into smaller bits of information.\nClient-side frameworks such as Angular facilitate developers to develop advanced web applications like Single-Page-Applications. So, the main reasons behind introducing Angular were to create fast, dynamic, and scalable web applications easily.\nNote: We can also develop dynamic websites and SPAs (Single Page Applications) using VanillaJS, and jQuery but by doing so, the development process becomes slower.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "24) What is Angular CLI?",
+        "answer": "Angular CLI is a short form for Angular Command Line Interface. It is a command-line interface to scaffold and build angular apps using node.js style modules.\nTo use Angular CLI, we have to install it by using the following npm command:\nnpm install @angular/cli@latest  \nFollowing is a list of some useful commands which would be very helpful while creating angular projects:\nCreating New Project: ng new\nGenerating Components, Directives & Services: ng generate/g\nRunning the Project: ng serve",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "25) What is lazy loading in Angular?",
+        "answer": "Lazy loading is one of the most powerful and useful concepts of Angular Routing. It makes the web pages easy to download by downloading them in chunks instead of downloading everything in a big bundle. Lazy loading facilitates asynchronously loading the feature module for routing whenever required using the property loadChildren.\nSee the following example where we are going to load both Employee and Order feature modules lazily.\nSee the example:\nconst routes: Routes = [  \n  {  \n    path: 'employees',  \n    loadChildren: () => import('./employees/employees.module').then(module => module.EmployeesModule)  \n  },  \n  {  \n    path: 'orders',  \n    loadChildren: () => import('./orders/orders.module').then(module => module.OrdersModule)  \n  },  \n  {  \n    path: '',  \n    redirectTo: '',  \n    pathMatch: 'full'  \n  }  \n];",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "26) What is Angular Router?",
+        "answer": "Angular Router is a mechanism that facilitates users to navigate from one view to the next as users perform application tasks. It follows the concept model of browser's application navigation.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "27) What do you understand by the router imports?",
+        "answer": "The Angular Router, representing a particular component view for a given URL, is not part of Angular Core. It is available in a library named @angular/router, and we have to import the required router components. This process is called router imports.\nSee the following example of how we can import them in the app module:\nimport { RouterModule, Routes } from '@angular/router';",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "28) What do you understand by RouterOutlet and RouterLink?",
+        "answer": "A RouterOutlet is a directive from the router library that acts as a placeholder. It marks the spot in the template where the Router should display the components for that outlet. Router outlet is used as a component.\nSyntax:\n<router-outlet></router-outlet>  \nOn the other hand, a RouterLink is a directive on the anchor tags that gives the router control over those elements. Since the navigation paths are fixed, you can assign string values to router-link directive as below,\nSyntax:\n<h1>Angular Router</h1>  \n<nav>  \n  <a routerLink=\"/todosList\" >List of todos</a>  \n  <a routerLink=\"/completed\" >Completed todos</a>  \n</nav>  \n<router-outlet></router-outlet>",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "29) What are the different router events used in Angular Router?",
+        "answer": "During each navigation, the Router emits navigation events through the Router.events property. It allows us to track the lifecycle of the route.\nFollowing is the list of different router events in sequence:\nNavigationStart\nRouteConfigLoadStart\nRouteConfigLoadEnd\nRoutesRecognized\nGuardsCheckStart\nChildActivationStart\nActivationStart\nGuardsCheckEnd\nResolveStart\nResolveEnd\nActivationEnd\nChildActivationEnd\nNavigationEnd\nNavigationCancel\nNavigationError",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "30) What do you understand by the RouterLinkActive?",
+        "answer": "The RouterLinkActive is a directive used to toggle CSS classes for active RouterLink bindings based on the current RouterState. i.e., the Router will add CSS classes when this link is active and remove them when the link is inactive.\nFor example, you can add them to RouterLinks as follows:\n<h1>Angular Router</h1>  \n<nav>  \n  <a routerLink=\"/todosList\" routerLinkActive=\"active\">List of todos</a>  \n  <a routerLink=\"/completed\" routerLinkActive=\"active\">Completed todos</a>  \n</nav>  \n<router-outlet></router-outlet>",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "31) What do you understand by the RouterState?",
+        "answer": "The RouterState is a tree of activated routes. Every node in this tree knows about the \"consumed\" URL segments, the extracted parameters, and the resolved data. We can access the current RouterState from anywhere in the application by using the Router service and the routerState property.\n@Component({templateUrl:'template.html'})  \nclass MyComponent {  \n  constructor(router: Router) {  \n    const state: RouterState = router.routerState;  \n    const root: ActivatedRoute = state.root;  \n    const child = root.firstChild;  \n    const id: Observable<string> = child.params.map(p => p.id);  \n    //...  \n  }  \n}",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "32) What is HttpClient, and what are the advantages of it?",
+        "answer": "Most front-end applications use either XMLHttpRequest interface or the fetch() API to communicate with backend services over HTTP protocol. For the same purpose, Angular provides a simplified client HTTP API known as HttpClient. This is based on top of XMLHttpRequest interface. This HttpClient is available in the @angular/common/http package, which you can import in your root module as follows:\nimport { HttpClientModule } from '@angular/common/http';  \nFollowing are some of the crucial advantages of HttpClient:\nHttpClient contains testability features.\nIt provides typed request and response objects.\nIt can intercept requests and responses.\nIt supports Observalbe APIs.\nHttpClient also supports streamlined error handling.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "Is it possible to make an Angular application to render on the server-side?",
+        "answer": "Yes, it is possible to make an Angular application to render on the server-side. Angular provides a technology called Angular Universal that can be used to render applications on the server-side.\nThe crucial advantages of using Angular Universal are as follows:\nMaking an Angular application render on the server-side can provide a better user experience. By using this, first-time users can instantly see a view of the application. So, it can be used to provide better UI.\nIt can lead to a better SEO for your application. The reason is that many search engines expect pages in plain HTML. So, Angular Universal can ensure that your content is available on every search engine, and it is good for better SEO.\nThe server-side rendered applications load faster than normal pages. It is because the rendered pages are available to the browser sooner.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "34) What is the best way to perform Error handling in Angular?",
+        "answer": "Error is when the request fails on the server or fails to reach the server due to network issues. In this condition, HttpClient returns an error object instead of a successful response. To resolve this issue, we must handle the component by passing the error object as a second callback to the subscribe() method.\nSee the following example to understand how we handle in the component:\nfetchUser() {  \n  this.userService.getProfile()  \n    .subscribe(  \n      (data: User) => this.userProfile = { ...data }, // success path  \n      error => this.error = error // error path  \n    );  \n}  \nYou can write an error message to give the user some meaningful feedback instead of displaying the raw error object returned from HttpClient.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "35) What do you understand by Angular bootstrapping?",
+        "answer": "Angular bootstrapping is nothing but to allow developers to initialize or start the Angular application. Angular supports two types of bootstrapping:\nManual bootstrapping\nAutomatic bootstrapping\nManual bootstrapping: Manual bootstrapping provides more control to developers and facilitates them regarding how and when they need to initialize the Angular app. It is useful when professionals wish to perform other tasks and operations before Angular compiles the page.\nAutomatic bootstrapping: As the name specifies, automatic bootstrapping is started automatically to start the Angular app. The developers need to add the ng-app directive to the application's root if they want Angular to bootstrap the application automatically. Angular loads the associated module once it finds the ng-app directive and, further, compiles the DOM.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "36) What is the digest cycle process in Angular?",
+        "answer": "The digest cycle process in Angular is the process that is used to monitor the watchlist to track changes in the watch variable value. There is a comparison between the present and the previous versions of the scope model values in each digest cycle.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "37) What are the key differences between a Component and a Directive in Angular?",
+        "answer": "A Component is a directive that uses shadow DOM to create encapsulated visual behavior. Usually, components are used to create UI widgets by breaking up the application into smaller parts. In short, we can say that a component (@component) is a directive-with-a-template.\nA list of the major differences between a Component and a Directive in Angular:\nComponent Directive\nComponents are generally used for creating UI widgets. Directives are generally used for adding behavior to an existing DOM element.\nWe use @Component meta-data annotation attributes to register a component. We use @Directive meta-data annotation attributes to register directives.\nIt is used to break up the application into smaller parts called components. It is used to design re-usable components.\nOnly one component is allowed to be used per DOM element. Multiple directives are allowed to be used per DOM element.\n@View decorator or templateurl/template is mandatory in a component. A Directive doesn't use View.\nA component is used to define pipes. In a directive, it is not possible to define Pipes.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "38) What do you understand by Angular MVVM architecture?",
+        "answer": "The MVVM architecture or Model-View-ViewModel architecture is a software architectural pattern that provides a facility to developers to separate the development of the graphical user interface (the View) from the development of the business logic or back-end logic (the Model). By using this architecture, the view is not dependent on any specific model platform.\nThe Angular MVVM architecture consists of the following three parts:\nModel\nView\nViewModel\n\nModel: The Model consists of the structure of an entity and specifies the approach. In simple words, we can say that the model contains data of an object.\nView: The View is the visual layer of the application. It specifies the structure, layout, and appearance of what a user sees on the screen. It displays the data inside the Model, represents the model, and receives the user's interaction with the view in the form of mouse clicks, keyboard input, screen tap gestures, etc., and forwards these to the ViewModel via the data binding properties. In Angular terms, the View contains the HTML template of a component.\nViewModel: The ViewModel is an abstract layer of the application. It is used to handle the logic of the application. It also manages the data of a model and displays it in the view. View and ViewModel are connected with two-way data-binding. If you make any changes in the view, the ViewModel takes a note and changes the appropriate data inside the model.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "39) What is the purpose of AsyncPipe in Angular?",
+        "answer": "The AsyncPipe is used to subscribe to an observable or promise and return the latest value it has emitted. When a new value is emitted, the pipe marks the component that has been checked for changes.\nSee the following example where a time observable continuously updates the view for every 2 seconds with the current time.\nExample:\n@Component({  \n  selector: 'async-observable-pipe',  \n  template: `<div><code>observable|async</code>:  \n       Time: {{ time | async }}</div>`  \n})  \nexport class AsyncObservablePipeComponent {  \n  time = new Observable(observer =>  \n    setInterval(() => observer.next(new Date().toString()), 2000)  \n  );  \n}",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "40) What do you understand by services in Angular?",
+        "answer": "In Angular, services are singleton objects that get instantiated only once during the lifetime of an application. An Angular service contains methods that are used to maintain the data throughout the life of an application. Angular services are used to organize as well as share business logic, models, or data and functions with various components of an Angular application.\nAngular services offer some functions that can be invoked from an Angular component, such as a controller or directive.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "41) What is the key difference between a constructor and ngOnInit?",
+        "answer": "Constructor is a default method in TypeScript classes that are normally used for the initialization purpose. On the other hand, the ngOnInit is specifically an Angular method and is used to define Angular bindings. Even though constructors are getting called first, it is always preferred to move all of your Angular bindings to the ngOnInit method.\nSee the following example how we can use ngOnInit by implementing OnInit interface as follows:\nexport class App implements OnInit{  \n  constructor(){  \n     //called first time before the ngOnInit()  \n  }  \n  ngOnInit(){  \n     //called after the constructor and called  after the first ngOnChanges()  \n  }  \n}",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "42) What do you understand by observable and observer in Angular?",
+        "answer": "Observable: An observable is a unique object just like a promise that that is used to manage async code. Observables are not part of the JavaScript language so the developers have to rely on a popular Observable library called RxJS. The observables are created using the new keyword.\nSee a simple example of observable to understand it better:\nimport { Observable } from 'rxjs';  \nconst observable = new Observable(observer => {  \n  setTimeout(() => {  \n    observer.next('This is a message from Observable!');  \n  }, 1000);  \n});   \nObserver: Any object that has to be notified when the state of another object changes is called an observer. An observer is an interface for push-based notifications delivered by an Observable.\nSee the structure of an observer:\ninterface Observer<T> {  \n  closed?: boolean;  \n  next: (value: T) => void;  \n  error: (err: any) => void;  \n  complete: () => void;  \n}   \nThe handler that implements the observer interface for receiving observable notifications is passed as a parameter for observable as follows:\nmyObservable.subscribe(myObserver);  \nNote: If you don't use a handler for a notification type, the observer ignores notifications of that type.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "43) How do you categorize data binding types in Angular?",
+        "answer": "In Angular, we can categorize data binding types in three categories distinguished by the direction of data flow. These data binding categories are:\nFrom the source-to-view\nFrom view-to-source\nView-to-source-to-view\nLet's see their possible binding syntax:\nData direction Syntax Type\nFrom the source-to-view(One-way data binding) 1. {{expression}}\n2. [target]=\"expression\"\n3. bind-target=\"expression\" Interpolation, Property, Attribute, Class, Style\nFrom view-to-source(One-way data binding) 1. (target)=\"statement\"\n2. on-target=\"statement\" Event\nView-to-source-to-view(Two-way data binding) 1. [(target)]=\"expression\"\n2. bindon-target=\"expression\" Two-way data binding",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "44) What is multicasting in Angular?",
+        "answer": "Multicasting or Multi-casting is the practice of broadcasting to a list of multiple subscribers in a single execution.\nLet's take a simple example to demonstrate the multi-casting feature:\nvar source = Rx.Observable.from([1, 2, 3]);  \nvar subject = new Rx.Subject();  \nvar multicasted = source.multicast(subject);  \n// These are, under the hood, `subject.subscribe({...})`:  \nmulticasted.subscribe({  \n  next: (v) => console.log('observerA: ' + v)  \n});  \nmulticasted.subscribe({  \n  next: (v) => console.log('observerB: ' + v)  \n});",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "45) What do you understand by Angular Material?",
+        "answer": "Angular Material is a UI component library that is used by professionals to develop consistent, attractive, and completely functional websites, web pages, and web applications. It follows the modern principles of web designing, such as graceful degradation and browser probability, and is capable of doing a lot of fascinating things in website and application development.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "46) What is lazy loading in Angular? Why is it used?",
+        "answer": "In Angular, the by default tendency of NgModules is eagerly loaded. It means that as soon as the app loads, all the NgModules are loaded, whether or not they are immediately necessary. That's why lazy loading is required. Lazy loading is mandatory for large apps with lots of routes. This design pattern makes the app load NgModules when they are only required. Lazy loading helps keep initial bundle sizes smaller, which in turn helps decrease load times.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "47) What is the use of Angular filters? What are its distinct types?",
+        "answer": "Filters are an essential part of Angular that helps in formatting the expression value to show it to the users. We can easily add filters to services, directives, templates, or controllers. We can also create personalized filters as per requirements. These filters allow us to organize the data in such a way that only the data that meets the respective criteria are displayed. Filters are placed after the pipe symbol ( | ) while used in expressions.\nA list of various types of filters used in Angular:\ncurrency: It is used to convert numbers to the currency format.\nfilter: It is used to select a subset containing items from the given array.\ndate: It is used to convert a date into a necessary format.\nlowercase: It is used to convert the given string into lowercase.\nuppercase: It is used to convert the given string into uppercase.\norderBy: It is used to arrange an array by the given expression.\njson: It is used to format any object into a JSON string.\nnumber: It is used to convert a numeric value into a string.\nlimitTo: It is used to restrict the limit of a given string or array to a particular number of elements or strings.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "48) When do we use a directive in Angular?",
+        "answer": "If you create an Angular application where multiple components need to have similar functionalities, you have to do it by adding this functionality individually to every component. This is not a very easy task. Directives are used to cope up with this situation. Here, we can create a directive with the required functionality and then import the directive to components that require this functionality.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "49) What are the different types of directives in Angular?",
+        "answer": "There are mainly three types of directives in Angular:\nComponent Directives: The component directives are used to form the main class in directives. To declare these directives, we have to use the @Component decorator instead of @Directive decorator. These directives have a view, a stylesheet and a selector property.\nStructural directives: These directives are generally used to manipulate DOM elements. The structural directive has a ' * ' sign before them. We can apply these directives to any DOM element.\nFollowing are some example of built-in structural directives:\n*ngIf Structural Directive: *ngIf is used to check a Boolean value and if it's truthy, the div element will be displayed.\n<div *ngIf=\"isReady\" class=\"display_name\">  \n          {{name}}  \n      </div>  \n*ngFor Structural Directive: *ngFor is used to iterate over a list and display each item of the list.\n<div class=\"details\" *ngFor=\"let x of details\" >  \n    <p>{{x.name}}</p>  \n    <p> {{x.address}}</p>  \n    <p>{{x.age}}</p>  \n</div>  \nAttribute Directives: The attribute directives are used to change the look and behavior of a DOM element. Let's create an attribute directive to understand it well:\nThis is how we can create a custom directive:\nGo to the command terminal, navigate to the directory of the angular app and type the following command to generate a directive:\nng g directive yellowBackground   \nThis will generate the following directive. Manipulate the directive to look like this:\nimport { Directive, ElementRef } from '@angular/core';  \n@Directive({  \n selector: '[appYellowBackground]'  \n})  \nexport class YellowBackgroundDirective {  \n constructor(el:ElementRef) {  \n   el.nativeElement.style.backgroundColor = \"yellow\";  \n }  \n}  \nNow, you can easily apply the above directive to any DOM element:\n<p appYellowBackground>Hello JavaTpoint</p>",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "50) What are string interpolation and property binding in Angular?",
+        "answer": "String interpolation and property binding are parts of data-binding in Angular. Data-binding is a feature of Angular, which is used to provide a way to communicate between the component (Model) and its view (HTML template). There are two ways of data-binding, one-way data binding and two-way data binding. In Angular, data from the component can be inserted inside the HTML template. Any changes in the component will directly reflect inside the HTML template in one-way binding, but vice-versa is not possible. On the other hand, it is possible in two-way binding.\nString interpolation and property binding both are examples of one-way data binding. They allow only one-way data binding.\nString Interpolation: String interpolation uses the double curly braces {{ }} to display data from the component. Angular automatically runs the expression written inside the curly braces. For example, {{ 5+5 }} will be evaluated by Angular, and the output will be 10. This output will be displayed inside the HTML template.\nProperty Binding: Property binding is used to bind the DOM properties of an HTML element to a component's property. In property binding, we use the square brackets [ ] syntax.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "51) Is it possible to make an angular application to render on the server-side?",
+        "answer": "Yes, we can make an angular application to render on the server-side. Angular provides a technology Angular Universal that makes you able to render applications on the server-side.\nFollowing are the benefits of using Angular Universal:\nBetter User Experience: It enables users to see the view of the application instantly.\nBetter SEO: Angular Universal ensures that the content is available on every search engine leading to better SEO.\nLoad Faster: Angular Universal ensures that the render pages available to the browsers sooner to make the loading faster server-side application loads faster.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "52) What is Dependency Injection in Angular?",
+        "answer": "Dependency injection is an application design pattern that is implemented by Angular. It is used to form the core concepts of Angular. Dependencies are services in Angular which have some specific functionality. Various components and directives in an application can need these functionalities of the service. Angular provides a smooth mechanism by which these dependencies are injected into components and directives.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "53) Can you demonstrate navigation between different routes in an Angular application?",
+        "answer": "You can demonstrate the navigation between different routes in an Angular app in the following way. See the following code to demonstrate navigation in an Angular app named \"My First App.\"\nimport from \"@angular/router\";  \n.  \n.  \n.  \n@Component({  \n  selector: 'app-header',  \n  template: `  \n<nav class=\"navbar navbar-light bg-faded\">  \n  <a class=\"navbar-brand\" (click)=\"goHome()\">My First App</a>   \n  <ul class=\"nav navbar-nav\">  \n    <li class=\"nav-item\">  \n      <a class=\"nav-link\" (click)=\"goHome()\">Home</a>   \n    </li>  \n    <li class=\"nav-item\">  \n      <a class=\"nav-link\" (click)=\"goSearch()\">Search</a>   \n    </li>  \n  </ul>  \n</nav>  \n})  \nclass HeaderComponent {  \n  constructor(private router: Router) {}   \n  goHome() {  \n    this.router.navigate(['']);   \n  }  \n  goSearch() {  \n    this.router.navigate(['search']);   \n  }  \n}",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    },
+    {
+        "question": "js?",
+        "answer": "Following are the various notable differences between Angular and Backbone.js:\nComparison Parameter Angular Backbone.js\nArchitecture Angular works on the MVC architecture and makes use of two-way data binding for driving application activity. Backbone.js makes use of the MVP architecture and doesn't provide any data binding process.\nType Angular is an open-source JavaScript-based front-end web application framework that extends HTML with new attributes. Backbone.js is a lightweight JavaScript library that uses a RESTful JSON interface and MVP framework.\nData Binding Angular is a little bit complex because it uses a two-way data binding process. On the other hand, Backbone.js has a simple API because it doesn't have any data binding process.\nDOM Angular's main focus is on valid HTML and dynamic elements that imitate the underlying data for rebuilding the DOM as per the specified rules and then work on the updated data records. Backbone.js follows the direct DOM manipulation approach for representing data and application architecture changes.\nPerformance Because of its two-way data binding functionality, Angular provides powerful performance for both small and large projects. Backbone.js is quite a significant upper hand in performance over Angular in small data sets or small web pages. It is not recommended for larger web pages or large data sets due to the absence of any data binding process.\nTemplating Angular supports templating via dynamic HTML attributes. You can add them to the document to develop an easy to understand application at a functional level. Backbone.js uses Underscore.js templates that aren't fully-featured as Angular templates.\nTesting Approach The testing approach is lengthy for Angular because it is preferred for building large applications.\nIt uses unit testing. The testing approach is completely different for Backbone.js because it is ideal for developing smaller webpages or applications.\nCommunity Support The angular framework is developed and maintained by Google, so it receives great community support. Here, extensive documentation is available. Backbone.js also receives a good level of community support, but it only documents on Underscore.js templates, not much else.",
+        "reference": "javatpoint.com",
+        "role": "top-angular"
+    }
+]

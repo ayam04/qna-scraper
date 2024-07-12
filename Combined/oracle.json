@@ -1,0 +1,272 @@
+[
+    {
+        "question": "1) What are the components of physical database structure of Oracle database?",
+        "answer": "Components of physical database structure are given below.\nADVERTISEMENT\nOne or more data files.\nTwo or more redo log files.\nOne or more control files.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "2) What are the components of logical database structure in Oracle database?",
+        "answer": "Components of logical database structure.\nTablespaces\nDatabase's schema objects",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "3) What is a tablespace?",
+        "answer": "A database contains Logical Storage Unit called tablespaces. A tablespace is a set of related logical structures. Actually a tablespace groups related logical structures together.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "4) What is a SYSTEM tablespace and when it is created?",
+        "answer": "When the database is created in Oracle database system, it automatically generate a SYSTEM named SYSTEM tablespace. The SYSTEM tablespace contains data dictionary tables for the entire database.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "5) What is an Oracle table?",
+        "answer": "A table is basic unit of data storage in Oracle database. A table contains all the accessible information of a user in rows and columns.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "0, what does each number shows?",
+        "answer": "Oracle version number refers:\n9 - Major database release number\n3 - Database maintenance release number\n0 - Application server release number\n5 - Component Specific release number\n0 - Platform Specific release number",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "7) What is bulk copy or BCP in Oracle?",
+        "answer": "Bulk copy or BCP in Oracle, is used to import or export data from tables and views but it does not copy structure of same data.\nThe main advantage of BCP is fast mechanism for coping data and you can also take the backup of data easily.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "8) What is the relationship among database, tablespace and data file?",
+        "answer": "An Oracle database contains one or more logical storage units called tablespaces. These tablespaces collectively store whole data of databases and each tablespace in Oracle database consists of one or more files called datafiles. These datafiles are physical structure that confirm with the operating system in which Oracle is running.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "9) What is a snapshot in Oracle database?",
+        "answer": "A snapshot is a replica of a target master table from a single point-in-time. In simple words you can say, snapshot is a copy of a table on a remote database.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "",
+        "answer": "Hot backup (Online Backup): A hot backup is also known as online backup because it is done while the database is active. Some sites can not shut down their database while making a backup copy, they are used for 24 hour a day, 7 days a week.\nCold backup (Offline Backup): A cold backup is also known as offline backup because it is done while the database has been shutdown using the SHUTDOWN normal command. If the database is suddenly shutdown with a uncertain condition it should be restarted with RESTRICT mode and then shutdown with NORMAL option.\nFor a complete cold backup the following files must be backed up.\nAll datafiles, All control files, All online redo log files(optional) and the init.ora file (you can recreate it manually).",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "11) How many memory layers are in the Oracle shared pool?",
+        "answer": "Oracle shared pools contains two layers:\nlibrary cache\ndata dictionary cache",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "12) What is save point in Oracle database?",
+        "answer": "Save points are used to divide a transaction into smaller parts. It allows rolling back of a transaction. Maximum five save points are allowed. It is used to save our data, whenever you encounter an error you can roll back from the point where you save your SAVEPOINT.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "13) What is hash cluster in Oracle?",
+        "answer": "Hash cluster is a technique to store a data in hash table and improve the performance of data retrieval. Hash function is applied on table row's cluster key value and store in hash cluster.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "14) What are the various Oracle database objects?",
+        "answer": "Tables: This is a set of elements organized in vertical and horizontal fashion.\nTablespaces: This is a logical storage unit in Oracle.\nViews: It is virtual table derived from one or more tables.\nIndexes: This is a performance tuning method to process the records.\n\nSynonyms: This is a name for tables.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "15) What is the difference between pre-select and pre-query?",
+        "answer": "A pre-query trigger fire before the query executes and fire once while you try to query. With the help of this trigger you can modify the where clause part dynamically.\nPre-select query fires during the execute query and count query processing after Oracle forms construct the select statement to be issued, but before the statement is actually issued.\nPre-query trigger fires before Pre-select trigger.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "16) What are the different types of modules in Oracle forms?",
+        "answer": "Following are the different modules in Oracle forms:\nForm module\nMenu module\nPl/SQL Library module\nObject Library module",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "17) What is the usage of ANALYZE command in Oracle?",
+        "answer": "ANALYZE command is used to perform various functions on index, table, or cluster. The following list specifies the usage of ANALYZE command in Oracle:\nIt is used to identify migrated and chained rows of the table or cluster.\nIt is used to validate the structure of the object.\nIt helps in collecting the statistics about object used by the optimizer. They are then stored in the data dictionary.\nIt helps in deleting statistics used by object from the data dictionary.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "18) Can you create a synonym without having a table?",
+        "answer": "Yes. We can create a synonym without having a base table.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "19) What types of joins are used in writing SUBQUERIES?",
+        "answer": "Self join\nOuter Join\nEqui-join",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "20) What is the usage of control file in Oracle?",
+        "answer": "In Oracle, control file is used for database recovery. The control file is also used to identify the database and redo log files that must be opened for database operation to go ahead, whenever an instance of an ORACLE database begins.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "21) What is a synonym?",
+        "answer": "A synonym is also known as alias for a table, view, sequence or program unit.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "22) What are the different types of synonyms?",
+        "answer": "There are two types of synonyms or alias:\nPrivate: It can only accessed by the owner.\nPublic: It can be accessed by any database user.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "23) What is the usage of synonyms?",
+        "answer": "Synonym can be used to hide the real name and owner of an object.\nIt provides public access to an object.\nIt also provides location transparency for tables, views or program units of a remote database.\nIt simplifies the SQL statements for database users.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "24) How do you store pictures in a database?",
+        "answer": "Yes, you can store pictures in a database using Long Raw Data type. This data type is used to store binary data for 2 gigabytes of length. However, the table can have only one Long Raw data type.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "25) What is BLOB data type in Oracle?",
+        "answer": "BLOB data type is a data type with varying length binary string. It is used to store two gigabytes memory. For BLOB data type, the length needs to be specified in bytes.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "26) What is the difference between TRANSLATE and REPLACE in Oracle?",
+        "answer": "Translate is used to substitute a character by character while Replace is used to substitute a single character with a word.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "27) What are the different types of database objects?",
+        "answer": "A list of different types of database objects:\nTables: This is a set of elements organized in vertical and horizontal fashion.\nTablespaces: This is a logical storage unit in Oracle.\nViews: It is virtual table derived from one or more tables.\nIndexes: This is a performance tuning method to process the records.\nSynonyms: This is a name for tables.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "28) What is the usage of Save Points in Oracle database?",
+        "answer": "Save Points are used to divide a transaction into smaller phases. It enables rolling back part of a transaction. There are maximum 5 save points allowed in Oracle Database. Whenever an error is encountered, it is possible to rollback from the point where the SAVEPOINT has been saved.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "29) What is the difference between post-database commit and post-form commit?",
+        "answer": "The post-database commit trigger is executed after Oracle forms issue the commit to finalized transaction while, the post-form commit is fired during the post and commit transactions process, after the database commit occurs.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "30) What is Logical backup in Oracle?",
+        "answer": "Logical backup is used to read a set of database records and writing them into a file. An Export utility is used to take the backup while an Import utility is used to recover from the backup.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "31) What do you understand by Redo Log file mirroring?",
+        "answer": "Mirroring is a process of having a copy of Redo log files. It is done by creating group of log files together. This ensures that LGWR automatically writes them to all the members of the current on-line redo log group. If the group fails, the database automatically switches over to the next group. It diminishes the performance.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "32) What is the meaning of recursive hints in Oracle?",
+        "answer": "The number of times a dictionary table is repeatedly called by various processes is known as recursive hint. Recursive hint is occurred because of the small size of data dictionary cache.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "33) What are the limitations of CHECK constraint?",
+        "answer": "The main limitation of CHECK constraint is that the condition must be a Boolean expression evaluated using the values in the row being inserted or updated and can't contain sub queries.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "34) What is the use of GRANT option in IMP command?",
+        "answer": "GRANT is used to import object grants.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "35) What is the use of ROWS option in IMP command?",
+        "answer": "The ROWS option indicates whether the table rows should be imported.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "36) What is the use of INDEXES option in IMP command?",
+        "answer": "The INDEXES option is used to determine whether indexes are imported.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "37) What is the use of IGNORE option in IMP command?",
+        "answer": "The IGNORE option is used to specify how object creation errors should be handled.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "38) What is the use of SHOW option in IMP command?",
+        "answer": "The SHOW option specifies when the value of show=y, the DDL within the export file is displayed.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "39) What is the use of FILE param in IMP command?",
+        "answer": "FILE param is used to specify the name of the export file to import. Multiple files can be listed, separated by commas.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "",
+        "answer": "The to_char() function is used to convert date to character. You can also specify the format in which you want output.\nSELECT to_char ( to_date ('12-12-2012', 'DD-MM-YYYY') , 'YYYY-MM-DD') FROM dual;  \nOr,\nSELECT to_char ( to_date ('12-12-2012', 'DD-MM-YYYY') , 'DD-MM-YYYY') FROM dual;",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "41) What are actual and formal parameters?",
+        "answer": "Actual Parameters: Actual parameters are the variables or expressions referenced in the parameter list of a subprogram.\nLet's see a procedure call which lists two actual parameters named empno and amt:\nraise_sal(empno, amt);  \nFormal Parameters: Formal parameters are variables declared in a subprogram specification and referenced in the subprogram body.\nFollowing procedure declares two formal parameters named empid and amt:\nPROCEDURE raise_sal(empid INTEGER, amt REAL) IS current_salary REAL;",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "42) What are the extensions used by Oracle reports?",
+        "answer": "Oracle reports are use to make business enable with the facility to provide information of all level within or outside in a secure way. Oracle report uses REP files and RDF file extensions.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "43) How to convert a string to a date in Oracle database?",
+        "answer": "Syntax: to_date (string , format)\nLet us take an example :\nto_date ('2012-12-12', 'YYYY/MM/DD')  \nIt will return December 12, 2012.",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "44) How do you find current date and time in Oracle?",
+        "answer": "The SYSDATE() function is used in Oracle to find the current date and time of operating system on which the database is running.\nSELECT TO_CHAR (SYSDATE, 'MM-DD-YYYY HH24:MI:SS') \"Current_Date\" FROM DUAL;",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    },
+    {
+        "question": "45) What will be the syntax to find current date and time in format \"YYYY-MM-DD\"?",
+        "answer": "SELECT TO_CHAR (SYSDATE, 'YYYY-MM-DD HH24:MI:SS') \"Current_Date\" FROM DUAL;",
+        "reference": "javatpoint.com",
+        "role": "oracle"
+    }
+]

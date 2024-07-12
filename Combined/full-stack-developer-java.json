@@ -1,0 +1,182 @@
+[
+    {
+        "question": "1) What should a full-stack developer know?",
+        "answer": "Full-stack developer must introduce with the following:\nADVERTISEMENT\nProgramming Languages: A full-stack developer must have proficient in more than one programming language like Java, Python, Ruby, C++, etc. One must familiar with different ways to structure design, implement and test the project based on the programming language.\nFront End: One must familiar with the front-end technologies like HTML5, CSS3, Angular, etc. The understanding of third-party libraries like jQuery, Ajax, SASS, adds more advantages.\nFrameworks: Proficiency in words that are accompanied by development frameworks like Spring, Spring Boot, MyBatis, Django, PHP, Hibernate, js, yin, and more.\nDatabases:One must be familiar with at least one database. If you are familiar with MySQL, Oracle, and MongoDB it is sufficient.\nDesign Ability:The knowledge of prototype design like UI and UX design is also necessary.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "2) What are MVC and MVP and how MVC is different from MVP?",
+        "answer": "MVC and MVP both are architectural patterns that are used to develop applications.\nMVC\nMVC stands for Model View Controller. It is an architectural pattern that is used to develop Java Enterprise Applications. It splits an application into three logical components i.e. Model, View, and Controller. It separates the business-specific logic (Model component) from the presentation layer (View component) from each other.\nThe model components contain data and logic related to it. The View component is responsible for displaying model objects inside the user interface. The Controller receives the input and calls model objects based on handler mapping. It also passes model objects to views in order to display output inside the view layer.\n\nMVP\nMVP stands for Model View Presenter. It is derived from the MVC architectural pattern. It adds an extra layer (known as indirection) to the architectural pattern that splits the View and Controller into View and Presenter. The role of Controller is replaced with a Presenter. It exists at the same level as View in MVC. It contains UI business logic for the View. The invocations received from the View directly sends to the Presenter. It maintains the action (events) between View and Model. The Presenter does not directly communicate with the View. It communicates through an interface.\n\nThe major difference between MVC and MVP architectural pattern is that in MVC architectural pattern Controller does not pass the data from the Model to the View. It only notifies the View to get the data from the Model itself.\nWhile in MVP architectural pattern the View and Model layers are connected with each other. The presenter itself receives the data from the Model and sends it to the View to show.\nAnother difference is that MVC is often used in web-frameworks while MVP is used in app development.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "3) What is pair programming?",
+        "answer": "Pair programming (a fundamental aspect of programming) is an agile software development technique in which two developer works together on the same machine (system). The developer who writes the code is called the driver and the developer who reviews (checks code, proofread, and spell checks) the code is called the navigator. The programming technique is more efficient and coding mistakes reduced to the minimum. The disadvantage of pair programming is that it increases the cost.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "4) What is CORS in MVC and how it works?",
+        "answer": "CORS stands for Cross-Origin Resource Sharing. It is a W3C standard and HTTP-header-based mechanism. It permits a server to indicate any other origins (like domain, port, etc.) instead of the requested one. In other words, it enables one website to access the resources of another website using JavaScript.\nIt supports secure cross-origin requests and transfers data between servers and browsers. Advanced browsers use CORS in APIs. It is flexible and safe in comparison to JSONP (JSON with Padding). It provides better web service integration.\n\n\nWhile using the MVC to enable CORS, the same CORS service can be used but we cannot use the same CORS middleware. We can use a particular CORS for a particular action, for a particular controller, and globally for all controllers.\nA pre-flight check (or request) is sent by the browser to the server (hosting the cross-origin resource) which ensures that the server will permit the actual request or not. For example, invoking the URL https://example.com through https://demo.com.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "5) How to enhance a website's scalability and efficiency?",
+        "answer": "We can use the following ways to optimize the scalability and efficiency of a website:\nReducing DNS lookup\nAvoiding URL redirects\nAvoiding duplicate codes\nAvoiding unnecessary images\nLeveraging browser caching\nDeferring parsing of JavaScript\nAvoiding inline JavaScript and CSS\nUsing srcset for responsive images\nPlacing all assets on a cookie-free domain, preferably using a CDN.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "6) What are the differences between Get and Post requests?",
+        "answer": "S.N. Basis of Comparison Get Post\n1 Purpose The Get request is designed for getting data from the server. The Post request is designed for sending the data to the server.\n2 Post Mechanism The request is sent via URL. The request is sent via an HTTP request body.\n3 Parameter Passing The request parameters are transmitted as a query string appended to the request. The request parameters are transmitted with the body of the request.\n4 Default It is the default method hence it implements automatically. We need to specify manually.\n5 Capacity We can send limited data with the Get request. We can send a large amount of data with the Post request.\n6 Data Type It always submits data as text. We can send any type of data.\n7 Security The use of Get is safe because it is idempotent. The use of Post unsafe because it is non-idempotent.\n8 Visibility of Data The data is visible to the user as it puts the data in the URL. The data is not visible to the user as it puts the data in the message body.\n9 Bookmark and Caching The Get request can be bookmarked and caching. The post request cannot be bookmarked and caching.\n10 Efficiency It is more efficient than post. It is less efficient.\n11 Example Search is the best example of Get request. Login is the best example of a Post request.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "7) What is referential transparency in functional programming?",
+        "answer": "A program may have the property of referential transparency if any two expressions in the program that have the same value can be substituted for one another anywhere in the program without changing the result of the program. It is used in functional programming. For example, consider the following code snippet:\ncount1 = (fun(x) + y) * (fun(x) - z);  \ntemp = fun(a);  \ncount2 = temp + y * temp - z;  \nThe variables count1 and count2 will be equal if the value of fun(x) is not reflected. If the variable count1 is not equal to the variable count2, the referential transparency is violated.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "8) What is RESTful API?",
+        "answer": "The term REST stands for Representational State Transfer. It is an architectural style that is used to create Web Services. It uses HTTP requests to access and use the data. We can create, update, read, and delete data.\n\nAn API (Application Program Interface) for a website is the code that allows two software programs to communicate with each other. It allows us to write requesting services from an operating system or other application.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "9) What do you mean by promise, also explain its states?",
+        "answer": "A promise is an object that can be returned synchronously from an asynchronous function. It may be in the following three states:\nFulfilled: If a promise called the onFulfilled() method, a promise will be in fulfilled state.\nRejected: If a promise called the onRejceted() method, a promise will be in rejected state.\nPending: If a promise is not yet fulfilled or rejected, a promise will be in pending state.\nA promise will be settled if and only if it is not pending.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "10) How to reduce the load time of a web application?",
+        "answer": "There are the following ways to optimize the load time of a web application:\nOptimize image size and format\nCompress and optimize the content\nAvoid redirects\nCache the web page\nMinimize the HTTP requests\nOptimize dependencies\nPut stylesheet reference at the top\nPlace script reference at the bottom\nPut JavaScript and CSS externally",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "11) What is a continuous integration and continuous delivery (CI/CD)?",
+        "answer": "CI/CD is a best practice to develop applications in which code changes more frequently and rapidly. Sometimes, it is also known as CI\\CD pipeline. It is widely used in DevOps and also an agile methodology.\nContinuous integration is a coding philosophy or deployment practice in which developers integrate their code in a shared repository several times a day. Because modern application requires developing code in different platforms. The goal of continuous integration is to establish an automated mechanism that builds, test, and package the application.\n\nContinuous delivery starts where CI ends. It automatically delivers the application to the selected infrastructure. CD ensures the automated delivery of code if any changes are made in the code.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "12) Which architectural designs are mostly used to design applications?",
+        "answer": "In software design, we use the following architectural design patterns:\nModel View Controller\nMaster-Slave Pattern\nLayered Pattern\nModel View Presenter\nMonolithic Architecture\nEvent-Driven Architecture Pattern",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "13) What is long polling?",
+        "answer": "Long polling is an effective method for creating a stable server connection without using the WebSocket or Server-Side Events protocols. It operates at the top of the conventional client-server model. Note that Node.js is using the same technique as the next development model.\nIn this method, the client sends the request and the server responds until the connexon is open as it contains new and unique information. As soon as the server responds, a request to the client can be submitted. When the data is available, the server will return a query. It functions when the client application stops and the server ends requests.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "14) Explain semantic HTML with an example and why we should use it?",
+        "answer": "In web design, the idea of using HTML elements to indicate what they actually are. It is known as semantic HTML or semantic markup.\nSemantic HTML is HTML that represents meaning to the web page rather than just presentation. For example, tag <p> indicates that a paragraph is enclosed in it. It is both semantic and presentational because the user know what paragraph are and the browser also know how to display them. On the other hand, tags such as <b> and <i> are not semantic. They only represent how text should look. These tags do not provide any additional meaning to the markup.\nExample of semantic HTML tags are header tags <h1> to <h6>, <abbr>, <cite>, <tt>, <code>, <blockquote>, <em>, etc. There are some other semantic HTML tags that are used to build a standards-compliant website.\nWe should use the semantic HTML for the following reasons:\nIt provides additional information about the document in which it is used. It also aids in communication.\nSemantic tags make it clear to the browser what the meaning of a page and its content is.\nIt provides information about the contents of those tags that goes beyond just how they look on a page.\nIt gives us many more hooks for styling the content of the page.\nThe clarity of semantic tag is also communicated with search engines that ensure the right pages are delivered for the right queries.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "15) How null is different from undefined in JavaScript?",
+        "answer": "Null: Null means a variable is assigned with a null value. If we use it with typeof operator it gives result as an object. We should never assign a variable to null because the programmer uses it to represent a variable that has no value. Note that JavaScript will never automatically assign the value to null.\nUndefined: Undefined means the variable is declared but not assigned any value to it. It may be a variable itself does not exist. If we use it with typeof operator it gives the result undefined. It is not valid in JSON.\nNote: Null and undefined both are primitive.\nLet's understand it through an example.\nvar var1  \nvar var2 = null //assigning null value to the variable var2  \nconsole.log(`var1 : ${var1}, type : ${typeof(var1)}`)  \nconsole.log(`var2 : ${var2}, type : ${typeof(var2)}`)  \nWhen we execute the above code, it generates the following output:\nVar1 : undefined, type : undefined  \nvar2 : null, type : object  \nFrom the above output, we can observe that the value of var1 is undefined also its type is undefined. Because we have not assigned any value to the variable var1. The value null is assigned to the variable var2. It prints its type as abject. Since null is an assignment value and we can assign it to a variable. Therefore, JavaScript treats null and undefined relatively equally because both represent an empty value.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "16) What are the key differences between GraphQL and REST?",
+        "answer": "Both, REST and GraphQL, are API design architectures that can be used to develop web services, especially for data-driven applications.\nGraphQL REST\nGraphQL is an API design architecture, but with a different approach that is much flexible. REST is a robust methodology and API design architecture used to implement web services.\nIt follows client-driven architecture. It follows server-driven architecture.\nIt does not deal with the dedicated resources. It deals with the dedicated resources.\nIt has a single endpoint that takes dynamic parameters. It has multiple endpoints.\nIt provides stateless servers and structured access to resources. It provides stateless servers and flexible controlled access to resources.\nIt is elastic in nature. It is not rigid in nature.\nIt supports only JSON format. It supports XML, JSON, HTML, YAML, and other formats also.\nThe client defines response data that it needs via a query language. Data represented as resources over HTTP through URI.\nIt provides synchronous and asynchronous communication in multiple protocols such as HTTP, MQTT, AMQP. It provides synchronous communication through HTTP only.\nIts design based on HTTP (status, methods, and URI). Its design based on message exchange.\nIt provides high consistency across all platforms. It is difficult to achieve high consistency across all platforms.\nDevelopment speed is fast. Development speed is slow.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "17) Compare fail-fast and fail-safe iterators?",
+        "answer": "Basis of Comparison Fail Fast Iterator Fail Safe Iterator\nOperates It operates directly on the collection itself. It operates on a cloned copy of the collection.\nException It throws a ConcurrentModificationException in modifying the object during the iteration process. It does not throw Exception.\nClone Object No clone object is created during the iteration process. A copy or clone object is created during the iteration process.\nMemory utilization It requires low memory during the process. It requires more memory during the process.\nModification It does not allow modification during iteration. It allows modification during the iteration process.\nPerformance It is fast. It is slightly slower than Fail Fast.\nExamples HashMap, ArrayList, Vector, HashSet, etc. CopyOnWriteArrayList, ConcurrentHashMap, etc.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "18) What is a connection leak in Java and how can we fix it?",
+        "answer": "In Java, a connection leak is a situation when the developer forgets to close the JDBC connection, it is known as connection leak. The most common type of Connection Leak experienced in Java development, is when using a Connection Pool (such as DBCP). We can fix it by closing the connection and giving special attention to the error handling code.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "19) What are the different methods of session management in Servlet?",
+        "answer": "A session is a conversational state between client and server and it can consist of multiple requests and responses between client and server. Therefore, HTTP and web server both are stateless, the only way to maintain a session is when some unique information about the session (session-id) is passed between server and client in every request and response. We can use the following methods to maintain the session:\nUser Authentication\nHTML Hidden Field\nCookies\nURL Rewriting\nSession Management API",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "20) How ServletContext is differ from ServletConfig?",
+        "answer": "ServletContext ServletConfig\nServletContext represents the whole web application running on a particular JVM and common for all the servlet. ServletConfig object represents single servlet.\nIt is just like a global parameter associated with the whole application. It is the same as the local parameter associated with a particular servlet.\nIt has application-wide scope so define outside servlet tag in the web.xml file. It is a name-value pair defined inside the servlet section of web.xml files so it has servlet wide scope.\ngetServletContext() method is used to get the context object. getServletConfig() method is used to get the config object.\nTo get the MIME type of a file or application session related information is stored using a servlet context object. The shopping cart of a user is a specific to particular user so here we can use servlet config.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "21) What is a Request Dispatcher?",
+        "answer": "RequestDispatcher is an interface that is used to forward the request to another resource that can be HTML, JSP, or another servlet in the same application. We can also use it to include the content of another resource in the response. The interface contains two methods forward() and include().",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "22) What are the differences between constructor injection and setter injection?",
+        "answer": "Constructor Injection Setter Injection\nThere is no partial injection of dependencies. There can be a partial injection of dependencies.\nIt does not override the setter injection value. It overrides the constructor injection value if both are defined.\nIt always creates a new instance if any modification occurs. It does not create a new instance if we made any changes to it.\nUsing constructor injection is better for too many properties. Using setter injection is better for few properties.\nIt makes bean class objects as immutable. It makes bean class objects as mutable.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "23) How many ways to handle exceptions in the Spring MVC Framework?",
+        "answer": "Spring MVC Framework provides the following ways to handle exceptions:\nController-Based: We can define the exception handler method in our controller class.\nGlobal Exception Handler: Exception handling is a cross-cutting concern that Spring\nHandlerExceptionResolver: Any Spring Bean declared in the DispatcherServlet's application context that implements HandlerExceptionResolver will be used to intercept and process any exception raised in the MVC system and not handled by a Controller.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "24) What are the advantages of Hibernate over JDBC?",
+        "answer": "There are the following advantages of Hibernate over JDBC:\nHibernate removes boilerplate code that comes with JDBC API.\nIt supports inheritance, associations, and collections that are not present in JDBC API.\nIt implicitly provides transaction management.\nWe need not to write a lot of try-catch block code.\nIn Hibernate, HQL is more object-oriented that is closed to Java programming language.\nIt provides better performance in comparison to JDBC because Hibernate supports caching while JDBC does not support caching of queries.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "25) What is callback hell and how to fix it?",
+        "answer": "Callback hell is a phenomenon in JavaScript in which the developer tries to execute multiple asynchronous operations together. The nesting of callback functions in such a way, we easily end up with error-prone, hard to read, and hard to maintain code.\nWe can easily fix it by using the following methods:\nSplit large functions into smaller functions\nUse Promises\nUse Async/ Wait",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "26) What is double brace initialization in Java and where it is used?",
+        "answer": "In Java, double brace initialization is a combination of two separate processes. The two consecutive curly braces {{ involved in it.\nThe first curly brace represents the creation of an anonymous inner class. Remember that the second curly brace will not be considered in such a case. It is just like creating an anonymous inner class.\nThe second curly brace represents an initialization block that we have seen in it as a class for initialization. When we use the initialization block for an anonymous inner class it becomes Java double brace initialization. The inner class has a reference to the enclosing outer class. We can use the reference by using this pointer.\nIt is used to initialize collections because it is easier to initialize a constant collection using double brace initialization. The example of double brace initialization is as follows:\nimport java.util.*;  \npublic class Demo  \n{  \npublic static void main(String args[])  \n{  \n-------------------  \n-------------------  \nMap<String, Map<String, Integer>> map = new HashMap <String, Map<String, Integer>> {{  \nput (\"VEGETABLES\", new HashMap<String, Integer>() {{  \nput(\"Tomato\", 300);  \nput(\"Onion\", 50);  \nput(\"Carrot\", 100);  \nput(\"Beetroot\", 40);  \n}}  \n--------------------  \n-------------------  \n);  \n}};  \nSystem.out.println(map);  \n}  \n}",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "27) How to avoid deadlock in Java?",
+        "answer": "Avoid Unnecessary Locks: We should use locks only for those members on which it is required. Unnecessary use of locks leads to a deadlock situation. It is recommended that use a lock-free data structure. If possible, keep your code free from locks. For example, instead of using synchronized ArrayList use the ConcurrentLinkedQueue.\nAvoid Nested Locks: Another way to avoid deadlock is to avoid giving a lock to multiple threads if we have already provided a lock to one thread. Since we must avoid allocating a lock to multiple threads.\nUsing Thread.join() Method: We can get a deadlock if two threads are waiting for each other to finish indefinitely using thread join. If a thread has to wait for another thread to finish, it's always best to use join with the maximum time you want to wait for the thread to finish.\nUse Lock Ordering: Always assign a numeric value to each lock. Before acquiring the lock with a higher numeric value, acquire the locks with a lower numeric value.\nLock Time-out: We can also specify the time for a thread to acquire a lock. If a thread does not acquire a lock, the thread must wait for a specific time before retrying to acquire a lock.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "28) What is a critical section?",
+        "answer": "The critical section is a part of code in multi-threading that must be exclusively modified by any thread. The critical section is protected by Semaphore or mutex. In Java, there are two ways to protect critical section:\nUsing Synchronized keyword\nUsing Reentrant Locks",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "29) What is numeric promotion?",
+        "answer": "The conversion of a smaller numeric type to a larger numeric type is known as numeric promotion. In this type, byte, char, and short values are converted to int values. The int values are converted to long values, if necessary. The long and float values are converted to double values, as needed.",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    },
+    {
+        "question": "30) What is the SOLID principle in Java?",
+        "answer": "In Java, SOLID principles are an object-oriented approach that are applied to software structure design. It is conceptualized by Robert C. Martin (also known as Uncle Bob). These five principles have changed the world of object-oriented programming, and also changed the way of writing software. It also ensures that the software is modular, easy to understand, debug, and refactor.\nThe word SOLID acronym for:\nSingle Responsibility Principle (SRP)\nOpen-Closed Principle (OCP)\nLiskov Substitution Principle (LSP)\nInterface Segregation Principle (ISP)\nDependency Inversion Principle (DIP)",
+        "reference": "javatpoint.com",
+        "role": "full-stack-developer-java"
+    }
+]

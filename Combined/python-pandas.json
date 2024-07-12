@@ -1,0 +1,242 @@
+[
+    {
+        "question": "1) Define the Pandas/Python pandas?",
+        "answer": "Pandas is defined as an open-source library that provides high-performance data manipulation in Python. The name of Pandas is derived from the word Panel Data, which means an Econometrics from Multidimensional data. It can be used for data analysis in Python and developed by Wes McKinney in 2008. It can perform five significant steps that are required for processing and analysis of data irrespective of the origin of the data, i.e., load, manipulate, prepare, model, and analyze.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "2) Mention the different types of Data Structures in Pandas?",
+        "answer": "Pandas provide two data structures, which are supported by the pandas library, Series, and DataFrames. Both of these data structures are built on top of the NumPy.\nADVERTISEMENT\nA Series is a one-dimensional labeled array capable of holding any data type.\nA Dataframe is a two-dimensional labeled data structure with columns that can be of different types (numeric, string, boolean, etc.).\nAn Index is an immutable array used for axis labels in both Series and DataFrame.\nA Panel is a three-dimensional data structure. However, Panels have been deprecated in recent versions of Pandas.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "3) Define Series in Pandas?",
+        "answer": "A Series is defined as a one-dimensional array that is capable of storing various data types. The row labels of series are called the index. By using a 'series' method, we can easily convert the list, tuple, and dictionary into series. A Series cannot contain multiple columns.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "4) How can we calculate the standard deviation from the Series?",
+        "answer": "The Pandas std() is defined as a function for calculating the standard deviation of the given set of numbers, DataFrame, column, and rows.\nSeries.std(axis=None, skipna=None, level=None, ddof=1, numeric_only=None, **kwargs)",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "5) Define DataFrame in Pandas?",
+        "answer": "A DataFrame is a widely used data structure of pandas and works with a two-dimensional array with labeled axes (rows and columns) DataFrame is defined as a standard way to store data and has two different indexes, i.e., row index and column index. It consists of the following properties:\nThe columns can be heterogeneous types like int and bool.\nIt can be seen as a dictionary of Series structure where both the rows and columns are indexed. It is denoted as \"columns\" in the case of columns and \"index\" in case of rows.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "6) What are the significant features of the pandas Library?",
+        "answer": "The key features of the panda's library are as follows:\nMemory Efficient: Pandas is designed for memory efficiency and optimized for performance, making it suitable for working with large datasets.\nData Alignment: Automatic and explicit data alignment is a crucial feature. Objects can be explicitly aligned to a set of labels or automatically aligned based on labels or integer indices.\nReshaping: Reshaping in the context of Pandas refers to reorganizing or transforming the structure of your data.\nMerge and join: Pandas supports merging and joining of datasets, similar to SQL databases. This is useful for combining data from different sources.\nTime Series: Pandas has robust support for working with time series data, including date range generation, frequency conversion, and resampling.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "7) Explain Reindexing in pandas?",
+        "answer": "Reindexing is used to conform DataFrame to a new index with optional filling logic. It places NA/NaN in that location where the values are not present in the previous index. It returns a new object unless the new index is produced as equivalent to the current one, and the value of copy becomes False. It is used to change the index of the rows and columns of the DataFrame.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "8) What is the name of Pandas library tools used to create a scatter plot matrix?",
+        "answer": "Scatter_matrix\nA Scatter matrix, otherwise called a scatterplot grid or matches plot, is a graphical portrayal of the connections between various factors in a dataset. It comprises of a lattice of scatterplots, where each scatterplot shows the connection between two factors. In the event that there are \"n\" factors in the dataset, the Scatter matrix will be an \"n x n\" lattice.\nIn a Scatter matrix, every cell in the matrix addresses the scatterplot of two explicit factors. The inclining cells typically show histograms or part thickness plots for every individual variable, showing the dissemination of values along that variable.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "9) Define the different ways a DataFrame can be created in pandas?",
+        "answer": "We can create a DataFrame using following ways:\nLists\nDict of ndarrays\nExample-1: Create a DataFrame using List:\nimport pandas as pd    # here, we are importing the pandas library as pd  \n# Here, we are declaring a list of strings      \na = ['Python', 'Pandas']      \n# Here, we are   calling the DataFrame constructor on list      \ninfo = pd.DataFrame(a)      \nprint(info)     # here, we are printing the info   \nOutput:\n 0\n0   Python\n1   Pandas\nExample-2: Create a DataFrame from dict of ndarrays:\nimport pandas as pd     # here, we are importing the pandas library as pd  \ninfo = {'ID' :[101, 102, 103],'Department' :['B.Sc','B.Tech','M.Tech',]}      \ninfo = pd.DataFrame(info)    # Here, we are calling the DataFrame constructor on list      \nprint (info)     # here, we are printing the info  \nOutput:\n       ID      Department\n0      101        B.Sc\n1      102        B.Tech\n2      103        M.Tech",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "10) Explain Categorical data in Pandas?",
+        "answer": "A Categorical data is defined as a Pandas data type that corresponds to a categorical variable in statistics. A categorical variable is generally used to take a limited and usually fixed number of possible values. Examples: gender, country affiliation, blood type, social class, observation time, or rating via Likert scales. All values of categorical data are either in categories or np.nan.\nThis data type is useful in the following cases:\nIt is useful for a string variable that consists of only a few different values. If we want to save some memory, we can convert a string variable to a categorical variable.\nIt is useful for the lexical order of a variable that is not the same as the logical order (?one?, ?two?, ?three?) By converting into a categorical and specify an order on the categories, sorting and min/max is responsible for using the logical order instead of the lexical order.\nIt is useful as a signal to other Python libraries because this column should be treated as a categorical variable.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "11) How will you create a series from dict in Pandas?",
+        "answer": "A Series is defined as a one-dimensional array that is capable of storing various data types.\nWe can create a Pandas Series from Dictionary:\nCreate a Series from dict:\n\nWe can also create a Series from dict. If the dictionary object is being passed as an input and the index is not specified, then the dictionary keys are taken in a sorted order to construct the index.\nIf index is passed, then values correspond to a particular label in the index will be extracted from the dictionary.\nimport pandas as pd      # Here, we are importing the pandas library as pd  \nimport numpy as np     # Here, we are importing the numpy library as np  \ninfo = {'x' : 0., 'y' : 1., 'z' : 2.}      \na = pd.Series(info)    # Here, we are calling the DataFrame constructor on list      \nprint (a)     # here, we are printing the list of values of a      \nOutput:\nx     0.0\ny     1.0\nz     2.0\ndtype: float64",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "12) How can we create a copy of the series in Pandas?",
+        "answer": "We can create the copy of series by using the following syntax:\npandas.Series.copy\nSeries.copy(deep=True)\nThe above statements make a deep copy that includes a copy of the data and the indices. If we set the value of deep to False, it will neither copy the indices nor the data.\nNote: If we set deep=True, the data will be copied, and the actual python objects will not be copied recursively, only the reference to the object will be copied.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "13) How will you create an empty DataFrame in Pandas?",
+        "answer": "A DataFrame is a widely used data structure of pandas and works with a two-dimensional array with labeled axes (rows and columns) It is defined as a standard way to store data and has two different indexes, i.e., row index and column index.\nCreate an empty DataFrame:\nThe below code shows how to create an empty DataFrame in Pandas:\n# Here, we are importing the pandas library      \nimport pandas as pd      \ninfo = pd.DataFrame()    # Here, we are calling the DataFrame constructor on list      \nprint (info)     # here, we are printing the info   \nOutput:\nEmpty DataFrame\nColumns: []\nIndex: []",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "14) How will you add a column to a pandas DataFrame?",
+        "answer": "We can add any new column to an existing DataFrame. The below code demonstrates how to add any new column to an existing DataFrame:\n# Here, we are importing the pandas library      \nimport pandas as pd        \ninfo = {'one' : pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e']),      \n             'two' : pd.Series([1, 2, 3, 4, 5, 6], index=['a', 'b', 'c', 'd', 'e', 'f'])}      \ninfo = pd.DataFrame(info)    \n# Here, we are adding a new column to an existing DataFrame object       \nprint (\"Add new column by passing series\")      \ninfo['three']=pd.Series([20,40,60],index=['a','b','c'])      \nprint (info)      # Here, we are printing the info before adding the new column  \nprint (\"Add new column using existing DataFrame columns\")      \ninfo['four']=info['one']+info['three']      \nprint (info)    # Here, we are printing the info after adding the new column  \nOutput:\nAdd new column by passing series\n      one     two      three\na     1.0      1        20.0\nb     2.0      2        40.0\nc     3.0      3        60.0\nd     4.0      4        NaN\ne     5.0      5        NaN\nf     NaN      6        NaN\n\nAdd new column using existing DataFrame columns\n       one      two       three      four\na      1.0       1         20.0      21.0\nb      2.0       2         40.0      42.0\nc      3.0       3         60.0      63.0\nd      4.0       4         NaN      NaN\ne      5.0       5         NaN      NaN\nf      NaN       6        NaN      NaN",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "15) How to add an Index, row, or column to a Pandas DataFrame?",
+        "answer": "Adding an Index to a DataFrame\nPandas allow adding the inputs to the index argument if you create a DataFrame. It will make sure that you have the desired index. If you don?t specify inputs, the DataFrame contains, by default, a numerically valued index that starts with 0 and ends on the last row of the DataFrame.\nAdding Rows to a DataFrame\nWe can use .loc, iloc, and ix to insert the rows in the DataFrame.\nThe loc basically works for the labels of our index. It can be understood as if we insert in loc[4], which means we are looking for that values of DataFrame that have an index labeled 4.\nThe iloc basically works for the positions in the index. It can be understood as if we insert in iloc[4], which means we are looking for the values of DataFrame that are present at index '4`.\nThe ix is a complex case because if the index is integer-based, we pass a label to ix. The ix[4] means that we are looking in the DataFrame for those values that have an index labeled 4. However, if the index is not only integer-based, ix will deal with the positions as iloc.\nAdding Columns to a DataFrame\nIf we want to add the column to the DataFrame, we can easily follow the same procedure as adding an index to the DataFrame by using loc or iloc.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "16) How to Delete Indices, Rows or Columns From a Pandas Data Frame?",
+        "answer": "Deleting an Index from Your DataFrame\nIf you want to remove the index from the DataFrame, you should have to do the following:\nReset the index of DataFrame.\nExecuting del df.index.name to remove the index name.\nRemove duplicate index values by resetting the index and drop the duplicate values from the index column.\nRemove an index with a row.\nDeleting a Column from Your DataFrame\nYou can use the drop() method for deleting a column from the DataFrame.\nThe axis argument that is passed to the drop() method is either 0 if it indicates the rows and 1 if it drops the columns.\nYou can pass the argument inplace and set it to True to delete the column without reassign the DataFrame.\nYou can also delete the duplicate values from the column by using the drop_duplicates() method.\nRemoving a Row from Your DataFrame\nBy using df.drop_duplicates(), we can remove duplicate rows from the DataFrame.\nYou can use the drop() method to specify the index of the rows that we want to remove from the DataFrame.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "17) How to Rename the Index or Columns of a Pandas DataFrame?",
+        "answer": "To rename the list or segments of a Pandas DataFrame, you can utilize the rename() strategy. For renaming the list, give a word reference planning old record values to new ones utilizing the file boundary. For renaming sections, utilize the segments boundary with a comparable word reference. The strategy returns another DataFrame with changes, and for set up adjustment, utilize the inplace=True boundary or relegate the outcome back to the first DataFrame.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "18) How to iterate over a Pandas DataFrame?",
+        "answer": "Iterating over a Pandas DataFrame can be achieved utilizing strategies, for example, iterrows() for line wise cycle, iteritems() for section wise emphasis, or itertuples() for emphasizing over columns as namedtuples. It's fundamental to pick the proper strategy in light of the particular assignment.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "19) How to get the items of series A not present in series B?",
+        "answer": "We can remove items present in p2 from p1 using isin() method.\nimport pandas as pd    # here, we are importing the pandas library as pd  \np1 = pd.Series([2, 4, 6, 8, 10])     # here, we are taking the input for p1  \np2 = pd.Series([8, 10, 12, 14, 16])      # here, we are taking the input for p2  \np1[~p1.isin(p2)]    \nSolution\n0    2\n1    4\n2    6\ndtype: int64\nExplanation:\nThis code bit uses the pandas library to make two Series, 'p1' and 'p2', and afterward separates components in 'p1' that are absent in 'p2'. The subsequent Series, got through boolean ordering, contains components from 'p1' that don't cover with 'p2'.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "20) How to get the items not common to both series A and series B?",
+        "answer": "We get all the items of p1 and p2 not common to both using below example:\nimport pandas as pd       # here, we are importing the pandas library as pd  \nimport numpy as np       # here, we are importing the numpy library as np  \np1 = pd.Series([2, 4, 6, 8, 10])        # here, we are taking the input values for p1  \np2 = pd.Series([8, 10, 12, 14, 16])      # here, we are taking the input values for p2  \np1[~p1.isin(p2)]    \np_u = pd.Series(np.union1d(p1, p2))  # here, we are performing the union operation   \np_i = pd.Series(np.intersect1d(p1, p2))  # here, we are performing the intersect    \np_u[~p_u.isin(p_i)]    \nOutput:\n0     2\n1     4\n2     6\n5    12\n6    14\n7    16\ndtype: int64\nExplanation:\nThis code bit utilizes pandas and numpy to track down the novel components between two pandas Series, 'p1' and 'p2'. It first channels components elite to 'p1' utilizing boolean ordering. Then, it computes the association and convergence of 'p1' and 'p2' utilizing numpy. The eventual outcome addresses the selective association of extraordinary components somewhere in the range of 'p1' and 'p2'.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "21) How to get the minimum, 25th percentile, median, 75th, and max of a numeric series?",
+        "answer": "We can compute the minimum, 25th percentile, median, 75th, and maximum of p as below example:\nimport pandas as pd        # here, we are importing the pandas library as pd  \nimport numpy as np          # here, we are importing the numpy library as np  \np = pd.Series(np.random.normal(14, 6, 22))    \nstate = np.random.RandomState(120)    \np = pd.Series(state.normal(14, 6, 22))    \nnp.percentile(p, q=[0, 25, 50, 75, 100])    \nOutput:\narray([ 4.61498692, 12.15572753, 14.67780756, 17.58054104, 33.24975515])\nExplanation:\nThis code bit uses the pandas and numpy libraries to create a pandas Series 'p' with 22 irregular numbers inspected from an ordinary conveyance with a mean of 14 and a standard deviation of 6. It likewise sets a particular irregular state for reproducibility. The code then, at that point, computes and prints the percentiles (0th, 25th, 50th, 75th, and 100th) of the created Series 'p' utilizing the numpy capability np.percentile(). In rundown, it creates an irregular dataset, sets an irregular state, and figures explicit percentiles for the dataset, giving experiences into its dispersion.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "22) How to get frequency counts of unique items of a series?",
+        "answer": "We can calculate the frequency counts of each unique value p as below example:\nimport pandas as pd        # here, we are importing the pandas library as pd  \nimport numpy as np         # here, we are importing the numpy library as np  \np= pd.Series(np.take(list('pqrstu'), np.random.randint(6, size=17)))    \np = pd.Series(np.take(list('pqrstu'), np.random.randint(6, size=17)))    \np.value_counts()    \nOutput:\ns    4\nr    4\nq    3\np    3\nu    3\nExplanation:\nThis code bit utilizes the pandas and numpy libraries to make a pandas Series 'p' with 17 components haphazardly chose from the characters 'p', 'q', 'r', 's', 't', and 'u'. The code then, at that point, uses the value_counts() capability to count the events of every one of a kind component in the Series 'p'. Generally, it gives a brief rundown of the circulation of characters in the produced irregular Series.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "23) How to convert a numpy array to a dataframe of given shape?",
+        "answer": "We can reshape the series p into a dataframe with 6 rows and 2 columns as below example:\nimport pandas as pd       # here, we are importing the pandas library as pd  \nimport numpy as np      # here, we are importing the numpy library as np  \np = pd.Series(np.random.randint(1, 7, 35))    \n# Input   \np = pd.Series(np.random.randint(1, 7, 35))    \ninfo = pd.DataFrame(p.values.reshape(7,5))    \nprint(info)    \nOutput:\n0  1  2  3  4\n0  3  2  5  5  1\n1  3  2  5  5  5\n2  1  3  1  2  6\n3  1  1  1  2  2\n4  3  5  3  3  3\n5  2  5  3  6  4\n6  3  6  6  6  5\nExplanation:\nIn this code snippet, the pandas and numpy libraries are imported as 'pd' and 'np', separately. It creates a pandas Series 'p' with 35 irregular whole numbers somewhere in the range of 1 and 6 (comprehensive) utilizing np.random.randint(). Then, it makes a DataFrame 'data' by reshaping the upsides of 'p' into a 7x5 framework utilizing the reshape() capability. At last, the code prints the subsequent DataFrame 'data', giving an organized portrayal of the irregular number qualities in a 7x5 even configuration. Basically, it puts together the irregular information into a matrix for simpler understanding and investigation.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "24) How can we convert a Series to DataFrame?",
+        "answer": "The Pandas Series.to_frame() function is used to convert the series object to the DataFrame.\nSeries.to_frame(name=None)  \nname: Refers to the object. Its Default value is None. If it has one value, the passed name will be substituted for the series name.\ns = pd.Series([\"a\", \"b\", \"c\"],    \nname=\"vals\")    \ns.to_frame()    \nOutput:\n       vals\n0          a\n1          b\n2          c\nExplanation:\nThe code snippet creates a pandas Series 's' with elements \"a\", \"b\", and \"c\", named \"vals\". The to_frame() method is used to convert this Series into a DataFrame, allowing for more versatile data handling with a labeled column.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "25) What is Pandas NumPy array?",
+        "answer": "Numerical Python (Numpy) is defined as a Python package used for performing the various numerical computations and processing of the multidimensional and single-dimensional array elements. The calculations using Numpy arrays are faster than the normal Python array.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "26) How can we convert DataFrame into a NumPy array?",
+        "answer": "For performing some high-level mathematical functions, we can convert Pandas DataFrame to numpy arrays. It uses the DataFrame.to_numpy() function.\nThe DataFrame.to_numpy() function is applied to the DataFrame that returns the numpy ndarray.\nDataFrame.to_numpy(dtype=None, copy=False)",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "27) How can we convert DataFrame into an excel file?",
+        "answer": "We can export the DataFrame to the excel file by using the to_excel() function.\nTo write a single object to the excel file, we have to specify the target file name. If we want to write to multiple sheets, we need to create an ExcelWriter object with target filename and also need to specify the sheet in the file in which we have to write.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "28) How can we sort the DataFrame?",
+        "answer": "We can efficiently perform sorting in the DataFrame through different kinds:\nBy label\nBy Actual value\nBy label\nThe DataFrame can be sorted by using the sort_index() method. It can be done by passing the axis arguments and the order of sorting. The sorting is done on row labels in ascending order by default.\nBy Actual Value\nIt is another kind through which sorting can be performed in the DataFrame. Like index sorting, sort_values() is a method for sorting the values.\nIt also provides a feature in which we can specify the column name of the DataFrame with which values are to be sorted. It is done by passing the 'by' argument.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "29) What is Time Series in Pandas?",
+        "answer": "The Time series data is defined as an essential source for information that provides a strategy that is used in various businesses. From a conventional finance industry to the education industry, it consists of a lot of details about the time.\nTime series forecasting is the machine learning modeling that deals with the Time Series data for predicting future values through Time Series modeling.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "30) What is Time Offset?",
+        "answer": "A time offset, often referred to as a time zone offset, represents the difference in hours and minutes between a specific location's local time and Coordinated Universal Time (UTC). It is essential for expressing the temporal variation from the standard reference point (UTC) and is typically defined as UTC plus or minus a specific number of hours and minutes.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "31) Define Time Periods?",
+        "answer": "The Time Periods represent the time span, e.g., days, years, quarter or month, etc. It is defined as a class that allows us to convert the frequency to the periods.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "32) How to convert String to date?",
+        "answer": "The below code demonstrates how to convert the string to date:\nfromdatetime import datetime    \n    # Define dates as the strings       \ndmy_str1 = 'Wednesday, July 14, 2018'    \ndmy_str2 = '14/7/17'    \ndmy_str3 = '14-07-2017'    \n    # Define dates as the datetime objects    \ndmy_dt1 = datetime.strptime(date_str1, '%A, %B %d, %Y')    \ndmy_dt2 = datetime.strptime(date_str2, '%m/%d/%y')    \ndmy_dt3 = datetime.strptime(date_str3, '%m-%d-%Y')    \n    #Print the converted dates    \nprint(dmy_dt1)    \nprint(dmy_dt2)    \nprint(dmy_dt3)    \nOutput:\n2017-07-14 00:00:00\n2017-07-14 00:00:00\n2018-07-14 00:00:00\nExplanation:\nThe code utilizes the datetime.strptime() technique from the datetime module to change over date strings into datetime objects. The date strings address dates in various arrangements: 'Wednesday, July 14, 2018', '14/7/17', and '14-07-2017'. The comparing datetime objects (dmy_dt1, dmy_dt2, dmy_dt3) are then printed, exhibiting the effective change. In rundown, the code shows the transformation of date strings in different arrangements into datetime objects for normalized portrayal and further control.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "33) What is Data Aggregation?",
+        "answer": "The main task of Data Aggregation is to apply some aggregation to one or more columns. It uses the following:\nsum: It is used to return the sum of the values for the requested axis.\nmin: It is used to return a minimum of the values for the requested axis.\nmax: It is used to return a maximum values for the requested axis.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "34) What is Pandas Index?",
+        "answer": "Pandas Index is defined as a vital tool that selects particular rows and columns of data from a DataFrame. Its task is to organize the data and to provide fast accessing of data. It can also be called a Subset Selection.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "35) Define Multiple Indexing?",
+        "answer": "Multiple indexing is defined as essential indexing because it deals with data analysis and manipulation, especially for working with higher dimensional data. It also enables us to store and manipulate data with the arbitrary number of dimensions in lower-dimensional data structures like Series and DataFrame.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "36) Define ReIndexing?",
+        "answer": "Reindexing is used to change the index of the rows and columns of the DataFrame. We can reindex the single or multiple rows by using the reindex() method. Default values in the new index are assigned NaN if it is not present in the DataFrame.\nDataFrame.reindex(labels=None, index=None, columns=None, axis=None, method=None, copy=True, level=None, fill_value=nan, limit=None, tolerance=None)",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "37) How to Set the index?",
+        "answer": "We can set the index column while making a data frame. But sometimes, a data frame is made from two or more data frames, and then the index can be changed using this method.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "38) How to Reset the index?",
+        "answer": "The Reset index of the DataFrame is used to reset the index by using the 'reset_index' command. If the DataFrame has a MultiIndex, this method can remove one or more levels.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "39) Describe Data Operations in Pandas?",
+        "answer": "In Pandas, there are different useful data operations for DataFrame, which are as follows:\nRow and column selection\nWe can select any row and column of the DataFrame by passing the name of the rows and columns. When you select it from the DataFrame, it becomes one-dimensional and considered as Series.\nFilter Data\nWe can filter the data by providing some of the boolean expressions in DataFrame.\nNull values\nA Null value occurs when no data is provided to the items. The various columns may contain no values, which are usually represented as NaN.",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    },
+    {
+        "question": "40) Define GroupBy in Pandas?",
+        "answer": "In Pandas, groupby() function allows us to rearrange the data by utilizing them on real-world data sets. Its primary task is to split the data into various groups. These groups are categorized based on some criteria. The objects can be divided from any of their axes.\nDataFrame.groupby(by=None, axis=0, level=None, as_index=True, sort=True, group_keys=True, squeeze=False, **kwargs)",
+        "reference": "javatpoint.com",
+        "role": "python-pandas"
+    }
+]

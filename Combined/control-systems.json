@@ -1,0 +1,248 @@
+[
+    {
+        "question": "1) What is meant by System?",
+        "answer": "When the number of elements connected performs a specific function then the group of elements is said to constitute a system or interconnection of various components for a specific task is called system. Example: Automobile.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "2) What is meant by Control System?",
+        "answer": "Any set of mechanical or electronic devices that manages, regulates or commands the behavior of the system using control loop is called the Control System. It can range from a small controlling device to a large industrial controlling device which is used for controlling processes or machines.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "3) What are the types of control system?",
+        "answer": "There are two types of Control System-\nOpen loop control system.\nClosed loop control system.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "4) What is open loop and control loop systems?",
+        "answer": "Open loop control System: An open-loop control system is a system in which the control action is independent of the desired output signal. Examples: Automatic washing machine, Immersion rod.\nClosed loop control System: A closed-loop control system is a system in which control action is dependent on the desired output. Examples: Automatic electric iron, Servo voltage stabilizer, an air conditioner.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "5) What is time-invariant System?",
+        "answer": "The time required to change from one state to another state is known as transient time, the value of current and voltage during this period is called transient response and the system in which the input and output characteristics of the system does not change with time is called the Time-Invariant System.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "6) What are linear and non-linear systems?",
+        "answer": "Linear system: Linear systems are the systems which possess the property of homogeneity and superposition. The term superposition means that an input r1(t) gives an output c1(t) and r2(t) will give the output c2(t). If we apply both the input r1(t) and r2(t) together, then the output will be the sum of c1(t) and c2(t).\nr1 (t) + r2 (t) = c1 (t) + c2 (t)\nNon-Linear System: Non-linear systems are the systems which do not possess the property of superposition and homogeneity, and the output of these systems are not directly proportional to its input. In these types of systems, the stability of the system depends upon the input and initial state of the system.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "7) What is meant by analogous System?",
+        "answer": "When the two differential equations are of same order or form such type of systems is called analogous systems.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "8) What is the Transfer Function?",
+        "answer": "Transfer function of a system is defined as the ratio of Laplace transform of output to the Laplace transform of input with all the initial conditions as zero.\n\nWhere,\nT(S) = Transfer function of system.  \nC(S) = output.  \nR(S) = Reference output.  \nG(S) = Gain.  \nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "9) What are the advantages and disadvantages of open loop control System?",
+        "answer": "Advantages of the open-loop control system\nADVERTISEMENT\nOpen loop systems are simple.\nThese are economical.\nLess maintenance is required and is not difficult.\nDisadvantages of the open-loop control system\nOpen loop systems are inaccurate.\nThese systems are not reliable.\nThese are slow.\nOptimization is not possible.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "10) What are the advantages and disadvantages of closed-loop control System?",
+        "answer": "Advantages of closed-loop systems\nThe closed loop systems are more reliable.\nClosed loop systems are faster.\nMany variables can be handled simultaneously.\nOptimization is possible.\nDisadvantages of closed-loop systems\nClosed loop systems are expensive.\nMaintenance is difficult.\nInstallation is difficult for these systems.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "11) What are the necessary components of the feedback control system?",
+        "answer": "The processing system (open loop system), feedback path element, an error detector, and controller are the necessary components of the feedback control system.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "12) What is the feedback in the control system?",
+        "answer": "When the input is fed to the system and the output received is sampled, and the proportional signal is then fed back to the input for automatic correction of the error for further processing to get the desired output is called as feedback in control system.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "13) What is Gain Margin?",
+        "answer": "Gain margin is the gain which varies before the system becomes stable because if we continuously increase the gain up to a certain threshold, the system will become marginally stable, and if the gain varies further then it leads to instability. Mathematically, it is the reciprocal of the magnitude of the G(jω)H(jω) at phase cross-over frequency.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "14) What is Signal Flow Graph?",
+        "answer": "The graphical representation of the system's relationship between the variables of a set of linear equations is called SFG (Signal Flow Graph). Signal flow graphs do not require any reduction technique or process.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "15) What is Mason's Gain Formula?",
+        "answer": "The input and output variable relationship of a signal flow graph is given by Mason's Gain Formula.\nFor the determination of the overall system, the gain of the system is given by:\n\nWhere,\n\nPk = forward path gain of the Kth forward path.\n∆ = 1 - [Sum of the loop gain of all individual loops] + [Sum of gain products of all possible of two non-touching loops] + [Sum of gain products of all possible three non-touching loops] + .......\n∆k = The value of ∆ for the path of the graph is the part of the graph that is not touching the Kth forward path.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "16) What are the essential characteristics of Signal Flow Graphs?",
+        "answer": "The essential characteristics of the signal flow graph are:\nIt represents a network in which nodes are used for the representation of system variable which is connected by direct branches.\nSFG is a diagram which represents a set of equations. It consists of nodes and branches such that each branch of SFG having an arrow which represents the flow of the signal.\nIt is only applicable to the linear system.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "17) What is the basic rule for block diagram reduction technique?",
+        "answer": "The basic rule for block diagram reduction is that if we make any changes in the diagram, then that changes do not create any changes in the input-output relationship of the system.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "18) What is an order of a system?",
+        "answer": "Order of the system is the highest derivative of the order of its equation. Similarly, it is the highest power of 's' in the denominator of the transfer function.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "19) What is the resonant peak?",
+        "answer": "The maximum value of the closed-loop transfer function is called the Resonant Peak. A large value of resonant peak means that it has large overshoot value in the transient response.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "20) What is the cut-off rate?",
+        "answer": "The slope of the log-magnitude curve near the cut-off frequency is called the cut-off rate. It indicates the ability of the system to differentiate between the signal and the noise.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "21) What is phase cross-over frequency?",
+        "answer": "When the phase of the open loop transfer function reaches 180? at a particular frequency then it is called as Phase crossover frequency.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "22) What is Phase Margin?",
+        "answer": "When we have to bring the system to the edge of instability, the additional phase lag required at the gain crossover frequency is called the Phase Margin.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "23) What Is Pole Of The System?",
+        "answer": "The value at which the function F(s) becomes infinite is called the Pole of the function F(s), where F(s) is a function of complex variables.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "24) What Is Zero Of The System?",
+        "answer": "The value at which the function F(s) becomes zero is called the Zero of the function F(s), where F(s) is a function of complex variables.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "25) What Is The Use For Cable Entry In Control Room?",
+        "answer": "When there is an emergency, i.e., fire/explosion takes place in the plant, and we have to restrict it from entering to the control room then MCT (Multiple Cable Transient) blocks are used, and the process control rooms are built for the non-hazardous area.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "26) What is the effect of positive feedback on the Stability of the systems?",
+        "answer": "Positive feedback increases the error signal and drives the system to the instability that is why it is not generally used in the control system. Positive feedbacks are used in minor loop control systems to amplify internal signals and parameters.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "27) What is Servomechanism?",
+        "answer": "When a specific type of motor known as servomotor is combined with a rotary encoder or a potentiometer, to form a Servomechanism. In this setup, a potentiometer provides an analog signal to indicate the position and an encoder provide position and speed feedback.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "28) Where is Servomechanism used?",
+        "answer": "Servomechanism is used in the control system so that the mechanical position of a device can be varied with the help of output.\nThe Servomechanism is widely used in a Governor value position control mechanism that is used in power plants to take the speed of turbine and process it using the transducer, and the final value is taken as a mechanical movement of the value. However, nowadays Governor value position control is done with Electronic controls that use power Thyristors. This mechanism is also used in robotic hand movement.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "29) How many types of instrument cables are there?",
+        "answer": "The following types of instrument cables are there:\nIS cables\nNIS cables.\nIS - Intrinsic safety and NIS - Non Intrinsic safety.\nDepending upon the condition of hazards the type of cable is decided.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "30) What are the temperature elements?",
+        "answer": "The temperature elements are-\nThermocouple.\nResistance temperature detectors (RTDs).",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "31) What is Cable Tray, its Type, and its Support?",
+        "answer": "The media or way through which we lay the field cables in plants is called as cable tray. These are made of aluminum, steel or fiber reinforced plastic (FRP) and are available in six types-\nLadder type Cable Tray(made of Rungs type construction)\nSolid Bottom Cable Tray\nTrough Cable Tray\nChannel Cable Tray\nWire Mesh Cable Tray\nSingle Rail Cable Tray\nThe main points which we have to consider before laying the cables are the site conditions and the adequate space where we have to lay the cable.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "32) How to decide cable tray size?",
+        "answer": "Based on the occupancy in the cable tray and a number of cables required we have to choose the size of the cable tray. These are available in all sizes like 80,150, 300, 450, 600 and 900.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "33) What is the cut-off Rate?",
+        "answer": "The slope near the cut-off frequency of the log-magnitude curve is called the cut-off rate. The cut-off rate indicates the ability of the system to distinguish between the signal and the noise.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "34) Enlists the applications of Sampled Data Systems?",
+        "answer": "Sampled data system has the following applications-\nQuantized data is used for controlling in High-speed tinplate rolling mills.\nDigitally controlled or pulse controlled electric drives.\nFor machine tool operations which are numerically controlled.\nIt is used in large systems using telemetry links based on pulse modulation (PM) translational data.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "35) What are DCS and PLC?",
+        "answer": "DCS and PLC are the control systems which handles fields I/Os. DCS is Distributed control system, and PLC is the Programmable logic controller.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "36) What are stable systems?",
+        "answer": "Stable systems are the system in which all the roots of the characteristic equations lie on the right half of the 'S' plane.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "37) What are marginally stable systems?",
+        "answer": "Marginally stable systems are the system in which all the roots of the characteristic equations lie on the imaginary axis of the 'S' plane",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "38) What are unstable systems?",
+        "answer": "Unstable systems are the system in which all the roots of the characteristic equations lie on the left half of the 'S' plane.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "39) What is Routh Hurwitz Stability Criterion?",
+        "answer": "Routh Hurwitz criterion states that a system is stable if and only if all the roots of the first column have the same sign and if all the signs are not same then number of time the sign changes in the first column is equal to the number of roots of the characteristic equation in the right half of the s-plane.\nmore details..",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "40) What is an Automatic Controller?",
+        "answer": "Automatic Controllers are the device which compares the actual value of plant output with the desired value. These systems produce the control system that reduces the deviation to ?0? or to a small value and determines the deviation.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    },
+    {
+        "question": "41) What is the Control Action?",
+        "answer": "Control action is the manner in which the automatic controller produces the control signal.",
+        "reference": "javatpoint.com",
+        "role": "control-systems"
+    }
+]

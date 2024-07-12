@@ -1,0 +1,542 @@
+[
+    {
+        "question": "1. How to do maintenance activity on the K8 node?",
+        "answer": "Whenever there are security patches available the Kubernetes administrator has to perform the maintenance task to apply the security patch to the running container in order to prevent it from vulnerability, which is often an unavoidable part of the administration. The following two commands are useful to safely drain the K8s node. kubectl cordon\nkubectl drain –ignore-daemon set kubectl cordon kubectl drain –ignore-daemon set The first command moves the node to maintenance mode or makes the node unavailable, followed by kubectl drain which will finally discard the pod from the node. After the drain command is a success you can perform maintenance. Note: If you wish to perform maintenance on a single pod following two commands can be issued in order: kubectl get nodes: to list all the nodes\nkubectl drain <node name>: drain a particular node kubectl get nodes: to list all the nodes kubectl drain <node name>: drain a particular node",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "2. How to get the central logs from POD?",
+        "answer": "This architecture depends upon the application and many other factors. Following are the common logging patterns Node level logging agent.\nStreaming sidecar container.\nSidecar container with the logging agent.\nExport logs directly from the application. Node level logging agent. Streaming sidecar container. Sidecar container with the logging agent. Export logs directly from the application. In the setup, journalbeat and filebeat are running as daemonset. Logs collected by these are dumped to the kafka topic which is eventually dumped to the ELK stack. The same can be achieved using EFK stack and fluentd-bit.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "3. How to monitor the Kubernetes cluster?",
+        "answer": "Prometheus is used for Kubernetes monitoring. The Prometheus ecosystem consists of multiple components. Mainly Prometheus server which scrapes and stores time-series data.\nClient libraries for instrumenting application code.\nPush gateway for supporting short-lived jobs.\nSpecial-purpose exporters for services like StatsD, HAProxy, Graphite, etc.\nAn alert manager to handle alerts on various support tools. Mainly Prometheus server which scrapes and stores time-series data. Client libraries for instrumenting application code. Push gateway for supporting short-lived jobs. Special-purpose exporters for services like StatsD, HAProxy, Graphite, etc. An alert manager to handle alerts on various support tools.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "4. What are the various things that can be done to increase Kubernetes security?",
+        "answer": "By default, POD can communicate with any other POD, we can set up network policies to limit this communication between the PODs. RBAC (Role-based access control) to narrow down the permissions.\nUse namespaces to establish security boundaries.\nSet the admission control policies to avoid running the privileged containers.\nTurn on audit logging. RBAC (Role-based access control) to narrow down the permissions. Use namespaces to establish security boundaries. Set the admission control policies to avoid running the privileged containers. Turn on audit logging.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "5. What is the role of Load Balance in Kubernetes?",
+        "answer": "Load balancing is a way to distribute the incoming traffic into multiple backend servers, which is useful to ensure the application available to the users. Load Balancer  Load Balancer In Kubernetes, as shown in the above figure all the incoming traffic lands to a single IP address on the load balancer which is a way to expose your service to outside the internet which routes the incoming traffic to a particular pod (via service) using an algorithm known as round-robin. Even if any pod goes down load balances are notified so that the traffic is not routed to that particular unavailable node. Thus load balancers in Kubernetes are responsible for distributing a set of tasks (incoming traffic) to the pods",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "6. What’s the init container and when it can be used?",
+        "answer": "init containers will set a stage for you before running the actual POD. Wait for some time before starting the app Container with a command like sleep 60. Clone a git repository into a volume.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "7. What is PDB (Pod Disruption Budget)?",
+        "answer": "A Kubernetes administrator can create a deployment of a kind: PodDisruptionBudget for high availability of the application, it makes sure that the minimum number is running pods are respected as mentioned by the attribute minAvailable spec file. This is useful while performing a drain where the drain will halt until the PDB is respected to ensure the High Availability(HA) of the application. The following spec file also shows minAvailable as 2 which implies the minimum number of an available pod (even after the election). Example: YAML Config using minAvailable => apiVersion: policy/v1beta1\nkind: PodDisruptionBudget\nmetadata:\n name: zk-pdb\nspec:\n minAvailable: 2\n selector:\n   matchLabels:\n     app: zookeeper apiVersion: policy/v1beta1\nkind: PodDisruptionBudget\nmetadata:\n name: zk-pdb\nspec:\n minAvailable: 2\n selector:\n   matchLabels:\n     app: zookeeper",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "8. What are the various K8's services running on nodes and describe the role of each service?",
+        "answer": "Mainly K8 cluster consists of two types of nodes, executor and master. Executor node: (This runs on master node) Executor node: (This runs on master node) Kube-proxy: This service is responsible for the communication of pods within the cluster and to the outside network, which runs on every node. This service is responsible to maintain network protocols when your pod establishes a network communication.\nkubelet: Each node has a running kubelet service that updates the running node accordingly with the configuration(YAML or JSON) file. NOTE: kubelet service is only for containers created by Kubernetes. Kube-proxy: This service is responsible for the communication of pods within the cluster and to the outside network, which runs on every node. This service is responsible to maintain network protocols when your pod establishes a network communication. kubelet: Each node has a running kubelet service that updates the running node accordingly with the configuration(YAML or JSON) file. NOTE: kubelet service is only for containers created by Kubernetes. Master services: Master services: Kube-apiserver: Master API service which acts as an entry point to K8 cluster.\nKube-scheduler: Schedule PODs according to available resources on executor nodes.\nKube-controller-manager:  is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired stable state Kube-apiserver: Master API service which acts as an entry point to K8 cluster. Kube-scheduler: Schedule PODs according to available resources on executor nodes. Kube-controller-manager:  is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired stable state",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "9. How do we control the resource usage of POD?",
+        "answer": "With the use of limit and request resource usage of a POD can be controlled. Request: The number of resources being requested for a container. If a container exceeds its request for resources, it can be throttled back down to its request. Limit: An upper cap on the resources a single container can use. If it tries to exceed this predefined limit it can be terminated if K8's decides that another container needs these resources. If you are sensitive towards pod restarts, it makes sense to have the sum of all container resource limits equal to or less than the total resource capacity for your cluster. Example: Example: apiVersion: v1\nkind: Pod\nmetadata:\n name: demo\nspec:\n containers:\n - name: example1\n image:example/example1\n resources:\n   requests:\n     memory: \"_Mi\"\n     cpu: \"_m\"\n   limits:\n     memory: \"_Mi\"\n     cpu: \"_m\" apiVersion: v1\nkind: Pod\nmetadata:\n name: demo\nspec:\n containers:\n - name: example1\n image:example/example1\n resources:\n   requests:\n     memory: \"_Mi\"\n     cpu: \"_m\"\n   limits:\n     memory: \"_Mi\"\n     cpu: \"_m\"",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "1. What is Ingress Default Backend?",
+        "answer": "It specifies what to do with an incoming request to the Kubernetes cluster that isn't mapped to any backend i.e what to do when no rules being defined for the incoming HTTP request If the default backend service is not defined, it's recommended to define it so that users still see some kind of message instead of an unclear error.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "2. What is GKE?",
+        "answer": "GKE is Google Kubernetes Engine that is used for managing and orchestrating systems for Docker containers. With the help of Google Public Cloud, we can also orchestrate the container cluster.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "3. What is the purpose of operators?",
+        "answer": "As compared to stateless applications, achieving desired status changes and upgrades are handled the same way for every replica, managing Kubernetes applications is more challenging. The stateful nature of stateful applications may require different handling for upgrading each replica, as each replica might be in a different state. Therefore, managing stateful applications often requires a human operator. This is supposed to be assisted by Kubernetes Operator. Moreover, this will pave the way for a standard process to be automated across several Kubernetes clusters.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "4. What is an Operator?",
+        "answer": "As an extension to K8, the operator provides the capability of managing applications and their components using custom resources. Operators generally comply with all the principles relating to Kubernetes, especially those relating to the control loops.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "5. What service and namespace are referred to in the following file?",
+        "answer": "apiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: some-configmap\ndata:\n  some_url: silicon.chip apiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: some-configmap\ndata:\n  some_url: silicon.chip It is clear from the above file that the service “silicon” is a reference to a namespace called “chip”.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "6. Why should namespaces be used? How does using the default namespace cause problems?",
+        "answer": "Over the course of time, using the default namespace alone is proving to be difficult, since you are unable to get a good overview of all the applications you can manage within the cluster as a whole. The namespaces allow applications to be organized into groups that make sense, such as a namespace for all monitoring applications and another for all security applications. Additionally, namespaces can be used for managing Blue/Green environments, in which each namespace contains its own version of an app as well as sharing resources with other namespaces (such as logging or monitoring). It is also possible to have one cluster with multiple teams using namespaces. The use of the same cluster by multiple teams may lead to conflict.  Suppose they end up creating an app that has the same name, this means that one team will override the app created by the other team as Kubernetes prohibits two apps with the same name (within the same namespace).",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "7. How should TLS be configured with Ingress?",
+        "answer": "Add tls and secretName entries. spec:\n tls:\n - hosts:\n   - some_app.com\n   secretName: someapp-secret-tls spec:\n tls:\n - hosts:\n   - some_app.com\n   secretName: someapp-secret-tls",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "8. Complete the following configurationspec file to make it Ingress",
+        "answer": "metadata:\n  name: someapp-ingress\nspec: metadata:\n  name: someapp-ingress\nspec: Explanation - Explanation - One of the several ways to answer this question. apiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n name: someapp-ingress\nspec:\n rules:\n - host: my.host\n   http:\n     paths:\n     - backend:\n         serviceName: someapp-internal-service\n         servicePort: 8080 apiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n name: someapp-ingress\nspec:\n rules:\n - host: my.host\n   http:\n     paths:\n     - backend:\n         serviceName: someapp-internal-service\n         servicePort: 8080",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "9. How to turn the service defined below in the spec into an external one?",
+        "answer": "spec:\n  selector:\n    app: some-app\n  ports:\n    - protocol: UDP\n      port: 8080\n      targetPort: 8080 spec:\n  selector:\n    app: some-app\n  ports:\n    - protocol: UDP\n      port: 8080\n      targetPort: 8080 Explanation - Explanation - Adding type: LoadBalancer and nodePort as follows: spec:\n selector:\n   app: some-app\n type: LoadBalancer\n ports:\n   - protocol: UDP\n     port: 8080\n     targetPort: 8080\n     nodePort: 32412 spec:\n selector:\n   app: some-app\n type: LoadBalancer\n ports:\n   - protocol: UDP\n     port: 8080\n     targetPort: 8080\n     nodePort: 32412",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "1. How to troubleshoot if the POD is not getting scheduled?",
+        "answer": "In K8’s scheduler is responsible to spawn pods into nodes. There are many factors that can lead to unstartable POD. The most common one is running out of resources, use the commands like kubectl describe <POD> -n <Namespace> to see the reason why POD is not started. Also, keep an eye on kubectl to get events to see all events coming from the cluster.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "2. How can we forward the port '8080 (container) -> 8080 (service) -> 8080 (ingress) -> 80 (browser)and how it can be done?",
+        "answer": "The ingress is exposing port 80 externally for the browser to access, and connecting to a service that listens on 8080. The ingress will listen on port 80 by default. An \"ingress controller\" is a pod that receives external traffic and handles the ingress and is configured by an ingress resource For this you need to configure the ingress selector and if no 'ingress controller selector' is mentioned then no ingress controller will manage the ingress. Simple ingress Config will look like host: abc.org\nhttp:\npaths:\nbackend:\nserviceName: abc-service\nservicePort: 8080\nThen the service will look like\nkind: Service\napiVersion: v1\nmetadata:\nname: abc-service\nspec:\nports:\nprotocol: TCP\nport: 8080 # port to which the service listens to\ntargetPort: 8080 host: abc.org\nhttp:\npaths:\nbackend:\nserviceName: abc-service\nservicePort: 8080\nThen the service will look like\nkind: Service\napiVersion: v1\nmetadata:\nname: abc-service\nspec:\nports:\nprotocol: TCP\nport: 8080 # port to which the service listens to\ntargetPort: 8080 Additional Resources Kubernetes Vs Openshift Kubernetes Vs Openshift Kubernetes Cheat Sheet Kubernetes Cheat Sheet Kubectl Commands Kubectl Commands Kubernetes vs Docker Kubernetes vs Docker",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "3. What are the different ways to provide external network connectivity to K8?",
+        "answer": "By default, POD should be able to reach the external network but vice-versa we need to make some changes. Following options are available to connect with POD from the outer world. Nodeport (it will expose one port on each node to communicate with it)\nLoad balancers (L4 layer of TCP/IP protocol)\nIngress (L7 layer of TCP/IP Protocol) Nodeport (it will expose one port on each node to communicate with it) Load balancers (L4 layer of TCP/IP protocol) Ingress (L7 layer of TCP/IP Protocol) Another method is to use Kube-proxy which can expose a service with only cluster IP on the local system port. $ kubectl proxy --port=8080 $ http://localhost:8080/api/v1/proxy/namespaces//services/:/ $ $",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "4. How to run a POD on a particular node?",
+        "answer": "Various methods are available to achieve it. nodeName: specify the name of a node in POD spec configuration, it will try to run the POD on a specific node.\nnodeSelector: Assign a specific label to the node which has special resources and use the same label in POD spec so that POD will run only on that node.\nnodeaffinities: required DuringSchedulingIgnoredDuringExecution, preferredDuringSchedulingIgnoredDuringExecution are hard and soft requirements for running the POD on specific nodes. This will be replacing nodeSelector in the future. It depends on the node labels. nodeName: specify the name of a node in POD spec configuration, it will try to run the POD on a specific node. nodeSelector: Assign a specific label to the node which has special resources and use the same label in POD spec so that POD will run only on that node. nodeaffinities: required DuringSchedulingIgnoredDuringExecution, preferredDuringSchedulingIgnoredDuringExecution are hard and soft requirements for running the POD on specific nodes. This will be replacing nodeSelector in the future. It depends on the node labels.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "5. Can you explain the differences between Docker Swarm and Kubernetes?",
+        "answer": "Below are the main difference between Kubernetes and Docker: The installation procedure of the K8s is very complicated but if it is once installed then the cluster is robust. On the other hand, the Docker swarm installation process is very simple but the cluster is not at all robust.\nKubernetes can process the auto-scaling but the Docker swarm cannot process the auto-scaling of the pods based on incoming load.\nKubernetes is a full-fledged Framework. Since it maintains the cluster states more consistently so autoscaling is not as fast as Docker Swarm. The installation procedure of the K8s is very complicated but if it is once installed then the cluster is robust. On the other hand, the Docker swarm installation process is very simple but the cluster is not at all robust. Kubernetes can process the auto-scaling but the Docker swarm cannot process the auto-scaling of the pods based on incoming load. Kubernetes is a full-fledged Framework. Since it maintains the cluster states more consistently so autoscaling is not as fast as Docker Swarm.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "6. What the following in the Deployment configuration file mean?",
+        "answer": "spec:\n  containers:\n    - name: USER_PASSWORD\n      valueFrom:\n        secretKeyRef:\n          name: some-secret\n          key: password spec:\n  containers:\n    - name: USER_PASSWORD\n      valueFrom:\n        secretKeyRef:\n          name: some-secret\n          key: password Explanation - Explanation - USER_PASSWORD environment variable will store the value from the password key in the secret called \"some-secret\" In other words, you reference a value from a Kubernetes Secret. USER_PASSWORD",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "7. What is Kubernetes Load Balancing?",
+        "answer": "Load Balancing is one of the most common and standard ways of exposing the services. There are two types of load balancing in K8s and they are: Internal load balancer – This type of balancer automatically balances loads and allocates the pods with the required incoming load. Internal load balancer – External Load Balancer – This type of balancer directs the traffic from the external loads to backend pods. External Load Balancer –",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "8. How to run Kubernetes locally?",
+        "answer": "Kubernetes can be set up locally using the Minikube tool. It runs a single-node bunch in a VM on the computer. Therefore, it offers the perfect way for users who have just ongoing learning Kubernetes.",
+        "reference": "interviewbit.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "1) What is Kubernetes? / What do you understand by Kubernetes?",
+        "answer": "Kubernetes is an open-source container-orchestration tool or system used to automate tasks such as the management, monitoring, scaling, and deploying containerized applications.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "2) What is the use of Kubernetes?",
+        "answer": "Kubernetes is mainly used to easily manage several containers (since it can handle the grouping of containers), which provides logical units that can be discovered and managed.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "3) Who was the inventor of Kubernetes?",
+        "answer": "Kubernetes was initially designed and developed by Google and is now maintained by the Cloud Native Computing Foundation.\nADVERTISEMENT",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "4) What are K8s?",
+        "answer": "K8s is nothing but just another term for Kubernetes.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "5) What was the main motive behind the development of Kubernetes?",
+        "answer": "The main motive behind the development of Kubernetes is to provide a \"platform for automating deployment, scaling, and operations of application containers across clusters of hosts.\"",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "6) What do you understand by the term orchestration when it comes to software and DevOps?",
+        "answer": "The term orchestration specifies integrating multiple services that allow them to automate processes or synchronize information in a specific time sequence.\nFor example, suppose we have six or seven microservices for an application to run, then if you place them in separate containers, this would inevitably create obstacles for communication. Using orchestration, we can do it quickly to enable all services in individual containers to work seamlessly to accomplish a single goal.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "7) What is the relation between Docker and Kubernetes?",
+        "answer": "Docker is an open-source platform used to handle software development. It is mainly used to package the settings and dependencies that the software/application needs to run into a container, which allows for portability and several other advantages. On the other hand, Kubernetes is used to allow the manual linking and orchestration of several containers, running on multiple hosts that have been created using Docker.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "8) What are the key differences between the Docker Swarm and Kubernetes?",
+        "answer": "Docker Swarm is an open-source container orchestration platform used to cluster and schedule Docker containers. It is a native of Docker. Following is the list of key differences between the Docker Swarm and Kubernetes:\nDocker Swarm Kubernetes\nDocker Swarm is easy and convenient to set up, but it doesn't have a robust cluster. Kubernetes is more complicated than Docker Swarm to set up, but it assures a robust cluster.\nDocker Swarm can't do auto-scaling as the Kubernetes can do, but Docker's scaling is five times faster than Kubernetes. Kubernetes can do auto-scaling, but scaling is slower than Docker Swarm.\nDocker Swarm doesn't provide a GUI. Kubernetes provides a GUI in the form of a dashboard.\nDocker Swarm provides an automatic load balancing feature of traffic between containers in a cluster. It requires manual intervention in Kubernetes for load balancing such traffic.\nDocker requires third-party tools such as the ELK stack for logging and monitoring. Kubernetes provides such integrated tools for logging and monitoring purposes.\nIn Docker Swarm, we can easily share storage volumes with any container. In Kubernetes, we can only share storage volumes with containers in the same pod.\nWe can deploy rolling updates in Docker Swarm but can't deploy automatic rollbacks. In Kubernetes, we can deploy rolling updates as well as automatic rollbacks.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "9) What do you understand by a node in Kubernetes?",
+        "answer": "In Kubernetes, a node is the smallest unit of hardware. It is used to define a single machine in a cluster that can act as a virtual machine from a cloud provider or physical machine in the data center. Every machine of the Kubernetes cluster can act as a substitute for other machines.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "10) What is the use of a Kubernetes Kube-scheduler?",
+        "answer": "A Kube-scheduler is the default scheduler for Kubernetes. It is used to assign nodes to newly created pods.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "11) What do you understand by daemon sets in Kubernetes?",
+        "answer": "Daemon sets are sets of pods that run on a host and are used for host layers attributes like monitoring network or simple network.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "12) What is Heapster in Kubernetes?",
+        "answer": "A Heapster is a metrics collection and performance monitoring system for data collected by the Kublet.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "13) What are the main reasons behind using Kubernetes?",
+        "answer": "Kubernetes is mainly used because of the following reasons:\nADVERTISEMENT\nWe can use Kubernetes easily on on-premises bare metal, OpenStack, public clouds Google, Azure, AWS, etc.\nUsing Kubernetes, we can avoid vendor lock issues as it can use any vendor-specific APIs or services except where Kubernetes provides an abstraction, e.g., load balancer and storage.\nIt enables applications that need to be released and updated without any downtime.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "14) What does the node status contain in Kubernetes?",
+        "answer": "In Kubernetes, the main components of a node status are Address, Condition, Capacity, and Info.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "15) What is the Kubernetes Network Policy?",
+        "answer": "In Kubernetes, the Network Policy specifies how the same namespace's pods would communicate with each other and the network endpoint.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "16) What process is used to run on the Kubernetes Master Node?",
+        "answer": "The Kube-api server process runs on the Kubernetes Master Node. It is used to scale the deployment of more instances.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "17) Which types of systems use Kubernetes?",
+        "answer": "Kubernetes is the Linux kernel that is used for distributed systems. It provides a consistent interface for applications that use the shared pool of resources.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "18) What do you understand by Kubernetes controller manager?",
+        "answer": "The Kubernetes controller manager is a daemon used for garbage collection, core control loops, and namespace creation. It also enables the running of more than one process on the master node.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "19) What is the use of a namespace in Kubernetes?",
+        "answer": "In Kubernetes, Namespaces are used for dividing cluster resources between users. It is also helpful for more than one user to spread projects or teams and provide a scope of resources.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "20) What is a pod in Kubernetes?",
+        "answer": "In Kubernetes, containers are not run directly so, pods are high-level structures used to wrap one or more containers to make them able to run. Containers in the same pod share a local network and the same resources. That's why they can easily communicate with other containers in the same pod. In this way, they were on the same machine while maintaining a degree of isolation.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "21) What is the role of the Kube-scheduler in Kubernetes?",
+        "answer": "In Kubernetes, the Kube-scheduler are used to assign nodes to newly created pods.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "22) What do you understand by a cluster of containers in Kubernetes?",
+        "answer": "A cluster of containers is nothing but a set of machine elements or nodes. Clusters specify specific routes so that the containers running on the nodes can communicate with each other. In Kubernetes, the container engine also provides hosting for the API server.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "23) What are the different types of controller managers?",
+        "answer": "Following is the list of different types of controller managers:\nEndpoints controller\nService accounts controller\nNamespace controller\nNode controller\nReplication controller\nToken controller",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "24) What is the Google Container Engine? What is its use?",
+        "answer": "The Google Container Engine is an open-source management platform tailor-made for Docker containers and clusters. It is used to provide support for the clusters that run in Google public cloud services.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "25) What is the biggest disadvantage of Kubernetes?",
+        "answer": "The biggest disadvantages of Kubernetes are listed below:\nSecurity is the biggest issue with Kubernetes. It is not very secure.\nKubernetes dashboard is not very user-friendly.\nKubernetes is very complex to use. That's why it can reduce productivity.\nKubernetes is costlier than its alternatives.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "26) What is kubelet in Kubernetes?",
+        "answer": "In Kubernetes, the kubelet is a service agent used to control and maintain a group of pods by checking pod specifications. The kubelet runs on each node and makes them able to communicate between a master node and a slave node.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "27) What do you understand by the node port service?",
+        "answer": "The node port service is a way to attain external traffic to your service. It is used to open a particular port on all nodes and forward the network traffic to this port.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "28) What is Cluster IP in Kubernetes?",
+        "answer": "In Kubernetes, the cluster IP is a service inside the cluster that enables other apps to be accessed within the cluster.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "29) What are the various services available in Kubernetes?",
+        "answer": "Following is the list of various services available in Kubernetes:\nCluster IP service\nLoad Balancer service\nNode Port service\nExternal Name Creation service etc.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "30) What do you understand by Ingress Network?",
+        "answer": "Ingress network is a set of rules which allow permission for connections into the Kubernetes cluster.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "31) Explain the architecture of Kubernetes with a diagram?",
+        "answer": "Architectural Diagram:\n\nExplanation of the critical components used in the diagram:\nMaster Node: The master node is the first and most crucial component of the Kubernetes' architecture. It is used to manage the Kubernetes cluster. It is the entry point for all kinds of administrative tasks.\nThere may be more than one master node in the cluster to check for fault tolerance.\nAPI Server: The API server is an entry point for all the REST commands. It is used to control the cluster.\nScheduler: The scheduler is used to schedule the tasks to the slave node and distribute the workload. It also stores the resource usage information for every slave node.\nEtcd: The etcd component is used to store configuration detail and good values. It communicates with the most component and receives commands and work. It is also responsible for managing network rules and port forwarding activity.\nWorker/Slave nodes: Worker nodes or Slave nodes are another essential components that contain all the required services to manage the networking between the containers, communicate with the master node, which allows you to assign resources to the scheduled boxes.\nKubelet: It gets the Pod's configuration from the API server and ensures that the described containers are up and running.\nDocker Container: The Docker container runs on each of the worker nodes, which runs the configured pods.\nPods: A pod is specified as a combination of single or multiple containers that logically run together on nodes.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "32) What do you understand by Kube-proxy in Kubernetes?",
+        "answer": "In Kubernetes, Kube-proxy is an implementation of both a network proxy and a load balancer. It is used to support service abstraction with other networking operations and responsible for directing traffic to the container depending on IP and the port number.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "33) What do you understand by Kubectl in Kubernetes? What is it used for?",
+        "answer": "In Kubernetes, Kubectl is software that is used to control Kubernetes clusters. The ctl in \"Kubectl\" stands for control, a command-line interface to pass the command to the cluster and manage the Kubernetes component.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "34) What is the full form of GKE, and what is its use?",
+        "answer": "The full form of GKE is Google Container Engine. It is a management platform that supports clusters and Docker containers that run within the public cloud services of Google.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "35) What is the difference between a daemon set, a deployment, and a replication controller?",
+        "answer": "Following is the difference between a daemon set, a deployment, and a replication controller:\nDaemon set: A daemon set is used to ensure that all nodes you have selected are running precisely one copy of a pod.\n\nDeployment: A deployment is a resource object in Kubernetes. It is used to provide declarative updates to applications. It also manages the scheduling and lifecycle of pods. It offers many key features for managing pods, such as pod health checks, rolling updates of pods, the ability to roll back and quickly scale pods horizontally.\nReplication Controller: The replication controller is used to specify how many exact copies of a pod should be running in a cluster. It differs from a deployment in that it does not offer pod health checks, and the rolling update process is not as robust.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "36) What is the use of load balancer in Kubernetes?",
+        "answer": "A load balancer is used in Kubernetes to provide a standard way to distribute network traffic among different services, which runs in the backend.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "37) How can we run Kubernetes locally?",
+        "answer": "We can use the Minikube tool to run Kubernetes locally. It runs a single-node cluster in a VM (virtual machine) on the computer. So, it is best for users who have just started learning Kubernetes.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "38) What is a sidecar container, and what is its use?",
+        "answer": "A sidecar container is a utility container used to support the main container in a Pod. We can pair a sidecar container with one or more main containers and enhance those primary containers' functionality. It is mainly used for monitoring or when the system logs.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "39) What do you understand by a headless service?",
+        "answer": "A headless service is a specific type of service which uses an IP address, but instead of load balancing, it returns associated pods.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "40) What are the main objects used in Kubernetes?",
+        "answer": "Following is the list of objects used in Kubernetes:\nPods\nReplication sets and controllers\nJobs and cron jobs\nDaemon sets\nDistinctive identities\nDeployments\nStateful sets.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "41) What are the different types of pods in Kubernetes?",
+        "answer": "There are mainly two types of pods in Kubernetes:\nSingle Container Pods: We can create Single Container Pods by using the run command in Kubernetes.\nmulti-container pods: We can create multi-container pods by using the \"create\" command in Kubernetes.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "42) What do you understand by Prometheus in Kubernetes?",
+        "answer": "Prometheus is an application that is used for the monitoring and alerting process. We can call out Prometheus to your systems, grab real-time metrics, compress it, and stores them properly in a database.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "43) What is the difference between a replica set and a replication controller?",
+        "answer": "A Replica set and a Replication Controller both are used to do almost the same thing. Both of them ensure that a specified number of pod replicas are running at any given time.\nThe usage of selectors can distinguish the difference between them to replicate pods. The Replica Set uses Set-Based selectors while replication controllers use Equity-Based selectors.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "44) What is the difference between the Equity-Based Selectors and the Selector-Based Selectors?",
+        "answer": "See the differences between the Equity-Based Selectors and the Selector-Based Selectors:\nEquity-Based Selectors: Equity-Based Selectors are the type of selector that allows filtering by label key and values. This selector will only look for the pods, which will have the same phrase as that of the label. For example, if your label key says app=nginx, then, with this selector, you can only look for those pods with label app equal to Nginx.\nSelector-Based Selectors: The Selector-Based Selectors are used to allow filtering keys according to a set of values. You can say that these selectors look for pods whose label has been mentioned in the set. For example, if your label key says app in (Nginx, NPS, Apache). With this selector, if your app is equal to any of Nginx, NPS, or Apache, then the selector will take it as a true result.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "45) What are some examples of recommended security measures for Kubernetes?",
+        "answer": "Following are some examples of recommended security measures for Kubernetes:\nDefining resource quota\nSupport for auditing\nRestriction of etcd access\nRegular security updates to the environment\nNetwork segmentation\nDefinition of strict resource policies\nContinuous scanning for security vulnerabilities\nUsing images from authorized repositories etc.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "46) How can we get a static IP for a Kubernetes load balancer?",
+        "answer": "We can achieve a static IP for the Kubernetes load balancer by changing DNS records because the Kubernetes Master can assign a new static IP address.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "47) What is the role of kube-apiserver and kube-scheduler?",
+        "answer": "The kube - apiserver is the master node control panel's front-end and follows the scale-out architecture. This is used to expose all the APIs of the Kubernetes Master node components. It is responsible for establishing communication between Kubernetes Node and the Kubernetes master components.\nThe kube-scheduler is used to distribute and manage the workload on the worker nodes. It chooses the most suitable node to run the unscheduled pod based on resource requirement and keeps track of resource utilization. It makes sure that the workload is not scheduled on nodes that are already full.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "48) What do you understand by minikube in Kubernetes?",
+        "answer": "Minikube is software that facilitates users to run Kubernetes. It runs on the single nodes within the VM on your computer. This tool is also used by programmers who are developing an application using Kubernetes.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "49) Which are the most important Kubectl commands?",
+        "answer": "Following is the list of some important Kubectl commands:\nkubectl annotate\nkubectl cluster-info\nkubectl attach\nkubectl apply\nkubectl config\nkubectl autoscale\nkubectl config current-context\nkubectl config set etc.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "50) What do you understand by the labels in Kubernetes?",
+        "answer": "Labels are a set of keys that contain some values. The key values are connected to pods, replication controllers, and associated services. Generally, labels are added to some object during its creation time. We can easily modify them at the run time.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "51) What are the main objectives of the replication controller?",
+        "answer": "Following are the main objectives of the replication controller:\nA replication controller is mainly responsible for controlling and administering the pod lifecycle.\nIt is used to monitor and verify whether the allowed numbers of replicas are running or not.\nIt also helps the users to check the pod status.\nIt enables to alter a pod. The user can drag its position the way interested in it.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "52) What do you understand by Sematext Docker Agent?",
+        "answer": "The Sematext Docker agent is a log collection agent with events and metrics, which runs as a small container in each Docker host. These agents are responsible for gathering metrics, events, and logs for all cluster nodes and containers.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "53) What do you understand by persistent volume in Kubernetes?",
+        "answer": "In Kubernetes, a persistent volume is a storage unit that the administrator controls. It is used to manage an individual pod in a cluster.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "54) Do all of the nodes occupy the same size in the cluster?",
+        "answer": "No, all the nodes don't occupy the same size in the cluster. The Kubernetes components, such as kubelet, take up resources on your nodes, and you still need more capacity for the node to do any task. In the larger cluster, it is always preferred to create a mix of different instance sizes. So, the Kubernetes can easily schedule the pods that require a lot of memory with intensive compute workloads on large nodes, and smaller nodes can handle smaller pods.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "55) What is the ContainerCreating pod in Kubernetes?",
+        "answer": "A ContainerCreating pod is a specific type of pod scheduled on a node but can't start up properly.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "56) What are the different types of Kubernetes Volume?",
+        "answer": "Following are the different types of Kubernetes Volume:\nEmptyDir\nGCE persistent disk\nFlocker\nHostPath\nNFS\nISCSI\nrbd\nPersistentVolumeClaim\ndownwardAPI",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "57) What are the Secrets in Kubernetes?",
+        "answer": "Secrets are the objects in Kubernetes that stores sensitive information like username and password after performing encryption.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "58) What do you understand by OpenShift in Kubernetes?",
+        "answer": "OpenShift is a public cloud application development and hosting platform developed by Red Hat. It is used to provide automation for management so that developers can easily write codes.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "59) What do you understand by K8s in Kubernetes?",
+        "answer": "K8s (K-eight characters-S) is a term used for Kubernetes. It is an open-source orchestration framework used for the containerized applications.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "60) What do you understand by federated clusters?",
+        "answer": "Federated clusters are a set of multiple clusters that are managed as a single cluster.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "61) What is the difference between Kubernetes Volumes and Docker volumes?",
+        "answer": "The main differences between Kubernetes Volumes and Docker volumes are:\nKubernetes Volumes Docker Volumes\nThe Kubernetes volumes are not limited to any container. The Docker volumes are limited to a pod in the container.\nKubernetes volumes support all containers deployed in a pod of Kubernetes. Docker volumes do not support all containers deployed in Docker.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "62) What are the ways to provide API-Security on Kubernetes?",
+        "answer": "There are the following ways to provide API-Security on Kubernetes:\nUsing correct auth mode with API server authentication mode.\nMaking kubeless that protects its API via authorization-mode.\nEnsuring the kube-dashboard uses a restrictive RBAC (Role-Based Access Control) policy.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "63) What do you understand by PVC? What is its full form?",
+        "answer": "The full form of PVC is Persistent Volume Claim. It is storage requested by Kubernetes for pods. In PVC, it doesn't require knowing the underlying provisioning. You can create the claim in the same namespace where the pod is created.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    },
+    {
+        "question": "64) What do you understand by container resource monitoring?",
+        "answer": "The users need to understand the application's performance and resource utilization at all the different abstraction layers. Kubernetes create abstraction at different levels like containers, pods, services, and whole cluster to monitor them well. This process is called container resource monitoring.\nFollowing is a list of some container resource monitoring tools:\nHeapster: It is used to gather data and events from the containers and pods within the cluster.\nInfluxDB: It is used along with heapster for visualizing data within the Kubernetes environment.\nGrafana: It is a time-series database used to store the data captured by all heapster pods.\nCAdvisor: It is a built-in tool in a kubelet that automatically discovers all the active containers and monitors them.\nPrometheus: It specifies a project of CNCF, which provides powerful querying, alerting, and visualization capabilities.",
+        "reference": "javatpoint.com",
+        "role": "kubernetes"
+    }
+]

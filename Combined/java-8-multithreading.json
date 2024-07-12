@@ -1,0 +1,242 @@
+[
+    {
+        "question": "What are the new features introduced in Java 8 for multithreading?",
+        "answer": "Java 8 introduced the concept of Lambda expressions and Streams, which greatly simplified the process of multithreading. The Streams API allows developers to perform functional-style operations on streams of elements, such as filter, map, and reduce, in a parallel and efficient manner. Additionally, the Executor framework was enhanced with new classes, such as ForkJoinPool and CompletableFuture, which provide more powerful and flexible ways to manage threads and perform asynchronous operations.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How does the ForkJoinPool class work?",
+        "answer": "ForkJoinPool is a specialized ExecutorService that is designed for running Fork-Join style computations. It works by dividing a task into smaller subtasks, which are then executed concurrently by worker threads in the pool. The results of the subtasks are then combined to produce the final result. The ForkJoinPool class also supports work stealing, which allows idle worker threads to steal work from other busy threads, resulting in more efficient use of resources.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "What is the difference between parallelStream() and stream() in Java 8?",
+        "answer": "The main difference between parallelStream() and stream() is that parallelStream() returns a parallel stream, which is optimized for parallel execution, while stream() returns a sequential stream, which is executed in a single thread. When using a parallel stream, the operations are executed concurrently by multiple threads, while with a sequential stream, the operations are executed one after the other in a single thread.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use CompletableFuture to perform asynchronous operations?",
+        "answer": "CompletableFuture is a class that represents the result of an asynchronous computation. It can be used to perform long-running operations in a separate thread, and then receive the result of the computation when it is complete. This can be done by calling the supplyAsync() method, which takes a supplier function and returns a CompletableFuture object. The supplier function performs the asynchronous computation, and the CompletableFuture object can be used to retrieve the result of the computation or to register callbacks to be executed when the computation is complete.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "What is the difference between a thread and a process in Java?",
+        "answer": "A thread is a lightweight, independent unit of execution within a process. It shares the same memory space with other threads belonging to the same process and can communicate with other threads within the same process. A process, on the other hand, is a heavyweight, independent unit of execution with its own memory space. It can contain multiple threads and can communicate with other processes through inter-process communication (IPC) mechanisms. In Java, threads are created and managed using the java.util.concurrent package, while processes are managed by the operating system.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you synchronize access to shared resources in a multithreaded environment?",
+        "answer": "Java provides several ways to synchronize access to shared resources in a multithreaded environment. One way is to use the synchronized keyword, which can be applied to methods or blocks of code. When a thread enters a synchronized method or block, it acquires a lock on the object, preventing other threads from entering the same method or block until the lock is released. Another way is to use the java.util.concurrent.locks package, which provides more advanced locking mechanisms such as ReentrantLock, ReadWriteLock and StampedLock. These locks can be used to implement more fine-grained control over access to shared resources.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "Can you explain the difference between wait() and sleep() methods in Java?",
+        "answer": "Both the wait() and sleep() methods are used to control the execution of threads in Java, but they work in different ways. The wait() method is used to release a lock on an object, allowing other threads to acquire the lock and access the shared resource. The thread that calls wait() goes into a waiting state and can only be resumed when another thread calls notify() or notifyAll() on the same object. On the other hand, the sleep() method is used to pause the execution of a thread for a specified amount of time. The thread goes into a \"sleeping\" state and resumes execution after the specified time has elapsed.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "Can you explain the difference between Executor, ExecutorService and ThreadPoolExecutor in Java?",
+        "answer": "The Executor, ExecutorService and ThreadPoolExecutor are all related to multithreading in Java, but they have different purposes and functionality. The Executor is an interface that defines a single method execute() for running a Runnable task. The ExecutorService is a subinterface of Executor that adds methods for managing the lifecycle of the threads, such as shutdown and awaitTermination. The ThreadPoolExecutor is a concrete implementation of the ExecutorService interface that manages a pool of worker threads and can be used to execute a large number of tasks efficiently.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "Can you explain the difference between a CountDownLatch and a CyclicBarrier in Java?",
+        "answer": "Both the CountDownLatch and CyclicBarrier are used to synchronize the execution of multiple threads in Java, but they work in different ways. A CountDownLatch is used to block the execution of one or more threads until a specific condition is met. It has a counter that is initialized to a specific value, and each time the countDown() method is called, the counter is decremented. When the counter reaches zero, the threads that are waiting on the latch are released. A CyclicBarrier, on the other hand, is used to block the execution of multiple threads until all threads have reached a specific point in the execution. When all threads have reached the barrier, they are released and can continue execution.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "Can you explain the difference between the Callable and Runnable interfaces in Java 8?",
+        "answer": "Both the Callable and Runnable interfaces are used to represent tasks that can be executed by threads in Java 8, but they have different functionality. The Runnable interface has a single method run() that does not return any value and cannot throw checked exceptions. The Callable interface, on the other hand, has a single method call() that returns a value and can throw checked exceptions. The Executor framework in Java 8 provides methods for executing both Runnable and Callable tasks, such as submit() and invokeAll().\nADVERTISEMENT",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the parallel() method in the Streams API to improve performance?",
+        "answer": "The parallel() method in the Streams API can be used to convert a sequential stream into a parallel stream, which can improve the performance of certain operations. When a stream is parallel, the operations are executed concurrently by multiple threads, which can lead to faster execution times. However, it is important to note that not all operations benefit from parallel execution, and in some cases, using a parallel stream can actually decrease performance. To determine if using a parallel stream will improve performance, it is recommended to test the code with both sequential and parallel streams and compare the execution times.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "Can you explain the difference between a Future and a CompletableFuture in Java 8?",
+        "answer": "Both the Future and CompletableFuture are used to represent the result of an asynchronous computation in Java 8, but they have different functionality. A Future is a simple interface that provides methods for retrieving the result of a computation, such as get() and isDone(). The CompletableFuture, on the other hand, is an enhanced version of Future that provides additional functionality such as callbacks, exceptions handling, and the ability to combine multiple Future objects. With CompletableFuture, you can use functional-style callbacks to handle the completion of the task and handle exceptions.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Atomic classes in Java 8 to perform atomic operations on shared variables?",
+        "answer": "Java 8 provides several classes in the java.util.concurrent.atomic package that can be used to perform atomic operations on shared variables, such as AtomicInteger, AtomicLong, and AtomicReference. These classes provide methods that guarantee atomic operations, such as compareAndSet() and updateAndGet(). These methods can be used to perform operations such as incrementing a counter and updating a shared variable, without the need for explicit synchronization, which can improve performance.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Phaser class in Java 8 to synchronize the execution of multiple threads?",
+        "answer": "The Phaser class in Java 8 provides a way to synchronize the execution of multiple threads by dividing the execution of a task into multiple phases. A Phaser is initialized with a specific number of parties, and each party must arrive at the phaser before the next phase can begin. The Phaser class provides methods for registering and deregistering parties, and for controlling the advancement of phases. This can be used for example for dividing a big task into smaller chunks, and executing them concurrently, then waiting for all the threads to finish their chunks and move on to the next one.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ThreadLocal class in Java 8 to store thread-specific data?",
+        "answer": "The ThreadLocal class in Java 8 provides a way to store thread-specific data. It creates a separate copy of a variable for each thread, so that each thread can access and modify its own copy without affecting other threads. This is particularly useful for handling scenarios where multiple threads are accessing the same resources, and each thread needs to have its own set of data. The ThreadLocal class provides methods for setting and getting thread-local variables, such as get() and set().",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Executors utility class in Java 8 to create and manage thread pools?",
+        "answer": "The Executors utility class in Java 8 provides a convenient way to create and manage thread pools. It provides several methods for creating different types of thread pools, such as newFixedThreadPool(), newCachedThreadPool() and newSingleThreadExecutor(). These methods return an ExecutorService object, which can be used to submit tasks for execution and manage the lifecycle of the threads in the pool.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Semaphore class in Java 8 to control the number of threads that can access a shared resource at the same time?",
+        "answer": "The Semaphore class in Java 8 provides a way to control the number of threads that can access a shared resource at the same time. A Semaphore is initialized with a specific number of permits, and each time a thread wants to access the shared resource, it must acquire a permit. If all permits are currently in use, the thread is blocked until a permit becomes available. The Semaphore class provides methods for acquiring and releasing permits, such as acquire() and release().",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Lock and ReentrantLock classes in Java 8 to manage access to shared resources?",
+        "answer": "The Lock and ReentrantLock classes in Java 8 provide a more flexible way to manage access to shared resources compared to the synchronized keyword. A Lock is a more general-purpose locking mechanism, while a ReentrantLock is a specific implementation of the Lock interface that supports reentrant locking, which allows a thread to acquire the same lock multiple times. The Lock and ReentrantLock classes provide methods for acquiring and releasing locks, such as lock() and unlock() and also have the ability to tryLock() without blocking the execution.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ThreadPoolExecutor class in Java 8 to create and manage custom thread pools?",
+        "answer": "The ThreadPoolExecutor class in Java 8 is a powerful and flexible way to create and manage custom thread pools. It allows for fine-grained control over the number of threads, the queueing strategy, and the thread factory. The ThreadPoolExecutor class allows you to set the core and maximum pool size, set the keep-alive time for idle threads, and specify the queue to use for holding tasks before they are executed. Additionally, you can also provide a ThreadFactory to create new threads when needed. This allows you to create custom thread pools that are tailored to the specific requirements of your application.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the CyclicBarrier class in Java 8 to synchronize the execution of multiple threads?",
+        "answer": "The CyclicBarrier class in Java 8 provides a way to synchronize the execution of multiple threads. It allows multiple threads to wait for each other to reach a specific point in the execution, called a barrier, before proceeding. A CyclicBarrier is initialized with a specific number of parties, and each time a thread reaches the barrier, it calls await() method on the CyclicBarrier object. Once all threads have reached the barrier, they are released and can continue execution. The CyclicBarrier class also allows you to specify an action to be executed when all threads have reached the barrier, using the barrierAction constructor.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "newCachedThreadPool()?",
+        "answer": "Both Executors.newFixedThreadPool() and Executors.newCachedThreadPool() are used to create thread pools in Java 8, but they have different functionality. Executors.newFixedThreadPool() creates a thread pool with a fixed number of threads, which is specified as an argument to the method. These threads will be reused for executing incoming tasks, and if all threads are busy, new tasks will be added to a queue. Executors.newCachedThreadPool() creates a thread pool with an unbounded number of threads. The thread pool will create new threads as needed, and will also reuse existing idle threads. If a thread has been idle for a certain period of time, it will be terminated to conserve resources.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "Can you explain the difference between ThreadPoolExecutor and ScheduledThreadPoolExecutor?",
+        "answer": "Both ThreadPoolExecutor and ScheduledThreadPoolExecutor are used to create thread pools in Java 8, but they have different functionality. ThreadPoolExecutor is a general-purpose thread pool, that allows you to submit tasks for execution, and manage the lifecycle of the threads in the pool. ScheduledThreadPoolExecutor is a specialized version of ThreadPoolExecutor that is optimized for scheduling tasks to be executed at a later time or periodically. It provides additional functionality such as scheduling tasks using a delay, or at fixed rate/fixed delay.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the CountDownLatch class in Java 8 to synchronize the execution of multiple threads?",
+        "answer": "The CountDownLatch class in Java 8 provides a way to synchronize the execution of multiple threads. It allows one or more threads to wait for a set of events to occur before proceeding. A CountDownLatch is initialized with a count, and each time an event occurs, the count is decremented by calling the countDown() method. Threads that are waiting for the events to occur can call the await() method to block until the count reaches zero. Once the count reaches zero, all threads that were waiting are released and can continue execution. This can be useful in situations where multiple threads need to wait for a specific event or set of events to occur before proceeding. For example, in a distributed system, multiple threads can use a CountDownLatch to wait for all nodes to be ready before proceeding.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Phaser class in Java 8 to synchronize the execution of multiple threads?",
+        "answer": "The Phaser class in Java 8 provides a more advanced way to synchronize the execution of multiple threads. It is similar to a CyclicBarrier, but it allows for more dynamic control over the barriers and the number of parties involved. A Phaser can be used to coordinate multiple phases of execution, and threads can dynamically register and deregister from a Phaser. The Phaser class provides methods for controlling the number of parties and the barriers, such as register(), deregister() and arriveAndAwaitAdvance().",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the CompletableFuture class in Java 8 to handle asynchronous computations?",
+        "answer": "The CompletableFuture class in Java 8 provides a way to handle asynchronous computations. It represents a computation that may not have been completed yet but can be composed with other computations in a non-blocking way. CompletableFuture can be used to perform computations in the background and to handle the results of the computation when they are available. The CompletableFuture class provides methods for handling the results of the computation, such as get(), thenApply() and handle().",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ForkJoinPool class in Java 8 to perform parallel computations?",
+        "answer": "The ForkJoinPool class in Java 8 provides a way to perform parallel computations. It is a special-purpose Executor designed for use with ForkJoinTask, which is a lightweight form of task that can be split into smaller tasks, and then recombined. The ForkJoinPool class provides a pool of worker threads that can execute ForkJoinTask instances in parallel. The ForkJoinPool class also allows to submit task using the invoke() method, and also provide the ability to cancel a task using the cancel() method.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Future interface in Java 8 to handle the results of asynchronous computations?",
+        "answer": "The Future interface in Java 8 represents the result of an asynchronous computation. It can be used to check if the computation is complete, to wait for the computation to complete, and to retrieve the result of the computation. The Future interface provides methods such as get(), isDone() and cancel() to check the status of the computation and retrieve the result.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Lock and ReentrantLock classes in Java 8 to synchronize access to shared resources?",
+        "answer": "The Lock and ReentrantLock classes in Java 8 provide a way to synchronize access to shared resources. The Lock class provides a more flexible way to acquire and release locks, while the ReentrantLock class provides more advanced features such as fairness policies, and the ability to interrupt a thread that is waiting to acquire a lock. When a thread acquires a lock, it can access the shared resource, and when it releases the lock, other threads can access the shared resource. By using locks, you can prevent multiple threads from accessing the shared resource at the same time, which can lead to data inconsistencies.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Atomic classes in Java 8 to perform atomic operations on variables?",
+        "answer": "The Atomic classes in Java 8 provide a way to perform atomic operations on variables. Atomic classes such as AtomicInteger, AtomicLong, and AtomicReference provide methods to perform operations such as increment, add, and compare-and-set in a way that is atomic and thread-safe. These classes use low-level concurrency primitives such as compare-and-swap instructions to ensure that the operations are atomic. This means that the operation will be completed in its entirety or not at all, and other threads will not see an intermediate state.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Semaphore class in Java 8 to control access to shared resources?",
+        "answer": "The Semaphore class in Java 8 provides a way to control access to shared resources. A semaphore is a synchronization object that controls access to a common resource by multiple processes in a parallel system. The Semaphore class in Java 8 provides acquire() and release() methods to request and release access to a shared resource, respectively. The Semaphore class also allows you to specify the number of permits, which controls the number of threads that can acquire the semaphore at a given time. This can be useful in situations where you want to limit the number of threads that can access a resource at the same time, to avoid overloading the resource.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ThreadLocal class in Java 8 to store thread-specific data?",
+        "answer": "The ThreadLocal class in Java 8 provides a way to store thread-specific data. The ThreadLocal class allows you to create variables that can only be accessed by the thread that created them. This can be useful in situations where you need to store data that is specific to a thread, and should not be shared between threads. For example, you can use a ThreadLocal to store a database connection, or a user's login information. The ThreadLocal class provides methods to set, get and remove the thread-local variable.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "join() method in Java 8 to wait for a thread to complete?",
+        "answer": "The Thread.join() method in Java 8 allows you to wait for a thread to complete. When you call the join() method on a thread, the calling thread will block until the thread that you are waiting for completes. This can be useful in situations where you want to wait for a thread to complete before continuing execution. For example, you can use the join() method to wait for a background thread to complete before shutting down the application.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "yield() method in Java 8 to give up the CPU?",
+        "answer": "The Thread.yield() method in Java 8 allows a running thread to give up the CPU, allowing other threads to run. When a thread calls the yield() method, it will be moved from the running state to the ready state. This can be useful in situations where you want to allow other threads to run, even though the current thread has not completed. For example, you can use the yield() method to give other threads a chance to run in a busy loop.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "sleep() method in Java 8 to pause the execution of a thread?",
+        "answer": "The Thread.sleep() method in Java 8 allows a thread to pause its execution for a specified amount of time. When a thread calls the sleep() method, it will be moved from the running state to the blocked state for the specified duration. This can be useful in situations where you want to pause the execution of a thread for a certain amount of time, such as waiting for a specific event to occur or simulating a delay. For example, you can use the sleep() method to pause the execution of a thread for a few seconds before retrying a failed operation. It is important to note that sleep() method is a static method, and it throws InterruptedException in case of interruption.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ThreadPoolExecutor class in Java 8 to manage a pool of threads?",
+        "answer": "The ThreadPoolExecutor class in Java 8 provides a way to manage a pool of threads. It allows you to create a fixed or dynamic pool of threads, and to submit tasks to be executed by the threads in the pool. The ThreadPoolExecutor class provides methods to control the number of threads in the pool, the task queue, and the execution policy. For example, you can use the ThreadPoolExecutor class to create a fixed-size thread pool with a specific task queue, and to set the execution policy to be FIFO or LIFO.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Executors class in Java 8 to create common thread pool types?",
+        "answer": "The Executors class in Java 8 provides a way to create common thread pool types such as fixed thread pools, cached thread pools, and single-threaded executors. The Executors class provides factory methods for creating these thread pools, such as newFixedThreadPool(), newCachedThreadPool(), and newSingleThreadExecutor(). These methods return ready-to-use ExecutorServices that can be used to submit tasks for execution.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the Callable interface in Java 8 to create tasks that can return a value?",
+        "answer": "The Callable interface in Java 8 provides a way to create tasks that can return a value, similar to the Runnable interface but allows a return type. A class that implements the Callable interface can be submitted to an ExecutorService for execution, and the returned value can be obtained using the Future interface. The Callable interface defines a single method, call(), that can throw an exception, which is why it is generally used in conjunction with the Executor framework to handle any exceptions that may be thrown.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the CompletionService interface in Java 8 to manage the completion of tasks?",
+        "answer": "The CompletionService interface in Java 8 provides a way to manage the completion of tasks. It allows you to submit Callable or Runnable tasks and retrieve the Future for their results in the order they complete. This is useful for situations where you want to process the results of a large number of tasks as soon as they become available, rather than waiting for all tasks to complete before processing any results.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ExecutorCompletionService class in Java 8 to manage the completion of tasks?",
+        "answer": "The ExecutorCompletionService class in Java 8 is a concrete implementation of the CompletionService interface. It uses an Executor to execute the tasks and a BlockingQueue to store the completed tasks. It provides the take() and poll() methods to retrieve the completed tasks in the order they complete, and the submit() method to submit the tasks for execution. This class is particularly useful for situations where you want to process the results of a large number of tasks as soon as they become available, rather than waiting for all tasks to complete before processing any results.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    },
+    {
+        "question": "How can you use the ForkJoinPool class in Java 8 to execute recursive tasks?",
+        "answer": "The ForkJoinPool class in Java 8 provides a way to execute recursive tasks. It is a specialized thread pool that is designed for executing tasks that can be broken down into smaller subtasks, which can then be executed in parallel. The ForkJoinPool class uses a technique called \"work stealing\" to ensure that all threads are kept busy, and to balance the load between the threads. It allows you to submit a ForkJoinTask, which is the base class for all recursive tasks, and to invoke the join() method to wait for the task to complete. The ForkJoinPool class also provides methods to control the parallelism level, the task queue, and the execution policy.\nAll of these questions can help in understanding how Java 8 multithreading works and how it can be utilized in different situations. It is important to have a good understanding of these concepts to write efficient and concurrent code.",
+        "reference": "javatpoint.com",
+        "role": "java-8-multithreading"
+    }
+]

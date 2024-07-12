@@ -1,0 +1,206 @@
+[
+    {
+        "question": "1) What do you understand by Boolean logic?",
+        "answer": "Boolean logic is the foundation of Boolean algebra. It is based and centered on three simple words called Boolean Operators: \"Or,\" \"And,\" and \"Not\". The core concept of Boolean Logic is based on the idea that all values are either true or false.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "2) What is the usage of Boolean logic?",
+        "answer": "Boolean logic's based programs are used to make a simple comparison to help decision-making. Boolean logic is a form of Boolean algebra where all values are either true or false. These true and false values are used to test the conditions that finally work as the selection or iteration parameter.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "3) How does a Boolean logic control the logical gates?",
+        "answer": "In Boolean algebra, there are two states for Boolean logic. The true state is denoted by the number one, referred to as logic one or logic high, while the false state represents the number zero, called logic zero or logic low. In digital electronics, the logic \"high\" is denoted by the presence of a voltage potential.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "4) Why do the present VLSI circuits use MOSFETs Instead Of BJTs?",
+        "answer": "In present VLSI circuits, MOSFETs are preferred over BJTs due to the following reasons:\nADVERTISEMENT\nMOSFETs are small in size and occupy a minimal silicon area on IC chips as compared to BJTs.\nMOSFETs are relatively simple in terms of manufacturing as compared to BJTs.\nMOSFETs are preferred over BJTs because digital and memory ICs can be implemented with circuits that use only MOSFETs i.e., no resistors, diodes, etc.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "5) What are the various regions of operation of MOSFET? How can we use these regions?",
+        "answer": "There are mainly three regions of operation in MOSFET:\nThe cut-off region\nThe triode region\nThe saturation region\nHere, the cut-off region and the triode region are used to operate as a switch, and the saturation region is used to operate as an amplifier.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "6) What are the different gates where Boolean logic is used?",
+        "answer": "There are mainly three types of gates used in Boolean logic:\nNOT Gate: The NOT gate is a logic gate that is used to implement logical negation. It has one input and one output. For example, if A = 0, then the Value of B =1 and vice versa.\nAND Gate: The AND gate is a logic gate that implements logical conjunction. It has one output due to the combination of two outputs. For example, if A and B = 1, then the value of output should be 1. On the other hand, if any input value is 0, then the output will be 0.\nOR Gate: The OR gate is a logic gate that is used to implement logical disjunction. If the value of one or both the inputs to the gate is 1, the output will be 1. If both the inputs are 0, the output will be 0. For example, if A's value is 1 or B is 0, then the value of output will be 1.\nNote: The above are the basic three types of gates where Boolean logic works. Apart from these, there are some other gates that work with the combination of these three basic gates. They are the XNOR gate, NAND gate, NOR gate, and the XOR gate.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "7) What do you understand by the threshold voltage?",
+        "answer": "The threshold voltage is commonly abbreviated as V??. It can be defined as a voltage between Gate and Source, i.e., VGS. A sufficient number of mobile electrons accumulate in the channel region and create a conducting channel. It is the minimum gate-to-source voltage required to create a conducting path between the source and the drain terminals. It is an essential scaling factor to maintain power efficiency.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "8) How can binary numbers give a signal or be converted into a digital signal?",
+        "answer": "Binary number contains two numbers, either 0 or 1. In simple words, we can say that the number 1 represents the ON state, and number 0 represents the OFF state. Using these binary numbers, we can combine billions of machines into one machine or circuit and operate those machines by performing arithmetic calculations and sorting operations.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "9) What is the meaning of \"the channel is pinched off\"?",
+        "answer": "For a MOSFET, when the voltage value between Gate and Source (VGS) is greater than the threshold voltage (Vt), the channel is induced. As we increase, VDS current starts flowing from Drain to Source till the voltage between gate and channel at the drain end becomes Vt, i.e., VGS - VDS = Vt, the channel depth at Drain end decreases almost to zero. At this stage, the channel is said to be pinched off. In this condition, the MOSFET enters the saturation region.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "10) What are the key differences between the TTL chips and CMOS chips?",
+        "answer": "The list of differences between the TTL chips and CMOS chips:\nTTL Chips CMOS Chips\nTTL chip stands for the transistor-transistor logic chip. It uses two bipolar junction transistors in the design of each logic gate. The CMOS chip stands for Complimentary Metal Oxide Semiconductor chip. It is also an integrated chip, but it uses field-effect transistors in the design.\nTTL chips utilize BJTs. CMOS chips utilize FETs.\nTTLS chip consumes a lot of power, especially at rest. For example, a single gate in a TTL chip consumes approximately 10mW of power. The CMOS chips consume significantly less power as compared to TTL chips. A single CMOS chip consumes approximately about 10nW of power.\nTTL chips are generally used in computers. CMOS chips are generally used in mobile phones.\nTTL chips can contain a substantial number of parts, such as resistors. The CMOS chips have a greater density for logic gates. In a CMOS chip, a single logic gate can contain at least two FETs.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "11) What is the most significant advantage of the CMOS chips over the TTL chips?",
+        "answer": "The most significant advantage of the CMOS chip over the TTL chip is that the CMOS chip has a higher density of logic gates within the same material that improves its efficiency. Another significant advantage is that the CMOS chips consume less power than the power consumed by the TTL chips, even at rest.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "12) What do you understand by Channel-length Modulation?",
+        "answer": "When we increase the VDS beyond the saturation point, it affects the MOSFET characteristics, and the channel pinch-off point starts moving away from the Drain towards the Source. Due to this process, the effective channel length decreases. This phenomenon is called Channel Length Modulation.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "13) What do you understand by a sequential circuit?",
+        "answer": "When a circuit is created by logic gates so that the required logic at the output depends not only on the current input logic conditions but also on the sequences past inputs and outputs, this circuit is called a sequential circuit.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "14) What is the depletion region in VLSI?",
+        "answer": "When we apply a positive voltage across Gates, it causes the free holes (positive charge) to be repelled from the substrate region under the channel region. When these holes are pushed down the substrate, they create a carrier-depletion region.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "15) What is Verilog? How is it different from normal programming languages?",
+        "answer": "Verilog is a Hardware Description Language commonly known as HDL. It is used for describing electronic circuits and systems. In Verilog, the circuit components are prepared inside a module that contains both behavioral and structural statements. The structural statements represent circuit components such as logic gates, counters, and microprocessors, while the behavioral statements represent the programming aspects such as loops, if-then statements, and stimulus vectors.\nVerilog is different from normal programming languages in the following aspects:\nSimulation time concept\nMultiple threads\nBasic circuit concepts such as primitive gates and network connections",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "16) What are the various factors that can affect the threshold voltage?",
+        "answer": "The threshold voltage (Vt) mainly depends on the voltage connected to the body terminal. It also depends on the temperature. For every 1 degree rise in temperature, the magnitude of threshold voltage decreases by about 2mV.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "17) What does the \"timescale 1 ns/ 1 ps\" specify in Verilog code?",
+        "answer": "In Verilog code, \"the timescale 1 ns/ 1 ps\" specifies that the unit of time is 1 ns, and the accuracy/precision will be upto 1ps.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "18) What are the two types of procedural blocks in Verilog?",
+        "answer": "Following are the two types of procedural blocks in Verilog:\nInitial: The initial block runs only once at the time zero.\nAlways: The always block loops to execute repeatedly and consistently execute, as the name suggests.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "19) What are the main steps required to solve setup and hold violations in VLSI?",
+        "answer": "Following is the list of steps that we have to perform to solve the setup and hold violations in VLSI:\nThe optimization and restructuring of the logic between the flops are necessary to make the logic combined and solve this problem.\nThere is a way to modify the flip-flops that offer lesser setup delay and provide faster services to set up a device. Modifying the launch-flop to have a better hold on the clock pin, which provides CK->Q, makes the launch-flop fast and helps fix the setup violations.\nModify the network of the clock to reduce the delay or slow down the clock that captures the action of the flip-flop.\nThere is always added delay/buffer available that allows less delay to the function.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "20) What is the reason behind the number of gate inputs to CMOS gates usually limited to four?",
+        "answer": "The number of gate inputs to CMOS gates usually limited to four because a higher number of stacks make the gate slower. In NOR and NAND gates, the number of gates present in the stack is usually like the number of inputs plus one. That's why the input gates are restricted to four.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "21) What are the different types of skews used in VLSI?",
+        "answer": "In the clock, a skew is used to reduce the delay or better understand the process. There are mainly three different types of skews used in VLSI.\nLocal skew: The local skew is generally used to include the difference between the launching flip-flop and the destination flip-flop. This differentiation helps to define a time path between the two.\nGlobal skew: The global skew defines the difference between the earliest components reaching the flip flop within the same clock domain. It needs to be mentioned in this skew. The delays are not measured while the clock is uniform for both.\nUseful skew: The useful skew is used to define the delay in capturing flip flop paths, which later helps set up an environment with precise requirements for the launch and capture of the timing path. It needs to be mentioned for design purposes to met the hold requirements.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "22) What do you understand by multiplexer?",
+        "answer": "A multiplexer is a combination circuit that selects one of the many input signals and directs to the only output.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "23) What do you understand by an SCR?",
+        "answer": "SCR is a short form that stands for Silicon Controlled Rectifier. It is a four-layered, 3-terminal solid-state device used to control the flow of current. It is a type of rectifier that is controlled by a logical gate signal.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "24) What do you understand by DCMs? Why are they used?",
+        "answer": "DCM is a short form that stands for Digital Clock Manager. It is a fully digital control system that uses feedback to maintain clock signal characteristics with great precision. A DCM can manage it precisely despite the occurrence of normal variations in operating temperature and voltage.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "25) What is slack in VLSI?",
+        "answer": "A Slack can be defined as a time delay difference from the expected delay to the actual delay in a particular path. It can be negative or positive.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "26) What is the usage of defpararm?",
+        "answer": "The term defparam is a keyword that is used to modify the parameter values at any module instance in the design. The defparam overrides the parameter value at compile time.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "27) How many transistors do a static RAM use?",
+        "answer": "Generally, a static RAM makes use of six transistors. Under the static RAM, read and write operations make use of the same port.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "28) What are the different ways to prevent Antenna Violation?",
+        "answer": "Antenna violation occurs during plasma etching when the charges generated from one metal strip to another accumulate in a single place. The length of the strip is directly proportional to the charges gets accumulated. Therefore, the longer the strip, the more the charges get accumulated.\nWe can prevent Antenna Violation by using the following methods:\nFirst, by creating jogging, the metal line consists of at least one metal above the protected layer.\nWe have to jog the metal to get the etching effect. This step is taken because if metal gets the etching, the other metal gets disconnected if we don't take the prevention measures.\nWe can also prevent it by adding the reverse diodes at the gates that are used in the circuits.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "29) What is the function of tie-high and tie-low cells?",
+        "answer": "The tie-high and tie-low cells are used to connect the transistors of the gate by using either the power or the ground. The gates are connected using the power or ground to turn off and on them because the power bounces from the ground. The cells stop the bouncing and ease the current from one cell to another. These cells require Vdd that connects to the tie-high cell as a power supply is high, and tie-low gets connected to Vss. After the connection establishment, the transistors function correctly without any ground bounce occurring in any cell.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "30) What is the primary function of metastability in VSDL?",
+        "answer": "Metastability is a phenomenon of unstable equilibrium in digital electronics. In metastability, the sequential element is not able to resolve the state of the input signal. That's why the output goes into an unresolved state for an unbounded interval of time. Metastability is used in designing a system that violates the setup or holds time requirements. The setup time requirement needs the data to be stable before the clock edge, and the hold time requires the data to be stable after the clock edge has passed. There are potential violations that can lead to setup and hold violations as well.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "31) What is the way to stop metastability in VLSI?",
+        "answer": "The most common way to stop metastability in VLSI is to add one or more successive synchronizing flip-flops to the synchronizer. Using this approach, you can stop metastability for an entire clock period (except for the setup time of the second flip-flop) for metastable events in the first synchronizing flip-flop to resolve them.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "32) What is MTBF in VLSI?",
+        "answer": "MTBF is a short term that stands for Mean Time Between Failure. It is used to provide information on how often a particular element will fail. It also gives the average time interval between two successive failures.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "33) What is the difference between the mealy and Moore state machine?",
+        "answer": "Main differences between the mealy and Moore state machine:\nMoore Machine Model Mealy Machine Model\nThe Moore model contains the machines that have an entry action, and the output depends only on the machine's state. The Mealy model only uses Input Actions, and the output depends on the state and the previous inputs provided during the program.\nThe Moore model is used to design the hardware systems. The Mealy model is used to design both hardware and software systems.\nThe output of the Moore machine depends only on the state because the program is written in the state only. The output of the Mealy machine depends on the state as well as on the input also. The output of the Mealy machine is the combination of both input and the state.\nWhen we make signal changes, the state variables also have some delay. The Moore machine doesn't have glitches, and its output is dependent only on states, not on the input signal level.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    },
+    {
+        "question": "34) What is the difference between Synchronous and Asynchronous Reset?",
+        "answer": "Main differences between Synchronous and Asynchronous Reset:\nSynchronous Reset Asynchronous Reset\nSynchronous reset is the logic that synthesizes to the smaller flip-flops. The clock works as a filter providing the minor reset glitches in this reset, but the glitches occur on the active clock edge. Asynchronous Reset is also known as reset release or reset removal. In this reset, it is the designer's responsibility to add the reset to the data paths.\nSynchronous reset requires an active clock that provides specific clock-cycle-related latency and may impact the timing of the data paths. Asynchronous reset does not require an active clock to bring flip-flops to a known state. Therefore, it has lower latency than synchronous reset.",
+        "reference": "javatpoint.com",
+        "role": "vlsi"
+    }
+]

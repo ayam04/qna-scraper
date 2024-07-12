@@ -1,0 +1,116 @@
+[
+    {
+        "question": "1) What is Redis?",
+        "answer": "Redis is an open-source, advance key value data store and cache. It is also referred as a data structure server which keys not only contains strings, but also hashes, sets, lists, and sorted sets.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "2) What is the meaning of Redis?",
+        "answer": "Redis stands for REmote DIctionary Server.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "3) How is Redis different from other databases?",
+        "answer": "Redis is a NoSQL, Opensource, in-memory data-structure store. It follows the principle of key-value store.\nIt is extremely fast, persistent, portable and supports many languages such as C, C++, C#, Clojure, Common Lisp, D, Dart, Erlang, Go, Haskell, Haxe, Io, Java, JavaScript (Node.js), Julia, Lua, Objective-C, Perl, PHP, Pure Data, Python, R, Racket, Ruby, Rust, Scala, Smalltalk and Tcl.\nFor more information:Click Here",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "4) In which language Redis is written?",
+        "answer": "Redis is written in ANSI C and mostly used for cache solution and session management. It creates unique keys for store values.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "5) What is the usage of Redis?",
+        "answer": "Redis is a special key-value store database that can function as a NoSQL database or as a memory-cache store to improve performance when serving data that is stored in system memory.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "6) How to interect with Redis?",
+        "answer": "After the installation of the server you can run the Redis Client provided by redis installation or you can open the command prompt and use the following command:\nredis-cli  \nBy using any of them, you can interect with Redis.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "7) Which are the most popular companies using Redis?",
+        "answer": "Twitter, Github, Stackoverflow etc. are the most popular companies using Redis.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "8) What are the main features of Redis?",
+        "answer": "Following are the main features of Redis:\nADVERTISEMENT\nRedis is very simple to install setup and manage.\nRedis is very fast. It can execute 100000 queries per second.\nRedis is fast because data is being persistent in memory as well as stored on the disk.\nRedis is very fast because it loads the whole dataset in primary memory.\nRedis operations working on different data types are atomic so these operations can be accomplished safely i.e. to set or increase a key, add or remove elements from a set or increase a counter.\nIt supports various types of data structure such as strings, hashes, sets, lists, sorted sets etc.\nRedis supports a variety of languages i.e. C, C++, C#, Ruby, Python, Twisted Python, PHP, Erlang, Tcl, Perl, Lua, Java, Scala etc.\nIf your favorite language is not supported yet, you can write your own client library, as the Protocol is pretty simple.\nRedis supports simple master to slave replication.\nRedis is portable.\nFor more information:Click Here",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "9) Explain the Replication Features of Redis?",
+        "answer": "Replication is important in order to archive high level of availability in big data systems. The data needs to be replicated at n number of places. This follows the master-slave approach where the master copy is maintained by master-slave and replicated to n other nodes.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "10) What are the advantages of using Redis?",
+        "answer": "Following is a list of some important advantages of Redis:\nRedis is very fast.\nIt supports a server-side locking.\nIt has a rich client side library.\nIt is a good counter.\nIt supports Atomic Operation.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "11) What are the disadvantages/limitations of using Redis?",
+        "answer": "Following are the disadvantages/ limitations of Redis:\nIt is single threaded.\nIt has got limited client support for consistent hashing.\nIt has significant overhead for persistence.\nIt is not deployed widely.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "12) What is the difference between Redis and RDBMS?",
+        "answer": "There are a lot of differences between Redis and RDBMS:\nRedis is a NoSQL database while RDBMS is an SQL database.\nRedis follows the key-value structure while RDBMS follows the table structure.\nRedis extremely fast while RDBMS is comparatively slow.\nRedis stores all the dataset in primary memory while RDBMS stores its dataset in secondary memory.\nRedis is generally used to store small and frequently used files while RDBMS is used to store big files.\nRedis provides only official support for Linux, BSD, Mac OS X, Solaris. It doesn?t provide official support for Windows currently while RDBMS provides support for both.\nFor more information:Click Here",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "13) Differentiate Memcached and Redis?",
+        "answer": "Memcached Redis\nMemcached only does caching information. It provides some more functionalities like replication and persistence along with caching information.\nMemcached supports the functionality of LRU (Least Recently Used) eviction of values. LRU is not supported by Redis.\nIn Memcached, when they overflow memory, the one you have not used recently (LRU- Least Recently Used) will get deleted. In Redis, there is a time set for each function, Three keys are maintained, the one, which is closest to expiry, will get deleted.\nCAS (Check and Set) is supported by Memcached. CAS is not supported by Redis.\nArray objects are needed to be serialized in order to get saved. We need to unserialize them for their retrieval. Redis has got stronger data structures; it can handle strings, binary safe strings, list of binary safe strings, sorted lists, etc.\nMemcached has at most 250 bytes length. Redis has at most 2 GB key length.\nIt is Multi-threaded It is single threaded.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "",
+        "answer": "TYPE key\nTTL key\nEXPIRE key seconds\nEXPIREAT key timestamp\nEXISTS key\nDEL key",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "15) Which are the different data types used in Redis?",
+        "answer": "There are mainly 5 types of data types supported by Redis:\nStrings\nHashes\nLists\nSets\nSorted Sets\nFor more information:Click Here",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "16) Which are the most popular commands of the Redis database?",
+        "answer": "For more information:Click Here",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "17) We all know that Reds is fast, but is it also durable?",
+        "answer": "In Redis, there is always a trade-of between durability and speed. In the case of system failure, it may lose data which is not stored.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "18) How can you enhance the durability of Redis?",
+        "answer": "Whenever a new command is added to the append log file, call Fsysnc() each time.\nKeep calling Fsysnc() in every second. Despite of the 1 second data lose in the case of system fails.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    },
+    {
+        "question": "19) What are the concerned things while using Redis?",
+        "answer": "Consistent method selection in order to name and prefix the keys. Namespace management.\nMake key prefixes registry which can map every documents to their owner applications.\nDesigning, implementing and testing the Garbage collection mechanism for each class we keep into the redis architecture.\nMaintain a sharding library before investing so much into the application.",
+        "reference": "javatpoint.com",
+        "role": "redis"
+    }
+]

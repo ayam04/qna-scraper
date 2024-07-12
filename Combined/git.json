@@ -1,0 +1,416 @@
+[
+    {
+        "question": "1. What is a git repository?",
+        "answer": "A repository is a file structure where git stores all the project-based files. Git can either stores the files on the local or the remote repository.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "2. What does git clone do?",
+        "answer": "The command creates a copy (or clone) of an existing git repository. Generally, it is used to get a copy of the remote repository to the local repository.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "3. What does the command git config do?",
+        "answer": "The git config command is a convenient way to set configuration options for defining the behavior of the repository, user information and preferences, git installation-based configurations, and many such things. \n\nFor example:\nTo set up your name and email address before using git commands, we can run the below commands: git config    git config --global\nuser.name\n“<<your_name>>”\n  git config --global user.email “<<your_email>>” git config --global\nuser.name\n“<<your_name>>”    git config --global user.email “<<your_email>>”",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "4. Can you explain head in terms of git and also tell the number of heads that can be present in a repository?",
+        "answer": "A head is nothing but a reference to the last commit object of a branch.\nFor every repository, there will always be a default head referred to as “master” or now “main” (as per GitHub) but there is no restriction to the count of heads available. In other words, it can have any number of heads.\nUsages:\n\n- To go or checkout to 1 commit before the latest commit, we use git checkout HEAD~1\n\n- To uncommit the last 3 commits without losing the changes, we first run git reset HEAD~3. Then we can see the changes made in the last 3 commits and then update it manually and commit it finally.\n\n- In order to uncommit the last 3 commits and also remove the changes, we can run the command: git reset --hard HEAD~3. This command will completely remove all the changes.\n\n- To look into the changes made in the last 3 commits, we can run git diff HEAD~3\n\n- To make a new commit by reverting the last 3 commits, we can run the command: git revert --no-commit HEAD~3...HEAD A head is nothing but a reference to the last commit object of a branch. head For every repository, there will always be a default head referred to as “master” or now “main” (as per GitHub) but there is no restriction to the count of heads available. In other words, it can have any number of heads. Usages:\n\n- To go or checkout to 1 commit before the latest commit, we use git checkout HEAD~1\n\n- To uncommit the last 3 commits without losing the changes, we first run git reset HEAD~3. Then we can see the changes made in the last 3 commits and then update it manually and commit it finally.\n\n- In order to uncommit the last 3 commits and also remove the changes, we can run the command: git reset --hard HEAD~3. This command will completely remove all the changes.\n\n- To look into the changes made in the last 3 commits, we can run git diff HEAD~3\n\n- To make a new commit by reverting the last 3 commits, we can run the command: git revert --no-commit HEAD~3...HEAD Usages:   git checkout HEAD~1   git reset HEAD~3   git reset --hard HEAD~3   git diff HEAD~3   git revert --no-commit HEAD~3...HEAD",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "5. What is a conflict?",
+        "answer": "Git usually handles feature merges automatically but sometimes while working in a team environment, there might be cases of conflicts such as:\n\n1. When two separate branches have changes to the same line in a file\n2. A file is deleted in one branch but has been modified in the other.\n  These conflicts have to be solved manually after discussion with the team as git will not be able to predict what and whose changes have to be given precedence. Git usually handles feature merges automatically but sometimes while working in a team environment, there might be cases of conflicts such as:\n\n1. When two separate branches have changes to the same line in a file\n2. A file is deleted in one branch but has been modified in the other.     These conflicts have to be solved manually after discussion with the team as git will not be able to predict what and whose changes have to be given precedence.  ",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "6. What is the functionality of git ls-tree?",
+        "answer": "This command returns a tree object representation of the current repository along with the mode and the name of each item and the SHA-1 value of the blob.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "7. What does git status command do?",
+        "answer": "git status command is used for showing the difference between the working directory and the index which is helpful for understanding git in-depth and also keep track of the tracked and non-tracked changes. git status",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "8. Define “Index”.",
+        "answer": "Before making commits to the changes done, the developer is given provision to format and review the files and make innovations to them. All these are done in the common area which is known as ‘Index’ or ‘Staging Area’.   In the above image, the “staged” status indicates the staging area and provides an opportunity for the people to evaluate changes before committing them.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "9. What does git add command do?",
+        "answer": "This command adds files and changes to the index of the existing directory.\n  You can add all changes at once using git add . command.\n  You can add files one by one specifically using git add <file_name> command.\n  You can add contents of a particular folder by using git add /<folder_name>/ command. This command adds files and changes to the index of the existing directory.  You can add all changes at once using git add . command. git add .  You can add files one by one specifically using git add <file_name> command. git add <file_name>  You can add contents of a particular folder by using git add /<folder_name>/ command. git add /<folder_name>/",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "10. What is a version control system (VCS)?",
+        "answer": "A VCS keeps track of the contributions of the developers working as a team on the projects. They maintain the history of code changes done and with project evolution, it gives an upper hand to the developers to introduce new code, fixes bugs, and run tests with confidence that their previously working copy could be restored at any moment in case things go wrong.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "1. What has to be run to squash multiple commits (last N) into a single commit?",
+        "answer": "Squashing multiple commits to a single one overwrites the history which is why it is recommended to be done using full caution. This step can be done by running the command: git rebase -i HEAD~{{N}} where {{N}} represents the number of commits needed to be squashed. git rebase -i HEAD~{{N}}",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "2. How would you recover a branch that has already pushed changes in the central repository but has been accidentally deleted from every team member’s local machines?",
+        "answer": "We can recover this by checking out the latest commit of this branch in the reflog and then checking it out as a new branch.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "3. Can you tell something about git reflog?",
+        "answer": "This command tracks every single change made in the repository references (that can be branches or tags) and also maintains the branches/tags log history that was either created locally or checked out. Reference logs such as the commit snapshot of when the branch was created or cloned, checked-out, renamed, or any commits made on the branch are maintained by Git and listed by the ‘reflog’ command. This recovery of the branch is only possible when the branch was either created locally or checked-out from a remote repository in your local repository for Git to store its reference history logs.\nThis command should be executed in the repository that had the lost branch. This recovery of the branch is only possible when the branch was either created locally or checked-out from a remote repository in your local repository for Git to store its reference history logs. This command should be executed in the repository that had the lost branch.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "4. What consists of a commit object?",
+        "answer": "A commit object consists of the following components: A set of files that represents the state of a project at a given point in time.\nReference to parent commit objects.\nA 40 character string termed as SHA-1 name uniquely identifies the commit object. A set of files that represents the state of a project at a given point in time. Reference to parent commit objects. A 40 character string termed as SHA-1 name uniquely identifies the commit object.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "5. Explain the levels in git config and how can you configure values using them?",
+        "answer": "In order to make git work, it uses a set of configurations that are pre-defined by default by means of configuration files (or config files). We can change the default behavior of git by just modifying these files which are basically text files. In order to do this, it is important to understand how git identifies these files. It does so by following the below steps:\n\n- Firstly, git searches for the config values in the system-wide gitconfig file stored in <<installation_path>>/etc/gitconfig file that has settings defined and applied to every user of the system and all their repos.\n     - In case you want git to search from this particular file and read/write on it, we can pass the option --system to git config command.\n\n- Next, git searches for the ~/.gitconfig file or ~/.config/git/config that has the scope specific to the user.\n   - Git can be made to read/ write from this file specifically bypassing --global to the git config command.\n\n- Lastly, git searches for the config values in the git directory of the local repository that we are currently working on.\n   - These config values are specific to that particular repository alone and can be accessed by passing --local to the git config command.This is the default config file that gets accessed and modified upon in case we do not specify any levels. In order to make git work, it uses a set of configurations that are pre-defined by default by means of configuration files (or config files). We can change the default behavior of git by just modifying these files which are basically text files. In order to do this, it is important to understand how git identifies these files. It does so by following the below steps:\n\n- Firstly, git searches for the config values in the system-wide gitconfig file stored in <<installation_path>>/etc/gitconfig file that has settings defined and applied to every user of the system and all their repos.\n     - In case you want git to search from this particular file and read/write on it, we can pass the option --system to git config command.\n\n- Next, git searches for the ~/.gitconfig file or ~/.config/git/config that has the scope specific to the user.\n   - Git can be made to read/ write from this file specifically bypassing --global to the git config command.\n\n- Lastly, git searches for the config values in the git directory of the local repository that we are currently working on.\n   - These config values are specific to that particular repository alone and can be accessed by passing --local to the git config command.This is the default config file that gets accessed and modified upon in case we do not specify any levels.   <<installation_path>>/etc/gitconfig every user  --system   ~/.gitconfig ~/.config/git/config  --global    --local",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "6. What is a detached HEAD and what causes this and how to avoid this?",
+        "answer": "Detached HEAD indicates that the currently checked-out repository is not a local branch. This can be caused by the following scenarios: When a branch is a read-only branch and we try to create a commit to that branch, then the commits can be termed as “free-floating” commits not connected to any branch. They would be in a detached state.\nWhen we checkout a tag or a specific commit and then we try to perform a new commit, then again the commits would not be connected to any branch. When we now try to checkout a branch, these new commits would be automatically placed at the top.\n\nIn order to ensure that detached state doesn't happen, =instead of checking out commit/tag, we can create a branch emanating from that commit and then we can switch to that newly created branch by using the command: git checkout -b <<new_branch_name>>. This ensures that a new branch is checkout out and not a commit/tag thereby ensuring that a detached state wouldn't happen. When a branch is a read-only branch and we try to create a commit to that branch, then the commits can be termed as “free-floating” commits not connected to any branch. They would be in a detached state. When we checkout a tag or a specific commit and then we try to perform a new commit, then again the commits would not be connected to any branch. When we now try to checkout a branch, these new commits would be automatically placed at the top.\n\nIn order to ensure that detached state doesn't happen, =instead of checking out commit/tag, we can create a branch emanating from that commit and then we can switch to that newly created branch by using the command: git checkout -b <<new_branch_name>>. This ensures that a new branch is checkout out and not a commit/tag thereby ensuring that a detached state wouldn't happen.   git checkout -b <<new_branch_name>>",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "7. What does git annotate command do?",
+        "answer": "This command annotates each line within the given file with information from the commit which introduced that change. This command can also optionally annotate from a given revision.\nSyntax: git annotate [<options>] <file> [<revision>]\nYou can get to learn more about this command from the official git documentation here. This command annotates each line within the given file with information from the commit which introduced that change. This command can also optionally annotate from a given revision. Syntax: git annotate [<options>] <file> [<revision>] git annotate [<options>] <file> [<revision>] You can get to learn more about this command from the official git documentation here. here",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "8. What is the difference between git stash apply vs git stash pop command?",
+        "answer": "git stash pop command throws away the specified stash (topmost stash by default) after applying it.\ngit stash apply command leaves the stash in the stash list for future reuse. In case we wanted to remove it from the list, we can use the git stash drop command. git stash pop command throws away the specified stash (topmost stash by default) after applying it. git stash pop git stash apply command leaves the stash in the stash list for future reuse. In case we wanted to remove it from the list, we can use the git stash drop command. git stash apply git stash drop git stash pop = git stash apply + git stash drop git stash pop = git stash apply + git stash drop",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "9. What do the git diff and git status commands do?",
+        "answer": "git diff git status\nThis shows the changes between commits, working trees, etc. This shows the difference between the working directory and index that is essential in understanding git in depth. git diff git status\nThis shows the changes between commits, working trees, etc. This shows the difference between the working directory and index that is essential in understanding git in depth. git diff git status git diff git status git diff git status This shows the changes between commits, working trees, etc. This shows the difference between the working directory and index that is essential in understanding git in depth. This shows the changes between commits, working trees, etc. This shows the difference between the working directory and index that is essential in understanding git in depth. This shows the changes between commits, working trees, etc. between commits, working trees, This shows the difference between the working directory and index that is essential in understanding git in depth. between the working directory and index git diff works in a similar fashion to git status with the only difference of showing the differences between commits and also between the working directory and index. git diff works in a similar fashion to git status with the only difference of showing the differences between commits and also between the working directory and index. git diff git status",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "10. Why is it considered to be easy to work on Git?",
+        "answer": "With the help of git, developers have gained many advantages in terms of performing the development process faster and in a more efficient manner. Some of the main features of git which has made it easier to work are: Branching Capabilities:\n\n- Due to its sophisticated branching capabilities, developers can easily work on multiple branches for the different features of the project.\n- It also has an easier merge option along with an efficient work-flow feature diagram for tracking it.\n  Distributed manner of development:\n\n- Git is a distributed system and due to this nature, it became easier to trace and locate data if it's lost from the main server.\n- In this system, the developer gets a repository file that is present on the server. Along with this file, a copy of this is also stored in the developer’s system which is called a local repository.\n- Due to this, the scalability of the project gets drastically improved.\n  Pull requests feature:\n\n- This feature helps in easier interaction amongst the developers of a team to coordinate merge-operations.\n- It keeps a proper track of the changes done by developers to the code.\n  Effective release cycle:\n\n- Due to the presence of a wide variety of features, git helps to increase the speed of the release cycle and helps to improve the project workflow in an efficient manner. Branching Capabilities:\n\n- Due to its sophisticated branching capabilities, developers can easily work on multiple branches for the different features of the project.\n- It also has an easier merge option along with an efficient work-flow feature diagram for tracking it. Branching Capabilities:     Distributed manner of development:\n\n- Git is a distributed system and due to this nature, it became easier to trace and locate data if it's lost from the main server.\n- In this system, the developer gets a repository file that is present on the server. Along with this file, a copy of this is also stored in the developer’s system which is called a local repository.\n- Due to this, the scalability of the project gets drastically improved. Distributed manner of development:      Pull requests feature:\n\n- This feature helps in easier interaction amongst the developers of a team to coordinate merge-operations.\n- It keeps a proper track of the changes done by developers to the code. Pull requests feature:     Effective release cycle:\n\n- Due to the presence of a wide variety of features, git helps to increase the speed of the release cycle and helps to improve the project workflow in an efficient manner. Effective release cycle:  ",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "11. How will you create a git repository?",
+        "answer": "Have git installed in your system. \nThen in order to create a git repository, create a folder for the project and then run git init. \nDoing this will create a .git file in the project folder which indicates that the repository has been created. Have git installed in your system. Then in order to create a git repository, create a folder for the project and then run git init. git init Doing this will create a .git file in the project folder which indicates that the repository has been created.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "12. Tell me something about git stash?",
+        "answer": "Git stash can be used in cases where we need to switch in between branches and at the same time not wanting to lose edits in the current branch. Running the git stash command basically pushes the current working directory state and index to the stack for future use and thereby providing a clean working directory for other tasks. git stash",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "13. What is the command used to delete a branch?",
+        "answer": "To delete a branch we can simply use the command git branch –d [head].\nTo delete a branch locally, we can simply run the command: git branch -d <local_branch_name>\nTo delete a branch remotely, run the command: git push origin --delete <remote_branch_name>\nDeleting a branching scenario occurs for multiple reasons. One such reason is to get rid of the feature branches once it has been merged into the development branch. To delete a branch we can simply use the command git branch –d [head]. git branch –d [head] To delete a branch locally, we can simply run the command: git branch -d <local_branch_name> git branch -d <local_branch_name> To delete a branch remotely, run the command: git push origin --delete <remote_branch_name> git push origin --delete <remote_branch_name> Deleting a branching scenario occurs for multiple reasons. One such reason is to get rid of the feature branches once it has been merged into the development branch.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "14. What differentiates between the commands git remote and git clone?",
+        "answer": "git remote command creates an entry in  git config that specifies a name for a particular URL. Whereas git clone creates a new git repository by copying an existing one located at the URL. git remote git config git clone",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "15. What does git stash apply command do?",
+        "answer": "git stash apply command is used for bringing the works back to the working directory from the stack where the changes were stashed using git stash command.\nThis helps the developers to resume their work where they had last left their work before switching to other branches. git stash apply command is used for bringing the works back to the working directory from the stack where the changes were stashed using git stash command. git stash apply git stash This helps the developers to resume their work where they had last left their work before switching to other branches.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "16. Differentiate between git pull and git fetch.",
+        "answer": "git pull  git fetch\nThis command pulls new changes from the currently working branch located in the remote central repository. This command is also used for a similar purpose but it follows a two step process: \n1. Pulls all commits and changes from desired branch and stores them in a new branch of the local repository. \ncurrent\n2. For changes to be reflected in the current / target branch, git fetch should be followed by git merge command. git pull  git fetch\nThis command pulls new changes from the currently working branch located in the remote central repository. This command is also used for a similar purpose but it follows a two step process: \n1. Pulls all commits and changes from desired branch and stores them in a new branch of the local repository. \ncurrent\n2. For changes to be reflected in the current / target branch, git fetch should be followed by git merge command. git pull  git fetch git pull  git fetch git pull git fetch This command pulls new changes from the currently working branch located in the remote central repository. This command is also used for a similar purpose but it follows a two step process: \n1. Pulls all commits and changes from desired branch and stores them in a new branch of the local repository. \ncurrent\n2. For changes to be reflected in the current / target branch, git fetch should be followed by git merge command. This command pulls new changes from the currently working branch located in the remote central repository. This command is also used for a similar purpose but it follows a two step process: \n1. Pulls all commits and changes from desired branch and stores them in a new branch of the local repository. \ncurrent\n2. For changes to be reflected in the current / target branch, git fetch should be followed by git merge command. This command pulls new changes from the currently working branch located in the remote central repository. This command is also used for a similar purpose but it follows a two step process: \n1. Pulls all commits and changes from desired branch and stores them in a new branch of the local repository. \ncurrent\n2. For changes to be reflected in the current / target branch, git fetch should be followed by git merge command.    git fetch git merge git pull = git fetch + git merge git pull = git fetch + git merge",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "17. Can you give differences between “pull request” and “branch”?",
+        "answer": "pull request branch\nThis process is done when there is a need to put a developer’s change into another person’s code branch.  A branch is nothing but a separate version of the code. pull request branch\nThis process is done when there is a need to put a developer’s change into another person’s code branch.  A branch is nothing but a separate version of the code. pull request branch pull request branch pull request branch This process is done when there is a need to put a developer’s change into another person’s code branch.  A branch is nothing but a separate version of the code. This process is done when there is a need to put a developer’s change into another person’s code branch.  A branch is nothing but a separate version of the code. This process is done when there is a need to put a developer’s change into another person’s code branch. A branch is nothing but a separate version of the code.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "18. Why do we not call git “pull request” as “push request”?",
+        "answer": "“Push request” is termed so because it is done when the target repository requests us to push our changes to it.\n“Pull request” is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it. “Push request” is termed so because it is done when the target repository requests us to push our changes to it. “Pull request” is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it.  ",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "19. Can you tell the difference between Git and GitHub?",
+        "answer": "Git GitHub\nThis is a distributed version control system installed on local machines which allow developers to keep track of commit histories and supports collaborative work. This is a cloud-based source code repository developed by using git.\nThis is maintained by “The Linux Foundation”. This was acquired by “Microsoft”\nSVN, Mercurial, etc are the competitors GitLab, Atlassian BitBucket, etc are the competitors. Git GitHub\nThis is a distributed version control system installed on local machines which allow developers to keep track of commit histories and supports collaborative work. This is a cloud-based source code repository developed by using git.\nThis is maintained by “The Linux Foundation”. This was acquired by “Microsoft”\nSVN, Mercurial, etc are the competitors GitLab, Atlassian BitBucket, etc are the competitors. Git GitHub Git GitHub Git GitHub This is a distributed version control system installed on local machines which allow developers to keep track of commit histories and supports collaborative work. This is a cloud-based source code repository developed by using git.\nThis is maintained by “The Linux Foundation”. This was acquired by “Microsoft”\nSVN, Mercurial, etc are the competitors GitLab, Atlassian BitBucket, etc are the competitors. This is a distributed version control system installed on local machines which allow developers to keep track of commit histories and supports collaborative work. This is a cloud-based source code repository developed by using git. This is a distributed version control system installed on local machines which allow developers to keep track of commit histories and supports collaborative work. installed on local machines This is a cloud-based source code repository developed by using git. cloud-based source code repository This is maintained by “The Linux Foundation”. This was acquired by “Microsoft” This is maintained by “The Linux Foundation”. This was acquired by “Microsoft” SVN, Mercurial, etc are the competitors GitLab, Atlassian BitBucket, etc are the competitors. SVN, Mercurial, etc are the competitors GitLab, Atlassian BitBucket, etc are the competitors. GitHub provides a variety of services like forking, user management, etc along with providing a central repository for collaborative work. GitHub provides a variety of services like forking, user management, etc along with providing a central repository for collaborative work.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "1. How will you resolve conflict in Git?",
+        "answer": "Conflicts occur whenever there are multiple people working on the same file across multiple branches. In such cases, git won't be able to resolve it automatically as it is not capable of deciding what changes has to get the precedence.\nFollowing are the steps are done in order to resolve git conflicts:\n1. Identify the files that have conflicts.\n2. Discuss with members who have worked on the file and ensure that the required changes are done in the file.\n3. Add these files to the staged section by using the git add command.\n4. Commit these changes using the git commit command.\n5. Finally, push the changes to the branch using the git. Conflicts occur whenever there are multiple people working on the same file across multiple branches. In such cases, git won't be able to resolve it automatically as it is not capable of deciding what changes has to get the precedence. Following are the steps are done in order to resolve git conflicts:\n1. Identify the files that have conflicts.\n2. Discuss with members who have worked on the file and ensure that the required changes are done in the file.\n3. Add these files to the staged section by using the git add command.\n4. Commit these changes using the git commit command.\n5. Finally, push the changes to the branch using the git.     ",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "2. What command helps us know the list of branches merged to master?",
+        "answer": "git branch --merged helps to get the list of the branches that have been merged into the current branch.\nNote: git branch --no-merged lists the branches that have not been merged to the current branch. git branch --merged helps to get the list of the branches that have been merged into the current branch. git branch --merged Note: git branch --no-merged lists the branches that have not been merged to the current branch. git branch --no-merged",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "3. What is best advisable step in cases of broken commit: Create an additional commit OR amend an existing commit?",
+        "answer": "It is always advisable to create an additional commit rather than amending the existing commit due to the following reasons:\n- Doing the amend operation destroys the previously saved state of that commit. If only the commit message gets changes or destroyed, it's acceptable but there might be cases when the contents of the commits get amended. This results in the loss of important information associated with the commit.\n- Over usage of git commit --amend can have severe repercussions as the small commit amend can continue to grow and gather unrelated changes over time. It is always advisable to create an additional commit rather than amending the existing commit due to the following reasons:\n- Doing the amend operation destroys the previously saved state of that commit. If only the commit message gets changes or destroyed, it's acceptable but there might be cases when the contents of the commits get amended. This results in the loss of important information associated with the commit.\n- Over usage of git commit --amend can have severe repercussions as the small commit amend can continue to grow and gather unrelated changes over time.   git commit --amend",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "4. How to revert a bad commit which is already pushed?",
+        "answer": "There can be cases where we want to revert from the pushed changes and go back to the previous version. To handle this, there are two possible approaches based on the situations: Approach 1: Fix the bad changes of the files and create a new commit and push to the remote repository. This step is the simplest and most recommended approach to fix bad changes. You can use the command: git commit -m \"<message>\"\nApproach 2: New commit can be created that reverts changes done in the bad commit. It can be done using git revert <name of bad commit> Approach 1: Fix the bad changes of the files and create a new commit and push to the remote repository. This step is the simplest and most recommended approach to fix bad changes. You can use the command: git commit -m \"<message>\" Approach 1 git commit -m \"<message>\" Approach 2: New commit can be created that reverts changes done in the bad commit. It can be done using git revert <name of bad commit> Approach 2 git revert <name of bad commit>",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "5. What is the functionality of “git cherry-pick” command?",
+        "answer": "This command is used to introduce certain commits from one branch onto another branch within the repository. The most common use case is when we want to forward- or back-port commits from the maintenance branch to the development branch.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "6. Explain steps involved in removing a file from git index without removing from the local file system?",
+        "answer": "Sometimes we end up having certain files that are not needed in the git index when we are not being careful while using the git add command. Using the command git rm will remove the file from both the index and the local working tree which is not always desirable.\n  Instead of using the git rm command we can use the git reset command for removing the file from the staged version and then adding that file to the .gitignore file to avoid repeating the same mistake again. Sometimes we end up having certain files that are not needed in the git index when we are not being careful while using the git add command. Using the command git rm will remove the file from both the index and the local working tree which is not always desirable. git rm  Instead of using the git rm command we can use the git reset command for removing the file from the staged version and then adding that file to the .gitignore file to avoid repeating the same mistake again. git rm git reset git reset <file_name> # remove file from index\necho filename >> .gitingore  # add file to .gitignore to avoid mistake repetition. git reset <file_name> # remove file from index\necho filename >> .gitingore  # add file to .gitignore to avoid mistake repetition.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "7. What are the factors involved in considering which command to choose among: git merge and git rebase?",
+        "answer": "Both these commands ensure that changes from one branch are integrated into another branch but in very different ways. Git rebasing can be thought of as saying to use another branch as a new base for the work. Whenever in doubt, it is always preferred to use the git merge command.\n\nFollowing are some factors that tell when to use merge and rebase commands:\n  In case our branch gets contributions from other developers outside the team as in open-source or public repositories, then rebase is not preferred.\n- This is because rebase destroys the branch and it results in broken and inconsistent repositories unless the git pull --rebase command is used.\nRebase is a very destructive operation. If not applied correctly, it results in loss of committed work which might result in breaking the consistency of other developer’s contribution to the repository.\nIf the model of having branches per feature is followed, rebasing is not a good idea there because it keeps track of related commits done by the developers. But in case the team follows having branches per developer of the team, then the branch has no additional useful information to be conveyed. In this model, rebasing has no harm and can be used.\nIf there is any chance where there might be a necessity to revert a commit to previous commits, then reverting a rebase would be almost impossible as the commit data would be destroyed. In such cases, the merge can be used. Whenever in doubt, it is always preferred to use the git merge command.\n\nFollowing are some factors that tell when to use merge and rebase commands: git merge    In case our branch gets contributions from other developers outside the team as in open-source or public repositories, then rebase is not preferred.\n- This is because rebase destroys the branch and it results in broken and inconsistent repositories unless the git pull --rebase command is used.  git pull --rebase Rebase is a very destructive operation. If not applied correctly, it results in loss of committed work which might result in breaking the consistency of other developer’s contribution to the repository. If the model of having branches per feature is followed, rebasing is not a good idea there because it keeps track of related commits done by the developers. But in case the team follows having branches per developer of the team, then the branch has no additional useful information to be conveyed. In this model, rebasing has no harm and can be used. If there is any chance where there might be a necessity to revert a commit to previous commits, then reverting a rebase would be almost impossible as the commit data would be destroyed. In such cases, the merge can be used.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "8. How do you find a commit which broke something after a merge operation?",
+        "answer": "This can be a time-consuming process if we are not sure what to look at exactly. Fortunately, git provides a great search facility that works on the principle of binary search as git-bisect command.\nThe initial set up is as follows: This can be a time-consuming process if we are not sure what to look at exactly. Fortunately, git provides a great search facility that works on the principle of binary search as git-bisect command. git-bisect The initial set up is as follows: git bisect start         # initiates bisecting session\ngit bisect bad           # marks current revision as bad\ngit bisect good revision # marks last known commit as good revision git bisect start         # initiates bisecting session\ngit bisect bad           # marks current revision as bad\ngit bisect good revision # marks last known commit as good revision Upon running the above commands, git checks out a revision that is labeled as halfway between “good” and “bad” versions. This step can be run again by marking the commit as “good” or “bad” and the process continues until the commit which has a bug is found. Upon running the above commands, git checks out a revision that is labeled as halfway between “good” and “bad” versions. This step can be run again by marking the commit as “good” or “bad” and the process continues until the commit which has a bug is found.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "9. What are the functionalities of git reset --mixed and git merge --abort?",
+        "answer": "git reset --mixed command is used for undoing changes of the working directory and the git index.\ngit merge --abort command is used for stopping the merge process and returning back to the state before the merging occurred. git reset --mixed command is used for undoing changes of the working directory and the git index. git reset --mixed git merge --abort command is used for stopping the merge process and returning back to the state before the merging occurred. git merge --abort",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "10. Can you tell the differences between git revert and git reset?",
+        "answer": "git revert  git reset\nThis command is used for creating a new commit that undoes the changes of the previous commit. This command is used for undoing the local changes done in the git repository\nUsing this command adds a new history to the project without modifying the existing history This command operates on the commit history, git index, and the working directory. git revert  git reset\nThis command is used for creating a new commit that undoes the changes of the previous commit. This command is used for undoing the local changes done in the git repository\nUsing this command adds a new history to the project without modifying the existing history This command operates on the commit history, git index, and the working directory. git revert  git reset git revert  git reset git revert git reset This command is used for creating a new commit that undoes the changes of the previous commit. This command is used for undoing the local changes done in the git repository\nUsing this command adds a new history to the project without modifying the existing history This command operates on the commit history, git index, and the working directory. This command is used for creating a new commit that undoes the changes of the previous commit. This command is used for undoing the local changes done in the git repository This command is used for creating a new commit that undoes the changes of the previous commit. This command is used for undoing the local changes done in the git repository Using this command adds a new history to the project without modifying the existing history This command operates on the commit history, git index, and the working directory. Using this command adds a new history to the project without modifying the existing history This command operates on the commit history, git index, and the working directory.",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "1. Conclusion",
+        "answer": "In this article, we have seen the introduction and scope of git along with the most commonly asked git interview questions. The popularity of Git is growing at an amazing pace and it is predicted that one day all the developers around the world would be working together as one single entity with the help of git. Git is a freely available, distributed version control system that helps developers to collaborate with multiple people on their projects and makes their life easy. With so much scope and the ever-growing demand, git has evolved into being an inseparable part of a developer’s life.\n\nGitHandbook: https://guides.github.com/introduction/git-handbook/   GitHandbook https://guides.github.com/introduction/git-handbook/ Additional Resources Git Vs GitHUB\nGithub vs Gitlab\nPractice Coding\nLearning Resource Git Vs GitHUB Git Vs GitHUB Github vs Gitlab Github vs Gitlab Practice Coding Practice Coding Learning Resource Learning Resource",
+        "reference": "interviewbit.com",
+        "role": "git"
+    },
+    {
+        "question": "1) What is GIT?",
+        "answer": "Git is an open source distributed version control system and source code management (SCM) system with an insistence to control small and large projects with speed and efficiency.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "2) Which language is used in Git?",
+        "answer": "Git uses 'C' language. Git is quick, and 'C' language makes this possible by decreasing the overhead of run times contained with high-level languages.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "3) What is a repository in Git?",
+        "answer": "A repository consists of a list named .git, where git holds all of its metadata for the catalog. The content of the .git file is private to Git.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "4) What is 'bare repository' in Git?",
+        "answer": "A \"bare\" repository in Git includes the version control information and no working files (no tree), and it doesn?t include the special. git sub-directory. Instead, it consists of all the contents of the .git sub-directory directly in the main directory itself, whereas working list comprises of:\nA .git subdirectory with all the Git associated revision history of your repo.\nA working tree, or find out copies of your project files.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "5) What is the purpose of GIT stash?",
+        "answer": "GIT stash takes the present state of the working file and index and puts in on the stack for next and gives you back a clean working file. So in case if you are in the middle of object and require to jump over to the other task, and at the same time you don't want to lose your current edits, you can use GIT stash.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "6) What is GIT stash drop?",
+        "answer": "When you are done with the stashed element or want to delete it from the directory, run the git 'stash drop' command. It will delete the last added stash item by default, and it can also remove a specific topic if you include as an argument.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "7) What are the advantages of using GIT?",
+        "answer": "Here are some of the essential advantages of Git:\nADVERTISEMENT\nData repetition and data replication is possible\nIt is a much applicable service\nFor one depository you can have only one directory of Git\nThe network performance and disk application are excellent\nIt is effortless to collaborate on any project\nYou can work on any plan within the Git",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "8) What is the function of 'GIT PUSH' in GIT?",
+        "answer": "'GIT PUSH' updates remote refs along with related objects",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "9) Why do we require branching in GIT?",
+        "answer": "With the help of branching, you can keep your branch, and you can also jump between the different branches. You can go to your past work while at the same time keeping your recent work intact.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "10) What is the purpose of 'git config'?",
+        "answer": "The 'Git config' is a great method to configure your choice for the Git installation. Using this command, you can describe the repository behavior, preferences, and user information.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "11) What is the definition of \"Index\" or \"Staging Area\" in GIT?",
+        "answer": "When you are making the commits, you can make innovation to it, format it and review it in the common area known as 'Staging Area' or 'Index'.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "12) What is a 'conflict' in git?",
+        "answer": "A 'conflict' appears when the commit that has to be combined has some change in one place, and the current act also has a change at the same place. Git will not be easy to predict which change should take precedence.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "13) What is the difference between git pull and git fetch?",
+        "answer": "Git pull command pulls innovation or commits from a specific branch from your central repository and updates your object branch in your local repository.\nGit fetch is also used for the same objective, but it works in a slightly different method. When you behave a git fetch, it pulls all new commits from the desired branch and saves it in a new branch in your local repository. If you need to reflect these changes in your target branch, git fetch should be followed with a git merge. Your target branch will only be restored after combining the target branch and fetched branch. To make it simple for you, remember the equation below:\nGit pull = git fetch + git merge",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "14) How to resolve a conflict in Git?",
+        "answer": "If you need to resolve a conflict in Git, edit the list for fixing the different changes, and then you can run \"git add\" to add the resolved directory, and after that, you can run the 'git commit' for committing the repaired merge.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "15) What is the purpose of the git clone?",
+        "answer": "The git clone command generates a copy of a current Git repository. To get the copy of a central repository, 'cloning' is the simplest way used by programmers.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "16) What is git pull origin?",
+        "answer": "pull is a get and a consolidation. 'git pull origin master' brings submits from the master branch of the source remote (into the local origin/master branch), and then it combines origin/master into the branch you currently have looked out.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "17) What does git commit a?",
+        "answer": "Git commits \"records changes to the storehouse\" while git push \" updates remote refs along with contained objects\" So the first one is used in a network with your local repository, while the latter one is used to communicate with a remote repository.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "18) Why GIT better than Subversion?",
+        "answer": "GIT is an open source version control framework; it will enable you to run 'adaptations' of a task, which demonstrate the changes that were made to the code over time also it allows you keep the backtrack if vital and fix those changes. Multiple developers can check out, and transfer changes, and each change can then be attributed to a particular developer.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "19) Explain what is commit message?",
+        "answer": "Commit message is a component of git which shows up when you submit a change. Git gives you a content tool where you can enter the adjustments made to a commit.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "20) Why is it desirable to create an additional commit rather than amending an existing commit?",
+        "answer": "There are couples of reason\nThe correct activity will devastate the express that was recently saved in a commit. If only the commit message gets changed, that's not a problem. But if the contents are being modified, chances of excluding something important remains more.\nAbusing \"git commit- amends\" can cause a small commit to increase and acquire inappropriate changes.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "21) What does 'hooks' comprise of in Git?",
+        "answer": "This index comprises of Shell contents which are enacted after running the relating git commands. For instance, Git will attempt to execute the post-commit content after you run a commit.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "22) What is the distinction between Git and Github?",
+        "answer": "A) Git is a correction control framework, a tool to deal with your source code history.\nGitHub is a hosting function for Git storehouses.\nGitHub is a website where you can transfer a duplicate of your Git archive. It is a Git repository hosting service, which offers the majority of the distributed update control and source code management (SCM) usefulness of Git just as including its features.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "23) In Git, how would you return a commit that has just been pushed and made open?",
+        "answer": "There can be two answers to this question and ensure that you incorporate both because any of the below choices can be utilized relying upon the circumstance:\nRemove or fix the bad document in another commit and push it to the remote repository. This is a unique approach to correct a mistake. Once you have necessary changes to the record, commit it to the remote repository for that I will utilize\n\ngit submit - m \"commit message.\"\nMake another commit that fixes all changes that were made in the terrible commit. to do this, I will utilize a command\ngit revert <name of bad commit>",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "24) What does the committed item contain?",
+        "answer": "Commit item contains the following parts; you should specify all the three present below:\nA set of records, representing to the condition of a task at a given purpose of time\nReferences to parent commit objects\nAn SHAI name, a 40 character string that uniquely distinguishes the commit object.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "25) Describing branching systems you have utilized?",
+        "answer": "This question is a challenge to test your branching knowledge with Git along these lines, inform them regarding how you have utilized branching in your past activity and what reason does it serves, you can refer the below mention points:\nFeature Branching:\nA component branch model keeps the majority of the changes for a specific element within a branch. At the point when the item is throughout tested and approved by automated tests, the branch is then converged into master.\nTask Branching\nIn this model, each assignment is actualized on its branch with the undertaking key included in the branch name. It is anything but difficult to see which code actualizes which task, search for the task key in the branch name.\nRelease Branching\nOnce the create branch has procured enough features for a discharge, you can clone that branch to frame a Release branch. Making this branch begins the following discharge cycle so that no new features can be included after this point, just bug fixes, documentation age, and other release oriented assignments ought to go in this branch. When it is prepared to deliver, the release gets converged into master and labeled with a form number. Likewise, it should be converged once again into creating a branch, which may have advanced since the release was started.\nAt last, disclose to them that branching methodologies fluctuate starting with one association then onto the next, so I realize essential branching activities like delete, merge, checking out a branch, etc.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "26) By what method will you know in Git if a branch has just been combined into master?",
+        "answer": "The appropriate response is immediate.\nTo know whether a branch has been merged into master or not you can utilize the below commands:\ngit branch - merged It records the branches that have been merged into the present branch.\ngit branch - no merged It records the branches that have not been merged.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "27) How might you fix a messed up submit?",
+        "answer": "To fix any messed up commit, you will utilize the order \"git commit?correct.\" By running this direction, you can set the wrecked commit message in the editor.",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "",
+        "answer": "The following are the Git repository hosting functions:\nPikacode\nVisual Studio Online\nGitHub\nGitEnterprise\nSourceForge.net",
+        "reference": "javatpoint.com",
+        "role": "git"
+    },
+    {
+        "question": "29) Mention some of the best graphical GIT customers for LINUX?",
+        "answer": "Some of the best GIT customer for LINUX is\nGit Cola\nSmart git\nGit-g\nGit GUI\nGiggle\nqGit",
+        "reference": "javatpoint.com",
+        "role": "git"
+    }
+]

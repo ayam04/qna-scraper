@@ -1,0 +1,374 @@
+[
+    {
+        "question": "1. Compare OBIEE & Tableau",
+        "answer": "Criteria OBIEE Tableau\nEase of use Needs trained developers Empowers end users\nData visualization Average Excellent\nEnterprise Reporting Easy to deploy and manage Much harder",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "2. Explain the Architecture of OBIEE 11g and function of each components?",
+        "answer": "OBIEE Comprises Presentation Services,Oracle BI Server : The user constructs sql and passes it to the Analytic Engine and then the Oracle BI (Analytic Engine) describes the physical sql to the Data sources and recover the data back to the Engine and presents to the presentation Services .\nFind out more about OBIEE in this detailed OBIEE tutorial!",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "3. How we can extract sql from OBIEE for reports?",
+        "answer": "There are many ways to extract the sql :\nChange the request and click Advanced in that you get xml code and also the actual sql.\nIn the catalog Manager click Tools-Create Report . In the Create Report Window –> Click Request SQL and save the sql to the physical path in your PC.\nEnable Log level to 2 in the OBIEE 11g Administration Tool from Manage-> Security and enable the log level to 2 by clicking properties for the user, then go to the NQ Query.log in BI_HOME/OracleBI/Server/Logs.You will find the SQL for that User.\nd. By clicking Administration->Manage sessions-> view sql.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "4. How can you sort in Reports in OBIEE 11g?",
+        "answer": "Click on modify and then click on sort (order by icon) on the relevant column in the criteria pane.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "5. How we can do different types of narrative Reports in OBIEE?",
+        "answer": "By clicking modify request and Narrative View and by giving @1 for the first column result and @2 for the 2nd column and so on and we can also give a heading for No Results by clicking the Narrative view.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "6. How will you create Interactive Dashboards ?",
+        "answer": "By clicking on Administration and Manage dashboards and by adding column selector we can create interactive Dashboard.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "7. What is write-back in obiee ?",
+        "answer": "We can give a column as updatable and then view the reports,this option is called write back option.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "8. How will you execute Direct SQL in OBIEE?",
+        "answer": "By clicking Direct Database Request below the subject area in we can execute Direct SQL in OBIEE.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "9. How OBIEE Developer can create report from two subject areas?",
+        "answer": "From the Criteria Pane of the Report Created from First Subject Area\ncome to the bottom of the page and click combine request. By this we can create report from two subject areas.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "10. What are the different types of variables in OBIEE 11g? explain",
+        "answer": "There are two types of variables in OBIEE 11g.\nRepository variable : This variable is used for the whole repository.\nSession variable : session variable are of two types: system variable and non system variable. System variable uses NQ_SESSION. Examples of non system variables are user defined filters.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "11. How we can Port changes for dashboards, reports, rpd from development to production?",
+        "answer": "For the RPD we can use the Merge option in Admin Tool and for dashboards and reports we can use Content Accelerator Framework.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "12. How will you enable or disable caching in the system level and table level?",
+        "answer": "In the NQSConfig.ini file use ENABLE under CACHE Section for System Level\nFor tables, if we want to enable the cache at table level , open the repository in offline mode This should be different from the current repository and click enable or disable the cache .",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "13. How will you go about adding additional column to the repository in the presentation layer?",
+        "answer": "Check if the table is already existing if so add in physical layer ,then click on BMM and then Presentation layer, then reload server metadata ,then it will be visible to all users.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "14. How will effect the changes for a report, if for certain users only the column heading in the report should be changed?",
+        "answer": "Using session variables for that user.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "15. What is a table alias in OBIEE 11g? Where and how will you create it?",
+        "answer": "Table alias is used for creating self joins. Table alias can be created by right clicking the table in the physical layer then click alias.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "16. Have you created Hierarchy in OBIEE 11g. if so where and how?",
+        "answer": "Yes, we can create hierarchy in BMM Layer of OBIEE in dimensions for the dimension tables. This can be done by right clicking the dimension table and click create dimension and then we can manually define the hierarchy and its levels.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "17. What is Level Based Metrics? How we can create it?",
+        "answer": "Level-base metrics means, having a measure held at a certain level of the dimension. Examples Monthly Total Sales or Quarterly Sales\nTo create a level based measure, create a new logical column based on the original measure. Drag and drop the new logical column to the appropriate level in the Dimension hierarchy.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "18. What are the different layers of OBIEE 11g Repository?",
+        "answer": "Physical Layer.\nBusiness Model.\nMapping Layer.\nPresentation Layer.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "19. What is Authentication? How many types of authentication.",
+        "answer": "Authentication is the procedure by which a system confirms, through the use of a user\nOperaing system authentication.\nExternal table authentication.\nDatabase authentication.\nLDAP authentication",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "20. What is a bridge table ?",
+        "answer": "If we want to connect two tables where there is no relationship we can use a third bridge table for connecting them which will have same columns in both tables.\n\nIntermediate Interview Questions and Answers",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "21. How Time based triggered report can be generated?",
+        "answer": "Using Scheduler – ibots we can generate time based triggered report.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "22. What is ibot?",
+        "answer": "Ibot is an arrangement agent, used to arrange reports to be sent across many devices such as email, pager, mobile, other devices etc.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "23. What are different types of joins that are possible in OBIEE RPD?",
+        "answer": "Complex Join – it uses multiple conditions, such as A.ROW_WID = B.ROW_WID AND / OR A.A_WID = B.B_WID\nNatural Join",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "24. How we can have two different columns from two different tables or subject areas?",
+        "answer": "Using confirmed dimensions,we can fetch many metrics across various facts, but the join should be of same level of data detail.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "25. How can we use saved filters and where we will save the filters?",
+        "answer": "Shared Folders – XYZ Folder – It have two folders\na. Prompts\nb. Reports",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "26. Have you worked in dashboard? when we run a dashboard? how will we stop the dashboard report run automatically?",
+        "answer": "By clicking on the cancel button, we can stop a exact report placed on the dashboard.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "27. Define surrogate key.",
+        "answer": "A surrogate key is an artificially generated key, usually a number. A surrogate key, in the level aggregate table, simplifies this join and removes unnecessary columns from the fact table, resulting in a smaller-sized fact table.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "28. Define repository in terms of Siebel Analytics.",
+        "answer": "Repository stores the Meta data information. Siebel repository is a file system ,extension of the repository file. rpd.\nMETA DATA REPOSITORY.\nWith Siebel Analytics Server, all the rules needed for security, data modeling, aggregate navigation, caching, and connectivity is stored in metadata repositories.\nEvery metadata repository can store many business models. Siebel Analytics Server can access many repositories.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "29. Explain the end to end life cycle of Siebel Analytics?",
+        "answer": "Siebel Analytics life cycle\nCollect Business Requirements.\nRecognize source systems.\nPlan ETL to load to a DW if source data doesn’t exist.\nBuild a repository.\nBuild dashboard or use answers for reporting.\nDefine security.\nBased on performance, decide an aggregations and/or caching mechanism.\nTesting and QA.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "30. How does Siebel Architecture works? Explain the three layers.",
+        "answer": "There are five parts of Siebel Architecture.\nClients.\ndata sorces.\nSiebel analytics Web Server data sorces.\nSiebel analytics scheduler.\nSiebel analytics server\nMetadata represents the analytical Model which is created using the siebel Analytics Administration tool.\nRepository divided into three layer\nPhysical – Signifies the data Sources.\nBusiness – copies the Data sources into Facts And Dimension.\nPresentation – Specifies the users view of the model ; rendered in Siebel answer.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "31. If we have 3 facts and 4 dimension and we need to join would you recommend joining fact with fact? If no than what is the option?",
+        "answer": "In the BMM layer,we can create one logical table (fact) and add the 3 fact table as logical table source.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "32. What is connection pool and how many connection pools did we have in our last project?",
+        "answer": "connection pool is needed for each and every physical database.\nIt contains material about the connection to the database, not the database itself.\nWe can use either shared user accounts or pass-through accounts -Use: USER and PASSWORD for pass through .\nWe can have many connection pools for each group to avoid waiting",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "33. Define JDK and why do we need it?",
+        "answer": "Java Development Kit (JDK), is a software package that contains the minimal set of tools needed to write, compile, debug, and run Java applets.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "34. Oracle doesn’t recommend Opaque Views because of performance considerations, so why/when do we use them?",
+        "answer": "An opaque view is a physical layer table that contain select statement. An opaque view should be used only if there is no other option.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "35. Can we migrate the presentation layer to a different server.",
+        "answer": "No we cant migrate the presentation layer to a different server rather we have to migrate the whole web & rpd files.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "36. How we can identify the dimension tables and how we can decide them during the Business/Data modeling?",
+        "answer": "Dimension tables contain descriptions about data analysts which is used as query in the database. Every table contains a primary key that contains one or more columns; each row in a table is uniquely identified by its primary-key value or values.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "37. Why do we have multiple LTS in BMM layer? What is the purpose?",
+        "answer": "To improve the performance and query response time we have multiple LTS in BMM.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "38. What is the full form of rpd?",
+        "answer": "There is no full form for rpd as such, it is just a repository file which is known as Rapidfile Database.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "39. How we can disable cache for only 2 particular tables?",
+        "answer": "We can disable cache in the physical layer, by right clicking on the table there we can have the option which define cacheable.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "40. How we can split a table in the rpd given the condition. ( the condition given was Broker and customer in the same table) Split Broker and customer.",
+        "answer": "We have to make a dubbed table in the physical layer.\n\nAdvanced Interview Questions and Answers for Experienced",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "41. What type of protocol did we use in SAS?",
+        "answer": "TCP/IP type protocol.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "42. Can we have multiple data sources in Siebel Analytics?",
+        "answer": "Yes, we can have multiple data sources in Siebel Analytics.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "43. How we can deal with case statement and expressions in siebel analytics?",
+        "answer": "By using expression builder we can create case statement when…then.. end .",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "44. What do you know about Initialization Blocks?",
+        "answer": "Init blocks are used for instantiating a session when a user logs in.\nTo make dynamic variable we have to create IB to write sql statement.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "45. Explain query repository tool?",
+        "answer": "It is utility of OBIEE /Seibel Admin tool.\nallows us to examine the repository metadata tool.\nIt Examine relationship between metadata objects like which column in the presentation layer maps to which table in physical layer.\nfor example : search for objects based on name,type.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "46. How can you bypass siebel analytics server security ?",
+        "answer": "It can by-passed by setting authententication type in NQSCONFIG file in the security section as:authentication_type=bypass_nqs.instanceconfig.xml and nqsconfig.ini are the 2 places.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "47. Where we can add new groups and set permissions? Explain what is R?",
+        "answer": "We can add groups by going to manage>security>add new groups> We can give permissions to a group for query limitation and filter conditions.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "48. What are the things we can do in the BMM layer?",
+        "answer": "We can do Aggrigation navigation ,level base matrics, time series wizard, create new logical column, comlex join.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "49. Where are passwords for userid?",
+        "answer": "Passwords for userid are in siebel analytics server repository.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "50. Define pipeline.",
+        "answer": "Pipelines are the stages in a particular contract, valuation, economics etc.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "51. What are the Key Configuration Files in OBIEE?",
+        "answer": "The key configuration files in OBIEE 11g are NQSConfig.ini, NQSCluster.ini, odbc.ini, instanceconfig.xml",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "52. Give a brief introduction of OBIEE?",
+        "answer": "Oracle BI Enterprise Edition (sometimes simply referred to as Oracle Business Intelligence) provides a full range of business intelligence capabilities that allow you to :\nCollect up-to-date data from your organization.\nPresent the data in easy-to-understand formats (such as tables and graphs).\nDeliver data in a timely fashion to the employees in your organization",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "53. What Is the Oracle BI Presentation Catalog?",
+        "answer": "The Oracle BI Presentation Catalog stores the objects, such as analyses, dashboards, and KPIs, that you and other users create using Oracle BI EE. Users have their own personal folder (My Folders), where they can store the objects that they create. The objects in a personal folder can be accessed only by the user who created and saved the content into that folder. Users can add sub-folders to their personal folders to organize their content in the way that is the most logical to them.\nYou can also store objects in shared folders where other users or groups can access the objects. A combination of business logic security,catalog object level security, and data level security determines who has the ability to view data and objects, edit objects, and delete objects from the catalog. Your administrator creates and maintains the catalog’s shared folder structure.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "54. What is OBIEE 11G?",
+        "answer": "Oracle Business Intelligence Enterprise Edition (OBIEE) 11g is the most significant release of OBIEE since 2006.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "55. Explain the main features of OBIEE 11G?",
+        "answer": "Oracle Business Intelligence is now more integrate with the Oracle Fusion Middleware software family.\nOracle WebLogic Server replaces Oracle Application Server and Oracle Containers for Java (OC4J).\nOracle Business Intelligence 11g Installer replaces the installer that was used in previous versions of Oracle Business Intelligence. It can perform software installation and configuration steps in the same process or separately in their own processes\nThis release add the following administration command-line utilities :\nOracle WebLogic Server scripting tool (WLST) for managing the Oracle WebLogic Server domain.\nOPMN and the opmnctl commands for the Oracle Process Manager and Notification Server.\nA database repository must be created before installation of the components with the Repository Creation Utility (RCU) tool.\nLog centralization via the web log viewer.\nIn addition, Oracle Business Intelligence is now deployed in a clustered configuration by default. Because of this, the default ODBC DSN for the Oracle BI Server points to the Cluster Controller by default, rather than to the Oracle BI Server",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "56. Explain Oracle Business Intelligence Applications?",
+        "answer": "An Oracle BI application consists of pre-built, industry-specific Oracl e BI interactive dashboards and Oracle BI reports that are built using industry best practices and address key functional areas within an organization. Oracle BI applications are integrated with operational applications to provide business metrics in reports, in context with an organization’s business function and industry.\nOracle BI applications include Extract Transform Load (ETL) routines to extract, transform, and load data into the Oracle Business Analytics Warehouse.\nSecurity in Oracle BI :\nOBIEE allows a high degree of control over access to elements in Oracle BI applications. The security mechanism comprises Business logic object security, Presentation Catalog object security and Data level security.\nDrilling Down in Oracle BI :\nIn OBIEE, you can drill down from a dashboard or report to an actual item in the database. For example, if you work in sales, you can drill down to the city level within a sales report, and observe that there is a large sale pending in Paris. If you are using an Oracle Siebel operational application, you can then drill down on the pending sale and go directly to that opportunity in the Oracle BI application.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "57. Define repository in terms of OBIEE?",
+        "answer": "Repository stores the Meta data information.The extension of the repository file is “.rpd”.With OBIEE Server, all the rules needed for security,data modeling, aggregate navigation, caching, and connectivity is stored in metadata repositories. Each metadata repository can store multiple business models. OBIEE Server can access multiple repositories.\nRepository is divided into three layer\nPhysical – Represents the data Sources.\nBusiness – model the Data sources into Facts and Dimension and apply business logic.\nPresentation – Specifies the user’s view of the data rendered in OBIEE answers client",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "58. What is the end to end life cycle of OBIEE?",
+        "answer": "OBIEE life cycle :\nGather Business Requirements.\nIdentify source systems.\nDesign ETL to load data to the Data Warehouse.\nBuild a repository.\nBuild dashboards and reports.\nDefine security (LDAP or External table).\nBased on performance, decide on aggregations and/or caching mechanism.\nTesting and QA.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "59. What is the purpose of Alias Tables?",
+        "answer": "An Alias table is a physical table with the type of Alias. It is a reference to a physical table, and inherits all its column definitions and some properties from the physical table. A logical table source shows how the logical objects are mapped to the physical layer and can be mapped to physical tables, stored procedures and select statements. An alias table can be a reference to any of these logical table source types.\nAlias Tables can be an important part of designing a physical layer. The following is a list of the main reasons to create an alias table\nTo reuse an existing table more than once in your physical layer (without having to import it several times)\nTo set up multiple alias tables, each with different keys, names, or joins\nTo help you design sophisticated star or snowflake structures in the business model layer. Alias tables are critical in the process of converting ER Schems to Dimensional Sachems.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "60. What is Authentication? How many types of authentication do we have in OBIEE?",
+        "answer": "Authentication is the process by which a system verifies a user with the help of a user ID and password. It checks if user has the necessary permissions and authorizations to log in and access data.\nThere are 4 main types of Authentication in OBIEE :\nOperating system authentication.\nExternal table authentication.\nDatabase authentication.\nLDAP authentication",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "61. What is aggregate navigation? How do you configure the Aggregate tables in OBIEE?",
+        "answer": "Aggregate tables store pre-computed results, which are measures that have been aggregated (typically summed) over a set of dimensional attributes. Using aggregate tables is a very popular technique for speeding up query response times in decision support systems.\nEx : If you observe that most of the queries are fired on aggregated values like yearly or monthly data rather that day level data then to speed up the report we can create an aggregate table containing month level and year level data and map it to the respective logical table and set the aggregation levels in the content tab of LTS.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    },
+    {
+        "question": "62. Difference between a session and repo variable?",
+        "answer": "Session variables are similar to dynamic repository variables in that they obtain their values from initialization blocks. Unlike dynamic repository variables, however, the initialization of session variables is not scheduled. When a user begins a session, the Oracle BI Server creates new instances of session variables and initializes them.\nA repository variable has a single value at any point in time. Repository variables can be used instead of literals or constants in Expression Builder in the Administration Tool. The Oracle BI Server substitutes the value of the repository variable for the variable itself in the metadata.\nUnlike a repository variable, there are as many instances of a session variable as there are active sessions on the Oracle BI Server. Each instance of a session variable could be initialized to a different value.",
+        "reference": "intellipaat.com",
+        "role": "obiee"
+    }
+]

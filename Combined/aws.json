@@ -1,0 +1,512 @@
+[
+    {
+        "question": "1. What is EC2?",
+        "answer": "EC2, a Virtual Machine in the cloud on which you have OS-level control. You can run this cloud server whenever you want and can be used when you need to deploy your own servers in the cloud, similar to your on-premises servers, and when you want to have full control over the choice of hardware and the updates on the machine.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "2. What is SnowBall?",
+        "answer": "SnowBall is a small application that enables you to transfer terabytes of data inside and outside of the AWS environment. AWS Snowball  AWS Snowball",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "3. What is CloudWatch?",
+        "answer": "CloudWatch helps you to monitor AWS environments like EC2, RDS Instances, and CPU utilization. It also triggers alarms depending on various metrics. AWS Cloudwatch  AWS Cloudwatch",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "4. What is Elastic Transcoder?",
+        "answer": "Elastic Transcoder is an AWS Service Tool that helps you in changing a video’s format and resolution to support various devices like tablets, smartphones, and laptops of different resolutions.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "5. What do you understand by VPC?",
+        "answer": "VPC stands for Virtual Private Cloud. It allows you to customize your networking configuration. VPC is a network that is logically isolated from other networks in the cloud. It allows you to have your private IP Address range, internet gateways, subnets, and security groups.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "6. DNS and Load Balancer Services come under which type of Cloud Service?",
+        "answer": "DNS and Load Balancer are a part of IaaS-Storage Cloud Service.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "7. What are the Storage Classes available in Amazon S3?",
+        "answer": "Storage Classes available with Amazon S3 are: Amazon S3 Standard\nAmazon S3 Standard-Infrequent Access\nAmazon S3 Reduced Redundancy Storage\nAmazon Glacier Amazon S3 Standard Amazon S3 Standard-Infrequent Access Amazon S3 Reduced Redundancy Storage Amazon Glacier",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "8. Explain what T2 instances are?",
+        "answer": "T2 Instances are designed to provide moderate baseline performance and the capability to burst to higher performance as required by the workload.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "9. What are Key-Pairs in AWS?",
+        "answer": "Key-Pairs are secure login information for your Virtual Machines. To connect to the instances, you can use Key-Pairs which contain a Public Key and a Private Key.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "10. How many Subnets can you have per VPC?",
+        "answer": "You can have 200 Subnets per VPC.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "11. List different types of Cloud Services.",
+        "answer": "Different types of Cloud Services are: Software as a Service (SaaS)\nData as a Service (DaaS)\nPlatform as a Service (PaaS)\nInfrastructure as a Service (IaaS) Software as a Service (SaaS) Data as a Service (DaaS) Platform as a Service (PaaS) Infrastructure as a Service (IaaS)",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "1. Explain what S3 is?",
+        "answer": "S3 stands for Simple Storage Service. You can use the S3 interface to store and retrieve any amount of data, at any time and from anywhere on the web. For S3, the payment model is “pay as you go”.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "2. How does Amazon Route 53 provide high availability and low latency?",
+        "answer": "Amazon Route 53 uses the following to provide high availability and low latency: Globally Distributed Servers - Amazon is a global service and consequently has DNS Servers globally. Any customer creating a query from any part of the world gets to reach a DNS Server local to them that provides low latency.\nDependency - Route 53 provides a high level of dependability required by critical applications.\nOptimal Locations - Route 53 serves the requests from the nearest data center to the client sending the request. AWS has data-centers across the world. The data can be cached on different data-centers located in different regions of the world depending on the requirements and the configuration chosen. Route 53 enables any server in any data-center which has the required data to respond. This way, it enables the nearest server to serve the client request, thus reducing the time taken to serve. Globally Distributed Servers - Amazon is a global service and consequently has DNS Servers globally. Any customer creating a query from any part of the world gets to reach a DNS Server local to them that provides low latency. Globally Distributed Servers - Dependency - Route 53 provides a high level of dependability required by critical applications. Dependency - Optimal Locations - Route 53 serves the requests from the nearest data center to the client sending the request. AWS has data-centers across the world. The data can be cached on different data-centers located in different regions of the world depending on the requirements and the configuration chosen. Route 53 enables any server in any data-center which has the required data to respond. This way, it enables the nearest server to serve the client request, thus reducing the time taken to serve. Optimal Locations - Amazon Route  Amazon Route As can be seen in the above image, the requests coming from a user in India are served from the Singapore Server, while the requests coming from a user in the US are routed to Oregon region.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "3. How can you send a request to Amazon S3?",
+        "answer": "Amazon S3 is a REST Service, and you can send a request by using the REST API or the AWS SDK wrapper libraries that wrap the underlying Amazon S3 REST API.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "4. What does AMI include?",
+        "answer": "An AMI includes the following things: A template for the root volume for the instance.\nLaunch permissions to decide which AWS accounts can avail the AMI to launch instances.\nA block device mapping that determines the volumes to attach to the instance when it is launched. A template for the root volume for the instance. Launch permissions to decide which AWS accounts can avail the AMI to launch instances. A block device mapping that determines the volumes to attach to the instance when it is launched.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "5. What are the different types of Instances?",
+        "answer": "Following are the types of instances: Compute Optimized\nMemory-Optimized\nStorage Optimized\nAccelerated Computing\nGeneral Purpose Compute Optimized Memory-Optimized Storage Optimized Accelerated Computing General Purpose",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "6. What is the relation between the Availability Zone and Region?",
+        "answer": "An AWS Availability Zone is a physical location where an Amazon data center is located. On the other hand, an AWS Region is a collection or group of Availability Zones or Data Centers. This setup helps your services to be more available as you can place your VMs in different data centers within an AWS Region. If one of the data centers fails in a Region, the client requests still get served from the other data centers located in the same Region. This arrangement, thus, helps your service to be available even if a Data Center goes down.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "7. How do you monitor Amazon VPC?",
+        "answer": "You can monitor Amazon VPC using: CloudWatch\nVPC Flow Logs CloudWatch VPC Flow Logs",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "8. What are the different types of EC2 instances based on their costs?",
+        "answer": "The three types of EC2 instances based on the costs are: On-Demand Instance - These instances are prepared as and when needed. Whenever you feel the need for a new EC2 instance, you can go ahead and create an on-demand instance. It is cheap for the short-time but not when taken for the long term. On-Demand Instance - Spot Instance - These types of instances can be bought through the bidding model. These are comparatively cheaper than On-Demand Instances. Spot Instance - Reserved Instance - On AWS, you can create instances that you can reserve for a year or so. These types of instances are especially useful when you know in advance that you will be needing an instance for the long term. In such cases, you can create a reserved instance and save heavily on costs. Reserved Instance -",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "9. What do you understand by stopping and terminating an EC2 Instance?",
+        "answer": "Stopping an EC2 instance means to shut it down as you would normally do on your Personal Computer. This will not delete any volumes attached to the instance and the instance can be started again when needed. On the other hand, terminating an instance is equivalent to deleting an instance. All the volumes attached to the instance get deleted and it is not possible to restart the instance if needed at a later point in time.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "10. What are the consistency models for modern DBs offered by AWS?",
+        "answer": "Eventual Consistency - It means that the data will be consistent eventually, but may not be immediate. This will serve the client requests faster, but chances are that some of the initial read requests may read the stale data. This type of consistency is preferred in systems where data need not be real-time. For example, if you don’t see the recent tweets on Twitter or recent posts on Facebook for a couple of seconds, it is acceptable. Eventual Consistency - Strong Consistency - It provides an immediate consistency where the data will be consistent across all the DB Servers immediately. Accordingly. This model may take some time to make the data consistent and subsequently start serving the requests again. However, in this model, it is guaranteed that all the responses will always have consistent data. Strong Consistency -",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "11. What is Geo-Targeting in CloudFront?",
+        "answer": "Geo-Targeting enables the creation of customized content based on the geographic location of the user. This allows you to serve the content which is more relevant to a user. For example, using Geo-Targeting, you can show the news related to local body elections to a user sitting in India, which you may not want to show to a user sitting in the US. Similarly, the news related to Baseball Tournament can be more relevant to a user sitting in the US, and not so relevant for a user sitting in India.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "12. What are the advantages of AWS IAM?",
+        "answer": "AWS IAM enables an administrator to provide granular level access to different users and groups. Different users and user groups may need different levels of access to different resources created. With IAM, you can create roles with specific access-levels and assign the roles to the users. It also allows you to provide access to the resources to users and applications without creating the IAM Roles, which is known as Federated Access.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "13. What do you understand by a Security Group?",
+        "answer": "When you create an instance in AWS, you may or may not want that instance to be accessible from the public network. Moreover, you may want that instance to be accessible from some networks and not from others. Security Groups are a type of rule-based Virtual Firewall using which you can control access to your instances. You can create rules defining the Port Numbers, Networks, or protocols from which you want to allow access or deny access.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "14. What are Spot Instances and On-Demand Instances?",
+        "answer": "When AWS creates EC2 instances, there are some blocks of computing capacity and processing power left unused. AWS releases these blocks as Spot Instances. Spot Instances run whenever capacity is available. These are a good option if you are flexible about when your applications can run and if your applications can be interrupted. On the other hand, On-Demand Instances can be created as and when needed. The prices of such instances are static. Such instances will always be available unless you explicitly terminate them.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "15. Explain Connection Draining.",
+        "answer": "Connection Draining is a feature provided by AWS which enables your servers which are either going to be updated or removed, to serve the current requests. If Connection Draining is enabled, the Load Balancer will allow an outgoing instance to complete the current requests for a specific period but will not send any new request to it. Without Connection Draining, an outgoing instance will immediately go off and the requests pending on that instance will error out.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "16. What is a Stateful and a Stateless Firewall?",
+        "answer": "A Stateful Firewall is the one that maintains the state of the rules defined. It requires you to define only inbound rules. Based on the inbound rules defined, it automatically allows the outbound traffic to flow. On the other hand, a Stateless Firewall requires you to explicitly define rules for inbound as well as outbound traffic. For example, if you allow inbound traffic from Port 80, a Stateful Firewall will allow outbound traffic to Port 80, but a Stateless Firewall will not do so.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "17. What is a Power User Access in AWS?",
+        "answer": "An Administrator User will be similar to the owner of the AWS Resources. He can create, delete, modify or view the resources and also grant permissions to other users for the AWS Resources. A Power User Access provides Administrator Access without the capability to manage the users and permissions. In other words, a user with Power User Access can create, delete, modify or see the resources, but he cannot grant permissions to other users.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "18. What is an Instance Store Volume and an EBS Volume?",
+        "answer": "An Instance Store Volume is temporary storage that is used to store the temporary data required by an instance to function. The data is available as long as the instance is running. As soon as the instance is turned off, the Instance Store Volume gets removed and the data gets deleted. On the other hand, an EBS Volume represents a persistent storage disk. The data stored in an EBS Volume will be available even after the instance is turned off.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "19. What are Recovery Time Objective and Recovery Point Objective in AWS?",
+        "answer": "Recovery Time Objective - It is the maximum acceptable delay between the interruption of service and restoration of service. This translates to an acceptable time window when the service can be unavailable. Recovery Time Objective - Recover Point Objective - It is the maximum acceptable amount of time since the last data restore point. It translates to the acceptable amount of data loss which lies between the last recovery point and the interruption of service. Recover Point Objective -",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "20. Is there a way to upload a file that is greater than 100 Megabytes in Amazon S3?",
+        "answer": "Yes, it is possible by using the Multipart Upload Utility from AWS. With the Multipart Upload Utility, larger files can be uploaded in multiple parts that are uploaded independently. You can also decrease upload time by uploading these parts in parallel. After the upload is done, the parts are merged into a single object or file to create the original file from which the parts were created.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "21. Can you change the Private IP Address of an EC2 instance while it is running or in a stopped state?",
+        "answer": "No, a Private IP Address of an EC2 instance cannot be changed. When an EC2 instance is launched, a private IP Address is assigned to that instance at the boot time. This private IP Address is attached to the instance for its entire lifetime and can never be changed.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "22. What is the use of lifecycle hooks is Autoscaling?",
+        "answer": "Lifecycle hooks are used for Auto-scaling to put an additional wait time to a scale-in or a scale-out event.",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "23. What are the policies that you can set for your user’s passwords?",
+        "answer": "Following are the policies that can be set for user’s passwords: You can set a minimum length of the password.\nYou can ask the users to add at least one number or special character to the password.\nAssigning the requirements of particular character types, including uppercase letters, lowercase letters, numbers, and non-alphanumeric characters.\nYou can enforce automatic password expiration, prevent the reuse of old passwords, and request for a password reset upon their next AWS sign-in.\nYou can have the AWS users contact an account administrator when the user has allowed the password to expire. You can set a minimum length of the password. You can ask the users to add at least one number or special character to the password. Assigning the requirements of particular character types, including uppercase letters, lowercase letters, numbers, and non-alphanumeric characters. You can enforce automatic password expiration, prevent the reuse of old passwords, and request for a password reset upon their next AWS sign-in. You can have the AWS users contact an account administrator when the user has allowed the password to expire. Useful Resources https://www.interviewbit.com/terraform-interview-questions/\nhttps://www.interviewbit.com/technical-interview-questions/ https://www.interviewbit.com/terraform-interview-questions/ https://www.interviewbit.com/terraform-interview-questions/ https://www.interviewbit.com/technical-interview-questions/ https://www.interviewbit.com/technical-interview-questions/",
+        "reference": "interviewbit.com",
+        "role": "aws"
+    },
+    {
+        "question": "1) What is AWS?",
+        "answer": "AWS stands for Amazon Web Services. It is a service which is provided by the Amazon that uses distributed IT infrastructure to provide different IT resources on demand. It provides different services such as an infrastructure as a service, platform as a service, and software as a service.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "2) What are the components of AWS?",
+        "answer": "The following are the main components of AWS are:\nADVERTISEMENT\nSimple Storage Service: S3 is a service of aws that stores the files. It is object-based storage, i.e., you can store the images, word files, pdf files, etc. The size of the file that can be stored in S3 is from 0 Bytes to 5 TB. It is an unlimited storage medium, i.e., you can store the data as much you want. S3 contains a bucket which stores the files. A bucket is like a folder that stores the files. It is a universal namespace, i.e., name must be unique globally. Each bucket must have a unique name to generate the unique DNS address.\nElastic Compute Cloud: Elastic Compute Cloud is a web service that provides resizable compute capacity in the cloud. You can scale the compute capacity up and down as per the computing requirement changes. It changes the economics of computing by allowing you to pay only for the resources that you actually use.\nElastic Block Store: It provides a persistent block storage volume for use with EC2 instances in aws cloud. EBS volume is automatically replicated within its availability zone to prevent the component failure. It offers high durability, availability, and low-latency performance required to run your workloads.\nCloudWatch: It is a service which is used to monitor all the AWS resources and applications that you run in real time. It collects and tracks the metrics that measure your resources and applications. If you want to know about the CloudWatch in detail, then click on the below link: Click here\nIdentity Access Management: It is a service of aws used to manage users and their level of access to the aws management console. It is used to set users, permissions, and roles. It allows you to grant permission to the different parts of the aws platform. If you want to know about the IAM, then click the below link: Click here\nSimple Email Service: Amazon Simple Email Service is a cloud-based email sending service that helps digital marketers and application developers to send marketing, notification, and transactional emails. This service is very reliable and cost-effective for the businesses of all the sizes that want to keep in touch with the customers.\nRoute53: It is a highly available and scalable DNS (Domain Name Service) service. It provides a reliable and cost-effective way for the developers and businesses to route end users to internet applications by translating domain names into numeric IP addresses. If you want to know more about Route53 in detail, then click on the link given below: Click here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "3) What are Key-pairs?",
+        "answer": "An Amazon EC2 uses public key cryptography which is used to encrypt and decrypt the login information. In public key cryptography, the public key is used to encrypt the information while at the receiver's side, a private key is used to decrypt the information. The combination of a public key and the private key is known as key-pairs. Key-pairs allows you to access the instances securely.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "4) What is S3?",
+        "answer": "S3 is a storage service in aws that allows you to store the vast amount of data. To know more about S3, click on the link given below:\nClick here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "5) What are the pricing models for EC2 instances?",
+        "answer": "There are four pricing models for EC2 instances:\nOn-Demand instance\nOn-Demand pricing is also known as pay-as-you-go. Pay-as-you-go is a pricing model that allows you to pay only for those resources that you use.\nYou need to pay for the compute capacity by per hour or per second that depends on which instances you run.\nOn-Demand instance does not require any upfront payments.\nWhile using On-Demand instance, you can increase or decrease the compute capacity based on the requirements of your application.\nOn-Demand instances are recommended for those applications which are of short term and unpredictable workloads.\nUsers that want low cost and flexibility on EC2 instances with no upfront payments.\nOn-Demand instances are used for those applications which have been developed or tested on EC2 for the first time.\nReserved instance\nReserved instance is the second most important pricing model that reduces the overall cost of your AWS environment by making an upfront payment for those services that you know will be used in the future.\nReserved instances provide a discount of up to 75% as compared to On-Demand instance.\nReserved instances are assigned to a specific Availability zone that reserves the compute capacity for you so that you can use whenever you need.\nReserved instances are mainly recommended for those applications that have steady state and require reserve capacity.\nCustomers who want to use the EC2 over 1 to 3 term can use the reserved instance to reduce the overall computing costs.\nSpot instance\nSpot instances consist of unused capacity which is available at a highly discounted rate.\nIt offers up to 90% discount as compared to On-Demand instance.\nSpot instances are mainly recommended for those applications which have flexible start and end times.\nIt is useful when applications require computing capacity at a very low price.\nIt is useful when applications require additional amount of computing capacity at an urgent need.\nDedicated Hosts\nIt is a physical EC2 server which is dedicated for your use. It reduces the overall costs by providing you a VPC that comprise of a dedicated hardware.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "6) What is AWS Lambda?",
+        "answer": "AWS Lambda is a compute service that runs your code without managing servers. Lambda function runs your code whenever needed. You need to pay only when your code is running. If you want to know more about the AWS Lambda, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "7) How many buckets can be created in S3?",
+        "answer": "By default, you can create up to 100 buckets.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "8) What is Cross Region Replication?",
+        "answer": "Cross Region Replication is a service available in aws that enables to replicate the data from one bucket to another bucket which could be in a same or different region. It provides asynchronous copying of objects, i.e., objects are not copied immediately. If you want to know more about the Cross Region Replication, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "9) What is CloudFront?",
+        "answer": "CloudFront is a computer delivery network which consists of distributed servers that delivers web pages and web content to a user based on the geographic locations of a user. If you want to know more about the CloudFront, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "10) What are Regions and Availability Zones in aws?",
+        "answer": "Regions: A region is a geographical area which consists of 2 or more availability zones. A region is a collection of data centers which are completely isolated from other regions.\nAvailability zones: An Availability zone is a data center that can be somewhere in the country or city. Data center can have multiple servers, switches, firewalls, load balancing. The things through which you can interact with the cloud reside inside the Data center.\nIf you want to know more about the Availability zone and region, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "11) What are edge locations in aws?",
+        "answer": "Edge locations are the endpoints in aws used for caching content. If you want to know more about the edge locations, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "12) What is the minimum and maximum size that you can store in S3?",
+        "answer": "The minimum size of an object that you can store in S3 is 0 bytes and the maximum size of an object that you can store in S3 is 5 TB.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "13) What are EBS Volumes?",
+        "answer": "Elastic Block Store is a service that provides a persistent block storage volume for use with EC2 instances in aws cloud. EBS volume is automatically replicated within its availability zone to prevent from the component failure. It offers high durability, availability, and low-latency performance required to run your workloads. . If you want to know more about the EBS Volumes, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "14) What is Auto Scaling?",
+        "answer": "Auto Scaling is a feature in aws that automatically scales the capacity to maintain steady and predictable performance. While using auto scaling, you can scale multiple resources across multiple services in minutes. If you are already using Amazon EC2 Auto- scaling, then you can combine Amazon EC2 Auto-Scaling with the Auto-Scaling to scale additional resources for other AWS services.\nBenefits of Auto Scaling\nSetup Scaling Quickly\nIt sets the target utilization levels of multiple resources in a single interface. You can see the average utilization level of multiple resources in the same console, i.e., you do not have to move to the different console.\nMake Smart Scaling Decisions\nIt makes the scaling plans that automate how different resources respond to the changes. It optimizes the availability and cost. It automatically creates the scaling policies and sets the targets based on your preference. It also monitors your application and automatically adds or removes the capacity based on the requirements.\nAutomatically maintain performance\nAuto Scaling automatically optimize the application performance and availability even when the workloads are unpredictable. It continuously monitors your application to maintain the desired performance level. When demand rises, then Auto Scaling automatically scales the resources.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "15) What is AMI?",
+        "answer": "AMI stands for Amazon Machine Image. It is a virtual image used to create a virtual machine within an EC2 instance. If you want to know more about the AMI, then click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "16) Can a AMI be shared?",
+        "answer": "Yes, an AMI can be shared.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "17) What is an EIP?",
+        "answer": "EIP (Elastic IP address) is a service provided by an EC2 instance. It is basically a static IP address attached to an EC2 instance. This address is associated with your AWS account not with an EC2 instance. You can also disassociate your EIP address from your EC2 instance and map it to another EC2 instance in your AWS account.\nLet's understand the concept of EIP through an example:\n\n\nSuppose we consider the website www.javatpoint.com points to the instance which has a public IP address. When instance is restarted, then AWS takes another public IP address from the pool and the previous public IP address is no longer valid. Due to this reason, the original link is no longer available between the website and EC2 instance. To overcome from such situation, Elastic IP address or static address is used which does not change.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "18) What are the different storage classes in S3?",
+        "answer": "Storage classes are used to assist the concurrent loss of data in one or two facilities. Each object in S3 is associated with some storage class. Amazon S3 contains some storage classes in which you can store your objects. You can choose a storage class based on your requirements and these storage classes offer high durability. To know more about the storage classes and its types, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "19) How can you secure the access to your S3 bucket?",
+        "answer": "S3 bucket can be secured in two ways:\nACL (Access Control List)\nACL is used to manage the access of resources to buckets and objects. An object of each bucket is associated with ACL. It defines which AWS accounts have granted access and the type of access. When a user sends the request for a resource, then its corresponding ACL will be checked to verify whether the user has granted access to the resource or not.\nWhen you create a bucket, then Amazon S3 creates a default ACL which provides a full control over the AWS resources.\nBucket Policies\nBucket policies are only applied to S3 bucket. Bucket policies define what actions are allowed or denied. Bucket policies are attached to the bucket not to an S3 object but the permissions define in the bucket policy are applied to all the objects in S3 bucket.\nThe following are the main elements of Bucket policy:\nSid\nA Sid determines what the policy will do. For example, if an action that needs to be performed is adding a new user to an Access Control List (ACL), then the Sid would be AddCannedAcl. If the policy is defined to evaluate IP addresses, then the Sid would be IPAllow.\nEffect: An effect defines an action after applying the policy. The action could be either to allow an action or to deny an action.\nPrincipal\nA Principal is a string that determines to whom the policy is applied. If we set the principal string as '*', then the policy is applied to everyone, but it is also possible that you can specify individual AWS account.\nAction\nAn Action is what happens when the policy is applied. For example, s3:Getobject is an action that allows to read object data.\nResource\nThe Resource is a S3 bucket to which the statement is applied. You cannot enter a simply bucket name, you need to specify the bucket name in a specific format. For example, the bucket name is javatpoint-bucket, then the resource would be written as \"arn:aws:s3\"\"javatpoint-bucket/*\".",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "20) What are policies and what are the different types of policies?",
+        "answer": "Policy is an object which is associated with a resource that defines the permissions. AWS evaluate these policies when user makes a request. Permissions in the policy determine whether to allow or to deny an action. Policies are stored in the form of a JSON documents.\nAWS supports six types of policies:\nIdentity-based policies\nResource-based policies\nPermissions boundaries\nOrganizations SCPs\nAccess Control Lists\nSession policies\n\nIdentity-based policies\nIdentity-based policies are the permissions stored in the form of JSON format. This policy can be attached to an identity user, group of users or role. It determines the actions that the users can perform, on which resources, and under what conditions.\nIdentity-based policies are further classified into two categories:\nManaged Policies: Managed Policies are the identity-based policies which can be attached to multiple users, groups or roles. There are two types of managed policies:\nAWS Managed Policies\nAWS Managed Policies are the policies created and managed by AWS. If you are using the policies first time, then we recommend you to use AWS Managed Policies.\nCustom Managed Policies\nCustom Managed Policies are the identity-based policies created by user. It provides more precise control over the policies than AWS Managed Policies.\nInline Policies\nInline Policies are the policies created and managed by user. These policies are encapsulated directly into a single user, group or a role.\nResource-Based Policies\nResource-based policies are the policies which are attached to the resource such as S3 bucket. Resource-based policies define the actions that can be performed on the resource and under what condition, these policies can be applied.\nPermissions boundaries\nPermissions boundaries are the maximum permissions that identity-based policy can grant to the entity.\nService Control Policies (SCPs)\nService Control Policies are the policies defined in a JSON format that specify the maximum permissions for an organization. If you enable all the features in an Organization, then you can apply Service Control Policies to any or all of your AWS accounts. SCP can limit the permission on entities in member accounts as well as AWS root user account.\nAccess Control Lists (ACLs)\nACL defines the control that which principals in another AWS account can access the resource. ACLs cannot be used to control the access of a principal in a different AWS account. It is the only policy type which does not have the JSON policy document format.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "21) What are different types of instances?",
+        "answer": "Following are the different types of instances:\nGeneral Purpose Instance type\nGeneral purpose instances are the instances mainly used by the companies. There are two types of General Purpose instances: Fixed performance (eg. M3 and M4) and Burstable performance (eg. T2). Some of the sectors use this instance such as Development environments, build servers, code repositories, low traffic websites and web applications, micro-services, etc.\n\nFollowing are the General Purpose Instances:\nT2 instances: T2 instances are the instances that receive CPU credits when they are sitting idle and they use the CPU credits when they are active. These instances do not use the CPU very consistently, but it has the ability to burst to a higher level when required by the workload.\nM4 instances: M4 instances are the latest version of General purpose instances. These instances are the best choice for managing memory and network resources. They are mainly used for the applications where demand for the micro-servers is high.\nM3 instances: M3 instance is a prior version of M4. M4 instance is mainly used for data processing tasks which require additional memory, caching fleets, running backend servers for SAP and other enterprise applications.\nCompute Optimized Instance type\nCompute Optimized Instance type consists of two instance types: C4 and C3.\nC3 instance: C3 instances are mainly used for those applications which require very high CPU usage. These instances are mainly recommended for those applications that require high computing power as these instances offer high performing processors.\nC4 instance: C4 instance is the next version of C3 instance. C4 instance is mainly used for those applications that require high computing power. It consists of Intel E5-2666 v3 processor and use Hardware virtualization. According to the AWS specifications, C4 instances can run at a speed of 2.9 GHz, and can reach to a clock speed of 3.5 GHz.\nGPU Instances\nGPU instances consist of G2 instances which are mainly used for gaming applications that require heavy graphics and 3D application data streaming. It consists of a high-performance NVIDIA GPU which is suitable for audio, video, 3D imaging, and graphics streaming kinds of applications. To run the GPU instances, NVIDIA drivers must be installed.\nMemory Optimized Instances\nMemory Optimized Instances consists of R3 instances which are designed for memory- intensive applications. R3 instance consists of latest Intel Xeon lvy Bridge processor. R3 instance can sustain a memory bandwidth of 63000 MB/sec. R3 instance offers a high- performance databases, In memory analytics, and distributed memory caches.\nStorage Optimized Instances\nStorage Optimized Instances consist of two types of instances: I2 and D2 instances.\nI2 instance: It provides heavy SSD which is required for the sequential read, and write access to a large data sets. It also provides random I/O operations to your applications. It is best suited for the applications such as high-frequency online transaction processing systems, relational databases, NoSQL databases, Cache for in-memory databases, Data warehousing applications and Low latency Ad- Tech serving applications.\nD2 instance: D2 instance is a dense storage instance which consists of a high-frequency Intel Xeon E5-2676v3 processors, HDD storage, High disk throughput.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "22) What is the default storage class in S3?",
+        "answer": "The default storage class is Standard Frequently Accessed.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "23) What is a snowball?",
+        "answer": "Snowball is a petabyte-scale data transport solution that uses secure appliances to transfer large amounts of data into and out of aws cloud. If you want to know more about the Snowball, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "24) Difference between Stopping and Terminating the instances?",
+        "answer": "Stopping: You can stop an EC2 instance and stopping an instance means shutting down the instance. Its corresponding EBS volume is still attached to an EC2 instance, so you can restart the instance as well.\nTerminating: You can also terminate the EC2 instance and terminating an instance means you are removing the instance from your AWS account. When you terminate an instance, then its corresponding EBS is also removed. Due to this reason, you cannot restart the EC2 instance.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "25) How many Elastic IPs can you create?",
+        "answer": "5 elastic IP addresses that you can create per AWS account per region.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "26) What is a Load Balancer?",
+        "answer": "Load Balancer is a virtual machine that balances your web application load that could be Http or Https traffic that you are getting in. It balances a load of multiple servers so that no web server gets overwhelmed. To know more, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "27) What is VPC?",
+        "answer": "VPC stands for Virtual Private Cloud. It is an isolated area of the AWS cloud where you can launch AWS resources in a virtual network that you define. It provides a complete control on your virtual networking environment such as selection of an IP address, creation of subnets, configuration of route tables and network gateways. To know more about VPC, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "28) What is VPC peering connection?",
+        "answer": "A VPC peering connection is a networking connection that allows you to connect one VPC with another VPC through a direct network route using private IP addresses.\nBy using VPC peering connection, instances in different VPC can communicate with each other as if they were in the same network.\nYou can peer VPCs in the same account as well as with the different AWS account\nTo know more about, click on the link given below: Click Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "29) What are NAT Gateways?",
+        "answer": "NAT stands for Network Address Translation. It is an aws service that enables to connect an EC2 instance in private subnet to the internet or other AWS services. If you want to know more about NAT Gateways, click on the link shown below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "30) How can you control the security to your VPC?",
+        "answer": "You can control the security to your VPC in two ways:\nSecurity Groups\nIt acts as a virtual firewall for associated EC2 instances that control both inbound and outbound traffic at the instance level. To know more about Security Groups, click on the link given below: Click Here\nNetwork access control lists (NACL)\nIt acts as a firewall for associated subnets that control both inbound and outbound traffic at the subnet level. To know more about NACL, click on the link given below: Click Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "31) What are the different database types in RDS?",
+        "answer": "Following are the different database types in RDS:\nAmazon Aurora\nIt is a database engine developed in RDS. Aurora database can run only on AWS infrastructure not like MySQL database which can be installed on any local device. It is a MySQL compatible relational database engine that combines the speed and availability of traditional databases with the open source databases. To know more about Amazon Aurora, click on the link given below: Click Here\nPostgre SQL\nPostgreSQL is an open source relational database for many developers and startups.\nIt is easy to set up, operate, and can also scale PostgreSQL deployments in the cloud.\nYou can also scale PostgreSQL deployments in minutes with cost-efficient.\nPostgreSQL database manages time-consuming administrative tasks such as PostgreSQL software installation, storage management, and backups for disaster recovery.\nMySQL\nIt is an open source relational database.\nIt is easy to set up, operate, and can also scale MySQL deployments in the cloud.\nBy using Amazon RDS, you can deploy scalable MySQL servers in minutes with cost-efficient.\nMariaDB\nIt is an open source relational database created by the developers of MySQL.\nIt is easy to set up, operate, and can also scale MariaDB server deployments in the cloud.\nBy using Amazon RDS, you can deploy scalable MariaDB servers in minutes with cost-efficient.\nIt frees you from managing administrative tasks such as backups, software patching, monitoring, scaling and replication.\nOracle\nIt is a relational database developed by Oracle.\nIt is easy to set up, operate, and can also scale Oracle database deployments in the cloud.\nYou can deploy multiple editions of Oracle in minutes with cost-efficient.\nIt frees you from managing administrative tasks such as backups, software patching, monitoring, scaling and replication.\nYou can run Oracle under two different licensing models: \"License Included\" and \"Bring Your Own License (BYOL)\". In License Included service model, you do need have to purchase the Oracle license separately as it is already licensed by AWS. In this model, pricing starts at $0.04 per hour. If you already have purchased the Oracle license, then you can use the BYOL model to run Oracle databases in Amazon RDS with pricing starts at $0.025 per hour.\nSQL Server\nSQL Server is a relational database developed by Microsoft.\nIt is easy to set up, operate, and can also scale SQL Server deployments in the cloud.\nYou can deploy multiple editions of SQL Server in minutes with cost-efficient.\nIt frees you from managing administrative tasks such as backups, software patching, monitoring, scaling and replication.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "32) What is Redshift?",
+        "answer": "Redshift is a fast, powerful, scalable and fully managed data warehouse service in the cloud.\nIt provides ten times faster performance than other data warehouse by using machine learning, massively parallel query execution, and columnar storage on high-performance disk.\nYou can run petabytes of data in Redshift datawarehouse and exabytes of data in your data lake built on Amazon S3.\nTo know more about Amazon Redshift, click on the link given below: Click Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "33) What is SNS?",
+        "answer": "SNS stands for Simple Notification Service. It is a web service that provides highly scalable, cost-effective, and flexible capability to publish messages from an application and sends them to other applications. It is a way of sending messages. If you want to know more about SNS, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "34) What are the different types of routing policies in route53?",
+        "answer": "Following are the different types of routing policies in route53:\nSimple Routing Policy\nSimple Routing Policy is a simple round-robin policy which is applied to a single resource doing the function for the domain, For example, web server is sending the content to a website where web server is a single resource.\nIt responds to DNS queries based on the values present in the resource.\nWeighted Routing Policy\nWeighted Routing Policy allows you to route the traffic to different resources in specified proportions. For example, 75% in one server, and 25% in another server.\nWeights can be assigned in the range from 0 to 255.\nWeight Routing policy is applied when there are multiple resources accessing the same function. For example, web servers accessing the same website. Each web server will be given a unique weight number.\nWeighted Routing Policy associates the multiple resources to a single DNS name.\nLatency-based Routing Policy\nLatent-based Routing Policy allows Route53 to respond to the DNS query at which data center gives the lowest latency.\nLatency-based Routing policy is used when there are multiple resources accessing the same domain. Route53 will identify the resource that provides the fastest response with lowest latency.\nFailover Routing Policy\nGeolocation Routing Policy",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "35) What is the maximum size of messages in SQS?",
+        "answer": "The maximum size of message in SQS IS 256 KB.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "36) Differences between Security group and Network access control list?",
+        "answer": "Security Group NACL (Network Access Control List)\nIt supports only allow rules, and by default, all the rules are denied. You cannot deny the rule for establishing a connection. It supports both allow and deny rules, and by default, all the rules are denied. You need to add the rule which you can either allow or deny it.\nIt is a stateful means that any changes made in the inbound rule will be automatically reflected in the outbound rule. For example, If you are allowing an incoming port 80, then you also have to add the outbound rule explicitly. It is a stateless means that any changes made in the inbound rule will not reflect the outbound rule, i.e., you need to add the outbound rule separately. For example, if you add an inbound rule port number 80, then you also have to explicitly add the outbound rule.\nIt is associated with an EC2 instance. It is associated with a subnet.\nAll the rules are evaluated before deciding whether to allow the traffic. Rules are evaluated in order, starting from the lowest number.\nSecurity Group is applied to an instance only when you specify a security group while launching an instance. NACL has applied automatically to all the instances which are associated with an instance.\nIt is the first layer of defense. It is the second layer of defense.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "37) What are the two types of access that you can provide when you are creating users?",
+        "answer": "There are two types of access:\nConsole Access\nIf the user wants to use the Console Access, a user needs to create a password to login in an AWS account.\nProgrammatic access\nIf you use the Programmatic access, an IAM user need to make an API calls. An API call can be made by using the AWS CLI. To use the AWS CLI, you need to create an access key ID and secret access key.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "38) What is subnet?",
+        "answer": "When large section of IP address is divided into smaller units is known as subnet.\n\nA Virtual Private Cloud (VPC) is a virtual network provided to your AWS account. When you create a virtual cloud, you need to specify the IPv4 addresses which is in the form of CIDR block. After creating a VPC, you need to create the subnets in each availability zone. Each subnet has a unique ID. When launching instances in each availability zone, it will protect your applications from the failure of a single location.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "39) Differences between Amazon S3 and EC2?",
+        "answer": "S3\nIt is a storage service where it can store any amount of data.\nIt consists of a REST interface and uses secure HMAC-SHA1 authentication keys.\nEC2\nIt is a web service used for hosting an application.\nIt is a virtual machine which can run either Linux or Windows and can also run the applications such as PHP, Python, Apache or other databases.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "40) Can you establish a peering connection to a VPC in a different region?",
+        "answer": "No, it's not possible to establish a peering connection to a VPC in a different region. It's only possible to establish a peering connection to a VPC in the same region.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "41) How many subnets can you have per VPC?",
+        "answer": "You can have 200 subnets per VPC.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "42) When EC2 officially launched?",
+        "answer": "EC2 was officially launched in 2006.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "43) What is Amazon Elasticache?",
+        "answer": "An Amazon Elasticache is a web service allows you to easily deploy, operate, and scale an in-memory cache in the cloud. To know more about the Amazon Elasticache, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "44) What are the types of AMI provided by AWS?",
+        "answer": "There are two types of AMI provided by AWS:\nInstance store backed\nAn instance-store backed is an EC2 instance whose root device resides on the virtual machine's hard drive.\nWhen you create an instance, then AMI is copied to the instance.\nSince \"instance store-backed\" instances root device is stored in the virtual machine's hard drive, so you cannot stop the instance. You can only terminate the instance, and if you do so, the instance will be deleted and cannot be recovered.\nIf the virtual machine's hard drive fails, then you can lose your data.\nYou need to leave this instance-store instance in a running state until you are completely done with it.\nYou will be charged from the moment when your instance is started until your instance is terminated.\nEBS backed\nAn \"EBS backed\" instance is an EC2 instance that uses EBS volume as a root device\nEBS volumes are not tied to a virtual hardware, but they are restricted to an availability zone. This means that EBS volume is moved from one machine to another machine within the same availability zone.\nIf the virtual machine's fails, then the virtual machine can be moved to another virtual machine.\nThe main advantage of \"EBS backed\" over \"instance store-backed\" instances is that it can be stopped. When an instance is in a stopped state, then EBS volume can be stored for a later use. The virtual machine is used for some other instance. In stopped state, you are not charged for the EBS storage.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "45) What is Amazon EMR?",
+        "answer": "An Amazon EMR stands for Amazon Elastic MapReduce. It is a web service used to process the large amounts of data in a cost-effective manner. The central component of an Amazon EMR is a cluster. Each cluster is a collection of EC2 instances and an instance in a cluster is known as node. Each node has a specified role attached to it known as a node type, and an Amazon EMR installs the software components on node type.\nFollowing are the node types:\n\n\nMaster node\nA master node runs the software components to distribute the tasks among other nodes in a cluster. It tracks the status of all the tasks and monitors the health of a cluster.\nCore node\nA core node runs the software components to process the tasks and stores the data in Hadoop Distributed File System (HDFS). Multi-node clusters will have at least one core node.\nTask node\nA task node with software components processes the task but does not store the data in HDFS. Task nodes are optional.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "46) How to connect EBS volume to multiple instances?",
+        "answer": "You cannot connect the EBS volume to multiple instances. But, you can connect multiple EBS volumes to a single instance.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "47) What is the use of lifecycle hooks in Autoscaling?",
+        "answer": "Lifecycle hooks perform custom actions by pausing instances when Autoscaling group launches or terminates an instance. When instance is paused, an instance moves in a wait state. By default, an instance remains in a wait state for 1 hour. For example, when you launch a new instance, lifecycle hooks pauses an instance. When you pause an instance, you can install a software on it or make sure that an instance is completely ready to receive the traffic.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "48) What is Amazon Kinesis Firehose?",
+        "answer": "An Amazon Kinesis Firehose is a web service used to deliver real-time streaming data to destinations such as Amazon Simple Storage Service, Amazon Redshift, etc. To know more about Amazon Kinesis Firehose, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "49) What is the use of Amazon Transfer Acceleration Service?",
+        "answer": "An Amazon Transfer Acceleration Service is a service that enables fast and secure transfer of data between your client and S3 bucket. To know more about Amazon Transfer Acceleration Service, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "50) How will you access the data on EBS in AWS?",
+        "answer": "EBS stands for Elastic Block Store. It is a virtual disk in a cloud that creates the storage volume and attach it to the EC2 instances. It can run the databases as well as can store the files. All the files that it store can be mounted as a file system which can be accessed directly. To know more about EBS, click on the link given below:\nClick Here",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    },
+    {
+        "question": "51) Differences between horizontal scaling and vertical scaling?",
+        "answer": "Vertical scaling means scaling the compute power such as CPU, RAM to your existing machine while horizontal scaling means adding more machines to your server or database. Horizontal scaling means increasing the number of nodes, and distributing the tasks among different nodes.",
+        "reference": "javatpoint.com",
+        "role": "aws"
+    }
+]

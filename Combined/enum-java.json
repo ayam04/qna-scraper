@@ -1,0 +1,122 @@
+[
+    {
+        "question": "1) What is enum?",
+        "answer": "Enum enables a Type to specify a list of potential values. The example given below is a nice one. There is an Animals enum with four possible values.\nenum Animals {  \n        dog, lion, cat, fish  \n    };",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "2) What is enum ordinal?",
+        "answer": "Despite the fact that ordinals are not recommended for use in logic, Java ranks the default ordinals it provides to an enum.\n// Default ordinals of enum  \n        // By default java assigns ordinals in order          \n        System.out.println(Animals.dog.ordinal()); //0  \n        System.out.println(Animals.lion.ordinal()); //1  \n        System.out.println(Animals.cat.ordinal()); //2  \n        System.out.println(Animals.fish.ordinal()); //3",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "3) Can a Switch Statement be used in front of an Enum?",
+        "answer": "The example that follows demonstrates how to utilise a switch around an enum.\n//Using switch statement on an enum  \n        public int Num() {  \n            switch (this) {  \n            case dog:  \n                return 5;  \n            case lion:  \n        return 8;  \n            case cat:  \n                return 10;  \n            case fish:  \n                return 20;  \n            }  \n            return -1; // Dummy because Java doesn't understand that this is a possibility  \n            }",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "4) We have the idea of enum for what purpose?",
+        "answer": "Enum is used to define lists of constants because it is a list of constants. When there are few possible possibilities, enum is helpful.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "5) Does it make sense to specify Enum constants as static and final?",
+        "answer": "Yes. Enum constants are immediately reachable by using the enum name and are public, static, and final.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "6) Can we add elements to an Enum?",
+        "answer": "No, there is no way to extend Enum in the code. It is just specified by the keyword Enum and already has elements, but these elements cannot be introduced to the programme in any other way.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "7) What benefits come from using Enum in Java?",
+        "answer": "Enum enhances security\nEnum can be included or excluded from a class.\nEnum is simple to employ in switch cases\nEnum cannot extend any class\nAn enum object cannot be created.\nEnums can have constructors, methods, and variables",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "8) What does the Enum ordinal() method do?",
+        "answer": "The order in which Enum instances are declared within Enum is returned by the ordinal method. You can define days in the order they arrive, for instance, in a DayOfWeek Enum.\npublic enum WeekDay{  \n  MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;  \n}  \nEach element in Enum is arranged or given a number starting at zero using the ordinal function. MONDAY will be zero, Tuesday one, and so forth. Thursday if we call WeekDay. ordinal() will produce the value 3.\nThe function is inherited by all user-defined enum from Java.lang. Enum abstract class, and the compiler sets it when it internally invokes Java.lang protected function Object(). Enum, a type that takes a name and an ordinal.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "9) Can Java's Enum class implement interfaces?",
+        "answer": "Yes, Java's Enum class can implement interfaces. Enums are types, just like classes and interfaces, hence they can implement interfaces. As a result, there is a lot of freedom to utilise Enum as a specific implementation in various situations. The implementation of an interface using an Enum in Java is also demonstrated here.\nADVERTISEMENT",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "10) How can an Enum be created without any instances? Without compile-time errors, is it possible?",
+        "answer": "One of the challenging Java interview questions is this one. Having an Enum without any instances may appear strange because Enum is thought of as a collection of a well-defined set number of instances, such as Days of the Week or Months in a Year.\nHowever, it is possible to build Enum in Java without any instances, for example, to create a utility class. Another creative method to use Enum in Java is this.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "11) Can the function toString() method for Enum be modified? What would occur if we didn't?",
+        "answer": "Naturally, you can override function toString() { [native code] } in Enum because it extends java.lang like all other classes do.\nEven if the function toString() { [native code] }() method on Object is available, you won't really regret not overriding it because the abstract base class of enum takes care of it and returns name, which is the name of the enum instance itself.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "12) Can we build an Enum instance outside of Enum?, if not, why?",
+        "answer": "Because Enum doesn't have a public function Object() { [native code] } and the compiler forbids you from adding one, you cannot build enum instances outside of the boundaries of Enum. Enum instances must be declared inside of Enum because the compiler creates a lot of code in response to the enum type declaration and hence forbids the use of public constructors within of Enum.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "13) In Java, can we specify a function object() inside an enum?",
+        "answer": "It is a follow-up query to the Java Enum query. Yes, you may, however keep in mind that you can only designate a function Object() { [native code] } as private or package-private within of an enum. Inside the enum, public and protected constructors are not allowed.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "14) In Java, can Enum be used with TreeSet or TreeMap?",
+        "answer": "I would want to ask this question on Java Enum to test people's understanding of the concept. prior to becoming aware of java.lang. Enum and has examined its source code.\nThe likelihood is that you are unaware of Enum's implementation of the Comparable interface, which is a must for using it in Sorted Collections like TreeSet and TreeMap. Enum can be used safely inside TreeSet or TreeMap in Java because it by default implements the Comparable interface.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "15) What is the difference between the Enum functions ordinal() and compareTo()?",
+        "answer": "This is a follow-up inquiry regarding the Java Enum. Actually, compareTo() imitates the ordinal() method's ordering, which is Enum's inherent order.\nEnum restrictions are compared in the order they are declared, to put it briefly. Enum constants can only be compared to other enum constants of the same enum type, which is another important thing to keep in mind. A compiler error will be produced if the enum constant of one type is compared to another type.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "16) In Java, can an enum extend a class?",
+        "answer": "Enum cannot extend a class in Java, sorry. I just explained it's a type as a class or interface in Java, so don't be surprised. This is why the follow-up question to the preceding Enum interview question is a good one.\nSince every Enum by default extends Java.lang's abstract base class.\n\nSince Java doesn't permit multiple inheritance for classes, it stands to reason that Enum cannot extend another class. Since java.lang.Enum is extended, all enums have access to methods like ordinal(), values(), and function valueOf().",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "17) How do you loop through every instance of an Enum?",
+        "answer": "If you've looked into java.lang.Enum, you know that the values() method returns an array containing every enum constant. Every enum type receives this values() method because they all implicitly extend java.lang.Enum. You can loop through all enum constants of a specific type by using this. See this for a Java example of an enum values iteration using values() and a foreach loop.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "18) What benefits and drawbacks come with utilising Enum as a Singleton?",
+        "answer": "Enum is a convenient shortcut for implementing the Singleton design pattern, and it has gained popularity since since it was mentioned in Effective Java.\nEnum Singleton first seems very promising and takes care of a lot of things for you, such as controlled instance generation, serialisation safety, and on top of that, it's really simple to create thread-safe Singleton using Enum. Double-checked locking and volatile variables are no longer a concern. The benefits and drawbacks of utilising Enum as a Singleton in Java are discussed here.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "19) What distinguishes the Enum pattern from the Enum Int pattern and Enum String pattern?",
+        "answer": "If you have been programming for more than five years and have used JDK 1.3 and 1.4, you must be familiar with the Enum String and Enum Int patterns, where we used public static final constants to represent a collection of a well-known fixed number of items, such as DayOfWeek.\nThere were many issues with such strategy, such as the lack of a specific enum type. Its representation of the days of the week as a String variable allows for any possible value. The compiler doesn't restrict the values that the enum int pattern can accept.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    },
+    {
+        "question": "20) How can you convert a String in Java to an Enum?",
+        "answer": "Given the prevalence of String and Enum in Java application development, this is a common question. Declaring a factory function inside an Enum that accepts a String argument and returns an Enum is the best way to convert an Enum to a String. You may also decide to disregard the situation. For a Java code example of converting a String to an Enum, see here.",
+        "reference": "javatpoint.com",
+        "role": "enum-java"
+    }
+]

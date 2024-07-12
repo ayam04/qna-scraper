@@ -1,0 +1,482 @@
+[
+    {
+        "question": "1. What do you understand from Verilog?",
+        "answer": "Verilog is a hardware description language (HDL) used for the simulation of digital circuits. It is mainly used in the designing and verification of digital systems, consisting of applications in integrated circuits and FPGA designs.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "2. Are Verilog and VHDL the same or different?",
+        "answer": "Verilog and VHDL are two languages used for designing digital circuits, but are quite different. They have different ways of writing code. Verilog is known for its short and simple style, similar to the C programming language. It’s concise and easy to read. On the other hand, VHDL uses a more detailed style, which is inspired by the Ada programming language. It’s a bit more elaborate and may have more lines of code compared to Verilog.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "3. How are Verilog and VHDL different from each other?",
+        "answer": "Here’s a basic comparison between Verilog and VHDL that makes each of them different from the other:\nParameters Verilog VHDL\nData Types Offers limited types, mainly wire and reg for modeling hardware Provides a rich set of data types, including scalar, composite, and access types\nConcurrent Statements Employs constructs like “always @(posedge clk)” and “always @(negedge rst)” Uses the process (clk, rst) begin … end process; syntax for concurrent statements\nHierarchy Primarily relies on modules and instances as building blocks Defines hierarchy using entities and architectures\nSignal Assignment Supports blocking and non-blocking assignments (= and <=) Involves signal assignment using the <= operator\nTool Support Well-supported by various EDA (Electronic Design Automation) tools Widely supported by EDA tools, particularly for FPGA designs",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "4. Elaborate on the term HDL Simulators.",
+        "answer": "HDL simulators are crucial tools for checking how hardware description language (HDL) code works. They help designers look at how digital circuits behave before actually making the physical hardware. This is really important for developing and testing electronic designs.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "5. What is the difference between == and === in Verilog?",
+        "answer": "In Verilog, both == and === are used to compare things, but they do it in different ways. The == operator checks if the bits in two things are the same, even if the sizes are different. It’s good for comparing things of different sizes. On the other hand, === is more strict. It not only checks if the bits are the same but also makes sure the sizes and types are exactly the same.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "6. Tell me the five basic differences between Verilog's task and function.",
+        "answer": "Here are the five basic differences between Verilog’s task and function:\nFeature Task Function\nDefinition  Task is a procedural block of code. Function is an expression evaluated to a value.\nReturn Type Tasks do not return values. Functions return a single value.\nUsage in Expressions Cannot be used in expressions directly. Can be used in expressions to compute values.\nBlocking Statements Allows blocking statements (e.g., #10;). Non-blocking statements only (#).\nExecution Executes sequentially, one step at a time. Executes concurrently, potentially in parallel.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "7. What is Continuous Assignment?",
+        "answer": "Continuous Assignment is a way to continuously assign values to a wire or reg in Verilog. It is typically used for describing combinational logic and is specified using the assigned keyword.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "8. Explain how Verilog Repeat Loop works.",
+        "answer": "The repeat loop in Verilog allows you to execute a block of code a specified number of times. It is a convenient way to avoid duplicating code when the same statements need to be executed multiple times.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "9. Define the following terms: $monitor, $display and $strobe.",
+        "answer": "Here is the definition for the following terms:\n$monitor: Think of it like a continuous watchman. Whenever certain things change (like variable values), it keeps an eye on them and shows you the updates in real-time.\n$display: This is like a tool for showing messages and values while your simulation is running. It’s handy for figuring out what’s happening in your program.\n$strobe: It’s not a common Verilog term. Its meaning depends on where it’s used. Without more context, it’s hard to give a simple explanation for $strobe in Verilog.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "10. How are Blocking and Non-Blocking Assignments executed in Verilog?",
+        "answer": "In Verilog, blocking assignments (=) and non-blocking assignments (<=) are fundamental for describing how signals are updated in simulation cycles. Blocking assignments execute sequentially, one at a time, and the next statement waits for the current one to complete before proceeding. On the other hand, non-blocking assignments allow concurrent execution, enabling multiple assignments to proceed simultaneously without waiting for the assigned values to be fully evaluated.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "11. Explain the features of VHDL",
+        "answer": "VHDL (VHSIC Hardware Description Language) features include:\nRich libraries and packages for various design tasks.\nSupport for hierarchical design.\nStrong typing for design clarity.\nConcurrent and sequential statements for flexible modeling.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "12. What is a Programming Language Interface?",
+        "answer": "A Programming Language Interface in Verilog is a mechanism that allows interfacing with programming languages like C/C++ to enhance simulation capabilities or integrate Verilog with external tools.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "13. What do you understand from the Sensitivity List?",
+        "answer": "A Sensitivity List in Verilog specifies the signals or variables that trigger the execution of a process or always block when their values change.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "14. Explain the steps for writing the FSM code",
+        "answer": "Here are the following steps that will be followed while writing the FSM code:\nDefine states and state register.\nDescribe state transitions using always or case constructs.\nImplement combinational logic for the next state and output.\nUse non-blocking assignments (<=) for state updates.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "15. What are Deposit and Force Commands?",
+        "answer": "In Verilog, the Deposit command promptly assigns values to nets or variables without triggering continuous assignments. On the other hand, the Force command not only assigns values but also evaluates continuous assignments, providing immediate observation during simulation.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "16. Which will update first between Variable and Signal?",
+        "answer": "If we have to choose between the two, it’s quite easy, as the variable updates immediately but the signal would update at the end of the simulation time step.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "17. What is the difference between Virtual and Pure Virtual Functions in Verilog?",
+        "answer": "The difference between Virtual and Pure Virtual Functions in Verilog is explained in the following points:\nVirtual Function: Can be overridden in a derived class.\nPure Virtual Function: Must be overridden in a derived class and cannot have a default implementation.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "18. What are Semaphores?",
+        "answer": "Semaphores are synchronization constructs used to control access to a shared resource in a multi-process or multi-threaded environment.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "19. Explain the uses of Clocking Blocks",
+        "answer": "Clocking blocks in Verilog are used to model clock and reset events for improved simulation accuracy and synthesis optimizations.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "20. Why do we need an Alias in Verilog?",
+        "answer": "An Alias in Verilog is a way to reference a variable or signal using another name. It provides flexibility in design and improves readability.\nEnroll in Intellipaat’s Full Stack Developer Certification to master front-end and back-end technologies.\n\nIntermediate Verilog Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "21. Write a Verilog Program to switch the Contents of two Registers: With and Without a Temporary Register.",
+        "answer": "Switching Contents of Two Registers in Verilog:\nWith Temporary Register:\nmodule switch_registers_with_temp(\n    input wire clk,\n    input wire reset,\n    input wire [31:0] data_in1,\n    input wire [31:0] data_in2,\n    output reg [31:0] data_out1,\n    output reg [31:0] data_out2\n); reg [31:0] temp; always @(posedge clk or posedge reset) begin if (reset) temp <= 0; else temp <= data_in1; end always @(posedge clk or posedge reset) begin if (reset) begin data_out1 <= 0; data_out2 <= 0; end else begin data_out1 <= data_in2; data_out2 <= temp; end end endmodule\nWithout Temporary Register:\nmodule switch_registers_without_temp(\ninput wire clk,\ninput wire reset,\ninput wire [31:0] data_in1,\ninput wire [31:0] data_in2,\noutput reg [31:0] data_out1,\noutput reg [31:0] data_out2\n);\n\nalways @(posedge clk or posedge reset) begin\nif (reset) begin\ndata_out1 <= 0;\ndata_out2 <= 0;\nend else begin\ndata_out1 <= data_in2;\ndata_out2 <= data_in1;\nend\nend\n\nendmodule",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "22. In Verilog, what do the casex and casez statements mean?",
+        "answer": "In Verilog, casex treats ‘x’ as a don’t care but treats ‘z’ as a high impedance. It’s used when you want to match specific bit patterns while considering ‘x’ as a don’t care but treating ‘z’ as a significant bit. On the other hand, casez treats ‘z’ (high impedance) and ‘x’ (unknown) as don’t care. It’s used when you want to match specific bit patterns while ignoring ‘z’ and ‘x’ values in the comparison.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "23. How can a Sine Wave be produced using Verilog Coding?",
+        "answer": "Sine Wave generation in Verilog can be achieved using a lookup table method or by using mathematical approximations with counters and phase accumulators.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "24. When can Race Conditions occur in Verilog?",
+        "answer": "Race conditions occur in Verilog when the output of a logic circuit depends on the timing or sequence of the events, leading to different outcomes based on these variations.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "25. What does Verilog code Timeframe 1 Ns/ 1 Ps Mean?",
+        "answer": "This refers to the time resolution used in the simulation. It means the simulation time advances in steps of 1 nanosecond for behavioral models and 1 picosecond for gate-level models.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "26. Is it required to list every input in the Sensitivity Disc for a Pure Combinational Circuit? If so, why then?",
+        "answer": "In pure combinational circuits, it’s essential to list all input signals in the sensitivity list because the output directly depends on the inputs. Any change in inputs must trigger the evaluation of the output.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "27. Tell me the key differences between Reg and Wire.",
+        "answer": "Here’s a comparison between Reg and Wire in Verilog:\nFeature Reg Wire\nType Used for storing state in procedural blocks Used for connecting components and modeling interconnections\nBehavior Holds a value until explicitly updated Represents continuous assignment\nAssignment Assigned using procedural blocks (e.g., always @) Assigned using continuous assignment (assign or module ports)\nUsed in Inside procedural blocks (e.g., always, initial) Module ports",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "28. Explain three types of coding in Verilog.",
+        "answer": "Behavioral coding and Register Transfer Level (RTL) focus on data transfer between registers, whereas Gate-level coding describes circuits using logic gates.\nIn Verilog, there are three primary coding styles:\nBehavioral Coding: This style focuses on describing the system’s behavior without detailing its structure. It primarily uses constructs like always blocks and procedural assignments to model functionality, making it easier to conceptualize complex operations without diving into the specific hardware implementation details.\nRegister Transfer Level (RTL): RTL coding represents the system’s behavior by emphasizing the transfer of data between registers. It concentrates on describing how data moves between registers through combinational logic, capturing the essence of digital hardware design.\nGate-level Coding: This style describes the system using basic logic gates like AND, OR, NOT, etc. It is highly detailed, defining the hardware structure explicitly and using primitive gates or modules to represent the actual physical components of the circuit.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "29. Which software is used for Verilog?",
+        "answer": "Tools like Xilinx Vivado, Altera Quartus, Synopsys Design Compiler, and Mentor Graphics ModelSim are popular for Verilog-based design, simulation, and synthesis.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "30. Can you tell me about the datatypes in Verilog.",
+        "answer": "Verilog consists of a range of data types essential for design representation. These types serve distinct functions, which are as follows:\nWire: Connects hardware components, modeling interconnections between modules.\nRegister (reg): Acts as a storage element, similar to hardware flip-flops, allowing data storage and manipulation within procedural blocks.\nInteger: Represents signed 32-bit integer values, utilized for arithmetic operations in Verilog.\nReal: Represents floating-point numbers, enabling floating-point calculations.\nTime: Handles time values and delays during simulations.\nEnum: Facilitates user-defined enumerated types, creating symbolic names for integers.\nLogic: Introduced in later Verilog versions, signifies a single bit, enhancing code clarity and readability.\nAlso, check out web development tutorial provided by Intellipaat.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "31. What is RTL in Verilog?",
+        "answer": "RTL, short for Register Transfer Level, is an important modeling abstraction within Verilog. It describes digital circuit behavior by emphasizing the flow of data between registers using combinational logic. This level of abstraction captures the essence of hardware design without delving into the physical implementation details, enabling designers to specify circuit functionality at a level closely aligned with actual hardware operations.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "32. Elaborate on the concept of freeze and drive command in Verilog?",
+        "answer": "In Verilog, these commands help control how signals behave when you’re simulating a circuit:\nFreeze: It stops a signal from changing during simulation. It keeps the signal at its current value, so it won’t change any more.\nDrive: It keeps assigning a value to a signal throughout the simulation. This ensures the signal keeps the value you give it in your code.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "33. What is the difference between blocking and non-blocking in Verilog?",
+        "answer": "Let us see the basic comparison between blocking and non-blocking assignments in Verilog:\nBlocking Assignments Non-blocking Assignments\nExecutes sequentially Allows concurrent execution\nOne assignment at a time Multiple assignments simultaneously\nUses = operator Uses <= operator\nImmediate value update Deferred value update\nInhibits parallel operations Permits parallel operations\nIdeal for combinational logic Ideal for sequential logic",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "34. What are Verilog full case statements and Verilog parallel case statements?",
+        "answer": "Verilog’s full case statements cover all potential input conditions, ensuring explicit definition and execution of associated statements for each match within the case structure. On the other hand, Verilog’s parallel case statements execute only the first encountered match within the case structure, optimizing simulation efficiency by stopping further evaluations after finding a match, although it may not explicitly cover all potential conditions.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "35. What is the difference between $monitor and $display?",
+        "answer": "In Verilog, $monitor keeps a constant watch on variables, displaying their updated values as they change during simulation. On the other side, $display outputs specific values or strings at set simulation times, serving for debugging or data analysis purposes without automatically tracking variable changes.\nHere are the Top Web developer Interview Questions & Answers for freshers as well as experienced will help you prepare for your next web development Job Interview.\n\nAdvanced Verilog Interview Questions for Experienced",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "36. What are transport delay and inertial delay?",
+        "answer": "In Verilog, two types of delays, transport delay and inertial delay simulate signal behaviors during digital simulations. Transport delay represents the time taken for a signal to travel between points, while inertial delay filters out short pulses or glitches lasting less than the specified delay duration. This reflects more realistic signal behavior in circuit simulations.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "37. What do you understand from $setup and $hold?",
+        "answer": "Let us discuss each of them in a detailed manner:\n$setup: In Verilog, $setup makes sure that before the clock ticks, the input data to a flip-flop or register stays still and doesn’t change for a set time. It’s like making sure the data is ready and steady before it’s captured by the flip-flop or register.\n$hold: Now, $hold checks that after the clock ticks, the input data to a flip-flop or register doesn’t change for a while. It ensures that after the clock’s signal, the data stays the same, allowing the flip-flop or register to keep the captured data without any problems.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "38. Difference between Flip-Flop and Latch.",
+        "answer": "Here’s a comparison between flip-flop and latch in tabular form:\nFlip-Flop Latch\nEdge-triggered Level-sensitive\nChanges output only at specific clock edges Changes output as long as the enable signal is active\nStores data synchronously Stores data asynchronously\nTypes: D, JK, T, etc. Types: SR (Set-Reset), D, etc.\nState changes on the clock edge State changes in real-time with input changes",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "39. Explain the generate block in Verilog and its usage.",
+        "answer": "The generated block in Verilog is a powerful tool used to create multiple instances of modules or code sections based on specific conditions or parameters. It allows for the creation of flexible and reusable structures by enabling conditional instantiation, parameterized designs, and simplifying hierarchy through loops or conditions. For example, it can be used to generate various module instances with different configurations or sizes, enhancing code reusability and scalability in Verilog designs.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "40. Write a Verilog code for D-Latch.",
+        "answer": "An example of a D-latch implemented in Verilog:\nmodule DLatch(\n    input D,     // Data input\n    input enable, // Latch enable signal\n    output reg Q // Latched output\n);\n    always @(posedge enable) begin\n        if(enable) begin\n            Q <= D; // Update output when enable signal is active\n        end\n    end\nendmodule",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "41. What is the default value of wire and reg?",
+        "answer": "In Verilog, when you create a variable inside a part of the code called an always block without saying if it’s a wire or a reg, it’s automatically seen as a reg. But if you make a variable outside of this always block, usually within the main module, without specifying if it’s a wire or reg, it’s automatically considered a wire.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "42. How can you explain Strength in Verilog?",
+        "answer": "In Verilog, strengths describe how strong or weak signals are in a digital design. They’re like labels that show how forcefully a signal pushes its value (0 or 1).\nFor example, imagine a road where cars (signals) move. Some cars are very strong and can easily push through traffic (Strong signals). Others are weaker and might not get through so easily (Weak signals).\nThese strength labels help decide what happens when signals with different strengths try to control the same “road” (wire). Usually, the stronger signal wins and sets the value (0 or 1) for the wire. But if signals are equally strong, it can cause confusion or unclear results.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "43. What do you know about the Verilog event scheduler?",
+        "answer": "The Verilog event scheduler is a vital component of simulation, managing event timing and execution in a digital design. It operates on an event-driven approach, responding to changes like signal value alterations or procedural tasks by scheduling and executing events based on simulation time. This scheduler governs the order and timing of events, ensuring accurate simulation of hardware behavior and facilitating validation before real-world implementation.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "44. Explain parameter overriding in Verilog.",
+        "answer": "In Verilog, when you make something using a template (like a module), you can set certain values that can be changed later when you actually use that thing in your project. This changing of values is called “parameter overriding.” It’s like adjusting settings on a machine each time you use it without changing how the machine was originally built. This way, you can customize how each machine works without having to rebuild it every time.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "45. What is #0 in Verilog and its usage?",
+        "answer": "In Verilog, #0 represents instant event scheduling in the operating system, causing actions to happen immediately within the same simulation time frame without any delay. This immediate scheduling is crucial for executing tasks or events promptly without waiting for simulation time to progress.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "46. Write a Verilog code for 5:1 MUX",
+        "answer": "module mux_5to1(input [4:0] data, input [2:0] sel, output reg out);\n\n    always @(*)\n        case(sel)\n            3'b000: out = data[0];\n            3'b001: out = data[1];\n            3'b010: out = data[2];\n            3'b011: out = data[3];\n            3'b100: out = data[4];\n            default: out = 1'bx; // Default value for unassigned selectors\n        endcase\nEndmodule\nExplanation:\nThis code defines a 5:1 Multiplexer (mux_5to1) with five inputs (data) and a three-bit select signal (sel). The output (out) selects one of the five inputs based on the selected signal. If the select signal doesn’t match any defined case, the output is set to an ‘X’ value (1’bx).",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "47. What are synchronous and asynchronous resets? Can you explain using DFF and write their Verilog code?",
+        "answer": "In digital circuits, a D Flip-Flop (DFF) is like a tiny memory unit. It holds information and works with a clock.\nSynchronous Reset:\nImagine resetting your watch exactly at noon. That’s like a synchronous reset. It clears the flip-flop’s memory precisely when the clock ticks. Here’s a Verilog code for a D Flip-Flop with synchronous reset:\nmodule dff_sync_reset(\n    input wire clk, reset,\n    input wire d,\n    output reg q\n);\n    always @(posedge clk or posedge reset)\n        if (reset)\n            q <= 1'b0; // Resetting to '0'\n        else\n            q <= d;\nendmodule\nAsynchronous Reset:\nNow, picture instantly resetting your watch, no matter what time it is. That's like an asynchronous reset. It clears the flip-flop's memory immediately, not waiting for anything else.\nHere's a Verilog code for a D Flip-Flop with asynchronous reset:\nmodule dff_async_reset(\n    input wire clk, reset,\n    input wire d,\n    output reg q\n);\n    always @(posedge clk or posedge reset)\n        if (reset)\n            q <= 1'b0; // Resetting to '0'\n        else\n            q <= d;\nendmodule\nIn both cases, these bits of Verilog code describe how a memory unit works, with one type resetting at specific clock times (synchronous) and the other resetting instantly (asynchronous).",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "48. Explain Regular Delay Control and Intra-Assignment Delay Control.",
+        "answer": "Here is a brief explanation of the following terms: \nRegular Delay Control: It’s like setting a timer before doing something in Verilog. For instance, #10 means waiting for 10 counts before moving on to the next task.\nIntra-Assignment Delay Control: This is about adding delays to specific actions in Verilog. For example, it’s like saying, “Wait 5 counts before changing this thing.”",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "49. How can you override the existing parameter value?",
+        "answer": "To change a default setting in Verilog, you can give new instructions when you’re using a module. These new instructions will replace the default settings inside the module without changing the module’s original rules.",
+        "reference": "intellipaat.com",
+        "role": "verilog"
+    },
+    {
+        "question": "1) What is Verilog?",
+        "answer": "Verilog is a Hardware Description Language (HDL) used for describing a digital system such as a network switch, a microprocessor, a memory, or a flip-flop. Verilog is mainly used to verify analog circuits, mixed-signal circuits, and the design of genetic circuits. It is also used in the design and verification of digital circuits at the register-transfer level of abstraction.\nVerilog supports a design mainly at the following three levels of abstraction:\nADVERTISEMENT\nBehavioral level\nRegister-transfer level\nGate level",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "2) Who is the founder of the Verilog programming language?",
+        "answer": "Verilog was introduced by Prabhu Goel, Phil Moorby, Chi-Lai Huang, and Douglas Warmke between late 1983 and early 1984.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "3) What is VHDL? / What is the full form of VHDL in VLSI?",
+        "answer": "VHDL is an acronym that stands for Very high-speed integrated circuit Hardware Description Language. It is a programming language used to describe circuits in digital systems and model the digital system by using dataflow, behavioral and structural style of modeling.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "4) What are the different variants of the VHDL?",
+        "answer": "VHDL is defined by IEEE standards and has mainly two common variants:\nVHDL-1987\nVHDL-1993",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "5) What are the main usages of VHDL?",
+        "answer": "Following are the main usages of VHDL:\nVHDL is hardware describing language used to describe the behavior of electronic circuits, most commonly digital circuits.\nIt is mainly used to design hardware and create test entities to verify the behavior of that hardware.\nIt is used as a design entry format by various EDA tools, such as synthesis tools, simulation tools, and formal verification tools.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "6) Are Verilog and VHDL the same?",
+        "answer": "Verilog and VHDL are not identical. They are different, and the main difference between Verilog and VHDL is that Verilog is based on C language while VHDL is based on Ada and Pascal languages.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "7) What is the difference between Verilog and VHDL?",
+        "answer": "Difference between Verilog and VHDL:\nAlthough both Verilog and VHDL are Hardware Description Languages (HDL) used to describe digital system hardware such as microprocessors and flip-flops. These languages are different from common programming languages. Let's compare them to see the main differences between them:\nVerilog VHDL\nVerilog is a kind of Hardware Description Languages (HDL) that is used to model electronic systems. VHDL is a kind of Hardware Description Languages (HDL) used in electronic design automation to describe digital and mixed-signal systems such as field-programmable gate arrays and integrated circuits.\nVerilog is a newer language than VHDL, as it was introduced in 1984. VHDL is an older Hardware Description Languages as compared to Verilog as it was introduced in 1980.\nVerilog is based on the C language. VHDL is based on Ada and Pascal languages.\nVerilog is a case-sensitive language. VHDL is not a case-sensitive language.\nVerilog is a simple and easy-to-learn language. VHDL is complex in comparison to the Verilog language.\nVerilog mainly focuses on hardware modeling but has a lower level of programming constructs. So, it is not as verbose as VHDL. VHDL is a rich and strongly typed language. It is deterministic and more verbose than Verilog.\nVerilog is more compact than VHDL. In VHDL, you have to write more lines of code.\nVerilog is weakly typed and deterministic. All data types are predefined in Verilog, and each has a bit-level representation. VHDL is self-documenting and often catches errors missed by Verilog. It focuses on unambiguous semantics and also allows portability between tools.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "8) What are HDL simulators?",
+        "answer": "HDL simulators are software packages that are used to simulate expressions written in one of the Hardware Description Languages, such as Verilog, VHDL, SystemVerilog.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "9) What is the difference between blocking and non-blocking in Verilog?",
+        "answer": "There are two types of procedural assignment statements in Verilog known as blocking and non-blocking. You can identify them as they use different assignment operators represented by the symbols = and <=.\nBlocking: The blocking assignment statement is very much similar to older programming languages. As the name suggests, it blocks the current process until it complete. It completes the entire statement at once before control moves on to the following statement.\nNon-blocking: The non-blocking assignment statement or operator assesses all the right-hand sides for the current time unit and chooses the left-hand sides later after the time unit.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "10) What do you understand by Verilog full case statements and Verilog parallel case statements?",
+        "answer": "There are two types of case statements in Verilog.\nVerilog full case statements\nVerilog parallel case statements\nVerilog full case statements\nThe Verilog full case statements are statements in which binary patterns of every potential case expression can match either a case item or default. If your considered case statement does not involve a case default and is likely to discover a binary case expression that does not match any of the defined case items, the case statement would not be considered full.\nVerilog parallel case statements\nA parallel case statement is a statement where it matches a case expression, just one case item. If you can find a case expression that would fit more than one case item, the matching case items are called 'overlapping case items,' and the case statement would be not parallel.\"",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "11) What are the main differences between Task and Function in Verilog?",
+        "answer": "Following is a list of main differences between a Task and a Function in Verilog:\nFunctions Tasks\nIn Verilog, a function cannot enable a task; however, a function can enable other functions. In Verilog, tasks can enable a function as well as enable other versions of tasks.\nA function cannot contain any event, delay, or timing control statements because they are not permitted. A task can contain any event, delay, or timing control statements because it is allowed to contain any of these statements.\nA function can carry out its required duty in zero simulation time because the program time is not incremented during the function routine. Tasks also run with a zero simulation. But if required, they can also be executed in a non-zero simulation time.\nAt the time of the invocation of a function, it must pass at least one argument. A task is allowed to use zero or more arguments of type output or input.\nFunctions only return a single value and cannot use either output or input statements. A task cannot return a value but can pass multiple values via the output and input statements.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "12) What is the full form of PLI? Why is it used?",
+        "answer": "PLI is an acronym that stands for Programming Language Interface. It is a mechanism that facilitates interfacing between Verilog programs and programs written in C language. It also provides a mechanism used to access the internal databases of the simulator within the C program. Using Verilog syntax, the users can utilize PLI to implement difficult system calls. It also provides the advantage of both the parallel and hardware-related features of Verilog and the sequential progress of a C program.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "13) What do you understand by Sensitivity list?",
+        "answer": "The sensitivity list is used to specify that when you make changes in any one of the elements in the list change, begin end statement inside that always will get executed.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "14) What is the difference between == and === in Verilog?",
+        "answer": "Following is a list of main differences between == and === in Verilog:\n== ===\nIn Verilog, the main difference between == and === is that the output of == can be either 1, 0 or X. On the other hand, the output of === can only be 0 or 1.\nIf you compare two numbers using == and if one or both the figures have one or more bits as X, then the output would be X. If you are comparing two numbers using ===, the output would be 0 or 1.\n== can only be used to compare 1s and 0s since it cannot compare Xs. === can also be used to compare Xs.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "15) What do you understand by $monitor, $display, and $strobe?",
+        "answer": "The $monitor, $display, and $strobe are commands with similar syntax and show text on the screen while running a simulation. These commands are typically less convenient to use than waveform tools, such as cwaves. The $display and $strobe command appear once each time you execute them, but the $monitor command is used to display each time you change one of the parameters.\n\nThe main difference between the $display and the $strobe command is that the $strobe command is used to display the parameters after the current simulation time unit. On the other hand, the $display command displays the parameters when you execute it. In these commands, the format sequence is similar to C/C++ and sometimes contains format characters. The most commonly-used format characters are \"%d\" for decimal, \"%h\" for hexadecimal, \"%b\" for binary, \"%c\" for character, \"%s\" for string, \"%t\" for time, and \"%m\" for hierarchy level.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "16) What is the difference between $monitor and $display?",
+        "answer": "The $monitor and $display are system functions or command and are used to see the test bench results. Following is a list of some key differences between $monitor and $display.\n$monitor $display\nThe monitor is used to make changes in the value of the signal. A signal can be variable, string, or expression. It is used to display the value of a signal.\nThe monitor command can be invoked only once. The display command can be invoked more than once.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "17) What are the main differences between Wire and Reg?",
+        "answer": "Key differences between Wire and Reg\nWire Reg\nThe wire is used to assume value. Reg is used to hold value.\nWire requires drivers to get output values. Reg does not need a driver to get output.\nThe wire elements can only be used to model combinational logic. The reg elements can also be used for combinational as well as sequential logic.\nWe can use wire at the left-hand side of an assigned statement. We cannot use reg on the left-hand side of an assigned statement.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "18) What is the process to execute blocking and non-blocking assignments?",
+        "answer": "There is a simple process to execute blocking and non-blocking assignments. To execute blocking assignments, we have to use a simple process of evaluating the right-hand side equation and updating the left-hand side expression without interference from another Verilog statement. A function of a blocking assignment is to block trailing assignments until after the completion of the current assignment. On the other hand, the process of executing non-blocking assignments needs two steps:\nEvaluate the right-hand side of all non-blocking statements at the start of the time step.\nUpdate the left-hand side of all non-blocking statements after the time step.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "19) What do you understand by continuous assignment?",
+        "answer": "In Verilog, the continuous assignment statements are used to model combinational logic. By combinational logic, we mean the digital logic implemented by Boolean circuits. In combinational logic, the output is a pure function only of present inputs. The combinational logic is completely different from sequential logic, where the present input depends on the present input and the past inputs. The continuous assignment statements are implemented with an assigned statement or with a wire declaration.\nA continuous assignment is used to drive values to the net. The left-hand side can be scalar, vector net, or concatenation of both, while the right-hand side can be scalar or vector net or register or concatenation of both.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "20) What are the full case and parallel case statements?",
+        "answer": "Full case statement: The full case is a case statement in which all possible case expressions can be matched with case items or case default.\nParallel case statement: A parallel case statement is a case statement in which it is possible to match a case expression with one and only one case item. If you find a case expression that would match more than one case item, the matching case is called an overlapping or non-parallel statement.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "21) What do you understand by transport delay and inertial delay?",
+        "answer": "Transport delay: Transport delay is a type of delay caused by the wires that connect to the gates. Due to the wire's resistance and inductance, it delays the signal.\nInertial delay: The inertial delay is the time it takes for a gate to change its output.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "22) How can you write an FSM code in Verilog?",
+        "answer": "There are mainly four ways to write FSM code in Verilog:\nUsing the first method where all input decoders, present state, and output decoder are combined in one process.\nUsing the second method where all combinational circuits and sequential circuits are separated in a different process.\nUsing the third method, where input decoder and present state are combined, and output decoder are separated in other processes.\nUsing the fourth method, all three input decoders, present state, and output decoder are separated into three processes.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "23) In a pure combinational circuit, is it necessary to mention all the inputs in the sensitivity disk? If yes, then why?",
+        "answer": "Yes. In a pure combinational circuit, it is necessary to mention all the inputs in the sensitivity disk; otherwise, you will get a pre and post-synthesis mismatch in the result.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "24) Which will be updated first between variable and signal?",
+        "answer": "Signals are updated first between variable and signal.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "25) What do you understand by the freeze, deposit, drive, and force command in Verilog?",
+        "answer": "The freeze, deposit, drive, and force are commands used in Verilog that can be defined in the following way:\nFreeze: The freeze command is used to put a value on the signal. This value remains the same throughout the simulation and cannot be overwritten by simulation.\nDeposit: The deposit command is also used to value the signal, but it will hold until it is overwritten. For example, if you deposit 0 to a flip flop, it will remain a '0' until the simulation updates it to a new value. It is like giving an initial value to a signal.\nDrive: The drive command is used to put a value to a signal, and if it is updated by simulation, it will then 'resolve' to a new value. For example, if you drive a signal to '1', and the simulation value is '0', the signal will go 'X.'\nForce: The force is a powerful Verilog command which you can use to drive signals at any timestamp of your simulation.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "26) Write a Verilog code to swap contents of two registers with and without a temporary register?",
+        "answer": "A Verilog code to swap contents of two registers with a temporary register:\nalways @ (posedge clock)  \nbegin  \ntemp=b;  \nb=a;  \na=temp;  \nend  \nA Verilog code to swap contents of two registers without a temporary register:\nalways @ (posedge clock)  \nbegin  \na <= b;  \nb <= a;  \nend",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "27) What does the timescale 1 Ns/ 1 Ps signify in a Verilog code?",
+        "answer": "The timescale directive is a compiler directive used to measure simulation time or delay time. The timescale / reference_time_unit specifies the unit of measurement for times and delays. The time_precision specifies the precision to which the delays are rounded off.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "28) What is the difference between $setup and $hold?",
+        "answer": "In Verilog, the $setup and $hold are used to monitor the setup and hold time constraints for sequential logic. The setup time is the minimum time in which the data must arrive before the active edge of a clock signal. The hold time is the minimum time in which the data cannot change after the active edge of a clock signal.\nThese two constraints are defined in the following image:",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "29) How can you generate a sine wave using the Verilog coding style?",
+        "answer": "In Verilog, the easiest and efficient way to generate sine waves is using CORDIC Algorithm.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "30) What do you understand by casex and casez statements in Verilog?",
+        "answer": "The casex and casez are the types of case statements in Verilog. Here, casez treats all z values in the case alternatives or the case expression as don't cares. All bit positions with z can also be represented by ? in that position. casex treats all x and z values in the case item or the case expression as don't cares. Don't cares are not allowed in the case statement so, we have to use casex and casez.",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    },
+    {
+        "question": "31) What is a repeat loop in Verilog?",
+        "answer": "The repeat loop is used to execute loop fixed for several times. It is not used to loop expression such as we see in the while loop statement. It contains constant, variable, or signal. For example, repeat(5).",
+        "reference": "javatpoint.com",
+        "role": "verilog"
+    }
+]

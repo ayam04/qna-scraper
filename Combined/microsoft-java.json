@@ -1,0 +1,122 @@
+[
+    {
+        "question": "1) How can we check whether the Binary Tree is BST or not?",
+        "answer": "In order to check whether the Binary Tree is BST or not, we simply check whether the left child node is smaller than the current node or not. We also check whether the right child node is greater than the current node or not. For a BST Binary tree, the left child should have smaller, and the right child should have greater value from its parent note.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "2) How to find an element in a sorted array of infinite size?",
+        "answer": "In order to find an element from an infinite sorted array, we set the index at position 100. If the element which we need to found is less from the index, perform the binary search for the last 100 items. Else we set the index at position 200. We set the index by 100 until the item is greater.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "LongestSubString.java\n// import required class and packages  \npackagejavaTpoint.MicrosoftJava;  \n  importjava.util.LinkedHashMap;  \nimportjava.util.Scanner;  \n  publicclassLongestSubString  \n{    \nstaticvoidlongestSubString(String str)  \n    {  \n        //convert the user entered string into character array by using toCharArray()  \n  char[] charArray = str.toCharArray();  \n          // initialize variables to store longest string and length  \n        String subStr = null;  \n  int length = 0;  \n          //Create LinkedHashMap having the key of character type and value of integer type.  \n        //values are the position of the character.  \n  LinkedHashMap<Character, Integer>positionMap = newLinkedHashMap<Character, Integer>();  \n          //iterate string through character array  \nfor (inti = 0; i<charArray.length; i++)   \n        {  \nchar c = charArray[i];  \n              //if the character is not in present in positionMapkeySet, add c as a new key along with its position as values  \nif(!positionMap.containsKey(c))  \n            {  \n    positionMap.put(c, i);  \n            }  \n              //if character c is already present in positionMap, repositioning the cursor i to the position of c and clear the positionMap.   \nelse  \n            {     \ni = positionMap.get(c);  \npositionMap.clear();  \n            }  \n              //update subStr and length  \n  if(positionMap.size() > length)  \n            {  \n                length = positionMap.size();  \n  subStr = positionMap.keySet().toString();  \n            }  \n        }  \n  System.out.println(\"The longest substring is \"+subStr+\" with length \"+length+\".\");  \n    }  \n  publicstaticvoidmain(String[] args)   \n    {     \n        String inputString;  \n              Scanner sc= newScanner(System.in);   \n    System.out.print(\"Enter a string: \");  \n          inputString = sc.nextLine();  \n    sc.close();  \n          longestSubString(inputString);  \n    }     \n}  \nOutput:",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "4) How can we reverse a linked list of size n?",
+        "answer": "Each element of a linked list stores the address of its next element or node. In order to reverse a linked list, we need to store the address of the previous node in each node of the linked list. We can reverse the linked list by using recursion or by using iteration. We use the following steps to reverse a linked list:\nWe first store the head.next in a temporary pointer ptr.\nAfter that, we call the reverseLL(head.next)method.\nWe store the pointer returned by the reverseLL(head.next)in a temporary variable temp.\nWe set the next = head( ptr points to the last node of the reversed list in temp ).\nThe tempvariable points to the first node of the reversed linked list.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "5) How can we remove duplicates from a string?",
+        "answer": "There are various ways through which we can remove duplicates from a string. We can do it by simply adding only distinct characters in the character array, by using BST, by using sorting, by using hashing, by using the unordered_map STL method, or using indexOf() method. Below is a simple example of removing duplicates from a string.\nRemoveDuplicates.java\n// import required classes and packages  \n  packagejavaTpoint.MicrosoftJava;  \nimportjava.util.*;  \n  //create class RemoveDuplicates for removing duplicate characters  \npublicclassRemoveDuplicates {  \n              // create removeChars() method which returns distinct character string  \n        static String removeChars(charcharArray[], int length)  \n        {  \n            // set index to 0  \n            int pos = 0;  \n              // perform iteration on charArray  \n            for (inti = 0; i< length; i++)  \n            {  \n                  // check whether the current character is present before in the string or not.   \n                // if it present, we skip it else we add it to the result  \n                int j;  \n                for (j = 0; j <i; j++)  \n                {  \n                    if (charArray[i] == charArray[j])  \n                    {  \n                        break;  \n                    }  \n                }  \n                if (j == i)  \n                {  \n                    charArray[pos++] = charArray[i];  \n                }  \n            }  \n            returnString.valueOf(Arrays.copyOf(charArray, pos));  \n        }  \n          // Driver code  \n        publicstaticvoidmain(String[] args)  \n        {  \n            String inputString;  \n               Scanner sc= newScanner(System.in);   \n        System.out.print(\"Enter a string: \");  \n              inputString = sc.nextLine();  \n        sc.close();  \n              charcharArray[] = inputString.toCharArray();  \n              System.out.println(\"The string after removing duplicates is: \"+removeChars(charArray, charArray.length));  \n        }  \n}  \nOutput:\nADVERTISEMENT",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "6) How can we merge two unsorted arrays?",
+        "answer": "There are two ways through which we can merge two unsorted arrays in a sorted manner. In the first way, we simply concatenate both the arrays and then sort them by using any sorting technique. In a second way, we sort both the arrays and then we merge them. Let's understand the first way of merging two unsorted arrays:\nMergeUnsortedArrays.java\n// import required classes and packages  \npackagejavaTpoint.MicrosoftJava;  \nimportjava.util.*;  \n  // create class MergeUnsortedArrays to merge them into a single one in a sorted manner  \npublicclassMergeUnsortedArrays {  \n          // create mergeAndSort() method that return sorted merged array  \n    publicstaticvoidmergeAndSort(int array1[], int array2[], intresArray[])  \n    {  \n                  // calculate the length of both the array  \n        int len1 = array1.length;  \n        int len2 = array2.length;  \n                  // merge both the arrays  \nint i = 0, j = 0, k = 0;  \nwhile (i< len1) {  \nresArray[k] = array1[i];  \ni++;  \n            k++;  \n        }  \n  while (j < len2) {  \nresArray[k] = array2[j];  \n            j++;  \n            k++;  \n        }  \n          // perform sorting on resArray  \nArrays.sort(resArray);  \n  System.out.print(\"Sorted merge array: \");  \nfor (int p = 0; p < len1 + len2; p++)  \nSystem.out.print(\" \" + resArray[p]);  \n    }  \n      // main() method start  \npublicstaticvoidmain(String[] args)  \n    {  \nint[] array1 = newint[5];    \nint[] array2 = newint[5];    \n          Scanner sc = newScanner(System.in);    \nSystem.out.println(\"Enter the elements in the first array: \");    \nfor(inti = 0; i< array1.length; i++)    \n        {    \n    array1[i] = sc.nextInt();    \n        }    \n  System.out.println(\"Enter the elements in the second array: \");    \nfor(int j = 0; j < array2.length; j++)    \n        {    \n    array2[j] = sc.nextInt();    \n        }  \n  sc.close();  \n  intresArray[]=newint[array1.length + array2.length];  \n          // call mergeAndSort() method  \nmergeAndSort(array1, array2, resArray);  \n      }  \n}  \nOutput:",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "Node combineLists(Node firstNode, Node secondNode)  \n{  \n        Node head = null;  \n        Node prev = null;  \n    Node tmp = null;  \n    int c = 0; //Carry  \n    intsum;  \n      // use while loop for performing operation until firstNode and secondNode not equals to null  \n    while (firstNode != null || secondNode != null) {  \n        sum = c + (firstNode != null ? firstNode.data : 0) + (secondNode != null ? secondNode.data : 0);  \n          // for the next calculation, update value of c  \n        c = (sum >= 10) ?1 : 0;  \n          //  if value of sum is greater than 10, update value of sum  \n        sum = sum % 10;  \n          // creating new node and set sum as data  \n        tmp = new Node(sum);  \n          if (head == null) {  \n            head = tmp;  \n        }  \n        else {  \n            prev.next = tmp;  \n        }  \n          // Set prev for next insertion  \n        prev = tmp;  \n          if (firstNode != null) {  \n            firstNode = firstNode.next;  \n        }  \n        if (secondNode != null) {  \n            secondNode = secondNode.next;  \n        }  \n    }  \n          if (c> 0) {  \n        tmp.next = new Node(c);  \n    }  \n      return head;  \n}",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "We first take an element from the Preorder traversal and increment the index variable for picking the next element in the next recursive call.\nFrom the picked element, we create a new tree node N.\nNow, we get the index of that picked element from the given Inorder and store it in variable pos.\nWe call the constructTree() method for all the elements that are available before pos and create a tree as a left subtree of node N.\nWe call the constructTree() method for all the elements that are available after pos and create a tree as a right subtree of node N.\nAt last, we return node N.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "FinalConsSubString.java\n//import required classes and packages  \npackagejavaTpoint.MicrosoftJava;  \n  importjava.util.Scanner;  \n  // create class FindConsSubString to find the length of the longest substring, which comprises consecutive characters  \nclassFindConsSubString {  \n      // create getLastIndex() to get last index for the largest valid sub-string starting from index i  \nstaticintgetLastIndex(String str, int n, inti)  \n    {  \ni++;  \nwhile (i< n) {  \ncharcurr = str.charAt(i);  \ncharprev = str.charAt(i - 1);  \n  if ((curr == 'a' &&prev == 'z') || (curr - prev == 1)) {  \n    i++;  \n}else {  \n    break;  \n            }  \n        }  \n  returni - 1;  \n    }  \n      // create getLength() method to get length of the longest sub-string of consecutive characters  \nstaticintgetLength(String inputStr, int length)  \n    {  \nintlen = 0;  \n  int i = 0;  \nwhile (i< length) {  \n              // call getLastIndex() method to get last index because valid sub-string exists from index i to last  \nint last = getLastIndex(inputStr, length, i);  \n  len = Math.max(last - i + 1, len);  \ni = last + 1;  \n        }  \n  returnlen;  \n    }  \n      // Driver code  \npublicstaticvoidmain(String args[])  \n    {  \n    String inputString;  \n              Scanner sc= newScanner(System.in);   \n    System.out.print(\"Enter a string: \");  \n          inputString = sc.nextLine();  \n    sc.close();  \n          System.out.print(getLength(inputString, inputString.length()));  \n    }  \n}  \nOutput:",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "We can easily find these two elements from the array by iterating it using for loop and checking whether element E is presented in the remaining elements of the array or not. If the element is not found, we simply store it in another array and display it on the screen.\nLet's implement the logic for the above theory.\nFindUniqueElements.java\npackagejavaTpoint.MicrosoftJava;  \n  importjava.util.Scanner;  \n  publicclassFindUniqueElements {  \n          publicstaticvoidgetUniqueElements(int array[], int length) {  \n        for (inti = 0; i< length; i++) {  \nint j;  \nfor (j = 0; j < length; j++) {  \n    if (i != j && array[i] == array[j]) {  \n        break;  \n    }  \n            }  \n  if (j == length)  \n    System.out.println(array[i]);  \n        }  \n    }  \n      publicstaticvoidmain(String[] args) {  \n                  Scanner sc = newScanner(System.in);    \n  System.out.println(\"Enter size of the array\");    \nint size = sc.nextInt();    \nint[] array = newint[size];    \n  System.out.println(\"Enter the elements of the array: \");    \nfor(inti = 0; i<array.length; i++){    \n    array[i] = sc.nextInt();    \n        }  \n  sc.close();  \ngetUniqueElements(array, size);           \n      }  \n  }  \nOutput:",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "FindCommonElements.java\npackagejavaTpoint.MicrosoftJava;  \nimportjava.util.Scanner;  \npublicclassFindCommonElements {  \n          publicstaticvoidgetCommonElements(int array1[], int array2[], int array3[], int length) {  \n                  int i = 0, j = 0, k = 0;  \n                  while (i< array1.length && j < array2.length && k < array3.length) {  \nif (array1[i] == array2[j] && array2[j] == array3[k]) {  \n          System.out.print(array1[i]+\" \");  \n    i++; j++; k++;   \n  }elseif (array1[i] < array2[j]) {  \n          i++;  \n  }elseif (array2[j] < array3[k]) {  \n           j++;  \n  }else {  \n           k++;  \n               }  \n        }  \n    }  \n          publicstaticvoidmain(String[] args) {  \n                  Scanner sc = newScanner(System.in);    \n  System.out.println(\"Enter size of the array\");    \nint size = sc.nextInt();    \nint[] array1 = newint[size];    \nint[] array2 = newint[size];  \nint[] array3 = newint[size];  \n  System.out.println(\"Enter the elements of the 1st array: \");    \nfor(inti = 0; i< array2.length; i++){    \n    array1[i] = sc.nextInt();    \n        }  \n  System.out.println(\"Enter the elements of the 2nd array: \");    \nfor(inti = 0; i< array2.length; i++){    \n    array2[i] = sc.nextInt();    \n        }  \n  System.out.println(\"Enter the elements of the 3rd array: \");    \nfor(inti = 0; i< array3.length; i++){    \n    array3[i] = sc.nextInt();    \n        }  \n  sc.close();  \ngetCommonElements(array1, array2, array3, size);  \n              }  \n}  \nOutput:",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "Yes, we can typecast and object in Java. There are basically two ways to typecast an object, i.e., Upcasting and Downcasting.\n\nUpcasting is a type of object typecasting in which a child class object is typecast into a parent class object. It is also known as Generalization or Widening.\nSyntax:\nParent p = new Child()  \nDowncasting is another type of object typecasting in which a parent class reference object is assigned to the child class object. In Java, Downcasting is possible for limited scenarios.\nSyntax:\nParent p = new Child()  \nChild c = (Child)p  \nTo learn more about object typecasting, click here.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "13) How can we determine whether a linked list contains a loop or cycle or not?",
+        "answer": "We use two pointers, i.e., fast and slow at the time of iterating over the linked list. The slow and fast pointers move two and one nodes in each iteration, respectively. If the linked list contains a cycle, both pointers will meet at the same point during iteration.\n\nIf both the pointers point to null, the linked list doesn't contain any loop or cycle in it.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "14) What is double-checked locking in Singleton?",
+        "answer": "Double-checked locking of Singleton is a way to ensure that only a single instance of a Singleton class is created through an application life cycle. The double-checked locking means that the code checks for an existing instance of Singleton class twice with and without locking to double ensure that no more than one instance of Singleton gets created.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "15) What are the scenarios in which we use the transient variable in Java?",
+        "answer": "A transient variable is a special type of variable in Java that is initialized during de-serialization with its default value. At the time of Serialization, the value of the transient variable is not serialized.\nIn order to prevent any object from being serialized, we use the transient variable. We can easily create a transient variable by using the transient keyword.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "In Java, volatile is a keyword that is intended to address variable visibility problems. It is another way of making a class thread-safe. The thread-safe means that multiple threads can use a method or a class instance without any problem.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "17) Can we override the private method in Java?",
+        "answer": "We cannot override the private methods because we cannot access the private methods in the same way as non-private methods. The method overriding is possible in the child class only, and we cannot access the private methods in the child class.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "S.No. HashTable HashMap\n1. It is not synchronized. It is synchronized.\n2. It is thread-safe. It is not thread-safe.\n3. It doesn't contain any null key or value. It contains a single null key and multiple null values.\n4. It is slow. It is very fast in comparison to Hashtable.\n5. It inherits Dictionary class. It inherits AbstractMap class.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "The equals() and the hashcode() are two methods that we can override for an object to be used as the key in HashMap.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    },
+    {
+        "question": "",
+        "answer": "S.No. LinkedList ArrayList\n1. LinkedList internally uses doubly linked list for storing elements. ArrayList internally uses a dynamic array for storing the elements.\n2. Manipulation with LinkedList is faster because of using doubly linked list. Manipulation with ArrayList is slow because of using array internally.\n3. It is faster in comparison to the ArrayList. It implements the List interface only, so it acts as a list.\n4. It is good for manipulation of data. It is efficient to store and access data.",
+        "reference": "javatpoint.com",
+        "role": "microsoft-java"
+    }
+]

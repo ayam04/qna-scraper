@@ -1,5 +1,6 @@
 import os
 import json
+import time
 import tkinter as tk
 from tkinter import ttk
 from selenium import webdriver
@@ -13,6 +14,7 @@ driver_path = "C:/Users/ayamu/python programs/drivers/chromedriver-win64/chromed
 ib_url = "https://www.interviewbit.com/technical-interview-questions/"
 jtp_url = "https://www.javatpoint.com/interview-questions-and-answers"
 itp_url = "https://intellipaat.com/blog/interview-questions/"
+mgl_url = "https://www.mygreatlearning.com/blog/interview-questions/"
 
 options = webdriver.ChromeOptions()
 # options.add_argument("--headless")
@@ -191,7 +193,47 @@ def extract_itp_roles(link):
     except Exception as e:
         print(e)
 
+# MyGreatLearning Roles
+
+def get_mgl_roles():
+    print("Getting MyGreatLearning Roles..")
+    links = []
+    driver.get(mgl_url)
+    try:
+        while True:
+            try:
+                wait = WebDriverWait(driver, 10)
+                load_more_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a.load-more")))
+                driver.execute_script("arguments[0].scrollIntoView();", load_more_button)
+                time.sleep(1)
+                driver.execute_script("arguments[0].click();", load_more_button)
+                time.sleep(2)
+            except Exception as e:
+                print(f"Element click intercepted: {e}")
+                break
+
+        wait = WebDriverWait(driver, 10)
+        wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".main-articles a.content")))
+
+        elements = driver.find_elements(By.CSS_SELECTOR, ".main-articles a.content")
+        for element in elements:
+            links.append(element.get_attribute('href'))
+        # print(len(links))
+        # print(links)
+    except Exception as e:
+        print(e)
+        driver.quit()
+        return
+
+    for link in links:
+        extract_itp_roles(link)
+
+    driver.quit()
+
+def extract_mgl_roles(link):
+    pass
+
 # get_ib_roles()
 # get_jtp_roles()
-get_itp_roles()
-# extract_itp_roles("https://intellipaat.com/blog/interview-question/rest-api-interview-questions/")
+# get_itp_roles()
+# get_mgl_roles()

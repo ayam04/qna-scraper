@@ -1,0 +1,362 @@
+[
+    {
+        "question": "1. What is Apache HBase?",
+        "answer": "It is a column-oriented database that is used to store sparse data sets. It is run on the top of the Hadoop file distributed system. Apache HBase is a database that runs on a Hadoop cluster. Clients can access HBase data through either a native Java API or through a Thrift or REST gateway, making it accessible by any language. Some of the key properties of HBase include:\nNoSQL: HBase is not a traditional relational database (RDBMS). HBase relaxes the ACID (Atomicity, Consistency, Isolation, Durability) properties of traditional RDBMS systems in order to achieve much greater scalability. Data stored in HBase also does not need to fit into a rigid schema like with an RDBMS, making it ideal for storing unstructured or semi-structured data.\nWide-Column: HBase stores data in a table-like format with the ability to store billions of rows with millions of columns. Columns can be grouped together in “column families” which allows physical distribution of row values onto different cluster nodes.\nDistributed and Scalable: HBase group rows into “regions” which define how table data is split over multiple nodes in a cluster. If a region gets too large, it is automatically split to share the load across more servers.\nConsistent: HBase is architected to have “strongly-consistent” reads and writes, as opposed to other NoSQL databases that are “eventually consistent”. This means that once a writer has been performed, all read requests for that data will return the same value.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "2. Compare HBase & Cassandra",
+        "answer": "Learn about the brief comparison between HBase and Cassandra using this table.\nCriteria HBase Cassandra\nThe basis for the cluster Hadoop Peer-to-peer\nBest suited for Batch Jobs Data writes\nThe API REST/Thrift Thrift",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "3. Give the name of the key components of HBase",
+        "answer": "The key components of HBase are Zookeeper, RegionServer, Region, Catalog Tables and HBase Master.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "4. What is S3?",
+        "answer": "S3 stands for simple storage service and it is a one of the file system used by hbase.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "5. What is the use of get() method?",
+        "answer": "get() method is used to read the data from the table.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "6. What is the reason of using HBase?",
+        "answer": "HBase is used because it provides random read and write operations and it can perform a number of operation per second on a large data sets.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "7. In how many modes HBase can run?",
+        "answer": "There are two run modes of HBase i.e. standalone and distributed.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "8. Define the difference between hive and HBase?",
+        "answer": "HBase is used to support record level operations but hive does not support record level operations.\nCompare Hive and HBase: which one is best for your needs? Learn more in our Hive vs Hbase blog now!",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "9. Define column families?",
+        "answer": "It is a collection of columns whereas row is a collection of column families.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "10. Define standalone mode in HBase?",
+        "answer": "It is a default mode of HBase. In standalone mode, HBase does not use HDFS—it uses the local filesystem instead—and it runs all HBase daemons and a local ZooKeeper in the same JVM process.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "11. What is decorating Filters?",
+        "answer": "It is useful to modify, or extend, the behavior of a filter to gain additional control over the returned data.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "12. What is the full form of YCSB?",
+        "answer": "YCSB stands for Yahoo! Cloud Serving Benchmark.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "13. What is the use of YCSB?",
+        "answer": "It can be used to run comparable workloads against different storage systems.\nLearn more about the use of YCSB in HBase in this HBase Tutorial.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "14. Which operating system is supported by HBase?",
+        "answer": "HBase supports those OS which supports java like windows, Linux.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "15. What is the most common file system of HBase?",
+        "answer": "The most common file system of HBase is HDFS i.e. Hadoop Distributed File System.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "Watch Hbase Training on this tutorial:",
+        "answer": "",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "16. Define Pseudodistributed mode?",
+        "answer": "A pseudodistributed mode is simply a distributed mode that is run on a single host.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "17. What is regionserver?",
+        "answer": "It is a file which lists the known region server names.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "18. Define MapReduce.",
+        "answer": "MapReduce as a process was designed to solve the problem of processing in excess of terabytes of data in a scalable way.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "19. What are the operational commands of HBase?",
+        "answer": "Operational commands of HBase are Get, Delete, Put, Increment, and Scan.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "20. Which code is used to open the connection in Hbase?",
+        "answer": "Following code is used to open a connection:\nConfiguration myConf = HBaseConfiguration.create();\nHTableInterface usersTable = new HTable(myConf, “users”);\n\nIntermediate Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "21. Which command is used to show the version?",
+        "answer": "Version command is used to show the version of HBase.\nSyntax – hbase> version",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "22. What is use of tools command?",
+        "answer": "This command is used to list the HBase surgery tools.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "23. What is the use of shutdown command?",
+        "answer": "It is used to shut down the cluster.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "24. What is the use of truncate command?",
+        "answer": "It is used to disable, recreate and drop the specified tables.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "25. Which command is used to run HBase Shell?",
+        "answer": "$ ./bin/hbase shell command is used to run the HBase shell.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "26. Which command is used to show the current HBase user?",
+        "answer": "The whoami command is used to show HBase user.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "27. How to delete the table with the shell?",
+        "answer": "To delete table first disable it then delete it.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "28. What is use of InputFormat in MapReducr process?",
+        "answer": "InputFormat the input data, and then it returns a RecordReader instance that defines the classes of the key and value objects, and provides a next() method that is used to iterate over each input record.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "29. What is the full form of MSLAB?",
+        "answer": "MSLAB stands for Memstore-Local Allocation Buffer.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "30. Define LZO?",
+        "answer": "Lempel-Ziv-Oberhumer (LZO) is a lossless data compression algorithm that is focused on decompression speed, and written in ANSIC.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "31. What is HBaseFsck?",
+        "answer": "HBase comes with a tool called hbck which is implemented by the HBaseFsck class. It provides various command-line switches that influence its behavior.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "32. What is REST?",
+        "answer": "Rest stands for Representational State Transfer which defines the semantics so that the protocol can be used in a generic way to address remote resources. It also provides support for different message formats, offering many choices for a client application to communicate with the server.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "33. Define Thrift?",
+        "answer": "Apache Thrift is written in C++, but provides schema compilers for many programming languages, including Java, C++, Perl, PHP, Python, Ruby, and more.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "34. What are the fundamental key structures of HBase?",
+        "answer": "The fundamental key structures of HBase are row key and column key.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "35. What is JMX?",
+        "answer": "The Java Management Extensions technology is the standard for Java applications to export their status.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "36. What is nagios?",
+        "answer": "Nagios is a very commonly used support tool for gaining qualitative data regarding cluster status. It polls current metrics on a regular basis and compares them with given thresholds.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "37. What is the syntax of describe Command?",
+        "answer": "The syntax of describe command is –\nhbase> describe tablename",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "38. What the is the use of exists command?",
+        "answer": "The exists command is used to check that the specified table is exists or not.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "39. What is the use of MasterServer?",
+        "answer": "MasterServer is used to assign a region to the region server and also handle the load balancing.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "40. What is HBase Shell?",
+        "answer": "HBase shell is a java API by which we communicate with HBase.\n\nAdvanced Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "41. What is the use of ZooKeeper?",
+        "answer": "The zookeeper is used to maintain the configuration information and communication between region servers and clients. It also provides distributed synchronization.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "42. Define catalog tables in HBase?",
+        "answer": "Catalog tables are used to maintain the metadata information.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "43. Define cell in HBase?",
+        "answer": "The cell is the smallest unit of HBase table which stores the data in the form of a tuple.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "44. Define compaction in HBase?",
+        "answer": "Compaction is a process which is used to merge the Hfiles into the one file and after the merging file is created and then old file is deleted. There are different types of tombstone markers which make cells invisible and these tombstone markers are deleted during compaction.\nBecome Master of Apache HBase by going through this online HBase Course.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "45. What is the use of HColumnDescriptor class?",
+        "answer": "HColumnDescriptor stores the information about a column family like compression settings , Number of versions etc.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "46. What is the function of HMaster?",
+        "answer": "It is a MasterServer which is responsible for monitoring all regionserver instances in a cluster.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "47. How many compaction types are in HBase?",
+        "answer": "There are two types of Compaction i.e. Minor Compaction and Major Compaction.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "48. Define HRegionServer in HBase",
+        "answer": "It is a RegionServer implementation which is responsible for managing and serving regions.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "49. Which filter accepts the pagesize as the parameter in HBase?",
+        "answer": "PageFilter accepts the pagesize as the parameter.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "50. Which method is used to access HFile directly without using HBase?",
+        "answer": "HFile.main() method used to access HFile directly without using HBase.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "51. Which type of data HBase can store?",
+        "answer": "HBase can store any type of data that can be converted into the bytes.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "52. What is the use of Apache HBase?",
+        "answer": "Apache HBase is used when you need random, realtime read/write access to your Big Data. This project’s goal is the hosting of very large tables — billions of rows X millions of columns — atop clusters of commodity hardware. Apache HBase is an open-source, distributed, versioned, non-relational database modeled after Google’s Bigtable: A Distributed Storage System for Structured Data by Chang et al. Just as Bigtable leverages the distributed data storage provided by the Google File System, Apache HBase provides Bigtable-like capabilities on top of Hadoop and HDFS.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "53. What are the features of Apache HBase?",
+        "answer": "Linear and modular scalability.\nStrictly consistent reads and writes.\nAutomatic and configurable sharding of tables\nAutomatic failover support between RegionServers.\nConvenient base classes for backing Hadoop MapReduce jobs with Apache HBase tables.\nEasy to use Java API for client access.\n Block cache and Bloom Filters for real-time queries.\nQuery predicate push down via server side Filters\nThrift gateway and an REST-ful Web service that supports XML, Protobuf, and binary data encoding options\n Extensible JRuby-based (JIRB) shell\nSupport for exporting metrics via the Hadoop metrics subsystem to files or Ganglia; or via JMX",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "54. How do I upgrade Maven-managed projects from HBase 0.94 to HBase 0.96+?",
+        "answer": "In HBase 0.96, the project moved to a modular structure. Adjust your project’s dependencies to rely upon the HBase-client module or another module as appropriate, rather than a single JAR. You can model your Maven depency after one of the following, depending on your targeted version of HBase. See Section 3.5, “Upgrading from 0.94.x to 0.96.x” or Section 3.3, “Upgrading from 0.96.x to 0.98.x” for more information.\nMaven Dependency for HBase 0.98\norg.apache.hbase\nhbase-client\n0.98.5-hadoop2\nMaven Dependency for HBase 0.96\norg.apache.hbase\nhbase-client\n0.96.2-hadoop2\nMaven Dependency for HBase 0.94\norg.apache.hbase\nhbase\n0.94.3",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "55. How should I design my schema in HBase?",
+        "answer": "HBase schemas can be created or updated using ‘The Apache HBase Shell’ or by using ‘Admin in the Java API’.\nTables must be disabled when making ColumnFamily modifications, for example:\nConfiguration config = HBaseConfiguration.create();\nAdmin admin = new Admin(conf);\nString table = “myTable”;\nadmin.disableTable(table);\nHColumnDescriptor cf1 = …;\nadmin.addColumn(table, cf1); // adding new ColumnFamily\nHColumnDescriptor cf2 = …;\nadmin.modifyColumn(table, cf2); // modifying existing ColumnFamily\nadmin.enableTable(table);",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "56. What is the Hierarchy of Tables in Apache HBase?",
+        "answer": "The hierarchy for tables in HBase is as follows:\nTables >> Column Families >> Rows\nColumns >> Cells\nWhen a table is created, one or more column families are defined as high-level categories for storing data corresponding to an entry in the table. As is suggested by HBase being “column-oriented”, column family data for all table entries, or rows, are stored together.\nFor a given (row, column family) combination, multiple columns can be written at the time the data is written. Therefore, two rows in an HBase table need not necessarily share the same columns, only column families. For each (row, column-family, column) combination HBase can store multiple cells, with each cell associated with a version, or timestamp corresponding to when the data was written. HBase clients can choose to only read the most recent version of a given cell, or read all versions.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "57. How can I troubleshoot my HBase cluster?",
+        "answer": "Always start with the master log (TODO: Which lines?). Normally it’s just printing the same lines over and over again. If not, then there’s an issue. Google or search-hadoop.com should return some hits for those exceptions you’re seeing.\nAn error rarely comes alone in Apache HBase, usually when something gets screwed up what will follow may be hundreds of exceptions and stack traces coming from all over the place. The best way to approach this type of problem is to walk the log up to where it all began, for example, one trick with RegionServers is that they will print some metrics when aborting so grapping for Dump should get you around the start of the problem.\nRegionServer suicides are ‘normal’, as this is what they do when something goes wrong. For example, if ulimit and max transfer threads (the two most important initial settings, see [ulimit] and dfs.datanode.max.transfer.threads) aren’t changed, it will make it impossible at some point for DataNodes to create new threads that from the HBase point of view is seen as if HDFS was gone. Think about what would happen if your MySQL database was suddenly unable to access files on your local file system, well it’s the same with HBase and HDFS.\nAnother very common reason to see RegionServers committing seppuku is when they enter prolonged garbage collection pauses that last longer than the default ZooKeeper session timeout. For more information on GC pauses, see the 3 part blog post by Todd Lipcon and Long GC pauses above.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "58. Compare HBase with Cassandra?",
+        "answer": "Both Cassandra and HBase are NoSQL databases, a term for which you can find numerous definitions. Generally, it means you cannot manipulate the database with SQL. However, Cassandra has implemented CQL (Cassandra Query Language), the syntax of which is obviously modeled after SQL.\nBoth are designed to manage extremely large data sets. HBase documentation proclaims that an HBase database should have hundreds of millions or — even better — billions of rows. Anything less, and you’re advised to stick with an RDBMS.\nBoth are distributed databases, not only in how data is stored but also in how the data can be accessed. Clients can connect to any node in the cluster and access any data.\nIn both Cassandra and HBase, the primary index is the row key, but data is stored on disk such that column family members are kept in close proximity to one another. It is, therefore, important to carefully plan the organization of column families. To keep query performance high, columns with similar access patterns should be placed in the same column family. Cassandra lets you create additional, secondary indexes on column values. This can improve data access in columns whose values have a high level of repetition — such as a column that stores the state field of a customer’s mailing address.\nHBase lacks built-in support for secondary indexes but offers a number of mechanisms that provide secondary index functionality. These are described in HBase’s online reference guide and on HBase community.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    },
+    {
+        "question": "59. Compare HBase with Hive?",
+        "answer": "Hive can help the SQL savvy to run MapReduce jobs. Since its JDBC compliant, it also integrates with existing SQL-based tools. Running Hive queries could take a while since they go over all of the data in the table by default. Nonetheless, the amount of data can be limited via Hive’s partitioning feature. Partitioning allows running a filter query over data that is stored in separate folders, and only read the data which matches the query. It could be used, for example, to only process files created between certain dates, if the files include the date format as part of their name.\nHBase works by storing data as key/value. It supports four primary operations: put to add or update rows, scan to retrieve a range of cells, get to return cells for a specified row, and delete to remove rows, columns or column versions from the table. Versioning is available so that previous values of the data can be fetched (the history can be deleted every now and then to clear space via HBase compactions). Although HBase includes tables, a schema is only required for tables and column families, but not for columns, and it includes increment/counter functionality.\nHive and HBase are two different Hadoop-based technologies – Hive is an SQL-like engine that runs MapReduce jobs, and HBase is a NoSQL key/value database on Hadoop. But hey, why not use them both? Just like Google can be used for search and Facebook for social networking, Hive can be used for analytical queries while\nHBase for real-time querying. Data can even be read and written from Hive to HBase and back again.",
+        "reference": "intellipaat.com",
+        "role": "hbase"
+    }
+]

@@ -1,0 +1,404 @@
+[
+    {
+        "question": "1. What is the difference between C and C++?",
+        "answer": "The main difference between C and C++ are provided in the table below: C C++\nC is a procedure-oriented programming language. C++ is an object-oriented programming language.\nC does not support data hiding. Data is hidden by encapsulation to ensure that data structures and operators are used as intended.\nC is a subset of C++ C++ is a superset of C.\nFunction and operator overloading are not supported in C Function and operator overloading is supported in C++\nNamespace features are not present in C Namespace is used by C++, which avoids name collisions.\nFunctions can not be defined inside structures. Functions can be defined inside structures.\ncalloc() and malloc() functions are used for memory allocation and free() function is used for memory deallocation. new operator is used for memory allocation and deletes operator is used for memory deallocation. C C++\nC is a procedure-oriented programming language. C++ is an object-oriented programming language.\nC does not support data hiding. Data is hidden by encapsulation to ensure that data structures and operators are used as intended.\nC is a subset of C++ C++ is a superset of C.\nFunction and operator overloading are not supported in C Function and operator overloading is supported in C++\nNamespace features are not present in C Namespace is used by C++, which avoids name collisions.\nFunctions can not be defined inside structures. Functions can be defined inside structures.\ncalloc() and malloc() functions are used for memory allocation and free() function is used for memory deallocation. new operator is used for memory allocation and deletes operator is used for memory deallocation. C C++ C C++ C C++ C is a procedure-oriented programming language. C++ is an object-oriented programming language.\nC does not support data hiding. Data is hidden by encapsulation to ensure that data structures and operators are used as intended.\nC is a subset of C++ C++ is a superset of C.\nFunction and operator overloading are not supported in C Function and operator overloading is supported in C++\nNamespace features are not present in C Namespace is used by C++, which avoids name collisions.\nFunctions can not be defined inside structures. Functions can be defined inside structures.\ncalloc() and malloc() functions are used for memory allocation and free() function is used for memory deallocation. new operator is used for memory allocation and deletes operator is used for memory deallocation. C is a procedure-oriented programming language. C++ is an object-oriented programming language. C is a procedure-oriented programming language. C++ is an object-oriented programming language. C does not support data hiding. Data is hidden by encapsulation to ensure that data structures and operators are used as intended. C does not support data hiding. Data is hidden by encapsulation to ensure that data structures and operators are used as intended. C is a subset of C++ C++ is a superset of C. C is a subset of C++ C++ is a superset of C. Function and operator overloading are not supported in C Function and operator overloading is supported in C++ Function and operator overloading are not supported in C Function and operator overloading is supported in C++ Namespace features are not present in C Namespace is used by C++, which avoids name collisions. Namespace features are not present in C Namespace is used by C++, which avoids name collisions. Functions can not be defined inside structures. Functions can be defined inside structures. Functions can not be defined inside structures. Functions can be defined inside structures. calloc() and malloc() functions are used for memory allocation and free() function is used for memory deallocation. new operator is used for memory allocation and deletes operator is used for memory deallocation. calloc() and malloc() functions are used for memory allocation and free() function is used for memory deallocation. calloc() and malloc() new operator is used for memory allocation and deletes operator is used for memory deallocation.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "2. Explain inheritance",
+        "answer": "Inheritance is the process of creating new classes, called derived classes, from existing classes. These existing classes are called base classes. The derived classes inherit all the capabilities of the base class but can add new features and refinements of their own. Example- Example- Inheritance in C++  Inheritance in C++ Class Bus, Class Car, and Class Truck inherit the properties of Class Vehicle. The most important thing about inheritance is that it permits code reusability.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "3. What are the static members and static member functions?",
+        "answer": "When a variable in a class is declared static, space for it is allocated for the lifetime of the program. No matter how many objects of that class have been created, there is only one copy of the static member. So same static member can be accessed by all the objects of that class. A static member function can be called even if no objects of the class exist and the static function are accessed using only the class name and the scope resolution operator ::",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "4. What are destructors in C++?",
+        "answer": "A constructor is automatically called when an object is first created. Similarly when an object is destroyed a function called destructor automatically gets called. A destructor has the same name as the constructor (which is the same as the class name) but is preceded by a tilde. Example: Example: class A{\n private:\n  int val;\n public:\n  A(int x){           \n   val=x;\n  }\n  A(){                \n  }\n  ~A(){                  //destructor\n  }\n}\nint main(){\n A a(3);     \n return 0;\n} class A{\n private:\n  int val;\n public:\n  A(int x){           \n   val=x;\n  }\n  A(){                \n  }\n  ~A(){                  //destructor\n  }\n}\nint main(){\n A a(3);     \n return 0;\n} class A{ class A private int public int //destructor int main() int main () A a(3) a (3) 3 return 0",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "5. What is an abstract class and when do you use it?",
+        "answer": "A class is called an abstract class whose objects can never be created. Such a class exists as a parent for the derived classes. We can make a class abstract by placing a pure virtual function in the class.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "6. What do you mean by call by value and call by reference?",
+        "answer": "In call by value method, we pass a copy of the parameter is passed to the functions. For these copied values a new memory is assigned and changes made to these values do not reflect the variable in the main function. In call by reference method, we pass the address of the variable and the address is used to access the actual argument used in the function call. So changes made in the parameter alter the passing argument.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "7. Is deconstructor overloading possible? If yes then explain and if no then why?",
+        "answer": "No destructor overloading is not possible. Destructors take no arguments, so there’s only one way to destroy an object. That’s the reason destructor overloading is not possible.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "8. What do you mean by abstraction in C++?",
+        "answer": "Abstraction is the process of showing the essential details to the user and hiding the details which we don’t want to show to the user or hiding the details which are irrelevant to a particular user.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "9. What is a reference in C++?",
+        "answer": "A reference is like a pointer. It is another name of an already existing variable. Once a reference name is initialized with a variable, that variable can be accessed by the variable name or reference name both. For example- int x=10;\nint &ref=x;           //reference variable int x=10;\nint &ref=x;           //reference variable int 10 int //reference variable If we change the value of ref it will be reflected in x. Once a reference variable is initialized it cannot refer to any other variable. We can declare an array of pointers but an array of references is not possible.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "10. Define inline function",
+        "answer": "If a function is inline, the compiler places a copy of the code of that function at each point where the function is called at compile time. One of the important advantages of using an inline function is that it eliminates the function calling overhead of a traditional function.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "11. What do you know about friend class and friend function?",
+        "answer": "A friend class can access private, protected, and public members of other classes in which it is declared as friends. Like friend class, friend function can also access private, protected, and public members. But, Friend functions are not member functions. For example - class A{\n private:\n  int data_a;\n public:\n  A(int x){\n   data_a=x;\n  }\n  friend int fun(A, B);\n}\nclass B{\n private:\n  int data_b;\n public:\n  A(int x){\n   data_b=x;\n  }\n  friend int fun(A, B);\n}\nint fun(A a, B b){\n return a.data_a+b.data_b;\n}\nint main(){\n A a(10);\n B b(20);\n cout<<fun(a,b)<<endl;\n return 0;\n} class A{\n private:\n  int data_a;\n public:\n  A(int x){\n   data_a=x;\n  }\n  friend int fun(A, B);\n}\nclass B{\n private:\n  int data_b;\n public:\n  A(int x){\n   data_b=x;\n  }\n  friend int fun(A, B);\n}\nint fun(A a, B b){\n return a.data_a+b.data_b;\n}\nint main(){\n A a(10);\n B b(20);\n cout<<fun(a,b)<<endl;\n return 0;\n} class A{ class A private int public int friend int fun(A, B) friend int fun (A, B) class B{ class B private int public int friend int fun(A, B) friend int fun (A, B) int fun(A a, B b) int fun (A a, B b) return int main() int main () A a(10) a (10) 10 B b(20) b (20) 20 cout endl return 0 Here we can access the private data of class A and class B.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "12. What are the different data types present in C++?",
+        "answer": "The 4 data types in C++ are given below: Primitive Datatype(basic datatype). Example- char, short, int, float, long, double, bool, etc.\nDerived datatype. Example- array, pointer, etc.\nEnumeration. Example- enum\nUser-defined data types. Example- structure, class, etc. Primitive Datatype(basic datatype). Example- char, short, int, float, long, double, bool, etc. Derived datatype. Example- array, pointer, etc. Enumeration. Example- enum User-defined data types. Example- structure, class, etc.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "13. What are class and object in C++?",
+        "answer": "A class is a user-defined data type that has data members and member functions. Data members are the data variables and member functions are the functions that are used to perform operations on these variables. An object is an instance of a class. Since a class is a user-defined data type so an object can also be called a variable of that data type. A class is defined as- class A{\nprivate:\n int data;\npublic:\n void fun(){\n\n }\n}; class A{\nprivate:\n int data;\npublic:\n void fun(){\n\n }\n}; class A{ class A private int public void fun() void fun () Class and Object in C++  Class and Object in C++ For example, the following is a class car that can have properties like name, color, etc. and they can have methods like speed().",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "14. What is the difference between struct and class?",
+        "answer": "In C++ a structure is the same as a class except for a few differences like security. The difference between struct and class are given below: Structure Class\nMembers of the structure are public by default. Members of the class are private by default.\nWhen deriving a struct from a class/struct, default access specifiers for base class/struct are public. When deriving a class, default access specifiers are private. Structure Class\nMembers of the structure are public by default. Members of the class are private by default.\nWhen deriving a struct from a class/struct, default access specifiers for base class/struct are public. When deriving a class, default access specifiers are private. Structure Class Structure Class Structure Class Members of the structure are public by default. Members of the class are private by default.\nWhen deriving a struct from a class/struct, default access specifiers for base class/struct are public. When deriving a class, default access specifiers are private. Members of the structure are public by default. Members of the class are private by default. Members of the structure are public by default. Members of the class are private by default. When deriving a struct from a class/struct, default access specifiers for base class/struct are public. When deriving a class, default access specifiers are private. When deriving a struct from a class/struct, default access specifiers for base class/struct are public. When deriving a class, default access specifiers are private.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "15. What is operator overloading?",
+        "answer": "Operator Overloading is a very essential element to perform the operations on user-defined data types. By operator overloading we can modify the default meaning to the operators like +, -, *, /, <=, etc. For example - For example - The following code is for adding two complex number using operator overloading- class complex{\nprivate:\n float r, i;\npublic:\n complex(float r, float i){\n  this->r=r;\n  this->i=i;\n }\n complex(){}\n void displaydata(){\n  cout<<”real part = “<<r<<endl;\n  cout<<”imaginary part = “<<i<<endl;\n }\n complex operator+(complex c){\n  return complex(r+c.r, i+c.i);\n }\n};\nint main(){\ncomplex a(2,3);\ncomplex b(3,4);\ncomplex c=a+b;\nc.displaydata();\nreturn 0;\n} class complex{\nprivate:\n float r, i;\npublic:\n complex(float r, float i){\n  this->r=r;\n  this->i=i;\n }\n complex(){}\n void displaydata(){\n  cout<<”real part = “<<r<<endl;\n  cout<<”imaginary part = “<<i<<endl;\n }\n complex operator+(complex c){\n  return complex(r+c.r, i+c.i);\n }\n};\nint main(){\ncomplex a(2,3);\ncomplex b(3,4);\ncomplex c=a+b;\nc.displaydata();\nreturn 0;\n} class complex{ class complex private float public complex float float this this complex void displaydata() void displaydata () cout endl cout imaginary endl complex operator complex return complex int main() int main () complex a(2,3) complex a (2,3) 2 3 complex b(3,4) complex b (3,4) 3 4 complex return 0",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "16. What is polymorphism in C++?",
+        "answer": "Polymorphism in simple means having many forms. Its behavior is different in different situations. And this occurs when we have multiple classes that are related to each other by inheritance. For example, think of a base class called a car that has a method called car brand(). Derived classes of cars could be Mercedes, BMW, Audi - And they also have their own implementation of a cars The two types of polymorphism in c++ are: Compile Time Polymorphism\nRuntime Polymorphism Compile Time Polymorphism Runtime Polymorphism Polymorphism in C++  Polymorphism in C++ Here is a Free C++ course with certification that can help clear your basics of C++ programming. Free C++ course Free C++ course",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "17. Explain constructor in C++",
+        "answer": "The constructor is a member function that is executed automatically whenever an object is created. Constructors have the same name as the class of which they are members so that compiler knows that the member function is a constructor. And no return type is used for constructors. Example: Example: class A{\n private:\n  int val;\n public:\n  A(int x){             //one argument constructor\n   val=x;\n  }\n  A(){                    //zero argument constructor\n  }\n}\nint main(){\n A a(3);     \n\n return 0;\n} class A{\n private:\n  int val;\n public:\n  A(int x){             //one argument constructor\n   val=x;\n  }\n  A(){                    //zero argument constructor\n  }\n}\nint main(){\n A a(3);     \n\n return 0;\n} class A{ class A private int public int //one argument constructor //zero argument constructor int main() int main () A a(3) a (3) 3 return 0",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "18. Tell me about virtual function",
+        "answer": "Virtual function is a member function in the base class that you redefine in a derived class. A virtual function is declared using the virtual keyword. When the function is made virtual, C++ determines which function is to be invoked at the runtime based on the type of the object pointed by the base class pointer. Virtual function",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "19. Compare compile time polymorphism and Runtime polymorphism",
+        "answer": "The main difference between compile-time and runtime polymorphism is provided below: Compile-time polymorphism Run time polymorphism\nIn this method, we would come to know at compile time which method will be called. And the call is resolved by the compiler. In this method, we come to know at run time which method will be called. The call is not resolved by the compiler.\nIt provides fast execution because it is known at the compile time. It provides slow execution compared to compile-time polymorphism because it is known at the run time.\nIt is achieved by function overloading and operator overloading. It can be achieved by virtual functions and pointers.\nExample -\nint add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n}\n  Example -\nclass A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} Compile-time polymorphism Run time polymorphism\nIn this method, we would come to know at compile time which method will be called. And the call is resolved by the compiler. In this method, we come to know at run time which method will be called. The call is not resolved by the compiler.\nIt provides fast execution because it is known at the compile time. It provides slow execution compared to compile-time polymorphism because it is known at the run time.\nIt is achieved by function overloading and operator overloading. It can be achieved by virtual functions and pointers.\nExample -\nint add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n}\n  Example -\nclass A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} Compile-time polymorphism Run time polymorphism Compile-time polymorphism Run time polymorphism Compile-time polymorphism Run time polymorphism In this method, we would come to know at compile time which method will be called. And the call is resolved by the compiler. In this method, we come to know at run time which method will be called. The call is not resolved by the compiler.\nIt provides fast execution because it is known at the compile time. It provides slow execution compared to compile-time polymorphism because it is known at the run time.\nIt is achieved by function overloading and operator overloading. It can be achieved by virtual functions and pointers.\nExample -\nint add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n}\n  Example -\nclass A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} In this method, we would come to know at compile time which method will be called. And the call is resolved by the compiler. In this method, we come to know at run time which method will be called. The call is not resolved by the compiler. In this method, we would come to know at compile time which method will be called. And the call is resolved by the compiler. In this method, we come to know at run time which method will be called. The call is not resolved by the compiler. It provides fast execution because it is known at the compile time. It provides slow execution compared to compile-time polymorphism because it is known at the run time. It provides fast execution because it is known at the compile time. It provides slow execution compared to compile-time polymorphism because it is known at the run time. It is achieved by function overloading and operator overloading. It can be achieved by virtual functions and pointers. It is achieved by function overloading and operator overloading. It can be achieved by virtual functions and pointers. Example -\nint add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n}\n  Example -\nclass A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} Example -\nint add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n} Example - int add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n} int add(int a, int b){\n      return a+b;\n}\nint add(int a, int b, int c){\n      return a+b+c;\n}\n\nint main(){\n    cout<<add(2,3)<<endl;\n    cout<<add(2,3,4)<<endl;\n\n\n     return 0;\n} int add(int a, int b) int add (int a, int b) int int return int add(int a, int b, int c) int add (int a, int b, int c) int int int return int main() int main () add 2 3 add 2 3 4 return 0  Example -\nclass A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} Example - class A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} class A{\n     public:\n          virtual void fun(){\n               cout<<\"base \";\n          }\n};\nclass B: public A{\n     public:\n          void fun(){\n               cout<<\"derived \";\n          }\n};\nint main(){\n     A *a=new B;\n     a->fun();\n\n     return 0;\n} class A{ class A public virtual void fun() virtual void fun () \"base \" class B: class B public public void fun() void fun () \"derived \" int main() int main () new fun return 0",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "20. What are the C++ access specifiers?",
+        "answer": "In C++ there are the following access specifiers: Public: All data members and member functions are accessible outside the class. Public: Protected: All data members and member functions are accessible inside the class and to the derived class. Protected: Private: All data members and member functions are not accessible outside the class. Private:",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "1. What is a copy constructor?",
+        "answer": "A copy constructor is a member function that initializes an object using another object of the same class. Example- Example- class A{\nint x,y;\nA(int x, int y){\n this->x=x;\n this->y=y;\n}\n\n};\nint main(){\nA a1(2,3);\nA a2=a1;     //default copy constructor is called\nreturn 0;\n} class A{\nint x,y;\nA(int x, int y){\n this->x=x;\n this->y=y;\n}\n\n};\nint main(){\nA a1(2,3);\nA a2=a1;     //default copy constructor is called\nreturn 0;\n} class A{ class A int int int this this int main() int main () A a1(2,3) a1 (2,3) 2 3 //default copy constructor is called return 0 We can define our copy constructor. If we don’t define a copy constructor then the default copy constructor is called.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "2. What is the difference between shallow copy and deep copy?",
+        "answer": "The difference between shallow copy and a deep copy is given below: Shallow Copy Deep Copy\nShallow copy stores the references of objects to the original memory address. Deep copy makes a new and separate copy of an entire object with its unique memory address.\nShallow copy is faster. Deep copy is comparatively slower.\nShallow copy reflects changes made to the new/copied object in the original object. Deep copy doesn’t reflect changes made to the new/copied object in the original object Shallow Copy Deep Copy\nShallow copy stores the references of objects to the original memory address. Deep copy makes a new and separate copy of an entire object with its unique memory address.\nShallow copy is faster. Deep copy is comparatively slower.\nShallow copy reflects changes made to the new/copied object in the original object. Deep copy doesn’t reflect changes made to the new/copied object in the original object Shallow Copy Deep Copy Shallow Copy Deep Copy Shallow Copy Deep Copy Shallow copy stores the references of objects to the original memory address. Deep copy makes a new and separate copy of an entire object with its unique memory address.\nShallow copy is faster. Deep copy is comparatively slower.\nShallow copy reflects changes made to the new/copied object in the original object. Deep copy doesn’t reflect changes made to the new/copied object in the original object Shallow copy stores the references of objects to the original memory address. Deep copy makes a new and separate copy of an entire object with its unique memory address. Shallow copy stores the references of objects to the original memory address. Deep copy makes a new and separate copy of an entire object with its unique memory address. Shallow copy is faster. Deep copy is comparatively slower. Shallow copy is faster. Deep copy is comparatively slower. Shallow copy reflects changes made to the new/copied object in the original object. Deep copy doesn’t reflect changes made to the new/copied object in the original object Shallow copy reflects changes made to the new/copied object in the original object. Deep copy doesn’t reflect changes made to the new/copied object in the original object",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "3. What is the difference between virtual functions and pure virtual functions?",
+        "answer": "A virtual function is a member function in the base class that you redefine in a derived class. It is declared using the virtual keyword. Example- Example- class base{\npublic:\n virtual void fun(){\n\n }\n}; class base{\npublic:\n virtual void fun(){\n\n }\n}; class base{ class base public virtual void fun() virtual void fun () A pure virtual function is a function that has no implementation and is declared by assigning 0. It has no body. Example- Example- class base{\npublic:\n virtual void fun()=0;\n}; class base{\npublic:\n virtual void fun()=0;\n}; class base{ class base public virtual void fun() virtual void fun () 0 Here, = sign has got nothing to do with the assignment, and value 0 is not assigned to anything. It is used to simply tell the compiler that a function will be pure and it will not have anybody.",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "4. If class D is derived from a base class B. When creating an object of type D in what order would the constructors of these classes get called?",
+        "answer": "The derived class has two parts, a base part, and a derived part.  When C++ constructs derived objects, it does so in phases. First, the most-base class(at the top of the inheritance tree) is constructed. Then each child class is constructed in order until the most-child class is constructed last. \nSo the first Constructor of class B will be called and then the constructor of class D will be called.  During the destruction exactly reverse order is followed. That is destructor starts at the most-derived class and works its way down to base class.\nSo the first destructor of class D will be called and then the destructor of class B will be called. ",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "5. Can we call a virtual function from a constructor?",
+        "answer": "Yes, we can call a virtual function from a constructor. But the behavior is a little different in this case. When a virtual function is called, the virtual call is resolved at runtime. It is always the member function of the current class that gets called. That is the virtual machine doesn’t work within the constructor. For example- For example- class base{\n private:\n  int value;\n public:\n  base(int x){\n   value=x;\n  }\n  virtual void fun(){\n   \n  }\n}\n\nclass derived{\n private:\n  int a;\n public:\n  derived(int x, int y):base(x){\n   base *b;\n   b=this;\n   b->fun();      //calls derived::fun()\n  }\n  void fun(){\n   cout<<”fun inside derived class”<<endl;\n  }\n} class base{\n private:\n  int value;\n public:\n  base(int x){\n   value=x;\n  }\n  virtual void fun(){\n   \n  }\n}\n\nclass derived{\n private:\n  int a;\n public:\n  derived(int x, int y):base(x){\n   base *b;\n   b=this;\n   b->fun();      //calls derived::fun()\n  }\n  void fun(){\n   cout<<”fun inside derived class”<<endl;\n  }\n} class base{ class base private int public int virtual void fun() virtual void fun () class derived{ class derived private int public int int this //calls derived::fun() void fun() void fun () cout class”< class endl",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "6. What are void pointers?",
+        "answer": "A void pointer is a pointer which is having no datatype associated with it. It can hold addresses of any type. For example- void *ptr; \nchar *str;\np=str;                // no error \nstr=p;                // error because of type mismatch void *ptr; \nchar *str;\np=str;                // no error \nstr=p;                // error because of type mismatch void char // no error // error because of type mismatch We can assign a pointer of any type to a void pointer but the reverse is not true unless you typecast it as str=(char*) ptr; str=(char*) ptr; char",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "7. What is this pointer in C++?",
+        "answer": "The member functions of every object have a pointer named this, which points to the object itself. The value of this is set to the address of the object for which it is called. It can be used to access the data in the object it points to. Example Example class A{\n private:\n  int value;\n public:\n  void setvalue(int x){\n   this->value=x; \n  }\n};\n\nint main(){\n A a;\n a.setvalue(5);\n return 0;\n} class A{\n private:\n  int value;\n public:\n  void setvalue(int x){\n   this->value=x; \n  }\n};\n\nint main(){\n A a;\n a.setvalue(5);\n return 0;\n} class A{ class A private int public void setvalue(int x) void setvalue (int x) int this int main() int main () 5 return 0",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "8. How do you allocate and deallocate memory in C++?",
+        "answer": "The new operator is used for memory allocation and deletes operator is used for memory deallocation in C++. For example- For example- int value=new int;    //allocates memory for storing 1 integer\ndelete value;            // deallocates memory taken by value\n\nint *arr=new int[10];     //allocates memory for storing 10 int\ndelete []arr;               // deallocates memory occupied by arr int value=new int;    //allocates memory for storing 1 integer\ndelete value;            // deallocates memory taken by value\n\nint *arr=new int[10];     //allocates memory for storing 10 int\ndelete []arr;               // deallocates memory occupied by arr int new int //allocates memory for storing 1 integer delete // deallocates memory taken by value int new int 10 //allocates memory for storing 10 int delete // deallocates memory occupied by arr Additional Resources Additional Resources Practice Coding Practice Coding C++ MCQ C++ MCQ C++ Tutorials C++ Tutorials C Interview Questions C Interview Questions Difference Between C and C++ Difference Between C and C++ Difference Between C++ and Java Difference Between C++ and Java Online C++ Compiler Online C++ Compiler Features of C++ Features of C++",
+        "reference": "interviewbit.com",
+        "role": "cpp"
+    },
+    {
+        "question": "1) What is C++?",
+        "answer": "C++ is an object-oriented programming language created by Bjarne Stroustrup. It was released in 1985.\nC++ is a superset of C with the major addition of classes in C language.\nInitially, Stroustrup called the new language \"C with classes\". However, after sometime the name was changed to C++. The idea of C++ comes from the C increment operator ++.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "2) What are the advantages of C++?",
+        "answer": "C++ doesn't only maintains all aspects from C language, it also simplifies memory management and adds several features like:\nADVERTISEMENT\nC++ is a highly portable language means that the software developed using C++ language can run on any platform.\nC++ is an object-oriented programming language which includes the concepts such as classes, objects, inheritance, polymorphism, abstraction.\nC++ has the concept of inheritance. Through inheritance, one can eliminate the redundant code and can reuse the existing classes.\nData hiding helps the programmer to build secure programs so that the program cannot be attacked by the invaders.\nMessage passing is a technique used for communication between the objects.\nC++ contains a rich function library.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "3) What is the difference between C and C++?",
+        "answer": "Following are the differences between C and C++:\nC C++\nC language was developed by Dennis Ritchie. C++ language was developed by Bjarne Stroustrup.\nC is a structured programming language. C++ supports both structural and object-oriented programming language.\nC is a subset of C++. C++ is a superset of C.\nIn C language, data and functions are the free entities. In the C++ language, both data and functions are encapsulated together in the form of a project.\nC does not support the data hiding. Therefore, the data can be used by the outside world.\nC++ supports data hiding. Therefore, the data cannot be accessed by the outside world.\nC supports neither function nor operator overloading. C++ supports both function and operator overloading.\nIn C, the function cannot be implemented inside the structures. In the C++, the function can be implemented inside the structures.\nReference variables are not supported in C language. C++ supports the reference variables.\nC language does not support the virtual and friend functions.\nC++ supports both virtual and friend functions.\nIn C, scanf() and printf() are mainly used for input/output. C++ mainly uses stream cin and cout to perform input and output operations.\n4) What is the difference between reference and pointer?\nFollowing are the differences between reference and pointer:\nReference Pointer\nReference behaves like an alias for an existing variable, i.e., it is a temporary variable.\nThe pointer is a variable which stores the address of a variable.\nReference variable does not require any indirection operator to access the value. A reference variable can be used directly to access the value. Pointer variable requires an indirection operator to access the value of a variable.\nOnce the reference variable is assigned, then it cannot be reassigned with different address values. The pointer variable is an independent variable means that it can be reassigned to point to different objects.\nA null value cannot be assigned to the reference variable. A null value can be assigned to the reference variable.\nIt is necessary to initialize the variable at the time of declaration. It is not necessary to initialize the variable at the time of declaration.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "4) What is the difference between reference and pointer?",
+        "answer": "Following are the differences between reference and pointer:\nReference Pointer\nReference behaves like an alias for an existing variable, i.e., it is a temporary variable.\nThe pointer is a variable which stores the address of a variable.\nReference variable does not require any indirection operator to access the value. A reference variable can be used directly to access the value. Pointer variable requires an indirection operator to access the value of a variable.\nOnce the reference variable is assigned, then it cannot be reassigned with different address values. The pointer variable is an independent variable means that it can be reassigned to point to different objects.\nA null value cannot be assigned to the reference variable. A null value can be assigned to the reference variable.\nIt is necessary to initialize the variable at the time of declaration. It is not necessary to initialize the variable at the time of declaration.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "5) What is a class?",
+        "answer": "The class is a user-defined data type. The class is declared with the keyword class. The class contains the data members, and member functions whose access is defined by the three modifiers are private, public and protected. The class defines the type definition of the category of things. It defines a datatype, but it does not define the data it just specifies the structure of data.\nYou can create N number of objects from a class.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "6) What are the various OOPs concepts in C++?",
+        "answer": "The various OOPS concepts in C++ are:\n\nClass:\nThe class is a user-defined data type which defines its properties and its functions. For example, Human being is a class. The body parts of a human being are its properties, and the actions performed by the body parts are known as functions. The class does not occupy any memory space. Therefore, we can say that the class is the only logical representation of the data.\n\nThe syntax of declaring the class:\nclass student  \n{  \n//data members;  \n//Member functions  \n}  \nObject:\nAn object is a run-time entity. An object is the instance of the class. An object can represent a person, place or any other item. An object can operate on both data members and member functions. The class does not occupy any memory space. When an object is created using a new keyword, then space is allocated for the variable in a heap, and the starting address is stored in the stack memory. When an object is created without a new keyword, then space is not allocated in the heap memory, and the object contains the null value in the stack.\nclass Student  \n{  \n//data members;  \n//Member functions  \n}  \nThe syntax for declaring the object:\nStudent s = new Student();  \nInheritance:\nInheritance provides reusability. Reusability means that one can use the functionalities of the existing class. It eliminates the redundancy of code. Inheritance is a technique of deriving a new class from the old class. The old class is known as the base class, and the new class is known as derived class.\nSyntax\nclass derived_class :: visibility-mode base_class;   \nNote: The visibility-mode can be public, private, protected.\nEncapsulation:\nEncapsulation is a technique of wrapping the data members and member functions in a single unit. It binds the data within a class, and no outside method can access the data. If the data member is private, then the member function can only access the data.\nAbstraction:\nAbstraction is a technique of showing only essential details without representing the implementation details. If the members are defined with a public keyword, then the members are accessible outside also. If the members are defined with a private keyword, then the members are not accessible by the outside methods.\nData binding:\nData binding is a process of binding the application UI and business logic. Any change made in the business logic will reflect directly to the application UI.\nPolymorphism:\nPolymorphism means multiple forms. Polymorphism means having more than one function with the same name but with different functionalities. Polymorphism is of two types:\nStatic polymorphism is also known as early binding.\nDynamic polymorphism is also known as late binding.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "7) What are the different types of polymorphism in C++?",
+        "answer": "Polymorphism: Polymorphism means multiple forms. It means having more than one function with the same function name but with different functionalities.\nPolymorphism is of two types:\n\nRuntime polymorphism\n\nRuntime polymorphism is also known as dynamic polymorphism. Function overriding is an example of runtime polymorphism. Function overriding means when the child class contains the method which is already present in the parent class. Hence, the child class overrides the method of the parent class. In case of function overriding, parent and child class both contains the same function with the different definition. The call to the function is determined at runtime is known as runtime polymorphism.\nLet's understand this through an example:\n#include <iostream>  \nusing namespace std;  \nclass Base  \n{  \n    public:  \n    virtual void show()  \n    {  \n        cout<<\"javaTpoint\";  \n     }  \n};  \nclass Derived:public Base  \n{  \n    public:  \n    void show()  \n    {  \n        cout<<\"javaTpoint tutorial\";  \n    }  \n};  \n  int main()  \n{  \n    Base* b;  \n    Derived d;  \n    b=&d;  \n    b->show();  \n                return 0;  \n}  \nOutput:\njavaTpoint tutorial\nCompile time polymorphism\nCompile-time polymorphism is also known as static polymorphism. The polymorphism which is implemented at the compile time is known as compile-time polymorphism. Method overloading is an example of compile-time polymorphism.\nMethod overloading: Method overloading is a technique which allows you to have more than one function with the same function name but with different functionality.\nMethod overloading can be possible on the following basis:\nThe return type of the overloaded function.\nThe type of the parameters passed to the function.\nThe number of parameters passed to the function.\n\nLet's understand this through an example:\n#include <iostream>  \nusing namespace std;  \nclass Multiply  \n{  \n   public:  \n   int mul(int a,int b)  \n   {  \n       return(a*b);  \n   }  \n   int mul(int a,int b,int c)  \n   {  \n       return(a*b*c);  \n  }  \n };  \nint main()  \n{  \n    Multiply multi;  \n    int res1,res2;  \n    res1=multi.mul(2,3);  \n    res2=multi.mul(2,3,4);  \n    cout<<\"\\n\";  \n    cout<<res1;  \n    cout<<\"\\n\";  \n    cout<<res2;  \n    return 0;  \n}  \nOutput:\n6\n24\nIn the above example, mul() is an overloaded function with the different number of parameters.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "",
+        "answer": "The namespace is a logical division of the code which is designed to stop the naming conflict.\nThe namespace defines the scope where the identifiers such as variables, class, functions are declared.\nThe main purpose of using namespace in C++ is to remove the ambiguity. Ambiquity occurs when the different task occurs with the same name.\nFor example: if there are two functions exist with the same name such as add(). In order to prevent this ambiguity, the namespace is used. Functions are declared in different namespaces.\nC++ consists of a standard namespace, i.e., std which contains inbuilt classes and functions. So, by using the statement \"using namespace std;\" includes the namespace \"std\" in our program.\nSyntax of namespace:\nnamespace namespace_name  \n{  \n //body of namespace;  \n}  \nSyntax of accessing the namespace variable:\nnamespace_name::member_name;  \nLet's understand this through an example:\n#include <iostream>  \nusing namespace std;  \nnamespace addition  \n{  \n    int a=5;  \n    int b=5;  \n    int add()  \n    {  \n        return(a+b);  \n    }  \n}  \n  int main() {  \nint result;  \nresult=addition::add();  \ncout<<result;  \nreturn 0;  \n}  \nOutput:\n10",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "",
+        "answer": "A token in C++ can be a keyword, identifier, literal, constant and symbol.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "10) Who was the creator of C++?",
+        "answer": "Bjarne Stroustrup.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "11) Which operations are permitted on pointers?",
+        "answer": "Following are the operations that can be performed on pointers:\nIncrementing or decrementing a pointer: Incrementing a pointer means that we can increment the pointer by the size of a data type to which it points.\nThere are two types of increment pointers:\n1. Pre-increment pointer: The pre-increment operator increments the operand by 1, and the value of the expression becomes the resulting value of the incremented. Suppose ptr is a pointer then pre-increment pointer is represented as ++ptr.\nLet's understand this through an example:\n#include <iostream>  \nusing namespace std;  \nint main()  \n{  \nint a[5]={1,2,3,4,5};  \nint *ptr;  \nptr=&a[0];  \ncout<<\"Value of *ptr is : \"<<*ptr<<\"\\n\";  \ncout<<\"Value of *++ptr : \"<<*++ptr;  \nreturn 0;  \n}  \nOutput:\nValue of *ptr is : 1\nValue of *++ptr : 2\n2. Post-increment pointer: The post-increment operator increments the operand by 1, but the value of the expression will be the value of the operand prior to the incremented value of the operand. Suppose ptr is a pointer then post-increment pointer is represented as ptr++.\nLet's understand this through an example:\n#include <iostream>  \nusing namespace std;  \nint main()  \n{  \nint a[5]={1,2,3,4,5};  \nint *ptr;  \nptr=&a[0];  \ncout<<\"Value of *ptr is : \"<<*ptr<<\"\\n\";  \ncout<<\"Value of *ptr++ : \"<<*ptr++;  \nreturn 0;  \n}  \nOutput:\nValue of *ptr is : 1\nValue of *ptr++ : 1\nSubtracting a pointer from another pointer: When two pointers pointing to the members of an array are subtracted, then the number of elements present between the two members are returned.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "",
+        "answer": "Std is the default namespace standard used in C++.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "13) Which programming language's unsatisfactory performance led to the discovery of C++?",
+        "answer": "C++was discovered in order to cope with the disadvantages of C.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "14) How delete [] is different from delete?",
+        "answer": "Delete is used to release a unit of memory, delete[] is used to release an array.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "15) What is the full form of STL in C++?",
+        "answer": "STL stands for Standard Template Library.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "16) What is an object?",
+        "answer": "The Object is the instance of a class. A class provides a blueprint for objects. So you can create an object from a class. The objects of a class are declared with the same sort of declaration that we declare variables of basic types.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "17) What are the C++ access specifiers?",
+        "answer": "The access specifiers are used to define how to functions and variables can be accessed outside the class.\nThere are three types of access specifiers:\nPrivate: Functions and variables declared as private can be accessed only within the same class, and they cannot be accessed outside the class they are declared.\nPublic: Functions and variables declared under public can be accessed from anywhere.\nProtected: Functions and variables declared as protected cannot be accessed outside the class except a child class. This specifier is generally used in inheritance.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "18) What is Object Oriented Programming (OOP)?",
+        "answer": "OOP is a methodology or paradigm that provides many concepts. The basic concepts of Object Oriented Programming are given below:\nClasses and Objects: Classes are used to specify the structure of the data. They define the data type. You can create any number of objects from a class. Objects are the instances of classes.\nEncapsulation: Encapsulation is a mechanism which binds the data and associated operations together and thus hides the data from the outside world. Encapsulation is also known as data hiding. In C++, It is achieved using the access specifiers, i.e., public, private and protected.\nAbstraction: Abstraction is used to hide the internal implementations and show only the necessary details to the outer world. Data abstraction is implemented using interfaces and abstract classes in C++.\nSome people confused about Encapsulation and abstraction, but they both are different.\nInheritance: Inheritance is used to inherit the property of one class into another class. It facilitates you to define one class in term of another class.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "19) What is the difference between an array and a list?",
+        "answer": "An Array is a collection of homogeneous elements while a list is a collection of heterogeneous elements.\nArray memory allocation is static and continuous while List memory allocation is dynamic and random.\nIn Array, users don't need to keep in track of next memory allocation while In the list, the user has to keep in track of next location where memory is allocated.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "20) What is the difference between new() and malloc()?",
+        "answer": "new() is a preprocessor while malloc() is a function.\nThere is no need to allocate the memory while using \"new\" but in malloc() you have to use sizeof().\n\"new\" initializes the new memory to 0 while malloc() gives random value in the newly allotted memory location.\nThe new() operator allocates the memory and calls the constructor for the object initialization and malloc() function allocates the memory but does not call the constructor for the object initialization.\nThe new() operator is faster than the malloc() function as operator is faster than the function.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "21) What are the methods of exporting a function from a DLL?",
+        "answer": "There are two ways:\nBy using the DLL's type library.\nTaking a reference to the function from the DLL instance.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "",
+        "answer": "Friend function acts as a friend of the class. It can access the private and protected members of the class. The friend function is not a member of the class, but it must be listed in the class definition. The non-member function cannot access the private data of the class. Sometimes, it is necessary for the non-member function to access the data. The friend function is a non-member function and has the ability to access the private data of the class.\nTo make an outside function friendly to the class, we need to declare the function as a friend of the class as shown below:\nclass sample  \n{  \n   // data members;  \n public:  \nfriend void abc(void);  \n};  \nFollowing are the characteristics of a friend function:\nThe friend function is not in the scope of the class in which it has been declared.\nSince it is not in the scope of the class, so it cannot be called by using the object of the class. Therefore, friend function can be invoked like a normal function.\nA friend function cannot access the private members directly, it has to use an object name and dot operator with each member name.\nFriend function uses objects as arguments.\nLet's understand this through an example:\n#include <iostream>  \nusing namespace std;  \nclass Addition  \n{  \n int a=5;  \n int b=6;  \n public:  \n friend int add(Addition a1)  \n {  \n     return(a1.a+a1.b);  \n }  \n};  \nint main()  \n{  \nint result;  \nAddition a1;  \n result=add(a1);  \n cout<<result;  \nreturn 0;  \n}  \nOutput:\n11",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "23) What is a virtual function?",
+        "answer": "A virtual function is used to replace the implementation provided by the base class. The replacement is always called whenever the object in question is actually of the derived class, even if the object is accessed by a base pointer rather than a derived pointer.\nA virtual function is a member function which is present in the base class and redefined by the derived class.\nWhen we use the same function name in both base and derived class, the function in base class is declared with a keyword virtual.\nWhen the function is made virtual, then C++ determines at run-time which function is to be called based on the type of the object pointed by the base class pointer. Thus, by making the base class pointer to point different objects, we can execute different versions of the virtual functions.\nRules of a virtual function:\nThe virtual functions should be a member of some class.\nThe virtual function cannot be a static member.\nVirtual functions are called by using the object pointer.\nIt can be a friend of another class.\nC++ does not contain virtual constructors but can have a virtual destructor.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "24) When should we use multiple inheritance?",
+        "answer": "You can answer this question in three manners:\nNever\nRarely\nIf you find that the problem domain cannot be accurately modeled any other way.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "25) What is a destructor?",
+        "answer": "A Destructor is used to delete any extra resources allocated by the object. A destructor function is called automatically once the object goes out of the scope.\nRules of destructor:\nDestructors have the same name as class name and it is preceded by tilde.\nIt does not contain any argument and no return type.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "26) What is an overflow error?",
+        "answer": "It is a type of arithmetical error. It happens when the result of an arithmetical operation been greater than the actual space provided by the system.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "27) What is overloading?",
+        "answer": "When a single object behaves in many ways is known as overloading. A single object has the same name, but it provides different versions of the same function.\nC++ facilitates you to specify more than one definition for a function name or an operator in the same scope. It is called function overloading and operator overloading respectively.\nOverloading is of two types:\n\n1. Operator overloading: Operator overloading is a compile-time polymorphism in which a standard operator is overloaded to provide a user-defined definition to it. For example, '+' operator is overloaded to perform the addition operation on data types such as int, float, etc.\nOperator overloading can be implemented in the following functions:\nMember function\nNon-member function\nFriend function\nSyntax of Operator overloading:\nReturn_type classname :: Operator Operator_symbol(argument_list)  \n{  \n      // body_statements;  \n}  \n2. Function overloading: Function overloading is also a type of compile-time polymorphism which can define a family of functions with the same name. The function would perform different operations based on the argument list in the function call. The function to be invoked depends on the number of arguments and the type of the arguments in the argument list.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "28) What is function overriding?",
+        "answer": "If you inherit a class into a derived class and provide a definition for one of the base class's function again inside the derived class, then this function is called overridden function, and this mechanism is known as function overriding.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "29) What is virtual inheritance?",
+        "answer": "Virtual inheritance facilitates you to create only one copy of each object even if the object appears more than one in the hierarchy.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "30) What is a constructor?",
+        "answer": "A Constructor is a special method that initializes an object. Its name must be same as class name.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "31) What is the purpose of the \"delete\" operator?",
+        "answer": "The \"delete\" operator is used to release the dynamic memory created by \"new\" operator.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "32) Explain this pointer?",
+        "answer": "This pointer holds the address of the current object.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "33) What does Scope Resolution operator do?",
+        "answer": "A scope resolution operator(::) is used to define the member function outside the class.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "34) What is the difference between delete and delete[]?",
+        "answer": "Delete [] is used to release the array of allocated memory which was allocated using new[] whereas delete is used to release one chunk of memory which was allocated using new.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "35) What is a pure virtual function?",
+        "answer": "The pure virtual function is a virtual function which does not contain any definition. The normal function is preceded with a keyword virtual. The pure virtual function ends with 0.\nSyntax of a pure virtual function:\nvirtual void abc()=0;   //pure virtual function.  \nLet's understand this through an example:\n#include<iostream>  \nusing namespace std;  \nclass Base  \n{  \n    public:  \n    virtual void show()=0;  \n};  \n  class Derived:public Base  \n{  \n    public:  \n    void show()  \n    {  \n        cout<<\"javaTpoint\";  \n    }  \n};  \nint main()  \n{  \n    Base* b;  \n    Derived d;  \n    b=&d;  \n    b->show();  \n    return 0;  \n}  \nOutput:\njavaTpoint",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "36) What is the difference between struct and class?",
+        "answer": "Structures class\nA structure is a user-defined data type which contains variables of dissimilar data types. The class is a user-defined data type which contains member variables and member functions.\nThe variables of a structure are stored in the stack memory. The variables of a class are stored in the heap memory.\nWe cannot initialize the variables directly. We can initialize the member variables directly.\nIf access specifier is not specified, then by default the access specifier of the variable is \"public\". If access specifier is not specified, then by default the access specifier of a variable is \"private\".\nThe instance of a structure is a \"structure variable\".\nDeclaration of a structure:\nstruct structure_name\n{\n   // body of structure;\n} ;\nDeclaration of class:\nclass class_name\n{\n   // body of class;\n} \nA structure is declared by using a struct keyword. The class is declared by using a class keyword.\nThe structure does not support the inheritance. The class supports the concept of inheritance.\nThe type of a structure is a value type. The type of a class is a reference type.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "37) What is a class template?",
+        "answer": "A class template is used to create a family of classes and functions. For example, we can create a template of an array class which will enable us to create an array of various types such as int, float, char, etc. Similarly, we can create a template for a function, suppose we have a function add(), then we can create multiple versions of add().\nThe syntax of a class template:\ntemplate<class T>  \nclass classname  \n{  \n  // body of class;  \n};  \nSyntax of a object of a template class:\nclassname<type> objectname(arglist);",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "38) What is the difference between function overloading and operator overloading?",
+        "answer": "Function overloading: Function overloading is defined as we can have more than one version of the same function. The versions of a function will have different signature means that they have a different set of parameters.\nOperator overloading: Operator overloading is defined as the standard operator can be redefined so that it has a different meaning when applied to the instances of a class.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    },
+    {
+        "question": "39) What is a virtual destructor?",
+        "answer": "A virtual destructor in C++ is used in the base class so that the derived class object can also be destroyed. A virtual destructor is declared by using the ~ tilde operator and then virtual keyword before the constructor.\nNote: Constructor cannot be virtual, but destructor can be virtual.\nLet's understand this through an example\nExample without using virtual destructor\n#include <iostream>  \nusing namespace std;  \nclass Base  \n{  \n    public:  \n    Base()  \n    {  \n        cout<<\"Base constructor is called\"<<\"\\n\";  \n    }  \n    ~Base()  \n    {  \n        cout<<\"Base class object is destroyed\"<<\"\\n\";  \n    }  \n};  \nclass Derived:public Base  \n{  \n    public:  \n    Derived()  \n    {  \n        cout<<\"Derived class constructor is called\"<<\"\\n\";  \n    }  \n    ~Derived()  \n    {  \n        cout<<\"Derived class object is destroyed\"<<\"\\n\";  \n    }  \n};  \nint main()   \n{  \n  Base* b= new Derived;  \n  delete b;  \n  return 0;  \n    }  \nOutput:\nBase constructor is called\nDerived class constructor is called\nBase class object is destroyed\nIn the above example, delete b will only call the base class destructor due to which derived class destructor remains undestroyed. This leads to the memory leak.\nExample with a virtual destructor\n#include <iostream>  \nusing namespace std;  \nclass Base  \n{  \n    public:  \n    Base()  \n    {  \n        cout<<\"Base constructor is called\"<<\"\\n\";  \n    }  \n    virtual ~Base()  \n    {  \n        cout<<\"Base class object is destroyed\"<<\"\\n\";  \n    }  \n};  \nclass Derived:public Base  \n{  \n    public:  \n    Derived()  \n    {  \n        cout<<\"Derived class constructor is called\"<<\"\\n\";  \n    }  \n    ~Derived()  \n    {  \n        cout<<\"Derived class object is destroyed\"<<\"\\n\";  \n    }  \n};  \nint main()   \n{  \n  Base* b= new Derived;  \n  delete b;  \n  return 0;  \n    }  \nOutput:\nBase constructor is called\nDerived class constructor is called\nDerived class object is destroyed\nBase class object is destroyed\nWhen we use the virtual destructor, then the derived class destructor is called first, and then the base class destructor is called.",
+        "reference": "javatpoint.com",
+        "role": "cpp"
+    }
+]

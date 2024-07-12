@@ -1,0 +1,614 @@
+[
+    {
+        "question": "1. Explain BDP (Branch distribution points).",
+        "answer": "The branch distribution points cannot operate if they can't download content from the standard distribution point. Branch distribution points are instructed to download packages that have been assigned using client policies, then they download the content using standard client components. If the standard distribution point is configured as a protected site system, make sure the branch distribution point is included within the protected boundaries. As long as the computer running the branch distribution point is not included in the protected boundary of the standard distribution point, BDP cannot install the packages it needs. As an example, here is a layout for a branch distribution point:   Having multiple BDPs at the same location will help distribute requests from clients to download package source files. As long as all these branch distribution points have the same protected boundaries, they effectively work together as a group or unit.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "2. What are the essential SCCM features?",
+        "answer": "Following are some of the major features offered by System Center Configuration Manager (SCCM):   Operation System Deployment: SCCM provides an organization with all the tools it needs to deploy an operating system to client computers in a network - either via an image installation or via a scripted installation.\nPatching & Updating of OS: After installing the operating system successfully, SCCM starts patching and updating the systems. WSUS is used in most organizations to patch and update servers. SCCM, however, leverages WSUS' advantages and provides IT, administrators, with active patching in addition to WSUS.\nAsset Tracking: Following the installation of a required operating system and any subsequent updates or patches, such systems must be kept up to date with further timely updates or patches. With SCCM, you can keep track of the hardware and software assets of the system.\nRemote Control: Whenever a user or system encounters an issue requiring further assistance from an IT administrator, they can remotely access the system to assess the issue. Using SCCM's remote-control feature, IT administrators and support engineers can access the system remotely.\nReporting: SCCM comes with a report generation tool that can generate reports based on the criteria outlined by the IT administrators. There are different types of reports based on what is required, such as reports of missing patches or updates, reports of standard configurations, inventory reports, etc.\nInternet Client: SCCM is a truly powerful tool that enables remote access to devices like mobile devices or remote systems without necessarily bringing them into the VPN network. Now, this can be done via an Internet client and an installed PKI (Public Key Infrastructure) certificate. These prerequisites will enable SCCM to automatically connect to that system anywhere in the world to inventory, patch, update, and monitor it.\nDesired Configuration Management (DCM): It is the feature that complies with the IT guidelines laid down by an organization, and the standard configuration of a system cannot be modified/altered. With DCM, you can ensure that your managed systems are compliant with key configuration settings that are important to your organization. It ensures that all systems have the same software setup, drivers, updates, and configuration settings. Operation System Deployment: SCCM provides an organization with all the tools it needs to deploy an operating system to client computers in a network - either via an image installation or via a scripted installation. Operation System Deployment: Patching & Updating of OS: After installing the operating system successfully, SCCM starts patching and updating the systems. WSUS is used in most organizations to patch and update servers. SCCM, however, leverages WSUS' advantages and provides IT, administrators, with active patching in addition to WSUS. Patching & Updating of OS: Asset Tracking: Following the installation of a required operating system and any subsequent updates or patches, such systems must be kept up to date with further timely updates or patches. With SCCM, you can keep track of the hardware and software assets of the system. Asset Tracking: Remote Control: Whenever a user or system encounters an issue requiring further assistance from an IT administrator, they can remotely access the system to assess the issue. Using SCCM's remote-control feature, IT administrators and support engineers can access the system remotely. Remote Control: Reporting: SCCM comes with a report generation tool that can generate reports based on the criteria outlined by the IT administrators. There are different types of reports based on what is required, such as reports of missing patches or updates, reports of standard configurations, inventory reports, etc. Reporting: Internet Client: SCCM is a truly powerful tool that enables remote access to devices like mobile devices or remote systems without necessarily bringing them into the VPN network. Now, this can be done via an Internet client and an installed PKI (Public Key Infrastructure) certificate. These prerequisites will enable SCCM to automatically connect to that system anywhere in the world to inventory, patch, update, and monitor it. Internet Client: Desired Configuration Management (DCM): It is the feature that complies with the IT guidelines laid down by an organization, and the standard configuration of a system cannot be modified/altered. With DCM, you can ensure that your managed systems are compliant with key configuration settings that are important to your organization. It ensures that all systems have the same software setup, drivers, updates, and configuration settings. Desired Configuration Management (DCM):",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "3. Are there any objects that can be migrated or transferred from Configuration Manager 2007 to SCCM 2012?",
+        "answer": "The following are the Objects that can migrate/transfer from CM 2007 to SCCM 2012: Virtual Application Packages \nPackage Distributing software \nCollections and Boundaries \nConfiguration baseline \nConfiguration items \nSoftware Update Deployment Templates \nTask sequences Virtual Application Packages Package Distributing software Collections and Boundaries Configuration baseline Configuration items Software Update Deployment Templates Task sequences",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "4. What is a Content Library?",
+        "answer": "With System Center Configuration Manager 2012, a new concept called the content library was introduced. In short, the content library stores everything related to Configuration Manager efficiently on the disk (distribution point). Whenever the same file appears in two different packages, the content library only stores one copy of that file. There are, however, references indicating the file belongs to both packages. The content library is referred to as the \"single-instance store\" since it contains only one instance of any file. By introducing the content library, we are maximizing storage space and avoiding the distribution of files that are already distributed on the distribution point, so we conserve bandwidth on the WAN.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "5. What do you mean by Inventory in SCCM? Explain its type.",
+        "answer": "In the Inventory module, you can view comprehensive details of the hardware and software of every Windows system on the network. Inventory in SCCM can be divided into the following: Hardware inventory: By using hardware inventory, you can gather data about the hardware configurations of clients' virtual machines in your entire organization.  \nSoftware inventory: Software inventory can provide information about files on client devices. It can also record and analyze data from client devices on the site server. Hardware inventory: By using hardware inventory, you can gather data about the hardware configurations of clients' virtual machines in your entire organization. Hardware inventory: Software inventory: Software inventory can provide information about files on client devices. It can also record and analyze data from client devices on the site server. Software inventory:",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "6. What is a Content Library?",
+        "answer": "With System Center Configuration Manager 2012, a new concept called the content library was introduced. In short, the content library stores everything related to Configuration Manager efficiently on the disk (distribution point). Whenever the same file appears in two different packages, the content library only stores one copy of that file. There are, however, references indicating the file belongs to both packages. The content library is referred to as the \"single-instance store\" since it contains only one instance of any file. By introducing the content library, we are maximizing storage space and avoiding the distribution of files that are already distributed on the distribution point, so we conserve bandwidth on the WAN.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "7. Explain boundaries in SCCM.",
+        "answer": "Microsoft defines a boundary as a network location on the intranet that can contain multiple devices that you want to manage. Boundary groups are basically the logical groups of boundaries. Any number of boundary groups can be included in a hierarchy. Each boundary group may contain any combination of the following types of boundaries: IP subnet \nIPv6 prefix \nActive Directory site name \nIP address range \nVPN IP subnet IPv6 prefix Active Directory site name IP address range VPN A client on the intranet first evaluates its current network location and then uses this location to determine which boundary groups they belong to.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "8. List out the ports that are mostly used in SCCM.",
+        "answer": "The ports mostly used in SCCM are as follows: TCP 2701 \nDefault HTTPS port 443 \nClient to site system HTTP port 80 \nSMB 445 TCP 2701 Default HTTPS port 443 Client to site system HTTP port 80 SMB 445",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "9. What do you mean by SCCM logs?",
+        "answer": "Log files are basically data files containing information about usage patterns, applications, and operations within an operating system, application, server, or other devices. Troubleshooting and fixing issues are easiest when you have the SCCM logs. These are generated on both the client and site servers. The client and server components maintain individual log files for logging/recording process information.  You can identify SCCM log files with the .log or .lo_ extensions.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "10. What is the role of the SCCM Administrator?",
+        "answer": "SCCM administrators are those who supervise and manage the use and control of Systems Center Configuration Manager within a business, ensuring that it is used in the correct way and that it does everything it should. SCCM administrator roles and responsibilities: SCCM administrator roles and responsibilities: An SCCM administrator should have a complete understanding of the operating system they are working with and should ensure that all systems are working smoothly alongside one another.  \nTheir responsibilities include deploying drivers updates, BIOS updates for a range of different models, maintaining configuration baselines, preventing configuration drift, assisting and collaborating with all other teams, and many more within the company to achieve these objectives.  \nSCCM administrators must perform updates when needed, utilizing patches and new builds as necessary to ensure maximum security and usability. An SCCM administrator should have a complete understanding of the operating system they are working with and should ensure that all systems are working smoothly alongside one another. Their responsibilities include deploying drivers updates, BIOS updates for a range of different models, maintaining configuration baselines, preventing configuration drift, assisting and collaborating with all other teams, and many more within the company to achieve these objectives. SCCM administrators must perform updates when needed, utilizing patches and new builds as necessary to ensure maximum security and usability.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "11. Can you explain SMS providers in SCCM?",
+        "answer": "SMS Providers are essentially WMI (Windows Management Instrumentation) providers that provide read and write access to Configuration Manager databases. Configuration Manager administrative users are able to access information stored in a database by using the SMS Provider. It enables access and modifies Configuration Manager data. There must be at least one SMS provider per CAS and primary site. More providers can be installed as necessary. Secondary sites do not support SMS providers.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "12. What do you mean by SCCM client check?",
+        "answer": "When the Configuration Manager client (software) is installed on your Windows devices, you can monitor their health and activity in the Configuration Manager console. Configuration Manager provides different types of information on the client status, such as client checks, client activity, client online status, etc. Generally, a Client check describes the status of the periodic evaluation carried out by the Configuration Manager client on the device. This evaluation can identify some of the problems with the device and remediate them if necessary.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "13. Mention some SCCM Client installation options that are available.",
+        "answer": "SCCM provides several client deployment/installation options, including: Client push installation: This allows you to automatically install the client software on a computer, or on a group of computers.\nManual installation: This allows you to install the client software manually on computers using CCMSetup.exe.\nGroup policy installation: This allows users to access the client software under Add or Remove Programs in the Control Panel and install it from there.\nSoftware update point-based installation: In the case of client software installed on a computer, the computer receives client policies from the site. The policy states the name and port of the software update-point server from which one can obtain software updates.\nLogon script installation: The login script installation is similar to the manual installation. The /logon installation parameter can be specified for CCMSsetup.exe. Whenever a client version is already installed on a computer, this parameter prevents its installation. Client push installation: This allows you to automatically install the client software on a computer, or on a group of computers. Client push installation: Manual installation: This allows you to install the client software manually on computers using CCMSetup.exe. Manual installation: Group policy installation: This allows users to access the client software under Add or Remove Programs in the Control Panel and install it from there. Group policy installation: Software update point-based installation: In the case of client software installed on a computer, the computer receives client policies from the site. The policy states the name and port of the software update-point server from which one can obtain software updates. Software update point-based installation: Logon script installation: The login script installation is similar to the manual installation. The /logon installation parameter can be specified for CCMSsetup.exe. Whenever a client version is already installed on a computer, this parameter prevents its installation. Logon script installation:",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "14. Is there any possible technique to change a secondary site to a primary site?",
+        "answer": "No, the secondary site cannot be changed to the primary site. Changing, moving, or upgrading a site requires deleting and reinstalling the site again. Data may be lost when a site is reset.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "15. Is there any possible way for a secondary site to have child sites?",
+        "answer": "It is not possible for the secondary site to have child sites, since the secondary sites are always child sites to the primary sites.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "16. State difference between primary and secondary sites.",
+        "answer": "The following differences exist between the Primary and Secondary sites in SCCM: Primary Site  Secondary Site \nThe site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. It provides support for devices located at remote locations that have a slow connection to primary sites.\nMicrosoft SQL Database can be accessed at the primary site.  Microsoft SQL Database cannot be accessed at the secondary site. \nClients can be assigned directly to the primary site.  It is not possible to assign clients directly to the secondary site. Secondary sites should be installed as child sites beneath primary sites.\nYou can administer it using the Configuration Manager Console. You can administer it using the primary site.\nA primary site can have its child site, or it can be a child site of another primary site.  Secondary sites cannot have a child site, or it cannot be a child site of other secondary sites. Primary Site  Secondary Site \nThe site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. It provides support for devices located at remote locations that have a slow connection to primary sites.\nMicrosoft SQL Database can be accessed at the primary site.  Microsoft SQL Database cannot be accessed at the secondary site. \nClients can be assigned directly to the primary site.  It is not possible to assign clients directly to the secondary site. Secondary sites should be installed as child sites beneath primary sites.\nYou can administer it using the Configuration Manager Console. You can administer it using the primary site.\nA primary site can have its child site, or it can be a child site of another primary site.  Secondary sites cannot have a child site, or it cannot be a child site of other secondary sites. Primary Site  Secondary Site Primary Site  Secondary Site Primary Site Secondary Site The site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. It provides support for devices located at remote locations that have a slow connection to primary sites.\nMicrosoft SQL Database can be accessed at the primary site.  Microsoft SQL Database cannot be accessed at the secondary site. \nClients can be assigned directly to the primary site.  It is not possible to assign clients directly to the secondary site. Secondary sites should be installed as child sites beneath primary sites.\nYou can administer it using the Configuration Manager Console. You can administer it using the primary site.\nA primary site can have its child site, or it can be a child site of another primary site.  Secondary sites cannot have a child site, or it cannot be a child site of other secondary sites. The site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. It provides support for devices located at remote locations that have a slow connection to primary sites. The site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. It provides support for devices located at remote locations that have a slow connection to primary sites. Microsoft SQL Database can be accessed at the primary site.  Microsoft SQL Database cannot be accessed at the secondary site. Microsoft SQL Database can be accessed at the primary site. Microsoft SQL Database cannot be accessed at the secondary site. Clients can be assigned directly to the primary site.  It is not possible to assign clients directly to the secondary site. Secondary sites should be installed as child sites beneath primary sites. Clients can be assigned directly to the primary site. It is not possible to assign clients directly to the secondary site. Secondary sites should be installed as child sites beneath primary sites. You can administer it using the Configuration Manager Console. You can administer it using the primary site. You can administer it using the Configuration Manager Console. You can administer it using the primary site. A primary site can have its child site, or it can be a child site of another primary site.  Secondary sites cannot have a child site, or it cannot be a child site of other secondary sites. A primary site can have its child site, or it can be a child site of another primary site. Secondary sites cannot have a child site, or it cannot be a child site of other secondary sites.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "17. Explain SCCM Architecture.",
+        "answer": "The SCCM Architecture describes the functionalities and how it can run on different operating systems. Here is a diagram showing the SCCM architecture:   Following are the key components of SCCM system configuration: CAS (Central Administration Site): A CAS or central site is the primary site of SCCM and is located at the top of the configuration manager hierarchy. Additionally, it is referred to as the top-level site in the order. Besides providing a central point of administration, it allows you to manage devices that are distributed throughout a global network. In CAS, only primary sites are supported as child sites, and a single CAS can support 25 child primary sites so as to extend the scale of your hierarchy. This configuration is necessary because a CAS cannot manage devices directly, which is what primary sites do. CAS is used primarily for reporting and administration purposes.\nPrimary site: The site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. Almost every client is connected to the primary site. Here, it should be noted that a primary site can only support child secondary sites. Each primary site is capable of supporting up to 250 secondary sites and the hierarchy of more than 100,000 clients.\nSecondary site: Secondary sites should be installed as child sites beneath primary sites. It is used to deliver management capabilities to devices in locations that do not have a reliable connection to a primary site. Despite the fact that a secondary site generally extends the primary site, it is still the primary site that manages all clients. In order to manage secondary sites, primary site servers are used. Each secondary site has its own SQL database server (SQL Express) that helps establish the connection between clients and primary site servers. Secondary site servers support 5,000 client hierarchies, and they also deploy SCCM clients.\nDistribution point: The distribution point helps the client systems obtain the content (files) necessary for installations (Packages, Applications, OS, Driver Packages, etc.). This can be either a local or remote distribution point. Distribution points can support up to 4,000 clients, and by default, primary sites and secondary sites are also distribution points. CAS (Central Administration Site): A CAS or central site is the primary site of SCCM and is located at the top of the configuration manager hierarchy. Additionally, it is referred to as the top-level site in the order. Besides providing a central point of administration, it allows you to manage devices that are distributed throughout a global network. In CAS, only primary sites are supported as child sites, and a single CAS can support 25 child primary sites so as to extend the scale of your hierarchy. This configuration is necessary because a CAS cannot manage devices directly, which is what primary sites do. CAS is used primarily for reporting and administration purposes. CAS (Central Administration Site): Primary site: The site is used to manage devices directly as well as manage bandwidth when your managed devices are distributed across different locations. Almost every client is connected to the primary site. Here, it should be noted that a primary site can only support child secondary sites. Each primary site is capable of supporting up to 250 secondary sites and the hierarchy of more than 100,000 clients. Primary site: Secondary site: Secondary sites should be installed as child sites beneath primary sites. It is used to deliver management capabilities to devices in locations that do not have a reliable connection to a primary site. Despite the fact that a secondary site generally extends the primary site, it is still the primary site that manages all clients. In order to manage secondary sites, primary site servers are used. Each secondary site has its own SQL database server (SQL Express) that helps establish the connection between clients and primary site servers. Secondary site servers support 5,000 client hierarchies, and they also deploy SCCM clients. Secondary site: Distribution point: The distribution point helps the client systems obtain the content (files) necessary for installations (Packages, Applications, OS, Driver Packages, etc.). This can be either a local or remote distribution point. Distribution points can support up to 4,000 clients, and by default, primary sites and secondary sites are also distribution points. Distribution point:",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "1. What do you mean by out of band management?",
+        "answer": "Out-of-band management in SCCM offers powerful management control for PCs/computers that are equipped with the Intel vPro chipset and a version of Intel AMT (Intel Active Management Technology) that Configuration Manager supports. When a computer is in hibernation, off, or otherwise unresponsive through the operating system, an administrative user can still connect to its AMT management controller via out of band management. Other tasks associated with out of band management include: Turning on one or more computers (for example, to perform maintenance outside of business hours).\nTurning off one or more computers in the network (e.g., the operating system no longer responds).\nStart a non-functioning computer or boot from a local device, etc. Turning on one or more computers (for example, to perform maintenance outside of business hours). Turning off one or more computers in the network (e.g., the operating system no longer responds). Start a non-functioning computer or boot from a local device, etc. Conclusion Despite the fact that other jobs exist, the SCCM role is unique, and therefore the demand for individuals with SCCM skills is even greater. SCCM positions are available almost everywhere. Possibly now you would like to pursue a career as an SCCM Engineer or Administrator? If so, you've come to the right place. Here, we have compiled a list of the top 30+ SCCM interview questions & answers for freshers and experienced professionals.  Having done enough research, we've selected the best SCCM questions that are frequently asked in interviews. We hope that it will help you revise your SCCM knowledge to prepare for your interview much more confidently and help you to land an SCCM job more easily. Useful Resources: Useful Resources: Android Interview Questions\niOS Interview Questions\nOperating System Interview Questions\nLinux Interview Questions\nUnix Interview Questions\nPowerShell Interview Questions\nCoding Interview Questions\nTechnical Interview Questions Android Interview Questions Android Interview Questions iOS Interview Questions iOS Interview Questions Operating System Interview Questions Operating System Interview Questions Linux Interview Questions Linux Interview Questions Unix Interview Questions Unix Interview Questions PowerShell Interview Questions PowerShell Interview Questions Coding Interview Questions Coding Interview Questions Technical Interview Questions Technical Interview Questions",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "2. What are the importance of asset intelligence and asset tracking in SCCM?",
+        "answer": "Asset Intelligence: Asset Intelligence in Configuration Manager identifies and manages the software you've stocked in your environment. It allows you to track and manage software license usage within your enterprise.  \nAsset Tracking: Asset tracking is the process of tracking updates or packages of assets by collecting inventory data about the assets (both hardware and software). Following the installation of a required operating system and any subsequent updates or patches, such systems must be kept up to date with further timely updates or patches. With SCCM, you have access to tools for keeping track of the hardware and software assets of the system. Asset Intelligence: Asset Intelligence in Configuration Manager identifies and manages the software you've stocked in your environment. It allows you to track and manage software license usage within your enterprise. Asset Intelligence: Asset Tracking: Asset tracking is the process of tracking updates or packages of assets by collecting inventory data about the assets (both hardware and software). Following the installation of a required operating system and any subsequent updates or patches, such systems must be kept up to date with further timely updates or patches. With SCCM, you have access to tools for keeping track of the hardware and software assets of the system. Asset Tracking:",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "3. Explain cloud management dashboard.",
+        "answer": "You can monitor clients and network traffic once the cloud management gateway (CMG) has been set up and clients are connected to it. With the cloud management dashboard, you'll have a centralized view of CMG usage. Additionally, it displays information about cloud users and devices. As shown in the following screenshot, the Cloud Management Dashboard contains a specific section that pertains to the CMG:  ",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "4. List out the different discovery methods available in SCCM.",
+        "answer": "The different types of Discovery methods that are available in SCCM are as follows: Active Directory System Discovery \nActive Directory Security Group Discovery \nActive Directory User Discovery \nNetwork Discovery \nForest Discovery \nHeartbeat Discovery Active Directory System Discovery Active Directory Security Group Discovery Active Directory User Discovery Network Discovery Forest Discovery Heartbeat Discovery",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "5. What is the SCCM Console?",
+        "answer": "A SCCM console is basically an administrative tool that administrators can use to perform a variety of tasks, including device management, application deployment, network and server administration, etc. SCCM admins can easily manage applications, packages, OS (Operating system) deployments, and many more administrative functions using SCCM Console.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "6. Explain Deployment share SCCM.",
+        "answer": "SCCM deployment shares are basically repositories or places where you store OS images, language packs, applications, device drivers, and other software that needs to be deployed to target machines. MDT (Microsoft Deployment Toolkit) simplifies the deployment process by condensing the following two features into a single feature (the deployment share). Distribution share: This consists of operating system source files, application source files, out-of-box drivers and packages. \nDeployment point: This provides the necessary files for accessing the distribution share and installing a build from it. Distribution share: This consists of operating system source files, application source files, out-of-box drivers and packages. Distribution share: Deployment point: This provides the necessary files for accessing the distribution share and installing a build from it. Deployment point:",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "7. What do you mean by site system, site server, and site system roles? List out some important site system roles.",
+        "answer": "Site System: The word \"site system\" refers to any computer that runs or uses a supported version of Windows. Another possibility is that it may be a shared folder that hosts a single site system role or many. \nSite Server: Any computer, whether a server or workstation, on which a site system role is installed is referred to as a site server. These servers host services needed for Configuration Manager. \nSite System Role: A site system role is a way to provide additional functionality to a site. Install site system role on-site to provide additional functionalities as follows: \nManagement Point \nDistribution point \nReporting point \nPXE service point \nState migration point \nSoftware update point \nServer locator point \nFallback status point Site System: The word \"site system\" refers to any computer that runs or uses a supported version of Windows. Another possibility is that it may be a shared folder that hosts a single site system role or many. Site System: Site Server: Any computer, whether a server or workstation, on which a site system role is installed is referred to as a site server. These servers host services needed for Configuration Manager. Site Server: Site System Role: A site system role is a way to provide additional functionality to a site. Install site system role on-site to provide additional functionalities as follows: \nManagement Point \nDistribution point \nReporting point \nPXE service point \nState migration point \nSoftware update point \nServer locator point \nFallback status point Site System Role: Management Point \nDistribution point \nReporting point \nPXE service point \nState migration point \nSoftware update point \nServer locator point \nFallback status point Management Point Distribution point Reporting point PXE service point State migration point Software update point Server locator point Fallback status point",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "8. What are senders in SCCM and write their type?",
+        "answer": "Communication between Configuration Manager sites must happen through one or more senders, and these senders can only be installed or deployed on primary or secondary site server systems. Instead of providing connectivity to sites, senders use existing network connections for managing connectivity, ensuring the integrity of transferred data, recovering from errors, and closing connections when they are no longer required. SCCM has the following types of senders: Standard Sender: By default, all primary and secondary sites are configured with the standard sender. In the case of site-to-site communications over a LAN (Local Area Network) that uses a supported protocol, you do not have to install an additional sender. \nCourier Sender: Primary and secondary sites are all configured with the courier sender by default. However, it cannot be created or displayed in the Configuration Manager console. The reason for this is that you need to start it manually from the Configuration Manager programs folder on your Start menu. As opposed to sending data over the network, courier senders are essentially used for software distribution in order to send package data via physical media to another site. Standard Sender: By default, all primary and secondary sites are configured with the standard sender. In the case of site-to-site communications over a LAN (Local Area Network) that uses a supported protocol, you do not have to install an additional sender. Standard Sender: Courier Sender: Primary and secondary sites are all configured with the courier sender by default. However, it cannot be created or displayed in the Configuration Manager console. The reason for this is that you need to start it manually from the Configuration Manager programs folder on your Start menu. As opposed to sending data over the network, courier senders are essentially used for software distribution in order to send package data via physical media to another site. Courier Sender:",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "9. What are the different prerequisites required for the Software update point?",
+        "answer": "Following are the different prerequisites required for the Software update point: Windows update agent \nWindows Installer \nNetwork load balancing \nSite Server communication \nWindows Server Update Services \nBackground Intelligent Transfer Server Windows update agent Windows Installer Network load balancing Site Server communication Windows Server Update Services Background Intelligent Transfer Server",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "10. What do you mean by SUP (Software Update Point)?",
+        "answer": "SUP (Software Update Points) are essentially system roles that are installed on WSUS (Windows Server Update Service) servers and allow you to create packages of software updates based on various criteria. Also, SCCM allows you to create lists of devices that need to be updated as well as set up maintenance windows with a start date and end time, as well as a recurrence pattern. As soon as a package is created, it is distributed to one or more distribution points. Based on ADRs (Automated Deployment Rules), SCCM's powerful scheduler can automatically deploy updates to target clients. The Software Update Point (SUP) illustrates how Windows Update works from an SCCM client's perspective.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "11. Explain why to use BITS (Background Intelligent Transfer Service) in SCCM.",
+        "answer": "Background Intelligent Transfer Service (BITS) is extensively used by SCCM to transfer or migrate data between client machines and the SCCM servers. It also affects client downloading policies. When you initiate a client push, BITS is used to download the client to the machine. In order to transfer data, BITS utilizes idle bandwidth. BITS transfers data in the background, that is, BITS transfers data only when there is available bandwidth that other applications aren't using.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "12. What is the importance of Intune?",
+        "answer": "Microsoft Intune is a cloud-based mobile device management service. With this solution, your business can use applications across devices, enjoy advanced security, and save money. With Microsoft Intune, your sensitive data stays secure while you stay productive. Using policies, you can restrict who has access to your company's data. It offers flexibility and control over securing your data, regardless of where it is stored. Intune Advantages: Intune Advantages: Microsoft's Intune software allows you to manage PCs from the cloud without deploying any hardware infrastructure. With Endpoint Management, mobile devices can be easily managed from the cloud, eliminating the need to plan, purchase, and maintain hardware and infrastructure.   \nWith Microsoft Intune, your team can work on their mobile devices without sacrificing security. It combines productivity and security in one.  \nRegardless of the device, they are using, your users can remain productive without having to worry about the security of the organization's data.   \nIt supports the mobile management of Windows, MacOS, iOS, Android, Linux, as well as Windows Phone devices.   \nMicrosoft Intune gives you the ability to deploy software updates across all your enrolled devices. Manage updates easily so all users are running the latest software and applications. Microsoft's Intune software allows you to manage PCs from the cloud without deploying any hardware infrastructure. With Endpoint Management, mobile devices can be easily managed from the cloud, eliminating the need to plan, purchase, and maintain hardware and infrastructure. With Microsoft Intune, your team can work on their mobile devices without sacrificing security. It combines productivity and security in one. Regardless of the device, they are using, your users can remain productive without having to worry about the security of the organization's data. It supports the mobile management of Windows, MacOS, iOS, Android, Linux, as well as Windows Phone devices. Microsoft Intune gives you the ability to deploy software updates across all your enrolled devices. Manage updates easily so all users are running the latest software and applications.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "13. State difference between SCCM (System Center Configuration Manager) and Intune.",
+        "answer": "Today, every business requires some sort of MDM (Mobile Device Management) solution, as mobile and cloud use are becoming increasingly intertwined. While some organizations opt for SaaS Cloud MDM solutions, others require customized on-premises MDM solutions. Microsoft provides both services: Intune and SCCM. There is confusion among many organizations over whether to use Microsoft Windows Intune, SCCM, or a hybrid approach, which is a combination of both. SCCM vs Intune: SCCM vs Intune: SCCM Intune\nAs part of Microsoft Endpoint Manager (MEM), SCCM is used to deploy software updates, applications, and operating systems securely on desktop devices. It is generally a cloud-based service that emphasizes MDM (Mobile Device Management) and MAM (Mobile Application Management).\nThe SCCM system includes features that make it possible for system administrators to set up software updates.  A full-featured configuration management and policy tool, Intune is intended to help secure your entire organization by creating access policies for cloud and BYOD devices (Bring your own devices).\nSeveral upgrades are released each year to fix bugs and add new features.  Unlike SCCM, it is cloud-based and can perform software updates on mobile devices. As such, it offers much more functionality than WSUS. SCCM Intune\nAs part of Microsoft Endpoint Manager (MEM), SCCM is used to deploy software updates, applications, and operating systems securely on desktop devices. It is generally a cloud-based service that emphasizes MDM (Mobile Device Management) and MAM (Mobile Application Management).\nThe SCCM system includes features that make it possible for system administrators to set up software updates.  A full-featured configuration management and policy tool, Intune is intended to help secure your entire organization by creating access policies for cloud and BYOD devices (Bring your own devices).\nSeveral upgrades are released each year to fix bugs and add new features.  Unlike SCCM, it is cloud-based and can perform software updates on mobile devices. As such, it offers much more functionality than WSUS. SCCM Intune SCCM Intune SCCM Intune As part of Microsoft Endpoint Manager (MEM), SCCM is used to deploy software updates, applications, and operating systems securely on desktop devices. It is generally a cloud-based service that emphasizes MDM (Mobile Device Management) and MAM (Mobile Application Management).\nThe SCCM system includes features that make it possible for system administrators to set up software updates.  A full-featured configuration management and policy tool, Intune is intended to help secure your entire organization by creating access policies for cloud and BYOD devices (Bring your own devices).\nSeveral upgrades are released each year to fix bugs and add new features.  Unlike SCCM, it is cloud-based and can perform software updates on mobile devices. As such, it offers much more functionality than WSUS. As part of Microsoft Endpoint Manager (MEM), SCCM is used to deploy software updates, applications, and operating systems securely on desktop devices. It is generally a cloud-based service that emphasizes MDM (Mobile Device Management) and MAM (Mobile Application Management). As part of Microsoft Endpoint Manager (MEM), SCCM is used to deploy software updates, applications, and operating systems securely on desktop devices. It is generally a cloud-based service that emphasizes MDM (Mobile Device Management) and MAM (Mobile Application Management). The SCCM system includes features that make it possible for system administrators to set up software updates.  A full-featured configuration management and policy tool, Intune is intended to help secure your entire organization by creating access policies for cloud and BYOD devices (Bring your own devices). The SCCM system includes features that make it possible for system administrators to set up software updates. A full-featured configuration management and policy tool, Intune is intended to help secure your entire organization by creating access policies for cloud and BYOD devices (Bring your own devices). Several upgrades are released each year to fix bugs and add new features.  Unlike SCCM, it is cloud-based and can perform software updates on mobile devices. As such, it offers much more functionality than WSUS. Several upgrades are released each year to fix bugs and add new features. Unlike SCCM, it is cloud-based and can perform software updates on mobile devices. As such, it offers much more functionality than WSUS. Both SCCM and Intune offer many features, many of which overlap. Consequently, the right decision depends on your own business strategy.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "14. State difference between WSUS (Windows Server Update Service) and SCCM (System Center Configuration Manager).",
+        "answer": "The difference between WSUS and SCCM are as follows: WSUS   SCCM \nWSUS (Windows Server Update Services) is a tool that lets IT administrators deploy Microsoft product updates. You can manage the distribution of updates released from Microsoft Update to computers on your network using WSUS. Microsoft's SCCM is a system management software designed to deploy software updates, applications, and operating systems securely on desktop devices. It can be used for managing endpoint protection (manage Windows Firewall settings on client computers), patch management, software distribution, operating system deployment, network access protection, and hardware and software inventory, among other things.\nIt is not possible to manage assets through WSUS.    The SCCM provides asset management functionality.\nWSUS is basically package management and remote administration software. It updates the distributions to the services connected to the network.  SCCM is basically systems management software. Essentially, it manages systems. WSUS   SCCM \nWSUS (Windows Server Update Services) is a tool that lets IT administrators deploy Microsoft product updates. You can manage the distribution of updates released from Microsoft Update to computers on your network using WSUS. Microsoft's SCCM is a system management software designed to deploy software updates, applications, and operating systems securely on desktop devices. It can be used for managing endpoint protection (manage Windows Firewall settings on client computers), patch management, software distribution, operating system deployment, network access protection, and hardware and software inventory, among other things.\nIt is not possible to manage assets through WSUS.    The SCCM provides asset management functionality.\nWSUS is basically package management and remote administration software. It updates the distributions to the services connected to the network.  SCCM is basically systems management software. Essentially, it manages systems. WSUS   SCCM WSUS   SCCM WSUS SCCM WSUS (Windows Server Update Services) is a tool that lets IT administrators deploy Microsoft product updates. You can manage the distribution of updates released from Microsoft Update to computers on your network using WSUS. Microsoft's SCCM is a system management software designed to deploy software updates, applications, and operating systems securely on desktop devices. It can be used for managing endpoint protection (manage Windows Firewall settings on client computers), patch management, software distribution, operating system deployment, network access protection, and hardware and software inventory, among other things.\nIt is not possible to manage assets through WSUS.    The SCCM provides asset management functionality.\nWSUS is basically package management and remote administration software. It updates the distributions to the services connected to the network.  SCCM is basically systems management software. Essentially, it manages systems. WSUS (Windows Server Update Services) is a tool that lets IT administrators deploy Microsoft product updates. You can manage the distribution of updates released from Microsoft Update to computers on your network using WSUS. Microsoft's SCCM is a system management software designed to deploy software updates, applications, and operating systems securely on desktop devices. It can be used for managing endpoint protection (manage Windows Firewall settings on client computers), patch management, software distribution, operating system deployment, network access protection, and hardware and software inventory, among other things. WSUS (Windows Server Update Services) is a tool that lets IT administrators deploy Microsoft product updates. You can manage the distribution of updates released from Microsoft Update to computers on your network using WSUS. Microsoft's SCCM is a system management software designed to deploy software updates, applications, and operating systems securely on desktop devices. It can be used for managing endpoint protection (manage Windows Firewall settings on client computers), patch management, software distribution, operating system deployment, network access protection, and hardware and software inventory, among other things. It is not possible to manage assets through WSUS.    The SCCM provides asset management functionality. It is not possible to manage assets through WSUS. The SCCM provides asset management functionality. WSUS is basically package management and remote administration software. It updates the distributions to the services connected to the network.  SCCM is basically systems management software. Essentially, it manages systems. WSUS is basically package management and remote administration software. It updates the distributions to the services connected to the network. SCCM is basically systems management software. Essentially, it manages systems.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "15. What are WSUS (Windows Server Update Services) and its importance?",
+        "answer": "WSUS (Windows Server Update Services) is a tool that lets IT administrators deploy Microsoft product updates. You can manage the distribution of updates released from Microsoft Update to computers on your network using WSUS. SCCM is Microsoft's patch management solution and relies on WSUS to obtain and apply patches, but offers a number of more desirable features and allows users to control just how patches are installed/deployed. A WSUS server handles the management and distribution of updates through a management console. Also, WSUS servers can serve as update sources for other WSUS servers in an organization. WSUS servers that act as update sources are known as upstream servers. In WSUS implementations, at least one WSUS server needs to be able to connect to Microsoft Update in order to obtain updated information if available.",
+        "reference": "interviewbit.com",
+        "role": "sccm"
+    },
+    {
+        "question": "1) What is SCCM? / What is the full form of SCCM?",
+        "answer": "SCCM is an acronym that stands for System Center Configuration Manager. It is a software management product group or tool designed and developed by Microsoft. This tool allows users to manage the computer systems or Windows-based systems that run on Windows/Linux/Mac OS. SCCM is also known as ConfigMgr.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "2) What are the most important features of SCCM?",
+        "answer": "The most important features of SCCM are as follows:\nADVERTISEMENT\nSoftware deployment and management\nDeployment of operating systems\nHandle computer systems that run either on Windows or Linux, or macOS.\nPatch management\nDesired Configuration Management\nAsset tracking\nReporting\nRemote control etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "3) What are SCCM boundaries?",
+        "answer": "SCCM boundaries are used to specify the network location on the intranet that can contain one or more devices that we want to manage. SCCM boundaries help customers to get a precise system center. For each site, the SCCM boundary should be unique.\nSCCM Boundaries can be an IP subnet, Active Directory site name, IPv6 Prefix, IP ranges, or an IP address range.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "4) What are the different kinds of sites available in SCCM 2007?",
+        "answer": "The different kinds of sites available in SCCM 2007 are as follows:\nChild site\nParent site\nPrimary site\nSecondary site",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "5) What are the various types of sites available in SCCM 2012?",
+        "answer": "Following are the three main types of sites available in SCCM:\nPrimary site\nSecondary site\nCentral Administration site",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "6) What is the Central Administration Site (CAS)? / What do you understand by a central site?",
+        "answer": "A Central Administration Site (CAS) or a central site is an SCCM primary site that resides at the top of the hierarchy of the configuration manager. It is also called the top-level site in the order. It supports only primary sites as a child site. It manages all clients in the hierarchy and performs all site management tasks from the console to connect with the Central Administration Site (CAS). The central site database collects all the information from child to parent.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "7) What is a Site server?",
+        "answer": "A site server is a computer system where Configuration Manager 2012 or 2007 is installed.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "8) What is the difference between the primary and secondary sites in SCCM?",
+        "answer": "Following is the list of key differences between Primary site and Secondary site in SCCM:\nADVERTISEMENT\nPrimary Site Secondary Site\nThe primary site can provide access to Microsoft SQL Database. The secondary site cannot provide access to the Microsoft SQL Database.\nWe can assign clients directly to the primary site. We cannot assign clients directly to the secondary site.\nIt can be administered through the Configuration Manager console. It can only be administered through the primary site.\nThe primary site can be used as a child of another primary site or its child sites. The secondary site cannot be used as a child site of its own.\nClients can assign the primary sites directly. Clients cannot assign the secondary site directly.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "9) What is the child site in SCCM?",
+        "answer": "In SCCM, the child site is a site that provides a structure and gets all the data from a higher-level site.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "10) What are the different client deployments methods in SCCM?",
+        "answer": "Following is a list of the different client deployments methods in SCCM:\nClient push installation\nLogin script installation\nSoftware update point based installation\nGroup Policy installation\nUpgrade installation\nManual installation etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "11) What is the use of WSUS?",
+        "answer": "WSUS is used to allow administrators to deploy the Microsoft software updates to systems using the Windows OS.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "12) What do you understand by limiting collection?",
+        "answer": "Limiting collection is required whenever a new collection is created. At this time, the developer must specify its limiting collection. All collections are the subsets of their limiting collections.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "13) What are BITS? Why is it used in SCCM?",
+        "answer": "BITS is an acronym for \"Background Intelligence Transfer Service\". It transfers the data between the SCCM Server and the client. It is also used to download the client to the machine when starting the client push.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "14) Can a 64-bit operating system support the configuration manager console?",
+        "answer": "Yes, a 64-bit operating system can support the configuration manager console, although the configuration manager console of SCCM has a 32-bit structure.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "15) What is the full form of SUP?",
+        "answer": "The full form of SUP is Software Update Point. It is a component of software updates and is displayed as a site system role in the Configuration Manager console. The SUP is usually created on a site system server with WSUS (Windows Server Update Services) installed.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "16) What are the different prerequisites required for the Software update point?",
+        "answer": "Following are the different prerequisites required for the Software update point:\nWindows update agent\nWindows Installer\nNetwork load balancing\nSite Server communication\nWindows Server Update Services\nBackground Intelligent Transfer Server",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "17) What is the difference between the package refresh and the package update?",
+        "answer": "The key differences between the package refresh and the package update:\nPackage Refresh Package Update\nPackage refresh is generally used as a refreshed file. Package update is generally used when the users have to make changes in the source file.\nIn package refresh, we can overwrite the old package files. In package update, we can update the source package version in SQL.\nIn package refresh, when a user changes the file, it will create a compressed file. In package update, the package cannot create a compressed file.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "18) What is the SMS provider in SCCM?",
+        "answer": "SMS provider facilitates us to read and write in the Configuration Manager Site database. We can install it on-site server computer and site database server computer.\nThe SMS providers are generally installed on the site database server or another server during the Configuration Manager setup. After completing the setup successfully, we can see the current installed location on the site properties general tab. SMS providers are also known as WMI providers.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "19) What are the different discovery methods in SCCM?",
+        "answer": "Following are the different discovery methods in SCCM:\nActive directory system group discovery\nActive directory security group discovery\nActive directory user discovery\nActive directory system discovery\nNetwork discovery\nHeartbeat discovery",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "20) What is the content library in SCCM?",
+        "answer": "The content library is a storage format with only one instance of each file. This storage format stores all the content in software distribution points using the content library. The content library is also known as Single Instance Store.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "21) What are the different ports used in SCCM?",
+        "answer": "Following are the different ports used in SCCM:\nClient to site system HTTP port 80\nDefault HTTPS port 443\nSMB 445\nTCP 2701",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "22) What are the various client deployment methods in SCCM?",
+        "answer": "Following is the list of various client deployments methods in SCCM:\nManual installation\nClient push installation\nUpgrade installation\nLogon script installation\nGroup Policy installation\nSoftware update point-based installation etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "23) What are the different types of senders in SCCM?",
+        "answer": "There are mainly two types of senders in SCCM:\nStandard Sender\nCourier Sender",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "24) What do you understand by deployment share in SCCM?",
+        "answer": "In SCCM, the deployment share is the repository for the application, OS image, device drivers, and language packs. It can be deployed to the target machines.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "25) What is the use of Server Locator Points in SCCM?",
+        "answer": "In SCCM, the Server Locator Points are used in the Configuration Manager to complete the client site assignment on an intranet. It also helps clients find management points when they cannot find the information through Active Directory Domain Services.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "26) What objects can migrate from Configuration Manager 2007 to SCCM 2012?",
+        "answer": "Following are the objects that can migrate from Configuration Manager 2007 to SCCM 2012:\nTask sequences\nConfiguration items\nCollections and boundaries\nVirtual application packages\nPackages distributing Software\nSoftware update deployment templates\nConfiguration baselines etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "27) What is the difference between SCCM & WSUS?",
+        "answer": "Following is the list of key differences between SCCM & WSUS:\nSCCM WSUS\nSCCM is an acronym that stands for System Center Configuration Management or Manager. WSUS is an acronym that stands for Windows Server Update Service.\nSCCM is used for pushing images of all types of operating systems. WSUS cannot push images for all types of operating systems.\nOne of the key features of SCCM is that it offers asset management functionality. WSUS does not provide asset management functionality.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "28) How many types of senders are in SCCM?",
+        "answer": "There are two types of senders in SCCM:\nStandard sender\nCourier sender",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "29) What do you understand by the SCCM console?",
+        "answer": "SCCM console is a tool used to perform several tasks such as device management, network, and application deployment in SCCM.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "30) What are some important site system roles in SCCM?",
+        "answer": "Some important site system roles in SCCM are:\nManagement point\nDistribution point\nPXE service point\nReporting point\nFallback status point\nServer locator point\nSoftware update point\nState migration point etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "31) What are the different application detection methods defined in SCCM?",
+        "answer": "Following is the list of different application detection methods defined in SCCM:\nRegistry\nFile system\nCustom detection\nWindows installers",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "32) What is inventory in SCCM? What are the different types of inventories in SCCM?",
+        "answer": "In SCCM, the inventories are used to provide system information like processor type, operating system, and application. There are mainly two types of inventories in SCCM:\nSoftware inventory: It is used to collect files from the client machine and store them on the website server.\nHardware inventory: It is used to collect information about the client's hardware configuration in an organization.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "33) What is the full form of BDP in SCCM?",
+        "answer": "In SCCM, BDP stands for \"Branch Distribution Points\". It is used for efficient package distribution to premises. It can be premised and has limited bandwidth. It depends on a standard distribution point from which it receives content. BDP should contact a BITS-enabled standard distribution to make the distribution properly.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "34) What is the use of the cloud management dashboard in SCCM?",
+        "answer": "The cloud management dashboard provides a centralized view of cloud management gateway usage. It uses a CMG connection analyzer to troubleshoot issues in real-time.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "35) What is the site system, and what do you understand by the site system role?",
+        "answer": "A site system is a computer that uses a supported version of Windows. It can also be a shared folder that hosts multiple site systems.\nA site system role is a function that Configuration Manager requires to use its feature.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "36) What is the fallback status point in SCCM?",
+        "answer": "The fallback status point always communicates with the clients over HTTP about installation failure. It uses unauthenticated connections and sends data in clear text that makes the fallback status point vulnerable to attack, particularly when used with internet-based client management.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "37) What do you understand by a site server?",
+        "answer": "A site server is a system on which a user can install the configuration manager. A site server hosts the services required for the configuration manager.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "38) What are the various services required for the client computer to communicate with the server?",
+        "answer": "Following is the list of various services required for the client computer to communicate with the server:\nComputer browser\nWindows installer\nSMS agent host\nWMI\nBackground Intelligence Transfer Server (BITS)",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "39) What is the use of Asset Intelligence in SCCM?",
+        "answer": "Asset Intelligence provides software license information for software titles used. Administrators use inventory to manage the software using the configuration manager hierarchy. We have to enable one or more Asset Intelligence hardware inventory reporting classes.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "40) What is deployment share in SCCM?",
+        "answer": "In SCCM, the deployment share is a repository for OS files, programs, language packs, and system drivers. The deployment share can be deployed on the target machine.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "41) What is out of band management in SCCM?",
+        "answer": "In SCCM, the out of band management is used to provide management control for PC.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "42) What is the use of database replication in SCCM?",
+        "answer": "In SCCM, the database replication uses My SQL server to transfer data for settings and configure to other sites in the CM hierarchy.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "43) What do you understand by an improved HTTP site system?",
+        "answer": "An improved HTTP site system is a way that specifies how the client computer interacts with the site system. It uses some features that require new users to use the certification of the configuration manager to access the HTTP site.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "44) What is an internet client in SCCM?",
+        "answer": "The internet client is a component of the SCCM tool that facilitates users to remotely access to mobile devices or remote systems without using a VPN network.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "45) What is the heartbeat discovery mode in SCCM?",
+        "answer": "In SCCM, the active configuration manager clients use heartbeat discovery mode to update discovery records in a specific database. It is initiated by an involved customer.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "46) What is the full form of DPM in the context of SCCM?",
+        "answer": "In SCCM, DPM is an acronym that stands for Data Protection Manager. It is required when SCCM finds any faults on a machine. DPM is used to recover data from the backup that it holds. It can recover the backup of SharePoint data, server file system, SQL databases, Exchange databases, etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "47) What do you understand by asset tracking in SCCM?",
+        "answer": "Asset tracking can be defined as a system that we have to track patches or updates. When the system is created with the required OS, we have to do it.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "48) What do you understand by the application database web service point?",
+        "answer": "The application database web service point transfers program information from the library to the catalog website.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "49) What are the key differences between Internet-based client management and DirectAccess?",
+        "answer": "Following are the key differences between Internet-based client management and DirectAccess:\nInternet-based client management DirectAccess\nInternet-based client management is a specific configuration manager. DirectAccess is a Windows solution that facilitates users to manage domain systems when switching from intranet to the internet.\nThis is used to enable users to manage mobile devices and computers on the internet. This enables users to manage the router, IPV4, and IPV6 networks.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "50) What is the mode of network discovery in SCCM?",
+        "answer": "The network discovery mode scans network infrastructure for network devices with an IP address. This is used to help users locate devices not identified by other search methods, including bridges, routers, and printers.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "",
+        "answer": "The shared distribution points are the points at sites in the source hierarchy. Clients use these points at the destination during the migration period.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "52) What are the all unknown computers collections?",
+        "answer": "The all unknown computers collection is a set of two objects that define the records in the configuration manager. So, we can deploy the operating system that the Configuration Manager does not manage.\nThis consists of the following:\nThe system where the Configuration Manager client is not installed\nThe Configuration Manager does not identify the system.\nThe system is not imported within the Configuration Manager.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "53) What do you understand by SMS provider in the context of SCCM?",
+        "answer": "The SMS provider is a Windows Management Instrumentation provider that facilitates read and write access to the network. The configuration manager console uses it.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "54) What is the use of state migration role in SCCM?",
+        "answer": "The state migration role is used to take a backup and migrate user states. It takes the task sequences to capture and restore the user state data while deploying the operating system.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "55) What do you understand by patch management?",
+        "answer": "When we install any software in a system, it requires an update from time to time. Here, patch management comes into the scene. Patch management is the process of distributing and applying updates to any software. These patches are required and necessary to correct errors (also referred to as \"vulnerabilities\" or \"bugs\") in the software.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "56) What is the use of the global condition option?",
+        "answer": "The global condition option is used in application deployment to achieve granular control over deployment. It is also used to avoid issues that are faced in deployment.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "57) How can we update the deploy software in SCCM?",
+        "answer": "We can update the deploy software in SCCM by following the steps given below:\nFirst, select a group of software updates by the SCCM console.\nArrange the automatic installation rules for Automatic Software Updates installation.\nWhile a rule is running, the software gets updated separately attached to the updated software list.\nFinally, in the customer system, the updated software is installed.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "58) What is the client policy in SCCM?",
+        "answer": "The client policy is used to specify how often configuration manager clients download the following requirements:\nWindows OS computers (Servers, Desktops, Laptops, etc.)\nMobile Devices\nMac OS Computers\nComputers that run UNIX or Linux operating systems.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "59) What is the difference between native and mixed-mode in SCCM?",
+        "answer": "A list of differences between native and mixed-mode in SCCM:\nNative Mode Mixed Mode\nIn SCCMM, the Native mode is used for authentication and encryption. The mixed-mode is mainly used to locate the default management point of the client.\nWe can integrate the native mode with the public key infrastructure. We cannot integrate the mixed-mode with public key infrastructure.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "60) What is Software Metering in SCCM?",
+        "answer": "In SCCM, software metering is a process used for monitoring and collecting data related to the use of the software on various clients.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "61) How can we install the different applications in the software center?",
+        "answer": "A software center supports all types of software installments. We can install different applications easily.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "62) What key features migrated to SCCM 2012 from SCCM 2007?",
+        "answer": "Following is a list of the key features migrated from CM 2007 to SCCM 2012:\nVirtual Application Packages\nPackage Distributing software\nCollections and Boundaries\nConfiguration items\nConfiguration baseline\nSoftware Update Deployment Templates\nTask sequences etc.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "63) What is the full form of NAP in SCCM?",
+        "answer": "NAP is an acronym for \"Network Access Protection\". It is a feature that leverages Windows 2008 to control which computer has access to a network.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "7 in Configuration Manager?",
+        "answer": "The biggest advantage of using .NET 4.7 in Configuration Manager is improving the console accessibility.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "65) What is the full form of WOL in the context of SCCM?",
+        "answer": "In SCCM, WOL is an acronym for \"Wake-On-LAN\". This is a way to wake up a sleeping machine. It sends a magic packet to a computer to wake up and be ready to receive software updates.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "66) What is the use of branch cache in SCCM?",
+        "answer": "In SCCM, the branch cache is a Windows component used for bandwidth optimization.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "67) Does the term \"software\" include Scripts and Drivers in SCCM?",
+        "answer": "Yes, in SCCM 2012, the term \"software\" includes software updates, applications, scripts, task sequences, device drivers, configuration items, and configuration baselines.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "68) Is it possible to have a similar name for the task sequence in SCCM?",
+        "answer": "Yes, SCCM doesn't force you to keep a unique name for the task sequence. A user can reuse a similar name for the task sequence.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "69) What is a deployment share in SCCM?",
+        "answer": "In SCCM, a deployment share is a repository for the OS images, applications, language packs, and device drivers. These can be deployed to the target machine.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    },
+    {
+        "question": "70) What is the use of Intune in SCCM?",
+        "answer": "In SCCM, Intune handles and maintains several mobile devices and Windows. It is a cloud-based service and used for the following:\nTo install Windows appliances for using Autopilot services.\nTo maintain the mobile apps.\nTo handle the mobile devices to enter the details of an organization.\nTo maintain the devices those are exterior to the organization's web.\nTo record the details of an organization safely.",
+        "reference": "javatpoint.com",
+        "role": "sccm"
+    }
+]

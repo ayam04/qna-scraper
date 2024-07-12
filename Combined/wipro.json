@@ -1,0 +1,44 @@
+[
+    {
+        "question": "1. Explain the difference between a Process and a Thread.",
+        "answer": "The difference between a Process and a Thread is elaborated below:\nProcess: A process is a program in execution. It has its own address space, which is a region of memory that is used to store the program’s code, data, and stack. Moreover, they are independent of each other, which means that they cannot share memory or resources without explicit synchronization.\nThread: A thread is a lightweight process that shares the same address space as its parent process. This means that threads can share memory and resources without explicit synchronization. Threads are also dependent on each other, which means that they can communicate and share data more easily than processes.",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    },
+    {
+        "question": "2. What is Object-Oriented Programming (OOP)? Explain its principles.",
+        "answer": "Object-Oriented Programming (OOP) is a paradigm in computer science that facilitates the organization and design of software by modeling real-world entities as objects. Its key principles include encapsulation, inheritance, and polymorphism. OOP fosters modularity, reusability, and code maintenance, promoting efficient and scalable software development in a structured manner.\nThe main principles of OOP are mentioned below:\nEncapsulation: Encapsulation is the bundling of data and code together into a single unit. This makes it easier to maintain and understand the code, as well as to prevent unauthorized access to data.\nAbstraction: Abstraction is the process of hiding the implementation details of an object from its users. This allows users to focus on the object’s functionality, without having to worry about how it works.\nInheritance: Inheritance is the ability of an object to inherit the properties and methods of another object. This makes it possible to create new objects that are similar to existing objects, without having to rewrite the code.\nPolymorphism: Polymorphism is the ability of an object to respond to a message in different ways, depending on its type. This allows for greater flexibility and code reuse.",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    },
+    {
+        "question": "3. What is the difference between an abstract class and an interface?",
+        "answer": "The difference between an abstract class and an interface is discussed below:\nAbstract class: An abstract class is a class that can’t be instantiated. It contains both abstract and non-abstract methods. Abstract methods are methods that don’t have a body, and they must be implemented by the child class. Non-abstract methods are methods that have a body, and they can be overridden by the child class.\nInterface: An interface is a contract that defines a set of methods that must be implemented by the class. Interfaces can’t contain any data members, and they can’t have constructors.",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    },
+    {
+        "question": "4. What is the purpose of garbage collection in programming languages?",
+        "answer": "The purpose of garbage collection in programming languages is to automate the management of memory allocation and deallocation. It plays a crucial role in reclaiming memory occupied by objects that are no longer in use, thereby optimizing system resources and preventing memory leaks. Garbage collection tracks allocated memory blocks and identifies objects that are no longer referenced or reachable, facilitating their efficient removal from memory. By automating memory deallocation, it relieves programmers from the burden of manual memory management and reduces the occurrence of memory-related errors. Implementing efficient garbage collection algorithms ensures optimal memory utilization, enhancing program performance and stability.\nAlso, check our blog on Top 60+ TCS Interview Questions and Answers!",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    },
+    {
+        "question": "5. What is the purpose of a hashing algorithm?",
+        "answer": "A hashing algorithm serves a crucial purpose in computer science and cryptography. It is a mathematical function that transforms input data into a fixed-length string called a hash value or hash code. The primary objectives of a hashing algorithm include ensuring data integrity, facilitating efficient data retrieval, and enhancing security measures. By generating unique hash codes for input data, hashing algorithms enable tasks such as data indexing, password storage, digital signatures, and data validation. These algorithms are meticulously designed to achieve speed, uniqueness in hash codes, and a minimal likelihood of collisions, where different inputs produce identical hash codes.",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    },
+    {
+        "question": "6. What is the difference between a primary key and a foreign key in a database?",
+        "answer": "The distinction between a primary key and a foreign key in a database lies in their respective roles and functionalities. A primary key serves as a distinctive identifier for a record within a table, guaranteeing its uniqueness. On the other hand, a foreign key establishes a connection between two tables by referencing the primary key of another table. This mechanism enforces referential integrity and preserves the relational structure between tables. In essence, a primary key serves as a unique identifier within a table, while a foreign key facilitates the establishment of relationships between tables by referencing primary keys.",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    },
+    {
+        "question": "7. Explain the concept of multithreading and its advantages?",
+        "answer": "Multithreading is a programming concept that involves the concurrent execution of multiple threads within a single process. Each thread operates independently, allowing tasks to be performed simultaneously. The benefits of multithreading include enhanced program responsiveness, efficient utilization of CPU resources, and improved performance through parallelism. Multithreading enables the execution of multiple tasks concurrently, leading to faster task completion and effective utilization of system resources. However, it is crucial to employ proper synchronization mechanisms and adhere to thread-safe practices to handle shared resources and prevent issues such as race conditions and deadlocks.\nAlso, check out our HCL Interview questions guide, the questions which are mostly asked in HCL during different interview rounds.",
+        "reference": "intellipaat.com",
+        "role": "wipro"
+    }
+]

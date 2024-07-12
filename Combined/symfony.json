@@ -1,0 +1,290 @@
+[
+    {
+        "question": "1) What is Symfony?",
+        "answer": "Symfony is an open-source web application framework. It is a set of PHP Components and a leading PHP framework to create websites and dynamic web applications. It follows the MVC design pattern and is released under the MIT License.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "2) What is the current Stable version of Symfony?",
+        "answer": "The current stable version of Symfony is 3.3.2, and it was released on 6 June 2017.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "3) What are the benefits of Symfony?",
+        "answer": "Symfony framework has the following benefits, such as:\nADVERTISEMENT\nFast development\nMVC Pattern\nUnlimited user flexibility\nExpandable\nIt is a stable and sustainable framework\nIt has a better user control",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "4) What are the components in Symfony?",
+        "answer": "Symfony Components are a set of decoupled and reusable PHP libraries. It is open-source software that aims to speed up the creation and maintenance of web applications, replace repetitive coding tasks, build robust applications in an enterprise context, and give developers full control over the configuration.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "5) Does Laravel use Symfony?",
+        "answer": "Yes, Laravel uses Symfony components internally. Around 30% of the Laravel framework is built on Symfony.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "6) What are the server requirements to install the Symfony?",
+        "answer": "You require the following server requirements to install and run the Symfony framework, such as:\nPHP 5.5.9 or greater\nComposer\nJSON enabled\nctype enabled\ntimezone should be set (default timezone will not work)",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "7) What is a Symfony Controller?",
+        "answer": "Symfony controller is a PHP function that obtains information from the HTTP request to construct and return an HTTP response. The response can vary and could be an XML document, an HTML page, a redirect, a 404 error, a serialized JSON array, or any other request.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "8) What are Bundles in Symfony?",
+        "answer": "Symfony bundles are very similar to plugins or packages in other frameworks or CMS. In Symfony, everything is a bundle, from core framework components to the code you write. The bundle gives the flexibility to use pre-built features packaged in third-party bundles or create and distribute your own bundles. Generally, a Bundle contains the following directories and files.\nController Directory: Contains controllers of the bundle\nDependencyInjection Directory: Hold dependency injection, extension classes.\nResources/config/ Directory: Contains configuration files like routing.yaml.\nResources/views/ Directory: Contain view files of the bundle.\nResources/public/ Directory: Contains static resources such as images, stylesheets of a bundle.\nTests/ Directory: Contains all test files for the bundle.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "9) Explain the tasks performed by the Symfony controller?",
+        "answer": "A Symfony controller can do virtually anything inside this framework. From redirecting and forwarding to accessing core services to rendering templates, a controller in Symfony can be used for various basic tasks.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "10) How many types of bundles are in Symfony?",
+        "answer": "There are two types of bundles are available in the Symfony framework:\nApplication-specific bundles: It is only used to build your application.\nReusable bundles: It is meant to be shared across many projects.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "11) Which template engine Symfony supports?",
+        "answer": "By default, Symfony uses a twig template engine. Twig is a flexible, fast, secure, and open-source template engine for PHP and originates its syntax from Jinja and Django templates. It is licensed under a BSD License and maintained by Fabien Potencier. However, you are free to use plain PHP code if you want.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "12) Symfony logs are stored in which directory?",
+        "answer": "Symfony stores all logs in the log directory of your project.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "13) What are Annotations in Symfony?",
+        "answer": "In the Symfony framework, Annotations are used for the configuration of validation and mapping Doctrine information. Annotations are easy and convenient to use. In the Standard Edition of Symfony, we have two additional bundles SensioFrameworkExtraBundle and JMSSecurityExtraBundle, which provide better support for annotations. Using these bundles, you can use annotations for controller configuration, routing, cache, security, template, etc.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "14) Explain an environment in the Symfony framework?",
+        "answer": "A group of configurations used to run an application is described as an Environment in Symfony. This framework has two default environments:\nProd: It is used to optimize for executing an application on production.\nDev: It is used when an application is developed locally.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "15) State the Symfony framework application?",
+        "answer": "There are various Symfony framework applications, such as:\nThelia\nDrupal 8\nDaily motion",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "16) Symfony is a Configuration or Convention-based framework?",
+        "answer": "Symfony is a convention-based framework.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "17) How to get the current route in the Symfony framework?",
+        "answer": "You can get current route in Symfony using $request->get('_route'); method.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "18) How to get the list of all installed packages in Composer?",
+        "answer": "The composer show command is used to list all installed packages/dependencies of your current project.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "19) When Symfony denies user access?",
+        "answer": "Symfony denies user access when an unauthorized user tries to access a web application; it throws a 403 HTTP status and error page.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "20) How to create and remove sessions in Symfony Framework?",
+        "answer": "In Symfony Session, the class is used to work with sessions. This class can perform all functions of native PHP sessions. Below is an example of creating and removing sessions in Symfony.\nCreating Session in Symfony\n$session = new Session();  \n$session->start();  \nSetting Session in Symfony\n$session->set('user_id', 200);  \nGetting session in Symfony\n$session->get('user_id');  \nRemoving / Destroying session in Symfony\n$session->remove('user_id');",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "21) How to check the installed version of Symfony?",
+        "answer": "If you have access to the command line, then you can use the php bin/console about the command to view the installed version of the Symfony framework. You can get the version of Symfony in the symfony/src/Symfony/Component/HttpKernel/Kernel.php file.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "22) What are Descriptors in Symfony?",
+        "answer": "Descriptors are objects in Symfony that are used to render documentation and information on the console.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "23) What are the form helper functions in Symfony?",
+        "answer": "The form helpers provide a faster way to write form inputs in templates, especially for complex elements such as dates, drop-down lists, and rich text. Here are some form helper functions of Symfony framework,\nform_tag()\ninput_tag()\ninput_password_tag()\ninput_hidden_tag()\ntextarea_tag()\ninput_file_tag()\nselect_tag()\noptions_for_select()\ncheckbox_tag()\nsubmit_tag()",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "24) What is Serializer in Symfony?",
+        "answer": "In Symfony, a serializer is a component that allows converting a PHP object into a specific format such as XMLL, JSON, Binary, etc.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "25) How to get the current route in Symfony?",
+        "answer": "You can get current route in Symfony using following code:\n$request->get(\"_route\"); //OR with Twig {{ app.request.attributes.get('_route') }}",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "26) How many cache adapters are present in Symfony?",
+        "answer": "The five cache adapters are available in the Symfony framework.\nFile system cache adapter\nArray cache adapter\nAPCu cache adapter\nPHP files cache adapter\nRedis cache adapter",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "27) What is Symfony 2?",
+        "answer": "Symfony 2 is a full-stack web framework written in PHP. It is a reusable set of standalone, decoupled, and cohesive PHP components that solve web development problems. Symfony 2 introduced unique HTTP and HTTP cache handling by being an HTTP-centric request or response framework. It also allows full use of advanced features such as ESI to separate the different parts of your page or application.\n\nSymfony 2 is powered out of the box by fast PHP-built Symfony reverse proxy, and for mid to large installations, a seamless upgrade to varnish provides a 10-20x speedup and a far more robust cache handling.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "28) How to set and get Session in Symfony 2?",
+        "answer": "SessionInterface object set and get method is used to set and get sessions in Symfony2. For example:\npublic function sessionAction(SessionInterface $session)  \n{  \n    // store an attribute for reuse during a later user request  \n    $session->set('user_id', 5);  \n   // get the attribute set by another controller in another request  \n    $user_id = $session->get('user_id');    \n}",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "29) What are the innovations in Symfony2?",
+        "answer": "Here are the following innovations that provide Symfony 2, such as:\nSymfony2 uses the Dependency Injection pattern.\nSymfony2 is packaged as Distributions.\nEverything is a Bundle in Symfony2.\nSymfony2 eases the debugging of your application.\nSymfony takes security very seriously.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "30) How can we install Symfony2?",
+        "answer": "We can install Symfony2 using given following command:\nIn Windows:\nphp -r \"readfile('https://symfony.com/installer');\" > symphony  \nIn Linux and macOS System:\nsudo mkdir -p /usr/local/bin    \nsudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony    \nsudo chmod a+x /usr/local/bin/symfony",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "31) How to get the request parameters in Symfony 2?",
+        "answer": "$request->query->get('paraemeter_name') method is used to get the request parameters in symfony2.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "32) What is the method name in the Kernel class to enable bundles in Symfony?",
+        "answer": "Kernel's class registerBundles() method is used to enable bundles in Symfony.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "33) What rules do you follow at the time of creating Methods within the controller in Symfony?",
+        "answer": "Here are the following general rules for creating a method within the controller in Symfony.\nOnly action methods should be public.\nController methods should be short; if your controller is long, consider refactoring it.\nAction methods must have the \"Action\" suffix.\nAction methods should return a valid response object.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "34) How to create a Symfony application using Composer?",
+        "answer": "Run the below command in your console to install Symfony using Composer:\ncomposer create-project Symfony/framework-standard-edition my_project_name",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "35) Do Bundles have a fixed directory structure in Symfony?",
+        "answer": "No, Bundles does not have the fixed directory structure in Symfony.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "36) How can we create a controller in Symfony2?",
+        "answer": "In Symfony, we can create controller by extending AbstractActionController class. For example,\nuse Zend\\Mvc\\Controller\\AbstractActionController;     \n   use Zend\\View\\Model\\ViewModel;      \n   class IndexController extends AbstractActionController {     \n      public function indexAction() {     \n         return new ViewModel();     \n      }     \n   }",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "37) What is the default routing configuration file in the Symfony2 application?",
+        "answer": "app/config/routing.yml is the default routing configuration file.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "38) How can we create action in the Symfony2 controller?",
+        "answer": "We can create action in Symfony 2 by using the following command:\npublic function indexAction()    \n       {    \n           return $this->render('user/index.html.twig', [ ]);    \n       }",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "39) How to create a request object in Symfony?",
+        "answer": "createFromGlobals() method is used to create a request object in Symfony.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "40) What is Twing?",
+        "answer": "Twing is a powerful templating language of Symfony. It performs whitespace control, sandboxing, and automatic HTML escaping.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "41) Does Symfony framework support components to work with databases?",
+        "answer": "No, Symfony does not support components to work with the database.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "42) What is the use of FlashBag?",
+        "answer": "FlashBag is used to hold the data during the page redirections.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "43) In which technology, routing configuration files are written?",
+        "answer": "Routing configuration files are written in the following technology, such as:\nYAML\nXML\nPHP",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "44) How to clear cache in Symfony?",
+        "answer": "To clear cache in Symfony, you can use cache:pool:clear command. This command will delete all data from the project storage directory. By default, Symfony comes with these three cache clearers.\nglobal_clearer\nsystem_clearer\napp_clearer",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "45) What is the syntax of EmailType in Symfony?",
+        "answer": "In Symfony, the following syntax of EmailType is:\nuse Symfony\\Component\\Form\\Extension\\Core\\Type\\EmailType;     \n   $builder->add('token', EmailType::class, array(     \n      'data' => 'abcdef', ));",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "46) What is the syntax to check a valid email address?",
+        "answer": "The following syntax is used to check valid email addresses.\nUse Symfony\\Component\\Validator\\Constraints as Assert;     \n   class Student {     \n   /**   \n     * @Assert\\Email(   \n      * message = \"The email '{{ value }}' is not a valid email.\",   \n       * checkMX = true   \n        * )   \n  */     \n     protected $email;     \n   }",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "47) What is the default port of Symfony?",
+        "answer": "The default port of Symfony is 8000.",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    },
+    {
+        "question": "48) Which method is used to handle an Ajax request on the server-side?",
+        "answer": "The following methods are used to handle an Ajax request on the server-side.\nif ($request->isXmlHttpRequest()) {      \n      // Ajax request      \n   } else {      \n      // Normal request      \n   }",
+        "reference": "javatpoint.com",
+        "role": "symfony"
+    }
+]

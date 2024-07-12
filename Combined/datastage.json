@@ -1,0 +1,176 @@
+[
+    {
+        "question": "1) What is IBM DataStage?",
+        "answer": "DataStage is one of the most powerful ETL tools. It comes with the feature of graphical visualizations for data integration. It extracts, transforms, and loads data from source to the target.\nDataStage is an integrated set of tools for designing, developing, running, compiling, and managing applications. It can extract data from one or more data sources, achieve multi-part conversions of the data, and load one or more target files or databases with the resultant data.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "2) Describe the Architecture of DataStage?",
+        "answer": "DataStage follows the client-server model. It has different types of client-server architecture for different versions of DataStage.\nDataStage architecture contains the following components.\nADVERTISEMENT\nADVERTISEMENT\nProjects\nJobs\nStages\nServers\nClient Components",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "3) Explain the DataStage Parallel Extender (PX) or Enterprise Edition (EE)?",
+        "answer": "DataStage PX is an IBM data integration tool. It is one of the most widely used extractions, transformation, and loading (ETL) tools in the data warehousing industry. This tool collects the information from various sources to perform transformations as per the business needs and load data into respective data warehouses.\nDataStage PX is also called as DataStage Enterprise Edition.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "4) Describe the main features of DataStage?",
+        "answer": "The main features of DataStage are as follows.\nDataStage provides partitioning and parallel processing techniques which allow the DataStage jobs to process an enormous volume of data quite faster.\nIt has enterprise-level networking.\nIt's a data integration component of IBM InfoSphere information server.\nIt's a GUI based tool.\nIn DataStage, we need to drag and drop the DataStage objects, and also we can convert it to DataStage code.\nDataStage is used to perform the various ETL operations (Extract, transform, load)\nIt provides connectivity with different sources & multiple targets at the same time",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "5) What are some prerequisites for DataStage?",
+        "answer": "For DataStage, following set ups are necessary.\nInfoSphere\nDataStage Server 9.1.2 or above\nMicrosoft Visual Studio .NET 2010 Express Edition C++\nOracle client (full client, not an instant client) if connecting to an Oracle database\nDB2 client if connecting to a DB2 database",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "6) How to read multiple files using a single DataStage job if files have the same metadata?",
+        "answer": "Search if the metadata of files is different or same then specify file names in the sequential stage.\nAttach the metadata with a sequential stage in its properties.\nSelect Read method as 'Specific File(s)'then add all files by selecting 'file' property from the 'available properties to add.'\nIt will look like:\nFile= /home/myFile1.txt  \nFile= /home/myFile2.txt  \nFile= /home/myFile3.txt  \nRead Method= Specific file(s) fcec",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "7) Explain IBM InfoSphere information server and highlight its main features?",
+        "answer": "IBM InfoSphere Information Server is a leading data integration platform which contains a group of products that enable you to understand, filter, monitor, transform, and deliver data. The scalable solution facilitates with massively parallel processing capabilities to help you to manage small and massive data volumes. It assists you in forwarding reliable information to your key business goals such as big data and analytics, data warehouse modernization, and master data management.\nFeatures of IBM InfoSphere information server\nIBM InfoSphere can connect with multiple source systems as well as write to various target systems. It acts as a single platform for data integration.\nIt is based on centralized layers. All the modules of the suit can share the baseline architecture of the suite.\nIt has some additional layers for the unified repository, for integrated metadata services, and sharing a parallel engine.\nIt has tools for analysis, monitoring, cleansing, transforming and delivering data.\nIt has extremely parallel processing capabilities that provide high-speed processing.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "8) What is IBM DataStage Flow Designer?",
+        "answer": "IBM DataStage Flow Designer allows you to create, edit, load, and run jobs in DataStage. DFD is a thin client, web-based version of DataStage. Its a web-based UI for DataStage than DataStage Designer, which is a Window-based thick client.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "9) How do you run DataStage job from the command line?",
+        "answer": "To run a DataStage job, use command\"dsjob\" command as follows.\n'dsjob -run -jobstatus projectname jobname",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "10) What are some different alternative commands associated with \"dsjob\"?",
+        "answer": "Many alternative optional commands can be used with dsjob command to perform any specific task. These commands are used in the below format.\n$dsjob -run alternative command  \nA list of commonly used alternative options of dsjob command is given below.\nStop: it is used to stop the running job\nLprojects: it is used to list the projects\nljobs: it is used to list the jobs in project\nlparams: it is used to list the parameters in a job\nparaminfo: it returns the parameters info\nLinkinfo: It returns the link information\n\nLogdetail: it is used to display details like event_id, time, and message\nLognewest: it is used to display the newest log id.\nlog: it is used to add a text message to log.\nLogsum: it is used to display the log.\nlstages: it is used to list the stages present in the job.\nLlinks: it is used to list the links.\n\nProjectinfo: it returns the project information (hostname and project name)\nJobinfo: it returns the job information (Job-status, job runtime,end time, etc.)\nStageinfo: it returns the stage name, stage type, input rows, etc.)\nReport: it is used to display a report which contains Generated time, start time, elapsed time, status, etc.\nJobid: it is used to provide Job id information.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "11) What is a Quality Stage in DataStage tool?",
+        "answer": "A Quality Stage helps in integrating different types of data from multiple sources.\nIt is also termed as the Integrity Stage.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "12) What is the process of killing a job in DataStage?",
+        "answer": "To kill a job, you must destroy the particular processing ID.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "13) What is a DS Designer?",
+        "answer": "DataStage Designer is used to design the job. It also develops the work area and adds various links to it.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "14) What are the Stages in DataStage?",
+        "answer": "Stages are the basic structural blocks in InfoSphere DataStage. It provides a rich, unique set of functionality to perform advanced or straightforward data integration task. Stages hold and represent the processing steps that will be performed on the data.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "15) What are Operators in DataStage?",
+        "answer": "The parallel job stages are made on operators. A single-stage might belong to a single operator or a number of operators. The number of operators depends on the properties you have set. During compilation, InfoSphere DataStage estimates your job design and sometimes will optimize operators.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "16) Explain connectivity between DataStage with DataSources?",
+        "answer": "IBM InfoSphere Information Server supports connectors and enables jobs for data transfer between InfoSphere Information Server and data sources.\nIBM InfoSphere DataStage and QualityStage jobs can access data from enterprise applications and data sources such as:\nRelational databases\nMainframe databases\nEnterprise Resource Planning (ERP) or Customer Relationship Management (CRM) databases\nOnline Analytical Processing (OLAP) or performance management databases\nBusiness and analytic applications",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "17) Describe Stream connector?",
+        "answer": "The Stream connector allows integration between the Streams and the DataStage. InfoSphere Stream connector is used to send data from a DataStage job to a Stream job and vice versa.\nInfoSphere Streams can perform close to real-time analytic processing in parallel to the data loading into a data warehouse. Alternatively, the InfoSphere Streams job performs RTAP processing. After RTAP processing, it forwards the data to InfoSphere DataStage to transform, enrich, and store the details for archival purposes.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "18) What is the use of HoursFromTime() Function in Transformer Stage in DataStage?",
+        "answer": "HoursFromTime Function is used to return hour portion of the time. Its input is time, and Output is hours (int8).\nExamples: If myexample1.time contains the time 22:30:00, then the following two functions are equivalent and return the integer value 22.\nHoursFromTime(myexample1.time)  \nHoursFromTime(\"22:30:00\")",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "19) What is the Difference between Informatica and DataStage?",
+        "answer": "The DataStage and Informatica both are powerful ETL tools. Both tools do almost the same work in nearly the same manner. In both tools, the performance, maintainability, and learning curve are similar and comparable. Below are the few differences between both tools.\nParameter DataStage Informatica\nMultiple Partitions DataStage's pipeline partitioning uses multiple partitions. Informatica offers to partition as dynamic partitioning.\nUser Interface DataStage offers 3 GUIs\nIBM DataStage Designer\nJob Sequence Designer(workflow design)\nDirector (for monitoring) Informatica offers 4 GUIs\nInformatica PowerDesigner\nRepository Manager\nWorkflow Designer\nWorkflow Manager.\nData Encryption Data encryption needs to be done before reaching the DataStage Server. Informatica allows \"Data Masking Transformation\" inside PowerCenter Designer as a separate transformation.\nTransformations_ DataStage becomes a powerful transformation engine by using functions (Oconv and IConv) and routines. It offers about 40 data transforming stages/objects. Almost any transformation can be performed in DataStage. Informatica allows about 30 necessary transformations to process incoming data.\nReusability We can achieve re-usability of a job in DataStage by using containers(local&shared). To re-use a Job Sequence, you will have to make a copy, compile it, and run. It offers access of re-usability through Mapplets and Worklets for re-using mappings and workflows. Reusability improves performance.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "20) How We Can Covert Server Job To A Parallel Job?",
+        "answer": "We can convert a server job into a parallel job by using Link Collector and IPC Collector.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "21) What are the different layers in the information server architecture?",
+        "answer": "The different layers of information server architecture are as follows.\nUnified user interface\nCommon services\nUnified parallel processing\nUnified Metadata\nCommon connectivity",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "22) If you want to use the same piece of code in different jobs, how will you achieve it?",
+        "answer": "DataStage facilitates with a feature called shared containers which allows sharing the same piece of code for a different job. The containers are shared for reusability. A shared container consists of a reusable job element of stages and links. We can call a shared container in, unlike DataStage jobs.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "23) How many types of Sorting methods are available in DataStage?",
+        "answer": "There are two types of sorting methods available in DataStage for parallel jobs.\nLink sort\nStandalone Sort stage",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "24) Describe Link Sort?",
+        "answer": "The Link sort supports fewer options than other sorts. It is easy to maintain in a DataStage job as there are only few stages in the DataStage job canvas.\nLink sort is used unless a specific option is needed over Sort Stage. Most often, the Sort stage is used to specify the Sort Key mode for partial sorts.\nSorting on a link option is available on the input/partitioning stage options. We cannot specify a keyed partition if we use auto partition method.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "25) Which commands are used to import and export the DataStage jobs?",
+        "answer": "We use the following commands for the given operations.\nFor Import: we use the dsimport.exe command\nFor Export, we use the dsexport.exe command",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "",
+        "answer": "Routine is a set of tasks which are defined by the DS manager. It is run via the transformer stage.\nThere are three kinds of routines\nParallel routines\nMainframe routines\nServer routines",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "27) What is the different type of jobs in DataStage?",
+        "answer": "There are two types of jobs in DataStage\nServer jobs: These jobs run in a sequential manner\nParallel jobs: These jobs get executed in a parallel way",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "28) State the difference between an Operational DataStage and a Data Warehouse?",
+        "answer": "An Operational DataStage can be considered as a presentation area for user processing and real-time analysis. Thus, operational DataStage is a temporary repository. Whereas the Data Warehouse is used for durable data storage needs and holds the complete data of the entire business.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    },
+    {
+        "question": "29) What is the importance of the exception activity in DataStage?",
+        "answer": "The reason behind the importance of exception activity is that during the job execution, exception activity handles all the unfamiliar error activity.",
+        "reference": "javatpoint.com",
+        "role": "datastage"
+    }
+]

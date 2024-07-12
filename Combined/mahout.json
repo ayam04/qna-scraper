@@ -1,0 +1,68 @@
+[
+    {
+        "question": "1. Compare Mahout & MLlib",
+        "answer": "Criteria Mahout MLlib\nWorks with Hadoop & MapReduce Apache Spark\nIterative applications Average Good\nAlgorithm coverage Limited heightened",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "2. What is Apache Mahout?",
+        "answer": "Apache™ Mahout is a library of scalable machine-learning algorithms, implemented on top of Apache Hadoop® and using the MapReduce paradigm. Machine learning is a discipline of artificial intelligence focused on enabling machines to learn without being explicitly programmed, and it is commonly used to improve future performance based on previous outcomes.\nOnce big data is stored on the Hadoop Distributed File System (HDFS), Mahout provides the data science tools to automatically find meaningful patterns in those big data sets. The Apache Mahout project aims to make it faster and easier to turn big data into big information.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "3. What does Apache Mahout do?",
+        "answer": "Mahout supports four main data science use cases:\nCollaborative filtering – mines user behavior and makes product recommendations (e.g. Amazon recommendations)\nClustering – takes items in a particular class (such as web pages or newspaper articles) and organizes them into naturally occurring groups, such that items belonging to the same group are similar to each other\nClassification – learns from existing categorizations and then assigns unclassified items to the best category\nFrequent item-set mining – analyzes items in a group (e.g. items in a shopping cart or terms in a query session) and then identifies which items typically appear together.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "Check out this video on Apache Mahout",
+        "answer": "",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "4. What is the History of Apache Mahout? When did it start?",
+        "answer": "The Mahout project was started by several people involved in the Apache Lucene (open source search) community with an active interest in machine learning and a desire for robust, well-documented, scalable implementations of common machine-learning algorithms for clustering and categorization. The community was initially driven by Ng et al.’s paper “Map-Reduce for Machine Learning on Multicore” (see Resources) but has since evolved to cover much broader machine-learning approaches. Mahout also aims to:\nBuild and support a community of users and contributors such that the code outlives any particular contributor’s involvement or any particular company or university’s funding.\nFocus on real-world, practical use cases as opposed to bleeding-edge research or unproven techniques.\nProvide quality documentation and examples.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "5. What are the features of Apache Mahout?",
+        "answer": "Although relatively young in open source terms, Mahout already has a large amount of functionality, especially in relation to clustering and CF. Mahout’s primary features are:\nTaste CF. Taste is an open source project for CF started by Sean Owen on SourceForge and donated to Mahout in 2008.\nSeveral Mapreduce enabled clustering implementations, including k-Means, fuzzy k-Means, Canopy, Dirichlet, and Mean-Shift.\nDistributed Naive Bayes and Complementary Naive Bayes classification implementations.\nDistributed fitness function capabilities for evolutionary programming.\nMatrix and vector libraries.\nExamples of all of the above algorithms.\nBecome Master of Apache Mahout by going through this online Mahout training.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "6. How is it different from doing machine learning in R or SAS?",
+        "answer": "Unless you are highly proficient in Java, the coding itself is a big overhead. There’s no way around it, if you don’t know it already you are going to need to learn Java and it’s not a language that flows! For R users who are used to seeing their thoughts realized immediately the endless declaration and initialization of objects is going to seem like a drag. For that reason I would recommend sticking with R for any kind of data exploration or prototyping and switching to Mahout as you get closer to production.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "7. Mention some machine learning algorithms exposed by Mahout?",
+        "answer": "Below is a current list of machine learning algorithms exposed by Mahout.\nCollaborative Filtering\nItem-based Collaborative Filtering\nMatrix Factorization with Alternating Least Squares\nMatrix Factorization with Alternating Least Squares on Implicit Feedback\nClassification\nNaive Bayes\nComplementary Naive Bayes\nRandom Forest\nClustering\nCanopy Clustering\nk-Means Clustering\nFuzzy k-Means\nStreaming k-Means\nSpectral Clustering\nDimensionality Reduction\nLanczos Algorithm\nStochastic SVD\nPrincipal Component Analysis\nTopic Models\nLatent Dirichlet Allocation\nMiscellaneous\nFrequent Pattern Matching\nRowSimilarityJob\nConcatMatrices\nColocations",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "8. What is the Roadmap for Apache Mahout version 1.0?",
+        "answer": "The next major version, Mahout 1.0, will contain major changes to the underlying architecture of Mahout, including:\nScala: In addition to Java, Mahout users will be able to write jobs using the Scala programming language. Scala makes programming math-intensive applications much easier as compared to Java, so developers will be much more effective.\nSpark & h2o: Mahout 0.9 and below relied on MapReduce as an execution engine. With Mahout 1.0, users can choose to run jobs either on Spark or h2o, resulting in a significant performance increase.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "9. What is the difference between Apache Mahout and Apache Spark’s MLlib?",
+        "answer": "The main difference will came from underlying frameworks. In case of Mahout it is Hadoop MapReduce and in case of MLib it is Spark. To be more specific – from the difference in per job overhead\nIf Your ML algorithm mapped to the single MR job – main difference will be only startup overhead, which is dozens of seconds for Hadoop MR, and let say 1 second for Spark. So in case of model training it is not that important.\nThings will be different if your algorithm is mapped to many jobs. In this case we will have the same difference on overhead per iteration and it can be game changer.\nLet’s assume that we need 100 iterations, each needed 5 seconds of cluster CPU.\nOn Spark: it will take 100*5 + 100*1 seconds = 600 seconds.\nOn Hadoop: MR (Mahout) it will take 100*5+100*30 = 3500 seconds.\nIn the same time Hadoop MR is much more mature framework then Spark and if you have a lot of data, and stability is paramount – I would consider Mahout as serious alternative.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    },
+    {
+        "question": "10. Mention some use cases of Apache Mahout?",
+        "answer": "Commercial Use\nAdobe AMP uses Mahout’s clustering algorithms to increase video consumption by better user targeting.\nAccenture uses Mahout as typical example for their Hadoop Deployment Comparison Study\nAOL use Mahout for shopping recommendations. See slide deck\nBooz Allen Hamilton uses Mahout’s clustering algorithms. See slide deck\nBuzzlogic uses Mahout’s clustering algorithms to improve ad targeting\nCull.tv uses modified Mahout algorithms for content recommendations\nDataMine Lab uses Mahout’s recommendation and clustering algorithms to improve our clients’ ad targeting.\nDrupal users Mahout to provide open source content recommendation solutions.\nEvolv uses Mahout for its Workforce Predictive Analytics platform.\nFoursquare uses Mahout for its recommendation engine.\nIdealo uses Mahout’s recommendation engine.\nInfoGlutton uses Mahout’s clustering and classification for various consulting projects.\nIntel ships Mahout as part of their Distribution for Apache Hadoop Software.\nIntela has implementations of Mahout’s recommendation algorithms to select new offers to send tu customers, as well as to recommend potential customers to current offers. We are also working on enhancing our offer categories by using the clustering algorithms.\niOffer uses Mahout’s Frequent Pattern Mining and Collaborative Filtering to recommend items to users.\nKauli , one of Japanese Ad network, uses Mahout’s clustering to handle click stream data for predicting audience’s interests and intents.\nLinked.In Historically, we have used R for model training. We have recently started experimenting with Mahout for model training and are excited about it – also see Hadoop World slides .\nLucidWorks Big Data uses Mahout for clustering, duplicate document detection, phrase extraction and classification.\nMendeley uses Mahout to power Mendeley Suggest, a research article recommendation service.\nMippin uses Mahout’s collaborative filtering engine to recommend news feeds\nMobage uses Mahout in their analysis pipeline\nMyrrix is a recommender system product built on Mahout.\nNewsCred uses Mahout to generate clusters of news articles and to surface the important stories of the day\nNext Glass uses Mahout\nPredixion Software uses Mahout’s algorithms to build predictive models on big data\nRadoop provides a drag-n-drop interface for big data analytics, including Mahout clustering and classification algorithms\nResearchGate, the professional network for scientists and researchers, uses Mahout’s recommendation algorithms.\nSematext uses Mahout for its recommendation engine\nSpeedDate.com uses Mahout’s collaborative filtering engine to recommend member profiles\nTwitter uses Mahout’s LDA implementation for user interest modeling\nYahoo! Mail uses Mahout’s Frequent Pattern Set Mining.\n365Media uses Mahout’s Classification and Collaborative Filtering algorithms in its Real-time system named UPTIME and 365Media/Social.\nAcademic Use\nDicode project uses Mahout’s clustering and classification algorithms on top of HBase.\nThe course Large Scale Data Analysis and Data Mining at TU Berlin uses Mahout to teach students about the parallelization of data mining problems with Hadoop and Mapreduce\nMahout is used at Carnegie Mellon University, as a comparable platform to GraphLab\nThe ROBUST project , co-funded by the European Commission, employs Mahout in the large scale analysis of online community data.\nMahout is used for research and data processing at Nagoya Institute of Technology , in the context of a large-scale citizen participation platform project, funded by the Ministry of Interior of Japan.\nSeveral researches within Digital Enterprise Research Institute NUI Galway use Mahout for e.g. topic mining and modeling of large corpora.\nMahout is used in the NoTube EU project.",
+        "reference": "intellipaat.com",
+        "role": "mahout"
+    }
+]

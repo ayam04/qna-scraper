@@ -1,0 +1,314 @@
+[
+    {
+        "question": "1. What are the most significant differences between the CALL, CALLB, and CALLP formats?",
+        "answer": "CALL is a dynamic call that is placed from PGMA to PPGMB. PGMB assumes charge of the situation. \nCALLB is an abbreviation for a prototyped call, which refers to the act of calling a module that has no procedure but does have a default procedure. \nCALLP is a prototyped call that connects to a NOMAIN module that contains multiple procedures. CALL is a dynamic call that is placed from PGMA to PPGMB. PGMB assumes charge of the situation. CALLB is an abbreviation for a prototyped call, which refers to the act of calling a module that has no procedure but does have a default procedure. CALLP is a prototyped call that connects to a NOMAIN module that contains multiple procedures.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "2. What is AS400?",
+        "answer": "The AS/400, which has been formally renamed the \"IBM iSeries\" but is still popularly referred to by its former name, \"AS/400,\" is a midrange server that was designed for use in smaller organizations as well as organizations that are part of larger companies. It has been modified to function well with web applications in distributed networks therefore, this is the primary focus of the development. The AS/400 makes use of a technology known as the PowerPC microprocessor, which is a form of computer technology that has a simplified instruction set. O/S/400 is the operating system that controls it. IBM's goal with the AS/400 is to provide a versatile all-purpose server that can replace PC servers and Web servers in organizations around the world, competing with Wintel and UNIX servers and providing its massive customer base with an immediate jump into the Internet by offering many terabytes of disc storage and a Java virtual memory that is directly connected to the operating system. \"IBM iSeries\"",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "3. Explain the difference between a command and an application programming interface (API) in AS400?",
+        "answer": "A command is a piece of software that is executed from the command line of an AS400 computer.\nAn API is a collection of coding instructions that may be called from within another application. A command is a piece of software that is executed from the command line of an AS400 computer. An API is a collection of coding instructions that may be called from within another application.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "4. What are some of the most popular AS400 commands?",
+        "answer": "The most popular AS400 commands are DSPOBJD, WRKOBJ, and CHGPF. Interacting with objects, displaying information about those objects, and modifying physical files are correspondingly handled by the DSPOBJD, WRKOBJ, and CHGPF commands.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "5. What is the most significant difference between SFLCLR and SFLINZ?",
+        "answer": "Any data that had been added to the subfile in the past can be removed using the SFLCLR command. SFLINZ will delete all of the data that was previously loaded into the Subfile, and it will then initialize the character fields with nothing, while also setting the numeric fields to zero.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "6. What's the difference between WRITE and EXCPT?",
+        "answer": "WRITE allows you to write to the database file as well as device files.\nEXCPT is used in the O specs program to write to the PRTF or database file. WRITE allows you to write to the database file as well as device files. EXCPT is used in the O specs program to write to the PRTF or database file.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "7. How exactly does one go about renaming a library in AS400?",
+        "answer": "If you want to change the name of a library that is currently being used in AS400, you will need to use the CHGLIB command. If you use this command, you will not only be able to modify the name of the library, but you will also be able to change the description of the library if you so choose.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "8. How exactly does one go about copying members from one source file to another using AS400?",
+        "answer": "To copy members from one source file to another in AS400, you can make use of either the CPYFRMSTMF command, which translates to \"copy from stream file,\" or the CPYTOSTMF command, which translates to \"copy to a stream file.\" Both of these commands can be found in the \"stream file\" section of the AS400 command reference.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "9. What do the terms \"CLEAR\" and \"RESET\" refer to exactly?",
+        "answer": "When you execute the CLEAR command in an RPG program, the value of a variable will be reset to its default value, which is regarded as a low value.\nWhen you execute the RESET command, the value of its Initialized parameter will be reset to the value that was supplied in the INZ keyword. When you execute the CLEAR command in an RPG program, the value of a variable will be reset to its default value, which is regarded as a low value. When you execute the RESET command, the value of its Initialized parameter will be reset to the value that was supplied in the INZ keyword.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "10. How to check if a job is currently running on an AS400 system?",
+        "answer": "On an AS400 system, you can use the WRKACTJOB command to find out if a job is running or not. This command will show you a list of all the jobs that are currently running on the system, so you can find the one you want. WRKACTJOB",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "11. When using the AS400, what methods are available for retrieving data from a database?",
+        "answer": "When working with AS400, you will need to use the SQL Select statement to get data from a database. This is a must-have first step. If you use this statement, you can specify the columns and rows from which you want to get the data. This gives you more control over the results of the query.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "12. What are Program Entry Procedures (PEP) and User Entry Procedures (UEP?",
+        "answer": "PEP, If a program is made up of numerous different modules, the question of which module should be executed first arises while the programs are being run. As a consequence of this fact, the name of the module that is supplied in PEP will be executed initially.\nUEP, The control will then be transferred to the very first statement included within that module when the program is run for the first time. PEP, If a program is made up of numerous different modules, the question of which module should be executed first arises while the programs are being run. As a consequence of this fact, the name of the module that is supplied in PEP will be executed initially. UEP, The control will then be transferred to the very first statement included within that module when the program is run for the first time.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "13. What are the many kinds of items that can be utilized with the AS400 system?",
+        "answer": "The AS400 allows the use of a wide variety of object types, including libraries, programs, instructions, files, and databases. These can all be accessed and utilized by the user. Files fall under the category of other categories.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "14. Could you give me some examples of useful programs that have been written in the RPGLE programming language?",
+        "answer": "Some examples of helpful programs that have been written in RPGLE programming language include the following: An application for computing and displaying information on employee payrolls is called payroll software.\nA system that keeps track of stock levels and automatically sends orders to restock whenever they fall below a certain threshold\nA piece of application software that generates bills for individual customers.\nA program that manages the accounts of customers and the contact information associated with them\nA piece of software that allows for the organization of appointments as well as the tracking of service requests from clients. An application for computing and displaying information on employee payrolls is called payroll software. A system that keeps track of stock levels and automatically sends orders to restock whenever they fall below a certain threshold A piece of application software that generates bills for individual customers. A program that manages the accounts of customers and the contact information associated with them A piece of software that allows for the organization of appointments as well as the tracking of service requests from clients.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "15. What is meant by the term \"bind by reference\"?",
+        "answer": "When we first create a module, we bind that module to an SRVPGM and then use that SRVPGM in one or more of our programmes, we are implementing a method that is known as \"bind by the reference\". bind by the reference",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "16. What is meant by the phrase \"bind by copy\"?",
+        "answer": "The procedure of constructing a module and then instantly connecting it to PGM is referred to as \"bind by copy.\" At any point in time, we are free to delete the module and transfer the PGM to any other system, where it can then be operated. If we do this, the module will no longer be accessible. We do not require the module at this time because all of the references to the module have already been migrated to the PGM.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "17. What are IBM I Services, commonly referred to as IWS? Is it even possible to put them up without ILE being installed in the first place?",
+        "answer": "IBM I Services (IWS) are a collection of tools and services that are available for use on the IBM I platform. These tools and services make it possible to create, manage, and consume web services. It is possible to install IWS without ILE; but, doing so will result in significant reductions in a number of the capabilities and functions.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "18. How well do you understand the PASE environment in AS400? Describe your degree of understanding.",
+        "answer": "The acronym PASE stands for \"Portable Application Solutions Environment,\" and it is this environment that enables AS400 applications to run on other platforms such as Windows and Linux. PASE was developed by IBM. Its primary purpose is to act as a compatibility layer, which makes it possible for AS400 applications to be portable and run on a range of different systems. Portable Application Solutions Environment",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "19. In specific terms, what are the responsibilities of an AS/400 administrator?",
+        "answer": "The management and maintenance of the AS/400 system fall under the purview of the persons who have the title of AS/400 administrator. This involves a wide range of responsibilities, some of which include managing user accounts, backing up data, installing and configuring the system, and maintaining user accounts.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "20. What are the different procedures required in producing a file for the printer?",
+        "answer": "The following is a list of the procedures that must be taken in order to create a printer file: To generate the printer file, run the Create Printer File (CRTPRTF) command on your computer.\nTo adjust the attributes of the printer file as required, use the CHGPRTF command, which stands for Change Printer File.\nAssociating the printer file with an output queue can be accomplished by using the WRKOUTQ command, which stands for Work with Output Queues.\nStart the output queue and the printing process by entering the STROUTQ command to start the output queue. To generate the printer file, run the Create Printer File (CRTPRTF) command on your computer. To adjust the attributes of the printer file as required, use the CHGPRTF command, which stands for Change Printer File. Associating the printer file with an output queue can be accomplished by using the WRKOUTQ command, which stands for Work with Output Queues. Start the output queue and the printing process by entering the STROUTQ command to start the output queue.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "21. How does one go about scheduling jobs using AS400?",
+        "answer": "You can able to establish jobs to execute at particular times in AS400 by utilizing the Job Scheduler function. You will be able to determine when a job should run as well as the frequency with which it should run if you use this tool. You may also utilize the Job Scheduler to monitor job performance and make certain that tasks are carried out in accordance with the blueprints. Microsoft offers you the use of this functionality as a service.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "22. What are the most important things that the AS400 is capable of doing?",
+        "answer": "The AS400 product family comprises business servers that have been designed primarily for high-volume data management and transaction processing. These two functions were the original impetus for the creation of the AS400. In addition to this, they are commonly used for apps that run on the web and for commercial transactions that take place online.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "23. How to determine which records in a table are duplicates in the most time-effective method possible?",
+        "answer": "When searching for duplicate records inside a database, using the DISTINCT keyword is the most efficient way that may be used. Since this keyword will only return values that are fully unique, it will be quite easy to identify any instances of duplicate content. DISTINCT",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "24. Can we boost the functionality of the AS400 platform? Should we deal with them in some way if the answer to the question is yes?",
+        "answer": "When working with AS400, it is essential to be aware of a few potential performance difficulties that may develop. These concerns could be caused by a number of different factors. One of them is that the AS400's start-up time can be rather long, which is why it is vital to account for that delay when building programmes. Another one of them is that the AS400 doesn't have a graphical user interface. When creating applications for the AS400, the number of resources that are required by the system should also be taken into mind. Keeping this in mind is absolutely necessary as a result of this reason. In conclusion, support for the AS400 is not nearly as prevalent as it is for other platforms; therefore, it is vital to keep this information in mind when picking a basis for the development of software.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "25. How to write files onto tape devices using the AS400 operating system?",
+        "answer": "The SAVLIB command is the one that should be used if you want to save libraries to tape media. Using the TAPDEV parameter is required in order for you to declare the name of the tape device that you are working with. SAVLIB TAPDEV",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "1. If we perform CHGPF, is there a chance that LEVEL CHECK ERROR will occur?",
+        "answer": "The value that we have given the LVLCHK (Record format level check) attribute will determine whether or not this is the case. If its value is *YES, then the record format level identifier will be checked every time the file is opened, and an error will be created if there is a mismatch between the two. If its value is NOT *YES, then the record format level identifier will not be checked. In the event that its value is *NO, the record format level identifier does not go through validation; as a consequence, there is no error.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "2. In what ways exactly is the utilization of RGZPFM beneficial?",
+        "answer": "The RGZPFM technique is often utilized by our team if there is a need to recycle previously deleted data in a file for usage in subsequent insert processes. When adding information to a file, it is done so in a specific order that has been set beforehand. If we delete some entries in the middle of other entries, the open spaces that are created as a result won't be used to make way for new records because there won't be enough room. Because of this, the amount of space used up by records that have been deleted keeps growing, and we won't be able to use these records until we use the RGZPFM command to reorganize the storage space that is currently accessible. As soon as we delete the records, the file will be reorganized, and this will cause the record numbers of the remaining records to shift relative to one another. Let's imagine that the bulk of the programs use a particular file since the value of its key is the most common one. If we want to alter the access path of this file from sequential to key, or if we want to change the key value from one to another, we can utilize GZPFM. This will allow us to do either of those things.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "3. What is DYNSLT?",
+        "answer": "The use of this file-level keyword specifies that the file's selection and omission checks (provided with select/omit specifications) will be performed at runtime. In contrast to the select/omit that is normally associated with access paths, the dynamic variety is indicated by this keyword.\nYou can't save information in anything other than a physical file. All that's in a logical file are references to other locations in the file or to subsets of data that need to be processed in a certain order.\nTo prevent data loss when a record is added, modified, or deleted from a physical file, the system places a lock on the file and then checks and updates any associated logical files. While the time spent doing this is negligible in and of itself, it can add up if a large number of edits need to be made to a file at once.\nThe aforementioned steps are not required during record updates when using the Select/Omit feature of your DDS in conjunction with DYNSLT.\nThis is helpful if your criteria for selecting records encompasses nearly all of those in the file. Now, instead of performing all the necessary upkeep before processing, DYNSLT will read all the entries in the file and choose which ones to process at the time of processing. The use of this file-level keyword specifies that the file's selection and omission checks (provided with select/omit specifications) will be performed at runtime. In contrast to the select/omit that is normally associated with access paths, the dynamic variety is indicated by this keyword. You can't save information in anything other than a physical file. All that's in a logical file are references to other locations in the file or to subsets of data that need to be processed in a certain order. To prevent data loss when a record is added, modified, or deleted from a physical file, the system places a lock on the file and then checks and updates any associated logical files. While the time spent doing this is negligible in and of itself, it can add up if a large number of edits need to be made to a file at once. The aforementioned steps are not required during record updates when using the Select/Omit feature of your DDS in conjunction with DYNSLT. This is helpful if your criteria for selecting records encompasses nearly all of those in the file. Now, instead of performing all the necessary upkeep before processing, DYNSLT will read all the entries in the file and choose which ones to process at the time of processing.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "4. In AS400, how useful is JDFTVAL?",
+        "answer": "If you use this term at the file level, the system will supply default values for all of the fields in the event that a join to a secondary file does not return any entries. If this keyword is not supplied, a record in the primary file will be skipped over in the secondary file if there is no equivalent record in that primary file record.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "5. What are the Key Differences Between the CRTDUPOBJ and COPYF File Formats?",
+        "answer": "When using CRTDUPOBJ to generate a duplicate file, if the original file was logical, the new file will be logical as well. There will be no differences whatsoever, not even in the identifier for the record format. Comparatively, if we use COPYF to duplicate a logical file, the result will be a physical file, not a logical one.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "6. In AS400, what exactly is an access path?",
+        "answer": "The 'access path' is a description of the sequence in which the records are to be read. Access pathways can be stored on the system in either a temporary or permanent manner (as a physical or logical file, for example). It's possible for the OPNQRYF command to generate a temporary access path, put it to use just once, and then throw it away afterwards. OPNQRYF",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "7. In AS400, what is a program status data structure (PSDS)? Provide an illustration of PSDS.",
+        "answer": "It is possible to set up a programme status data structure (PSDS) that will make exception and error information easily accessible to the programme to guarantee that the correct action will be performed in the event that an unhandled exception occurs. Some instances of probable exceptions include a date, time, or timestamp value that is invalid; division by zero; and an array index that is outside of its allowed range. Because it has to be defined in the module's main source file, there is only ever one PSDS associated with each module.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "8. What is keeping a journal? What does an example of journaling look like?",
+        "answer": "Keeping a record of one's activities and events is the most general definition of the practice of journaling. When discussing the iSeries, \"journaling\" refers to the process of recording the activities carried out by various items. The practice of documenting activities made in connection to actual files in an iSeries journal is considered standard operating procedure. Keeping a record of the times a file has been opened, closed, or had new data added to or altered within it is what is meant by the term \"journaling\" a file.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "9. What are the terms ASSUME, OVERLAY, and KEEP in as400? Give an example of how to employ the prepositions assume, overlay, and keep.",
+        "answer": "By letting the OS/400 code know that it should display this record automatically whenever the file is opened, we are able to instruct it to do so on its own. If we want to, we are able to carry out this activity. When you use this word, you will be able to retrieve information that was displayed on the screen while another programme was operating in the background. If this phrase is not present in the file, then the screen of the old file will be empty when we switch to the new file. By making use of the term overlay in conjunction with the keyword ASSUME, we will be able to circumvent this issue. You are able to add fields on top of this record by utilizing the OVERLAY keyword, and doing so will not remove the entire view from your database. It is displayed on the screen that the ASSUME flag has been set on a screen format that the computer is expected to replicate and that format. Documents with windowed user interfaces are the typical beneficiaries of this format's application. It substitutes a fictitious format for the genuine one that does not have a window for the real one that is being used for placement. We need to stop it from being deleted if we don't want the display to be lost when the display file is closed. When switching back to the previous display file, there won't be any unpleasant flickering like there was before. For example, the screen flickers if we press F4 on the primary screen to bring up a window and then click back to the main screen to return to the primary screen. Because we want to stop this from happening, we employ the term \"KEEP.\"",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "10. Explain the terms SFLDROP, SFLFOLD, and SFLMODE that are used in display files? Please give an example of this.",
+        "answer": "SFLDROP: This keyword, when used at the record level, allows the subfile to be displayed with its records truncated so that they may all fit on a single line. This occurs when the keyword is applied at the record level. We assign a CA (command attention) or CF (command function) key, depending on the type of manipulation we want to perform on the abbreviated and folded behavior of the subfile. The display will switch from its typical truncated state to its folded mode whenever the user presses the function key on the keyboard. The user has the ability to switch between the truncated and folded forms at any time by simply hitting the CF or CA key. Both SFLMODE and SFLFOLD are considered to be related keywords.\nSFLFOLD: When this keyword is used at the record level, the subfile will be shown in a folded manner as a default setting. We assign a CA (command attention) or CF (command function) key, depending on the type of manipulation we want to perform on the abbreviated and folded behavior of the subfile. However, the user has the ability to convert to the truncated mode by pressing the function key. The folded mode is the default setting. Simply pressing either the CF or CA key (depending on which form you want to use) allows the user to switch between the folded and truncated versions. It is part of a popular search query that also includes the terms SFLMODE and SFLDROP.\nSFLMODE: If you use this keyword at the record level, you will be able to tell the system whether the subfile should be folded or truncated when it is presented. This keyword has a parameter that is a hidden variable, and changing the value of that variable gives us the ability to change the way the subfile behaves. The user is able to switch between the truncated and folded forms by simply pressing the CF or CA key on their keyboard. The abbreviated form will be displayed in the default mode of presentation. It's one of the components of a common search query, along with SFLDROP and SFLFOLD. SFLDROP: This keyword, when used at the record level, allows the subfile to be displayed with its records truncated so that they may all fit on a single line. This occurs when the keyword is applied at the record level. We assign a CA (command attention) or CF (command function) key, depending on the type of manipulation we want to perform on the abbreviated and folded behavior of the subfile. The display will switch from its typical truncated state to its folded mode whenever the user presses the function key on the keyboard. The user has the ability to switch between the truncated and folded forms at any time by simply hitting the CF or CA key. Both SFLMODE and SFLFOLD are considered to be related keywords. SFLDROP: SFLFOLD: When this keyword is used at the record level, the subfile will be shown in a folded manner as a default setting. We assign a CA (command attention) or CF (command function) key, depending on the type of manipulation we want to perform on the abbreviated and folded behavior of the subfile. However, the user has the ability to convert to the truncated mode by pressing the function key. The folded mode is the default setting. Simply pressing either the CF or CA key (depending on which form you want to use) allows the user to switch between the folded and truncated versions. It is part of a popular search query that also includes the terms SFLMODE and SFLDROP. SFLFOLD: SFLMODE: If you use this keyword at the record level, you will be able to tell the system whether the subfile should be folded or truncated when it is presented. This keyword has a parameter that is a hidden variable, and changing the value of that variable gives us the ability to change the way the subfile behaves. The user is able to switch between the truncated and folded forms by simply pressing the CF or CA key on their keyboard. The abbreviated form will be displayed in the default mode of presentation. It's one of the components of a common search query, along with SFLDROP and SFLFOLD. SFLMODE:",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "11. What does the abbreviation SFLNXTCHG mean when it's used in the display file? In order to better understand SFLNXTCHG, could you please provide an example?",
+        "answer": "This keyword is quite useful when applied to a subfile that can be edited in some way. After locating the entries in the subfile that require validation with the help of REACDC, we will next utilize READC once more to process the data obtained from those records after ensuring that they are accurate. Unfortunately, there is just a small chance of success when using READC multiple times on the same data. Because the MDT (modified data tag) is triggered by the first READC operation that is issued on the record, the second READC action that is issued on the same record will fail. If a processing option is selected that alters specific records, READC will show you which records are affected. Because the MDT flag is going to be disabled, the records won't be considered updated for the second time because of this. Utilizing the SFLNXTCHG keyword will allow us to have the record read twice, which is necessary before it can be processed. A change will also be regarded to have occurred if a subfile record is field excited, typed into, the erroneous processing option is selected, or an incorrect input or update is made.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "12. A problem with the connection to a device is referred to as a session or device error in an AS400 system. Specify an instance of a session or device problem that occurred.",
+        "answer": "The SFLRCDNBR or SFLSIZ field in the sub-file does not include a record number that is valid. Examine the part of the programme at which it makes reference to the display subfile so that you can figure out what the value of RRN is (EXFMT). The value will be disregarded if the SFLDSP indication *ON is configured to display 0 or if the conditional display of the subfile is currently being carried out, whichever comes first. It is expected that the same error message would be displayed while making an attempt to display a subfile that is blank. There is a disparity between the location that is displayed for the field in the DDS display file and the actual location of the field. There is a lack of organization in the display file DDS's keywords. You are attempting to write more records than the Display file can hold, which is now set at 9999, but you can save no more than that. Take, for instance, the scenario in which you wished to load each and every subfile.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "13. Where does AS400's *NODEBUGIO get you if it doesn't work?",
+        "answer": "You may notice that the debugger pauses multiple times for each I/O statement when you move through a programme while using an interactive source debugger. This is because I/O statements can have multiple parameters. This is due to the fact that a new breakpoint is inserted for each field that is read back from the input/output buffer. This is an irritation, but it is not a major problem at all. If you include the *NODEBUGIO directive in your code, each I/O statement will fail exactly once and never again after that.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "14. What is the function of the IGNORE keyword while working with RPGLE?",
+        "answer": "You are able to disregard the record format that is externally indicated for a file by using the IGNORE keyword. Rec Format is a non-mandatory argument that specifies the full name of the record format that should be ignored by the outside world. You have the option of specifying one or more record types, delimited by commas (:).",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "15. Please provide an explanation of the chain opcode in RPGLite.",
+        "answer": "The READE operation will be carried out by the CHAIN command if it is unable to locate a match. CHAIN is your best bet if you have a large procedural file and are seeking a specific record (such as a record of a customer). In order to randomly access the contents of a file, we use the file operation as demonstrated by the CHAIN example. We are unable to go on from this record because none of the other records meets the conditions for the Chain operation. Therefore, if the file contains more than the given number of records that fit the same criteria, we will not be able to read any additional data using the Chain action since we will have reached our maximum capacity. The CHAIN action will lock the record that corresponds to a file whenever that file is opened in update mode. In order to avoid lock, we make use of operator extender 'N.' As part of the search input, you are required to submit either the key, the key list, or the related record number. If the record that corresponds to the search argument cannot be located, the HI level indicator will be triggered; in all other cases, it will remain deactivated. The %FOUND built-in function works in a manner that is analogous to this, giving the value '0' if there is no record found and '1' otherwise. If a CHAIN exception occurs, which is indicated by a file status code that is higher than 1000, either the operation code extender 'E' or an error indicator at the LO level needs to be used to resolve the problem. In the event that the result field does contain a specification of this kind, the operation's output will be written to the data structure that has been provided.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "16. Help me understand the rpgle EXCEPT opcode by breaking it down.",
+        "answer": "The EXCEPT opcode is used whenever an exception record needs to be written. Exceptional records are denoted by the record type \"E\" at the O-spec level. In the course of the c-spec review, each of the fields that have been labelled as exceptional and that have been defined inside the exception records will be examined. It will be done in sequential order if there are several occurrences of the same record name. EXCEPT allows for the printing of reports as well as the partial updating of physically stored data.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "17. What operations are carried out by the READ opcode in rpgle?",
+        "answer": "The read operation reads all of the records that are contained within an entire procedure file. After reading the record that is now located at the pointer's location, the pointer is then moved to the next item in the sequence. When you perform a READ operation on a file that is open and set to update mode, the file receives a record lock. In order to avoid lock, we make use of operator extender 'N.' When dealing with READ exceptions, you have the option of using either the operation code extension 'E' or an error indicator at the LO level (file status codes greater than 1000). In the event that the result field does contain a specification of this kind, the operation's output will be written to the data structure that has been provided. In the case that there is an error or a circumstance that indicates that the file has reached its end, the reference to the file must be relocated to the first accessible record that is satisfactory. It is possible to reposition the pointer by utilizing the CHAIN, SETLL, or SETGT procedures. If the EOF condition is not satisfied, the Equal Indicator will not light up; instead, it will remain dark. Alternatively, the %EOF indicator may be utilized in place of this one (). ",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "18. Please provide an example of how the READC opcode is utilized in rpgle.",
+        "answer": "When you use our software and press the READC button, it will retrieve any records that have been modified or added from the subfile and update the fields in the main file that are connected to the entries that were retrieved. Even if we enter a value by mistake or use the key that exits the field, the record will be altered. This is true even if no modifications were really done. As a result of the fact that this is the case, READC will also be capable of determining when something similar to this is occurring. If we make the error of entering option 3 in a field that enables user input (2 stands for edit, 4 stands for delete, and 5 stands for display), the record is modified, and READC will read this updated record. However, if we attempt to return to the record after the error has been corrected, we won't be able to do so. If we have a screen that displays records from a subfile and one of the fields in that screen allows the user to enter data, then we can delete records from the subfile. If we want to obtain the same record once more, we must first ensure that the subfile contains the most recent information and then activate the SFLNXTCHG signal. If the screen for the subfile can be modified, then any record included within the subfile can also be modified. By using READC on the subfile and including a DOW NOT%EOF in the appropriate place, we can determine which entries have been modified (). This will cause the software to read each record from the subfile that has been updated one at a time and process it.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "19. Please provide an example of how the READE opcode should be used in rpgle.",
+        "answer": "Following the discovery of a record that satisfies factor-1, READE will move the cursor to the following record in the set that fulfils the same requirements. If the same matching criteria aren't found, it will be moved to the end of the file. The factor-1 location is where the search argument, which could be a key, relative record number, field value, named constant, or metaphorical constant, is inserted. Using SETLL and READE, it is possible to find several records all at once. Whereas CHAIN is most helpful for discovering a particular record, for example, it is feasible to retrieve several client orders for a single customer (like a customer record). Through the use of the READE command, we can read all of the records that include a match for the search input in factor -1. If there are no entries in the database that fit the search criteria, the cursor will be moved to the very end of the file. When managing READE problems, you have the option of using either the operation code extension \"E\" or an error indicator at the LO level (file status codes higher than 1000). In the event that the result field does contain a specification of this kind, the operation's output will be written to the data structure that has been provided. If the EOF condition is not satisfied, the Equal Indicator will not light up; instead, it will remain dark. If we do want, we also have the option of using %EOF as an alternative signal ().",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "20. Please provide an example of how the READP opcode should be used in rpgle.",
+        "answer": "During the process of reading a record, READP will move the pointer back to where it was before reading the record, after which it will move back to where it was before reading the record once more. EOF *ON will become active once it has been determined that no further records can be located. Dealing with READP exceptions can be done with either the operation code extension \"E\" or an error indicator at the LO level. Both of these options are available (file status codes higher than 1000). If the result field does contain a specification of this kind, the operation's output will be written to the data structure that has been provided. Altering the position of the Equal Indicator.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "21. It would be helpful if you could walk us through the READPE opcode in rpgle and explain why we need to use it.",
+        "answer": "READPE will move the record pointer back one record, read that record, and then move it back one more record while continuing to read the same record for factor 1. This process will be repeated until all records have been read. The factor-1 location is where the search argument, which could be a key, relative record number, field value, named constant, or metaphorical constant, is inserted. READPE is the best option to go with whenever it's possible to find more than one record. Reverse order searches for things like client orders can disclose multiple entries for a single consumer, whereas CHAIN is great for discovering a specific record (like a customer record). We can obtain all of the files that have a search parameter in factor-1 by using READPE. This search parameter must match the filenames that are found in the matched records. If there are no entries that correspond to the search criteria, the pointer will be moved to the beginning of the file. Dealing with READPE exceptions can be done with either the operation code extender 'E' or an error indicator at the LO level. Both of these options are available (file status codes higher than 1000). In the event that the result field does contain a specification of this kind, the operation's output will be written to the data structure that has been provided. If the EOF condition is not satisfied, the Equal Indicator will not light up; instead, it will remain dark. If we do want, we also have the option of using %EOF as an alternative signal ().",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "22. Please provide an example of the SETGT operation and explain how it functions.",
+        "answer": "With the help of this opcode, the file pointer is moved to the right by one record, to a record that contains a key or RRN value that is greater by one than the value it is currently pointing to. After we have successfully set the file pointer, we are free to carry out any file operation that we desire, such as READ, READP, READPE, or READE. In addition to the literal notations *LOVAL, *HIVAL, *START, and *END, we also have the option of using RRN VALUE, KEY VALUE, and KEY LIST in factor-1. If SETGT is successful, it will set EOF() to *OFF; if it is not successful, it will not affect EOF() in any way ().",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "23. It would be helpful if you could provide an example of the SETLL operation.",
+        "answer": "When used with a search argument of factor-1, SETLL will position the file pointer at the first occurrence of the record when the value in the key field/RRN is greater than or equal to the search argument. File operations such as READ, READP,READPE, and READE are possible once the file pointer has been set. The file is moved to the end of the file if the SETLL operation fails (no records found condition). We can use the symbolic constants *LOVAL, *HIVAL, *START, *END, or the more concrete RRN VALUE, KEY VALUE, or KEY LIST in factor-1. To ascertain if the found record has a key field/RRN value that is larger than or equal to the key field, we use the %FOUND variable. The HI indicator will be \"on\" in this situation. Using %EQUAL, we check to see if the value of the key field or RRN in the found record matches the value of the search input in factor 1. Only the RRN number is required for a sequential file. Therefore, the EQ indicator will be *on in this scenario. An error indicator at the LO level or the operation code extension 'E' can be used to deal with SETLL exceptions (file status codes higher than 1000). In the event of a 100% match, the Equal Indicator will light up. That's a suitable replacement for %equal, actually (). HI level indication will be activated if a greater value match is obtained. Substitute this in for %found (). For files that aren't encrypted with a key, *LOVAL will return an error. If SETLL succeeds, it turns EOF() *OFF if it is *ON; otherwise, it does not affect EOF() ().",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "24. Explain the rpgle TEST opcode and its function with an example",
+        "answer": "A test opcode is used whenever there is a need to determine whether or not a particular date, time, or timestamp has been accurately recorded. If the date is not valid, the low-level signal will be turned on; if it is valid, the indicator will not be turned on. In order to conduct the tests, operator extenders will be utilized. For example, test (d), test (t), and test (z) will be utilized for the date, the time, and the time stamp, respectively. Date of the test excluding the extended factor by default (z).",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "25. Explain the use of the MOVE opcode by providing an example.",
+        "answer": "The text contained within the second input is copied over into the output field by the MOVE command. The action will begin with the character that is located in the far rightmost position of Factor 2. When sending data that pertains to dates, times, or timestamps, the first factor must be left blank unless both the source and the destination are character or numeric fields. In the event that factor 2 is longer than the result field, the leftmost letters or digits of that factor will not be sent. Any result field that is longer than factor 2 will have the leftmost letters or digits of that field remain unchanged unless padding is provided for the field. If factor 2 is smaller than the length of the result field, a P can be supplied in the operation extender position to allow the result field to be padded on the left after the move. This is only possible if the length of the result field is less than factor 2. In the instance of a result field that has a variable length, the MOVE operation will not have any impact on the length of the field. If either the source or the target is a character field, an optional separator specification can be made using the syntax indicated in factor 1 if the source or the target. Only separators that are valid for the format are shown here.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "26. What is EXTPROC in as400?",
+        "answer": "If the prototype of the procedure is being defined, then the EXTPROC keyword should be used to specify the procedure's external name. You have the option of utilizing either a character constant or a function pointer for the name.",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    },
+    {
+        "question": "27. What is extpgm in as400?",
+        "answer": "When the EXTPGM keyword is included in the prototype, it indicates that a dynamic call to a program is being made. In order to parameterize programs, first define their prototypes, and then pass in the names of the program's external variables. It is up to you to decide whether the name will be a string of fixed length or a string of variable length. Conclusion The Logical PARtitioning-LPAR feature that was introduced in version 4.0 of OS/400 makes it possible to run several operating systems on a single IBM System, with each OS running in its own dedicated partition. This functionality was initially introduced in OS/400 version 4.0. Some of the AS400 applications, which are also known as IBM iSeries, are fairly large and call for a client-server midrange architecture, a system that is secure and stable, and virtually no maintenance. Questions around the management of supply chains, legal activity on databases, and other similar topics are also frequently asked at AS400 interviews. It's possible that the interviewer will additionally enquire about your background working with RPGLE, AS400 RPG, and AS400 testing. I hope everything works out for you! Important Interview Resources Technical Interview Questions\nCoding Interview Questions\nInterview Preparation Articles Technical Interview Questions Technical Interview Questions Coding Interview Questions Coding Interview Questions Interview Preparation Articles Interview Preparation Articles",
+        "reference": "interviewbit.com",
+        "role": "as400"
+    }
+]

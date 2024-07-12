@@ -1,0 +1,1082 @@
+[
+    {
+        "question": "1. What is the difference between Node.js and JavaScript?",
+        "answer": "Factor Node.js JavaScript\nEngine V8 – Google Chrome V8, Spider Monkey, and JS Core\nUsage To perform non-blocking activities For general client-side operations\nWorking Interpreter – Scripting Programming language",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "2. What is Node.js?",
+        "answer": "Node.js is a very popular scripting language that is primarily used for server-side scripting requirements. It has numerous benefits compared to other server-side programming languages out there, the most noteworthy one being the non-blocking I/O.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "3. Briefly explain the working of Node.js.",
+        "answer": "Node.js is an entity that runs in a virtual environment, using JavaScript as the primary scripting language. It uses a simple V8 environment to run on, which helps in the provision of features like the non-blocking I/O and a single-threaded event loop.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "4. Where is Node.js used?",
+        "answer": "Node.js is used in a variety of domains. But, it is very well regarded in the design of the following concepts:\nNetwork application\nDistributed computing\nResponsive web apps\nServer-Client applications\nUnlock the Power of Node.js – Check out our Node.js Tutorial today!",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "5. What is the difference between Node.js and Angular?",
+        "answer": "Node.js Angular\nUsed in situations where scalability is a requirement Best fit for the development of real-time applications\nAbility to generate queries in a database Ability to simplify an application into the MVC architecture\nMainly used to develop small/medium-sized applications Mainly used to develop real-time interactive web applications\nProvides many frameworks such as Sails, Partial, and Express Angular is an all-in-one web app framework\nCoded using C++ and JavaScript Coded in TypeScript\nCheck out the top Node.js interview questions and answers video tutorial on YouTube designed especially for beginners:",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "6. What is the difference between synchronous and asynchronous functions?",
+        "answer": "Synchronous functions are mainly used for I/O operations. They are instantaneous in providing a response to the data movement on the server and keeping up with the data as per the requirements. If there are no responses, the API will throw an error.\nOn the other hand, asynchronous functions, as the name suggests, work on the basis of not being synchronous. Here, HTTP requests, when pushed, will not wait for a response to begin. Responses to any previous requests will be continuous, even if the server has already gotten the response.\nNext among the Node JS questions, you have to learn about the control flow function.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "7. What is the control flow function?",
+        "answer": "The control flow function is a common code snippet, which executes whenever there are any asynchronous function calls made. It is used to evaluate the order in which these functions are executed in Node.js.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "8. Why is Node.js so popular these days?",
+        "answer": "Node.js has gained an immense amount of traction as it mainly uses JavaScript. It provides programmers with the following options:\nWriting JavaScript on the server\nAccess to the HTTP stack\nFile I/O entities\nTCP and other protocols\nDirect database access\nIf you are a NodeJS enthusiast, enroll in the Node JS Certification and get certified now!",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "9. Are there any disadvantages to using Node.js?",
+        "answer": "A multi-threaded platform can run more effectively and provide better responsiveness when it comes to the execution of intensive CPU computation, and the usage of relational databases with Node.js is already becoming obsolete.\n\nAre you interested in learning React JS? Click here to learn more about this React JS Certification!",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "10. Explain the event-driven architecture of Node.js",
+        "answer": "Node.js follows an event-driven architecture where asynchronous operations are managed through event loops. It uses callback functions to handle events and execute non-blocking I/O operations efficiently.\nTake a look at the most asked WordPress Interview Questions! Prepared by our experts and crack the interview.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "11.What is npm? How do you install packages using npm?",
+        "answer": "npm stands for Node Package Manager. It is a package manager for Node.js that is used to install and share packages/modules. To install packages, you use the “npm install” command followed by the package name. For example, “npm install express” installs the Express framework",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "12.How do you create a basic HTTP server in Node.js?",
+        "answer": "const http = require(‘http’);\n\nconst <a href=\"https://intellipaat.com/blog/tutorial/sql-server-tutorial/\" target=\"_blank\" rel=\"noopener\">server</a> = http.createServer((req, res) => {\n\n    res.writeHead(200, {‘Content-Type’: ‘text/plain’});\n\n    res.end(‘Hello, World!’);\n\n});\n\nserver.listen(3000, () => {\n\n    console.log(‘Server running at http://localhost:3000/’);\n\n});",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "13. Explain the difference between callbacks and promises in Node.js.",
+        "answer": "Callbacks are functions passed as arguments to other functions and executed asynchronously once an operation is completed. \nPromises represent the eventual completion (or failure) of an asynchronous operation and allow the chaining of asynchronous actions.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "14. What is the purpose of the package.json file?",
+        "answer": "The package.json file contains metadata about a Node.js project, including its configuration settings like dependencies, scripts, version, author, etc. It is used by npm to manage project dependencies.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "15. How do you handle errors in Node.js?",
+        "answer": "Errors in Node.js can be handled using “try-catch” blocks for synchronous code and “.catch()” method for promises. Additionally, you can use error-handling middleware in frameworks like Express to handle errors in middleware and route handlers.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "16. Explain the role of the “require” function in Node.js.",
+        "answer": "The require() function is used in Node.js to import modules or files. It loads the module at runtime and returns its “exports” object, allowing you to access its functionality within your code.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "17. What is the difference between setImmediate() and setTimeout()?",
+        "answer": "setImmediate() executes a callback function immediately after the current event loop iteration.\nsetTimeout() schedules a callback function to be executed after a specified delay in milliseconds, allowing other I/O events to be processed in the meantime.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "18. How do you debug Node.js applications?",
+        "answer": "Node.js applications can be debugged using built-in debugging tools like “console.log()” statements, the Node.js debugger (node inspect), or using third-party debugging tools like Visual Studio Code with breakpoints.\n\nNode.js Interview Questions for Experienced",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "19. Why is Node.js single-threaded?",
+        "answer": "Node.js works on the single-threaded model to ensure that there is support for asynchronous processing. With this, it makes it scalable and efficient for applications to provide high performance and efficiency under high amounts of load.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "20. What are the different API functions supported by Node.js?",
+        "answer": "There are two types of API functions. They are as follows:\nSynchronous APIs: Used for blocking functions\nAsynchronous APIs: Used for non-blocking functions",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "21. What is the framework that is used most often in Node.js today?",
+        "answer": "Node.js has multiple frameworks, namely:\nHapi.js\nExpress.js\nSails.js\nMeteor.js\nDerby.js\nAdonis.js\nAmong these, the most used framework is Express.js for its ability to provide good scalability, flexibility, and minimalism.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "22. What are the security implementations that are present in Node.js?",
+        "answer": "The following are the important implementations for security:\nError handling protocols\nAuthentication pipelines\n\nNode JS Interview Questions for 2 Years Experience",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "23. What is an event loop in Node.js?",
+        "answer": "When running an application, callbacks are entities that have to be handled. In the case of Node.js, event loops are used for this purpose. Since Node.js supports non-blocking sending, this is a very important feature to have.\nThe working of an event loop begins with the occurrence of a callback wherever an event begins. This is usually run by a specific listener. Node.js will keep executing the code after the functions have been called, without expecting the output prior to the beginning.\nOnce all of the code is executed, outputs are obtained, and the callback function is executed. This works in the form of a continuous loop, hence the name event loop.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "24. What are the asynchronous tasks that should occur in an event loop?",
+        "answer": "Following are some of the tasks that can be done using an event loop asynchronously:\nBlocking send requests\nHigh computational requirement\nReal-time I/O operations",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "25. What is the order of execution in control flow statements?",
+        "answer": "The following is the order in which control flow statements are used to process function calls:\nHandling execution and queue\nData collection and storage\nConcurrency handling and limiting\nExecution of the next piece of code",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "26. What are the input arguments for an asynchronous queue?",
+        "answer": "There are two main arguments that an asynchronous queue uses. They are as follows:\nConcurrency value\nTask function",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "27. What is the primary reason to use the event-based model in Node.js?",
+        "answer": "The event-based model in Node.js is used to overcome the problems that occur when using blocking operations in the I/O channel.\nNext in this blog comprising Node.js questions, you need to understand how you can import libraries into Node.js.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "28. How can you import external libraries into Node.js?",
+        "answer": "External libraries can be easily imported into Node.js using the following command:\nvar http=require (“http”)\nThis command will ensure that the HTTP library is loaded completely, along with the exported object.\nNext, among the Node JS questions you need to know about event-driven programming.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "29. What is meant by event-driven programming in Node.js?",
+        "answer": "Event-driven programming is a technique in which the workflow execution of a program is mainly controlled by the occurrence of events from external programs or other sources.\nThe event-driven architecture consists of two entities, namely:\nEvent handling\nEvent selection",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "30. What is the difference between Ajax and Node.js?",
+        "answer": "Ajax Node.js\nClient-side programming technology Server-side scripting language\nExecutes in the browser Executes on the server\nNext, in this compilation of top Node.js interview questions, let’s check out the intermediate category of questions.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "31. What are streams in Node.js?",
+        "answer": "Streams are a set of data entities in Node.js. These can be considered similar to the working of strings and array objects. Streams are used for continuous read/write operations across a channel. But, if the channel is unavailable, all the data cannot be pushed to the memory at once. Hence, using streams will make it easy to process a large set of data in a continuous manner.\nNext up on this compilation of top Node.js interview questions for experienced, let’s check out the advanced category of questions.\n\nNode JS Interview Questions for 3 Years Experience",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "32. How do you handle file operations in Node.js?",
+        "answer": "File operations in Node.js can be performed using the built-in “fs” module. You can use operations like fs.readFile(), fs.writeFile(), fs.mkdir(), or fs.unlink() to read, write, create directory, and delete files, respectively. We can also perform other file-related operations.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "33. Explain the concept of middleware in Express.js.",
+        "answer": "Middleware in Express.js are functions that have access to the request (req), response (res), and next middleware function in the application’s request-response cycle. They can modify request and response objects, execute code, and terminate the request-response cycle.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "34. What are the advantages of using Node.js for backend development?",
+        "answer": "Some of the advantages of using Node.js for backend development are as follows:\nNon-blocking architecture\nScalability\nLarge ecosystem of modules and packages\nAbility to use JavaScript on both the client and server sides",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "35. How does clustering work in Node.js and when to use it?",
+        "answer": "Clustering in Node.js involves spawning multiple instances of the Node.js process to utilize multiple CPU cores effectively. \nIt’s used to scale Node.js applications across multiple CPU cores. This improves the performance and concurrency handling",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "36. What is a RESTful API, and how do you implement it in Node.js?",
+        "answer": "RESTful API is an architectural style for designing networked applications based on the principles of representational state transfer (REST). \nIt uses standard HTTP methods like GET, POST, PUT, and DELETE to perform CRUD operations on resources. In Node.js, you can implement RESTful APIs using frameworks like Express.js by defining routes for different HTTP methods accordingly.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "37. Explain the difference between require() and “import” in Node.js.",
+        "answer": "require() is a CommonJS module system function used to import modules in Node.js. It is synchronous and is used to load modules dynamically at runtime. \n“import” is an ES6 feature for module loading, supported in Node.js with the  “–experimental-modules flag”. It is asynchronous and allows for more granular control over module loading.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "38. How do you perform unit testing in Node.js applications?",
+        "answer": "Unit testing in Node.js applications can be done using testing frameworks like Mocha, Jest, or Jasmine. You write test cases to verify individual units of code. Testing can be done by providing inputs and asserting expected outputs.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "39. What is the meaning of a test pyramid?",
+        "answer": "A test pyramid is a methodology that is used to denote the number of test cases executed in unit testing, integration testing, and combined testing (in that order). This is maintained to ensure that an ample number of test cases are executed for the end-to-end development of a project.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "40. What is Libuv?",
+        "answer": "Libuv is a widely used library present in Node.js. It is used to complement the asynchronous I/O functionality of Node.js. It was developed in-house and used alongside systems such as Luvit, Julia, and more.\nThe following are some of the features of Libuv:\nFile system event handling\nChild forking and handling\nAsynchronous UDP and TCP sockets\nAsynchronous file handling and operations\nNext in these Node JS questions, you need to understand the functioning of Google Chrome.\nTo learn full-stack development in detail, sign up for this industry-based Full Stack Web Development Course.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "41. Why does Google use the V8 engine for Node.js?",
+        "answer": "Google makes use of the V8 engine because it can easily convert JavaScript into a low-level language. This is done to provide high performance during the execution of an application and also to provide users with real-time abilities to work with the application.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "42. What is the difference between spawn and fork methods in Node.js?",
+        "answer": "The spawn() function is used to create a new process and launch it using the command line. It creates a node module on the processor. Node.js invokes this method when the child processes return data.\nThe following is the syntax for the spawn() method:\nchild_process.spawn(command[, args][, options])\nComing to the fork() method, it can be considered as an instance of the already existing spawn() method. Spawning ensures that there is more than one active worker node to handle tasks at any given point in time.\nThe following is the syntax for the fork() method:\nchild_process.fork(modulePath[, args][, options])\nIf you are looking forward to becoming proficient in Angular.js, then make sure to check out Intellipaat’s latest offerings for the Angular JS Course.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "43. What is the use of middleware in Node.js?",
+        "answer": "A middleware is a simple function that has the ability to handle incoming requests and outbound response objects. Middleware is used primarily for the following tasks:\nExecution of code (of any type)\nUpdating request and response objects\nCompletion of request-response iterations\nCalling the next middleware\nExplore these top JavaScript Interview Questions and ace your next interview to get your dream job!",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "44. What are global objects in Node.js?",
+        "answer": "Global objects are objects with a scope that is accessible across all of the modules of the Node.js application. There will not be any need to include the objects in every module. One of the objects is declared as global. So, this is done to provide any functions, strings, or objects access across the application.\nNext among the Node JS coding questions, you need to take a look at the usage of assets in Node JS.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "45. Why is assert used in Node.js?",
+        "answer": "Assert is used to explicitly write test cases to verify the working of a piece of code. The following code snippet denotes the usage of assert:\nvar assert = require('assert');\nfunction add(x, y) {\nreturn x + y;\n}\nvar result = add(3,5);\nassert( result === 8, 'three summed with five is eight');",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "46. How is a test pyramid implemented using the HTML API in Node.js?",
+        "answer": "Test pyramids are implemented by defining the HTML API. This is done using the following:\nA higher number of unit test cases\nA smaller number of integration test methods\nA fewer number of HTTP endpoint test cases",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "47. Why is a buffer class used in Node.js?",
+        "answer": "A buffer class is primarily used as a way to store data in Node.js. This can be considered as a similar implementation of arrays or lists. Here, the class refers to a raw memory location that is not present in the V8 heap structure.\nThe buffer class is global, thereby extending its usage across all the modules of an application.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "48. Why is Express.js used?",
+        "answer": "Node JS Express is a widely used framework built using Node.js. Express.js uses a management point that controls data flow between servers and server-side applications.\nBeing lightweight and flexible, Express.js provides users with lots of features used to design mobile applications.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "49. What are “Event Emitters” in Node.js and also provide examples of their usage?",
+        "answer": "Event emitters are objects that let code subscribe to named events. When those events happen, the emitter runs the subscribed callbacks. Some core Node.js modules use emitters. For example, HTTP and filesystem modules emit events about responses and file reads. This allows handling many concurrent requests without blocking, enabling Node’s asynchronous, non-blocking nature.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "50. How do you handle authentication in Node.js applications?",
+        "answer": "Authentication in Node.js applications can be handled using middleware like Passport.js, JSON Web Tokens (JWT), or OAuth. Users are authenticated based on their credentials.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "51. What are worker threads in Node.js, and when would you use them?",
+        "answer": "Worker threads in Node.js help you run JavaScript code in separate threads. This is usually used to perform CPU-intensive tasks seamlessly without blocking the event loop.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "52. Explain the purpose of the “process” module in Node.js.",
+        "answer": "The “process” module in Node.js lets you control how your Node.js application runs. It helps you access many things, like environment settings, command-line info, and ways to manage your program",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "53. How do you optimize the performance of Node.js applications?",
+        "answer": "Performance optimization in Node.js involves various strategies, such as: \nMinimizing blocking I/O operations\nOptimizing algorithms\nCaching frequently accessed data\nImplementing clustering for multi-cores",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "54. What is GraphQL?",
+        "answer": "GraphQL is a query language for APIs that allows clients to request only the data they require.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "55. How do you deploy Node.js applications to production environments?",
+        "answer": "Node.js applications can be deployed to production environments by using various deployment strategies. These strategies include\nContainerization with Docker\nDeploying to cloud platforms \nUsing platform-as-a-service (PaaS) providers \nSetting up self-managed servers as reverse proxies",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "56. Explain the use of “Passport.js” in Node.js applications.",
+        "answer": "“Passport.js” is a middleware. It is used in Node.js applications for implementing authentication strategies. It provides a flexible way to authenticate users.\n\nAdvanced Node.js Interview Questions for 5 Years Experience",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "57. What are stubs in Node.js?",
+        "answer": "Stubs are simply functions that are used to assess and analyze individual component behavior. When running test cases, stubs are useful in providing the details of the functions executed.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "58. What is the use of the connect module in Node.js?",
+        "answer": "The connect module in Node.js is used to provide communication between Node.js and the HTTP module. This also provides easy integration with Express.js, using the middleware modules.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "59. What are the types of streams available in Node.js?",
+        "answer": "Node.js supports a variety of streams, namely:\nDuplex (both read and write)\nReadable streams\nWritable streams\nTransform (duplex for modifying data)",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "60. What is the use of REPL in Node.js?",
+        "answer": "REPL stands for Read-Eval-Print-Loop. It provides users with a virtual environment to test JavaScript code in Node.js.\nTo launch REPL, a simple command called ‘node’ is used. After this, JavaScript commands can be typed directly into the command line.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "61. What is meant by tracing in Node.js?",
+        "answer": "Tracing is a methodology used to collect all of the tracing information that gets generated by V8, the node core, and the userspace code. All of these are dumped into a log file and are very useful to validate and check the integrity of the information being passed.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "62. Where is package.json used in Node.js?",
+        "answer": "The ‘package.json’ file is a file that contains the metadata about all items in a project. It can also be used as a project identifier and deployed as a means to handle all of the project dependencies.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "63. What is the difference between readFile and createReadStream in Node.js?",
+        "answer": "readFile: This is used to read all of the contents of a given file in an asynchronous manner. All of the content will be read into the memory before users can access it.\ncreate ReadStream: This is used to break up the field into smaller chunks and then read it. The default chunk size is 64 KB, and this can be changed as per requirement.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "64. What is the purpose of the crypto module in Node.js?",
+        "answer": "The crypto module in Node.js is used to provide users with cryptographic functionalities. This provides them with a large number of wrappers to perform various operations such as ciphering, deciphering, signing, and hashing.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "65. What is a passport in Node.js?",
+        "answer": "Passport is a widely used middleware present in Node.js. It is primarily used for authentication, and it can easily fit into any Express.js–based web application.\nWith every application created, it will require unique authentication mechanisms. This is provided as single modules by using a passport, and it becomes easy to assign strategies to applications based on requirements, thereby avoiding any sort of dependencies.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "66. What is the use of EventEmitter in Node.js?",
+        "answer": "Every single object in Node.js that emits is nothing but an instance of the EventEmitter class. These objects have a function that is used to allow the attachment between the objects and the named events.\nSynchronous attachments of the functions are done when the EventEmitter object emits an event.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "67. What is the difference between setImmediate() and setTimeout()?",
+        "answer": "The setImmediate() function is meant to execute a single script once the current event loop is complete.\nThe setTimeout() function is used to hold a script and schedule it to be run after a certain time threshold is reached.\nThe order of execution will solely depend on the context in which the functions are called. If called from the main module, the timing will be based on the performance of the process.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "68. What is the use of module.exports in Node.js?",
+        "answer": "The module.exports function is used to expose two functions and bring them into a usable context. A module is an entity used to store relative code in a single snippet. This can be considered an operation to move all of the functions into one single file.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "69. Why do you think you are the right fit for this Node.js role?",
+        "answer": "Here, the interviewer wants to know your understanding of the job role, the company architecture, and your knowledge of the topic. While answering this question, it will be helpful if you know the job description in detail and the basic usage of the technology in the company. The answer can be further elaborated on depending on how your interests align with the technology, job, and company.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "70. Do you have any past Node.js work experience?",
+        "answer": "This question is common in Node.js interviews. Make sure to answer it to the best of your abilities, and do not bloat, but give your honest experiences and explain how you’ve used Node.js before. This is used as a measure to see if you have had any hands-on experience with the language in a working environment before.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "71. Do you have any experience working in the same industry as ours?",
+        "answer": "With this question, the interviewer is trying to assess if you’ve had any previous work experience or internship experience where you dealt with similar working environments or technologies. This line of questioning can be easily answered based on your previous experiences. Make sure to keep it concise and detailed, as required, when answering this question.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "72. Do you have any certifications to boost your candidacy for this Node.js role?",
+        "answer": "It is always advantageous to have a certification in the technology that you’re applying for. This gives the interviewer the impression that you have worked on the technology and that you are serious about using it for your career growth. More than this, it adds immense value to your resume and your knowledge on the topic at the same time.\nIf you are looking forward to becoming proficient in web development, make sure to check out Intellipaat’s latest offerings for the Web Development Online Course. With these programs, you can become an expert in web development and earn a course certificate.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "73. What is a V8 engine?",
+        "answer": "The V8 engine is an open-source JavaScript engine developed by Google. It is used to execute JavaScript code in web browsers and Node.js.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "74. Explain the concept of garbage collection in Node.js.",
+        "answer": "Garbage collection in Node.js is the automatic process of reclaiming memory occupied by objects that are no longer needed by the application. The V8 engine’s garbage collector frees up memory used by unreachable objects, which improves memory management.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "75. How do you handle memory leaks in long-running Node.js applications?",
+        "answer": "Memory leaks in long-running Node.js applications can be handled by monitoring memory usage. It analyzes heap snapshots with tools like Node.js built-in “–inspect flag”. This optimizes memory usage.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "76. Discuss the architecture of a microservices-based Node.js application.",
+        "answer": "A microservices-based Node.js application architecture decomposes the application into small, independently deployable services. Each one is responsible for a specific business function. These services communicate over lightweight protocols like HTTP or messaging queues.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "77. What are the differences between WebSocket and HTTP in Node.js?",
+        "answer": "WebSocket is a protocol that provides full-duplex communication channels over a single TCP connection. It is used for real-time, bidirectional communication between clients and servers. \nHTTP, on the other hand, is a request-response protocol used for traditional client-server communication. Each request is initiated by the client and responded to by the server.",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "78. Explain the use of PM2 in Node.js for process management.",
+        "answer": "PM2 is a process manager for Node.js applications that provides features like \nProcess monitoring\nAutomatic restarts\nLog management\nClustering \nProduction-ready deployment",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "79. How do you ensure high scalability in Node.js applications?",
+        "answer": "High scalability in Node.js applications can be ensured by using techniques like \nload balancing\nhorizontal scaling with clustering\nfault tolerance\ncaching\ndatabase sharding",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "80. Discuss the use of Redis in caching and session management with Node.js.",
+        "answer": "Redis is an in-memory data store used for caching and session management. It provides fast read/write operations for data structures. These data structures include strings, hashes, lists, sets, and sorted sets\n\nNode.js Interview Coding Questions",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "81. How does the DNS lookup function work in Node.js?",
+        "answer": "The DNS lookup method uses a web address as its parameter and returns the IPv4 or IPv6 record, correspondingly.\nThere are other parameters, such as the options used to set the input as an integer or an object. If nothing is provided here, both IPv4 and IPv6 are considered. The third parameter is for the callback function.\nThe syntax is as follows:\ndns.lookup(address, options, callback)",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "82. How to get information about a file in Node.js?",
+        "answer": "The fs.stat function is used to get the required information from a file.\nThe syntax is as follows:\nfs.stat(path, callback)\nHere,\nPath: The string that has the path to the name.\nCallback: The callback function where stats is an object of fs.stats",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "83. Implement a function to reverse a string in Node.js.",
+        "answer": "function reverseString(str) {\n\n    return str.split(”).reverse().join(”);\n\n}",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "84.Write a program to read a JSON file and parse its contents in Node.js.",
+        "answer": "const fs = require(‘fs’);\n\nfs.readFile(‘data.json’, ‘utf8’, (err, data) => {\n    if (err) throw err;\n    const json = JSON.parse(data);\n    console.log(json);\n});",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "85. Create a simple Express.js application to handle GET and POST requests.",
+        "answer": "const express = require(‘express’);\nconst app = express();\n\napp.get(‘/’, (req, res) => {\n    res.send(‘GET request received’);\n});\n\napp.post(‘/’, (req, res) => {\n    res.send(‘POST request received’);\n});\n\napp.listen(3000, () => {\n    console.log(‘Server running on port 3000’);\n});",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "86. Implement a basic authentication middleware in Node.js using Express.",
+        "answer": "function authenticate(req, res, next) {\n    const token = req.headers[‘authorization’];\n    if (token === ‘secretToken’) {\n        next();\n    } else {\n        res.status(401).send(‘Unauthorized’);\n    }\n}\n\napp.use(authenticate);",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "87. Write a program to fetch data from an external API and display it in a Node.js application.",
+        "answer": "const axios = require(‘axios’);\n\naxios.get(‘https://api.example.com/data’)\n    .then(response => {\n        console.log(response.data);\n    })\n    .catch(error => {\n        console.error(error);\n    });",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "88. Develop a RESTful API for a simple blog application using Node.js and Express.",
+        "answer": "app.get(‘/posts’, (req, res) => {\n\n});\n\napp.post(‘/posts’, (req, res) =>",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "89. Implement a WebSocket server in Node.js to enable real-time communication.",
+        "answer": "const WebSocket = require(‘ws’);\n\nconst wss = new WebSocket.Server({ port: 8080 });\n\nwss.on(‘connection’, function connection(ws) {\n  console.log(‘Client connected’);\n\n  ws.on(‘message’, function incoming(message) {\n    console.log(‘Received:’, message);\n    ws.send(`Echo: ${message}`);\n  });\n\n  ws.on(‘close’, function close() {\n    console.log(‘Client disconnected’);\n  });\n});",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "90.Write a function to calculate the factorial of a number using recursion in Node.js.",
+        "answer": "const WebSocket = require(‘ws’);\n\nconst wss = new WebSocket.Server({ port: 8080 });\n\nwss.on(‘connection’, function connection(ws) {\n  console.log(‘Client connected’);\n\n  ws.on(‘message’, function incoming(message) {\n    console.log(‘Received:’, message); \n\n    ws.send(`Echo: ${message}`);\n  });\n  ws.on(‘close’, function close() {\n    console.log(‘Client disconnected’);\n  });\n});\n\nNode JS Tricky Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "node-js"
+    },
+    {
+        "question": "1. What is Node.js and how it works?",
+        "answer": "Node.js is a virtual machine that uses JavaScript as its scripting language and runs Chrome’s V8 JavaScript engine. Basically, Node.js is based on an event-driven architecture where I/O runs asynchronously making it lightweight and efficient. It is being used in developing desktop applications as well with a popular framework called electron as it provides API to access OS-level features such as file system, network, etc. Here is a Free course on Node.js for beginners to master the fundamentals of Node.js. Free course Free course ",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "2. What tools can be used to assure consistent code style?",
+        "answer": "ESLint can be used with any IDE to ensure a consistent coding style which further helps in maintaining the codebase.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "3. What is a first class function in Javascript?",
+        "answer": "When functions can be treated like any other variable then those functions are first-class functions. There are many other programming languages, for example, scala, Haskell, etc which follow this including JS. Now because of this function can be passed as a param to another function(callback) or a function can return another function(higher-order function). map() and filter() are higher-order functions that are popularly used.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "4. How do you manage packages in your node.js project?",
+        "answer": "It can be managed by a number of package installers and their configuration file accordingly. Out of them mostly use npm or yarn. Both provide almost all libraries of javascript with extended features of controlling environment-specific configurations. To maintain versions of libs being installed in a project we use package.json and package-lock.json so that there is no issue in porting that app to a different environment.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "5. How is Node.js better than other frameworks most popularly used?",
+        "answer": "Node.js provides simplicity in development because of its non-blocking I/O and event-based model results in short response time and concurrent processing, unlike other frameworks where developers have to use thread management. \n  It runs on a chrome v8 engine which is written in c++ and is highly performant with constant improvement. \n  Also since we will use Javascript in both the frontend and backend the development will be much faster. \n  And at last, there are sample libraries so that we don’t need to reinvent the wheel. Node.js provides simplicity in development because of its non-blocking I/O and event-based model results in short response time and concurrent processing, unlike other frameworks where developers have to use thread management.  It runs on a chrome v8 engine which is written in c++ and is highly performant with constant improvement.  Also since we will use Javascript in both the frontend and backend the development will be much faster.  And at last, there are sample libraries so that we don’t need to reinvent the wheel.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "6. Explain the steps how “Control Flow” controls the functions calls?",
+        "answer": "Control the order of execution\nCollect data\nLimit concurrency\nCall the following step in the program. Control the order of execution Collect data Limit concurrency Call the following step in the program.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "7. What are some commonly used timing features of Node.js?",
+        "answer": "setTimeout/clearTimeout – This is used to implement delays in code execution.\nsetInterval/clearInterval – This is used to run a code block multiple times.\nsetImmediate/clearImmediate – Any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop.\nprocess.nextTick – Both setImmediate and process.nextTick appear to be doing the same thing; however, you may prefer one over the other depending on your callback’s urgency. setTimeout/clearTimeout – This is used to implement delays in code execution. setTimeout/clearTimeout setInterval/clearInterval – This is used to run a code block multiple times. setInterval/clearInterval setImmediate/clearImmediate – Any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop. setImmediate/clearImmediate  process.nextTick – Both setImmediate and process.nextTick appear to be doing the same thing; however, you may prefer one over the other depending on your callback’s urgency. process.nextTick",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "8. What are the advantages of using promises instead of callbacks?",
+        "answer": "The main advantage of using promise is you get an object to decide the action that needs to be taken after the async task completes. This gives more manageable code and avoids callback hell.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "9. What is fork in node JS?",
+        "answer": "A fork in general is used to spawn child processes. In node it is used to create a new instance of v8 engine to run multiple workers to execute the code.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "10. Why is Node.js single-threaded?",
+        "answer": "Node.js was created explicitly as an experiment in async processing. This was to try a new theory of doing async processing on a single thread over the existing thread-based implementation of scaling via different frameworks.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "11. How do you create a simple server in Node.js that returns Hello World?",
+        "answer": "var http = require(\"http\");\nhttp.createServer(function (request, response) {\n  response.writeHead(200, {'Content-Type': 'text/plain'});\n  response.end('Hello World\\n');\n}).listen(3000); var http = require(\"http\");\nhttp.createServer(function (request, response) {\n  response.writeHead(200, {'Content-Type': 'text/plain'});\n  response.end('Hello World\\n');\n}).listen(3000); var require \"http\" function (request, response) function request, response 200 'Content-Type' 'text/plain' 'Hello World\\n' 3000",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "12. How many types of API functions are there in Node.js?",
+        "answer": "There are two types of API functions: Asynchronous, non-blocking functions - mostly I/O operations which can be fork out of the main loop.\n  Synchronous, blocking functions - mostly operations that influence the process running in the main loop. Asynchronous, non-blocking functions - mostly I/O operations which can be fork out of the main loop. Asynchronous, non-blocking functions  Synchronous, blocking functions - mostly operations that influence the process running in the main loop. Synchronous, blocking functions",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "13. What is REPL?",
+        "answer": "PL in Node.js stands for Read, Eval, Print, and Loop, which further means evaluating code on the go. R E P L",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "14. List down the two arguments that async.queue takes as input?",
+        "answer": "Task Function\nConcurrency Value Task Function Concurrency Value",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "15. What is the purpose of module.exports?",
+        "answer": "This is used to expose functions of a particular module or file to be used elsewhere in the project. This can be used to encapsulate all similar functions in a file which further improves the project structure.\n\nFor example, you have a file for all utils functions with util to get solutions in a different programming language of a problem statement.   const getSolutionInJavaScript = async ({\n problem_id\n}) => {\n...\n};\nconst getSolutionInPython = async ({\n problem_id\n}) => {\n...\n};\nmodule.exports = { getSolutionInJavaScript, getSolutionInPython } const getSolutionInJavaScript = async ({\n problem_id\n}) => {\n...\n};\nconst getSolutionInPython = async ({\n problem_id\n}) => {\n...\n};\nmodule.exports = { getSolutionInJavaScript, getSolutionInPython } Thus using module.exports we can use these functions in some other file: const { getSolutionInJavaScript, getSolutionInPython} = require(\"./utils\") const { getSolutionInJavaScript, getSolutionInPython} = require(\"./utils\")",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "1. Explain the concept of stub in Node.js?",
+        "answer": "Stubs are used in writing tests which are an important part of development. It replaces the whole function which is getting tested.  \n\nThis helps in scenarios where we need to test:   External calls which make tests slow and difficult to write (e.g HTTP calls/ DB calls)\nTriggering different outcomes for a piece of code (e.g. what happens if an error is thrown/ if it passes) External calls which make tests slow and difficult to write (e.g HTTP calls/ DB calls) Triggering different outcomes for a piece of code (e.g. what happens if an error is thrown/ if it passes) For example, this is the function: const request = require('request');\nconst getPhotosByAlbumId = (id) => {\nconst requestUrl = `https://jsonplaceholder.typicode.com/albums/${id}/photos?_limit=3`;\nreturn new Promise((resolve, reject) => {\n    request.get(requestUrl, (err, res, body) => {\n        if (err) {\n            return reject(err);\n        }\n        resolve(JSON.parse(body));\n    });\n});\n};\nmodule.exports = getPhotosByAlbumId;\nTo test this function this is the stub\nconst expect = require('chai').expect;\nconst request = require('request');\nconst sinon = require('sinon');\nconst getPhotosByAlbumId = require('./index');\ndescribe('with Stub: getPhotosByAlbumId', () => {\nbefore(() => {\n    sinon.stub(request, 'get')\n        .yields(null, null, JSON.stringify([\n            {\n                \"albumId\": 1,\n                \"id\": 1,\n                \"title\": \"A real photo 1\",\n                \"url\": \"https://via.placeholder.com/600/92c952\",\n                \"thumbnailUrl\": \"https://via.placeholder.com/150/92c952\"\n            },\n            {\n                \"albumId\": 1,\n                \"id\": 2,\n                \"title\": \"A real photo 2\",\n                \"url\": \"https://via.placeholder.com/600/771796\",\n                \"thumbnailUrl\": \"https://via.placeholder.com/150/771796\"\n            },\n            {\n                \"albumId\": 1,\n                \"id\": 3,\n                \"title\": \"A real photo 3\",\n                \"url\": \"https://via.placeholder.com/600/24f355\",\n                \"thumbnailUrl\": \"https://via.placeholder.com/150/24f355\"\n            }\n        ]));\n});\nafter(() => {\n    request.get.restore();\n});\nit('should getPhotosByAlbumId', (done) => {\n    getPhotosByAlbumId(1).then((photos) => {\n        expect(photos.length).to.equal(3);\n        photos.forEach(photo => {\n            expect(photo).to.have.property('id');\n            expect(photo).to.have.property('title');\n            expect(photo).to.have.property('url');\n        });\n        done();\n    });\n});\n}); const request = require('request');\nconst getPhotosByAlbumId = (id) => {\nconst requestUrl = `https://jsonplaceholder.typicode.com/albums/${id}/photos?_limit=3`;\nreturn new Promise((resolve, reject) => {\n    request.get(requestUrl, (err, res, body) => {\n        if (err) {\n            return reject(err);\n        }\n        resolve(JSON.parse(body));\n    });\n});\n};\nmodule.exports = getPhotosByAlbumId;\nTo test this function this is the stub\nconst expect = require('chai').expect;\nconst request = require('request');\nconst sinon = require('sinon');\nconst getPhotosByAlbumId = require('./index');\ndescribe('with Stub: getPhotosByAlbumId', () => {\nbefore(() => {\n    sinon.stub(request, 'get')\n        .yields(null, null, JSON.stringify([\n            {\n                \"albumId\": 1,\n                \"id\": 1,\n                \"title\": \"A real photo 1\",\n                \"url\": \"https://via.placeholder.com/600/92c952\",\n                \"thumbnailUrl\": \"https://via.placeholder.com/150/92c952\"\n            },\n            {\n                \"albumId\": 1,\n                \"id\": 2,\n                \"title\": \"A real photo 2\",\n                \"url\": \"https://via.placeholder.com/600/771796\",\n                \"thumbnailUrl\": \"https://via.placeholder.com/150/771796\"\n            },\n            {\n                \"albumId\": 1,\n                \"id\": 3,\n                \"title\": \"A real photo 3\",\n                \"url\": \"https://via.placeholder.com/600/24f355\",\n                \"thumbnailUrl\": \"https://via.placeholder.com/150/24f355\"\n            }\n        ]));\n});\nafter(() => {\n    request.get.restore();\n});\nit('should getPhotosByAlbumId', (done) => {\n    getPhotosByAlbumId(1).then((photos) => {\n        expect(photos.length).to.equal(3);\n        photos.forEach(photo => {\n            expect(photo).to.have.property('id');\n            expect(photo).to.have.property('title');\n            expect(photo).to.have.property('url');\n        });\n        done();\n    });\n});\n}); const require 'request' const (id) => id const `https://jsonplaceholder.typicode.com/albums/${id}/photos?_limit=3` ${id} return new Promise (resolve, reject) => resolve, reject (err, res, body) => err, res, body if return JSON module this function this is the stub\nconst expect = require('chai').expect function this is the stub const expect require 'chai' 'chai' expect const require 'request' const require 'sinon' const require './index' 'with Stub: getPhotosByAlbumId' () => () => 'get' null null JSON \"albumId\" 1 \"id\" 1 \"title\" \"A real photo 1\" \"url\" \"https://via.placeholder.com/600/92c952\" \"thumbnailUrl\" \"https://via.placeholder.com/150/92c952\" \"albumId\" 1 \"id\" 2 \"title\" \"A real photo 2\" \"url\" \"https://via.placeholder.com/600/771796\" \"thumbnailUrl\" \"https://via.placeholder.com/150/771796\" \"albumId\" 1 \"id\" 3 \"title\" \"A real photo 3\" \"url\" \"https://via.placeholder.com/600/24f355\" \"thumbnailUrl\" \"https://via.placeholder.com/150/24f355\" () => 'should getPhotosByAlbumId' (done) => done 1 (photos) => photos 3 photo => photo 'id' 'title' 'url'",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "2. Describe the exit codes of Node.js?",
+        "answer": "Exit codes give us an idea of how a process got terminated/the reason behind termination. \n\nA few of them are:   Uncaught fatal exception - (code - 1) - There has been an exception that is not handled\nUnused - (code - 2) - This is reserved by bash\nFatal Error - (code - 5) - There has been an error in V8 with stderr output of the description\nInternal Exception handler Run-time failure - (code - 7) - There has been an exception when bootstrapping function was called\nInternal JavaScript Evaluation Failure - (code - 4) - There has been an exception when the bootstrapping process failed to return function value when evaluated. Uncaught fatal exception - (code - 1) - There has been an exception that is not handled Unused - (code - 2) - This is reserved by bash Fatal Error - (code - 5) - There has been an error in V8 with stderr output of the description Internal Exception handler Run-time failure - (code - 7) - There has been an exception when bootstrapping function was called Internal JavaScript Evaluation Failure - (code - 4) - There has been an exception when the bootstrapping process failed to return function value when evaluated.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "3. For Node.js, why Google uses V8 engine?",
+        "answer": "Well, are there any other options available? Yes, of course, we have Spidermonkey from Firefox, Chakra from Edge but Google’s v8 is the most evolved(since it’s open-source so there’s a huge community helping in developing features and fixing bugs) and fastest(since it’s written in c++) we got till now as a JavaScript and WebAssembly engine. And it is portable to almost every machine known. Spidermonkey",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "4. Why should you separate Express app and server?",
+        "answer": "The server is responsible for initializing the routes, middleware, and other application logic whereas the app has all the business logic which will be served by the routes initiated by the server. This ensures that the business logic is encapsulated and decoupled from the application logic which makes the project more readable and maintainable.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "5. Explain what a Reactor Pattern in Node.js?",
+        "answer": "Reactor pattern again a pattern for nonblocking I/O operations. But in general, this is used in any event-driven architecture. \n\nThere are two components in this: 1. Reactor 2. Handler.\n\nReactor: Its job is to dispatch the I/O event to appropriate handlers\nHandler: Its job is to actually work on those events     Reactor  Handler",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "6. What is middleware?",
+        "answer": "Middleware comes in between your request and business logic. It is mainly used to capture logs and enable rate limit, routing, authentication, basically whatever that is not a part of business logic. There are third-party middleware also such as body-parser and you can write your own middleware for a specific use case.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "7. What are node.js buffers?",
+        "answer": "In general, buffers is a temporary memory that is mainly used by stream to hold on to some data until consumed. Buffers are introduced with additional use cases than JavaScript’s Unit8Array and are mainly used to represent a fixed-length sequence of bytes. This also supports legacy encodings like ASCII, utf-8, etc. It is a fixed(non-resizable) allocated memory outside the v8.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "8. What is node.js streams?",
+        "answer": "Streams are instances of EventEmitter which can be used to work with streaming data in Node.js. They can be used for handling and manipulating streaming large files(videos, mp3, etc) over the network. They use buffers as their temporary storage.\n\nThere are mainly four types of the stream:   Writable: streams to which data can be written (for example, fs.createWriteStream()).\nReadable: streams from which data can be read (for example, fs.createReadStream()).\nDuplex: streams that are both Readable and Writable (for example, net.Socket).\nTransform: Duplex streams that can modify or transform the data as it is written and read (for example, zlib.createDeflate()). Writable: streams to which data can be written (for example, fs.createWriteStream()). Writable: Readable: streams from which data can be read (for example, fs.createReadStream()). Readable: Duplex: streams that are both Readable and Writable (for example, net.Socket). Duplex: Transform: Duplex streams that can modify or transform the data as it is written and read (for example, zlib.createDeflate()). Transform:",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "9. How can we use async await in node.js?",
+        "answer": "Here is an example of using async-await pattern: // this code is to retry with exponential backoff\nfunction wait (timeout) {\n return new Promise((resolve) => {\nsetTimeout(() => {\n  resolve()\n}, timeout);\n });\n}\nasync function requestWithRetry (url) {\n const MAX_RETRIES = 10;\n for (let i = 0; i <= MAX_RETRIES; i++) {\ntry {\n  return await request(url);\n} catch (err) {\n  const timeout = Math.pow(2, i);\n  console.log('Waiting', timeout, 'ms');\n  await wait(timeout);\n  console.log('Retrying', err.message, i);\n}\n }\n} // this code is to retry with exponential backoff\nfunction wait (timeout) {\n return new Promise((resolve) => {\nsetTimeout(() => {\n  resolve()\n}, timeout);\n });\n}\nasync function requestWithRetry (url) {\n const MAX_RETRIES = 10;\n for (let i = 0; i <= MAX_RETRIES; i++) {\ntry {\n  return await request(url);\n} catch (err) {\n  const timeout = Math.pow(2, i);\n  console.log('Waiting', timeout, 'ms');\n  await wait(timeout);\n  console.log('Retrying', err.message, i);\n}\n }\n} // this code is to retry with exponential backoff function wait (timeout) function wait timeout return new Promise (resolve) => resolve setTimeout () => async function requestWithRetry (url) function requestWithRetry url const 10 for let 0 try return await catch const Math 2 console 'Waiting' 'ms' await console 'Retrying'",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "10. How does Node.js overcome the problem of blocking of I/O operations?",
+        "answer": "Since the node has an event loop that can be used to handle all the I/O operations in an asynchronous manner without blocking the main function. \n\nSo for example, if some network call needs to happen it will be scheduled in the event loop instead of the main thread(single thread). And if there are multiple such I/O calls each one will be queued accordingly to be executed separately(other than the main thread).   Thus even though we have single-threaded JS, I/O ops are handled in a nonblocking way.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "11. Differentiate between process.nextTick() and setImmediate()?",
+        "answer": "Both can be used to switch to an asynchronous mode of operation by listener functions. \n\nprocess.nextTick() sets the callback to execute but setImmediate pushes the callback in the queue to be executed. So the event loop runs in the following manner\n\ntimers–>pending callbacks–>idle,prepare–>connections(poll,data,etc)–>check–>close callbacks     timers–>pending callbacks–>idle,prepare–>connections(poll,data,etc)–>check–>close callbacks In this process.nextTick() method adds the callback function to the start of the next event queue and setImmediate() method to place the function in the check phase of the next event queue.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "12. If Node.js is single threaded then how does it handle concurrency?",
+        "answer": "The main loop is single-threaded and all async calls are managed by libuv library. For example: const crypto = require(\"crypto\");\nconst start = Date.now();\nfunction logHashTime() {\n crypto.pbkdf2(\"a\", \"b\", 100000, 512, \"sha512\", () => {\nconsole.log(\"Hash: \", Date.now() - start);\n });\n}\nlogHashTime();\nlogHashTime();\nlogHashTime();\nlogHashTime(); const crypto = require(\"crypto\");\nconst start = Date.now();\nfunction logHashTime() {\n crypto.pbkdf2(\"a\", \"b\", 100000, 512, \"sha512\", () => {\nconsole.log(\"Hash: \", Date.now() - start);\n });\n}\nlogHashTime();\nlogHashTime();\nlogHashTime();\nlogHashTime(); const require \"crypto\" const Date function logHashTime() function logHashTime  \"a\" \"b\" 100000 512 \"sha512\" () => console \"Hash: \" Date This gives the output: Hash: 1213\nHash: 1225\nHash: 1212\nHash: 1222 Hash: 1213\nHash: 1225\nHash: 1212\nHash: 1222 1213 Hash 1225 Hash 1212 Hash 1222 This is because libuv sets up a thread pool to handle such concurrency. How many threads will be there in the thread pool depends upon the number of cores but you can override this.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "13. What is an event-loop in Node JS?",
+        "answer": "Whatever that is async is managed by event-loop using a queue and listener.  We can get the idea using the following diagram: Node.js Event Loop  Node.js Event Loop So when an async function needs to be executed(or I/O) the main thread sends it to a different thread allowing v8 to keep executing the main code. Event loop involves different phases with specific tasks such as timers, pending callbacks, idle or prepare, poll, check, close callbacks with different FIFO queues. Also in between iterations it checks for async I/O or timers and shuts down cleanly if there aren't any.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "14. What do you understand by callback hell?",
+        "answer": "async_A(function(){\n   async_B(function(){\n       async_C(function(){\n           async_D(function(){\n           ....\n           });\n       });\n   });\n}); async_A(function(){\n   async_B(function(){\n       async_C(function(){\n           async_D(function(){\n           ....\n           });\n       });\n   });\n}); For the above example, we are passing callback functions and it makes the code unreadable and not maintainable, thus we should change the async logic to avoid this.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "1. What is an Event Emitter in Node.js?",
+        "answer": "EventEmitter is a Node.js class that includes all the objects that are basically capable of emitting events. This can be done by attaching named events that are emitted by the object using an eventEmitter.on() function. Thus whenever this object throws an even the attached functions are invoked synchronously. const EventEmitter = require('events');\nclass MyEmitter extends EventEmitter {}\nconst myEmitter = new MyEmitter();\nmyEmitter.on('event', () => {\n console.log('an event occurred!');\n});\nmyEmitter.emit('event'); const EventEmitter = require('events');\nclass MyEmitter extends EventEmitter {}\nconst myEmitter = new MyEmitter();\nmyEmitter.on('event', () => {\n console.log('an event occurred!');\n});\nmyEmitter.emit('event'); const require 'events' class MyEmitter extends EventEmitter class MyEmitter extends EventEmitter const new 'event' () => console 'an event occurred!' 'event'",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "2. Enhancing Node.js performance through clustering.",
+        "answer": "Node.js applications run on a single processor, which means that by default they don’t take advantage of a multiple-core system. Cluster mode is used to start up multiple node.js processes thereby having multiple instances of the event loop. When we start using cluster in a nodejs app behind the scene multiple node.js processes are created but there is also a parent process called the cluster manager which is responsible for monitoring the health of the individual instances of our application. cluster manager Clustering in Node.js  Clustering in Node.js",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "3. What is a thread pool and which library handles it in Node.js",
+        "answer": "The Thread pool is handled by the libuv library. libuv is a multi-platform C library that provides support for asynchronous I/O-based operations such as file systems, networking, and concurrency. Thread Pool  Thread Pool",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "4. What is WASI and why is it being introduced?",
+        "answer": "Web assembly provides an implementation of WebAssembly System Interface specification through WASI API in node.js implemented using WASI class. The introduction of WASI was done by keeping in mind its possible to use the underlying operating system via a collection of POSIX-like functions thus further enabling the application to use resources more efficiently and features that require system-level access. WebAssembly System Interface",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "5. How are worker threads different from clusters?",
+        "answer": "Cluster: Cluster: There is one process on each CPU with an IPC to communicate.\nIn case we want to have multiple servers accepting HTTP requests via a single port, clusters can be helpful.\nThe processes are spawned in each CPU thus will have separate memory and node instance which further will lead to memory issues. There is one process on each CPU with an IPC to communicate. In case we want to have multiple servers accepting HTTP requests via a single port, clusters can be helpful. The processes are spawned in each CPU thus will have separate memory and node instance which further will lead to memory issues. Worker threads: Worker threads: There is only one process in total with multiple threads.\nEach thread has one Node instance (one event loop, one JS engine) with most of the APIs accessible.\nShares memory with other threads (e.g. SharedArrayBuffer)\nThis can be used for CPU-intensive tasks like processing data or accessing the file system since NodeJS is single-threaded, synchronous tasks can be made more efficient leveraging the worker's threads. There is only one process in total with multiple threads. Each thread has one Node instance (one event loop, one JS engine) with most of the APIs accessible. Shares memory with other threads (e.g. SharedArrayBuffer) This can be used for CPU-intensive tasks like processing data or accessing the file system since NodeJS is single-threaded, synchronous tasks can be made more efficient leveraging the worker's threads.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "6. How to measure the duration of async operations?",
+        "answer": "Performance API provides us with tools to figure out the necessary performance metrics. A simple example would be using async_hooks and perf_hooks 'use strict';\nconst async_hooks = require('async_hooks');\nconst {\n performance,\n PerformanceObserver\n} = require('perf_hooks');\nconst set = new Set();\nconst hook = async_hooks.createHook({\n init(id, type) {\nif (type === 'Timeout') {\n  performance.mark(`Timeout-${id}-Init`);\n  set.add(id);\n}\n },\n destroy(id) {\nif (set.has(id)) {\n  set.delete(id);\n  performance.mark(`Timeout-${id}-Destroy`);\n  performance.measure(`Timeout-${id}`,\n                      `Timeout-${id}-Init`,\n                      `Timeout-${id}-Destroy`);\n}\n }\n});\nhook.enable();\nconst obs = new PerformanceObserver((list, observer) => {\n console.log(list.getEntries()[0]);\n performance.clearMarks();\n observer.disconnect();\n});\nobs.observe({ entryTypes: ['measure'], buffered: true });\nsetTimeout(() => {}, 1000); 'use strict';\nconst async_hooks = require('async_hooks');\nconst {\n performance,\n PerformanceObserver\n} = require('perf_hooks');\nconst set = new Set();\nconst hook = async_hooks.createHook({\n init(id, type) {\nif (type === 'Timeout') {\n  performance.mark(`Timeout-${id}-Init`);\n  set.add(id);\n}\n },\n destroy(id) {\nif (set.has(id)) {\n  set.delete(id);\n  performance.mark(`Timeout-${id}-Destroy`);\n  performance.measure(`Timeout-${id}`,\n                      `Timeout-${id}-Init`,\n                      `Timeout-${id}-Destroy`);\n}\n }\n});\nhook.enable();\nconst obs = new PerformanceObserver((list, observer) => {\n console.log(list.getEntries()[0]);\n performance.clearMarks();\n observer.disconnect();\n});\nobs.observe({ entryTypes: ['measure'], buffered: true });\nsetTimeout(() => {}, 1000); This would give us the exact time it took to execute the callback.",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "7. How to measure the performance of async operations?",
+        "answer": "Performance API provides us with tools to figure out the necessary performance metrics. \n\nA simple example would be:   const { PerformanceObserver, performance } = require('perf_hooks');\nconst obs = new PerformanceObserver((items) => {\n console.log(items.getEntries()[0].duration);\n performance.clearMarks();\n});\nobs.observe({ entryTypes: ['measure'] });\nperformance.measure('Start to Now');\nperformance.mark('A');\ndoSomeLongRunningProcess(() => {\n performance.measure('A to Now', 'A');\n performance.mark('B');\n performance.measure('A to B', 'A', 'B');\n}); const { PerformanceObserver, performance } = require('perf_hooks');\nconst obs = new PerformanceObserver((items) => {\n console.log(items.getEntries()[0].duration);\n performance.clearMarks();\n});\nobs.observe({ entryTypes: ['measure'] });\nperformance.measure('Start to Now');\nperformance.mark('A');\ndoSomeLongRunningProcess(() => {\n performance.measure('A to Now', 'A');\n performance.mark('B');\n performance.measure('A to B', 'A', 'B');\n});  Additional Useful Resources NodeJS MCQ\nTop 10 Node JS Projects Ideas\nNode.js Vs React.js: What’s The Difference?\nNode.js Vs Django: Which One is Better For Web Development? NodeJS MCQ NodeJS MCQ Top 10 Node JS Projects Ideas Top 10 Node JS Projects Ideas Node.js Vs React.js: What’s The Difference? Node.js Vs React.js: What’s The Difference? Node.js Vs Django: Which One is Better For Web Development? Node.js Vs Django: Which One is Better For Web Development?",
+        "reference": "interviewbit.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Node.js is Server-side scripting which is used to build scalable programs. It is a web application framework built on Google Chrome's JavaScript Engine. It runs within the Node.js runtime on Mac OS, Windows, and Linux with no changes. This runtime facilitates you to execute a JavaScript code on any machine outside a browser.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js free to use?",
+        "answer": "Yes. It is released under MIT license and is free to use.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "3) Is Node a single threaded application?",
+        "answer": "Yes. Node is a single-threaded application with event looping.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "These are the following purposes of Node.js:\nADVERTISEMENT\nReal-time web applications\nNetwork applications\nDistributed systems\nGeneral purpose applications",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Following are the main advantages of Node.js:\nNode.js is asynchronous and event-driven. All API?s of Node.js library are non-blocking, and its server doesn't wait for an API to return data. It moves to the next API after calling it, and a notification mechanism of Events of Node.js responds to the server from the previous API call.\nNode.js is very fast because it builds on Google Chrome?s V8 JavaScript engine. Its library is very fast in code execution.\nNode.js is single threaded but highly scalable.\nNode.js provides a facility of no buffering. Its application never buffers any data. It outputs the data in chunks.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js web application architecture?",
+        "answer": "A web application distinguishes into 4 layers:\nClient Layer: The Client layer contains web browsers, mobile browsers or applications which can make an HTTP request to the web server.\nServer Layer: The Server layer contains the Web server which can intercept the request made by clients and pass them the response.\nBusiness Layer: The business layer contains application server which is utilized by the web server to do required processing. This layer interacts with the data layer via database or some external programs.\nData Layer: The Data layer contains databases or any source of data.\n\n7) What do you understand by the term I/O?\nThe term I/O stands for input and output. It is used to access anything outside of your application. The I/O describes any program, operation, or device that transfers data to or from a medium or another medium. This medium can be a physical device, network, or files within a system.\nI/O is loaded into the machine memory to run the program once the application starts.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "7) What do you understand by the term I/O?",
+        "answer": "The term I/O stands for input and output. It is used to access anything outside of your application. The I/O describes any program, operation, or device that transfers data to or from a medium or another medium. This medium can be a physical device, network, or files within a system.\nI/O is loaded into the machine memory to run the program once the application starts.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "There are two types of API functions in Node.js:\nAsynchronous, Non-blocking functions\nSynchronous, Blocking functions",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "9) What do you understand by the first class function in JavaScript?",
+        "answer": "When functions are treated like any other variable, then those functions are called first-class functions. Apart from JavaScript, many other programming languages, such as Scala, Haskell, etc. follow this pattern. The first class functions can be passed as a param to another function (callback), or a function can return another function (higher-order function). Some examples of higher-order functions that are popularly used are map() and filter().",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Difference between JavaScript and Node.js\nThe following table specifies the crucial differences between JavaScript and Node.js:\nComparison features JavaScript Node.js\nType JavaScript is a programming language. More precisely, you can say that it is a scripting language used for writing scripts on the website. Node.js is an interpreter and run time environment for JavaScript.\nUtility JavaScript is used for any client-side activity for a web application. Node.js is used for accessing or performing any non-blocking operation of any operating system.\nRunning Engine The running engine for JavaScript is Spider monkey (Firefox), JavaScript Core (Safari), V8 (Google Chrome), etc. The running engine for Node.js is V8 (Google Chrome).\nBrowser compatibility JavaScript can only be run in browsers. The Node.js code can be run outside the browser.\nPlatform dependency JavaScript is basically used on the client-side and is used in frontend development. Node.js is mostly used on the server-side and is used in server-side development.\nHTML compatibility JavaScript is capable enough to add HTML and play with the DOM. Node.js is not compatible enough to add HTML tags.\nExamples Some examples of the JavaScript frameworks are RamdaJS, TypedJS, etc. Some examples of the Node.js modules are Lodash, express, etc. We have to import these modules from npm.\nWritten in JavaScript is the upgraded version of ECMA script that uses Chrome's V8 engine and is written in C++. Node.js is written in C, C++, and Javascript.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "The workflow of a Node.js web server typically looks like the following diagram. Let us see the flow of operations in detail:\n\nAccording to the above diagram, the clients send requests to the webserver to interact with the web application. These requests can be non-blocking or blocking and used for querying the data, deleting data, or updating the data.\njs receives the incoming requests and adds those to the Event Queue.\nAfter this step, the requests are passed one by one through the Event Loop. It checks if the requests are simple enough not to require any external resources.\nThe event loop then processes the simple requests (non-blocking operations), such as I/O Polling, and returns the responses to the corresponding clients.\nA single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for completing a particular blocking request by accessing external resources, such as computation, database, file system, etc.\nOnce the task is completed, the response is sent to the Event Loop that sends that response back to the client.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js project?",
+        "answer": "We can manage the packages in our Node.js project by using several package installers and their configuration file accordingly. Most of them use npm or yarn. The npm and yarn both provide almost all libraries of JavaScript with extended features of controlling environment-specific configurations. We can use package.json and package-lock.json to maintain versions of libs being installed in a project. So, there is no issue in porting that app to a different environment.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js Single-threaded?",
+        "answer": "Node.js is a single-threaded application with event looping for async processing. The biggest advantage of doing async processing on a single thread under typical web loads is that you can achieve more performance and scalability than the typical thread-based implementation.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Callback hell is a phenomenon that creates a lot of problems for a JavaScript developer when he tries to execute multiple asynchronous operations one after the other. A function is called an asynchronous function when some external activity must complete before processing a result. It is called asynchronous because there is an unpredictable amount of time before a result becomes available. These functions require a callback function to handle errors and process the result.\nExample:\ngetData(function(a){  \n    getMoreData(a, function(b){  \n        getMoreData(b, function(c){   \n            getMoreData(c, function(d){   \n                getMoreData(d, function(e){   \n                    ...  \n                });  \n            });  \n        });  \n    });  \n});",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js better than other most popular frameworks?",
+        "answer": "Based on the following criteria, we can say that Node.js is better than other most popular frameworks:\njs makes development simple because of its non-blocking I/O and even-based model. This simplicity results in short response time and concurrent processing, unlike other frameworks where developers use thread management.\njs runs on a chrome V8 engine which is written in C++. It enhances its performance highly with constant improvement.\nWith Node.js, we will use JavaScript in both the frontend and backend development that will be much faster.\njs provides ample libraries so that we don't need to reinvent the wheel.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js most frequently used?",
+        "answer": "Node.js is most frequently and widely used in the following applications:\nInternet of Things\nReal-time collaboration tools\nReal-time chats\nComplex SPAs (Single-Page Applications)\nStreaming applications\nMicroservices architecture etc.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Following is a list of some commonly used timing features of Node.js:\nsetTimeout/clearTimeout: This timing feature of Node.js is used to implement delays in the code execution.\nsetInterval/clearInterval: The setInterval or clearInterval timing feature is used to run a code block multiple times in the application.\nsetImmediate/clearImmediate: This timing feature of Node.js is used to set the execution of the code at the end of the event loop cycle.\nnextTick: This timing feature sets the execution of code at the beginning of the next event loop cycle.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Generally, a fork is used to spawn child processes. In Node.js, it is used to create a new instance of the V8 engine to run multiple workers to execute the code.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "ESLint tool is one of the best tools we can use with any IDE to ensure a consistent coding style. It also helps in maintaining the codebase.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "20) What is the main difference between front-end and back-end development?",
+        "answer": "The following table specifies the key differences between a front-end and back-end development:\nFront-end Development Back-end Development\nThe front-end development in an application refers to the client-side of an application. The back-end development in an application refers to the server-side of an application.\nAs the name specifies, the front-end development is the part of a web application where users can see and interact. As the name specifies, the back-end development consists of everything that happens behind the scenes and users cannot see and interact with.\nThe front-end development includes everything that attributes to the visual aspects of a web application. The back-end development generally includes a web server that communicates with the database to serve the users' requests.\nHTML, CSS, Bootstrap, jQuery, JavaScript, AngularJS, and React.js are essential front-end development technologies. Java, PHP, Python, C++, Node.js, etc., are the technologies required for back-end development.\nExamples of some front-end frameworks are AngularJS, React.js, jQuery, Sass, etc. Examples of some back-end frameworks are Express, Django, Rails, Laravel, Spring, etc.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "See the following example of using async-await pattern:\nfunction wait (timeout) {  \n return new Promise((resolve) => {  \nsetTimeout(() => {  \n  resolve()  \n}, timeout);  \n });  \n}  \nasync function requestWithRetry (url) {  \n const MAX_RETRIES = 10;  \n for (let i = 0; i <= MAX_RETRIES; i++) {  \ntry {  \n  return await request(url);  \n} catch (err) {  \n  const timeout = Math.pow(2, i);  \n  console.log('Waiting', timeout, 'ms');  \n  await wait(timeout);  \n  console.log('Retrying', err.message, i);  \n}  \n }  \n}",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "In Node.js applications, modules are like JavaScript libraries and include a set of functions. To include a module in a Node.js application, we must use the require() function with the parentheses containing the module's name.\nNode.js has several modules which are used to provide the basic functionality needed for a web application. Following is a list of some of them:\nCore Modules Description\nHTTP: The HTTP module includes classes, methods, and events to create a Node.js HTTP server.\nutil: The util module includes utility functions required in the application and is very useful for developers.\nurl: The url module is used to include the methods for URL parsing.\nfs: The fs module includes events, classes, and methods to handle the file I/O operations.\nstream: The stream module is used to include the methods to handle streaming data.\nquery string: The query string module is used to include the methods to work with a query string.\nzlib: The zlib module is used to include the methods to compress or decompress the files used in an application.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "In general, a buffer is a temporary memory mainly used by the stream to hold on to some data until it is consumed. Buffers are used to represent a fixed-size chunk of memory allocated outside of the V8 JavaScript engine. It can't be resized. It is like an array of integers, which each represents a byte of data. It is implemented by the Node. js Buffer class. Buffers also support legacy encodings like ASCII, utf-8, etc.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "24) What is error-first callback?",
+        "answer": "Error-first callbacks are used to pass errors and data. If something goes wrong, the programmer has to check the first argument because it is always an error argument. Additional arguments are used to pass data.\nfs.readFile(filePath, function(err, data) {    \n  if (err) {  \n    //handle the error  \n  }  \n  // use the data object  \n});",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "25) What is an asynchronous API?",
+        "answer": "All the API's of Node.js library are asynchronous means non-blocking. A Node.js based server never waits for an API to return data. The Node.js server moves to the next API after calling it, and a notification mechanism of Events of Node.js responds to the server for the previous API call.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "26) How can you avoid callbacks?",
+        "answer": "To avoid callbacks, you can use any one of the following options:\nYou can use modularization. It breaks callbacks into independent functions.\nYou can use promises.\nYou can use yield with Generators and Promises.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js provide Debugger?",
+        "answer": "Yes, Node.js provides a simple TCP based protocol and built-in debugging client. For debugging your JavaScript file, you can use debug argument followed by the js file name you want to debug.\nSyntax:\nnode debug [script.js | -e \"script\" | <host>:<port>]",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "28) What is a control flow function?",
+        "answer": "Control flow function is a generic piece of code that runs in between several asynchronous function calls.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "29) How \"Control Flow\" controls the functions calls?",
+        "answer": "The control flow does the following job:\nControl the order of execution\nCollect data\nLimit concurrency\nCall the next step in a program",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "30) Is it possible to access DOM in Node?",
+        "answer": "No, it is not possible to access DOM in Node.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "31) What types of tasks can be done asynchronously using the event loop?",
+        "answer": "I/O operations\nHeavy computation\nAnything requiring blocking",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "REPL stands for Read Eval Print Loop. It specifies a computer environment like a window console or Unix/Linux shell where you can enter a command, and the computer responds with an output. It is very useful in writing and debugging the codes. REPL environment incorporates Node.js.\nSee the Example:\n$ node  \n> 100 + 200  \n300  \n> 100 + ( 200 * 300 ) - 400  \n59700  \n>",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "",
+        "answer": "Following are the terms used in REPL with their defined tasks:\nRead: It reads user's input; parse the input into JavaScript data-structure and stores in memory.\nEval: It takes and evaluates the data structure.\nPrint: It is used to print the result.\nLoop: It loops the above command until user press ctrl-c twice to terminate.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "34) Is it possible to evaluate simple expressions using Node REPL?",
+        "answer": "Yes. You can evaluate simple expressions using Node REPL.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "35) What is the use of the underscore variable in REPL?",
+        "answer": "In REPL, the underscore variable is used to get the last result.\nC:\\Nodejs_WorkSpace>node  \n> var x = 10  \nundefined  \n> var y = 20  \nundefined  \n> x + y  \n30  \n> var sum = _  \nundefined  \n> console.log(sum)  \n30  \nundefined  \n>",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js supports cryptography?",
+        "answer": "Yes, Node.js Crypto module supports cryptography. It provides cryptographic functionality that includes a set of wrappers for open SSL's hash HMAC, cipher, decipher, sign and verify functions. For example:\nconst crypto = require('crypto');    \nconst secret = 'abcdefg';    \nconst hash = crypto.createHmac('sha256', secret)    \n                   .update('Welcome to JavaTpoint')    \n                   .digest('hex');    \nconsole.log(hash);",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "37) What is npm? What is the main functionality of npm?",
+        "answer": "npm stands for Node Package Manager. Following are the two main functionalities of npm:\nOnline repositories for node.js packages/modules which are searchable on search.nodejs.org\nCommand line utility to install packages, do version management and dependency management of Node.js packages.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Following is a list of tools that can be used in developing code in teams, to enforce a given style guide and to catch common errors using static analysis.\nJSLint\nJSHint\nESLint\nJSCS",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "39) What is the difference between operational and programmer errors?",
+        "answer": "Operational errors are not bugs, but create problems with the system like request timeout or hardware failure. On the other hand, programmer errors are actual bugs.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "40) What is the difference between the global installation of dependencies and local installation of dependencies?",
+        "answer": "Global installation of dependencies is stored in /npm directory. While local installation of dependencies stores in the local mode. Here local mode refers to the package installation in node_modules directory lying in the folder where Node application is present.\nGlobally deployed packages cannot be imported using require() in Node application directly. On the other hand, locally deployed packages are accessible via require().\nTo install a Node project globally -g flag is used.\nC:\\Nodejs_WorkSpace>npm install express ?g   \nTo install a Node project locally, the syntax is:\nC:\\Nodejs_WorkSpace>npm install express",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "The Node.js provides Buffer class to store raw data similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap. It is a global class and can be accessed in an application without importing a buffer module. Buffer class is used because pure JavaScript is not compatible with binary data. So, when dealing with TCP streams or the file system, it's necessary to handle octet streams.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "The Node.js Assert is a way to write tests. It provides no feedback when running your test unless one fails. The assert module provides a simple set of assertion tests that can be used to test invariants. The module is intended for internal use by Node.js, but can be used in application code via require ('assert'). For example:\nvar assert = require('assert');    \nfunction add (a, b) {    \n  return a + b;    \n}    \nvar expected = add(1,2);    \nassert( expected === 3, 'one plus two is three');",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "The Streams are the objects that facilitate you to read data from a source and write data to a destination. There are four types of streams in Node.js:\nReadable: This stream is used for reading operations.\nWritable: This stream is used for write operations.\nDuplex: This stream can be used for both reading and write operations.\nTransform: It is a type of duplex stream where the output computes according to input.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "In Node.js, event-driven programming means as soon as Node starts its server, it initiates its variables, declares functions and then waits for an event to occur. It is one of the reasons why Node.js is pretty fast compared to other similar technologies.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Although, Events and Callbacks look similar the differences lies in the fact that callback functions are called when an asynchronous function returns its result whereas event handling works on the observer pattern. Whenever an event gets fired, its listener function starts executing. Node.js has multiple in-built events available through the events module and EventEmitter class which is used to bind events and event listeners.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "The Punycode is an encoding syntax which is used to convert Unicode (UTF-8) string of characters to ASCII string of characters. It is bundled with Node.js v0.6.2 and later versions. If you want to use it with other Node.js versions, then use npm to install Punycode module first. You have to used require ('Punycode') to access it.\nSyntax:\npunycode = require('punycode');",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js TTY module contains?",
+        "answer": "The Node.js TTY module contains tty.ReadStream and tty.WriteStream classes. In most cases, there is no need to use this module directly. You have to used require ('tty') to access this module.\nSyntax:\nvar tty = require('tty');",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "Key differences between Angular and Node.js:\nAngular Node.js\nAngular is a structural front-end development framework for developing dynamic web apps. Node.js is a cross-platform, run-time, server-side environment for applications written in JavaScript language.\nAngular is entirely written in TypeScript language. Node.js is written in C, C++, and JavaScript languages.\nAngular is used for building single-page, client-side web applications. Node.js is used for building fast and scalable, client-side, and server-side networking applications.\nAngular is easy to use. The developers need to add the Angular file to use it in their applications. Node.js is slightly complicated to use. Here, the developers need to install Node.js on their computer system.\nAngular split a web application into MVC components. Here, the models and views are much simpler than what is found in other JavaScript client-side frameworks. Node.js generates database queries and uses the event-driven nature of JavaScript to support non-blocking operations, making the platform efficient.\nAngular is based on the model-view-controller design pattern and follows that pattern completely. Node.js is single-threaded. It means the web requests and processing runs on the same thread.\nAngular is a Web Framework. Node.js provides different Web Frameworks like Socket.io, Hapi.js, Meteor.js, Express.js, and Sails.js, etc.\nAngular is ideal for creating highly active and interactive web apps. Node.js is the best for developing small-size projects.\nAngular requires a deep understanding of prototyping, scope, and various other JavaScript aspects. Node.js facilitates developers to use JavaScript on the client as well as the server-side. So, they can focus on learning one language.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "49) What are the main differences between operational and programmer errors?",
+        "answer": "The most crucial difference between operational and programmer errors is that the operational errors are not bugs but problems with the system such as to request timeout or hardware failure. On the other hand, the programmer errors are actual bugs in the application.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "In Node.js, an EventEmitter is a class that includes all the objects capable of emitting events. This can be achieved by attaching named events that are emitted by the object using an eventEmitter.on() function. Thus whenever this object throws an event, the attached functions are invoked synchronously.\nExample:\nconst EventEmitter = require('events');  \nclass MyEmitter extends EventEmitter {}  \nconst myEmitter = new MyEmitter();  \nmyEmitter.on('event', () => {  \n console.log('an event occurred!');  \n});  \nmyEmitter.emit('event');",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "In Node.js, there are two ways to read and execute files: readFile and CreateStream.\nThe readFile() process is a fully buffered process that returns the response only when the complete file is pushed into the buffer and is read. This process is called a memory-intensive process, and in the case of large files, the processing can be very slow.\nOn the other hand, the createReadStream() is a partially buffered process that treats the entire process as an event series. The entire file is split into chunks and then processed and sent back as a response one by one. After completing this step, they are finally removed from the buffer. Unlike the readFile process, the createReadStream process is effective for the processing of large files.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js?",
+        "answer": "In Node.js, the concept of Punycode is used for converting one type of string into another type. Punycode is an encoding syntax used for converting Unicode (UTF-8) string of characters into a basic ASCII string of characters. Now, the hostnames can only understand the ASCII characters so, after the Node.js version 0.6.2 onwards, it was bundled up with the default Node package.\nTo use it with any previous versions, you have to use the following code:\nSyntax:\npunycode = require('punycode');",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js performance through clustering?",
+        "answer": "Just because the Node.js applications run on a single processor, they don't take advantage of a multiple-core system by default. Clustering is used to overcome this issue. The cluster mode is used to start up multiple node.js processes, thereby having multiple instances of the event loop. When we start using clusters in a Node.js app, it creates multiple node.js processes. But there is also a parent process called the cluster manager, which is responsible for monitoring the health of the individual instances of the application.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    },
+    {
+        "question": "js? Which library handles it?",
+        "answer": "In Node.js, the libuv library is used to handle the Thread pool. The libuv library is a multi-platform C library that supports asynchronous I/O-based operations such as file systems, networking, and concurrency.",
+        "reference": "javatpoint.com",
+        "role": "node-js"
+    }
+]

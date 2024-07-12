@@ -1,0 +1,122 @@
+[
+    {
+        "question": "1) What is exception handling in C++?",
+        "answer": "Exception handling is a mechanism in C++ to handle runtime errors, or it is an exceptional condition that may occur during the execution of a program. It allows you to catch and handle these errors quickly.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "2) What is the advantage of using exception handling?",
+        "answer": "Exception handling provides a way to separate the error-handling code from the standard code. It helps in making the code readable and maintainable more easily.\nIt allows for the propagation of errors across different levels of the program.\nIt helps in handling exceptional conditions and recovering the code from errors quickly.\nIt enables the possibility of implementing centralized error-handling mechanisms.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "3) How does exception handling work in C++?",
+        "answer": "In C++, you can use the try, catch, and throw keywords to work with exceptions.\nThe code that can potentially throw an exception is placed within a try block.\nIf an exception occurs within the try block, it is thrown using the throw keyword.\nThe thrown exception is then caught and handled by an appropriate catch block that matches the exception type.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "4) Write the Importance of the throw statement?",
+        "answer": "The throw statement is used to raise an exception manually within a program. It is typically used when a specific condition or error requires an immediate response.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "5) Write the importance of try block?",
+        "answer": "The try block encloses the code that might throw an exception. It allows you to monitor for exceptions and handle them appropriately.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "6) Write the importance of a catch block?",
+        "answer": "The catch block catches and handles exceptions thrown within the corresponding try block. It specifies the type of exception it can handle and includes the code to be executed when the specified exception occurs.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "7) What will happen in a case if an exception is thrown but not caught?",
+        "answer": "The program will terminate abnormally if an exception is thrown but not caught by any matching catch block. The runtime system will unwind the call stack, perform any necessary clean-up operations, and terminate the program.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "8) Can you nest try blocks inside other try blocks?",
+        "answer": "Yes, you can nest try blocks inside other try blocks. This allows you to handle exceptions at different levels of the program's execution. If an exception occurs within an inner try block, the program searches for a matching catch block within that inner try block and proceeds to outer try blocks if needed.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "9) How can you differentiate between checked and unchecked exceptions?",
+        "answer": "In C++, there is no direct distinction between checked and unchecked exceptions like in other languages. In C++, all exceptions can be caught and handled if appropriate catch blocks are provided. However, checked exceptions must be declared in the function signature or caught in a try-catch block in languages like Java, while unchecked exceptions do not require explicit handling.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "10) How will you differentiate between the throw and throws keywords?",
+        "answer": "The Throw Keyword is used to raise an exception within the program manually. Whereas the throws keyword is used in some other programming languages, such as Java, to declare that a function or method can potentially throw an exception.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "11) What are the differences between handling exceptions by value, reference, and pointer in a catch block?",
+        "answer": "Handling exceptions by value involves copying the exception object. It allows modifications to the exception object but incurs the cost of copying.\nHandling exceptions by reference avoids the copy, allowing direct access to the original exception object.\nHandling exceptions by pointer allows the possibility of handling null pointers and provides flexibility in rethrowing or reassigning the exception object.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "12) What is the role of destructors in exception handling?",
+        "answer": "Destructors play a crucial role in exception handling. They are responsible for cleaning up resources and releasing allocated memory for objects. When an exception arises, the destructors of objects which falls within the scope of the try block are called automatically.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "13) What is the difference between using throw with and without argument?",
+        "answer": "When the throw is used without an argument, it rethrows the currently handled exception within a catch block.\nWhen the throw is used with an argument, it throws a new exception of the specified type or object, which an appropriate catch block can catch.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "14) How do you rethrow an exception in C++?",
+        "answer": "You use the throw statement without an argument to rethrow an exception within a catch block. It rethrows the current exception, allowing it to be caught by an outer catch block or terminating the program if not caught.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "15) Explain the concept of stack unwinding?",
+        "answer": "Stack unwinding refers to deallocating objects and calling destructors in the call stack when an exception is thrown. The runtime searches for the appropriate catch block while unwinding the stack, and if a matching catch block is found, the exception is handled.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "16) What is the difference between standard exceptions and custom exceptions?",
+        "answer": "Standard exceptions are predefined exception classes provided by the C++ Standard Library, such as std::runtime error or std::invalid argument. On the other hand, custom exceptions are user-defined exception classes that inherit from std::exception or its derived classes. Standard exceptions generally represent common error scenarios, while custom exceptions are tailored to specific application requirements.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "17) How do you handle exceptions in constructors and destructors?",
+        "answer": "Exceptions in constructors can be handled by using a try-catch block within the constructor body. If an exception occurs during the execution of a destructor and is not caught within the destructor itself, the program terminates.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "18) Can you catch exceptions by reference instead of by value?",
+        "answer": "You can catch exceptions by reference instead of by value. It is generally recommended to catch exceptions by reference to avoid unnecessary copying of exception objects.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "",
+        "answer": "Exception safety refers to the guarantee that a program will maintain a consistent state, even in the presence of exceptions. It involves designing code so that resources are appropriately managed, memory is not leaked, and objects are left in a valid state, regardless of whether an exception occurs during program execution.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    },
+    {
+        "question": "20) What are the different levels of exception safety?",
+        "answer": "Exception safety is often classified into three levels:\nNo-throw guarantee: Functions with a no-throw guarantee ensure that no exceptions are thrown under any circumstances.\nBasic exception safety: Functions with basic exception safety guarantee that objects and resources are not leaked and the program remains valid, even if an exception is thrown.\nStrong exception safety: Functions with solid exception safety guarantee that if an exception occurs, the program state is rolled back to its state before the function was called, with no memory leaks or side effects.",
+        "reference": "javatpoint.com",
+        "role": "top-cpp-exception-handling"
+    }
+]

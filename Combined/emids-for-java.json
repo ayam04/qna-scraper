@@ -1,0 +1,122 @@
+[
+    {
+        "question": "1) What is Polymorphism in Java?",
+        "answer": "Polymorphism in Java refers to the ability of a class to take on multiple forms. It allows objects of different classes to be treated as objects of a common parent class or interface. This concept is achieved through method overriding and interface implementations. Polymorphism enables you to write code that can work with objects of multiple classes that share a common interface. For instance, if you have a Shape interface with a draw() method, both Circle and Rectangle classes that implement this interface can be treated as Shape objects, providing a level of abstraction and code reusability.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "2) What is an interface in Java, and how does it differ from a class?",
+        "answer": "In Java, an interface is a reference type that defines a contract specifying a set of methods that must be implemented by any class that implements the interface. Unlike classes, interfaces cannot be instantiated. They provide a way to achieve multiple inheritances since a class can implement multiple interfaces. Interfaces are used to achieve abstraction and define the behavior that implementing classes must adhere to. Unlike classes, interfaces do not provide method implementations; they only define method signatures.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "What is this enhancement, and how does it impact the usage of interfaces?",
+        "answer": "In Java 8, a major enhancement to interfaces is the introduction of default methods and static methods. Default methods are methods that are provided with a default implementation within an interface. This allows interfaces to evolve over time without breaking the classes that implement them. Static methods in interfaces provide utility methods that can be called without creating instances of the interface. This enhancement significantly improves the usability of interfaces by allowing method implementations, which were previously restricted to abstract classes. This feature is particularly useful when working with legacy code and library interfaces, enabling you to add new methods without requiring all implementations to be updated.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "4) What is a thread in Java, and how does it enable multitasking?",
+        "answer": "A thread in Java represents an independent unit of execution within a program. Threads allow multiple tasks to run concurrently, enabling multitasking. Java supports multithreading, where a single program can have multiple threads executing independently. Each thread has its own call stack but shares the same memory space. Threads can be used for tasks such as parallel execution of code, implementing responsive user interfaces, and performing background tasks. Multithreading enhances program efficiency by utilizing available CPU resources more effectively.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "How can it be achieved, and what are the strategies to resolve it?",
+        "answer": "Deadlock in multithreading occurs when two or more threads are blocked indefinitely, each waiting for a resource that the other holds. Deadlocks can occur when the following conditions are met: mutual exclusion (at least one resource can be held exclusively), hold and wait (threads hold resources while waiting for others), no preemption (resources cannot be forcibly taken away), and circular wait (a circular chain of threads waits for resources). Deadlocks can be resolved by employing strategies such as resource allocation graphs, ordering resource acquisition, and utilizing timeout mechanisms. Additionally, avoiding the circular wait condition through careful design and the use of techniques like \"try and obtain\" can prevent deadlocks from occurring.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "",
+        "answer": "Both ArrayList and Vector in Java are dynamic arrays that automatically resize themselves when more elements are added. However, there are key differences between them. Vector is synchronized, meaning it is thread-safe, but this synchronization can impact performance. In contrast, ArrayList is not synchronized, making it more efficient for single-threaded scenarios but potentially leading to data integrity issues in multithreaded environments. Additionally, Vector grows by 100% of its current size when resizing, while ArrayList grows by 50%. Overall, ArrayList is preferred in most situations due to its performance benefits unless synchronization is explicitly required.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "",
+        "answer": "In Java, a List is an ordered collection that allows duplicate elements. It maintains the order of insertion, and you can access elements by their index. Examples of List implementations include ArrayList and LinkedList. On the other hand, a Set is an unordered collection that does not allow duplicate elements. It ensures that each element is unique based on its content and typically uses hashing mechanisms for quick element retrieval. Sets do not provide indexing, and examples of Set implementations are HashSet and TreeSet. The main distinction is that Lists allow duplicates and maintain order, while Sets do not allow duplicates and focus on uniqueness.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "8) What is encapsulation, and why is it an essential concept in object-oriented programming?",
+        "answer": "Encapsulation is a fundamental concept in object-oriented programming that involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit, known as a class. The key idea behind encapsulation is to hide the internal details of how an object works and expose only necessary functionalities through well-defined interfaces. By encapsulating data within classes and providing controlled access through methods, encapsulation improves code maintainability, reduces complexity, and protects data from unauthorized modification. It helps to achieve information hiding, allowing classes to change their internal implementation without affecting other parts of the program.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "",
+        "answer": "Lambda expressions in Java 8 are a concise way to represent anonymous functions, also known as lambda functions or closures. They provide a compact syntax for defining simple, single-method interfaces (functional interfaces). Lambda expressions offer a more readable and expressive way to write code, especially for short, functional-style operations. Lambda expressions can be used to replace anonymous inner classes when working with functional interfaces, making the code cleaner and more focused on the actual task at hand. This feature significantly improves the readability of code involving functional programming paradigms.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "",
+        "answer": "The hashCode() method in Java is used to convert an object into a unique integer value that represents the object's identity. This integer value, called a hash code, is used primarily for efficient retrieval in data structures like hash tables. The hashCode() method is crucial for objects that participate in hash-based collections. A well-implemented hashCode() method ensures that objects with equal content produce the same hash code. However, it's essential to understand that hash codes are not guaranteed to be unique; collisions can occur. Therefore, when implementing custom classes, it's advisable to override hashCode() along with equals() for proper hash-based collection behavior.\nADVERTISEMENT",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "11) What is the difference between using == and the equals() method for comparing objects in Java?",
+        "answer": "In Java, == and equals() serve different purposes when comparing objects. The == operator checks whether two object references point to the same memory location (the same instance). On the other hand, the equals() method is used to compare the actual contents or attributes of objects. While == compares object identity, equals() allows us to define custom equality semantics based on object attributes. For example, when comparing strings, == checks if the references are the same, while equals() compares the character sequences. In most cases, equals() is the preferred way to compare objects for semantic equality.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "12) When and why would you use the super keyword in Java?",
+        "answer": "The super keyword in Java is used to refer to the superclass of the current class. It's typically used within a subclass to access or invoke methods, variables, or constructors defined in the superclass. One common use of super is when a subclass overrides a method from its superclass but still needs to call the version of that method defined in the superclass. This allows for extending and customizing the behavior of the inherited method. By using super, you can access the superclass's implementation while still applying any additional logic specific to the subclass.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "13) What is the purpose of the try-with-resources statement introduced in Java 7?",
+        "answer": "The try-with-resources statement is used in Java to ensure proper resource management, particularly when dealing with resources that need to be explicitly closed after use, such as files, network connections, or database connections. It simplifies resource handling by automatically closing resources at the end of the block, even if an exception is thrown. This avoids resource leaks and reduces the likelihood of forgetting to close resources explicitly. The try-with-resources statement requires that the resource implements the AutoCloseable or java.lang.AutoCloseable interface.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "14) What is the purpose of the transient keyword in Java?",
+        "answer": "The transient keyword in Java is used to indicate that a variable should not be serialized when an object is transformed into a byte stream (for example, during object serialization). This is particularly useful when you have variables that contain sensitive data or information that can be reconstructed upon deserialization. By marking a variable as transient, you exclude it from the serialization process, ensuring that the data remains private and does not persist across serialization and deserialization.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "15) What is the distinction between the Comparable and Comparator interfaces in Java?",
+        "answer": "The Comparable interface is used to define the natural ordering of objects. Objects implementing Comparable provide a way to compare themselves with other objects based on a single criterion. On the other hand, the Comparator interface is used to define custom comparison criteria for objects that do not implement Comparable. By providing a separate Comparator implementation, you can define multiple comparison strategies for objects, allowing for flexible sorting behaviors. While Comparable dictates the default sorting order for objects, Comparator provides additional sorting flexibility when needed.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "16) What is a static method in Java, and how does it differ from an instance method?",
+        "answer": "A static method in Java belongs to the class itself rather than to instances of the class. It is marked with the static keyword. Static methods are shared across all instances of the class and can be called using the class name. They are not associated with any specific object's state, which means they cannot access instance variables directly. In contrast, instance methods are specific to individual instances of a class and can access both instance variables and other instance methods. Static methods are typically used for utility functions and operations that don't require access to object-specific data.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "",
+        "answer": "The volatile keyword in Java is used to declare a variable as volatile, indicating that its value may be changed by multiple threads simultaneously. When a variable is marked as volatile, reads and writes to that variable are performed directly on the main memory, bypassing thread-specific caching. This prevents issues where threads may have different cached copies of the variable. While volatile ensures visibility of changes between threads, it does not provide atomicity for compound operations. It's commonly used for simple flags or variables that are accessed by multiple threads without requiring synchronization.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "18) What is the purpose of the finalize() method in Java?",
+        "answer": "The finalize() method in Java is a method defined in the java.lang.Object class and is inherited by all classes. It's called by the garbage collector before an object is reclaimed. The purpose of the finalize() method is to allow the object to perform cleanup operations or release resources before it's removed from memory. However, relying on finalize() for resource cleanup is discouraged due to uncertainties about when it will be called and its impact on memory management. Instead, explicit resource management techniques like the try-with-resources statement or manual cleanup should be preferred.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "19) When and why would you use this keyword in Java?",
+        "answer": "This keyword in Java is used to refer to the current instance of the class within which it's used. It's particularly useful when you have method parameters or local variables with the same name as instance variables. By using this, you can explicitly reference instance variables to differentiate them from local variables or method parameters. Additionally, this can be used to call one constructor from another constructor within the same class, allowing for code reuse and constructor chaining.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    },
+    {
+        "question": "",
+        "answer": "The break statement in Java is used within loops and switch statements to terminate the current loop iteration or exit the switch block prematurely. In loops, break immediately terminates the loop, and control flows to the statement immediately after the loop. In switch statements, break is used to exit the switch block after executing a particular case. Without the break statement, the control would \"fall through\" to subsequent cases, leading to unintended behavior. break is instrumental in controlling the flow of execution and is particularly useful for escaping loops or controlling the flow of code execution in switch statements.",
+        "reference": "javatpoint.com",
+        "role": "emids-for-java"
+    }
+]

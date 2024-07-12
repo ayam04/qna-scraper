@@ -1,0 +1,188 @@
+[
+    {
+        "question": "1) What is Less?",
+        "answer": "The Learner Style Sheet (Less) is a backward-compatible language that can be compiled into the Cascading Style Sheet (CSS) and runs on both the client side and server side. It is an open source language and cross-browser compatible.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "2) When does the Less programming language first invented?",
+        "answer": "The Less programming language was first invented in 2009.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "3) In which language does the Less first written?",
+        "answer": "The LESS was first written in Ruby in 2009.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "4)What is the current language used in Less?",
+        "answer": "Currently, Less is using JavaScript.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "5) Who is the inventor of Less?",
+        "answer": "The Less is designed and developed by Alexis Sellier and Dmitry Fadeyev.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "6) What is the extension of Less file?",
+        "answer": "The \".less\" is the extension of the Less file. It is always required to use \".Less\" extension in Less document file.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "7) In how many ways we can use Less?",
+        "answer": "There are three ways to use Less:\nADVERTISEMENT\nThrough the command line.\nThrough a third-party tool.\nYou can download Less as a script file for the browser.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "8) How do you represent a variable in Less?",
+        "answer": "It is required to declare a variable with @ symbol and uses a colon (:) to assigned the particular value in the variable. It is also necessary to add a semi-colon (;) after the value of the variable.\nFor example:\n@primarycolor: #FF7F50;  \n@color:#800080;  \nh1 {  \n   color: @primarycolor;  \n}  \n  h3 {  \n   color: @color;  \n}  \nIn the above example of Less, the two variables used in the Less programming having values #FF7F50 and #800080.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "9) What is the use of Mixins in Less?",
+        "answer": "In Less, Mixins facilitates you to add the set of properties from one rule-set into another rule-set. It includes class names as its properties. Mixins can be declared as the same way as CSS style using a class or id selector. It can store multiple values and can be reused in the code whenever necessary.\nSyntax:\n.round-borders {    \n  border-radius: 5px;    \n  -moz-border-radius: 5px;    \n  -webkit-border-radius: 5px;    \n}    \n#menu {    \n  color: gray;    \n  .round-borders;    \n}",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "10) What is the role of nesting in Less programming?",
+        "answer": "The nesting is used to make the code simple, clean and Less complicated by allowing it to follow some visual hierarchy. For example nesting of classes can be done in Less programming.\nFor example:\n.container {  \n   h1 {  \n      font-size: 25px;  \n      color:#E45456;  \n   }  \n   p {  \n      font-size: 25px;  \n      color:#3C7949;  \n   }  \n     .myclass {  \n      h1 {  \n         font-size: 25px;  \n         color:#E45456;  \n      }  \n      p {  \n         font-size: 25px;  \n         color:#3C7949;  \n      }  \n   }  \n}  \nIn the above Less document example of nesting myclass is the subclass of container class.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "11) What are the color channel functions in Less?",
+        "answer": "In Less, color channel functions are in-built functions used to set a value about a channel according to the color definition. The HSL colors consist of hue, saturation and lightness channel and the RGB colors consist of a red, green and blue channel.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "12) What is the use of data URI (Uniform Resource Identifier) in LESS?",
+        "answer": "With the help of Data URI, an image can be embedded directly in the stylesheet.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "13) What does the \"Source Map Less Inline\" option represent?",
+        "answer": "The \"Source Map Less Inline\" option represents that all the CSS files must be included into the source map.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "14) What is the difference between Less and SASS?",
+        "answer": "Less Sass\nLess is coded in JavaScript. SASS is coded in ruby.\nIt is processed on the client side It is processed at the client side.\nVariables are declared with the @ symbol. Variables are declared with the $ symbol.\nFor mixing, it uses Less Mixins. For mixing, it uses Compass.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "15) How is Less is similar to Sass?",
+        "answer": "Following are the similarities between Less and Sass:\nNamespaces are similar in both.\nColor functions are identical in both.\nNesting capabilities are identical in both.\nJavaScript evaluations are identical in both.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "16) What is &combinator in Less?",
+        "answer": "In LESS, &combinator is used to combine the nested selector with the parent selector.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "17) Does Less support operations?",
+        "answer": "Yes, Less supports various arithmetic operations such +,? , *, / that can be operated on any color or variable.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "18) What is the use of Escaping in Less?",
+        "answer": "The escaping is used when there is a requirement to execute CSS file with invalid syntax.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "19) Are there any alternatives that can use in place of Less?",
+        "answer": "Yes, there are various other alternatives can be used in place of Less such as SCSS, stylus.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "20) How can you invoke the compiler via command line in Less?",
+        "answer": "To invoke the compiler follow the below command :\n$ Lessc styles.Less",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "21) What is the purpose of e() function in Less?",
+        "answer": "The role of e() function is to escape a value from the Less compiler.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "22) How can you create a loop structure in Less?",
+        "answer": "When recursive mixins are combined with Pattern matching and guard expressions, it can create various iterative/loop structures.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "23) What is the best way to pre-compile a Less into CSS?",
+        "answer": "The easiest way to pre-compile a Less into CSS is to use Less.js with Node.js where Less.js run outside the browser.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "24) What is the use of Namespaces and Accessors in Less?",
+        "answer": "The namespaces were used to group the Mixins under a common name. You can perform Encapsulation with the help of Namespaces and Accessors in the Less file.\nFor example:\n.class1 {  \n   .class2 {  \n      .val(@param) {  \n         font-size: @param;  \n         color:green;  \n      }  \n   }  \n}  \n  .myclass {  \n   .class1 > .class2 > .val(20px);  \n}",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "",
+        "answer": "The scope of variables refers to the place where the variables exist. The variables were searched in the local scope first. If it is not in the local scope, then the compiler search in the parent scope.\nFor example:\n@a: 15px;  \n  .myclass {  \n   font-size: @a;  \n   @a:20px;  \n   color: green;  \n}  \nIn the above Less document variable a is defined inside the class with value 20 and variable with the same name is also defined outside the class with value 15. When the compiler executes this Less document, it searches for the local scope first. Hence the local scope of the variable is used. After the compilation process, CSS file is created having font-size value 20px.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "26) What is commenting?",
+        "answer": "The commenting refers to some text which is understandable by the humans to understand the working of some complex codes in the programming.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "27) What is the reaction of the compiler to the comments?",
+        "answer": "The reaction of the compiler to the comments is nothing. The compiler ignores the comments at the time of compilation of the code.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "28) How many types of commenting can be done in the Less document?",
+        "answer": "Two types of comments are allowed in the Less document, inline comments and block comments. However, if you write inline comments in your code, the compiler ignores it and not adds that code to the CSS file. Only block comments will be added to the CSS file.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "29) What is the use of importing in Less programming? How is it done?",
+        "answer": "The importing is used to import CSS or Less document into the Less document. Importing can be done by including \"@import\" followed by the address of the CSS or Less file at the beginning of the Less document.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "30) What is the use of extend in Less?",
+        "answer": "The extend is a Less pseudo class which is used to select another selector style in one selector.\nFor example:\nh2 {  \n   &:extend(.style);  \n   font-style: italic;  \n}  \n  .style {  \n   background: green;  \n}  \nIn the above example of extending style class properties have been imported into the properties of h2.",
+        "reference": "javatpoint.com",
+        "role": "less"
+    },
+    {
+        "question": "31) What are different types of functions available in Less?",
+        "answer": "The list of different types of functions in Less is as follows:\nMisc function\nString functions\nList function\nMath function\nType function\nColor definition function\nColor channel function\nColor operation\nColor blending functions",
+        "reference": "javatpoint.com",
+        "role": "less"
+    }
+]

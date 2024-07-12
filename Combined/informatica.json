@@ -1,0 +1,734 @@
+[
+    {
+        "question": "1. Differentiate between Informatica and DataStage.",
+        "answer": "Criteria Informatica DataStage\nGUI for development and monitoring PowerDesigner, Repository Manager, Workflow Designer, and Workflow Manager DataStage Designer, Job Sequence Designer, and Director\nData integration solution Step-by-step solution Project-based integration solution\nData transformation Good Excellent",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "2. What is Informatica PowerCenter?",
+        "answer": "Informatica PowerCenter is an ETL/data integration tool that has a wide range of applications. This tool allows users to connect to and fetch data from different heterogeneous sources and subsequently process the same.\nFor example, users can connect to a SQL Server Database, an Oracle Database, or both and integrate the data from both databases into a third system.\nLearn more about Business Objects vs Informatica in this insightful blog!",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "3. Mention some use cases of Informatica.",
+        "answer": "There are many use cases of Informatica, but this tool is predominantly leveraged in the following scenarios:\nWhen organizations migrate from the existing legacy systems to new database systems\nWhen enterprises set up their data warehouse\nWhile integrating data from various heterogeneous systems including multiple databases and file-based systems\nFor data cleansing",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "4. How can we filter rows in Informatica?",
+        "answer": "Using Informatics Transformation there are two ways to filter rows, they are as follows:\nSource Qualifier Transformation: It filters rows while reading data from a relational data source. It minimizes the number of rows when mapping to enhance performance. Also, Standard SQL is used by the filter condition for execution in the database.\nFilter Transformation: It filters rows within mapped data from any source. It is added close to the source to filter unwanted data and maximize performance. It generates true or false values based on conditions.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "5. Differentiate between Joiner and Lookup transformations.",
+        "answer": "Joiner Lookup\nIt is not possible to override the query. It is possible to override the query.\nOnly the ‘=’ operator is available. All operators are available.\nUsers cannot restrict the number of rows while reading relational tables. Users can restrict the number of rows while reading relational tables.\nIt is possible to join tables with Joins. It behaves as Left Outer Join while connecting with the database.\nGet 100% Hike!\nMaster Most in Demand Skills Now !\nBy providing your contact details, you agree to our Terms of Use & Privacy Policy",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "6. In Informatica Workflow Manager, how many repositories can be created?",
+        "answer": "Depending on the required number of ports, repositories can be created. In general, there can be any number of repositories.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "7. What are the types of Lookup transformations?",
+        "answer": "There are four different types of lookup transformation:\nRelational or Flat-File Lookup: It performs a lookup on relational tables.\nPipeline Lookup: It performs a lookup on application sources.\nConnected or Unconnected Lookup: While the connected lookup transformation receives data from the source, performs a lookup, and returns the result to the pipeline, the unconnected lookup happens when the source is not connected. It returns one column to the calling transformation.\nCached or Uncached lookup: Lookup transformation can be configured to cache lookup data, or we can directly query the lookup source whenever a lookup is invoked.\nCheck out the ETL Developer Interview Questions to prepare for your next interview.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "8. How do pre- and post-session shell commands function?",
+        "answer": "A command task can be called a pre-session or post-session shell command for a session task. Users can run it as a pre-session command, a post-session success command, or a post-session failure command. Based on use cases, the application of shell commands can be changed or altered.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "9. What can we do to improve the performance of Informatica Aggregator transformation?",
+        "answer": "Aggregator performance dramatically improves if records are sorted before passing to the aggregator and the ‘sorted input’ option under aggregator properties is checked. The record set should be sorted by the columns used in the Group By operation. It is often a good idea to sort the record set at the database level, e.g., inside a source qualifier transformation, unless there is a chance that the already sorted records from the source qualifier can again become unsorted before reaching the aggregator.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "10. How can we update a record in the target table without using Update Strategy?",
+        "answer": "A target table can be updated without using the Update Strategy. For this, we need to define the key in the target table at the Informatica level, and then we need to connect the key and the field we want to update in the mapping target. At the session level, we should set the target property to ‘Update as Update’ and check the ‘Update’ check box.\nLet us assume we have a target table, ‘Customer,’ with fields such as ‘Customer ID,’ ‘Customer Name,’ and ‘Customer Address.’ Suppose we want to update ‘Customer Address’ without an Update Strategy, we have to define ‘Customer ID’ as the primary key at the Informatica level, and we will have to connect the ‘Customer ID’ and ‘Customer Address’ fields in the mapping. If the session properties are set as described above, the mapping will only update the ‘Customer Address’ field for all matching customer IDs.\n\nWatch this Informatica Tutorial video:",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "11. Why do we use mapping parameters and mapping variables?",
+        "answer": "Mapping parameters and mapping variables represent values in mappings and mapplets.\nMapping Parameters\nMapping parameters represent constant values that are defined before running a session.\nAfter creation, parameters appear in the Expression Editor.\nThese parameters can be used in source qualifier filters, user-defined joins, or for overriding.\nMapping Variables\nAs opposed to mapping parameters, mapping variables can change values during sessions.\nThe last value of a mapping variable is saved to the repository at the end of each successful session by the Integration Service. However, it is possible to override saved values with parameter files.\nMapping variables are used to perform incremental reads of data sources.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "12. Define the Surrogate Key.",
+        "answer": "A surrogate key is an identifier that uniquely identifies modeled entities or objects in a database. Not being derived from any other data in the database, surrogate keys may or may not be used as primary keys.\n\nIt is a unique sequential number. If an entity exists in the outside world and is modeled within the database or represents an object within the database, it is denoted by a surrogate key. In these cases, surrogate keys for specific objects or modeled entities are internally generated.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "13. Explain sessions and shed light on how batches are used to combine executions.",
+        "answer": "A session is a teaching set that converts data from a source to a target. To carry out sessions, users need to leverage the session’s manager or use the pmcmd command. For combining sessions in either a serial or parallel manner, batch execution is used. Any number of sessions can be grouped into batches for migration.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "14. What is incremental aggregation?",
+        "answer": "Incremental aggregation is the process of capturing changes in the source and calculating aggregations in a session. This process incrementally makes the integration service update targets and avoids the process of calculating aggregations on the entire source.\n\nUpon the first load, the table becomes as below:\n\nOn the next load, the data will be aggregated with the next session date.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "15. How can we delete duplicate rows from flat files?",
+        "answer": "We can delete duplicate rows from flat files by leveraging the sorter transformation and selecting the distinct option. Selecting this option will delete the duplicate rows.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "16. What are the features of Informatica Developer 9.1.0?",
+        "answer": "From an Informatica Developer’s perspective, some of the new features in Informatica Developer 9.1.0 are as follows:\nIn the new version, lookup can be configured as an active transformation—it can return multiple rows on a successful match.\nNow, we can write SQL overrides on uncached lookups as well. Previously, we could do it only on cached lookups.\nIn a real-time environment, we can control the session log file size or log file time.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "17. What are the advantages of using Informatica as an ETL tool over Teradata?",
+        "answer": "Informatica is a data integration tool, while Teradata is an MPP database with some scripting and fast data movement capabilities.\nAdvantages of Informatica over Teradata:\nIt functions as a metadata repository for the organization’s ETL ecosystem. Informatica jobs (sessions) can be arranged logically into worklets and workflows in folders. It leads to an ecosystem that is easier to maintain and quicker for architects and analysts to analyze and enhance.\nIt is easy to monitor jobs with Informatica Workflow Monitor. It is also easier to identify and recover in the case of failed or slow-running jobs. It exhibits the ability to restart from the failure row step.\nIt is a one-stop shop for lots of tools and accelerators to make SDLC faster and improve application support.\nIt enables plenty of developers in the market with varying skill levels and expertise to interact.\nLots of connectors to various databases are available, including support for Teradata MLoad, TPump, FastLoad, and Parallel Transporter in addition to the regular (and slow) ODBC drivers.\nSurrogate key generation through shared sequence generators inside Informatica could be faster than generating them inside the database.\nIf a company decides to move away from Teradata to another solution, vendors like Infosys can execute migration projects to move the data and change the ETL code to work with the new database quickly, accurately, and efficiently using automated solutions.\nPushdown optimization can be used to process the data in the database.\nIt can code ETL such that the processing load is balanced between the ETL server and the database box. This is useful if the database box is aging or the ETL server has a fast disk / large enough memory and CPU to outperform the database in certain tasks.\nIt can publish processes as web services.\nAdvantages of Teradata over Informatica:\nThere are no initial ETL tool license costs. There are only fewer OPEX costs as one doesn’t need to pay for yearly support from Informatica Corp.\nGreat choice if all the data to be loaded are available as structured files—which can then be processed inside the database after an initial stage load.\nIt is a good choice for a low-complexity ecosystem.\nOnly Teradata developers or resources with good ANSI/Teradata SQL/BTEQ knowledge are required to build and enhance the system.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "18. Differentiate between various types of schemas in data warehousing.",
+        "answer": "Star Schema\nStar schema is the simplest style of data mart schema in computing. It is an approach widely used to develop data warehouses and dimensional data marts. It features one or more fact tables referencing numerous dimension tables.\n\n \nSnowflake Schema\nA logical arrangement of tables in a multidimensional database, the snowflake schema is represented by centralized fact tables connected to multidimensional tables. Dimensional tables in a star schema are normalized using snowflaking. Once normalized, the resultant structure resembles a snowflake with the fact table in the middle. Low-cardinality attributes are removed, and separate tables are formed.\n\nFact Constellation Schema\nFact constellation schema is a measure of online analytical processing (OLAP), and OLAP happens to be a collection of multiple fact tables sharing dimension tables and viewed as a collection of stars. It can be seen as an extension of the star schema.\n\n \nNext up on this Informatica interview questions for freshers, we need to take a look at OLAP and its types. Read on.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "19. Define OLAP.",
+        "answer": "Online Analytical Processing(OLAP) is a specific category of software that allows users to analyze information from multiple database systems simultaneously. Using OLAP, analysts can extract and look at business data from different sources or points of view.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "20. What is target load order? How to set it?",
+        "answer": "The target load order refers to the specific sequence in which data is sent to targets within a mapping. It plays a crucial role in maintaining referential integrity when working with tables that have primary and secondary keys. In the Designer tool, users can set the target load order for all sources related to a mapplet.\nTo set it, follow these steps:\nCreate a mapping that includes multiple target load order groups.\nAccess the Target Load Plan dialog box by selecting “Mappings” and then “Target Load Plan.”\nIn the Target Load Plan dialog box, you will see a list of Source Qualifier transformations with their associated targets.\nTo adjust the load order, select a Source Qualifier and use the Up and Down buttons to change its position.\nIf desired, repeat steps 3 and 4 to reorder other Source Qualifiers.\nOnce finished, click “OK” to save the changes.\n\n\nIntermediate Interview Questions",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "21. Define Target Designer.",
+        "answer": "If we are required to perform ETL operations, we need source data, target tables, and the required transformations. Target Designer in Informatica allows us to create target tables and modify pre-existing target definitions.\nTarget definitions can be imported from various sources, including flat files, relational databases,  XML definitions, Excel worksheets, etc.\nTo open Target Designer, click on the Tools menu and select the Target Designer option.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "22. How can we access repository reports without SQL or other transformations?",
+        "answer": "We can access repository reports by using a metadata reporter. There is no need to use SQL or other transformations, as it is a web app.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "23. Mention the types of metadata that are stored in the repository.",
+        "answer": "The types of metadata stored in the repository are Target definition, Source definition, Mapplet, Mappings, and Transformations.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "24. What is Code Page Compatibility?",
+        "answer": "The transfer of data takes place from one code page to another such that both code pages have the same character sets. In such cases, data failure will not occur.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "25. How can we confirm all mappings in the repository simultaneously?",
+        "answer": "At a time, we can validate only one mapping. Hence, mapping cannot be validated simultaneously.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "26. Define Aggregator Transformation.",
+        "answer": "It is different from expression transformation, in which we can do calculations in the set, but in Aggregator transformation, we can do aggregate calculations, such as averages, sums, etc.\nCheck out our blog on How to Prepare for Informatica PowerCenter Certification Exams.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "27. What is Expression Transformation?",
+        "answer": "It is used for performing nonaggregated calculations. We can test conditional statements before the output results are moved to the target tables.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "28. Define Filter Transformation.",
+        "answer": "Filter transformation is a way of filtering rows in a mapping. It has all ports of input/output, and the row that matches that condition can only pass through that filter.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "29. Define Joiner Transformation.",
+        "answer": "It combines two associated mixed sources located in different locations, while a source qualifier transformation can combine data rising from a common source.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "30. What do you mean by Lookup Transformation?",
+        "answer": "Lookup transformation is used for maintaining data in a relational table through mapping. We can use multiple lookup transformations in a mapping.\nWatch this Informatica Tutorial video:",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "31. How can we use Union Transformation?",
+        "answer": "It is a different input group transformation used to combine data from different sources.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "32. Define Incremental Aggregation.",
+        "answer": "The incremental aggregation is done whenever a session is developed for a mapping aggregate.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "33. Differentiate between a connected lookup and an unconnected lookup.",
+        "answer": "In a connected lookup, inputs are taken straight from various transformations in the pipeline. While an unconnected lookup doesn’t take inputs straight away from various transformations, it can be used in any transformation and can be raised as a function using an LKP expression.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "34. Define Mapplet.",
+        "answer": "A mapplet is a recyclable object that uses a mapplet designer.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "35. What is a Reusable Transformation?",
+        "answer": "This transformation is used various times in mapping. It is different from other mappings that use the transformation because it is stored as metadata.\nEnroll now in Informatica course to learn more about its concepts.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "36. Define Update Strategy.",
+        "answer": "Whenever a row has to be updated or inserted based on some sequence, an Update Strategy is used. In this case, conditions should be specified before the processed row is ticked as Update or Insert.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "37. What are the advantages of Informatica?",
+        "answer": "The following are the advantages of Informatica:\nIt is a GUI tool. Coding in any graphical tool is generally faster than hand-code scripting.\nIt can communicate with all known data sources (mainframe/RDBMS/Flat Files/XML/VSM/SAP, etc.).\nIt can effectively handle large data.\nThe user can apply mappings, extract rules, cleansing rules, transformation rules, aggregation logic, and loading rules into separate objects in an ETL tool. Any change in any of the objects will have a minimum impact on other objects.\nThe object is reusable (Transformation Rules).\nInformatica has different ‘adapters’ for extracting data from packaged ERP applications (such as SAP or PeopleSoft).\nResources are available on the market.\nIt can be run in Windows and Unix environments.\nIt has many robust features, including database information, data validation, migration of projects from one database to another, etc.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "38. List some of the PowerCenter client applications with their basic purpose.",
+        "answer": "Repository Manager: It is an administrative tool used to manage repository folders, objects, groups, etc.\nAdministration Console: It is used to perform service tasks.\nPowerCenter Designer: It contains several designing tools, including a source analyzer, Target Designer, Mapplet Designer, Mapping Manager, etc.\nWorkflow Manager: It defines a set of instructions required to execute mappings.\nWorkflow Monitor: It monitors workflows and tasks.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "39. What are Sessions? List down their properties.",
+        "answer": "In the Workflow Manager, sessions are configured by creating a session task. Within a mapping program, there can be multiple sessions that can be either reusable or non-reusable.\n\nProperties of Sessions:\nSession tasks can run concurrently or sequentially, as per the requirement.\nThey can be configured to analyze performance.\nSessions include log files, test loads, error handling, commit intervals, target properties, etc.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "40. What are the various types of transformations possible in Informatica?",
+        "answer": "The various types of transformations are as follows:\nAggregator Transformation\nExpression Transformation\nNormalizer Transformation\nRank Transformation\nFilter Transformation\nJoiner Transformation\nLookup Transformation\nStored Procedure Transformation\nSorter Transformation\nUpdate Strategy Transformation\nXML Source Qualifier Transformation\nRouter Transformation\nSequence Generator Transformation",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "41. What are the features of connected lookup?",
+        "answer": "The features of connected lookup are as follows:\nIt takes in the input directly from the pipeline.\nIt actively participates in the data flow, using both dynamic and static caches.\nIt caches all lookup columns and returns default values as the output when the lookup condition does not match.\nIt is possible to return more than one column value to the output port.\nIt supports user-defined default values.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "42. Define Junk Dimensions.",
+        "answer": "Junk dimensions are structures that consist of a group of a few junk attributes, such as random codes or flags. They form a framework to store related codes with respect to a specific dimension in a single place instead of creating multiple tables for the same.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "43. What is the use of Rank Transformation?",
+        "answer": "Be it active or connected, rank transformation is used to sort and rank a set of records either from the top or from the bottom. It is also used to select data with the largest or smallest numeric value based on specific ports.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "44. Define the Sequence Generator Transformation.",
+        "answer": "In both passive and connected configurations, the sequence generator transformation is responsible for the generation of primary keys or a sequence of numbers for calculations or processing. It has two output ports connected to numerous transformations within a mapplet. These ports are as follows:\nNEXTVAL: This can be connected to multiple transformations for generating a unique value for each row or transformation.\nCURRVAL: This port is connected when NEXTVAL is already connected to some other transformation within the mapplet.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "45. What is the purpose of the INITCAP function?",
+        "answer": "When invoked, the INITCAP function capitalizes the first character of each word in a string and converts all other characters to lowercase.\nSyntax:\nINITTCAP(string_name)",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "46. Define Enterprise Data Warehousing.",
+        "answer": "When the data of an organization is developed at a single point of access, it is known as enterprise data warehousing.\nLearn more about Informatica in this Informatica Powercenter Architecture Tutorial!",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "47. Differentiate between a database and a data warehouse.",
+        "answer": "The database has a group of useful information that is brief in size as compared to the data warehouse. In the data warehouse, there are sets of every kind of data, whether it is useful or not, and the data is extracted as per the requirements of the customer.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "48. What do you understand by the term ‘domain’?",
+        "answer": "The term ‘domain’ refers to all interlinked relationships and nodes undertaken by an organizational point.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "49. Differentiate between a repository server and a powerhouse.",
+        "answer": "A repository server mainly guarantees repository reliability and uniformity, while a powerhouse server tackles the execution of many procedures between the factors of the server’s database repository.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "50. How can we create indexes after completing the load process?",
+        "answer": "With the help of the command task at the session level, we can create indexes after the loading procedure.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "51. How many sessions can we have in one group?",
+        "answer": "We can have any number of sessions, but it is advisable to have a lesser number of sessions in a batch because it will become easier for migration.\nAre you interested in learning Informatica? Enroll in our Informatica Course in Bangalore!",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "52. Differentiate between a mapping parameter and a mapping variable.",
+        "answer": "The values that alter during the session’s implementation are known as mapping variables, whereas the values that don’t alter during the session’s implementation are known as mapping parameters.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "53. Mention the advantages of partitioning a session.",
+        "answer": "The main advantage of partitioning a session is to improve the server’s process and competence. Another advantage is that it implements solo sequences within the session.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "54. What are the features of complex mapping?",
+        "answer": "The features of complex mapping are as follows:\nThere are more transformations.\nIt uses complex business logic.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "55. How can we identify whether a mapping is correct or not without a connecting session?",
+        "answer": "With the help of the debugging option, we can identify whether a mapping is correct or not without connecting sessions.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "56. Can we use mapping parameters or variables developed in one mapping into any other reusable transformation?",
+        "answer": "Yes, we can use mapping parameters or variables into any other reusable transformation because they don’t have any mapplet.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "57. What is the purpose of the aggregator cache file?",
+        "answer": "If extra memory is needed, the aggregator provides extra cache files for keeping the transformation values. It also keeps the transitional value in the local buffer memory.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "58. What is a Lookup Transformation?",
+        "answer": "The transformation that has entrance right to RDBMS is known as the lookup transformation.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "59. What do you understand by the term ‘Role-Playing Dimension’?",
+        "answer": "The dimensions used for playing diversified roles while remaining in the same database domain are role-playing dimensions.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "60. Explain the scenario that compels the Informatica server to reject files.",
+        "answer": "When it faces DD_Reject in Update Strategy transformation, it sends the server to reject files.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "61. Mention the prerequisite tasks to achieve the session partition.",
+        "answer": "In order to perform session partition, one needs to configure the session to partition source data and then install the Informatica server machine on multifold CPUs.\nWant to know about the Installation of Informatica Power Center!",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "62. Which files are created during the session RUMs in Informatics’ server?",
+        "answer": "The following types of files are created during session RUMs:\nErrors log\nBad file\nWorkflow low\nSession log",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "63. Define Session Task.",
+        "answer": "It is a mass of instructions that guides the PowerCenter server about how and when to move data from sources to targets.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "64. Define Command Task.",
+        "answer": "This task permits one or more shell commands in UNIX or DOS in Windows to run during the workflow.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "65. Explain standalone command task.",
+        "answer": "A standalone command task in Informatica executes shell commands or external scripts within a workflow, providing flexibility to integrate custom actions or system commands anywhere in the process.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "66. What is a Predefined Event?",
+        "answer": "A predefined event is a file-watch event. It waits for a specific file to arrive at a specific location.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "67. What is a User-Defined Event?",
+        "answer": "User-defined events are a flow of tasks in the workflow. Events can be developed and then raised as per requirements.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "68. Define Workflow.",
+        "answer": "A workflow is a collection of instructions and tasks that define the data integration process. It includes various components such as sources, transformations, and targets, and specifies the flow and dependencies between these components for efficient data movement and processing.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "69. Mention the different tools used in Workflow Manager.",
+        "answer": "The different tools used in Workflow Manager are as follows:\nTask Developer\nTask Designer\nWorkflow Designer",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "70. Name the other tools used for scheduling purposes other than Workflow Manager and pmcmd.",
+        "answer": "‘CONTROL M’ is a third-party tool used for scheduling purposes.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "71. Name the different types of OLAP.",
+        "answer": "The different types of OLAP are ROLAP, MOLAP, and HOLAP.\nROLAP: ROLAP, or relational OLAP, is an OLAP server that maps multidimensional operations to standard relational operations.\nMOLAP: MOLAP, or multidimensional OLAP, uses array-based multidimensional storage engines for multidimensional views of data. Numerous MOLAP servers use two levels of data storage representation to handle dense and sparse datasets.\nHOLAP: HOLAP, or hybrid OLAP, combines both ROLAP and MOLAP for faster computation and higher scalability of data.\nCheck out How Upskilling in Informatica Helped me to Get Back into the Workforce: Subhrosmita’s Journey!",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "72. Define Worklet.",
+        "answer": "A worklet is a collection of workflow tasks grouped together. It encompasses various components such as timers, decision points, commands, and event waits, enabling the organization and execution of tasks within a workflow for efficient process management and automation.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "73. Mention the use of a Target Designer.",
+        "answer": "The Target Designer in Informatica is a tool used for designing and configuring target objects in a mapping. It enables users to define target tables or files, specify column details, set data types, apply constraints, and establish business rules, facilitating accurate data loading and ensuring data integrity.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "74. Where can we find the throughput option in Informatica?",
+        "answer": "In Workflow Monitor, we can find the throughput option. By right-clicking on the session and pressing on get run properties, under source/target statistics, we can find this option.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "75. Define Informatica.",
+        "answer": "Informatica is a tool, supporting all the steps of the extraction, transformation, and load (ETL) process. Nowadays, Informatica is also being used as an integration tool. Informatica is an easy-to-use tool. It has a simple visual interface, like forms in visual basic. You just need to drag and drop different objects (known as transformations) and design the process flow for data extraction, transformation, and load.\nThese process flow diagrams are known as mappings. Once a mapping is made, it can be scheduled to run as and when required. In the background, the Informatica server takes care of fetching data from the source, transforming it, and loading it to the target.\nCheck out our blog if you want to know about Informatica Business components!",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "76. What are the different lookup cache(s)?",
+        "answer": "Informatica Lookups can be cached or uncached (no cache). A cached lookup can be either static or dynamic. A static cache does not modify the cache once it is built and remains the same during the session run. On the other hand, a cache is refreshed during the session run by inserting or updating the records in the cache based on the incoming source data.\nBy default, Informatica’s cache is a static cache. A lookup cache can also be classified as persistent or non-persistent based on whether Informatica retains the cache even after the completion of the session run or deletes it.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "77. What are the new features of Informatica 9.x Developer?",
+        "answer": "From an Informatica Developer’s perspective, some of the new features in Informatica 9.x are as follows:\nLookup can be configured as an active transformation. It can return multiple rows on a successful match.\nYou can write SQL override on uncached lookups also. Previously, you could do it only on cached lookups.\nYou can control the size of the session log. In a real-time environment, you can control the session log file size or time.\nThe database deadlock resilience feature will ensure that the session does not immediately fail if it encounters any database deadlock. It will now retry the operation again. You can configure the number of retry attempts.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "78. What is Informatica ETL tool?",
+        "answer": "Informatica ETL tool is the market leader in data integration and data quality services. Informatica is a successful ETL and EAI tool with significant industry coverage. ETL refers to extracting, transforming, and loading. Data integration tools are different from other software platforms and languages.\n\nThey have no inbuilt feature to build a user interface where the end-user can see the transformed data. Informatica ETL tool “power center” can manage, integrate, and migrate enterprise data.",
+        "reference": "intellipaat.com",
+        "role": "informatica"
+    },
+    {
+        "question": "1. What do you mean by Enterprise data warehouse?",
+        "answer": "Data warehouses (DW) or Enterprise Data Warehousing (EDW), a form of the corporate repository, generally store and manage enterprise data and information collected from multiple sources. Enterprise data is collected and made available for analysis, business intelligence, to derive valuable business insights, and to improve data-driven decision-making. Data contained here can be accessed and utilized by users (with privileges) across the organization. With EDW, data is accessed through a single point and delivered to the server via a single source.  ",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "2. What is target load order?",
+        "answer": "Target load order also referred to as Target load plan, is generally used to specify the order in which target tables are loaded by an integration service. Based on the source qualifier transformations in a mapping, you can specify a target load order. In Informatica, you can specify the order in which data is loaded into targets when there are multiple source qualifier transformations connected to multiple targets. Target load order Target load plan",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "3. What is ETL (Extract, transform, Load) and write some ETL tools.",
+        "answer": "Essentially, ETL means to extract, transform, and load. The ETL process involves extracting, transforming, and loading data from different databases into the target database or file. It forms the basis of a data warehouse. Here are a few ETL tools: IBM Datastage\nInformatica PowerCenter\nAbinitio\nTalend Studio, etc. IBM Datastage Informatica PowerCenter Abinitio Talend Studio, etc.   It performs the following functions: Obtains data from sources\nAnalyze, transform, and cleans up data\nIndexes and summarizes data\nObtains and loads data into the warehouse\nMonitors changes to source data needed for the warehouse\nRestructures keys\nKeeps track of metadata\nUpdates data in the warehouse Obtains data from sources Analyze, transform, and cleans up data Indexes and summarizes data Obtains and loads data into the warehouse Monitors changes to source data needed for the warehouse Restructures keys Keeps track of metadata Updates data in the warehouse",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "4. What is Informatica PowerCenter? Write its components",
+        "answer": "ETL tools such as Informatica PowerCenter enable data integration (combining data from different sources into a single dataset). In order to build enterprise data warehouses, it provides the ability to extract, transform, and load data from heterogeneous OLTP (Online Transaction Processing) sources systems. US Air Force, Allianz, Fannie Mae, ING, and Samsung are among the top clients using Informatica PowerCenter. There is no doubt that it has a wide range of applications. Informatica PowerCenter 9.6.0 is the latest version available. Informatica PowerCenter is available in the following editions: Standard edition \nAdvanced edition \nPremium edition Standard edition Advanced edition Premium edition PowerCenter consists of seven important components: PowerCenter Service \nPowerCenter Clients \nPowerCenter Repository \nPowerCenter Domain \nRepository Service \nIntegration Service \nPowerCenter Administration Console \nWeb Service Hub PowerCenter Service PowerCenter Clients PowerCenter Repository PowerCenter Domain Repository Service Integration Service PowerCenter Administration Console Web Service Hub",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "5. Name different types of transformation that are important?",
+        "answer": "Transformations in Informatica are the repository objects that transform the source data according to the needs of the target system and ensure that the quality of loaded data is maintained. The following transformations are provided by Informatica to accomplish specific functionalities: Aggregator Transformation: An active transformation used to compute averages and sums (especially across multiple rows or groups).\nExpression transformation: A passive transformation suitable for calculating values in one row. In addition, conditional statements can be tested before they are written to target tables or other transformations.\nFilter transformation: An active transformation used for filtering rows in mappings that don't meet the given condition.\nJoiner transformation: An active transformation joins data from different sources or from the same location.\nLookup transformation: In order to get relevant data, a lookup transformation looks up a source, source qualifier, or target. Results of the lookup are returned to another transformation or the target object. Active Lookup transformation returns more than one row, whereas passive transformation returns only a single row.\nNormalizer transformation: An active transformation used for normalizing records sourced from Cobol sources whose data is usually in de-normalized format. A single row of data can be transformed into multiple rows using it.\nRank transformation: An active transformation used to select top or bottom rankings.\nRouter transformation: An active transformation provides multiple conditions for testing the source data.\nSorter transformation: An active transformation sorts data according to a field in ascending or descending order. Additionally, to set case-sensitive sorting.\nSequence Generator transformation: A passive transformation used to generate numeric values. Each record in the table is uniquely identified by creating unique primary keys or surrogate keys.\nSource Qualifier transformation: An active transformation reads rows from a flat-file or relational source while running a session and adds them to mapping. Using this tool, Source Data Types are transformed into Informatica Native Data Types\nStored Procedure transformation: A passive transformation used to automate time-consuming processes or labor-intensive tasks. Additionally, used to handle errors, determine the database space, drop and recreate indexes, and perform specialized calculations.\nUpdate strategy transformation: An active transformation used to update data in a target table, either to maintain its history or incorporate recent updates. Aggregator Transformation: An active transformation used to compute averages and sums (especially across multiple rows or groups). Aggregator Transformation: Expression transformation: A passive transformation suitable for calculating values in one row. In addition, conditional statements can be tested before they are written to target tables or other transformations. Expression transformation: Filter transformation: An active transformation used for filtering rows in mappings that don't meet the given condition. Filter transformation: Joiner transformation: An active transformation joins data from different sources or from the same location. Joiner transformation: Lookup transformation: In order to get relevant data, a lookup transformation looks up a source, source qualifier, or target. Results of the lookup are returned to another transformation or the target object. Active Lookup transformation returns more than one row, whereas passive transformation returns only a single row. Lookup transformation: Normalizer transformation: An active transformation used for normalizing records sourced from Cobol sources whose data is usually in de-normalized format. A single row of data can be transformed into multiple rows using it. Normalizer transformation: Rank transformation: An active transformation used to select top or bottom rankings. Rank transformation: Router transformation: An active transformation provides multiple conditions for testing the source data. Router transformation: Sorter transformation: An active transformation sorts data according to a field in ascending or descending order. Additionally, to set case-sensitive sorting. Sorter transformation: Sequence Generator transformation: A passive transformation used to generate numeric values. Each record in the table is uniquely identified by creating unique primary keys or surrogate keys. Sequence Generator transformation: Source Qualifier transformation: An active transformation reads rows from a flat-file or relational source while running a session and adds them to mapping. Using this tool, Source Data Types are transformed into Informatica Native Data Types Source Qualifier transformation: Stored Procedure transformation: A passive transformation used to automate time-consuming processes or labor-intensive tasks. Additionally, used to handle errors, determine the database space, drop and recreate indexes, and perform specialized calculations. Stored Procedure transformation: Update strategy transformation: An active transformation used to update data in a target table, either to maintain its history or incorporate recent updates. Update strategy transformation:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "6. Write the difference between connected lookup and unconnected lookup.",
+        "answer": "Lookup transformations can both be used in connected and unconnected modes. Following is a comparison of the connected and unconnected lookup transformations: Connected Lookup Unconnected Lookup\nData is directly received as input values from the transformation and also contributes to the data flow.   It does not directly take the values; it only receives them from the result or function of the LKP expression.  \nFor synchronization, it is connected to the database.  No synchronization technique is in place. \nExpressions and other transformations can't be done with it.   Though unconnected lookup does not take input directly from other transformations, it is still useful in any transformation. \nThis method cannot be called more than once in a mapping.  This method can be called multiple times in a mapping. \nUser-defined default values are supported.  User-defined default values are not supported. \nIt supports both dynamic and static cache.   It supports only static cache. \nMore than one column value can be returned, i.e., output port.  Only one column value can be returned. Connected Lookup Unconnected Lookup\nData is directly received as input values from the transformation and also contributes to the data flow.   It does not directly take the values; it only receives them from the result or function of the LKP expression.  \nFor synchronization, it is connected to the database.  No synchronization technique is in place. \nExpressions and other transformations can't be done with it.   Though unconnected lookup does not take input directly from other transformations, it is still useful in any transformation. \nThis method cannot be called more than once in a mapping.  This method can be called multiple times in a mapping. \nUser-defined default values are supported.  User-defined default values are not supported. \nIt supports both dynamic and static cache.   It supports only static cache. \nMore than one column value can be returned, i.e., output port.  Only one column value can be returned. Connected Lookup Unconnected Lookup Connected Lookup Unconnected Lookup Connected Lookup Unconnected Lookup Data is directly received as input values from the transformation and also contributes to the data flow.   It does not directly take the values; it only receives them from the result or function of the LKP expression.  \nFor synchronization, it is connected to the database.  No synchronization technique is in place. \nExpressions and other transformations can't be done with it.   Though unconnected lookup does not take input directly from other transformations, it is still useful in any transformation. \nThis method cannot be called more than once in a mapping.  This method can be called multiple times in a mapping. \nUser-defined default values are supported.  User-defined default values are not supported. \nIt supports both dynamic and static cache.   It supports only static cache. \nMore than one column value can be returned, i.e., output port.  Only one column value can be returned. Data is directly received as input values from the transformation and also contributes to the data flow.   It does not directly take the values; it only receives them from the result or function of the LKP expression. Data is directly received as input values from the transformation and also contributes to the data flow. It does not directly take the values; it only receives them from the result or function of the LKP expression. For synchronization, it is connected to the database.  No synchronization technique is in place. For synchronization, it is connected to the database. No synchronization technique is in place. Expressions and other transformations can't be done with it.   Though unconnected lookup does not take input directly from other transformations, it is still useful in any transformation. Expressions and other transformations can't be done with it. Though unconnected lookup does not take input directly from other transformations, it is still useful in any transformation. This method cannot be called more than once in a mapping.  This method can be called multiple times in a mapping. This method cannot be called more than once in a mapping. This method can be called multiple times in a mapping. User-defined default values are supported.  User-defined default values are not supported. User-defined default values are supported. User-defined default values are not supported. It supports both dynamic and static cache.   It supports only static cache. It supports both dynamic and static cache. It supports only static cache. More than one column value can be returned, i.e., output port.  Only one column value can be returned. More than one column value can be returned, i.e., output port. Only one column value can be returned.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "7. An unconnected lookup can have how many input parameters?",
+        "answer": "An unconnected lookup can include numerous parameters. No matter how many parameters are entered, the return value will always be one. You can, for instance, put parameters in an unconnected lookup as column 1, column 2, column 3, and column 4, but there is only one return value.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "8. Explain the difference between active and passive transformation.",
+        "answer": "Transformation can be classified into two types:   Active transformation: In this, the number of rows that pass from the source to the target is reduced as it eliminates the rows that do not meet the transformation condition. Additionally, it can change the transaction history or row type.\nPassive transformation: Unlike active transformations, passive transformations do not eliminate the number of rows, so all rows pass from source to target without being modified. Additionally, it can maintain the transaction boundary and row type. Active transformation: In this, the number of rows that pass from the source to the target is reduced as it eliminates the rows that do not meet the transformation condition. Additionally, it can change the transaction history or row type. Active transformation: Passive transformation: Unlike active transformations, passive transformations do not eliminate the number of rows, so all rows pass from source to target without being modified. Additionally, it can maintain the transaction boundary and row type. Passive transformation:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "9. Name the output files that are created by the Informatica server at runtime.",
+        "answer": "During runtime, the Informatica server creates the following output files: Informatica server log: Generally, this type of file is stored in Informatica's home directory and is used to create a log for all status and error messages (default name: pm.server.log). In addition, an error log can also be generated for all error messages.\nSession log file: For each session, session log files are created that store information about sessions, such as the initialization process, the creation of SQL commands for readers and writers, errors encountered, and the load summary. Based on the tracing level that you set, the number of details in the session log file will differ.\nSession detail file: Each target in mapping has its own load statistics file, which contains information such as the target name and the number of written or rejected rows. This file can be viewed by double-clicking the session in the monitor window.\nPerformance detail file: This file is created by selecting the performance detail option on the session properties sheet and it includes session performance details that can be used to optimize the performance.\nReject file: This file contains rows of data that aren't written to targets by the writer.\nControl file: This file is created by the Informatica server if you execute a session that uses the external loader and it contains information about the target flat file like loading instructions for the external loader and data format.\nPost-session email: Using a post-session email, you can automatically inform recipients about the session run. In this case, you can create two different messages; one for the session which was successful and one for the session that failed.\nIndicator file: The Informatica server can create an indicator file when the flat file is used as a target. This file contains a number indicating whether the target row has been marked for insert, update, delete or reject.\nOutput file: Based on the file properties entered in the session property sheet, the Informatica server creates the target file if a session writes to it.\nCache files: Informatica server also creates cache files when it creates the memory cache. Informatica server log: Generally, this type of file is stored in Informatica's home directory and is used to create a log for all status and error messages (default name: pm.server.log). In addition, an error log can also be generated for all error messages. Informatica server log: Session log file: For each session, session log files are created that store information about sessions, such as the initialization process, the creation of SQL commands for readers and writers, errors encountered, and the load summary. Based on the tracing level that you set, the number of details in the session log file will differ. Session log file: Session detail file: Each target in mapping has its own load statistics file, which contains information such as the target name and the number of written or rejected rows. This file can be viewed by double-clicking the session in the monitor window. Session detail file: Performance detail file: This file is created by selecting the performance detail option on the session properties sheet and it includes session performance details that can be used to optimize the performance. Performance detail file: Reject file: This file contains rows of data that aren't written to targets by the writer. Reject file: Control file: This file is created by the Informatica server if you execute a session that uses the external loader and it contains information about the target flat file like loading instructions for the external loader and data format. Control file: Post-session email: Using a post-session email, you can automatically inform recipients about the session run. In this case, you can create two different messages; one for the session which was successful and one for the session that failed. Post-session email: Indicator file: The Informatica server can create an indicator file when the flat file is used as a target. This file contains a number indicating whether the target row has been marked for insert, update, delete or reject. Indicator file: Output file: Based on the file properties entered in the session property sheet, the Informatica server creates the target file if a session writes to it. Output file: Cache files: Informatica server also creates cache files when it creates the memory cache. Cache files:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "10. Can we store previous session logs in Informatica? If yes, how?",
+        "answer": "Yes, that is possible. The automatically session logout will not overwrite the current session log if any session is running or active in timestamp mode. Click on Session Properties –> Config Object –> Log Options. The properties should be chosen as follows: Save session log by –> SessionRuns\nSave session log for these runs –> Set the number of log files you wish to keep (default is 0)\nWhen you want to save all log files generated by each run, you should choose the option Save session log for these runs – > Session TimeStamp. Save session log by –> SessionRuns Save session log for these runs –> Set the number of log files you wish to keep (default is 0) When you want to save all log files generated by each run, you should choose the option Save session log for these runs – > Session TimeStamp. The properties listed above can be found in the session/workflow properties.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "11. Explain data driven sessions.",
+        "answer": "In Informatica Server, data-driven properties determine how the data should be treated when an Update Strategy Transformation is used for mapping. When using an Update Strategy Transformation, it must be specified whether you want DD_UPDATE (constant for updating record) or DD_INSERT (constant for inserting record) or DD_DELETE (constant for deleting record). It is possible for mapping to contain more than one Update Strategy Transformation. Thus, a Data-Driven property must be specified in a session property for that specific mapping in order for the session to execute successfully. Example: DD_UPDATE (Any time a record is marked as an update in the mapping, it will be updated in the target.)\nDD_INSERT (Any time a record is marked as an insert in the mapping, it will be inserted in the target.)\nDD_DELETE (Any time a record is marked as delete in the mapping, it will be deleted in the target.) DD_UPDATE (Any time a record is marked as an update in the mapping, it will be updated in the target.) DD_UPDATE ( DD_INSERT (Any time a record is marked as an insert in the mapping, it will be inserted in the target.) DD_INSERT ( DD_DELETE (Any time a record is marked as delete in the mapping, it will be deleted in the target.) DD_DELETE (",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "12. What is the role of a repository manager?",
+        "answer": "A repository manager is an administrative tool used to administer and manage repository folders, objects, groups, etc. A repository manager provides a way to navigate through multiple folders and repositories, as well as manage groups and user permissions.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "13. What is Domain in Informatica?",
+        "answer": "PowerCenter services are administered and managed by the Informatica Domain. It consists of nodes and services. Each relationship and node are categorized according to the administration requirements into special folders and sub-folders.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "1. How can we improve the performance of Informatica Aggregator Transformation?",
+        "answer": "To increase the performance of Informatica Aggregator Transformation, consider the following factors: Using sorted input reduces the amount of data cached, thus improving session performance.\nReduce the amount of unnecessary aggregation by filtering the unnecessary data before it is aggregated.\nTo reduce the size of a data cache, connect only the inputs/outputs needed to subsequent transformations. Using sorted input reduces the amount of data cached, thus improving session performance. Reduce the amount of unnecessary aggregation by filtering the unnecessary data before it is aggregated. To reduce the size of a data cache, connect only the inputs/outputs needed to subsequent transformations.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "2. What are different ways of parallel processing?",
+        "answer": "As the name suggests, parallel processing involves processing data in parallel, which increases performance. In Informatica, parallel processing can be implemented by using a number of methods. According to the situation and the preference of the user, the method is selected. The following types of partition algorithms can be used to implement parallel processing: Database Partitioning: This partitioning technique involves querying the database for table partition information and reading partitioned data from corresponding nodes in the database.\nRound-Robin Partitioning: With this service, data is evenly distributed across all partitions. It also facilitates a correct grouping of data.\nHash Auto-keys partitioning: The power center server uses the hash auto keys partition to group data rows across partitions. The Integration Service uses these grouped ports as a compound partition.\nHash User-Keys Partitioning: In this type of partitioning, rows of data are grouped according to a user-defined or a user-friendly partition key. Ports can be selected individually that define the key correctly.\nKey Range Partitioning: By using key range partitioning, we can use one or more ports to create compound partition keys specific to a particular source. The Integration Service passes data based on the mentioned and specified range for each partition.\nPass-through Partitioning: In this portioning, all rows are passed without being redistributed from one partition point to another by the Integration service. Database Partitioning: This partitioning technique involves querying the database for table partition information and reading partitioned data from corresponding nodes in the database. Database Partitioning: Round-Robin Partitioning: With this service, data is evenly distributed across all partitions. It also facilitates a correct grouping of data. Round-Robin Partitioning: Hash Auto-keys partitioning: The power center server uses the hash auto keys partition to group data rows across partitions. The Integration Service uses these grouped ports as a compound partition. Hash Auto-keys partitioning: Hash User-Keys Partitioning: In this type of partitioning, rows of data are grouped according to a user-defined or a user-friendly partition key. Ports can be selected individually that define the key correctly. Hash User-Keys Partitioning: Key Range Partitioning: By using key range partitioning, we can use one or more ports to create compound partition keys specific to a particular source. The Integration Service passes data based on the mentioned and specified range for each partition. Key Range Partitioning: Pass-through Partitioning: In this portioning, all rows are passed without being redistributed from one partition point to another by the Integration service. Pass-through Partitioning:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "3. State the difference between mapping parameter and mapping variable?",
+        "answer": "Mapping Parameter: Mapping parameters in Informatica are constant values that are set in parameter files before a session is run and retain the same values until the session ends. To change a mapping parameter value, we must update the parameter file between session runs. Mapping Parameter: Mapping Variable: Mapping variables in Informatica are values that do not remain constant and change throughout the session. At the end of the session run, the integration service saves the mapping variable value to the repository and uses it for the next round of sessions. SetMaxVariable, SetMinVariable, SetVariable, SetCountVariable are some variables functions used to change the variable value. Mapping Variable:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "4. What is OLAP and write its type?",
+        "answer": "The Online Analytical Processing (OLAP) method is used to perform multidimensional analyses on large volumes of data from multiple database systems simultaneously. Apart from managing large amounts of historical data, it provides aggregation and summation capabilities (computing and presenting data in a summarized form for statistical analysis), as well as storing information at different levels of granularity to assist in decision-making. Among its types are DOLAP (Desktop OLAP), ROLAP (Relation OLAP), MOLAP (Multi OLAP), and HOLAP (Hybrid OLAP). Online Analytical Processing",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "5. What is the scenario in which the Informatica server rejects files?",
+        "answer": "Servers reject files when they encounter rejections in the update strategy transformation. Data and information in a database also get disrupted. As you can see, this is a rare scenario or situation.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "6. What do you mean by surrogate key?",
+        "answer": "Surrogate keys also referred to as artificial keys or identity keys, are system-generated identifiers used to uniquely identify each and every record in the Dimension table. As a replacement for the natural primary key (changes and makes updates more difficult), the surrogate key makes updating the table easier. Also, it serves as a method for preserving historical information in SCDs (Slowly Changing Dimension).",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "7. Give a few mapping design tips for Informatica.",
+        "answer": "Tips for mapping design Standards: Following a good standard consistently will benefit a project in the long run. These standards include naming conventions, environmental settings, documentation, parameter files, etc.\nRe-usability: Reusable transformations enable you to react quickly to potential changes. You should use Informatica components like mapplets, worklets, and transformations.\nScalability: While designing, it is important to consider scalability. The volume must be correct when developing mappings.\nSimplicity: Different mappings are always better than one complex mapping. A simple and logical design process is ultimately more important than a complex one.\nModularity: Utilize modular techniques in designing. Standards: Following a good standard consistently will benefit a project in the long run. These standards include naming conventions, environmental settings, documentation, parameter files, etc. Standards: Re-usability: Reusable transformations enable you to react quickly to potential changes. You should use Informatica components like mapplets, worklets, and transformations. Re-usability: Scalability: While designing, it is important to consider scalability. The volume must be correct when developing mappings. Scalability: Simplicity: Different mappings are always better than one complex mapping. A simple and logical design process is ultimately more important than a complex one. Simplicity: Modularity: Utilize modular techniques in designing. Modularity:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "1. What are different lookup caches?",
+        "answer": "There are different types of Informatica lookup caches, such as static and dynamic. The following is a list of the caches: Static Cache\nDynamic Cache\nPersistent Cache\nShared Cache\nReached Static Cache Dynamic Cache Persistent Cache Shared Cache Reached",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "2. What is the difference between static and dynamic cache?",
+        "answer": "Static Cache Dynamic Cache\nCaches of this type are generated once and re-used throughout a session.  During the session, data is continuously inserted/updated into the dynamic cache.\nAs our static cache cannot be inserted or updated during the session, it remains unchanged.  The dynamic cache changes as we can add or update data into the lookup, then pass it on to the target.  \nMultiple matches can be handled in a static cache.   Multiple matches can't be handled in the dynamic cache.\nYou can use both flat-file lookup types as well as relational lookup types.   It can be used with relational lookups.\nIt is possible to use relational operators such as =&=.  The dynamic cache supports only the = operator. \nIn both unconnected and connected lookup transformations, a static cache can be used. You can use the dynamic cache only for connected lookups. Static Cache Dynamic Cache\nCaches of this type are generated once and re-used throughout a session.  During the session, data is continuously inserted/updated into the dynamic cache.\nAs our static cache cannot be inserted or updated during the session, it remains unchanged.  The dynamic cache changes as we can add or update data into the lookup, then pass it on to the target.  \nMultiple matches can be handled in a static cache.   Multiple matches can't be handled in the dynamic cache.\nYou can use both flat-file lookup types as well as relational lookup types.   It can be used with relational lookups.\nIt is possible to use relational operators such as =&=.  The dynamic cache supports only the = operator. \nIn both unconnected and connected lookup transformations, a static cache can be used. You can use the dynamic cache only for connected lookups. Static Cache Dynamic Cache Static Cache Dynamic Cache Static Cache Dynamic Cache Caches of this type are generated once and re-used throughout a session.  During the session, data is continuously inserted/updated into the dynamic cache.\nAs our static cache cannot be inserted or updated during the session, it remains unchanged.  The dynamic cache changes as we can add or update data into the lookup, then pass it on to the target.  \nMultiple matches can be handled in a static cache.   Multiple matches can't be handled in the dynamic cache.\nYou can use both flat-file lookup types as well as relational lookup types.   It can be used with relational lookups.\nIt is possible to use relational operators such as =&=.  The dynamic cache supports only the = operator. \nIn both unconnected and connected lookup transformations, a static cache can be used. You can use the dynamic cache only for connected lookups. Caches of this type are generated once and re-used throughout a session.  During the session, data is continuously inserted/updated into the dynamic cache. Caches of this type are generated once and re-used throughout a session. During the session, data is continuously inserted/updated into the dynamic cache. As our static cache cannot be inserted or updated during the session, it remains unchanged.  The dynamic cache changes as we can add or update data into the lookup, then pass it on to the target. As our static cache cannot be inserted or updated during the session, it remains unchanged. The dynamic cache changes as we can add or update data into the lookup, then pass it on to the target. Multiple matches can be handled in a static cache.   Multiple matches can't be handled in the dynamic cache. Multiple matches can be handled in a static cache. Multiple matches can't be handled in the dynamic cache. You can use both flat-file lookup types as well as relational lookup types.   It can be used with relational lookups. You can use both flat-file lookup types as well as relational lookup types. It can be used with relational lookups. It is possible to use relational operators such as =&=.  The dynamic cache supports only the = operator. It is possible to use relational operators such as =&=. The dynamic cache supports only the = operator. In both unconnected and connected lookup transformations, a static cache can be used. You can use the dynamic cache only for connected lookups. In both unconnected and connected lookup transformations, a static cache can be used. You can use the dynamic cache only for connected lookups.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "3. What is pmcmd command? How to use it?",
+        "answer": "The Informatica features are accessed via four built-in command-line programs as given below: pmcmd: This command allows you to complete the following tasks:\nStart workflows.\nStart workflow from a specific task.\nStop, Abort workflows and Sessions.\nSchedule the workflows.\ninfacmd: This command will let you access Informatica application services.\ninfasetup: Using this command, you can complete installation tasks such as defining a node or a domain.\npmrep: By using this command, you can list repository objects, create, edit and delete groups, or restore and delete repositories. Overall, you can complete repository administration tasks. pmcmd: This command allows you to complete the following tasks:\nStart workflows.\nStart workflow from a specific task.\nStop, Abort workflows and Sessions.\nSchedule the workflows. pmcmd: Start workflows.\nStart workflow from a specific task.\nStop, Abort workflows and Sessions.\nSchedule the workflows. Start workflows. Start workflow from a specific task. Stop, Abort workflows and Sessions. Schedule the workflows. infacmd: This command will let you access Informatica application services. infacmd: infasetup: Using this command, you can complete installation tasks such as defining a node or a domain. infasetup: pmrep: By using this command, you can list repository objects, create, edit and delete groups, or restore and delete repositories. Overall, you can complete repository administration tasks. pmrep: In Informatica, a PMCMD command is used as follows: In Informatica, a PMCMD command is used as follows: Start workflows \npmcmd startworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \nStart workflow from a specific task\npmcmd startask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name -startfrom task-name \nStop workflow and task\npmcmd stopworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \npmcmd stoptask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name \nSchedule the workflows \npmcmd scheduleworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \nAborting workflow and task\npmcmd abortworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \npmcmd aborttask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name Start workflows \npmcmd startworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name Start workflows pmcmd startworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name pmcmd startworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name Start workflow from a specific task\npmcmd startask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name -startfrom task-name Start workflow from a specific task pmcmd startask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name -startfrom task-name pmcmd startask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name -startfrom task-name Stop workflow and task\npmcmd stopworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \npmcmd stoptask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name Stop workflow and task pmcmd stopworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \npmcmd stoptask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name pmcmd stopworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name pmcmd stoptask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name Schedule the workflows \npmcmd scheduleworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name Schedule the workflows pmcmd scheduleworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name pmcmd scheduleworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name Aborting workflow and task\npmcmd abortworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \npmcmd aborttask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name Aborting workflow and task pmcmd abortworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name \npmcmd aborttask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name pmcmd abortworkflow -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name pmcmd aborttask -service informatica-integration-Service -d domain-name -u user-name -p password -f folder-name -w workflow-name task-name",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "4. What do you mean by mapplet in Informatica?",
+        "answer": "A mapplet is a reusable object that contains a set of transformations and is usually created using mapplet designer. Using it, you can reuse transformation logic across multiple mappings. Below are two types of mapplets: Active mapplet: This mapplet is created using an active transformation.\nPassive mapplet: This mapplet is created using a passive transformation. Active mapplet: This mapplet is created using an active transformation. Active mapplet: Passive mapplet: This mapplet is created using a passive transformation. Passive mapplet:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "5. What is the difference between Router and Filter?",
+        "answer": "Router and Filter are types of transformations offered by Informatica. There are a few differences between them as given below: Router transformation Filter transformation\nUsing router transformation, rows of data that don't meet the conditions are captured to a default output group. In this, data is tested for one condition, and rows that don't meet it are removed from the filter. \nIt allows records to be divided into multiple groups based on the conditions specified.  It doesn’t take care of the division of records. \nThis transformation has a single input and multiple output group transformations.  This transformation has a single input and a single output group transformation. \nThere can be more than one condition specified in a router transformation.  A single filter condition can be specified in filter transformation.\nInput rows and failed records are not blocked by the router transformation.  There is a possibility that records get blocked in a filter transformation. Router transformation Filter transformation\nUsing router transformation, rows of data that don't meet the conditions are captured to a default output group. In this, data is tested for one condition, and rows that don't meet it are removed from the filter. \nIt allows records to be divided into multiple groups based on the conditions specified.  It doesn’t take care of the division of records. \nThis transformation has a single input and multiple output group transformations.  This transformation has a single input and a single output group transformation. \nThere can be more than one condition specified in a router transformation.  A single filter condition can be specified in filter transformation.\nInput rows and failed records are not blocked by the router transformation.  There is a possibility that records get blocked in a filter transformation. Router transformation Filter transformation Router transformation Filter transformation Router transformation Filter transformation Using router transformation, rows of data that don't meet the conditions are captured to a default output group. In this, data is tested for one condition, and rows that don't meet it are removed from the filter. \nIt allows records to be divided into multiple groups based on the conditions specified.  It doesn’t take care of the division of records. \nThis transformation has a single input and multiple output group transformations.  This transformation has a single input and a single output group transformation. \nThere can be more than one condition specified in a router transformation.  A single filter condition can be specified in filter transformation.\nInput rows and failed records are not blocked by the router transformation.  There is a possibility that records get blocked in a filter transformation. Using router transformation, rows of data that don't meet the conditions are captured to a default output group. In this, data is tested for one condition, and rows that don't meet it are removed from the filter. Using router transformation, rows of data that don't meet the conditions are captured to a default output group. In this, data is tested for one condition, and rows that don't meet it are removed from the filter. It allows records to be divided into multiple groups based on the conditions specified.  It doesn’t take care of the division of records. It allows records to be divided into multiple groups based on the conditions specified. It doesn’t take care of the division of records. This transformation has a single input and multiple output group transformations.  This transformation has a single input and a single output group transformation. This transformation has a single input and multiple output group transformations. This transformation has a single input and a single output group transformation. There can be more than one condition specified in a router transformation.  A single filter condition can be specified in filter transformation. There can be more than one condition specified in a router transformation. A single filter condition can be specified in filter transformation. Input rows and failed records are not blocked by the router transformation.  There is a possibility that records get blocked in a filter transformation. Input rows and failed records are not blocked by the router transformation. There is a possibility that records get blocked in a filter transformation.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "6. Explain tracing level.",
+        "answer": "In Informatica, tracing levels determine how much data you want to write to the session log as you execute a workflow. Informatica's tracing level is a very important component as it aids in error analysis, locates bugs in the process, and can be set for every transformation. Each transformation property window contains an option for tracing level. As shown below, there are different types of tracing levels:  ",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "7. What is the difference between SQL Override and Lookup Override?",
+        "answer": "Lookup Override SQL Override\nBy using Lookup Override, you can avoid scanning the whole table by limiting the number of lookup rows, thus saving time and cache.   By using SQL Override, you can limit how many rows come into the mapping pipeline. \nBy default, it applies the \"Order By\" clause.   When we need it, we need to manually add it to the query. \nIt only supports one kind of join i.e., non-Equi join.  By writing the query, it can perform any kind of 'join'.\nDespite finding multiple records for a single condition, it only provides one. This is not possible with SQL Override. Lookup Override SQL Override\nBy using Lookup Override, you can avoid scanning the whole table by limiting the number of lookup rows, thus saving time and cache.   By using SQL Override, you can limit how many rows come into the mapping pipeline. \nBy default, it applies the \"Order By\" clause.   When we need it, we need to manually add it to the query. \nIt only supports one kind of join i.e., non-Equi join.  By writing the query, it can perform any kind of 'join'.\nDespite finding multiple records for a single condition, it only provides one. This is not possible with SQL Override. Lookup Override SQL Override Lookup Override SQL Override Lookup Override SQL Override By using Lookup Override, you can avoid scanning the whole table by limiting the number of lookup rows, thus saving time and cache.   By using SQL Override, you can limit how many rows come into the mapping pipeline. \nBy default, it applies the \"Order By\" clause.   When we need it, we need to manually add it to the query. \nIt only supports one kind of join i.e., non-Equi join.  By writing the query, it can perform any kind of 'join'.\nDespite finding multiple records for a single condition, it only provides one. This is not possible with SQL Override. By using Lookup Override, you can avoid scanning the whole table by limiting the number of lookup rows, thus saving time and cache.   By using SQL Override, you can limit how many rows come into the mapping pipeline. By using Lookup Override, you can avoid scanning the whole table by limiting the number of lookup rows, thus saving time and cache. By using SQL Override, you can limit how many rows come into the mapping pipeline. By default, it applies the \"Order By\" clause.   When we need it, we need to manually add it to the query. By default, it applies the \"Order By\" clause. When we need it, we need to manually add it to the query. It only supports one kind of join i.e., non-Equi join.  By writing the query, it can perform any kind of 'join'. It only supports one kind of join i.e., non-Equi join. By writing the query, it can perform any kind of 'join'. Despite finding multiple records for a single condition, it only provides one. This is not possible with SQL Override. Despite finding multiple records for a single condition, it only provides one. This is not possible with SQL Override.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "8. Write difference between stop and abort options in workflow monitor.",
+        "answer": "STOP option ABORT option\nIt executes the session tasks and allows another task to run simultaneously.   This fully terminates the currently running task.  \nIt will stop the integration services from reading the data from the source file.  It waits for the services to be completed before taking any action. \nProcesses data either to the source or to the target.   It has a 60-second timeout. \nThe data can be written and committed to the targets with this option.  There are no indications of such commitment.  \nIn other words, it doesn't kill any processes, but it does stop processes from sharing resources.   It ends the DTM (Data Transformation Manager) process and terminates the active session. STOP option ABORT option\nIt executes the session tasks and allows another task to run simultaneously.   This fully terminates the currently running task.  \nIt will stop the integration services from reading the data from the source file.  It waits for the services to be completed before taking any action. \nProcesses data either to the source or to the target.   It has a 60-second timeout. \nThe data can be written and committed to the targets with this option.  There are no indications of such commitment.  \nIn other words, it doesn't kill any processes, but it does stop processes from sharing resources.   It ends the DTM (Data Transformation Manager) process and terminates the active session. STOP option ABORT option STOP option ABORT option STOP option ABORT option It executes the session tasks and allows another task to run simultaneously.   This fully terminates the currently running task.  \nIt will stop the integration services from reading the data from the source file.  It waits for the services to be completed before taking any action. \nProcesses data either to the source or to the target.   It has a 60-second timeout. \nThe data can be written and committed to the targets with this option.  There are no indications of such commitment.  \nIn other words, it doesn't kill any processes, but it does stop processes from sharing resources.   It ends the DTM (Data Transformation Manager) process and terminates the active session. It executes the session tasks and allows another task to run simultaneously.   This fully terminates the currently running task. It executes the session tasks and allows another task to run simultaneously. This fully terminates the currently running task. It will stop the integration services from reading the data from the source file.  It waits for the services to be completed before taking any action. It will stop the integration services from reading the data from the source file. It waits for the services to be completed before taking any action. Processes data either to the source or to the target.   It has a 60-second timeout. Processes data either to the source or to the target. It has a 60-second timeout. The data can be written and committed to the targets with this option.  There are no indications of such commitment. The data can be written and committed to the targets with this option. There are no indications of such commitment. In other words, it doesn't kill any processes, but it does stop processes from sharing resources.   It ends the DTM (Data Transformation Manager) process and terminates the active session. In other words, it doesn't kill any processes, but it does stop processes from sharing resources. It ends the DTM (Data Transformation Manager) process and terminates the active session.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "9. Explain what is DTM (Data transformation manager) Process.",
+        "answer": "PowerCenter Integration Service (PCIS) started an operating system process, known as DTM (Data Transformation Manager) process or pmdtm process to run sessions. Its primary role is creating and managing threads responsible for carrying out session tasks. Among the tasks performed by DTM are: Read the session information\nForm dynamic partitions\nCreate partition groups\nValidate code pages\nRun the processing threads\nRun post-session operations\nSend post-session email Read the session information Form dynamic partitions Create partition groups Validate code pages Run the processing threads Run post-session operations Send post-session email",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "10. Describe workflow and write the components of a workflow manager.",
+        "answer": "Workflow in Informatica is typically seen as a set of interconnected tasks that all need to execute in a specific order or a proper sequence. In every workflow, a start task, as well as other tasks linked to it, are triggered when it's executed. A workflow represents a business's internal routine practices, generates output data, and performs routine management tasks. The workflow monitor is a component of Informatica that can be used to see how well the workflow is performing. You can create workflows both manually and automatically in the Workflow Manager.   To help you develop a workflow, the Workflow Manager offers the following tools: Task Developer: This tool allows you to create workflow tasks.\nWorklet Designer: Worklet designer is an option in Workflow Manager which combines (groups) multiple tasks together to form a worklet. The term worklet refers to an object that groups multiple tasks together. Unlike workflows, worklets don't include scheduling information. It is possible to nest worklets inside workflows.\nWorkflow Designer: This tool creates workflows by connecting tasks to links in the Workflow Designer. While developing a workflow, you can also create tasks in the Workflow Designer. Task Developer: This tool allows you to create workflow tasks. Task Developer: Worklet Designer: Worklet designer is an option in Workflow Manager which combines (groups) multiple tasks together to form a worklet. The term worklet refers to an object that groups multiple tasks together. Unlike workflows, worklets don't include scheduling information. It is possible to nest worklets inside workflows. Worklet Designer: Workflow Designer: This tool creates workflows by connecting tasks to links in the Workflow Designer. While developing a workflow, you can also create tasks in the Workflow Designer. Workflow Designer:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "11. What are different types of tasks in informatica?",
+        "answer": "Workflow Manager allows you to create the following types of tasks so that you can design a workflow: Assignment task: A value is assigned to a workflow variable via this task type.\nCommand task: This task executes a shell command during workflow execution.\nControl task: It halts or aborts workflow execution.\nDecision task: It describes a condition to be evaluated.\nEmail task: This is used during workflow execution to send emails.\nEvent-Raise task: This task notifies Event-Wait about the occurrence of an event.\nEvent-Wait task: It waits for an event to complete before executing the next task.\nSession tasks: These tasks are used to run mappings created in Designer.\nTimer task: This task waits for an already timed event to occur. Assignment task: A value is assigned to a workflow variable via this task type. Assignment task: Command task: This task executes a shell command during workflow execution. Command task: Control task: It halts or aborts workflow execution. Control task: Decision task: It describes a condition to be evaluated. Decision task: Email task: This is used during workflow execution to send emails. Email task: Event-Raise task: This task notifies Event-Wait about the occurrence of an event. Event-Raise task: Event-Wait task: It waits for an event to complete before executing the next task. Event-Wait task: Session tasks: These tasks are used to run mappings created in Designer. Session tasks: Timer task: This task waits for an already timed event to occur. Timer task:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "12. What do you mean by incremental loading in Informatica?",
+        "answer": "Unlike full data loading, where all data is processed every time the data is loaded, incremental data loading involves loading only selective data (either updated or created new) from the source to the target system. This method provides the following benefits: ETL (Extract, transform, and load) process overhead can be reduced by selectively loading data, reducing runtime overall.\nSeveral factors can lead to an ETL load process failing or causing errors. The likelihood of risk involved is reduced by the selective processing of the data.\nData accuracy is preserved in the historical record. Therefore, it becomes easy to determine the amount of data processed over time. ETL (Extract, transform, and load) process overhead can be reduced by selectively loading data, reducing runtime overall. Several factors can lead to an ETL load process failing or causing errors. The likelihood of risk involved is reduced by the selective processing of the data. Data accuracy is preserved in the historical record. Therefore, it becomes easy to determine the amount of data processed over time.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "13. Explain complex mapping and write its features.",
+        "answer": "When a mapping contains a lot of requirements, which are based on too many dependencies, it is considered complex. Even with just a few transformations, a mapping can be complex; it doesn't need hundreds of transformations. When the requirement has a lot of business requirements and constraints, mapping becomes complex. Complex mapping also encompasses slowly changing dimensions. Complex mapping consists of the following three features. Large and complex requirements\nComplex business logic\nSeveral transformations Large and complex requirements Complex business logic Several transformations",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "14. What is the importance of partitioning a session?",
+        "answer": "Parallel data processing improves the performance of PowerCenter with the Informatica PowerCenter Partitioning Option. With the partitioning option, a large data set can be divided into smaller parts that can be processed in parallel, which improves overall performance. In addition to optimizing sessions, it helps improve server performance and efficiency.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "15. What do you mean by the star schema?",
+        "answer": "The star schema comprises one or more dimensions and one fact table and is considered the simplest data warehouse schema. It is so-called because of its star-like shape, with radial points radiating from a center. A fact table is at the core of the star and dimension tables are at its points. The approach is most commonly used to build data warehouses and dimensional data marts.  ",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "16. Explain the dimension.",
+        "answer": "Dimension tables are tables in a star schema of a data warehouse that contains keys, values, and attributes of dimensions. A dimension table generally contains the description or textual information about the facts contained within a fact table.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "1. Informatica Interview Preparation",
+        "answer": "Whether you are applying for your first job in the industry after college or looking for a new role after years in the industry (or something in between), you will face the hurdle of interviewing. Your preparation is the key to a successful tech interview. You must be thorough, whether you are searching within your own domain or for what the company is looking for. Here are a few tips which will significantly improve your preparation process. Do some research on the company: You should have a basic understanding of how Informatica has evolved over time. Informatica's mission, values, and goals should be familiar to you when you attend interviews. Researching an organization's culture is also very important. Talking about the culture and values of an organization during an interview will help recruiters see you as a good match. Research the products offered by Informatica and its areas of focus so you know what to expect if you're selected. \nPrepare Well: Practice the kinds of questions that will likely be asked before attending an interview. The technical interview includes a number of questions related to coding, computer fundamentals like DSA, computer networks, systems design, etc. Prepare all in advance and clarify your data warehouse concepts also. Since Informatica will be used in the same project, the interviewer is certain to ask to discuss these concepts. In addition to technical interviews, there are also behavioral interviews. They are designed to help employers assess your behavior in specific situations and to see if you're a good fit. Preparing for these interview sessions is often overlooked, but they are just as important as the technical sessions.\nBe passionate: Demonstrate your value, particularly in HR. Interviewers should be able to see why you would be a great member of their company. Your passion for coding and ability to create new programs demonstrate why you are the best candidate for the job. \nDon't let mistakes bother you: Ask questions and get clarification when you need it. Don't let a mistake affect your interview. Many questions will be asked and the interviewer will often overlook a mistake. So, if something goes wrong, move on to the next part of the interview. If you aren't sure of an answer to a question, be honest about it. You should interact with the interviewer for more information on the topic. \nPractice, Practice, Practice: Interviews can be challenging and hard to prepare for. It is necessary, however, to practice what you preach in order to increase your chance of success. Make sure you practice both technical and behavioral interviews. Data software such as Informatica is widely used around the world. You would, therefore, be well advised to stay up to date with the latest developments of this software. Become as knowledgeable as you can. Do some research on the company: You should have a basic understanding of how Informatica has evolved over time. Informatica's mission, values, and goals should be familiar to you when you attend interviews. Researching an organization's culture is also very important. Talking about the culture and values of an organization during an interview will help recruiters see you as a good match. Research the products offered by Informatica and its areas of focus so you know what to expect if you're selected. Do some research on the company: Prepare Well: Practice the kinds of questions that will likely be asked before attending an interview. The technical interview includes a number of questions related to coding, computer fundamentals like DSA, computer networks, systems design, etc. Prepare all in advance and clarify your data warehouse concepts also. Since Informatica will be used in the same project, the interviewer is certain to ask to discuss these concepts. In addition to technical interviews, there are also behavioral interviews. They are designed to help employers assess your behavior in specific situations and to see if you're a good fit. Preparing for these interview sessions is often overlooked, but they are just as important as the technical sessions. Prepare Well: Be passionate: Demonstrate your value, particularly in HR. Interviewers should be able to see why you would be a great member of their company. Your passion for coding and ability to create new programs demonstrate why you are the best candidate for the job. Be passionate: Don't let mistakes bother you: Ask questions and get clarification when you need it. Don't let a mistake affect your interview. Many questions will be asked and the interviewer will often overlook a mistake. So, if something goes wrong, move on to the next part of the interview. If you aren't sure of an answer to a question, be honest about it. You should interact with the interviewer for more information on the topic. Don't let mistakes bother you: Practice, Practice, Practice: Interviews can be challenging and hard to prepare for. It is necessary, however, to practice what you preach in order to increase your chance of success. Make sure you practice both technical and behavioral interviews. Data software such as Informatica is widely used around the world. You would, therefore, be well advised to stay up to date with the latest developments of this software. Become as knowledgeable as you can. Practice, Practice, Practice:",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "1. Does Informatica have a future?",
+        "answer": "There is a bright future ahead for Informatica Professionals. Informatica specialists can look forward to a promising and exciting future. With the rapid growth of big data, there are plenty of job openings for Informatica wannabes and working specialists.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "2. How many rounds are there in an Informatica interview?",
+        "answer": "Generally, 5-6 rounds are conducted in Informatica Interview: Online Round (MCQs only)\nCoding Round\nTechnical Round (2-3)\nManagerial/HR Round Online Round (MCQs only) Coding Round Technical Round (2-3) Managerial/HR Round",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "3. Is Informatica a good career choice?",
+        "answer": "Working at Informatica is a great experience. It can also be highly profitable if you meet your goals. As a team member, you will be part of a supportive, diverse, global team that solves real-life problems, makes a difference, and makes a global impact. You'll have great exposure to technology, wonderful colleagues to learn from, a relaxed and friendly environment, and fast growth potential.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "4. Is Informatica difficult to learn?",
+        "answer": "Informatica is an easy-to-understand and easy-to-implement tool. It is a much better and more advanced SQL tool than other SQL tools available in the market.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "5. How can I prepare for Informatica?",
+        "answer": "In this article, we provide you with 30+ frequently asked Informatica questions with their answers that you can study and prepare for. It is also a good idea to review the list of questions two or three times to make sure that you retain them for the tech interview. Check out the above section for more tips. tips",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "6. What do you know about Informatica?",
+        "answer": "Using Informatica, a data processing tool, you can extract required data from all operational systems, transform it on a server, and load it into a data warehouse. They provide data integration services and software to many businesses, industries, and government organizations including telecommunications, health care, financial, and insurance services. In simple words, it is a leader in ETL, data quality, and data explorer.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    },
+    {
+        "question": "7. How many days will it take to learn Informatica?",
+        "answer": "The learning curve for Informatica can be shortened if you have ample time. However, you will need a thorough working knowledge of SQL, including functions, joins, sub-queries, etc. You should also be familiar with PL/SQL.",
+        "reference": "interviewbit.com",
+        "role": "informatica"
+    }
+]
